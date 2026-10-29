@@ -30,12 +30,44 @@ export const EvidenceQuote = ({
       ? 'Chưa có vị trí trang'
       : locator;
 
-  const statusLabels: Record<string, { label: string; color: string; icon: string }> = {
-    draft: { label: 'Bản nháp – chưa duyệt', color: '#64748b', icon: '✎' },
-    auto_checked: { label: 'Máy kiểm chứng', color: '#0284c7', icon: '✓' },
-    ai_cross_checked: { label: 'AI đối chiếu', color: '#7c3aed', icon: '✓' },
-    ai_multi_reviewed: { label: 'Đa AI đồng thuận', color: '#16a34a', icon: '✓' },
-    demo: { label: 'Dữ liệu DEMO', color: '#d97706', icon: '🧪' }
+  const statusLabels: Record<
+    string,
+    { label: string; color: string; icon: string; scopeVi: string }
+  > = {
+    draft: {
+      label: 'Bản nháp – chưa duyệt',
+      color: '#64748b',
+      icon: '✎',
+      scopeVi:
+        'Dữ liệu chưa qua bước kiểm định độc lập hoặc đã thay đổi sau lần kiểm trước; chưa thẩm định lâm sàng bởi bác sĩ.'
+    },
+    auto_checked: {
+      label: 'Kiểm tự động trích dẫn (chưa duyệt lâm sàng)',
+      color: '#0284c7',
+      icon: '⚙',
+      scopeVi:
+        'Chỉ mới kiểm tự động cấu trúc tệp, mã tài liệu và khớp chuỗi trích dẫn KB; chưa được bác sĩ chuyên khoa thẩm định lâm sàng.'
+    },
+    ai_cross_checked: {
+      label: 'AI đối chiếu nguồn (chưa duyệt lâm sàng)',
+      color: '#7c3aed',
+      icon: '✓',
+      scopeVi:
+        'Mô hình AI đã đối chiếu trích dẫn với tài liệu nguồn; chưa thay thế thẩm định lâm sàng của bác sĩ.'
+    },
+    ai_multi_reviewed: {
+      label: 'Đa AI đối chiếu nguồn (chưa duyệt lâm sàng)',
+      color: '#16a34a',
+      icon: '✓',
+      scopeVi:
+        'Nhiều mô hình AI đồng thuận về trích dẫn và ngưỡng số học; chưa thay thế hội chẩn hoặc phê duyệt lâm sàng của bác sĩ.'
+    },
+    demo: {
+      label: 'Dữ liệu DEMO',
+      color: '#d97706',
+      icon: '🧪',
+      scopeVi: 'Dữ liệu minh họa giao diện, không dùng cho quyết định điều trị.'
+    }
   };
 
   const statusInfo = statusLabels[reviewStatus] || statusLabels.draft;
@@ -57,6 +89,8 @@ export const EvidenceQuote = ({
         {loe && <span className="quote-badge">LOE {loe}</span>}
         <span
           data-testid={`review-badge-${reviewStatus}`}
+          title={statusInfo.scopeVi}
+          aria-label={`Phạm vi kiểm chứng bằng chứng: ${statusInfo.label}. ${statusInfo.scopeVi}`}
           style={{
             marginLeft: 'auto',
             fontSize: '0.7rem',
@@ -66,7 +100,8 @@ export const EvidenceQuote = ({
             color: statusInfo.color,
             border: `1px solid ${statusInfo.color}40`,
             fontWeight: 600,
-            whiteSpace: 'nowrap'
+            whiteSpace: 'nowrap',
+            cursor: 'help'
           }}
         >
           {statusInfo.icon} {statusInfo.label}

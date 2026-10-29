@@ -100,8 +100,13 @@ export function applyPresetSelection(
 }
 
 function restorePatient(value: Partial<Patient>): Patient {
-  return { ...value, selectedModules: (value.selectedModules ?? []).filter((id) => id !== '_demo' || isDemoEnabled()),
-    currentMeds: value.currentMeds ?? [], conditions: value.conditions ?? {}, customInputs: value.customInputs ?? {} };
+  return {
+    ...value,
+    selectedModules: (value.selectedModules ?? []).filter((id) => id !== '_demo' || isDemoEnabled()),
+    currentMeds: value.currentMeds ?? [],
+    conditions: value.conditions ?? {},
+    customInputs: value.customInputs ?? {}
+  };
 }
 
 function restoreSettings(value?: Partial<Settings>): Settings {
@@ -112,9 +117,14 @@ export const AppShell = () => {
   const [initial] = useState(() => {
     const hash = window.location.hash;
     const decoded = decodeStateFromHash(hash);
-    return { patient: decoded ? restorePatient(decoded.patient) : hash ? restorePatient({}) : INITIAL_PATIENT,
+    return {
+      patient: decoded ? restorePatient(decoded.patient) : hash ? restorePatient({}) : INITIAL_PATIENT,
       settings: restoreSettings(decoded?.settings),
-      error: hash && !decoded ? 'Không đọc được liên kết hồ sơ hoặc phiên bản không được hỗ trợ. Hãy mở tệp đã lưu hoặc chọn BN mẫu.' : undefined };
+      error:
+        hash && !decoded
+          ? 'Không đọc được liên kết hồ sơ hoặc phiên bản không được hỗ trợ. Hãy mở tệp đã lưu hoặc chọn BN mẫu.'
+          : undefined
+    };
   });
   const [patient, setPatient] = useState<Patient>(initial.patient);
 
@@ -151,10 +161,20 @@ export const AppShell = () => {
   const activeModules = getActiveModules(patient.selectedModules);
   const allModules = getAllModules();
   const presets = allModules.flatMap((m) => m.presets || []);
-  const foldSearch = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[đĐ]/g, 'd').toLowerCase();
+  const foldSearch = (value: string) =>
+    value
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[đĐ]/g, 'd')
+      .toLowerCase();
   const visiblePresets = presets.filter((preset) => {
-    const diseaseNames = allModules.filter((module) => preset.patient.selectedModules?.includes(module.id)).map((module) => module.nameVi).join(' ');
-    return foldSearch(`${preset.nameVi} ${preset.description} ${preset.patient.selectedModules?.join(' ') ?? ''} ${diseaseNames}`).includes(foldSearch(presetSearch.trim()));
+    const diseaseNames = allModules
+      .filter((module) => preset.patient.selectedModules?.includes(module.id))
+      .map((module) => module.nameVi)
+      .join(' ');
+    return foldSearch(
+      `${preset.nameVi} ${preset.description} ${preset.patient.selectedModules?.join(' ') ?? ''} ${diseaseNames}`
+    ).includes(foldSearch(presetSearch.trim()));
   });
   const rawPlan = evaluate(patient, settings, { modules: activeModules });
   const allInputFieldsForUi = allModules.flatMap((m) =>
@@ -171,7 +191,9 @@ export const AppShell = () => {
       conditions: {},
       currentMeds: []
     });
-    setLoadError(undefined); setShowReset(false); setMobileSegment('patient');
+    setLoadError(undefined);
+    setShowReset(false);
+    setMobileSegment('patient');
   };
 
   const handleOpenMatrix = (drugId?: string) => {
@@ -187,12 +209,14 @@ export const AppShell = () => {
   };
 
   const handleToggleTheme = () => {
-    const nextTheme = settings.theme === 'light' ? 'dark' : settings.theme === 'dark' ? 'high_contrast' : 'light';
+    const nextTheme =
+      settings.theme === 'light' ? 'dark' : settings.theme === 'dark' ? 'high_contrast' : 'light';
     setSettings({ ...settings, theme: nextTheme });
   };
 
   const handleToggleFont = () => {
-    const nextFont = settings.fontScale === 'normal' ? 'large' : settings.fontScale === 'large' ? 'xlarge' : 'normal';
+    const nextFont =
+      settings.fontScale === 'normal' ? 'large' : settings.fontScale === 'large' ? 'xlarge' : 'normal';
     setSettings({ ...settings, fontScale: nextFont });
   };
 
@@ -204,13 +228,16 @@ export const AppShell = () => {
       settings,
       planSummary: plan.summary
     };
-    setReportSuccess(false); setReportCopyError('');
+    setReportSuccess(false);
+    setReportCopyError('');
     try {
       if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
       await navigator.clipboard.writeText(JSON.stringify(payload, null, 2));
       setReportSuccess(true);
       setTimeout(() => setReportSuccess(false), 3000);
-    } catch { setReportCopyError(JSON.stringify(payload, null, 2)); }
+    } catch {
+      setReportCopyError(JSON.stringify(payload, null, 2));
+    }
   };
 
   return (
@@ -306,10 +333,18 @@ export const AppShell = () => {
 
       {/* Main Content Area */}
       <main className="main-content">
-        <CaseWorkspace patient={patient} settings={settings} loadError={loadError} onImport={(loadedPatient, loadedSettings) => {
-          setPatient(restorePatient(loadedPatient)); setSettings(restoreSettings(loadedSettings));
-          setLoadError(undefined); setActiveTab('plan'); setMobileSegment('patient');
-        }} />
+        <CaseWorkspace
+          patient={patient}
+          settings={settings}
+          loadError={loadError}
+          onImport={(loadedPatient, loadedSettings) => {
+            setPatient(restorePatient(loadedPatient));
+            setSettings(restoreSettings(loadedSettings));
+            setLoadError(undefined);
+            setActiveTab('plan');
+            setMobileSegment('patient');
+          }}
+        />
         {/* Tab Phác đồ */}
         {activeTab === 'plan' && (
           <div>
@@ -319,9 +354,10 @@ export const AppShell = () => {
                 <span style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-muted)' }}>
                   Bối cảnh:
                 </span>
-                <div className="segmented-control">
+                <div className="segmented-control" role="group" aria-label="Bối cảnh điều trị">
                   <button
                     type="button"
+                    aria-pressed={settings.setting === 'outpatient'}
                     className={`segmented-btn ${settings.setting === 'outpatient' ? 'active' : ''}`}
                     onClick={() => setSettings({ ...settings, setting: 'outpatient' })}
                   >
@@ -329,6 +365,7 @@ export const AppShell = () => {
                   </button>
                   <button
                     type="button"
+                    aria-pressed={settings.setting === 'inpatient'}
                     className={`segmented-btn ${settings.setting === 'inpatient' ? 'active' : ''}`}
                     onClick={() => setSettings({ ...settings, setting: 'inpatient' })}
                   >
@@ -341,9 +378,10 @@ export const AppShell = () => {
                 <span style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-muted)' }}>
                   Hướng dẫn:
                 </span>
-                <div className="segmented-control">
+                <div className="segmented-control" role="group" aria-label="Hồ sơ khuyến cáo">
                   <button
                     type="button"
+                    aria-pressed={settings.profile === 'INTL'}
                     className={`segmented-btn ${settings.profile === 'INTL' ? 'active' : ''}`}
                     onClick={() => setSettings({ ...settings, profile: 'INTL' })}
                   >
@@ -351,6 +389,7 @@ export const AppShell = () => {
                   </button>
                   <button
                     type="button"
+                    aria-pressed={settings.profile === 'VN'}
                     className={`segmented-btn ${settings.profile === 'VN' ? 'active' : ''}`}
                     onClick={() => setSettings({ ...settings, profile: 'VN' })}
                   >
@@ -358,6 +397,7 @@ export const AppShell = () => {
                   </button>
                   <button
                     type="button"
+                    aria-pressed={settings.profile === 'US'}
                     className={`segmented-btn ${settings.profile === 'US' ? 'active' : ''}`}
                     onClick={() => setSettings({ ...settings, profile: 'US' })}
                   >
@@ -368,9 +408,10 @@ export const AppShell = () => {
 
               {/* Mobile Only: Segmented Bệnh nhân | Kế hoạch */}
               <div className="toolbar-group mobile-only-segmented">
-                <div className="segmented-control">
+                <div className="segmented-control" role="group" aria-label="Chuyển đổi khung nhìn di động">
                   <button
                     type="button"
+                    aria-pressed={mobileSegment === 'patient'}
                     className={`segmented-btn ${mobileSegment === 'patient' ? 'active' : ''}`}
                     onClick={() => setMobileSegment('patient')}
                   >
@@ -378,6 +419,7 @@ export const AppShell = () => {
                   </button>
                   <button
                     type="button"
+                    aria-pressed={mobileSegment === 'plan'}
                     className={`segmented-btn ${mobileSegment === 'plan' ? 'active' : ''}`}
                     onClick={() => setMobileSegment('plan')}
                   >
@@ -395,15 +437,23 @@ export const AppShell = () => {
                   derived={derived}
                   settings={settings}
                   activeModules={activeModules}
-                  onChangePatient={(next) => { setLoadError(undefined); setPatient(next); }}
+                  onChangePatient={(next) => {
+                    setLoadError(undefined);
+                    setPatient(next);
+                  }}
                   onReset={() => setShowReset(true)}
-                  onSelectPreset={() => { setPresetSearch(''); setShowPresetsModal(true); }}
+                  onSelectPreset={() => {
+                    setPresetSearch('');
+                    setShowPresetsModal(true);
+                  }}
                 />
               </div>
 
               <div className={`col-plan ${mobileSegment === 'patient' ? 'mobile-hidden' : ''}`}>
                 <PlanList
                   plan={plan}
+                  patient={normalized}
+                  derived={derived}
                   onlyReviewed={settings.onlyReviewed}
                   onOpenMatrix={handleOpenMatrix}
                   onCopyNote={handleCopyNote}
@@ -444,23 +494,37 @@ export const AppShell = () => {
         {activeTab === 'learn' && <LearnView />}
 
         {/* Tab Cài đặt */}
-        {activeTab === 'settings' && (
-          <SettingsView settings={settings} onUpdateSettings={setSettings} />
-        )}
+        {activeTab === 'settings' && <SettingsView settings={settings} onUpdateSettings={setSettings} />}
 
         {/* Tab Giới thiệu */}
         {activeTab === 'about' && <AboutView />}
       </main>
 
       <section className="print-document" data-testid="print-document" aria-label="Bản in kế hoạch">
-        <h1>GDMT-VN · Kế hoạch thử nghiệm</h1><pre>{noteText}</pre>
+        <h1>GDMT-VN · Kế hoạch thử nghiệm</h1>
+        <pre>{noteText}</pre>
       </section>
-      {share && <ShareDialog key={share} kind={share} text={share === 'note' ? noteText : window.location.href} onClose={() => setShare(undefined)} />}
-      {showReset && <Modal title="Bắt đầu hồ sơ mới" onClose={() => setShowReset(false)}>
-        <p>Hồ sơ đang mở sẽ được xóa khỏi phiên này. Bạn có thể lưu thành tệp trước khi bắt đầu hồ sơ mới.</p>
-        <div className="workspace-actions"><button type="button" className="workspace-button" onClick={() => setShowReset(false)}>Hủy</button>
-          <button type="button" className="workspace-button primary" onClick={handleResetPatient}>Tạo hồ sơ trống</button></div>
-      </Modal>}
+      {share && (
+        <ShareDialog
+          key={share}
+          kind={share}
+          text={share === 'note' ? noteText : window.location.href}
+          onClose={() => setShare(undefined)}
+        />
+      )}
+      {showReset && (
+        <Modal title="Bắt đầu hồ sơ mới" onClose={() => setShowReset(false)}>
+          <p>Hồ sơ đang mở sẽ được xóa khỏi phiên này. Bạn có thể lưu thành tệp trước khi bắt đầu hồ sơ mới.</p>
+          <div className="workspace-actions">
+            <button type="button" className="workspace-button" onClick={() => setShowReset(false)}>
+              Hủy
+            </button>
+            <button type="button" className="workspace-button primary" onClick={handleResetPatient}>
+              Tạo hồ sơ trống
+            </button>
+          </div>
+        </Modal>
+      )}
 
       {/* Mobile Bottom Tab Bar */}
       <div className="mobile-nav-bar">
@@ -509,50 +573,61 @@ export const AppShell = () => {
       {/* Modal Bệnh nhân mẫu (Presets) */}
       {showPresetsModal && (
         <Modal title="Chọn Bệnh Nhân Mẫu Chuẩn" onClose={() => setShowPresetsModal(false)}>
-            <label className="form-label" htmlFor="preset-search">Tìm ca theo bệnh hoặc tình huống</label>
-            <input id="preset-search" className="form-input" type="search" value={presetSearch} onChange={(event) => setPresetSearch(event.target.value)} placeholder="Ví dụ: suy tim, CKD, tăng kali…" />
-            <p className="workspace-feedback">{visiblePresets.length} ca giả lập</p>
+          <label className="form-label" htmlFor="preset-search">
+            Tìm ca theo bệnh hoặc tình huống
+          </label>
+          <input
+            id="preset-search"
+            className="form-input"
+            type="search"
+            value={presetSearch}
+            onChange={(event) => setPresetSearch(event.target.value)}
+            placeholder="Ví dụ: suy tim, CKD, tăng kali…"
+          />
+          <p className="workspace-feedback">{visiblePresets.length} ca giả lập</p>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-              {visiblePresets.length === 0 ? (
-                <div style={{ textAlign: 'center', color: 'var(--text-subtle)', padding: '1rem' }}>
-                  Không tìm thấy ca phù hợp. Thử tên bệnh hoặc tình huống khác.
-                </div>
-              ) : (
-                visiblePresets.map((preset) => (
-                  <button type="button" className="preset-choice"
-                    key={preset.id}
-                    data-testid={`preset-item-${preset.id}`}
-                    style={{
-                      padding: '0.85rem',
-                      borderRadius: '8px',
-                      border: '1px solid var(--border-color)',
-                      background: 'var(--bg-muted)',
-                      cursor: 'pointer'
-                    }}
-                    onClick={() => {
-                      const applied = applyPresetSelection(
-                        preset,
-                        settings,
-                        patient.selectedModules,
-                        allInputFieldsForUi
-                      );
-                      setSettings(applied.settings);
-                      setPatient(restorePatient(applied.patient));
-                      setLoadError(undefined);
-                      setShowPresetsModal(false);
-                    }}
-                  >
-                    <div style={{ fontWeight: 700, color: 'var(--primary)', marginBottom: '0.25rem' }}>
-                      {preset.nameVi}
-                    </div>
-                    <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                      {preset.description}
-                    </div>
-                  </button>
-                ))
-              )}
-            </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            {visiblePresets.length === 0 ? (
+              <div style={{ textAlign: 'center', color: 'var(--text-subtle)', padding: '1rem' }}>
+                Không tìm thấy ca phù hợp. Thử tên bệnh hoặc tình huống khác.
+              </div>
+            ) : (
+              visiblePresets.map((preset) => (
+                <button
+                  type="button"
+                  className="preset-choice"
+                  key={preset.id}
+                  data-testid={`preset-item-${preset.id}`}
+                  style={{
+                    padding: '0.85rem',
+                    borderRadius: '8px',
+                    border: '1px solid var(--border-color)',
+                    background: 'var(--bg-muted)',
+                    cursor: 'pointer'
+                  }}
+                  onClick={() => {
+                    const applied = applyPresetSelection(
+                      preset,
+                      settings,
+                      patient.selectedModules,
+                      allInputFieldsForUi
+                    );
+                    setSettings(applied.settings);
+                    setPatient(restorePatient(applied.patient));
+                    setLoadError(undefined);
+                    setShowPresetsModal(false);
+                  }}
+                >
+                  <div style={{ fontWeight: 700, color: 'var(--primary)', marginBottom: '0.25rem' }}>
+                    {preset.nameVi}
+                  </div>
+                  <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                    {preset.description}
+                  </div>
+                </button>
+              ))
+            )}
+          </div>
         </Modal>
       )}
 
@@ -560,10 +635,18 @@ export const AppShell = () => {
       {showReportModal && (
         <div className="modal-overlay" onClick={() => setShowReportModal(false)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                marginBottom: '1rem'
+              }}
+            >
               <h3 style={{ fontSize: '1.1rem', fontWeight: 700 }}>🚩 Báo Sai / Góp Ý Lâm Sàng</h3>
               <button
                 type="button"
+                aria-label="Đóng hộp thoại báo lỗi"
                 style={{ background: 'none', border: 'none', fontSize: '1.2rem', cursor: 'pointer' }}
                 onClick={() => setShowReportModal(false)}
               >
@@ -572,7 +655,8 @@ export const AppShell = () => {
             </div>
 
             <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.75rem' }}>
-              Mô tả chi tiết điểm sai lệch giữa khuyến cáo của hệ thống và guideline/thực tế lâm sàng. Bấm nút dưới đây để sao chép toàn bộ gói trạng thái JSON kèm mô tả vào Clipboard:
+              Mô tả chi tiết điểm sai lệch giữa khuyến cáo của hệ thống và guideline/thực tế lâm sàng. Bấm nút
+              dưới đây để sao chép toàn bộ gói trạng thái JSON kèm mô tả vào Clipboard:
             </p>
 
             <textarea
@@ -584,8 +668,18 @@ export const AppShell = () => {
               onChange={(e) => setReportText(e.target.value)}
               placeholder="Nhập mô tả lỗi (vd: Thuốc Dapagliflozin ghi sai ngưỡng eGFR theo KDIGO 2024 trang 32...)"
             />
-            {reportCopyError && <><p role="alert">Không thể sao chép tự động. Chọn gói dữ liệu dưới đây để sao chép thủ công.</p>
-              <textarea className="form-input workspace-text" aria-label="Gói dữ liệu báo lỗi" readOnly value={reportCopyError} onFocus={(event) => event.target.select()} /></>}
+            {reportCopyError && (
+              <>
+                <p role="alert">Không thể sao chép tự động. Chọn gói dữ liệu dưới đây để sao chép thủ công.</p>
+                <textarea
+                  className="form-input workspace-text"
+                  aria-label="Gói dữ liệu báo lỗi"
+                  readOnly
+                  value={reportCopyError}
+                  onFocus={(event) => event.target.select()}
+                />
+              </>
+            )}
 
             <button
               type="button"

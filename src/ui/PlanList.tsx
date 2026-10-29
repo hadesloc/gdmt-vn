@@ -1,9 +1,11 @@
 import { useState } from 'react';
-import type { Plan, Action } from '../engine/types';
+import type { Plan, Action, Patient, Derived } from '../engine/types';
 import { PlanRow } from './PlanRow';
 
 export interface PlanListProps {
   plan: Plan;
+  patient?: Patient;
+  derived?: Derived;
   onOpenMatrix?: (drugId?: string) => void;
   onCopyNote?: () => void;
   onCopyLink?: () => void;
@@ -28,6 +30,8 @@ const ACTION_LABELS: Record<Action, string> = {
 
 export const PlanList = ({
   plan,
+  patient,
+  derived,
   onOpenMatrix,
   onCopyNote,
   onCopyLink,
@@ -50,6 +54,72 @@ export const PlanList = ({
     groupedByTier.get(tierKey)!.push(r);
   }
 
+  const missingInputCount = plan.recommendations.filter((r) =>
+    r.id.toLowerCase().includes('missing_input')
+  ).length;
+
+  const urgentSafetyCount =
+    (plan.summary.byAction.STOP || 0) +
+    (plan.summary.byAction.HOLD || 0) +
+    (plan.summary.byAction.REFER || 0);
+  const activeOptimizationCount =
+    (plan.summary.byAction.START || 0) +
+    (plan.summary.byAction.UPTITRATE || 0) +
+    (plan.summary.byAction.SWITCH || 0);
+
+  const hfPhenotypeLabel =
+    patient?.lvef !== undefined
+      ? `${patient.lvef <= 40 ? 'HFrEF' : patient.lvef <= 49 ? 'HFmrEF' : 'HFpEF'} (LVEF ${patient.lvef}%)`
+      : undefined;
+
+  const summaryMetrics: Array<{ key: string; text: string; tone?: 'normal' | 'warn' | 'danger' }> = [];
+  if (hfPhenotypeLabel) {
+    summaryMetrics.push({ key: 'hf', text: `💓 ${hfPhenotypeLabel}` });
+  }
+  if (derived?.egfr !== undefined) {
+    const stageStr = [derived.kdigoG, derived.kdigoA].filter(Boolean).join('');
+    summaryMetrics.push({
+      key: 'egfr',
+      text: `🫘 eGFR ${derived.egfr}${stageStr ? ` (${stageStr})` : ''}`,
+      tone: derived.egfr < 30 ? 'warn' : 'normal'
+    });
+  }
+  if (patient?.k !== undefined) {
+    summaryMetrics.push({
+      key: 'k',
+      text: `🧪 K⁺ ${patient.k} mmol/L`,
+      tone: patient.k >= 5.5 || patient.k < 3.5 ? 'danger' : patient.k >= 5.0 ? 'warn' : 'normal'
+    });
+  }
+  if (patient?.sbp !== undefined) {
+    summaryMetrics.push({
+      key: 'bp',
+      text: `🩺 HA ${patient.sbp}/${patient.dbp ?? '--'} mmHg`,
+      tone: patient.sbp < 90 || patient.sbp >= 180 ? 'danger' : 'normal'
+    });
+  }
+  if (patient?.hr !== undefined) {
+    const rhythmShort =
+      patient.rhythm === 'afib'
+        ? ' · AF'
+        : patient.rhythm === 'sinus'
+          ? ' · Xoang'
+          : patient.rhythm === 'paced'
+            ? ' · Tạo nhịp'
+            : '';
+    summaryMetrics.push({
+      key: 'hr',
+      text: `⚡ HR ${patient.hr} bpm${rhythmShort}`
+    });
+  }
+  if (missingInputCount > 0) {
+    summaryMetrics.push({
+      key: 'missing',
+      text: `📝 Cần bổ sung ${missingInputCount} thông số`,
+      tone: 'warn'
+    });
+  }
+
   return (
     <div className="panel" data-testid="plan-list-panel">
       <div className="panel-header">
@@ -65,6 +135,7 @@ export const PlanList = ({
           <button
             type="button"
             className="btn-header"
+            aria-pressed={expandAll}
             style={{
               background: 'var(--bg-muted)',
               color: 'var(--text-main)',
@@ -148,7 +219,8 @@ export const PlanList = ({
               }}
               onClick={() => setShowActionMenu(!showActionMenu)}
               title="Thêm thao tác"
-              aria-label="Thêm thao tác kế hoạch" aria-expanded={showActionMenu}
+              aria-label="Thêm thao tác kế hoạch"
+              aria-expanded={showActionMenu}
             >
               ⋯
             </button>
@@ -239,9 +311,86 @@ export const PlanList = ({
         </div>
       </div>
 
-      {onlyReviewed && <p className="workspace-feedback">Đang lọc khuyến cáo đã review. Cảnh báo an toàn vẫn được giữ; ghi chú và bản in dùng cùng bộ lọc.</p>}
+      {onlyReviewed && (
+        <p className="workspace-feedback">
+          Đang lọc khuyến cáo đã review. Cảnh báo an toàn vẫn được giữ; ghi chú và bản in dùng cùng bộ lọc.
+        </p>
+      )}
 
-      {/* Summary Chips */}
+      {/* UX-02: Thanh tóm tắt bối cảnh lâm sàng nhanh (Phenotype / eGFR / K+ / HA / HR / Thiếu dữ liệu) */}
+      {summaryMetrics.length > 0 && (
+        <div
+          data-testid="plan-clinical-summary"
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: '0.35rem',
+            padding: '0.5rem 0.65rem',
+            marginBottom: '0.65rem',
+            borderRadius: '8px',
+            background: 'var(--bg-muted)',
+            border: '1px solid var(--border-color)'
+          }}
+        >
+          {summaryMetrics.map((m) => (
+            <span
+              key={m.key}
+              style={{
+                fontSize: '0.75rem',
+                fontWeight: 600,
+                padding: '0.15rem 0.5rem',
+                borderRadius: '6px',
+                background:
+                  m.tone === 'danger'
+                    ? '#fee2e2'
+                    : m.tone === 'warn'
+                      ? '#fef3c7'
+                      : 'var(--bg-surface)',
+                color:
+                  m.tone === 'danger'
+                    ? '#991b1b'
+                    : m.tone === 'warn'
+                      ? '#92400e'
+                      : 'var(--text-main)',
+                border:
+                  m.tone === 'danger'
+                    ? '1px solid #fca5a5'
+                    : m.tone === 'warn'
+                      ? '1px solid #fcd34d'
+                      : '1px solid var(--border-color)'
+              }}
+            >
+              {m.text}
+            </span>
+          ))}
+        </div>
+      )}
+
+      {/* UX-02: Định hướng thứ tự ưu tiên xử trí lâm sàng */}
+      {(urgentSafetyCount > 0 || activeOptimizationCount > 0) && (
+        <div
+          data-testid="plan-priority-guidance"
+          style={{
+            fontSize: '0.78rem',
+            padding: '0.45rem 0.65rem',
+            marginBottom: '0.65rem',
+            borderRadius: '6px',
+            background: urgentSafetyCount > 0 ? '#fff7ed' : '#eff6ff',
+            color: urgentSafetyCount > 0 ? '#9a3412' : '#1e40af',
+            border: urgentSafetyCount > 0 ? '1px solid #fed7aa' : '1px solid #bfdbfe'
+          }}
+        >
+          <strong>Thứ tự ưu tiên xử trí:</strong>{' '}
+          {urgentSafetyCount > 0
+            ? `1) Xử lý ngay ${urgentSafetyCount} lệnh an toàn (Ngừng / Tạm hoãn / Chuyển khám) → `
+            : ''}
+          {activeOptimizationCount > 0
+            ? `${urgentSafetyCount > 0 ? '2) ' : ''}Thực hiện ${activeOptimizationCount} bước khởi trị / chuẩn độ liều kế tiếp và hẹn kiểm tra lại sinh hóa – huyết động.`
+            : 'Rà soát nguyên nhân cản trở trước khi tái khởi trị hoặc tăng liều.'}
+        </div>
+      )}
+
+      {/* Action Count Summary Chips */}
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginBottom: '1rem' }}>
         {(Object.entries(plan.summary.byAction) as [Action, number][])
           .filter(([, count]) => count > 0)
@@ -325,7 +474,9 @@ export const PlanList = ({
       {/* Recommendations grouped by Tier */}
       {plan.recommendations.length === 0 ? (
         <div style={{ textAlign: 'center', padding: '2rem 1rem', color: 'var(--text-subtle)' }}>
-          {onlyReviewed ? 'Chưa có khuyến cáo đáp ứng bộ lọc đã review cho hồ sơ này. Có thể tắt bộ lọc trong Cài đặt để tiếp tục thử nghiệm.' : 'Nhập thông tin bệnh nhân và chọn bệnh lý để sinh kế hoạch điều trị tối ưu GDMT.'}
+          {onlyReviewed
+            ? 'Chưa có khuyến cáo đáp ứng bộ lọc đã review cho hồ sơ này. Có thể tắt bộ lọc trong Cài đặt để tiếp tục thử nghiệm.'
+            : 'Nhập thông tin bệnh nhân và chọn bệnh lý để sinh kế hoạch điều trị tối ưu GDMT.'}
         </div>
       ) : (
         Array.from(groupedByTier.entries()).map(([tier, recs]) => (

@@ -188,12 +188,25 @@ export function normalizePatientUnits(
   ) {
     conds.pancreatitis = true;
   }
+  // DATA-01: Kiểm tra xung đột nhịp ECG giữa patient.rhythm và customInputs.rhythm (fail-closed)
+  const rawCiRhythm =
+    typeof rawCi.rhythm === 'string' && rawCi.rhythm.trim() !== ''
+      ? (rawCi.rhythm.trim() as Patient['rhythm'])
+      : undefined;
+  const hasRhythmConflict =
+    patient.rhythm !== undefined &&
+    rawCiRhythm !== undefined &&
+    patient.rhythm !== rawCiRhythm;
+  const effectiveRhythm: Patient['rhythm'] = hasRhythmConflict
+    ? undefined
+    : (patient.rhythm ?? rawCiRhythm);
+
   // Đồng bộ đồng nghĩa hai chiều an toàn cho các cờ bệnh lý phổ biến
   if (conds.pregnant || conds.pregnancy || conds.severePreeclampsiaEclampsia) {
     conds.pregnant = true;
     conds.pregnancy = true;
   }
-  if (conds.af || conds.afib || patient.rhythm === 'afib') {
+  if (conds.af || conds.afib || effectiveRhythm === 'afib') {
     conds.af = true;
     conds.afib = true;
   }
@@ -255,13 +268,75 @@ export function normalizePatientUnits(
     }
   }
 
+  if (hasRhythmConflict && normalizedCustomInputs) {
+    delete normalizedCustomInputs.rhythm;
+  }
+
   const norm: Patient = {
     ...patient,
+    rhythm: effectiveRhythm,
     conditions: conds,
     selectedModules: Array.isArray(patient.selectedModules) ? [...patient.selectedModules] : [],
     currentMeds: Array.isArray(patient.currentMeds) ? [...patient.currentMeds] : [],
     customInputs: normalizedCustomInputs
   };
+
+  // DATA-01: Di trú an toàn các trường chuẩn bị lưu nhầm vào customInputs ở phiên bản cũ (khi trường cấp cao nhất đang trống)
+  // và khóa an toàn (fail-closed) nếu xảy ra xung đột trực tiếp trên lvef / nyha
+  if (normalizedCustomInputs) {
+    const rawCiLvef =
+      typeof normalizedCustomInputs.lvef === 'number' && Number.isFinite(normalizedCustomInputs.lvef)
+        ? normalizedCustomInputs.lvef
+        : undefined;
+    if (norm.lvef !== undefined && rawCiLvef !== undefined && norm.lvef !== rawCiLvef) {
+      norm.lvef = undefined;
+      delete normalizedCustomInputs.lvef;
+    } else if (norm.lvef === undefined && rawCiLvef !== undefined) {
+      norm.lvef = rawCiLvef;
+    }
+
+    const rawCiNyha =
+      typeof normalizedCustomInputs.nyha === 'number' &&
+      (normalizedCustomInputs.nyha === 1 ||
+        normalizedCustomInputs.nyha === 2 ||
+        normalizedCustomInputs.nyha === 3 ||
+        normalizedCustomInputs.nyha === 4)
+        ? (normalizedCustomInputs.nyha as 1 | 2 | 3 | 4)
+        : undefined;
+    if (norm.nyha !== undefined && rawCiNyha !== undefined && norm.nyha !== rawCiNyha) {
+      norm.nyha = undefined;
+      delete normalizedCustomInputs.nyha;
+    } else if (norm.nyha === undefined && rawCiNyha !== undefined) {
+      norm.nyha = rawCiNyha;
+    }
+
+    const numericFallbackPairs: Array<[keyof Patient, string[]]> = [
+      ['qtc', ['qtc', 'qtcMs']],
+      ['spo2', ['spo2']],
+      ['pefPct', ['pefPct']],
+      ['hb', ['hb']],
+      ['na', ['na']],
+      ['hco3', ['hco3', 'serumBicarb']],
+      ['fev1', ['fev1']],
+      ['fev1Pct', ['fev1Pct', 'fev1PredPct']],
+      ['fvc', ['fvc']],
+      ['mmrc', ['mmrc', 'mmrcScore']],
+      ['cat', ['cat', 'catScore']],
+      ['nonHdl', ['nonHdl']],
+      ['uricAcid', ['uricAcid', 'urate']]
+    ];
+    for (const [topKey, ciKeys] of numericFallbackPairs) {
+      if (norm[topKey] === undefined) {
+        for (const ck of ciKeys) {
+          const v = normalizedCustomInputs[ck];
+          if (typeof v === 'number' && Number.isFinite(v)) {
+            (norm as unknown as Record<string, unknown>)[topKey] = v;
+            break;
+          }
+        }
+      }
+    }
+  }
 
   if (patient.scr !== undefined) {
     norm.scr = units.cr === 'mg_dL' ? crMgDlToUmolL(patient.scr) : patient.scr;

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import type { Recommendation, Action } from '../engine/types';
 import { EvidenceQuote } from './EvidenceQuote';
 import { deduplicateCleanCitationIds, resolveCitationDisplay } from './kbLookup';
@@ -30,9 +30,23 @@ export const PlanRow = ({
   onOpenMatrix
 }: PlanRowProps) => {
   const [isExpanded, setIsExpanded] = useState(defaultExpanded);
+  const [showAllQuotes, setShowAllQuotes] = useState(false);
+
+  useEffect(() => {
+    setIsExpanded(defaultExpanded);
+  }, [defaultExpanded]);
 
   const actionInfo = ACTION_MAP[r.action] || { label: r.action, className: 'badge-continue' };
   const cleanCitationIds = deduplicateCleanCitationIds(r.citationIds);
+  const visibleCitationIds =
+    showAllQuotes || cleanCitationIds.length <= 1
+      ? cleanCitationIds
+      : cleanCitationIds.slice(0, 1);
+  const hiddenCitationCount = Math.max(0, cleanCitationIds.length - visibleCitationIds.length);
+  const bodyDomId = `plan-row-body-${r.id}`;
+  const hasDistinctSubtitle = Boolean(
+    r.drugNameVi && r.title && r.title.trim() !== r.drugNameVi.trim()
+  );
 
   return (
     <div className="plan-row-card" data-testid={`plan-row-${r.id}`}>
@@ -41,6 +55,8 @@ export const PlanRow = ({
         onClick={() => setIsExpanded(!isExpanded)}
         role="button"
         tabIndex={0}
+        aria-expanded={isExpanded}
+        aria-controls={bodyDomId}
         onKeyDown={(e) => {
           if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
@@ -48,34 +64,51 @@ export const PlanRow = ({
           }
         }}
       >
-        <div className="plan-row-title-area">
-          <span className={`badge-action ${actionInfo.className}`}>
-            {actionInfo.label}
-          </span>
-          <span className="plan-row-name">{r.drugNameVi || r.title}</span>
-          {r.dose && <span className="plan-row-dose">{r.dose}</span>}
-          {r.benefitsAlso && r.benefitsAlso.length > 0 && (
-            <span
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div className="plan-row-title-area">
+            <span className={`badge-action ${actionInfo.className}`}>
+              {actionInfo.label}
+            </span>
+            <span className="plan-row-name">{r.drugNameVi || r.title}</span>
+            {r.dose && <span className="plan-row-dose">{r.dose}</span>}
+            {r.benefitsAlso && r.benefitsAlso.length > 0 && (
+              <span
+                style={{
+                  fontSize: '0.75rem',
+                  color: '#2563eb',
+                  background: '#eff6ff',
+                  padding: '2px 6px',
+                  borderRadius: '4px',
+                  fontWeight: 600
+                }}
+              >
+                + {r.benefitsAlso.map((m) => m.toUpperCase()).join(' · ')}
+              </span>
+            )}
+          </div>
+          {hasDistinctSubtitle && (
+            <div
               style={{
-                fontSize: '0.75rem',
-                color: '#2563eb',
-                background: '#eff6ff',
-                padding: '2px 6px',
-                borderRadius: '4px',
-                fontWeight: 600
+                fontSize: '0.78rem',
+                color: 'var(--text-subtle)',
+                marginTop: '0.2rem',
+                lineHeight: 1.35
               }}
             >
-              + {r.benefitsAlso.map((m) => m.toUpperCase()).join(' · ')}
-            </span>
+              {r.title}
+            </div>
           )}
         </div>
-        <div style={{ color: 'var(--text-subtle)', fontSize: '0.9rem', flexShrink: 0 }}>
+        <div
+          aria-hidden="true"
+          style={{ color: 'var(--text-subtle)', fontSize: '0.9rem', flexShrink: 0 }}
+        >
           {isExpanded ? '▲' : '▼'}
         </div>
       </div>
 
       {isExpanded && (
-        <div className="plan-row-body" data-testid={`plan-row-body-${r.id}`}>
+        <div id={bodyDomId} className="plan-row-body" data-testid={`plan-row-body-${r.id}`}>
           <div style={{ fontSize: '0.9rem', marginBottom: '0.5rem', color: 'var(--text-main)' }}>
             <strong>Chỉ định lâm sàng:</strong> {r.rationale}
           </div>
@@ -129,13 +162,43 @@ export const PlanRow = ({
             </div>
           )}
 
-          {/* Evidence Quotes from verified KB */}
+          {/* Evidence Quotes from verified KB (progressive disclosure for >1 citation) */}
           {cleanCitationIds.length > 0 && (
             <div style={{ marginTop: '0.75rem' }}>
-              <div style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-muted)' }}>
-                Bằng chứng trích dẫn nguyên văn:
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  gap: '0.5rem',
+                  marginBottom: '0.25rem'
+                }}
+              >
+                <div style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-muted)' }}>
+                  Bằng chứng trích dẫn nguyên văn ({cleanCitationIds.length}):
+                </div>
+                {cleanCitationIds.length > 1 && (
+                  <button
+                    type="button"
+                    aria-expanded={showAllQuotes}
+                    onClick={() => setShowAllQuotes(!showAllQuotes)}
+                    style={{
+                      background: 'transparent',
+                      border: 'none',
+                      color: 'var(--primary)',
+                      fontSize: '0.76rem',
+                      fontWeight: 600,
+                      cursor: 'pointer',
+                      padding: '2px 4px'
+                    }}
+                  >
+                    {showAllQuotes
+                      ? 'Thu gọn bớt trích dẫn'
+                      : `+ Xem thêm ${hiddenCitationCount} trích dẫn gốc`}
+                  </button>
+                )}
               </div>
-              {cleanCitationIds.map((cid) => {
+              {visibleCitationIds.map((cid) => {
                 const resolved = resolveCitationDisplay(cid, {
                   drugId: r.drugId,
                   moduleId: r.module,

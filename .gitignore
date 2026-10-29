@@ -14,3 +14,5 @@ tools/kb/.cache/
 .vercel/
 Thumbs.db
 .DS_Store
+
+.vercel

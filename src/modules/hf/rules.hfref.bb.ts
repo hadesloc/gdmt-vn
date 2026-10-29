@@ -5,11 +5,13 @@ import {
   findCurrentMed,
   formatCurrentMedDoseVi,
   formatHfDose,
+  formatHfUptitrateDoseVi,
   getChildPugh,
   getCongestionStatus,
   getCustomInput,
   getDrugDisplayVi,
   getHfPhenotype,
+  getNextHfTitrationDoseVi,
   hasAcuteBronchospasm,
   hasHfContext,
   hasStableAsthmaHistory,
@@ -239,6 +241,7 @@ export const hfrefBbRules: Rule[] = [
               : 'UPTITRATE'
             : 'SWITCH'
           : 'START';
+        const lactTargetStr = formatHfDose(dose(chosenLactBb, 'target'));
         return {
           id: 'rec_hf_bb',
           module: 'hf',
@@ -250,8 +253,10 @@ export const hfrefBbRules: Rule[] = [
           drugNameVi: getDrugDisplayVi(chosenLactBb),
           dose: actLact === 'CONTINUE'
             ? formatCurrentMedDoseVi(activeHfBb, chosenLactBb)
-            : `${formatHfDose(dose(chosenLactBb, 'start'))}; đích ${formatHfDose(dose(chosenLactBb, 'target'))}`,
-          title: `${actLact === 'SWITCH' ? 'Chuyển sang' : actLact === 'START' ? 'Khởi trị' : 'Duy trì'} ${getDrugDisplayVi(chosenLactBb)} trong giai đoạn cho con bú`,
+            : actLact === 'UPTITRATE'
+              ? formatHfUptitrateDoseVi(ctx, activeHfBb, chosenLactBb, lactTargetStr)
+              : `${formatHfDose(dose(chosenLactBb, 'start'))}; đích ${lactTargetStr}`,
+          title: `${actLact === 'SWITCH' ? 'Chuyển sang' : actLact === 'START' ? 'Khởi trị' : actLact === 'UPTITRATE' ? 'Chuẩn độ tăng liều' : 'Duy trì'} ${getDrugDisplayVi(chosenLactBb)} trong giai đoạn cho con bú`,
           rationale: 'Theo ESC 2025, Metoprolol succinate bài tiết qua sữa mẹ rất thấp và được ưu tiên hàng đầu khi cho con bú.',
           gates,
           citationIds: ['esc.preg.2025.lactation_metoprolol_bb', ...cits],
@@ -275,6 +280,7 @@ export const hfrefBbRules: Rule[] = [
             : stableAsthma
               ? 'CONSIDER'
               : 'START';
+        const selTargetStr = formatHfDose(dose(selId, 'target'));
         return {
           id: 'rec_hf_bb',
           module: 'hf',
@@ -286,7 +292,9 @@ export const hfrefBbRules: Rule[] = [
           drugNameVi: 'Bisoprolol (hoặc Metoprolol succinate - chẹn beta chọn lọc beta-1)',
           dose: act === 'CONTINUE'
             ? formatCurrentMedDoseVi(activeHfBb, selId)
-            : `${formatHfDose(dose(selId, 'start'))}; đích ${formatHfDose(dose(selId, 'target'))}`,
+            : act === 'UPTITRATE'
+              ? formatHfUptitrateDoseVi(ctx, activeHfBb, selId, selTargetStr)
+              : `${formatHfDose(dose(selId, 'start'))}; đích ${selTargetStr}`,
           title: stableAsthma
             ? 'Thận trọng cân nhắc chẹn beta chọn lọc beta-1 (Bisoprolol / Metoprolol succinate) khi hen đã kiểm soát ổn định'
             : 'Ưu tiên chẹn beta chọn lọc beta-1 (Bisoprolol / Metoprolol succinate) trong thai kỳ',
@@ -316,6 +324,7 @@ export const hfrefBbRules: Rule[] = [
         bbId === 'carvedilol' && weight !== undefined && weight > highCarvCut
           ? `${highCarvSingle} mg x 2 lần/ngày (cân nặng > ${highCarvCut} kg)`
           : formatHfDose(dose(bbId, 'target'));
+      const nextStepStr = act === 'UPTITRATE' ? getNextHfTitrationDoseVi(ctx, activeHfBb, bbId) : undefined;
 
       return {
         id: 'rec_hf_bb',
@@ -328,12 +337,14 @@ export const hfrefBbRules: Rule[] = [
         dose: act === 'CONTINUE'
           ? formatCurrentMedDoseVi(activeHfBb, bbId)
           : act === 'UPTITRATE'
-            ? `Đang dùng: ${formatCurrentMedDoseVi(activeHfBb) ?? 'chưa rõ liều'}; đích ${targetStr}`
+            ? formatHfUptitrateDoseVi(ctx, activeHfBb, bbId, targetStr)
             : `${formatHfDose(dose(bbId, 'start'))}; đích ${targetStr}`,
         title: act === 'START'
           ? 'Khởi trị trụ cột Chẹn beta suy tim: Bisoprolol'
           : act === 'UPTITRATE'
-            ? `Chuẩn độ tăng liều ${getDrugDisplayVi(bbId)} tới liều đích`
+            ? nextStepStr
+              ? `Chuẩn độ tăng liều ${getDrugDisplayVi(bbId)} lên ${nextStepStr} (đích ${targetStr})`
+              : `Chuẩn độ tăng liều ${getDrugDisplayVi(bbId)} tới liều đích`
             : `Tiếp tục duy trì ${getDrugDisplayVi(activeHfBb?.drugId ?? bbId, activeHfBb)}`,
         rationale: 'Chẹn beta bằng chứng ở HFrEF (Class I-A: Bisoprolol, Carvedilol, Metoprolol succinate) giúp giảm tử vong toàn bộ, đột tử do tim và nhập viện suy tim.',
         gates,

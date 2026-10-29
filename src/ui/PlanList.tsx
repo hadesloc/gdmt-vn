@@ -289,6 +289,33 @@ export const PlanList = ({
                 borderLeft: '3px solid #dc2626'
               }}
             >
+              {alert.provenanceLabelVi && (
+                <span
+                  style={{
+                    display: 'inline-block',
+                    fontSize: '0.72rem',
+                    fontWeight: 700,
+                    padding: '0.08rem 0.4rem',
+                    borderRadius: '4px',
+                    marginRight: '0.4rem',
+                    background:
+                      alert.provenance === 'proposed_proposed'
+                        ? '#fef3c7'
+                        : alert.provenance === 'current_proposed'
+                          ? '#ffedd5'
+                          : '#fee2e2',
+                    color:
+                      alert.provenance === 'proposed_proposed'
+                        ? '#92400e'
+                        : alert.provenance === 'current_proposed'
+                          ? '#9a3412'
+                          : '#991b1b',
+                    border: '1px solid rgba(153, 27, 27, 0.2)'
+                  }}
+                >
+                  {alert.provenanceLabelVi}
+                </span>
+              )}
               <strong>{alert.title}:</strong> {alert.messageVi}
             </div>
           ))}

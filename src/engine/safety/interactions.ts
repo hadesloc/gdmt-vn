@@ -6,7 +6,13 @@
  * phân rã viên phối hợp FDC và bộ phân tích liều hàng ngày fail-closed (`doseParser`).
  */
 
-import type { Patient, Derived, Recommendation, SafetyAlert } from '../types';
+import type {
+  Patient,
+  Derived,
+  Recommendation,
+  SafetyAlert,
+  SafetyAlertProvenance
+} from '../types';
 import { hasCondition } from '../types';
 import {
   getAllInteractions,
@@ -209,6 +215,107 @@ function mapKbSeverity(
   return 'warning';
 }
 
+const MUTUALLY_EXCLUSIVE_PROPOSED_CLASS_GROUPS: ReadonlyArray<ReadonlyArray<string>> = [
+  ['acei', 'arb', 'arni'],
+  ['doac', 'vka'],
+  ['statin'],
+  ['sglt2i'],
+  ['mra', 'mra_steroidal', 'mra_nonsteroidal'],
+  ['nsaid'],
+  ['pde5i']
+];
+
+function areMutuallyExclusiveProposedDrugs(
+  proposedDrugIds: string[],
+  recommendations: Recommendation[]
+): boolean {
+  if (proposedDrugIds.length < 2) return false;
+
+  for (let i = 0; i < proposedDrugIds.length; i++) {
+    const d1 = proposedDrugIds[i];
+    const cls1 = getNormalizedDrugClasses(d1);
+    for (let j = i + 1; j < proposedDrugIds.length; j++) {
+      const d2 = proposedDrugIds[j];
+      const cls2 = getNormalizedDrugClasses(d2);
+      for (const group of MUTUALLY_EXCLUSIVE_PROPOSED_CLASS_GROUPS) {
+        if (group.some((c) => cls1.has(c)) && group.some((c) => cls2.has(c))) {
+          return true;
+        }
+      }
+      const rec1 = recommendations.find(
+        (r) =>
+          r.drugId &&
+          (r.drugId.trim().toLowerCase() === d1 ||
+            resolveKbDrugId(r.drugId) === resolveKbDrugId(d1))
+      );
+      const rec2 = recommendations.find(
+        (r) =>
+          r.drugId &&
+          (r.drugId.trim().toLowerCase() === d2 ||
+            resolveKbDrugId(r.drugId) === resolveKbDrugId(d2))
+      );
+      if (
+        rec1 &&
+        rec2 &&
+        rec1.id !== rec2.id &&
+        rec1.action === 'CONSIDER' &&
+        rec2.action === 'CONSIDER' &&
+        rec1.module === rec2.module &&
+        rec1.tier === rec2.tier
+      ) {
+        return true;
+      }
+    }
+  }
+  return false;
+}
+
+function classifyInteractionProvenance(
+  triggeredDrugs: string[],
+  allBaselineExpandedIds: Set<string>,
+  proposedExpandedIds: Set<string>
+): {
+  provenance: SafetyAlertProvenance;
+  provenanceLabelVi: string;
+  baselineDrugs: string[];
+  proposedDrugs: string[];
+} {
+  const isBaseline = (drugId: string): boolean => {
+    const low = drugId.trim().toLowerCase();
+    if (allBaselineExpandedIds.has(low) || allBaselineExpandedIds.has(resolveKbDrugId(low))) {
+      return true;
+    }
+    const comps = getExpandedDrugIds(low);
+    return comps.length > 0 && comps.every((c) => allBaselineExpandedIds.has(c) && !proposedExpandedIds.has(c));
+  };
+
+  const baselineDrugs = triggeredDrugs.filter((d) => isBaseline(d));
+  const proposedDrugs = triggeredDrugs.filter((d) => !isBaseline(d));
+
+  if (proposedDrugs.length === 0) {
+    return {
+      provenance: 'current_current',
+      provenanceLabelVi: 'Đang dùng + Đang dùng',
+      baselineDrugs,
+      proposedDrugs: []
+    };
+  }
+  if (baselineDrugs.length > 0) {
+    return {
+      provenance: 'current_proposed',
+      provenanceLabelVi: 'Đang dùng + Đề xuất',
+      baselineDrugs,
+      proposedDrugs
+    };
+  }
+  return {
+    provenance: 'proposed_proposed',
+    provenanceLabelVi: 'Nếu phối hợp thuốc đề xuất',
+    baselineDrugs: [],
+    proposedDrugs
+  };
+}
+
 export function checkInteractions(
   patient: Patient,
   derived: Derived,
@@ -218,6 +325,8 @@ export function checkInteractions(
   const emittedIds = new Set<string>();
   const effectiveDrugIds = new Set<string>();
   const baselineDrugIds = new Set<string>();
+  const allBaselineExpandedIds = new Set<string>();
+  const proposedExpandedIds = new Set<string>();
   const washoutDrugIds = new Set<string>();
   const activeDoseMap = new Map<string, number>();
   const currentMeds = Array.isArray(patient.currentMeds) ? patient.currentMeds : [];
@@ -230,9 +339,13 @@ export function checkInteractions(
       stoppedOrHeldIds.add(resolveKbDrugId(dLower));
       if (
         r.action === 'HOLD' &&
-        r.gates?.some((g) => g.parameter === 'acei_arni_washout_36h' && !g.passed)
+        (r.gates?.some((g) => g.parameter === 'acei_arni_washout_36h' && !g.passed) ||
+          (resolveKbDrugId(dLower) === 'sacubitril_valsartan' &&
+            (Boolean(r.switchFrom) || r.citationIds?.includes('esc.hf.2026.washout_acei_arni_36h'))))
       ) {
         washoutDrugIds.add(resolveKbDrugId(dLower));
+        proposedExpandedIds.add(dLower);
+        proposedExpandedIds.add(resolveKbDrugId(dLower));
       }
     }
   }
@@ -245,6 +358,11 @@ export function checkInteractions(
     const isOphthalmicBb = isOphthalmicBetaBlocker(`${m.drugId} ${m.name || ''}`, m.route);
     const id = isOphthalmicBb && rawId === 'timolol' ? 'timolol_ophthalmic' : rawId;
     baselineDrugIds.add(id);
+    allBaselineExpandedIds.add(id);
+    allBaselineExpandedIds.add(resolveKbDrugId(id));
+    for (const expId of getExpandedDrugIds(id)) {
+      allBaselineExpandedIds.add(expId.toLowerCase());
+    }
     if (!isOphthalmicBb && getNormalizedDrugClasses(id).has('acei')) {
       washoutDrugIds.add(id);
     }
@@ -296,6 +414,15 @@ export function checkInteractions(
       const id = r.drugId.trim().toLowerCase();
       if (!id || stoppedOrHeldIds.has(id) || stoppedOrHeldIds.has(resolveKbDrugId(id))) continue;
       effectiveDrugIds.add(id);
+      if (!allBaselineExpandedIds.has(id) && !allBaselineExpandedIds.has(resolveKbDrugId(id))) {
+        proposedExpandedIds.add(id);
+        proposedExpandedIds.add(resolveKbDrugId(id));
+        for (const expId of getExpandedDrugIds(id)) {
+          if (!allBaselineExpandedIds.has(expId.toLowerCase())) {
+            proposedExpandedIds.add(expId.toLowerCase());
+          }
+        }
+      }
       if (r.dose) {
         const dNum = parseDailyDoseMg({ drugId: id, dose: r.dose });
         if (dNum !== undefined) {
@@ -432,8 +559,9 @@ export function checkInteractions(
       }
     }
 
-    if (!isMatched && kbRule.id === 'ix.acei_arni_washout' && washoutDrugIds.size >= 2) {
-      const washRes = evaluateKbRuleOnSet(kbRule, washoutDrugIds, patient);
+    if (!isMatched && kbRule.id === 'ix.acei_arni_washout' && washoutDrugIds.size >= 1) {
+      const washEvalSet = new Set<string>([...washoutDrugIds, ...effectiveDrugIds]);
+      const washRes = evaluateKbRuleOnSet(kbRule, washEvalSet, patient);
       if (washRes.isMatched) {
         isMatched = true;
         triggeredDrugs = washRes.triggeredDrugs;
@@ -441,6 +569,22 @@ export function checkInteractions(
     }
 
     if (!isMatched) continue;
+
+    const isDrugDiseaseRule =
+      kbRule.id === 'ix.ccb_non_dhp_hfref' || kbRule.id === 'ix.bb_non_selective_asthma';
+
+    const prov = classifyInteractionProvenance(
+      triggeredDrugs,
+      allBaselineExpandedIds,
+      proposedExpandedIds
+    );
+    if (
+      !isDrugDiseaseRule &&
+      prov.provenance === 'proposed_proposed' &&
+      areMutuallyExclusiveProposedDrugs(prov.proposedDrugs, recommendations)
+    ) {
+      continue;
+    }
 
     let doseExceeded = false;
     let doseLimitNote = '';
@@ -455,17 +599,30 @@ export function checkInteractions(
       }
     }
 
-    const isDrugDiseaseRule =
-      kbRule.id === 'ix.ccb_non_dhp_hfref' || kbRule.id === 'ix.bb_non_selective_asthma';
+    const baseMessageVi = `${kbRule.mechanismVi} ${kbRule.effectVi} Xử trí: ${kbRule.managementVi}${doseLimitNote} (Phát hiện: ${triggeredDrugs.join(', ')})`;
+    const titleVi =
+      !isDrugDiseaseRule && prov.provenance === 'proposed_proposed'
+        ? `[Nếu phối hợp thuốc đề xuất] ${kbRule.titleVi}`
+        : kbRule.titleVi;
+    const messageVi =
+      !isDrugDiseaseRule && prov.provenance === 'proposed_proposed'
+        ? `[Lưu ý tương tác tiềm tàng nếu phối hợp các thuốc đề xuất (${prov.proposedDrugs.join(' + ')})] ${baseMessageVi}`
+        : !isDrugDiseaseRule && prov.provenance === 'current_proposed'
+          ? `[Thuốc đang dùng (${prov.baselineDrugs.join(', ')}) + Thuốc đề xuất (${prov.proposedDrugs.join(', ')})] ${baseMessageVi}`
+          : baseMessageVi;
 
     alerts.push({
       id: kbRule.id,
       type: isDrugDiseaseRule ? 'contraindication' : 'interaction',
-      title: kbRule.titleVi,
-      messageVi: `${kbRule.mechanismVi} ${kbRule.effectVi} Xử trí: ${kbRule.managementVi}${doseLimitNote} (Phát hiện: ${triggeredDrugs.join(', ')})`,
+      title: titleVi,
+      messageVi,
       severity: mapKbSeverity(kbRule.severity, doseExceeded),
       drugIds: triggeredDrugs,
-      citationIds: kbRule.citationIds
+      citationIds: kbRule.citationIds,
+      provenance: prov.provenance,
+      provenanceLabelVi: prov.provenanceLabelVi,
+      baselineDrugs: prov.baselineDrugs,
+      proposedDrugs: prov.proposedDrugs
     });
     emittedIds.add(kbRule.id);
   }
@@ -499,18 +656,49 @@ export function checkInteractions(
       if (matchedB.length > 0) {
         if (!rule.condition || rule.condition(effectivePatient, derived)) {
           const combined = Array.from(new Set([...matchedA, ...matchedB]));
+          const prov = classifyInteractionProvenance(
+            combined,
+            allBaselineExpandedIds,
+            proposedExpandedIds
+          );
+          if (
+            prov.provenance === 'proposed_proposed' &&
+            areMutuallyExclusiveProposedDrugs(prov.proposedDrugs, recommendations)
+          ) {
+            continue;
+          }
+          const baseMessageVi = `${rule.messageVi} (Phát hiện: ${matchedA.join(', ')} + ${matchedB.join(', ')})`;
+          const titleVi =
+            prov.provenance === 'proposed_proposed'
+              ? `[Nếu phối hợp thuốc đề xuất] ${rule.titleVi}`
+              : rule.titleVi;
+          const messageVi =
+            prov.provenance === 'proposed_proposed'
+              ? `[Lưu ý tương tác tiềm tàng nếu phối hợp các thuốc đề xuất (${prov.proposedDrugs.join(' + ')})] ${baseMessageVi}`
+              : prov.provenance === 'current_proposed'
+                ? `[Thuốc đang dùng (${prov.baselineDrugs.join(', ')}) + Thuốc đề xuất (${prov.proposedDrugs.join(', ')})] ${baseMessageVi}`
+                : baseMessageVi;
           alerts.push({
             id: rule.id,
             type: 'interaction',
-            title: rule.titleVi,
-            messageVi: `${rule.messageVi} (Phát hiện: ${matchedA.join(', ')} + ${matchedB.join(', ')})`,
+            title: titleVi,
+            messageVi,
             severity: rule.severity,
             drugIds: combined,
-            citationIds: rule.citationIds
+            citationIds: rule.citationIds,
+            provenance: prov.provenance,
+            provenanceLabelVi: prov.provenanceLabelVi,
+            baselineDrugs: prov.baselineDrugs,
+            proposedDrugs: prov.proposedDrugs
           });
         }
       }
     } else if (rule.condition && rule.condition(effectivePatient, derived)) {
+      const prov = classifyInteractionProvenance(
+        matchedA,
+        allBaselineExpandedIds,
+        proposedExpandedIds
+      );
       alerts.push({
         id: rule.id,
         type: 'contraindication',
@@ -518,7 +706,11 @@ export function checkInteractions(
         messageVi: `${rule.messageVi} (Phát hiện: ${matchedA.join(', ')})`,
         severity: rule.severity,
         drugIds: matchedA,
-        citationIds: rule.citationIds
+        citationIds: rule.citationIds,
+        provenance: prov.provenance,
+        provenanceLabelVi: prov.provenanceLabelVi,
+        baselineDrugs: prov.baselineDrugs,
+        proposedDrugs: prov.proposedDrugs
       });
     }
   }

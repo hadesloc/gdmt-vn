@@ -303,7 +303,8 @@ export function generateClinicalNote(
     lines.push('');
     lines.push('3. CẢNH BÁO AN TOÀN & TƯƠNG TÁC THUỐC:');
     for (const alert of plan.alerts) {
-      lines.push(` [!] ${(alert.title || 'CẢNH BÁO').toUpperCase()}: ${alert.messageVi}`);
+      const provBadge = alert.provenanceLabelVi ? `[${alert.provenanceLabelVi}] ` : '';
+      lines.push(` [!] ${provBadge}${(alert.title || 'CẢNH BÁO').toUpperCase()}: ${alert.messageVi}`);
     }
   }
 

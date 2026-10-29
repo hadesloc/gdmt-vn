@@ -179,6 +179,10 @@ export function formatHfDose(d: Dose | string | undefined): string {
 
 export function formatCurrentMedDoseVi(med: CurrentMed | undefined, fallbackTargetId?: string): string | undefined {
   if (!med) return fallbackTargetId ? formatHfDose(dose(fallbackTargetId, 'target')) : undefined;
+  const parsedDailyMg = parseHfDailyDoseMg(med, fallbackTargetId);
+  if (parsedDailyMg === undefined) {
+    return fallbackTargetId ? formatHfDose(dose(fallbackTargetId, 'start')) : undefined;
+  }
   const rawDose = med.dose;
   const rawFreq = med.freq || (med as CurrentMed & { frequency?: string }).frequency;
   if (typeof rawDose === 'string' && rawDose.trim() !== '') {
@@ -197,6 +201,80 @@ export function formatCurrentMedDoseVi(med: CurrentMed | undefined, fallbackTarg
     return rawFreq ? `${rawDose} ${u} (${rawFreq})` : `${rawDose} ${u}`;
   }
   return fallbackTargetId ? formatHfDose(dose(fallbackTargetId, 'start')) : undefined;
+}
+
+export function getKbTitrationStepsPerAdminMg(ctx: RuleContext, drugId: string): number[] {
+  const raw = drugId.trim().toLowerCase();
+  const id = hasDrug(raw) ? raw : resolveKbDrugId(drugId);
+  if (!hasDrug(id)) return [];
+  const stepRaw = drug(id).titration?.step;
+  const stepText = typeof stepRaw === 'string' ? stepRaw : formatHfDose(stepRaw);
+  const chainMatch = stepText.match(/(?:\d+(?:\.\d+)?\s*(?:mg\s*)?->\s*)+\d+(?:\.\d+)?\s*mg\b/i);
+  const chainPart = chainMatch ? chainMatch[0] : stepText.split('(')[0] ?? '';
+  const matches = chainPart.match(/\d+(?:\.\d+)?/g) ?? [];
+  const nums = matches
+    .map((m: string) => Number(m))
+    .filter((n: number) => Number.isFinite(n) && n > 0);
+  if (id === 'carvedilol') {
+    const weight = need(ctx, 'weight');
+    const highCut = thFor('weight', 'hf.bb.carvedilol_weight_high_dose');
+    const highDose = thFor('dose_mg', 'hf.bb.carvedilol_high_target_dose_mg');
+    if (weight !== undefined && weight > highCut && !nums.includes(highDose)) {
+      nums.push(highDose);
+    }
+  }
+  return nums;
+}
+
+export function getNextHfTitrationDoseVi(
+  ctx: RuleContext,
+  med: CurrentMed | undefined,
+  drugId: string
+): string | undefined {
+  if (!med) return undefined;
+  const raw = drugId.trim().toLowerCase();
+  const id = hasDrug(raw) ? raw : resolveKbDrugId(drugId);
+  const curDailyMg = parseHfDailyDoseMg(med, id);
+  if (curDailyMg === undefined) return undefined;
+
+  const stepsPerAdmin = getKbTitrationStepsPerAdminMg(ctx, id);
+  if (stepsPerAdmin.length === 0) return undefined;
+
+  const targetDoseObj = hasDrug(id) ? dose(id, 'target') : undefined;
+  const freqRaw =
+    typeof targetDoseObj === 'object' && targetDoseObj !== null && targetDoseObj.frequency
+      ? targetDoseObj.frequency.replace(/^x\s+/i, '').trim()
+      : '1 lần/ngày';
+  const mult = /\b2\s*lần/i.test(freqRaw) ? 2 : 1;
+
+  for (const stepMg of stepsPerAdmin) {
+    const stepDailyMg = stepMg * mult;
+    if (stepDailyMg > curDailyMg + 1e-6) {
+      return `${stepMg} ${
+        typeof targetDoseObj === 'object' && targetDoseObj !== null && targetDoseObj.unit
+          ? targetDoseObj.unit
+          : 'mg'
+      } x ${freqRaw}`;
+    }
+  }
+  return undefined;
+}
+
+export function formatHfUptitrateDoseVi(
+  ctx: RuleContext,
+  med: CurrentMed | undefined,
+  drugId: string,
+  targetStr: string
+): string {
+  const curStr = formatCurrentMedDoseVi(med);
+  if (!curStr) {
+    return `Đang dùng: chưa rõ liều; xác nhận liều hiện tại và tăng theo bậc dung nạp tới đích ${targetStr}`;
+  }
+  const nextStepStr = getNextHfTitrationDoseVi(ctx, med, drugId);
+  if (nextStepStr) {
+    return `Đang dùng: ${curStr} → Bước kế tiếp: ${nextStepStr}; đích ${targetStr}`;
+  }
+  return `Đang dùng: ${curStr}; đích ${targetStr}`;
 }
 
 function parseFreqMultiplier(med: CurrentMed): number {
@@ -232,12 +310,13 @@ export function parseHfDailyDoseMg(med: CurrentMed | undefined, componentId?: st
 }
 
 export function getTargetDailyDoseMg(ctx: RuleContext, drugId: string): number | undefined {
-  const id = resolveKbDrugId(drugId);
+  const raw = drugId.trim().toLowerCase();
+  const id = hasDrug(raw) ? raw : resolveKbDrugId(drugId);
   if (id === 'sacubitril_valsartan') return 400; // 97/103 mg (=200 mg) x 2 lần/ngày
   if (id === 'bisoprolol' || id === 'nebivolol' || id === 'dapagliflozin' || id === 'empagliflozin' || id === 'vericiguat') {
     return 10;
   }
-  if (id === 'metoprolol_succinate') return 200;
+  if (id === 'metoprolol_succinate' || id === 'metoprolol') return 200;
   if (id === 'carvedilol') {
     const weight = need(ctx, 'weight');
     if (weight !== undefined && weight > thFor('weight', 'hf.bb.carvedilol_weight_high_dose')) {
@@ -449,11 +528,194 @@ export function isOutpatientDecompensatedCrisis(ctx: RuleContext): boolean {
   return nyha === 4 && getCongestionStatus(ctx) === 'overt';
 }
 
+export type FmtOptimizationState =
+  | 'none'
+  | 'incomplete_pillars'
+  | 'suboptimal_dose'
+  | 'optimized_or_max_tolerated';
+
+export type FmtPillarKey = 'rasi_arni' | 'bb' | 'mra' | 'sglt2i';
+
+export interface FmtOptimizationEvaluation {
+  status: FmtOptimizationState;
+  activePillarCount: number;
+  missingPillars: FmtPillarKey[];
+  suboptimalPillars: FmtPillarKey[];
+  isEligibleForSecondLineAdjuncts: boolean;
+}
+
+export function evaluateFmtOptimizationStatus(ctx: RuleContext): FmtOptimizationEvaluation {
+  const activeRasi = findCurrentMed(ctx, ['sacubitril_valsartan', ...ACEI_IDS, ...ARB_IDS]);
+  const activeHisdnAlt =
+    !activeRasi &&
+    Boolean(findCurrentMed(ctx, ['hydralazine'])) &&
+    Boolean(findCurrentMed(ctx, ['isosorbide_dinitrate', 'isosorbide_mononitrate']));
+  const activeBb = findCurrentMed(ctx, HF_BB_IDS);
+  const activeMra = findCurrentMed(ctx, ALL_MRA_IDS);
+  const activeSglt2 = findCurrentMed(ctx, SGLT2I_IDS);
+
+  const activePillarCount = [activeRasi || activeHisdnAlt, activeBb, activeMra, activeSglt2].filter(Boolean).length;
+
+  if (Boolean(getCustomInput(ctx, 'onOptimalFmt') || getCustomInput(ctx, 'fmtIntolerant'))) {
+    return {
+      status: 'optimized_or_max_tolerated',
+      activePillarCount,
+      missingPillars: [],
+      suboptimalPillars: [],
+      isEligibleForSecondLineAdjuncts: true,
+    };
+  }
+
+  if (activePillarCount === 0) {
+    return {
+      status: 'none',
+      activePillarCount: 0,
+      missingPillars: ['rasi_arni', 'bb', 'mra', 'sglt2i'],
+      suboptimalPillars: [],
+      isEligibleForSecondLineAdjuncts: false,
+    };
+  }
+
+  const egfr = need(ctx, 'egfr');
+  const k = need(ctx, 'k');
+  const sbp = need(ctx, 'sbp');
+  const hr = need(ctx, 'hr');
+  const pregnant = isPregnant(ctx);
+  const lactating = isLactating(ctx);
+  const dialysis = isOnDialysis(ctx);
+
+  const rasiContraOrIntol =
+    pregnant ||
+    dialysis ||
+    hasPriorAngioedema(ctx) ||
+    hasRasiAllergy(ctx) ||
+    hasExtraCondition(ctx, 'bilateralRenalArteryStenosis') ||
+    hasExtraCondition(ctx, 'bilateralRas') ||
+    Boolean(getCustomInput(ctx, 'rasiIntolerant') || getCustomInput(ctx, 'arniIntolerant')) ||
+    (egfr !== undefined && egfr < thFor('egfr', 'hf.arni.egfr_caution')) ||
+    (k !== undefined && k > thFor('k', 'hf.arni.k_max_caution')) ||
+    (sbp !== undefined && sbp < thFor('sbp', 'hf.arni.sbp_min_start'));
+
+  const bbContraOrIntol =
+    hasUnpacedConductionBlock(ctx) ||
+    hasAcuteBronchospasm(ctx) ||
+    hasStableAsthmaHistory(ctx) ||
+    hasDrugAllergy(ctx, ['bisoprolol', 'carvedilol', 'metoprolol', 'nebivolol', 'beta']) ||
+    Boolean(getCustomInput(ctx, 'bbIntolerant') || getCustomInput(ctx, 'bbContra')) ||
+    (hr !== undefined && hr < thFor('hr', 'hf.bb.hr_min_start')) ||
+    (sbp !== undefined && sbp < thFor('sbp', 'hf.bb.sbp_min_start'));
+
+  const mraContraOrIntol =
+    pregnant ||
+    dialysis ||
+    hasDrugAllergy(ctx, ['spironolactone', 'eplerenone', 'finerenone', 'mra']) ||
+    Boolean(getCustomInput(ctx, 'mraIntolerant') || getCustomInput(ctx, 'spironolactoneGynecomastia')) ||
+    (egfr !== undefined && egfr <= thFor('egfr', 'hf.mra.egfr_min_initiate')) ||
+    (k !== undefined && k > thFor('k', 'hf.mra.k_max_initiate'));
+
+  const sglt2ContraOrIntol =
+    pregnant ||
+    lactating ||
+    dialysis ||
+    hasType1Diabetes(ctx) ||
+    hasExtraCondition(ctx, 'priorDka') ||
+    hasDrugAllergy(ctx, ['dapagliflozin', 'empagliflozin', 'sglt2']) ||
+    Boolean(getCustomInput(ctx, 'sglt2iIntolerant')) ||
+    (egfr !== undefined && egfr < thFor('egfr', 'hf.sglt2i.egfr_initiate_min'));
+
+  const missingPillars: FmtPillarKey[] = [];
+  if (!activeRasi && !activeHisdnAlt && !rasiContraOrIntol) missingPillars.push('rasi_arni');
+  if (!activeBb && !bbContraOrIntol) missingPillars.push('bb');
+  if (!activeMra && !mraContraOrIntol) missingPillars.push('mra');
+  if (!activeSglt2 && !sglt2ContraOrIntol) missingPillars.push('sglt2i');
+
+  if (missingPillars.length > 0) {
+    return {
+      status: 'incomplete_pillars',
+      activePillarCount,
+      missingPillars,
+      suboptimalPillars: [],
+      isEligibleForSecondLineAdjuncts: false,
+    };
+  }
+
+  const hemodynamicCeiling = sbp !== undefined && sbp <= thFor('sbp', 'hf.arni.sbp_min_start');
+  const renalKCeiling =
+    (k !== undefined && k >= thFor('k', 'hf.mra.k_max_initiate')) ||
+    (egfr !== undefined && egfr < thFor('egfr', 'hf.mra.egfr_caution'));
+
+  const suboptimalPillars: FmtPillarKey[] = [];
+
+  if (activeRasi) {
+    const rasiId =
+      resolveMatchedComponentId(activeRasi, ['sacubitril_valsartan', ...ACEI_IDS, ...ARB_IDS]) ??
+      resolveKbDrugId(activeRasi.drugId);
+    const rasiMaxTol = Boolean(
+      getCustomInput(ctx, 'rasiMaxTolerated') || getCustomInput(ctx, 'arniMaxTolerated')
+    );
+    const rasiOptimized =
+      rasiId === 'sacubitril_valsartan'
+        ? isAtOrAboveTargetDose(ctx, activeRasi, 'sacubitril_valsartan') ||
+          rasiMaxTol ||
+          hemodynamicCeiling ||
+          renalKCeiling ||
+          getChildPugh(ctx) === 'B'
+        : !isLowDosePriorRasi(activeRasi, rasiId) ||
+          rasiMaxTol ||
+          hemodynamicCeiling ||
+          renalKCeiling;
+    if (!rasiOptimized) suboptimalPillars.push('rasi_arni');
+  }
+
+  if (activeBb) {
+    const bbId = resolveMatchedComponentId(activeBb, HF_BB_IDS) ?? resolveKbDrugId(activeBb.drugId);
+    const bbMaxTol = Boolean(getCustomInput(ctx, 'bbMaxTolerated'));
+    const hrCeiling = hr !== undefined && hr <= thFor('hr', 'hf.bb.hr_min_start');
+    const bbOptimized =
+      isAtOrAboveTargetDose(ctx, activeBb, bbId) || bbMaxTol || hemodynamicCeiling || hrCeiling;
+    if (!bbOptimized) suboptimalPillars.push('bb');
+  }
+
+  if (activeMra) {
+    const mraId = resolveMatchedComponentId(activeMra, ALL_MRA_IDS) ?? resolveKbDrugId(activeMra.drugId);
+    const mraDailyMg = parseHfDailyDoseMg(activeMra, mraId);
+    const mraMaxTol = Boolean(getCustomInput(ctx, 'mraMaxTolerated'));
+    const minMaintenanceMg = thFor('dose_mg', 'hf.mra.spironolactone_g3_alt_day_dose_mg');
+    const mraOptimized =
+      mraMaxTol ||
+      renalKCeiling ||
+      (mraDailyMg !== undefined && mraDailyMg >= minMaintenanceMg);
+    if (!mraOptimized) suboptimalPillars.push('mra');
+  }
+
+  if (activeSglt2) {
+    const sglt2Id = resolveMatchedComponentId(activeSglt2, SGLT2I_IDS) ?? resolveKbDrugId(activeSglt2.drugId);
+    const sglt2DailyMg = parseHfDailyDoseMg(activeSglt2, sglt2Id);
+    const sglt2Optimized =
+      activeSglt2.dose === undefined ||
+      (sglt2DailyMg !== undefined && isAtOrAboveTargetDose(ctx, activeSglt2, sglt2Id));
+    if (!sglt2Optimized) suboptimalPillars.push('sglt2i');
+  }
+
+  if (suboptimalPillars.length > 0) {
+    return {
+      status: 'suboptimal_dose',
+      activePillarCount,
+      missingPillars: [],
+      suboptimalPillars,
+      isEligibleForSecondLineAdjuncts: false,
+    };
+  }
+
+  return {
+    status: 'optimized_or_max_tolerated',
+    activePillarCount,
+    missingPillars: [],
+    suboptimalPillars: [],
+    isEligibleForSecondLineAdjuncts: true,
+  };
+}
+
 export function hasBackgroundFmt(ctx: RuleContext): boolean {
-  if (Boolean(getCustomInput(ctx, 'onOptimalFmt') || getCustomInput(ctx, 'fmtIntolerant'))) return true;
-  const anyRasi = Boolean(findCurrentMed(ctx, ['sacubitril_valsartan', ...ACEI_IDS, ...ARB_IDS]));
-  const anyBb = Boolean(findCurrentMed(ctx, HF_BB_IDS));
-  const anyMra = Boolean(findCurrentMed(ctx, ALL_MRA_IDS));
-  const anySglt2 = Boolean(findCurrentMed(ctx, SGLT2I_IDS));
-  return anyRasi || anyBb || anyMra || anySglt2;
+  return evaluateFmtOptimizationStatus(ctx).isEligibleForSecondLineAdjuncts;
 }

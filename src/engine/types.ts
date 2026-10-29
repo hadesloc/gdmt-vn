@@ -220,6 +220,8 @@ export interface Rule {
   citationIds: string[];
 }
 
+export type SafetyAlertProvenance = 'current_current' | 'current_proposed' | 'proposed_proposed';
+
 export interface SafetyAlert {
   id: string;
   type: 'interaction' | 'duplicate' | 'contraindication' | 'warning';
@@ -228,6 +230,10 @@ export interface SafetyAlert {
   severity: 'critical' | 'warning' | 'info';
   drugIds: string[];
   citationIds?: string[];
+  provenance?: SafetyAlertProvenance;
+  provenanceLabelVi?: string;
+  baselineDrugs?: string[];
+  proposedDrugs?: string[];
 }
 
 export interface PlanSummary {

@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.rehab_post_discharge_weeks",
+  "contentHash": "6830d1b809fc7c3fa60465734e46559d4aac2a6400ab62d56a24071cecc86c5e",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.rehab_post_discharge_weeks",
+      "contentHash": "47c841adc565b12b",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

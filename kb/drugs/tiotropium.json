@@ -1,0 +1,111 @@
+{
+  "id": "tiotropium",
+  "nameVi": "Tiotropium",
+  "inn": "Tiotropium bromide",
+  "class": "LAMA",
+  "vnBrands": [
+    "Spiriva Respimat",
+    "Spiriva HandiHaler"
+  ],
+  "forms": [
+    "Dung dịch phun hạt mịn Respimat 2.5 mcg/nhát",
+    "Viên nang chứa bột hít HandiHaler 18 mcg"
+  ],
+  "start": {
+    "amount": 5,
+    "unit": "mcg",
+    "frequency": "1 lần/ngày",
+    "route": "hít",
+    "description": "Respimat 2.5 mcg/nhát: hít 2 nhát x 1 lần/ngày vào buổi sáng (hoặc HandiHaler 18 mcg DPI: 1 viên x 1 lần/ngày nếu không dị ứng đạm sữa bò và lực hít đủ mạnh)"
+  },
+  "target": {
+    "amount": 5,
+    "unit": "mcg",
+    "frequency": "1 lần/ngày",
+    "route": "hít",
+    "description": "Respimat 2.5 mcg/nhát: 2 nhát x 1 lần/ngày"
+  },
+  "titration": {
+    "step": "Duy trì liều cố định hàng ngày, đánh giá kỹ thuật hít",
+    "intervalDays": 30,
+    "maxDose": "5 mcg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều khi eGFR ≥ 30 mL/phút/1.73m²",
+      "citationIds": [
+        "ema.ultibro.renal_dosing_egfr30"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "note": "Phơi nhiễm toàn thân của thành phần kháng muscarinic thải trừ qua thận tăng gấp ~2 lần ở suy thận nặng (eGFR < 30 mL/phút/1.73m²) hoặc lọc máu; chỉ dùng khi lợi ích vượt trội nguy cơ và theo dõi sát bí tiểu, glôcôm góc đóng, khô miệng",
+      "citationIds": [
+        "ema.ultibro.renal_impairment_auc22",
+        "gina.copd.2026.lama_urinary_retention"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Không phối hợp đồng thời với một thuốc LAMA hoặc SAMA thường quy khác (nguy cơ quá liều kháng cholinergic: khô miệng, bí tiểu, tăng nhãn áp)",
+    "Ở bệnh nhân tăng sản lành tính tuyến tiền liệt (BPH) đã kiểm soát ổn định: không chống chỉ định tuyệt đối nhưng cần hướng dẫn ngậm ống ngậm (tránh xịt vào mắt) và theo dõi triệu chứng tiểu khó",
+    "Chế phẩm bột khô HandiHaler 18 mcg chứa tá dược lactose (chống chỉ định khi dị ứng nặng protein sữa bò; chuyển sang Spiriva Respimat không chứa lactose)"
+  ],
+  "citationIds": [
+    "byt.copd.2026.tiotropium_dose",
+    "gold.copd.2026.lama_pharmacology_list",
+    "gold.copd.2026.lama_glaucoma_caution",
+    "gina.copd.2026.lama_urinary_retention",
+    "ema.ultibro.renal_dosing_egfr30",
+    "ema.ultibro.renal_impairment_auc22",
+    "ema.ultibro.pregnancy_lactation",
+    "gold.copd.2026.anticholinergic_atropine_safety"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Dữ liệu trên phụ nữ mang thai còn hạn chế. Thuốc hấp thu toàn thân tối thiểu sau khi hít; chỉ sử dụng khi lợi ích cho mẹ vượt trội nguy cơ tiềm ẩn cho thai nhi.",
+    "citationIds": [
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Thuốc kháng muscarinic đường hít hấp thu toàn thân rất thấp; có thể sử dụng khi cho con bú nếu có chỉ định lâm sàng.",
+    "citationIds": [
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity_atropine",
+      "messageVi": "Chống chỉ định khi có tiền sử quá mẫn với atropine hoặc các dẫn xuất của atropine",
+      "citationIds": [
+        "gold.copd.2026.anticholinergic_atropine_safety"
+      ]
+    },
+    {
+      "code": "narrow_angle_glaucoma",
+      "messageVi": "Chống chỉ định hoặc tránh để thuốc tiếp xúc mắt ở người bệnh glôcôm góc đóng (tăng nhãn áp góc hẹp) cấp tính chưa điều trị",
+      "citationIds": [
+        "gold.copd.2026.lama_glaucoma_caution"
+      ]
+    },
+    {
+      "code": "urinary_retention",
+      "messageVi": "Chống chỉ định khi đang bí tiểu cấp chưa xử trí; thận trọng theo dõi triệu chứng đường tiểu ở người bệnh tăng sản tuyến tiền liệt",
+      "citationIds": [
+        "gina.copd.2026.lama_urinary_retention"
+      ]
+    }
+  ],
+  "classes": [
+    "lama"
+  ]
+}

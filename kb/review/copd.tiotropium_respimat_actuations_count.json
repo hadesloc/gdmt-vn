@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.tiotropium_respimat_actuations_count",
+  "contentHash": "4c815431956985e7f1662dabe3d1980bb9df7afbc2908da9973024cc9108b576",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.tiotropium_respimat_actuations_count",
+      "contentHash": "bb2d14d326f6c95b",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

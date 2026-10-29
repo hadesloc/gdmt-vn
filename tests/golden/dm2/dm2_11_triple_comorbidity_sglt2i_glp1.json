@@ -1,0 +1,59 @@
+{
+  "id": "dm2_11_triple_comorbidity_sglt2i_glp1",
+  "titleVi": "Bệnh nhân ĐTĐ2 có cả ASCVD và Suy tim và CKD - Khởi trị cả SGLT2i và GLP-1 RA",
+  "source": "ADA 2026 SOC Ch. 9 / KDIGO 2022",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "male",
+    "weight": 78,
+    "height": 170,
+    "sbp": 136,
+    "dbp": 82,
+    "hr": 74,
+    "lvef": 40,
+    "scr": 120,
+    "k": 4.5,
+    "uacr": 20,
+    "glucose": 9.4,
+    "hba1c": 8.4,
+    "conditions": {
+      "dm": true,
+      "ascvd": true,
+      "hf": true,
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dapagliflozin",
+        "action": "START"
+      },
+      {
+        "drugId": "semaglutide",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân có nhiều bệnh đồng mắc: phối hợp cả 2 trụ cột bảo vệ tim thận."
+}

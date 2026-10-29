@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.exac_methylpred_iv_vials_max",
+  "contentHash": "a01cc48a1d2a67a6cda110f356d2c3387ed38b86718ab5d7f08db0d6c47d5333",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.exac_methylpred_iv_vials_max",
+      "contentHash": "33f09e425995fb43",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

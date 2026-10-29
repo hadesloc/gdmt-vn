@@ -1,0 +1,216 @@
+{
+  "id": "edoxaban",
+  "nameVi": "Edoxaban",
+  "inn": "Edoxaban",
+  "class": "Thuốc chống đông đường uống ức chế trực tiếp yếu tố Xa (DOAC)",
+  "classes": [
+    "doac",
+    "oac",
+    "factor_xa_inhibitor"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Lixiana"
+  ],
+  "forms": [
+    "Viên nén bao phim 15 mg",
+    "Viên nén bao phim 30 mg",
+    "Viên nén bao phim 60 mg"
+  ],
+  "start": {
+    "amount": 60,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "60 mg uống 1 lần/ngày (giảm xuống 30 mg 1 lần/ngày nếu CrCl 15–50 mL/phút, cân nặng ≤ 60 kg hoặc dùng kèm chất ức chế P-gp mạnh)"
+  },
+  "target": {
+    "amount": 60,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "60 mg uống 1 lần/ngày (hoặc 30 mg 1 lần/ngày nếu thỏa tiêu chí giảm liều)"
+  },
+  "titration": {
+    "step": "Không chuẩn độ; điều chỉnh liều theo CrCl, cân nặng và chất ức chế P-gp đi kèm",
+    "intervalDays": 0,
+    "maxDose": "60 mg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 95.0001,
+      "crclFrom": 95.0001,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "60 mg 1 lần/ngày (Thận trọng: Nhãn FDA Hoa Kỳ cảnh báo hộp đen KHÔNG dùng khi CrCl > 95 mL/phút do giảm hiệu lực ngừa đột quỵ thiếu máu cục bộ so với warfarin)",
+      "note": "FDA Black Box Warning: Không dùng edoxaban trong rung nhĩ không do bệnh van tim tại Hoa Kỳ khi CrCl > 95 mL/phút; tại Châu Âu/Việt Nam vẫn cho phép 60 mg 1 lần/ngày nhưng nên cân nhắc apixaban hoặc rivaroxaban",
+      "citationIds": [
+        "esc.af.2024.table11_doac_dosing",
+        "fda.edoxaban.af_dose"
+      ]
+    },
+    {
+      "eGFRFrom": 50.0001,
+      "eGFRTo": 95.0001,
+      "crclFrom": 50.0001,
+      "crclTo": 95.0001,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "60 mg 1 lần/ngày (hoặc 30 mg 1 lần/ngày nếu cân nặng ≤ 60 kg hoặc dùng kèm ức chế P-gp mạnh theo EMA/ESC)",
+      "citationIds": [
+        "esc.af.2024.table11_doac_dosing",
+        "fda.edoxaban.af_dose"
+      ]
+    },
+    {
+      "eGFRFrom": 15,
+      "eGFRTo": 50.0001,
+      "crclFrom": 15,
+      "crclTo": 50.0001,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "30 mg 1 lần/ngày (CrCl 15–50 mL/phút)",
+      "citationIds": [
+        "esc.af.2024.table11_doac_dosing",
+        "fda.edoxaban.af_dose"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "crclTo": 15,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Chống chỉ định khi CrCl < 15 mL/phút",
+      "citationIds": [
+        "esc.af.2024.table11_doac_dosing"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_edoxaban_crcl_min",
+      "parameter": "CrCl",
+      "operator": "<",
+      "threshold": 15,
+      "unit": "mL/min",
+      "action": "contra",
+      "messageVi": "Chống chỉ định edoxaban khi CrCl < 15 mL/phút",
+      "citationIds": [
+        "esc.af.2024.table11_doac_dosing"
+      ]
+    },
+    {
+      "id": "gate_edoxaban_crcl_high",
+      "parameter": "CrCl",
+      "operator": ">",
+      "threshold": 95,
+      "unit": "mL/min",
+      "action": "caution",
+      "messageVi": "Cảnh báo hộp đen FDA: Không dùng edoxaban khi CrCl > 95 mL/phút do giảm hiệu lực phòng ngừa đột quỵ so với warfarin",
+      "citationIds": [
+        "fda.edoxaban.af_dose"
+      ]
+    },
+    {
+      "id": "gate_edoxaban_mechanical_valve",
+      "parameter": "mechanical_valve",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "boolean",
+      "action": "contra",
+      "messageVi": "Chống chỉ định DOAC ở bệnh nhân có van tim cơ học hoặc hẹp hai lá vừa–nặng",
+      "citationIds": [
+        "esc.af.2024.doac_preferred_over_vka"
+      ]
+    }
+  ],
+  "interactions": [
+    "Giảm liều xuống 30 mg x 1 lần/ngày khi dùng đồng thời với cyclosporine, dronedarone, erythromycin hoặc ketoconazole (theo EMA/ESC)",
+    "Tránh dùng đồng thời với rifampicin (cảm ứng P-gp mạnh)"
+  ],
+  "citationIds": [
+    "esc.af.2024.doac_preferred_over_vka",
+    "esc.af.2024.table11_doac_dosing",
+    "fda.edoxaban.af_dose",
+    "fda.edoxaban.pgp_no_reduction_us",
+    "fda.apixaban.aps_not_recommended",
+    "esc.af.2024.bleeding_interrupt",
+    "acc.af.2023.doac_child_pugh"
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo dùng trong thai kỳ do nguy cơ xuất huyết ở mẹ và thai nhi (ESC 2025 Pregnancy / nhãn FDA); ưu tiên LMWH",
+    "citationIds": [
+      "esc.preg.2025.doac_not_recommended",
+      "esc.af.2024.pregnancy_oac",
+      "fda.edoxaban.pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo cho con bú trong thời gian điều trị bằng edoxaban (nhãn FDA khuyến cáo không cho con bú)",
+    "citationIds": [
+      "fda.edoxaban.lactation",
+      "esc.preg.2025.doac_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "mechanical_valve",
+      "messageVi": "Chống chỉ định tuyệt đối DOAC ở bệnh nhân có van tim cơ học",
+      "citationIds": [
+        "esc.af.2024.doac_preferred_over_vka"
+      ]
+    },
+    {
+      "code": "pregnancy",
+      "messageVi": "Không khuyến cáo dùng edoxaban trong thai kỳ",
+      "citationIds": [
+        "esc.preg.2025.doac_not_recommended",
+        "fda.edoxaban.pregnancy"
+      ]
+    },
+    {
+      "code": "rheumatic_mitral_stenosis",
+      "messageVi": "Chống chỉ định DOAC ở bệnh nhân hẹp van hai lá vừa đến nặng",
+      "citationIds": [
+        "esc.af.2024.doac_preferred_over_vka"
+      ]
+    },
+    {
+      "code": "antiphospholipid_syndrome",
+      "messageVi": "Không khuyến cáo / Chống chỉ định DOAC ở bệnh nhân hội chứng kháng phospholipid (APS); bắt buộc dùng VKA",
+      "citationIds": [
+        "fda.apixaban.aps_not_recommended"
+      ]
+    },
+    {
+      "code": "active_bleeding",
+      "messageVi": "Chống chỉ định Edoxaban khi đang có xuất huyết tiến triển",
+      "citationIds": [
+        "esc.af.2024.bleeding_interrupt"
+      ]
+    },
+    {
+      "code": "acute_ich",
+      "messageVi": "Chống chỉ định Edoxaban trong xuất huyết nội sọ cấp tính",
+      "citationIds": [
+        "esc.af.2024.bleeding_interrupt"
+      ]
+    },
+    {
+      "code": "dialysis",
+      "messageVi": "Chống chỉ định Edoxaban ở bệnh nhân suy thận giai đoạn cuối đang lọc máu chu kỳ",
+      "citationIds": [
+        "esc.af.2024.table11_doac_dosing"
+      ]
+    },
+    {
+      "code": "child_pugh_c",
+      "messageVi": "Tránh dùng / Chống chỉ định Edoxaban ở xơ gan mất bù nặng (Child-Pugh C)",
+      "citationIds": [
+        "acc.af.2023.doac_child_pugh"
+      ]
+    }
+  ]
+}

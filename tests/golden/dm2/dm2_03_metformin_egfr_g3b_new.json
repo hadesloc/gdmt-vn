@@ -1,0 +1,57 @@
+{
+  "id": "dm2_03_metformin_egfr_g3b_new",
+  "titleVi": "Bệnh nhân ĐTĐ2 mới phát hiện có eGFR 38 (G3b) - Không khởi trị mới Metformin",
+  "source": "FDA Label Metformin / BYT 5481",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 66,
+    "sex": "male",
+    "weight": 68,
+    "height": 165,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 70,
+    "scr": 160,
+    "k": 4.6,
+    "glucose": 9.2,
+    "hba1c": 8.1,
+    "conditions": {
+      "dm": true,
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "metformin",
+        "action": "DEFER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "metformin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "eGFR 30–44 mL/phút/1.73m²: Nhãn FDA và BYT không khuyến cáo khởi trị mới Metformin."
+}

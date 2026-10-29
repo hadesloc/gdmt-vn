@@ -1,0 +1,54 @@
+{
+  "id": "htn_02_outpatient_stage2_dual_spc",
+  "titleVi": "THA Độ 2 chưa điều trị: Khởi trị phối hợp đôi liều chuẩn",
+  "source": "ESC 2024 HTN / esc.htn.2024.initial_combination",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 56,
+    "sex": "male",
+    "weight": 75,
+    "height": 170,
+    "sbp": 164,
+    "dbp": 102,
+    "hr": 78,
+    "scr": 90,
+    "k": 4.2,
+    "conditions": {
+      "htn": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "amlodipine",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "spironolactone",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "THA độ 2 phòng khám HA 164/102 mmHg, chỉ định khởi trị viên phối hợp đôi SPC."
+}

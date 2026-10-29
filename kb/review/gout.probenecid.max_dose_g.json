@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.probenecid.max_dose_g",
+  "contentHash": "89c33f6c86c0fb08cdabd37d4e301fbbae6ec22eacf63cfed9e598a4dc3339fa",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.probenecid.max_dose_g",
+      "contentHash": "2e047cbed8a9f264",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.probenecid.max_dose_g"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

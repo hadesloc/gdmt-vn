@@ -1,0 +1,73 @@
+{
+  "id": "gout_21_azathioprine_contra_both_xois",
+  "titleVi": "Đang dùng Azathioprine: Chống chỉ định tuyệt đối CẢ Allopurinol LẪN Febuxostat (Nguy cơ suy tủy tử vong)",
+  "source": "FDA Allopurinol & Febuxostat Labels (fda.allopurinol.azathioprine_contra, fda.febuxostat.azathioprine_contra)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 49,
+    "sex": "female",
+    "weight": 56,
+    "scr": 72,
+    "uricAcid": 560,
+    "tophi": true,
+    "conditions": {
+      "gout": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "azathioprine",
+        "name": "Azathioprine",
+        "dose": "100",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 3,
+      "tophi": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_avoid_azathioprine",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "febuxostat",
+        "ruleId": "rec_gout_febuxostat_avoid_azathioprine",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "allopurinol",
+        "action": "START"
+      },
+      {
+        "drugId": "febuxostat",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nữ 49 tuổi bệnh tự miễn đang dùng Azathioprine bị gút tophi. Ức chế xanthine oxidase chặn giáng hóa 6-MP gây độc tủy xương chí mạng nên cả Allopurinol và Febuxostat đều bị AVOID tuyệt đối."
+}

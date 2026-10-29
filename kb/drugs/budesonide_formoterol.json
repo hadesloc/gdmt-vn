@@ -1,0 +1,105 @@
+{
+  "id": "budesonide_formoterol",
+  "nameVi": "Budesonide / Formoterol",
+  "inn": "Budesonide / Formoterol fumarate",
+  "class": "ICS-LABA",
+  "vnBrands": [
+    "Symbicort Turbuhaler",
+    "Symbicort Rapihaler",
+    "Bufoler Easyhaler"
+  ],
+  "forms": [
+    "Bình hít bột khô Turbuhaler 160/4.5 mcg/liều, 80/4.5 mcg/liều",
+    "Bình xịt định liều Rapihaler 160/4.5 mcg",
+    "Bình xịt định liều Rapihaler 80/2.25 mcg",
+    "Bình hít bột khô Spiromax 160/4.5 mcg"
+  ],
+  "start": {
+    "amount": 1,
+    "unit": "nhát",
+    "frequency": "khi cần",
+    "route": "hít",
+    "description": "Với hàm lượng 160/4.5 mcg: AIR (Bậc 1–2) 1 nhát khi cần; MART Bậc 3: 1 nhát x 2 lần/ngày + 1 nhát khi cần. Lưu ý nếu dùng Rapihaler pMDI 80/2.25 mcg (định liều 100/3 mcg): phải nhân đôi số nhát xịt mỗi lần (2 nhát khi cần ở Bậc 1–2; 2 nhát x 2 lần/ngày + 2 nhát khi cần ở Bậc 3)"
+  },
+  "target": {
+    "amount": 2,
+    "unit": "nhát",
+    "frequency": "2 lần/ngày",
+    "route": "hít",
+    "description": "Với hàm lượng 160/4.5 mcg: MART Bậc 4–5 là 2 nhát x 2 lần/ngày + 1 nhát khi cần (tối đa 12 nhát/24 giờ = 54 mcg phân liều / 72 mcg định liều formoterol; nếu dùng loại Rapihaler 80/2.25 mcg thì nhân đôi số nhát, tối đa 24 nhát/24 giờ)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận",
+      "citationIds": [
+        "gina.asthma.2026.track1_preferred"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_formoterol_max_daily",
+      "parameter": "totalDailyPuffs",
+      "operator": ">",
+      "threshold": 12,
+      "unit": "nhát/ngày",
+      "action": "hold",
+      "messageVi": "Khám y tế ngay nếu cần dùng quá 12 nhát hít loại 160/4.5 mcg (hoặc 24 nhát loại 80/2.25 mcg) tổng cộng trong ngày (vượt quá 54 mcg phân liều / 72 mcg định liều formoterol)",
+      "citationIds": [
+        "gina.asthma.2026.formoterol_max_inhalations",
+        "gina.asthma.2026.formoterol_max_mcg",
+        "gina.asthma.2026.rapihaler_80_225_double_actuations"
+      ]
+    }
+  ],
+  "interactions": [
+    "Thuốc chẹn beta không chọn lọc làm giảm tác dụng giãn phế quản của formoterol và có thể kích phát co thắt phế quản nặng",
+    "Thuốc ức chế mạnh CYP3A4 (ritonavir, cobicistat, itraconazole, ketoconazole, clarithromycin) làm tăng phơi nhiễm budesonide toàn thân, gây nguy cơ ức chế thượng thận và hội chứng Cushing do thuốc",
+    "Quy đổi hàm lượng: Bình xịt Rapihaler 80/2.25 mcg chứa nửa liều mỗi nhát so với loại 160/4.5 mcg nên bắt buộc nhân đôi số nhát xịt (2 nhát = 160/4.5 mcg, tối đa 24 nhát/ngày)",
+    "Dạng bột khô Turbuhaler / Spiromax / Easyhaler (DPI) chứa tá dược lactose monohydrate (chống chỉ định ở người bệnh dị ứng nặng / phản vệ với protein sữa bò — bắt buộc kê đích danh dạng bình xịt định liều Symbicort Rapihaler pMDI không chứa lactose)",
+    "Hướng dẫn dùng thuốc: Súc miệng kỹ bằng nước sạch và nhổ đi ngay sau các liều duy trì để phòng ngừa nấm candida hầu họng và khản tiếng"
+  ],
+  "citationIds": [
+    "gina.asthma.2026.track1_preferred",
+    "gina.asthma.2026.formoterol_max_inhalations",
+    "gina.asthma.2026.formoterol_max_mcg",
+    "gina.asthma.2026.rapihaler_80_225_double_actuations",
+    "gina.asthma.2026.cyp3a4_ics_laba_interaction",
+    "byt.asthma.2020.ics_laba_vn_strengths"
+  ],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Phác đồ phối hợp ICS-LABA được ưu tiên hàng đầu trong thai kỳ theo GINA 2026, kiểm soát hen tốt giúp bảo vệ mẹ và thai nhi.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Tương thích khi cho con bú ở liều điều trị.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity",
+      "messageVi": "Quá mẫn với budesonide hoặc formoterol",
+      "citationIds": [
+        "gina.asthma.2026.track1_preferred"
+      ]
+    }
+  ],
+  "classes": [
+    "ics",
+    "laba"
+  ],
+  "components": [
+    "budesonide",
+    "formoterol"
+  ],
+  "qtRisk": "conditional"
+}

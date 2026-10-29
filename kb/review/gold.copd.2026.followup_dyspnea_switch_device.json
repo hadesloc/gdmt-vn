@@ -1,0 +1,26 @@
+{
+  "itemId": "gold.copd.2026.followup_dyspnea_switch_device",
+  "contentHash": "f8a2193523f2c2c421cf64878e85c21c593771812d12d3648f660f37aaf569ba",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gold.copd.2026.followup_dyspnea_switch_device",
+      "contentHash": "aedca62ad5ad2672",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

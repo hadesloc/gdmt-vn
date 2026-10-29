@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.eosinophils_high",
+  "contentHash": "99206407ed2ec7023589e69cf7dc06b1a1f904878e176bcc4ca8075c1f92a1c1",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.eosinophils_high",
+      "contentHash": "f2f82e19c5ef4361",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

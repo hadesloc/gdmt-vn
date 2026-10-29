@@ -1,0 +1,63 @@
+{
+  "id": "af_21_rate_control_reduced_ef_contra_diltiazem",
+  "titleVi": "Suy tim LVEF 30% ≤ 40%: DỪNG NGAY Diltiazem (Chống chỉ định tuyệt đối)",
+  "source": "ESC 2024 AF tr. 40 / esc.af.2024.non_dhp_ccb_contra_lvef40",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "male",
+    "weight": 65,
+    "height": 165,
+    "sbp": 116,
+    "dbp": 74,
+    "hr": 110,
+    "rhythm": "afib",
+    "lvef": 30,
+    "selectedModules": [
+      "af",
+      "hf"
+    ],
+    "conditions": {
+      "af": true,
+      "hf": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "diltiazem",
+        "name": "Cardizem",
+        "dose": 180,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "diltiazem",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "diltiazem",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân suy tim HFrEF (LVEF 30%): Chống chỉ định tuyệt đối Non-DHP CCB (Diltiazem, Verapamil)."
+}

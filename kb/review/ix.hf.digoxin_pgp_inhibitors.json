@@ -1,0 +1,27 @@
+{
+  "itemId": "ix.hf.digoxin_pgp_inhibitors",
+  "contentHash": "03a1cfef1030b9d61b97f7364cb245cc4196215e8b374d1637b1059aa19b0a7a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.hf.digoxin_pgp_inhibitors",
+      "contentHash": "b626d1e741582e94",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T09:00:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-28T09:00:00.000Z",
+          "role": "Agent G5 (HF Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF interaction ix.hf.digoxin_pgp_inhibitors (Round 2 R1/R2/R3 remediation & verbatim PDF citation verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.bile_acid_sequestrant_drug_binding",
+  "contentHash": "f941dffe0c83816886a61c8c84ae1615173914c4aa76d407ace8994432608c81",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.bile_acid_sequestrant_drug_binding",
+      "contentHash": "7310667888ef943b",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.bile_acid_sequestrant_drug_binding."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

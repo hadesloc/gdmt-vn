@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.ldct_quit_years_max",
+  "contentHash": "faaebdea5ee38538eb783a29a3826cbd0a195f1e9a9d6943e3fd54fcd830b768",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.ldct_quit_years_max",
+      "contentHash": "4f019dbae041d634",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

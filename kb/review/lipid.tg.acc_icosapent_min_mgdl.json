@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.tg.acc_icosapent_min_mgdl",
+  "contentHash": "12571a36a085e84b7f7dc5a86bd3ce5212fcf6661d345f5ae88058d7e44c73f6",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.tg.acc_icosapent_min_mgdl",
+      "contentHash": "a7373f0dff5d3006",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.tg.acc_icosapent_min_mgdl."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

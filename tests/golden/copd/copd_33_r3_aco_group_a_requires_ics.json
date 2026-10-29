@@ -1,0 +1,70 @@
+{
+  "id": "copd_33_r3_aco_group_a_requires_ics",
+  "titleVi": "Hồi quy R3: COPD Nhóm A có tiền sử hen phế quản đồng mắc bắt buộc khởi đầu phác đồ có chứa ICS (cấm LAMA/LABA không ICS)",
+  "source": "GOLD 2026 Report p. 75 (R3-COPD-01)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_33",
+    "age": 61,
+    "sex": "female",
+    "weight": 54,
+    "height": 157,
+    "sbp": 122,
+    "dbp": 74,
+    "hr": 72,
+    "conditions": {
+      "copd": true,
+      "priorAsthma": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "fev1FvcRatio": 0.62,
+      "fev1PredPct": 76,
+      "mmrc": 1,
+      "cat": 7,
+      "moderateExacerbations": 0,
+      "hospitalizations": 0,
+      "bloodEos": 210,
+      "currentInhaler": "none",
+      "smokingStatus": "never",
+      "restingSpo2": 96
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "ruleId": "rec_copd_aco_triple",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "tiotropium",
+        "action": "START"
+      },
+      {
+        "drugId": "tiotropium_olodaterol",
+        "action": "START"
+      }
+    ]
+  }
+}

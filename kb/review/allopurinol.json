@@ -1,0 +1,26 @@
+{
+  "itemId": "allopurinol",
+  "contentHash": "2adab8b499c5163265884b798f80e6de5c13e825d8a5fe91dfc9ddf735e38972",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "allopurinol",
+      "contentHash": "6291388a3ba72dde",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của DrugEntry: allopurinol"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

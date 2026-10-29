@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.emergency.acs_target_sbp",
+  "contentHash": "fd89f815a547a9e4484a8d5651cf747b2ca2579c4bd804fb134b60474d06f03c",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.emergency.acs_target_sbp",
+      "contentHash": "fcd82131feed27e5",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 140 mmHg (quantity: sbp) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

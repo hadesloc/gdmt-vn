@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.emergency.map_reduction_pct_max",
+  "contentHash": "bd6980d9243240b40aff0268039cb04b99c1807ed46191ebdd7567e6f86b1443",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.emergency.map_reduction_pct_max",
+      "contentHash": "6177fe2a48bf4d56",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 25 % (quantity: percentage) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

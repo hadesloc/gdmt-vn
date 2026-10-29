@@ -1,0 +1,50 @@
+{
+  "id": "dm2_16_early_insulin_high_hba1c",
+  "titleVi": "HbA1c rất cao (10.6%) - Khởi trị Insulin sớm",
+  "source": "ADA 2026 SOC Ch. 9",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 45,
+    "sex": "female",
+    "weight": 60,
+    "height": 160,
+    "sbp": 124,
+    "dbp": 78,
+    "hr": 78,
+    "scr": 75,
+    "k": 4.2,
+    "glucose": 14.2,
+    "hba1c": 10.6,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "insulin_glargine",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "HbA1c ≥ 10%: Chỉ định insulin sớm."
+}

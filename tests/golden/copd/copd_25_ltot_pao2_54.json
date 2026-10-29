@@ -1,0 +1,52 @@
+{
+  "id": "copd_25_ltot_pao2_54",
+  "titleVi": "COPD giảm PaO₂ khi nghỉ (PaO₂ 54 mmHg): Chỉ định LTOT",
+  "source": "GOLD 2026 Report p. 87 / PaO2 Cutoff",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_25",
+    "age": 72,
+    "sex": "male",
+    "weight": 55,
+    "height": 162,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 80,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "fev1FvcRatio": 0.44,
+      "fev1PredPct": 35,
+      "pao2": 54,
+      "restingSpo2": 90
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_copd_ltot",
+        "action": "START"
+      }
+    ]
+  }
+}

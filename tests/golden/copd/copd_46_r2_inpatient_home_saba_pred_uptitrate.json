@@ -1,0 +1,86 @@
+{
+  "id": "copd_46_r2_inpatient_home_saba_pred_uptitrate",
+  "titleVi": "Hồi quy R2 (COPD-R1V2-03 & COPD-R2-201): Đợt cấp nội viện ở bệnh nhân đang có sẵn Salbutamol pMDI và Prednisolone 5 mg – Tăng liều cấp cứu UPTITRATE",
+  "source": "GOLD 2026 Ch. 4 & BYT QĐ 2131/2026 p. 36-38 (COPD-R1V2-03, COPD-R2-201)",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_46",
+    "age": 68,
+    "sex": "male",
+    "weight": 56,
+    "height": 164,
+    "sbp": 136,
+    "dbp": 82,
+    "hr": 108,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "salbutamol",
+        "name": "Ventolin pMDI",
+        "dose": 100,
+        "unit": "mcg"
+      },
+      {
+        "drugId": "prednisolone",
+        "name": "Prednisolone nền",
+        "dose": 5,
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteExacerbation": true,
+      "fev1FvcRatio": 0.46,
+      "fev1PredPct": 40,
+      "restingSpo2": 86,
+      "abgPh": 7.37,
+      "abgPaco2": 43,
+      "purulentSputum": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "salbutamol",
+        "ruleId": "rec_copd_inpatient_saba_sama",
+        "action": "UPTITRATE",
+        "doseContains": "2.5"
+      },
+      {
+        "drugId": "prednisolone",
+        "ruleId": "rec_copd_inpatient_steroid",
+        "action": "UPTITRATE",
+        "doseContains": "40"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "salbutamol",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "prednisolone",
+        "action": "CONTINUE"
+      }
+    ]
+  }
+}

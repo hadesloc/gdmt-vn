@@ -1,0 +1,26 @@
+{
+  "itemId": "atorvastatin",
+  "contentHash": "ffafc7f400c5fb6f4ebf68e9a5d46e7b828d4e6ccb49fa8b4d1f28f46d4df429",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "atorvastatin",
+      "contentHash": "20a1bd027674d87f",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra schema QA-10, phân nhóm classes, dải thận, cổng an toàn thai kỳ/cho con bú/tương tác và trích dẫn cho thuốc atorvastatin."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

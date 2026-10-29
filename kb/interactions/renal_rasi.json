@@ -1,0 +1,575 @@
+[
+  {
+    "id": "ix.acei_arni_washout",
+    "titleVi": "Chống chỉ định Tuyệt đối & Yêu cầu Khoảng nghỉ 36 giờ: ACEi + ARNI (Sacubitril-Valsartan)",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "captopril",
+        "enalapril",
+        "imidapril",
+        "lisinopril",
+        "perindopril",
+        "ramipril"
+      ],
+      "classes": [
+        "acei"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "sacubitril_valsartan"
+      ],
+      "classes": [
+        "arni"
+      ]
+    },
+    "mechanismVi": "Cả ACE và neprilysin đều là các enzym chủ chốt thoái giáng bradykinin. Ức chế đồng thời cả 2 enzym gây tích tụ bradykinin nồng độ cao trong mô.",
+    "effectVi": "Phù mạch (angioedema) cấp tính nặng vùng hầu họng, thanh quản gây bít tắc đường thở và nghẹt thở tử vong.",
+    "managementVi": "Chống chỉ định tuyệt đối sử dụng đồng thời. Bắt buộc phải ngừng ACEi ít nhất 36 giờ trước khi khởi trị Sacubitril-Valsartan (và ngược lại khi chuyển từ ARNI sang ACEi).",
+    "citationIds": [
+      "fda.entresto.acei_36h_washout"
+    ]
+  },
+  {
+    "id": "ix.dual_rasi",
+    "titleVi": "Chống chỉ định Phối hợp kép ức chế hệ RAA (ACEi, ARB, ARNI, hoặc Aliskiren)",
+    "severity": "contraindicated",
+    "minCount": 2,
+    "members": [
+      {
+        "drugIds": [
+          "captopril",
+          "enalapril",
+          "imidapril",
+          "lisinopril",
+          "perindopril",
+          "ramipril"
+        ],
+        "classes": [
+          "acei"
+        ]
+      },
+      {
+        "drugIds": [
+          "candesartan",
+          "irbesartan",
+          "losartan",
+          "olmesartan",
+          "telmisartan",
+          "valsartan"
+        ],
+        "classes": [
+          "arb"
+        ]
+      },
+      {
+        "drugIds": [
+          "sacubitril_valsartan"
+        ],
+        "classes": [
+          "arni"
+        ]
+      },
+      {
+        "drugIds": [
+          "aliskiren"
+        ],
+        "classes": [
+          "renin_inhibitor"
+        ]
+      }
+    ],
+    "mechanismVi": "Chẹn kép cùng một hệ thống renin-angiotensin-aldosterone (phối hợp bất kỳ hai nhóm trong ACEi, ARB, ARNI hoặc chất ức chế trực tiếp renin Aliskiren) làm sụt giảm nghiêm trọng áp lực lọc tại mao mạch cầu thận.",
+    "effectVi": "Tăng vọt biến cố suy thận cấp (AKI), tăng kali máu nặng và tụt huyết áp nghiêm trọng mà không đem lại lợi ích tim mạch hay thận bổ sung (thử nghiệm ONTARGET, ALTITUDE); phối hợp ACEi với ARNI còn gây phù mạch đe dọa tính mạng.",
+    "managementVi": "Chống chỉ định phối hợp bất kỳ hai thuốc ức chế hệ RAA (ACEi, ARB, ARNI, Aliskiren), kể cả các viên phối hợp cố định liều (SPC). Chỉ duy trì một thuốc ức chế hệ RAA duy nhất.",
+    "citationIds": [
+      "kdigo.ckd.2024.avoid_dual_rasi",
+      "esc.htn.2024.ban_dual_rasi",
+      "aha.acc.2025.dual_rasi_aliskiren_harm"
+    ]
+  },
+  {
+    "id": "ix.triple_whammy",
+    "titleVi": "Bộ ba nguy hại (Triple Whammy): RASi + Lợi tiểu + NSAID",
+    "severity": "major",
+    "members": [
+      {
+        "drugIds": [
+          "enalapril",
+          "perindopril",
+          "lisinopril",
+          "ramipril",
+          "captopril",
+          "imidapril",
+          "losartan",
+          "valsartan",
+          "telmisartan",
+          "irbesartan",
+          "candesartan",
+          "olmesartan",
+          "sacubitril_valsartan"
+        ],
+        "classes": [
+          "acei",
+          "arb",
+          "arni"
+        ]
+      },
+      {
+        "drugIds": [
+          "furosemide",
+          "hydrochlorothiazide",
+          "indapamide",
+          "chlorthalidone",
+          "torsemide",
+          "spironolactone"
+        ],
+        "classes": [
+          "loop_diuretic",
+          "thiazide_diuretic"
+        ]
+      },
+      {
+        "drugIds": [
+          "ibuprofen",
+          "naproxen",
+          "celecoxib",
+          "meloxicam",
+          "diclofenac",
+          "etoricoxib",
+          "piroxicam",
+          "indomethacin"
+        ],
+        "classes": [
+          "nsaid"
+        ]
+      }
+    ],
+    "mechanismVi": "Thuốc lợi tiểu gây giảm thể tích tuần hoàn; NSAID ức chế prostaglandin làm co tiểu động mạch đến; thuốc ức chế RAA làm giãn tiểu động mạch đi. Sự kết hợp ba thuốc làm sụp đổ áp lực lọc cầu thận.",
+    "effectVi": "Gây suy thận cấp (AKI) kịch phát và hoại tử ống thận cấp, đặc biệt ở người cao tuổi hoặc đã có tổn thương thận mạn.",
+    "managementVi": "Tuyệt đối tránh sử dụng đồng thời NSAID ở bệnh nhân đang dùng RASi kết hợp Lợi tiểu. Thay thế bằng Paracetamol hoặc thuốc giảm đau không NSAID; theo dõi sát Creatinin và Kali máu.",
+    "citationIds": [
+      "fda.entresto.nsaid_triple_whammy"
+    ]
+  },
+  {
+    "id": "ix.rasi_mra_k_supplements",
+    "titleVi": "Tương tác Tăng Kali máu nặng: Thuốc ức chế RAA / MRA + Thuốc bổ sung Kali",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "captopril",
+        "enalapril",
+        "imidapril",
+        "lisinopril",
+        "perindopril",
+        "ramipril",
+        "losartan",
+        "valsartan",
+        "telmisartan",
+        "irbesartan",
+        "candesartan",
+        "olmesartan",
+        "sacubitril_valsartan",
+        "spironolactone",
+        "eplerenone",
+        "finerenone"
+      ],
+      "classes": [
+        "acei",
+        "arb",
+        "arni",
+        "mra_steroidal",
+        "mra_nonsteroidal"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "potassium_chloride",
+        "potassium_gluconate"
+      ],
+      "classes": [
+        "potassium_supplement"
+      ]
+    },
+    "mechanismVi": "Thuốc ức chế RAA và MRA làm giảm bài tiết kali tại ống lượn xa. Việc bổ sung thêm kali ngoại sinh làm quá tải khả năng thải trừ của thận.",
+    "effectVi": "Tăng kali máu nghiêm trọng (> 6.0 mmol/L), loạn nhịp thất ác tính và ngừng tim.",
+    "managementVi": "Tránh bổ sung kali thường quy ở bệnh nhân đang dùng thuốc ức chế RAA hoặc MRA trừ khi có hạ kali máu dai dẳng được ghi nhận bằng xét nghiệm; nếu dùng phải theo dõi kali máu thường xuyên.",
+    "citationIds": [
+      "fda.spironolactone.avoid_potassium_supplements"
+    ]
+  },
+  {
+    "id": "ix.rasi_mra_potassium_sparing",
+    "titleVi": "Chống chỉ định phối hợp Thuốc giữ Kali (Amiloride, Triamterene) với RASi / MRA",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "captopril",
+        "enalapril",
+        "imidapril",
+        "lisinopril",
+        "perindopril",
+        "ramipril",
+        "losartan",
+        "valsartan",
+        "telmisartan",
+        "irbesartan",
+        "candesartan",
+        "olmesartan",
+        "sacubitril_valsartan",
+        "spironolactone",
+        "eplerenone",
+        "finerenone"
+      ],
+      "classes": [
+        "acei",
+        "arb",
+        "arni",
+        "mra_steroidal",
+        "mra_nonsteroidal"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "amiloride",
+        "triamterene"
+      ],
+      "classes": [
+        "potassium_sparing_diuretic"
+      ]
+    },
+    "mechanismVi": "Tác dụng cộng dồn ức chế kênh natri biểu mô ENaC và kháng aldosterone làm đình trệ hoàn toàn sự bài tiết kali qua nước tiểu.",
+    "effectVi": "Tăng kali máu ác tính và tử vong.",
+    "managementVi": "Chống chỉ định phối hợp thuốc lợi tiểu giữ kali với các phác đồ đã có thuốc ức chế RAA hoặc MRA.",
+    "citationIds": [
+      "fda.entresto.potassium_sparing_diuretics"
+    ]
+  },
+  {
+    "id": "ix.finerenone_strong_cyp3a4",
+    "titleVi": "Chống chỉ định phối hợp Finerenone + Thuốc ức chế mạnh CYP3A4",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "finerenone"
+      ],
+      "classes": [
+        "mra_nonsteroidal"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "itraconazole",
+        "ketoconazole",
+        "posaconazole",
+        "voriconazole",
+        "clarithromycin",
+        "ritonavir",
+        "nirmatrelvir_ritonavir",
+        "cobicistat",
+        "nefazodone"
+      ],
+      "classes": [
+        "strong_cyp3a4_inhibitor"
+      ]
+    },
+    "mechanismVi": "Finerenone được chuyển hóa chủ yếu qua CYP3A4 (90%). Các chất ức chế mạnh CYP3A4 làm tăng AUC của finerenone lên hơn 400%.",
+    "effectVi": "Tăng kali máu nghiêm trọng và tụt huyết áp nặng đe dọa tính mạng.",
+    "managementVi": "Chống chỉ định tuyệt đối phối hợp finerenone với các thuốc ức chế mạnh CYP3A4.",
+    "citationIds": [
+      "fda.finerenone.strong_cyp3a4_contraindicated"
+    ]
+  },
+  {
+    "id": "ix.finerenone_moderate_cyp3a4",
+    "titleVi": "Tương tác Theo dõi Kali máu: Finerenone + Thuốc ức chế vừa/yếu CYP3A4 (Diltiazem, Verapamil, Erythromycin)",
+    "severity": "moderate",
+    "a": {
+      "drugIds": [
+        "finerenone"
+      ],
+      "classes": [
+        "mra_nonsteroidal"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "diltiazem",
+        "verapamil",
+        "erythromycin",
+        "fluconazole",
+        "fluvoxamine"
+      ],
+      "classes": [
+        "ndhp_ccb",
+        "moderate_cyp3a4_inhibitor"
+      ]
+    },
+    "mechanismVi": "Các chất ức chế CYP3A4 mức độ vừa (như erythromycin, verapamil, diltiazem, fluconazole) làm tăng phơi nhiễm toàn thân (AUC) của finerenone.",
+    "effectVi": "Gia tăng nguy cơ tăng kali máu và hạ huyết áp.",
+    "managementVi": "Theo dõi nồng độ kali huyết thanh khi khởi trị hoặc điều chỉnh liều của Finerenone hoặc thuốc ức chế CYP3A4 mức độ vừa/yếu, và điều chỉnh liều Finerenone phù hợp theo ngưỡng kali máu và eGFR trên nhãn thuốc (FDA Kerendia Section 7.1 & Table 2).",
+    "citationIds": [
+      "fda.finerenone.moderate_cyp3a4_increase"
+    ]
+  },
+  {
+    "id": "ix.finerenone_k_sparing_diuretics",
+    "titleVi": "Chống chỉ định phối hợp Finerenone + Thuốc lợi tiểu giữ Kali (Amiloride, Triamterene)",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "finerenone"
+      ],
+      "classes": [
+        "mra_nonsteroidal"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "amiloride",
+        "triamterene"
+      ],
+      "classes": [
+        "potassium_sparing_diuretic"
+      ]
+    },
+    "mechanismVi": "Tác dụng cộng dồn chẹn thụ thể mineralocorticoid và ức chế kênh natri biểu mô ENaC tại ống góp làm giảm mạnh bài xuất kali qua nước tiểu.",
+    "effectVi": "Tăng kali máu ác tính, loạn nhịp thất và suy thận cấp.",
+    "managementVi": "Không phối hợp finerenone với các thuốc lợi tiểu giữ kali (amiloride, triamterene).",
+    "citationIds": [
+      "fda.entresto.potassium_sparing_diuretics"
+    ]
+  },
+  {
+    "id": "ix.dual_mra",
+    "titleVi": "Trùng lặp 2 thuốc đối kháng thụ thể Mineralocorticoid (MRA)",
+    "severity": "contraindicated",
+    "members": [
+      {
+        "drugIds": [
+          "spironolactone",
+          "eplerenone",
+          "finerenone"
+        ],
+        "classes": [
+          "mra_steroidal",
+          "mra_nonsteroidal"
+        ]
+      },
+      {
+        "drugIds": [
+          "spironolactone",
+          "eplerenone",
+          "finerenone"
+        ],
+        "classes": [
+          "mra_steroidal",
+          "mra_nonsteroidal"
+        ]
+      }
+    ],
+    "minCount": 2,
+    "mechanismVi": "Chẹn thụ thể mineralocorticoid đồng thời bằng 2 thuốc (steroid và phi steroid) làm ức chế hoàn toàn tác dụng của aldosterone tại thận.",
+    "effectVi": "Tăng kali máu cấp tính nghiêm trọng.",
+    "managementVi": "Chống chỉ định phối hợp 2 thuốc nhóm MRA. Chỉ dùng 1 thuốc MRA phù hợp với chỉ định chính (suy tim hoặc bệnh thận đái tháo đường).",
+    "citationIds": [
+      "fda.spironolactone.contraindication_eplerenone"
+    ]
+  },
+  {
+    "id": "ix.rasi_lithium",
+    "titleVi": "Tương tác Ngộ độc Lithium: Thuốc ức chế RAA (ACEi / ARB / ARNI) + Lithium",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "captopril",
+        "enalapril",
+        "imidapril",
+        "lisinopril",
+        "perindopril",
+        "ramipril",
+        "losartan",
+        "valsartan",
+        "telmisartan",
+        "irbesartan",
+        "candesartan",
+        "olmesartan",
+        "sacubitril_valsartan"
+      ],
+      "classes": [
+        "acei",
+        "arb",
+        "arni"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "lithium"
+      ],
+      "classes": [
+        "mood_stabilizer"
+      ]
+    },
+    "mechanismVi": "Thuốc ức chế RAA gây mất natri và làm tăng tái hấp thu lithi ở ống lượn gần, dẫn đến giảm độ thanh thải lithi qua thận và tăng nồng độ lithi huyết thanh.",
+    "effectVi": "Ngộ độc lithi nặng: run cơ, mất điều hòa vận động, lú lẫn, co giật, suy thận cấp và tổn thương thần kinh không hồi phục.",
+    "managementVi": "Theo dõi thường xuyên nồng độ lithi huyết thanh khi bắt đầu hoặc điều chỉnh liều thuốc ức chế RAA; giảm liều lithi tương ứng.",
+    "citationIds": [
+      "fda.entresto.lithium_toxicity"
+    ]
+  },
+  {
+    "id": "ix.thiazide_lithium",
+    "titleVi": "Tương tác Tăng nồng độ Lithium: Lợi tiểu Thiazide + Lithium",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "hydrochlorothiazide",
+        "indapamide",
+        "chlorthalidone"
+      ],
+      "classes": [
+        "thiazide_diuretic"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "lithium"
+      ],
+      "classes": [
+        "mood_stabilizer"
+      ]
+    },
+    "mechanismVi": "Lợi tiểu thiazide gây bài tiết natri làm cơ thể bù trừ bằng cách tăng tái hấp thu natri và lithi ở ống lượn gần, làm giảm thanh thải lithi từ 20% đến 40%.",
+    "effectVi": "Ngộ độc lithi cấp tính nguy hiểm.",
+    "managementVi": "Tránh dùng đồng thời nếu có thể. Nếu bắt buộc phải dùng, giảm liều lithi khoảng 50% và kiểm tra nồng độ lithi máu thường xuyên.",
+    "citationIds": [
+      "ema.indapamide.lithium_not_recommended"
+    ]
+  },
+  {
+    "id": "ix.eplerenone_strong_cyp3a4",
+    "titleVi": "Chống chỉ định Tuyệt đối: Eplerenone + Thuốc ức chế mạnh CYP3A4 (Ketoconazole, Itraconazole, Clarithromycin, Ritonavir/Paxlovid)",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "eplerenone"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "ketoconazole",
+        "itraconazole",
+        "posaconazole",
+        "voriconazole",
+        "clarithromycin",
+        "ritonavir",
+        "nirmatrelvir_ritonavir",
+        "cobicistat",
+        "nelfinavir",
+        "nefazodone"
+      ],
+      "classes": [
+        "strong_cyp3a4_inhibitor"
+      ]
+    },
+    "mechanismVi": "Eplerenone được chuyển hóa chủ yếu qua CYP3A4; phối hợp với các chất ức chế mạnh CYP3A4 làm tăng diện tích dưới đường cong (AUC) của eplerenone lên khoảng 5 lần.",
+    "effectVi": "Tăng kali máu ác tính, rối loạn nhịp thất nguy kịch và ngừng tim.",
+    "managementVi": "Chống chỉ định tuyệt đối phối hợp Eplerenone với thuốc ức chế mạnh CYP3A4 (nhãn FDA Inspra §4 & §7.1). Tạm ngưng Eplerenone nếu bắt buộc điều trị ngắn ngày kháng nấm/kháng virus/clarithromycin hoặc đổi kháng sinh sang Azithromycin.",
+    "citationIds": [
+      "fda.eplerenone.strong_cyp3a_contra",
+      "esc.hf.2026.mra_guidance_table_s8"
+    ]
+  },
+  {
+    "id": "ix.eplerenone_moderate_cyp3a4",
+    "titleVi": "Tương tác Giới hạn liều tối đa 25 mg/ngày: Eplerenone + Thuốc ức chế vừa CYP3A4 (Verapamil, Diltiazem, Erythromycin, Fluconazole, Saquinavir)",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "eplerenone"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "diltiazem",
+        "verapamil",
+        "erythromycin",
+        "fluconazole",
+        "saquinavir"
+      ],
+      "classes": [
+        "ndhp_ccb",
+        "moderate_cyp3a4_inhibitor"
+      ]
+    },
+    "mechanismVi": "Các chất ức chế vừa CYP3A4 (erythromycin, verapamil, diltiazem, fluconazole, saquinavir) làm chậm thanh thải qua gan và làm tăng AUC của eplerenone khoảng 2–3 lần.",
+    "effectVi": "Gia tăng đáng kể nguy cơ tăng kali máu nặng (> 5.5–6.0 mmol/L) và hạ huyết áp.",
+    "managementVi": "Không vượt quá liều Eplerenone 25 mg x 1 lần/ngày ở bệnh nhân suy tim (và tối đa 25 mg x 1–2 lần/ngày theo chỉ định tăng huyết áp) khi dùng đồng thời với chất ức chế vừa CYP3A4; kiểm tra sát K+ máu và eGFR trong vòng 3–7 ngày (nhãn FDA Inspra §2.4 & §7.1).",
+    "doseLimit": {
+      "drugId": "eplerenone",
+      "maxDose": 25,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Giới hạn liều Eplerenone tối đa 25 mg x 1 lần/ngày ở suy tim khi dùng cùng thuốc ức chế vừa CYP3A4"
+    },
+    "citationIds": [
+      "fda.eplerenone.moderate_cyp3a_25mg_cap"
+    ]
+  },
+  {
+    "id": "ix.rasi_mra_trimethoprim",
+    "titleVi": "Tương tác Tăng Kali máu Nguy kịch: MRA / RASi (ACEi, ARB, ARNI) + Trimethoprim (Cotrimoxazole / Bactrim)",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "captopril",
+        "enalapril",
+        "imidapril",
+        "lisinopril",
+        "perindopril",
+        "ramipril",
+        "losartan",
+        "valsartan",
+        "telmisartan",
+        "irbesartan",
+        "candesartan",
+        "olmesartan",
+        "sacubitril_valsartan",
+        "aliskiren",
+        "spironolactone",
+        "eplerenone",
+        "finerenone"
+      ],
+      "classes": [
+        "acei",
+        "arb",
+        "arni",
+        "mra",
+        "mra_steroidal",
+        "mra_nonsteroidal",
+        "rasi"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "trimethoprim",
+        "cotrimoxazole",
+        "trimethoprim_sulfamethoxazole",
+        "sulfamethoxazole_trimethoprim",
+        "co_trimoxazole",
+        "tmp_smx",
+        "bactrim"
+      ]
+    },
+    "mechanismVi": "Trimethoprim chẹn kênh natri biểu mô ống góp (ENaC) tại ống lượn xa tương tự thuốc lợi tiểu giữ kali amiloride, cộng dồn với tác dụng ức chế hệ RAA / đối kháng aldosterone làm đình trệ bài tiết kali qua thận.",
+    "effectVi": "Tăng vọt nguy cơ nhập viện cấp cứu vì tăng kali máu nghiêm trọng và đột tử do loạn nhịp thất, đặc biệt ở người cao tuổi hoặc CKD.",
+    "managementVi": "Tránh phối hợp Trimethoprim / Cotrimoxazole ở bệnh nhân đang dùng MRA (Spironolactone, Eplerenone, Finerenone) hoặc RASi nếu có kháng sinh thay thế. Nếu bắt buộc dùng, tạm ngưng MRA hoặc kiểm tra sát K+ máu và Creatinin sau 3–5 ngày.",
+    "citationIds": [
+      "fda.spironolactone.trimethoprim_hyperkalemia",
+      "fda.spironolactone.trimethoprim_list",
+      "esc.hf.2026.mra_guidance_table_s8"
+    ]
+  }
+]

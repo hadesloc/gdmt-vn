@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.dose.lovastatin_ccb_max",
+  "contentHash": "7157d1830917c7fa0cf649782bf7eb9fc8c7b0fe77c8c80d24d3d36e3c2b6e86",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.dose.lovastatin_ccb_max",
+      "contentHash": "da155dc147576430",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.dose.lovastatin_ccb_max."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

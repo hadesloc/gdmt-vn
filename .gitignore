@@ -1,0 +1,16 @@
+node_modules/
+dist/
+coverage/
+*.log
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+.playwright-cli/
+output/
+scratch/
+reports/
+tools/kb/.cache/
+.vercel/
+Thumbs.db
+.DS_Store

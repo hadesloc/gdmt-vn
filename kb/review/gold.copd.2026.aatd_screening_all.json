@@ -1,0 +1,26 @@
+{
+  "itemId": "gold.copd.2026.aatd_screening_all",
+  "contentHash": "929fed58fc2da4b8562a51974d82396ae141f8d4494290643be3eb5118d63b44",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gold.copd.2026.aatd_screening_all",
+      "contentHash": "782fee841ddb4bcd",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

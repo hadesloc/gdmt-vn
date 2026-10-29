@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.risk.prior_exacerbation_min",
+  "contentHash": "91e4a7525ae8047b13718bc0fd10507ee52befe5df56e879d82b0f1916836db7",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.risk.prior_exacerbation_min",
+      "contentHash": "381edaa413beade6",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T07:10:38.304Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Kiểm định tự động ngưỡng lâm sàng asthma.risk.prior_exacerbation_min (1 đợt/năm)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T07:10:38.304Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

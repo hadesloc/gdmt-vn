@@ -1,0 +1,69 @@
+{
+  "id": "lipid_55_outpatient_fenofibrate_ck_moderate_hold",
+  "titleVi": "Đang dùng Fenofibrate 145 mg đơn độc có tăng CK 6.5x ULN - Tạm ngưng Fenofibrate, không phát DEFER Atorvastatin nhầm thuốc",
+  "source": "ESC/EAS 2019 / esc.lipid.2019.monitoring_ck_high",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 50,
+    "sex": "male",
+    "weight": 76,
+    "height": 170,
+    "sbp": 128,
+    "dbp": 80,
+    "hr": 74,
+    "scr": 84,
+    "tc": 4.9,
+    "hdl": 1.0,
+    "ldl": 2.4,
+    "tg": 3.0,
+    "conditions": {},
+    "customInputs": {
+      "ckUlnTimes": 6.5
+    },
+    "currentMeds": [
+      {
+        "drugId": "fenofibrate",
+        "name": "Fenofibrate",
+        "dose": 145,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "fenofibrate",
+        "action": "HOLD"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "DEFER"
+      },
+      {
+        "drugId": "fenofibrate",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R2-R2-05 & LIPID-R2-R3-03: Khi CK tăng vừa (4x < CK < 10x ULN) ở bệnh nhân đang dùng Fenofibrate mà chưa dùng Statin, hệ thống phải phát HOLD trực tiếp vào Fenofibrate và không sinh DEFER Atorvastatin gây hiểu nhầm."
+}

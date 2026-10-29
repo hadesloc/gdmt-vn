@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.eplerenone.max_daily_cyp3a_low",
+  "contentHash": "3d58f916f8c95f9c7f64bf8d6f41a3277c53ab8ecda706cda8c6985a8d7c8353",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.eplerenone.max_daily_cyp3a_low",
+      "contentHash": "49937b290fbea07d",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực ngưỡng lâm sàng htn.eplerenone.max_daily_cyp3a_low (25 mg) và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

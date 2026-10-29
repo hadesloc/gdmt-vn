@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.doac_strong_inducers",
+  "contentHash": "6f640cf2f3608248912f2bcf244133b20df425d538128db0f0e24d6f51371b42",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.doac_strong_inducers",
+      "contentHash": "b24b203d565e27a7",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.doac_strong_inducers."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

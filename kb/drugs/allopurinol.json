@@ -1,0 +1,183 @@
+{
+  "id": "allopurinol",
+  "nameVi": "Allopurinol",
+  "inn": "Allopurinol",
+  "class": "XOI",
+  "classes": [
+    "urate_lowering",
+    "xoi"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Zyloric",
+    "Allopurinol Stada",
+    "Zyloprim",
+    "Sadapron",
+    "Milurit",
+    "Alloril"
+  ],
+  "forms": [
+    "Viên nén 100 mg",
+    "Viên nén 300 mg"
+  ],
+  "start": {
+    "amount": 100,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "100 mg/ngày sau ăn (≤ 50 mg/ngày nếu eGFR < 60 mL/phút)"
+  },
+  "target": {
+    "amount": 300,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "300 mg/ngày (chuẩn độ tới đích urat < 360 µmol/L; liều > 300 mg/ngày nên chia liều; tối đa 800 mg/ngày theo FDA/BYT hoặc 900 mg/ngày theo EMA)"
+  },
+  "titration": {
+    "step": 100,
+    "intervalDays": 14,
+    "maxDose": "800 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Khởi đầu 100 mg/ngày, tăng dần 100 mg mỗi 2–4 tuần tới đích urat (tối đa 800 mg/ngày; chia 2 lần nếu > 300 mg/ngày)",
+      "citationIds": [
+        "acr.gout.2020.allopurinol_low_dose_start",
+        "eular.gout.2016.allopurinol_titration",
+        "fda.allopurinol.start_and_max"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Khởi đầu ≤ 50 mg/ngày, chuẩn độ thận trọng ≤ 50 mg mỗi 2–5 tuần tới đích urat (theo dõi sát ban da/SCAR)",
+      "citationIds": [
+        "acr.gout.2020.allopurinol_start_dose_ckd_50",
+        "byt.ckd.2024.gout_ult_table21"
+      ]
+    },
+    {
+      "eGFRFrom": 15,
+      "eGFRTo": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Khởi đầu ≤ 50 mg/ngày (hoặc 100 mg cách ngày); giới hạn tối đa 200 mg/ngày khi CrCl 10–20 mL/phút theo nhãn FDA/EULAR (ACR 2020 cho phép chuẩn độ thận trọng từng bước ≤ 50 mg kèm giám sát SCAR)",
+      "citationIds": [
+        "acr.gout.2020.allopurinol_start_dose_ckd_50",
+        "fda.allopurinol.renal_dosing",
+        "eular.gout.2016.allopurinol_titration"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "Khởi đầu 50 mg cách ngày (tối đa 100 mg/ngày khi CrCl < 10 mL/phút; lọc máu chu kỳ HD: dùng 100 mg sau buổi lọc máu vì thuốc và oxypurinol bị lọc qua màng thẩm tách; lọc màng bụng PD: khởi đầu 50 mg/ngày)",
+      "citationIds": [
+        "fda.allopurinol.renal_dosing",
+        "byt.ckd.2024.gout_ult_table21"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_allopurinol_hlab5801",
+      "parameter": "HLA-B*58:01",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "positive",
+      "action": "contra",
+      "messageVi": "Chống chỉ định allopurinol khi xét nghiệm HLA-B*58:01 dương tính do nguy cơ rất cao phản ứng da nặng đe dọa tính mạng (SCAR/SJS/TEN/DRESS)",
+      "citationIds": [
+        "acr.gout.2020.hlab5801_screening",
+        "fda.allopurinol.skin_rash_scar"
+      ]
+    },
+    {
+      "id": "gate_allopurinol_azathioprine",
+      "parameter": "Azathioprine_6MP",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "concomitant",
+      "action": "avoid",
+      "messageVi": "Tránh phối hợp với azathioprine hoặc 6-mercaptopurine do ức chế xanthine oxidase gây suy tủy xương tử vong (nếu bắt buộc dùng chuyên khoa sâu phải giảm 67%–75% liều azathioprine/6-MP)",
+      "citationIds": [
+        "fda.allopurinol.azathioprine_interaction"
+      ]
+    },
+    {
+      "id": "gate_allopurinol_hepatic",
+      "parameter": "hepatic_impairment",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "history",
+      "action": "caution",
+      "messageVi": "Ở bệnh nhân có bệnh gan từ trước, cần xét nghiệm chức năng gan định kỳ trong giai đoạn đầu điều trị và ngừng ngay nếu có dấu hiệu viêm gan/vàng da/ngứa",
+      "citationIds": [
+        "fda.allopurinol.hepatic_and_thiazide"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Phân loại C (FDA); chỉ sử dụng trong thai kỳ khi thật sự cần thiết sau khi cân nhắc kỹ lợi ích và nguy cơ (đối với gút thông thường nên tạm ngừng/trì hoãn ULT trong thai kỳ)",
+    "citationIds": [
+      "fda.allopurinol.pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Allopurinol và oxipurinol bài tiết vào sữa mẹ; thận trọng khi dùng cho phụ nữ đang cho con bú",
+    "citationIds": [
+      "fda.allopurinol.lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hla_b5801",
+      "messageVi": "Chống chỉ định Allopurinol khi mang alen HLA-B*58:01 hoặc có tiền sử phản ứng quá mẫn nặng với allopurinol",
+      "citationIds": [
+        "acr.gout.2020.hlab5801_screening",
+        "fda.allopurinol.skin_rash_scar"
+      ]
+    },
+    {
+      "code": "azathioprine_use",
+      "messageVi": "Tránh phối hợp với azathioprine hoặc 6-mercaptopurine do ức chế xanthine oxidase gây suy tủy xương đe dọa tính mạng",
+      "citationIds": [
+        "fda.allopurinol.azathioprine_interaction"
+      ]
+    }
+  ],
+  "interactions": [
+    "Azathioprine / 6-Mercaptopurine: Ức chế chuyển hóa qua xanthine oxidase gây suy tủy xương tử vong (tránh phối hợp hoặc bắt buộc giảm liều azathioprine/6-MP còn 1/3–1/4 liều chuẩn kèm theo dõi công thức máu sát)",
+    "Febuxostat: Chống chỉ định phối hợp hai thuốc ức chế xanthine oxidase (trùng lặp cơ chế XOI, tăng độc tính gan–da không thêm lợi ích lâm sàng)",
+    "Lợi tiểu Thiazide (đặc biệt khi suy thận): Có thể làm tăng nguy cơ phản ứng quá mẫn nặng với allopurinol, cần theo dõi sát",
+    "Warfarin / Dicumarol: Có thể kéo dài thời gian prothrombin, cần theo dõi INR",
+    "Ampicillin / Amoxicillin: Tăng tần suất phát ban dị ứng da",
+    "Cyclosporine: Có thể làm tăng nồng độ cyclosporine huyết thanh, cần theo dõi nồng độ thuốc"
+  ],
+  "citationIds": [
+    "acr.gout.2020.allopurinol_first_line",
+    "acr.gout.2020.allopurinol_low_dose_start",
+    "fda.allopurinol.start_and_max",
+    "fda.allopurinol.renal_dosing",
+    "fda.allopurinol.hepatic_and_thiazide",
+    "fda.allopurinol.azathioprine_interaction",
+    "byt.ckd.2024.gout_ult_table21"
+  ],
+  "hepatic": {
+    "status": "caution",
+    "note": "Ở bệnh nhân có bệnh gan mạn tính, cần xét nghiệm chức năng gan định kỳ trong giai đoạn đầu dùng allopurinol và ngừng ngay nếu có dấu hiệu viêm gan/vàng da/phát ban (FDA Zyloprim).",
+    "notesVi": "Ở bệnh nhân có bệnh gan mạn tính, cần xét nghiệm chức năng gan định kỳ trong giai đoạn đầu dùng allopurinol và ngừng ngay nếu có dấu hiệu viêm gan/vàng da/phát ban (FDA Zyloprim).",
+    "citationIds": [
+      "fda.allopurinol.hepatic_and_thiazide"
+    ]
+  }
+}

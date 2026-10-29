@@ -1,0 +1,53 @@
+{
+  "id": "ckd_41_multimorbid_hfref_arni_vs_acei",
+  "titleVi": "Đa bệnh lý (CKD + Suy tim HFrEF chưa điều trị) - Ưu tiên khởi trị Sacubitril/Valsartan (ARNI) và chặn Perindopril (Regression R3-CKD-07)",
+  "source": "ESC 2026 HF & KDIGO 2024 CKD Rec 3.6.4",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_41",
+    "name": "BN CKD 41",
+    "age": 61,
+    "sex": "male",
+    "weight": 74,
+    "sbp": 122,
+    "dbp": 76,
+    "hr": 78,
+    "lvef": 28,
+    "nyha": 2,
+    "scr": 130,
+    "k": 4.3,
+    "uacr": 55,
+    "conditions": {
+      "ckd": true,
+      "hf": true,
+      "htn": true
+    },
+    "currentMeds": [],
+    "selectedModules": ["ckd", "hf"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "sacubitril_valsartan", "action": "START" },
+      { "drugId": "perindopril", "action": "AVOID" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "perindopril", "action": "START" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy R3-CKD-07: Khi đồng thời chọn CKD + HF trên bệnh nhân HFrEF, hệ thống ưu tiên Sacubitril/Valsartan và chuyển Perindopril sang AVOID để ngăn phù mạch do phối hợp ACEi + ARNI."
+}

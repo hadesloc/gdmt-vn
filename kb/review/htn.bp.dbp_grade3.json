@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.bp.dbp_grade3",
+  "contentHash": "d5a05d5b42517ee9bcba3b95fd6ec5293a2233a1be4289930c7339dc7fcfb239",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.bp.dbp_grade3",
+      "contentHash": "d52e082f0811d322",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 110 mmHg (quantity: dbp) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

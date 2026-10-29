@@ -1,0 +1,89 @@
+{
+  "id": "gout_28_pregnancy_acute_flare_stop_nsaid_ult_start_prednisolone",
+  "titleVi": "Thai kỳ lên cơn gút cấp đang uống Ibuprofen + Allopurinol: NGỪNG Ibuprofen & Allopurinol, cắt cơn bằng Prednisolone",
+  "source": "FDA NSAID Warning (≥20–30 tuần đóng sớm ống động mạch/thiểu ối) & ACR 2020",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 31,
+    "sex": "female",
+    "weight": 60,
+    "scr": 62,
+    "uricAcid": 460,
+    "conditions": {
+      "gout": true,
+      "pregnant": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "ibuprofen",
+        "name": "Ibuprofen",
+        "dose": "400",
+        "unit": "mg"
+      },
+      {
+        "drugId": "allopurinol",
+        "name": "Allopurinol",
+        "dose": "100",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": true,
+      "goutFlaresYear": 2
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "ibuprofen",
+        "action": "STOP"
+      },
+      {
+        "drugId": "allopurinol",
+        "action": "STOP"
+      },
+      {
+        "drugId": "prednisolone",
+        "ruleId": "rec_gout_pregnancy_steroid_flare",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "colchicine",
+        "action": "START"
+      },
+      {
+        "drugId": "naproxen",
+        "action": "START"
+      },
+      {
+        "drugId": "febuxostat",
+        "action": "START"
+      },
+      {
+        "drugId": "allopurinol",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Thai phụ 31 tuổi lên cơn gút cấp đang dùng Ibuprofen và Allopurinol. Bắt buộc ngừng NSAID (nguy cơ đóng sớm ống động mạch & thiểu ối thai nhi từ 20–30 tuần), ngừng ULT trong thai kỳ và kiểm soát cơn cấp bằng Prednisolone."
+}

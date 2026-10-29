@@ -1,0 +1,35 @@
+{
+  "itemId": "dm2.vildagliptin.renal_reduced_dose",
+  "contentHash": "e4f42e1f88bf960efd66e624e47c43744b7e697cd95bebf8da340b4e86a77e42",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "dm2.vildagliptin.renal_reduced_dose",
+      "contentHash": "836d20cf073c3fb0",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-27T15:25:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T15:25:00.000Z",
+          "role": "Agent F3 (DM2 Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Created and verified dm2.vildagliptin.renal_reduced_dose for DM2 Round 2 remediation."
+        },
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T15:25:00.000Z",
+          "role": "Agent F3 (DM2 Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Verified dm2.vildagliptin.renal_reduced_dose contentHash, verbatim PDF quotes, and Round 2 R1/R2/R3 clinical schema compliance."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

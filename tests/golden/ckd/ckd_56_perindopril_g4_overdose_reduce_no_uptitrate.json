@@ -1,0 +1,51 @@
+{
+  "id": "ckd_56_perindopril_g4_overdose_reduce_no_uptitrate",
+  "titleVi": "Ngoại trú - Bệnh nhân CKD G4 (CrCl ~16.5 mL/phút) đang dùng Perindopril 2.5 mg mỗi ngày vượt trần SmPC -> Khuyến cáo REDUCE về 2.5 mg cách ngày và chặn UPTITRATE (Regression CKD-R2-R2-02)",
+  "source": "EMA Coversyl SmPC Table 1 & KDIGO 2024 PP 3.6.1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_56",
+    "name": "BN CKD 56",
+    "age": 72,
+    "sex": "female",
+    "weight": 58,
+    "sbp": 136,
+    "dbp": 78,
+    "hr": 70,
+    "scr": 250,
+    "k": 4.6,
+    "uacr": 45,
+    "conditions": {
+      "ckd": true,
+      "htn": true
+    },
+    "currentMeds": [
+      { "drugId": "perindopril", "name": "Coversyl 2.5 mg", "dose": 2.5, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "perindopril", "action": "REDUCE", "doseContains": "2.5 mg cách ngày" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "perindopril", "action": "UPTITRATE" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R2-R2-02: Tôn trọng trần liều tối đa theo dải chức năng thận (2.5 mg cách ngày = 1.25 mg/ngày tương đương); tuyệt đối không phát UPTITRATE vượt trần thận."
+}

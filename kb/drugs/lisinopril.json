@@ -1,0 +1,143 @@
+{
+  "id": "lisinopril",
+  "nameVi": "Lisinopril",
+  "inn": "Lisinopril",
+  "class": "ACEi",
+  "classes": [
+    "acei"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Zestril",
+    "Diroton"
+  ],
+  "forms": [
+    "Viên nén 5 mg",
+    "Viên nén 10 mg",
+    "Viên nén 20 mg"
+  ],
+  "start": {
+    "amount": 10,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "10 mg/ngày (2.5–5 mg nếu suy thận eGFR < 30)"
+  },
+  "target": {
+    "amount": 20,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "20 mg/ngày (tối đa 40 mg/ngày)"
+  },
+  "titration": {
+    "step": 10,
+    "intervalDays": 14,
+    "maxDose": "40 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "10–40 mg/ngày",
+      "citationIds": [
+        "kdigo.ckd.2024.rec_3_6_1_rasi_a3_nondm"
+      ]
+    },
+    {
+      "eGFRFrom": 15,
+      "eGFRTo": 30,
+      "initiate": "ok",
+      "continue": "rec",
+      "dose": "5–40 mg/ngày (khởi đầu 5 mg/ngày khi CrCl 10–30 mL/phút, chuẩn độ tối đa 40 mg/ngày)",
+      "note": "Giảm 50% liều khởi đầu còn 5 mg/ngày khi CrCl 10–30 mL/phút, chuẩn độ theo đáp ứng huyết áp tối đa 40 mg/ngày (BYT 2024 Bảng 12)",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_7_continue_egfr_below_30",
+        "byt.ckd.2024.table_12_acei_dosing"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "2.5–40 mg/ngày (khởi đầu 2.5 mg/ngày khi CrCl < 10 mL/phút hoặc lọc máu; tối đa 40 mg/ngày)",
+      "note": "Khởi đầu 2.5 mg/ngày khi CrCl < 10 mL/phút hoặc đang lọc máu chu kỳ; chuẩn độ thận trọng theo huyết áp và kali máu (BYT 2024 Bảng 12)",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_5_rasi_reduce_stop",
+        "byt.ckd.2024.table_12_acei_dosing"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_lisinopril_k_max",
+      "parameter": "K",
+      "operator": ">",
+      "threshold": 5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm hoãn khởi trị lisinopril nếu kali máu > 5.0 mmol/L",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_2_rasi_monitoring"
+      ]
+    },
+    {
+      "id": "gate_lisinopril_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối nhóm thuốc ức chế men chuyển trong thai kỳ (Boxed Warning: độc tính phôi thai và tử vong chu sinh)",
+      "citationIds": [
+        "ema.perindopril.pregnancy",
+        "fda.losartan.boxed_pregnancy"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định dùng cùng ARB hoặc ARNI",
+    "Bắt buộc khoảng trống đào thải (washout period) ít nhất 36 giờ trước hoặc sau khi dùng Sacubitril/Valsartan (ARNI) để tránh phù mạch thanh quản cấp tử vong"
+  ],
+  "citationIds": [
+    "kdigo.ckd.2024.rec_3_6_1_rasi_a3_nondm",
+    "kdigo.ckd.2024.rec_3_6_4_avoid_dual_rasi",
+    "ema.perindopril.pregnancy",
+    "ema.perindopril.lactation_4_6",
+    "esc.2025.pregnancy.rasi_lactation",
+    "byt.ckd.2024.table_12_acei_dosing"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối nhóm thuốc ức chế men chuyển trong thai kỳ (Boxed Warning FDA: độc tính phôi thai, vô niệu thai nhi, thiểu ối và tử vong chu sinh); ngừng thuốc ngay khi phát hiện có thai",
+    "citationIds": [
+      "ema.perindopril.pregnancy",
+      "fda.losartan.boxed_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo dùng khi cho con bú do thiếu dữ liệu an toàn trên trẻ nhũ nhi; ưu tiên chuyển sang Enalapril hoặc Captopril theo ESC 2025",
+    "citationIds": [
+      "ema.perindopril.lactation_4_6",
+      "esc.2025.pregnancy.rasi_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định tuyệt đối ACEi trong thai kỳ (Boxed Warning)",
+      "citationIds": [
+        "ema.perindopril.pregnancy",
+        "fda.losartan.boxed_pregnancy"
+      ]
+    },
+    {
+      "code": "angioedema_history",
+      "messageVi": "Chống chỉ định tuyệt đối khi có tiền sử phù mạch do ACEi",
+      "citationIds": [
+        "ema.perindopril.pregnancy"
+      ]
+    }
+  ]
+}

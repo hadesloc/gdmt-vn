@@ -1,0 +1,62 @@
+{
+  "id": "asthma_43_acute_empty_vitals_fail_closed",
+  "titleVi": "Cơn hen cấp nội viện thiếu hoàn toàn SpO2 và nhịp thở: Fail-closed yêu cầu sinh hiệu thay vì gán mặc định cơn nhẹ",
+  "source": "BYT 5850/2021 / ASTHMA-R2-205 / ASTHMA-R2-R3-03",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_43",
+    "name": "Nữ 38 tuổi",
+    "age": 38,
+    "sex": "female",
+    "weight": 54,
+    "sbp": 118,
+    "dbp": 76,
+    "hr": 96,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "isAcuteExacerbation": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "missing_input_spo2",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "salbutamol",
+        "action": "START"
+      },
+      {
+        "drugId": "prednisolone",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Khi bật isAcuteExacerbation nhưng bỏ trống SpO2 và nhịp thở (và không có dấu hiệu nặng), hệ thống fail-closed yêu cầu nhập SpO2/RR thay vì kê mù cơn hen nhẹ."
+}

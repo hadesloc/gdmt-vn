@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.rasi.creatinine_rise_max_pct",
+  "contentHash": "cf11e8737ffd197636014a13317c6e25be9800e3ff4fbce6f24a84d0fee87e43",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.rasi.creatinine_rise_max_pct",
+      "contentHash": "6aa7a380339e49ac",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.119Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.rasi.creatinine_rise_max_pct."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

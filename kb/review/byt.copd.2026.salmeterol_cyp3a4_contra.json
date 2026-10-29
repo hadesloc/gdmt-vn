@@ -1,0 +1,26 @@
+{
+  "itemId": "byt.copd.2026.salmeterol_cyp3a4_contra",
+  "contentHash": "21651cc4e75136bbb7d4fe43d6daed58c6dbd62c453ac5ce8a492a9973102e93",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "byt.copd.2026.salmeterol_cyp3a4_contra",
+      "contentHash": "325ca9bdb72ab3b4",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

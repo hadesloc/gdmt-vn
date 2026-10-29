@@ -1,0 +1,55 @@
+{
+  "id": "icu_hypertensive_urgency_stepdown_1620",
+  "titleVi": "Huyết áp tăng cao 202/114 mmHg kèm căng nặng vùng gáy do tự ý bỏ thuốc hạ áp 5 ngày",
+  "source": "on-call:icu_hypertensive_urgency_stepdown_1620",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_icu_hypertensive_urgency_stepdown_1620",
+    "name": "Bà Lý Thị K., 59 tuổi (60 kg)",
+    "age": 59,
+    "sex": "female",
+    "weight": 60,
+    "height": 156,
+    "sbp": 202,
+    "dbp": 114,
+    "hr": 86,
+    "conditions": {
+      "htn": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ],
+    "scr": 110
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_htn_hypertensive_urgency",
+        "action": "CONTINUE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "nicardipine",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân nữ 59 tuổi HA 202/114 mmHg sau 5 ngày quên uống thuốc, tỉnh táo hoàn toàn, không tổn thương cơ quan đích cấp tính: Điều trị thuốc uống từ từ."
+}

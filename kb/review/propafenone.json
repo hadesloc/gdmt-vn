@@ -1,0 +1,26 @@
+{
+  "itemId": "propafenone",
+  "contentHash": "12670c85b894b0a06e2c6dd1adc4674b5e6bd813aa52b96f37ac4bcdb8f28aca",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "propafenone",
+      "contentHash": "d48a47d0f9e1a0d8",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF drug propafenone (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

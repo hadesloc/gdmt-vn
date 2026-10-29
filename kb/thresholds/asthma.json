@@ -1,0 +1,850 @@
+[
+  {
+    "id": "asthma.age.min_adult_adolescent",
+    "value": 12,
+    "unit": "tuổi",
+    "citationIds": [
+      "gina.asthma.2026.age_12"
+    ],
+    "descriptionVi": "Độ tuổi tối thiểu (≥ 12 tuổi) áp dụng phác đồ hen người lớn và trẻ vị thành niên",
+    "quantity": "age"
+  },
+  {
+    "id": "asthma.symptom_control.daytime_cutoff",
+    "value": 2,
+    "unit": "lần/tuần",
+    "citationIds": [
+      "byt.asthma.2020.symptom_control_table_3"
+    ],
+    "descriptionVi": "Ngưỡng triệu chứng ban ngày (> 2 lần/tuần) trong 4 tuần qua theo Bảng 3 BYT 1851",
+    "quantity": "daytime_symptoms"
+  },
+  {
+    "id": "asthma.symptom_control.reliever_cutoff",
+    "value": 2,
+    "unit": "lần/tuần",
+    "citationIds": [
+      "byt.asthma.2020.symptom_control_table_3"
+    ],
+    "descriptionVi": "Ngưỡng dùng thuốc cắt cơn (> 2 lần/tuần) trong 4 tuần qua theo Bảng 3 BYT 1851",
+    "quantity": "reliever_frequency"
+  },
+  {
+    "id": "asthma.symptom_control.partly_max_criteria",
+    "value": 2,
+    "unit": "tiêu chí",
+    "citationIds": [
+      "byt.asthma.2020.symptom_control_table_3"
+    ],
+    "descriptionVi": "Số tiêu chí tối đa (≤ 2 tiêu chí) xếp vào nhóm hen kiểm soát một phần",
+    "quantity": "criteria_count"
+  },
+  {
+    "id": "asthma.symptom_control.uncontrolled_min_criteria",
+    "value": 3,
+    "unit": "tiêu chí",
+    "citationIds": [
+      "byt.asthma.2020.symptom_control_table_3"
+    ],
+    "descriptionVi": "Số tiêu chí tối thiểu (≥ 3 tiêu chí) xếp vào nhóm hen không kiểm soát",
+    "quantity": "criteria_count"
+  },
+  {
+    "id": "asthma.acute.oxygen_target_min",
+    "value": 93,
+    "unit": "%",
+    "citationIds": [
+      "byt.asthma.2021.acute_hospital_treatment"
+    ],
+    "descriptionVi": "Mục tiêu SpO2 tối thiểu trong thở oxy cấp cứu cơn hen cấp (93%)",
+    "quantity": "spo2"
+  },
+  {
+    "id": "asthma.acute.oxygen_target_max",
+    "value": 95,
+    "unit": "%",
+    "citationIds": [
+      "byt.asthma.2021.acute_hospital_treatment"
+    ],
+    "descriptionVi": "Mục tiêu SpO2 tối đa trong thở oxy cấp cứu cơn hen cấp (95%)",
+    "quantity": "spo2"
+  },
+  {
+    "id": "asthma.formoterol.mart_max_inhalations",
+    "value": 12,
+    "unit": "nhát/ngày",
+    "citationIds": [
+      "gina.asthma.2026.formoterol_max_inhalations"
+    ],
+    "descriptionVi": "Số nhát hít tối đa trong 24 giờ cho phác đồ MART với budesonide/formoterol hoặc beclometasone/formoterol",
+    "quantity": "inhalations_count"
+  },
+  {
+    "id": "asthma.formoterol.max_delivered_mcg",
+    "value": 54,
+    "unit": "mcg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.formoterol_max_mcg"
+    ],
+    "descriptionVi": "Liều phân liều tối đa của formoterol trong 24 giờ (54 mcg)",
+    "quantity": "dose_mcg"
+  },
+  {
+    "id": "asthma.formoterol.max_metered_mcg",
+    "value": 72,
+    "unit": "mcg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.formoterol_max_mcg"
+    ],
+    "descriptionVi": "Liều định liều tối đa của formoterol trong 24 giờ (72 mcg)",
+    "quantity": "dose_mcg"
+  },
+  {
+    "id": "asthma.step_down.stability_months_min",
+    "value": 2,
+    "unit": "tháng",
+    "citationIds": [
+      "gina.asthma.2026.step_down_months"
+    ],
+    "descriptionVi": "Thời gian tối thiểu kiểm soát hen ổn định (2 tháng) trước khi xem xét hạ bậc điều trị",
+    "quantity": "months"
+  },
+  {
+    "id": "asthma.step_down.stability_months_max",
+    "value": 3,
+    "unit": "tháng",
+    "citationIds": [
+      "gina.asthma.2026.step_down_months"
+    ],
+    "descriptionVi": "Thời gian kiểm soát ổn định khuyến cáo (3 tháng) trước khi xem xét hạ bậc điều trị",
+    "quantity": "months"
+  },
+  {
+    "id": "asthma.step_down.reduction_min_pct",
+    "value": 25,
+    "unit": "%",
+    "citationIds": [
+      "gina.asthma.2026.step_down_reduction_rate"
+    ],
+    "descriptionVi": "Tỷ lệ giảm liều ICS duy trì tối thiểu (25%) khi hạ bậc",
+    "quantity": "percentage"
+  },
+  {
+    "id": "asthma.step_down.reduction_max_pct",
+    "value": 50,
+    "unit": "%",
+    "citationIds": [
+      "gina.asthma.2026.step_down_reduction_rate"
+    ],
+    "descriptionVi": "Tỷ lệ giảm liều ICS duy trì tối đa (50%) khi hạ bậc",
+    "quantity": "percentage"
+  },
+  {
+    "id": "asthma.ics.budesonide_low_min",
+    "value": 200,
+    "unit": "mcg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.table_6_budesonide"
+    ],
+    "descriptionVi": "Ngưỡng liều thấp tối thiểu của Budesonide (200 mcg/ngày)",
+    "quantity": "dose_daily"
+  },
+  {
+    "id": "asthma.ics.budesonide_low_max",
+    "value": 400,
+    "unit": "mcg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.table_6_budesonide"
+    ],
+    "descriptionVi": "Ngưỡng liều thấp tối đa của Budesonide (400 mcg/ngày)",
+    "quantity": "dose_daily"
+  },
+  {
+    "id": "asthma.ics.budesonide_med_max",
+    "value": 800,
+    "unit": "mcg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.table_6_budesonide"
+    ],
+    "descriptionVi": "Ngưỡng liều trung bình tối đa của Budesonide (800 mcg/ngày)",
+    "quantity": "dose_daily"
+  },
+  {
+    "id": "asthma.ics.beclometasone_low_min",
+    "value": 100,
+    "unit": "mcg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.table_6_beclometasone_extrafine"
+    ],
+    "descriptionVi": "Ngưỡng liều thấp tối thiểu của Beclometasone hạt siêu mịn (100 mcg/ngày)",
+    "quantity": "dose_daily"
+  },
+  {
+    "id": "asthma.ics.beclometasone_low_max",
+    "value": 200,
+    "unit": "mcg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.table_6_beclometasone_extrafine"
+    ],
+    "descriptionVi": "Ngưỡng liều thấp tối đa của Beclometasone hạt siêu mịn (200 mcg/ngày)",
+    "quantity": "dose_daily"
+  },
+  {
+    "id": "asthma.ics.beclometasone_med_max",
+    "value": 400,
+    "unit": "mcg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.table_6_beclometasone_extrafine"
+    ],
+    "descriptionVi": "Ngưỡng liều trung bình tối đa của Beclometasone hạt siêu mịn (400 mcg/ngày)",
+    "quantity": "dose_daily"
+  },
+  {
+    "id": "asthma.ics.fluticasone_prop_low_min",
+    "value": 100,
+    "unit": "mcg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.table_6_fluticasone_propionate"
+    ],
+    "descriptionVi": "Ngưỡng liều thấp tối thiểu của Fluticasone propionate (100 mcg/ngày)",
+    "quantity": "dose_daily"
+  },
+  {
+    "id": "asthma.ics.fluticasone_prop_low_max",
+    "value": 250,
+    "unit": "mcg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.table_6_fluticasone_propionate"
+    ],
+    "descriptionVi": "Ngưỡng liều thấp tối đa của Fluticasone propionate (250 mcg/ngày)",
+    "quantity": "dose_daily"
+  },
+  {
+    "id": "asthma.ics.fluticasone_prop_med_max",
+    "value": 500,
+    "unit": "mcg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.table_6_fluticasone_propionate"
+    ],
+    "descriptionVi": "Ngưỡng liều trung bình tối đa của Fluticasone propionate (500 mcg/ngày)",
+    "quantity": "dose_daily"
+  },
+  {
+    "id": "asthma.ics.fluticasone_furoate_low",
+    "value": 100,
+    "unit": "mcg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.table_6_fluticasone_furoate"
+    ],
+    "descriptionVi": "Liều thấp hàng ngày của Fluticasone furoate DPI (100 mcg/ngày)",
+    "quantity": "dose_daily"
+  },
+  {
+    "id": "asthma.ics.fluticasone_furoate_high",
+    "value": 200,
+    "unit": "mcg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.table_6_fluticasone_furoate"
+    ],
+    "descriptionVi": "Liều cao hàng ngày của Fluticasone furoate DPI (200 mcg/ngày)",
+    "quantity": "dose_daily"
+  },
+  {
+    "id": "asthma.ics.ciclesonide_low_min",
+    "value": 80,
+    "unit": "mcg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.table_6_ciclesonide"
+    ],
+    "descriptionVi": "Ngưỡng liều thấp tối thiểu của Ciclesonide pMDI (80 mcg/ngày)",
+    "quantity": "dose_daily"
+  },
+  {
+    "id": "asthma.ics.ciclesonide_low_max",
+    "value": 160,
+    "unit": "mcg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.table_6_ciclesonide"
+    ],
+    "descriptionVi": "Ngưỡng liều thấp tối đa của Ciclesonide pMDI (160 mcg/ngày)",
+    "quantity": "dose_daily"
+  },
+  {
+    "id": "asthma.ics.ciclesonide_med_max",
+    "value": 320,
+    "unit": "mcg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.table_6_ciclesonide"
+    ],
+    "descriptionVi": "Ngưỡng liều trung bình tối đa của Ciclesonide pMDI (320 mcg/ngày)",
+    "quantity": "dose_daily"
+  },
+  {
+    "id": "asthma.ics.mometasone_low_min",
+    "value": 200,
+    "unit": "mcg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.table_6_mometasone"
+    ],
+    "descriptionVi": "Ngưỡng liều thấp tối thiểu của Mometasone furoate pMDI (200 mcg/ngày)",
+    "quantity": "dose_daily"
+  },
+  {
+    "id": "asthma.ics.mometasone_high",
+    "value": 400,
+    "unit": "mcg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.table_6_mometasone"
+    ],
+    "descriptionVi": "Ngưỡng liều cao của Mometasone furoate pMDI (400 mcg/ngày)",
+    "quantity": "dose_daily"
+  },
+  {
+    "id": "asthma.acute.salbutamol_puffs_min",
+    "value": 4,
+    "unit": "nhát",
+    "citationIds": [
+      "byt.asthma.2021.acute_hospital_treatment"
+    ],
+    "descriptionVi": "Số nhát hít Salbutamol tối thiểu cho xử trí cơn hen cấp (4 nhát)",
+    "quantity": "puffs_dose"
+  },
+  {
+    "id": "asthma.acute.salbutamol_puffs_max",
+    "value": 10,
+    "unit": "nhát",
+    "citationIds": [
+      "byt.asthma.2021.acute_hospital_treatment"
+    ],
+    "descriptionVi": "Số nhát hít Salbutamol tối đa cho xử trí cơn hen cấp (10 nhát)",
+    "quantity": "puffs_dose"
+  },
+  {
+    "id": "asthma.acute.salbutamol_neb_dose",
+    "value": 5,
+    "unit": "mg",
+    "citationIds": [
+      "byt.asthma.2021.acute_hospital_treatment"
+    ],
+    "descriptionVi": "Liều Salbutamol khí dung trong cơn hen cấp (5 mg)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "asthma.acute.repeat_interval_min",
+    "value": 20,
+    "unit": "phút",
+    "citationIds": [
+      "byt.asthma.2021.acute_hospital_treatment"
+    ],
+    "descriptionVi": "Khoảng thời gian nhắc lại Salbutamol tối thiểu (20 phút)",
+    "quantity": "duration_min"
+  },
+  {
+    "id": "asthma.acute.ipratropium_puffs",
+    "value": 4,
+    "unit": "nhát",
+    "citationIds": [
+      "gina.asthma.2026.acute_ipratropium_puffs"
+    ],
+    "descriptionVi": "Số nhát xịt Ipratropium phối hợp trong cơn hen cấp vừa-nặng (4 nhát)",
+    "quantity": "puffs_dose"
+  },
+  {
+    "id": "asthma.acute.ipratropium_repeat_max",
+    "value": 3,
+    "unit": "lần",
+    "citationIds": [
+      "gina.asthma.2026.acute_ipratropium_puffs"
+    ],
+    "descriptionVi": "Số lần lặp lại tối đa của Ipratropium trong giờ đầu (3 lần)",
+    "quantity": "count"
+  },
+  {
+    "id": "asthma.acute.prednisolone_dose_min",
+    "value": 40,
+    "unit": "mg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.acute_prednisolone_daily"
+    ],
+    "descriptionVi": "Liều Prednisolone tối thiểu điều trị cơn hen cấp ở người lớn (40 mg/ngày)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "asthma.acute.prednisolone_dose_max",
+    "value": 50,
+    "unit": "mg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.acute_prednisolone_daily"
+    ],
+    "descriptionVi": "Liều Prednisolone tối đa điều trị cơn hen cấp ở người lớn (50 mg/ngày)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "asthma.acute.steroid_duration_min",
+    "value": 5,
+    "unit": "ngày",
+    "citationIds": [
+      "gina.asthma.2026.acute_prednisolone_daily"
+    ],
+    "descriptionVi": "Thời gian dùng corticoid toàn thân tối thiểu cho đợt cấp (5 ngày)",
+    "quantity": "duration_days"
+  },
+  {
+    "id": "asthma.acute.steroid_duration_max",
+    "value": 7,
+    "unit": "ngày",
+    "citationIds": [
+      "gina.asthma.2026.acute_prednisolone_daily"
+    ],
+    "descriptionVi": "Thời gian dùng corticoid toàn thân tối đa cho đợt cấp (7 ngày)",
+    "quantity": "duration_days"
+  },
+  {
+    "id": "asthma.acute.magnesium_dose_g",
+    "value": 2,
+    "unit": "g",
+    "citationIds": [
+      "byt.asthma.2020.magnesium_dose_2g"
+    ],
+    "descriptionVi": "Liều Magnesium sulfate truyền tĩnh mạch trong cơn hen cấp nặng (2 g)",
+    "quantity": "dose_g"
+  },
+  {
+    "id": "asthma.acute.magnesium_infusion_minutes",
+    "value": 20,
+    "unit": "phút",
+    "citationIds": [
+      "byt.asthma.2020.magnesium_dose_2g"
+    ],
+    "descriptionVi": "Thời gian truyền tĩnh mạch Magnesium sulfate (20 phút)",
+    "quantity": "duration_min"
+  },
+  {
+    "id": "asthma.acute.severe_rr_threshold",
+    "value": 30,
+    "unit": "lần/phút",
+    "citationIds": [
+      "byt.asthma.2021.acute_classification"
+    ],
+    "descriptionVi": "Ngưỡng nhịp thở của cơn hen nặng (> 30 lần/phút)",
+    "quantity": "rr"
+  },
+  {
+    "id": "asthma.acute.severe_hr_threshold",
+    "value": 120,
+    "unit": "lần/phút",
+    "citationIds": [
+      "byt.asthma.2021.acute_classification"
+    ],
+    "descriptionVi": "Ngưỡng tần số tim của cơn hen nặng (> 120 lần/phút)",
+    "quantity": "hr"
+  },
+  {
+    "id": "asthma.acute.severe_spo2_threshold",
+    "value": 90,
+    "unit": "%",
+    "citationIds": [
+      "byt.asthma.2021.acute_classification"
+    ],
+    "descriptionVi": "Ngưỡng SpO2 khí trời của cơn hen nặng (< 90%)",
+    "quantity": "spo2"
+  },
+  {
+    "id": "asthma.acute.severe_pef_threshold",
+    "value": 50,
+    "unit": "%",
+    "citationIds": [
+      "byt.asthma.2021.acute_classification"
+    ],
+    "descriptionVi": "Ngưỡng lưu lượng đỉnh PEF của cơn hen nặng (< 50% GTLT)",
+    "quantity": "pef"
+  },
+  {
+    "id": "asthma.action_plan.green_zone_min",
+    "value": 80,
+    "unit": "%",
+    "citationIds": [
+      "byt.asthma.2021.action_plan_zones"
+    ],
+    "descriptionVi": "Ngưỡng PEF vùng xanh an toàn của bản kế hoạch hành động hen (> 80% giá trị tốt nhất)",
+    "quantity": "pef"
+  },
+  {
+    "id": "asthma.biologic.eosinophils_type2_min",
+    "value": 300,
+    "unit": "tế bào/µL",
+    "citationIds": [
+      "byt.asthma.2020.type2_biomarkers"
+    ],
+    "descriptionVi": "Ngưỡng bạch cầu ái toan máu tối thiểu (≥ 300 tế bào/µL) chỉ điểm kiểu hình viêm Type 2 cho điều trị sinh học",
+    "quantity": "eos"
+  },
+  {
+    "id": "asthma.biologic.benralizumab_age_min",
+    "value": 12,
+    "unit": "tuổi",
+    "citationIds": [
+      "gina.asthma.2026.biologics_benralizumab"
+    ],
+    "descriptionVi": "Độ tuổi tối thiểu chỉ định Benralizumab (≥ 12 tuổi)",
+    "quantity": "age"
+  },
+  {
+    "id": "asthma.biologic.tezepelumab_age_min",
+    "value": 12,
+    "unit": "tuổi",
+    "citationIds": [
+      "gina.asthma.2026.biologics_tezepelumab"
+    ],
+    "descriptionVi": "Độ tuổi tối thiểu chỉ định Tezepelumab (≥ 12 tuổi)",
+    "quantity": "age"
+  },
+  {
+    "id": "asthma.biologic.omalizumab_age_min",
+    "value": 6,
+    "unit": "tuổi",
+    "citationIds": [
+      "gina.asthma.2026.step5_biologics"
+    ],
+    "descriptionVi": "Độ tuổi tối thiểu chỉ định Omalizumab (≥ 6 tuổi)",
+    "quantity": "age"
+  },
+  {
+    "id": "asthma.risk.low_fev1_pct",
+    "value": 60,
+    "unit": "%",
+    "citationIds": [
+      "gina.asthma.2026.low_fev1_60_risk"
+    ],
+    "descriptionVi": "Ngưỡng FEV₁ thấp (< 60% giá trị dự đoán) là yếu tố nguy cơ độc lập mạnh cho đợt cấp hen nặng",
+    "quantity": "fev1_pct"
+  },
+  {
+    "id": "asthma.biologic.feno_type2_min",
+    "value": 25,
+    "unit": "ppb",
+    "citationIds": [
+      "byt.asthma.2020.type2_biomarkers"
+    ],
+    "descriptionVi": "Ngưỡng FeNO tối thiểu (≥ 25 ppb) chỉ điểm viêm đường thở Type 2 theo QĐ 1851/BYT",
+    "quantity": "feno"
+  },
+  {
+    "id": "asthma.acute.life_threatening_paco2_mmhg",
+    "value": 45,
+    "unit": "mmHg",
+    "citationIds": [
+      "gina.asthma.2026.acute_hypercapnia_paco2_45"
+    ],
+    "descriptionVi": "Ngưỡng PaCO₂ máu động mạch (> 45 mmHg) chỉ điểm suy hô hấp tăng CO₂ máu đe dọa tính mạng trong cơn hen cấp",
+    "quantity": "paco2"
+  },
+  {
+    "id": "asthma.acute.methylprednisolone_iv_mg",
+    "value": 40,
+    "unit": "mg",
+    "citationIds": [
+      "byt.asthma.2021.acute_iv_steroid_ipratropium"
+    ],
+    "descriptionVi": "Liều Methylprednisolone tiêm tĩnh mạch cấp cứu cơn hen cấp nặng/nguy kịch (40 mg)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "asthma.acute.ipratropium_neb_mg",
+    "value": 0.5,
+    "unit": "mg",
+    "citationIds": [
+      "byt.asthma.2021.acute_iv_steroid_ipratropium"
+    ],
+    "descriptionVi": "Liều Ipratropium bromide phun khí dung trong cơn hen cấp nặng/nguy kịch (0.5 mg)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "asthma.action_plan.yellow_zone_min",
+    "value": 50,
+    "unit": "%",
+    "citationIds": [
+      "byt.asthma.2021.action_plan_yellow_50_79"
+    ],
+    "descriptionVi": "Ngưỡng dưới Vùng Vàng / ngưỡng Vùng Đỏ (< 50% PEF tốt nhất) trong Kế hoạch hành động hen",
+    "quantity": "pef"
+  },
+  {
+    "id": "asthma.action_plan.yellow_zone_max",
+    "value": 79,
+    "unit": "%",
+    "citationIds": [
+      "byt.asthma.2021.action_plan_yellow_50_79"
+    ],
+    "descriptionVi": "Ngưỡng trên Vùng Vàng (79% PEF tốt nhất) trong Kế hoạch hành động hen",
+    "quantity": "pef"
+  },
+  {
+    "id": "asthma.discharge.followup_days_min",
+    "value": 2,
+    "unit": "ngày",
+    "citationIds": [
+      "byt.asthma.2020.discharge_followup_2_7_days"
+    ],
+    "descriptionVi": "Thời gian hẹn tái khám tối thiểu sau xuất viện vì đợt cấp hen (2 ngày)",
+    "quantity": "duration_days"
+  },
+  {
+    "id": "asthma.discharge.followup_days_max",
+    "value": 7,
+    "unit": "ngày",
+    "citationIds": [
+      "byt.asthma.2020.discharge_followup_2_7_days"
+    ],
+    "descriptionVi": "Thời gian hẹn tái khám tối đa sau xuất viện vì đợt cấp hen (7 ngày)",
+    "quantity": "duration_days"
+  },
+  {
+    "id": "asthma.aerd.cox2_observation_hours_min",
+    "value": 2,
+    "unit": "giờ",
+    "citationIds": [
+      "gina.asthma.2026.aerd_cox2_observation"
+    ],
+    "descriptionVi": "Thời gian theo dõi tối thiểu tại cơ sở y tế sau liều đầu chất ức chế chọn lọc COX-2 ở bệnh nhân AERD (2 giờ)",
+    "quantity": "duration_hours"
+  },
+  {
+    "id": "asthma.step_up.trial_months_min",
+    "value": 2,
+    "unit": "tháng",
+    "citationIds": [
+      "gina.asthma.2026.sustained_step_up_2_3_months",
+      "byt.asthma.2020.sustained_step_up_2_3_months"
+    ],
+    "descriptionVi": "Thời gian tăng bậc duy trì thử nghiệm tối thiểu khi hen chưa kiểm soát tốt (2 tháng)",
+    "quantity": "months"
+  },
+  {
+    "id": "asthma.step_up.trial_months_max",
+    "value": 3,
+    "unit": "tháng",
+    "citationIds": [
+      "gina.asthma.2026.sustained_step_up_2_3_months",
+      "byt.asthma.2020.sustained_step_up_2_3_months"
+    ],
+    "descriptionVi": "Thời gian tăng bậc duy trì thử nghiệm khuyến cáo trước khi đánh giá lại (3 tháng)",
+    "quantity": "months"
+  },
+  {
+    "id": "asthma.acute.magnesium_fev1_pct_cutoff",
+    "value": 30,
+    "unit": "%",
+    "citationIds": [
+      "gina.asthma.2026.acute_magnesium_fev1_30"
+    ],
+    "descriptionVi": "Ngưỡng FEV1 dự đoán lúc nhập viện (< 30%) chỉ định truyền tĩnh mạch Magnesium sulfate trong cơn hen cấp nặng",
+    "quantity": "fev1_pct"
+  },
+  {
+    "id": "asthma.acute.magnesium_sbp_caution_min",
+    "value": 90,
+    "unit": "mmHg",
+    "citationIds": [
+      "esc.hf.2026.shock_sbp_90_hypoperfusion",
+      "who.mgso4.contra_brady_conduction_renal",
+      "esc.pregnancy.2025.magnesium_toxicity_avblock_hypotension"
+    ],
+    "descriptionVi": "Mốc tụt huyết áp huyết động SBP <90 mmHg để tránh tự kê MgSO4 bổ trợ trước khi hồi sức; không phải ngưỡng chống chỉ định định lượng riêng trên nhãn MgSO4.",
+    "quantity": "sbp"
+  },
+  {
+    "id": "asthma.acute.pregnancy_oxygen_target_min",
+    "value": 95,
+    "unit": "%",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_acute_fetal_hypoxia",
+      "gina.asthma.2026.acute_admission_predictors",
+      "gina.asthma.2026.oxygen_target_revised_95"
+    ],
+    "descriptionVi": "Mục tiêu SpO2 tối thiểu ở phụ nữ mang thai bị cơn hen cấp (≥ 95%) để phòng ngừa thiếu oxy thai nhi",
+    "quantity": "spo2"
+  },
+  {
+    "id": "asthma.acute.pregnancy_oxygen_target_max",
+    "value": 95,
+    "unit": "%",
+    "citationIds": [
+      "gina.asthma.2026.oxygen_target_revised_95",
+      "gina.asthma.2026.acute_admission_predictors",
+      "gina.asthma.2026.pregnancy_acute_fetal_hypoxia"
+    ],
+    "descriptionVi": "Ngưỡng bão hòa oxy mục tiêu chuẩn theo GINA 2026 khi thở oxy bổ sung ở người lớn và thai kỳ (95%, duy trì ≥ 95% tránh thiếu oxy thai nhi)",
+    "quantity": "spo2"
+  },
+  {
+    "id": "asthma.acute.hypoxemia_spo2_cutoff",
+    "value": 92,
+    "unit": "%",
+    "citationIds": [
+      "gina.asthma.2026.acute_oxygen_spo2_92"
+    ],
+    "descriptionVi": "Ngưỡng SpO2 giảm oxy máu (< 92%) gợi ý đợt cấp cần thở oxy bổ sung và đánh giá nhập viện",
+    "quantity": "spo2"
+  },
+  {
+    "id": "asthma.acute.moderate_rr_cutoff",
+    "value": 22,
+    "unit": "lần/phút",
+    "citationIds": [
+      "gina.asthma.2026.acute_admission_predictors"
+    ],
+    "descriptionVi": "Ngưỡng tần số thở tăng (> 22 lần/phút) gợi ý đợt cấp hen ở bệnh nhân nội trú",
+    "quantity": "rr"
+  },
+  {
+    "id": "asthma.formoterol.foster_smpc_max_inhalations",
+    "value": 8,
+    "unit": "nhát/ngày",
+    "citationIds": [
+      "gina.asthma.2026.beclometasone_formoterol_max_72_vs_48"
+    ],
+    "descriptionVi": "Trần liều hàng ngày theo tờ thông tin sản phẩm (SmPC) của Beclometasone/Formoterol 100/6 mcg (8 nhát/ngày)",
+    "quantity": "inhalations_count"
+  },
+  {
+    "id": "asthma.formoterol.foster_smpc_max_metered_mcg",
+    "value": 48,
+    "unit": "mcg/ngày",
+    "citationIds": [
+      "gina.asthma.2026.beclometasone_formoterol_max_72_vs_48"
+    ],
+    "descriptionVi": "Tổng liều định liều tối đa formoterol theo SmPC của Beclometasone/Formoterol (48 mcg/ngày)",
+    "quantity": "dose_mcg"
+  },
+  {
+    "id": "asthma.risk.prior_exacerbation_min",
+    "value": 1,
+    "unit": "đợt/năm",
+    "citationIds": [
+      "gina.asthma.2026.mart_prior_exac_1"
+    ],
+    "descriptionVi": "Tiền sử có ít nhất 1 đợt cấp nặng trong 12 tháng qua làm tăng mạnh nguy cơ tái phát đợt cấp",
+    "quantity": "asthma_exacerbations"
+  },
+  {
+    "id": "asthma.age.min_adult_18",
+    "value": 18,
+    "unit": "tuổi",
+    "citationIds": [
+      "gina.asthma.2026.foster_age_18",
+      "gina.asthma.2026.triple_tiotropium_age_limits",
+      "gina.asthma.2026.step5_lama_triplet"
+    ],
+    "descriptionVi": "Độ tuổi tối thiểu (≥ 18 tuổi) được phê duyệt cho Beclometasone/Formoterol (Foster) và các bình hít bộ ba cố định Trimbow, Trelegy, Enerzair",
+    "quantity": "age"
+  },
+  {
+    "id": "asthma.biologic.dupilumab_eos_max",
+    "value": 1500,
+    "unit": "tế bào/µL",
+    "citationIds": [
+      "gina.asthma.2026.dupilumab_eos_1500_contra",
+      "fda.asthma.dupilumab_eos_1500_excluded",
+      "gina.asthma.2026.hypereosinophilia_1500_egpa_strongyloides"
+    ],
+    "descriptionVi": "Ngưỡng tăng bạch cầu ái toan máu cao (≥ 1500 tế bào/µL) không khuyến cáo dùng Dupilumab và bắt buộc tầm soát EGPA / nhiễm giun lươn Strongyloides",
+    "quantity": "eos"
+  },
+  {
+    "id": "asthma.slit.min_fev1_pct",
+    "value": 70,
+    "unit": "%",
+    "citationIds": [
+      "gina.asthma.2026.slit_hdm_fev1_70"
+    ],
+    "descriptionVi": "Ngưỡng FEV1 tối thiểu (> 70% dự đoán) cho phép cân nhắc bổ sung miễn dịch trị liệu dưới lưỡi (SLIT) mạt bụi nhà ở bệnh nhân hen kèm viêm mũi dị ứng",
+    "quantity": "fev1_pct"
+  },
+  {
+    "id": "asthma.formoterol.rapihaler_80_max_inhalations",
+    "value": 24,
+    "unit": "nhát/ngày",
+    "citationIds": [
+      "gina.asthma.2026.rapihaler_80_225_double_actuations",
+      "gina.asthma.2026.formoterol_max_inhalations"
+    ],
+    "descriptionVi": "Số nhát xịt tối đa trong 24 giờ đối với bình Symbicort Rapihaler hàm lượng 80/2.25 mcg (24 nhát/ngày = 72 mcg formoterol định liều)",
+    "quantity": "inhalations_count"
+  },
+  {
+    "id": "asthma.acute.severe_fev1_threshold",
+    "value": 50,
+    "unit": "%",
+    "citationIds": [
+      "byt.asthma.2021.acute_classification",
+      "gina.asthma.2026.acute_admission_predictors"
+    ],
+    "descriptionVi": "Ngưỡng FEV1 dự đoán (≤ 50%) phân tầng cơn hen phế quản cấp mức độ nặng",
+    "quantity": "fev1_pct"
+  },
+  {
+    "id": "asthma.acute.discharge_min_pef_pct",
+    "value": 60,
+    "unit": "%",
+    "citationIds": [
+      "byt.asthma.2021.discharge_criteria_pef_60_80_spo2_94",
+      "gina.asthma.2026.pef_fev1_below_60_deterioration"
+    ],
+    "descriptionVi": "Ngưỡng lưu lượng đỉnh PEF tối thiểu (> 60% dự đoán/tốt nhất) trước khi cho phép xuất viện sau cơn hen cấp",
+    "quantity": "pef"
+  },
+  {
+    "id": "asthma.acute.discharge_min_fev1_pct",
+    "value": 60,
+    "unit": "%",
+    "citationIds": [
+      "byt.asthma.2021.discharge_criteria_pef_60_80_spo2_94",
+      "gina.asthma.2026.pef_fev1_below_60_deterioration"
+    ],
+    "descriptionVi": "Ngưỡng FEV1 tối thiểu (> 60% dự đoán) trước khi cho phép xuất viện sau cơn hen cấp",
+    "quantity": "fev1_pct"
+  },
+  {
+    "id": "asthma.acute.discharge_min_spo2",
+    "value": 94,
+    "unit": "%",
+    "citationIds": [
+      "byt.asthma.2021.discharge_criteria_pef_60_80_spo2_94"
+    ],
+    "descriptionVi": "Ngưỡng SpO2 khí trời tối thiểu (≥ 94% ở người lớn không COPD, ≥ 95% ở thai phụ) trước khi xem xét xuất viện sau cơn hen cấp",
+    "quantity": "spo2"
+  },
+  {
+    "id": "asthma.acute.moderate_hr_min",
+    "value": 100,
+    "unit": "lần/phút",
+    "citationIds": [
+      "byt.asthma.2020.moderate_exacerbation_vitals_hr_100_120"
+    ],
+    "descriptionVi": "Ngưỡng tần số tim (≥ 100 lần/phút) gợi ý đợt cấp hen mức độ trung bình theo Bảng 10 QĐ 1851/BYT",
+    "quantity": "hr"
+  },
+  {
+    "id": "asthma.acute.magnesium_brady_hr_min",
+    "value": 50,
+    "unit": "lần/phút",
+    "quantity": "hr",
+    "citationIds": [
+      "aha.2025.bradycardia_hr_50",
+      "who.mgso4.contra_brady_conduction_renal"
+    ],
+    "descriptionVi": "Mốc triage nhịp chậm AHA kết hợp cảnh báo nhịp chậm rõ của MgSO4: không tự kê MgSO4 bổ trợ khi HR <50."
+  },
+  {
+    "id": "asthma.acute.magnesium_renal_review_egfr_min",
+    "value": 60,
+    "unit": "mL/phút/1,73m²",
+    "quantity": "egfr",
+    "citationIds": [
+      "kdigo.ckd.2024.table_2_gfr_categories",
+      "who.mgso4.renal_caution_monitoring"
+    ],
+    "descriptionVi": "Mốc phân tầng GFR G3–G5 (KDIGO) để yêu cầu bác sĩ xác nhận liều MgSO4 trong hen; không phải ngưỡng chỉnh liều trên nhãn MgSO4 và không suy ra liều 1 g."
+  }
+]

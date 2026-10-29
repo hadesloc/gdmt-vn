@@ -1,0 +1,62 @@
+{
+  "id": "copd_51_r2_vte_bleeding_avoids_anticoagulation",
+  "titleVi": "Hồi quy R2 (R3-R2-COPD-02): Đợt cấp nội viện có tiền sử xuất huyết hoạt động – Cấm chống đông dược lý, chuyển sang bơm hơi cơ học (IPC)",
+  "source": "GOLD 2026 p. 122 & BYT QĐ 2131/2026 p. 41 (R3-R2-COPD-02)",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_51",
+    "age": 72,
+    "sex": "male",
+    "weight": 57,
+    "height": 164,
+    "sbp": 130,
+    "dbp": 78,
+    "hr": 104,
+    "conditions": {
+      "copd": true,
+      "bleedingHistory": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteExacerbation": true,
+      "fev1FvcRatio": 0.47,
+      "fev1PredPct": 41,
+      "restingSpo2": 87,
+      "abgPh": 7.36,
+      "abgPaco2": 44,
+      "purulentSputum": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_copd_vte_prophylaxis",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_copd_vte_prophylaxis",
+        "action": "START"
+      }
+    ]
+  }
+}

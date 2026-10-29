@@ -1,0 +1,50 @@
+{
+  "id": "ckd_10_metabolic_acidosis_bicarb",
+  "titleVi": "Khởi trị Natri Bicarbonat uống điều trị toan chuyển hóa khi HCO3 < 18",
+  "source": "KDIGO 2024 PP 3.10.1 / kdigo.ckd.2024.pp_3_10_1_acidosis_bicarbonate",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_10",
+    "name": "BN CKD 10",
+    "age": 67,
+    "sex": "male",
+    "weight": 65,
+    "sbp": 136,
+    "dbp": 82,
+    "hr": 74,
+    "scr": 220,
+    "hco3": 15,
+    "k": 4.8,
+    "conditions": {
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "sodium_bicarbonate",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Chỉ định bù kiềm natri bicarbonat khi HCO3- < 18 mmol/L để đạt đích 22–26 mmol/L."
+}

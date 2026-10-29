@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.dose.simva_max",
+  "contentHash": "55769a855402f54fe4f1b2e38a4bae2545401158b072c14f95c53451aa09a5ec",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.dose.simva_max",
+      "contentHash": "a7d9ce1790fc238b",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.dose.simva_max."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

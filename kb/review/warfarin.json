@@ -1,0 +1,26 @@
+{
+  "itemId": "warfarin",
+  "contentHash": "7e506f75a02845a540cbfdb24df100428d66799d7600a7ac32f9f0742a445ada",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "warfarin",
+      "contentHash": "8ed29308551fab8c",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:10:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF drug warfarin (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:10:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

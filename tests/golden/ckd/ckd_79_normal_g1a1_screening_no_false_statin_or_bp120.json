@@ -1,0 +1,48 @@
+{
+  "id": "ckd_79_normal_g1a1_screening_no_false_statin_or_bp120",
+  "titleVi": "Ngoại trú - Ca sàng lọc chức năng thận bình thường G1A1 (55 tuổi, eGFR ~99, UACR 1.0 mg/mmol, HA 124/76 mmHg) bật module CKD -> Không kê Statin sai, không ép HA < 120 mmHg, không phát Sick-day CKD (Regression CKD-R4-R1-06)",
+  "source": "KDIGO 2024 Chapter 1 (CKD Definition requires eGFR < 60 or Albuminuria/Structural Marker >= 3 months)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_79",
+    "name": "BN CKD 79",
+    "age": 55,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 124,
+    "dbp": 76,
+    "scr": 72,
+    "k": 4.2,
+    "uacr": 1.0,
+    "conditions": {
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [],
+    "mustNotInclude": [
+      { "drugId": "atorvastatin", "action": "START" },
+      { "ruleId": "rec_ckd_bp_target", "action": "UPTITRATE" },
+      { "ruleId": "rec_ckd_bp_target", "action": "CONTINUE" },
+      { "ruleId": "rec_ckd_sick_day_education", "action": "MONITOR" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R4-R1-06: Chặn điều trị quá mức trên bệnh nhân G1–G2 A1 hoàn toàn bình thường chỉ vì người dùng tích chọn module CKD để tầm soát."
+}

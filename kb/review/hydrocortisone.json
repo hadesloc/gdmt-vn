@@ -1,0 +1,26 @@
+{
+  "itemId": "hydrocortisone",
+  "contentHash": "2baad4cd435b3cc411e69547018881cbe5e916b595b1848638ada64d3135f8e4",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "hydrocortisone",
+      "contentHash": "fe8ee4f7fea834fd",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateDrugEntry, dải thận liên tục không chồng lấn, an toàn thai kỳ/cho con bú và trích dẫn nguyên văn PDF cho hydrocortisone."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

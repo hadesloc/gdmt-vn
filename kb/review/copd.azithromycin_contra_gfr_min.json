@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.azithromycin_contra_gfr_min",
+  "contentHash": "88241f5be3dc8d9978ff547d5a5cde6bdd46d3cc6132aa4f550962a42634a7b4",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.azithromycin_contra_gfr_min",
+      "contentHash": "0444f8ed32c4285c",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

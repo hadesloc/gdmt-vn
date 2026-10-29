@@ -1,0 +1,26 @@
+{
+  "itemId": "af.periprocedural.acenocoumarol_hold_days",
+  "contentHash": "a27f16148e7d3dd13592aa99803dc8e1b626b2227483a8edb8ce5950c21e0029",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.periprocedural.acenocoumarol_hold_days",
+      "contentHash": "e326edb642ed1411",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.periprocedural.acenocoumarol_hold_days (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

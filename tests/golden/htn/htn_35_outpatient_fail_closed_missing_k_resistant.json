@@ -1,0 +1,72 @@
+{
+  "id": "htn_35_outpatient_fail_closed_missing_k_resistant",
+  "titleVi": "QA-1 Fail-Closed: THA kháng trị thiếu xét nghiệm Kali máu không được START Spironolactone",
+  "source": "ESC 2024 HTN / esc.htn.2024.spiro_gates_egfr30_k45",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 59,
+    "sex": "male",
+    "weight": 74,
+    "height": 168,
+    "sbp": 156,
+    "dbp": 96,
+    "hr": 74,
+    "scr": 88,
+    "conditions": {
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "perindopril",
+        "name": "Coversyl",
+        "dose": 10,
+        "unit": "mg"
+      },
+      {
+        "drugId": "amlodipine",
+        "name": "Amlor",
+        "dose": 10,
+        "unit": "mg"
+      },
+      {
+        "drugId": "indapamide",
+        "name": "Natrilix SR",
+        "dose": 1.5,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "missing_input_k",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "spironolactone",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân THA kháng trị trên 3 thuốc nhưng chưa có kết quả Kali máu: hệ thống fail-closed không khởi trị Spironolactone và nhắc nhập K+."
+}

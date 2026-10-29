@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.prevent.intermediate_max",
+  "contentHash": "5976b891d6627254c1e5ce3cea5aa4de72132b8bc0b4235ff5a3ecc2d321028e",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.prevent.intermediate_max",
+      "contentHash": "f0238da6c3b15777",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.prevent.intermediate_max."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

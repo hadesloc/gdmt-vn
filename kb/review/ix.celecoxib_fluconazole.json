@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.celecoxib_fluconazole",
+  "contentHash": "82ccc3df07dd6877e902be3b28ebf3e35d8b3f654354ed9a1c52e468a1876733",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.celecoxib_fluconazole",
+      "contentHash": "e7d535271c8e441a",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.celecoxib_fluconazole."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "copd_68_r3_pulmonary_rehab_ldct_saba_overuse",
+  "titleVi": "Hồi quy R3 (COPD-R3-R1-04, R1-16, R1-18): COPD Nhóm B đang hút thuốc 35 gói-năm, lạm dụng SABA 5 lần/tuần nhận chỉ định Phục hồi chức năng hô hấp, Tầm soát LDCT + AATD và cảnh báo lạm dụng SABA",
+  "source": "GOLD 2026 p. 51, 83 / BYT QĐ 2131/2026 / GINA 2026 (COPD-R3-R1-04, COPD-R3-R1-16, COPD-R3-R1-18)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_68",
+    "age": 64,
+    "sex": "male",
+    "weight": 63,
+    "height": 167,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 78,
+    "egfr": 76,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "tiotropium_olodaterol",
+        "name": "Spiolto Respimat",
+        "dose": 5,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.55,
+      "fev1PredPct": 61,
+      "mmrc": 2,
+      "cat": 14,
+      "moderateExacerbations": 0,
+      "hospitalizations": 0,
+      "bloodEos": 140,
+      "currentInhaler": "laba_lama",
+      "smokingStatus": "current",
+      "packYears": 35,
+      "sabaUsePerWeek": 5
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_copd_pulmonary_rehab",
+        "action": "REFER"
+      },
+      {
+        "ruleId": "rec_copd_ldct_screening",
+        "action": "CONSIDER"
+      },
+      {
+        "ruleId": "rec_copd_saba_overuse_warning",
+        "action": "MONITOR"
+      },
+      {
+        "ruleId": "rec_copd_smoking_cessation",
+        "action": "REFER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_copd_azithromycin_prophylaxis",
+        "action": "CONSIDER"
+      }
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "dm2_48_outpatient_eudka_refer_stop_sglt2i",
+  "titleVi": "Ngoại trú biểu hiện Euglycemic DKA trên nền Empagliflozin: Chuyển Cấp cứu ngay và ngừng vĩnh viễn SGLT2i",
+  "source": "ADA/EASD/JBDS/DTI 2024 Hyperglycemic Crises Consensus",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 55,
+    "sex": "female",
+    "weight": 68,
+    "height": 162,
+    "sbp": 112,
+    "dbp": 70,
+    "hr": 108,
+    "scr": 88,
+    "k": 4.2,
+    "glucose": 10.2,
+    "hba1c": 7.8,
+    "conditions": {
+      "dm": true,
+      "hf": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "empagliflozin",
+        "name": "Empagliflozin",
+        "dose": 10,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "bloodKetones": 4.2,
+      "venousPh": 7.22,
+      "serumBicarb": 13
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_dm2_outpatient_crisis_refer",
+        "action": "REFER"
+      },
+      {
+        "drugId": "empagliflozin",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "metformin",
+        "action": "START"
+      },
+      {
+        "drugId": "empagliflozin",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân ngoại trú có tiêu chuẩn Euglycemic DKA (BHB >= 3.0, pH < 7.30, HCO3 < 18 dù glucose < 11.1 mmol/L) được chuyển cấp cứu khẩn cấp (REFER), ngừng vĩnh viễn Empagliflozin và chặn mọi chỉ định kê mới thuốc ngoại trú."
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "propranolol",
+  "contentHash": "fff230a0b3aff5055e71ac8aa23cb2e7bf271983158f9949a461ed4685223dac",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "propranolol",
+      "contentHash": "42cf9734886e2ad0",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateDrugEntry, dải thận liên tục không chồng lấn, an toàn thai kỳ/cho con bú và trích dẫn nguyên văn PDF cho propranolol."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

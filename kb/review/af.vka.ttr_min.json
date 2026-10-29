@@ -1,0 +1,26 @@
+{
+  "itemId": "af.vka.ttr_min",
+  "contentHash": "124bf7e5f6709d611b499d1f3ee5b376bcdd749edc7f0655e9c6fd6c62593cc1",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.vka.ttr_min",
+      "contentHash": "83340d9a46976d14",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.vka.ttr_min (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

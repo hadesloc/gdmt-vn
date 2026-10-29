@@ -1,0 +1,77 @@
+{
+  "id": "af_52_rhythm_stop_dronedarone_permanent_af",
+  "titleVi": "Rung nhĩ vĩnh viễn (Permanent AF) đang dùng Dronedarone: Dừng ngay do chống chỉ định Class III (PALLAS)",
+  "source": "ESC 2024 AF Section 7.1.3 / esc.af.2024.dronedarone_permanent_af_contra",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 72,
+    "sex": "male",
+    "weight": 74,
+    "height": 170,
+    "sbp": 128,
+    "dbp": 76,
+    "hr": 84,
+    "rhythm": "afib",
+    "scr": 88,
+    "lvef": 55,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true
+    },
+    "customInputs": {
+      "afType": "permanent",
+      "ehraScore": 1
+    },
+    "currentMeds": [
+      {
+        "drugId": "dronedarone",
+        "name": "Multaq",
+        "dose": 400,
+        "unit": "mg"
+      },
+      {
+        "drugId": "apixaban",
+        "name": "Eliquis",
+        "dose": 5,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dronedarone",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "dronedarone",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "dronedarone",
+        "action": "CONSIDER"
+      }
+    ]
+  },
+  "descriptionVi": "Thử nghiệm PALLAS & ESC 2024 Class III: Dronedarone làm tăng gấp đôi tử vong tim mạch, đột quỵ và nhập viện suy tim ở rung nhĩ vĩnh viễn -> bắt buộc STOP."
+}

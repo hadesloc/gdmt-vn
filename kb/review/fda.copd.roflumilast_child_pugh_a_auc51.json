@@ -1,0 +1,26 @@
+{
+  "itemId": "fda.copd.roflumilast_child_pugh_a_auc51",
+  "contentHash": "eb22b1fb6d44d116510cbdefe96eb2692ee75b22b8de9eafe09942fc64aa7a56",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "fda.copd.roflumilast_child_pugh_a_auc51",
+      "contentHash": "6ee6f7be1e8ca512",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

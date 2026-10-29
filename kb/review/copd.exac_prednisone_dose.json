@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.exac_prednisone_dose",
+  "contentHash": "3a54f7e63c06cf5e58c037edb30d618145041aeee9af64c6613af9d36d699cf9",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.exac_prednisone_dose",
+      "contentHash": "eff8bf5f24674cd9",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

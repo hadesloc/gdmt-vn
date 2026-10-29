@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.abx_renal_egfr_cutoff",
+  "contentHash": "bda1be2a0e7cc881ef3c0bc1ed011185ba94855c6b960cca27e2e1621f402ff4",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.abx_renal_egfr_cutoff",
+      "contentHash": "b9d4588d4d2c37af",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

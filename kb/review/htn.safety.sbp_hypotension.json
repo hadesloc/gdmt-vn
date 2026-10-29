@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.safety.sbp_hypotension",
+  "contentHash": "e71d4ce7ce956303e7253e6f4de7c082689daca5c5fdba77d9dbf498d384070d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.safety.sbp_hypotension",
+      "contentHash": "88f62e0bc1f9d662",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 90 mmHg (quantity: sbp) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

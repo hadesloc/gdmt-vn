@@ -1,0 +1,78 @@
+{
+  "id": "gout_37_htn_thiazide_hyperkalemia_switch_amlodipine",
+  "titleVi": "Gút + Tăng huyết áp đang dùng Hydrochlorothiazide kèm Tăng Kali máu (K+ 5.4 mmol/L): Đổi sang Amlodipine (tránh Losartan)",
+  "source": "EULAR 2016 Rec 11 & KDIGO 2024 (eular.gout.2016.comorbid_meds_losartan_ccb, kdigo.gout.2024.hyperkalemia_k_5_0)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 62,
+    "sex": "male",
+    "weight": 73,
+    "sbp": 148,
+    "dbp": 88,
+    "scr": 135,
+    "k": 5.4,
+    "uricAcid": 500,
+    "conditions": {
+      "gout": true,
+      "htn": true,
+      "ckd": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "hydrochlorothiazide",
+        "name": "Hydrochlorothiazide",
+        "dose": "25",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 2,
+      "hlab5801": "negative"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "amlodipine",
+        "ruleId": "rec_gout_switch_thiazide_ccb",
+        "action": "SWITCH"
+      },
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_start",
+        "action": "START",
+        "doseContains": "50 mg"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "losartan",
+        "action": "SWITCH"
+      },
+      {
+        "drugId": "losartan",
+        "action": "HOLD"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 62 tuổi Gút + THA + CKD giai đoạn 3 đang uống Hydrochlorothiazide có Kali máu tăng 5.4 mmol/L (> 5.0 mmol/L). Do chống chỉ định khởi trị ARB khi đang tăng Kali máu, hệ thống đề xuất đổi Thiazide sang Chẹn kênh Canxi (Amlodipine) theo EULAR 2016 Rec 11, tuyệt đối không sinh lệnh ảo HOLD Losartan."
+}

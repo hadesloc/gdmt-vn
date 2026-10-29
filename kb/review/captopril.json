@@ -1,0 +1,42 @@
+{
+  "itemId": "captopril",
+  "contentHash": "e3f04ec556b543163595c93d9542255eb26359aa3a15366fb9ff249ec645db27",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "captopril",
+      "contentHash": "9910b47b76a44bbc",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:58:18.004Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động bổ sung pregnancy, lactation và contraindications theo chuẩn QA-9 cho Captopril."
+        },
+        {
+          "round": 3,
+          "reviewedAt": "2026-10-27T18:00:00.000Z",
+          "role": "agent_e4_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 3 cho captopril."
+        },
+        {
+          "round": 4,
+          "reviewedAt": "2026-10-27T23:57:04.773Z",
+          "role": "agent_e5_round4_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 4 cho thuốc captopril."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T23:57:04.773Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

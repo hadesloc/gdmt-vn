@@ -1,0 +1,71 @@
+{
+  "id": "lipid_47_outpatient_discordant_nonhdl_apob_optimize",
+  "titleVi": "ASCVD trên nền Atorvastatin 40 mg đã đạt LDL-C (1.3 < 1.4) nhưng Non-HDL-C 2.8 & ApoB 88 còn cao - Cân nhắc phối hợp Ezetimibe",
+  "source": "ESC/EAS 2019 / esc.lipid.2019.target_non_hdl",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 61,
+    "sex": "male",
+    "weight": 80,
+    "height": 168,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 68,
+    "scr": 88,
+    "tc": 3.8,
+    "hdl": 1.0,
+    "ldl": 1.3,
+    "tg": 2.6,
+    "nonHdl": 2.8,
+    "apob": 88,
+    "conditions": {
+      "ascvd": true,
+      "dm": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "atorvastatin",
+        "name": "Atorvastatin",
+        "dose": 40,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "ezetimibe",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "STOP"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R2-R1-07 & LIPID-R2-R3-09: Bệnh nhân ASCVD kèm ĐTĐ/tăng TG có LDL-C 1.3 mmol/L (< 1.4) nhưng bất tương hợp hạt giàu apoB (Non-HDL-C 2.8 ≥ 2.2 mmol/L và ApoB 88 ≥ 65 mg/dL); duy trì Statin nền và cân nhắc bổ sung Ezetimibe để đạt mục tiêu thứ phát."
+}

@@ -1,0 +1,17 @@
+{
+  "itemId": "ckd.rasi.telmisartan_hepatic_max_dose",
+  "contentHash": "2dba8dc63617a19447765dce4bae9679d7fb4afc00563bc924101a26f8c9d4e5",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.rasi.telmisartan_hepatic_max_dose",
+      "contentHash": "bea891913b2af071",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "id": "valsartan",
+  "nameVi": "Valsartan",
+  "inn": "Valsartan",
+  "class": "ARB",
+  "classes": [
+    "arb"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Diovan"
+  ],
+  "forms": [
+    "Viên nén bao phim 80 mg",
+    "Viên nén bao phim 160 mg"
+  ],
+  "start": {
+    "amount": 80,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "80 mg/ngày (40 mg nếu HA thấp hoặc cao tuổi)"
+  },
+  "target": {
+    "amount": 160,
+    "unit": "mg",
+    "frequency": "1–2 lần/ngày",
+    "route": "uống",
+    "description": "160–320 mg/ngày"
+  },
+  "titration": {
+    "step": 80,
+    "intervalDays": 14,
+    "maxDose": "320 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "80–320 mg/ngày",
+      "citationIds": [
+        "kdigo.ckd.2024.rec_3_6_1_rasi_a3_nondm"
+      ]
+    },
+    {
+      "eGFRFrom": 15,
+      "eGFRTo": 30,
+      "initiate": "ok",
+      "continue": "rec",
+      "dose": "40–320 mg/ngày (khởi đầu 40–80 mg/ngày, chuẩn độ tối đa 320 mg/ngày)",
+      "note": "Không cần giảm trần liều đích theo chức năng thận; thận trọng theo dõi kali máu và huyết áp khi CrCl < 30 mL/phút (BYT 2024 Bảng 12)",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_7_continue_egfr_below_30",
+        "byt.ckd.2024.table_12_telmisartan_valsartan"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "40–320 mg/ngày (khởi đầu thận trọng 40 mg/ngày, chuẩn độ tối đa 320 mg/ngày)",
+      "note": "Không thải qua màng lọc thận nhân tạo; khởi đầu thận trọng 40 mg/ngày và chuẩn độ theo đáp ứng huyết áp, kali máu",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_5_rasi_reduce_stop",
+        "byt.ckd.2024.table_12_telmisartan_valsartan"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_valsartan_k_max",
+      "parameter": "K",
+      "operator": ">",
+      "threshold": 5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm hoãn valsartan khi kali máu > 5.0 mmol/L",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_2_rasi_monitoring"
+      ]
+    },
+    {
+      "id": "gate_valsartan_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối nhóm thuốc ức chế thụ thể ARB trong thai kỳ (Boxed Warning: độc tính thai nhi)",
+      "citationIds": [
+        "fda.losartan.boxed_pregnancy"
+      ]
+    }
+  ],
+  "interactions": [
+    "Tránh phối hợp ACEi"
+  ],
+  "citationIds": [
+    "kdigo.ckd.2024.rec_3_6_1_rasi_a3_nondm",
+    "kdigo.ckd.2024.rec_3_6_4_avoid_dual_rasi",
+    "fda.losartan.boxed_pregnancy",
+    "esc.2025.pregnancy.rasi_lactation",
+    "fda.losartan.lactation_8_2",
+    "byt.ckd.2024.table_12_telmisartan_valsartan"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối nhóm thuốc ức chế thụ thể ARB trong thai kỳ (Boxed Warning FDA: độc tính thai nhi, giảm sản sọ và tử vong sơ sinh)",
+    "citationIds": [
+      "fda.losartan.boxed_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo dùng nhóm ARB khi cho con bú; ưu tiên chuyển sang thuốc hạ áp an toàn khi cho con bú như Enalapril hoặc Captopril (ESC 2025)",
+    "citationIds": [
+      "esc.2025.pregnancy.rasi_lactation",
+      "fda.losartan.lactation_8_2"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định tuyệt đối ARB trong thai kỳ (Boxed Warning)",
+      "citationIds": [
+        "fda.losartan.boxed_pregnancy"
+      ]
+    },
+    {
+      "code": "concomitant_acei_dri",
+      "messageVi": "Chống chỉ định phối hợp đồng thời với thuốc ức chế men chuyển (ACEi) hoặc aliskiren",
+      "citationIds": [
+        "kdigo.ckd.2024.rec_3_6_4_avoid_dual_rasi"
+      ]
+    }
+  ]
+}

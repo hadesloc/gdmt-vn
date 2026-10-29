@@ -1,0 +1,26 @@
+{
+  "itemId": "labetalol",
+  "contentHash": "517a664c8764a724e3cd81d495873568acbef028ef0205fba9beadf3b2f32fd7",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "labetalol",
+      "contentHash": "18f2798e8393df95",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Hypertension Specialist (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Labetalol (Labetalol) đầy đủ liều lượng, classes (bb_nonselective, alpha1_blocker), dải thận, thai kỳ/cho con bú, chống chỉ định máy đọc và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

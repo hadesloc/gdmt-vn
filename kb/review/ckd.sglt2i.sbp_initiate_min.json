@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.sglt2i.sbp_initiate_min",
+  "contentHash": "13047ba344de4cb31f4da881d22a37459b5d529913290d71eda34f250860497a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.sglt2i.sbp_initiate_min",
+      "contentHash": "456e79e59958de1d",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:57:46.785Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động chuẩn hóa QA-10 quantity và kiểm tra trích dẫn nguyên văn cho ngưỡng ckd.sglt2i.sbp_initiate_min."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

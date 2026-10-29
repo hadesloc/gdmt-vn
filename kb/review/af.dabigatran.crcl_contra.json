@@ -1,0 +1,26 @@
+{
+  "itemId": "af.dabigatran.crcl_contra",
+  "contentHash": "2247834df5b6c5c2e1534868cd1418416d44deb943a80b1db19a49090af4daea",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.dabigatran.crcl_contra",
+      "contentHash": "8b558601b3eb45f5",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.dabigatran.crcl_contra (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

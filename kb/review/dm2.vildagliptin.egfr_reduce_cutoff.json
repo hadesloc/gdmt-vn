@@ -1,0 +1,35 @@
+{
+  "itemId": "dm2.vildagliptin.egfr_reduce_cutoff",
+  "contentHash": "c39d062cfc9b5eeeae957bdc2e9d44a57291707feeb55602c0fe258d400d5a17",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "dm2.vildagliptin.egfr_reduce_cutoff",
+      "contentHash": "16a75a95f9499f8e",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-27T15:25:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T15:25:00.000Z",
+          "role": "Agent F3 (DM2 Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Created and verified dm2.vildagliptin.egfr_reduce_cutoff for DM2 Round 2 remediation."
+        },
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T15:25:00.000Z",
+          "role": "Agent F3 (DM2 Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Verified dm2.vildagliptin.egfr_reduce_cutoff contentHash, verbatim PDF quotes, and Round 2 R1/R2/R3 clinical schema compliance."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

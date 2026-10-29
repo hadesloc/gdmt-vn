@@ -1,0 +1,26 @@
+{
+  "itemId": "mometasone_formoterol",
+  "contentHash": "50853da139359aa0e85b35cadd62710f0a8fa78bf085eced2234fa84db3b626d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "mometasone_formoterol",
+      "contentHash": "1fd9e5ae3505ae04",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:53:57.954Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính hợp lệ của liều, cổng an toàn, thai kỳ, cho con bú, chống chỉ định, qtRisk và mã nhóm chuẩn hóa cho thuốc Mometasone / Formoterol."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:53:57.954Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

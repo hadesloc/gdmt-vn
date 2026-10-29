@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.exac_abx_inpatient_min_days",
+  "contentHash": "a7d0f7bfd460d4735318b000fb9c5531525e607ba29f7314243d740304958e7f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.exac_abx_inpatient_min_days",
+      "contentHash": "98a5bcaf431aa86f",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "itemId": "ckd.kbinder.cps_k_contra",
+  "contentHash": "b770ab25f6f7407c771b3dd067c4a02d650b6dbc486eb98a0be6168e138edb12",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.kbinder.cps_k_contra",
+      "contentHash": "ddc115d2bbd97204",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T07:03:44.560Z",
+          "role": "agent_e3_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 2 cho ckd.kbinder.cps_k_contra."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T07:03:44.560Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

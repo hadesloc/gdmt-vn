@@ -1,0 +1,55 @@
+{
+  "id": "ckd_53_single_module_ckd_hfref_avoid_finerenone",
+  "titleVi": "Ngoại trú (Chỉ bật CKD) - Bệnh nhân kèm suy tim HFrEF (LVEF 32%) -> Tránh khởi trị Finerenone và định hướng ưu tiên MRA steroid (Regression CKD-R2-R1-05 & R3-14)",
+  "source": "KDIGO 2024 PP 3.8.5 & ESC 2026 CVD-CKD",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_53",
+    "name": "BN CKD 53",
+    "age": 64,
+    "sex": "male",
+    "weight": 72,
+    "sbp": 122,
+    "dbp": 74,
+    "hr": 72,
+    "lvef": 32,
+    "scr": 135,
+    "k": 4.4,
+    "uacr": 32,
+    "conditions": {
+      "ckd": true,
+      "dm": true,
+      "hf": true
+    },
+    "currentMeds": [
+      { "drugId": "losartan", "name": "Cozaar 100 mg", "dose": 100, "unit": "mg" },
+      { "drugId": "dapagliflozin", "name": "Forxiga 10 mg", "dose": 10, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "finerenone", "action": "AVOID" },
+      { "ruleId": "rec_ckd_hfref_prefer_steroidal_mra", "action": "CONSIDER" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "finerenone", "action": "START" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R2-R1-05: Kể cả khi bác sĩ chỉ bật đơn độc module CKD, bệnh nhân có LVEF <= 40% không bao giờ bị kê Finerenone chiếm mất vị trí MRA steroid cứu mạng của HFrEF."
+}

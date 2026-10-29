@@ -1,0 +1,86 @@
+{
+  "id": "asthma_39_foster_mart_overuse_hold_no_symbicort",
+  "titleVi": "Quá liều MART với Beclometasone/Formoterol (Foster 14 nhát/ngày): Tạm ngừng Foster và chặn kê nhầm Symbicort",
+  "source": "GINA 2026 p. 90 / R1-ASTHMA-V2-02 / ASTHMA-R2-201",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_39",
+    "name": "Nữ 36 tuổi",
+    "age": 36,
+    "sex": "female",
+    "weight": 55,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 108,
+    "rhythm": "sinus",
+    "fev1Pct": 64,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "beclometasone_formoterol",
+        "name": "Foster 100/6 mcg",
+        "dose": "1 nhát x 2 lần/ngày",
+        "freq": "2 lần/ngày"
+      }
+    ],
+    "customInputs": {
+      "currentTrack": "track1",
+      "currentStep": 3,
+      "daytimeSymptomsMoreThanTwiceWeek": true,
+      "nightWakingDueToAsthma": true,
+      "relieverNeededMoreThanTwiceWeek": true,
+      "activityLimitationDueToAsthma": true,
+      "inhalerTechniqueCorrect": true,
+      "goodAdherence": true,
+      "totalDailyPuffsUsed": 14
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "beclometasone_formoterol",
+        "action": "HOLD"
+      },
+      {
+        "ruleId": "rec_asthma_mart_overuse_refer",
+        "action": "REFER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "START"
+      },
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "UPTITRATE"
+      },
+      {
+        "drugId": "beclometasone_formoterol",
+        "action": "UPTITRATE"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bệnh nhân đang dùng Foster (beclometasone/formoterol) vượt trần 12 nhát/ngày -> Phải HOLD đúng Foster, REFER cấp cứu và không sinh START/UPTITRATE Symbicort mâu thuẫn."
+}

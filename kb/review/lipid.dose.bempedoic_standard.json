@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.dose.bempedoic_standard",
+  "contentHash": "3ae308d6a02b51df4c427c5a84cf75253e202aad421c127238bd17d63be339e7",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.dose.bempedoic_standard",
+      "contentHash": "fd0e598ccd5ab5d6",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.dose.bempedoic_standard."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

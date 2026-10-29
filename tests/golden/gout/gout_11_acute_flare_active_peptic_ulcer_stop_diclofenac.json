@@ -1,0 +1,75 @@
+{
+  "id": "gout_11_acute_flare_active_peptic_ulcer_stop_diclofenac",
+  "titleVi": "Cơn gút cấp có loét dạ dày tá tràng tự uống Diclofenac: NGỪNG Diclofenac & Cắt cơn bằng Colchicine liều thấp",
+  "source": "BYT 361/2014 & EULAR 2016 (byt.gout.2014.nsaid_agents, eular.gout.2016.colchicine_nsaid_contra)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 55,
+    "sex": "male",
+    "weight": 68,
+    "scr": 82,
+    "uricAcid": 460,
+    "conditions": {
+      "gout": true,
+      "pepticUlcer": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "diclofenac",
+        "name": "Diclofenac",
+        "dose": "50",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": true,
+      "priorFlaresLifetime": 1,
+      "goutFlaresYear": 1,
+      "pepticUlcer": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "diclofenac",
+        "ruleId": "rec_gout_nsaid_stop_diclofenac",
+        "action": "STOP"
+      },
+      {
+        "drugId": "colchicine",
+        "ruleId": "rec_gout_colchicine_acute_flare",
+        "action": "START",
+        "doseContains": "1.2 mg"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "naproxen",
+        "action": "START"
+      },
+      {
+        "drugId": "diclofenac",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 55 tuổi có tiền sử loét hành tá tràng đang tự dùng Diclofenac khi đau khớp. Ngừng ngay Diclofenac do nguy cơ xuất huyết tiêu hóa và chuyển sang Colchicine liều thấp."
+}

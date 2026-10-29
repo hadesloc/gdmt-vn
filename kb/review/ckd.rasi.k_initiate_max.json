@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.rasi.k_initiate_max",
+  "contentHash": "d1c1fe99498545891c4c9a7e8db67da263fd2813859c6594f3b0c750e862844f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.rasi.k_initiate_max",
+      "contentHash": "3a849433db129966",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:57:46.785Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động chuẩn hóa QA-10 quantity và kiểm tra trích dẫn nguyên văn cho ngưỡng ckd.rasi.k_initiate_max."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.abpm.sbp_24h_threshold",
+  "contentHash": "9ea47a714a61525455a6aac0c32d6e07e268a903f1174f9d018c4b4ae2de61bc",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.abpm.sbp_24h_threshold",
+      "contentHash": "48680178dc4ebb3c",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 130 mmHg (quantity: sbp) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

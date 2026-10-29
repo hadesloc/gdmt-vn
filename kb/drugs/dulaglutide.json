@@ -1,0 +1,157 @@
+{
+  "id": "dulaglutide",
+  "nameVi": "Dulaglutide",
+  "inn": "Dulaglutide",
+  "class": "GLP-1 RA",
+  "vnBrands": [
+    "Trulicity"
+  ],
+  "forms": [
+    "Bút tiêm 0.75 mg/0.5 mL, 1.5 mg/0.5 mL (hàm lượng lưu hành phổ biến tại Việt Nam; bậc 3.0 mg & 4.5 mg theo nhãn quốc tế FDA)"
+  ],
+  "start": {
+    "amount": 0.75,
+    "unit": "mg",
+    "frequency": "1 lần/tuần",
+    "route": "tiêm dưới da",
+    "description": "Có thể tăng lên 1.5 mg/tuần sau ≥ 4 tuần tùy đáp ứng đường huyết"
+  },
+  "target": {
+    "amount": 1.5,
+    "unit": "mg",
+    "frequency": "1 lần/tuần",
+    "route": "tiêm dưới da",
+    "description": "Có thể chuẩn độ tăng bậc sau mỗi ≥ 4 tuần đến tối đa 4.5 mg/tuần"
+  },
+  "titration": {
+    "step": "0.75 mg",
+    "intervalDays": 28,
+    "maxDose": "4.5 mg/tuần"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "0.75 - 4.5 mg/tuần",
+      "citationIds": [
+        "fda.dulaglutide.dosing",
+        "fda.dulaglutide.max_dose_4_5",
+        "fda.dulaglutide.renal_no_adjust",
+        "ada.dm2.2026.glp1_ckd_no_dose_adjust"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "not_rec",
+      "continue": "caution",
+      "dose": "Dữ liệu hạn chế; theo dõi sát",
+      "note": "Dữ liệu lâm sàng hạn chế ở eGFR < 15 mL/phút/1.73m² hoặc lọc máu theo KDIGO 2022 (ADA 2026 Rec 11.11b cho phép cân nhắc mức C)",
+      "citationIds": [
+        "fda.dulaglutide.renal_no_adjust",
+        "ada.dm2.2026.glp1_dialysis_rec_11_11b"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_dulaglutide_mtc_contra",
+      "parameter": "mtc",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối ở bệnh nhân có tiền sử ung thư tuyến giáp thể tủy (MTC)",
+      "citationIds": [
+        "fda.dulaglutide.boxed_warning_mtc"
+      ]
+    },
+    {
+      "id": "gate_dulaglutide_men2_contra",
+      "parameter": "men2",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối ở bệnh nhân mắc hội chứng MEN 2",
+      "citationIds": [
+        "fda.dulaglutide.boxed_warning_mtc"
+      ]
+    },
+    {
+      "id": "gate_dulaglutide_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 15,
+      "unit": "mL/min/1.73m2",
+      "action": "hold",
+      "messageVi": "Dữ liệu khởi trị mới hạn chế khi eGFR < 15 mL/phút/1.73m² theo KDIGO 2022",
+      "citationIds": [
+        "fda.dulaglutide.renal_no_adjust",
+        "ada.dm2.2026.glp1_dialysis_rec_11_11b"
+      ]
+    }
+  ],
+  "interactions": [
+    "Không phối hợp với DPP-4i"
+  ],
+  "citationIds": [
+    "fda.dulaglutide.dosing",
+    "ada.dm2.2026.no_dpp4_plus_glp1",
+    "fda.dulaglutide.renal_no_adjust",
+    "ada.dm2.2026.glp1_ckd_no_dose_adjust",
+    "fda.dulaglutide.pregnancy",
+    "fda.dulaglutide.max_dose_4_5",
+    "fda.dulaglutide.boxed_warning_mtc",
+    "fda.dulaglutide.pancreatitis",
+    "ada.dm2.2026.incretin_pancreatitis"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong thai kỳ; ngừng trước khi thụ thai",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_glp1",
+      "fda.dulaglutide.pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo khi cho con bú",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_glp1"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "mtc",
+      "messageVi": "Chống chỉ định tuyệt đối (FDA Boxed Warning) ở người có tiền sử bản thân hoặc gia đình mắc ung thư biểu mô tuyến giáp thể tủy (MTC)",
+      "citationIds": [
+        "fda.dulaglutide.boxed_warning_mtc"
+      ]
+    },
+    {
+      "code": "men2",
+      "messageVi": "Chống chỉ định tuyệt đối (FDA Boxed Warning) ở bệnh nhân mắc hội chứng đa u tuyến nội tiết típ 2 (MEN 2)",
+      "citationIds": [
+        "fda.dulaglutide.boxed_warning_mtc"
+      ]
+    },
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định trong thai kỳ do nguy cơ độc tính phôi thai",
+      "citationIds": [
+        "ada.dm2.2026.pregnancy_glp1"
+      ]
+    },
+    {
+      "code": "acute_pancreatitis",
+      "messageVi": "Thận trọng hoặc tránh dùng ở bệnh nhân có tiền sử viêm tụy cấp",
+      "citationIds": [
+        "fda.dulaglutide.pancreatitis",
+        "ada.dm2.2026.incretin_pancreatitis"
+      ]
+    }
+  ],
+  "classes": [
+    "glp1ra",
+    "glp1_ra"
+  ]
+}

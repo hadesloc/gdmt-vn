@@ -1,0 +1,26 @@
+{
+  "itemId": "byt.copd.2026.salbutamol_neb_dose",
+  "contentHash": "1f28eef8f1a52ae1f054437f17f71db9c5d13dcbe058e3a3ed7d7e8cc6f7742c",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "byt.copd.2026.salbutamol_neb_dose",
+      "contentHash": "ea843920569e8de2",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

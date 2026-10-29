@@ -1,0 +1,26 @@
+{
+  "itemId": "budesonide_formoterol",
+  "contentHash": "612f47ab86720c686894f14f201fb4d78e54b90a7d5380196cbc2d2befe2e6b2",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "budesonide_formoterol",
+      "contentHash": "80a219fcc4fbb691",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T12:52:49.357Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Cập nhật và kiểm định tự động Vòng 3 cho thuốc Budesonide / Formoterol."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T12:52:49.357Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

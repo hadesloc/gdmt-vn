@@ -1,0 +1,94 @@
+{
+  "id": "patiromer",
+  "nameVi": "Patiromer",
+  "inn": "Patiromer sorbitex calcium",
+  "class": "K_binder",
+  "classes": [
+    "potassium_binder"
+  ],
+  "components": [],
+  "vnBrands": [],
+  "forms": [
+    "Gói bột pha hỗn dịch uống 8.4 g",
+    "Gói bột pha hỗn dịch 16.8 g"
+  ],
+  "start": {
+    "amount": 8.4,
+    "unit": "g",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "8.4 g uống 1 lần/ngày cùng bữa ăn"
+  },
+  "target": {
+    "amount": 16.8,
+    "unit": "g",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "8.4–16.8 g/ngày (tối đa 25.2 g/ngày)"
+  },
+  "titration": {
+    "step": 8.4,
+    "intervalDays": 7,
+    "maxDose": "25.2 g/ngày"
+  },
+  "renal": [
+    {
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "8.4–25.2 g/ngày",
+      "note": "Không hấp thu toàn thân, an toàn ở mọi giai đoạn CKD để kiểm soát tăng kali máu và duy trì RASi",
+      "citationIds": [
+        "fda.patiromer.starting_dose",
+        "kdigo.ckd.2024.pp_3_6_3_hyperkalemia_k_binders"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_patiromer_k_low",
+      "parameter": "K",
+      "operator": "<",
+      "threshold": 4,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm ngừng hoặc giảm liều patiromer nếu kali máu < 4.0 mmol/L (ngừng ngay và bù kali nếu < 3.5 mmol/L)",
+      "citationIds": [
+        "fda.patiromer.starting_dose",
+        "fda.patiromer.hypokalemia_3_5"
+      ]
+    }
+  ],
+  "interactions": [
+    "Uống cách xa các thuốc đường uống khác ít nhất 3 giờ để tránh giảm hấp thu thuốc khác",
+    "Nguy cơ hạ magnesi máu (hypomagnesemia); cần theo dõi nồng độ magnesi huyết thanh định kỳ"
+  ],
+  "citationIds": [
+    "fda.patiromer.starting_dose",
+    "fda.patiromer.not_emergency",
+    "fda.patiromer.hypokalemia_3_5",
+    "kdigo.ckd.2024.pp_3_6_3_hyperkalemia_k_binders"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Thuốc polymer không hấp thu vào tuần hoàn chung; thận trọng cân nhắc lợi ích/nguy cơ",
+    "citationIds": [
+      "fda.patiromer.starting_dose"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Không hấp thu toàn thân nên không bài tiết qua sữa mẹ",
+    "citationIds": [
+      "fda.patiromer.starting_dose"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity",
+      "messageVi": "Tiền sử quá mẫn nghiêm trọng với patiromer hoặc bất kỳ thành phần nào của thuốc",
+      "citationIds": [
+        "fda.patiromer.starting_dose"
+      ]
+    }
+  ]
+}

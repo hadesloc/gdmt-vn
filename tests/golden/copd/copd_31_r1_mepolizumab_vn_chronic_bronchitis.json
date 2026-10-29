@@ -1,0 +1,71 @@
+{
+  "id": "copd_31_r1_mepolizumab_vn_chronic_bronchitis",
+  "titleVi": "Hồi quy R1-R3: Profile VN có BCAT ≥ 300 + viêm phế quản mạn trên Triple ưu tiên 1 thuốc sinh học Dupilumab (không xếp chồng kép Mepolizumab)",
+  "source": "GOLD 2026 p. 77 / BYT QĐ 2131/2026 p. 25 (COPD-R1-05, COPD-R2-14, COPD-R3-R3-09)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_31",
+    "age": 69,
+    "sex": "male",
+    "weight": 56,
+    "height": 163,
+    "sbp": 128,
+    "dbp": 76,
+    "hr": 78,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "name": "Trelegy Ellipta",
+        "dose": 100,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.43,
+      "fev1PredPct": 39,
+      "chronicBronchitis": true,
+      "bloodEos": 420,
+      "currentInhaler": "triple",
+      "moderateExacerbations": 2,
+      "hospitalizations": 1,
+      "smokingStatus": "former"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dupilumab",
+        "ruleId": "rec_copd_dupilumab",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "mepolizumab",
+        "ruleId": "rec_copd_mepolizumab",
+        "action": "CONSIDER"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.allopurinol_azathioprine",
+  "contentHash": "b3d2d1d86a1e8c5887cafe4c1045d375e4cb286fe7be35e50a25c1515c8430ec",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.allopurinol_azathioprine",
+      "contentHash": "eebb6e7109855e55",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.allopurinol_azathioprine."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

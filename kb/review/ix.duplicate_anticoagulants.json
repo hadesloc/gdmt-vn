@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.duplicate_anticoagulants",
+  "contentHash": "6e59440be185573be09437d44b9ba2629c9e69be7ca9c535d3f132bd54aebfe7",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.duplicate_anticoagulants",
+      "contentHash": "ea28404c18e72702",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.duplicate_anticoagulants."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

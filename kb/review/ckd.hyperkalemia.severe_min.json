@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.hyperkalemia.severe_min",
+  "contentHash": "56d9112c2f0a08757f764e0489e98260d4db2f2fb1526b38106d4f5fa706e35e",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.hyperkalemia.severe_min",
+      "contentHash": "926eb9cbf8fff11b",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.130Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.hyperkalemia.severe_min."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

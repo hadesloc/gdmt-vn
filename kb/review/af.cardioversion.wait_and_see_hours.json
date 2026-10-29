@@ -1,0 +1,26 @@
+{
+  "itemId": "af.cardioversion.wait_and_see_hours",
+  "contentHash": "057b9860fd02fba4d4f1c3bf9ca5115ed7cc65acc67a294ac60ac48bb69d9e77",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.cardioversion.wait_and_see_hours",
+      "contentHash": "2b26a1a329625df7",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.cardioversion.wait_and_see_hours (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

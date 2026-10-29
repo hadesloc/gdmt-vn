@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.diltiazem_digoxin",
+  "contentHash": "2c150d9593fcac87d476b890e96c8decef1ac035c60dfaa0bbcba8dba496648e",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.diltiazem_digoxin",
+      "contentHash": "131f3c304c3d074f",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.diltiazem_digoxin."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

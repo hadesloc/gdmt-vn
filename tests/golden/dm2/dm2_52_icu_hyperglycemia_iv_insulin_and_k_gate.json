@@ -1,0 +1,62 @@
+{
+  "id": "dm2_52_icu_hyperglycemia_iv_insulin_and_k_gate",
+  "titleVi": "Tăng đường huyết nặng tại khoa ICU không kèm DKA (glucose 16.8 mmol/L): Khởi đầu truyền tĩnh mạch liên tục Regular insulin",
+  "source": "ADA Standards of Care 2026 Chapter 16",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 63,
+    "sex": "male",
+    "weight": 72,
+    "height": 170,
+    "sbp": 118,
+    "dbp": 72,
+    "hr": 96,
+    "scr": 110,
+    "k": 4.2,
+    "glucose": 16.8,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "inpatientUnit": "icu",
+      "inpatientEating": "npo",
+      "bloodKetones": 0.4,
+      "venousPh": 7.38
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "insulin_regular",
+        "action": "START",
+        "doseContains": "7.8–10.0 mmol/L"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "insulin_glargine",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân nguy kịch tại ICU có đường huyết >= 10.0 mmol/L (180 mg/dL) và K+ an toàn (>= 3.5 mmol/L) được chỉ định truyền tĩnh mạch liên tục Regular insulin chuẩn độ theo giao thức ICU duy trì 7.8–10.0 mmol/L."
+}

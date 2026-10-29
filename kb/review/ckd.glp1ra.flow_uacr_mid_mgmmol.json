@@ -1,0 +1,35 @@
+{
+  "itemId": "ckd.glp1ra.flow_uacr_mid_mgmmol",
+  "contentHash": "7d7f9b8015174fc9494e21bc7f6e31a1c1c614bceb1363d46fc68034207190b6",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.glp1ra.flow_uacr_mid_mgmmol",
+      "contentHash": "e52990005a619516",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T07:03:44.560Z",
+          "role": "agent_e3_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 2 cho ckd.glp1ra.flow_uacr_mid_mgmmol."
+        },
+        {
+          "round": 3,
+          "reviewedAt": "2026-10-27T18:00:00.000Z",
+          "role": "agent_e4_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 3 cho ckd.glp1ra.flow_uacr_mid_mgmmol."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

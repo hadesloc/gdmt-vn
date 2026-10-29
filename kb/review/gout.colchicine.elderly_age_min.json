@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.colchicine.elderly_age_min",
+  "contentHash": "a7e011e5b8542cf4e78346aabd83010da1db3670624869a1b688d45d5d5fa666",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.colchicine.elderly_age_min",
+      "contentHash": "a685fa8ed705d7b1",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.colchicine.elderly_age_min"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.pegloticase.dose_mg",
+  "contentHash": "a7a121e614ab435f709e59dd0efe979498ca26dbeed5ed5d40c5488d56151749",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.pegloticase.dose_mg",
+      "contentHash": "bb7ee204355f2c50",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold: gout.pegloticase.dose_mg"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

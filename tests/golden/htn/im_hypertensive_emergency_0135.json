@@ -1,0 +1,55 @@
+{
+  "id": "im_hypertensive_emergency_0135",
+  "titleVi": "Nam 54 tuổi đau đầu dữ dội, nhìn mờ, lú lẫn và huyết áp tăng rất cao",
+  "source": "on-call:im_hypertensive_emergency_0135",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_im_hypertensive_emergency_0135",
+    "name": "Ông Ngô Quang T., 54 tuổi (68 kg)",
+    "age": 54,
+    "sex": "male",
+    "weight": 68,
+    "height": 168,
+    "sbp": 228,
+    "dbp": 134,
+    "hr": 104,
+    "conditions": {
+      "htn": true,
+      "hypertensiveEncephalopathy": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ],
+    "scr": 140
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "nicardipine",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_htn_hypertensive_emergency_general",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": []
+  },
+  "descriptionVi": "Bệnh nhân nam 54 tuổi vào viện vì đau đầu như búa bổ, buồn nôn, nhìn mờ cả hai mắt và đang bắt đầu lú lẫn, HA 228/134 mmHg, chỉ định Nicardipine IV cấp cứu."
+}

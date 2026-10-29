@@ -1,0 +1,86 @@
+{
+  "id": "copd_44_r2_aco_seretide_stops_old_ics_laba",
+  "titleVi": "Hồi quy R2 (COPD-R1V2-02 & R3-R2-COPD-01): Đồng chọn ['copd', 'asthma'] đang dùng Seretide chuyển MART + thêm Tiotropium và ngừng Seretide",
+  "source": "GOLD 2026 p. 75 & GINA 2026 Track 1 (COPD-R1V2-02)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_44",
+    "age": 64,
+    "sex": "female",
+    "weight": 56,
+    "height": 156,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 78,
+    "conditions": {
+      "copd": true,
+      "asthma": true
+    },
+    "selectedModules": [
+      "copd",
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "fluticasone_salmeterol",
+        "name": "Seretide Accuhaler",
+        "dose": 250,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.54,
+      "fev1PredPct": 56,
+      "mmrc": 2,
+      "cat": 15,
+      "moderateExacerbations": 1,
+      "hospitalizations": 0,
+      "bloodEos": 260,
+      "smokingStatus": "never",
+      "currentTrack": "track1",
+      "currentStep": 3,
+      "daytimeSymptomsMoreThanTwiceWeek": true,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "tiotropium",
+        "ruleId": "rec_copd_ics_laba_add_lama",
+        "action": "START"
+      },
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "SWITCH"
+      },
+      {
+        "drugId": "fluticasone_salmeterol",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "fluticasone_salmeterol",
+        "action": "CONTINUE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.magnesium_sulfate_ccb",
+  "contentHash": "2a0eb62b48e279b00efde0aa78a9dca5c52e63e39905fd3a78fb6f39464827c8",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.magnesium_sulfate_ccb",
+      "contentHash": "0b5788264ec9c112",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực quy tắc tương tác tim mạch ix.magnesium_sulfate_ccb và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

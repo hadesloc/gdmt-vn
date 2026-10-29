@@ -1,0 +1,27 @@
+{
+  "itemId": "ckd.szc.sodium_per_5g_mg",
+  "contentHash": "b403c33f36d0e1a90ee8ccc4bfc00628dbc37b07628fde6a247c17c6832f9a4d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.szc.sodium_per_5g_mg",
+      "contentHash": "ce2d05a33b9c73eb",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "round": 4,
+          "reviewedAt": "2026-10-27T23:56:20.141Z",
+          "role": "agent_e5_round4_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và kiểm tra không số mồ côi Vòng 4 cho ngưỡng ckd.szc.sodium_per_5g_mg."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T23:56:20.141Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "diclofenac",
+  "contentHash": "d6db1d4a6a5ae24a1f9723dede18f41a83b9147324f070c4524fb82ede15d857",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "diclofenac",
+      "contentHash": "fcde72dd3aa823a4",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của DrugEntry: diclofenac"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

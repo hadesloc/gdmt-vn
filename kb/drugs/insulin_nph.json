@@ -1,0 +1,103 @@
+{
+  "id": "insulin_nph",
+  "nameVi": "Insulin NPH",
+  "inn": "Insulin NPH",
+  "class": "Intermediate Insulin",
+  "vnBrands": [
+    "Insulatard",
+    "Humulin N"
+  ],
+  "forms": [
+    "Lọ 100 U/mL (10 mL)",
+    "Bút tiêm 100 U/mL (3 mL)"
+  ],
+  "start": {
+    "amount": 10,
+    "unit": "đơn vị",
+    "frequency": "1-2 lần/ngày",
+    "route": "tiêm dưới da",
+    "description": "Tiêm trước khi ngủ (hoặc tiêm buổi sáng cùng thời điểm uống glucocorticoid)"
+  },
+  "target": {
+    "amount": 20,
+    "unit": "đơn vị",
+    "frequency": "1-2 lần/ngày",
+    "route": "tiêm dưới da"
+  },
+  "titration": {
+    "step": "2 đơn vị",
+    "intervalDays": 3
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "Liều chuẩn (hoặc sáng cùng steroid)",
+      "citationIds": [
+        "ada.dm2.2026.steroid_nph",
+        "ada.dm2.2026.basal_start_and_titration"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "Giảm 10–25% liều và theo dõi hạ đường huyết ban đêm",
+      "citationIds": [
+        "ada.dm2.2026.kidney_failure_hypo_clearance"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Giảm 25–50% liều do giảm thanh thải insulin qua thận; ưu tiên insulin analog nếu có điều kiện",
+      "citationIds": [
+        "ada.dm2.2026.kidney_failure_hypo_clearance"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_nph_hypo_recent",
+      "parameter": "recent_hypo",
+      "operator": "==",
+      "threshold": 1,
+      "action": "hold",
+      "messageVi": "Có hạ đường huyết gần đây: Giảm liều NPH 10–20%.",
+      "citationIds": [
+        "ada.dm2.2026.basal_start_and_titration"
+      ]
+    }
+  ],
+  "interactions": [
+    "Nguy cơ hạ đường huyết ban đêm cao hơn insulin nền analog"
+  ],
+  "citationIds": [
+    "ada.dm2.2026.steroid_nph",
+    "ada.dm2.2026.basal_start_and_titration",
+    "ada.dm2.2026.kidney_failure_hypo_clearance"
+  ],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Insulin nền người chuẩn được khuyến cáo hàng đầu trong thai kỳ (ADA 2026 & BYT 2020)",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_insulin",
+      "byt.dm2.2020.pregnancy_insulin"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "An toàn tuyệt đối khi nuôi con bú (phân tử protein bị phân hủy trong đường tiêu hóa trẻ sơ sinh)",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_insulin"
+    ]
+  },
+  "contraindications": [],
+  "classes": [
+    "insulin",
+    "insulin_basal"
+  ]
+}

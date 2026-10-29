@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.prednisolone.flare_duration_days_max",
+  "contentHash": "278eaf3dcfdde1481ba9f88131c0dd99b1bd2f72a354b7dd81a09db9c2adb7b2",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.prednisolone.flare_duration_days_max",
+      "contentHash": "1520ceff08aedacb",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.prednisolone.flare_duration_days_max"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

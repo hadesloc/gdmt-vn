@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.hydralazine_iv.dose_preg_max_cum",
+  "contentHash": "93f8fdb8c5d29c05220781b125642bb2f80ae6351c71ca922cb39d4d6e94a90d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.hydralazine_iv.dose_preg_max_cum",
+      "contentHash": "aa1b64bbadb7ae85",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực ngưỡng lâm sàng htn.hydralazine_iv.dose_preg_max_cum (20 mg) và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "gold.copd.2026.ltot_pulmonary_hypertension",
+  "contentHash": "3a881802b5aa4dbe59e5bc06ff41423f2a015c94b1be06fde6895e805db53e60",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gold.copd.2026.ltot_pulmonary_hypertension",
+      "contentHash": "94826b5a34ea3c05",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

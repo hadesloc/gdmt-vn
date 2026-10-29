@@ -1,0 +1,56 @@
+{
+  "id": "htn_34_outpatient_vn_grade1_lowrisk_monotherapy",
+  "titleVi": "Profile VN (VSH/VNHA 2022 Bảng 9): THA Độ 1 ở người < 80 tuổi không suy yếu khởi trị viên phối hợp đôi SPC",
+  "source": "VSH 2022 / vsh.htn.2022.table9_dual_spc",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 44,
+    "sex": "male",
+    "weight": 68,
+    "height": 170,
+    "sbp": 146,
+    "dbp": 92,
+    "hr": 72,
+    "scr": 82,
+    "k": 4.1,
+    "conditions": {
+      "htn": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_htn_step1_dual_spc",
+        "action": "START"
+      },
+      {
+        "drugId": "amlodipine",
+        "action": "START"
+      },
+      {
+        "drugId": "perindopril",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Theo Khuyến cáo VSH/VNHA 2022 (Bảng 9), bệnh nhân THA Độ 1 (140–159/90–99 mmHg) dưới 80 tuổi không suy yếu được khuyến cáo khởi trị sớm bằng viên phối hợp đôi liều cố định (RASi + CCB)."
+}

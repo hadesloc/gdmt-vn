@@ -1,0 +1,52 @@
+{
+  "id": "dm2_08_cardiorenal_ckd_sglt2i",
+  "titleVi": "Bệnh nhân ĐTĐ2 có CKD (eGFR 45, UACR 25 mg/mmol) - Chỉ định SGLT2i",
+  "source": "ADA 2026 SOC Ch. 9 & 11 / KDIGO",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 59,
+    "sex": "female",
+    "weight": 64,
+    "height": 156,
+    "sbp": 134,
+    "dbp": 82,
+    "hr": 72,
+    "scr": 118,
+    "k": 4.6,
+    "uacr": 25,
+    "glucose": 8.3,
+    "hba1c": 7.9,
+    "conditions": {
+      "dm": true,
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dapagliflozin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "CKD albumin niệu: SGLT2i làm chậm tiến triển suy thận."
+}

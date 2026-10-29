@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.febuxostat.severe_renal_egfr",
+  "contentHash": "3ad7ab98ba8f2a3697bf57ec01eb252d9565740c1dfa75bd848f0e38b099a0e2",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.febuxostat.severe_renal_egfr",
+      "contentHash": "37f225b03b2098f9",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.febuxostat.severe_renal_egfr"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

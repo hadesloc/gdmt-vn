@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.indication.prior_flares_infrequent",
+  "contentHash": "1009b424fafbb879c3aeb13cb13c3daf7a863bf8413a368920055debb0188d22",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.indication.prior_flares_infrequent",
+      "contentHash": "ddf966926d4532f4",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.indication.prior_flares_infrequent"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "hf.arni.washout_acei_hours",
+  "contentHash": "a5e2ec77a9e3737e84935f1dadc5be5be0bf2af1330c0e768b5c948d01f41e4f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "hf.arni.washout_acei_hours",
+      "contentHash": "abb4380501cad981",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-27T14:39:00.000Z",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T14:39:00.000Z",
+          "role": "Agent G4 (HF Remediation & QA-10)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF threshold hf.arni.washout_acei_hours (Round 1 R1/R2/R3 remediation & QA-10 verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

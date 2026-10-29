@@ -1,0 +1,120 @@
+{
+  "id": "colesevelam",
+  "nameVi": "Colesevelam",
+  "inn": "Colesevelam hydrochloride",
+  "class": "Nhựa gắn acid mật thế hệ mới (Bile acid sequestrant)",
+  "classes": [
+    "bile_acid_sequestrant"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Welchol",
+    "Cholestagel"
+  ],
+  "forms": [
+    "Viên nén bao phim 625 mg",
+    "Gói bột pha hỗn dịch uống 3.75 g"
+  ],
+  "start": {
+    "amount": 3.75,
+    "unit": "g",
+    "frequency": "1 lần/ngày hoặc chia 2 lần/ngày",
+    "route": "uống",
+    "description": "3.75 g/ngày (6 viên 625 mg uống 1 lần hoặc chia 3 viên x 2 lần/ngày, hoặc 1 gói 3.75 g pha nước) uống cùng bữa ăn"
+  },
+  "target": {
+    "amount": 3.75,
+    "unit": "g",
+    "frequency": "chia 1–2 lần/ngày",
+    "route": "uống",
+    "description": "3.75 g/ngày uống cùng bữa ăn và nhiều nước"
+  },
+  "titration": {
+    "step": "Duy trì liều chuẩn 3.75 g/ngày; kiểm tra bộ lipid máu và triglycerid sau 4–12 tuần",
+    "intervalDays": 28,
+    "maxDose": "3.75 g/ngày (tối đa 4.375 g/ngày theo một số nhãn EMA)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "3.75 g/ngày (không hấp thu toàn thân nên không cần chỉnh liều theo thận)",
+      "citationIds": [
+        "acc.lipid.2026.colesevelam_3_75g_po",
+        "acc.lipid.2026.bas_safe_pregnancy_lactation"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "3.75 g/ngày (không cần chỉnh liều theo chức năng thận)",
+      "citationIds": [
+        "acc.lipid.2026.bas_safe_pregnancy_lactation"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_colesevelam_tg_high",
+      "parameter": "tg",
+      "operator": ">=",
+      "threshold": 3.4,
+      "unit": "mmol/L",
+      "action": "avoid",
+      "messageVi": "Triglycerid ≥ 3.4 mmol/L (300 mg/dL): Tránh dùng Colesevelam do làm tăng triglycerid máu và nguy cơ viêm tụy cấp",
+      "citationIds": [
+        "acc.lipid.2026.bas_tg_300_contra"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Colesevelam không hấp thu toàn thân, được đánh giá an toàn khi cần điều trị rối loạn lipid máu nặng (như FH) trong thai kỳ (ACC/AHA 2026 Bảng 20).",
+    "citationIds": [
+      "acc.lipid.2026.bas_safe_pregnancy_lactation"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Không bài tiết vào sữa mẹ do không hấp thu qua đường tiêu hóa; tương thích khi cho con bú.",
+    "citationIds": [
+      "acc.lipid.2026.bas_safe_pregnancy_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "biliary_obstruction",
+      "messageVi": "Chống chỉ định khi tắc mật hoàn toàn",
+      "citationIds": [
+        "acc.lipid.2026.cholestyramine_colesevelam_dosing"
+      ]
+    },
+    {
+      "code": "obstructive_bowel_disease",
+      "messageVi": "Chống chỉ định khi có tiền sử tắc ruột",
+      "citationIds": [
+        "acc.lipid.2026.colesevelam_3_75g_po"
+      ]
+    },
+    {
+      "code": "severe_hypertriglyceridemia",
+      "messageVi": "Chống chỉ định khi tăng triglycerid máu nặng (> 500 mg/dL / ≥ 5.65 mmol/L) hoặc tiền sử viêm tụy do tăng triglycerid",
+      "citationIds": [
+        "acc.lipid.2026.bas_tg_300_contra"
+      ]
+    }
+  ],
+  "interactions": [
+    "Ít tương tác hơn cholestyramine (có thể dùng cùng statin), nhưng vẫn làm giảm hấp thu levothyroxine, warfarin/acenocoumarol, sulfonylurea (glimepiride, glipizide), phenytoin, cyclosporine, ezetimibe và viên tránh thai chứa ethinyl estradiol: uống các thuốc này ít nhất 1–2 giờ trước hoặc 4 giờ sau Colesevelam"
+  ],
+  "citationIds": [
+    "acc.lipid.2026.cholestyramine_colesevelam_dosing",
+    "acc.lipid.2026.colesevelam_3_75g_po",
+    "acc.lipid.2026.bas_safe_pregnancy_lactation",
+    "acc.lipid.2026.bas_tg_300_contra",
+    "esc.lipid.2019.bas_spacing_4h_before_1h_after"
+  ]
+}

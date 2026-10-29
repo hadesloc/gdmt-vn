@@ -1,0 +1,26 @@
+{
+  "itemId": "af.aad.qtc_contra_max",
+  "contentHash": "7aa553eee9b379dd7700573ebcc88ecd9ca6ed0d49eda0e4f91cbcdc1f30d9f8",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.aad.qtc_contra_max",
+      "contentHash": "8b4a1b00233b996c",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.aad.qtc_contra_max (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

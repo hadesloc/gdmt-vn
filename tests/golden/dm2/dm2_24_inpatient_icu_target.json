@@ -1,0 +1,53 @@
+{
+  "id": "dm2_24_inpatient_icu_target",
+  "titleVi": "Bệnh nhân hồi sức ICU - Đích glucose 7.8–10.0 mmol/L (140–180 mg/dL)",
+  "source": "ADA 2026 SOC Ch. 16",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 64,
+    "sex": "female",
+    "weight": 62,
+    "height": 158,
+    "sbp": 110,
+    "dbp": 68,
+    "hr": 92,
+    "scr": 110,
+    "k": 4.4,
+    "glucose": 11.2,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "inpatientUnit": "icu"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_dm2_inpatient_target",
+        "action": "MONITOR",
+        "doseContains": "7.8 – 10.0"
+      }
+    ]
+  },
+  "descriptionVi": "Nội trú ICU: 7.8–10.0 mmol/L."
+}

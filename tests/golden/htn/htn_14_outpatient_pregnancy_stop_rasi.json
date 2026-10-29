@@ -1,0 +1,72 @@
+{
+  "id": "htn_14_outpatient_pregnancy_stop_rasi",
+  "titleVi": "Phụ nữ mang thai đang uống Losartan: Lập tức ngừng thuốc, khởi trị Methyldopa",
+  "source": "ESC 2024 HTN / esc.htn.2024.pregnancy_contraindication_rasi",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 28,
+    "sex": "female",
+    "weight": 60,
+    "height": 160,
+    "sbp": 152,
+    "dbp": 96,
+    "hr": 82,
+    "conditions": {
+      "pregnant": true,
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "losartan",
+        "name": "Cozaar",
+        "dose": 50,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "losartan",
+        "action": "STOP"
+      },
+      {
+        "ruleId": "rec_htn_pregnancy_stop_rasi",
+        "action": "STOP"
+      },
+      {
+        "drugId": "methyldopa",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "losartan",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "losartan",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Phụ nữ có thai phát hiện đang dùng ARB (Losartan), cảnh báo đỏ ngừng ngay Losartan và khởi trị Methyldopa an toàn cho thai kỳ."
+}

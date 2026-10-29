@@ -1,0 +1,65 @@
+{
+  "id": "copd_27_r1_group_e_single_mod_exac",
+  "titleVi": "Hồi quy R1: Chỉ 1 đợt cấp mức độ vừa (0 nhập viện) xếp Nhóm E theo GOLD 2026 & BYT 2131/2026",
+  "source": "GOLD 2026 Report p. 51 / BYT QĐ 2131/2026 p. 11 (COPD-R1-02)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_27",
+    "age": 67,
+    "sex": "male",
+    "weight": 58,
+    "height": 165,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 74,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "fev1FvcRatio": 0.56,
+      "fev1PredPct": 58,
+      "mmrc": 1,
+      "cat": 8,
+      "moderateExacerbations": 1,
+      "hospitalizations": 0,
+      "bloodEos": 340,
+      "currentInhaler": "none",
+      "smokingStatus": "former",
+      "restingSpo2": 95
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "ruleId": "rec_copd_init_group_e_triple",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "tiotropium",
+        "action": "START"
+      }
+    ]
+  }
+}

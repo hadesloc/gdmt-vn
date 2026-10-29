@@ -1,0 +1,74 @@
+{
+  "id": "af_06_valvular_mechanical_mitral_warfarin",
+  "titleVi": "Rung nhĩ có Van hai lá Cơ học: BẮT BUỘC Warfarin, CẤM TUYỆT ĐỐI DOAC (ADV_AF_25)",
+  "source": "ESC 2024 AF Section 6.2.2 / esc.af.2024.vka_only_mechanical_mitral",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 58,
+    "sex": "female",
+    "weight": 56,
+    "height": 156,
+    "sbp": 125,
+    "dbp": 78,
+    "hr": 80,
+    "rhythm": "afib",
+    "scr": 80,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "mechanicalValve": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "warfarin",
+        "name": "Warfarin",
+        "dose": 2.5,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "warfarin",
+        "action": "CONTINUE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "apixaban",
+        "action": "START"
+      },
+      {
+        "drugId": "rivaroxaban",
+        "action": "START"
+      },
+      {
+        "drugId": "dabigatran",
+        "action": "START"
+      },
+      {
+        "drugId": "edoxaban",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân mang van cơ học (ADV_AF_25): Bắt buộc dùng VKA Warfarin chuẩn độ theo INR, chống chỉ định tuyệt đối DOAC."
+}

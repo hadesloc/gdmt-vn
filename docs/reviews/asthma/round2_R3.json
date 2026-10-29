@@ -1,0 +1,164 @@
+[
+  {
+    "id": "ASTHMA-R2-R3-01",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "src/engine/merge.ts (Step 1 START->CONTINUE) & asthma.acute.severe_bundle / asthma.acute.severe_steroid_iv / asthma.inpatient.discharge_plan",
+    "finding": "Ghi đè mất liều cấp cứu sinh tử trong Cơn hen nguy kịch/cấp nặng và liều nâng bậc MART lúc xuất viện khi người bệnh đang có sẵn thuốc trùng drugId trong currentMeds. Tại Bước 1 của src/engine/merge.ts (dòng 509–520), mọi khuyến cáo có action === 'START' trùng drugId với thuốc trong currentMeds đều bị ép chuyển sang 'CONTINUE', xóa sạch chuỗi dose và title cấp cứu để thay bằng liều tại nhà cũ (curMed.dose) kèm dòng chữ 'TIẾP TỤC DUY TRÌ ... (không khởi trị lại từ đầu)'. Hậu quả: (1) Bệnh nhân vào Cấp cứu vì cơn hen nguy kịch (lồng ngực câm, SpO2 81%, PaCO2 56 mmHg) vốn có sẵn bình xịt Salbutamol 100 mcg khi cần và Methylprednisolone 4 mg uống tại nhà bị mất hoàn toàn y lệnh khí dung liên tục Salbutamol 5 mg + thở oxy đích SpO2 93–95% và mất y lệnh tiêm tĩnh mạch Methylprednisolone 40 mg ngay lập tức; (2) Lúc xuất viện sau đợt cấp (discharge_plan), bệnh nhân vốn dùng Symbicort AIR 1 nhát khi cần ở nhà bị ghi đè mất liều duy trì MART 1–2 nhát x 2 lần/ngày về lại liều PRN cũ.",
+    "evidence": "Chạy evaluate() kịch bản R2-ADV-22 (setting: 'inpatient', customInputs: { isAcuteExacerbation: true, silentChest: true, spo2: 81, paco2: 56 }, currentMeds: [{ drugId: 'salbutamol', dose: '100 mcg 1-2 nhát khi cần' }, { drugId: 'methylprednisolone', dose: '4 mg uống hàng ngày' }]) -> Output: [CONTINUE:salbutamol] (rec_asthma_acute_severe_bundle) title='TIẾP TỤC DUY TRÌ Salbutamol (Albuterol) [Liều hiện tại: 100 mcg 1-2 nhát khi cần]' | dose='100 mcg 1-2 nhát khi cần' và [CONTINUE:methylprednisolone] (rec_asthma_acute_severe_steroid_iv) title='TIẾP TỤC DUY TRÌ Methylprednisolone [Liều hiện tại: 4 mg uống hàng ngày]' | dose='4 mg uống hàng ngày'. Kịch bản R2-ADV-35 (setting: 'inpatient', acuteResponseAfter1h: 'good_response', currentMeds: [{ drugId: 'budesonide_formoterol', dose: '160/4.5 mcg 1 nhát khi cần' }]) -> Output: [CONTINUE:budesonide_formoterol] (rec_asthma_discharge_plan) dose='160/4.5 mcg 1 nhát khi cần'. Trái với GINA 2026 Box 9-4 & BYT QĐ 5850/2021.",
+    "suggestedFix": "(1) Trong src/modules/asthma/rules.ts: ở các luật cơn cấp nội viện (severe_bundle, severe_steroid_iv, mild_moderate, mild_moderate_ocs) và discharge_plan, nếu thuốc tương ứng đã có trong currentMeds thì phát action: 'UPTITRATE' thay vì 'START' để bảo toàn nguyên vẹn title và dose cấp cứu/nâng bậc MART; (2) Đồng thời tại src/engine/merge.ts (dòng 509–520), không ghi đè r.dose và r.title bằng liều nền ngoại trú cũ khi setting === 'inpatient' hoặc khi khuyến cáo thuộc phân tầng cấp cứu nội viện."
+  },
+  {
+    "id": "ASTHMA-R2-R3-02",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "evaluateAcuteAsthma & asthma.inpatient.discharge_plan (src/modules/asthma/rules.ts:224-228, 998-1035)",
+    "finding": "Cho xuất viện bệnh nhân đang hấp hối trong cơn hen nguy kịch (lồng ngực câm, lơ mơ, SpO2 82%, PaCO2 56 mmHg) nếu cờ acuteResponseAfter1h === 'good_response' bị chọn nhầm hoặc còn lưu trạng thái cũ. Trong hàm evaluateAcuteAsthma() (rules.ts dòng 226), câu lệnh 'if (ci.acuteResponseAfter1h === \"good_response\") return { hasAcuteAttack: false, isSevere: false, isLifeThreatening: false }' đặt TRƯỚC khối kiểm tra isLifeThreatening và isSevere, nên xóa sổ toàn bộ báo động ICU cùng 4 thuốc cấp cứu và kích hoạt thẳng đơn xuất viện về nhà.",
+    "evidence": "Chạy evaluate() kịch bản R2-ADV-23 (setting: 'inpatient', customInputs: { isAcuteExacerbation: true, silentChest: true, mentalStatus: 'drowsy_confused', spo2: 82, paco2: 56, acuteResponseAfter1h: 'good_response' }) -> Output: RECS(2): [START:budesonide_formoterol] (rec_asthma_discharge_plan) 'Kế hoạch xuất viện: Khởi trị/nâng bậc ICS-formoterol MART + Tái khám sau 2–7 ngày' ;; [MONITOR] (rec_asthma_action_plan_doc). Không có báo động ICU, không có SABA/Oxy/Ipratropium/Methylprednisolone/MgSO4. Vi phạm GINA 2026 Box 9-4 & BYT QĐ 5850/2021 (chỉ xuất viện khi hết dấu hiệu nặng/nguy kịch, SpO2 >= 94% khí trời).",
+    "suggestedFix": "Đưa khối kiểm tra isLifeThreatening và các dấu hiệu nặng thực thể hiện hành (silentChest, drowsy_confused, speech === 'unable' | 'words', paco2 > 45, spo2 < 90, rr > 30, pefPct <= 50, accessoryMuscleUse) lên TRƯỚC nhánh kiểm tra acuteResponseAfter1h === 'good_response' trong evaluateAcuteAsthma() và chặn discharge_plan nếu bất kỳ dấu hiệu sinh tồn nguy hiểm nào vẫn đang hiện diện."
+  },
+  {
+    "id": "ASTHMA-R2-R3-03",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "asthma.outpatient.track1_step1_2 / track1_step3 / track1_step4 (src/modules/asthma/rules.ts:1299, 1372, 1472)",
+    "finding": "Hố đen điều trị (Therapeutic Black Hole) làm rơi mất 100% thuốc kiểm soát nền (ICS-formoterol) ở bệnh nhân Hen KHÔNG KIỂM SOÁT thuộc Track 1 Bậc 2, Bậc 3 và Bậc 4 khi kỹ thuật hít sai (inhalerTechniqueCorrect === false) hoặc kém tuân thủ (goodAdherence === false). Các nhánh tăng bậc yêu cầu 'techniqueOk && adherenceOk' (trả về false), trong khi các nhánh duy trì bậc hiện tại ở Track 1 (dòng 1299, 1372, 1472) lại yêu cầu 'score.level !== \"uncontrolled\"' (cũng trả về false). Kết quả là bệnh nhân đang không kiểm soát triệu chứng bị mất sạch toàn bộ khuyến cáo ICS-formoterol (0 thuốc kiểm soát trong Plan).",
+    "evidence": "Chạy evaluate() kịch bản R2-ADV-58 (setting: 'outpatient', currentMeds: [{ drugId: 'budesonide_formoterol', dose: '160/4.5 x 1 nhát x 2' }], customInputs: { daytimeSymptomsMoreThanTwiceWeek: true, nightWakingDueToAsthma: true, relieverNeededMoreThanTwiceWeek: true, activityLimitationDueToAsthma: true, currentTrack: 'track1', currentStep: 3, inhalerTechniqueCorrect: false, goodAdherence: true }) -> Output: RECS(2): [MONITOR] (rec_asthma_check_technique_first) ;; [MONITOR] (rec_asthma_action_plan_doc) — 0 khuyến cáo thuốc kiểm soát! Kịch bản R2-ADV-59 (Track 1 Bậc 4, goodAdherence: false) cho kết quả y hệt (0 thuốc kiểm soát). Trái với GINA 2026 Box 4-6 & BYT QĐ 1851/2020 (bắt buộc duy trì ICS-LABA nền trong khi sửa kỹ thuật hít và củng cố tuân thủ).",
+    "suggestedFix": "Trong asthma.outpatient.track1_step1_2 (dòng 1299), track1_step3 (dòng 1372) và track1_step4 (dòng 1472), sửa điều kiện duy trì bậc hiện tại thành '(currentStep === N && (score.level !== \"uncontrolled\" || !techniqueOk || !adherenceOk))', và trong produce() gán isSteppingUp = false (CONTINUE/START ở bậc hiện tại N) khi !techniqueOk || !adherenceOk."
+  },
+  {
+    "id": "ASTHMA-R2-R3-04",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "evaluateAcuteAsthma & asthma.acute.severe_magnesium (src/modules/asthma/rules.ts:224-282, 949-960)",
+    "finding": "Bỏ sót hoàn toàn biến cố xấu đi sau 1 giờ (acuteResponseAfter1h === 'poor_response': khó thở tăng, PEF < 50%, kiệt sức) trong evaluateAcuteAsthma(). Dù hàm produce() của Rule 11D (severe_magnesium_sulfate, dòng 958) có viết 'const isPoorResponse = ci.acuteResponseAfter1h === \"poor_response\"' để nâng Magnesium sulfate 2 g TM từ CONSIDER lên START, nhưng when() của Rule 11A–11D đều khóa bởi evaluateAcuteAsthma(ctx).isSevere — nơi không hề kiểm tra poor_response! Do đó: (1) Bệnh nhân ban đầu cơn nhẹ-vừa nhưng sau 1h xấu đi (poor_response) vẫn chỉ nhận đơn Prednisolone uống + Salbutamol xịt, không được nâng lên gói Cơn nặng và không bao giờ nhận được MgSO4 TM; (2) Nếu chỉ nhập acuteResponseAfter1h = 'poor_response' (chưa nhập sinh hiệu ban đầu), luật missing_triage_data cũng tắt luôn, tạo hố đen 0 khuyến cáo.",
+    "evidence": "Chạy evaluate() kịch bản R2-ADV-25 (setting: 'inpatient', customInputs: { isAcuteExacerbation: true, respiratoryRate: 24, spo2: 93, pefPct: 60, speechAbility: 'phrases', acuteResponseAfter1h: 'poor_response' }) -> Output: RECS(2): [START:salbutamol] (rec_asthma_acute_mild_moderate) + [START:prednisolone] (rec_asthma_acute_mild_moderate_ocs), mất hoàn toàn Ipratropium, Methylprednisolone TM, Oxy và MgSO4 TM. Kịch bản R2-ADV-26 (setting: 'inpatient', customInputs: { acuteResponseAfter1h: 'poor_response' }) -> Output: RECS(0): NONE. Trái với GINA 2026 Box 9-4 & BYT QĐ 1851/5850.",
+    "suggestedFix": "Trong evaluateAcuteAsthma(ctx) (src/modules/asthma/rules.ts): bổ sung 'const poorAfter1h = ci.acuteResponseAfter1h === \"poor_response\"'; đưa 'poorAfter1h || ci.acuteResponseAfter1h === \"incomplete_response\"' vào hasExplicitAcuteData; và đưa 'poorAfter1h' vào biểu thức isSevere để kích hoạt đầy đủ gói Cơn hen nặng + START Magnesium sulfate 2 g TM."
+  },
+  {
+    "id": "ASTHMA-R2-R3-05",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "evaluateAcuteAsthma & asthma_inpatient_acute_group defaults (src/modules/asthma/rules.ts:259-281 & src/modules/asthma/inputs.ts:261-350)",
+    "finding": "Vi phạm nguyên tắc Fail-Closed (QA-9) khi thiếu sinh hiệu phân độ nội viện VÀ chẩn đoán nhầm Cơn hen cấp gây kê oan Prednisolone 40–50 mg/ngày trên bệnh nhân nội viện đồng mắc ổn định (như Suy tim cấp). (1) Khi isAcuteExacerbation === true (mặc định defaultValue: true trên UI kèm speechAbility defaultValue: 'sentences') nhưng bác sĩ chưa nhập bất kỳ thông số SpO2, nhịp thở hay PEF nào, evaluateAcuteAsthma() vẫn trả về hasAcuteAttack = true, isSevere = false, bỏ qua missing_triage_data và kê thẳng gói nhẹ-vừa (Prednisolone uống + Salbutamol xịt); (2) Khi bệnh nhân đồng mắc ['asthma', 'hf'] nhập viện vì Suy tim cấp có sinh hiệu hô hấp hoàn toàn bình thường (spo2: 98%, respiratoryRate: 16) nhưng chưa gạt tay isAcuteExacerbation = false, biểu thức 'spo2 !== undefined || rr !== undefined' khiến hasExplicitAcuteData = true và tự động kê Prednisolone 40–50 mg/ngày × 5–7 ngày gây giữ muối nước nguy hiểm cho bệnh nhân suy tim.",
+    "evidence": "Chạy evaluate() kịch bản R2-ADV-24 (setting: 'inpatient', customInputs: { isAcuteExacerbation: true }) và R2-PROBE-14 (UI defaultValues) -> Output: [START:salbutamol] (rec_asthma_acute_mild_moderate) + [START:prednisolone] (rec_asthma_acute_mild_moderate_ocs), không hỏi SpO2/RR. Kịch bản R2-ADV-33 (selectedModules: ['asthma', 'hf'], setting: 'inpatient', lvef: 35, nyha: 3, customInputs: { spo2: 98, respiratoryRate: 16 }) -> Output: kê đồng thời Furosemide TM suy tim cấp VÀ [START:prednisolone] 40–50 mg/ngày + [START:salbutamol] 4–10 nhát.",
+    "suggestedFix": "(1) Trong src/modules/asthma/inputs.ts, gỡ bỏ defaultValue: true của isAcuteExacerbation và defaultValue: 'sentences' của speechAbility; (2) Trong evaluateAcuteAsthma(), khi isAcuteExacerbation !== true, chỉ tự suy diễn có cơn cấp nếu hiện diện dấu hiệu bất thường thực sự (isLifeThreatening, spo2 < 92, rr > 20, pefPct < 80, speech !== 'sentences', accessoryMuscleUse === true) chứ không suy diễn từ SpO2 98% / RR 16 bình thường; (3) Khi isAcuteExacerbation === true nhưng chưa có dấu hiệu nặng/nguy kịch và thiếu cả spo2 lẫn respiratoryRate, buộc fail-closed qua missing_triage_data."
+  },
+  {
+    "id": "ASTHMA-R2-R3-06",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "asthma.safety.aerd_nsaid_contra / beta_blocker_contra / laba_only_prohibited / acute.sedatives_contra (src/modules/asthma/rules.ts:417, 553, 598, 1887)",
+    "finding": "Cả 4 luật chống chỉ định thuốc nền trong src/modules/asthma/rules.ts đều dùng '.find()' thay vì '.filter()', khiến khi người bệnh đang dùng đồng thời từ 2 thuốc chống chỉ định trở lên thì chỉ thuốc đầu tiên trong currentMeds nhận lệnh STOP/AVOID, còn các thuốc chống chỉ định tiếp theo bị bỏ lọt hoàn toàn. Đặc biệt nguy hiểm ở: (1) Bệnh nhân AERD dùng đồng thời Aspirin 81 mg + Ibuprofen 400 mg (chỉ STOP Aspirin, bỏ lọt Ibuprofen có thể gây co thắt phế quản phản vệ); (2) Bệnh nhân dùng Propranolol uống + nhỏ mắt Timolol 0.5% glôcôm (chỉ AVOID Propranolol, bỏ lọt hoàn toàn lọ nhỏ mắt Timolol do interactions.ts cũng không bắt timolol_ophthalmic); (3) Bệnh nhân cơn hen cấp dùng đồng thời Morphine + Diazepam (chỉ AVOID Morphine, bỏ lọt Diazepam).",
+    "evidence": "Kịch bản R2-ADV-52 (conditions: { asthma: true, aerd: true }, currentMeds: [aspirin, ibuprofen, budesonide_formoterol]) -> Output: chỉ có [STOP:aspirin], không có STOP/AVOID cho ibuprofen. Kịch bản R2-PROBE-04 (currentMeds: [propranolol, timolol_ophthalmic, budesonide_formoterol]) -> Output: chỉ có [AVOID:propranolol] và alert drugs=propranolol, bỏ lọt hoàn toàn timolol_ophthalmic. Kịch bản R2-PROBE-06 (setting: 'inpatient', spo2: 88, rr: 34, currentMeds: [morphine, diazepam]) -> Output: chỉ có [AVOID:morphine], bỏ lọt diazepam.",
+    "suggestedFix": "Thay '.find()' bằng '.filter()' để xử lý toàn bộ các thuốc vi phạm (hoặc bổ sung quy tắc rà soát tương ứng vào src/engine/safety/reviewMeds.ts & interactions.ts cho mọi thuốc NSAID trên nền AERD, mọi chẹn beta không chọn lọc bao gồm timolol_ophthalmic/carteolol/levobunolol, mọi LABA đơn trị và mọi thuốc an thần trong cơn hen cấp để sinh đủ khuyến cáo STOP/AVOID cá thể hóa cho từng drugId)."
+  },
+  {
+    "id": "ASTHMA-R2-R3-07",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "asthma.outpatient.track1_step3 & track1_step4 (src/modules/asthma/rules.ts:1391, 1488) & src/engine/evaluate.ts (checkDuplicates order)",
+    "finding": "Phát sai action: 'UPTITRATE' cho budesonide_formoterol khi bệnh nhân đang dùng bình hít khác hoạt chất (ví dụ budesonide đơn chất ở Preset chính thức số 2, hoặc beclometasone_formoterol Foster MART Bậc 3), làm mất lệnh SWITCH ngừng bình cũ và gây cảnh báo giả trùng ICS (dup.ics) hoặc trùng 2 LABA mức độ CRITICAL (dup.laba). Nguyên nhân: Bước 4 của merge.ts (dòng 604) chỉ tự sinh lệnh SWITCH ngừng thuốc cũ cùng nhóm khi thuốc mới có action === 'START'. Hơn nữa, trong evaluate.ts, checkDuplicates chạy trước mergeRecommendations nên ngay cả khi có SWITCH vẫn báo giả dup.ics.",
+    "evidence": "Chạy Preset chính thức số 2 preset_asthma_uncontrolled_step2 / R2-ADV-60 (currentMeds: [budesonide], tăng lên Track 1 Bậc 3) -> Output: [UPTITRATE:budesonide_formoterol] (không có SWITCH ngừng budesonide) kèm [ALERT:warning:dup.ics] (budesonide,budesonide_formoterol). Kịch bản R2-ADV-61 (currentMeds: [beclometasone_formoterol], Track 1 Bậc 3 không kiểm soát tăng lên Bậc 4) -> Output: [UPTITRATE:budesonide_formoterol] kèm [ALERT:critical:dup.laba] Trùng lặp thành phần LABA giữa các bình hít (beclometasone_formoterol,budesonide_formoterol).",
+    "suggestedFix": "(1) Trong track1_step3 và track1_step4: nếu currentMeds đang có beclometasone_formoterol (hoạt chất MART hợp lệ theo GINA Track 1), giữ nguyên drugId = 'beclometasone_formoterol' khi CONTINUE/UPTITRATE/REDUCE; nếu currentMeds chưa có thuốc đích mà đang dùng ICS/ICS-LABA khác hoạt chất, phát action: 'START' thay vì 'UPTITRATE' để merge.ts sinh lệnh SWITCH; (2) Trong evaluate.ts / duplicates.ts, loại trừ các thuốc cũ đã có lệnh STOP hoặc SWITCH khỏi kiểm tra trùng lặp nhóm."
+  },
+  {
+    "id": "ASTHMA-R2-R3-08",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "evaluateAcuteAsthma (src/modules/asthma/rules.ts:238, 273-280)",
+    "finding": "Bỏ sót tiêu chuẩn lâm sàng 'Kích động, hoảng hốt, vật vã' (mentalStatus === 'anxious') khi phân tầng Cơn hen cấp nặng, dẫn đến phân loại thấp xuống Cơn nhẹ - trung bình (thiếu thở oxy kiểm soát, thiếu Ipratropium khí dung và thiếu Corticoid tĩnh mạch). Đồng thời ở bệnh nhân có SpO2 90–92% (thấp hơn mục tiêu SpO2 93–95% của KB nhưng >= 90%), gói nhẹ - trung bình không hiển thị rõ y lệnh thở oxy trên tiêu đề/liều.",
+    "evidence": "Chạy evaluate() kịch bản R2-ADV-27 (setting: 'inpatient', customInputs: { isAcuteExacerbation: true, mentalStatus: 'anxious', speechAbility: 'phrases', respiratoryRate: 28, spo2: 91 }) -> Output: xếp loại Nhẹ - trung bình ([START:salbutamol] 4–10 nhát + [START:prednisolone] uống). Theo GINA 2026 Box 9-3 ('Severe: Usually agitated') và BYT QĐ 5850/2021 ('Cơn hen nặng: Tri giác thường kích thích'), kích động/vật vã là tiêu chuẩn của Cơn hen cấp nặng.",
+    "suggestedFix": "Bổ sung 'ci.mentalStatus === \"anxious\"' vào điều kiện isSevere (và vào hasExplicitAcuteData) trong evaluateAcuteAsthma() (src/modules/asthma/rules.ts dòng 273); đồng thời bổ sung hướng dẫn thở oxy duy trì SpO2 93–95% ngay trên liều/tiêu đề khi spo2 < thFor('spo2', 'asthma.acute.oxygen_target_min') (93%)."
+  },
+  {
+    "id": "ASTHMA-R2-R3-09",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "asthma.acute.sedatives_contra (src/modules/asthma/rules.ts:1880-1915)",
+    "finding": "Cảnh báo sai Chống chỉ định tuyệt đối Class III ('Tránh tuyệt đối ... trong cơn hen cấp') cho bệnh nhân hen phế quản ĐÃ ỔN ĐỊNH nhập viện phẫu thuật chương trình (isAcuteExacerbation === false) có dùng giảm đau hậu phẫu (Fentanyl / Morphine) hoặc tiền mê. Luật asthma.acute.sedatives_contra chỉ kiểm tra setting: 'inpatient' và sự hiện diện của thuốc trong currentMeds mà quên kiểm tra người bệnh có đang trong cơn hen cấp hay không.",
+    "evidence": "Chạy evaluate() kịch bản R2-ADV-32 (setting: 'inpatient', customInputs: { isAcuteExacerbation: false, spo2: 98, respiratoryRate: 16 }, currentMeds: [{ drugId: 'budesonide_formoterol' }, { drugId: 'fentanyl', name: 'Fentanyl giảm đau sau mổ' }]) -> Output: RECS(1): [AVOID:fentanyl] (rec_asthma_sedatives_contra) 'CHỐNG CHỈ ĐỊNH: Tránh tuyệt đối Fentanyl giảm đau sau mổ trong cơn hen cấp – Nguy cơ ức chế hô hấp và ngừng thở'. GINA 2026 Section 9 chỉ chống chỉ định thuốc an thần trong đợt cấp hen (during acute exacerbations).",
+    "suggestedFix": "Sửa điều kiện when của asthma.acute.sedatives_contra (src/modules/asthma/rules.ts dòng 1885) thành: 'evaluateAcuteAsthma(ctx).hasAcuteAttack && ctx.patient.currentMeds.some((m) => ACUTE_SEDATIVE_DRUGS.has(m.drugId))'."
+  },
+  {
+    "id": "ASTHMA-R2-R3-10",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "asthma.outpatient.step5_controller_continue & step5_severe_management & track2_alternative (src/modules/asthma/rules.ts:1632-1775, 1815-1865)",
+    "finding": "Mâu thuẫn y lệnh trực tiếp khi bệnh nhân Bậc 5 đã kiểm soát tốt liên tục >= 3–6 tháng và đủ điều kiện hạ bậc: hệ thống vừa phát hành [REDUCE] và [CONSIDER] hạ bậc giảm liều ICS 25–50%, nhưng đồng thời Rule 21B (step5_severe_management) vẫn kích hoạt tuyên bố 'Bệnh nhân hen không kiểm soát ở mức Bậc 5' và khuyên phối hợp thêm LAMA + Thuốc sinh học. Ngoài ra, cả ở Bậc 5 (Rule 21A) lẫn Track 2 Bậc 3–4 (track2_alternative), khi chuyển sang action: 'REDUCE' để hạ bậc thì chuỗi 'dose' vẫn giữ nguyên liều bậc cao cũ chưa hề giảm.",
+    "evidence": "Kịch bản R2-ADV-62 (currentTrack: 'track1', currentStep: 5, GINA 0/4 triệu chứng, wellControlledMonths: 6, exacerbationsLastYear: 0, fev1Pct: 82) -> Output phát đồng thời: [REDUCE:budesonide_formoterol] (dose vẫn là '160/4.5 mcg: 2 nhát x 2 lần/ngày') + [REFER] (rec_asthma_track1_step5_lama_biologic, rationale ghi 'Bệnh nhân hen không kiểm soát ở mức Bậc 5') + [CONSIDER] (rec_asthma_step_down_consider). Kịch bản R2-PROBE-17b (Track 2 Bậc 4 ổn định 6 tháng) -> [REDUCE:fluticasone_salmeterol] title='Hạ bậc từ Track 2 Bậc 4 xuống Bậc 3...' nhưng dose vẫn giữ 'Accuhaler (DPI) 250/50 mcg: hít 1 liều x 2 lần/ngày'.",
+    "suggestedFix": "(1) Trong Rule 21B (step5_severe_management, dòng 1711), sửa điều kiện kích hoạt ở Bậc 5 thành '(currentStep === 5 && score.level !== \"well_controlled\")' (hoặc loại trừ khi isStepDownEligible(ctx) === true); (2) Khi reducing === true ở Rule 21A và track2_alternative Bậc 3–4, cập nhật chuỗi dose sang liều mục tiêu sau giảm 25–50% thay vì giữ nguyên liều bậc cũ."
+  },
+  {
+    "id": "ASTHMA-R2-R3-11",
+    "severity": "major",
+    "itemType": "drug",
+    "itemId": "magnesium_sulfate (kb/drugs/magnesium_sulfate.json & src/engine/safety/gates.ts & asthma.acute.severe_magnesium)",
+    "finding": "Thiếu hoàn toàn cổng kiểm tra an toàn thận (Renal Gate) khi chỉ định truyền tĩnh mạch Magnesium sulfate 2 g trên bệnh nhân Suy thận mạn giai đoạn nặng / Vô niệu (eGFR < 30 mL/phút/1.73m²). Dù kb/drugs/magnesium_sulfate.json đã ghi rõ thận trọng/giảm liều khi eGFR < 30 mL/phút do nguy cơ tích lũy magie gây liệt cơ hô hấp và ngừng tim, cả gates.ts lẫn asthma.acute.severe_magnesium đều không phát bất kỳ GateResult hay cảnh báo thận nào khi SCr = 550 µmol/L (eGFR ~ 8 mL/phút).",
+    "evidence": "Chạy evaluate() kịch bản R2-ADV-30 (setting: 'inpatient', scr: 550, conditions: { asthma: true, ckd: true }, customInputs: { isAcuteExacerbation: true, silentChest: true, spo2: 83, respiratoryRate: 36 }) -> Output: [START:magnesium_sulfate] 'Truyền tĩnh mạch ngay Magnesium sulfate 2 g trong 20 phút' với gates: [] (trống hoàn toàn) và rationale không đề cập suy thận hay theo dõi phản xạ gân xương / magie máu.",
+    "suggestedFix": "Bổ sung cổng thận cho magnesium_sulfate trong src/engine/safety/gates.ts (hoặc trực tiếp trong asthma.acute.severe_magnesium sử dụng ctx.derived.egfr và drug('magnesium_sulfate').renalRules): khi eGFR < 30 mL/phút/1.73m² (đặc biệt < 15 mL/phút hoặc vô niệu), gắn GateResult cảnh báo nguy cơ tăng magie máu gây liệt hô hấp/block nhĩ thất, hướng dẫn cân nhắc giảm 50% liều (1 g TM) và theo dõi sát phản xạ gân xương bánh chè + nồng độ Mg²⁺ huyết thanh."
+  },
+  {
+    "id": "ASTHMA-R2-R3-12",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "ICS_CONTAINING_DRUGS & LABA_ALL_DRUGS & asthma.safety.saba_only_prohibited (src/modules/asthma/rules.ts:30-69, 357)",
+    "finding": "Hai lỗ hổng rà soát thuốc nền trong rules.ts: (1) Tập hằng số ICS_CONTAINING_DRUGS và LABA_ALL_DRUGS bỏ sót toàn bộ các bình hít bộ ba cố định ICS+LABA+LAMA (như fluticasone_furoate_umeclidinium_vilanterol Trelegy, beclometasone_glycopyrronium_formoterol Trimbow, budesonide_glycopyrronium_formoterol Breztri), làm tắt rec_asthma_duplicate_laba_warning khi dùng trùng Trelegy + Symbicort và có nguy cơ báo nhầm 'SABA đơn trị không có ICS' nếu bệnh nhân dùng Trelegy + Salbutamol; (2) Luật saba_only_prohibited bị giới hạn cứng setting: 'outpatient' nên bỏ lọt hoàn toàn bệnh nhân nội viện ổn định (isAcuteExacerbation = false) đang dùng SABA đơn độc tại nhà.",
+    "evidence": "Kịch bản R2-ADV-38 (currentMeds: [fluticasone_furoate_umeclidinium_vilanterol, budesonide_formoterol]) -> rec_asthma_duplicate_laba_warning không nổ. Kịch bản R2-ADV-43 (setting: 'inpatient', customInputs: { isAcuteExacerbation: false }, currentMeds: [salbutamol]) -> Output: RECS(0): NONE (không cảnh báo ngưng SABA đơn trị).",
+    "suggestedFix": "(1) Bổ sung đầy đủ các drugId bình hít bộ ba ICS+LABA+LAMA vào ICS_CONTAINING_DRUGS và LABA_ALL_DRUGS trong src/modules/asthma/rules.ts (đồng bộ với INHALER_ICS và INHALER_LABA trong src/engine/safety/duplicates.ts); (2) Đổi setting của saba_only_prohibited và laba_only_prohibited thành 'both', với điều kiện ở nội viện chỉ kích hoạt khi !evaluateAcuteAsthma(ctx).hasAcuteAttack."
+  },
+  {
+    "id": "ASTHMA-R2-R3-13",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "asthma.acute.life_threatening & asthma.age_limit.under_12 (src/modules/asthma/rules.ts:289-325, 800-845)",
+    "finding": "Ẩn mất Báo động Đỏ ICU & Chuẩn bị đặt nội khí quản (REFER) trên bệnh nhân cấp cứu suy hô hấp nguy kịch (silentChest = true, SpO2 = 80%, PaCO2 = 58 mmHg) khi chưa kịp nhập Tuổi (age === undefined) hoặc ở trẻ < 12 tuổi. Việc khóa các y lệnh liều mg người lớn khi thiếu tuổi / dưới 12 tuổi là đúng, nhưng khóa luôn cả cảnh báo phi-dược-lý báo động đội Hồi sức cấp cứu khiến bệnh nhân đang ngừng thở sắp xảy ra chỉ nhận được 1 dòng CONSIDER nhắc nhập tuổi hoặc khám chuyên khoa Nhi thông thường.",
+    "evidence": "Kịch bản R2-PROBE-15a (setting: 'inpatient', age: undefined, silentChest: true, spo2: 80, paco2: 58) -> Output: RECS(1): [CONSIDER] (missing_input_age) 'Cần nhập Tuổi để đánh giá' (0 báo động ICU). Kịch bản R2-PROBE-15b (setting: 'inpatient', age: 11, silentChest: true, spo2: 80, paco2: 58) -> Output: RECS(1): [CONSIDER] (rec_asthma_age_under_12) (0 báo động cấp cứu hồi sức Nhi).",
+    "suggestedFix": "Giữ nguyên chốt chặn không phát các y lệnh thuốc liều người lớn (START mg người lớn) khi age === undefined hoặc age < 12, nhưng cho phép luật phi-dược-lý asthma.acute.life_threatening (action: 'REFER' báo động đội ICU / Hồi sức Cấp cứu Nhi, hỗ trợ oxy & chuẩn bị kiểm soát đường thở ngay) luôn kích hoạt khi evaluateAcuteAsthma(ctx).isLifeThreatening === true."
+  },
+  {
+    "id": "ASTHMA-R2-R3-14",
+    "severity": "minor",
+    "itemType": "ui",
+    "itemId": "customInputs.speechAbility & customInputs.spo2 (src/modules/asthma/inputs.ts:276, 300)",
+    "finding": "Chú giải lâm sàng (helpVi) trên giao diện nhập liệu Cơn hen cấp không khớp GINA 2026, BYT QĐ 5850/2021 và không khớp chính logic rules.ts: (1) Dòng 300 ghi 'Nói từng từ hoặc cụm từ là tiêu chuẩn lâm sàng cốt lõi của cơn hen cấp nặng', trong khi theo GINA 2026 Box 9-3 & BYT 5850 'nói từng cụm từ' (phrases) thuộc mức Nhẹ - Trung bình, chỉ 'nói từng từ' (words) mới là Cơn nặng; (2) Dòng 276 ghi 'SpO2 < 90% (BYT 5850) hoặc < 92% (GINA 2026) chỉ điểm Cơn hen cấp nặng', trong khi GINA 2026 ở người lớn & >= 12 tuổi quy định < 90% (ngưỡng < 92% áp dụng cho trẻ nhỏ) và rules.ts cũng chỉ bắt < 90% ở mọi profile.",
+    "evidence": "Đối chiếu src/modules/asthma/inputs.ts dòng 276, 300 với src/modules/asthma/rules.ts dòng 274–278 và kịch bản R2-PROBE-13 (profile: 'INTL', spo2: 91, speechAbility: 'phrases' -> phần mềm xếp loại Nhẹ - trung bình trái với mô tả helpVi).",
+    "suggestedFix": "Cập nhật helpVi tại inputs.ts dòng 300 thành 'Chỉ nói được từng từ riêng lẻ là tiêu chuẩn lâm sàng cốt lõi của cơn hen cấp nặng (nói từng cụm từ thuộc mức nhẹ - trung bình)' và dòng 276 thành 'SpO2 < 90% khí trời ở người lớn & trẻ >= 12 tuổi (GINA 2026 & BYT 5850) chỉ điểm Cơn hen cấp nặng; cần thở oxy khi SpO2 < 93% để duy trì đích 93–95%'."
+  },
+  {
+    "id": "ASTHMA-R2-R3-15",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "evaluateGinaControl (src/engine/calculators/gina.ts:36-45)",
+    "finding": "Ở trường hợp biên trả lời 3/4 câu hỏi kiểm soát triệu chứng GINA mà cả 3 câu đều Dương tính (Q1=true, Q2=true, Q3=true, Q4=undefined), hàm evaluateGinaControl() rẽ nhánh sớm trả về 'uncontrolled' và tự động kê đơn ngoại trú thay vì fail-closed yêu cầu trả lời nốt câu thứ 4 (activityLimitationDueToAsthma).",
+    "evidence": "Kịch bản R2-ADV-16 / R2-PROBE-16 (daytimeSymptomsMoreThanTwiceWeek: true, nightWakingDueToAsthma: true, relieverNeededMoreThanTwiceWeek: true, activityLimitationDueToAsthma: undefined, currentStep: 0) -> Output: [START:budesonide_formoterol] (rec_asthma_track1_step3) thay vì missing_input_activityLimitationDueToAsthma.",
+    "suggestedFix": "Trong src/engine/calculators/gina.ts, đưa kiểm tra 'if (answered < 4) return { level: \"missing\", ... }' lên trước nhánh 'if (positive >= uncontrolledMin)' để đảm bảo hoàn tất đủ 4/4 tiêu chí đánh giá GINA trước khi phát đơn ngoại trú."
+  },
+  {
+    "id": "ASTHMA-R2-R3-16",
+    "severity": "minor",
+    "itemType": "missing",
+    "itemId": "src/engine/safety/gates.ts & src/engine/safety/reviewMeds.ts (AERD cross-module NSAID protection)",
+    "finding": "Thiếu cổng an toàn chống chỉ định xuyên module ở tầng Engine (gates.ts / reviewMeds.ts) cho tiền sử Hen nhạy cảm Aspirin/NSAID (conditions.aerd). Hiện tại khi người bệnh có conditions.aerd = true nhưng chưa dùng NSAID trong currentMeds, luật của module Hen chỉ phát [AVOID:aspirin] gắn cứng vào drugId 'aspirin', nên sẽ không tự động chặn được nếu một module bệnh đồng mắc khác phát lệnh START naproxen, indomethacin, diclofenac hoặc ketorolac (hoặc khi người dùng không tích chọn module asthma).",
+    "evidence": "Kiểm tra src/engine/safety/gates.ts & reviewMeds.ts (không có quy tắc kiểm tra conditions.aerd) và chạy R2-PROBE-19 (conditions: { asthma: true, aerd: true }, currentMeds: [budesonide_formoterol]) -> Output chỉ neo [AVOID:aspirin] vào drugId='aspirin'.",
+    "suggestedFix": "Bổ sung cổng kiểm tra conditions.aerd vào src/engine/safety/gates.ts và reviewMeds.ts đối với toàn bộ nhóm Aspirin và NSAID ức chế COX-1 (aspirin, ibuprofen, naproxen, diclofenac, ketorolac, indomethacin, meloxicam, piroxicam) để bảo vệ chéo trên toàn hệ thống."
+  },
+  {
+    "id": "ASTHMA-R2-R3-17",
+    "severity": "suggestion",
+    "itemType": "rule",
+    "itemId": "asthma.acute.severe_bundle & asthma.special.pregnancy (src/modules/asthma/rules.ts:635-665, 865-905)",
+    "finding": "Khi thai phụ nhập viện vì cơn hen cấp nặng/nguy kịch, khuyến cáo oxy liệu pháp vẫn giữ nguyên mục tiêu SpO2 93–95% của người lớn không mang thai mà chưa nhắc nâng đích SpO2 >= 95% và theo dõi tim thai liên tục để phòng thiếu oxy thai nhi.",
+    "evidence": "Kịch bản R2-PROBE-12 (setting: 'inpatient', conditions: { asthma: true, pregnant: true }, silentChest: true, spo2: 84) -> Output: 'Giãn phế quản cấp cứu & Oxy liệu pháp: Salbutamol 5 mg khí dung + Thở oxy đích SpO2 93–95%'. Đối chiếu GINA 2026 Section 9 & Pregnancy: duy trì SpO2 > 95% cho thai phụ trong cơn hen cấp.",
+    "suggestedFix": "Trong asthma.acute.severe_bundle và asthma.acute.mild_moderate, khi isPatientPregnant(ctx) === true, bổ sung lưu ý nâng mục tiêu oxy liệu pháp lên SpO2 >= 95% (95–98%) và theo dõi tim thai liên tục."
+  },
+  {
+    "id": "ASTHMA-R2-R3-18",
+    "severity": "suggestion",
+    "itemType": "rule",
+    "itemId": "asthma.outpatient.track2_alternative (src/modules/asthma/rules.ts:1798-1865)",
+    "finding": "Ở nhánh Track 2 Bậc 1–2, luật gán cứng drugId: 'fluticasone_propionate' kể cả khi người bệnh đang dùng một ICS đơn chất hợp lệ khác (như budesonide Pulmicort), khiến merge.ts sinh lệnh SWITCH đổi thuốc không cần thiết và tạo cảnh báo giả dup.ics.",
+    "evidence": "Kịch bản R2-PROBE-02 (currentTrack: 'track2', currentStep: 2, currentMeds: [{ drugId: 'budesonide', name: 'Pulmicort 200' }]) -> Output: [SWITCH:budesonide] 'CHUYỂN ĐỔI: Ngừng Pulmicort 200 để thay bằng Fluticasone propionate + Salbutamol khi cần' kèm [ALERT:warning:dup.ics].",
+    "suggestedFix": "Ở nhánh Track 2 Bậc 1–2 của track2_alternative, nếu currentMeds đã có sẵn ICS đơn chất hợp lệ (budesonide, beclometasone, ciclesonide, mometasone, fluticasone_propionate), ưu tiên giữ nguyên drugId hiện hành với action: 'CONTINUE'."
+  }
+]

@@ -1,0 +1,105 @@
+{
+  "id": "insulin_glargine",
+  "nameVi": "Insulin Glargine (U100/U300)",
+  "inn": "Insulin glargine",
+  "class": "Basal Insulin",
+  "vnBrands": [
+    "Lantus",
+    "Toujeo"
+  ],
+  "forms": [
+    "Bút tiêm Solostar 100 U/mL (3 mL)",
+    "Bút tiêm Toujeo Solostar 300 U/mL (1.5 mL)"
+  ],
+  "start": {
+    "amount": 10,
+    "unit": "đơn vị",
+    "frequency": "1 lần/ngày",
+    "route": "tiêm dưới da",
+    "description": "Hoặc 0.1–0.2 đơn vị/kg/ngày tiêm cùng một thời điểm cố định mỗi ngày (chuyển Toujeo U-300 sang Lantus U-100 bắt buộc giảm 20% liều)"
+  },
+  "target": {
+    "amount": 20,
+    "unit": "đơn vị",
+    "frequency": "1 lần/ngày",
+    "route": "tiêm dưới da"
+  },
+  "titration": {
+    "step": "2 đơn vị",
+    "intervalDays": 3
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Liều chuẩn",
+      "citationIds": [
+        "fda.insulin_glargine.dosing",
+        "ada.dm2.2026.basal_start_and_titration"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Giảm 10–25% liều do độ thanh thải insulin giảm",
+      "citationIds": [
+        "fda.insulin_glargine.dosing",
+        "ada.dm2.2026.basal_start_and_titration"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Giảm 25–50% liều và theo dõi sát đường huyết",
+      "citationIds": [
+        "fda.insulin_glargine.dosing",
+        "ada.dm2.2026.basal_start_and_titration"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_glargine_hypo_recent",
+      "parameter": "recent_hypo",
+      "operator": "==",
+      "threshold": 1,
+      "action": "hold",
+      "messageVi": "Có hạ đường huyết gần đây: Không tăng liều insulin; giảm liều 10–20% và tìm nguyên nhân.",
+      "citationIds": [
+        "ada.dm2.2026.basal_start_and_titration"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chuyển đổi liều U-100 (Lantus) sang U-300 (Toujeo) cần liều Toujeo cao hơn 10-20%; chuyển Toujeo sang Lantus cần giảm 20% liều Lantus để tránh hạ đường huyết",
+    "Nguy cơ hạ đường huyết tăng khi phối hợp Sulfonylurea hoặc insulin bữa ăn"
+  ],
+  "citationIds": [
+    "fda.insulin_glargine.dosing",
+    "ada.dm2.2026.basal_start_and_titration"
+  ],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Insulin nền analog được ADA 2026 khuyến cáo tiếp tục sử dụng an toàn trong thai kỳ",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_insulin",
+      "byt.dm2.2020.pregnancy_insulin"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "An toàn khi nuôi con bú",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_insulin"
+    ]
+  },
+  "contraindications": [],
+  "classes": [
+    "insulin",
+    "insulin_basal"
+  ]
+}

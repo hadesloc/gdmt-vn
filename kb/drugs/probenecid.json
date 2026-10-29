@@ -1,0 +1,157 @@
+{
+  "id": "probenecid",
+  "nameVi": "Probenecid",
+  "inn": "Probenecid",
+  "class": "Tăng thải acid uric",
+  "classes": [
+    "urate_lowering",
+    "uricosuric"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Probenecid",
+    "Benemid"
+  ],
+  "forms": [
+    "Viên nén 500 mg"
+  ],
+  "start": {
+    "amount": 500,
+    "unit": "mg",
+    "frequency": "1–2 lần/ngày",
+    "route": "uống",
+    "description": "500 mg x 1–2 lần/ngày (kèm uống đủ ≥ 2 lít nước/ngày)"
+  },
+  "target": {
+    "amount": 1000,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "1000–2000 mg/ngày (tối đa 2 g/ngày theo EULAR/ACR)"
+  },
+  "titration": {
+    "step": 500,
+    "intervalDays": 14,
+    "maxDose": "2 g/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "Khởi đầu 500 mg x 1–2 lần/ngày, tăng dần tới 1000–2000 mg/ngày (lựa chọn hàng hai thay thế hoặc phối hợp XOI)",
+      "citationIds": [
+        "acr.gout.2020.probenecid_low_dose",
+        "eular.gout.2016.benzbromarone_probenecid_dosing"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "not_rec",
+      "continue": "caution",
+      "dose": "Không khuyến cáo khởi trị ở CKD giai đoạn ≥ 3 (eGFR < 60 mL/phút): ACR 2020 và KDIGO 2024 khuyến cáo mạnh ưu tiên XOI hơn probenecid do hiệu quả tăng thải urat giảm rõ rệt",
+      "citationIds": [
+        "acr.gout.2020.xoi_over_probenecid",
+        "acr.gout.2020.uricosuric_renal_stones_contra",
+        "kdigo.gout.2024.xoi_preference"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Chống chỉ định khi eGFR < 30 mL/phút hoặc lọc máu do mất tác dụng bài xuất urat qua ống thận",
+      "citationIds": [
+        "acr.gout.2020.uricosuric_renal_stones_contra",
+        "byt.gout.2014.uricosuric_contra",
+        "byt.ckd.2024.gout_ult_table21"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_probenecid_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "contra",
+      "messageVi": "Chống chỉ định probenecid khi eGFR < 30 mL/phút do thuốc mất tác dụng tăng bài xuất acid uric qua thận",
+      "citationIds": [
+        "acr.gout.2020.uricosuric_renal_stones_contra",
+        "byt.gout.2014.uricosuric_contra"
+      ]
+    },
+    {
+      "id": "gate_probenecid_urolithiasis",
+      "parameter": "Urolithiasis",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "history",
+      "action": "contra",
+      "messageVi": "Chống chỉ định probenecid ở bệnh nhân có tiền sử sỏi thận tiết niệu hoặc bài xuất acid uric niệu > 600 mg/24h (theo BYT 361/2014) do nguy cơ kết tinh sỏi urat cấp",
+      "citationIds": [
+        "acr.gout.2020.uricosuric_renal_stones_contra",
+        "byt.gout.2014.uricosuric_contra"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Chưa có dữ liệu thử nghiệm có đối chứng đầy đủ trong thai kỳ; đối với tăng acid uric máu và gút mạn tính thông thường, khuyến cáo tạm ngừng/trì hoãn thuốc hạ urat (bao gồm probenecid) trong thai kỳ và chỉ điều trị triệu chứng cơn cấp nếu xuất hiện.",
+    "citationIds": [
+      "acr.gout.2020.probenecid_low_dose",
+      "byt.gout.2014.uricosuric_contra"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Dữ liệu an toàn khi cho con bú còn hạn chế; cân nhắc thận trọng lợi ích – nguy cơ và ưu tiên lựa chọn thuốc hạ urat có dữ liệu theo dõi phù hợp.",
+    "citationIds": [
+      "acr.gout.2020.probenecid_low_dose",
+      "byt.gout.2014.uricosuric_contra"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "urolithiasis",
+      "messageVi": "Chống chỉ định ở bệnh nhân có tiền sử sỏi acid uric / sỏi thận tiết niệu (và theo BYT 361/2014 chống chỉ định khi acid uric niệu > 600 mg/24h, suy thận, người cao tuổi, gút mạn có hạt tophi)",
+      "citationIds": [
+        "acr.gout.2020.uricosuric_renal_stones_contra",
+        "byt.gout.2014.uricosuric_contra"
+      ]
+    },
+    {
+      "code": "severe_ckd",
+      "messageVi": "Chống chỉ định khi eGFR hoặc CrCl < 30 mL/phút",
+      "citationIds": [
+        "acr.gout.2020.uricosuric_renal_stones_contra",
+        "byt.gout.2014.uricosuric_contra",
+        "byt.ckd.2024.gout_ult_table21"
+      ]
+    }
+  ],
+  "interactions": [
+    "Methotrexate: Ức chế OAT1/OAT3 làm giảm thải trừ methotrexate, gây ngộ độc tủy xương và niêm mạc nghiêm trọng (tránh phối hợp)",
+    "Ketorolac / Ketoprofen / Indomethacin: Tăng mạnh nồng độ NSAID trong huyết tương (chống chỉ định phối hợp với ketorolac)",
+    "Salicylat liều cao (> 300–500 mg/ngày): Đối kháng mạnh tác dụng tăng thải acid uric của probenecid (lưu ý: aspirin liều thấp 75–100 mg/ngày bảo vệ tim mạch ảnh hưởng không đáng kể trên lâm sàng và ACR 2020 khuyến cáo KHÔNG ngừng aspirin liều thấp)",
+    "Kháng sinh nhóm Beta-lactam (Penicillin, Cephalosporin, Carbapenem/Penem): Giảm bài tiết ống thận, tăng nồng độ kháng sinh trong máu"
+  ],
+  "citationIds": [
+    "acr.gout.2020.probenecid_low_dose",
+    "acr.gout.2020.xoi_over_probenecid",
+    "acr.gout.2020.uricosuric_renal_stones_contra",
+    "acr.gout.2020.uricosuric_no_urine_check_alkalinize",
+    "eular.gout.2016.benzbromarone_probenecid_dosing",
+    "byt.gout.2014.uricosuric_contra"
+  ],
+  "hepatic": {
+    "status": "caution",
+    "note": "Thận trọng ở bệnh nhân có bệnh gan mạn tính; ngừng thuốc ngay nếu xuất hiện vàng da hoặc tăng men gan bất thường.",
+    "notesVi": "Thận trọng ở bệnh nhân có bệnh gan mạn tính; ngừng thuốc ngay nếu xuất hiện vàng da hoặc tăng men gan bất thường.",
+    "citationIds": [
+      "eular.gout.2016.benzbromarone_probenecid_dosing"
+    ]
+  }
+}

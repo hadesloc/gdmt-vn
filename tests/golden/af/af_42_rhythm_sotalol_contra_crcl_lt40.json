@@ -1,0 +1,63 @@
+{
+  "id": "af_42_rhythm_sotalol_contra_crcl_lt40",
+  "titleVi": "Đang dùng Sotalol khi suy thận CrCl < 40 mL/min: DỪNG NGAY tránh xoắn đỉnh (AF-R2-05)",
+  "source": "ACC/AHA 2023 AF Table 23 / acc.af.2023.sotalol_renal_40",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 74,
+    "sex": "male",
+    "weight": 62,
+    "height": 165,
+    "sbp": 128,
+    "dbp": 76,
+    "hr": 72,
+    "rhythm": "afib",
+    "lvef": 55,
+    "scr": 165,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "ckd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "sotalol",
+        "name": "Sotalex",
+        "dose": 80,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "sotalol",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "sotalol",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "CrCl ~30.4 mL/min (< 40 mL/min): Sotalol chống chỉ định trong rung nhĩ theo ACC/AHA 2023 Table 23 do nguy cơ tích lũy gây xoắn đỉnh, bắt buộc STOP."
+}

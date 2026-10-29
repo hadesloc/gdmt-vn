@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.bp.sbp_stage1_us",
+  "contentHash": "cd84c3a48f96aa619bc72c258ba9d67f70a165b6af04deb25c25503023a3ed3f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.bp.sbp_stage1_us",
+      "contentHash": "d7f1157cdb699c8b",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 130 mmHg (quantity: sbp) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

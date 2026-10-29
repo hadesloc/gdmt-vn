@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.dose.atorva_high_start",
+  "contentHash": "dd8db98b2f637b7a228125f21209ac97f5cf4d503d2dc8a00e5994e0f132bb70",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.dose.atorva_high_start",
+      "contentHash": "8735b889c1c56d47",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.dose.atorva_high_start."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

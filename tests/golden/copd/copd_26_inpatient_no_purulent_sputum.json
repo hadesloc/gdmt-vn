@@ -1,0 +1,54 @@
+{
+  "id": "copd_26_inpatient_no_purulent_sputum",
+  "titleVi": "Đợt cấp COPD nội viện không đờm mủ: Không chỉ định kháng sinh",
+  "source": "GOLD 2026 Report p. 115 / Antibiotic Indications",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_26",
+    "age": 69,
+    "sex": "male",
+    "weight": 58,
+    "height": 165,
+    "sbp": 138,
+    "dbp": 82,
+    "hr": 88,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteExacerbation": true,
+      "fev1FvcRatio": 0.5,
+      "fev1PredPct": 45,
+      "purulentSputum": false,
+      "increasedSputumVolume": false
+    }
+  },
+  "expect": {
+    "mustInclude": [],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_copd_inpatient_antibiotics",
+        "action": "START"
+      }
+    ]
+  }
+}

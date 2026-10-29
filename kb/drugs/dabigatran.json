@@ -1,0 +1,208 @@
+{
+  "id": "dabigatran",
+  "nameVi": "Dabigatran etexilate",
+  "inn": "Dabigatran",
+  "class": "Thuốc chống đông đường uống ức chế trực tiếp thrombin (DOAC)",
+  "classes": [
+    "doac",
+    "oac",
+    "direct_thrombin_inhibitor"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Pradaxa"
+  ],
+  "forms": [
+    "Viên nang cứng 75 mg (chỉ lưu hành tại Hoa Kỳ)",
+    "Viên nang cứng 110 mg",
+    "Viên nang cứng 150 mg"
+  ],
+  "start": {
+    "amount": 150,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "150 mg uống 2 lần/ngày (giảm xuống 110 mg x 2 lần/ngày theo ESC/VN nếu tuổi ≥ 80, dùng kèm verapamil hoặc nguy cơ xuất huyết cao)"
+  },
+  "target": {
+    "amount": 150,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "150 mg uống 2 lần/ngày (hoặc 110 mg 2 lần/ngày nếu giảm liều theo ESC/VN)"
+  },
+  "titration": {
+    "step": "Không chuẩn độ; chọn liều 150 mg hoặc 110 mg x 2 lần/ngày dựa theo tuổi, chức năng thận và tương tác P-gp",
+    "intervalDays": 0,
+    "maxDose": "150 mg 2 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 50,
+      "crclFrom": 50,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "150 mg 2 lần/ngày (hoặc 110 mg 2 lần/ngày theo ESC/VN nếu tuổi ≥ 80 hoặc dùng kèm verapamil)",
+      "citationIds": [
+        "esc.af.2024.table11_doac_dosing",
+        "acc.af.2023.table13_dabigatran_us_75mg"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 50,
+      "crclFrom": 30,
+      "crclTo": 50,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "110 mg 2 lần/ngày theo ESC/VN (tại Hoa Kỳ: 150 mg 2 lần/ngày, hoặc 75 mg 2 lần/ngày nếu dùng kèm dronedarone/ketoconazole)",
+      "citationIds": [
+        "esc.af.2024.table11_doac_dosing",
+        "acc.af.2023.dabigatran_dronedarone_ketoconazole_75mg"
+      ]
+    },
+    {
+      "eGFRFrom": 15,
+      "eGFRTo": 30,
+      "crclFrom": 15,
+      "crclTo": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Chống chỉ định tại Châu Âu / Việt Nam (ESC 2024 / EMA: CrCl < 30 mL/phút); tại Hoa Kỳ nhãn FDA cho phép 75 mg 2 lần/ngày nếu không dùng ức chế P-gp mạnh",
+      "note": "Chống chỉ định tuyệt đối tại Châu Âu / Việt Nam khi CrCl < 30 mL/phút; nhãn FDA Hoa Kỳ có chế độ liều 75 mg x 2 lần/ngày cho CrCl 15–30 mL/phút",
+      "citationIds": [
+        "esc.af.2024.dabigatran_crcl_contra",
+        "acc.af.2023.table13_dabigatran_us_75mg"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "crclTo": 15,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Chống chỉ định tuyệt đối khi CrCl < 15 mL/phút hoặc lọc máu chu kỳ",
+      "note": "Chống chỉ định tuyệt đối dabigatran khi CrCl < 15 mL/phút trên mọi hồ sơ hướng dẫn do thải trừ 80% qua thận",
+      "citationIds": [
+        "esc.af.2024.dabigatran_crcl_contra",
+        "acc.af.2023.table13_dabigatran_us_75mg"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_dabigatran_crcl_min",
+      "parameter": "CrCl",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min",
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối dabigatran khi CrCl < 30 mL/phút do nguy cơ tích lũy thuốc và chảy máu nghiêm trọng",
+      "citationIds": [
+        "esc.af.2024.dabigatran_crcl_contra"
+      ]
+    },
+    {
+      "id": "gate_dabigatran_mechanical_valve",
+      "parameter": "mechanical_valve",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "boolean",
+      "action": "contra",
+      "messageVi": "Chống chỉ định DOAC ở bệnh nhân có van tim cơ học hoặc hẹp hai lá vừa–nặng",
+      "citationIds": [
+        "esc.af.2024.doac_preferred_over_vka"
+      ]
+    }
+  ],
+  "interactions": [
+    "Dùng kèm verapamil: bắt buộc giảm liều dabigatran xuống 110 mg x 2 lần/ngày",
+    "Chống chỉ định dùng đồng thời với dronedarone, ketoconazole đường toàn thân, cyclosporine, itraconazole (ức chế mạnh P-gp)",
+    "Nuốt nguyên viên nang, tuyệt đối không mở vỏ nang hoặc nghiền viên vì làm tăng sinh khả dụng đột ngột 75% gây xuất huyết"
+  ],
+  "citationIds": [
+    "esc.af.2024.doac_preferred_over_vka",
+    "esc.af.2024.table11_doac_dosing",
+    "esc.af.2024.dabigatran_crcl_contra",
+    "acc.af.2023.table13_dabigatran_us_75mg",
+    "acc.af.2023.dabigatran_dronedarone_ketoconazole_75mg",
+    "fda.apixaban.aps_not_recommended",
+    "esc.af.2024.bleeding_interrupt",
+    "acc.af.2023.doac_child_pugh"
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo dùng trong thai kỳ do dữ liệu hạn chế và nguy cơ xuất huyết sản khoa/thai nhi (ESC 2025 Pregnancy / nhãn FDA); ưu tiên LMWH",
+    "citationIds": [
+      "esc.preg.2025.doac_not_recommended",
+      "esc.af.2024.pregnancy_oac",
+      "fda.dabigatran.pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo cho con bú trong thời gian điều trị bằng dabigatran (nhãn FDA khuyến cáo không cho con bú)",
+    "citationIds": [
+      "fda.dabigatran.lactation",
+      "esc.preg.2025.doac_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "mechanical_valve",
+      "messageVi": "Chống chỉ định tuyệt đối DOAC ở bệnh nhân có van tim cơ học",
+      "citationIds": [
+        "esc.af.2024.doac_preferred_over_vka"
+      ]
+    },
+    {
+      "code": "pregnancy",
+      "messageVi": "Không khuyến cáo dùng dabigatran trong thai kỳ",
+      "citationIds": [
+        "esc.preg.2025.doac_not_recommended",
+        "fda.dabigatran.pregnancy"
+      ]
+    },
+    {
+      "code": "rheumatic_mitral_stenosis",
+      "messageVi": "Chống chỉ định DOAC ở bệnh nhân hẹp van hai lá vừa đến nặng",
+      "citationIds": [
+        "esc.af.2024.doac_preferred_over_vka"
+      ]
+    },
+    {
+      "code": "antiphospholipid_syndrome",
+      "messageVi": "Không khuyến cáo / Chống chỉ định DOAC ở bệnh nhân hội chứng kháng phospholipid (APS); bắt buộc dùng VKA",
+      "citationIds": [
+        "fda.apixaban.aps_not_recommended"
+      ]
+    },
+    {
+      "code": "active_bleeding",
+      "messageVi": "Chống chỉ định Dabigatran khi đang có xuất huyết tiến triển",
+      "citationIds": [
+        "esc.af.2024.bleeding_interrupt"
+      ]
+    },
+    {
+      "code": "acute_ich",
+      "messageVi": "Chống chỉ định Dabigatran trong xuất huyết nội sọ cấp tính",
+      "citationIds": [
+        "esc.af.2024.bleeding_interrupt"
+      ]
+    },
+    {
+      "code": "dialysis",
+      "messageVi": "Chống chỉ định Dabigatran ở bệnh nhân suy thận giai đoạn cuối đang lọc máu chu kỳ",
+      "citationIds": [
+        "esc.af.2024.dabigatran_crcl_contra"
+      ]
+    },
+    {
+      "code": "child_pugh_c",
+      "messageVi": "Tránh dùng / Chống chỉ định Dabigatran ở xơ gan mất bù nặng (Child-Pugh C)",
+      "citationIds": [
+        "acc.af.2023.doac_child_pugh"
+      ]
+    }
+  ]
+}

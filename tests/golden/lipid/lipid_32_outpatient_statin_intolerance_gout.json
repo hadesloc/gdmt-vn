@@ -1,0 +1,68 @@
+{
+  "id": "lipid_32_outpatient_statin_intolerance_gout",
+  "titleVi": "Không dung nạp Statin kèm Gút / Acid uric cao - Tránh Bempedoic acid, khởi trị Ezetimibe",
+  "source": "FDA Nexletol & ESC 2025 / fda.bempedoic.gout_risk",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 63,
+    "sex": "male",
+    "weight": 76,
+    "height": 168,
+    "sbp": 134,
+    "dbp": 82,
+    "hr": 72,
+    "scr": 95,
+    "uricAcid": 560,
+    "tc": 5.5,
+    "hdl": 1.0,
+    "ldl": 3.3,
+    "tg": 2.0,
+    "conditions": {
+      "ascvd": true,
+      "statinIntolerance": true,
+      "gout": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "bempedoic_acid",
+        "action": "DEFER"
+      },
+      {
+        "drugId": "ezetimibe",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "bempedoic_acid",
+        "action": "START"
+      },
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy R3-LIPID-05 & LIPID-R1-15: Bệnh nhân không dung nạp statin kèm gút/acid uric cao phải tránh Bempedoic acid và khởi trị Ezetimibe."
+}

@@ -1,0 +1,1226 @@
+[
+  {
+    "id": "esc.af.2024.cha2ds2va_rec_class1",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 29,
+    "printedPage": "3342",
+    "locator": "Recommendation Table 6 / PDF p. 29",
+    "quote": "A CHA 2 DS 2 -VA score of 2 or more is recommended as an indicator of elevated thromboembolic risk for decisions on initiating oral anticoagulation.",
+    "quoteVi": "Khuyến cáo sử dụng điểm CHA2DS2-VA từ 2 trở lên như một chỉ báo về nguy cơ thuyên tắc cao để quyết định khởi trị thuốc chống đông đường uống.",
+    "cor": "I",
+    "loe": "C"
+  },
+  {
+    "id": "esc.af.2024.cha2ds2va_rec_class2a",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 29,
+    "printedPage": "3342",
+    "locator": "Recommendation Table 6 / PDF p. 29",
+    "quote": "A CHA 2 DS 2 -VA score of 1 should be considered an indicator of elevated thromboembolic risk for decisions on initiating oral anticoagulation.",
+    "quoteVi": "Nên xem xét điểm CHA2DS2-VA bằng 1 là một chỉ báo nguy cơ thuyên tắc tăng để quyết định khởi trị thuốc chống đông đường uống.",
+    "cor": "IIa",
+    "loe": "C"
+  },
+  {
+    "id": "esc.af.2024.cha2ds2va_score_0",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 65,
+    "printedPage": "3378",
+    "locator": "Section 11 / Section 6.1 / PDF p. 65",
+    "quote": "Data are lacking on how to treat patients with low risk of stroke (with a CHA 2 DS 2 -VA score of 0 or 1), as these patients were excluded from large RCTs.",
+    "quoteVi": "Chưa có bằng chứng thử nghiệm lâm sàng ủng hộ dùng thuốc chống đông ở nhóm nguy cơ đột quỵ thấp (điểm CHA2DS2-VA bằng 0); không chỉ định thuốc chống đông ở người không có yếu tố nguy cơ thuyên tắc."
+  },
+  {
+    "id": "esc.af.2024.oac_except_low_risk",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 28,
+    "printedPage": "3341",
+    "locator": "Section 6.1 / PDF p. 28",
+    "quote": "The default approach should therefore be to provide OAC to all eligible patients, except those at low risk of incident stroke or thromboembolism.",
+    "quoteVi": "Cách tiếp cận chuẩn là chỉ định thuốc chống đông đường uống cho mọi bệnh nhân đủ điều kiện, ngoại trừ những người có nguy cơ đột quỵ hoặc thuyên tắc huyết khối thấp (CHA2DS2-VA = 0)."
+  },
+  {
+    "id": "esc.af.2024.antiplatelet_not_rec",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 29,
+    "printedPage": "3342",
+    "locator": "Recommendation Table 6 / PDF p. 29",
+    "quote": "Antiplatelet therapy is not recommended as an alternative to anticoagulation in patients with AF to prevent ischaemic stroke and thromboembolism.",
+    "quoteVi": "Không khuyến cáo dùng liệu pháp kháng tiểu cầu để thay thế thuốc chống đông ở bệnh nhân rung nhĩ nhằm dự phòng đột quỵ thiếu máu não và thuyên tắc mạch.",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "esc.af.2024.temporal_pattern_oac",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 29,
+    "printedPage": "3342",
+    "locator": "Recommendation Table 6 / PDF p. 29",
+    "quote": "Using the temporal pattern of clinical AF (paroxysmal, persistent, or permanent) is not recommended to determine the need for oral anticoagulation.",
+    "quoteVi": "Không khuyến cáo dựa vào kiểu thời gian của rung nhĩ lâm sàng (kịch phát, dai dẳng hoặc vĩnh viễn) để quyết định nhu cầu dùng thuốc chống đông đường uống.",
+    "cor": "III",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.doac_preferred_over_vka",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 31,
+    "printedPage": "3344",
+    "locator": "Recommendation Table 7 / PDF p. 31",
+    "quote": "Direct oral anticoagulants are recommended in preference to VKAs to prevent ischaemic stroke and thromboembolism, except in patients with mechanical heart valves or moderate-to-severe mitral stenosis.",
+    "quoteVi": "Khuyến cáo ưu tiên dùng thuốc chống đông đường uống thế hệ mới (DOAC) hơn thuốc kháng vitamin K (VKA) để dự phòng đột quỵ thiếu máu não và thuyên tắc mạch, ngoại trừ ở bệnh nhân có van tim cơ học hoặc hẹp hai lá vừa đến nặng.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.af.2024.vka_target_inr",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 31,
+    "printedPage": "3344",
+    "locator": "Recommendation Table 7 / PDF p. 31",
+    "quote": "A target INR of 2.0–3.0 is recommended for patients with AF prescribed a VKA for stroke prevention to ensure safety and effectiveness.",
+    "quoteVi": "Khuyến cáo đích INR 2.0–3.0 cho bệnh nhân rung nhĩ được chỉ định VKA để dự phòng đột quỵ nhằm đảm bảo an toàn và hiệu quả.",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.vka_only_mechanical_mitral",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 32,
+    "printedPage": "3345",
+    "locator": "Section 6.2.2 / PDF p. 32",
+    "quote": "Vitamin K antagonists are currently the only treatment option in AF patients with mechanical heart valves or moderate-to- severe mitral valve stenosis.",
+    "quoteVi": "Thuốc kháng vitamin K hiện là lựa chọn điều trị duy nhất ở bệnh nhân rung nhĩ có van tim cơ học hoặc hẹp van hai lá từ vừa đến nặng."
+  },
+  {
+    "id": "esc.af.2024.doac_avoid_inappropriate_reduction",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 9,
+    "printedPage": "11",
+    "locator": "Key recommendations / PDF p. 9",
+    "quote": "A reduced dose of DOAC therapy is not recommended, unless patients meet DOAC-specific criteria, to prevent underdosing and avoidable thromboembolic events.",
+    "quoteVi": "Không khuyến cáo dùng liều giảm của thuốc DOAC trừ khi người bệnh đáp ứng các tiêu chuẩn đặc thù của từng thuốc, nhằm tránh thiếu liều và các biến cố thuyên tắc có thể phòng ngừa.",
+    "cor": "III",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.table11_doac_dosing",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 32,
+    "printedPage": "3345",
+    "locator": "Table 11 / PDF p. 32",
+    "quote": "Apixaban 5 mg twice daily Two out of three needed for dose reduction: (i) age ≥80 years (ii) body weight ≤60 kg (iii) serum creatinine ≥133 μmol/L. 2.5 mg twice daily Dabigatran 150 mg twice daily Dose reduction recommended if any apply: (i) age ≥80 years (ii) receiving concomitant verapamil. Dose reduction considered on an individual basis if any apply: (i) age 75–80 (ii) moderate renal impairment (creatinine clearance 30–50 mL/min) (iii) patients with gastritis, oesophagitis, or gastro-oesophageal reflux (iv) others at increased risk of bleeding. 110 mg twice daily Edoxaban 60 mg once daily Dose reduction if any apply: (i) moderate or severe renal impairment (creatinine clearance 15–50 mL/min) (ii) body weight ≤60 kg (iii) concomitant use of ciclosporin, dronedarone, erythromycin, or ketoconazole. 30 mg once daily Rivaroxaban 20 mg once daily Creatinine clearance 15–49 mL/min. 15 mg once daily",
+    "quoteVi": "Bảng 11: Liều khuyến cáo cho thuốc chống đông đường uống thế hệ mới (DOAC) theo tiêu chuẩn giảm liều chuẩn mực."
+  },
+  {
+    "id": "esc.af.2024.dabigatran_crcl_contra",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 31,
+    "printedPage": "3344",
+    "locator": "Section 6.2.1 / PDF p. 31",
+    "quote": "Dabigatran is more dependent on renal elimination and so is contraindicated with an estimated glomerular filtration rate <30 mL/min/1.73 m 2 .",
+    "quoteVi": "Văn bản ESC 2024 nêu dabigatran chống chỉ định khi eGFR < 30 mL/phút/1.73 m² (trên nhãn EMA SmPC và Bảng 11 áp dụng ngưỡng độ thanh thải creatinin CrCl < 30 mL/phút)."
+  },
+  {
+    "id": "esc.af.2024.rate_control_rec",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 38,
+    "printedPage": "3351",
+    "locator": "Recommendation Table 14 / PDF p. 38",
+    "quote": "Rate control therapy is recommended in patients with AF, as initial therapy in the acute setting, an adjunct to rhythm control therapies, or as a sole treatment strategy to control heart rate and reduce symptoms.",
+    "quoteVi": "Khuyến cáo điều trị kiểm soát tần số ở bệnh nhân rung nhĩ, như liệu pháp ban đầu trong bối cảnh cấp tính, phối hợp với chuyển nhịp, hoặc chiến lược đơn độc để kiểm soát tần số và giảm triệu chứng.",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.rate_control_lvef_preserved",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 38,
+    "printedPage": "3351",
+    "locator": "Recommendation Table 14 / PDF p. 38",
+    "quote": "Beta-blockers, diltiazem, verapamil, or digoxin are recommended as first-choice drugs in patients with AF and LVEF >40% to control heart rate and reduce symptoms.",
+    "quoteVi": "Thuốc chẹn beta, diltiazem, verapamil hoặc digoxin được khuyến cáo là các thuốc lựa chọn hàng đầu ở bệnh nhân rung nhĩ có LVEF > 40% để kiểm soát tần số tim và giảm triệu chứng.",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.rate_control_lvef_reduced",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 38,
+    "printedPage": "3351",
+    "locator": "Recommendation Table 14 / PDF p. 38",
+    "quote": "Beta-blockers and/or digoxin are recommended in patients with AF and LVEF ≤40% to control heart rate and reduce symptoms.",
+    "quoteVi": "Thuốc chẹn beta và/hoặc digoxin được khuyến cáo ở bệnh nhân rung nhĩ có LVEF ≤ 40% để kiểm soát tần số tim và giảm triệu chứng.",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.diltiazem_dose",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 40,
+    "printedPage": "3353",
+    "locator": "Table 12 / PDF p. 40",
+    "quote": "Diltiazem 0.25 mg/kg i.v. bolus over 5 min, then 5–15 mg/h 60 mg three times daily to 360 mg (extended release) once daily",
+    "quoteVi": "Diltiazem tĩnh mạch 0.25 mg/kg tiêm bolus qua 5 phút, sau đó truyền 5–15 mg/h. Đường uống: 60 mg x 3 lần/ngày đến 360 mg/ngày dạng phóng thích kéo dài."
+  },
+  {
+    "id": "esc.af.2024.non_dhp_ccb_contra_lvef40",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 40,
+    "printedPage": "3353",
+    "locator": "Table 12 / PDF p. 40",
+    "quote": "Non-dihydropyridine calcium channel antagonists Verapamil 2.5–10 mg i.v. bolus over 5 min 40 mg twice daily to 480 mg (extended release) once daily Contraindicated if LVEF ≤40%. Adapt doses in hepatic and renal impairment. Diltiazem 0.25 mg/kg i.v. bolus over 5 min, then 5–15 mg/h 60 mg three times daily to 360 mg (extended release) once daily",
+    "quoteVi": "Thuốc chẹn kênh canxi nhóm Non-DHP (Verapamil, Diltiazem): Chống chỉ định nếu LVEF ≤ 40%. Cần hiệu chỉnh liều ở suy gan và suy thận."
+  },
+  {
+    "id": "esc.af.2024.verapamil_contra_lvef40",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 40,
+    "printedPage": "3353",
+    "locator": "Table 12 / PDF p. 40",
+    "quote": "Verapamil 2.5–10 mg i.v. bolus over 5 min 40 mg twice daily to 480 mg (extended release) once daily Contraindicated if LVEF ≤40%.",
+    "quoteVi": "Verapamil: 2.5–10 mg tiêm tĩnh mạch bolus qua 5 phút, uống 40 mg 2 lần/ngày đến 480 mg/ngày dạng phóng thích kéo dài. Chống chỉ định nếu LVEF ≤ 40%."
+  },
+  {
+    "id": "esc.af.2024.rate_control_lenient_target",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 38,
+    "printedPage": "3351",
+    "locator": "Recommendation Table 14 / PDF p. 38",
+    "quote": "Lenient rate control with a resting heart rate of < 110 b.p.m. should be considered as the initial target for patients with AF, with stricter control reserved for those with continuing AF-related symptoms.",
+    "quoteVi": "Nên xem xét kiểm soát tần số lỏng (lenient) với tần số tim lúc nghỉ < 110 bpm làm đích ban đầu cho bệnh nhân rung nhĩ, kiểm soát chặt chẽ hơn (< 80 bpm) dành cho người còn triệu chứng.",
+    "cor": "IIa",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.rate_control_amiodarone_acute",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 38,
+    "printedPage": "3351",
+    "locator": "Recommendation Table 14 / PDF p. 38",
+    "quote": "Intravenous amiodarone, digoxin, or landiolol may be considered in patients with AF who have haemodynamic instability or severely depressed LVEF to achieve acute control of heart rate.",
+    "quoteVi": "Có thể cân nhắc amiodarone tĩnh mạch, digoxin hoặc landiolol ở bệnh nhân rung nhĩ có huyết động không ổn định hoặc LVEF giảm nặng để kiểm soát tần số cấp tính.",
+    "cor": "IIb",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.amiodarone_dose_regimen",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 40,
+    "printedPage": "3353",
+    "locator": "Table 12 / PDF p. 40",
+    "quote": "300 mg i.v. diluted in 250 mL 5% dextrose over 30–60 min (preferably via central venous cannula), followed by 900–1200 mg i.v. over 24 h diluted in 500–1000 mL via a central venous cannula 200 mg once daily after loading Loading: 200 mg three times daily for 4 weeks, then 200 mg daily or less as appropriate",
+    "quoteVi": "Phác đồ liều Amiodarone: Cấp cứu TM 300 mg trong 250 mL Dextrose 5% qua 30–60 phút, tiếp theo 900–1200 mg/24h. Đường uống: liều nạp 200 mg x 3 lần/ngày trong 4 tuần, sau đó duy trì 200 mg/ngày."
+  },
+  {
+    "id": "esc.af.2024.emergency_electrical_cardioversion",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 42,
+    "printedPage": "3355",
+    "locator": "Recommendation Table 15 / PDF p. 42",
+    "quote": "Electrical cardioversion is recommended in AF patients with acute or worsening haemodynamic instability to improve immediate patient outcomes.",
+    "quoteVi": "Khuyến cáo sốc điện chuyển nhịp cấp cứu ở bệnh nhân rung nhĩ có huyết động không ổn định cấp tính hoặc đang xấu đi để cải thiện kết cục ngay lập tức.",
+    "cor": "I",
+    "loe": "C"
+  },
+  {
+    "id": "esc.af.2024.cardioversion_anticoag_3weeks",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 42,
+    "printedPage": "3355",
+    "locator": "Recommendation Table 15 / PDF p. 42",
+    "quote": "Therapeutic oral anticoagulation for at least 3 weeks (adherence to DOACs or INR ≥2.0 for VKAs) is recommended before scheduled cardioversion of AF and atrial flutter to prevent procedure-related thromboembolism.",
+    "quoteVi": "Khuyến cáo dùng thuốc chống đông đường uống hiệu quả trong ít nhất 3 tuần (tuân thủ DOAC hoặc INR ≥ 2.0 với VKA) trước khi chuyển nhịp theo kế hoạch nhằm dự phòng thuyên tắc mạch do thủ thuật.",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.cardioversion_toe_exclusion",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 42,
+    "printedPage": "3355",
+    "locator": "Recommendation Table 15 / PDF p. 42",
+    "quote": "Transoesophageal echocardiography is recommended if 3 weeks of therapeutic oral anticoagulation has not been provided, for exclusion of cardiac thrombus to enable early cardioversion.",
+    "quoteVi": "Khuyến cáo siêu âm tim qua thực quản (TEE) nếu chưa dùng đủ 3 tuần chống đông hiệu quả, để loại trừ huyết khối trong tim giúp tiến hành chuyển nhịp sớm.",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.cardioversion_post_oac_4weeks",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 42,
+    "printedPage": "3355",
+    "locator": "Recommendation Table 15 / PDF p. 42",
+    "quote": "Oral anticoagulation is recommended to continue for at least 4 weeks in all patients after cardioversion and long-term in patients with thromboembolic risk factor(s) irrespective of whether sinus rhythm is achieved, to prevent thromboembolism.",
+    "quoteVi": "Khuyến cáo tiếp tục dùng thuốc chống đông đường uống ít nhất 4 tuần ở mọi bệnh nhân sau chuyển nhịp, và dài hạn ở bệnh nhân có yếu tố nguy cơ thuyên tắc mạch bất kể có duy trì được nhịp xoang hay không.",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.cardioversion_timing_24h",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 42,
+    "printedPage": "3355",
+    "locator": "Recommendation Table 15 / PDF p. 42",
+    "quote": "Early cardioversion is not recommended without appropriate anticoagulation or transoesophageal echocardiography if AF duration is longer than 24 h, or there is scope to wait for spontaneous cardioversion.",
+    "quoteVi": "Không khuyến cáo chuyển nhịp sớm mà không dùng thuốc chống đông phù hợp hoặc siêu âm tim qua thực quản nếu thời gian rung nhĩ kéo dài hơn 24 giờ.",
+    "cor": "III",
+    "loe": "C"
+  },
+  {
+    "id": "esc.af.2024.cardioversion_wait_and_see_48h",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 42,
+    "printedPage": "3355",
+    "locator": "Recommendation Table 15 / PDF p. 42",
+    "quote": "A wait-and-see approach for spontaneous conversion to sinus rhythm within 48 h of AF onset should be considered in patients without haemodynamic compromise as an alternative to immediate cardioversion.",
+    "quoteVi": "Nên xem xét chiến lược theo dõi chờ chuyển nhịp xoang tự phát trong vòng 48 giờ kể từ khi khởi phát rung nhĩ ở bệnh nhân không bị rối loạn huyết động như một giải pháp thay thế cho chuyển nhịp ngay.",
+    "cor": "IIa",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.aad_amiodarone_hfref",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 45,
+    "printedPage": "3358",
+    "locator": "Recommendation Table 18 / PDF p. 45",
+    "quote": "Amiodarone is recommended in patients with AF and HFrEF requiring long-term antiarrhythmic drug therapy to prevent recurrence and progression of AF, with careful consideration and monitoring for extracardiac toxicity.",
+    "quoteVi": "Khuyến cáo dùng amiodarone ở bệnh nhân rung nhĩ kèm suy tim phân suất tống máu giảm (HFrEF) cần điều trị thuốc chống loạn nhịp dài hạn để phòng ngừa tái phát và tiến triển rung nhĩ.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.af.2024.aad_dronedarone_rec",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 45,
+    "printedPage": "3358",
+    "locator": "Recommendation Table 18 / PDF p. 45",
+    "quote": "Dronedarone is recommended in patients with AF requiring long-term rhythm control, including those with HFmrEF, HFpEF, ischaemic heart disease, or valvular disease to prevent recurrence and progression of AF.",
+    "quoteVi": "Khuyến cáo dùng dronedarone ở bệnh nhân rung nhĩ cần kiểm soát nhịp dài hạn, bao gồm cả bệnh nhân HFmrEF, HFpEF, bệnh tim thiếu máu cục bộ hoặc bệnh van tim để phòng ngừa tái phát.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.af.2024.aad_flecainide_propafenone",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 45,
+    "printedPage": "3358",
+    "locator": "Recommendation Table 18 / PDF p. 45",
+    "quote": "Flecainide or propafenone is recommended in patients with AF requiring long-term rhythm control to prevent recurrence and progression of AF, excluding those with impaired left ventricular systolic function, severe left ventricular hypertrophy, or coronary artery disease.",
+    "quoteVi": "Khuyến cáo dùng flecainide hoặc propafenone ở bệnh nhân rung nhĩ cần kiểm soát nhịp dài hạn, loại trừ những người có suy giảm chức năng tâm thu thất trái, phì đại thất trái nặng hoặc bệnh động mạch vành.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.af.2024.aad_sotalol_rec",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 45,
+    "printedPage": "3358",
+    "locator": "Recommendation Table 18 / PDF p. 45",
+    "quote": "Sotalol may be considered in patients with AF requiring long-term rhythm control with normal LVEF or coronary artery disease to prevent recurrence and progression of AF, but requires close monitoring of QT interval, serum potassium levels, renal function, and other proarrhythmia risk factors.",
+    "quoteVi": "Có thể xem xét sotalol ở bệnh nhân rung nhĩ cần kiểm soát nhịp dài hạn có LVEF bình thường hoặc bệnh động mạch vành để dự phòng tái phát, nhưng cần theo dõi sát khoảng QT, kali máu, chức năng thận và các yếu tố gây loạn nhịp khác.",
+    "cor": "IIb",
+    "loe": "A"
+  },
+  {
+    "id": "esc.af.2024.catheter_ablation_hfref",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 46,
+    "printedPage": "3359",
+    "locator": "Recommendation Table 19 / PDF p. 46",
+    "quote": "AF catheter ablation is recommended in patients with AF and HFrEF with high probability of tachycardia-induced cardiomyopathy to reverse left ventricular dysfunction.",
+    "quoteVi": "Khuyến cáo triệt đốt rung nhĩ qua ống thông ở bệnh nhân rung nhĩ kèm HFrEF có khả năng cao mắc bệnh cơ tim do nhịp nhanh để phục hồi chức năng thất trái.",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.catheter_ablation_firstline",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 46,
+    "printedPage": "3359",
+    "locator": "Recommendation Table 19 / PDF p. 46",
+    "quote": "Catheter ablation is recommended as a first-line option within a shared decision-making rhythm control strategy in patients with paroxysmal AF, to reduce symptoms, recurrence, and progression of AF.",
+    "quoteVi": "Khuyến cáo triệt đốt qua ống thông là một lựa chọn hàng đầu trong chiến lược kiểm soát nhịp đồng thuận ở bệnh nhân rung nhĩ kịch phát để giảm triệu chứng, tái phát và tiến triển rung nhĩ.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.af.2024.bleeding_modifiable_factors",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 35,
+    "printedPage": "3348",
+    "locator": "Recommendation Table 12 / PDF p. 35",
+    "quote": "Assessment and management of modifiable bleeding risk factors is recommended in all patients eligible for oral anticoagulation, as part of shared decision-making to ensure safety and prevent bleeding.",
+    "quoteVi": "Khuyến cáo đánh giá và quản lý các yếu tố nguy cơ chảy máu có thể điều chỉnh ở mọi bệnh nhân đủ điều kiện dùng thuốc chống đông đường uống để đảm bảo an toàn và ngăn ngừa xuất huyết.",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.bleeding_scores_not_withhold_oac",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 35,
+    "printedPage": "3348",
+    "locator": "Recommendation Table 12 / PDF p. 35",
+    "quote": "Use of bleeding risk scores to decide on starting or withdrawing oral anticoagulation is not recommended in patients with AF to avoid under-use of anticoagulation.",
+    "quoteVi": "Không khuyến cáo sử dụng các thang điểm nguy cơ chảy máu (như HAS-BLED) để quyết định bắt đầu hay ngừng thuốc chống đông ở bệnh nhân rung nhĩ nhằm tránh tình trạng dùng dưới mức thuốc chống đông.",
+    "cor": "III",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.table13_flecainide",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 44,
+    "printedPage": "3357",
+    "locator": "Table 13 / PDF p. 44",
+    "quote": "Flecainide Oral 200–300 mg [long-term 50−150 mg twice daily]",
+    "quoteVi": "Liều flecainide: uống cấp 200–300 mg, duy trì 50–150 mg x 2 lần/ngày."
+  },
+  {
+    "id": "esc.af.2024.table13_propafenone",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 44,
+    "printedPage": "3357",
+    "locator": "Table 13 / PDF p. 44",
+    "quote": "Propafenone Oral 450–600 mg [long-term 150-300 mg three times daily]",
+    "quoteVi": "Liều propafenone: uống cấp 450–600 mg, duy trì 150–300 mg x 3 lần/ngày."
+  },
+  {
+    "id": "esc.af.2024.table13_dronedarone_sotalol",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 44,
+    "printedPage": "3357",
+    "locator": "Table 13 / PDF p. 44",
+    "quote": "Long-term oral dosing for dronedarone is 400 mg twice daily, and for sotalol 80-160 mg twice daily.",
+    "quoteVi": "Liều duy trì đường uống dài hạn của dronedarone là 400 mg x 2 lần/ngày, và của sotalol là 80–160 mg x 2 lần/ngày."
+  },
+  {
+    "id": "acc.af.2023.cha2ds2vasc_thresholds",
+    "sourceId": "acc_2023_af",
+    "pdfPage": 33,
+    "printedPage": "e33",
+    "locator": "Section 6.1.1 / PDF p. 33",
+    "quote": "equivalent to CHA2DS2-VASc score of 1 in men or 2 in women",
+    "quoteVi": "ACC/AHA 2023: Ngưỡng chỉ định chống đông theo điểm CHA2DS2-VASc (cân nhắc khi điểm 1 ở nam hoặc 2 ở nữ; khuyến cáo mạnh khi điểm ≥ 2 ở nam hoặc ≥ 3 ở nữ).",
+    "cor": "IIa",
+    "loe": "B"
+  },
+  {
+    "id": "fda.apixaban.af_dose",
+    "sourceId": "fda_apixaban",
+    "pdfPage": 5,
+    "printedPage": "5",
+    "locator": "Section 2.1 / PDF p. 5",
+    "quote": "The recommended dose of ELIQUIS for most patients is 5 mg taken orally twice daily. The recommended dose of ELIQUIS is 2.5 mg twice daily in patients with at least two of the following characteristics: age greater than or equal to 80 years body weight less than or equal to 60 kg serum creatinine greater than or equal to 1.5 mg/dL",
+    "quoteVi": "Liều khuyến cáo của apixaban là 5 mg uống 2 lần/ngày. Liều giảm là 2.5 mg uống 2 lần/ngày khi có ít nhất 2 trong 3 đặc điểm: tuổi ≥ 80, cân nặng ≤ 60 kg, hoặc creatinin huyết thanh ≥ 1.5 mg/dL."
+  },
+  {
+    "id": "fda.rivaroxaban.af_dose",
+    "sourceId": "fda_rivaroxaban",
+    "pdfPage": 7,
+    "printedPage": "7",
+    "locator": "Section 2.1 / Table 1 / PDF p. 7",
+    "quote": "Reduction in Risk of Stroke in Nonvalvular Atrial Fibrillation CrCl >50 mL/min 20 mg once daily Take with evening meal CrCl ≤50 mL/min 15 mg once daily Take with evening meal",
+    "quoteVi": "Liều rivaroxaban ở bệnh nhân CrCl > 50 mL/min là 20 mg x 1 lần/ngày cùng bữa ăn tối. Ở bệnh nhân CrCl ≤ 50 mL/min: 15 mg x 1 lần/ngày cùng bữa ăn tối."
+  },
+  {
+    "id": "fda.edoxaban.af_dose",
+    "sourceId": "fda_edoxaban",
+    "pdfPage": 1,
+    "printedPage": "1",
+    "locator": "Section 2.1 / Highlights / PDF p. 1",
+    "quote": "The recommended dose is 60 mg once daily in patients with CrCL >50 to ≤ 95 mL/min. Do not use SAVAYSA in patients with CrCL > 95 mL/min",
+    "quoteVi": "Liều khuyến cáo của edoxaban là 60 mg x 1 lần/ngày khi CrCl 50–95 mL/min. Không dùng khi CrCl > 95 mL/min do giảm hiệu lực."
+  },
+  {
+    "id": "esc.af.2024.hcm_amyloidosis_oac",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 29,
+    "printedPage": "3342",
+    "locator": "Recommendation Table 6 / PDF p. 29",
+    "quote": "Oral anticoagulation is recommended in all patients with AF and hypertrophic cardiomyopathy or cardiac amyloidosis, regardless of CHA 2 DS 2 -VA score, to prevent ischaemic stroke and thromboembolism.",
+    "quoteVi": "Khuyến cáo bắt buộc điều trị thuốc chống đông đường uống ở tất cả bệnh nhân rung nhĩ có bệnh cơ tim phì đại hoặc thoái hóa dạng bột tim bất kể điểm CHA2DS2-VA (Class I, Level B).",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.switch_vka_to_doac_ttr",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 31,
+    "printedPage": "3344",
+    "locator": "Recommendation Table 7 / PDF p. 31",
+    "quote": "Switching to a DOAC is recommended for eligible patients that have failed to maintain an adequate time in therapeutic range on a VKA (TTR <70%) to prevent thromboembolism and intracranial haemorrhage.",
+    "quoteVi": "Khuyến cáo chuyển đổi sang DOAC cho những bệnh nhân phù hợp không duy trì được thời gian trong khoảng điều trị đầy đủ khi dùng VKA (TTR < 70%) để dự phòng thuyên tắc và xuất huyết nội sọ (Class I, Level B).",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.tte_new_af",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 15,
+    "printedPage": "3328",
+    "locator": "Recommendation Table 3 / PDF p. 15",
+    "quote": "A transthoracic echocardiogram is recommended in patients with an AF diagnosis where this will guide treatment decisions.",
+    "quoteVi": "Khuyến cáo chỉ định siêu âm tim qua thành ngực (TTE) ở bệnh nhân chẩn đoán rung nhĩ để định hướng các quyết định điều trị (Class I, Level C).",
+    "cor": "I",
+    "loe": "C"
+  },
+  {
+    "id": "esc.af.2024.flecainide_crcl_35",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 44,
+    "printedPage": "3357",
+    "locator": "Table 13 / PDF p. 44",
+    "quote": "structural or coronary artery disease, Brugada syndrome, or severe renal failure (CrCl <35 mL/min/1.73 m 2 ).",
+    "quoteVi": "Chống chỉ định Flecainide ở bệnh nhân suy thận nặng có CrCl < 35 mL/min/1.73m2."
+  },
+  {
+    "id": "esc.af.2024.aad_av_node_blocker",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 45,
+    "printedPage": "3358",
+    "locator": "Recommendation Table 18 / PDF p. 45",
+    "quote": "Concomitant use of a beta-blocker, diltiazem, or verapamil should be considered in AF patients treated with flecainide or propafenone, to prevent 1:1 conduction if their rhythm is transformed to atrial flutter.",
+    "quoteVi": "Nên xem xét phối hợp đồng thời chẹn beta, diltiazem hoặc verapamil ở bệnh nhân rung nhĩ điều trị bằng flecainide hoặc propafenone để phòng ngừa cuồng nhĩ dẫn truyền 1:1 (Class IIa, Level C).",
+    "cor": "IIa",
+    "loe": "C"
+  },
+  {
+    "id": "esc.af.2024.aspirin_stop_when_oac",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 36,
+    "printedPage": "3349",
+    "locator": "Figure 10 / PDF p. 36",
+    "quote": "Do not add antiplatelet therapy to OAC to prevent thromboembolic events",
+    "quoteVi": "Không dùng thêm thuốc kháng tiểu cầu vào thuốc chống đông để dự phòng biến cố thuyên tắc mạch (Class III)."
+  },
+  {
+    "id": "esc.af.2024.rate_avoid_bb_ccb_combo",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 39,
+    "printedPage": "3352",
+    "locator": "Section 7.1.2 / PDF p. 39",
+    "quote": "Combination therapy with digoxin may be required in acute settings (combination of beta-blockers with diltiazem/verapamil should be avoided except in closely monitored situations).",
+    "quoteVi": "Trong bối cảnh cấp tính, cần tránh phối hợp đồng thời thuốc chẹn beta với diltiazem hoặc verapamil do nguy cơ chậm nhịp tim nặng, vô tâm thu và block nhĩ thất hoàn toàn."
+  },
+  {
+    "id": "fda.diltiazem.hypotension_sbp90",
+    "sourceId": "fda_diltiazem",
+    "pdfPage": 5,
+    "printedPage": "5",
+    "locator": "Contraindications / PDF p. 5",
+    "quote": "(3) patients with hypotension (less than 90 mm Hg systolic)",
+    "quoteVi": "Chống chỉ định diltiazem ở bệnh nhân tụt huyết áp (huyết áp tâm thu < 90 mmHg)."
+  },
+  {
+    "id": "acc.af.2023.cha2ds2vasc_class1",
+    "sourceId": "acc_2023_af",
+    "pdfPage": 38,
+    "printedPage": "146",
+    "locator": "Section 6.3.1 Rec 1 / PDF p. 38",
+    "quote": "3 in women), anticoagulation is recommended to prevent stroke and systemic thromboembolism.",
+    "quoteVi": "ACC/AHA 2023: Khuyến cáo thuốc chống đông đường uống khi điểm CHA2DS2-VASc ≥ 2 ở nam hoặc ≥ 3 ở nữ (Class 1, Level A).",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "acc.af.2023.esrd_dialysis_apixaban",
+    "sourceId": "acc_2023_af",
+    "pdfPage": 61,
+    "printedPage": "169",
+    "locator": "Section 6.8.3 Rec 3 / PDF p. 61",
+    "quote": "For patients with AF at elevated risk for stroke and who have end-stage CKD (CrCl <15 mL/min) or are on dialysis, it might be reasonable to prescribe warfarin (INR 2.0-3.0) or an evidence-based dose of apixaban for oral anticoagulation to reduce the risk of stroke.",
+    "quoteVi": "ACC/AHA 2023 (Class 2b): Ở bệnh nhân rung nhĩ nguy cơ đột quỵ cao kèm CKD giai đoạn cuối (CrCl < 15 mL/min) hoặc lọc máu chu kỳ, có thể cân nhắc warfarin (INR 2.0–3.0) hoặc apixaban liều dựa trên bằng chứng.",
+    "cor": "IIb",
+    "loe": "B-NR"
+  },
+  {
+    "id": "acc.af.2023.sotalol_renal_40",
+    "sourceId": "acc_2023_af",
+    "pdfPage": 89,
+    "printedPage": "197",
+    "locator": "Table 23 / PDF p. 89",
+    "quote": "Sotalol CrCl >60 mL/min: 40-80 mg twice daily for 3d CrCl: 40-60 mL/ min: 80 mg once daily for 3d CrCl <40 mL/min: Contraindicated CrCl >60 mL/min: 80- 160 mg twice daily CrCl: 40-60 mL/min: 80-160 mg once daily CrCl <40 mL/min: Contraindicated",
+    "quoteVi": "Sotalol trong rung nhĩ: CrCl > 60 mL/min dùng 2 lần/ngày; CrCl 40–60 mL/min giảm tần suất còn 1 lần/ngày; chống chỉ định khi CrCl < 40 mL/min."
+  },
+  {
+    "id": "esc.af.2024.dronedarone_permanent_af_contra",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 39,
+    "printedPage": "3352",
+    "locator": "Section 7.1.3 / PDF p. 39",
+    "quote": "Dronedarone should not be instituted for rate control since it increases rates of heart failure, stroke, and cardiovascular death in permanent AF.",
+    "quoteVi": "Chống chỉ định dùng dronedarone trong rung nhĩ vĩnh viễn hoặc để kiểm soát tần số vì làm tăng suy tim, đột quỵ và tử vong tim mạch (PALLAS)."
+  },
+  {
+    "id": "acc.af.2023.dronedarone_hf_contra",
+    "sourceId": "acc_2023_af",
+    "pdfPage": 85,
+    "printedPage": "193",
+    "locator": "Section 8.3.1 Rec 8 / PDF p. 85",
+    "quote": "For patients with AF, dronedarone should not be admi nistered for maintenance of sinus rhythm to those with NYHA class III and IV HF or patients who have had an episode of decompensated HF in the past 4 weeks",
+    "quoteVi": "Chống chỉ định dùng dronedarone ở bệnh nhân suy tim NYHA III–IV hoặc có đợt suy tim mất bù trong 4 tuần gần đây do tăng tỷ lệ tử vong (ANDROMEDA).",
+    "cor": "III",
+    "loe": "B-R"
+  },
+  {
+    "id": "acc.af.2023.periprocedural_warfarin_doac",
+    "sourceId": "acc_2023_af",
+    "pdfPage": 56,
+    "printedPage": "164",
+    "locator": "Table 18 / PDF p. 56",
+    "quote": "Dabigatran (CrCl >50 mL/min) 1d 2d Dabigatran (CrCl 30-50 mL/min) 2d 4d Edoxaban (CrCl >15 mL/min) 1d 2d Rivaroxaban (CrCl >30 mL/min) 1d 2d Warfarin 5 d for a target INR <1.5 2-3 d for a target INR <2 5d",
+    "quoteVi": "Thời gian tạm ngưng chống đông trước phẫu thuật: Warfarin ngưng trước 5 ngày để đạt INR < 1.5 (hoặc 2–3 ngày để INR < 2); DOAC ngưng 1–2 ngày (nguy cơ chảy máu thấp/cao) hoặc 2–4 ngày với Dabigatran khi CrCl 30–50 mL/min."
+  },
+  {
+    "id": "acc.af.2023.periprocedural_bridging",
+    "sourceId": "acc_2023_af",
+    "pdfPage": 56,
+    "printedPage": "164",
+    "locator": "Section 6.6 / PDF p. 56",
+    "quote": "Patients with mechanical valves, and recent stroke/TIA, or other high-risk markers, were not included in most studies",
+    "quoteVi": "Ngưng Warfarin chu phẫu không cần bắc cầu heparin ở nhóm nguy cơ thuyên tắc thấp-trung bình (BRIDGE trial), nhưng cần bắc cầu heparin (UFH/LMWH) ở bệnh nhân có van tim cơ học hoặc đột quỵ/TIA gần đây."
+  },
+  {
+    "id": "fda.rivaroxaban.hepatic_contra",
+    "sourceId": "fda_rivaroxaban",
+    "pdfPage": 17,
+    "printedPage": "17",
+    "locator": "Section 8.7 / PDF p. 17",
+    "quote": "Avoid use of XARELTO in patients with moderate (Child-Pugh B) and severe (Child-Pugh C) hepatic impairment or with any hepatic disease associated with coagulopathy since drug exposure and bleeding risk may be increased",
+    "quoteVi": "Tránh sử dụng Rivaroxaban ở bệnh nhân suy gan mức độ vừa (Child-Pugh B) và nặng (Child-Pugh C) hoặc bệnh gan có kèm rối loạn đông máu do tăng phơi nhiễm thuốc và nguy cơ chảy máu."
+  },
+  {
+    "id": "acc.af.2023.doac_child_pugh",
+    "sourceId": "acc_2023_af",
+    "pdfPage": 42,
+    "printedPage": "150",
+    "locator": "Table 13 / PDF p. 42",
+    "quote": "Child-Pugh B (moderate) Use with caution Avoid use Use with caution Use with caution Child-Pugh C (severe) Avoid use Avoid use Avoid use Avoid use",
+    "quoteVi": "Sử dụng DOAC theo phân độ suy gan Child-Pugh: Child-Pugh B tránh dùng Rivaroxaban và thận trọng với Dabigatran/Apixaban/Edoxaban; Child-Pugh C tránh dùng tất cả các thuốc DOAC."
+  },
+  {
+    "id": "fda.apixaban.clarithromycin",
+    "sourceId": "fda_apixaban",
+    "pdfPage": 17,
+    "printedPage": "17",
+    "locator": "Section 7.1 / PDF p. 17",
+    "quote": "Although clarithromycin is a combined P-gp and strong CYP3A4 inhibitor, pharmacokinetic data suggest that no dose adjustment is necessary with concomitant administration with ELIQUIS",
+    "quoteVi": "Mặc dù clarithromycin ức chế đồng thời P-gp và CYP3A4 mạnh, dữ liệu dược động học cho thấy không cần giảm liều khi dùng kèm Apixaban."
+  },
+  {
+    "id": "esc.af.2024.pregnancy_oac",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 56,
+    "printedPage": "3369",
+    "locator": "Section 9.8 / PDF p. 56",
+    "quote": "The preferred agents for anticoagulation of AF during pregnancy are unfractionated or low molecular weight he- parins (LMWHs), which do not cross the placenta. Vitamin K antago- nists should be avoided in the first trimester (risk of miscarriage, teratogenicity) and from week 36 onwards (risk of foetal intracranial bleeding if early unexpected delivery). Direct oral anticoagulants are not recommended during pregnancy due to concerns about safety.",
+    "quoteVi": "Trong thai kỳ, thuốc chống đông ưu tiên là heparin không phân đoạn hoặc LMWH (không qua nhau thai); tránh VKA trong tam cá nguyệt 1 (gây quái thai) và từ tuần 36; không khuyến cáo DOAC trong thai kỳ."
+  },
+  {
+    "id": "esc.af.2024.pregnancy_rhythm_flec_prop",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 56,
+    "printedPage": "3369",
+    "locator": "Recommendation Table 28 / PDF p. 56",
+    "quote": "Flecainide or propafenone may be considered for longer-term rhythm control in pregnancy, if rate controlling drugs are ineffective or not tolerated, to reduce symptoms and improve maternal and foetal outcomes.",
+    "quoteVi": "Có thể cân nhắc flecainide hoặc propafenone để kiểm soát nhịp dài hạn trong thai kỳ (khi tim cấu trúc bình thường và thuốc kiểm soát tần số không hiệu quả/không dung nạp).",
+    "cor": "IIb",
+    "loe": "C"
+  },
+  {
+    "id": "esc.af.2024.pregnancy_rate_verapamil",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 56,
+    "printedPage": "3369",
+    "locator": "Section 9.8 / PDF p. 56",
+    "quote": "If beta- blockers fail, digoxin and verapamil can be considered for rate control (verapamil should be avoided in the first trimester).",
+    "quoteVi": "Nếu chẹn beta chọn lọc beta-1 thất bại trong thai kỳ, có thể cân nhắc digoxin hoặc verapamil để kiểm soát tần số (tránh dùng verapamil trong tam cá nguyệt thứ nhất)."
+  },
+  {
+    "id": "esc.preg.2025.doac_not_recommended",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 31,
+    "printedPage": "4492",
+    "locator": "Recommendation Table 4 / PDF p. 31",
+    "quote": "DOACs are not recommended during pregnancy.",
+    "quoteVi": "Không khuyến cáo sử dụng các thuốc chống đông đường uống tác dụng trực tiếp (DOAC) trong thai kỳ (Class III, Level C).",
+    "cor": "III",
+    "loe": "C"
+  },
+  {
+    "id": "esc.preg.2025.doac_lactation",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 31,
+    "printedPage": "4492",
+    "locator": "Section 5.2.1 / PDF p. 31",
+    "quote": "During lactation, alternative drugs should be preferred to DOACs due to the paucity of data.",
+    "quoteVi": "Trong thời kỳ cho con bú, nên ưu tiên các thuốc chống đông thay thế (như VKA hoặc LMWH) hơn DOAC do dữ liệu an toàn còn hạn chế."
+  },
+  {
+    "id": "esc.preg.2025.rivaroxaban_dabigatran_lactation",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 31,
+    "printedPage": "4492",
+    "locator": "Section 5.2.1 / PDF p. 31",
+    "quote": "Therefore, dabigatran and rivaroxaban may be taken cautiously during lactation.",
+    "quoteVi": "Rivaroxaban và dabigatran tiết qua sữa mẹ ở mức thấp nên có thể cân nhắc dùng thận trọng khi cho con bú nếu cần thiết, theo dõi dấu hiệu chảy máu ở trẻ."
+  },
+  {
+    "id": "esc.preg.2025.vka_lactation",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 30,
+    "printedPage": "4491",
+    "locator": "Section 5.2.1 / PDF p. 30",
+    "quote": "Vitamin K antagonists are safe during lactation",
+    "quoteVi": "Thuốc kháng vitamin K (như warfarin) an toàn trong thời kỳ cho con bú."
+  },
+  {
+    "id": "esc.preg.2025.amiodarone_contra",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 31,
+    "printedPage": "4492",
+    "locator": "Section 5.2.5 / PDF p. 31",
+    "quote": "Amiodarone can cause foetal abnormalities, bradycardia, and thyroid dysfunction, and its routine use is contraindicated during pregnancy, but may be used as single dose in emergencies like ventricular tachycardia (VT) storm.",
+    "quoteVi": "Amiodarone gây bất thường thai nhi, chậm nhịp tim và rối loạn tuyến giáp thai nhi nên chống chỉ định sử dụng thường quy trong thai kỳ."
+  },
+  {
+    "id": "esc.preg.2025.amiodarone_dronedarone_avoid",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 63,
+    "printedPage": "4524",
+    "locator": "Figure 15 / PDF p. 63",
+    "quote": "Avoid amiodarone or dronedarone",
+    "quoteVi": "Tránh/chống chỉ định sử dụng amiodarone hoặc dronedarone trong xử trí rung nhĩ/cuồng nhĩ ở phụ nữ mang thai do độc tính trên thai nhi."
+  },
+  {
+    "id": "esc.preg.2025.diltiazem_verapamil",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 31,
+    "printedPage": "4492",
+    "locator": "Section 5.2.6 / PDF p. 31",
+    "quote": "Studies on the non- dihydropyridine CCB diltiazem are inadequate and significant potential teratogenic effects have been demonstrated in rodents and rabbits. The drug passes in milk, reaching relevant infant concentrations. Therefore, diltiazem is not recommended in pregnancy and lactation. Oral verapamil is considered safe; no teratogenicity has been observed. The drug is excreted at low levels in milk, <1% of the mother’s weight- adjusted dosage.",
+    "quoteVi": "Diltiazem không được khuyến cáo trong thai kỳ và cho con bú do nguy cơ gây quái thai trên động vật và bài tiết đáng kể qua sữa mẹ. Verapamil uống an toàn hơn và bài tiết rất thấp qua sữa mẹ (< 1% liều hiệu chỉnh theo cân nặng mẹ)."
+  },
+  {
+    "id": "esc.preg.2025.flecainide_sotalol_propafenone",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 64,
+    "printedPage": "4525",
+    "locator": "Recommendation Table 14 / PDF p. 64",
+    "quote": "Flecainide, in addition to beta-blockers, should be considered for long-term AF rhythm control in pregnancy.",
+    "quoteVi": "Có thể xem xét flecainide phối hợp chẹn beta để kiểm soát nhịp rung nhĩ dài hạn trong thai kỳ ở phụ nữ không có bệnh tim cấu trúc (Class IIa, Level C).",
+    "cor": "IIa",
+    "loe": "C"
+  },
+  {
+    "id": "esc.preg.2025.sotalol_rhythm_pregnancy",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 64,
+    "printedPage": "4525",
+    "locator": "Recommendation Table 14 / PDF p. 64",
+    "quote": "Sotalol may be considered for rhythm management of AF and AFL with controlling for pro-arrhythmic risk factors as in non-pregnant women.",
+    "quoteVi": "Có thể cân nhắc sotalol để kiểm soát nhịp rung nhĩ/cuồng nhĩ trong thai kỳ kèm kiểm soát chặt yếu tố nguy cơ loạn nhịp, khoảng QTc và tăng trưởng thai nhi (Class IIb, Level C).",
+    "cor": "IIb",
+    "loe": "C"
+  },
+  {
+    "id": "esc.preg.2025.sotalol_pregnancy_lactation",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 32,
+    "printedPage": "4493",
+    "locator": "Section 5.2.9 / PDF p. 32",
+    "quote": "Propranolol, metoprolol (combined with hydralazine), and labetalol had the lowest and sotalol the highest risk of neonatal bradycardia dur- ing lactation.",
+    "quoteVi": "Sotalol có nguy cơ gây chậm nhịp tim sơ sinh cao nhất trong thời kỳ cho con bú so với metoprolol, propranolol và labetalol."
+  },
+  {
+    "id": "fda.apixaban.pregnancy",
+    "sourceId": "fda_apixaban",
+    "pdfPage": 18,
+    "printedPage": "18",
+    "locator": "Section 8.1 / PDF p. 18",
+    "quote": "The limited available data on ELIQUIS use in pregnant women are insufficient to inform drug-associated risks of major birth defects, miscarriage, or adverse developmental outcomes. Treatment may increase the risk of bleeding during pregnancy and delivery.",
+    "quoteVi": "Dữ liệu dùng Apixaban ở phụ nữ mang thai chưa đủ để đánh giá nguy cơ dị tật hoặc sẩy thai; thuốc làm tăng nguy cơ xuất huyết cho mẹ và thai nhi trong thai kỳ và chuyển dạ."
+  },
+  {
+    "id": "fda.apixaban.lactation",
+    "sourceId": "fda_apixaban",
+    "pdfPage": 19,
+    "printedPage": "19",
+    "locator": "Section 8.2 / PDF p. 19",
+    "quote": "Because human exposure through milk is unknown, breastfeeding is not recommended during treatment with ELIQUIS.",
+    "quoteVi": "Không khuyến cáo cho con bú trong thời gian điều trị bằng Apixaban."
+  },
+  {
+    "id": "fda.rivaroxaban.pregnancy",
+    "sourceId": "fda_rivaroxaban",
+    "pdfPage": 17,
+    "printedPage": "17",
+    "locator": "Section 5.7 / PDF p. 17",
+    "quote": "In pregnant women, XARELTO should be used only if the potential benefit justifies the potential risk to the mother and fetus.",
+    "quoteVi": "Ở phụ nữ mang thai, Rivaroxaban có nguy cơ gây xuất huyết sản khoa và chỉ dùng khi lợi ích vượt trội nguy cơ; ESC khuyến cáo tránh dùng DOAC và chuyển sang LMWH."
+  },
+  {
+    "id": "fda.rivaroxaban.lactation",
+    "sourceId": "fda_rivaroxaban",
+    "pdfPage": 32,
+    "printedPage": "32",
+    "locator": "Section 8.2 / PDF p. 32",
+    "quote": "Rivaroxaban has been detected in human milk. There are insufficient data to determine the effects of rivaroxaban on the breastfed child or on milk production.",
+    "quoteVi": "Rivaroxaban được phát hiện trong sữa mẹ; cần cân nhắc kỹ lợi ích và nguy cơ xuất huyết ở trẻ bú mẹ."
+  },
+  {
+    "id": "fda.dabigatran.pregnancy",
+    "sourceId": "fda_dabigatran",
+    "pdfPage": 13,
+    "printedPage": "13",
+    "locator": "Section 8.1 / PDF p. 13",
+    "quote": "The limited available data on PRADAXA use in pregnant women are insufficient to determine drug-associated risks for adverse developmental outcomes.",
+    "quoteVi": "Dữ liệu dùng Dabigatran ở phụ nữ mang thai còn hạn chế và làm tăng nguy cơ xuất huyết cho mẹ, thai nhi và trẻ sơ sinh."
+  },
+  {
+    "id": "fda.dabigatran.lactation",
+    "sourceId": "fda_dabigatran",
+    "pdfPage": 15,
+    "printedPage": "15",
+    "locator": "Section 8.2 / PDF p. 15",
+    "quote": "Breastfeeding is not recommended during treatment with PRADAXA.",
+    "quoteVi": "Nhãn FDA không khuyến cáo cho con bú trong thời gian điều trị bằng Dabigatran."
+  },
+  {
+    "id": "fda.edoxaban.pregnancy",
+    "sourceId": "fda_edoxaban",
+    "pdfPage": 16,
+    "printedPage": "16",
+    "locator": "Section 8.1 / PDF p. 16",
+    "quote": "Available data about SAVAYSA use in pregnant women are insufficient to determine whether there are drug-associated risks for adverse developmental outcomes.",
+    "quoteVi": "Dữ liệu dùng Edoxaban ở phụ nữ mang thai chưa đủ để xác định nguy cơ phát triển thai nhi và làm tăng nguy cơ chảy máu sản khoa/sơ sinh."
+  },
+  {
+    "id": "fda.edoxaban.lactation",
+    "sourceId": "fda_edoxaban",
+    "pdfPage": 18,
+    "printedPage": "18",
+    "locator": "Section 8.2 / PDF p. 18",
+    "quote": "Because of the potential for serious adverse reactions in nursing infants, including hemorrhage, advise patients that breastfeeding is not recommended during treatment with SAVAYSA.",
+    "quoteVi": "Do nguy cơ biến cố bất lợi nghiêm trọng bao gồm xuất huyết ở trẻ bú mẹ, không khuyến cáo cho con bú khi đang điều trị bằng Edoxaban."
+  },
+  {
+    "id": "fda.warfarin.pregnancy_contra",
+    "sourceId": "fda_warfarin",
+    "pdfPage": 12,
+    "printedPage": "12",
+    "locator": "Section 8.1 / PDF p. 12",
+    "quote": "Pregnancy Category D for women with mechanical heart valves [see Warnings and Precautions (5.5) ] and Pregnancy Category X for other pregnant populations [see Contraindications (4) ]. COUMADIN is contraindicated in women who are pregnant except in pregnant women with mechanical heart valves, who are at high risk of thromboembolism",
+    "quoteVi": "Warfarin gây quái thai (bệnh phôi warfarin, xuất huyết nội sọ thai nhi) và chống chỉ định ở phụ nữ mang thai (Category X), ngoại trừ trường hợp đặc biệt có van tim cơ học nguy cơ huyết khối rất cao (Category D)."
+  },
+  {
+    "id": "fda.warfarin.lactation",
+    "sourceId": "fda_warfarin",
+    "pdfPage": 13,
+    "printedPage": "13",
+    "locator": "Section 8.3 / PDF p. 13",
+    "quote": "Based on published data in 15 nursing mothers, warfarin was not detected in human milk.",
+    "quoteVi": "Warfarin không được phát hiện trong sữa mẹ; có thể sử dụng ở phụ nữ cho con bú kèm theo dõi dấu hiệu bầm tím hoặc chảy máu ở trẻ."
+  },
+  {
+    "id": "fda.amiodarone.pregnancy",
+    "sourceId": "fda_amiodarone",
+    "pdfPage": 12,
+    "printedPage": "12",
+    "locator": "Section 8.1 / PDF p. 12",
+    "quote": "Available data from post-marketing reports and published case series indicate that amiodarone use in pregnant women may increase the risk for fetal adverse effects including neonatal hypo- and hyperthyroidism, neonatal bradycardia, neurodevelopmental abnormalities, preterm birth and fetal growth restriction.",
+    "quoteVi": "Amiodarone đi qua nhau thai gây suy giáp/cường giáp sơ sinh, chậm nhịp tim thai nhi, bất thường phát triển thần kinh, sinh non và thai chậm tăng trưởng."
+  },
+  {
+    "id": "fda.amiodarone.lactation",
+    "sourceId": "fda_amiodarone",
+    "pdfPage": 13,
+    "printedPage": "13",
+    "locator": "Section 8.2 / PDF p. 13",
+    "quote": "Breastfeeding is not recommended during treatment with Pacerone",
+    "quoteVi": "Amiodarone và chất chuyển hóa DEA bài tiết lượng lớn qua sữa mẹ (3.5%–45% liều mẹ), gây suy giáp và chậm nhịp ở trẻ; không khuyến cáo cho con bú."
+  },
+  {
+    "id": "fda.diltiazem.pregnancy_lactation",
+    "sourceId": "fda_diltiazem",
+    "pdfPage": 8,
+    "printedPage": "8",
+    "locator": "Precautions — Pregnancy & Nursing Mothers / PDF p. 8",
+    "quote": "There are no well-controlled studies in pregnant women; therefore, use diltiazem hydrochloride in pregnant women only if the potential benefit justifies the potential risk to the fetus. Nursing Mothers Diltiazem is excreted in human milk. One report suggests that concentrations in breast milk may approximate serum levels. If use of CARDIZEM CD is deemed essential, an alternative method of infant feeding should be instituted.",
+    "quoteVi": "Nhãn FDA: Chưa có nghiên cứu đối chứng ở phụ nữ mang thai, chỉ dùng diltiazem khi lợi ích vượt trội nguy cơ cho thai nhi; diltiazem bài tiết vào sữa mẹ tương đương nồng độ huyết thanh nên cần ngưng cho con bú nếu bắt buộc dùng thuốc."
+  },
+  {
+    "id": "acc.af.2023.wpw_av_blockers_harm",
+    "sourceId": "acc_2023_af",
+    "pdfPage": 111,
+    "printedPage": "e111",
+    "locator": "Section 10.6 Rec 4 / PDF p. 111",
+    "quote": "For patients with AF with anterograde accessory pa thway conduction (preexcited AF), pharmacological agents that block atrioventricular nodal conduction ( verapamil, diltiazem, amiod arone, digoxin, adenosine, or beta blockers) are contraindicated due to risk of precipitating VF or hemodynamic deterioration.",
+    "quoteVi": "Ở bệnh nhân rung nhĩ có dẫn truyền xuôi chiều qua đường phụ (rung nhĩ tiền kích thích / WPW), chống chỉ định tuyệt đối các thuốc ức chế dẫn truyền nút nhĩ thất (verapamil, diltiazem, amiodarone, digoxin, adenosine hoặc chẹn beta) do nguy cơ thúc đẩy rung thất hoặc suy sụp huyết động (Class 3: Harm).",
+    "cor": "III",
+    "loe": "B-NR"
+  },
+  {
+    "id": "acc.af.2023.wpw_ecv_ablation_ibutilide",
+    "sourceId": "acc_2023_af",
+    "pdfPage": 111,
+    "printedPage": "e111",
+    "locator": "Section 10.6 Rec 1 / PDF p. 111",
+    "quote": "Patients with AF with rapid anterograde conduction (preexcited AF), and hemodynamic instability should be treated with electrical cardioversion.",
+    "quoteVi": "Bệnh nhân rung nhĩ có dẫn truyền nhanh qua đường phụ (rung nhĩ tiền kích thích) kèm rối loạn huyết động cần được sốc điện chuyển nhịp ngay (Class 1).",
+    "cor": "I",
+    "loe": "B-NR"
+  },
+  {
+    "id": "acc.af.2023.wpw_ibutilide_procainamide",
+    "sourceId": "acc_2023_af",
+    "pdfPage": 111,
+    "printedPage": "e111",
+    "locator": "Section 10.6 Rec 3 / PDF p. 111",
+    "quote": "In patients with AF with rapid anterograde conduction (preexcited AF) and hemodynamic stability, pharmacological cardioversion with intravenous ibu tilide or intravenous procainamide is recommended as an alternative to ele ctive cardioversion.",
+    "quoteVi": "Ở bệnh nhân rung nhĩ tiền kích thích có huyết động ổn định, khuyến cáo chuyển nhịp bằng thuốc với ibutilide tĩnh mạch hoặc procainamide tĩnh mạch như giải pháp thay thế sốc điện có chuẩn bị, và triệt đốt đường phụ qua ống thông (Class 1).",
+    "cor": "I",
+    "loe": "C-LD"
+  },
+  {
+    "id": "esc.af.2024.wpw_preexcited_avoid_avn",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 58,
+    "printedPage": "3371",
+    "locator": "Section 9.11 / PDF p. 58",
+    "quote": "pre-excited AF, and atrioventricular node-modulating drugs should be avoided.",
+    "quoteVi": "Trong rung nhĩ tiền kích thích, cần tránh tất cả các thuốc tác động ức chế lên nút nhĩ thất."
+  },
+  {
+    "id": "esc.af.2024.rec_antiplatelet_oac_harm",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 9,
+    "printedPage": "3322",
+    "locator": "Recommendation Table 8 / PDF p. 9",
+    "quote": "Adding antiplatelet treatment to oral anticoagulation is not recommended in AF patients for the goal of preventing ischaemic stroke or thromboembolism.",
+    "quoteVi": "Không khuyến cáo phối hợp thêm thuốc kháng tiểu cầu vào thuốc chống đông đường uống ở bệnh nhân rung nhĩ nhằm mục đích dự phòng đột quỵ thiếu máu não hoặc thuyên tắc mạch (Class III, Level B).",
+    "cor": "III",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.acs_pci_dual_therapy",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 53,
+    "printedPage": "3366",
+    "locator": "Recommendation Table 24 / PDF p. 53",
+    "quote": "Early cessation (≤1 week) of aspirin and continuation of an oral anticoagulant (preferably DOAC) with a P2Y 12 inhibitor (preferably clopidogrel) for up to 12 months is recommended in AF patients with ACS undergoing an uncomplicated PCI to avoid major bleeding, if the risk of thrombosis is low or bleeding risk is high.",
+    "quoteVi": "Khuyến cáo ngừng sớm aspirin (≤ 1 tuần) và tiếp tục phác đồ kép gồm thuốc chống đông đường uống (ưu tiên DOAC) phối hợp ức chế P2Y12 (ưu tiên clopidogrel) tối đa đến 12 tháng ở bệnh nhân rung nhĩ có hội chứng vành cấp can thiệp mạch vành không biến chứng (Class I, Level A).",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.af.2024.ccs_stop_antiplatelet_12m",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 53,
+    "printedPage": "3366",
+    "locator": "Recommendation Table 24 / PDF p. 53",
+    "quote": "Antiplatelet therapy beyond 12 months is not recommended in stable patients with chronic coronary or vascular disease treated with oral anticoagulation, due to lack of efficacy and to avoid major bleeding.",
+    "quoteVi": "Không khuyến cáo duy trì kháng tiểu cầu quá 12 tháng ở bệnh nhân bệnh mạch vành mạn hoặc bệnh mạch máu ổn định đang dùng thuốc chống đông đường uống do không tăng hiệu quả và để tránh xuất huyết nặng (Class III, Level B).",
+    "cor": "III",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.catheter_ablation_aad_refractory",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 46,
+    "printedPage": "3359",
+    "locator": "Recommendation Table 19 / PDF p. 46",
+    "quote": "Catheter ablation is recommended in patients with paroxysmal or persistent AF resistant or intolerant to antiarrhythmic drug therapy to reduce symptoms, recurrence, and progression of AF.",
+    "quoteVi": "Khuyến cáo triệt đốt qua ống thông ở bệnh nhân rung nhĩ kịch phát hoặc dai dẳng kháng trị hoặc không dung nạp thuốc chống loạn nhịp nhằm giảm triệu chứng, tái phát và tiến triển rung nhĩ (Class I, Level A).",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.af.2024.catheter_ablation_persistent_firstline",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 46,
+    "printedPage": "3359",
+    "locator": "Recommendation Table 19 / PDF p. 46",
+    "quote": "Catheter ablation may be considered as a first-line option within a shared decision-making rhythm control strategy in selected patients with persistent AF to reduce symptoms, recurrence, and progression of AF.",
+    "quoteVi": "Có thể cân nhắc triệt đốt qua ống thông như lựa chọn bước đầu trong chiến lược kiểm soát nhịp đồng thuận ở một số bệnh nhân rung nhĩ dai dẳng chọn lọc (Class IIb, Level C).",
+    "cor": "IIb",
+    "loe": "C"
+  },
+  {
+    "id": "esc.af.2024.catheter_ablation_hfref_survival",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 46,
+    "printedPage": "3359",
+    "locator": "Recommendation Table 19 / PDF p. 46",
+    "quote": "AF catheter ablation should be considered in selected AF patients with HFrEF to reduce HF hospitalization and prolong survival.",
+    "quoteVi": "Nên xem xét triệt đốt rung nhĩ qua ống thông ở bệnh nhân rung nhĩ kèm HFrEF chọn lọc nhằm giảm nhập viện vì suy tim và kéo dài sống còn (Class IIa, Level B).",
+    "cor": "IIa",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.early_rhythm_control_east",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 42,
+    "printedPage": "3355",
+    "locator": "Recommendation Table 15 / PDF p. 42",
+    "quote": "Implementation of a rhythm control strategy should be considered within 12 months of diagnosis in selected patients with AF at risk of thromboembolic events to reduce the risk of cardiovascular death or hospitalization.",
+    "quoteVi": "Nên xem xét triển khai chiến lược kiểm soát nhịp sớm trong vòng 12 tháng kể từ khi chẩn đoán ở bệnh nhân rung nhĩ có nguy cơ biến cố thuyên tắc mạch để giảm tử vong tim mạch hoặc nhập viện (EAST-AFNET 4, Class IIa, Level B).",
+    "cor": "IIa",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.cardioversion_low_risk_post_oac_optional",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 42,
+    "printedPage": "3355",
+    "locator": "Section 7.2.1 / PDF p. 42",
+    "quote": "Only for those without thromboembolic risk factors and sinus rhythm restoration within 24 h of AF onset is post-cardioversion OAC optional.",
+    "quoteVi": "Chỉ ở những bệnh nhân không có yếu tố nguy cơ thuyên tắc huyết khối (CHA2DS2-VA = 0) và phục hồi nhịp xoang trong vòng 24 giờ kể từ khi khởi phát rung nhĩ thì chống đông đường uống 4 tuần sau chuyển nhịp mới là tùy chọn."
+  },
+  {
+    "id": "esc.af.2024.frail_elderly_maintain_vka",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 31,
+    "printedPage": "3344",
+    "locator": "Recommendation Table 7 / PDF p. 31",
+    "quote": "Maintaining VKA treatment rather than switching to a DOAC may be considered in patients aged ≥75 years on clinically stable therapeutic VKA with polypharmacy to prevent excess bleeding risk.",
+    "quoteVi": "Có thể cân nhắc duy trì tiếp VKA thay vì chuyển sang DOAC ở bệnh nhân ≥ 75 tuổi đang điều trị VKA ổn định trong ngưỡng điều trị kèm đa thuốc để tránh tăng nguy cơ xuất huyết (FRAIL-AF, Class IIb, Level B).",
+    "cor": "IIb",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.table12_bb_iv_doses",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 39,
+    "printedPage": "3352",
+    "locator": "Table 12 / PDF p. 39",
+    "quote": "Metoprolol tartrate 2.5–5 mg bolus over 2 mins; up to 15 mg maximal cumulative dose 25–100 mg twice daily In case of asthma, non-selective beta-blockers should be avoided. Contraindicated in acute HF and history of severe bronchospasm. Metoprolol XL (succinate) N/A 50–200 mg once daily Bisoprolol N/A 1.25–20 mg once daily Atenolol c N/A 25–100 mg once daily Esmolol 500 µg/kg i.v. bolus over 1 min; followed by 50–300 µg/kg/min",
+    "quoteVi": "Bảng 12 ESC 2024: Liều cấp cứu tĩnh mạch Metoprolol tartrate 2.5–5 mg tiêm chậm qua 2 phút (tối đa 15 mg); Esmolol 500 µg/kg tiêm TM qua 1 phút, sau đó truyền 50–300 µg/kg/phút; Bisoprolol chỉ có đường uống 1.25–20 mg/ngày; tránh chẹn beta không chọn lọc ở hen phế quản và chống chỉ định khi có tiền sử co thắt phế quản nặng."
+  },
+  {
+    "id": "esc.af.2024.rate_strict_target_80",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 39,
+    "printedPage": "3352",
+    "locator": "Section 7.1.1 / PDF p. 39",
+    "quote": "lenient rate control (target heart rate <110 [beats per minute] b.p.m.) was non-inferior to a strict approach (<80 b.p.m. at rest; <110 b.p.m. during exercise; Holter for safety)",
+    "quoteVi": "Kiểm soát tần số chặt chẽ đặt mục tiêu tần số tim lúc nghỉ < 80 bpm (và < 110 bpm khi gắng sức vừa) ở bệnh nhân còn triệu chứng liên quan rung nhĩ hoặc bệnh cơ tim do nhịp nhanh."
+  },
+  {
+    "id": "esc.af.2024.qtc_500_conduction_contra",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 43,
+    "printedPage": "3356",
+    "locator": "Recommendation Table 17 / PDF p. 43",
+    "quote": "Pharmacological cardioversion is not recommended for patients with sinus node dysfunction, atrioventricular conduction disturbances, or prolonged QTc (>500 ms), unless risks for proarrhythmia and bradycardia have been considered.",
+    "quoteVi": "Không khuyến cáo dùng thuốc chống loạn nhịp khi có rối loạn chức năng nút xoang, rối loạn dẫn truyền nhĩ thất hoặc khoảng QTc kéo dài > 500 ms do nguy cơ loạn nhịp thất và vô tâm thu (Class III, Level C).",
+    "cor": "III",
+    "loe": "C"
+  },
+  {
+    "id": "esc.af.2024.idarucizumab_reversal",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 35,
+    "printedPage": "3348",
+    "locator": "Section 6.6 / PDF p. 35",
+    "quote": "If the patient is taking dabigatran, idarucizumab can fully reverse its anti- coagulant effect and help to achieve haemostasis within 2–4 h",
+    "quoteVi": "Nếu bệnh nhân xuất huyết nặng đang dùng dabigatran, idarucizumab giúp hóa giải đặc hiệu tác dụng chống đông và hỗ trợ cầm máu trong 2–4 giờ."
+  },
+  {
+    "id": "esc.af.2024.andexanet_reversal",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 38,
+    "printedPage": "3351",
+    "locator": "Section 6.6 / PDF p. 38",
+    "quote": "Andexanet alfa rapidly reverses the activity of factor Xa inhibitors (apixaban, edoxaban, rivaroxaban)",
+    "quoteVi": "Andexanet alfa hóa giải nhanh hoạt tính của các thuốc ức chế yếu tố Xa (apixaban, edoxaban, rivaroxaban) trong xuất huyết đe dọa tính mạng (hoặc dùng phức hợp prothrombin 4 yếu tố 4F-PCC nếu không sẵn có)."
+  },
+  {
+    "id": "esc.af.2024.hyperthyroidism_af",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 57,
+    "printedPage": "3370",
+    "locator": "Section 9.10 / PDF p. 57",
+    "quote": "Clinical and subclinical hyperthyroidism, as well as subclinical hypo- thyroidism, are associated with an increased risk of AF.",
+    "quoteVi": "Cường giáp lâm sàng và dưới lâm sàng làm tăng nguy cơ khởi phát rung nhĩ; cần điều trị đạt bình giáp trước khi chuyển nhịp chương trình để tránh tái phát sớm (tránh amiodarone khi nhiễm độc giáp)."
+  },
+  {
+    "id": "acc.af.2023.table13_dabigatran_us_75mg",
+    "sourceId": "acc_2023_af",
+    "pdfPage": 42,
+    "printedPage": "e42",
+    "locator": "Table 13 / PDF p. 42",
+    "quote": "CrCl >30 mL/min 150 mg twice daily CrCl >50 mL/min 20 mg daily with the biggest meal * 5m g twice daily CrCl >50–#95 mL/ min 60 mg once daily CrCl 15-30 mL/ min 75 mg twice daily",
+    "quoteVi": "ACC/AHA 2023 Bảng 13 (Hoa Kỳ): Dabigatran dùng liều 150 mg x 2 lần/ngày khi CrCl > 30 mL/min và 75 mg x 2 lần/ngày khi CrCl 15–30 mL/min (không có chế phẩm 110 mg cho rung nhĩ tại Hoa Kỳ)."
+  },
+  {
+    "id": "acc.af.2023.dabigatran_dronedarone_ketoconazole_75mg",
+    "sourceId": "acc_2023_af",
+    "pdfPage": 41,
+    "printedPage": "e41",
+    "locator": "Section 6.3.1.1 / PDF p. 41",
+    "quote": "The concomitant therapy of dronedarone or ketoconazole for patients with creati- nine clearance (CrCl) 30 to 50 mL/min receiving dabi- gatran requires dose adjustment to dabigatran 75 mg twice daily",
+    "quoteVi": "Tại Hoa Kỳ, dùng đồng thời dronedarone hoặc ketoconazole ở bệnh nhân có CrCl 30–50 mL/min đang dùng dabigatran yêu cầu giảm liều dabigatran xuống 75 mg x 2 lần/ngày (tại Châu Âu/Việt Nam chống chỉ định phối hợp này)."
+  },
+  {
+    "id": "acc.af.2023.doac_strong_cyp3a4_pgp_inducers",
+    "sourceId": "acc_2023_af",
+    "pdfPage": 41,
+    "printedPage": "e41",
+    "locator": "Section 6.3.1.1 / PDF p. 41",
+    "quote": "strong CYP3A4 and/or p-glycoprotein in- ducers such as rifampin, phen ytoin, phenobarbital, pri- midone, carbamazepine, or St. John ’sw o r tm a yl o w e r DOAC plasma levels and increase the risks of stroke or systemic embolism.",
+    "quoteVi": "Các chất cảm ứng mạnh CYP3A4 và/hoặc P-gp (rifampin, phenytoin, phenobarbital, primidone, carbamazepine, St. John’s wort) làm giảm mạnh nồng độ DOAC huyết tương và tăng nguy cơ đột quỵ/thuyên tắc hệ thống (chống chỉ định phối hợp DOAC, cần chuyển sang VKA theo dõi INR)."
+  },
+  {
+    "id": "acc.af.2023.periprocedural_renal_hold_extension",
+    "sourceId": "acc_2023_af",
+    "pdfPage": 56,
+    "printedPage": "e56",
+    "locator": "Table 18 Footnote * / PDF p. 56",
+    "quote": "Consider holding for an additional 1 to 3 days, especially for high bleeding risk procedures.",
+    "quoteVi": "Ở bệnh nhân suy giảm chức năng thận đáng kể (CrCl < 30 mL/min với thuốc ức chế Xa) chuẩn bị phẫu thuật nguy cơ chảy máu cao, cân nhắc ngưng thuốc kéo dài thêm 1–3 ngày (tổng cộng 3 ngày / 72 giờ trước mổ)."
+  },
+  {
+    "id": "acc.af.2023.table23_sotalol_bronchospasm",
+    "sourceId": "acc_2023_af",
+    "pdfPage": 89,
+    "printedPage": "e89",
+    "locator": "Table 23 / PDF p. 89",
+    "quote": "Beta blocker d- Sotalol augments late INa AV block Bradycardia Bronchospasm Diarrhea Exacerbation of HFrEF Fatigue Nausea and vomiting QT prolongation TdP",
+    "quoteVi": "Bảng 23 ACC/AHA 2023: Sotalol có hoạt tính chẹn beta không chọn lọc gây co thắt phế quản (bronchospasm), chậm nhịp, block nhĩ thất, đợt cấp HFrEF và kéo dài QT gây xoắn đỉnh."
+  },
+  {
+    "id": "acc.af.2023.table23_propafenone_liver",
+    "sourceId": "acc_2023_af",
+    "pdfPage": 89,
+    "printedPage": "e89",
+    "locator": "Table 23 / PDF p. 89",
+    "quote": "Propafenone N/A 150-300 mg PO q 8 h, ER 225-425 PO q 12 h Liver 9 h Inhibits I Na Atrial ﬂutter Bradycardia AV block Dizziness Dyspnea Exacerbation of HFrEF",
+    "quoteVi": "Bảng 23 ACC/AHA 2023: Propafenone chuyển hóa qua gan (Liver), chống chỉ định/tránh dùng ở suy gan có ý nghĩa lâm sàng, HFrEF, bệnh mạch vành và co thắt phế quản."
+  },
+  {
+    "id": "fda.apixaban.aps_not_recommended",
+    "sourceId": "fda_apixaban",
+    "pdfPage": 8,
+    "printedPage": "8",
+    "locator": "Section 5.4 / PDF p. 8",
+    "quote": "Direct-acting oral anticoagulants (DOACs), including ELIQUIS, are not recommended for use in patients with triple-positive antiphospholipid syndrome (APS).",
+    "quoteVi": "Các thuốc chống đông đường uống tác dụng trực tiếp (DOAC), bao gồm Apixaban, không được khuyến cáo ở bệnh nhân hội chứng kháng phospholipid (APS), đặc biệt thể dương tính cả 3 kháng thể do tăng biến cố huyết khối động mạch so với VKA."
+  },
+  {
+    "id": "fda.apixaban.dual_cyp3a4_pgp_inhibitors",
+    "sourceId": "fda_apixaban",
+    "pdfPage": 17,
+    "printedPage": "17",
+    "locator": "Section 7.1 / PDF p. 17",
+    "quote": "should be decreased by 50% when coadministered with drugs that are combined P-gp and strong CYP3A4 inhibitors (e.g., ketoconazole, itraconazole, ritonavir)",
+    "quoteVi": "Giảm 50% liều Apixaban (từ 5 mg xuống 2.5 mg x 2 lần/ngày) khi dùng kèm thuốc ức chế đồng thời P-gp và CYP3A4 mạnh (ketoconazole, itraconazole, ritonavir); tránh phối hợp nếu bệnh nhân vốn đã thuộc diện dùng liều 2.5 mg x 2 lần/ngày."
+  },
+  {
+    "id": "fda.edoxaban.pgp_no_reduction_us",
+    "sourceId": "fda_edoxaban",
+    "pdfPage": 16,
+    "printedPage": "16",
+    "locator": "Section 7.3 / PDF p. 16",
+    "quote": "Consequently, no dose reduction is recommended for concomitant P-gp inhibitor use",
+    "quoteVi": "Nhãn FDA Hoa Kỳ (Savaysa): Không giảm liều Edoxaban khi dùng kèm thuốc ức chế P-gp đơn thuần (khác với EMA/ESC 2024 giảm từ 60 mg xuống 30 mg x 1 lần/ngày khi dùng kèm cyclosporine, dronedarone, erythromycin hoặc ketoconazole)."
+  },
+  {
+    "id": "fda.dronedarone.contra_qtc500_hepatic",
+    "sourceId": "fda_dronedarone",
+    "pdfPage": 5,
+    "printedPage": "5",
+    "locator": "Section 4 Contraindications / PDF p. 5",
+    "quote": "QTc interval >500 ms or PR interval >280 ms Severe hepatic impairment",
+    "quoteVi": "Chống chỉ định Dronedarone khi khoảng QTc > 500 ms, khoảng PR > 280 ms hoặc suy gan nặng."
+  },
+  {
+    "id": "fda.dronedarone.lactation_avoid",
+    "sourceId": "fda_dronedarone",
+    "pdfPage": 27,
+    "printedPage": "27",
+    "locator": "Medication Guide / PDF p. 27",
+    "quote": "Do not breastfeed during treatment and for 5 days",
+    "quoteVi": "Không cho con bú trong thời gian điều trị bằng Dronedarone và trong 5 ngày sau liều cuối."
+  },
+  {
+    "id": "esc.preg.2025.mhv_pregnancy_heart_team",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 74,
+    "printedPage": "4535",
+    "locator": "Figure 21 / PDF p. 74",
+    "quote": "Management of pregnant women with mechanical heart valves by the Pregnancy Heart Team (Class I)",
+    "quoteVi": "Phụ nữ mang thai có van tim cơ học phải được quản lý bởi Nhóm Tim mạch Thai kỳ (Pregnancy Heart Team, Class I) tại trung tâm chuyên sâu; tuyệt đối không tự ý ngưng thuốc chống đông ngoại trú do nguy cơ kẹt van cơ học tử vong."
+  },
+  {
+    "id": "esc.hf.2026.amyloidosis_avoid_digoxin",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 77,
+    "printedPage": "77",
+    "locator": "Section 12.3.3 / PDF p. 77",
+    "quote": "The use of digoxin is generally discouraged due to high risk of toxicity.",
+    "quoteVi": "Ở bệnh nhân bệnh cơ tim nhiễm bột (cardiac amyloidosis) kèm rung nhĩ, tránh dùng digoxin (và các thuốc chẹn kênh canxi non-DHP như diltiazem, verapamil) do gắn kết vào sợi amyloid ngoại bào gây độc tính nặng và tụt huyết áp/block nhĩ thất ngay ở nồng độ điều trị."
+  },
+  {
+    "id": "fda.digoxin.amyloidosis_avoid",
+    "sourceId": "fda_digoxin",
+    "pdfPage": 9,
+    "printedPage": "9",
+    "locator": "Section 5.7 / PDF p. 9",
+    "quote": "Patients with amyloid heart disease may be more susceptible to digoxin toxicity at therapeutic levels because of an increased binding of digoxin to extracellular amyloid fibrils. LANOXIN should generally be avoided in these patients",
+    "quoteVi": "Bệnh nhân bệnh cơ tim amyloid rất nhạy cảm với ngộ độc digoxin ngay ở nồng độ điều trị do digoxin gắn mạnh vào các sợi amyloid ngoại bào; khuyến cáo tránh dùng digoxin ở nhóm bệnh nhân này."
+  },
+  {
+    "id": "esc.af.2024.comorbidities_care_c",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 26,
+    "printedPage": "3339",
+    "locator": "Recommendation Table 5 / PDF p. 26",
+    "quote": "Identification and management of risk factors and comorbidities is recommended as an integral part of AF care.",
+    "quoteVi": "Khuyến cáo xác định và quản lý tích cực các yếu tố nguy cơ và bệnh đồng mắc như một phần cốt lõi của chăm sóc rung nhĩ (AF-CARE trụ cột [C], Class I, Level B).",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.weight_loss_obesity",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 26,
+    "printedPage": "3339",
+    "locator": "Recommendation Table 5 / PDF p. 26",
+    "quote": "Weight loss is recommended as part of comprehensive risk factor management in overweight and obese individuals with AF to reduce symptoms and AF burden, with a target of 10% or more reduction in body weight.",
+    "quoteVi": "Khuyến cáo giảm cân với mục tiêu giảm ≥ 10% trọng lượng cơ thể ở người thừa cân hoặc béo phì mắc rung nhĩ để giảm triệu chứng và gánh nặng rung nhĩ (Class I, Level B).",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.alcohol_reduction",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 26,
+    "printedPage": "3339",
+    "locator": "Recommendation Table 5 / PDF p. 26",
+    "quote": "Reducing alcohol consumption to ≤3 standard drinks (≤30 grams of alcohol) per week is recommended as part of comprehensive risk factor management to reduce AF recurrence.",
+    "quoteVi": "Khuyến cáo giảm tiêu thụ rượu bia xuống ≤ 3 đơn vị cồn (≤ 30 gam cồn) mỗi tuần trong quản lý toàn diện yếu tố nguy cơ nhằm giảm tái phát rung nhĩ (Class I, Level B).",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.af.2024.dynamic_reassessment_e",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 49,
+    "printedPage": "3362",
+    "locator": "Section 8 / PDF p. 49",
+    "quote": "Patients with AF require periodic reassessment of therapy based on this changing risk status if we are to improve the overall quality of care.",
+    "quoteVi": "Bệnh nhân rung nhĩ cần được tái đánh giá động định kỳ phác đồ điều trị theo sự thay đổi của hồ sơ nguy cơ đột quỵ, chảy máu và chức năng thận (AF-CARE trụ cột [E])."
+  },
+  {
+    "id": "esc.af.2024.pregnancy_rate_bb",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 56,
+    "printedPage": "3369",
+    "locator": "Recommendation Table 28 / PDF p. 56",
+    "quote": "Beta-1 selective blockers are recommended for heart rate control of AF in pregnancy to reduce symptoms and improve maternal and foetal outcomes, excluding atenolol.",
+    "quoteVi": "Khuyến cáo dùng thuốc chẹn beta chọn lọc beta-1 (trừ atenolol) để kiểm soát tần số tim của rung nhĩ trong thai kỳ nhằm giảm triệu chứng và cải thiện kết cục mẹ – thai (Class I, Level C).",
+    "cor": "I",
+    "loe": "C"
+  }
+]

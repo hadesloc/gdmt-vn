@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.dpp4i_glp1ra_redundancy",
+  "contentHash": "a5d13c9303794c2f9adf2baca0a20da08a459da5ca7c7fe8bc13f4f0cf801d93",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.dpp4i_glp1ra_redundancy",
+      "contentHash": "0daf3480883b31ab",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T11:20:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.dpp4i_glp1ra_redundancy."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T11:20:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

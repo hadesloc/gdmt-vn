@@ -1,0 +1,91 @@
+{
+  "id": "dm2_63_frail_84yo_stop_su_defer_glp1_and_foot_ulcer_oac",
+  "titleVi": "Cụ bà 84 tuổi suy yếu, HbA1c 6.1%, loét bàn chân hoạt động và đang dùng Apixaban dự phòng đột quỵ rung nhĩ: Ngừng Glimepiride, hoãn SGLT2i/GLP-1 RA và không chồng Aspirin",
+  "source": "ADA Standards of Care 2026 Chapters 10 & 13 / ESC 2023",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 84,
+    "sex": "female",
+    "weight": 46,
+    "height": 156,
+    "sbp": 128,
+    "dbp": 74,
+    "hr": 74,
+    "rhythm": "afib",
+    "scr": 105,
+    "k": 4.3,
+    "glucose": 5.9,
+    "hba1c": 6.1,
+    "conditions": {
+      "dm": true,
+      "ascvd": true,
+      "af": true,
+      "ckd": true,
+      "frailty": true,
+      "limitedLifespan": true,
+      "onAnticoagulant": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "glimepiride",
+        "name": "Glimepiride",
+        "dose": 4,
+        "unit": "mg"
+      },
+      {
+        "drugId": "apixaban",
+        "name": "Apixaban",
+        "dose": 5,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "activeFootUlcer": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "glimepiride",
+        "action": "STOP"
+      },
+      {
+        "drugId": "dapagliflozin",
+        "action": "HOLD"
+      },
+      {
+        "drugId": "semaglutide",
+        "action": "DEFER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "metformin",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_dm2_aspirin_secondary",
+        "action": "CONSIDER"
+      }
+    ]
+  },
+  "descriptionVi": "Kiểm chứng đồng thời 4 cổng an toàn ở người cao tuổi đa bệnh lý: (1) Ngừng hẳn Glimepiride ở người 84 tuổi suy yếu có HbA1c 6.1%; (2) Tạm hoãn SGLT2i do loét bàn chân hoạt động; (3) Tạm hoãn GLP-1 RA tránh thiếu cơ (sarcopenia); (4) Không kê thêm Aspirin chồng lên kháng đông Apixaban ở ASCVD mạn ổn định."
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.dose.pravastatin_ckd_max",
+  "contentHash": "e566c08753630617c0debcfdb1ad10a0a7d5de470a26f871b17d2b9ac081d62f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.dose.pravastatin_ckd_max",
+      "contentHash": "519206959a3b3157",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T15:55:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.dose.pravastatin_ckd_max."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T15:55:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

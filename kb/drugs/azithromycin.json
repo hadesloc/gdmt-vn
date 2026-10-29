@@ -1,0 +1,137 @@
+{
+  "id": "azithromycin",
+  "nameVi": "Azithromycin",
+  "inn": "Azithromycin",
+  "class": "Macrolide",
+  "vnBrands": [
+    "Zithromax",
+    "Azithromycin 250mg",
+    "Azithromycin 500mg"
+  ],
+  "forms": [
+    "Viên nang/viên nén 250 mg",
+    "Viên nén bao phim 500 mg"
+  ],
+  "start": {
+    "amount": 250,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Dự phòng đợt cấp COPD: 250 mg/ngày (hoặc 500 mg x 3 lần/tuần) cho bệnh nhân hiện không hút thuốc có đợt cấp tái phát"
+  },
+  "target": {
+    "amount": 250,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "250 mg/ngày hoặc 500 mg x 3 lần/tuần trong 1 năm"
+  },
+  "titration": {
+    "step": "Đo ECG trước khi dùng và sau 1 tháng (kiểm tra khoảng QTc); đo thính lực định kỳ",
+    "intervalDays": 30,
+    "maxDose": "500 mg 3 lần/tuần hoặc 250 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều khi eGFR ≥ 15 mL/phút/1.73m²",
+      "citationIds": [
+        "gold.copd.2026.azithromycin_dose_warnings"
+      ]
+    },
+    {
+      "eGFRFrom": 10,
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "caution",
+      "note": "Thận trọng khi eGFR 10–15 mL/phút/1.73m²; theo dõi sát khoảng QTc và thính lực",
+      "citationIds": [
+        "fda.copd.azithromycin_renal_gfr10",
+        "gold.copd.2026.azithromycin_safety"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 10,
+      "initiate": "contra",
+      "continue": "contra",
+      "note": "Không dùng Azithromycin dự phòng dài hạn ở người suy thận nặng (GFR < 10 mL/phút) theo BYT QĐ 2131/2026; Cmax tăng 61% và AUC tăng 35%",
+      "citationIds": [
+        "byt.copd.2026.azithromycin_renal_contra_gfr10",
+        "fda.copd.azithromycin_renal_gfr10"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Chống chỉ định phối hợp với Domperidone và tránh phối hợp với các thuốc kéo dài khoảng QTc (amiodarone, sotalol, dronedarone, fluoroquinolone, antipsychotics, azole) do nguy cơ xoắn đỉnh (Phụ lục 11 QĐ 2131/QĐ-BYT 2026)",
+    "Theo dõi nguy cơ giảm thính lực/độc tai (ototoxicity), loại trừ nhiễm mycobacteria không điển hình (NTM) trước khi dùng dài hạn và cảnh giác kháng thuốc",
+    "Thận trọng/tránh dùng ở người mắc bệnh nhược cơ (Myasthenia Gravis – nguy cơ kịch phát suy cơ hô hấp); theo dõi sát PT/INR nếu dùng kèm warfarin/acenocoumarol và nồng độ/độc tính digoxin nếu dùng kèm digoxin",
+    "Chỉ định dự phòng ở người hiện không hút thuốc (đã cai thuốc lá hoặc chưa từng hút thuốc); chống chỉ định khi có tiền sử vàng da ứ mật/suy gan do azithromycin hoặc suy thận nặng GFR < 10 mL/phút"
+  ],
+  "citationIds": [
+    "gold.copd.2026.followup_azithromycin",
+    "gold.copd.2026.azithromycin_dose_warnings",
+    "gold.copd.2026.azithromycin_safety",
+    "byt.copd.2026.followup_roflumilast_azithro",
+    "fda.copd.azithromycin_pregnancy",
+    "fda.copd.azithromycin_lactation",
+    "byt.copd.2026.azithromycin_renal_contra_gfr10",
+    "fda.copd.azithromycin_renal_gfr10",
+    "fda.copd.azithromycin_contra_cholestatic",
+    "fda.copd.azithromycin_myasthenia_gravis",
+    "fda.copd.azithromycin_warfarin_digoxin",
+    "byt.copd.2026.macrolide_domperidone_contra"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Dữ liệu y văn và hậu mãi qua nhiều thập kỷ sử dụng azithromycin ở phụ nữ mang thai không ghi nhận tăng nguy cơ dị tật bẩm sinh lớn; thận trọng khi cân nhắc dùng dự phòng dài hạn.",
+    "citationIds": [
+      "fda.copd.azithromycin_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Azithromycin có mặt trong sữa mẹ; cần theo dõi trẻ bú mẹ về các phản ứng tiêu hóa không nghiêm trọng (tiêu chảy, nôn, tưa miệng).",
+    "citationIds": [
+      "fda.copd.azithromycin_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "history_cholestatic_jaundice_hepatic_impairment",
+      "messageVi": "Chống chỉ định khi có tiền sử vàng da tắc mật hoặc suy gan liên quan azithromycin",
+      "citationIds": [
+        "fda.copd.azithromycin_contra_cholestatic"
+      ]
+    },
+    {
+      "code": "prolonged_qtc_or_qt_comedication",
+      "messageVi": "Tránh dùng dự phòng dài hạn khi QTc kéo dài hoặc đang dùng thuốc chống loạn nhịp kéo dài QT (amiodarone, sotalol) do nguy cơ xoắn đỉnh",
+      "citationIds": [
+        "gold.copd.2026.azithromycin_safety"
+      ]
+    },
+    {
+      "code": "hearing_impairment_or_ntm",
+      "messageVi": "Tránh dùng khi có giảm thính lực tiến triển hoặc chưa loại trừ nhiễm khuẩn mycobacteria không điển hình (NTM)",
+      "citationIds": [
+        "gold.copd.2026.azithromycin_safety"
+      ]
+    },
+    {
+      "code": "severe_renal_impairment_gfr_lt_10",
+      "messageVi": "Không dùng dự phòng dài hạn ở người suy thận nặng (GFR < 10 mL/phút) theo BYT QĐ 2131/2026",
+      "citationIds": [
+        "byt.copd.2026.azithromycin_renal_contra_gfr10",
+        "fda.copd.azithromycin_renal_gfr10"
+      ]
+    }
+  ],
+  "classes": [
+    "macrolide"
+  ],
+  "qtRisk": "known"
+}

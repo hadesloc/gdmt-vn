@@ -1,0 +1,57 @@
+{
+  "id": "lipid_45_outpatient_grade3_htn_high_risk_statin",
+  "titleVi": "Tăng huyết áp độ 3 đơn độc (HA 184/112 mmHg, LDL 2.4) - Tự động phân tầng Nguy cơ Cao (< 1.8 mmol/L)",
+  "source": "ESC/EAS 2025 Table 3 / esc.lipid.2025.risk_table3_bp_grade3",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "low",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 48,
+    "sex": "female",
+    "weight": 58,
+    "height": 158,
+    "sbp": 184,
+    "dbp": 112,
+    "hr": 82,
+    "scr": 68,
+    "tc": 4.6,
+    "hdl": 1.4,
+    "ldl": 2.4,
+    "tg": 1.3,
+    "conditions": {
+      "htn": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_lipid_primary_goal_achieved",
+        "action": "MONITOR"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R2-R1-05: Tăng mạnh một yếu tố nguy cơ đơn độc (Huyết áp độ 3: SBP ≥ 180 hoặc DBP ≥ 110 mmHg) xếp thẳng vào nhóm Nguy cơ Cao (đích LDL-C < 1.8 mmol/L) mà không cần tính SCORE2."
+}

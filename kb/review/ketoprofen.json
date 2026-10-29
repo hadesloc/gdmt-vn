@@ -1,0 +1,26 @@
+{
+  "itemId": "ketoprofen",
+  "contentHash": "726a3d9c4a639d4aefba17e93548b5cac55fdd671741fdd35dd3fce7a0c5569c",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ketoprofen",
+      "contentHash": "375b37d20eaf999a",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của DrugEntry: ketoprofen"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "itemId": "perindopril",
+  "contentHash": "1808595b19a77bcd0ecc7fe4401da629a8e4f73dad46a3932cd4c6c3ed214c3a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "perindopril",
+      "contentHash": "8025fa5e6a9ee221",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:58:17.996Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động bổ sung pregnancy, lactation và contraindications theo chuẩn QA-9 cho Perindopril."
+        },
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T07:03:44.560Z",
+          "role": "agent_e3_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 2 cho perindopril."
+        },
+        {
+          "round": 3,
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "agent_e4_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 3 cho perindopril."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+[
+  {
+    "id": "fda.finerenone.moderate_cyp3a4_monitor_k",
+    "sourceId": "fda_finerenone",
+    "pdfPage": 2,
+    "locator": "Highlights - Drug Interactions (7.1) / PDF p. 2",
+    "quote": "Moderate or weak CYP3A4 Inhibitors: Monitor serum potassium during drug initiation or dosage adjustment of either Kerendia or the moderate or weak CYP3A4 inhibitor, and adjust Kerendia dosage as appropriate.",
+    "quoteVi": "Thuốc ức chế CYP3A4 mức độ vừa hoặc yếu: Theo dõi kali huyết thanh khi khởi trị hoặc điều chỉnh liều Kerendia hoặc thuốc ức chế CYP3A4 vừa/yếu, và chỉnh liều Kerendia phù hợp."
+  },
+  {
+    "id": "fda.semaglutide.su_insulin_hypoglycemia",
+    "sourceId": "novo_2026_ozempic_sc_pi",
+    "pdfPage": 1,
+    "locator": "Highlights / Warnings and Precautions 5.5 / PDF p. 1",
+    "quote": "Concomitant use with an insulin secretagogue or insulin may increase the risk of hypoglycemia, including severe hypoglycemia. Reducing dose of insulin secretagogue or insulin may be necessary.",
+    "quoteVi": "Dùng đồng thời với thuốc kích thích bài tiết insulin (ví dụ sulfonylurea) hoặc insulin có thể tăng nguy cơ hạ đường huyết, kể cả mức nặng; có thể cần giảm liều thuốc kích thích bài tiết insulin hoặc insulin.",
+    "printedPage": "1"
+  },
+  {
+    "id": "byt.copd.2026.salmeterol_strong_cyp3a4_pl11",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 120,
+    "printedPage": "110",
+    "locator": "Phụ lục 11 Mục 34 / Tương tác thuốc / PDF tr. 120",
+    "quote": "34 Salmeterol Các thuốc ức chế mạnh CYP3A4 (clarithromy cin, erythromyci n, roxithromyc in, itraconazol, posaconazol , voriconazol, boceprevir, các thuốc ức chế protetase điều tr ị HIV*) Các thuốc ức chế mạnh CYP3A4 ức chế chuyển hóa c ủa salmeterol qua gan",
+    "quoteVi": "Salmeterol + các thuốc ức chế mạnh CYP3A4: ức chế chuyển hóa của salmeterol qua gan làm tăng nồng độ và độc tính tim mạch (kéo dài QT, loạn nhịp)."
+  },
+  {
+    "id": "byt.copd.2026.pravastatin_clarithromycin_limit_40mg",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 108,
+    "printedPage": "98",
+    "locator": "Phụ lục 11 Mục 6 / Kháng sinh macrolid + Statin / PDF tr. 108",
+    "quote": "khi s ử dụng đồng th ời v ới clarithromycin, liều pravastatin không vượt quá 40 mg/ngày, fluvastatin không vượt quá 20 mg/ngày",
+    "quoteVi": "Khi sử dụng đồng thời với clarithromycin, liều pravastatin không vượt quá 40 mg/ngày."
+  },
+  {
+    "id": "acc.lipid.2026.table8_statin_interactors",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 32,
+    "printedPage": "2655",
+    "locator": "Table 8 Common Medications That May Interact With Statins / PDF p. 32",
+    "quote": "Clarithromycin n Cobicistat-containing products n Colchicine n Cyclosporine n Danazol n Darunavir plusritonavir n Diltiazem n Dronedarone n Erythromycin n Fenofibrate n Fenofibricacid n Fluconazole n Fosamprenavir (withor withoutritonavir) n Itraconazole n Ketoconazole n Lomitapide n Lopinavirplus ritonavir n Nefazodone n Nelfinavir n Niacin($1 g/d) n Nirmatrelvirplus ritonavir n Posaconazole n Ranolazine",
+    "quoteVi": "Bảng 8 ACC/AHA 2026: Các thuốc thường gặp có tương tác với Statin (bao gồm clarithromycin, cobicistat, colchicine, cyclosporine, diltiazem, dronedarone, erythromycin, fenofibrate, itraconazole, ketoconazole, nirmatrelvir/ritonavir, posaconazole, ranolazine...)."
+  },
+  {
+    "id": "acc.lipid.2026.ddi_table27_simva_ticagrelor",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 98,
+    "printedPage": "2721",
+    "locator": "Table 27 Clinical Recommendations on Management of DDI With Statins and Cardiovascular Medications / PDF p. 98",
+    "quote": "Ticagrelor Atorvastatin Combinationisacceptablewithoutdose limitations Lovastatin Limitdoseoflovastatinto 40mgdaily Simvastatin Limitdoseofsimvastatinto 40mgdaily",
+    "quoteVi": "Bảng 27 ACC/AHA 2026: Khi phối hợp Ticagrelor với Simvastatin, giới hạn liều Simvastatin tối đa 40 mg/ngày."
+  },
+  {
+    "id": "acc.lipid.2026.table26_fenofibrate_statin_monitoring",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 96,
+    "printedPage": "2719",
+    "locator": "Table 26 Safety Considerations for Triglyceride-Lowering Medications / PDF p. 96",
+    "quote": "Whengivenincombinationwithstatintherapy canincreaserisk ofmuscletoxicity;gemfi- brozilshouldnotbeusedincombinationwith astatin;fenofibrateorfenofibricacidcanbe usedincombinationwithstatinwith monitoring",
+    "quoteVi": "Khi phối hợp với statin có thể làm tăng nguy cơ độc tính trên cơ; không dùng gemfibrozil cùng statin; fenofibrate hoặc fenofibric acid có thể phối hợp với statin kèm theo dõi."
+  },
+  {
+    "id": "fda.rosuvastatin.fenofibrate_myopathy_monitor",
+    "sourceId": "fda_rosuvastatin",
+    "pdfPage": 13,
+    "locator": "Section 7.1 Drug Interactions - Fenofibrates / PDF p. 13",
+    "quote": "Consider if the benefit of using fibrates concomitantly with CRESTOR outweighs the increased risk of myopathy and rhabdomyolysis. If concomitant use is decided, monitor patients for signs and symptoms of myopathy, particularly during initiation of therapy and during upward dosage titration of either drug.",
+    "quoteVi": "Cân nhắc lợi ích so với nguy cơ tăng bệnh cơ và tiêu cơ vân khi phối hợp fibrate với Rosuvastatin; nếu phối hợp, theo dõi sát dấu hiệu và triệu chứng bệnh cơ đặc biệt khi khởi trị hoặc tăng liều."
+  },
+  {
+    "id": "fda.atorvastatin.azole_macrolide_examples",
+    "sourceId": "fda_atorvastatin",
+    "pdfPage": 11,
+    "locator": "Table 2 Select Azole Antifungals or Macrolide Antibiotics / PDF p. 11",
+    "quote": "In patients taking clarithromycin or itraconazole, do not exceed LIPITOR 20 mg [see Dosage and Administration (2.5)] . Consider the risk/benefit of concomitant use of other azole antifungals or macrolide antibiotics with LIPITOR. Monitor all patients for signs and symptoms of myopathy particularly during initiation of therapy and during upward dose titration of either drug. Examples: Erythromycin, clarithromycin, itraconazole, ketoconazole, posaconazole, and voriconazole.",
+    "quoteVi": "Ở bệnh nhân dùng clarithromycin hoặc itraconazole, không vượt quá 20 mg Atorvastatin/ngày. Cân nhắc lợi ích/nguy cơ và theo dõi bệnh cơ khi dùng cùng các thuốc kháng nấm azole khác (ketoconazole, posaconazole, voriconazole) hoặc kháng sinh macrolide (erythromycin)."
+  },
+  {
+    "id": "fda.ezetimibe.cyclosporine_monitor",
+    "sourceId": "fda_ezetimibe",
+    "pdfPage": 7,
+    "locator": "Table 3 Clinically Important Drug Interactions - Cyclosporine / PDF p. 7",
+    "quote": "Concomitant use of ZETIA and cyclosporine increases ezetimibe and cyclosporine concentrations. The degree of increase in ezetimibe exposure may be greater in patients with severe renal insufficiency",
+    "quoteVi": "Dùng đồng thời Ezetimibe và Cyclosporine làm tăng nồng độ của cả hai thuốc; mức tăng phơi nhiễm ezetimibe có thể lớn hơn ở bệnh nhân suy thận nặng."
+  },
+  {
+    "id": "fda.ezetimibe.fenofibrate_cholelithiasis",
+    "sourceId": "fda_ezetimibe",
+    "pdfPage": 7,
+    "locator": "Table 3 Clinically Important Drug Interactions - Fibrates / PDF p. 7",
+    "quote": "Both fenofibrate and ezetimibe may increase cholesterol excretion into the bile, leading to cholelithiasis. Co-administration of ZETIA with fibrates other than fenofibrate is not recommended",
+    "quoteVi": "Cả fenofibrate và ezetimibe đều có thể làm tăng bài tiết cholesterol vào mật dẫn đến sỏi túi mật. Không khuyến cáo phối hợp ezetimibe với các fibrate khác ngoài fenofibrate."
+  },
+  {
+    "id": "byt.ckd.2024.fibrate_warfarin_cyclosporine_ddi",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 50,
+    "printedPage": "49",
+    "locator": "Chương 3 Mục c Nhóm Fibrate - Tương tác thuốc / PDF tr. 50",
+    "quote": "Tương tác thu ốc: có th ể làm tăng tác d ụng c ủa thu ốc ch ống đông đư ờng u ống (warfarin), tăng đ ộ thanh th ải cyc losporine gây giảm nồng độ cyclosporine huy ết thanh (ở bệnh nhân ghép tạng).",
+    "quoteVi": "Fibrate có thể làm tăng tác dụng của thuốc chống đông đường uống (warfarin) và làm giảm nồng độ cyclosporine huyết thanh ở bệnh nhân ghép tạng."
+  },
+  {
+    "id": "fda.colchicine.fibrates_myopathy_table4",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 13,
+    "locator": "Table 4 Other Potentially Significant Drug Interactions / PDF p. 13",
+    "quote": "Other Lipid-Lowering Drugs: fibrates, gemfibrozil",
+    "quoteVi": "Bảng 4 nhãn FDA Colcrys: Các thuốc hạ lipid máu khác (nhóm fibrate, gemfibrozil) tăng nguy cơ bệnh cơ và tiêu cơ vân khi phối hợp với colchicine."
+  },
+  {
+    "id": "acc.lipid.2026.fluvastatin_lovastatin_dosing",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 28,
+    "printedPage": "2651",
+    "locator": "Table 6 / Statin Intensity & Daily Dosing – Fluvastatin & Lovastatin / p. 28",
+    "quote": "Fluvastatin 20-80mg Onceortwicedaily Lovastatin 10-80mg Onceortwicedaily",
+    "quoteVi": "ACC/AHA 2026 Bảng 6: Fluvastatin liều 20–80 mg/ngày (1–2 lần/ngày) và Lovastatin liều 10–80 mg/ngày (1–2 lần/ngày, uống cùng bữa ăn tối)."
+  },
+  {
+    "id": "acc.lipid.2026.cholestyramine_colesevelam_dosing",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 29,
+    "printedPage": "2652",
+    "locator": "Table 7 / Nonstatin LDL-C-Lowering Drugs – Bile Acid Sequestrants / p. 29",
+    "quote": "MayincreaseserumTGlevels;avoidif TG $300mg/dL Colesevelam 3.75mg Onceortwicedaily",
+    "quoteVi": "ACC/AHA 2026 Bảng 7: Nhựa gắn acid mật (Cholestyramine 8–16 g/ngày [tối đa 24 g/ngày], Colesevelam 3.75 g/ngày chia 1–2 lần) có thể làm tăng triglycerid huyết thanh; tránh dùng khi TG ≥ 300 mg/dL (3.4 mmol/L)."
+  },
+  {
+    "id": "acc.lipid.2026.colesevelam_3_75g_po",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 72,
+    "printedPage": "2695",
+    "locator": "Pediatric & Adult Dosing / Colesevelam 3.75 g PO/d / p. 72",
+    "quote": "Colesevelam:3.75gPO/das1packetorsix 625mgtabletsdividedtwicedaily",
+    "quoteVi": "ACC/AHA 2026: Liều chuẩn của Colesevelam là 3.75 g uống mỗi ngày (1 gói pha hỗn dịch hoặc 6 viên 625 mg chia 2 lần/ngày cùng bữa ăn); chống chỉ định nếu triglycerid tăng cao hoặc tiền sử tắc ruột / viêm tụy do tăng TG."
+  },
+  {
+    "id": "acc.lipid.2026.statin_pregnancy_lactation_avoid",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 76,
+    "printedPage": "2699",
+    "locator": "Section on Pregnancy & Lactation / Statins & Bile Acid Sequestrants (Table 20) / p. 76",
+    "quote": "At this time, it seems prudent to avoid statin therapy during preg- nancy and while lactating, but to date, no significant teratogenicity has been observed.",
+    "quoteVi": "ACC/AHA 2026: Khuyến cáo ngừng/tránh sử dụng các statin (bao gồm lovastatin, fluvastatin) trong suốt thai kỳ và thời kỳ cho con bú."
+  },
+  {
+    "id": "acc.lipid.2026.bas_safe_pregnancy_lactation",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 76,
+    "printedPage": "2699",
+    "locator": "Table 20 / Safety of Lipid-Lowering Medications in Pregnancy & Lactation – Bile Acid Sequestrants / p. 76",
+    "quote": "Bileacid sequestrants Safetouse. Noevidenceofrisk inhumansdueto lackof systemic absorption",
+    "quoteVi": "ACC/AHA 2026 Bảng 20: Nhựa gắn acid mật (cholestyramine, colesevelam) không hấp thu vào tuần hoàn chung nên an toàn trong thai kỳ và không bài tiết vào sữa mẹ (lưu ý theo dõi thiếu hụt vitamin tan trong dầu A, D, E, K nếu dùng kéo dài)."
+  },
+  {
+    "id": "acc.lipid.2026.bas_tg_300_contra",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 77,
+    "printedPage": "2700",
+    "locator": "Bile Acid Sequestrants / Triglyceride >= 300 mg/dL (3.4 mmol/L) / p. 77",
+    "quote": "TheyshouldnotbeusedwhenTGlevels $300 mg/dL(3.4mmol/L)",
+    "quoteVi": "ACC/AHA 2026: Không sử dụng nhựa gắn acid mật khi nồng độ triglycerid máu ≥ 300 mg/dL (3.4 mmol/L) và chống chỉ định khi TG ≥ 500 mg/dL hoặc có tiền sử viêm tụy cấp do tăng triglycerid."
+  },
+  {
+    "id": "acc.lipid.2026.statin_ckd_safety",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 79,
+    "printedPage": "2702",
+    "locator": "Chronic Kidney Disease / Statin Safety in CKD / p. 79",
+    "quote": "The available clinical trialdatahaveshownsimilarsafetyofstatins,ezetimibe, and PCSK9 mAb among patients with or without CKD.",
+    "quoteVi": "ACC/AHA 2026: Dữ liệu thử nghiệm lâm sàng cho thấy tính an toàn tương đương của nhóm statin ở bệnh nhân có hoặc không có bệnh thận mạn (thận trọng dùng liều thấp/vừa khi eGFR < 30 mL/phút/1.73m² với lovastatin và fluvastatin)."
+  },
+  {
+    "id": "acc.lipid.2026.lovastatin_pi_contra",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 81,
+    "printedPage": "2704",
+    "locator": "Table 22 / Statin Antiretroviral Interactions – Lovastatin Contraindicated / p. 81",
+    "quote": "Lovastatin11 All proteaseinhibitors Contraindicated.",
+    "quoteVi": "ACC/AHA 2026 Bảng 22: Chống chỉ định tuyệt đối phối hợp Lovastatin với tất cả các thuốc ức chế protease HIV và chất ức chế mạnh CYP3A4."
+  },
+  {
+    "id": "acc.lipid.2026.ddi_table27_lovastatin_caps",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 98,
+    "printedPage": "2721",
+    "locator": "Table 27 / Lovastatin Dose Limits with Amiodarone, Amlodipine, Diltiazem, Dronedarone, Gemfibrozil / p. 98",
+    "quote": "Amiodarone Lovastatin Limitdoseoflovastatinto 40mgdaily",
+    "quoteVi": "ACC/AHA 2026 Bảng 27: Giới hạn liều Lovastatin tối đa 40 mg/ngày với Amiodarone (hoặc Ticagrelor), 20 mg/ngày với Amlodipine/Diltiazem/Verapamil, 10 mg/ngày với Dronedarone và tránh phối hợp với Gemfibrozil."
+  },
+  {
+    "id": "acc.lipid.2026.active_liver_disease_contra",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 99,
+    "printedPage": "2722",
+    "locator": "Section on Statin Safety / Active Liver Disease vs Stable MASLD / p. 99",
+    "quote": "Unlike in active liver disease, statins are not contra- indicatedinpatientswithchronic,stableliverdisease",
+    "quoteVi": "ACC/AHA 2026: Statin bị chống chỉ định trong bệnh gan cấp tính đang hoạt động hoặc suy gan mất bù, nhưng không chống chỉ định ở bệnh gan mạn ổn định / gan nhiễm mỡ chuyển hóa (MASLD)."
+  },
+  {
+    "id": "esc.lipid.2019.bas_spacing_4h_before_1h_after",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 31,
+    "printedPage": "141",
+    "locator": "Section 8.3.4 / Bile Acid Sequestrants – Adverse Effects and Drug Interactions / p. 31",
+    "quote": "Bile acid sequestrants have major drug interactions with several commonly prescribed drugs, and must therefore be administered either 4 h before or 1 h after other drugs.",
+    "quoteVi": "ESC/EAS 2019 Mục 8.3.4: Nhựa gắn acid mật (cholestyramine, colesevelam, colestipol) gây tương tác hấp thu nghiêm trọng với nhiều thuốc uống thông dụng (kháng vitamin K warfarin/acenocoumarol, levothyroxine, digoxin, lợi tiểu thiazide...); các thuốc dùng kèm phải uống ít nhất 1 giờ trước hoặc 4 giờ sau khi uống nhựa gắn acid mật."
+  },
+  {
+    "id": "fda.rosuvastatin.antiviral_10mg_cap",
+    "sourceId": "fda_rosuvastatin",
+    "pdfPage": 12,
+    "locator": "Table 5 / Additional Anti-Viral Medications – Initiate 5 mg, Do Not Exceed 10 mg Daily / p. 12",
+    "quote": "Initiate with CRESTOR 5 mg once daily, and do not exceed a dosage of CRESTOR 10 mg once daily.",
+    "quoteVi": "Nhãn FDA Crestor Bảng 5: Khi phối hợp các thuốc kháng virus ức chế OATP1B1/BCRP (atazanavir/ritonavir, lopinavir/ritonavir, sofosbuvir/velpatasvir, glecaprevir/pibrentasvir, simeprevir...), khởi đầu Rosuvastatin 5 mg/ngày và không vượt quá 10 mg x 1 lần/ngày (hoặc tạm ngưng trong đợt nirmatrelvir/ritonavir ngắn ngày)."
+  },
+  {
+    "id": "fda.rosuvastatin.darolutamide_5mg_cap",
+    "sourceId": "fda_rosuvastatin",
+    "pdfPage": 11,
+    "locator": "Table 5 / Darolutamide – Do Not Exceed 5 mg Once Daily / p. 11",
+    "quote": "In patients taking darolutamide, do not exceed a dosage of CRESTOR 5 mg once daily",
+    "quoteVi": "Nhãn FDA Crestor Bảng 5: Ở bệnh nhân đang dùng darolutamide (tăng AUC rosuvastatin > 5 lần), không được vượt quá liều Rosuvastatin 5 mg x 1 lần/ngày."
+  },
+  {
+    "id": "fda.rosuvastatin.regorafenib_10mg_cap",
+    "sourceId": "fda_rosuvastatin",
+    "pdfPage": 12,
+    "locator": "Table 5 / Regorafenib – Do Not Exceed 10 mg Once Daily / p. 12",
+    "quote": "In patients taking regorafenib, do not exceed a dosage of CRESTOR 10 mg once daily",
+    "quoteVi": "Nhãn FDA Crestor Bảng 5: Ở bệnh nhân đang dùng regorafenib, không được vượt quá liều Rosuvastatin 10 mg x 1 lần/ngày."
+  },
+  {
+    "id": "fda.rosuvastatin.ledipasvir_voxilaprevir_avoid",
+    "sourceId": "fda_rosuvastatin",
+    "pdfPage": 11,
+    "locator": "Table 5 / Sofosbuvir/velpatasvir/voxilaprevir or Ledipasvir/sofosbuvir – Avoid / p. 11",
+    "quote": "Sofosbuvir/velpatasvir/voxilaprevir or Ledipasvir/sofosbuvir Prevention or Management: Avoid concomitant use with CRESTOR.",
+    "quoteVi": "Nhãn FDA Crestor Bảng 5: Tránh dùng đồng thời Rosuvastatin với phác đồ sofosbuvir/velpatasvir/voxilaprevir hoặc ledipasvir/sofosbuvir."
+  }
+]

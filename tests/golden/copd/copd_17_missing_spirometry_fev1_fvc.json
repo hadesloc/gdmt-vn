@@ -1,0 +1,55 @@
+{
+  "id": "copd_17_missing_spirometry_fev1_fvc",
+  "titleVi": "COPD thiếu FEV₁/FVC: Yêu cầu đo CNHH (Fail-Closed)",
+  "source": "GOLD 2026 Report p. 15 / Spirometry Required",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_17",
+    "age": 64,
+    "sex": "male",
+    "weight": 62,
+    "height": 165,
+    "sbp": 128,
+    "dbp": 80,
+    "hr": 74,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "fev1PredPct": 60
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "missing_input_fev1FvcRatio",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "tiotropium",
+        "action": "START"
+      }
+    ]
+  }
+}

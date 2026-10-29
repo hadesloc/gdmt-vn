@@ -1,0 +1,84 @@
+{
+  "id": "fluticasone_salmeterol",
+  "nameVi": "Fluticasone / Salmeterol",
+  "inn": "Fluticasone propionate / Salmeterol xinafoate",
+  "class": "ICS-LABA",
+  "vnBrands": [
+    "Seretide Evohaler",
+    "Seretide Accuhaler"
+  ],
+  "forms": [
+    "Bình xịt định liều pMDI 50/25 mcg, 125/25 mcg, 250/25 mcg",
+    "Bình hít bột khô Accuhaler/Diskus 100/50 mcg, 250/50 mcg, 500/50 mcg"
+  ],
+  "start": {
+    "amount": 1,
+    "unit": "liều",
+    "frequency": "2 lần/ngày",
+    "route": "hít",
+    "description": "Track 2 Bậc 3: Accuhaler (DPI) 100/50 mcg: hít 1 liều x 2 lần/ngày; Evohaler (pMDI) 50/25 hoặc 125/25 mcg: xịt 2 nhát x 2 lần/ngày + SABA khi cần"
+  },
+  "target": {
+    "amount": 1,
+    "unit": "liều",
+    "frequency": "2 lần/ngày",
+    "route": "hít",
+    "description": "Track 2 Bậc 4–5: Accuhaler (DPI) 250/50 hoặc 500/50 mcg: hít 1 liều x 2 lần/ngày; Evohaler (pMDI) 250/25 mcg: xịt 2 nhát x 2 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận",
+      "citationIds": [
+        "gina.asthma.2026.table_6_fluticasone_propionate"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Không dùng làm thuốc cắt cơn nhanh (salmeterol khởi phát chậm). Chống chỉ định thuốc chẹn beta không chọn lọc.",
+    "Chất ức chế mạnh CYP3A4 (ritonavir, cobicistat, ketoconazole, itraconazole, clarithromycin, erythromycin): Làm tăng vọt nồng độ fluticasone (gây suy thượng thận / hội chứng Cushing) và salmeterol (gây kéo dài khoảng QT, loạn nhịp thất); không khuyến cáo phối hợp (GINA 2026).",
+    "Dạng bột khô Seretide Accuhaler/Diskus (DPI) chứa tá dược lactose (chống chỉ định ở người bệnh dị ứng nặng / phản vệ với protein sữa bò và kém hiệu quả khi lực hít yếu — cần chuyển sang dạng bình xịt định liều Seretide Evohaler pMDI không chứa lactose kèm buồng đệm).",
+    "Hướng dẫn dùng thuốc: Súc miệng kỹ bằng nước sạch và nhổ đi ngay sau khi hít thuốc để phòng ngừa nấm candida hầu họng và khản tiếng"
+  ],
+  "citationIds": [
+    "gina.asthma.2026.table_6_fluticasone_propionate",
+    "gina.asthma.2026.never_saba_alone",
+    "gina.asthma.2026.cyp3a4_ics_laba_interaction",
+    "byt.asthma.2020.ics_laba_vn_strengths"
+  ],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Nhiều nghiên cứu tiến cứu khẳng định không làm tăng nguy cơ dị tật thai nhi.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Tương thích khi cho con bú.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity",
+      "messageVi": "Quá mẫn với fluticasone hoặc salmeterol",
+      "citationIds": [
+        "gina.asthma.2026.table_6_fluticasone_propionate"
+      ]
+    }
+  ],
+  "classes": [
+    "ics",
+    "laba"
+  ],
+  "components": [
+    "fluticasone_propionate",
+    "salmeterol"
+  ],
+  "qtRisk": "conditional"
+}

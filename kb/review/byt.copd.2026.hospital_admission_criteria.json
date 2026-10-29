@@ -1,0 +1,26 @@
+{
+  "itemId": "byt.copd.2026.hospital_admission_criteria",
+  "contentHash": "51c3fe423602e9445a666be272f0bd801f7e8728b21f66e9a6db27d4de4e8fcb",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "byt.copd.2026.hospital_admission_criteria",
+      "contentHash": "83cf9a933bf2e73d",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

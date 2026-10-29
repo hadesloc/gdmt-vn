@@ -1,0 +1,59 @@
+{
+  "id": "asthma_22_action_plan_generated",
+  "titleVi": "Tự động tạo Bản kế hoạch hành động hen tiếng Việt (3 vùng màu)",
+  "source": "Bộ Y tế QĐ 5850/2021 Phụ lục 4 & GINA 2026",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_22",
+    "name": "Phạm Thị M (40 tuổi)",
+    "age": 40,
+    "sex": "female",
+    "weight": 58,
+    "sbp": 118,
+    "dbp": 76,
+    "hr": 74,
+    "rhythm": "sinus",
+    "fev1Pct": 88,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "currentTrack": "track1",
+      "daytimeSymptomsMoreThanTwiceWeek": false,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false,
+      "pefPct": 90
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_asthma_action_plan_doc",
+        "action": "MONITOR"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Tự động tạo bản Kế hoạch hành động hen tiếng Việt chuẩn y khoa để in hoặc sao chép."
+}

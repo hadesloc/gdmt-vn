@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.dose.rosuva_asian_start",
+  "contentHash": "679201c006446d0b63f298b4148d97612a8f41d73cd8d4c8f95a9f8c7ebf1cd6",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.dose.rosuva_asian_start",
+      "contentHash": "150f9c68d43872d3",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.dose.rosuva_asian_start."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

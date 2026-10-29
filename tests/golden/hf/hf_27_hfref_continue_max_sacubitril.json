@@ -1,0 +1,63 @@
+{
+  "id": "hf_27_hfref_continue_max_sacubitril",
+  "titleVi": "HFrEF đang dùng Sacubitril/valsartan 97/103 mg bid: Duy trì liều đích tối ưu",
+  "source": "ESC 2026 HF Table 11",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 120,
+    "dbp": 75,
+    "hr": 70,
+    "lvef": 30,
+    "nyha": 2,
+    "scr": 90,
+    "k": 4.3,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "sacubitril_valsartan",
+        "name": "Sacubitril/valsartan",
+        "dose": "97/103",
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "hf"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "CONTINUE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "UPTITRATE"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Đã đạt liều đích 97/103 mg bid -> Tiếp tục duy trì."
+}

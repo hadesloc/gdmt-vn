@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.exac_rr_life_threatening",
+  "contentHash": "df76cc813bb104487fde2e4b746e82fb17e2a0a1f48684447dafe098046016f3",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.exac_rr_life_threatening",
+      "contentHash": "f30d4b6c392bfcae",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

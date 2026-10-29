@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.statin_itraconazole",
+  "contentHash": "6ffaeaaa8f1a719daf34dfdcf49f2dc8eeb27774168413ca2e72a868eb3b87fa",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.statin_itraconazole",
+      "contentHash": "4d8c04c899d4672b",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.statin_itraconazole."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

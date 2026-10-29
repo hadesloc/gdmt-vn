@@ -1,0 +1,35 @@
+{
+  "itemId": "dm2.perioperative.basal_reduce_pct",
+  "contentHash": "8e297b1117b6be938d87e1b44d24210ce724623bebed6081475a4f50b3a1f26f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "dm2.perioperative.basal_reduce_pct",
+      "contentHash": "3e47bc3d0159a4ac",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-27T15:25:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T15:25:00.000Z",
+          "role": "Agent F3 (DM2 Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Created and verified dm2.perioperative.basal_reduce_pct for DM2 Round 2 remediation."
+        },
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T15:25:00.000Z",
+          "role": "Agent F3 (DM2 Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Verified dm2.perioperative.basal_reduce_pct contentHash, verbatim PDF quotes, and Round 2 R1/R2/R3 clinical schema compliance."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

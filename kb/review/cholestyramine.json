@@ -1,0 +1,26 @@
+{
+  "itemId": "cholestyramine",
+  "contentHash": "a31c4a06963805ce57d4e16db6db5a24ffb28f3231500ce38192d32853c74fc8",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "cholestyramine",
+      "contentHash": "3cd1f3d11609dad7",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateDrugEntry, dải thận liên tục không chồng lấn, an toàn thai kỳ/cho con bú và trích dẫn nguyên văn PDF cho cholestyramine."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

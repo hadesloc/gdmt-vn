@@ -1,0 +1,59 @@
+{
+  "id": "ckd_sglt2i_sample",
+  "titleVi": "Bệnh nhân ĐTĐ2 kèm CKD giai đoạn 3a, eGFR 52 - Khởi trị SGLT2i",
+  "source": "KDIGO 2024 CKD Rec 1.3.1 / kdigo.ckd.2024.sglt2i_initiate",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_sample_ckd",
+    "name": "Bệnh nhân mẫu CKD",
+    "age": 62,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 132,
+    "dbp": 82,
+    "hr": 72,
+    "scr": 125,
+    "k": 4.6,
+    "uacr": 25,
+    "conditions": {
+      "dm": true,
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "_demo"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dapagliflozin",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "dapagliflozin",
+        "action": "STOP"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Ca kiểm tra tích hợp runner cho module demo/ckd."
+}

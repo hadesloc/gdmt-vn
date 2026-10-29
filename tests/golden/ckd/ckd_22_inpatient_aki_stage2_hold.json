@@ -1,0 +1,67 @@
+{
+  "id": "ckd_22_inpatient_aki_stage2_hold",
+  "titleVi": "Nội viện - Tạm ngừng Empagliflozin và Enalapril khi có AKI Giai đoạn 2",
+  "source": "KDIGO 2024 CKD PP 3.7.2 / kdigo.ckd.2024.pp_3_7_2_sick_day_hold",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_22",
+    "name": "BN CKD 22",
+    "age": 72,
+    "sex": "male",
+    "weight": 66,
+    "sbp": 108,
+    "dbp": 66,
+    "hr": 82,
+    "scr": 260,
+    "k": 5.2,
+    "conditions": {
+      "ckd": true,
+      "dm": true
+    },
+    "customInputs": {
+      "baselineScr": 120,
+      "akiSuspected": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "empagliflozin",
+        "name": "Jardiance 10 mg",
+        "dose": 10,
+        "unit": "mg"
+      },
+      {
+        "drugId": "enalapril",
+        "name": "Renitec 10 mg",
+        "dose": 10,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_ckd_hold_sick_day",
+        "action": "HOLD"
+      }
+    ]
+  },
+  "descriptionVi": "Bắt buộc HOLD nhóm thuốc ngày ốm trong đợt cấp AKI nội viện."
+}

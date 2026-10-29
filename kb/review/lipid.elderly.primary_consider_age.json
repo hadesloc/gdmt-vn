@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.elderly.primary_consider_age",
+  "contentHash": "c1883950e746915dd4c19b2d09606a04c47803c653017a82c83277ee59b1e191",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.elderly.primary_consider_age",
+      "contentHash": "d72d664fde0a5fb2",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T15:55:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.elderly.primary_consider_age."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T15:55:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

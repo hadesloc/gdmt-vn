@@ -1,0 +1,27 @@
+{
+  "itemId": "hf.ivabradine.hr_target_max",
+  "contentHash": "7c4fb74eec5b2e998e9ccb4736f157c45d9876e81e687d8df51f1dd8ff8ae435",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "hf.ivabradine.hr_target_max",
+      "contentHash": "1644086d56f8337b",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T09:00:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-28T09:00:00.000Z",
+          "role": "Agent G5 (HF Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF threshold hf.ivabradine.hr_target_max (Round 2 R1/R2/R3 remediation & verbatim PDF citation verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

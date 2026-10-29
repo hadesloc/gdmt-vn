@@ -1,0 +1,91 @@
+{
+  "id": "mepolizumab",
+  "nameVi": "Mepolizumab",
+  "inn": "Mepolizumab",
+  "class": "Anti-IL-5 monoclonal antibody",
+  "vnBrands": [
+    "Nucala"
+  ],
+  "forms": [
+    "Bút tiêm tự động nạp sẵn / bơm tiêm nạp sẵn 100 mg/mL",
+    "Lọ bột đông khô pha tiêm 100 mg"
+  ],
+  "start": {
+    "amount": 100,
+    "unit": "mg",
+    "frequency": "mỗi 4 tuần",
+    "route": "tiêm dưới da",
+    "description": "100 mg tiêm dưới da mỗi 4 tuần (Q4W) cho COPD có đợt cấp tái diễn dù đã tối ưu thuốc hít và BCAT máu ≥ 300 /µL"
+  },
+  "target": {
+    "amount": 100,
+    "unit": "mg",
+    "frequency": "mỗi 4 tuần",
+    "route": "tiêm dưới da",
+    "description": "100 mg tiêm dưới da mỗi 4 tuần"
+  },
+  "titration": {
+    "step": "Duy trì liều cố định mỗi 4 tuần",
+    "intervalDays": 28,
+    "maxDose": "100 mg mỗi 4 tuần"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều khi eGFR ≥ 15 mL/phút/1.73m²",
+      "citationIds": [
+        "gina.copd.2026.mepolizumab_100mg_q4w",
+        "gold.copd.2026.biologics_dupilumab_mepolizumab"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận (thải trừ qua thận không đáng kể)",
+      "citationIds": [
+        "gina.copd.2026.mepolizumab_100mg_q4w",
+        "gold.copd.2026.biologics_dupilumab_mepolizumab"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Không ngừng đột ngột corticoid toàn thân khi bắt đầu mepolizumab",
+    "Điều trị nhiễm ký sinh trùng trước khi khởi trị nếu có"
+  ],
+  "citationIds": [
+    "gold.copd.2026.biologics_dupilumab_mepolizumab",
+    "gina.copd.2026.mepolizumab_100mg_q4w",
+    "gina.copd.2026.pregnancy_biologics_scarce"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Dữ liệu sử dụng thuốc sinh học kháng IL-5 trong thai kỳ còn hạn chế; kháng thể IgG1 đi qua nhau thai, chỉ dùng khi lợi ích kiểm soát bệnh vượt trội nguy cơ tiềm ẩn.",
+    "citationIds": [
+      "gina.copd.2026.pregnancy_biologics_scarce"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Kháng thể đơn dòng IgG1 người bài tiết lượng nhỏ vào sữa mẹ; cần cân nhắc lợi ích nuôi con bằng sữa mẹ và lợi ích kiểm soát bệnh hô hấp cho mẹ.",
+    "citationIds": [
+      "gina.copd.2026.pregnancy_biologics_scarce"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity_mepolizumab",
+      "messageVi": "Chống chỉ định ở người quá mẫn với mepolizumab",
+      "citationIds": [
+        "gold.copd.2026.biologics_dupilumab_mepolizumab"
+      ]
+    }
+  ],
+  "classes": [
+    "biologic_anti_il5"
+  ]
+}

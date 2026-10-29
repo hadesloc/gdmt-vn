@@ -1,0 +1,26 @@
+{
+  "itemId": "byt.copd.2026.niv_contra_shock_appendix5",
+  "contentHash": "d5b21233e59f02a675a8dc5291b84789ba45cfdab307ae5d12978b64ced03fee",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "byt.copd.2026.niv_contra_shock_appendix5",
+      "contentHash": "399acfdbef7acab4",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

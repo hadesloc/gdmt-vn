@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.dose.simva_ticagrelor_max",
+  "contentHash": "acbc18dc1cedc83e3b4746577d3695ab032641c7195a9737e4c9ddf225a729df",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.dose.simva_ticagrelor_max",
+      "contentHash": "6c0dd3b2cca159fe",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.dose.simva_ticagrelor_max."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

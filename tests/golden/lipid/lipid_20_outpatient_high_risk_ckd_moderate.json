@@ -1,0 +1,52 @@
+{
+  "id": "lipid_20_outpatient_high_risk_ckd_moderate",
+  "titleVi": "CKD giai đoạn 3b thuộc nhóm nguy cơ cao - Khởi trị Statin",
+  "source": "ESC/EAS 2019 / esc.lipid.2019.target_high",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 66,
+    "sex": "male",
+    "weight": 68,
+    "height": 165,
+    "sbp": 132,
+    "dbp": 80,
+    "hr": 72,
+    "scr": 145,
+    "tc": 4.8,
+    "hdl": 1,
+    "ldl": 2.5,
+    "tg": 1.7,
+    "conditions": {
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": []
+  },
+  "descriptionVi": "CKD G3b xếp nguy cơ cao, đích LDL < 1.8 mmol/L."
+}

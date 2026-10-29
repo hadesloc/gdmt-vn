@@ -1,0 +1,51 @@
+{
+  "id": "ckd_54_us_profile_bp_124_88_diastolic_uptitrate",
+  "titleVi": "Ngoại trú (Hồ sơ US) - Huyết áp 124/88 mmHg (tăng HA tâm trương >= 80 mmHg) chưa đạt đích AHA/ACC 2025 (< 130/80 mmHg) -> Khuyến cáo UPTITRATE (Regression CKD-R2-R1-06)",
+  "source": "2025 AHA/ACC High Blood Pressure Guideline Sec 5.3.8 & ADA 2026 SOC 11",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "US",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_54",
+    "name": "BN CKD 54",
+    "age": 57,
+    "sex": "male",
+    "weight": 80,
+    "sbp": 124,
+    "dbp": 88,
+    "hr": 74,
+    "scr": 130,
+    "k": 4.3,
+    "uacr": 20,
+    "conditions": {
+      "ckd": true,
+      "htn": true
+    },
+    "currentMeds": [
+      { "drugId": "losartan", "name": "Cozaar 50 mg", "dose": 50, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "rec_ckd_bp_target", "action": "UPTITRATE" }
+    ],
+    "mustNotInclude": [
+      { "ruleId": "rec_ckd_bp_target", "action": "CONTINUE" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R2-R1-06: Hồ sơ US hiển thị đúng đích AHA/ACC 2025 (< 130/80 mmHg) và phát hiện tăng HA tâm trương đơn độc (DBP 88 >= 80 mmHg)."
+}

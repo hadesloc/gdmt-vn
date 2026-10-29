@@ -1,0 +1,1136 @@
+[
+  {
+    "id": "fda.atorvastatin.clarithromycin_dose_cap",
+    "sourceId": "fda_atorvastatin",
+    "pdfPage": 5,
+    "locator": "Section 2.5 / Table 1 / p. 5",
+    "quote": "In patients taking clarithromycin or itraconazole, do not exceed LIPITOR 20 mg once daily",
+    "quoteVi": "Ở bệnh nhân đang dùng clarithromycin hoặc itraconazole, không dùng quá liều LIPITOR 20 mg một lần mỗi ngày."
+  },
+  {
+    "id": "fda.rosuvastatin.cyclosporine_dose_cap",
+    "sourceId": "fda_rosuvastatin",
+    "pdfPage": 11,
+    "locator": "Section 7 / Drug Interactions Table / p. 11",
+    "quote": "In patients taking cyclosporine, do not exceed a dosage of CRESTOR 5 mg once daily",
+    "quoteVi": "Ở bệnh nhân đang dùng cyclosporine, không dùng vượt quá liều CRESTOR 5 mg một lần mỗi ngày."
+  },
+  {
+    "id": "fda.rosuvastatin.gemfibrozil_avoid",
+    "sourceId": "fda_rosuvastatin",
+    "pdfPage": 11,
+    "locator": "Section 7 / Drug Interactions Table / p. 11",
+    "quote": "Avoid concomitant use of gemfibrozil with CRESTOR. If use is unavoidable, initiate CRESTOR at 5 mg once daily and do not exceed a dosage of CRESTOR 10 mg once daily",
+    "quoteVi": "Tránh sử dụng đồng thời gemfibrozil với CRESTOR. Nếu bắt buộc phải dùng, khởi đầu CRESTOR ở liều 5 mg/ngày và không vượt quá 10 mg một lần mỗi ngày."
+  },
+  {
+    "id": "fda.amiodarone.simvastatin_dose_limit",
+    "sourceId": "fda_amiodarone",
+    "pdfPage": 11,
+    "locator": "Section 7 / Table 4 / p. 11",
+    "quote": "Limit the coadministered dose of simvastatin to 20 mg",
+    "quoteVi": "Giới hạn liều dùng đồng thời của simvastatin ở mức 20 mg mỗi ngày."
+  },
+  {
+    "id": "fda.diltiazem.simvastatin_limit_10mg",
+    "sourceId": "fda_diltiazem",
+    "pdfPage": 8,
+    "locator": "Section 7 / Drug Interactions / p. 8",
+    "quote": "simvastatin with diltiazem is required, limit the daily doses of simvastatin to 10 mg and diltiazem to 240 mg",
+    "quoteVi": "Nếu bắt buộc phải phối hợp simvastatin với diltiazem, giới hạn liều hàng ngày của simvastatin ở mức 10 mg và diltiazem ở mức 240 mg."
+  },
+  {
+    "id": "fda.atorvastatin.cyp3a4_inhibitors_myopathy",
+    "sourceId": "fda_atorvastatin",
+    "pdfPage": 10,
+    "locator": "Section 7 / Drug Interactions / p. 10",
+    "quote": "LIPITOR plasma levels can be significantly increased with concomitant administration of inhibitors of CYP3A4 and transporters",
+    "quoteVi": "Nồng độ LIPITOR trong huyết tương có thể tăng lên đáng kể khi dùng đồng thời với các chất ức chế CYP3A4 và chất vận chuyển."
+  },
+  {
+    "id": "fda.colchicine.statin_myopathy_cases",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 13,
+    "locator": "Section 7.3 / Other Drugs / p. 13",
+    "quote": "addition of one drug to a stable long- term regimen of the other has resulted in myopathy and rhabdomyolysis (including a fatality)",
+    "quoteVi": "Việc thêm một thuốc vào phác đồ dài hạn ổn định của thuốc kia đã dẫn đến bệnh cơ và tiêu cơ vân (bao gồm cả trường hợp tử vong)."
+  },
+  {
+    "id": "fda.amlodipine.simvastatin_limit_20mg",
+    "sourceId": "fda_label_amlodipine",
+    "pdfPage": 8,
+    "locator": "Section 7.2 / Drug Interactions / p. 8",
+    "quote": "Limit the dose of simvastatin in patients on amlodipine to 20 mg daily",
+    "quoteVi": "Giới hạn liều simvastatin ở bệnh nhân đang dùng amlodipine ở mức 20 mg mỗi ngày."
+  },
+  {
+    "id": "fda.bempedoic.simvastatin_avoid_gt_20mg",
+    "sourceId": "fda_bempedoic_acid",
+    "pdfPage": 1,
+    "locator": "Section 7 / Drug Interactions / p. 1",
+    "quote": "Avoid concomitant use of NEXLETOL with simvastatin greater than 20 mg",
+    "quoteVi": "Tránh sử dụng đồng thời NEXLETOL với simvastatin liều lớn hơn 20 mg."
+  },
+  {
+    "id": "fda.atorvastatin.itraconazole_limit_20mg",
+    "sourceId": "fda_atorvastatin",
+    "pdfPage": 5,
+    "locator": "Section 2.5 / Table 1 / p. 5",
+    "quote": "In patients taking clarithromycin or itraconazole, do not exceed LIPITOR 20 mg once daily",
+    "quoteVi": "Ở bệnh nhân đang dùng clarithromycin hoặc itraconazole, không dùng quá liều LIPITOR 20 mg một lần mỗi ngày."
+  },
+  {
+    "id": "fda.apixaban.strong_cyp3a4_pgp_dose_reduction",
+    "sourceId": "fda_apixaban",
+    "pdfPage": 17,
+    "locator": "Section 2.5 / Dose Adjustments / p. 17",
+    "quote": "decreased by 50% when coadministered with drugs that are combined P-gp and strong CYP3A4 inhibitors (e.g., ketoconazole, itraconazole, ritonavir)",
+    "quoteVi": "Giảm 50% liều ELIQUIS khi dùng đồng thời với các thuốc vừa ức chế P-gp vừa ức chế mạnh CYP3A4 (ví dụ: ketoconazole, itraconazole, ritonavir)."
+  },
+  {
+    "id": "fda.apixaban.strong_inducers_avoid",
+    "sourceId": "fda_apixaban",
+    "pdfPage": 17,
+    "locator": "Section 7.2 / p. 17",
+    "quote": "Avoid concomitant use of ELIQUIS with combined P-gp and strong CYP3A4 inducers (e.g., rifampin, carbamazepine, phenytoin, St. John’s wort) because such drugs will decrease exposure to apixaban",
+    "quoteVi": "Tránh sử dụng đồng thời ELIQUIS với các thuốc vừa ức chế P-gp vừa cảm ứng mạnh CYP3A4 (ví dụ: rifampin, carbamazepine, phenytoin, St. John's wort) vì các thuốc này làm giảm nồng độ apixaban."
+  },
+  {
+    "id": "fda.rivaroxaban.avoid_strong_inhibitors",
+    "sourceId": "fda_rivaroxaban",
+    "pdfPage": 30,
+    "locator": "Section 7.2 / Drug Interactions / p. 30",
+    "quote": "Avoid concomitant administration of XARELTO with known combined P-gp and strong CYP3A inhibitors (e.g., ketoconazole and ritonavir)",
+    "quoteVi": "Tránh dùng đồng thời XARELTO với các chất ức chế kết hợp P-gp và CYP3A mạnh đã biết (ví dụ ketoconazole và ritonavir)."
+  },
+  {
+    "id": "fda.apixaban.nsaid_bleeding_risk",
+    "sourceId": "fda_apixaban",
+    "pdfPage": 4,
+    "locator": "Boxed Warning / Spinal/Epidural Hematoma / p. 4",
+    "quote": "concomitant use of other drugs that affect hemostasis, such as nonsteroidal anti-inflammatory drugs (NSAIDs), platelet inhibitors, other anticoagulants",
+    "quoteVi": "Sử dụng đồng thời các thuốc khác ảnh hưởng đến cầm máu, chẳng hạn như thuốc chống viêm không steroid (NSAID), thuốc ức chế kết tập tiểu cầu, các thuốc chống đông máu khác."
+  },
+  {
+    "id": "esc.af.2024.antiplatelet_oac_not_recommended",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 9,
+    "locator": "Recommendation Table 8 / Section 6.3 / p. 33",
+    "quote": "Adding antiplatelet treatment to oral anticoagulation is not recommended in AF patients for the goal of preventing ischaemic stroke or thromboembolism",
+    "quoteVi": "Không khuyến cáo thêm thuốc kháng kết tập tiểu cầu vào phác đồ kháng đông đường uống ở bệnh nhân rung nhĩ nhằm mục đích dự phòng đột quỵ thiếu máu cục bộ hoặc thuyên tắc huyết khối.",
+    "cor": "III"
+  },
+  {
+    "id": "fda.warfarin.cyp2c9_amiodarone",
+    "sourceId": "fda_warfarin",
+    "pdfPage": 11,
+    "locator": "Section 7.1 / Table 2 / p. 11",
+    "quote": "Table 2: Examples of CYP450 Interactions with Warfarin Enzyme Inhibitors Inducers CYP2C9 amiodarone",
+    "quoteVi": "Bảng 2: Ví dụ về tương tác CYP450 với Warfarin - Chất ức chế CYP2C9: amiodarone."
+  },
+  {
+    "id": "fda.warfarin.nsaid_monitoring",
+    "sourceId": "fda_warfarin",
+    "pdfPage": 2,
+    "locator": "Section 7.2 / Drug Interactions / p. 2",
+    "quote": "any such drug (e.g., other anticoagulants, antiplatelet agents, nonsteroidal anti-inflammatory drugs, serotonin reuptake inhibitors)",
+    "quoteVi": "Bất kỳ thuốc nào làm tăng nguy cơ chảy máu: Theo dõi chặt chẽ bệnh nhân dùng thuốc đó (ví dụ các thuốc chống đông khác, thuốc kháng tiểu cầu, thuốc chống viêm không steroid, thuốc ức chế tái hấp thu chọn lọc serotonin)."
+  },
+  {
+    "id": "fda.warfarin.antibiotics_inr_monitoring",
+    "sourceId": "fda_warfarin",
+    "pdfPage": 2,
+    "locator": "Section 7.2 / Antibiotics and Antifungals / p. 2",
+    "quote": "Antibiotics and antifungals: Closely monitor INR when initiating or stopping an antibiotic or antifungal",
+    "quoteVi": "Kháng sinh và thuốc kháng nấm: Theo dõi chặt chẽ INR khi bắt đầu hoặc ngừng một thuốc kháng sinh hoặc thuốc kháng nấm."
+  },
+  {
+    "id": "fda.dabigatran.dronedarone_interaction",
+    "sourceId": "fda_dabigatran",
+    "pdfPage": 26,
+    "locator": "Section 17 / Patient Counseling / p. 26",
+    "quote": "dabigatran exposure (e.g., dronedarone or systemic ketoconazole) [see Warnings and Precautions (5.2 , 5.5) ]",
+    "quoteVi": "Bệnh nhân cần thông báo cho bác sĩ nếu đang dùng các thuốc làm tăng nồng độ dabigatran (ví dụ dronedarone hoặc ketoconazole đường toàn thân)."
+  },
+  {
+    "id": "esc.af.2024.dabigatran_verapamil_dose_reduction",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 32,
+    "locator": "Table 6 / DOAC Dose Selection / p. 32",
+    "quote": "Dabigatran 150 mg twice daily Dose reduction recommended if any apply: (i) age ≥80 years (ii) receiving concomitant verapamil",
+    "quoteVi": "Dabigatran 150 mg hai lần mỗi ngày: Khuyến cáo giảm liều nếu có bất kỳ tiêu chí nào: (i) tuổi ≥ 80 (ii) đang dùng đồng thời verapamil."
+  },
+  {
+    "id": "esc.af.2024.edoxaban_pgp_30mg",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 32,
+    "locator": "Table 6 / DOAC Dose Selection / p. 32",
+    "quote": "concomitant use of ciclosporin, dronedarone, erythromycin, or ketoconazole. 30 mg once daily",
+    "quoteVi": "Giảm liều Edoxaban xuống 30 mg một lần mỗi ngày khi sử dụng đồng thời với ciclosporin, dronedarone, erythromycin hoặc ketoconazole."
+  },
+  {
+    "id": "esc.af.2024.bleeding_interrupt",
+    "sourceId": "esc_2024_af",
+    "pdfPage": 38,
+    "locator": "Recommendation Table 13 / p. 38",
+    "quote": "Interrupting anticoagulation and performing diagnostic or treatment interventions is recommended in AF patients with active bleeding until the cause of bleeding is identified and resolved",
+    "quoteVi": "Khuyến cáo tạm ngừng thuốc chống đông và thực hiện các can thiệp chẩn đoán hoặc điều trị ở bệnh nhân rung nhĩ đang xuất huyết hoạt động cho đến khi xác định và xử trí được nguyên nhân xuất huyết."
+  },
+  {
+    "id": "fda.diltiazem.beta_blocker_additive_conduction",
+    "sourceId": "fda_diltiazem",
+    "pdfPage": 5,
+    "locator": "Section 5.1 / Bradycardia / p. 5",
+    "quote": "Concomitant use of diltiazem with beta-blockers or digitalis may result in additive effects on cardiac conduction",
+    "quoteVi": "Sử dụng đồng thời diltiazem với các thuốc chẹn beta hoặc digitalis có thể dẫn đến tác dụng cộng dồn trên dẫn truyền cơ tim."
+  },
+  {
+    "id": "fda.amiodarone.digoxin_reduce_half",
+    "sourceId": "fda_amiodarone",
+    "pdfPage": 10,
+    "locator": "Section 7 / Table 3 / p. 10",
+    "quote": "Reduce digoxin by half or discontinue. If continued, monitor for evidence of",
+    "quoteVi": "Giảm một nửa liều digoxin hoặc ngừng thuốc. Nếu tiếp tục dùng, theo dõi bằng chứng ngộ độc."
+  },
+  {
+    "id": "fda.digoxin.amiodarone_verapamil_interactions",
+    "sourceId": "fda_digoxin",
+    "pdfPage": 11,
+    "locator": "Section 7.1 / Table 1 / p. 11",
+    "quote": "Measure serum digoxin concentrations before initiating concomitant drugs. Reduce digoxin concentrations by decreasing the dose by approximately 15-30% or by modifying the dosing frequency and continue monitoring",
+    "quoteVi": "Đo nồng độ digoxin huyết thanh trước khi bắt đầu dùng thuốc phối hợp. Giảm nồng độ digoxin bằng cách giảm liều khoảng 15-30% hoặc điều chỉnh tần suất dùng thuốc và tiếp tục theo dõi."
+  },
+  {
+    "id": "fda.ivabradine.verapamil_diltiazem_avoid",
+    "sourceId": "fda_ivabradine",
+    "pdfPage": 6,
+    "locator": "Section 5.3 / Bradycardia and Conduction Disturbances / p. 6",
+    "quote": "Concurrent use of verapamil or diltiazem will increase Corlanor exposure, may themselves contribute to heart rate lowering, and should be avoided",
+    "quoteVi": "Sử dụng đồng thời verapamil hoặc diltiazem sẽ làm tăng nồng độ phơi nhiễm Corlanor, tự bản thân chúng cũng góp phần làm giảm tần số tim và cần phải tránh phối hợp."
+  },
+  {
+    "id": "fda.ivabradine.contraindication_strong_cyp3a4",
+    "sourceId": "fda_ivabradine",
+    "pdfPage": 5,
+    "locator": "Section 4 / Contraindications / p. 5",
+    "quote": "Concomitant use of strong cytochrome P450 3A4 (CYP3A4) inhibitors",
+    "quoteVi": "Chống chỉ định dùng đồng thời với các chất ức chế mạnh cytochrome P450 3A4 (CYP3A4)."
+  },
+  {
+    "id": "esc.hf.2026.non_dhp_ccb_contraindicated",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 64,
+    "locator": "Section 13.1 / Hypertension / p. 64",
+    "quote": "Non-dihydropyridine calcium channel blockers, e.g. verapamil and diltiazem, and central sym- pathetic agonists, e.g. moxonidine, are contraindicated due to poor outcomes in patients with HFrEF",
+    "quoteVi": "Thuốc chẹn kênh calci non-dihydropyridine (ví dụ verapamil và diltiazem) và thuốc đồng vận giao cảm trung ương (ví dụ moxonidine) bị chống chỉ định do kết cục lâm sàng xấu ở bệnh nhân HFrEF."
+  },
+  {
+    "id": "fda.carvedilol.contraindication_asthma",
+    "sourceId": "fda_carvedilol",
+    "pdfPage": 5,
+    "locator": "Section 4 / Contraindications / p. 5",
+    "quote": "COREG is contraindicated in the following conditions: Bronchial asthma or related bronchospastic conditions. Deaths from status asthmaticus have been reported following single doses of COREG",
+    "quoteVi": "COREG bị chống chỉ định trong các tình trạng sau: Hen phế quản hoặc các tình trạng co thắt phế quản liên quan. Đã có báo cáo tử vong do cơn hen ác tính chỉ sau liều đơn COREG."
+  },
+  {
+    "id": "fda.azithromycin.qt_prolongation_torsades",
+    "sourceId": "fda_azithromycin",
+    "pdfPage": 6,
+    "locator": "Section 5.4 / QT Prolongation / p. 6",
+    "quote": "Prolonged cardiac repolarization and QT interval, imparting a risk of developing cardiac arrhythmia and torsades de pointes, have been seen with treatment with macrolides, including azithromycin",
+    "quoteVi": "Kéo dài quá trình tái cực cơ tim và khoảng QT, làm tăng nguy cơ phát sinh loạn nhịp tim và xoắn đỉnh, đã được ghi nhận khi điều trị bằng nhóm macrolide, bao gồm cả azithromycin."
+  },
+  {
+    "id": "fda.amiodarone.qt_prolonging_drugs_avoid",
+    "sourceId": "fda_amiodarone",
+    "pdfPage": 9,
+    "locator": "Section 7 / Table 3 / p. 9",
+    "quote": "certain phenothiazines, tricyclic antidepressants, certain fluoroquinolone and macrolide antibiotics, azole antifungals, halogenated inhalation anesthetic agents Increased risk of Torsade de Pointes. Avoid concomitant use.",
+    "quoteVi": "Một số dẫn xuất phenothiazine, thuốc chống trầm cảm ba vòng, một số kháng sinh fluoroquinolone và macrolide, thuốc kháng nấm nhóm azole, thuốc mê đường hô hấp halogen hóa: Tăng nguy cơ xoắn đỉnh (Torsade de Pointes). Tránh sử dụng đồng thời."
+  },
+  {
+    "id": "fda.entresto.acei_36h_washout",
+    "sourceId": "fda_sacubitril_valsartan",
+    "pdfPage": 8,
+    "locator": "Section 4 / Contraindications / p. 8",
+    "quote": "Do not administer within 36 hours of switching from or to an ACE inhibitor",
+    "quoteVi": "Không dùng trong vòng 36 giờ khi chuyển từ hoặc sang một thuốc ức chế men chuyển ACE."
+  },
+  {
+    "id": "kdigo.ckd.2024.avoid_dual_rasi",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 43,
+    "locator": "Chapter 3 / Recommendation 3.6.4 / p. 43",
+    "quote": "Recommendation 3.6.4: We recommend avoiding any combination of ACEi, ARB, and direct renin inhibitor (DRI) therapy in people with CKD, with or without diabetes (1B)",
+    "quoteVi": "Khuyến cáo 3.6.4: Chúng tôi khuyến cáo tránh bất kỳ sự phối hợp nào giữa ACEi, ARB và thuốc ức chế trực tiếp renin (DRI) ở người mắc bệnh thận mạn, có hoặc không kèm đái tháo đường (1B).",
+    "cor": "1"
+  },
+  {
+    "id": "fda.entresto.nsaid_triple_whammy",
+    "sourceId": "fda_sacubitril_valsartan",
+    "pdfPage": 12,
+    "locator": "Section 7.3 / NSAIDs / p. 12",
+    "quote": "In patients who are elderly, volume-depleted (including those on diuretic therapy), or with compromised renal function, concomitant use of NSAIDs, including COX-2 inhibitors, with ENTRESTO may result in worsening of renal function, including possible acute renal failure",
+    "quoteVi": "Ở bệnh nhân cao tuổi, giảm thể tích tuần hoàn (bao gồm những người đang dùng thuốc lợi tiểu), hoặc có chức năng thận suy giảm, dùng đồng thời NSAID, bao gồm thuốc ức chế COX-2, với ENTRESTO có thể dẫn đến làm xấu đi chức năng thận, bao gồm cả suy thận cấp."
+  },
+  {
+    "id": "fda.spironolactone.avoid_potassium_supplements",
+    "sourceId": "fda_spironolactone",
+    "pdfPage": 17,
+    "locator": "Section 17 / Patient Counseling / p. 17",
+    "quote": "Patients who receive ALDACTONE should be advised to avoid potassium supplements and foods containing high levels of potassium, including salt substitutes",
+    "quoteVi": "Bệnh nhân dùng ALDACTONE cần được khuyên tránh bổ sung kali và các thực phẩm chứa hàm lượng kali cao, bao gồm cả các chất thay thế muối."
+  },
+  {
+    "id": "fda.entresto.potassium_sparing_diuretics",
+    "sourceId": "fda_sacubitril_valsartan",
+    "pdfPage": 12,
+    "locator": "Section 7.2 / Potassium-Sparing Diuretics / p. 12",
+    "quote": "concomitant use of potassium-sparing diuretics (e.g., spironolactone, triamterene, amiloride), potassium supplements, or salt substitutes containing potassium may lead to increases in serum potassium",
+    "quoteVi": "Dùng đồng thời với thuốc lợi tiểu giữ kali (ví dụ: spironolactone, triamterene, amiloride), thuốc bổ sung kali hoặc các chất thay thế muối chứa kali có thể dẫn đến tăng kali huyết thanh."
+  },
+  {
+    "id": "fda.finerenone.strong_cyp3a4_contraindicated",
+    "sourceId": "fda_finerenone",
+    "pdfPage": 1,
+    "locator": "Section 4 / Contraindications / p. 1",
+    "quote": "Concomitant use with strong CYP3A4 inhibitors. ( 4 , 7.1 ) Patients with adrenal insufficiency",
+    "quoteVi": "Chống chỉ định dùng đồng thời với các chất ức chế mạnh CYP3A4."
+  },
+  {
+    "id": "fda.finerenone.moderate_cyp3a4_increase",
+    "sourceId": "fda_finerenone",
+    "pdfPage": 13,
+    "locator": "Section 12.3 / Drug Interaction Studies / p. 13",
+    "quote": "Concomitant use of erythromycin (moderate CYP3A4 inhibitor) increased finerenone mean AUC",
+    "quoteVi": "Dùng đồng thời erythromycin (chất ức chế vừa CYP3A4) làm tăng diện tích dưới đường cong (AUC) trung bình của finerenone lên 248%; dùng đồng thời verapamil làm tăng AUC trung bình của finerenone lên 170%."
+  },
+  {
+    "id": "fda.spironolactone.contraindication_eplerenone",
+    "sourceId": "fda_spironolactone",
+    "pdfPage": 1,
+    "locator": "Section 4 / Contraindications / p. 1",
+    "quote": "Hyperkalemia Addison's disease Concomitant use of eplerenone",
+    "quoteVi": "Chống chỉ định ALDACTONE: Tăng kali máu, bệnh Addison, sử dụng đồng thời với eplerenone."
+  },
+  {
+    "id": "fda.entresto.lithium_toxicity",
+    "sourceId": "fda_sacubitril_valsartan",
+    "pdfPage": 12,
+    "locator": "Section 7.4 / Lithium / p. 12",
+    "quote": "Increases in serum lithium concentrations and lithium toxicity have been reported during concomitant administration of lithium with angiotensin II receptor antagonists. Monitor serum lithium levels during concomitant use with ENTRESTO.",
+    "quoteVi": "Sự gia tăng nồng độ lithi huyết thanh và độc tính lithi đã được báo cáo khi dùng đồng thời lithi với các thuốc đối kháng thụ thể angiotensin II. Cần theo dõi nồng độ lithi huyết thanh khi sử dụng đồng thời với ENTRESTO."
+  },
+  {
+    "id": "ema.indapamide.lithium_not_recommended",
+    "sourceId": "ema_label_indapamide",
+    "pdfPage": 4,
+    "locator": "Section 4.5 / Interactions / p. 4",
+    "quote": "Lithium: Increased plasma lithium with signs of overdosage, as with a salt -free diet (decreased urinary lithium excretion). However, if the use of diuretics is necessary, careful monitoring of plasma lithium and dose adjustment are required.",
+    "quoteVi": "Lithium: Tăng nồng độ lithi huyết tương kèm theo các dấu hiệu quá liều do giảm bài tiết lithi qua nước tiểu. Nếu bắt buộc phải dùng thuốc lợi tiểu, cần theo dõi chặt chẽ nồng độ lithi huyết tương và hiệu chỉnh liều."
+  },
+  {
+    "id": "fda.allopurinol.azathioprine_dose_reduction",
+    "sourceId": "fda_allopurinol",
+    "pdfPage": 3,
+    "locator": "Section 7 / Drug Interactions / p. 3",
+    "quote": "In patients receiving PURINETHOL (mercaptopurine) or IMURAN (azathioprine), the concomitant administration of 300 to 600 mg of ZYLOPRIM per day will require a reduction in dose to approximately one-third to one-fourth of the usual dose of mercaptopurine or azathioprine",
+    "quoteVi": "Ở bệnh nhân đang dùng mercaptopurine hoặc azathioprine, việc dùng đồng thời 300 đến 600 mg ZYLOPRIM mỗi ngày sẽ đòi hỏi phải giảm liều xuống còn khoảng một phần ba đến một phần tư liều thông thường của mercaptopurine hoặc azathioprine."
+  },
+  {
+    "id": "fda.febuxostat.contraindication_azathioprine",
+    "sourceId": "fda_febuxostat",
+    "pdfPage": 1,
+    "locator": "Section 4 / Contraindications / p. 1",
+    "quote": "ULORIC is contraindicated in patients being treated with azathioprine or mercaptopurine",
+    "quoteVi": "ULORIC bị chống chỉ định ở những bệnh nhân đang được điều trị bằng azathioprine hoặc mercaptopurine."
+  },
+  {
+    "id": "fda.colchicine.contraindication_renal_hepatic",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 1,
+    "locator": "Boxed Warning / p. 1",
+    "quote": "life-threatening interactions and death ( 5.3 , 7 ). Neuromuscular toxicity: Myotoxicity including rhabdomyolysis may occur, especially in combination with other drugs known to cause this effect",
+    "quoteVi": "Các tương tác đe dọa tính mạng và tử vong. Độc tính thần kinh cơ: Bệnh cơ bao gồm tiêu cơ vân có thể xảy ra, đặc biệt khi kết hợp với các thuốc khác gây ra tác dụng này."
+  },
+  {
+    "id": "fda.colchicine.diltiazem_verapamil_dose",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 6,
+    "locator": "Section 2.4 / Dose Modification Table / p. 6",
+    "quote": "Significant increase in colchicine plasma concentration is anticipated. Neuromuscular toxicity has been reported with diltiazem and verapamil interactions. 0.6 mg twice a day 0.6 mg once a day",
+    "quoteVi": "Dự kiến nồng độ colchicine huyết tương tăng đáng kể. Đã có báo cáo độc tính thần kinh cơ do tương tác với diltiazem và verapamil; giảm liều dự phòng từ 0.6 mg hai lần/ngày xuống 0.6 mg một lần/ngày (hoặc 0.3 mg một lần/ngày)."
+  },
+  {
+    "id": "fda.allopurinol.ampicillin_amoxicillin_rash",
+    "sourceId": "fda_allopurinol",
+    "pdfPage": 6,
+    "locator": "PRECAUTIONS / Drug Interactions / p. 6",
+    "quote": "increase in the frequency of skin rash has been reported among patients receiving ampicillin or amoxicillin concurrently with ZYLOPRIM",
+    "quoteVi": "Sự gia tăng tần suất phát ban da đã được báo cáo ở những bệnh nhân dùng đồng thời ampicillin hoặc amoxicillin với ZYLOPRIM."
+  },
+  {
+    "id": "fda.probenecid.methotrexate_toxicity",
+    "sourceId": "fda_probenecid",
+    "pdfPage": 6,
+    "locator": "Section 7 / Table 2 / p. 6",
+    "quote": "Methotrexate ↑ methotrexate If concomitant use cannot be avoided, monitor more frequently for adverse reactions associated with methotrexate as recommended in its prescribing information",
+    "quoteVi": "Methotrexate: Tăng nồng độ methotrexate. Nếu không thể tránh khỏi việc sử dụng đồng thời, hãy theo dõi thường xuyên hơn các phản ứng có hại liên quan đến methotrexate."
+  },
+  {
+    "id": "fda.metformin.iodinated_contrast_precaution",
+    "sourceId": "dailymed_2026_metformin_ir_aurobindo",
+    "pdfPage": 5,
+    "locator": "§5.1 Lactic Acidosis — Radiologic studies with contrast",
+    "quote": "Administration of intravascular iodinated contrast\nagents in metformin-treated patients has led to an acute decrease in renal function\nand the occurrence of lactic acidosis. Stop metformin hydrochloride at the time of, or\nprior to, an iodinated contrast imaging procedure in patients with an eGFR between\n30 and 60 mL/min/1.73 m\n; in patients with a history of hepatic impairment,\nalcoholism or heart failure; or in patients who will be administered intra-arterial\niodinated contrast. Re-evaluate eGFR 48 hours after the imaging procedure, and\nrestart metformin hydrochloride if renal function is stable.",
+    "quoteVi": "Cản quang iod tiêm mạch đã gây giảm chức năng thận cấp và nhiễm toan lactic ở người dùng metformin; ngừng và dùng lại theo điều kiện thận, bệnh nền, đường tiêm và đánh giá48giờ trong nhãn."
+  },
+  {
+    "id": "fda.glimepiride.hypoglycemia_warning",
+    "sourceId": "fda_label_glimepiride",
+    "pdfPage": 1,
+    "locator": "Section 5.1 / Hypoglycemia / p. 1",
+    "quote": "Hypoglycemia: May be severe. Ensure proper patient selection, dosing, and instructions, particularly in at-risk populations (e.g., elderly, renally impaired) and when used with other",
+    "quoteVi": "Hạ đường huyết: Có thể nghiêm trọng. Đảm bảo lựa chọn bệnh nhân, liều lượng và hướng dẫn phù hợp, đặc biệt ở các nhóm nguy cơ cao (ví dụ người cao tuổi, suy thận) và khi dùng phối hợp."
+  },
+  {
+    "id": "fda.pioglitazone.heart_failure_risk",
+    "sourceId": "fda_label_pioglitazone",
+    "pdfPage": 1,
+    "locator": "Boxed Warning / Congestive Heart Failure / p. 1",
+    "quote": "Fluid retention may occur and can exacerbate or lead to congestive heart failure. Combination use with insulin and use in congestive heart failure NYHA Class I and II may increase risk",
+    "quoteVi": "Ứ dịch có thể xảy ra và có thể làm trầm trọng thêm hoặc dẫn đến suy tim sung huyết. Sử dụng kết hợp với insulin và dùng trong suy tim sung huyết NYHA độ I và II có thể làm tăng nguy cơ."
+  },
+  {
+    "id": "fda.dapagliflozin.loop_diuretic_hypotension",
+    "sourceId": "fda_dapagliflozin",
+    "pdfPage": 6,
+    "locator": "Section 5.2 / Volume Depletion / p. 6",
+    "quote": "elderly patients, or patients on loop diuretics may be at increased risk for volume depletion or hypotension",
+    "quoteVi": "Bệnh nhân cao tuổi hoặc bệnh nhân đang dùng thuốc lợi tiểu quai có thể tăng nguy cơ giảm thể tích tuần hoàn hoặc tụt huyết áp khi dùng FARXIGA."
+  },
+  {
+    "id": "ada.2026.soc9.dpp4i_glp1ra_not_recommended",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 10,
+    "locator": "Recommendation 9.18 / p. 10",
+    "quote": "Concurrent use of dipeptidyl pep- tidase 4 (DPP-4) inhibitors with a GLP-1 RA or a dual GIP and GLP-1 RA is not recommended due to lack of additional glucose lowering beyond that of a GLP-1–based therapy",
+    "quoteVi": "Khuyến cáo 9.18: Không khuyến cáo sử dụng đồng thời thuốc ức chế DPP-4 với thuốc đồng vận thụ thể GLP-1 hoặc đồng vận kép GIP/GLP-1 do không mang lại hiệu quả hạ đường huyết bổ sung."
+  },
+  {
+    "id": "gold.copd.2026.theophylline_interactions",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 158,
+    "locator": "Chapter 3 / Methylxanthines Drug Interactions / p. 158",
+    "quote": "erythromycin (but not azithromycin), certain quinolone antibiotics (ciprofloxacin, but not ofloxacin), allopurinol, cimetidine (but not ranitidine)",
+    "quoteVi": "Theophylline có tương tác thuốc có ý nghĩa lâm sàng với nhiều thuốc thông dụng như erythromycin (nhưng không phải azithromycin), một số kháng sinh quinolone (ciprofloxacin, nhưng không phải ofloxacin), allopurinol và cimetidine."
+  },
+  {
+    "id": "fda.roflumilast.concomitant_theophylline",
+    "sourceId": "fda_label_roflumilast",
+    "pdfPage": 16,
+    "locator": "Section 14.1 / Clinical Studies (COPD Trials 3 & 4) / p. 16",
+    "quote": "The use of long-acting beta agonists, long-acting anti-muscarinics, and theophylline were prohibited.",
+    "quoteVi": "Việc sử dụng đồng thời các thuốc chủ vận beta tác dụng kéo dài, kháng muscarinic tác dụng kéo dài và theophylline đã bị nghiêm cấm trong các thử nghiệm lâm sàng nền tảng của roflumilast (không khuyến cáo dùng kèm theophylline duy trì)."
+  },
+  {
+    "id": "fda.roflumilast.strong_cyp_inducers",
+    "sourceId": "fda_label_roflumilast",
+    "pdfPage": 6,
+    "locator": "Section 7.1 / Drugs that Induce Cytochrome P450 (CYP) Enzymes / p. 6",
+    "quote": "Strong cytochrome P450 enzyme inducers decrease systemic exposure to roflumilast and may reduce the therapeutic effectiveness of DALIRESP. Therefore the use of strong cytochrome P450 inducers (e.g., rifampicin, phenobarbital, carbamazepine, and phenytoin) with DALIRESP is not recommended",
+    "quoteVi": "Các chất cảm ứng mạnh enzym cytochrome P450 làm giảm phơi nhiễm toàn thân của roflumilast và có thể làm giảm hiệu quả điều trị của DALIRESP; do đó không khuyến cáo dùng các thuốc cảm ứng mạnh CYP450 (rifampicin, phenobarbital, carbamazepine, phenytoin) cùng DALIRESP."
+  },
+  {
+    "id": "byt.copd.2026.roflumilast_cyp3a4_inducers_contra",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 121,
+    "locator": "Phụ lục 11 / STT 35: Tương tác thuốc chống chỉ định – Roflumilast / tr. 121",
+    "quote": "35 Roflumilast Các thu ốc cảm ứng mạnh CYP3A4 (carbamazep in, phenytoin, enzalutamid, phenobarbit al, rifampicin) Các thu ốc cảm ứng mạnh CYP3A4 cảm ứng chuyển hóa của roflumilast qua gan Giảm n ồng đ ộ roflumilast trong huyết thanh, giảm hi ệu qu ả điều trị Chống ch ỉ định phối hợp",
+    "quoteVi": "Bộ Y tế QĐ 2131/QĐ-BYT 2026 Phụ lục 11 (STT 35): Chống chỉ định phối hợp Roflumilast với các thuốc cảm ứng mạnh CYP3A4 (carbamazepine, phenytoin, enzalutamide, phenobarbital, rifampicin) do giảm nồng độ và hiệu quả điều trị."
+  },
+  {
+    "id": "fda.roflumilast.cyp_inhibitors",
+    "sourceId": "fda_label_roflumilast",
+    "pdfPage": 6,
+    "locator": "Section 7.2 / Drugs that Inhibit Cytochrome P450 (CYP) Enzymes / p. 6",
+    "quote": "The co-administration of DALIRESP (500 mcg) with CYP3A4 inhibitors or dual inhibitors that inhibit both CYP3A4 and CYP1A2 simultaneously (e.g., erythromycin, ketoconazole, fluvoxamine, enoxacin, cimetidine) may increase roflumilast systemic exposure and may result in increased adverse reactions. The risk of such concurrent use should be weighed carefully against benefit",
+    "quoteVi": "Dùng đồng thời DALIRESP (500 mcg) với thuốc ức chế CYP3A4 hoặc chất ức chế kép cả CYP3A4 và CYP1A2 (erythromycin, ketoconazole, fluvoxamine, enoxacin, cimetidine) làm tăng phơi nhiễm toàn thân của roflumilast và tăng tác dụng không mong muốn; cần cân nhắc kỹ nguy cơ so với lợi ích."
+  },
+  {
+    "id": "fda.celecoxib.methotrexate_toxicity",
+    "sourceId": "fda_celecoxib",
+    "pdfPage": 21,
+    "locator": "Section 7 / Drug Interactions - Methotrexate / p. 21",
+    "quote": "Concomitant use of NSAIDs and methotrexate may increase the risk for methotrexate toxicity (e.g., neutropenia, thrombocytopenia, renal dysfunction)",
+    "quoteVi": "Sử dụng đồng thời NSAID và methotrexate có thể làm tăng nguy cơ độc tính của methotrexate (ví dụ: giảm bạch cầu trung tính, giảm tiểu cầu, rối loạn chức năng thận)."
+  },
+  {
+    "id": "fda.celecoxib.aspirin_concomitant_caution",
+    "sourceId": "fda_celecoxib",
+    "pdfPage": 40,
+    "locator": "Section 17 / Use of NSAIDs and Low-Dose Aspirin / p. 40",
+    "quote": "Inform patients not to use low-dose aspirin concomitantly with CELEBREX until they talk to their healthcare provider",
+    "quoteVi": "Hướng dẫn bệnh nhân không tự ý sử dụng đồng thời aspirin liều thấp với NSAID trước khi trao đổi với bác sĩ điều trị."
+  },
+  {
+    "id": "fda.patiromer.separation_3_hours",
+    "sourceId": "fda_patiromer",
+    "pdfPage": 3,
+    "locator": "Section 2.1 / General Information / p. 3",
+    "quote": "Administer Veltassa at least 3 hours before or 3 hours after other oral medications except those shown to not have a clinically important interaction",
+    "quoteVi": "Dùng Veltassa ít nhất 3 giờ trước hoặc 3 giờ sau các thuốc uống khác, ngoại trừ các thuốc đã được chứng minh là không có tương tác quan trọng trên lâm sàng."
+  },
+  {
+    "id": "fda.celecoxib.corticosteroid_gi_bleeding",
+    "sourceId": "fda_celecoxib",
+    "pdfPage": 22,
+    "locator": "Section 7 / Drug Interactions - Corticosteroids / p. 22",
+    "quote": "Concomitant use of corticosteroids with CELEBREX may increase the risk of GI ulceration or bleeding",
+    "quoteVi": "Sử dụng đồng thời corticosteroid với CELEBREX có thể làm tăng nguy cơ loét hoặc xuất huyết tiêu hóa."
+  },
+  {
+    "id": "fda.dapagliflozin.su_insulin_hypoglycemia",
+    "sourceId": "fda_dapagliflozin",
+    "pdfPage": 7,
+    "locator": "Section 5.4 / Hypoglycemia with Concomitant Use / p. 7",
+    "quote": "Insulin and insulin secretagogues (e.g., sulfonylureas) are known to cause hypoglycemia. FARXIGA may increase the risk of hypoglycemia when combined with insulin or an insulin secretagogue",
+    "quoteVi": "Insulin và các thuốc kích thích bài tiết insulin (ví dụ: sulfonylurea) được biết là gây hạ đường huyết. FARXIGA có thể làm tăng nguy cơ hạ đường huyết khi phối hợp với insulin hoặc thuốc kích thích bài tiết insulin."
+  },
+  {
+    "id": "fda.szc.separation_2_hours",
+    "sourceId": "fda_szc",
+    "pdfPage": 3,
+    "locator": "Section 2.3 / Reconstitution and Administration / p. 3",
+    "quote": "In general, other oral medications should be administered at least 2 hours before or 2 hours after LOKELMA",
+    "quoteVi": "Nhìn chung, các thuốc uống khác nên được dùng ít nhất 2 giờ trước hoặc 2 giờ sau khi dùng LOKELMA."
+  },
+  {
+    "id": "ukka.2022.cps_separation_3h_6h_gastroparesis",
+    "sourceId": "ukka_2022_hyperkalaemia",
+    "pdfPage": 154,
+    "locator": "Appendix 3F: Drug administration and safety – Calcium resonium (SmPC) / p. 154",
+    "quote": "For oral administration, administer at least 3 hours before, or 3 hours after other medication. In patients with gastroparesis consider a 6-hour separation.",
+    "quoteVi": "Khi dùng đường uống Calcium Resonium (calcium polystyrene sulfonate), uống cách ít nhất 3 giờ trước hoặc 3 giờ sau các thuốc khác; ở bệnh nhân liệt dạ dày (gastroparesis) cần cân nhắc giãn cách 6 giờ."
+  },
+  {
+    "id": "kdigo.ckd.2024.polystyrene_sulfonate_separation_3h_6h",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 112,
+    "locator": "Chapter 3 / Table 27: Polystyrene sulfonates (CPS/SPS) / p. 112",
+    "quote": "Separate from oral medications by at least 3 hours before or 3 hours after administration; if gastroparesis, separate other medications by 6 hours",
+    "quoteVi": "KDIGO 2024 Bảng 27 (Nhựa trao đổi polystyrene sulfonate): Uống tách biệt khỏi các thuốc đường uống khác ít nhất 3 giờ trước hoặc 3 giờ sau; nếu có liệt dạ dày (gastroparesis), tách cách các thuốc khác 6 giờ."
+  },
+  {
+    "id": "fda.amlodipine.strong_cyp3a_cyclosporine_ddi",
+    "sourceId": "fda_label_amlodipine",
+    "pdfPage": 8,
+    "locator": "Section 7.1 & 7.2 / CYP3A Inhibitors & Immunosuppressants / p. 8",
+    "quote": "Monitor for symptoms of hypotension and edema when amlodipine is co-administered with CYP3A inhibitors to determine the need for dose adjustment",
+    "quoteVi": "Theo dõi triệu chứng tụt huyết áp và phù khi phối hợp thuốc chẹn kênh canxi nhóm DHP với các chất ức chế CYP3A."
+  },
+  {
+    "id": "fda.amlodipine.strong_cyp3a_pk_cyclosporine",
+    "sourceId": "fda_label_amlodipine",
+    "pdfPage": 13,
+    "locator": "Section 12.3 / Drug Interactions – Strong CYP3A Inhibitors / p. 13",
+    "quote": "However, strong inhibitors of CYP3A (e.g., itraconazole, clarithromycin) may increase the plasma concentrations of amlodipine to a greater extent",
+    "quoteVi": "Các chất ức chế mạnh CYP3A (như itraconazole, clarithromycin) làm tăng mạnh nồng độ huyết tương của thuốc chẹn kênh canxi dihydropyridine chuyển hóa qua CYP3A."
+  },
+  {
+    "id": "aha.acc.2025.table16_ccb_cyp3a4_cyclosporine",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 46,
+    "locator": "Section 5.2.6 / Table 16: Pharmacokinetic Drug–Drug Interactions / p. 46",
+    "quote": "CYP3A4 inhibition via amlodipine, verapamil, or diltiazem or other CYP3A4 inhibitors Tacrolimus, cyclosporine Increased calcineurin inhibitor concentration leading to increased risk for side effects (eg, renal impairment)",
+    "quoteVi": "Tương tác dược động học qua đường CYP3A4 giữa thuốc chẹn kênh canxi, chất ức chế CYP3A4 và cyclosporine làm tăng nồng độ thuốc và nguy cơ độc tính."
+  },
+  {
+    "id": "vsh.htn.2022.dhp_ccb_lercanidipine_dose",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 30,
+    "locator": "Bảng 10 / Chẹn kênh Canxi nhóm Dihydropyridine – Lercanidipine / tr. 30",
+    "quote": "Nifedipine 30 30 - 90 Nitrendipine 10 20 Lercanidipine 10 20",
+    "quoteVi": "VSH/VNHA 2022 Bảng 10: Lercanidipine thuộc nhóm chẹn kênh canxi dihydropyridine (liều 10–20 mg/ngày)."
+  },
+  {
+    "id": "fda.carvedilol.clonidine_rebound_withdrawal",
+    "sourceId": "fda_carvedilol",
+    "pdfPage": 14,
+    "locator": "Section 7.4 / Clonidine / p. 14",
+    "quote": "Concomitant administration of clonidine with a β-blocker may cause hypotension and bradycardia. When concomitant treatment with a β-blocker and clonidine is to be terminated, the β-blocker should be discontinued first. Clonidine therapy can then be discontinued several days later by gradually decreasing the dosage.",
+    "quoteVi": "Dùng đồng thời clonidine với thuốc chẹn beta có thể gây tụt huyết áp và nhịp chậm. Khi cần chấm dứt điều trị phối hợp chẹn beta và clonidine, bắt buộc phải ngừng thuốc chẹn beta trước; sau đó vài ngày mới giảm liều từ từ clonidine."
+  },
+  {
+    "id": "ema.bisoprolol.central_alpha2_clonidine_moxonidine",
+    "sourceId": "ema_bisoprolol",
+    "pdfPage": 3,
+    "locator": "Section 4.5 / Combinations not recommended – Centrally acting antihypertensive drugs / p. 3",
+    "quote": "Centrally acting antihypertensive drugs such as clonidine and others (e.g. methyldopa, moxonodine, rilmenidine): Concomitant use of centrally acting antihypertensive drugs may worsen heart failure by a decrease in the central sympathetic tonus",
+    "quoteVi": "SmPC Bisoprolol Mục 4.5: Không khuyến cáo phối hợp với các thuốc hạ áp tác động trung ương như clonidine và moxonidine do làm giảm trương lực giao cảm trung ương."
+  },
+  {
+    "id": "ema.bisoprolol.rebound_hypertension_withdrawal",
+    "sourceId": "ema_bisoprolol",
+    "pdfPage": 4,
+    "locator": "Section 4.5 / Combinations not recommended – Rebound hypertension / p. 4",
+    "quote": "Abrupt withdrawal, particularly if prior to beta-blocker discontinuation, may increase risk of “rebound hypertension”.",
+    "quoteVi": "SmPC Bisoprolol Mục 4.5: Ngưng đột ngột thuốc hạ áp trung ương (clonidine, moxonidine), đặc biệt nếu ngưng trước khi đã ngừng thuốc chẹn beta, làm tăng nguy cơ tăng huyết áp dội ngược."
+  },
+  {
+    "id": "aha.acc.2025.table17_clonidine_bb_crisis",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 47,
+    "locator": "Section 5.2.6 / Table 17: Pharmacodynamic Drug–Drug Interactions / p. 47",
+    "quote": "Clonidine Noncardioselective BB (eg, nadolol or propranolol) Unopposed alpha agonism upon BB withdrawal leading to hypertensive crisis",
+    "quoteVi": "AHA/ACC 2025 Bảng 17: Phối hợp Clonidine và thuốc chẹn beta gây hoạt hóa alpha không đối kháng dẫn đến cơn tăng huyết áp cấp cứu khi ngưng thuốc không đúng trình tự."
+  },
+  {
+    "id": "aha.acc.2025.table26_nitroprusside_no_donor",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 74,
+    "locator": "Section 6.2 / Table 26: Vasodilators—nitric-oxide dependent (Sodium nitroprusside) / p. 74",
+    "quote": "Vasodilators—nitric-oxide dependent Sodium nitroprusside Initial 0.3-0.5 mcg/kg/min",
+    "quoteVi": "AHA/ACC 2025 Bảng 26: Natri nitroprusside là thuốc giãn mạch phụ thuộc nitric oxide (NO)."
+  },
+  {
+    "id": "aha.acc.2025.table27_nitrates_pde5i_hypotension",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 75,
+    "locator": "Section 6.2 / Table 27: Intravenous Antihypertensive Drugs / p. 75",
+    "quote": "Nitrates given in the presence of PDE-5 inhibitors may induce profound hypotension.",
+    "quoteVi": "Các thuốc cung cấp nitric oxide / nitrate dùng khi đang có thuốc ức chế PDE-5 gây tụt huyết áp sâu đe dọa tính mạng."
+  },
+  {
+    "id": "aha.acc.2025.sec6_3_pde5i_nitrates_contra",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 77,
+    "locator": "Section 6.3 / Sexual Dysfunction – PDE-5 Inhibitors / p. 77",
+    "quote": "These drugs should not be taken with nitrates due to the risk of severe hypotension.",
+    "quoteVi": "Không được dùng các thuốc ức chế PDE-5 (sildenafil, tadalafil, vardenafil, avanafil) cùng các thuốc giải phóng NO/nitrate do nguy cơ hạ huyết áp nặng."
+  },
+  {
+    "id": "fda.vericiguat.sgc_pde5i_contra",
+    "sourceId": "fda_vericiguat",
+    "pdfPage": 5,
+    "locator": "Section 7.1 & 7.2 / Other sGC Stimulators & PDE-5 Inhibitors / p. 5",
+    "quote": "concomitant use of other soluble guanylate cyclase (sGC) stimulators [see Contraindications (4) ] . 7.2 PDE-5 Inhibitors Concomitant use of VERQUVO with PDE-5 inhibitors is not recommended because of the potential for hypotension",
+    "quoteVi": "Các thuốc tác động lên trục NO–sGC–cGMP (như chất kích thích sGC riociguat/vericiguat và thuốc ức chế PDE-5) gây hiệp đồng hạ huyết áp nghiêm trọng khi phối hợp."
+  },
+  {
+    "id": "fda.diltiazem.clonidine_sinus_bradycardia",
+    "sourceId": "fda_diltiazem",
+    "pdfPage": 7,
+    "locator": "Section 7 / Drug Interactions – Clonidine / p. 7",
+    "quote": "Clonidine: Sinus bradycardia resulting in hospitalization and pacemaker insertion has been reported in association with the use of clonidine concurrently with diltiazem. Monitor heart rate in patients receiving concomitant diltiazem and clonidine.",
+    "quoteVi": "Nhãn FDA Diltiazem Mục 7: Đã có báo cáo nhịp chậm xoang nặng phải nhập viện và đặt máy tạo nhịp khi dùng đồng thời clonidine với diltiazem; cần theo dõi chặt chẽ nhịp tim."
+  },
+  {
+    "id": "gina.asthma.2026.ix_cyp3a4_ics_laba_p47",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 47,
+    "locator": "Section 2 / Drug interactions with asthma medications / p. 47",
+    "quote": "Drug interactions with asthma medications: concomitant treatment with cytochrome P450 inhibitors such as ketoconazole, ritonavir, itraconazole, erythromycin and clarithromycin may increase the risk of ICS adverse effects such as adrenal suppression, and with short-term use, may increase the risk of cardiovascular adverse effects of the LABAs salmeterol and vilanterol (alone or in combination with ICS). Concomitant use of these medications is not recommended",
+    "quoteVi": "GINA 2026 Mục 2: Điều trị đồng thời với các chất ức chế cytochrome P450 (ketoconazole, ritonavir, itraconazole, erythromycin, clarithromycin) làm tăng nguy cơ suy thượng thận do ICS và tác dụng bất lợi tim mạch của các LABA salmeterol, vilanterol; không khuyến cáo dùng đồng thời."
+  },
+  {
+    "id": "gina.asthma.2026.ix_cyp3a4_cushing_laba_p140",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 140,
+    "locator": "Section 6 / Drug interactions – Cushing's syndrome & LABAs / p. 140",
+    "quote": "These interactions may lead to increased risk of ICS adverse effects such as adrenal suppression and Cushing’s syndrome, and may increase the risk of cardiovascular adverse effects of some LABAs (salmeterol and vilanterol).184 Concomitant use is not recommended",
+    "quoteVi": "GINA 2026 Mục 6: Tương tác qua ức chế CYP3A4 dẫn tới tăng nguy cơ suy thượng thận và hội chứng Cushing toàn thân do ICS, đồng thời tăng nguy cơ biến cố tim mạch (kéo dài QT, loạn nhịp) của salmeterol và vilanterol; không khuyến cáo phối hợp."
+  },
+  {
+    "id": "fda.saxagliptin.strong_cyp3a4_dose_2_5mg",
+    "sourceId": "fda_label_saxagliptin",
+    "pdfPage": 4,
+    "locator": "Section 2.3 / Strong CYP3A4/5 Inhibitors / p. 4",
+    "quote": "The dose of ONGLYZA is 2.5 mg once daily when coadministered with strong cytochrome P450 3A4/5 (CYP3A4/5) inhibitors (e.g., ketoconazole, atazanavir, clarithromycin, indinavir, itraconazole, nefazodone, nelfinavir, ritonavir, saquinavir, and telithromycin).",
+    "quoteVi": "Nhãn FDA Onglyza Mục 2.3: Liều khuyến cáo của Saxagliptin bắt buộc giới hạn ở mức 2.5 mg uống 1 lần/ngày khi dùng đồng thời với các chất ức chế mạnh CYP3A4/5 (ketoconazole, atazanavir, clarithromycin, indinavir, itraconazole, nefazodone, nelfinavir, ritonavir, saquinavir, telithromycin)."
+  },
+  {
+    "id": "fda.saxagliptin.strong_cyp3a4_ddi_7_1",
+    "sourceId": "fda_label_saxagliptin",
+    "pdfPage": 8,
+    "locator": "Section 7.1 / Strong Inhibitors of CYP3A4/5 Enzymes / p. 8",
+    "quote": "Ketoconazole significantly increased saxagliptin exposure. Similar significant increases in plasma concentrations of saxagliptin are anticipated with other strong CYP3A4/5 inhibitors (e.g., atazanavir, clarithromycin, indinavir, itraconazole, nefazodone, nelfinavir, ritonavir, saquinavir, and telithromycin). The dose of ONGLYZA should be limited to 2.5 mg when coadministered with a strong CYP3A4/5 inhibitor.",
+    "quoteVi": "Nhãn FDA Onglyza Mục 7.1: Ketoconazole và các thuốc ức chế mạnh CYP3A4/5 khác làm tăng đáng kể nồng độ saxagliptin huyết tương; bắt buộc giới hạn liều Onglyza không quá 2.5 mg khi dùng kèm chất ức chế mạnh CYP3A4/5."
+  },
+  {
+    "id": "gina.asthma.2026.ix_ophthalmic_bb_bronchospasm",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 67,
+    "locator": "Section 3 / Avoidance of medications that may make asthma worse – Beta-blockers / p. 67",
+    "quote": "Beta-blocker drugs, including topical ophthalmic preparations, may cause bronchospasm270 and have been implicated in some asthma deaths.",
+    "quoteVi": "GINA 2026 Mục 3: Các thuốc chẹn beta, bao gồm cả chế phẩm nhỏ mắt tại chỗ (như timolol), có thể gây co thắt phế quản nặng và đã có liên quan đến tử vong do hen phế quản."
+  },
+  {
+    "id": "ema.desuric.oral_anticoagulants",
+    "sourceId": "ema_desuric_smpc",
+    "pdfPage": 2,
+    "locator": "Rubrique 4.5 / Interactions médicamenteuses – Anticoagulants oraux / p. 2",
+    "quote": "Anticoagulants oraux : Augmentation de l’effet anticoagulant oral et du ri sque hémorragique. Contrôle plus fréquent du taux de prothrombine et s urveillance de l’INR. Adaptation de la posologie de l’anticoagulant oral pendant le traite ment par la benzbromarone et après son arrêt.",
+    "quoteVi": "SmPC Desuric (benzbromarone) Mục 4.5: Thuốc chống đông đường uống – làm tăng mạnh tác dụng chống đông đường uống và nguy cơ xuất huyết; phải kiểm tra thời gian prothrombin, theo dõi sát INR và giảm/điều chỉnh liều thuốc chống đông trong khi dùng và sau khi ngừng benzbromarone."
+  },
+  {
+    "id": "fda.colchicine.strong_cyp3a4_table1",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 5,
+    "locator": "Section 2.4 / Table 1: Strong CYP3A4 Inhibitors / p. 5",
+    "quote": "Atazanavir Clarithromycin Darunavir/ Ritonavir Indinavir Itraconazole Ketoconazole Lopinavir/ Ritonavir Nefazodone Nelfinavir Ritonavir Saquinavir Telithromycin Tipranavir/ Ritonavir Significant increase in colchicine plasma levels ; fatal colchicine toxicity has been reported with clarithromycin, a strong CYP3A4 inhibitor.",
+    "quoteVi": "Bảng 1 nhãn FDA Colcrys: Phối hợp các chất ức chế mạnh CYP3A4 (clarithromycin, itraconazole, ketoconazole, ritonavir, atazanavir, darunavir/ritonavir, lopinavir/ritonavir...) làm tăng vọt nồng độ colchicine huyết tương; đã ghi nhận tử vong do ngộ độc colchicine."
+  },
+  {
+    "id": "fda.colchicine.moderate_cyp3a4_table1",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 6,
+    "locator": "Section 2.4 / Table 1: Moderate CYP3A4 Inhibitors / p. 6",
+    "quote": "Amprenavir Aprepitant Diltiazem Erythromycin Fluconazole Fosamprenavir (pro-drug of Amprenavir) Grapefruit juice Verapamil Significant increase in colchicine plasma concentration is anticipated. Neuromuscular toxicity has been reported with diltiazem and verapamil interactions.",
+    "quoteVi": "Bảng 1 nhãn FDA Colcrys: Phối hợp chất ức chế vừa CYP3A4 (diltiazem, verapamil, fluconazole, erythromycin, aprepitant, fosamprenavir) làm tăng đáng kể nồng độ colchicine huyết tương và nguy cơ độc tính thần kinh cơ; cần giảm liều và tránh nạp liều cắt cơn nếu đang dùng dự phòng."
+  },
+  {
+    "id": "fda.allopurinol.dicumarol_prothrombin",
+    "sourceId": "fda_allopurinol",
+    "pdfPage": 5,
+    "locator": "PRECAUTIONS / Drug Interactions – Dicumarol / p. 5",
+    "quote": "The prothrombin time should be reassessed periodically in the patients receiving dicumarol who are given ZYLOPRIM.",
+    "quoteVi": "Nhãn FDA Zyloprim (allopurinol): Allopurinol kéo dài thời gian bán thải của thuốc chống đông kháng vitamin K coumarin; cần đánh giá lại định kỳ thời gian prothrombin / INR khi phối hợp."
+  },
+  {
+    "id": "fda.allopurinol.thiazide_hypersensitivity",
+    "sourceId": "fda_allopurinol",
+    "pdfPage": 4,
+    "locator": "WARNINGS / Thiazides & Renal Function / p. 4",
+    "quote": "The occurrence of hypersensitivity reactions to ZYLOPRIM may be increased in patients with decreased renal function receiving thiazides and ZYLOPRIM concurrently.",
+    "quoteVi": "Nhãn FDA Zyloprim: Nguy cơ phản ứng quá mẫn nặng với allopurinol có thể tăng lên ở bệnh nhân suy giảm chức năng thận đang dùng đồng thời lợi tiểu thiazide và allopurinol; cần theo dõi sát chức năng thận và biểu hiện da."
+  },
+  {
+    "id": "fda.celecoxib.fluconazole_twofold_2c9",
+    "sourceId": "fda_celecoxib",
+    "pdfPage": 31,
+    "locator": "Section 12.3 / Pharmacokinetics – Fluconazole (CYP2C9 Inhibition) / p. 31",
+    "quote": "Concomitant administration of fluconazole at 200 mg once daily resulted in a two-fold increase in celecoxib plasma concentration. This increase is due to the inhibition of celecoxib metabolism via P450 2C9 by fluconazole",
+    "quoteVi": "Nhãn FDA Celebrex Mục 12.3: Dùng đồng thời fluconazole 200 mg x 1 lần/ngày làm tăng gấp 2 lần nồng độ celecoxib huyết tương do ức chế chuyển hóa qua CYP2C9 (cần giảm 50% liều celecoxib)."
+  },
+  {
+    "id": "fda.probenecid.ketorolac_contra",
+    "sourceId": "fda_probenecid",
+    "pdfPage": 3,
+    "locator": "Section 4 / Contraindications – Ketorolac / p. 3",
+    "quote": "Concomitant use of ORLYNVAH and ketorolac tromethamine is contraindicated",
+    "quoteVi": "Nhãn FDA Probenecid Mục 4: Chống chỉ định sử dụng đồng thời probenecid với ketorolac tromethamine do làm giảm mạnh độ thanh thải và tăng vọt phơi nhiễm ketorolac."
+  },
+  {
+    "id": "byt.vte.2023.enoxaparin_prophylaxis_dose",
+    "sourceId": "byt_2023_vte",
+    "pdfPage": 17,
+    "locator": "Bảng liều dự phòng TTHKTM / Enoxaparin / tr. 17",
+    "quote": "Enoxaparin 40 mg x 1 lần/ngày TDD, hoặc Enoxaparin 30 mg x 1 lần/ngày TDD với BN suy thận (MLCT ≤ 30 ml/phút)",
+    "quoteVi": "QĐ 3908/QĐ-BYT 2023: Liều dự phòng TTHKTM của Enoxaparin là 40 mg x 1 lần/ngày tiêm dưới da, hoặc giảm còn 30 mg x 1 lần/ngày tiêm dưới da ở bệnh nhân suy thận có MLCT ≤ 30 mL/phút."
+  },
+  {
+    "id": "byt.vte.2023.ufh_vka_dosing_table",
+    "sourceId": "byt_2023_vte",
+    "pdfPage": 18,
+    "locator": "Bảng thuốc chống đông / Heparin không phân đoạn & Kháng vitamin K / tr. 18",
+    "quote": "Heparin không phân đoạn Liều 5000 UI x 2 lần/ngày TDD * Chỉ định với suy thận nặng (MLCT < 30 ml/phút)",
+    "quoteVi": "QĐ 3908/QĐ-BYT 2023: Heparin không phân đoạn liều dự phòng 5000 UI x 2–3 lần/ngày tiêm dưới da, ưu tiên chỉ định ở bệnh nhân suy thận nặng (MLCT < 30 mL/phút)."
+  },
+  {
+    "id": "byt.vte.2023.vka_inr_2_3",
+    "sourceId": "byt_2023_vte",
+    "pdfPage": 18,
+    "locator": "Bảng thuốc chống đông / Kháng vitamin K – INR 2–3 / tr. 18",
+    "quote": "Kháng vitamin K Không Không Liều hiệu chỉnh sao cho INR từ 2 – 3",
+    "quoteVi": "QĐ 3908/QĐ-BYT 2023: Thuốc kháng vitamin K (acenocoumarol, warfarin) được hiệu chỉnh liều cá thể hóa nhằm duy trì INR mục tiêu từ 2.0 đến 3.0."
+  },
+  {
+    "id": "byt.vte.2023.enoxaparin_renal_crcl15",
+    "sourceId": "byt_2023_vte",
+    "pdfPage": 19,
+    "locator": "Bảng chỉnh liều theo mức lọc cầu thận / Enoxaparin CrCl 15–29 & < 15 / tr. 19",
+    "quote": "15 – 29 Không cần điều chỉnh Enoxaparin: Giảm liều xuống 30 mg mỗi ngày Dưới 15 Không cần điều chỉnh KHÔNG sử dụng",
+    "quoteVi": "QĐ 3908/QĐ-BYT 2023: Với MLCT 15–29 mL/phút giảm liều dự phòng Enoxaparin xuống 30 mg/ngày (UFH không cần chỉnh liều); với MLCT < 15 mL/phút không sử dụng Enoxaparin (chuyển sang Heparin không phân đoạn)."
+  },
+  {
+    "id": "byt.vte.2023.anticoagulant_contraindications",
+    "sourceId": "byt_2023_vte",
+    "pdfPage": 29,
+    "locator": "Chống chỉ định điều trị chống đông / Xuất huyết, suy gan nặng, HIT / tr. 29",
+    "quote": "- Suy gan nặng - Xuất huyết não - Tình trạng xuất huyết đang tiến triển (ví dụ: xuất huyết do loét dạ dày tá tràng) - Tiền sử xuất huyết giảm tiểu cầu nhất là HIT (Heparin-induced thrombocytopenia)",
+    "quoteVi": "QĐ 3908/QĐ-BYT 2023: Chống chỉ định thuốc chống đông khi có suy gan nặng kèm rối loạn đông máu, xuất huyết nội sọ, xuất huyết đang tiến triển hoặc tiền sử giảm tiểu cầu do heparin (HIT)."
+  },
+  {
+    "id": "aha.pe.2026.enoxaparin_1mg_kg_bid",
+    "sourceId": "aha_acc_2026_pe",
+    "pdfPage": 30,
+    "locator": "Acute Anticoagulation / Therapeutic Enoxaparin 1 mg/kg twice daily / p. 30",
+    "quote": "received enoxaparin 1 mg/kg twice daily",
+    "quoteVi": "AHA/ACC 2026 PE Guideline: Phác đồ điều trị kháng đông chuẩn bằng Enoxaparin liều 1 mg/kg tiêm dưới da 2 lần/ngày (mỗi 12 giờ)."
+  },
+  {
+    "id": "esc.preg.2025.acenocoumarol_low_dose_threshold",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 29,
+    "locator": "Section 5 / Mechanical Heart Valves – Acenocoumarol Dose / p. 29",
+    "quote": "(according to current guidelines this equals doses of ≤5 mg of warfarin, ≤2 mg/day acenocoumarol, ≤3 mg/day phenprocoumon).",
+    "quoteVi": "ESC 2025 Pregnancy: Ngưỡng liều thấp kháng vitamin K tương đương ≤ 5 mg/ngày warfarin hoặc ≤ 2 mg/ngày acenocoumarol."
+  },
+  {
+    "id": "esc.preg.2025.vka_embryopathy_contra",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 29,
+    "locator": "Section 5 / Vitamin K Antagonists in Pregnancy / p. 29",
+    "quote": "Vitamin K antagonists cross the placenta and are associated with em- bryopathy and foetopathy risk, even at low doses.",
+    "quoteVi": "ESC 2025 Pregnancy: Các thuốc kháng vitamin K (warfarin, acenocoumarol) đi qua nhau thai và gây nguy cơ bệnh lý phôi thai (quái thai) và thai nhi ngay cả ở liều thấp."
+  },
+  {
+    "id": "esc.preg.2025.vka_safe_lactation_p30",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 30,
+    "locator": "Section 5 / Anticoagulation During Lactation – VKA / p. 30",
+    "quote": "Vitamin K antagonists are safe during lactation",
+    "quoteVi": "ESC 2025 Pregnancy: Các thuốc kháng vitamin K (warfarin, acenocoumarol) an toàn khi cho con bú."
+  },
+  {
+    "id": "esc.preg.2025.lmwh_safe_pregnancy",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 30,
+    "locator": "Section 5 / LMWH Safety in Pregnancy / p. 30",
+    "quote": "Embryopathy or foetopathy has not been reported with LMWHs, even in therapeutic doses",
+    "quoteVi": "ESC 2025 Pregnancy: Heparin trọng lượng phân tử thấp (LMWH như enoxaparin) không qua nhau thai và không gây bệnh lý phôi/thai nhi ngay cả ở liều điều trị."
+  },
+  {
+    "id": "esc.preg.2025.ufh_not_crossing_placenta",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 30,
+    "locator": "Section 5 / Unfractionated Heparin in Pregnancy / p. 30",
+    "quote": "Intravenous UFH, although not crossing the placenta, is associated with higher risks of thrombocytopenia and osteoporosis compared with LMWH.",
+    "quoteVi": "ESC 2025 Pregnancy: Heparin không phân đoạn (UFH) không đi qua nhau thai (an toàn cho thai nhi và khi cho con bú), nhưng dùng kéo dài có nguy cơ giảm tiểu cầu và loãng xương cao hơn LMWH."
+  },
+  {
+    "id": "acc.af.2023.doac_strong_inducers",
+    "sourceId": "acc_2023_af",
+    "pdfPage": 41,
+    "locator": "Section 6.4.1 / DOAC Drug Interactions – Strong CYP3A4/P-gp Inducers / p. 41",
+    "quote": "strong CYP3A4 and/or p-glycoprotein in- ducers such as rifampin, phen ytoin, phenobarbital, pri- midone, carbamazepine, or St. John ’sw o r tm a yl o w e r DOAC plasma levels and increase the risks of stroke or systemic embolism.",
+    "quoteVi": "ACC/AHA 2023 AF Guideline: Các chất cảm ứng mạnh CYP3A4 và/hoặc P-gp (rifampin/rifampicin, phenytoin, phenobarbital, primidone, carbamazepine, St. John’s wort) làm giảm mạnh nồng độ DOAC huyết tương và tăng nguy cơ đột quỵ/thuyên tắc mạch hệ thống."
+  },
+  {
+    "id": "fda.apixaban.clarithromycin_no_dose_adjustment",
+    "sourceId": "fda_apixaban",
+    "pdfPage": 17,
+    "locator": "Section 7.1 / Strong Dual Inhibitors of CYP3A4 and P-gp – Clarithromycin / p. 17",
+    "quote": "Although clarithromycin is a combined P-gp and strong CYP3A4 inhibitor, pharmacokinetic data suggest that no dose adjustment is necessary with concomitant administration with ELIQUIS",
+    "quoteVi": "Nhãn FDA Eliquis (apixaban) Mục 7.1: Mặc dù clarithromycin là chất ức chế phối hợp P-gp và CYP3A4 mạnh, dữ liệu dược động học cho thấy không cần giảm liều Eliquis khi dùng đồng thời (tuy nhiên vẫn cần theo dõi dấu hiệu chảy máu, đặc biệt ở suy thận)."
+  },
+  {
+    "id": "fda.eplerenone.moderate_cyp3a_25mg_cap",
+    "sourceId": "fda_eplerenone",
+    "pdfPage": 4,
+    "locator": "Section 2.4 / Dose Modification for Moderate CYP3A Inhibitors / p. 4",
+    "quote": "In post-MI HFrEF patients receiving a moderate CYP3A inhibitor (e.g., erythromycin, saquinavir, verapamil, and fluconazole), do not exceed 25 mg once daily.",
+    "quoteVi": "Nhãn FDA Inspra (eplerenone) Mục 2.4: Khi dùng đồng thời chất ức chế vừa CYP3A4 (diltiazem, verapamil, erythromycin, fluconazole, saquinavir), bắt buộc giới hạn liều Eplerenone tối đa không vượt quá 25 mg x 1 lần/ngày."
+  },
+  {
+    "id": "fda.eplerenone.strong_cyp3a_contra",
+    "sourceId": "fda_eplerenone",
+    "pdfPage": 5,
+    "locator": "Section 4 / Contraindications – Strong CYP3A Inhibitors / p. 5",
+    "quote": "concomitant administration of strong CYP3A inhibitors (e.g., ketoconazole, itraconazole, nefazodone, troleandomycin, clarithromycin, ritonavir, and nelfinavir)",
+    "quoteVi": "Nhãn FDA Inspra (eplerenone) Mục 4: Chống chỉ định tuyệt đối dùng đồng thời Eplerenone với các thuốc ức chế mạnh CYP3A4 (ketoconazole, itraconazole, clarithromycin, ritonavir...)."
+  },
+  {
+    "id": "fda.spironolactone.trimethoprim_hyperkalemia",
+    "sourceId": "fda_spironolactone",
+    "pdfPage": 7,
+    "locator": "Section 7.1 / Drugs and Supplements Increasing Serum Potassium – Trimethoprim / p. 7",
+    "quote": "Concomitant administration of ALDACTONE with potassium supplementation or drugs that can increase potassium may lead to severe hyperkalemia.",
+    "quoteVi": "Nhãn FDA Aldactone Mục 7.1: Phối hợp MRA/RASi với các thuốc làm tăng kali máu như trimethoprim (co-trimoxazole) có thể dẫn đến tăng kali máu nặng đe dọa tính mạng."
+  },
+  {
+    "id": "fda.spironolactone.trimethoprim_list",
+    "sourceId": "fda_spironolactone",
+    "pdfPage": 7,
+    "locator": "Section 7.1 / Examples of Drugs Increasing Potassium (Trimethoprim, Heparin) / p. 7",
+    "quote": "heparin and low molecular weight heparin trimethoprim",
+    "quoteVi": "Nhãn FDA Aldactone Mục 7.1 liệt kê heparin, LMWH và trimethoprim là các thuốc làm tăng kali huyết thanh khi phối hợp với thuốc đối kháng aldosterone / ức chế RAA."
+  },
+  {
+    "id": "fda.digoxin.pgp_inhibitors_reduce_dose",
+    "sourceId": "fda_digoxin",
+    "pdfPage": 11,
+    "locator": "Section 7.1 / P-Glycoprotein Inhibitors – Dose Reduction 30–50% / p. 11",
+    "quote": "Measure serum digoxin concentrations before initiating concomitant drugs. Reduce digoxin concentrations by decreasing dose by approximately 30-50% or by modifying the dosing frequency and continue monitoring.",
+    "quoteVi": "Nhãn FDA Lanoxin (digoxin) Mục 7.1: Khi phối hợp các chất ức chế P-gp (amiodarone, dronedarone, verapamil, clarithromycin, itraconazole, cyclosporine, propafenone, quinidine), phải giảm liều Digoxin khoảng 30%–50% (hoặc giãn khoảng cách dùng) và theo dõi sát nồng độ digoxin huyết thanh (< 0.9 ng/mL)."
+  },
+  {
+    "id": "fda.dronedarone.digoxin_halve_dose",
+    "sourceId": "fda_dronedarone",
+    "pdfPage": 2,
+    "locator": "Highlights / Drug Interactions – Digoxin / p. 2",
+    "quote": "Digoxin: Consider discontinuation or halve dose of digoxin before treatment and monitor digoxin levels.",
+    "quoteVi": "Nhãn FDA Multaq (dronedarone): Cân nhắc ngừng hoặc giảm một nửa (50%) liều Digoxin trước khi khởi trị dronedarone và theo dõi nồng độ digoxin máu."
+  },
+  {
+    "id": "fda.dronedarone.strong_cyp3a_contra",
+    "sourceId": "fda_dronedarone",
+    "pdfPage": 5,
+    "locator": "Section 4 / Contraindications – Strong CYP3A Inhibitors / p. 5",
+    "quote": "Concomitant use of strong CYP3A inhibitors, such as ketoconazole, itraconazole, voriconazole, cyclosporine, telithromycin, clarithromycin, nefazodone, and ritonavir",
+    "quoteVi": "Nhãn FDA Multaq (dronedarone) Mục 4: Chống chỉ định tuyệt đối phối hợp dronedarone với các chất ức chế mạnh CYP3A (ketoconazole, itraconazole, voriconazole, cyclosporine, clarithromycin, ritonavir...) do làm tăng phơi nhiễm dronedarone gấp ~17 lần và gây kéo dài QT/xoắn đỉnh."
+  },
+  {
+    "id": "fda.doxazosin.pde5i_hypotension",
+    "sourceId": "fda_doxazosin",
+    "pdfPage": 7,
+    "locator": "Section 7.2 / PDE-5 Inhibitors – Additive Symptomatic Hypotension / p. 7",
+    "quote": "Concomitant administration of CARDURA with a phosphodiesterase-5 (PDE-5) inhibitor can result in additive blood pressure lowering effects and symptomatic hypotension. Monitor blood pressure and for symptoms of hypotension",
+    "quoteVi": "Nhãn FDA Cardura (doxazosin) Mục 7.2: Dùng đồng thời thuốc chẹn alpha-1 giao cảm với thuốc ức chế PDE-5 (sildenafil, tadalafil, vardenafil, avanafil) gây cộng dồn tác dụng giãn mạch và hạ huyết áp tư thế có triệu chứng; bệnh nhân cần ổn định liều chẹn alpha-1 trước khi khởi trị PDE-5i ở liều thấp nhất."
+  },
+  {
+    "id": "aha.acc.2025.methyldopa_iron_salts",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 46,
+    "locator": "Section 5.2.6 / Table 16: Pharmacokinetic Drug–Drug Interactions – Methyldopa + Iron salts / p. 46",
+    "quote": "Methyldopa Iron salts Decreased absorption of methyldopa leading to reduced BP lowering",
+    "quoteVi": "AHA/ACC 2025 Bảng 16: Viên sắt đường uống (ferrous sulfate/fumarate/gluconate) tạo phức chelat làm giảm mạnh hấp thu methyldopa tại ruột và gây mất kiểm soát huyết áp (đặc biệt nguy hiểm ở thai phụ tăng huyết áp); cần uống cách xa nhau ít nhất 2–4 giờ và theo dõi huyết áp."
+  },
+  {
+    "id": "ema.zanidip.cyp3a4_metabolism",
+    "sourceId": "ema_zanidip_smpc",
+    "pdfPage": 3,
+    "locator": "Section 4.5 / Interaction with other medicinal products – CYP3A4 inhibitors / p. 3",
+    "quote": "Lercanidipine is known to be metabolised by the CYP3A4 enzyme and therefore inhibitors of CYP3A4 administered concurrently may interact with the metabolism and elimination of lercanidipine.",
+    "quoteVi": "SmPC Zanidip (lercanidipine) Mục 4.5: Lercanidipine chuyển hóa qua CYP3A4 nên chống chỉ định phối hợp với chất ức chế mạnh CYP3A4 và ciclosporin."
+  },
+  {
+    "id": "aha.acc.2025.propranolol_oral_dosing",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 41,
+    "locator": "Table 15 / Oral Antihypertensive Drugs – Propranolol IR & LA / p. 41",
+    "quote": "Propranolol IR 80-160 2 Propranolol LA 80-160 1",
+    "quoteVi": "AHA/ACC 2025 Bảng 15: Liều thường dùng đường uống của Propranolol phóng thích tức thời (IR) là 80–160 mg/ngày chia 2 lần, hoặc dạng phóng thích kéo dài (LA) 80–160 mg x 1 lần/ngày; tránh dùng ở bệnh đường thở phản ứng (hen phế quản) và tránh ngưng thuốc đột ngột."
+  },
+  {
+    "id": "aha.acc.2025.bb_contraindications_list",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 75,
+    "locator": "Table 27 / Contraindications to Beta Blockers / p. 75",
+    "quote": "Contraindications to beta blockers include moderate-to-severe LV failure with pulmonary edema, bradycardia ( <60 beats/min), hypotension (SBP <100 mm Hg), poor peripheral perfusion, second- or third-degree heart block, and reactive airways disease.",
+    "quoteVi": "AHA/ACC 2025 Bảng 27: Chống chỉ định của thuốc chẹn beta gồm suy thất trái vừa-nặng kèm phù phổi cấp, nhịp chậm, hạ huyết áp, giảm tưới máu ngoại biên, block nhĩ thất độ II–III và bệnh đường thở phản ứng (hen phế quản)."
+  },
+  {
+    "id": "esc.preg.2025.propranolol_pregnancy_lactation",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 10,
+    "locator": "Section 3 / Beta-blockers (Propranolol) in Pregnancy and Lactation / p. 10",
+    "quote": "Beta-blockers, with pre-pregnancy dose and with nadolol and propranolol as drugs of choice, are recommended during pregnancy in women with LQTS.",
+    "quoteVi": "ESC 2025 Pregnancy: Propranolol có thể sử dụng trong thai kỳ khi có chỉ định tim mạch rõ ràng (cần theo dõi tăng trưởng thai và nhịp tim/đường huyết sơ sinh) và tương thích khi cho con bú."
+  },
+  {
+    "id": "esc.preg.2025.bb_continue_lactation",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 10,
+    "locator": "Section 3 / Beta-blockers During Lactation / p. 10",
+    "quote": "It is recommended to continue beta-blocker therapy during lactation in women with LQTS to reduce arrhythmic risk.",
+    "quoteVi": "ESC 2025 Pregnancy: Propranolol gắn kết protein huyết tương cao, bài tiết rất ít vào sữa mẹ và tương thích an toàn trong thời kỳ cho con bú."
+  },
+  {
+    "id": "ema.fostair.beclometasone_esterase_cyp3a",
+    "sourceId": "ema_fostair_smpc",
+    "pdfPage": 7,
+    "locator": "Section 4.5 / Interaction with other medicinal products – Beclometasone Esterase Metabolism / p. 7",
+    "quote": "Beclometasone dipropionate undergoes a very rapid metabolism via esterase enzymes. Beclometasone is less dependent on CYP3A metabolism than some other corticosteroids, and in general interactions are unlikely",
+    "quoteVi": "SmPC Fostair/Foster Mục 4.5: Beclometasone dipropionate chuyển hóa rất nhanh qua hệ enzym esterase không phụ thuộc nhiều vào CYP3A4 như fluticasone hay budesonide, do đó nhìn chung ít có nguy cơ tương tác ức chế CYP3A4 mức nghiêm trọng."
+  },
+  {
+    "id": "gina.asthma.2026.laba_lama_without_ics_contra",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 246,
+    "locator": "Glossary / Long-acting bronchodilators (LABA and LAMA) in Asthma / p. 246",
+    "quote": "LABA is safe for asthma when used in combination with ICS, but LABA and/or LAMA should not be used without ICS in asthma (or in patients with asthma+COPD) due to increased risk of serious adverse outcomes.",
+    "quoteVi": "GINA 2026: Tuyệt đối không sử dụng LABA và/hoặc LAMA đơn độc (bao gồm cả bình hít đôi LABA/LAMA như indacaterol/glycopyrronium) mà không có ICS ở bệnh nhân hen phế quản (hoặc chồng lấp Hen + COPD) do làm tăng nguy cơ biến cố nặng và tử vong liên quan đến hen."
+  },
+  {
+    "id": "ema.ultibro.asthma_not_used",
+    "sourceId": "ema_ultibro_smpc",
+    "pdfPage": 3,
+    "locator": "Section 4.4 / Special warnings and precautions – Asthma / p. 3",
+    "quote": "Ultibro Breezhaler should not be used for the treatment of asthma due to the absence of data in this indication. Long-acting beta2-adrenergic agonists may increase the risk of asthma-related serious adverse events, including asthma-related deaths, when used for the treatment of asthma.",
+    "quoteVi": "SmPC Ultibro Breezhaler (indacaterol/glycopyrronium) Mục 4.4: Không được sử dụng Ultibro Breezhaler để điều trị hen phế quản; LABA dùng không kèm ICS làm tăng nguy cơ biến cố nghiêm trọng và tử vong do hen."
+  },
+  {
+    "id": "gina.asthma.2026.triple_age_18_12",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 246,
+    "locator": "Glossary / Combination ICS-LABA-LAMA Inhalers Age Cutoffs / p. 246",
+    "quote": "Combination ICS-LABA-LAMA inhalers: For patients aged ≥18 years, beclometasone-formoterol- glycopyrronium; fluticasone furoate-vilanterol-umeclidinium and mometasone-indacaterol- glycopyrronium. For patients aged ≥12 years, budesonide-formoterol-glycopyrronium.",
+    "quoteVi": "GINA 2026: Các bình hít bộ ba ICS-LABA-LAMA beclometasone/formoterol/glycopyrronium (Trimbow) và fluticasone furoate/umeclidinium/vilanterol (Trelegy) chỉ định cho người ≥ 18 tuổi; budesonide/glycopyrronium/formoterol (Breztri) được chỉ định điều trị duy trì hen từ ≥ 12 tuổi."
+  },
+  {
+    "id": "ema.trimbow.paediatric_under_18",
+    "sourceId": "ema_trimbow_smpc",
+    "pdfPage": 3,
+    "locator": "Section 4.2 / Posology – Paediatric population (< 18 years) / p. 3",
+    "quote": "The safety and efficacy of Trimbow in the paediatric population (under 18 years of age) have not yet been established. No data are available.",
+    "quoteVi": "SmPC Trimbow Mục 4.2: Chưa xác lập tính an toàn và hiệu quả của Trimbow ở bệnh nhi dưới 18 tuổi (chỉ định cho người lớn ≥ 18 tuổi)."
+  },
+  {
+    "id": "fda.breztri.indications_copd_asthma",
+    "sourceId": "fda_breztri",
+    "pdfPage": 4,
+    "locator": "Section 1 / Indications and Usage – COPD & Asthma (>= 12 years) / p. 4",
+    "quote": "BREZTRI AEROSPHERE is indicated for the maintenance treatment of chronic obstructive pulmonary disease (COPD) in adult patients. 1.2 Maintenance Treatment of Asthma BREZTRI AEROSPHERE is indicated for the maintenance treatment of asthma in adult and pediatric patients 12 years of age and older.",
+    "quoteVi": "Nhãn FDA Breztri Aerosphere (04/2026) Mục 1: Chỉ định điều trị duy trì COPD ở người lớn và điều trị duy trì hen phế quản ở người lớn và thanh thiếu niên từ 12 tuổi trở lên."
+  },
+  {
+    "id": "fda.breztri.dosing_copd_asthma",
+    "sourceId": "fda_breztri",
+    "pdfPage": 5,
+    "locator": "Section 2.2 / Recommended Dosage for Maintenance Treatment of COPD / p. 5",
+    "quote": "The recommended dosage of BREZTRI AEROSPHERE for treatment of COPD is budesonide 320 mcg, glycopyrrolate 18 mcg, and formoterol fumarate 9.6 mcg",
+    "quoteVi": "Nhãn FDA Breztri Aerosphere Mục 2.2: Liều duy trì COPD khuyến cáo là 2 nhát xịt 160/9/4.8 mcg (tổng liều 320/18/9.6 mcg mỗi lần, tương đương 7.2 mcg glycopyrronium base/nhát) x 2 lần/ngày đường hít."
+  },
+  {
+    "id": "fda.dupilumab.hypersensitivity_contra",
+    "sourceId": "fda_label_dupilumab",
+    "pdfPage": 11,
+    "locator": "Section 4 / Contraindications – Hypersensitivity / p. 11",
+    "quote": "DUPIXENT is contraindicated in patients who have known hypersensitivity to dupilumab or any excipients of DUPIXENT",
+    "quoteVi": "Nhãn FDA Dupixent Mục 4: Chống chỉ định ở bệnh nhân có tiền sử quá mẫn đã biết với dupilumab hoặc bất kỳ tá dược nào của thuốc."
+  },
+  {
+    "id": "fda.breztri.dosing_asthma_18mcg",
+    "sourceId": "fda_breztri",
+    "pdfPage": 5,
+    "locator": "Section 2.3 / Recommended Dosage for Maintenance Treatment of Asthma / p. 5",
+    "quote": "The recommended dosage of BREZTRI AEROSPHERE for maintenance treatment of asthma is budesonide 320 mcg, glycopyrrolate 36 mcg, and formoterol fumarate 9.6 mcg",
+    "quoteVi": "Nhãn FDA Breztri Aerosphere Mục 2.3: Liều duy trì hen phế quản khuyến cáo (≥ 12 tuổi) là 2 nhát xịt 160/18/4.8 mcg (tổng liều 320/36/9.6 mcg mỗi lần) x 2 lần/ngày đường hít."
+  },
+  {
+    "id": "gina.asthma.2026.dupilumab_eos_1500",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 166,
+    "locator": "Section 6E / Severe Asthma Biologics – Anti-IL4Rα Blood Eosinophils > 1500 /µL / p. 166",
+    "quote": "Anti-IL4Rα is not suggested for patients with baseline or historic blood eosinophils >1,500 cells/µL because of limited evidence (such patients were excluded from Phase III trials).",
+    "quoteVi": "GINA 2026 Mục 6E: Không đề xuất khởi trị kháng IL-4Rα (dupilumab) ở bệnh nhân có bạch cầu ái toan máu nền hoặc tiền sử > 1.500 tế bào/µL do bằng chứng hạn chế (đã bị loại trừ khỏi các thử nghiệm pha III) và cần loại trừ EGPA / hội chứng tăng bạch cầu ái toan / nhiễm giun lươn."
+  },
+  {
+    "id": "fda.dupilumab.egpa_warning",
+    "sourceId": "fda_label_dupilumab",
+    "pdfPage": 12,
+    "locator": "Section 5.2 / Eosinophilic Conditions (EGPA & Eosinophilic Pneumonia) / p. 12",
+    "quote": "Patients being treated for asthma may present with clinical features of eosinophilic pneumonia or eosinophilic granulomatosis with polyangiitis (EGPA).",
+    "quoteVi": "Nhãn FDA Dupixent Mục 5.2: Bệnh nhân điều trị hen bằng dupilumab có thể xuất hiện viêm phổi tăng bạch cầu ái toan hoặc u hạt tăng bạch cầu ái toan kèm viêm đa mạch (EGPA), đặc biệt khi giảm liều corticosteroid đường uống; cần cảnh giác phát ban mạch máu, triệu chứng phổi xấu đi, biến chứng tim hoặc bệnh thần kinh."
+  },
+  {
+    "id": "gold.copd.2026.formoterol_twice_daily",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 155,
+    "locator": "Chapter 3 / Beta2-agonists – Formoterol twice-daily LABA / p. 155",
+    "quote": "Formoterol and salmeterol are twice -daily LABAs that significantly improve FEV1 and lung volumes, dyspnea, health status, exacerbation rate and number of hospitalizations",
+    "quoteVi": "GOLD 2026: Formoterol là thuốc giãn phế quản chủ vận beta-2 tác dụng kéo dài (LABA) dùng 2 lần/ngày giúp cải thiện đáng kể FEV1, khó thở và giảm đợt cấp COPD."
+  },
+  {
+    "id": "gold.copd.2026.ensifentrine_pde3_pde4",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 163,
+    "locator": "Chapter 3 / Phosphodiesterase-3 and -4 inhibitors – Ensifentrine / p. 163",
+    "quote": "Ensifentrine is a novel, first-in-class, inhaled dual inhibitor of PDE3 and PDE4 with both anti-inflammatory activity and bronchodilator effects.",
+    "quoteVi": "GOLD 2026: Ensifentrine là thuốc khí dung đầu tiên thuộc nhóm ức chế kép PDE3 và PDE4 vừa có tác dụng giãn phế quản vừa kháng viêm, cải thiện chức năng phổi và triệu chứng khó thở ở bệnh nhân COPD."
+  },
+  {
+    "id": "byt.copd.2026.sama_saba_nebulizer_mdi_p36",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 36,
+    "printedPage": "26",
+    "locator": "Chương Điều trị đợt cấp / Liều Salbutamol/Ipratropium & Fenoterol/Ipratropium / tr. 36",
+    "quote": "Liều thông thường: 1 ống 2,5ml salbutamol/ipratropium 2,5/0,5mg hoặc 20 giọt (1ml) fenoterol/ipratropium 0,50/0,25 mg (tương đương 4 nhát fenoterol/ipratropium MDI 50/20 µg kèm bu ồng đệm), dùng 3-4 lần/ngày và khi cần.",
+    "quoteVi": "QĐ 2131/QĐ-BYT 2026: Liều thông thường SAMA/SABA phối hợp là 1 ống 2,5 mL salbutamol/ipratropium 2,5/0,5 mg khí dung hoặc 1 mL (20 giọt) fenoterol/ipratropium 0,50/0,25 mg (tương đương 2–4 nhát xịt MDI 50/20 mcg), dùng 3–4 lần/ngày và khi cần."
+  },
+  {
+    "id": "byt.copd.2026.sama_saba_table_p68",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 68,
+    "printedPage": "58",
+    "locator": "Phụ lục Thuốc giãn phế quản / Fenoterol/Ipratropium & Salbutamol/Ipratropium / tr. 68",
+    "quote": "Dạng xịt định liều, 50/20 mcg/nhát: x ịt ngày 3 l ần, mỗi lần 2 nhát",
+    "quoteVi": "QĐ 2131/QĐ-BYT 2026: Fenoterol/Ipratropium (Berodual) dạng xịt định liều 50/20 mcg/nhát xịt ngày 3 lần, mỗi lần 2 nhát; dạng dung dịch khí dung 0,50/0,25 mg/mL khí dung ngày 3 lần."
+  },
+  {
+    "id": "gina.asthma.2026.hydrocortisone_200mg_acute",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 188,
+    "locator": "Section 9 / Management of Asthma Exacerbations – Hydrocortisone 200 mg / p. 188",
+    "quote": "Dosage: daily doses of OCS equivalent to 50 mg prednisone/prednisolone as a single morning dose, or 200 mg hydrocortisone in divided doses, are typically used for adults.",
+    "quoteVi": "GINA 2026 Mục 9: Trong đợt cấp hen phế quản ở người lớn, liều corticosteroid toàn thân tương đương 50 mg prednisolone uống buổi sáng hoặc 200 mg hydrocortisone chia liều trong ngày (tiêm tĩnh mạch khi nôn hoặc không uống được)."
+  },
+  {
+    "id": "gina.asthma.2026.hydrocortisone_perioperative",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 140,
+    "locator": "Section 6 / Peri-operative Hydrocortisone Adrenal Crisis Prevention / p. 140",
+    "quote": "patients taking long-term high-dose ICS or who have received OCS for more than 2 weeks during the previous 6 months should receive hydrocortisone peri -operatively as they are at risk of adrenal crisis",
+    "quoteVi": "GINA 2026 Mục 6: Bệnh nhân dùng ICS liều cao kéo dài hoặc đã dùng corticosteroid đường uống > 2 tuần trong 6 tháng qua cần được bao phủ hydrocortisone chu phẫu để dự phòng suy thượng thận cấp."
+  },
+  {
+    "id": "fda.roflumilast.oral_contraceptives",
+    "sourceId": "fda_label_roflumilast",
+    "pdfPage": 6,
+    "locator": "Section 7.3 / Oral Contraceptives Containing Gestodene and Ethinyl Estradiol / p. 6",
+    "quote": "The co-administration of DALIRESP (500 mcg) with oral contraceptives containing gestodene and ethinyl estradiol may increase roflumilast systemic exposure and may result in increased side effects.",
+    "quoteVi": "Nhãn FDA Daliresp Mục 7.3: Dùng đồng thời roflumilast với thuốc tránh thai đường uống chứa gestodene và ethinyl estradiol làm tăng phơi nhiễm toàn thân của roflumilast và tăng tác dụng không mong muốn."
+  },
+  {
+    "id": "byt.copd.2026.macrolide_domperidone_qt_contra",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 107,
+    "printedPage": "97",
+    "locator": "Phụ lục 11 / Macrolide (Azithromycin, Roxithromycin, Spiramycin) + Domperidon / tr. 107",
+    "quote": "Azithromycin Roxithromycin Spiramycin Domperidon Hiệp đ ồng tăng tác dụng Tăng nguy cơ kéo dài kho ảng QT, xoắn đỉnh Chống ch ỉ định phối hợp",
+    "quoteVi": "QĐ 2131/QĐ-BYT 2026 Phụ lục 11: Chống chỉ định phối hợp kháng sinh nhóm macrolide (azithromycin, clarithromycin, erythromycin, roxithromycin, spiramycin) với domperidone do hiệp đồng kéo dài khoảng QT và gây xoắn đỉnh."
+  },
+  {
+    "id": "byt.copd.2026.fq_domperidone_qt_contra",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 113,
+    "printedPage": "103",
+    "locator": "Phụ lục 11 / Fluoroquinolone (Ciprofloxacin, Levofloxacin, Moxifloxacin) + Domperidon / tr. 113",
+    "quote": "Ciprofloxacin Levofloxacin Moxifloxacin Domperidon Hiệp đ ồng tăng tác dụng Tăng nguy cơ kéo dài kho ảng QT, xoắn đỉnh Chống ch ỉ định phối hợp.",
+    "quoteVi": "QĐ 2131/QĐ-BYT 2026 Phụ lục 11: Chống chỉ định phối hợp kháng sinh fluoroquinolone (ciprofloxacin, levofloxacin, moxifloxacin) với domperidone do hiệp đồng kéo dài khoảng QT và xoắn đỉnh."
+  },
+  {
+    "id": "fda.tirzepatide.oral_contraceptives_4w",
+    "sourceId": "fda_label_tirzepatide",
+    "pdfPage": 16,
+    "locator": "Section 7.2 / Oral Hormonal Contraceptives – Delayed Gastric Emptying (4 Weeks) / p. 16",
+    "quote": "Use of MOUNJARO may reduce the efficacy of oral hormonal contraceptives due to delayed gastric emptying. This delay is largest after the first dose and diminishes over time. Advise patients using oral hormonal contraceptives to switch to a non-oral contraceptive method or add a barrier method of contraception for 4 weeks after initiation and for 4 weeks after each dose escalation with MOUNJARO",
+    "quoteVi": "Nhãn FDA Mounjaro (tirzepatide) Mục 7.2: Tirzepatide làm chậm làm rỗng dạ dày gây giảm hiệu quả thuốc tránh thai nội tiết đường uống; tư vấn người bệnh chuyển sang biện pháp tránh thai không qua đường uống hoặc dùng thêm biện pháp màng chắn trong 4 tuần sau khi khởi trị và 4 tuần sau mỗi bậc tăng liều."
+  },
+  {
+    "id": "ema.zanidip.contra_cyp3a4_ciclosporin",
+    "sourceId": "ema_zanidip_smpc",
+    "pdfPage": 2,
+    "locator": "Section 4.3 Contraindications / PDF p. 2",
+    "quote": "Co-adminstration with:  strong inhibitors of CYP3A4 (see section 4.5),  ciclosporin (see section 4.5),  grapefruit or grapefruit juice (see section 4.5).",
+    "quoteVi": "SmPC Zanidip (Lercanidipine) Mục 4.3: Chống chỉ định dùng đồng thời với chất ức chế mạnh CYP3A4, ciclosporin hoặc nước bưởi chùm."
+  },
+  {
+    "id": "ema.zanidip.ketoconazole_15x_ciclosporin_3x",
+    "sourceId": "ema_zanidip_smpc",
+    "pdfPage": 3,
+    "locator": "Section 4.5 Interaction with other medicinal products / PDF p. 3",
+    "quote": "An interaction study with a strong CYP3A4 inhibitor, ketoconazole, has shown a considerable increase in plasma levels of lercanidipine (a 15-fold increase of the AUC and an 8-fold increase of the C max for the eutomer S-lercanidipine). Co-prescription of lercanidipine with inhibitors of CYP3A4 (e.g. ketoconazole, itraconazole, ritonavir, erythromycin, troleandomycin, clarithromycin) should be avoided (see section 4.3). Ciclosporin Increased plasma levels of both lercanidipine and ciclosporin have been observed following concomitant administration. A study in young healthy volunteers has shown that when ciclosporin was administered 3 hours after the lercanidipine intake, the plasma levels of lercanidipine did not change, while the AUC of ciclosporin increased by 27%. However, the co-administration of lercanidipine with ciclosporin has caused a 3-fold increase of the plasma levels of lercanidipine and a 21% increase of the ciclosporin AUC. Ciclosporin and lercanidipine should not be administered together (see section 4.3).",
+    "quoteVi": "SmPC Zanidip Mục 4.5: Ketoconazole làm tăng AUC lercanidipine 15 lần; phối hợp ciclosporin làm tăng nồng độ lercanidipine 3 lần và tăng AUC ciclosporin 21% — chống chỉ định dùng chung."
+  },
+  {
+    "id": "esc.htn.2024.ix_mgso4_ccb_hypotension",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 74,
+    "locator": "Section 10.4.1 / PDF p. 74",
+    "quote": "There is a risk of hypotension when mag- nesium is given concomitantly with nifedipine.",
+    "quoteVi": "ESC 2024 Mục 10.4.1: Có nguy cơ tụt huyết áp hiệp đồng khi dùng đồng thời magnesium sulfate với nifedipine (chẹn kênh canxi)."
+  }
+]

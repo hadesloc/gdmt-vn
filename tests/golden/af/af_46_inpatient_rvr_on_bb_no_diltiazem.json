@@ -1,0 +1,79 @@
+{
+  "id": "af_46_inpatient_rvr_on_bb_no_diltiazem",
+  "titleVi": "Nội viện AF RVR (LVEF 55%) đã dùng nền Bisoprolol: Tối ưu Bisoprolol, TUYỆT ĐỐI KHÔNG kê Diltiazem/Verapamil",
+  "source": "ESC 2024 AF Section 7.1.2 / esc.af.2024.rate_avoid_bb_ccb_combo",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 67,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 148,
+    "rhythm": "afib",
+    "scr": 92,
+    "lvef": 55,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true
+    },
+    "customInputs": {
+      "hemodynamicStability": "stable",
+      "afOnset": "more_than_48h_or_unknown"
+    },
+    "currentMeds": [
+      {
+        "drugId": "bisoprolol",
+        "name": "Concor",
+        "dose": 2.5,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "bisoprolol",
+        "action": "UPTITRATE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "diltiazem",
+        "action": "START"
+      },
+      {
+        "drugId": "diltiazem",
+        "action": "CONSIDER"
+      },
+      {
+        "drugId": "verapamil",
+        "action": "START"
+      },
+      {
+        "drugId": "verapamil",
+        "action": "CONSIDER"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân nội viện RVR đang dùng Bisoprolol nền: chỉ tối ưu hóa Bisoprolol (hoặc thêm Digoxin), cấm phát START hay CONSIDER cho Diltiazem/Verapamil tránh block AV hoàn toàn."
+}

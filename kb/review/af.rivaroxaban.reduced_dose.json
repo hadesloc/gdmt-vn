@@ -1,0 +1,26 @@
+{
+  "itemId": "af.rivaroxaban.reduced_dose",
+  "contentHash": "1babf605815f325cacfa167cbd5611a6565ef83cd818ea7408e43ceeb8f60d0b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.rivaroxaban.reduced_dose",
+      "contentHash": "135926174a4c3579",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.rivaroxaban.reduced_dose (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

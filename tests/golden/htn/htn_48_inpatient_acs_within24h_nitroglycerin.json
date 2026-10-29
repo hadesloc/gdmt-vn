@@ -1,0 +1,60 @@
+{
+  "id": "htn_48_inpatient_acs_within24h_nitroglycerin",
+  "titleVi": "Nội viện Cấp cứu Hội chứng mạch vành cấp (< 24h) kèm THA nặng: Truyền Nitroglycerin tĩnh mạch đích SBP < 140 mmHg",
+  "source": "AHA/ACC 2025 & VSH 2022 / vsh.htn.2022.emergency_acs_table14",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 61,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 192,
+    "dbp": 108,
+    "hr": 92,
+    "scr": 90,
+    "k": 4.2,
+    "conditions": {
+      "htn": true,
+      "acuteAcsWithin24h": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_htn_emergency_acs",
+        "drugId": "nitroglycerin",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_htn_hypertensive_emergency_triage",
+        "action": "REFER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "sodium_nitroprusside",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Trong hội chứng vành cấp kèm tăng huyết áp nặng, ưu tiên truyền Nitroglycerin tĩnh mạch (kết hợp chẹn beta nếu không chống chỉ định) đưa SBP < 140 mmHg và tránh Sodium nitroprusside do hiện tượng cướp máu mạch vành."
+}

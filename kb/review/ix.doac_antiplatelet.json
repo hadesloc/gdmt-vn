@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.doac_antiplatelet",
+  "contentHash": "21e04625f96f1420b7d4c0a3305acc23c4fb77a7976cbf56722dbd641845908c",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.doac_antiplatelet",
+      "contentHash": "f8da7a559e4b1416",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.doac_antiplatelet."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

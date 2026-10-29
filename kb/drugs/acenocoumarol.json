@@ -1,0 +1,134 @@
+{
+  "id": "acenocoumarol",
+  "nameVi": "Acenocoumarol",
+  "inn": "Acenocoumarol",
+  "class": "Thuốc kháng vitamin K (VKA)",
+  "classes": [
+    "vka",
+    "oac"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Sintrom",
+    "Acenocoumarol"
+  ],
+  "forms": [
+    "Viên nén 1 mg",
+    "Viên nén 4 mg (có khía chia tư)"
+  ],
+  "start": {
+    "amount": 2,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Khởi đầu 1–2 mg/ngày uống vào một thời điểm cố định buổi tối (1 mg/ngày ở người cao tuổi, nhẹ cân, suy tim hoặc suy dinh dưỡng), chuẩn độ theo INR"
+  },
+  "target": {
+    "amount": "1–4",
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Liều duy trì cá thể hóa theo INR đích 2.0–3.0 (hoặc 2.5–3.5 ở van hai lá cơ học), TTR > 70%"
+  },
+  "titration": {
+    "step": "Điều chỉnh liều theo xét nghiệm INR mỗi 2–5 ngày trong giai đoạn dò liều cho tới khi đạt INR ổn định",
+    "intervalDays": 3,
+    "maxDose": "Cá thể hóa theo INR đích 2.0–3.0"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "crclFrom": 30,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "Chuẩn độ theo INR đích 2.0–3.0",
+      "citationIds": [
+        "byt.vte.2023.vka_inr_2_3"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 30,
+      "crclTo": 30,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "Khởi đầu liều thấp (1 mg/ngày), theo dõi sát INR và dấu hiệu xuất huyết ở suy thận nặng / lọc máu",
+      "note": "Kháng vitamin K vẫn dùng được ở suy thận nặng / lọc máu nhưng nguy cơ dao động INR và xuất huyết cao hơn",
+      "citationIds": [
+        "byt.vte.2023.vka_inr_2_3"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_acenocoumarol_inr_high",
+      "parameter": "INR",
+      "operator": ">",
+      "threshold": 3,
+      "unit": "INR",
+      "action": "reduce",
+      "messageVi": "INR > 3.0: Nguy cơ xuất huyết tăng cao, cần giảm liều hoặc tạm ngưng Acenocoumarol và kiểm tra lại INR",
+      "citationIds": [
+        "byt.vte.2023.vka_inr_2_3"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Chống chỉ định trong thai kỳ ở phụ nữ không mang van tim cơ học do đi qua nhau thai gây bệnh lý phôi thai (quái thai tam cá nguyệt 1) và xuất huyết thai nhi ngay cả ở liều thấp; ngoại lệ duy nhất do chuyên khoa tim mạch – sản khoa quyết định ở bệnh nhân van tim cơ học nguy cơ rất cao.",
+    "citationIds": [
+      "esc.preg.2025.vka_embryopathy_contra",
+      "esc.preg.2025.acenocoumarol_low_dose_threshold"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Thuốc kháng vitamin K (acenocoumarol, warfarin) an toàn và tương thích khi cho con bú theo ESC 2025 Pregnancy.",
+    "citationIds": [
+      "esc.preg.2025.vka_safe_lactation_p30"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định Acenocoumarol trong thai kỳ do gây bệnh lý phôi thai và xuất huyết thai nhi",
+      "citationIds": [
+        "esc.preg.2025.vka_embryopathy_contra"
+      ]
+    },
+    {
+      "code": "active_bleeding",
+      "messageVi": "Chống chỉ định khi đang có tình trạng xuất huyết tiến triển",
+      "citationIds": [
+        "byt.vte.2023.anticoagulant_contraindications"
+      ]
+    },
+    {
+      "code": "acute_ich",
+      "messageVi": "Chống chỉ định khi xuất huyết nội sọ cấp tính",
+      "citationIds": [
+        "byt.vte.2023.anticoagulant_contraindications"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định ở bệnh nhân suy gan nặng kèm rối loạn đông máu và nguy cơ xuất huyết cao",
+      "citationIds": [
+        "byt.vte.2023.anticoagulant_contraindications"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định phối hợp với các thuốc chống đông khác (DOAC, warfarin, heparin/enoxaparin trừ giai đoạn gối đầu ngắn ngày chuyển tiếp đạt INR 2.0–3.0)",
+    "Tương tác tăng vọt INR và xuất huyết nặng khi dùng cùng benzbromarone, amiodarone, fibrate, metronidazole, co-trimoxazole, fluconazole, fluoroquinolone, allopurinol",
+    "Tránh dùng đồng thời NSAID hoặc kháng kết tập tiểu cầu không có chỉ định mạch vành cấp do tăng mạnh xuất huyết tiêu hóa/nội sọ",
+    "Nhựa gắn acid mật (cholestyramine, colesevelam) làm giảm hấp thu acenocoumarol: phải uống cách xa ít nhất 1 giờ trước hoặc 4 giờ sau"
+  ],
+  "citationIds": [
+    "byt.vte.2023.vka_inr_2_3",
+    "esc.preg.2025.acenocoumarol_low_dose_threshold",
+    "esc.preg.2025.vka_embryopathy_contra",
+    "esc.preg.2025.vka_safe_lactation_p30",
+    "byt.vte.2023.anticoagulant_contraindications"
+  ]
+}

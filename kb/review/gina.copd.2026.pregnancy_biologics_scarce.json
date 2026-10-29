@@ -1,0 +1,26 @@
+{
+  "itemId": "gina.copd.2026.pregnancy_biologics_scarce",
+  "contentHash": "d18e23813bcac3c107c4ef2d25015e473022b3070f2278ca12581e0ecc5e4f61",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gina.copd.2026.pregnancy_biologics_scarce",
+      "contentHash": "7eccca7c581c81ae",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

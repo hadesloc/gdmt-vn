@@ -1,0 +1,65 @@
+{
+  "id": "gout_03_acute_flare_vn_profile_colchicine_1mg_defer_ult",
+  "titleVi": "Hồ sơ VN (BYT 361/2014): Cơn gút cấp tái phát – Colchicine 1 mg + 0.5 mg & Chờ hết viêm mới khởi trị ULT",
+  "source": "BYT QĐ 361/QĐ-BYT 2014 & EULAR 2016 (byt.gout.2014.allopurinol_start_after_inflammation, eular.gout.2016.flare_options)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 52,
+    "sex": "male",
+    "weight": 68,
+    "scr": 85,
+    "uricAcid": 520,
+    "conditions": {
+      "gout": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteFlare": true,
+      "goutFlaresYear": 3,
+      "priorFlaresLifetime": 5
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "colchicine",
+        "ruleId": "rec_gout_colchicine_acute_flare",
+        "action": "START",
+        "doseContains": "1 mg"
+      },
+      {
+        "ruleId": "rec_gout_ult_defer_until_flare_resolves_vn",
+        "action": "DEFER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "allopurinol",
+        "action": "START"
+      },
+      {
+        "drugId": "febuxostat",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 52 tuổi gút tái phát 3 đợt/năm đang trong cơn cấp chưa dùng ULT. Trên hồ sơ VN: dùng Colchicine 1 mg sau đó 0.5 mg sau 1 giờ và trì hoãn khởi trị mới Allopurinol 1–2 tuần tới khi hết viêm cấp theo BYT 361/2014."
+}

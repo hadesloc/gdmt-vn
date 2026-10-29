@@ -1,0 +1,62 @@
+{
+  "id": "copd_11_followup_dupilumab_indication",
+  "titleVi": "COPD theo dõi đợt cấp: Chỉ định Dupilumab (BCAT ≥ 300 + Viêm PQ mạn)",
+  "source": "GOLD 2026 Report p. 77 / Dupilumab Criteria",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_11",
+    "age": 68,
+    "sex": "male",
+    "weight": 56,
+    "height": 164,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 78,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "name": "Trelegy Ellipta",
+        "dose": 100,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.42,
+      "fev1PredPct": 40,
+      "chronicBronchitis": true,
+      "bloodEos": 350,
+      "currentInhaler": "triple",
+      "moderateExacerbations": 2,
+      "hospitalizations": 1
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dupilumab",
+        "action": "CONSIDER"
+      }
+    ]
+  }
+}

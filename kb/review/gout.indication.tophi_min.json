@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.indication.tophi_min",
+  "contentHash": "671bcd93484e7e0b4fffccff7ba54d40a21c795d5137ed7401b269dd8ffeb6ca",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.indication.tophi_min",
+      "contentHash": "c91a08f4dd38aea6",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.indication.tophi_min"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

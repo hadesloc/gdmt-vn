@@ -1,0 +1,87 @@
+{
+  "id": "evolocumab",
+  "nameVi": "Evolocumab",
+  "inn": "Evolocumab",
+  "class": "Kháng thể đơn dòng ức chế PCSK9",
+  "classes": [
+    "pcsk9i",
+    "pcsk9_mab"
+  ],
+  "vnBrands": [
+    "Repatha"
+  ],
+  "forms": [
+    "Dung dịch tiêm trong bút nạp sẵn 140 mg/mL",
+    "Dung dịch tiêm trong bơm nạp sẵn 140 mg/mL"
+  ],
+  "start": {
+    "amount": 140,
+    "unit": "mg",
+    "frequency": "mỗi 2 tuần",
+    "route": "tiêm dưới da",
+    "description": "140 mg tiêm dưới da mỗi 2 tuần hoặc 420 mg tiêm dưới da mỗi tháng"
+  },
+  "target": {
+    "amount": 140,
+    "unit": "mg",
+    "frequency": "mỗi 2 tuần",
+    "route": "tiêm dưới da",
+    "description": "140 mg tiêm dưới da mỗi 2 tuần hoặc 420 mg tiêm dưới da mỗi tháng"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "140 mg mỗi 2 tuần hoặc 420 mg mỗi tháng",
+      "note": "Không cần điều chỉnh liều ở bệnh nhân suy thận kể cả suy thận nặng",
+      "citationIds": [
+        "fda.evolocumab.dose",
+        "esc.lipid.2019.pcsk9_add_on_secondary"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_evolocumab_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "avoid",
+      "messageVi": "Tránh sử dụng thuốc ức chế PCSK9 trong thai kỳ và thời kỳ cho con bú do thiếu dữ liệu an toàn",
+      "citationIds": [
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    }
+  ],
+  "interactions": [
+    "Tăng độ thanh thải nhẹ khi dùng kèm statin (~20%), không có ý nghĩa lâm sàng và không cần chỉnh liều"
+  ],
+  "citationIds": [
+    "fda.evolocumab.dose",
+    "esc.lipid.2019.pcsk9_add_on_secondary"
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Tránh sử dụng trong thai kỳ do IgG qua được nhau thai và chưa có dữ liệu an toàn đầy đủ (ESC / FDA)",
+    "citationIds": [
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Tránh sử dụng trong thời kỳ cho con bú do thiếu dữ liệu an toàn trên trẻ sơ sinh (ESC / FDA)",
+    "citationIds": [
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Không khuyến cáo sử dụng thuốc hạ lipid trong thai kỳ và cho con bú",
+      "citationIds": [
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    }
+  ]
+}

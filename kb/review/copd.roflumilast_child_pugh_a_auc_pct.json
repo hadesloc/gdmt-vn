@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.roflumilast_child_pugh_a_auc_pct",
+  "contentHash": "bf6190f832c140c9c7fc04d7dcff1d2a0893bb88436d813b4e6f8a0e83f130ef",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.roflumilast_child_pugh_a_auc_pct",
+      "contentHash": "7fc7b899030b194c",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "id": "ezetimibe",
+  "nameVi": "Ezetimibe",
+  "inn": "Ezetimibe",
+  "class": "Thuốc ức chế hấp thu cholesterol",
+  "classes": [
+    "cholesterol_absorption_inhibitor"
+  ],
+  "vnBrands": [
+    "Ezetrol",
+    "Ezetimibe Stella",
+    "Ezetimib Stada"
+  ],
+  "forms": [
+    "Viên nén 10 mg"
+  ],
+  "start": {
+    "amount": 10,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "10 mg uống 1 lần/ngày, cùng hoặc không cùng bữa ăn"
+  },
+  "target": {
+    "amount": 10,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "10 mg uống 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "10 mg 1 lần/ngày",
+      "note": "Không cần điều chỉnh liều ở mọi mức độ suy thận",
+      "citationIds": [
+        "fda.ezetimibe.dose",
+        "fda.ezetimibe.renal"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_ezetimibe_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Không sử dụng thuốc hạ lipid máu (ezetimibe đơn độc hoặc phối hợp statin) trong thai kỳ và thời kỳ cho con bú",
+      "citationIds": [
+        "esc.lipid.2019.pregnancy_all_llt_contra",
+        "esc.lipid.2024.ccs_pregnancy"
+      ]
+    },
+    {
+      "id": "gate_ezetimibe_alt",
+      "parameter": "ALT",
+      "operator": ">=",
+      "threshold": 3,
+      "unit": "x ULN",
+      "action": "hold",
+      "messageVi": "Men gan ALT tăng >= 3 lần ULN hoặc suy gan vừa-nặng (Child-Pugh B/C): Tạm ngừng hoặc tránh dùng Ezetimibe",
+      "citationIds": [
+        "esc.lipid.2019.monitoring_alt_elevation",
+        "fda.ezetimibe.hepatic_child_pugh",
+        "acc.lipid.2026.ezetimibe_hepatic_avoid"
+      ]
+    }
+  ],
+  "interactions": [
+    "Uống trước ít nhất 2 giờ hoặc sau 4 giờ khi dùng kèm thuốc gắn acid mật (cholestyramine, colesevelam)",
+    "Thận trọng khi dùng đồng thời với Cyclosporine (tăng nồng độ ezetimibe) hoặc Fibrate (tăng nhẹ nguy cơ sỏi mật)",
+    "Thận trọng ở bệnh nhân có bệnh nhược cơ (myasthenia gravis / nhược cơ thể mắt) do đã có báo cáo hiếm gặp khởi phát mới hoặc làm nặng triệu chứng nhược cơ"
+  ],
+  "citationIds": [
+    "fda.ezetimibe.dose",
+    "fda.ezetimibe.renal",
+    "esc.lipid.2019.ezetimibe_add_on",
+    "acc.lipid.2026.ezetimibe_outpatient_addon",
+    "acc.lipid.2026.ezetimibe_secondary_very_high",
+    "fda.ezetimibe.hepatic_child_pugh",
+    "acc.lipid.2026.ezetimibe_hepatic_avoid",
+    "fda.ezetimibe.bile_acid_sequestrant",
+    "fda.rosuvastatin.myasthenia_gravis"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Không sử dụng trong thai kỳ (chống chỉ định tuyệt đối khi phối hợp với statin; ESC khuyến cáo tránh toàn bộ thuốc hạ lipid trong thai kỳ)",
+    "citationIds": [
+      "esc.lipid.2019.pregnancy_all_llt_contra",
+      "esc.lipid.2024.ccs_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo dùng trong thời kỳ cho con bú do chưa có dữ liệu an toàn trên trẻ bú mẹ (FDA / ESC)",
+    "citationIds": [
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Không dùng trong thai kỳ và thời kỳ cho con bú (đặc biệt chống chỉ định khi phối hợp với statin)",
+      "citationIds": [
+        "esc.lipid.2019.pregnancy_all_llt_contra",
+        "esc.lipid.2024.ccs_pregnancy"
+      ]
+    },
+    {
+      "code": "moderate_to_severe_hepatic_impairment",
+      "messageVi": "Không khuyến cáo sử dụng Ezetimibe ở bệnh nhân suy gan mức độ trung bình đến nặng (Child-Pugh B hoặc C) do tăng phơi nhiễm toàn thân 3–6 lần",
+      "citationIds": [
+        "fda.ezetimibe.hepatic_child_pugh",
+        "acc.lipid.2026.ezetimibe_hepatic_avoid"
+      ]
+    }
+  ]
+}

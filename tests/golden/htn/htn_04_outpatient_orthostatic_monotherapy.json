@@ -1,0 +1,49 @@
+{
+  "id": "htn_04_outpatient_orthostatic_monotherapy",
+  "titleVi": "Bệnh nhân có hạ HA tư thế đứng: Khởi đầu đơn trị liệu thận trọng",
+  "source": "ESC 2024 HTN / esc.htn.2024.initial_combination",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 74,
+    "sex": "male",
+    "weight": 65,
+    "height": 165,
+    "sbp": 152,
+    "dbp": 86,
+    "hr": 74,
+    "scr": 96,
+    "k": 4.2,
+    "conditions": {
+      "htn": true,
+      "orthostaticHypotension": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "amlodipine",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân có triệu chứng hạ HA tư thế đứng, ưu tiên khởi đầu đơn trị liệu liều thấp."
+}

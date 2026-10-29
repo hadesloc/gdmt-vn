@@ -1,0 +1,54 @@
+{
+  "id": "ckd_31_inpatient_aki_hco3_17_no_rrt",
+  "titleVi": "Nội viện - AKI Giai đoạn 2 kèm toan chuyển hóa nhẹ HCO3- 17 mmol/L KHÔNG chỉ định lọc máu cấp cứu (Regression CKD-R1-01 / CKD-R2-01)",
+  "source": "BYT 2024 QĐ 2388/QĐ-BYT Mục 3.2 (HCO3 < 8 mmol/L) & KDIGO 2012 AKI Rec 5.1.1",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_31",
+    "name": "BN CKD 31",
+    "age": 66,
+    "sex": "male",
+    "weight": 68,
+    "sbp": 116,
+    "dbp": 72,
+    "hr": 84,
+    "scr": 250,
+    "k": 5.1,
+    "hco3": 17,
+    "conditions": {
+      "ckd": true,
+      "htn": true
+    },
+    "customInputs": {
+      "akiSuspected": true,
+      "baselineScr": 120,
+      "urineOutputRate": "oliguria_6h"
+    },
+    "currentMeds": [],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "rec_ckd_aki_stage_alert", "action": "MONITOR" }
+    ],
+    "mustNotInclude": [
+      { "ruleId": "rec_ckd_emergency_rrt", "action": "REFER" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R1-01 & CKD-R2-01: Toan chuyển hóa nhẹ (HCO3- = 17 mmol/L >= 8 mmol/L), K+ 5.1 mmol/L, chưa vô niệu -> Tuyệt đối không chỉ định lọc máu cấp cứu."
+}

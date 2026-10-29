@@ -1,0 +1,79 @@
+{
+  "id": "fluticasone_furoate",
+  "nameVi": "Fluticasone furoate",
+  "inn": "Fluticasone furoate",
+  "class": "ICS",
+  "vnBrands": [
+    "Chưa lưu hành đơn chất tại VN (Biệt dược FDA: Arnuity Ellipta; tại VN lưu hành phối hợp Relvar Ellipta)"
+  ],
+  "forms": [
+    "Bình hít bột khô Ellipta 100 mcg, 200 mcg"
+  ],
+  "start": {
+    "amount": 100,
+    "unit": "mcg",
+    "frequency": "1 lần/ngày",
+    "route": "hít",
+    "description": "Liều thấp 100 mcg 1 lần/ngày"
+  },
+  "target": {
+    "amount": 200,
+    "unit": "mcg",
+    "frequency": "1 lần/ngày",
+    "route": "hít",
+    "description": "Liều cao 200 mcg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận",
+      "citationIds": [
+        "gina.asthma.2026.table_6_fluticasone_furoate"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Chất ức chế mạnh CYP3A4",
+    "Hướng dẫn dùng thuốc: Súc miệng kỹ bằng nước sạch và nhổ đi ngay sau khi hít thuốc để phòng ngừa nấm candida hầu họng và khản tiếng"
+  ],
+  "citationIds": [
+    "gina.asthma.2026.table_6_fluticasone_furoate"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Dữ liệu thai kỳ hạn chế hơn fluticasone propionate, chỉ dùng khi lợi ích vượt trội nguy cơ.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Thận trọng khi cho con bú.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity",
+      "messageVi": "Quá mẫn với fluticasone furoate",
+      "citationIds": [
+        "gina.asthma.2026.table_6_fluticasone_furoate"
+      ]
+    },
+    {
+      "code": "severe_milk_protein_allergy",
+      "messageVi": "Chống chỉ định ở bệnh nhân có tiền sử dị ứng nặng / phản vệ với protein sữa bò (bình hít bột khô Ellipta chứa tá dược lactose)",
+      "citationIds": [
+        "gina.asthma.2026.table_6_fluticasone_furoate",
+        "gold.copd.2026.dpi_inspiratory_flow_switch"
+      ]
+    }
+  ],
+  "classes": [
+    "ics"
+  ]
+}

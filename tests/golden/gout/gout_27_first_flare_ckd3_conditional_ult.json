@@ -1,0 +1,68 @@
+{
+  "id": "gout_27_first_flare_ckd3_conditional_ult",
+  "titleVi": "Sau cơn gút đầu tiên nhưng kèm CKD giai đoạn 3a (eGFR 50): Có chỉ định khởi trị ULT có điều kiện (Allopurinol ≤ 50 mg)",
+  "source": "ACR 2020 (acr.gout.2020.indication_conditional_first_flare, acr.gout.2020.allopurinol_start_dose_ckd_50)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 62,
+    "sex": "male",
+    "weight": 70,
+    "scr": 135,
+    "uricAcid": 490,
+    "conditions": {
+      "gout": true,
+      "ckd": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteFlare": false,
+      "priorFlaresLifetime": 1,
+      "goutFlaresYear": 1,
+      "hlab5801": "negative"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_gout_ult_indicated_conditional",
+        "action": "MONITOR"
+      },
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_start",
+        "action": "START",
+        "doseContains": "50 mg"
+      },
+      {
+        "drugId": "colchicine",
+        "ruleId": "rec_gout_colchicine_prophylaxis",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_gout_ult_not_indicated",
+        "action": "DEFER"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 62 tuổi mới bị cơn gút cấp đầu tiên (đã qua đợt cấp) nhưng có CKD giai đoạn 3a (eGFR ~50 mL/phút/1.73m²). Đủ tiêu chuẩn chỉ định ULT có điều kiện theo ACR 2020 với liều khởi đầu Allopurinol ≤ 50 mg/ngày."
+}

@@ -1,0 +1,56 @@
+{
+  "id": "dm2_33_icu_hhs_hyperosmolar",
+  "titleVi": "Cấp cứu HHS (glucose 38.0 mmol/L, ALTT 345 mOsm/kg) - Bù dịch + Insulin 0.05 U/kg/h",
+  "source": "Consensus 2024 / oncall icu_hhs_hyperosmolar_0210",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "male",
+    "weight": 65,
+    "height": 165,
+    "sbp": 92,
+    "dbp": 58,
+    "hr": 118,
+    "scr": 180,
+    "k": 4.3,
+    "glucose": 38.0,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "dkaSuspected": true,
+      "bloodKetones": 1.2,
+      "effectiveOsmolality": 345,
+      "venousPh": 7.38,
+      "serumBicarb": 22
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_dm2_dka_active_management",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "HHS: Bù dịch đẳng trương và insulin liều thấp."
+}

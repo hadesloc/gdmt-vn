@@ -1,0 +1,26 @@
+{
+  "itemId": "hf.mra.k_halve_dose",
+  "contentHash": "b0da8fc08a04f2c9ba2b5b1ff5072dbe679194cc7209c192e002bb2b937cfbbc",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "hf.mra.k_halve_dose",
+      "contentHash": "6a9127e44490ef0c",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-27T14:39:00.000Z",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T14:39:00.000Z",
+          "role": "Agent G4 (HF Remediation & QA-10)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF threshold hf.mra.k_halve_dose (Round 1 R1/R2/R3 remediation & QA-10 verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

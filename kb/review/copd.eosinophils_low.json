@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.eosinophils_low",
+  "contentHash": "7bf7dd65c38bf98954f67b7c7c1e4d526a74aea9e83ffc3be94656afcef305ce",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.eosinophils_low",
+      "contentHash": "d3247c12e4923d2d",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

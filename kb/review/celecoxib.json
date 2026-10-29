@@ -1,0 +1,26 @@
+{
+  "itemId": "celecoxib",
+  "contentHash": "2ba90888c512b9dc72e43fa7709d3ce0931c75e579a296e0fbeb017b7f673882",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "celecoxib",
+      "contentHash": "c2d8ba7735f100cd",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của DrugEntry: celecoxib"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

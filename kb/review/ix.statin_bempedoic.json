@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.statin_bempedoic",
+  "contentHash": "8769daf202c1f21225382016308e1e85bd4dae354ac637cf460d4ccfdb6c677c",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.statin_bempedoic",
+      "contentHash": "00732081a4c15b8e",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T11:20:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.statin_bempedoic."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T11:20:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

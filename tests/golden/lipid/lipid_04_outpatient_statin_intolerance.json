@@ -1,0 +1,58 @@
+{
+  "id": "lipid_04_outpatient_statin_intolerance",
+  "titleVi": "Không dung nạp Statin - Khởi trị Bempedoic acid",
+  "source": "ESC 2025 / esc.lipid.2025.bempedoic_statin_intolerance",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 60,
+    "sex": "female",
+    "weight": 58,
+    "height": 158,
+    "sbp": 125,
+    "dbp": 75,
+    "hr": 72,
+    "scr": 75,
+    "tc": 5.4,
+    "hdl": 1.2,
+    "ldl": 3.5,
+    "tg": 1.6,
+    "conditions": {
+      "ascvd": true,
+      "statinIntolerance": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "bempedoic_acid",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Không dung nạp statin đã xác nhận, chỉ định Bempedoic acid 180 mg."
+}

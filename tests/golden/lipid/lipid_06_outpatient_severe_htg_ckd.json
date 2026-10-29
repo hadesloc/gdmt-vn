@@ -1,0 +1,57 @@
+{
+  "id": "lipid_06_outpatient_severe_htg_ckd",
+  "titleVi": "Tăng TG nặng kèm suy thận nặng (eGFR 22) - Chống chỉ định Fenofibrate",
+  "source": "ACC 2026 / acc.lipid.2026.fenofibrate_renal",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 70,
+    "sex": "male",
+    "weight": 65,
+    "height": 165,
+    "sbp": 138,
+    "dbp": 82,
+    "hr": 74,
+    "scr": 220,
+    "tc": 6.5,
+    "hdl": 0.8,
+    "ldl": 2.5,
+    "tg": 8,
+    "conditions": {
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "fenofibrate",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "fenofibrate",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "eGFR < 30 mL/phút chống chỉ định Fenofibrate."
+}

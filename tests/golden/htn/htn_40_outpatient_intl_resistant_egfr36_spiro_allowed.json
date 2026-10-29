@@ -1,0 +1,72 @@
+{
+  "id": "htn_40_outpatient_intl_resistant_egfr36_spiro_allowed",
+  "titleVi": "Profile INTL (ESC 2024): THA kháng trị có eGFR ~36 mL/min (30–44) được phép khởi trị Spironolactone liều thấp",
+  "source": "ESC 2024 HTN / esc.htn.2024.spiro_gates_egfr30_k45",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 66,
+    "sex": "male",
+    "weight": 72,
+    "height": 170,
+    "sbp": 154,
+    "dbp": 94,
+    "hr": 74,
+    "scr": 168,
+    "k": 4.2,
+    "conditions": {
+      "htn": true,
+      "ckd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "perindopril",
+        "dose": 10,
+        "unit": "mg"
+      },
+      {
+        "drugId": "amlodipine",
+        "dose": 10,
+        "unit": "mg"
+      },
+      {
+        "drugId": "indapamide",
+        "dose": 1.5,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "spironolactone",
+        "action": "START",
+        "doseContains": "12.5"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "spironolactone",
+        "action": "AVOID"
+      }
+    ]
+  },
+  "descriptionVi": "Khác với AHA/ACC 2025 (chặn < 45), ESC 2024 và VSH 2022 cho phép dùng Spironolactone liều thấp thận trọng khi eGFR nằm trong dải 30–44 mL/phút/1,73 m² và K+ ≤ 4,5 mmol/L."
+}

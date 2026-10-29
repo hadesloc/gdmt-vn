@@ -1,0 +1,26 @@
+{
+  "itemId": "naproxen",
+  "contentHash": "92e3897f69eb0c53640ac3b5890f069bac147e218bf20faa1718f8ef2f6e8110",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "naproxen",
+      "contentHash": "98745f4c8831a8f0",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của DrugEntry: naproxen"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

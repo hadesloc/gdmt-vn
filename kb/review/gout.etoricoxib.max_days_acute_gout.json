@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.etoricoxib.max_days_acute_gout",
+  "contentHash": "a2c4f162b5a7edfcf92be57f997ff2780d3a373d93c286084e6208326f0d4ec6",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.etoricoxib.max_days_acute_gout",
+      "contentHash": "1f07df03aa4be1a5",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold: gout.etoricoxib.max_days_acute_gout"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

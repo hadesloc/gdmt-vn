@@ -1,0 +1,455 @@
+[
+  {
+    "id": "ix.metformin_iodinated_contrast",
+    "titleVi": "Chống chỉ định Tạm thời / Nguy cơ Nhiễm toan Lactic: Metformin + Thuốc cản quang chứa Iod",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "metformin"
+      ],
+      "classes": [
+        "biguanide"
+      ]
+    },
+    "b": {
+      "classes": [
+        "iodinated_contrast"
+      ]
+    },
+    "mechanismVi": "Thuốc cản quang tiêm mạch có thể gây suy giảm chức năng thận cấp tính (bệnh thận do thuốc cản quang), dẫn tới tích tụ metformin trong huyết tương.",
+    "effectVi": "Nhiễm toan lactic liên quan đến metformin (MALA), có thể tử vong.",
+    "managementVi": "Ngừng metformin tại/trước cản quang iod nếu eGFR30–60 hoặc có tiền sử bệnh gan, nghiện rượu, suy tim; hoặc dùng cản quang động mạch. Đánh giá lại eGFR sau48giờ, chỉ dùng lại khi chức năng thận ổn định.",
+    "citationIds": [
+      "fda.metformin.iodinated_contrast_precaution"
+    ]
+  },
+  {
+    "id": "ix.su_fluoroquinolones",
+    "titleVi": "Tương tác Hạ đường huyết nặng khó kiểm soát: Sulfonylurea / Insulin + Fluoroquinolone",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "glimepiride",
+        "gliclazide",
+        "insulin_glargine",
+        "insulin_degludec",
+        "insulin_detemir",
+        "insulin_nph",
+        "insulin_regular",
+        "insulin_aspart",
+        "insulin_lispro",
+        "insulin_premix"
+      ],
+      "classes": [
+        "su",
+        "insulin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "ciprofloxacin",
+        "levofloxacin",
+        "moxifloxacin"
+      ],
+      "classes": [
+        "fluoroquinolone"
+      ]
+    },
+    "mechanismVi": "Kháng sinh fluoroquinolone chẹn kênh kali nhạy cảm ATP tại tế bào beta đảo tụy, kích thích giải phóng insulin quá mức hiệp đồng với sulfonylurea.",
+    "effectVi": "Hạ đường huyết nghiêm trọng kéo dài, hôn mê hạ đường huyết, tổn thương não không hồi phục và tử vong.",
+    "managementVi": "Tránh dùng fluoroquinolone ở bệnh nhân đái tháo đường đang dùng sulfonylurea hoặc insulin; nếu bắt buộc phải dùng, hướng dẫn bệnh nhân nhận biết triệu chứng hạ đường huyết và theo dõi đường huyết mao mạch nhiều lần trong ngày.",
+    "citationIds": [
+      "fda.glimepiride.hypoglycemia_warning"
+    ]
+  },
+  {
+    "id": "ix.su_nsaid",
+    "titleVi": "Tương tác Tăng nguy cơ Hạ đường huyết: Sulfonylurea + NSAID",
+    "severity": "moderate",
+    "a": {
+      "drugIds": [
+        "glimepiride",
+        "gliclazide"
+      ],
+      "classes": [
+        "su"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "ibuprofen",
+        "naproxen",
+        "diclofenac",
+        "celecoxib",
+        "etoricoxib",
+        "meloxicam"
+      ],
+      "classes": [
+        "nsaid"
+      ]
+    },
+    "mechanismVi": "NSAID cạnh tranh liên kết với albumin huyết tương làm tăng phân đoạn sulfonylurea tự do và giảm độ thanh thải qua thận.",
+    "effectVi": "Gia tăng tần suất hạ đường huyết có triệu chứng.",
+    "managementVi": "Theo dõi sát đường huyết mao mạch khi bắt đầu hoặc ngừng NSAID ở bệnh nhân đang điều trị bằng Sulfonylurea.",
+    "citationIds": [
+      "fda.glimepiride.hypoglycemia_warning"
+    ]
+  },
+  {
+    "id": "ix.pioglitazone_insulin_hf",
+    "titleVi": "Tương tác Giữ nước & Khởi phát Đợt cấp Suy tim: Pioglitazone + Insulin",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "pioglitazone"
+      ],
+      "classes": [
+        "tzd"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "insulin_glargine",
+        "insulin_degludec",
+        "insulin_detemir",
+        "insulin_nph",
+        "insulin_regular",
+        "insulin_aspart",
+        "insulin_lispro",
+        "insulin_premix"
+      ],
+      "classes": [
+        "insulin"
+      ]
+    },
+    "mechanismVi": "Cả pioglitazone và insulin đều kích thích tái hấp thu natri qua kênh ENaC tại ống góp thận, gây giữ muối nước trầm trọng.",
+    "effectVi": "Tăng phù ngoại biên, tràn dịch màng phổi, bùng phát suy tim sung huyết cấp và tăng tỷ lệ nhập viện vì suy tim.",
+    "managementVi": "Tránh phối hợp ở bệnh nhân có bệnh tim mạch hoặc nguy cơ suy tim; nếu phối hợp bắt buộc theo dõi sát cân nặng, phù chân và dấu hiệu khó thở.",
+    "citationIds": [
+      "fda.pioglitazone.heart_failure_risk"
+    ]
+  },
+  {
+    "id": "ix.sglt2i_loop_diuretic_hypotension",
+    "titleVi": "Tương tác Tụt huyết áp & Mất thể tích: Thuốc ức chế SGLT2 + Thuốc lợi tiểu quai",
+    "severity": "moderate",
+    "a": {
+      "drugIds": [
+        "dapagliflozin",
+        "empagliflozin",
+        "canagliflozin"
+      ],
+      "classes": [
+        "sglt2i"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "furosemide",
+        "torsemide",
+        "bumetanide"
+      ],
+      "classes": [
+        "loop_diuretic"
+      ]
+    },
+    "mechanismVi": "Tác dụng lợi niệu thẩm thấu do thải đường qua nước tiểu của SGLT2i cộng hưởng với tác dụng lợi tiểu natri mạnh của thuốc lợi tiểu quai.",
+    "effectVi": "Tụt huyết áp tư thế đứng, chóng mặt, té ngã và giảm thể tích tuần hoàn dẫn tới suy thận trước thận.",
+    "managementVi": "Đánh giá kỹ tình trạng thể dịch trước khi khởi trị SGLT2i; ở bệnh nhân cao tuổi hoặc đang dùng liều cao lợi tiểu quai, cân nhắc giảm tạm thời liều lợi tiểu quai.",
+    "citationIds": [
+      "fda.dapagliflozin.loop_diuretic_hypotension"
+    ]
+  },
+  {
+    "id": "ix.dpp4i_glp1ra_redundancy",
+    "titleVi": "Trùng lặp cơ chế & Không tăng hiệu quả: DPP-4i + GLP-1 RA",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "sitagliptin",
+        "linagliptin",
+        "vildagliptin",
+        "saxagliptin"
+      ],
+      "classes": [
+        "dpp4i"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "semaglutide",
+        "dulaglutide",
+        "liraglutide",
+        "semaglutide_oral",
+        "tirzepatide"
+      ],
+      "classes": [
+        "glp1ra"
+      ]
+    },
+    "mechanismVi": "Cả hai thuốc đều tác động qua trục incretin: GLP-1 RA cung cấp nồng độ dược lý rất cao của GLP-1, do đó thuốc ức chế enzym thoái biến DPP-4 không tạo thêm tác dụng sinh học có ý nghĩa.",
+    "effectVi": "Lãng phí chi phí điều trị lớn, tăng nguy cơ tác dụng phụ trên đường tiêu hóa mà không cải thiện thêm HbA1c hay kết cục tim mạch/thận.",
+    "managementVi": "Ngừng thuốc ức chế DPP-4 khi khởi trị thuốc đồng vận thụ thể GLP-1 (hoặc đồng vận kép GIP/GLP-1 Tirzepatide).",
+    "citationIds": [
+      "ada.2026.soc9.dpp4i_glp1ra_not_recommended"
+    ]
+  },
+  {
+    "id": "ix.nsaid_methotrexate",
+    "titleVi": "Tương tác Ngộ độc Methotrexate nặng: NSAID + Methotrexate",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "ibuprofen",
+        "naproxen",
+        "diclofenac",
+        "indomethacin",
+        "meloxicam",
+        "celecoxib",
+        "etoricoxib"
+      ],
+      "classes": [
+        "nsaid"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "methotrexate"
+      ],
+      "classes": [
+        "immunosuppressant"
+      ]
+    },
+    "mechanismVi": "NSAID ức chế prostaglandin tại thận làm giảm lưu lượng máu thận, đồng thời cạnh tranh bài tiết chủ động tại ống thận làm giảm độ thanh thải methotrexate.",
+    "effectVi": "Tăng nồng độ methotrexate tự do, gây suy tủy xương, viêm niêm mạc ruột hoại tử và suy thận cấp.",
+    "managementVi": "Chống chỉ định phối hợp với liều cao Methotrexate (trong ung thư). Với liều thấp Methotrexate (trong viêm khớp), theo dõi sát công thức máu và chức năng thận.",
+    "citationIds": [
+      "fda.celecoxib.methotrexate_toxicity"
+    ]
+  },
+  {
+    "id": "ix.nsaid_aspirin_antiplatelet_blunting",
+    "titleVi": "Tương tác Làm mất tác dụng Bảo vệ tim mạch của Aspirin: Ibuprofen / Naproxen + Aspirin liều thấp",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "ibuprofen",
+        "naproxen"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "aspirin"
+      ],
+      "classes": [
+        "antiplatelet"
+      ]
+    },
+    "mechanismVi": "Ibuprofen cạnh tranh vị trí gắn kết thuận nghịch tại kênh Ser-529 của COX-1 tiểu cầu, ngăn cản aspirin gắn kết không thuận nghịch để bất hoạt COX-1.",
+    "effectVi": "Mất tác dụng ức chế kết tập tiểu cầu bảo vệ tim mạch của aspirin liều thấp, làm tăng nguy cơ nhồi máu cơ tim tái phát và biến cố huyết khối tắc mạch.",
+    "managementVi": "Uống aspirin liều thấp ít nhất 30 phút trước khi dùng ibuprofen, hoặc uống ibuprofen ít nhất 8 giờ sau khi uống aspirin; ưu tiên paracetamol để giảm đau.",
+    "citationIds": [
+      "fda.celecoxib.aspirin_concomitant_caution"
+    ]
+  },
+  {
+    "id": "ix.potassium_binder_drug_binding",
+    "titleVi": "Tương tác Cản trở Hấp thu Thuốc uống: Nhựa trao đổi ion / Chất gắn Kali + Thuốc uống khác",
+    "severity": "moderate",
+    "a": {
+      "drugIds": [
+        "patiromer",
+        "sodium_zirconium_cyclosilicate",
+        "calcium_polystyrene_sulfonate"
+      ],
+      "classes": [
+        "potassium_binder"
+      ]
+    },
+    "b": {
+      "classes": [
+        "oral_medication"
+      ]
+    },
+    "mechanismVi": "Chất gắn kali tại đường tiêu hóa có thể hấp phụ vật lý hoặc liên kết hóa học với các phân tử thuốc uống khác, làm giảm diện tích và tốc độ hấp thu vào tuần hoàn.",
+    "effectVi": "Làm giảm nồng độ và suy giảm hiệu quả điều trị của các thuốc uống thiết yếu dùng cùng.",
+    "managementVi": "Tách liều thuốc uống khác theo chuẩn nhãn từng hoạt chất: Sodium Zirconium Cyclosilicate (Lokelma) cách ít nhất 2 giờ trước hoặc 2 giờ sau; Patiromer (Veltassa) cách ít nhất 3 giờ trước hoặc 3 giờ sau; Calcium Polystyrene Sulfonate (Kalimate / Calcium Resonium) cách ít nhất 3 giờ trước hoặc 3 giờ sau (cân nhắc giãn cách 6 giờ nếu bệnh nhân có liệt dạ dày - gastroparesis).",
+    "citationIds": [
+      "fda.patiromer.separation_3_hours",
+      "fda.szc.separation_2_hours",
+      "ukka.2022.cps_separation_3h_6h_gastroparesis",
+      "kdigo.ckd.2024.polystyrene_sulfonate_separation_3h_6h"
+    ]
+  },
+  {
+    "id": "ix.nsaid_corticosteroid_gi_bleed",
+    "titleVi": "Tương tác Tăng vọt Nguy cơ Loét & Thủng dạ dày: NSAID toàn thân + Corticosteroid toàn thân",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "ibuprofen",
+        "naproxen",
+        "diclofenac",
+        "celecoxib",
+        "etoricoxib",
+        "meloxicam",
+        "indomethacin"
+      ],
+      "classes": [
+        "nsaid"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "prednisolone",
+        "methylprednisolone",
+        "hydrocortisone",
+        "dexamethasone"
+      ],
+      "classes": [
+        "systemic_corticosteroid"
+      ]
+    },
+    "mechanismVi": "NSAID ức chế prostaglandin bảo vệ niêm mạc dạ dày trong khi corticosteroid ức chế sự phân chia tế bào biểu mô và làm chậm lành vết thương niêm mạc.",
+    "effectVi": "Tăng nguy cơ loét dạ dày tá tràng, xuất huyết tiêu hóa ồ ạt và thủng tạng rỗng lên gấp 4–10 lần so với đơn trị liệu.",
+    "managementVi": "Tránh phối hợp đồng thời đường toàn thân. Nếu bắt buộc phải phối hợp, bắt buộc kê đơn kèm thuốc ức chế bơm proton (PPI) để bảo vệ dạ dày và dùng trong thời gian ngắn nhất.",
+    "citationIds": [
+      "fda.celecoxib.corticosteroid_gi_bleeding"
+    ]
+  },
+  {
+    "id": "ix.sglt2i_su_insulin_hypoglycemia",
+    "titleVi": "Tương tác Nguy cơ Hạ đường huyết khi phối hợp SGLT2i + Sulfonylurea / Insulin",
+    "severity": "moderate",
+    "a": {
+      "drugIds": [
+        "dapagliflozin",
+        "empagliflozin",
+        "canagliflozin"
+      ],
+      "classes": [
+        "sglt2i"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "glimepiride",
+        "gliclazide",
+        "insulin_glargine",
+        "insulin_degludec",
+        "insulin_detemir",
+        "insulin_nph",
+        "insulin_regular",
+        "insulin_aspart",
+        "insulin_lispro",
+        "insulin_premix"
+      ],
+      "classes": [
+        "su",
+        "insulin"
+      ]
+    },
+    "mechanismVi": "Bản thân SGLT2i có nguy cơ hạ đường huyết thấp, nhưng khi phối hợp với thuốc kích thích bài tiết insulin (SU) hoặc insulin ngoại sinh, việc bài tiết thêm glucose qua nước tiểu làm tăng nguy cơ hạ đường huyết.",
+    "effectVi": "Gia tăng các cơn hạ đường huyết triệu chứng.",
+    "managementVi": "Cân nhắc giảm liều sulfonylurea hoặc insulin khi khởi trị thuốc ức chế SGLT2; hướng dẫn bệnh nhân tự theo dõi đường huyết.",
+    "citationIds": [
+      "fda.dapagliflozin.su_insulin_hypoglycemia"
+    ]
+  },
+  {
+    "id": "ix.szc_binder_separation",
+    "titleVi": "Tương tác Giãn cách Thời gian Uống: Sodium Zirconium Cyclosilicate (Lokelma) + Thuốc uống khác",
+    "severity": "moderate",
+    "a": {
+      "drugIds": [
+        "sodium_zirconium_cyclosilicate"
+      ]
+    },
+    "b": {
+      "classes": [
+        "oral_medication"
+      ]
+    },
+    "mechanismVi": "Lokelma có thể làm tăng tạm thời pH dịch vị dạ dày và hấp phụ một số thuốc uống nhạy cảm với pH, làm thay đổi sinh khả dụng.",
+    "effectVi": "Giảm hấp thu và giảm nồng độ thuốc phối hợp trong máu.",
+    "managementVi": "Uống các thuốc khác cách ít nhất 2 giờ trước hoặc 2 giờ sau khi dùng Lokelma.",
+    "citationIds": [
+      "fda.szc.separation_2_hours"
+    ]
+  },
+  {
+    "id": "ix.saxagliptin_strong_cyp3a4",
+    "titleVi": "Tương tác Giới hạn liều tối đa 2.5 mg/ngày: Saxagliptin + Thuốc ức chế mạnh CYP3A4/5",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "saxagliptin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "ketoconazole",
+        "itraconazole",
+        "clarithromycin",
+        "ritonavir",
+        "atazanavir",
+        "indinavir",
+        "nelfinavir",
+        "saquinavir",
+        "telithromycin",
+        "nefazodone",
+        "nirmatrelvir_ritonavir",
+        "cobicistat",
+        "posaconazole",
+        "voriconazole"
+      ],
+      "classes": [
+        "strong_cyp3a4_inhibitor"
+      ]
+    },
+    "mechanismVi": "Saxagliptin được chuyển hóa chủ yếu qua phức hợp enzym cytochrome P450 3A4/5 (CYP3A4/5). Phối hợp với các chất ức chế mạnh CYP3A4/5 (như ketoconazole, clarithromycin, itraconazole, ritonavir...) làm tăng đáng kể nồng độ Cmax và AUC huyết tương của saxagliptin.",
+    "effectVi": "Quá liều tích lũy saxagliptin toàn thân, làm gia tăng nguy cơ hạ đường huyết (đặc biệt khi dùng kèm sulfonylurea/insulin), giảm bạch cầu lympho và các tác dụng không mong muốn phụ thuộc liều.",
+    "managementVi": "Bắt buộc giới hạn liều Saxagliptin (Onglyza) tối đa 2.5 mg x 1 lần/ngày khi dùng đồng thời với bất kỳ chất ức chế mạnh CYP3A4/5 nào (FDA Onglyza Section 2.3 & 7.1), hoặc cân nhắc chuyển sang thuốc DPP-4i không phụ thuộc CYP3A4 ở mức cần chỉnh liều tương tác (như linagliptin, sitagliptin).",
+    "doseLimit": {
+      "drugId": "saxagliptin",
+      "maxDose": 2.5,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Giới hạn liều Saxagliptin tối đa 2.5 mg x 1 lần/ngày khi phối hợp chất ức chế mạnh CYP3A4/5"
+    },
+    "citationIds": [
+      "fda.saxagliptin.strong_cyp3a4_dose_2_5mg",
+      "fda.saxagliptin.strong_cyp3a4_ddi_7_1"
+    ]
+  },
+  {
+    "id": "ix.laba_monotherapy_asthma",
+    "titleVi": "Chống chỉ định Tuyệt đối ở Hen phế quản: Thuốc giãn phế quản LABA hoặc LABA-LAMA đơn thuần KHÔNG kèm ICS",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "olodaterol",
+        "bambuterol",
+        "tulobuterol",
+        "glycopyrronium_indacaterol",
+        "indacaterol_glycopyrronium",
+        "tiotropium_olodaterol",
+        "umeclidinium_vilanterol",
+        "aclidinium_formoterol",
+        "glycopyrronium_formoterol"
+      ]
+    },
+    "b": {
+      "classes": [
+        "asthma_condition"
+      ]
+    },
+    "mechanismVi": "Thuốc giãn phế quản tác dụng kéo dài (LABA hoặc bình hít gộp LABA-LAMA như Ultibro, Spiolto, Anoro, Duaklir, Bevespi) dùng đơn thuần không có corticosteroid dạng hít (ICS) chỉ làm giãn cơ trơn phế quản triệu chứng mà che lấp tình trạng viêm tăng bạch cầu ái toan đường thở tiến triển âm thầm.",
+    "effectVi": "Gia tăng nghiêm trọng nguy cơ đợt kịch phát hen phế quản cấp nặng, đặt nội khí quản và tử vong liên quan đến hen phế quản (FDA Boxed Warning & GINA 2026).",
+    "managementVi": "Chống chỉ định tuyệt đối sử dụng bất kỳ LABA hoặc bình gộp LABA-LAMA nào không kèm ICS ở bệnh nhân hen phế quản (GINA 2026 & EMA Ultibro SmPC §4.2). Ngừng ngay bình hít không có ICS và chuyển sang phác đồ nền tảng có ICS (ưu tiên ICS-formoterol Track 1 hoặc bộ ba ICS-LABA-LAMA nếu ở Bậc 4–5).",
+    "citationIds": [
+      "gina.asthma.2026.laba_lama_without_ics_contra",
+      "ema.ultibro.asthma_not_used"
+    ]
+  }
+]

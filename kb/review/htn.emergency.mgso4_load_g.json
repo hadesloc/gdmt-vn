@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.emergency.mgso4_load_g",
+  "contentHash": "26e5a890db4a035f8ee5a66f67d94a6ec447f4faaeb407c05014a77cdaec38bb",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.emergency.mgso4_load_g",
+      "contentHash": "5174050f431ca3cf",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 4 g (quantity: dose_mg) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

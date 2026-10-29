@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.fev1_fvc_diagnostic",
+  "contentHash": "306e2fe2f905ebf7f8d7ffe0a5701489d0dfcf63af5779eafaa1701c5729dc8b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.fev1_fvc_diagnostic",
+      "contentHash": "56431a71fcf410e1",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

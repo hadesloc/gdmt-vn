@@ -1,0 +1,58 @@
+{
+  "id": "af_45_oac_hepatic_stop_rivaroxaban",
+  "titleVi": "Bệnh lý gan mạn (Child-Pugh B/C) đang dùng Rivaroxaban: Ngừng Rivaroxaban (R3-AF-13 / ADV_AF_61)",
+  "source": "FDA Rivaroxaban Section 8.7 & ACC/AHA 2023 Table 13 / fda.rivaroxaban.hepatic_contra",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 66,
+    "sex": "male",
+    "weight": 68,
+    "height": 168,
+    "sbp": 126,
+    "dbp": 76,
+    "hr": 78,
+    "rhythm": "afib",
+    "lvef": 55,
+    "scr": 88,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true,
+      "liverDisease": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "rivaroxaban",
+        "name": "Xarelto",
+        "dose": 20,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "rivaroxaban",
+        "action": "STOP"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân rung nhĩ có bệnh gan (liverDisease) đang dùng Rivaroxaban: Chống chỉ định ở Child-Pugh B/C theo FDA & ACC 2023, phát lệnh STOP."
+}

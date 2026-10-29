@@ -1,0 +1,48 @@
+{
+  "id": "ckd_28_outpatient_hyperk_severe_emergency_refer",
+  "titleVi": "Ngoại trú - Tăng Kali máu nặng (K⁺ 6.2 mmol/L) -> Chuyển viện Cấp cứu khẩn cấp (không phát trùng REFER)",
+  "source": "UKKA 2022 Guideline 16.3.2 / ukka.2022.guideline_16_3_2_insulin_glucose_moderate",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_28",
+    "name": "BN CKD 28",
+    "age": 66,
+    "sex": "female",
+    "weight": 60,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 70,
+    "scr": 180,
+    "k": 6.2,
+    "conditions": {
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "rec_ckd_outpatient_hyperk_emergency_refer", "action": "REFER" }
+    ],
+    "mustNotInclude": [
+      { "ruleId": "emergency_hyperkalemia_critical", "action": "REFER" },
+      { "ruleId": "rec_ckd_refer_specialist", "action": "REFER" }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân ngoại trú có Kali máu 6.2 mmol/L (>= 6.0) được phát duy nhất 1 thẻ REFER cấp cứu thống nhất (rec_ckd_outpatient_hyperk_emergency_refer), đồng thời chặn chuyển khám thường quy trùng lặp."
+}

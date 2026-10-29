@@ -1,0 +1,35 @@
+{
+  "itemId": "dm2.hba1c.combo_delta",
+  "contentHash": "90965aac766da0bd2e4b3a914990c7c47292085a8f2155cbb7caae0d11a0b1d5",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "dm2.hba1c.combo_delta",
+      "contentHash": "4012ab007f1b6e67",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-27T15:25:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T15:25:00.000Z",
+          "role": "Agent F3 (DM2 Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Created and verified dm2.hba1c.combo_delta for DM2 Round 2 remediation."
+        },
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T15:25:00.000Z",
+          "role": "Agent F3 (DM2 Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Verified dm2.hba1c.combo_delta contentHash, verbatim PDF quotes, and Round 2 R1/R2/R3 clinical schema compliance."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

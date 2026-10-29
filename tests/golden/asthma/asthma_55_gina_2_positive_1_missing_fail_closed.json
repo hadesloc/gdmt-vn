@@ -1,0 +1,63 @@
+{
+  "id": "asthma_55_gina_2_positive_1_missing_fail_closed",
+  "titleVi": "Fail-Closed GINA 4 câu: Dương tính 2/4 câu và thiếu câu thứ 4 -> Chưa thể phân biệt Kiểm soát một phần (2 câu) hay Không kiểm soát (3 câu)",
+  "source": "GINA 2026 Table 2A / BYT 1851/2020 Bảng 3 / ASTHMA-R3-R1-09",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_55",
+    "name": "Nữ 29 tuổi",
+    "age": 29,
+    "sex": "female",
+    "weight": 50,
+    "sbp": 112,
+    "dbp": 70,
+    "hr": 76,
+    "rhythm": "sinus",
+    "fev1Pct": 82,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "currentTrack": "track1",
+      "currentStep": 2,
+      "daytimeSymptomsMoreThanTwiceWeek": true,
+      "nightWakingDueToAsthma": true,
+      "relieverNeededMoreThanTwiceWeek": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "missing_input_activityLimitationDueToAsthma",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Khi mới dương tính 2/4 câu hỏi GINA và thiếu câu thứ 4 (activityLimitationDueToAsthma), mức kiểm soát còn mơ hồ giữa Kiểm soát một phần (2 câu) và Không kiểm soát (3 câu) -> Bắt buộc fail-closed yêu cầu nhập câu hỏi còn thiếu."
+}

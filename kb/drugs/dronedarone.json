@@ -1,0 +1,155 @@
+{
+  "id": "dronedarone",
+  "nameVi": "Dronedarone",
+  "inn": "Dronedarone",
+  "class": "Thuốc chống loạn nhịp nhóm III (dẫn xuất không chứa iod)",
+  "classes": [
+    "antiarrhythmic_iii"
+  ],
+  "components": [],
+  "qtRisk": "known",
+  "vnBrands": [
+    "Multaq"
+  ],
+  "forms": [
+    "Viên nén bao phim 400 mg"
+  ],
+  "start": {
+    "amount": 400,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "400 mg uống 2 lần/ngày cùng bữa ăn sáng và tối"
+  },
+  "target": {
+    "amount": 400,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "400 mg uống 2 lần/ngày cùng bữa ăn"
+  },
+  "titration": {
+    "step": "Liều cố định 400 mg x 2 lần/ngày cùng bữa ăn sáng và tối",
+    "intervalDays": 0,
+    "maxDose": "400 mg 2 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "crclFrom": 30,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "400 mg 2 lần/ngày",
+      "citationIds": [
+        "esc.af.2024.table13_dronedarone_sotalol"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "crclTo": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "400 mg 2 lần/ngày, theo dõi creatinin máu (lưu ý tăng creatinin huyết thanh nhẹ không phản ánh suy thận thật sự do ức chế bài tiết ống thận)",
+      "citationIds": [
+        "esc.af.2024.table13_dronedarone_sotalol"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_dronedarone_hfref",
+      "parameter": "LVEF",
+      "operator": "<=",
+      "threshold": 40,
+      "unit": "%",
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối dronedarone ở bệnh nhân suy tim HFrEF (LVEF ≤ 40%) hoặc NYHA III–IV / suy tim mất bù do tăng nguy cơ tử vong",
+      "citationIds": [
+        "esc.af.2024.aad_dronedarone_rec",
+        "acc.af.2023.dronedarone_hf_contra"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chất ức chế CYP3A4 và P-gp: làm tăng nồng độ dabigatran (chống chỉ định phối hợp), edoxaban (giảm liều edoxaban xuống 30 mg/ngày), digoxin (giảm liều 50%) và statin",
+    "Chống chỉ định phối hợp với chất ức chế mạnh CYP3A4 (ketoconazole, itraconazole, ritonavir, clarithromycin) và các thuốc kéo dài khoảng QT"
+  ],
+  "citationIds": [
+    "esc.af.2024.aad_dronedarone_rec",
+    "esc.af.2024.table13_dronedarone_sotalol",
+    "esc.af.2024.dronedarone_permanent_af_contra",
+    "acc.af.2023.dronedarone_hf_contra",
+    "esc.preg.2025.amiodarone_dronedarone_avoid",
+    "fda.dronedarone.lactation_avoid",
+    "fda.dronedarone.contra_qtc500_hepatic",
+    "acc.af.2023.wpw_av_blockers_harm",
+    "esc.af.2024.qtc_500_conduction_contra"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong thai kỳ do độc tính gây quái thai và tổn thương phát triển phôi thai (ESC 2025 Pregnancy)",
+    "citationIds": [
+      "esc.preg.2025.amiodarone_dronedarone_avoid"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Chống chỉ định cho con bú trong thời gian điều trị bằng Dronedarone và trong 5 ngày sau liều cuối (nhãn FDA Multaq / ESC 2025 Pregnancy)",
+    "citationIds": [
+      "fda.dronedarone.lactation_avoid",
+      "esc.preg.2025.amiodarone_dronedarone_avoid"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định Dronedarone trong thai kỳ",
+      "citationIds": [
+        "esc.preg.2025.amiodarone_dronedarone_avoid"
+      ]
+    },
+    {
+      "code": "reduced_lvef",
+      "messageVi": "Chống chỉ định Dronedarone ở bệnh nhân suy tim HFrEF (LVEF ≤ 40%) hoặc suy tim NYHA III–IV / mất bù gần đây do tăng tử vong",
+      "citationIds": [
+        "esc.af.2024.aad_dronedarone_rec",
+        "acc.af.2023.dronedarone_hf_contra"
+      ]
+    },
+    {
+      "code": "permanent_af",
+      "messageVi": "Chống chỉ định Dronedarone ở bệnh nhân rung nhĩ vĩnh viễn (permanent AF) do tăng biến cố tử vong tim mạch, đột quỵ và nhập viện vì suy tim",
+      "citationIds": [
+        "esc.af.2024.dronedarone_permanent_af_contra"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định Dronedarone ở bệnh nhân suy gan nặng (FDA Section 4)",
+      "citationIds": [
+        "fda.dronedarone.contra_qtc500_hepatic"
+      ]
+    },
+    {
+      "code": "qt_prolongation",
+      "messageVi": "Chống chỉ định Dronedarone khi khoảng QTc > 500 ms hoặc PR > 280 ms",
+      "citationIds": [
+        "fda.dronedarone.contra_qtc500_hepatic"
+      ]
+    },
+    {
+      "code": "wpw_afib",
+      "messageVi": "Chống chỉ định Dronedarone trong rung nhĩ tiền kích thích (WPW)",
+      "citationIds": [
+        "acc.af.2023.wpw_av_blockers_harm"
+      ]
+    },
+    {
+      "code": "av_block_2_3",
+      "messageVi": "Chống chỉ định Dronedarone ở bệnh nhân block nhĩ thất độ 2–3 hoặc suy nút xoang chưa đặt máy tạo nhịp",
+      "citationIds": [
+        "esc.af.2024.qtc_500_conduction_contra"
+      ]
+    }
+  ]
+}

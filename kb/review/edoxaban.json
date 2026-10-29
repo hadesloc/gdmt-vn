@@ -1,0 +1,26 @@
+{
+  "itemId": "edoxaban",
+  "contentHash": "4e5f3d2a04926eba088d3502ca1432d780135ec3801d20d1ee78b22ff2eac551",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "edoxaban",
+      "contentHash": "7be8c43eaf40b10c",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF drug edoxaban (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

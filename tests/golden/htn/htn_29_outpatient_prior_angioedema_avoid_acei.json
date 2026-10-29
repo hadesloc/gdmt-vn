@@ -1,0 +1,63 @@
+{
+  "id": "htn_29_outpatient_prior_angioedema_avoid_acei",
+  "titleVi": "Tiền sử phù mạch do ACEi: Cấm tuyệt đối ACEi, ưu tiên phối hợp CCB + ARB",
+  "source": "AHA/ACC 2025 / aha.acc.2025.acei_angioedema_contra",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 55,
+    "sex": "female",
+    "weight": 62,
+    "height": 158,
+    "sbp": 162,
+    "dbp": 98,
+    "hr": 76,
+    "scr": 82,
+    "k": 4.2,
+    "conditions": {
+      "htn": true,
+      "priorAngioedema": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "perindopril",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "amlodipine",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "perindopril",
+        "action": "START"
+      },
+      {
+        "drugId": "enalapril",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân nữ 55 tuổi THA Độ 2 có tiền sử phù mạch môi-lưỡi khi dùng ACEi trước đây: gắn nhãn AVOID ACEi và khởi trị CCB + ARB."
+}

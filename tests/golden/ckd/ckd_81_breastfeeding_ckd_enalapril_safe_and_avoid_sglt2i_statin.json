@@ -1,0 +1,52 @@
+{
+  "id": "ckd_81_breastfeeding_ckd_enalapril_safe_and_avoid_sglt2i_statin",
+  "titleVi": "Ngoại trú - Phụ nữ 32 tuổi đang cho con bú (breastfeeding = true) có CKD kèm đạm niệu A3 và ĐTĐ típ 2 -> Ưu tiên START Enalapril tương thích cho con bú & AVOID Dapagliflozin do nguy cơ trên thận trẻ bú mẹ (Regression CKD-R4-R2-03, CKD-R4-R3-09)",
+  "source": "FDA Farxiga Label Section 8.2 (Lactation) & LactMed / ESC Enalapril Compatibility",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_81",
+    "name": "BN CKD 81",
+    "age": 32,
+    "sex": "female",
+    "weight": 56,
+    "sbp": 138,
+    "dbp": 86,
+    "scr": 135,
+    "k": 4.2,
+    "uacr": 45,
+    "conditions": {
+      "ckd": true,
+      "dm": true,
+      "htn": true,
+      "breastfeeding": true
+    },
+    "currentMeds": [],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "enalapril", "action": "START" },
+      { "drugId": "dapagliflozin", "action": "AVOID" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "dapagliflozin", "action": "START" },
+      { "drugId": "atorvastatin", "action": "START" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R4-R2-03 & CKD-R4-R3-09: Tích hợp cổng an toàn cho con bú (lactation safety gate) chặn SGLT2i/Statin/Finerenone/GLP-1RA và chuyển hướng sang ACEi an toàn khi cho con bú là Enalapril."
+}

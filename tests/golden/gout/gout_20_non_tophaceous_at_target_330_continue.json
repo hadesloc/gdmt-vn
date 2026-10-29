@@ -1,0 +1,70 @@
+{
+  "id": "gout_20_non_tophaceous_at_target_330_continue",
+  "titleVi": "Gút không tophi đã đạt đích Urat 330 µmol/L (< 360 µmol/L): Duy trì Allopurinol lâu dài",
+  "source": "ACR 2020 & EULAR 2016 (acr.gout.2020.treat_to_target, eular.gout.2016.sua_target_360)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 53,
+    "sex": "male",
+    "weight": 70,
+    "scr": 82,
+    "uricAcid": 330,
+    "tophi": false,
+    "conditions": {
+      "gout": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "allopurinol",
+        "name": "Allopurinol",
+        "dose": "300",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 2,
+      "tophi": false,
+      "xrayDamage": false,
+      "hlab5801": "negative"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_continue",
+        "action": "CONTINUE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "allopurinol",
+        "action": "UPTITRATE"
+      },
+      {
+        "drugId": "colchicine",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân gút không có tophi/khuyết xương đang duy trì Allopurinol 300 mg/ngày với acid uric 330 µmol/L (< 360 µmol/L). Tiếp tục duy trì liều hiện tại, không cần dự phòng mới."
+}

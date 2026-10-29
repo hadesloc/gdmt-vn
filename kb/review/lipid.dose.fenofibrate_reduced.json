@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.dose.fenofibrate_reduced",
+  "contentHash": "4322c8e71e55452ef007ee8ad7d2fc5e04872013cb12e982647690427dd497b8",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.dose.fenofibrate_reduced",
+      "contentHash": "e3d3f6e0672c29cb",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T15:55:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.dose.fenofibrate_reduced."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T15:55:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

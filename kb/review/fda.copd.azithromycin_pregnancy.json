@@ -1,0 +1,26 @@
+{
+  "itemId": "fda.copd.azithromycin_pregnancy",
+  "contentHash": "9cb6acc79c8dc76f5797d5dc65d7a2f746313a201e0d3fb6b181be1f7fc981b6",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "fda.copd.azithromycin_pregnancy",
+      "contentHash": "b92ad602a439430f",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

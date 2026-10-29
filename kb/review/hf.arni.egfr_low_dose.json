@@ -1,0 +1,26 @@
+{
+  "itemId": "hf.arni.egfr_low_dose",
+  "contentHash": "14a18cea761267561563e2780c9a251685228249386d8d4b6acb3d621933d59f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "hf.arni.egfr_low_dose",
+      "contentHash": "6c24de91dd06741e",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-27T14:39:00.000Z",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T14:39:00.000Z",
+          "role": "Agent G4 (HF Remediation & QA-10)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF threshold hf.arni.egfr_low_dose (Round 1 R1/R2/R3 remediation & QA-10 verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

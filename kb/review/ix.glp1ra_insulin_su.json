@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.glp1ra_insulin_su",
+  "contentHash": "62f3201608c9cc8201d9fa45f097d3b3d12c14b9b86e50ae5ac08bd1e7362809",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.glp1ra_insulin_su",
+      "contentHash": "eaa5ee885a0fd4c7",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T09:03:18.426099+00:00",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "SRC-01a technical recheck only: interaction schema/hash unchanged; migrated SC citation matches actual versioned PDF and exact page, source SHA-256 verified by semaglutideSources tests. No clinical multi-review approval."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T09:03:18.426099+00:00",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

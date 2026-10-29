@@ -1,0 +1,59 @@
+{
+  "id": "htn_15_outpatient_ban_dual_rasi",
+  "titleVi": "Đang dùng đồng thời ACEi và ARB: Cấm phối hợp, ngừng ngay 1 thuốc",
+  "source": "ESC 2024 HTN / esc.htn.2024.ban_dual_rasi",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "male",
+    "weight": 72,
+    "height": 168,
+    "sbp": 142,
+    "dbp": 88,
+    "hr": 75,
+    "conditions": {
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "enalapril",
+        "name": "Renitec",
+        "dose": 10,
+        "unit": "mg"
+      },
+      {
+        "drugId": "losartan",
+        "name": "Cozaar",
+        "dose": 50,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "losartan",
+        "action": "STOP"
+      }
+    ]
+  },
+  "descriptionVi": "Phối hợp đồng thời Enalapril + Losartan, vi phạm an toàn cấm kép RASi."
+}

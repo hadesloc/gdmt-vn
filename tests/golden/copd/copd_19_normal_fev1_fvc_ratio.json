@@ -1,0 +1,50 @@
+{
+  "id": "copd_19_normal_fev1_fvc_ratio",
+  "titleVi": "FEV₁/FVC ≥ 0.70: Cảnh báo không tắc nghẽn đường thở cố định",
+  "source": "GOLD 2026 Report p. 18 / FEV1/FVC Normal",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_19",
+    "age": 61,
+    "sex": "male",
+    "weight": 68,
+    "height": 170,
+    "sbp": 125,
+    "dbp": 80,
+    "hr": 70,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "fev1FvcRatio": 0.74,
+      "fev1PredPct": 88
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_copd_diag_normal_ratio",
+        "action": "CONSIDER"
+      }
+    ]
+  }
+}

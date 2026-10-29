@@ -1,0 +1,26 @@
+{
+  "itemId": "gold.copd.2026.lama_glaucoma_caution",
+  "contentHash": "4bb5974f04dd38f0a14538a568c0b888d2d8717fd8464c7858f98ddc5f81c382",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gold.copd.2026.lama_glaucoma_caution",
+      "contentHash": "39c2922cf4154b32",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

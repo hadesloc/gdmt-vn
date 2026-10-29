@@ -1,0 +1,60 @@
+{
+  "id": "ckd_06_finerenone_g2_start_20mg",
+  "titleVi": "Khởi trị Finerenone 20 mg ở bệnh nhân ĐTĐ2 có eGFR >= 60 mL/min",
+  "source": "FDA Kerendia Label Table 1 / fda.finerenone.table_1_starting_dose",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_06",
+    "name": "BN CKD 06",
+    "age": 58,
+    "sex": "female",
+    "weight": 64,
+    "sbp": 128,
+    "dbp": 80,
+    "hr": 72,
+    "scr": 85,
+    "k": 4.2,
+    "uacr": 35,
+    "conditions": {
+      "ckd": true,
+      "dm": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "enalapril",
+        "name": "Renitec 20 mg",
+        "dose": 20,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "ckd",
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "finerenone",
+        "action": "START",
+        "doseContains": "20 mg"
+      }
+    ]
+  },
+  "descriptionVi": "Khởi đầu finerenone 20 mg khi eGFR >= 60 theo nhãn FDA."
+}

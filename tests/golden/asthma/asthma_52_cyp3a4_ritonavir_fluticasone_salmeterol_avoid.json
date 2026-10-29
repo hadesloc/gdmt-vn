@@ -1,0 +1,79 @@
+{
+  "id": "asthma_52_cyp3a4_ritonavir_fluticasone_salmeterol_avoid",
+  "titleVi": "Tương tác dược động học nghiêm trọng: Phối hợp Fluticasone/Salmeterol với Ritonavir (ức chế mạnh CYP3A4) gây hội chứng Cushing & suy thượng thận",
+  "source": "GINA 2026 p. 47 / ASTHMA-R2-R3-14",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_52",
+    "name": "Nam 45 tuổi",
+    "age": 45,
+    "sex": "male",
+    "weight": 63,
+    "sbp": 126,
+    "dbp": 80,
+    "hr": 76,
+    "rhythm": "sinus",
+    "fev1Pct": 78,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "fluticasone_salmeterol",
+        "name": "Seretide 250/50 mcg",
+        "dose": "1 nhát x 2 lần/ngày",
+        "freq": "2 lần/ngày"
+      },
+      {
+        "drugId": "ritonavir",
+        "name": "Ritonavir",
+        "dose": "100 mg",
+        "freq": "1 lần/ngày"
+      }
+    ],
+    "customInputs": {
+      "currentTrack": "track2",
+      "currentStep": 3,
+      "daytimeSymptomsMoreThanTwiceWeek": false,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "fluticasone_salmeterol",
+        "action": "STOP"
+      },
+      {
+        "drugId": "beclometasone_formoterol",
+        "action": "SWITCH"
+      }
+    ],
+    "mustNotInclude": [
+      { "drugId": "fluticasone_salmeterol", "action": "START" },
+      { "drugId": "fluticasone_salmeterol", "action": "CONTINUE" }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Ritonavir ức chế mạnh CYP3A4 làm tăng vọt phơi nhiễm toàn thân của Fluticasone và Salmeterol gây suy thượng thận/hội chứng Cushing và kéo dài QTc -> Cảnh báo AVOID."
+}

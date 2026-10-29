@@ -1,0 +1,52 @@
+{
+  "id": "af_41_outpatient_unstable_hypotension_refer",
+  "titleVi": "Ngoại trú rung nhĩ tụt huyết áp sốc tim (SBP 75 mmHg): Chuyển khoa Cấp cứu khẩn cấp (R3-AF-06 / ADV_AF_44)",
+  "source": "ESC 2024 AF Rec Table 15 / esc.af.2024.emergency_electrical_cardioversion",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "male",
+    "weight": 68,
+    "height": 168,
+    "sbp": 75,
+    "dbp": 45,
+    "hr": 155,
+    "rhythm": "afib",
+    "lvef": 50,
+    "scr": 95,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true
+    },
+    "customInputs": {
+      "hemodynamicStability": "unstable"
+    },
+    "currentMeds": []
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_af_outpatient_unstable_refer",
+        "action": "REFER"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân rung nhĩ ngoại trú có huyết động không ổn định / tụt huyết áp SBP 75 mmHg (< 90 mmHg): Bắt buộc phát lệnh REFER chuyển cấp cứu sốc điện đồng bộ ngay."
+}

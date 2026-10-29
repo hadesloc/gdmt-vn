@@ -1,0 +1,26 @@
+{
+  "itemId": "af.sotalol.reduce_crcl_max",
+  "contentHash": "36050c5dc65d51c110763b5550e8e1cbe3bfcb0c6ae067176df857aeb097c7e9",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.sotalol.reduce_crcl_max",
+      "contentHash": "0b560f00a5fa76c1",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.sotalol.reduce_crcl_max (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

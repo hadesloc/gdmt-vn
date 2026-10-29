@@ -1,0 +1,52 @@
+{
+  "id": "ckd_45_missing_scr_fail_closed",
+  "titleVi": "Ngoại trú - Thiếu Creatinin huyết thanh (scr = undefined) -> Fail-closed: Phát missing_input_scr, KHÔNG khởi trị SGLT2i hay RASi (Regression R3-CKD-12 / QA-1)",
+  "source": "KDIGO 2024 CKD Table 2 & QA-1 Fail-Closed Principle",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_45",
+    "name": "BN CKD 45",
+    "age": 62,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 146,
+    "dbp": 88,
+    "hr": 76,
+    "k": 4.4,
+    "uacr": 48,
+    "conditions": {
+      "ckd": true,
+      "dm": true,
+      "htn": true
+    },
+    "currentMeds": [],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "missing_input_scr", "action": "CONSIDER" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "dapagliflozin", "action": "START" },
+      { "drugId": "losartan", "action": "START" },
+      { "drugId": "perindopril", "action": "START" },
+      { "drugId": "finerenone", "action": "START" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy R3-CKD-12: Khi thiếu Creatinin huyết thanh (chưa xác định được eGFR), hệ thống fail-closed tuyệt đối — yêu cầu nhập scr thay vì tự động START RASi hay SGLT2i mù."
+}

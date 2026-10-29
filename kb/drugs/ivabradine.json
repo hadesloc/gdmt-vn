@@ -1,0 +1,165 @@
+{
+  "id": "ivabradine",
+  "nameVi": "Ivabradine",
+  "inn": "Ivabradine",
+  "class": "If-channel inhibitor",
+  "classes": [
+    "if_inhibitor"
+  ],
+  "qtRisk": "conditional",
+  "vnBrands": [
+    "Procoralan",
+    "Corlanor",
+    "Ivabradine Stella"
+  ],
+  "forms": [
+    "Viên nén bao phim 5 mg (có vạch bẻ đôi cho liều khởi đầu 2.5 mg)",
+    "Viên nén bao phim 7.5 mg"
+  ],
+  "start": {
+    "amount": 5,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "uống cùng bữa ăn; khởi đầu liều thấp 2.5 mg x 2 lần/ngày ở người cao tuổi (≥ 75 tuổi) hoặc có tiền sử rối loạn dẫn truyền"
+  },
+  "target": {
+    "amount": 7.5,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "điều chỉnh liều để giữ tần số tim lúc nghỉ trong khoảng 50–60 chu kỳ/phút"
+  },
+  "titration": {
+    "step": "Đánh giá sau 2 tuần: tăng lên 7.5 mg x 2 lần/ngày nếu HR nghỉ > 60 bpm; duy trì nếu HR 50–60 bpm; giảm xuống 2.5 mg x 2 lần/ngày hoặc ngừng nếu HR < 50 bpm hoặc có triệu chứng nhịp chậm",
+    "intervalDays": 14,
+    "maxDose": "7.5 mg x 2 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "5 mg x 2 lần/ngày (2.5 mg x 2 lần/ngày nếu ≥ 75 tuổi) -> tối đa 7.5 mg x 2 lần/ngày",
+      "citationIds": [
+        "esc.hf.2026.amt_doses_table11",
+        "fda.hf.ivabradine_indication_dose"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Thận trọng đặc biệt khi eGFR/CrCl < 15 mL/phút do dữ liệu lâm sàng rất hạn chế",
+      "citationIds": [
+        "fda.hf.ivabradine_indication_dose"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_ivabradine_hr_min",
+      "parameter": "HR",
+      "operator": "<",
+      "threshold": 70,
+      "unit": "bpm",
+      "action": "hold",
+      "messageVi": "Chỉ khởi trị Ivabradine khi nhịp xoang có tần số tim lúc nghỉ ≥ 70 bpm (hoặc giảm/ngừng nếu đang dùng mà HR < 50 bpm)",
+      "citationIds": [
+        "esc.hf.2026.ivabradine_rec",
+        "fda.hf.ivabradine_indication_dose"
+      ]
+    },
+    {
+      "id": "gate_ivabradine_sbp_min",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 90,
+      "unit": "mmHg",
+      "action": "contra",
+      "messageVi": "Hạ huyết áp nặng (SBP < 90 mmHg): Chống chỉ định Ivabradine",
+      "citationIds": [
+        "fda.hf.ivabradine_contra"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối trong thai kỳ do gây quái thai tim mạch và tử vong phôi thai (ESC 2026 Class III, Level C & FDA §8.1).",
+    "citationIds": [
+      "esc.hf.2026.pregnancy_contra",
+      "fda.hf.ivabradine_preg_lact"
+    ]
+  },
+  "lactation": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định / không khuyến cáo cho con bú trong thời gian dùng Ivabradine (FDA Corlanor §8.2).",
+    "citationIds": [
+      "fda.hf.ivabradine_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định tuyệt đối trong thai kỳ (gây dị tật tim bẩm sinh cho thai)",
+      "citationIds": [
+        "esc.hf.2026.pregnancy_contra",
+        "fda.hf.ivabradine_preg_lact"
+      ]
+    },
+    {
+      "code": "acute_decompensated_hf",
+      "messageVi": "Chống chỉ định trong suy tim mất bù cấp hoặc huyết động chưa ổn định",
+      "citationIds": [
+        "fda.hf.ivabradine_contra"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định tuyệt đối ở suy gan nặng (Child-Pugh C)",
+      "citationIds": [
+        "fda.hf.ivabradine_hepatic",
+        "fda.hf.ivabradine_contra"
+      ]
+    },
+    {
+      "code": "sick_sinus_syndrome",
+      "messageVi": "Chống chỉ định trong hội chứng suy nút xoang, block xoang nhĩ, block nhĩ-thất độ 3 hoặc phụ thuộc máy tạo nhịp",
+      "citationIds": [
+        "fda.hf.ivabradine_contra"
+      ]
+    },
+    {
+      "code": "strong_cyp3a4_inhibitor",
+      "messageVi": "Chống chỉ định tuyệt đối dùng cùng chất ức chế mạnh CYP3A4",
+      "citationIds": [
+        "fda.hf.ivabradine_contra"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định tuyệt đối phối hợp với thuốc ức chế mạnh CYP3A4 (clarithromycin, ketoconazole, itraconazole, ritonavir) và tránh phối hợp với verapamil, diltiazem",
+    "Tránh uống nước bưởi chùm; thận trọng khi dùng cùng thuốc kéo dài khoảng QT do nhịp chậm làm tăng nguy cơ xoắn đỉnh (TdP)",
+    "Hoàn toàn không có hiệu quả và phải ngừng nếu bệnh nhân chuyển sang rung nhĩ bền bỉ"
+  ],
+  "citationIds": [
+    "esc.hf.2026.ivabradine_rec",
+    "esc.hf.2026.ivabradine_bb_intolerant",
+    "esc.hf.2026.amt_doses_table11",
+    "fda.hf.ivabradine_indication_dose",
+    "fda.hf.ivabradine_low_dose_2_5mg",
+    "fda.hf.ivabradine_contra"
+  ],
+  "hepatic": {
+    "status": "caution",
+    "childA": "ok",
+    "childB": "ok",
+    "childC": "contra",
+    "note": "Không cần chỉnh liều ở suy gan nhẹ hoặc vừa (Child-Pugh A/B); chống chỉ định tuyệt đối ở suy gan nặng (Child-Pugh C).",
+    "notesVi": "Không cần chỉnh liều ở suy gan nhẹ hoặc vừa (Child-Pugh A/B); chống chỉ định tuyệt đối ở suy gan nặng (Child-Pugh C).",
+    "citationIds": [
+      "fda.hf.ivabradine_hepatic",
+      "fda.hf.ivabradine_contra"
+    ]
+  }
+}

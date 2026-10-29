@@ -1,0 +1,78 @@
+{
+  "id": "omega3",
+  "nameVi": "Omega-3 acid ethyl esters",
+  "inn": "Omega-3 acid ethyl esters",
+  "class": "Acid béo Omega-3 kê đơn (EPA + DHA)",
+  "classes": [
+    "omega3"
+  ],
+  "vnBrands": [
+    "Omacor"
+  ],
+  "forms": [
+    "Viên nang mềm 1000 mg"
+  ],
+  "start": {
+    "amount": 2,
+    "unit": "g",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "2 g uống 2 lần/ngày (hoặc 2–4 g/ngày) cùng bữa ăn"
+  },
+  "target": {
+    "amount": 4,
+    "unit": "g",
+    "frequency": "chia 1–2 lần/ngày",
+    "route": "uống",
+    "description": "4 g/ngày chia 1–2 lần cùng bữa ăn (ví dụ 2 g x 2 lần/ngày; chỉ định giảm Triglycerid rất cao)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "2–4 g/ngày",
+      "note": "Không cần điều chỉnh liều ở bệnh nhân suy thận",
+      "citationIds": [
+        "esc.lipid.2019.htg_fenofibrate_pancreatitis"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_omega3_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "avoid",
+      "messageVi": "Tránh khởi trị thường quy thuốc hạ lipid trong thai kỳ trừ khi tăng Triglycerid rất nặng nguy cơ viêm tụy cấp có hội chẩn chuyên khoa",
+      "citationIds": [
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    }
+  ],
+  "interactions": [
+    "Thận trọng khi dùng kèm thuốc chống đông hoặc kháng kết tập tiểu cầu do kéo dài nhẹ thời gian chảy máu",
+    "Lưu ý: Chế phẩm phối hợp EPA + DHA có thể làm tăng nhẹ LDL-C và không chứng minh giảm biến cố tim mạch xơ vữa như Icosapent ethyl tinh khiết; liều cao tăng nhẹ nguy cơ rung nhĩ"
+  ],
+  "citationIds": [
+    "esc.lipid.2019.htg_fenofibrate_pancreatitis",
+    "acc.lipid.2026.omega3_dose_4g",
+    "acc.lipid.2026.icosapent_af_bleeding"
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Tránh dùng thường quy trong thai kỳ; chỉ cân nhắc dưới giám sát chuyên khoa nếu tăng Triglycerid rất nặng nguy cơ viêm tụy cấp (ESC)",
+    "citationIds": [
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Acid béo omega-3 bài tiết qua sữa mẹ, thận trọng khi dùng liều dược lý 2–4 g/ngày (ESC / FDA)",
+    "citationIds": [
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "contraindications": []
+}

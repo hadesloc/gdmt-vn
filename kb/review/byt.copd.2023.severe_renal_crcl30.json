@@ -1,0 +1,26 @@
+{
+  "itemId": "byt.copd.2023.severe_renal_crcl30",
+  "contentHash": "021f993a8a81bd5d1d070136c251f06faff55acc504bd9a6ebcd1b9ee7ff4669",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "byt.copd.2023.severe_renal_crcl30",
+      "contentHash": "8b84f80fb8cf3110",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

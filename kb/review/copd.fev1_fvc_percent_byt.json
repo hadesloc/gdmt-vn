@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.fev1_fvc_percent_byt",
+  "contentHash": "bd074ad5c7cbd6eb17a4162a6c13f8a920c330603e3076b82b9ebb77190291a8",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.fev1_fvc_percent_byt",
+      "contentHash": "860bf3aa1c18a570",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

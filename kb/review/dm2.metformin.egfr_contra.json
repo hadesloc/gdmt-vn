@@ -1,0 +1,17 @@
+{
+  "itemId": "dm2.metformin.egfr_contra",
+  "contentHash": "da861117de4311bbde67d185cc2d7a25df4314bc9f256485e0a2d6eb202bac9a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "dm2.metformin.egfr_contra",
+      "contentHash": "aba67a1c06bc5a2d",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "amlodipine",
+  "nameVi": "Amlodipine",
+  "inn": "Amlodipine",
+  "class": "CCB (Dihydropyridine)",
+  "classes": [
+    "dhp_ccb"
+  ],
+  "vnBrands": [
+    "Norvasc",
+    "Amlor",
+    "Amlovasc",
+    "Amlodipine Stada",
+    "Coveram (phối hợp Perindopril)",
+    "Exforge (phối hợp Valsartan)",
+    "Twynsta (phối hợp Telmisartan)"
+  ],
+  "forms": [
+    "Viên nén 2.5 mg",
+    "Viên nén 5 mg",
+    "Viên nén 10 mg"
+  ],
+  "start": {
+    "amount": 5,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Khởi đầu 2,5 mg/ngày ở người cao tuổi, suy yếu hoặc suy gan"
+  },
+  "target": {
+    "amount": 10,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống"
+  },
+  "titration": {
+    "step": "Tăng từ 5 mg lên 10 mg sau 2–4 tuần nếu chưa đạt huyết áp mục tiêu",
+    "intervalDays": 14,
+    "maxDose": "10 mg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "5–10 mg 1 lần/ngày",
+      "citationIds": [
+        "fda.amlodipine.renal_hepatic_ddi",
+        "fda.amlodipine.dosing",
+        "esc.htn.2024.first_line_classes"
+      ],
+      "note": "Dược động học không bị ảnh hưởng bởi suy thận kể cả bệnh thận giai đoạn cuối/lọc máu; dùng liều thông thường, theo dõi phù ngoại biên và huyết áp."
+    }
+  ],
+  "hepatic": {
+    "status": "caution",
+    "notesVi": "Chuyển hóa mạnh qua gan (t½ kéo dài ~56 giờ, tăng AUC 40–60% ở suy gan); khởi đầu 2,5 mg/ngày và chỉnh liều chậm.",
+    "citationIds": [
+      "fda.amlodipine.warnings_as_hepatic",
+      "fda.amlodipine.renal_hepatic_ddi"
+    ]
+  },
+  "gates": [],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Dữ liệu hạn chế nhưng không thấy tăng nguy cơ dị tật lớn; ưu tiên nifedipine giải phóng kéo dài hoặc labetalol làm hàng đầu trong thai kỳ.",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_aspirin_atenolol_methyldopa",
+      "esc.htn.2024.pregnancy_first_line"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Bài tiết lượng rất nhỏ qua sữa mẹ; tương thích khi nuôi con bằng sữa mẹ.",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_lactation_thiazide"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "severe_hypotension",
+      "messageVi": "Tụt huyết áp nặng có triệu chứng",
+      "citationIds": [
+        "fda.amlodipine.warnings_as_hepatic"
+      ]
+    },
+    {
+      "code": "cardiogenic_shock",
+      "messageVi": "Sốc tim hoặc hẹp khít đường ra thất trái / hẹp van động mạch chủ nặng mất bù",
+      "citationIds": [
+        "fda.amlodipine.warnings_as_hepatic"
+      ]
+    }
+  ],
+  "interactions": [
+    "Simvastatin: tăng 77% phơi nhiễm simvastatin — giới hạn liều simvastatin tối đa ≤ 20 mg/ngày (FDA Section 7.2).",
+    "Thuốc ức chế CYP3A4 vừa–mạnh (diltiazem 180 mg làm tăng 60% phơi nhiễm amlodipine; itraconazole, clarithromycin làm tăng nồng độ mạnh hơn): theo dõi tụt huyết áp và phù.",
+    "Cyclosporine / Tacrolimus: có thể làm tăng nồng độ đáy cyclosporine (~40%) và tacrolimus (2,5–4 lần ở người biểu hiện CYP3A5); cần định lượng nồng độ thuốc chống thải ghép.",
+    "Phù mắt cá chân phụ thuộc liều do giãn tiểu động mạch tiền mao mạch (giảm rõ rệt khi phối hợp cùng ACEi/ARB)."
+  ],
+  "citationIds": [
+    "fda.amlodipine.dosing",
+    "fda.amlodipine.warnings_as_hepatic",
+    "fda.amlodipine.renal_hepatic_ddi",
+    "fda.amlodipine.simva_20mg",
+    "esc.htn.2024.first_line_classes",
+    "vsh.htn.2022.drugs_table_ccb"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "pitavastatin",
+  "contentHash": "d3ac96ef0a03f6e29c2ecb1e5ae5102168ec6ed1df5f3711d4280b94253649f5",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "pitavastatin",
+      "contentHash": "73585cd1d7dbcae4",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra schema QA-10, phân nhóm classes, dải thận, cổng an toàn thai kỳ/cho con bú/tương tác và trích dẫn cho thuốc pitavastatin."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

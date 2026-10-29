@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.budesonide_formoterol_daily_doses",
+  "contentHash": "735860138c753302096ea4b3bfb6c2ac67c5b060acde40ca122c49aa77310f6f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.budesonide_formoterol_daily_doses",
+      "contentHash": "0fcae05cf4a8820c",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

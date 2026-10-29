@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.probenecid.crcl_contra_min",
+  "contentHash": "53a96d1262790295c1fca4c4dbde9d7c1bb1f51f1ef09c9b452c5bda0282173a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.probenecid.crcl_contra_min",
+      "contentHash": "14a4ff0ae17761b3",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.probenecid.crcl_contra_min"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

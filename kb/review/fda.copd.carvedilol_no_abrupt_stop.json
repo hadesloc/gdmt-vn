@@ -1,0 +1,26 @@
+{
+  "itemId": "fda.copd.carvedilol_no_abrupt_stop",
+  "contentHash": "934ac156435c6eb211a2b13c7610e48bc3aebaf383cfd2ca9b98ff7efcd92377",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "fda.copd.carvedilol_no_abrupt_stop",
+      "contentHash": "13c301b8e2574154",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

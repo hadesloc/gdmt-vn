@@ -1,0 +1,79 @@
+{
+  "id": "hf_35_hfref_asthma_no_carvedilol",
+  "titleVi": "HFrEF đồng mắc Hen phế quản (ASTHMA-R2-208): Chỉ cân nhắc chẹn beta chọn lọc beta-1, tuyệt đối không gợi ý Carvedilol",
+  "source": "ESC 2026 HF Table S6 (Asthma & Cardioselective Beta-1 Blocker)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 58,
+    "sex": "female",
+    "weight": 62,
+    "height": 158,
+    "sbp": 120,
+    "dbp": 74,
+    "hr": 78,
+    "rhythm": "sinus",
+    "lvef": 30,
+    "nyha": 2,
+    "scr": 82,
+    "k": 4.2,
+    "conditions": {
+      "hf": true,
+      "asthma": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "bisoprolol",
+        "action": "CONSIDER"
+      },
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "START"
+      },
+      {
+        "drugId": "spironolactone",
+        "action": "START"
+      },
+      {
+        "drugId": "dapagliflozin",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "carvedilol",
+        "action": "START"
+      },
+      {
+        "drugId": "carvedilol",
+        "action": "CONSIDER"
+      },
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "HFrEF kèm hen phế quản: chống chỉ định chẹn beta không chọn lọc (tuyệt đối không gợi ý Carvedilol); chỉ cân nhắc thận trọng chẹn beta chọn lọc cao trên beta-1 (Bisoprolol hoặc Metoprolol succinate) dưới giám sát chuyên khoa."
+}

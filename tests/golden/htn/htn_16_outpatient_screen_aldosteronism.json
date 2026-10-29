@@ -1,0 +1,49 @@
+{
+  "id": "htn_16_outpatient_screen_aldosteronism",
+  "titleVi": "Hạ kali máu tự phát: Chỉ định xét nghiệm ARR tầm soát Hội chứng Conn",
+  "source": "ESC 2024 HTN / esc.htn.2024.spiro_resistant",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 42,
+    "sex": "male",
+    "weight": 70,
+    "height": 172,
+    "sbp": 168,
+    "dbp": 104,
+    "hr": 76,
+    "scr": 82,
+    "k": 3.1,
+    "conditions": {
+      "htn": true,
+      "unprovokedHypokalemia": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_htn_screen_aldosteronism",
+        "action": "REFER"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân trẻ có hạ kali máu tự phát K+ 3.1 mmol/L, chỉ định xét nghiệm ARR tầm soát nguyên nhân thứ phát."
+}

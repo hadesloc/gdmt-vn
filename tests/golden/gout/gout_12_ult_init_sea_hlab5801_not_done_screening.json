@@ -1,0 +1,71 @@
+{
+  "id": "gout_12_ult_init_sea_hlab5801_not_done_screening",
+  "titleVi": "Khởi trị ULT ở người Việt chưa xét nghiệm HLA-B*58:01: Khuyến cáo sàng lọc + Allopurinol 100 mg + Dự phòng Colchicine",
+  "source": "ACR 2020 (acr.gout.2020.hlab5801_sea_chinese, acr.gout.2020.allopurinol_start_dose, acr.gout.2020.prophylaxis_duration)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 48,
+    "sex": "male",
+    "weight": 67,
+    "scr": 84,
+    "uricAcid": 520,
+    "conditions": {
+      "gout": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 3,
+      "hlab5801": "not_done"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_gout_hlab5801_screening",
+        "action": "CONSIDER"
+      },
+      {
+        "ruleId": "rec_gout_ult_indicated_strong",
+        "action": "MONITOR"
+      },
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_start",
+        "action": "START",
+        "doseContains": "100 mg"
+      },
+      {
+        "drugId": "colchicine",
+        "ruleId": "rec_gout_colchicine_prophylaxis",
+        "action": "START",
+        "doseContains": "0.5–1 mg"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "febuxostat",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân Việt Nam gút mạn (3 đợt cấp/năm, ngoài cơn cấp), chức năng thận bình thường, chưa làm HLA-B*58:01. Đề xuất xét nghiệm HLA-B*58:01, khởi trị Allopurinol liều thấp 100 mg/ngày kèm Colchicine dự phòng 3–6 tháng."
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.acute.hypoxemia_spo2_cutoff",
+  "contentHash": "b5b76830f500dce41024cbf4f569dfb3ee0ee6a274e4f91eda2a53129c098ba5",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.acute.hypoxemia_spo2_cutoff",
+      "contentHash": "2ba5aaa240976b50",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T07:10:38.304Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Kiểm định tự động ngưỡng lâm sàng asthma.acute.hypoxemia_spo2_cutoff (92 %)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T07:10:38.304Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

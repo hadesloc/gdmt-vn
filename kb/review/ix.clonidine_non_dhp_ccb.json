@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.clonidine_non_dhp_ccb",
+  "contentHash": "e1ecd645c699e9711ec2d84ab781b317108a429eddbc728bef71423b38631666",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.clonidine_non_dhp_ccb",
+      "contentHash": "9184b8a97a20fede",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.clonidine_non_dhp_ccb."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

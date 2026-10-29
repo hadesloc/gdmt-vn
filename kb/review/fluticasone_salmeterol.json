@@ -1,0 +1,26 @@
+{
+  "itemId": "fluticasone_salmeterol",
+  "contentHash": "0f1c4999e96824507486b8ff73f661df1c029d6e130edb2a663186e460a76812",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "fluticasone_salmeterol",
+      "contentHash": "f21101fee571c068",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD drug entry with full renal bands, pregnancy/lactation, and contraindications"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

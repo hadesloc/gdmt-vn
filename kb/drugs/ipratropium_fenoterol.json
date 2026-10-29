@@ -1,0 +1,104 @@
+{
+  "id": "ipratropium_fenoterol",
+  "nameVi": "Ipratropium/Fenoterol",
+  "inn": "Ipratropium bromide / Fenoterol hydrobromide",
+  "class": "SAMA + SABA (Giãn phế quản tác dụng ngắn phối hợp)",
+  "classes": [
+    "sama",
+    "saba"
+  ],
+  "components": [
+    "ipratropium",
+    "fenoterol"
+  ],
+  "vnBrands": [
+    "Berodual"
+  ],
+  "forms": [
+    "Bình xịt định liều (MDI) 20 mcg ipratropium / 50 mcg fenoterol mỗi nhát xịt",
+    "Dung dịch khí dung (1 mL = 20 giọt chứa 0.25 mg ipratropium + 0.50 mg fenoterol)"
+  ],
+  "start": {
+    "amount": 2,
+    "unit": "nhát",
+    "frequency": "3 lần/ngày",
+    "route": "hít / khí dung",
+    "description": "Bình xịt MDI 50/20 mcg: 2 nhát x 3 lần/ngày (hoặc 4 nhát qua buồng đệm trong cơn cấp). Dung dịch khí dung: 1 mL (20 giọt) pha NaCl 0.9% khí dung 3–4 lần/ngày"
+  },
+  "target": {
+    "amount": 2,
+    "unit": "nhát",
+    "frequency": "3 lần/ngày",
+    "route": "hít",
+    "description": "2 nhát xịt x 3 lần/ngày hoặc khi cần cắt cơn"
+  },
+  "titration": {
+    "step": "Dùng cắt cơn ngắn hạn; không thay thế ICS nền ở bệnh nhân hen phế quản",
+    "intervalDays": 1,
+    "maxDose": "8 nhát xịt/ngày (MDI)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "2 nhát MDI x 3 lần/ngày hoặc 1 mL khí dung x 3–4 lần/ngày",
+      "citationIds": [
+        "byt.copd.2026.sama_saba_nebulizer_mdi_p36",
+        "byt.copd.2026.sama_saba_table_p68"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "Không cần giảm liều chuẩn; theo dõi nhịp tim và kali máu",
+      "citationIds": [
+        "byt.copd.2026.sama_saba_table_p68"
+      ]
+    }
+  ],
+  "gates": [],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Thận trọng trong thai kỳ (đặc biệt gần ngày chuyển dạ do fenoterol có tác dụng giảm co cơ tử cung); ưu tiên salbutamol khi cần SABA ở thai phụ.",
+    "citationIds": [
+      "byt.copd.2026.sama_saba_table_p68"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Fenoterol bài tiết lượng nhỏ qua sữa mẹ; cân nhắc lợi ích và theo dõi trẻ sơ sinh hoặc ưu tiên salbutamol.",
+    "citationIds": [
+      "byt.copd.2026.sama_saba_table_p68"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "narrow_angle_glaucoma",
+      "messageVi": "Chống chỉ định hoặc tránh tiếp xúc hơi thuốc vào mắt ở bệnh nhân glôcôm góc đóng",
+      "citationIds": [
+        "gold.copd.2026.lama_glaucoma_caution"
+      ]
+    },
+    {
+      "code": "urinary_retention",
+      "messageVi": "Chống chỉ định khi đang bí tiểu cấp chưa xử trí; thận trọng ở tăng sản tuyến tiền liệt",
+      "citationIds": [
+        "gina.copd.2026.lama_urinary_retention"
+      ]
+    }
+  ],
+  "interactions": [
+    "Fenoterol có nguy cơ kích thích tim mạch (nhịp nhanh, đánh trống ngực) và hạ kali máu mạnh hơn salbutamol khi dùng liều cao",
+    "Đối kháng tác dụng giãn phế quản khi dùng cùng chẹn beta không chọn lọc (kể cả nhỏ mắt timolol)",
+    "Tránh cộng dồn kháng cholinergic toàn thân khi đang dùng LAMA"
+  ],
+  "citationIds": [
+    "byt.copd.2026.sama_saba_nebulizer_mdi_p36",
+    "byt.copd.2026.sama_saba_table_p68",
+    "gold.copd.2026.lama_glaucoma_caution",
+    "gina.copd.2026.lama_urinary_retention"
+  ]
+}

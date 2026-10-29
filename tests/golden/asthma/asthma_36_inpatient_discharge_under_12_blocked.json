@@ -1,0 +1,58 @@
+{
+  "id": "asthma_36_inpatient_discharge_under_12_blocked",
+  "titleVi": "Trẻ 10 tuổi nội trú đáp ứng tốt sau cấp cứu: Chặn kê đơn xuất viện phác đồ người lớn",
+  "source": "GINA 2026 / R1-ASTHMA-06 / ASTHMA-R3-04",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_36",
+    "name": "Bé trai 10 tuổi",
+    "age": 10,
+    "sex": "male",
+    "weight": 32,
+    "sbp": 102,
+    "dbp": 64,
+    "hr": 92,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteResponseAfter1h": "good_response"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_asthma_age_under_12",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Trẻ < 12 tuổi tại nội viện dù có acuteResponseAfter1h = good_response tuyệt đối không được nhận đơn xuất viện Symbicort 160/4.5 mcg người lớn."
+}

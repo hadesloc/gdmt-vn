@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.target.urate_tophi_mgdl",
+  "contentHash": "29d05d771c10f7466e1a0f76a3b1a6c4456b52a36365d8f4afe293628b2118f0",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.target.urate_tophi_mgdl",
+      "contentHash": "2b8230ccf6d99673",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.target.urate_tophi_mgdl"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

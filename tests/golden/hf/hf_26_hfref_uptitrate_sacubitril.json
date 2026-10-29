@@ -1,0 +1,58 @@
+{
+  "id": "hf_26_hfref_uptitrate_sacubitril",
+  "titleVi": "HFrEF đang dùng Sacubitril/valsartan 49/51 mg bid: Tăng liều lên 97/103 mg bid",
+  "source": "ESC 2026 HF Table 11",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 125,
+    "dbp": 78,
+    "hr": 70,
+    "lvef": 30,
+    "nyha": 2,
+    "scr": 90,
+    "k": 4.3,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "sacubitril_valsartan",
+        "name": "Sacubitril/valsartan",
+        "dose": "49/51",
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "hf"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "UPTITRATE"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Đang dùng liều khởi đầu 49/51 mg bid dung nạp tốt -> Chuẩn độ tăng liều lên 97/103 mg bid."
+}

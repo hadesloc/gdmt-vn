@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.ivabradine_strong_cyp3a4",
+  "contentHash": "6de04d82bc09f0070d594ec99888f58be0deda7669831b1519b6516eff5bafe0",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.ivabradine_strong_cyp3a4",
+      "contentHash": "c38fe2b183758e20",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.ivabradine_strong_cyp3a4."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

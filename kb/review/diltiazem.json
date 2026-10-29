@@ -1,0 +1,26 @@
+{
+  "itemId": "diltiazem",
+  "contentHash": "11af34c86c1fa2cceb82859ea13ffd21bae49c9e1cee3465e2096d930a5d9510",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "diltiazem",
+      "contentHash": "bad32d1d7701232a",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF drug diltiazem (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

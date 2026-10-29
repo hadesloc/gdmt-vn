@@ -1,0 +1,17 @@
+{
+  "itemId": "asthma.acute.magnesium_brady_hr_min",
+  "contentHash": "15684860cd08f52316e0c395eb3c84bebea915081b382e37fb1e4f32d6b2e355",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.acute.magnesium_brady_hr_min",
+      "contentHash": "9c9439a9aa4b52f5",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

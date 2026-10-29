@@ -1,0 +1,26 @@
+{
+  "itemId": "budesonide",
+  "contentHash": "402187de0ab5c2482d886e42b59e6f5ab1319809265cc14db6402f9a0fdc6c57",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "budesonide",
+      "contentHash": "d2506ca54f31b28c",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:53:57.954Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính hợp lệ của liều, cổng an toàn, thai kỳ, cho con bú, chống chỉ định, qtRisk và mã nhóm chuẩn hóa cho thuốc Budesonide."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:53:57.954Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

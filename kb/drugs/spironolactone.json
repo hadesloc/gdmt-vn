@@ -1,0 +1,160 @@
+{
+  "id": "spironolactone",
+  "nameVi": "Spironolactone",
+  "inn": "Spironolactone",
+  "class": "Steroidal MRA",
+  "classes": [
+    "mra_steroidal",
+    "mra"
+  ],
+  "vnBrands": [
+    "Aldactone",
+    "Verospiron",
+    "Spironolacton Stella"
+  ],
+  "forms": [
+    "Viên nén 25 mg (bẻ đôi viên 25 mg khi cần liều khởi đầu 12.5 mg tại Việt Nam)",
+    "Viên nén / viên nang 50 mg",
+    "Viên nén 100 mg"
+  ],
+  "start": {
+    "amount": 25,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "khởi đầu 25 mg/ngày khi eGFR > 50 và K+ ≤ 5.0 mmol/L; giảm xuống 12.5 mg/ngày hoặc 25 mg cách ngày khi eGFR 30–50 mL/min/1.73m²"
+  },
+  "target": {
+    "amount": 50,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "25–50 mg uống 1 lần/ngày nếu dung nạp kali máu và chức năng thận"
+  },
+  "titration": {
+    "step": "Sau 4–8 tuần có thể tăng từ 25 mg lên 50 mg/ngày (hoặc từ 25 mg cách ngày lên 25 mg/ngày ở eGFR 30–50) nếu K+ ≤ 5.0 mmol/L; giảm nửa liều nếu K+ > 5.5, ngừng ngay nếu K+ > 6.0 mmol/L",
+    "intervalDays": 28,
+    "maxDose": "50 mg x 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 50,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "25 mg x 1 lần/ngày -> đích 50 mg x 1 lần/ngày",
+      "citationIds": [
+        "esc.hf.2026.mra_doses",
+        "fda.hf.spironolactone_dose_renal"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 50,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "12.5 mg x 1 lần/ngày hoặc 25 mg uống cách ngày (tối đa 25 mg/ngày)",
+      "note": "Theo dõi sát K+ và creatinin sau 1–2 tuần và mỗi tháng trong 3 tháng đầu do nguy cơ tăng kali máu",
+      "citationIds": [
+        "fda.hf.spironolactone_egfr_30_50",
+        "esc.hf.2026.spironolactone_12_5_footnote_f"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "contra",
+      "continue": "contra",
+      "note": "Chống chỉ định khởi trị và bắt buộc ngừng duy trì Spironolactone khi eGFR < 30 mL/min/1.73m² do nguy cơ tăng kali máu ác tính gây ngừng tim",
+      "citationIds": [
+        "esc.hf.2026.mra_guidance_table_s8",
+        "fda.hf.spironolactone_contra"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_spironolactone_k_max",
+      "parameter": "K",
+      "operator": ">",
+      "threshold": 5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Kali máu > 5.0 mmol/L: Không khởi trị mới Spironolactone (nếu đang dùng: giảm nửa liều khi K+ > 5.5, ngừng ngay khi K+ > 6.0 mmol/L)",
+      "citationIds": [
+        "esc.hf.2026.mra_guidance_table_s8",
+        "fda.hf.spironolactone_dose_renal"
+      ]
+    },
+    {
+      "id": "gate_spironolactone_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "contra",
+      "messageVi": "eGFR < 30 mL/min/1.73m²: Chống chỉ định Spironolactone",
+      "citationIds": [
+        "esc.hf.2026.mra_guidance_table_s8"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong thai kỳ do tác dụng kháng androgen gây nữ hoá thai nhi nam (ESC 2026 Class III, Level C & ESC 2025 Pregnancy).",
+    "citationIds": [
+      "esc.hf.2026.pregnancy_contra",
+      "esc.preg.2025.spironolactone_lactation"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Theo FDA Aldactone §8.2 và ESC 2025 Pregnancy (trang 32), chất chuyển hoá canrenone qua sữa mẹ < 1% liều của mẹ và tương thích lâm sàng khi cho con bú (lưu ý ESC HF 2026 Table S8 ghi tránh dùng chung cho nhóm MRA).",
+    "citationIds": [
+      "fda.hf.spironolactone_preg_lact",
+      "esc.preg.2025.spironolactone_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định trong thai kỳ do tác dụng kháng androgen lên thai nhi",
+      "citationIds": [
+        "esc.hf.2026.pregnancy_contra",
+        "esc.preg.2025.spironolactone_lactation"
+      ]
+    },
+    {
+      "code": "hyperkalemia",
+      "messageVi": "Chống chỉ định khởi trị khi tăng kali máu (K+ > 5.0 mmol/L) hoặc bệnh Addison",
+      "citationIds": [
+        "fda.hf.spironolactone_contra",
+        "esc.hf.2026.mra_guidance_table_s8"
+      ]
+    },
+    {
+      "code": "concomitant_eplerenone",
+      "messageVi": "Chống chỉ định phối hợp đồng thời hai thuốc nhóm MRA",
+      "citationIds": [
+        "fda.hf.spironolactone_contra"
+      ]
+    },
+    {
+      "code": "dialysis",
+      "messageVi": "Chống chỉ định ở bệnh nhân suy thận nặng / đang lọc máu chu kỳ",
+      "citationIds": [
+        "esc.hf.2026.mra_guidance_table_s8"
+      ]
+    }
+  ],
+  "interactions": [
+    "Nguy cơ tăng kali máu nặng khi dùng cùng ACEi/ARB/ARNI, chế phẩm bổ sung K+, muối ăn giàu K+, trimethoprim/co-trimoxazole hoặc NSAID",
+    "Có thể gây nhiễu một số xét nghiệm miễn dịch định lượng nồng độ digoxin và gây chứng vú to ở nam giới (cân nhắc chuyển sang Eplerenone nếu có vú to đau)"
+  ],
+  "citationIds": [
+    "esc.hf.2026.mra_doses",
+    "esc.hf.2026.mra_guidance_table_s8",
+    "fda.hf.spironolactone_dose_renal",
+    "fda.hf.spironolactone_egfr_30_50",
+    "fda.hf.spironolactone_contra",
+    "byt.2022.hf_doses"
+  ]
+}

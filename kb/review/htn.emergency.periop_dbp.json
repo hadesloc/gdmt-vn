@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.emergency.periop_dbp",
+  "contentHash": "a4b11a287ca581e4d49d0d738f46315aec59ab249dff5056c64567ef0220586d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.emergency.periop_dbp",
+      "contentHash": "96e0e3ac208b0798",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực ngưỡng lâm sàng htn.emergency.periop_dbp (90 mmHg) và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

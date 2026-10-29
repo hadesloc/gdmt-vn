@@ -1,0 +1,58 @@
+{
+  "id": "ckd_23_inpatient_aki_stage3_rrt",
+  "titleVi": "Nội viện - Ca icu_aki_rrt_0230: AKI Giai đoạn 3, Vô niệu kéo dài và Toan nặng -> Chỉ định lọc máu",
+  "source": "on-call:icu_aki_rrt_0230 / kdigo.aki.2012.table_2_staging",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_23",
+    "name": "BN icu_aki_rrt_0230",
+    "age": 64,
+    "sex": "male",
+    "weight": 68,
+    "sbp": 164,
+    "dbp": 94,
+    "hr": 48,
+    "scr": 420,
+    "k": 6.4,
+    "hco3": 12,
+    "conditions": {
+      "ckd": true
+    },
+    "customInputs": {
+      "akiSuspected": true,
+      "urineOutputRate": "anuria_12h"
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_ckd_aki_stage_alert",
+        "action": "MONITOR"
+      },
+      {
+        "ruleId": "rec_ckd_emergency_rrt",
+        "action": "REFER"
+      }
+    ]
+  },
+  "descriptionVi": "Ca bệnh chuyển từ ON-CALL: Bệnh nhân vô niệu, toan máu nặng có chỉ định cấp cứu lọc máu và hạ kali."
+}

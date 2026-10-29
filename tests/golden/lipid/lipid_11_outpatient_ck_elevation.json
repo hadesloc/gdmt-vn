@@ -1,0 +1,62 @@
+{
+  "id": "lipid_11_outpatient_ck_elevation",
+  "titleVi": "Tăng men cơ CK > 4 lần ULN - Tạm hoãn Statin",
+  "source": "ESC/EAS 2019 / esc.lipid.2019.monitoring_ck_high",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 63,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 74,
+    "scr": 90,
+    "tc": 4.5,
+    "hdl": 1.1,
+    "ldl": 2.5,
+    "tg": 1.7,
+    "conditions": {
+      "ascvd": true
+    },
+    "customInputs": {
+      "ckUlnTimes": 5.5
+    },
+    "currentMeds": [
+      {
+        "drugId": "atorvastatin",
+        "name": "Atorvastatin",
+        "dose": 40,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "HOLD"
+      }
+    ],
+    "mustNotInclude": []
+  },
+  "descriptionVi": "CK > 4x ULN yêu cầu tạm hoãn điều trị statin."
+}

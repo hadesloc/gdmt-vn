@@ -1,0 +1,27 @@
+{
+  "itemId": "dm2.glucose.fpg_target_max_mmol",
+  "contentHash": "7aef6cf3cc7e2f42dbb3db220db006062c59ba59773d5a886450ada8a6b046c0",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "dm2.glucose.fpg_target_max_mmol",
+      "contentHash": "165c67b98f11126d",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T07:05:00.000Z",
+      "reports": [
+        {
+          "round": 3,
+          "reviewedAt": "2026-10-28T07:05:00.000Z",
+          "role": "Agent F4 (DM2 Round 3 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Verified threshold dm2.glucose.fpg_target_max_mmol contentHash, verbatim PDF/HTML quotes, and Round 3 R1/R2/R3 clinical schema compliance."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

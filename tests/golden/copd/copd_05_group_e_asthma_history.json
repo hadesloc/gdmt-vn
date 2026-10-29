@@ -1,0 +1,57 @@
+{
+  "id": "copd_05_group_e_asthma_history",
+  "titleVi": "COPD Nhóm E có tiền sử hen đồng mắc: Khởi đầu phác đồ ba thuốc",
+  "source": "GOLD 2026 Report p. 76 / Concomitant Asthma",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_05",
+    "age": 64,
+    "sex": "female",
+    "weight": 52,
+    "height": 156,
+    "sbp": 122,
+    "dbp": 76,
+    "hr": 80,
+    "conditions": {
+      "copd": true,
+      "priorAsthma": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "fev1FvcRatio": 0.55,
+      "fev1PredPct": 52,
+      "mmrc": 2,
+      "cat": 17,
+      "moderateExacerbations": 1,
+      "hospitalizations": 1,
+      "bloodEos": 140,
+      "currentInhaler": "none"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "action": "START"
+      }
+    ]
+  }
+}

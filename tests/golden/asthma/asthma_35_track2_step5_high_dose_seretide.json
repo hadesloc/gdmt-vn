@@ -1,0 +1,74 @@
+{
+  "id": "asthma_35_track2_step5_high_dose_seretide",
+  "titleVi": "Track 2 Bậc 5: Tăng lên Fluticasone/salmeterol liều cao (Accuhaler 500/50 mcg) + Chuyên khoa",
+  "source": "BYT 1851/2020 Bảng 7 / GINA 2026 / R1-ASTHMA-04 / ASTHMA-R2-10",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_35",
+    "name": "Nam 55 tuổi",
+    "age": 55,
+    "sex": "male",
+    "weight": 68,
+    "sbp": 128,
+    "dbp": 80,
+    "hr": 84,
+    "rhythm": "sinus",
+    "fev1Pct": 52,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "fluticasone_salmeterol",
+        "name": "Seretide Accuhaler 250/50",
+        "dose": "250/50 mcg x 1 liều x 2 lần/ngày",
+        "freq": "2 lần/ngày"
+      }
+    ],
+    "customInputs": {
+      "currentTrack": "track2",
+      "currentStep": 4,
+      "daytimeSymptomsMoreThanTwiceWeek": true,
+      "nightWakingDueToAsthma": true,
+      "relieverNeededMoreThanTwiceWeek": true,
+      "activityLimitationDueToAsthma": true,
+      "inhalerTechniqueCorrect": true,
+      "goodAdherence": true,
+      "feno": 45
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "fluticasone_salmeterol",
+        "action": "UPTITRATE",
+        "doseContains": "500/50"
+      },
+      {
+        "ruleId": "rec_asthma_track1_step5_lama_biologic",
+        "action": "REFER"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Track 2 Bậc 4 đang dùng Seretide 250/50 không kiểm soát (FeNO 45 ppb) -> Tăng bậc lên Bậc 5 Seretide Accuhaler 500/50 mcg 1 liều x 2 lần/ngày kèm REFER thêm LAMA/Sinh học."
+}

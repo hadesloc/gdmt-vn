@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.allopurinol.start_dose_ckd",
+  "contentHash": "80f734383b4adbc5f143c0c52a17c0745694fbb903a3af72b2485ca95ff9a436",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.allopurinol.start_dose_ckd",
+      "contentHash": "e3b9eb65f0f49d9b",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.allopurinol.start_dose_ckd"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

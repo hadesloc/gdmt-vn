@@ -1,0 +1,26 @@
+{
+  "itemId": "enoxaparin",
+  "contentHash": "35e5f76473eb1e35751e4f5e6958ccbeeb36beed142d39772b6da4a8fef8e785",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "enoxaparin",
+      "contentHash": "dd499c21eda2d032",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateDrugEntry, dải thận liên tục không chồng lấn, an toàn thai kỳ/cho con bú và trích dẫn nguyên văn PDF cho enoxaparin."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

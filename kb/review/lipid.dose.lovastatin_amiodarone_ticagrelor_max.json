@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.dose.lovastatin_amiodarone_ticagrelor_max",
+  "contentHash": "e96c27b6ca94853e30e84d03bb7685b4b614708e777e5b95f332836c9953dd8e",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.dose.lovastatin_amiodarone_ticagrelor_max",
+      "contentHash": "d5220c77e9c5cb0c",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.dose.lovastatin_amiodarone_ticagrelor_max."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

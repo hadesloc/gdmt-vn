@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.hyperkalemia.resine_start_dose",
+  "contentHash": "dd24b5def602cca7239966494d2c718ad2c0ee915a37a60789b78565a79e12b2",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.hyperkalemia.resine_start_dose",
+      "contentHash": "323d98b0eba0ab03",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.134Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.hyperkalemia.resine_start_dose."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

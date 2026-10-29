@@ -1,0 +1,77 @@
+{
+  "id": "gout_09_acute_flare_verapamil_ckd_contra_colchicine",
+  "titleVi": "Tương tác CYP3A4 vừa (Verapamil) trên nền CKD giai đoạn 3b: Chống chỉ định Colchicine -> Chọn Prednisolone",
+  "source": "FDA Colchicine Label (fda.colchicine.renal_and_cyp3a4, fda.colchicine.moderate_cyp3a4)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 66,
+    "sex": "female",
+    "weight": 58,
+    "scr": 155,
+    "uricAcid": 490,
+    "conditions": {
+      "gout": true,
+      "ckd": true,
+      "htn": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "verapamil",
+        "name": "Verapamil",
+        "dose": "120",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": true,
+      "goutFlaresYear": 2
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "colchicine",
+        "ruleId": "rec_gout_colchicine_avoid_contra",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "naproxen",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "prednisolone",
+        "ruleId": "rec_gout_oral_corticosteroid_flare",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "colchicine",
+        "action": "START"
+      },
+      {
+        "drugId": "naproxen",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nữ 66 tuổi đang dùng Verapamil kèm suy giảm chức năng thận (eGFR < 60). Phối hợp ức chế vừa CYP3A4/P-gp trên nền suy thận bị chống chỉ định Colchicine; đồng thời tránh NSAID nên chọn Prednisolone."
+}

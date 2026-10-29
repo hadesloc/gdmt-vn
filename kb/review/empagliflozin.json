@@ -1,0 +1,26 @@
+{
+  "itemId": "empagliflozin",
+  "contentHash": "93584d851fda29983629a8ec617ddd8f304e3afdf035636fabb3f53e77a94219",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "empagliflozin",
+      "contentHash": "475572a027e0b6b7",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:58:17.989Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động bổ sung pregnancy, lactation và contraindications theo chuẩn QA-9 cho Empagliflozin."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

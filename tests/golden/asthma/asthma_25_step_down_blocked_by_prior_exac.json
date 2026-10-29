@@ -1,0 +1,75 @@
+{
+  "id": "asthma_25_step_down_blocked_by_prior_exac",
+  "titleVi": "Chặn hạ bậc: Kiểm soát tốt 3 tháng nhưng có đợt cấp trong 12 tháng qua",
+  "source": "GINA 2026 Box 2-2B / R1-05 / R3-11",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_25",
+    "name": "Nam 46 tuổi",
+    "age": 46,
+    "sex": "male",
+    "weight": 72,
+    "sbp": 122,
+    "dbp": 78,
+    "hr": 74,
+    "rhythm": "sinus",
+    "fev1Pct": 82,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "budesonide_formoterol",
+        "name": "Symbicort Turbuhaler",
+        "dose": "160/4.5 mcg x 1 nhát x 2 lần/ngày",
+        "freq": "2 lần/ngày"
+      }
+    ],
+    "customInputs": {
+      "currentTrack": "track1",
+      "currentStep": 3,
+      "daytimeSymptomsMoreThanTwiceWeek": false,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false,
+      "wellControlledMonths": 4,
+      "exacerbationsLastYear": 1,
+      "inhalerTechniqueCorrect": true,
+      "goodAdherence": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "CONTINUE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_asthma_step_down_consider",
+        "action": "CONSIDER"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Có tiền sử đợt cấp trong 12 tháng qua là yếu tố nguy cơ cao, không cho phép tự động hạ bậc dù kiểm soát 4 tháng."
+}

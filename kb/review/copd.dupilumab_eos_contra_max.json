@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.dupilumab_eos_contra_max",
+  "contentHash": "ec1ad374cd57e7e414675dae4e523b43bb0cb14406753d65fd50b489ed884d3f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.dupilumab_eos_contra_max",
+      "contentHash": "f9bf2615e89bc890",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

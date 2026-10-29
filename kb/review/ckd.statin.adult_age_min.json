@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.statin.adult_age_min",
+  "contentHash": "4d1969a7734c3cbc586726d6a6a713539c089b03ef4ccb90aa80f3f7a37936c7",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.statin.adult_age_min",
+      "contentHash": "fbe7a782d2b91129",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:57:46.785Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động chuẩn hóa QA-10 quantity và kiểm tra trích dẫn nguyên văn cho ngưỡng ckd.statin.adult_age_min."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

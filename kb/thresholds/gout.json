@@ -1,0 +1,951 @@
+[
+  {
+    "id": "gout.indication.tophi_min",
+    "value": 1,
+    "unit": "count",
+    "quantity": "count",
+    "citationIds": [
+      "acr.gout.2020.indication_strong"
+    ],
+    "descriptionVi": "Số lượng hạt tophi tối thiểu (≥ 1 hạt) để có chỉ định mạnh khởi trị thuốc hạ urat máu (ACR 2020)"
+  },
+  {
+    "id": "gout.indication.flares_per_year_frequent",
+    "value": 2,
+    "unit": "cơn/năm",
+    "quantity": "gout_flares",
+    "citationIds": [
+      "acr.gout.2020.indication_strong"
+    ],
+    "descriptionVi": "Tần suất đợt cấp tái phát thường xuyên (≥ 2 đợt/năm) là chỉ định mạnh khởi trị ULT (ACR 2020)"
+  },
+  {
+    "id": "gout.indication.prior_flares_infrequent",
+    "value": 1,
+    "unit": "count",
+    "quantity": "count",
+    "citationIds": [
+      "acr.gout.2020.indication_conditional_infrequent"
+    ],
+    "descriptionVi": "Từng có > 1 đợt cấp gút trong đời nhưng cơn thưa (< 2 đợt/năm): chỉ định có điều kiện khởi trị ULT (ACR 2020)"
+  },
+  {
+    "id": "gout.indication.ckd_stage_min",
+    "value": 3,
+    "unit": "stage",
+    "quantity": "stage",
+    "citationIds": [
+      "acr.gout.2020.indication_conditional_first_flare"
+    ],
+    "descriptionVi": "Bệnh thận mạn giai đoạn ≥ 3 là yếu tố nguy cơ để chỉ định có điều kiện khởi trị ULT ngay từ cơn gút đầu tiên (ACR 2020)"
+  },
+  {
+    "id": "gout.indication.urate_high_cutoff_mgdl",
+    "value": 9,
+    "unit": "mg/dL",
+    "quantity": "urate",
+    "citationIds": [
+      "acr.gout.2020.indication_conditional_first_flare"
+    ],
+    "descriptionVi": "Nồng độ acid uric máu rất cao (> 9 mg/dL) là yếu tố chỉ định có điều kiện khởi trị ULT từ cơn đầu (ACR 2020)"
+  },
+  {
+    "id": "gout.indication.urate_high_cutoff_umol",
+    "value": 535,
+    "unit": "µmol/L",
+    "quantity": "urate",
+    "citationIds": [
+      "kdigo.gout.2024.ckd_first_flare"
+    ],
+    "descriptionVi": "Nồng độ acid uric máu rất cao (> 535 µmol/L) theo đơn vị SI (KDIGO 2024)"
+  },
+  {
+    "id": "gout.indication.eular_young_age_max",
+    "value": 40,
+    "unit": "tuổi",
+    "quantity": "age",
+    "citationIds": [
+      "eular.gout.2016.early_ult_young_high_sua"
+    ],
+    "descriptionVi": "Ngưỡng tuổi trẻ (< 40 tuổi) khuyến cáo khởi trị ULT sớm ngay từ cơn đầu tiên theo EULAR 2016 (Khuyến cáo 5)"
+  },
+  {
+    "id": "gout.indication.eular_high_sua_mgdl",
+    "value": 8,
+    "unit": "mg/dL",
+    "quantity": "urate",
+    "citationIds": [
+      "eular.gout.2016.early_ult_young_high_sua"
+    ],
+    "descriptionVi": "Ngưỡng acid uric > 8.0 mg/dL khuyến cáo khởi trị ULT sớm ngay từ lần chẩn đoán đầu tiên theo EULAR 2016"
+  },
+  {
+    "id": "gout.indication.eular_high_sua_umol",
+    "value": 480,
+    "unit": "µmol/L",
+    "quantity": "urate",
+    "citationIds": [
+      "eular.gout.2016.early_ult_young_high_sua"
+    ],
+    "descriptionVi": "Ngưỡng acid uric > 480 µmol/L khuyến cáo khởi trị ULT sớm theo EULAR 2016"
+  },
+  {
+    "id": "gout.target.urate_standard_mgdl",
+    "value": 6,
+    "unit": "mg/dL",
+    "quantity": "urate",
+    "citationIds": [
+      "acr.gout.2020.target_urate_under_6",
+      "fda.allopurinol.start_and_max"
+    ],
+    "descriptionVi": "Mục tiêu acid uric máu chuẩn < 6.0 mg/dL (< 360 µmol/L) cho mọi bệnh nhân gút dùng ULT (ACR 2020)"
+  },
+  {
+    "id": "gout.target.urate_standard_umol",
+    "value": 360,
+    "unit": "µmol/L",
+    "quantity": "urate",
+    "citationIds": [
+      "eular.gout.2016.target_urate_tophi",
+      "byt.gout.2014.target_urate"
+    ],
+    "descriptionVi": "Mục tiêu acid uric máu chuẩn < 360 µmol/L theo đơn vị SI (EULAR 2016 & BYT 361/2014)"
+  },
+  {
+    "id": "gout.target.urate_tophi_mgdl",
+    "value": 5,
+    "unit": "mg/dL",
+    "quantity": "urate",
+    "citationIds": [
+      "eular.gout.2016.target_urate_tophi"
+    ],
+    "descriptionVi": "Mục tiêu acid uric máu tích cực < 5.0 mg/dL (< 300 µmol/L) cho bệnh nhân có tophi hoặc phá hủy khớp (EULAR 2016)"
+  },
+  {
+    "id": "gout.target.urate_tophi_umol",
+    "value": 300,
+    "unit": "µmol/L",
+    "quantity": "urate",
+    "citationIds": [
+      "eular.gout.2016.target_urate_tophi"
+    ],
+    "descriptionVi": "Mục tiêu acid uric máu tích cực < 300 µmol/L theo đơn vị SI cho bệnh nhân có tophi (EULAR 2016)"
+  },
+  {
+    "id": "gout.target.urate_vn_tophi_umol",
+    "value": 320,
+    "unit": "µmol/L",
+    "quantity": "urate",
+    "citationIds": [
+      "byt.gout.2014.target_urate"
+    ],
+    "descriptionVi": "Mục tiêu acid uric máu khi có hạt tophi theo BYT 361/2014 (< 320 µmol/L)"
+  },
+  {
+    "id": "gout.target.urate_floor_mgdl",
+    "value": 3,
+    "unit": "mg/dL",
+    "quantity": "urate",
+    "citationIds": [
+      "eular.gout.2016.target_urate_tophi"
+    ],
+    "descriptionVi": "Ngưỡng sàn acid uric máu < 3.0 mg/dL không khuyến cáo duy trì kéo dài nhiều năm (EULAR 2016 Khuyến cáo 6)"
+  },
+  {
+    "id": "gout.allopurinol.start_dose_normal",
+    "value": 100,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acr.gout.2020.allopurinol_low_dose_start",
+      "fda.allopurinol.start_and_max",
+      "eular.gout.2016.allopurinol_titration"
+    ],
+    "descriptionVi": "Liều khởi đầu allopurinol chuẩn ở người có chức năng thận bình thường (100 mg/ngày) (ACR 2020, EULAR 2016)"
+  },
+  {
+    "id": "gout.allopurinol.start_dose_ckd",
+    "value": 50,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acr.gout.2020.allopurinol_start_dose_ckd_50",
+      "byt.ckd.2024.gout_ult_table21"
+    ],
+    "descriptionVi": "Liều khởi đầu và bước chuẩn độ allopurinol giảm ở bệnh nhân CKD giai đoạn ≥ 3 (≤ 50 mg/ngày) (ACR 2020, BYT 2024)"
+  },
+  {
+    "id": "gout.allopurinol.egfr_ckd_threshold",
+    "value": 60,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "kdigo.ckd.2024.table_2_gfr_categories"
+    ],
+    "descriptionVi": "Ngưỡng eGFR phân định CKD giai đoạn ≥ 3 (< 60 mL/min/1.73m2) để giảm liều khởi đầu và bước chuẩn độ allopurinol (KDIGO 2024)"
+  },
+  {
+    "id": "gout.allopurinol.titration_step",
+    "value": 100,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "eular.gout.2016.allopurinol_titration",
+      "fda.allopurinol.start_and_max"
+    ],
+    "descriptionVi": "Bước chuẩn độ tăng liều allopurinol ở người chức năng thận bình thường (100 mg mỗi đợt) (EULAR 2016, FDA label)"
+  },
+  {
+    "id": "gout.allopurinol.titration_step_ckd",
+    "value": 50,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acr.gout.2020.allopurinol_start_dose_ckd_50"
+    ],
+    "descriptionVi": "Bước chuẩn độ tăng liều allopurinol thận trọng ở bệnh nhân suy thận mạn (≤ 50 mg mỗi 2–5 tuần) (ACR 2020)"
+  },
+  {
+    "id": "gout.allopurinol.max_dose",
+    "value": 800,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.allopurinol.start_and_max",
+      "byt.ckd.2024.gout_ult_table21"
+    ],
+    "descriptionVi": "Liều tối đa khuyến cáo của allopurinol (800 mg/ngày) (FDA label, BYT 2024)"
+  },
+  {
+    "id": "gout.allopurinol.crcl_10",
+    "value": 10,
+    "unit": "mL/min",
+    "quantity": "crcl",
+    "citationIds": [
+      "fda.allopurinol.renal_dosing"
+    ],
+    "descriptionVi": "Ngưỡng CrCl 10 mL/phút để chỉnh liều allopurinol (FDA label)"
+  },
+  {
+    "id": "gout.allopurinol.crcl_20",
+    "value": 20,
+    "unit": "mL/min",
+    "quantity": "crcl",
+    "citationIds": [
+      "fda.allopurinol.renal_dosing"
+    ],
+    "descriptionVi": "Ngưỡng CrCl 20 mL/phút để chỉnh liều allopurinol (FDA label)"
+  },
+  {
+    "id": "gout.allopurinol.dose_crcl_10_20",
+    "value": 200,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.allopurinol.renal_dosing"
+    ],
+    "descriptionVi": "Liều allopurinol tối đa theo nhãn FDA / EULAR khi CrCl 10–20 mL/phút (200 mg/ngày)"
+  },
+  {
+    "id": "gout.allopurinol.dose_crcl_under_10",
+    "value": 100,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.allopurinol.renal_dosing"
+    ],
+    "descriptionVi": "Liều allopurinol tối đa theo nhãn FDA / EULAR khi CrCl < 10 mL/phút (không quá 100 mg/ngày)"
+  },
+  {
+    "id": "gout.allopurinol.crcl_extreme",
+    "value": 3,
+    "unit": "mL/min",
+    "quantity": "crcl",
+    "citationIds": [
+      "fda.allopurinol.renal_dosing"
+    ],
+    "descriptionVi": "Ngưỡng suy thận cực độ CrCl < 3 mL/phút cần giãn khoảng cách liều allopurinol (FDA label)"
+  },
+  {
+    "id": "gout.febuxostat.start_dose",
+    "value": 40,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acr.gout.2020.allopurinol_low_dose_start",
+      "fda.febuxostat.dosage"
+    ],
+    "descriptionVi": "Liều khởi đầu febuxostat (40 mg/ngày) (ACR 2020, FDA label)"
+  },
+  {
+    "id": "gout.febuxostat.target_dose",
+    "value": 80,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.febuxostat.dosage"
+    ],
+    "descriptionVi": "Liều đích chuẩn của febuxostat (80 mg/ngày; tối đa theo FDA) nếu chưa đạt đích sau 2 tuần"
+  },
+  {
+    "id": "gout.febuxostat.max_dose_intl_vn",
+    "value": 120,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "byt.ckd.2024.gout_ult_table21"
+    ],
+    "descriptionVi": "Liều tối đa febuxostat theo BYT 2024 / EMA khi eGFR ≥ 30 mL/phút (120 mg/ngày)"
+  },
+  {
+    "id": "gout.febuxostat.severe_renal_max_dose",
+    "value": 40,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.febuxostat.severe_renal"
+    ],
+    "descriptionVi": "Liều tối đa febuxostat ở bệnh nhân suy thận nặng (40 mg/ngày) (FDA label)"
+  },
+  {
+    "id": "gout.febuxostat.severe_renal_crcl",
+    "value": 30,
+    "unit": "mL/min",
+    "quantity": "crcl",
+    "citationIds": [
+      "fda.febuxostat.renal_clcr_30",
+      "fda.febuxostat.severe_renal"
+    ],
+    "descriptionVi": "Ngưỡng suy thận nặng (CrCl < 30 mL/phút) để giới hạn liều febuxostat tối đa 40 mg/ngày (FDA Section 8.6)"
+  },
+  {
+    "id": "gout.probenecid.start_dose",
+    "value": 500,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acr.gout.2020.probenecid_low_dose"
+    ],
+    "descriptionVi": "Liều khởi đầu probenecid (500 mg x 1–2 lần/ngày) (ACR 2020)"
+  },
+  {
+    "id": "gout.probenecid.max_dose_g",
+    "value": 2,
+    "unit": "g/ngày",
+    "quantity": "dose_g",
+    "citationIds": [
+      "eular.gout.2016.benzbromarone_probenecid_dosing"
+    ],
+    "descriptionVi": "Liều thông thường tối đa của probenecid (2 g/ngày) (EULAR 2016)"
+  },
+  {
+    "id": "gout.probenecid.crcl_contra_min",
+    "value": 30,
+    "unit": "mL/min",
+    "quantity": "crcl",
+    "citationIds": [
+      "acr.gout.2020.uricosuric_renal_stones_contra",
+      "byt.gout.2014.uricosuric_contra",
+      "byt.ckd.2024.gout_ult_table21",
+      "kdigo.ckd.2024.table_2_gfr_categories"
+    ],
+    "descriptionVi": "Ngưỡng CrCl < 30 mL/phút thuốc tăng thải acid uric mất hiệu lực và chống chỉ định (ACR 2020, BYT 361/2014, BYT 2024)"
+  },
+  {
+    "id": "gout.benzbromarone.start_dose",
+    "value": 50,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "eular.gout.2016.benzbromarone_probenecid_dosing"
+    ],
+    "descriptionVi": "Liều khởi đầu benzbromarone (50 mg/ngày) (EULAR 2016)"
+  },
+  {
+    "id": "gout.benzbromarone.target_dose",
+    "value": 200,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "eular.gout.2016.benzbromarone_probenecid_dosing"
+    ],
+    "descriptionVi": "Liều đích tối đa của benzbromarone (200 mg/ngày) (EULAR 2016)"
+  },
+  {
+    "id": "gout.benzbromarone.egfr_contra_min",
+    "value": 30,
+    "unit": "mL/min",
+    "quantity": "egfr",
+    "citationIds": [
+      "eular.gout.2016.benzbromarone_egfr30"
+    ],
+    "descriptionVi": "Ngưỡng eGFR < 30 mL/phút chống chỉ định benzbromarone (EULAR 2016)"
+  },
+  {
+    "id": "gout.prophylaxis.duration_months_min",
+    "value": 3,
+    "unit": "tháng",
+    "quantity": "duration_months",
+    "citationIds": [
+      "acr.gout.2020.prophylaxis_duration"
+    ],
+    "descriptionVi": "Thời gian dự phòng cơn cấp tối thiểu khi bắt đầu ULT (ít nhất 3 tháng) (ACR 2020)"
+  },
+  {
+    "id": "gout.prophylaxis.duration_months_max",
+    "value": 6,
+    "unit": "tháng",
+    "quantity": "duration_months",
+    "citationIds": [
+      "acr.gout.2020.prophylaxis_duration",
+      "eular.gout.2016.flare_prophylaxis"
+    ],
+    "descriptionVi": "Thời gian dự phòng cơn cấp chuẩn khi bắt đầu ULT (6 tháng) (ACR 2020, EULAR 2016)"
+  },
+  {
+    "id": "gout.colchicine.prophylaxis_dose_min",
+    "value": 0.5,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "eular.gout.2016.flare_prophylaxis",
+      "byt.gout.2014.colchicine_dosing"
+    ],
+    "descriptionVi": "Liều dự phòng cơn cấp khởi đầu/giảm liều của colchicine (0.5 mg/ngày) (EULAR 2016, BYT 361/2014)"
+  },
+  {
+    "id": "gout.colchicine.prophylaxis_dose_max",
+    "value": 1,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "eular.gout.2016.flare_prophylaxis",
+      "byt.gout.2014.colchicine_dosing"
+    ],
+    "descriptionVi": "Liều dự phòng cơn cấp tối đa thông thường của colchicine ở người chức năng thận bình thường (1.0 mg/ngày) (EULAR 2016)"
+  },
+  {
+    "id": "gout.colchicine.prophylaxis_fda_single_dose",
+    "value": 0.6,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.colchicine.prophylaxis_dosage"
+    ],
+    "descriptionVi": "Liều đơn dự phòng cơn cấp colchicine theo nhãn FDA (0.6 mg x 1–2 lần/ngày)"
+  },
+  {
+    "id": "gout.colchicine.prophylaxis_fda_max",
+    "value": 1.2,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.colchicine.prophylaxis_dosage",
+      "byt.gout.2014.colchicine_dosing"
+    ],
+    "descriptionVi": "Liều tối đa dự phòng cơn cấp của colchicine theo nhãn FDA (1.2 mg/ngày)"
+  },
+  {
+    "id": "gout.colchicine.elderly_age_min",
+    "value": 70,
+    "unit": "tuổi",
+    "quantity": "age",
+    "citationIds": [
+      "byt.gout.2014.colchicine_dosing"
+    ],
+    "descriptionVi": "Ngưỡng người cao tuổi (> 70 tuổi) cần giảm liều dự phòng colchicine theo BYT 361/2014"
+  },
+  {
+    "id": "gout.colchicine.egfr_severe_renal_min",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "eular.gout.2016.colchicine_gfr30_avoid",
+      "fda.colchicine.severe_renal_prophylaxis"
+    ],
+    "descriptionVi": "Ngưỡng suy thận nặng (GFR < 30 mL/phút): EULAR 2016 khuyến cáo tránh dùng colchicine; FDA giảm liều dự phòng 0.3 mg/ngày"
+  },
+  {
+    "id": "gout.colchicine.severe_renal_start_dose",
+    "value": 0.3,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.colchicine.severe_renal_prophylaxis"
+    ],
+    "descriptionVi": "Liều khởi đầu dự phòng colchicine ở bệnh nhân suy thận nặng theo nhãn FDA (0.3 mg/ngày)"
+  },
+  {
+    "id": "gout.colchicine.egfr_dialysis_min",
+    "value": 15,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "kdigo.ckd.2024.table_2_gfr_categories",
+      "byt.ckd.2024.gout_flare_table22"
+    ],
+    "descriptionVi": "Ngưỡng suy thận giai đoạn cuối (eGFR < 15 mL/phút/1.73m2) tránh/chống chỉ định colchicine"
+  },
+  {
+    "id": "gout.colchicine.flare_initial_dose",
+    "value": 1.2,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.colchicine.flare_treatment"
+    ],
+    "descriptionVi": "Liều nạp colchicine ban đầu khi có dấu hiệu cơn gút cấp (1.2 mg) theo nhãn FDA"
+  },
+  {
+    "id": "gout.colchicine.flare_second_dose",
+    "value": 0.6,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.colchicine.flare_treatment"
+    ],
+    "descriptionVi": "Liều colchicine tiếp theo sau 1 giờ điều trị cơn cấp (0.6 mg) theo nhãn FDA"
+  },
+  {
+    "id": "gout.colchicine.flare_hour_interval",
+    "value": 1,
+    "unit": "giờ",
+    "quantity": "duration_hours",
+    "citationIds": [
+      "fda.colchicine.flare_treatment",
+      "eular.gout.2016.flare_options"
+    ],
+    "descriptionVi": "Khoảng thời gian (1 giờ) giữa liều nạp thứ nhất và thứ hai của colchicine (FDA label, EULAR 2016)"
+  },
+  {
+    "id": "gout.colchicine.flare_eular_initial",
+    "value": 1,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "eular.gout.2016.flare_options"
+    ],
+    "descriptionVi": "Liều nạp colchicine ban đầu theo EULAR 2016 (1.0 mg)"
+  },
+  {
+    "id": "gout.colchicine.flare_eular_second",
+    "value": 0.5,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "eular.gout.2016.flare_options"
+    ],
+    "descriptionVi": "Liều colchicine sau 1 giờ theo EULAR 2016 (0.5 mg)"
+  },
+  {
+    "id": "gout.prednisolone.flare_dose_min",
+    "value": 30,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "eular.gout.2016.flare_options"
+    ],
+    "descriptionVi": "Liều corticoid uống khởi đầu trong cơn cấp gút (30 mg/ngày tương đương prednisolone) (EULAR 2016)"
+  },
+  {
+    "id": "gout.prednisolone.flare_dose_max",
+    "value": 35,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "eular.gout.2016.flare_options"
+    ],
+    "descriptionVi": "Liều corticoid uống tối đa trong cơn cấp gút (35 mg/ngày tương đương prednisolone) (EULAR 2016)"
+  },
+  {
+    "id": "gout.prednisolone.flare_duration_days_min",
+    "value": 3,
+    "unit": "ngày",
+    "quantity": "duration_days",
+    "citationIds": [
+      "eular.gout.2016.flare_options"
+    ],
+    "descriptionVi": "Thời gian điều trị corticoid ngắn ngày tối thiểu trong cơn cấp (3 ngày) (EULAR 2016)"
+  },
+  {
+    "id": "gout.prednisolone.flare_duration_days_max",
+    "value": 5,
+    "unit": "ngày",
+    "quantity": "duration_days",
+    "citationIds": [
+      "eular.gout.2016.flare_options"
+    ],
+    "descriptionVi": "Thời gian điều trị corticoid ngắn ngày chuẩn trong cơn cấp (5 ngày) (EULAR 2016)"
+  },
+  {
+    "id": "gout.nsaid.egfr_contra_min",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "byt.ckd.2024.gout_flare_table22",
+      "eular.gout.2016.colchicine_nsaid_contra"
+    ],
+    "descriptionVi": "Ngưỡng eGFR < 30 mL/phút/1.73m2 chống chỉ định dùng thuốc chống viêm NSAID (BYT 2024 CKD Bảng 22, EULAR 2016)"
+  },
+  {
+    "id": "gout.nsaid.egfr_caution_min",
+    "value": 60,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "kdigo.ckd.2024.table_2_gfr_categories",
+      "kdigo.gout.2024.acute_flare_ckd"
+    ],
+    "descriptionVi": "Ngưỡng eGFR < 60 mL/phút/1.73m2 (CKD giai đoạn ≥ 3) cần tránh NSAID và ưu tiên corticoid hoặc colchicine liều thấp (KDIGO 2024)"
+  },
+  {
+    "id": "gout.naproxen.flare_dose",
+    "value": 500,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "eular.gout.2016.naproxen_flare"
+    ],
+    "descriptionVi": "Liều naproxen kháng viêm điều trị cơn gút cấp (500 mg x 2 lần/ngày) (EULAR 2016)"
+  },
+  {
+    "id": "gout.naproxen.flare_duration_days",
+    "value": 5,
+    "unit": "ngày",
+    "quantity": "duration_days",
+    "citationIds": [
+      "eular.gout.2016.naproxen_flare"
+    ],
+    "descriptionVi": "Thời gian dùng naproxen cắt cơn gút cấp (5 ngày) (EULAR 2016)"
+  },
+  {
+    "id": "gout.naproxen.prophylaxis_dose",
+    "value": 250,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "eular.gout.2016.naproxen_prophylaxis"
+    ],
+    "descriptionVi": "Liều naproxen dự phòng cơn bùng phát khi khởi trị ULT (250 mg x 2 lần/ngày) (EULAR 2016)"
+  },
+  {
+    "id": "gout.allopurinol.titration_weeks_min",
+    "value": 2,
+    "unit": "tuần",
+    "quantity": "interval_weeks",
+    "citationIds": [
+      "acr.gout.2020.titration_weeks",
+      "eular.gout.2016.allopurinol_titration"
+    ],
+    "descriptionVi": "Khoảng cách chuẩn độ tăng liều allopurinol tối thiểu (2 tuần) (ACR 2020, EULAR 2016)"
+  },
+  {
+    "id": "gout.allopurinol.titration_weeks_max",
+    "value": 5,
+    "unit": "tuần",
+    "quantity": "interval_weeks",
+    "citationIds": [
+      "acr.gout.2020.titration_weeks"
+    ],
+    "descriptionVi": "Khoảng cách chuẩn độ tăng liều allopurinol tối đa theo ACR 2020 (5 tuần)"
+  },
+  {
+    "id": "gout.allopurinol.titration_eular_weeks_max",
+    "value": 4,
+    "unit": "tuần",
+    "quantity": "interval_weeks",
+    "citationIds": [
+      "eular.gout.2016.allopurinol_titration"
+    ],
+    "descriptionVi": "Khoảng cách chuẩn độ tăng liều allopurinol theo EULAR 2016 (2–4 tuần)"
+  },
+  {
+    "id": "gout.ult.vn_defer_after_flare_weeks_min",
+    "value": 1,
+    "unit": "tuần",
+    "quantity": "interval_weeks",
+    "citationIds": [
+      "byt.gout.2014.ult_after_flare"
+    ],
+    "descriptionVi": "Thời gian trì hoãn khởi trị allopurinol sau cơn cấp tối thiểu theo BYT 361/2014 (1 tuần)"
+  },
+  {
+    "id": "gout.ult.vn_defer_after_flare_weeks_max",
+    "value": 2,
+    "unit": "tuần",
+    "quantity": "interval_weeks",
+    "citationIds": [
+      "byt.gout.2014.ult_after_flare"
+    ],
+    "descriptionVi": "Thời gian trì hoãn khởi trị allopurinol sau cơn cấp chuẩn theo BYT 361/2014 (2 tuần)"
+  },
+  {
+    "id": "gout.colchicine.moderate_cyp3a4_flare_dose",
+    "value": 1.2,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.colchicine.moderate_cyp3a4"
+    ],
+    "descriptionVi": "Liều colchicine cắt cơn cấp giảm khi dùng cùng thuốc ức chế vừa CYP3A4 (diltiazem, verapamil, fluconazole, erythromycin) trên người chức năng thận–gan bình thường (1.2 mg × 1 liều duy nhất, không lặp lại sớm hơn 3 ngày) (FDA Table 1)"
+  },
+  {
+    "id": "gout.colchicine.moderate_cyp3a4_repeat_days",
+    "value": 3,
+    "unit": "ngày",
+    "quantity": "duration_days",
+    "citationIds": [
+      "fda.colchicine.moderate_cyp3a4"
+    ],
+    "descriptionVi": "Khoảng cách tối thiểu không lặp lại đợt colchicine cắt cơn cấp khi dùng cùng chất ức chế CYP3A4 vừa (3 ngày) (FDA Table 1)"
+  },
+  {
+    "id": "gout.colchicine.moderate_cyp3a4_prophylaxis_dose",
+    "value": 0.3,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.colchicine.moderate_cyp3a4"
+    ],
+    "descriptionVi": "Liều colchicine dự phòng giảm khi dùng cùng thuốc ức chế vừa CYP3A4 (0.3 mg/ngày theo FDA hoặc 0.5 mg cách ngày với viên 1 mg tại VN)"
+  },
+  {
+    "id": "gout.febuxostat.severe_renal_egfr",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "fda.febuxostat.renal_clcr_30",
+      "fda.febuxostat.severe_renal"
+    ],
+    "descriptionVi": "Ngưỡng eGFR < 30 mL/phút/1.73m2 suy thận nặng giới hạn liều febuxostat tối đa 40 mg/ngày (FDA Section 8.6)"
+  },
+  {
+    "id": "gout.probenecid.egfr_contra_min",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "acr.gout.2020.uricosuric_renal_stones_contra",
+      "byt.gout.2014.uricosuric_contra",
+      "byt.ckd.2024.gout_ult_table21",
+      "kdigo.ckd.2024.table_2_gfr_categories"
+    ],
+    "descriptionVi": "Ngưỡng eGFR < 30 mL/phút/1.73m2 chống chỉ định thuốc tăng thải acid uric probenecid (ACR 2020, BYT 361/2014, BYT 2024)"
+  },
+  {
+    "id": "gout.probenecid.egfr_prefer_xoi_min",
+    "value": 60,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "acr.gout.2020.xoi_over_probenecid",
+      "kdigo.ckd.2024.table_2_gfr_categories"
+    ],
+    "descriptionVi": "Ngưỡng eGFR < 60 mL/phút/1.73m2 (CKD giai đoạn ≥ 3) khuyến cáo mạnh ưu tiên XOI hơn probenecid (ACR 2020)"
+  },
+  {
+    "id": "gout.concurrent.losartan_k_max",
+    "value": 5,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "kdigo.gout.2024.hyperkalemia_k_5_0"
+    ],
+    "descriptionVi": "Ngưỡng kali huyết thanh tối đa (≤ 5.0 mmol/L) để cân nhắc chuyển lợi tiểu thiazide sang losartan an toàn, tránh tăng kali máu"
+  },
+  {
+    "id": "gout.etoricoxib.sbp_contra_max",
+    "value": 140,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "ema.arcoxia.contra_htn_cv_aerd"
+    ],
+    "descriptionVi": "Ngưỡng huyết áp tâm thu tăng chưa kiểm soát (> 140 mmHg) chống chỉ định dùng etoricoxib (EMA Arcoxia SmPC Mục 4.3)"
+  },
+  {
+    "id": "gout.etoricoxib.dbp_contra_max",
+    "value": 90,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "ema.arcoxia.contra_htn_cv_aerd"
+    ],
+    "descriptionVi": "Ngưỡng huyết áp tâm trương tăng chưa kiểm soát (> 90 mmHg) chống chỉ định dùng etoricoxib (EMA Arcoxia SmPC Mục 4.3)"
+  },
+  {
+    "id": "gout.concurrent.sbp_hypotension_min",
+    "value": 90,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.hf.2026.bb_guidance_table_s6"
+    ],
+    "descriptionVi": "Ngưỡng tụt huyết áp tâm thu (< 90 mmHg) không khởi trị hoặc chuyển đổi thuốc hạ áp"
+  },
+  {
+    "id": "gout.nsaid.hfref_lvef_max",
+    "value": 50,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "esc.hf.2026.new_concept_hfref_expanded"
+    ],
+    "descriptionVi": "Ngưỡng phân suất tống máu thất trái giảm (< 50%) xác định suy tim chống chỉ định dùng NSAID"
+  },
+  {
+    "id": "gout.flare.colchicine_early_hours",
+    "value": 12,
+    "unit": "giờ",
+    "quantity": "duration_hours",
+    "citationIds": [
+      "eular.gout.2016.flare_options"
+    ],
+    "descriptionVi": "Cửa sổ thời gian vàng (trong vòng 12 giờ đầu kể từ khi khởi phát cơn gút cấp) để dùng colchicine đạt hiệu quả tối ưu theo EULAR 2016"
+  },
+  {
+    "id": "gout.uricosuric.vn_urine_urate_max",
+    "value": 600,
+    "unit": "mg/24h",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "byt.gout.2014.uricosuric_contra"
+    ],
+    "descriptionVi": "Ngưỡng bài tiết acid uric niệu (> 600 mg/24 giờ) chống chỉ định nhóm thuốc tăng thải acid uric theo BYT 361/2014"
+  },
+  {
+    "id": "gout.uricosuric.vn_elderly_age_min",
+    "value": 70,
+    "unit": "tuổi",
+    "quantity": "age",
+    "citationIds": [
+      "byt.gout.2014.colchicine_dosing",
+      "byt.gout.2014.uricosuric_contra"
+    ],
+    "descriptionVi": "Ngưỡng người cao tuổi (≥ 70 tuổi) chống chỉ định nhóm thuốc tăng thải acid uric theo BYT 361/2014"
+  },
+  {
+    "id": "gout.etoricoxib.hepatic_child_pugh_a_max",
+    "value": 60,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "ema.arcoxia.hepatic_renal_posology"
+    ],
+    "descriptionVi": "Liều tối đa etoricoxib ở bệnh nhân suy gan nhẹ Child-Pugh A (5–6 điểm): không vượt quá 60 mg/ngày bất kể chỉ định (EMA Arcoxia SmPC Mục 4.2)"
+  },
+  {
+    "id": "gout.etoricoxib.hepatic_child_pugh_b_max",
+    "value": 30,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "ema.arcoxia.hepatic_renal_posology"
+    ],
+    "descriptionVi": "Liều tối đa etoricoxib ở bệnh nhân suy gan vừa Child-Pugh B (7–9 điểm): không vượt quá 30 mg/ngày bất kể chỉ định (EMA Arcoxia SmPC Mục 4.2)"
+  },
+  {
+    "id": "gout.etoricoxib.max_days_acute_gout",
+    "value": 8,
+    "unit": "ngày",
+    "quantity": "duration_days",
+    "citationIds": [
+      "ema.arcoxia.gout_posology_120mg_8d"
+    ],
+    "descriptionVi": "Thời gian tối đa dùng etoricoxib 120 mg/ngày điều trị cơn gút cấp (tối đa 8 ngày) (EMA Arcoxia SmPC Mục 4.2)"
+  },
+  {
+    "id": "gout.etoricoxib.acute_gout_dose",
+    "value": 120,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "ema.arcoxia.gout_posology_120mg_8d"
+    ],
+    "descriptionVi": "Liều etoricoxib điều trị cơn gút cấp (120 mg/ngày, không quá 8 ngày) (EMA Arcoxia SmPC Mục 4.2)"
+  },
+  {
+    "id": "gout.colchicine.prophylaxis_resume_wait_hours",
+    "value": 12,
+    "unit": "giờ",
+    "quantity": "duration_hours",
+    "citationIds": [
+      "fda.colchicine.flare_during_prophylaxis_wait12h"
+    ],
+    "descriptionVi": "Thời gian bắt buộc tạm nghỉ colchicine dự phòng (12 giờ) sau liều cắt cơn gút cấp trước khi nối lại liều dự phòng (FDA Colcrys Mục 2.1)"
+  },
+  {
+    "id": "gout.nsaid.gi_risk_elderly_age_min",
+    "value": 65,
+    "unit": "tuổi",
+    "quantity": "age",
+    "citationIds": [
+      "byt.gout.2014.nsaid_gi_risk_age65_p200"
+    ],
+    "descriptionVi": "Ngưỡng tuổi cao (≥ 65 tuổi) tăng nguy cơ biến chứng tiêu hóa khi dùng NSAID cần phối hợp PPI bảo vệ dạ dày (BYT 361/2014 tr. 200)"
+  },
+  {
+    "id": "gout.nsaid.ppi_omeprazole_dose_mg",
+    "value": 20,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "byt.gout.2014.nsaid_ppi_gastroprotection_p199"
+    ],
+    "descriptionVi": "Liều chuẩn Omeprazole / Esomeprazole (20 mg/ngày) dự phòng tổn thương dạ dày – tá tràng khi dùng NSAID ở bệnh nhân nguy cơ cao (BYT 361/2014 tr. 199)"
+  },
+  {
+    "id": "gout.febuxostat.hepatic_moderate_max_dose",
+    "value": 80,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.febuxostat.dosage",
+      "fda.febuxostat.dialysis_hepatic"
+    ],
+    "descriptionVi": "Liều tối đa febuxostat ở bệnh nhân suy gan mức độ vừa Child-Pugh B (80 mg/ngày; không tăng lên 120 mg/ngày)"
+  },
+  {
+    "id": "gout.rosuvastatin.febuxostat_max_dose",
+    "value": 20,
+    "unit": "mg/ngày",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.rosuvastatin.febuxostat_max_20mg"
+    ],
+    "descriptionVi": "Giới hạn liều tối đa rosuvastatin (≤ 20 mg/ngày) khi phối hợp cùng febuxostat do ức chế BCRP làm tăng phơi nhiễm rosuvastatin ~2 lần (FDA Crestor Mục 7.1)"
+  },
+  {
+    "id": "gout.pegloticase.dose_mg",
+    "value": 8,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "eular.gout.2016.pegloticase_8mg_q2w"
+    ],
+    "descriptionVi": "Liều chuẩn pegloticase truyền tĩnh mạch (8 mg mỗi 2 tuần) trong gút mạn tính có tophi kháng trị (EULAR 2016 Khuyến cáo 10)"
+  },
+  {
+    "id": "gout.pegloticase.interval_weeks",
+    "value": 2,
+    "unit": "tuần",
+    "quantity": "interval_weeks",
+    "citationIds": [
+      "eular.gout.2016.pegloticase_8mg_q2w"
+    ],
+    "descriptionVi": "Khoảng cách truyền tĩnh mạch pegloticase (mỗi 2 tuần) (EULAR 2016 Khuyến cáo 10)"
+  },
+  {
+    "id": "gout.steroid.severe_hyperglycemia_mmol",
+    "value": 16.7,
+    "unit": "mmol/L",
+    "quantity": "glucose",
+    "citationIds": [
+      "ada.dm2.2026.early_insulin_severe"
+    ],
+    "descriptionVi": "Ngưỡng tăng đường huyết nặng mất kiểm soát (glucose ≥ 16.7 mmol/L hay ≥ 300 mg/dL) cần tránh khởi trị corticoid đường toàn thân đơn thuần và ưu tiên xử trí đường huyết/chuyên khoa (ADA 2026)"
+  }
+]

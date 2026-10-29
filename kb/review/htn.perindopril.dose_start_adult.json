@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.perindopril.dose_start_adult",
+  "contentHash": "dd43ad105a1c57443c1f73cd784b6d2d0801a2c47e9b34b9b9192ff52c8049da",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.perindopril.dose_start_adult",
+      "contentHash": "b88b2a84b99507f6",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 5 mg/day (quantity: dose_mg) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

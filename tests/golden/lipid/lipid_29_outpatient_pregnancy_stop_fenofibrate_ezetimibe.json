@@ -1,0 +1,82 @@
+{
+  "id": "lipid_29_outpatient_pregnancy_stop_fenofibrate_ezetimibe",
+  "titleVi": "Thai phụ đang dùng Fenofibrate + Ezetimibe - Ngừng ngay toàn bộ thuốc hạ lipid",
+  "source": "ESC/EAS 2019 / esc.lipid.2019.pregnancy_all_llt_contra",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 31,
+    "sex": "female",
+    "weight": 60,
+    "height": 158,
+    "sbp": 114,
+    "dbp": 72,
+    "hr": 78,
+    "scr": 58,
+    "tc": 6.4,
+    "hdl": 1.3,
+    "ldl": 3.8,
+    "tg": 6.2,
+    "conditions": {
+      "pregnant": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "fenofibrate",
+        "name": "Fenofibrate",
+        "dose": 200,
+        "unit": "mg"
+      },
+      {
+        "drugId": "ezetimibe",
+        "name": "Ezetimibe",
+        "dose": 10,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "fenofibrate",
+        "action": "STOP"
+      },
+      {
+        "drugId": "ezetimibe",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "fenofibrate",
+        "action": "START"
+      },
+      {
+        "drugId": "ezetimibe",
+        "action": "START"
+      },
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R2-01 & R3-LIPID-02: Thai kỳ đang dùng Fenofibrate/Ezetimibe phải phát lệnh STOP (không bị đè bởi AVOID)."
+}

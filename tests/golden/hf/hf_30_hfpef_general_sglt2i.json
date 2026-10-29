@@ -1,0 +1,69 @@
+{
+  "id": "hf_30_hfpef_general_sglt2i",
+  "titleVi": "HFpEF không béo phì (LVEF 58%): Khởi trị SGLT2i và Finerenone (Class I - ESC 2026)",
+  "source": "ESC 2026 HF Recs (SGLT2i Class I-A & MRA/Finerenone Class I-A)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 70,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 72,
+    "lvef": 58,
+    "nyha": 2,
+    "scr": 92,
+    "k": 4.3,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dapagliflozin",
+        "action": "START"
+      },
+      {
+        "drugId": "finerenone",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "START"
+      },
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      },
+      {
+        "drugId": "semaglutide",
+        "action": "CONSIDER"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Theo ESC 2026, cả SGLT2i (Dapagliflozin/Empagliflozin) và MRA không steroid Finerenone (FINEARTS-HF) đều đạt khuyến cáo Class I, Mức A cho bệnh nhân HFpEF; không khởi trị mù ARNI hoặc chẹn beta khi không có chỉ định riêng."
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.amlodipine.dose_start",
+  "contentHash": "cd95ae00afbf25fba44cc8e5b03e886ade3402ad8e92ee1218e80367a0d6746c",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.amlodipine.dose_start",
+      "contentHash": "9188dbcb38ffc767",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 5 mg (quantity: dose_mg) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "asthma_45_acute_current_meds_uptitrate_preserves_emergency_dose",
+  "titleVi": "Cơn hen cấp nặng ở bệnh nhân đang có sẵn Salbutamol và Methylprednisolone ngoại trú: UPTITRATE giữ nguyên liều cấp cứu",
+  "source": "GINA 2026 Box 9-6 / ASTHMA-R2-R3-01",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_45",
+    "name": "Nữ 51 tuổi",
+    "age": 51,
+    "sex": "female",
+    "weight": 58,
+    "sbp": 134,
+    "dbp": 82,
+    "hr": 126,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "salbutamol",
+        "name": "Salbutamol pMDI",
+        "dose": "100 mcg",
+        "freq": "khi cần"
+      },
+      {
+        "drugId": "methylprednisolone",
+        "name": "Medrol viên",
+        "dose": "4 mg",
+        "freq": "1 lần/ngày"
+      }
+    ],
+    "customInputs": {
+      "isAcuteExacerbation": true,
+      "speechAbility": "words",
+      "respiratoryRate": 32,
+      "spo2": 88,
+      "accessoryMuscleUse": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "salbutamol",
+        "action": "UPTITRATE",
+        "doseContains": "5 mg"
+      },
+      {
+        "drugId": "methylprednisolone",
+        "action": "UPTITRATE",
+        "doseContains": "40 mg"
+      },
+      {
+        "drugId": "ipratropium",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "salbutamol",
+        "action": "STOP"
+      },
+      {
+        "drugId": "salbutamol",
+        "action": "CONTINUE"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Khi bệnh nhân vào cấp cứu đã có Salbutamol 100 mcg và Medrol 4 mg trong currentMeds, dùng UPTITRATE để bảo toàn liều cấp cứu khí dung 5 mg và tiêm TM 40 mg qua merge.ts."
+}

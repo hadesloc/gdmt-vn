@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.saxagliptin_strong_cyp3a4",
+  "contentHash": "5a2348319783f39153ef991dae722a14e4a6872ad59004dfa2d521c48e4baa3c",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.saxagliptin_strong_cyp3a4",
+      "contentHash": "3c287dbe8397f149",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.saxagliptin_strong_cyp3a4."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

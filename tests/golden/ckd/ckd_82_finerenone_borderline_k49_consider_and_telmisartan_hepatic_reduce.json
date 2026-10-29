@@ -1,0 +1,56 @@
+{
+  "id": "ckd_82_finerenone_borderline_k49_consider_and_telmisartan_hepatic_reduce",
+  "titleVi": "Ngoại trú - ĐTĐ típ 2 + CKD kèm suy gan vừa Child-Pugh B, K+ = 4.9 mmol/L đang dùng đúng trần gan Telmisartan 40 mg + Diltiazem -> Không STOP oan Telmisartan, nhận diện đạt trần gan 40 mg/ngày & chỉ CONSIDER Finerenone (không START tự động) kèm cảnh báo CYP3A4 vừa (Regression CKD-R4-R1-05, CKD-R4-R2-05)",
+  "source": "FDA Kerendia Label Section 2.2/7.1/8.7 & BYT 2024 Bảng 12 (Telmisartan Hepatic Max 40 mg)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_82",
+    "name": "BN CKD 82",
+    "age": 61,
+    "sex": "male",
+    "weight": 72,
+    "sbp": 128,
+    "dbp": 78,
+    "scr": 140,
+    "k": 4.9,
+    "uacr": 45,
+    "childPugh": "B",
+    "conditions": {
+      "ckd": true,
+      "dm": true,
+      "liverDisease": true
+    },
+    "currentMeds": [
+      { "drugId": "telmisartan", "name": "Micardis 40 mg", "dose": 40, "unit": "mg" },
+      { "drugId": "diltiazem", "name": "Herbesser 120 mg", "dose": 120, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "finerenone", "action": "CONSIDER" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "telmisartan", "action": "STOP" },
+      { "drugId": "telmisartan", "action": "UPTITRATE" },
+      { "drugId": "finerenone", "action": "START" },
+      { "drugId": "finerenone", "action": "DEFER" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R4-R1-05 & CKD-R4-R2-05: Ở suy gan vừa Child-Pugh B đang dùng đúng trần Telmisartan 40 mg/ngày, không phát STOP oan và không ép tăng lên 80 mg/ngày; đồng thời hạ bậc Finerenone từ START xuống CONSIDER ở vùng xám K+ 4.9–5.0 mmol/L kèm thuốc ức chế CYP3A4 trung bình (Diltiazem)."
+}

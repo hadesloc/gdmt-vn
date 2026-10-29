@@ -1,0 +1,146 @@
+[
+  {
+    "id": "DM2-R2-01",
+    "severity": "critical",
+    "itemType": "matrix",
+    "itemId": "gliclazide",
+    "finding": "Ma trận chức năng thận và KB cho phép dùng Gliclazide MR (initiate: caution, continue: caution, liều 30 mg/ngày) ở suy thận nặng và lọc máu (dải G4, G5, Lọc máu, eGFR < 30 mL/phút/1.73m²), trái ngược hoàn toàn chống chỉ định của nhà sản xuất (EMA SmPC Mục 4.3 Chống chỉ định) và guideline KDIGO 2022 / BYT 5481, gây nguy cơ hạ đường huyết nặng kéo dài kháng trị đe dọa tính mạng người bệnh.",
+    "evidence": "1. EMA SmPC Diamicron MR (gliclazide_MR_Diamicron_SmPC.pdf) Mục 4.3 Chống chỉ định, p. 2: Trích nguyên văn: 'Severe renal or hepatic insufficiency: in these cases the use of insulin is recommended'.\n2. Hướng dẫn BYT QĐ 5481/QĐ-BYT 2020 & KDIGO 2022 Diabetes in CKD: Sulfonylurea chống chỉ định khi eGFR < 30 mL/phút/1.73m².\n3. File kb/drugs/gliclazide.json dòng 47: dải eGFRTo: 30 ghi 'initiate: caution, continue: caution, dose: 30 mg/ngày, note: Thận trọng tối đa và theo dõi sát đường huyết khi suy thận nặng'.\n4. Ma trận src/modules/dm2/matrix.ts tại các cột G4 (eGFR 20), G5 (eGFR 10), Dialysis (eGFR 5) đều hiển thị: 'init: caution | cont: caution | dose: 30 mg/ngày'.",
+    "suggestedFix": "Sửa dải eGFR < 30 mL/phút trong kb/drugs/gliclazide.json từ 'caution/caution' thành 'contra/contra', liều: 'Chống chỉ định tuyệt đối; ưu tiên chuyển sang Insulin'. Cập nhật ma trận dm2MatrixEgfr hiển thị 'contra' ở các cột G4, G5, Lọc máu."
+  },
+  {
+    "id": "DM2-R2-02",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "dm2.outpatient.cardiorenal_glp1",
+    "finding": "Khởi trị Semaglutide SC ở bệnh nhân suy thận mạn giai đoạn 5 (eGFR < 15 mL/phút/1.73m²) do thiếu hoàn toàn cổng kiểm soát an toàn chức năng thận (eGFR >= 15), trái ngược phạm vi cấp phép nhãn FDA/EMA và khuyến cáo KDIGO 2024 / ADA 2026.",
+    "evidence": "1. Chạy evaluate() trên ca chuẩn dm2_06_metformin_contra_g5.json (bệnh nhân 68 tuổi, creatinin 450 µmol/L, eGFR tính toán là 12 mL/phút/1.73m² - CKD giai đoạn 5): Engine sinh ra khuyến cáo [START] rec_dm2_glp1_cardiorenal: Khởi trị Semaglutide (SC) (0.25 mg x 1 lần/tuần...).\n2. KDIGO 2024 CKD Guideline (Rec 1.3) & ADA 2026 Ch. 11: GLP-1 RA được khuyến cáo ở bệnh nhân ĐTĐ típ 2 kèm CKD có eGFR >= 15 mL/phút/1.73m². Bệnh nhân eGFR < 15 mL/phút/1.73m² bị loại trừ khỏi các thử nghiệm lâm sàng ngẫu nhiên (FLOW, SUSTAIN-6).\n3. Trong src/modules/dm2/rules.outpatient.ts (dòng 170-223): Luật dm2.outpatient.cardiorenal_glp1 hoàn toàn không kiểm tra ngưỡng eGFR tối thiểu để khởi trị (mảng gates rỗng: []), cho phép START ngay cả khi eGFR là 12 hay 5 mL/phút.",
+    "suggestedFix": "Bổ sung cổng an toàn eGFR >= 15 vào luật dm2.outpatient.cardiorenal_glp1: nếu eGFR < 15 và chưa dùng thì sinh action: 'AVOID' kèm Gate kiểm soát 'eGFR < 15 mL/phút/1.73m²: Chưa có đủ bằng chứng an toàn để khởi trị mới GLP-1 RA ở CKD giai đoạn 5'."
+  },
+  {
+    "id": "DM2-R2-03",
+    "severity": "major",
+    "itemType": "drug",
+    "itemId": "semaglutide",
+    "finding": "Toàn bộ 5 thuốc Incretin (Semaglutide SC, Semaglutide uống, Tirzepatide, Dulaglutide, Liraglutide) hoàn toàn thiếu Cảnh báo hộp đen (Boxed Warning) và Chống chỉ định bắt buộc của FDA/EMA về Ung thư biểu mô tuyến giáp thể tủy (MTC) và Hội chứng đa u tuyến nội tiết típ 2 (MEN 2), cũng như cảnh báo Viêm tụy cấp.",
+    "evidence": "1. Nhãn FDA chính thức DailyMed: FDA_label_semaglutide_ozempic.pdf (p. 1, 7), FDA_label_tirzepatide.pdf (p. 1, 6), FDA_label_dulaglutide.pdf, FDA_label_liraglutide.pdf: Trích nguyên văn Cảnh báo hộp đen (BOXED WARNING): 'WARNING: RISK OF THYROID C-CELL TUMORS... Contraindicated in patients with a personal or family history of medullary thyroid carcinoma (MTC) or in patients with Multiple Endocrine Neoplasia syndrome type 2 (MEN 2)'.\n2. Cả 5 tệp JSON trong kb/drugs/: semaglutide.json, semaglutide_oral.json, tirzepatide.json, dulaglutide.json, liraglutide.json chỉ có duy nhất 1 gate chống xung đột DPP-4i (gate_*_dpp4_conflict), hoàn toàn bỏ sót MTC, MEN 2 và viêm tụy cấp.",
+    "suggestedFix": "Bổ sung GateRule và Contraindication vào cả 5 file JSON incretin: gate_glp1_mtc_men2_contra (nếu tiền sử bản thân/gia đình có MTC hoặc MEN 2 -> action: 'contra'). Bổ sung kiểm tra vào luật dm2.outpatient.cardiorenal_glp1."
+  },
+  {
+    "id": "DM2-R2-04",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "dm2.inpatient.dka_hhs_emergency",
+    "finding": "Gán sai drugId: 'insulin_glargine' cho các khuyến cáo cấp cứu DKA hoãn insulin (khi thiếu K+ hoặc K+ < 3.5 mmol/L); danh mục thuốc thiếu tệp hoạt chất chuẩn insulin_regular.",
+    "evidence": "1. src/modules/dm2/rules.inpatient.ts dòng 289 & 314: rec_dm2_dka_need_k_before_insulin và rec_dm2_dka_hold_insulin_hypokalemia đều khai báo drugId: 'insulin_glargine'.\n2. Trong cấp cứu DKA/HHS theo Đồng thuận Quốc tế 2024 (ADA/EASD/JBDS/AACE), loại insulin dùng để truyền tĩnh mạch liên tục là Regular Insulin (Insulin tác dụng ngắn/nhanh tiêm truyền tĩnh mạch: Actrapid, Humulin R), tuyệt đối không phải insulin nền analog tiêm dưới da (Insulin Glargine).\n3. Trong kb/drugs/ hoàn toàn thiếu tệp insulin_regular.json.",
+    "suggestedFix": "Tạo mới tệp kb/drugs/insulin_regular.json (Actrapid, Humulin R lọ 100 U/mL 10 mL). Sửa drugId trong các khuyến cáo cấp cứu DKA từ 'insulin_glargine' thành 'insulin_regular' (hoặc undefined nếu là quy trình cấp cứu tổng hợp)."
+  },
+  {
+    "id": "DM2-R2-05",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "dm2.inpatient.dka_hhs_emergency",
+    "finding": "Áp dụng nhầm tiêu chuẩn giải quyết toan ceton (DKA resolution: Beta-hydroxybutyrate < 0.6 mmol/L, pH >= 7.30, HCO3- >= 18 mmol/L) cho bệnh cảnh Tăng áp lực thẩm thấu máu (HHS), gây nguy cơ ngừng truyền dịch và insulin quá sớm ở bệnh nhân HHS chưa kiểm soát được áp lực thẩm thấu.",
+    "evidence": "1. Chạy evaluate() trên ca dm2_33_icu_hhs_hyperosmolar.json (glucose 38 mmol/L, ALTT hiệu dụng 335 mOsm/kg, ceton 0.4 mmol/L): Khuyến cáo mục 4 hiển thị 'Chuyển tiêm dưới da: Khi DKA giải quyết (Beta-hydroxybutyrate < 0.6 mmol/L, pH >= 7.30, HCO3- >= 18 mmol/L, ăn được)...'.\n2. Đồng thuận Quốc tế 2024 (ADA_2024_Hyperglycaemic_Crises_Consensus.pdf p. 8): Tiêu chuẩn giải quyết HHS là Calculated effective serum osmolality < 300 mOsm/kg, glucose <= 13.9 mmol/L (250 mg/dL), nước tiểu >= 0.5 mL/kg/h và tri giác phục hồi. Bệnh nhân HHS vốn dĩ không có toan máu (pH >= 7.30 và HCO3- >= 18 ngay từ đầu), nên hiển thị tiêu chuẩn DKA sẽ dẫn tới ngừng dịch và insulin quá sớm.",
+    "suggestedFix": "Phân nhánh tiêu chuẩn chuyển tiếp (transition criteria) trong luật dm2.inpatient.dka_hhs_emergency: nếu là isHhsPure thì hiển thị tiêu chuẩn giải quyết HHS (ALTT hiệu dụng < 300 mOsm/kg, glucose <= 13.9 mmol/L, tri giác tỉnh táo, nước tiểu >= 0.5 mL/kg/h)."
+  },
+  {
+    "id": "DM2-R2-06",
+    "severity": "major",
+    "itemType": "matrix",
+    "itemId": "dm2MatrixEgfr",
+    "finding": "Ma trận chức năng thận hiển thị 'no_data' ở cột G5 (< 15) và Lọc máu đối với toàn bộ 5 thuốc Incretin (semaglutide, semaglutide_oral, tirzepatide, dulaglutide, liraglutide); đồng thời bỏ sót hoàn toàn 7 thuốc ĐTĐ khác thuộc sở hữu module trong ma trận.",
+    "evidence": "1. Kết quả chạy test_matrix.ts: Các hàng semaglutide, semaglutide_oral, tirzepatide, dulaglutide, liraglutide tại cột g5 và dialysis đều hiển thị 'init: no_data | cont: no_data | dose: N/A'. Do trong file JSON mảng renal chỉ có dải eGFRFrom: 15, khi eGFR < 15 hàm renalBand trả về undefined.\n2. Danh sách DM2_MATRIX_DRUG_IDS trong src/modules/dm2/matrix.ts chỉ có 14 thuốc, thiếu 7 thuốc: acarbose (thuốc chỉnh thận quan trọng) và 6 chế phẩm insulin (insulin_degludec, insulin_detemir, insulin_nph, insulin_aspart, insulin_lispro, insulin_premix).",
+    "suggestedFix": "Bổ sung dải eGFRTo: 15 vào 5 file JSON incretin: 'initiate: not_rec, continue: caution, note: Dữ liệu hạn chế ở eGFR < 15 hoặc lọc máu, không khuyến cáo khởi trị mới'. Bổ sung acarbose và 6 loại insulin vào DM2_MATRIX_DRUG_IDS."
+  },
+  {
+    "id": "DM2-R2-07",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "dm2.inpatient.basal_bolus_regimen",
+    "finding": "Kê đơn phác đồ Basal-Bolus nội viện chỉ sinh 1 khuyến cáo duy nhất với drugId: 'insulin_glargine' (kèm Aspart trong chuỗi văn bản), không tách thành 2 y lệnh độc lập (Basal riêng và Bolus riêng), gây nguy cơ hệ thống HIS/EMR hoặc dược sĩ chỉ xuất xưởng 1 loại bút tiêm nền mà thiếu insulin bữa ăn.",
+    "evidence": "1. src/modules/dm2/rules.inpatient.ts dòng 103-104: Khuyến cáo rec_dm2_inpatient_basal_bolus chỉ có drugId: 'insulin_glargine', drugNameVi: 'Insulin Glargine + Insulin Aspart (Basal-Bolus)'.\n2. Ca chuẩn dm2_25_inpatient_basal_bolus_standard.json chỉ kiểm tra + [START] drug=insulin_glargine.\n3. Khi xuất sang HIS hoặc hồ sơ bệnh án điện tử, lệnh xuất kho dược sẽ chỉ nhận diện được mã insulin_glargine, dẫn đến việc thiếu hẳn y lệnh Insulin Aspart trước các bữa ăn.",
+    "suggestedFix": "Tách luật nội viện thành 2 khuyến cáo độc lập: 1 khuyến cáo [START] drugId: 'insulin_glargine' (liều Basal) và 1 khuyến cáo [START] drugId: 'insulin_aspart' (liều Bolus 3 bữa ăn chính, tạm hoãn nếu NPO)."
+  },
+  {
+    "id": "DM2-R2-08",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "dm2.inpatient.hold_sglt2i_surgery",
+    "finding": "Luật tạm ngừng thuốc ức chế SGLT2 trước phẫu thuật hardcode cố định drugId: 'dapagliflozin', dẫn đến việc nếu bệnh nhân đang dùng Empagliflozin hoặc Canagliflozin thì hệ thống lại ra y lệnh hoãn Dapagliflozin, bỏ sót không tạm ngừng thuốc SGLT2i thực tế bệnh nhân đang uống.",
+    "evidence": "1. src/modules/dm2/rules.inpatient.ts dòng 154-167: Điều kiện lọc kiểm tra bệnh nhân có dùng dapagliflozin, empagliflozin, hoặc canagliflozin. Tuy nhiên, phần produce trả về cứng drugId: 'dapagliflozin' và drugNameVi: 'Thuốc ức chế SGLT2 (Dapagliflozin / Empagliflozin)'.\n2. Nếu bệnh nhân đang dùng Jardiance (empagliflozin), y lệnh điều dưỡng/khoa dược nhận được là hoãn Dapagliflozin (thuốc bệnh nhân không dùng), trong khi Empagliflozin vẫn tiếp tục được cấp phát trước mổ, gây nguy cơ toan ceton đái tháo đường đường huyết bình thường (euglycemic DKA).",
+    "suggestedFix": "Lấy động thuốc SGLT2i thực tế từ ctx.patient.currentMeds: const matched = ctx.patient.currentMeds.find(m => ['dapagliflozin', 'empagliflozin', 'canagliflozin'].includes(m.drugId.toLowerCase())); và gán drugId: matched.drugId."
+  },
+  {
+    "id": "DM2-R2-09",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "dm2.outpatient.deintensification",
+    "finding": "Khuyến cáo xuống thang ở người cao tuổi / hạ đường huyết (rec_dm2_deintensification) trả về drugId: undefined và dose: undefined, không chỉ định cụ thể thuốc cần ngừng (Sulfonylurea) hoặc tỷ lệ giảm liều insulin, trong khi hệ thống đồng thời kích hoạt START Dapagliflozin và Semaglutide, làm tăng nguy cơ hạ đường huyết kịch phát ở người già suy yếu.",
+    "evidence": "1. Chạy evaluate() trên Preset 3 (dm2_preset_elderly_complex_deintensify: nam 79 tuổi, HbA1c 6.3%, hạ đường huyết tuần trước, đang dùng Insulin Glargine 28 U + Glimepiride 4 mg): Hệ thống sinh [REDUCE] drugId=undefined, dose=undefined, đồng thời sinh [START] dapagliflozin 10 mg và [START] semaglutide 0.25 mg.\n2. ADA 2026 Ch. 13 (Khuyến cáo 13.14a & 13.15): Ở người cao tuổi kiểm soát quá chặt (HbA1c < 7.0%) và có nguy cơ cao hạ đường huyết, bắt buộc phải ngừng Sulfonylurea (Glimepiride) ngay lập tức hoặc giảm 20% liều insulin nền trước khi cân nhắc bất kỳ thuốc nào khác.",
+    "suggestedFix": "Cụ thể hóa luật deintensification: Nếu bệnh nhân đang dùng SU -> sinh [STOP] drugId: 'glimepiride' | 'gliclazide': 'Ngừng ngay Sulfonylurea do nguy cơ hạ đường huyết cao ở người cao tuổi'. Nếu đang dùng Insulin -> sinh [REDUCE] drugId: 'insulin_glargine': 'Giảm 20% liều insulin nền (từ 28 đơn vị xuống 22 đơn vị)'."
+  },
+  {
+    "id": "DM2-R2-10",
+    "severity": "major",
+    "itemType": "drug",
+    "itemId": "21_drugs_pregnancy",
+    "finding": "Toàn bộ 21 thuốc thuộc module DM2 trong kb/drugs/ hoàn toàn thiếu trường an toàn thai kỳ và Gate kiểm tra thai kỳ, không có cảnh báo chống chỉ định cho phụ nữ mang thai hoặc chuẩn bị mang thai.",
+    "evidence": "1. Kiểm tra npm run verify:kb: Báo cáo 'Agent F (DM2) | 21 THUỐC THIẾU TRƯỜNG THAI KỲ | acarbose, dulaglutide, gliclazide, glimepiride, insulin_aspart...'.\n2. ADA 2026 Ch. 15 (Diabetes in Pregnancy): Chỉ có Insulin (NPH, Aspart, Lispro, Detemir) là thuốc ưu tiên an toàn trong thai kỳ. Toàn bộ thuốc viên hạ đường huyết (Metformin, SU, SGLT2i, DPP-4i, TZD, Acarbose) và Incretin tiêm (GLP-1 RA, Tirzepatide) phải ngừng trước thụ thai hoặc ngay khi biết có thai.",
+    "suggestedFix": "Bổ sung trường pregnancy và Gate thai kỳ vào 21 file JSON thuốc DM2; thêm Gate thai kỳ chặn START các thuốc không phải insulin ở bệnh nhân mang thai."
+  },
+  {
+    "id": "DM2-R2-11",
+    "severity": "major",
+    "itemType": "drug",
+    "itemId": "vildagliptin",
+    "finding": "Thiếu thông tin cảnh báo và chống chỉ định suy gan (hepaticAdjustment / Gate suy gan) của Vildagliptin (Galvus), vi phạm nhãn EMA SmPC Mục 4.3 và 4.4.",
+    "evidence": "1. EMA SmPC Galvus (vildagliptin_Galvus_EMA_SmPC.pdf) Mục 4.3 Chống chỉ định & 4.4 Cảnh báo đặc biệt: Galvus chống chỉ định ở bệnh nhân suy gan, bao gồm bệnh nhân có men gan ALT hoặc AST trước điều trị > 3 lần giới hạn trên bình thường (> 3x ULN). Bắt buộc xét nghiệm chức năng gan trước khi khởi trị và định kỳ 3 tháng một lần trong năm đầu tiên.\n2. Tệp kb/drugs/vildagliptin.json: trường hepaticAdjustment hoàn toàn không có; không có GateRule nào kiểm tra men gan hay suy gan.",
+    "suggestedFix": "Bổ sung thông tin hepaticAdjustment và Gate kiểm tra chức năng gan vào vildagliptin.json: 'Chống chỉ định Vildagliptin khi suy gan hoặc ALT/AST > 3x ULN'."
+  },
+  {
+    "id": "DM2-R2-12",
+    "severity": "minor",
+    "itemType": "drug",
+    "itemId": "insulin_glargine",
+    "finding": "Không cảnh báo sự khác biệt về dược động học và quy tắc chuyển đổi liều giữa nồng độ U-100 (Lantus) và U-300 (Toujeo).",
+    "evidence": "1. Nhãn FDA Toujeo & Lantus: Toujeo chứa insulin glargine nồng độ cao 300 đơn vị/mL, diện tích bề mặt khối lắng dưới da nhỏ hơn dẫn đến giải phóng chậm hơn. Chuyển đổi từ Lantus U-100 sang Toujeo U-300 đòi hỏi liều Toujeo cao hơn khoảng 10–20% để đạt cùng mức kiểm soát đường huyết. Ngược lại, chuyển từ Toujeo sang Lantus cần giảm 20% liều Lantus để tránh hạ đường huyết.\n2. Tệp kb/drugs/insulin_glargine.json ghi chung tên 'Insulin Glargine (U100/U300)' nhưng không có ghi chú cảnh báo chuyển đổi giữa hai biệt dược này.",
+    "suggestedFix": "Bổ sung ghi chú chuyển đổi liều giữa Toujeo và Lantus trong trường cautions của kb/drugs/insulin_glargine.json."
+  },
+  {
+    "id": "DM2-R2-13",
+    "severity": "minor",
+    "itemType": "drug",
+    "itemId": "insulin_premix",
+    "finding": "Không phân biệt thời điểm tiêm trước bữa ăn giữa Premix Insulin người (Mixtard 30 tiêm trước 30 phút) và Premix Insulin analog (Novomix 30 / Humalog Mix tiêm ngay trước hoặc trong bữa ăn).",
+    "evidence": "1. kb/drugs/insulin_premix.json dòng 281 ghi chung: 'description: Chia 2/3 trước ăn sáng và 1/3 trước ăn chiều'.\n2. Hướng dẫn Bộ Y tế QĐ 5481/QĐ-BYT 2020: Mixtard 30 (chứa Regular insulin người) bắt buộc tiêm trước bữa ăn 30 phút. Novomix 30 / Humalog Mix 25 (chứa insulin analog nhanh Aspart/Lispro) tiêm ngay trước ăn 0–10 phút hoặc ngay sau ăn.",
+    "suggestedFix": "Cập nhật mô tả liều trong insulin_premix.json: 'Tiêm trước ăn 30 phút đối với premix người (Mixtard 30); tiêm ngay trước bữa ăn (0–10 phút) đối với premix analog (Novomix 30, Humalog Mix)'."
+  },
+  {
+    "id": "DM2-R2-14",
+    "severity": "minor",
+    "itemType": "ui",
+    "itemId": "dm2.inpatient.glycemic_target",
+    "finding": "Chuỗi hiển thị đơn vị mg/dL của đích đường huyết ICU bị thiếu ngưỡng tối thiểu 140 mg/dL, chỉ hiển thị số đơn lẻ '(180 mg/dL)'.",
+    "evidence": "1. src/modules/dm2/rules.inpatient.ts dòng 29: targetText = isIcu ? '... (${th('dm2.glucose.inpatient_target_max')} mg/dL)' : '...'.\n2. Kết quả evaluate() trên ca ICU (Preset 4): Tiêu đề hiển thị 'Mục tiêu glucose máu nội viện: 7.8 – 10.0 mmol/L (180 mg/dL)', thiếu giá trị dưới 140 mg/dL (7.8 mmol/L).",
+    "suggestedFix": "Tạo threshold dm2.glucose.icu_target_min = 140 và sửa chuỗi hiển thị thành: '7.8 – 10.0 mmol/L (140–180 mg/dL)'."
+  },
+  {
+    "id": "DM2-R2-15",
+    "severity": "minor",
+    "itemType": "drug",
+    "itemId": "dulaglutide_tirzepatide_brands",
+    "finding": "Liệt kê các hàm lượng bút tiêm không lưu hành hoặc chưa có tại thị trường Việt Nam (Trulicity 3.0 mg, 4.5 mg; Mounjaro).",
+    "evidence": "1. dulaglutide.json ghi liều tối đa 4.5 mg/tuần. Tại Việt Nam, Trulicity chỉ có số đăng ký cho 2 hàm lượng 0.75 mg/0.5 mL và 1.5 mg/0.5 mL. Các hàm lượng cao 3.0 mg và 4.5 mg chưa lưu hành.\n2. tirzepatide.json ghi vnBrands: ['Mounjaro']. Mounjaro chưa được cấp phép phân phối bảo hiểm y tế hoặc lưu hành rộng rãi tại hệ thống nhà thuốc bệnh viện Việt Nam.",
+    "suggestedFix": "Bổ sung ghi chú thực tế lưu hành tại Việt Nam trong vnBrands và forms của dulaglutide.json và tirzepatide.json."
+  },
+  {
+    "id": "DM2-R2-16",
+    "severity": "suggestion",
+    "itemType": "rule",
+    "itemId": "insulin_calculator_isf",
+    "finding": "Hardcode số literal 'dosePerKg > 0.5' trong rules.outpatient.ts dòng 379; máy tính insulin.ts nên mở rộng hỗ trợ tính hệ số nhạy cảm ISF và thang hiệu chỉnh liều (Correction Scale).",
+    "evidence": "1. src/modules/dm2/rules.outpatient.ts dòng 379: 'return dosePerKg > 0.5 || ...' vi phạm quy tắc QA-1 (dùng số literal trần).\n2. Máy tính src/engine/calculators/insulin.ts hiện chỉ tính liều khởi đầu cố định Basal-Bolus, chưa hỗ trợ tính độ nhạy insulin (Quy tắc 1800/TDD) để lập thang tiêm hiệu chỉnh theo đường huyết mao mạch trước ăn.",
+    "suggestedFix": "Tạo threshold dm2.overbasal.dose_per_kg_max = 0.5 trong kb/thresholds/dm2.json. Mở rộng computeInsulin tính hệ số ISF và thang hiệu chỉnh liều nội viện."
+  }
+]

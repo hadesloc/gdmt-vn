@@ -1,0 +1,63 @@
+{
+  "id": "lipid_41_outpatient_dialysis_ascvd_consider_statin",
+  "titleVi": "Lọc máu chu kỳ kèm ASCVD chưa từng dùng Statin - Cân nhắc khởi trị Atorvastatin (ESC CKD 2026 Class IIb)",
+  "source": "ESC CKD 2026 / esc.ckd.2026.dialysis_ascvd_statin_consider",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 64,
+    "sex": "male",
+    "weight": 66,
+    "height": 166,
+    "sbp": 136,
+    "dbp": 78,
+    "hr": 74,
+    "scr": 580,
+    "tc": 4.9,
+    "hdl": 1.0,
+    "ldl": 2.9,
+    "tg": 1.8,
+    "conditions": {
+      "ckd": true,
+      "onDialysis": true,
+      "ascvd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R2-R1-01 & LIPID-R2-R2-08: Khác với bệnh nhân lọc máu không kèm ASCVD (Class III không khởi trị mới), bệnh nhân lọc máu chu kỳ đã có ASCVD được ESC CKD 2026 xếp Class IIb cân nhắc (CONSIDER) khởi trị Statin liều thận trọng."
+}

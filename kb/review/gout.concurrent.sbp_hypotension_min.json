@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.concurrent.sbp_hypotension_min",
+  "contentHash": "e8e74bb34b445082e7a2d1345a4ac93e8f7de3230914e238af0009ef2efd6c7f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.concurrent.sbp_hypotension_min",
+      "contentHash": "fac19f9283a4696c",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.concurrent.sbp_hypotension_min"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "itemId": "acetazolamide",
+  "contentHash": "93ac0286a333822daf074bda7035056152bb7338afebfc6bfc87b2d07b6bd575",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "acetazolamide",
+      "contentHash": "4930b956771c3be9",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T09:00:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-28T09:00:00.000Z",
+          "role": "Agent G5 (HF Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF drug acetazolamide (Round 2 R1/R2/R3 remediation & verbatim PDF citation verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

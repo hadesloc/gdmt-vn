@@ -1,0 +1,53 @@
+{
+  "id": "htn_10_outpatient_compelling_cad",
+  "titleVi": "Tăng huyết áp kèm Bệnh mạch vành: Chỉ định bắt buộc thuốc chẹn beta",
+  "source": "ESC 2024 HTN / esc.htn.2024.beta_blocker_indications",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 58,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 144,
+    "dbp": 88,
+    "hr": 82,
+    "scr": 85,
+    "k": 4.2,
+    "conditions": {
+      "htn": true,
+      "ascvd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      },
+      {
+        "drugId": "amlodipine",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân có tiền sử bệnh mạch vành (CAD/post-MI), chỉ định bắt buộc chẹn beta phối hợp."
+}

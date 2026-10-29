@@ -1,0 +1,64 @@
+{
+  "id": "af_32_rhythm_stop_flecainide_cad",
+  "titleVi": "Bệnh mạch vành (CAD) đang dùng Flecainide: DỪNG NGAY KHẨN CẤP (ADV_AF_34 / CAST trial)",
+  "source": "ESC 2024 AF Rec Table 18 & CAST trial / esc.af.2024.aad_flecainide_propafenone",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 62,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 88,
+    "rhythm": "afib",
+    "lvef": 55,
+    "scr": 90,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "cad": true,
+      "vascularDisease": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "flecainide",
+        "name": "Tambocor",
+        "dose": 100,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "flecainide",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "flecainide",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân có CAD đang uống Flecainide (ADV_AF_34): Thử nghiệm CAST chứng minh tăng gấp đôi đột tử, bắt buộc phát lệnh STOP khẩn cấp!"
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "byt.copd.2026.indacaterol_glycopyrronium_dose",
+  "contentHash": "0de7fd0c1357a5bbcc9c9ef0dedd2cdd6737c73ccf56b2c773c2940a43eb5f85",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "byt.copd.2026.indacaterol_glycopyrronium_dose",
+      "contentHash": "6e7d8199ce9629bf",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

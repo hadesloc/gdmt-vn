@@ -1,0 +1,17 @@
+{
+  "itemId": "semaglutide",
+  "contentHash": "adb6d7e768d235cea988c90326d61e5ce4618cc169dcd61d02681012fd515fa0",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "semaglutide",
+      "contentHash": "ea4619de88511d7b",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.rosuvastatin_oatp1b1_bcrp_inhibitors",
+  "contentHash": "36a66e7dc27998c48dd3fb769565e4a3caa548fe3869b3c66050f38eb7a55d5f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.rosuvastatin_oatp1b1_bcrp_inhibitors",
+      "contentHash": "1a0e013df94d0081",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.rosuvastatin_oatp1b1_bcrp_inhibitors."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

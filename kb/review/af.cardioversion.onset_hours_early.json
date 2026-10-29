@@ -1,0 +1,26 @@
+{
+  "itemId": "af.cardioversion.onset_hours_early",
+  "contentHash": "d5e51917a56c514ee784bba463f6ac6f9852586d5bc7508ce75f4a5e2b75f693",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.cardioversion.onset_hours_early",
+      "contentHash": "6fb70698a505c193",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.cardioversion.onset_hours_early (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "dm2_58_hfpef_obesity_start_incretin",
+  "titleVi": "ĐTĐ típ 2 kèm suy tim phân suất tống máu bảo tồn (HFpEF, LVEF >= 50%) và béo phì: Khởi trị đồng thời SGLT2i và GLP-1/GIP-GLP-1 RA",
+  "source": "ADA Standards of Care 2026 Chapter 9 (Rec 9.8 & 9.9a)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 62,
+    "sex": "female",
+    "weight": 86,
+    "height": 162,
+    "sbp": 132,
+    "dbp": 80,
+    "hr": 76,
+    "lvef": 58,
+    "scr": 80,
+    "k": 4.3,
+    "glucose": 7.6,
+    "hba1c": 7.3,
+    "conditions": {
+      "dm": true,
+      "hf": true,
+      "obesity": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "metformin",
+        "name": "Metformin",
+        "dose": 2000,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dapagliflozin",
+        "action": "START"
+      },
+      {
+        "drugId": "semaglutide",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "pioglitazone",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Ở người bệnh ĐTĐ típ 2 kèm HFpEF (LVEF >= 50%) và béo phì, ADA 2026 khuyến cáo loại A phối hợp SGLT2i cùng đồng vận GLP-1 / GIP-GLP-1 RA để giảm triệu chứng suy tim và biến cố nhập viện."
+}

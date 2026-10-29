@@ -1,0 +1,26 @@
+{
+  "itemId": "byt.copd.2026.theophylline_dose_max10",
+  "contentHash": "d328a354e39102d5c01a6081a73065b76a8127e4ae5940d2c4ea1225ff4e7ed8",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "byt.copd.2026.theophylline_dose_max10",
+      "contentHash": "d2d20588d20cd4da",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "af_29_dabigatran_contra_crcl_29_borderline",
+  "titleVi": "CHỐNG CHỈ ĐỊNH Dabigatran khi CrCl 29.4 mL/min (< 30): Ngừng thuốc ngay (ADV_AF_11)",
+  "source": "ESC 2024 AF Section 6.2.1 / esc.af.2024.dabigatran_crcl_contra",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 72,
+    "sex": "male",
+    "weight": 60,
+    "height": 165,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 82,
+    "rhythm": "afib",
+    "scr": 175,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "ckd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "dabigatran",
+        "name": "Pradaxa",
+        "dose": 110,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dabigatran",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "dabigatran",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "CrCl ~29.4 mL/min (< 30 mL/min, ADV_AF_11): Chống chỉ định tuyệt đối Dabigatran tại Châu Âu và Việt Nam do 80% thải trừ qua thận."
+}

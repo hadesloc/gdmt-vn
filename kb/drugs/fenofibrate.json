@@ -1,0 +1,181 @@
+{
+  "id": "fenofibrate",
+  "nameVi": "Fenofibrate",
+  "inn": "Fenofibrate",
+  "class": "Fibrate",
+  "classes": [
+    "fibrate"
+  ],
+  "vnBrands": [
+    "Lipanthyl",
+    "Fenofibrate Stella",
+    "Fenofibrate Stada"
+  ],
+  "forms": [
+    "Viên nang 67 mg",
+    "Viên nén bao phim 145 mg",
+    "Viên nang vi hạt 200 mg"
+  ],
+  "start": {
+    "amount": 145,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "145 mg hoặc 200 mg uống 1 lần/ngày (giảm liều khởi đầu từ 40 mg/ngày theo chế phẩm hàm lượng thấp nhất lưu hành khi eGFR 30–59 mL/phút/1.73m²)"
+  },
+  "target": {
+    "amount": 200,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "145–200 mg uống 1 lần/ngày"
+  },
+  "titration": {
+    "step": "Chỉnh liều theo chức năng thận (eGFR) và đáp ứng triglycerid sau 4–8 tuần",
+    "intervalDays": 28,
+    "maxDose": "200 mg 1 lần/ngày (cần giảm liều khởi đầu theo chế phẩm thấp nhất khi eGFR 30–59; chống chỉ định khi eGFR < 30)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "145–200 mg 1 lần/ngày",
+      "note": "Chức năng thận bình thường hoặc giảm nhẹ (eGFR >= 60): dùng liều chuẩn 145–200 mg/ngày; kiểm tra creatinin nền và sau khởi trị",
+      "citationIds": [
+        "acc.lipid.2026.fenofibrate_dose_range",
+        "byt.lipid.2020.fenofibrate_145_200",
+        "acc.lipid.2026.fenofibrate_renal"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "Giảm liều khởi đầu (40–67 mg 1 lần/ngày tùy chế phẩm)",
+      "note": "Suy thận trung bình (eGFR 30–59): bắt buộc giảm liều khởi đầu theo chế phẩm hàm lượng thấp lưu hành (như viên nang 67 mg micronized hoặc 40–54 mg tùy biệt dược) và theo dõi chặt creatinin huyết thanh (ngừng nếu tăng > 30% so với nền)",
+      "citationIds": [
+        "acc.lipid.2026.fenofibrate_dose_range",
+        "acc.lipid.2026.fenofibrate_renal",
+        "byt.ckd.2024.fenofibrate_creatinine_monitor"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 30,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Chống chỉ định",
+      "note": "Chống chỉ định tuyệt đối ở bệnh nhân suy thận nặng (eGFR < 30 mL/phút/1.73m²) và bệnh nhân lọc máu",
+      "citationIds": [
+        "acc.lipid.2026.fenofibrate_renal"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_feno_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Không sử dụng Fenofibrate trong thai kỳ và thời kỳ cho con bú (ESC/EAS)",
+      "citationIds": [
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    },
+    {
+      "id": "gate_feno_severe_ckd",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "contra",
+      "messageVi": "eGFR < 30 mL/phút/1.73m²: Chống chỉ định tuyệt đối Fenofibrate do tích lũy thuốc và nguy cơ độc cơ/thận",
+      "citationIds": [
+        "acc.lipid.2026.fenofibrate_renal"
+      ]
+    },
+    {
+      "id": "gate_feno_alt",
+      "parameter": "ALT",
+      "operator": ">=",
+      "threshold": 3,
+      "unit": "x ULN",
+      "action": "hold",
+      "messageVi": "Men gan ALT tăng >= 3 lần ULN hoặc bệnh gan tiến triển: Tạm ngừng/tránh Fenofibrate",
+      "citationIds": [
+        "esc.lipid.2019.monitoring_alt_elevation"
+      ]
+    }
+  ],
+  "interactions": [
+    "An toàn hơn nhiều so với Gemfibrozil khi phối hợp cùng statin (không ức chế glucuronid hóa statin), nhưng vẫn cần theo dõi đau cơ và CK",
+    "Tăng tác dụng thuốc chống đông kháng vitamin K (Warfarin): cần giảm liều warfarin và theo dõi sát INR",
+    "Thận trọng khi dùng đồng thời với Cyclosporine do nguy cơ suy giảm chức năng thận đảo ngược"
+  ],
+  "citationIds": [
+    "acc.lipid.2026.fenofibrate_dose_range",
+    "acc.lipid.2026.htg_fibrate_omega3_pancreatitis",
+    "esc.lipid.2019.htg_fenofibrate_pancreatitis",
+    "acc.lipid.2026.fenofibrate_renal",
+    "byt.ckd.2024.fenofibrate_creatinine_monitor",
+    "byt.lipid.2020.fenofibrate_145_200",
+    "acc.lipid.2026.lactation_fibrate_5days",
+    "esc.lipid.2019.pregnancy_all_llt_contra"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Không sử dụng thuốc hạ lipid máu (bao gồm fibrate) trong thai kỳ và cho con bú (ESC/EAS 2019)",
+    "citationIds": [
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "lactation": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định cho con bú trong quá trình điều trị fenofibrate và ít nhất 5 ngày sau liều cuối (ESC / FDA)",
+    "citationIds": [
+      "esc.lipid.2019.pregnancy_all_llt_contra",
+      "acc.lipid.2026.lactation_fibrate_5days"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Không sử dụng thuốc hạ lipid máu trong thai kỳ và cho con bú",
+      "citationIds": [
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    },
+    {
+      "code": "dialysis",
+      "messageVi": "Chống chỉ định tuyệt đối ở bệnh nhân suy thận nặng và lọc máu (eGFR < 30)",
+      "citationIds": [
+        "acc.lipid.2026.fenofibrate_renal"
+      ]
+    },
+    {
+      "code": "severe_renal_impairment",
+      "messageVi": "Chống chỉ định khi eGFR < 30 mL/phút/1.73m²",
+      "citationIds": [
+        "acc.lipid.2026.fenofibrate_renal"
+      ]
+    },
+    {
+      "code": "active_liver_disease",
+      "messageVi": "Chống chỉ định khi có bệnh gan tiến triển hoặc xơ gan mất bù (Child-Pugh B/C)",
+      "citationIds": [
+        "esc.lipid.2019.monitoring_alt_elevation",
+        "acc.lipid.2026.fibrate_gallbladder_contra"
+      ]
+    },
+    {
+      "code": "cholelithiasis",
+      "messageVi": "Chống chỉ định tuyệt đối khi có bệnh túi mật hoặc sỏi mật đã biết do tăng bài tiết cholesterol vào mật",
+      "citationIds": [
+        "acc.lipid.2026.fibrate_gallbladder_contra"
+      ]
+    }
+  ]
+}

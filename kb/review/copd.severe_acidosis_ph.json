@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.severe_acidosis_ph",
+  "contentHash": "73cd148885f3c245fc80bbf568e51bd0db77625aa9ff9aa6af68aa7cf6881799",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.severe_acidosis_ph",
+      "contentHash": "e841d4054213ef90",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

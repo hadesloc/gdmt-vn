@@ -1,0 +1,84 @@
+{
+  "id": "copd_63_r3_roflumilast_child_pugh_a_allowed",
+  "titleVi": "Hồi quy R3 (COPD-R3-R1-12 & R3-15): COPD nặng FEV1 38%, viêm phế quản mạn, suy gan nhẹ Child-Pugh A vẫn cho phép cân nhắc Roflumilast kèm cảnh báo tăng AUC 51%",
+  "source": "FDA Daliresp Label Section 8.6 / GOLD 2026 p. 77 (COPD-R3-R1-12, COPD-R3-R3-15)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_63",
+    "age": 65,
+    "sex": "male",
+    "weight": 66,
+    "height": 168,
+    "sbp": 126,
+    "dbp": 76,
+    "hr": 78,
+    "egfr": 74,
+    "conditions": {
+      "copd": true,
+      "liverDisease": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "name": "Trelegy Ellipta",
+        "dose": 100,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.45,
+      "fev1PredPct": 38,
+      "mmrc": 2,
+      "cat": 16,
+      "moderateExacerbations": 2,
+      "hospitalizations": 1,
+      "bloodEos": 180,
+      "currentInhaler": "triple",
+      "chronicBronchitis": true,
+      "smokingStatus": "current",
+      "childPugh": "A"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "roflumilast",
+        "ruleId": "rec_copd_roflumilast",
+        "action": "CONSIDER"
+      },
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "ruleId": "rec_copd_continue_triple",
+        "action": "CONTINUE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "roflumilast",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "roflumilast",
+        "action": "STOP"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "byt.copd.2026.olodaterol_tiotropium_dose",
+  "contentHash": "3b179b45d3cc5a548e31c377b436fbba575c8f54d77b0c57be0a3133afec2b03",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "byt.copd.2026.olodaterol_tiotropium_dose",
+      "contentHash": "ecc039730c67eeb3",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

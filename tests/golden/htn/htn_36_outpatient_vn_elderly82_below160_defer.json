@@ -1,0 +1,58 @@
+{
+  "id": "htn_36_outpatient_vn_elderly82_below160_defer",
+  "titleVi": "Profile VN (VSH 2022 Bảng 9): Người ≥ 80 tuổi có HA 152/84 (< 160/90 mmHg) chưa khởi trị thuốc ngay",
+  "source": "VSH/VNHA 2022 / vsh.htn.2022.monotherapy_elderly",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 82,
+    "sex": "female",
+    "weight": 52,
+    "height": 152,
+    "sbp": 152,
+    "dbp": 84,
+    "hr": 70,
+    "scr": 78,
+    "k": 4.1,
+    "conditions": {
+      "htn": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_htn_step1_vn_elderly80_defer",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "amlodipine",
+        "action": "START"
+      },
+      {
+        "drugId": "perindopril",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Theo VSH/VNHA 2022 Bảng 9, người bệnh từ 80 tuổi trở lên chưa điều trị chỉ khởi trị thuốc hạ áp khi huyết áp phòng khám ≥ 160/90 mmHg."
+}

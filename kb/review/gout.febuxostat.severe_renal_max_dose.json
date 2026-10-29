@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.febuxostat.severe_renal_max_dose",
+  "contentHash": "aafdd4552cf6ad5f89ccde60135d6436ee301932f923d92eca56e22454dc7025",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.febuxostat.severe_renal_max_dose",
+      "contentHash": "83472c85183abbae",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.febuxostat.severe_renal_max_dose"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

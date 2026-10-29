@@ -1,0 +1,1316 @@
+[
+  {
+    "id": "lipid.target.very_high_ldl",
+    "value": 1.4,
+    "unit": "mmol/L",
+    "quantity": "ldl",
+    "citationIds": [
+      "esc.lipid.2019.target_very_high"
+    ],
+    "descriptionVi": "Đích LDL-C < 1.4 mmol/L (< 55 mg/dL) cho bệnh nhân nguy cơ tim mạch rất cao (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.target.recurrent_acs_ldl",
+    "value": 1,
+    "unit": "mmol/L",
+    "quantity": "ldl",
+    "citationIds": [
+      "esc.lipid.2019.target_recurrent_acs"
+    ],
+    "descriptionVi": "Đích LDL-C < 1.0 mmol/L (< 40 mg/dL) cho bệnh nhân ASCVD tái phát biến cố trong vòng 2 năm (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.target.high_ldl",
+    "value": 1.8,
+    "unit": "mmol/L",
+    "quantity": "ldl",
+    "citationIds": [
+      "esc.lipid.2019.target_high"
+    ],
+    "descriptionVi": "Đích LDL-C < 1.8 mmol/L (< 70 mg/dL) cho bệnh nhân nguy cơ tim mạch cao (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.target.moderate_ldl",
+    "value": 2.6,
+    "unit": "mmol/L",
+    "quantity": "ldl",
+    "citationIds": [
+      "esc.lipid.2019.target_moderate"
+    ],
+    "descriptionVi": "Đích LDL-C < 2.6 mmol/L (< 100 mg/dL) cho bệnh nhân nguy cơ tim mạch trung bình (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.target.low_ldl",
+    "value": 3,
+    "unit": "mmol/L",
+    "quantity": "ldl",
+    "citationIds": [
+      "esc.lipid.2019.target_low"
+    ],
+    "descriptionVi": "Đích LDL-C < 3.0 mmol/L (< 116 mg/dL) cho bệnh nhân nguy cơ tim mạch thấp (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.target.percent_reduction_min",
+    "value": 50,
+    "unit": "%",
+    "quantity": "ldl_reduction_pct",
+    "citationIds": [
+      "esc.lipid.2019.target_very_high",
+      "acc.lipid.2026.statin_intensity_table"
+    ],
+    "descriptionVi": "Mức giảm LDL-C tối thiểu >= 50% so với nền ở nhóm nguy cơ cao và rất cao (ESC/EAS 2019 / ACC 2026)"
+  },
+  {
+    "id": "lipid.target.non_hdl_very_high",
+    "value": 2.2,
+    "unit": "mmol/L",
+    "quantity": "nonhdl",
+    "citationIds": [
+      "esc.lipid.2019.target_non_hdl"
+    ],
+    "descriptionVi": "Đích phụ Non-HDL-C < 2.2 mmol/L (< 85 mg/dL) cho nhóm nguy cơ rất cao (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.target.non_hdl_high",
+    "value": 2.6,
+    "unit": "mmol/L",
+    "quantity": "nonhdl",
+    "citationIds": [
+      "esc.lipid.2019.target_non_hdl"
+    ],
+    "descriptionVi": "Đích phụ Non-HDL-C < 2.6 mmol/L (< 100 mg/dL) cho nhóm nguy cơ cao (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.target.non_hdl_moderate",
+    "value": 3.4,
+    "unit": "mmol/L",
+    "quantity": "nonhdl",
+    "citationIds": [
+      "esc.lipid.2019.target_non_hdl"
+    ],
+    "descriptionVi": "Đích phụ Non-HDL-C < 3.4 mmol/L (< 130 mg/dL) cho nhóm nguy cơ trung bình (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.target.apob_very_high",
+    "value": 65,
+    "unit": "mg/dL",
+    "quantity": "apob",
+    "citationIds": [
+      "esc.lipid.2019.target_apob"
+    ],
+    "descriptionVi": "Đích phụ ApoB < 65 mg/dL cho nhóm nguy cơ rất cao (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.target.apob_high",
+    "value": 80,
+    "unit": "mg/dL",
+    "quantity": "apob",
+    "citationIds": [
+      "esc.lipid.2019.target_apob"
+    ],
+    "descriptionVi": "Đích phụ ApoB < 80 mg/dL cho nhóm nguy cơ cao (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.target.apob_moderate",
+    "value": 100,
+    "unit": "mg/dL",
+    "quantity": "apob",
+    "citationIds": [
+      "esc.lipid.2019.target_apob"
+    ],
+    "descriptionVi": "Đích phụ ApoB < 100 mg/dL cho nhóm nguy cơ trung bình (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.reduction.statin_moderate",
+    "value": 30,
+    "unit": "%",
+    "quantity": "ldl_reduction_pct",
+    "citationIds": [
+      "esc.lipid.2019.therapy_reductions",
+      "acc.lipid.2026.statin_intensity_table"
+    ],
+    "descriptionVi": "Mức giảm LDL-C dự kiến trung bình của statin cường độ trung bình (~30%) (ESC/EAS 2019 / ACC 2026)"
+  },
+  {
+    "id": "lipid.reduction.statin_high",
+    "value": 50,
+    "unit": "%",
+    "quantity": "ldl_reduction_pct",
+    "citationIds": [
+      "esc.lipid.2019.therapy_reductions",
+      "acc.lipid.2026.statin_intensity_table"
+    ],
+    "descriptionVi": "Mức giảm LDL-C dự kiến trung bình của statin cường độ cao (~50%) (ESC/EAS 2019 / ACC 2026)"
+  },
+  {
+    "id": "lipid.reduction.statin_high_ezetimibe",
+    "value": 65,
+    "unit": "%",
+    "quantity": "ldl_reduction_pct",
+    "citationIds": [
+      "esc.lipid.2019.therapy_reductions"
+    ],
+    "descriptionVi": "Mức giảm LDL-C dự kiến của phối hợp statin cường độ cao + ezetimibe (~65%) (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.reduction.pcsk9_alone",
+    "value": 60,
+    "unit": "%",
+    "quantity": "ldl_reduction_pct",
+    "citationIds": [
+      "esc.lipid.2019.therapy_reductions"
+    ],
+    "descriptionVi": "Mức giảm LDL-C dự kiến của thuốc ức chế PCSK9 đơn độc (~60%) (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.reduction.pcsk9_high_statin",
+    "value": 75,
+    "unit": "%",
+    "quantity": "ldl_reduction_pct",
+    "citationIds": [
+      "esc.lipid.2019.therapy_reductions"
+    ],
+    "descriptionVi": "Mức giảm LDL-C dự kiến của thuốc ức chế PCSK9 + statin cường độ cao (~75%) (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.reduction.pcsk9_high_statin_ezetimibe",
+    "value": 85,
+    "unit": "%",
+    "quantity": "ldl_reduction_pct",
+    "citationIds": [
+      "esc.lipid.2019.therapy_reductions"
+    ],
+    "descriptionVi": "Mức giảm LDL-C dự kiến của bộ ba PCSK9i + statin cường độ cao + ezetimibe (~85%) (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.dose.rosuva_asian_start",
+    "value": 5,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.rosuvastatin.asian_dose",
+      "acc.lipid.2026.statin_doses"
+    ],
+    "descriptionVi": "Liều khởi đầu khuyến cáo của Rosuvastatin ở bệnh nhân châu Á (5 mg/ngày) (FDA / ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.rosuva_severe_ckd_max",
+    "value": 10,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.rosuvastatin.renal_impairment"
+    ],
+    "descriptionVi": "Liều tối đa của Rosuvastatin khi eGFR < 30 mL/phút/1.73m² (10 mg/ngày) (FDA)"
+  },
+  {
+    "id": "lipid.dose.rosuva_high_start",
+    "value": 20,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.statin_doses",
+      "fda.rosuvastatin.asian_dose"
+    ],
+    "descriptionVi": "Liều Rosuvastatin cường độ cao (20 mg/ngày) (ACC 2026 / FDA)"
+  },
+  {
+    "id": "lipid.dose.rosuva_high_max",
+    "value": 40,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.statin_doses"
+    ],
+    "descriptionVi": "Liều tối đa Rosuvastatin (40 mg/ngày) (ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.atorva_moderate_start",
+    "value": 10,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.atorvastatin.dose",
+      "acc.lipid.2026.statin_doses"
+    ],
+    "descriptionVi": "Liều khởi đầu Atorvastatin cường độ trung bình (10 mg/ngày) (FDA / ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.atorva_moderate_max",
+    "value": 20,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.atorvastatin.dose",
+      "acc.lipid.2026.statin_doses"
+    ],
+    "descriptionVi": "Liều Atorvastatin 20 mg/ngày cường độ trung bình (FDA / ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.atorva_high_start",
+    "value": 40,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.statin_doses"
+    ],
+    "descriptionVi": "Liều khởi đầu Atorvastatin cường độ cao (40 mg/ngày) (ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.atorva_high_max",
+    "value": 80,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.atorvastatin.dose",
+      "acc.lipid.2026.statin_doses"
+    ],
+    "descriptionVi": "Liều tối đa Atorvastatin cường độ cao (80 mg/ngày) (FDA / ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.ezetimibe_standard",
+    "value": 10,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.ezetimibe.dose"
+    ],
+    "descriptionVi": "Liều chuẩn Ezetimibe (10 mg/ngày) (FDA)"
+  },
+  {
+    "id": "lipid.dose.bempedoic_standard",
+    "value": 180,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.bempedoic.dose"
+    ],
+    "descriptionVi": "Liều chuẩn Bempedoic acid (180 mg/ngày) (FDA)"
+  },
+  {
+    "id": "lipid.dose.evolocumab_biweekly",
+    "value": 140,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.evolocumab.dose"
+    ],
+    "descriptionVi": "Liều Evolocumab mỗi 2 tuần (140 mg SC) (FDA)"
+  },
+  {
+    "id": "lipid.dose.evolocumab_monthly",
+    "value": 420,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.evolocumab.dose"
+    ],
+    "descriptionVi": "Liều Evolocumab mỗi tháng (420 mg SC) (FDA)"
+  },
+  {
+    "id": "lipid.dose.inclisiran_standard",
+    "value": 284,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.inclisiran.dose"
+    ],
+    "descriptionVi": "Liều chuẩn Inclisiran (284 mg SC liều ban đầu, sau 3 tháng rồi mỗi 6 tháng) (FDA)"
+  },
+  {
+    "id": "lipid.dose.simva_contra_dose",
+    "value": 80,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.simva_contra_80mg"
+    ],
+    "descriptionVi": "Liều Simvastatin 80 mg/ngày bị FDA chống chỉ định khởi trị/tăng liều do nguy cơ tiêu cơ vân (ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.simva_max",
+    "value": 40,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.simvastatin_dose"
+    ],
+    "descriptionVi": "Liều tối đa dung nạp của Simvastatin (40 mg/ngày) (ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.prava_moderate_start",
+    "value": 40,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.statin_table_doses"
+    ],
+    "descriptionVi": "Liều Pravastatin cường độ trung bình (40 mg/ngày) (ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.pita_moderate_start",
+    "value": 2,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.statin_table_doses"
+    ],
+    "descriptionVi": "Liều Pitavastatin cường độ trung bình (2 mg/ngày) (ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.fenofibrate_standard",
+    "value": 200,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.fenofibrate_dose_range",
+      "byt.lipid.2020.fenofibrate_145_200"
+    ],
+    "descriptionVi": "Liều tối đa chuẩn hàng ngày của Fenofibrate (200 mg/ngày) khi eGFR >= 60 mL/phút/1.73m² (ACC/AHA 2026 / Bộ Y tế)"
+  },
+  {
+    "id": "lipid.dose.fenofibrate_start_145",
+    "value": 145,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "byt.lipid.2020.fenofibrate_145_200"
+    ],
+    "descriptionVi": "Liều chuẩn viên nén Fenofibrate siêu vi hạt (145 mg/ngày) (Bộ Y tế 2020)"
+  },
+  {
+    "id": "lipid.dose.icosapent_daily",
+    "value": 4,
+    "unit": "g",
+    "quantity": "dose_g",
+    "citationIds": [
+      "acc.lipid.2026.icosapent_dose"
+    ],
+    "descriptionVi": "Tổng liều hàng ngày Icosapent ethyl (4 g/ngày) (ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.icosapent_bid",
+    "value": 2,
+    "unit": "g",
+    "quantity": "dose_g",
+    "citationIds": [
+      "esc.lipid.2019.htg_icosapent_ethyl"
+    ],
+    "descriptionVi": "Liều mỗi lần uống của Icosapent ethyl (2 g x 2 lần/ngày) (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.safety.egfr_severe_ckd",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "fda.rosuvastatin.renal_impairment"
+    ],
+    "descriptionVi": "Ngưỡng eGFR (30 mL/phút/1.73m²) định nghĩa suy thận nặng cần chỉnh liều statin/fibrate (FDA)"
+  },
+  {
+    "id": "lipid.safety.egfr_ckd_cutoff",
+    "value": 60,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "esc.lipid.2019.ckd_egfr_60_cutoff"
+    ],
+    "descriptionVi": "Ngưỡng eGFR < 60 mL/phút/1.73m² xác định bệnh thận mạn giai đoạn 3–5 (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.safety.alt_uln_elevation",
+    "value": 3,
+    "unit": "x ULN",
+    "quantity": "altulntimes",
+    "citationIds": [
+      "esc.lipid.2019.monitoring_alt_elevation",
+      "acc.lipid.2026.transaminase_3x_uln"
+    ],
+    "descriptionVi": "Ngưỡng tăng ALT >= 3 lần ULN yêu cầu ngừng hoặc giảm liều thuốc hạ lipid (ESC/EAS 2019 / ACC 2026)"
+  },
+  {
+    "id": "lipid.safety.ck_uln_elevation",
+    "value": 4,
+    "unit": "x ULN",
+    "quantity": "ckulntimes",
+    "citationIds": [
+      "esc.lipid.2019.monitoring_ck_high"
+    ],
+    "descriptionVi": "Ngưỡng tăng CK > 4 lần ULN yêu cầu tạm hoãn/chưa khởi trị thuốc hạ lipid (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.safety.ck_uln_rhabdomyolysis",
+    "value": 10,
+    "unit": "x ULN",
+    "quantity": "ckulntimes",
+    "citationIds": [
+      "esc.lipid.2019.monitoring_ck_10x_stop"
+    ],
+    "descriptionVi": "Ngưỡng tăng CK > 10 lần ULN yêu cầu ngừng thuốc khẩn cấp, kiểm tra thận và xử trí nguy cơ tiêu cơ vân (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.safety.uric_acid_elevated",
+    "value": 420,
+    "unit": "µmol/L",
+    "quantity": "uricacid",
+    "citationIds": [
+      "byt.lipid.gout_uric_420"
+    ],
+    "descriptionVi": "Ngưỡng tăng acid uric máu > 420 µmol/L cần thận trọng/tránh Bempedoic acid do nguy cơ khởi phát gút cấp (Bộ Y tế / FDA)"
+  },
+  {
+    "id": "lipid.tg.pancreatitis_risk",
+    "value": 5.6,
+    "unit": "mmol/L",
+    "quantity": "tg",
+    "citationIds": [
+      "acc.lipid.2026.severe_htg_5_6"
+    ],
+    "descriptionVi": "Ngưỡng Triglycerid máu tăng rất cao (>= 5.6 mmol/L / >= 500 mg/dL) có nguy cơ viêm tụy cấp (ACC 2026)"
+  },
+  {
+    "id": "lipid.tg.severe_pancreatitis_10",
+    "value": 10,
+    "unit": "mmol/L",
+    "quantity": "tg",
+    "citationIds": [
+      "esc.lipid.2019.htg_pancreatitis_10mmol"
+    ],
+    "descriptionVi": "Ngưỡng Triglycerid > 10 mmol/L (880 mg/dL) nguy cơ viêm tụy cấp đặc biệt cao có ý nghĩa lâm sàng (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.tg.elevated_cv_risk",
+    "value": 2.3,
+    "unit": "mmol/L",
+    "quantity": "tg",
+    "citationIds": [
+      "esc.lipid.2019.htg_statin_first",
+      "byt.lipid.2020.tg_2_3_statin_first"
+    ],
+    "descriptionVi": "Ngưỡng Triglycerid máu tăng cao (> 2.3 mmol/L / > 200 mg/dL) chỉ định can thiệp statin (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.tg.residual_risk_min",
+    "value": 1.5,
+    "unit": "mmol/L",
+    "quantity": "tg",
+    "citationIds": [
+      "esc.lipid.2019.htg_icosapent_ethyl"
+    ],
+    "descriptionVi": "Ngưỡng Triglycerid máu tồn dư tối thiểu (1.5 mmol/L / 135 mg/dL) cân nhắc phối hợp Icosapent ethyl (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.lpa.risk_enhancing_threshold",
+    "value": 50,
+    "unit": "mg/dL",
+    "quantity": "lpa",
+    "citationIds": [
+      "esc.lipid.2025.lpa_threshold_50mg"
+    ],
+    "descriptionVi": "Ngưỡng nồng độ Lipoprotein(a) > 50 mg/dL (105 nmol/L) được xem là yếu tố gia tăng nguy cơ tim mạch (ESC 2025)"
+  },
+  {
+    "id": "lipid.monitoring.weeks_min",
+    "value": 4,
+    "unit": "weeks",
+    "quantity": "interval_weeks",
+    "citationIds": [
+      "esc.lipid.2019.monitoring_alt_elevation"
+    ],
+    "descriptionVi": "Khoảng thời gian tối thiểu (4 tuần) để kiểm tra lại men gan hoặc đáp ứng lipid (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.monitoring.alt_recheck_max_weeks",
+    "value": 6,
+    "unit": "weeks",
+    "quantity": "interval_weeks",
+    "citationIds": [
+      "esc.lipid.2019.monitoring_alt_elevation",
+      "esc.lipid.2019.recheck_4_to_6_weeks"
+    ],
+    "descriptionVi": "Khoảng thời gian tối đa (6 tuần) để kiểm tra lại men gan ALT sau khi tạm ngưng hoặc giảm liều (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.monitoring.ck_rhabdo_weeks",
+    "value": 2,
+    "unit": "weeks",
+    "quantity": "interval_weeks",
+    "citationIds": [
+      "esc.lipid.2019.monitoring_ck_10x_stop"
+    ],
+    "descriptionVi": "Khoảng thời gian (2 tuần) theo dõi định kỳ CK sau khi ngừng thuốc vì CK > 10 lần ULN (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.monitoring.weeks_recheck",
+    "value": 8,
+    "unit": "weeks",
+    "quantity": "interval_weeks",
+    "citationIds": [
+      "esc.lipid.2019.monitoring_retest_weeks"
+    ],
+    "descriptionVi": "Thời điểm chuẩn (8 tuần) để xét nghiệm lại bilan lipid máu sau khi khởi trị hoặc chỉnh liều (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.monitoring.weeks_max",
+    "value": 12,
+    "unit": "weeks",
+    "quantity": "interval_weeks",
+    "citationIds": [
+      "fda.bempedoic.monitoring_12w"
+    ],
+    "descriptionVi": "Khoảng thời gian tối đa (12 tuần) để hoàn thành đánh giá lại bilan lipid sau khi khởi trị (FDA)"
+  },
+  {
+    "id": "lipid.target.tc_severe_elevation",
+    "value": 8,
+    "unit": "mmol/L",
+    "quantity": "tc",
+    "citationIds": [
+      "esc.lipid.2019.severe_single_rf"
+    ],
+    "descriptionVi": "Ngưỡng Cholesterol toàn phần > 8 mmol/L (310 mg/dL) xếp vào tầng nguy cơ cao (ESC 2019)"
+  },
+  {
+    "id": "lipid.target.ldl_severe_elevation",
+    "value": 4.9,
+    "unit": "mmol/L",
+    "quantity": "ldl",
+    "citationIds": [
+      "esc.lipid.2019.severe_single_rf"
+    ],
+    "descriptionVi": "Ngưỡng LDL-C > 4.9 mmol/L (190 mg/dL) xếp vào tầng nguy cơ cao (ESC 2019)"
+  },
+  {
+    "id": "lipid.combo.upfront_ldl_threshold",
+    "value": 3,
+    "unit": "mmol/L",
+    "quantity": "ldl",
+    "citationIds": [
+      "esc.lipid.2025.table4_ldl_3_0_column",
+      "esc.lipid.2025.acs_naive_combination"
+    ],
+    "descriptionVi": "Ngưỡng LDL-C >= 3.0 mmol/L ở bệnh nhân nguy cơ rất cao chưa điều trị dự kiến không đạt đích < 1.4 mmol/L với statin đơn trị (~50%), cân nhắc phối hợp sớm Ezetimibe"
+  },
+  {
+    "id": "lipid.safety.egfr_moderate_ckd_max",
+    "value": 59,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "esc.lipid.2019.moderate_ckd_egfr"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối đa (59 mL/phút/1.73m²) của bệnh thận mạn trung bình xếp vào tầng nguy cơ cao (ESC 2019)"
+  },
+  {
+    "id": "lipid.dose.fenofibrate_reduced",
+    "value": 40,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.fenofibrate_dose_range",
+      "acc.lipid.2026.fenofibrate_renal"
+    ],
+    "descriptionVi": "Liều khởi đầu giảm liều của Fenofibrate khi suy thận trung bình eGFR 30–59 mL/phút/1.73m² (từ 40 mg/ngày theo chế phẩm hàm lượng thấp lưu hành) (ACC/AHA 2026)"
+  },
+  {
+    "id": "lipid.fh.dlcn_definite",
+    "value": 8,
+    "unit": "points",
+    "quantity": "dlcnscore",
+    "citationIds": [
+      "esc.lipid.2019.dlcn_definite_8"
+    ],
+    "descriptionVi": "Điểm Dutch Lipid Clinic Network (DLCN) > 8 xác định chắc chắn FH (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.fh.dlcn_probable",
+    "value": 6,
+    "unit": "points",
+    "quantity": "dlcnscore",
+    "citationIds": [
+      "esc.lipid.2019.dlcn_definite_8"
+    ],
+    "descriptionVi": "Điểm Dutch Lipid Clinic Network (DLCN) >= 6 chẩn đoán rất có thể hoặc chắc chắn FH (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.dm.duration_very_high",
+    "value": 20,
+    "unit": "years",
+    "quantity": "dmdurationyears",
+    "citationIds": [
+      "esc.lipid.2025.dm_duration_20y"
+    ],
+    "descriptionVi": "Thời gian mắc ĐTĐ kéo dài >= 20 năm xếp vào nhóm nguy cơ rất cao (ESC 2025)"
+  },
+  {
+    "id": "lipid.dm.duration_high",
+    "value": 10,
+    "unit": "years",
+    "quantity": "dmdurationyears",
+    "citationIds": [
+      "esc.lipid.2025.dm_duration_10y"
+    ],
+    "descriptionVi": "Thời gian mắc ĐTĐ >= 10 năm không có tổn thương cơ quan đích xếp vào nhóm nguy cơ cao (ESC 2025)"
+  },
+  {
+    "id": "lipid.score2.very_high_min",
+    "value": 20,
+    "unit": "%",
+    "quantity": "score2riskpercent",
+    "citationIds": [
+      "esc.lipid.2025.score2_categories"
+    ],
+    "descriptionVi": "Ngưỡng SCORE2/SCORE2-OP >= 20% xếp vào nhóm nguy cơ rất cao (ESC 2025)"
+  },
+  {
+    "id": "lipid.score2.high_min",
+    "value": 10,
+    "unit": "%",
+    "quantity": "score2riskpercent",
+    "citationIds": [
+      "esc.lipid.2025.score2_moderate_low"
+    ],
+    "descriptionVi": "Ngưỡng SCORE2/SCORE2-OP >= 10% (và < 20%) xếp vào nhóm nguy cơ cao (ESC 2025)"
+  },
+  {
+    "id": "lipid.score2.moderate_min",
+    "value": 2,
+    "unit": "%",
+    "quantity": "score2riskpercent",
+    "citationIds": [
+      "esc.lipid.2025.score2_moderate_low"
+    ],
+    "descriptionVi": "Ngưỡng SCORE2/SCORE2-OP >= 2% (và < 10%) xếp vào nhóm nguy cơ trung bình (ESC 2025)"
+  },
+  {
+    "id": "lipid.dose.atorva_cyp3a4_max",
+    "value": 20,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.atorvastatin.clarithromycin_dose_cap",
+      "fda.atorvastatin.itraconazole_limit_20mg"
+    ],
+    "descriptionVi": "Liều tối đa Atorvastatin (20 mg/ngày) khi dùng chung chất ức chế CYP3A4 mạnh như clarithromycin hoặc itraconazole (FDA)"
+  },
+  {
+    "id": "lipid.dose.rosuva_cyclosporine_max",
+    "value": 5,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.rosuvastatin.cyclosporine_dose_cap"
+    ],
+    "descriptionVi": "Liều tối đa Rosuvastatin (5 mg/ngày) khi dùng đồng thời Cyclosporine (FDA)"
+  },
+  {
+    "id": "lipid.dose.simva_amiodarone_max",
+    "value": 20,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.amiodarone.simvastatin_dose_limit",
+      "fda.amlodipine.simvastatin_limit_20mg",
+      "fda.bempedoic.simvastatin_avoid_gt_20mg",
+      "acc.lipid.2026.ddi_table27_ranolazine_simva"
+    ],
+    "descriptionVi": "Liều tối đa Simvastatin (20 mg/ngày) khi dùng đồng thời Amiodarone, Amlodipine, Ranolazine hoặc Bempedoic acid (FDA / ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.simva_diltiazem_max",
+    "value": 10,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.diltiazem.simvastatin_limit_10mg",
+      "acc.lipid.2026.ddi_table27_simva_dronedarone",
+      "acc.lipid.2026.ddi_table27_verapamil_simva"
+    ],
+    "descriptionVi": "Liều tối đa Simvastatin (10 mg/ngày) khi dùng đồng thời Diltiazem, Verapamil hoặc Dronedarone (FDA / ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.simva_severe_ckd_start",
+    "value": 5,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.simvastatin_dose"
+    ],
+    "descriptionVi": "Liều khởi đầu thận trọng của Simvastatin (5 mg/ngày) ở bệnh nhân suy thận nặng eGFR < 30 mL/phút/1.73m² (ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.pita_renal_start",
+    "value": 1,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.pitavastatin_dose"
+    ],
+    "descriptionVi": "Liều khởi đầu của Pitavastatin (1 mg/ngày) khi suy thận vừa đến nặng eGFR < 60 mL/phút/1.73m² (ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.pita_max",
+    "value": 4,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.pitavastatin_dose"
+    ],
+    "descriptionVi": "Liều tối đa của Pitavastatin (4 mg/ngày) khi chức năng thận bình thường eGFR >= 60 mL/phút/1.73m² (ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.alirocumab_start",
+    "value": 75,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.alirocumab_dose"
+    ],
+    "descriptionVi": "Liều khởi đầu chuẩn của Alirocumab (75 mg tiêm dưới da mỗi 2 tuần) (ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.alirocumab_high",
+    "value": 150,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.alirocumab_dose"
+    ],
+    "descriptionVi": "Liều tăng cường của Alirocumab (150 mg tiêm dưới da mỗi 2 tuần) (ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.alirocumab_monthly",
+    "value": 300,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.alirocumab_dose"
+    ],
+    "descriptionVi": "Liều hàng tháng của Alirocumab (300 mg tiêm dưới da mỗi 4 tuần) (ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.omega3_min",
+    "value": 2,
+    "unit": "g",
+    "quantity": "dose_g",
+    "citationIds": [
+      "esc.lipid.2019.htg_fenofibrate_pancreatitis"
+    ],
+    "descriptionVi": "Liều tối thiểu acid béo Omega-3 kê đơn (2 g/ngày) phối hợp điều trị tăng Triglycerid nặng (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.dose.omega3_max",
+    "value": 4,
+    "unit": "g",
+    "quantity": "dose_g",
+    "citationIds": [
+      "esc.lipid.2019.htg_fenofibrate_pancreatitis",
+      "acc.lipid.2026.omega3_dose_4g"
+    ],
+    "descriptionVi": "Liều tối đa acid béo Omega-3 kê đơn (4 g/ngày) điều trị tăng Triglycerid nặng (ESC/EAS 2019 / ACC 2026)"
+  },
+  {
+    "id": "lipid.bp.grade3_sbp",
+    "value": 180,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.lipid.2025.risk_table3_bp_grade3"
+    ],
+    "descriptionVi": "Ngưỡng huyết áp tâm thu >= 180 mmHg xếp tầng nguy cơ tim mạch cao tối thiểu (ESC/EAS 2025 Table 3)"
+  },
+  {
+    "id": "lipid.bp.grade3_dbp",
+    "value": 110,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "esc.lipid.2025.risk_table3_bp_grade3"
+    ],
+    "descriptionVi": "Ngưỡng huyết áp tâm trương >= 110 mmHg xếp tầng nguy cơ tim mạch cao tối thiểu (ESC/EAS 2025 Table 3)"
+  },
+  {
+    "id": "lipid.dm.moderate_t2dm_max_age",
+    "value": 50,
+    "unit": "years",
+    "quantity": "age",
+    "citationIds": [
+      "esc.lipid.2025.risk_table3_dm_moderate"
+    ],
+    "descriptionVi": "Ngưỡng tuổi tối đa (< 50 tuổi ở ĐTĐ típ 2) để được xếp tầng nguy cơ trung bình khi ĐTĐ < 10 năm không kèm yếu tố nguy cơ khác (ESC/EAS 2025)"
+  },
+  {
+    "id": "lipid.hiv.primary_min_age",
+    "value": 40,
+    "unit": "years",
+    "quantity": "age",
+    "citationIds": [
+      "esc.lipid.2025.hiv_statin_primary",
+      "acc.lipid.2026.hiv_statin_cor1"
+    ],
+    "descriptionVi": "Độ tuổi tối thiểu (>= 40 tuổi) khuyến cáo khởi trị statin dự phòng tiên phát ở người nhiễm HIV (ESC/EAS 2025 / ACC 2026)"
+  },
+  {
+    "id": "lipid.elderly.primary_consider_age",
+    "value": 75,
+    "unit": "years",
+    "quantity": "age",
+    "citationIds": [
+      "esc.lipid.2019.older_gt75_primary_consider",
+      "acc.lipid.2026.older_gt75_consider"
+    ],
+    "descriptionVi": "Ngưỡng tuổi (> 75 tuổi) ở người cao tuổi dự phòng tiên phát cần cân nhắc cá thể hóa khởi trị statin (Class IIb) (ESC 2019 / ACC 2026)"
+  },
+  {
+    "id": "lipid.lpa.risk_enhancing_nmol",
+    "value": 105,
+    "unit": "nmol/L",
+    "quantity": "lpanmol",
+    "citationIds": [
+      "esc.lipid.2025.lpa_threshold_50mg"
+    ],
+    "descriptionVi": "Ngưỡng nồng độ Lipoprotein(a) > 105 nmol/L (> 50 mg/dL) được xem là yếu tố gia tăng nguy cơ tim mạch theo ESC/EAS 2025"
+  },
+  {
+    "id": "lipid.lpa.acc_risk_enhancing_nmol",
+    "value": 125,
+    "unit": "nmol/L",
+    "quantity": "lpanmol",
+    "citationIds": [
+      "acc.lipid.2026.lpa_125nmol_threshold"
+    ],
+    "descriptionVi": "Ngưỡng nồng độ Lipoprotein(a) >= 125 nmol/L (>= 50 mg/dL) được xem là yếu tố gia tăng nguy cơ ASCVD theo ACC/AHA 2026"
+  },
+  {
+    "id": "lipid.dose.pravastatin_ckd_start",
+    "value": 10,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.pravastatin_dose"
+    ],
+    "descriptionVi": "Liều khởi đầu thận trọng của Pravastatin (10 mg/ngày) khi suy thận nặng eGFR < 30 mL/phút/1.73m² (ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.pravastatin_ckd_max",
+    "value": 40,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.statin_table_doses"
+    ],
+    "descriptionVi": "Liều tối đa khuyến cáo của Pravastatin (40 mg/ngày) khi suy thận nặng eGFR < 30 mL/phút/1.73m² (ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.prava_clarithro_max",
+    "value": 40,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.statin_table_doses",
+      "fda.bempedoic.pravastatin_avoid_gt_40mg"
+    ],
+    "descriptionVi": "Liều tối đa Pravastatin (40 mg/ngày) khi dùng đồng thời Clarithromycin"
+  },
+  {
+    "id": "lipid.dose.prava_bempedoic_max",
+    "value": 40,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.bempedoic.pravastatin_avoid_gt_40mg",
+      "acc.lipid.2026.ddi_table27_prava_bempedoic"
+    ],
+    "descriptionVi": "Liều tối đa Pravastatin (40 mg/ngày) khi dùng đồng thời Bempedoic acid (FDA NEXLETOL / ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.pita_ckd_max",
+    "value": 2,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.statin_table_doses"
+    ],
+    "descriptionVi": "Liều tối đa của Pitavastatin (2 mg/ngày) khi suy thận vừa đến nặng eGFR < 60 mL/phút/1.73m² (FDA Livalo / ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.pita_erythromycin_max",
+    "value": 1,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.pitavastatin_dose"
+    ],
+    "descriptionVi": "Liều tối đa của Pitavastatin (1 mg/ngày) khi dùng đồng thời Erythromycin (FDA Livalo / ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.pitavastatin_hiv",
+    "value": 4,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "esc.lipid.2025.hiv_reprieve_pitavastatin_4mg",
+      "acc.lipid.2026.pitavastatin_dose"
+    ],
+    "descriptionVi": "Liều Pitavastatin 4 mg/ngày chứng minh giảm 35% biến cố MACE ở người nhiễm HIV trong thử nghiệm REPRIEVE (ESC 2025 / ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.rosuva_moderate_max",
+    "value": 10,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.statin_doses"
+    ],
+    "descriptionVi": "Liều tối đa của Rosuvastatin ở mức cường độ trung bình (10 mg/ngày) (ACC 2026)"
+  },
+  {
+    "id": "lipid.dose.rosuva_ticagrelor_max",
+    "value": 20,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.rosuvastatin.ticagrelor_limit_20mg",
+      "fda.rosuvastatin.febuxostat_limit_20mg"
+    ],
+    "descriptionVi": "Liều tối đa Rosuvastatin (20 mg/ngày) khi dùng đồng thời Ticagrelor hoặc Febuxostat do ức chế BCRP (FDA Crestor)"
+  },
+  {
+    "id": "lipid.dose.ezetimibe_sequestrant_before_h",
+    "value": 2,
+    "unit": "hours",
+    "quantity": "interval_hours",
+    "citationIds": [
+      "fda.ezetimibe.bile_acid_sequestrant"
+    ],
+    "descriptionVi": "Khoảng cách tối thiểu (2 giờ trước) khi uống Ezetimibe trước thuốc gắn acid mật như Cholestyramine (FDA Zetia)"
+  },
+  {
+    "id": "lipid.dose.ezetimibe_sequestrant_after_h",
+    "value": 4,
+    "unit": "hours",
+    "quantity": "interval_hours",
+    "citationIds": [
+      "fda.ezetimibe.bile_acid_sequestrant"
+    ],
+    "descriptionVi": "Khoảng cách tối thiểu (4 giờ sau) khi uống Ezetimibe sau thuốc gắn acid mật như Cholestyramine (FDA Zetia)"
+  },
+  {
+    "id": "lipid.lactation.fibrate_washout_days",
+    "value": 5,
+    "unit": "days",
+    "quantity": "interval_days",
+    "citationIds": [
+      "acc.lipid.2026.lactation_fibrate_5days"
+    ],
+    "descriptionVi": "Thời gian ngừng thuốc tối thiểu (5 ngày sau liều cuối của fibrate) trước khi cho con bú trở lại (ACC/AHA 2026 Table 20)"
+  },
+  {
+    "id": "lipid.reduction.ezetimibe_pcsk9",
+    "value": 68,
+    "unit": "%",
+    "quantity": "ldl_reduction_pct",
+    "citationIds": [
+      "esc.lipid.2025.figure2_ldl_reduction_68"
+    ],
+    "descriptionVi": "Mức giảm LDL-C trung bình dự kiến của phối hợp PCSK9 mAb + Ezetimibe (~68%) (ESC/EAS 2025 Figure 2)"
+  },
+  {
+    "id": "lipid.monitoring.acs_recheck_max_weeks",
+    "value": 6,
+    "unit": "weeks",
+    "quantity": "interval_weeks",
+    "citationIds": [
+      "esc.lipid.2025.acs_recheck_4_to_6_weeks",
+      "esc.lipid.2019.recheck_4_to_6_weeks"
+    ],
+    "descriptionVi": "Khoảng thời gian tối đa (6 tuần) xét nghiệm kiểm tra lại bilan lipid máu sau hội chứng mạch vành cấp (ESC 2019 / ESC 2025)"
+  },
+  {
+    "id": "lipid.dm.moderate_t1dm_max_age",
+    "value": 35,
+    "unit": "years",
+    "quantity": "age",
+    "citationIds": [
+      "esc.lipid.2025.risk_table3_dm_moderate"
+    ],
+    "descriptionVi": "Ngưỡng tuổi tối đa (< 35 tuổi ở ĐTĐ típ 1) để được xếp tầng nguy cơ trung bình khi ĐTĐ < 10 năm không kèm yếu tố nguy cơ khác (ESC/EAS 2025)"
+  },
+  {
+    "id": "lipid.dm.uacr_tod_min",
+    "value": 3,
+    "unit": "mg/mmol",
+    "quantity": "uacr",
+    "citationIds": [
+      "kdigo.ckd.2024.uacr_3_mg_mmol"
+    ],
+    "descriptionVi": "Ngưỡng UACR >= 3 mg/mmol (>= 30 mg/g, albumin niệu tăng vừa A2 / microalbuminuria) xác định tổn thương cơ quan đích ở bệnh nhân ĐTĐ (KDIGO 2024 / ESC 2025)"
+  },
+  {
+    "id": "lipid.icosapent.acc_min_age",
+    "value": 50,
+    "unit": "years",
+    "quantity": "age",
+    "citationIds": [
+      "acc.lipid.2026.icosapent_age50_tg150"
+    ],
+    "descriptionVi": "Độ tuổi tối thiểu (>= 50 tuổi) cân nhắc bổ sung Icosapent ethyl theo ACC/AHA 2026 (COR 2b)"
+  },
+  {
+    "id": "lipid.tg.acc_icosapent_min",
+    "value": 1.7,
+    "unit": "mmol/L",
+    "quantity": "tg",
+    "citationIds": [
+      "acc.lipid.2026.icosapent_age50_tg150"
+    ],
+    "descriptionVi": "Ngưỡng Triglycerid tồn dư tối thiểu (>= 1.7 mmol/L / 150 mg/dL) cân nhắc bổ sung Icosapent ethyl theo ACC/AHA 2026"
+  },
+  {
+    "id": "lipid.tg.acc_icosapent_min_mgdl",
+    "value": 150,
+    "unit": "mg/dL",
+    "quantity": "tg_mgdl",
+    "citationIds": [
+      "acc.lipid.2026.icosapent_age50_tg150"
+    ],
+    "descriptionVi": "Ngưỡng Triglycerid tồn dư tối thiểu (>= 150 mg/dL) cân nhắc bổ sung Icosapent ethyl theo ACC/AHA 2026"
+  },
+  {
+    "id": "lipid.target.very_high_ldl_mgdl",
+    "value": 55,
+    "unit": "mg/dL",
+    "quantity": "ldl_mgdl",
+    "citationIds": [
+      "esc.lipid.2019.target_very_high"
+    ],
+    "descriptionVi": "Đích LDL-C < 55 mg/dL (< 1.4 mmol/L) cho bệnh nhân nguy cơ tim mạch rất cao (ESC/EAS 2019 / ACC 2026)"
+  },
+  {
+    "id": "lipid.target.high_ldl_mgdl",
+    "value": 70,
+    "unit": "mg/dL",
+    "quantity": "ldl_mgdl",
+    "citationIds": [
+      "esc.lipid.2019.target_high",
+      "acc.lipid.2026.ezetimibe_outpatient_addon"
+    ],
+    "descriptionVi": "Đích LDL-C < 70 mg/dL (< 1.8 mmol/L) cho bệnh nhân nguy cơ cao hoặc ASCVD chưa thuộc nhóm rất cao theo ACC/AHA 2026"
+  },
+  {
+    "id": "lipid.target.moderate_ldl_mgdl",
+    "value": 100,
+    "unit": "mg/dL",
+    "quantity": "ldl_mgdl",
+    "citationIds": [
+      "esc.lipid.2019.target_moderate",
+      "acc.lipid.2026.icosapent_cor2b"
+    ],
+    "descriptionVi": "Đích LDL-C < 100 mg/dL (< 2.6 mmol/L) cho nhóm nguy cơ trung bình và tiêu chuẩn LDL-C khi cân nhắc Icosapent ethyl theo ACC/AHA 2026"
+  },
+  {
+    "id": "lipid.tg.bas_caution",
+    "value": 3.4,
+    "unit": "mmol/L",
+    "quantity": "tg",
+    "citationIds": [
+      "acc.lipid.2026.bas_tg_300_contra"
+    ],
+    "descriptionVi": "Ngưỡng Triglycerid >= 3.4 mmol/L (>= 300 mg/dL) không khuyến cáo dùng nhựa gắn acid mật do làm tăng thêm TG (ACC/AHA 2026)"
+  },
+  {
+    "id": "lipid.tg.friedewald_invalid",
+    "value": 4.5,
+    "unit": "mmol/L",
+    "quantity": "tg",
+    "citationIds": [
+      "esc.lipid.2019.friedewald_tg_4_5"
+    ],
+    "descriptionVi": "Ngưỡng Triglycerid > 4.5 mmol/L (> 400 mg/dL) làm mất hiệu lực công thức Friedewald tính LDL-C (ESC/EAS 2019)"
+  },
+  {
+    "id": "lipid.cac.statin_init_min",
+    "value": 100,
+    "unit": "AU",
+    "quantity": "cacscore",
+    "citationIds": [
+      "acc.lipid.2026.cac_100_init"
+    ],
+    "descriptionVi": "Điểm vôi hóa mạch vành CAC >= 100 AU khuyến cáo khởi trị thuốc hạ lipid máu dự phòng tiên phát (ACC/AHA 2026 COR 1)"
+  },
+  {
+    "id": "lipid.cac.high_risk_min",
+    "value": 300,
+    "unit": "AU",
+    "quantity": "cacscore",
+    "citationIds": [
+      "acc.lipid.2026.cac_categories_300"
+    ],
+    "descriptionVi": "Điểm vôi hóa mạch vành CAC >= 300 AU xác định xơ vữa động mạch dưới lâm sàng mức độ nặng (ACC/AHA 2026 / ESC 2025)"
+  },
+  {
+    "id": "lipid.cac.very_high_min",
+    "value": 1000,
+    "unit": "AU",
+    "quantity": "cacscore",
+    "citationIds": [
+      "acc.lipid.2026.cac_1000_very_high"
+    ],
+    "descriptionVi": "Điểm vôi hóa mạch vành CAC >= 1000 AU chỉ định hạ LDL-C tích cực hướng đích < 55 mg/dL (1.4 mmol/L) (ACC/AHA 2026 COR 1)"
+  },
+  {
+    "id": "lipid.hf.href_lvef_cutoff",
+    "value": 40,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "esc.hf.2026.href_lvef_40"
+    ],
+    "descriptionVi": "Ngưỡng LVEF <= 40% xác định suy tim phân suất tống máu giảm (HFrEF) (ESC 2026)"
+  },
+  {
+    "id": "lipid.pregnancy.preconception_stop_min_months",
+    "value": 1,
+    "unit": "months",
+    "quantity": "interval_months",
+    "citationIds": [
+      "acc.lipid.2026.pregnancy_stop_1_2_months"
+    ],
+    "descriptionVi": "Thời gian tối thiểu (1 tháng) ngừng statin trước khi cố gắng thụ thai (ACC/AHA 2026)"
+  },
+  {
+    "id": "lipid.pregnancy.preconception_stop_max_months",
+    "value": 2,
+    "unit": "months",
+    "quantity": "interval_months",
+    "citationIds": [
+      "acc.lipid.2026.pregnancy_stop_1_2_months"
+    ],
+    "descriptionVi": "Thời gian khuyến cáo (1–2 tháng) ngừng statin trước khi cố gắng thụ thai (ACC/AHA 2026)"
+  },
+  {
+    "id": "lipid.dose.rosuva_antiviral_regorafenib_max",
+    "value": 10,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.rosuvastatin.antiviral_10mg_cap",
+      "fda.rosuvastatin.regorafenib_10mg_cap"
+    ],
+    "descriptionVi": "Liều tối đa Rosuvastatin (10 mg/ngày) khi dùng kèm thuốc kháng virus ức chế protease/OATP1B1 (atazanavir/ritonavir, lopinavir/ritonavir, nirmatrelvir/ritonavir...) hoặc regorafenib (FDA Crestor)"
+  },
+  {
+    "id": "lipid.dose.rosuva_darolutamide_max",
+    "value": 5,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.rosuvastatin.darolutamide_5mg_cap"
+    ],
+    "descriptionVi": "Liều tối đa Rosuvastatin (5 mg/ngày) khi dùng kèm Darolutamide do tăng AUC > 5 lần (FDA Crestor)"
+  },
+  {
+    "id": "lipid.dose.lovastatin_dronedarone_max",
+    "value": 10,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.ddi_table27_simva_dronedarone"
+    ],
+    "descriptionVi": "Liều tối đa Lovastatin (10 mg/ngày) khi dùng đồng thời Dronedarone (ACC/AHA 2026 Table 27)"
+  },
+  {
+    "id": "lipid.dose.lovastatin_ccb_max",
+    "value": 20,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.ddi_table27_verapamil_simva",
+      "acc.lipid.2026.ddi_table27_ranolazine_simva"
+    ],
+    "descriptionVi": "Liều tối đa Lovastatin (20 mg/ngày) khi dùng đồng thời Diltiazem, Verapamil, Amlodipine hoặc Ranolazine (ACC/AHA 2026 Table 27)"
+  },
+  {
+    "id": "lipid.dose.lovastatin_amiodarone_ticagrelor_max",
+    "value": 40,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.ddi_table27_lovastatin_caps",
+      "acc.lipid.2026.ddi_table27_simva_ticagrelor"
+    ],
+    "descriptionVi": "Liều tối đa Lovastatin (40 mg/ngày) khi dùng đồng thời Amiodarone hoặc Ticagrelor (ACC/AHA 2026 Table 27)"
+  },
+  {
+    "id": "lipid.dose.fluvastatin_clarithro_max",
+    "value": 20,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "byt.copd.2026.pravastatin_clarithromycin_limit_40mg"
+    ],
+    "descriptionVi": "Liều tối đa Fluvastatin (20 mg/ngày) khi dùng đồng thời Clarithromycin (Bộ Y tế 2026)"
+  },
+  {
+    "id": "lipid.dose.fluvastatin_cyclosporine_max",
+    "value": 40,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.fluvastatin_lovastatin_dosing",
+      "byt.copd.2026.pravastatin_clarithromycin_limit_40mg"
+    ],
+    "descriptionVi": "Liều tối đa Fluvastatin (20 mg x 2 lần/ngày = 40 mg/ngày) khi dùng đồng thời Cyclosporine hoặc Fluconazole (ACC/AHA 2026)"
+  },
+  {
+    "id": "lipid.dose.simva_ticagrelor_max",
+    "value": 40,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.ddi_table27_simva_ticagrelor"
+    ],
+    "descriptionVi": "Liều tối đa Simvastatin (40 mg/ngày) khi dùng đồng thời Ticagrelor (ACC/AHA 2026 Table 27)"
+  },
+  {
+    "id": "lipid.dose.simva_severe_ckd_caution",
+    "value": 10,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.lipid.2026.ddi_table27_simva_dronedarone"
+    ],
+    "descriptionVi": "Mức liều Simvastatin (> 10 mg/ngày) cần thận trọng cao độ khi suy thận nặng eGFR < 30 mL/phút/1.73m²"
+  },
+  {
+    "id": "lipid.prevent.low_max",
+    "value": 3,
+    "unit": "%",
+    "quantity": "prevent_risk_pct",
+    "citationIds": [
+      "acc.lipid.2026.prevent_categories"
+    ],
+    "descriptionVi": "Ngưỡng PREVENT-ASCVD 10 năm < 3% xếp tầng nguy cơ thấp (ACC/AHA 2026)"
+  },
+  {
+    "id": "lipid.prevent.borderline_max",
+    "value": 5,
+    "unit": "%",
+    "quantity": "prevent_risk_pct",
+    "citationIds": [
+      "acc.lipid.2026.prevent_categories"
+    ],
+    "descriptionVi": "Ngưỡng PREVENT-ASCVD 10 năm 3% đến < 5% xếp tầng nguy cơ giáp biên (ACC/AHA 2026)"
+  },
+  {
+    "id": "lipid.prevent.intermediate_max",
+    "value": 10,
+    "unit": "%",
+    "quantity": "prevent_risk_pct",
+    "citationIds": [
+      "acc.lipid.2026.prevent_categories"
+    ],
+    "descriptionVi": "Ngưỡng PREVENT-ASCVD 10 năm 5% đến < 10% xếp tầng nguy cơ trung bình (>= 10% là nguy cơ cao) (ACC/AHA 2026)"
+  }
+]

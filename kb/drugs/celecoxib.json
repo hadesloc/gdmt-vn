@@ -1,0 +1,214 @@
+{
+  "id": "celecoxib",
+  "nameVi": "Celecoxib",
+  "inn": "Celecoxib",
+  "class": "COX-2i",
+  "classes": [
+    "anti_gout",
+    "nsaid",
+    "cox2_selective"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Celebrex",
+    "Celecox"
+  ],
+  "forms": [
+    "Viên nang 100 mg",
+    "Viên nang 200 mg"
+  ],
+  "start": {
+    "amount": 400,
+    "unit": "mg",
+    "frequency": "liều nạp ngày 1 (400–800 mg nạp, sau đó 200–400 mg x 2 lần/ngày)",
+    "route": "uống",
+    "description": "Cơn gút cấp: phác đồ liều cao kháng viêm 800 mg nạp rồi 400 mg ngày 1, sau đó 400 mg x 2 lần/ngày trong 5–7 ngày (hoặc theo BYT 361/2014 tr. 201: viên 200 mg x 1–2 lần/ngày sau ăn no)"
+  },
+  "target": {
+    "amount": 200,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "200–400 mg x 2 lần/ngày ngắn ngày trong đợt cấp (giảm 50% liều nếu suy gan Child-Pugh B hoặc chuyển hóa kém CYP2C9)"
+  },
+  "titration": {
+    "step": 200,
+    "intervalDays": 1,
+    "maxDose": "800 mg/ngày (đợt cấp ngắn ngày)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Cơn cấp: nạp 400–800 mg, sau đó 200–400 mg x 2 lần/ngày trong 5–7 ngày (hoặc 200 mg x 1–2 lần/ngày theo BYT 361/2014)",
+      "citationIds": [
+        "byt.gout.2014.nsaid_dosing_p201",
+        "acr.gout.2020.flare_first_line",
+        "fda.celecoxib.boxed_contra_cv_gi"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Thận trọng hoặc tránh dùng theo KDIGO 2024; ưu tiên corticoid",
+      "citationIds": [
+        "kdigo.gout.2024.acute_flare_ckd",
+        "byt.ckd.2024.gout_flare_table22"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Chống chỉ định / không khuyến cáo ở suy thận nặng (eGFR < 30 mL/phút) hoặc lọc máu",
+      "citationIds": [
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra",
+        "fda.celecoxib.hepatic_cyp2c9"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_celecoxib_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "contra",
+      "messageVi": "Chống chỉ định khi eGFR < 30 mL/phút/1.73m2",
+      "citationIds": [
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra"
+      ]
+    },
+    {
+      "id": "gate_celecoxib_hepatic_moderate",
+      "parameter": "ChildPugh_B",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "moderate",
+      "action": "reduce",
+      "messageVi": "Bắt buộc giảm 50% liều hàng ngày của celecoxib ở bệnh nhân suy gan mức độ vừa (Child-Pugh B) hoặc người chuyển hóa kém qua CYP2C9 (FDA Section 8.6 & 8.8)",
+      "citationIds": [
+        "fda.celecoxib.hepatic_cyp2c9"
+      ]
+    },
+    {
+      "id": "gate_celecoxib_hepatic_severe",
+      "parameter": "ChildPugh_C",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "severe",
+      "action": "contra",
+      "messageVi": "Không khuyến cáo / chống chỉ định dùng celecoxib ở bệnh nhân suy gan nặng (Child-Pugh C)",
+      "citationIds": [
+        "fda.celecoxib.hepatic_cyp2c9",
+        "byt.gout.2014.nsaid_contra_p198"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Tránh dùng từ tuần 20 thai kỳ (nguy cơ suy thận thai nhi và thiểu ối) và chống chỉ định từ tuần 30 trở đi (đóng sớm ống động mạch thai nhi) theo FDA Section 5.11/8.1; BYT 361/2014 chống chỉ định 3 tháng đầu và 3 tháng cuối",
+    "citationIds": [
+      "fda.celecoxib.fetal_toxicity_pregnancy",
+      "byt.gout.2014.nsaid_contra_p198"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Bài tiết lượng rất thấp qua sữa mẹ (< 1% liều trẻ nhỏ theo cân nặng; FDA Section 8.2 khuyên thận trọng, BYT 361/2014 tránh dùng NSAID khi cho con bú)",
+    "citationIds": [
+      "fda.celecoxib.lactation",
+      "byt.gout.2014.nsaid_contra_p198"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "sulfonamide_allergy",
+      "messageVi": "Chống chỉ định ở bệnh nhân có tiền sử dị ứng hoặc quá mẫn với nhóm sulfonamide, celecoxib hoặc hen nhạy cảm aspirin/NSAID (FDA Section 4)",
+      "citationIds": [
+        "fda.celecoxib.contra_sulfa_aerd",
+        "fda.celecoxib.boxed_contra_cv_gi",
+        "byt.gout.2014.nsaid_contra_p198"
+      ]
+    },
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định trong thai kỳ (đặc biệt từ tuần 20–30 trở đi do đóng sớm ống động mạch thai nhi và thiểu ối)",
+      "citationIds": [
+        "fda.celecoxib.fetal_toxicity_pregnancy",
+        "byt.gout.2014.nsaid_contra_p198"
+      ]
+    },
+    {
+      "code": "severe_ckd",
+      "messageVi": "Chống chỉ định khi eGFR < 30 mL/phút",
+      "citationIds": [
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra"
+      ]
+    },
+    {
+      "code": "heart_failure",
+      "messageVi": "Chống chỉ định quanh phẫu thuật CABG; tránh dùng ở bệnh nhân suy tim và bệnh tim mạch xơ vữa đã xác lập",
+      "citationIds": [
+        "fda.celecoxib.boxed_contra_cv_gi",
+        "byt.gout.2014.nsaid_dosing_p201"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Không khuyến cáo / chống chỉ định khi suy gan nặng (Child-Pugh C)",
+      "citationIds": [
+        "fda.celecoxib.hepatic_cyp2c9",
+        "byt.gout.2014.nsaid_contra_p198"
+      ]
+    },
+    {
+      "code": "peptic_ulcer",
+      "messageVi": "Chống chỉ định khi đang có loét dạ dày tá tràng tiến triển hoặc xuất huyết tiêu hóa",
+      "citationIds": [
+        "fda.celecoxib.boxed_contra_cv_gi",
+        "byt.gout.2014.nsaid_contra_p198"
+      ]
+    },
+    {
+      "code": "anticoagulant_use",
+      "messageVi": "Tránh/chống chỉ định phối hợp với thuốc chống đông do nguy cơ xuất huyết nghiêm trọng",
+      "citationIds": [
+        "fda.celecoxib.boxed_contra_cv_gi",
+        "byt.gout.2014.nsaid_contra_p198"
+      ]
+    }
+  ],
+  "interactions": [
+    "Fluconazole và chất ức chế CYP2C9 (hoặc kiểu gen chuyển hóa kém CYP2C9*3/*3): Làm tăng gấp đôi nồng độ celecoxib huyết tương, bắt buộc giảm 50% liều celecoxib",
+    "Thuốc chống đông (Warfarin, DOAC) và Corticosteroid toàn thân: Tăng nguy cơ loét và xuất huyết tiêu hóa",
+    "Cơ chất CYP2D6 (Atomoxetine, Metoprolol, Dextromethorphan): Celecoxib ức chế CYP2D6 làm tăng nồng độ các thuốc này",
+    "Lợi tiểu và ACEi/ARB/ARNI: Làm giảm tác dụng hạ áp và tăng nguy cơ suy thận cấp"
+  ],
+  "citationIds": [
+    "fda.celecoxib.boxed_contra_cv_gi",
+    "fda.celecoxib.fetal_toxicity_pregnancy",
+    "fda.celecoxib.lactation",
+    "fda.celecoxib.hepatic_cyp2c9",
+    "byt.gout.2014.nsaid_dosing_p201",
+    "byt.ckd.2024.gout_flare_table22",
+    "acr.gout.2020.flare_first_line",
+    "fda.celecoxib.contra_sulfa_aerd"
+  ],
+  "hepatic": {
+    "status": "avoid",
+    "note": "Bắt buộc giảm 50% liều hàng ngày của celecoxib ở bệnh nhân suy gan vừa (Child-Pugh B) và tránh dùng / không khuyến cáo ở bệnh nhân suy gan nặng (Child-Pugh C) (FDA Celebrex Mục 2.7 & 8.6).",
+    "notesVi": "Bắt buộc giảm 50% liều hàng ngày của celecoxib ở bệnh nhân suy gan vừa (Child-Pugh B) và tránh dùng / không khuyến cáo ở bệnh nhân suy gan nặng (Child-Pugh C) (FDA Celebrex Mục 2.7 & 8.6).",
+    "citationIds": [
+      "fda.celecoxib.hepatic_cyp2c9",
+      "byt.gout.2014.nsaid_contra_p198"
+    ]
+  }
+}

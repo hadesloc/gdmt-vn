@@ -1,0 +1,110 @@
+[
+  {
+    "id": "R1-ASTHMA-01",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "asthma.action_plan.generate",
+    "finding": "Lỗi đơn vị và công thức tính lưu lượng đỉnh (PEF) trong Bản kế hoạch hành động hen (actionPlan.ts): Lấy phần trăm pefPct nhân 0.8 rồi gán đơn vị 'L/phút', tạo ngưỡng vùng Xanh/Vàng/Đỏ sai lệch nghiêm trọng, gây nguy cơ an toàn tính mạng do ngộ nhận vùng an toàn khi đang suy hô hấp cấp.",
+    "evidence": "inputs.ts line 80-84 định nghĩa: id: 'customInputs.pefPct', unit: '%', placeholder: 'vd: 75'. Trong rules.ts line 938: pefBest: pef (truyền số 75 hoặc 88 vào). Trong actionPlan.ts line 22-27: pefBestText = `${params.pefBest} L/phút`, greenPef = `> ${(params.pefBest * 0.8).toFixed(0)} L/phút`. Với bệnh nhân có pefPct = 80%, hệ thống in ra: 'Vùng Xanh: PEF > 64 L/phút, Vùng Vàng: 40–64 L/phút, Vùng Đỏ: < 40 L/phút'. Thực tế PEF người lớn bình thường là 400–600 L/phút. Bệnh nhân lên cơn hen nặng đo PEF 250 L/phút (tắc nghẽn 50% nguy kịch) nhìn vào thấy 250 > 64 L/phút sẽ tưởng mình ở Vùng Xanh an toàn, trì hoãn cấp cứu dẫn đến nguy cơ tử vong.",
+    "suggestedFix": "Tách bạch rõ ràng giữa lưu lượng đỉnh tuyệt đối (L/phút) và tỷ lệ phần trăm (%). Nếu người dùng chỉ nhập pefPct (%), actionPlan.ts phải ghi rõ: 'Vùng Xanh: PEF > 80% giá trị cá nhân tốt nhất; Vùng Vàng: 50–79%; Vùng Đỏ: < 50%' và TUYỆT ĐỐI KHÔNG nhân 0.8 rồi gắn đuôi 'L/phút'. Nếu muốn tính ra L/phút cụ thể, phải có trường nhập PEF cá nhân tốt nhất tính bằng L/phút (pefBestLMin)."
+  },
+  {
+    "id": "R1-ASTHMA-02",
+    "severity": "major",
+    "itemType": "ui",
+    "itemId": "asthma.inputs.missing_spo2",
+    "finding": "Thiếu hoàn toàn trường nhập liệu SpO₂ trong schema inputs.ts khiến cổng phát hiện cơn hen phế quản cấp nặng qua giảm oxy máu bị vô hiệu hóa trên UI.",
+    "evidence": "rules.ts line 298: const spo2 = need(ctx, 'customInputs.spo2'); và line 312: (spo2 !== undefined && spo2 < th('asthma.acute.severe_spo2_threshold')). Tuy nhiên, tìm kiếm toàn văn trong inputs.ts không có trường nào khai báo id: 'customInputs.spo2'. Trên giao diện người dùng, bác sĩ cấp cứu không thể nhập chỉ số SpO₂ của bệnh nhân, dẫn đến spo2 luôn là undefined và không bao giờ kích hoạt được tiêu chuẩn giảm oxy máu (SpO₂ < 90% theo BYT 5850 trang 17 hoặc < 92% theo GINA 2026 Summary Guide trang 36).",
+    "suggestedFix": "Thêm trường 'customInputs.spo2' vào nhóm 'asthma_inpatient_acute_group' trong inputs.ts: type: 'number', min: 50, max: 100, step: 1, unit: '%', labelVi: 'Độ bão hòa oxy máu mao mạch (SpO₂ khí trời)', helpVi: 'SpO₂ < 90% (Bộ Y tế QĐ 5850) hoặc < 92% (GINA 2026) chỉ điểm cơn hen phế quản cấp nặng cần thở oxy và hồi sức tích cực'."
+  },
+  {
+    "id": "R1-ASTHMA-03",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "asthma.outpatient.evaluateGinaControl_fail_closed",
+    "finding": "Lỗ hổng Fail-Closed trong hàm evaluateGinaControl(): Bệnh nhân chỉ trả lời 1 câu hỏi (ví dụ q1 = false) và bỏ trống 3 câu còn lại sẽ bị kết luận sai thành 'Kiểm soát tốt' (well_controlled), lọt qua cửa kiểm tra dữ liệu thiếu và có thể kích hoạt hạ bậc sai lầm.",
+    "evidence": "rules.ts lines 42-49: 'if (answered === 0) return { ... level: 'missing' }; if (positive === 0) return { ... level: 'well_controlled' };'. Khi answered = 1 và positive = 0, hàm trả về well_controlled ngay cả khi 3 câu hỏi còn lại (thức giấc đêm, thuốc cắt cơn, giới hạn vận động) chưa hề được trả lời. Theo GINA 2026 Table 2A (trang 12) và BYT 1851 Bảng 3 (trang 15), mức 'Kiểm soát hoàn toàn' bắt buộc phải đánh giá đủ cả 4 tiêu chí và không có tiêu chí nào dương tính ('None of these').",
+    "suggestedFix": "Trong evaluateGinaControl(), chỉ kết luận 'well_controlled' khi answered === 4 && positive === 0. Nếu answered < 4, trả về level: 'missing' (hoặc nếu positive >= 3 thì có thể kết luận 'uncontrolled', nhưng nếu positive < 3 mà answered < 4 thì bắt buộc phải là 'missing' để kích hoạt missingInputRec)."
+  },
+  {
+    "id": "R1-ASTHMA-04",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "asthma.outpatient.track2_step5_conflict",
+    "finding": "Mâu thuẫn logic và sai bậc điều trị ở Track 2 Bậc 5: Bệnh nhân Track 2 Bậc 5 vừa bị gán nhãn 'Track 1 Bậc 5' từ rule 15, vừa bị rule 16 hạ xuống ghi 'Track 2 Bậc 4 liều trung bình' thay vì liều cao ICS-LABA.",
+    "evidence": "rules.ts lines 820-823 (rule 15): when kiểm tra currentStep === 5 mà không loại trừ Track 2, sinh khuyến cáo có tiêu đề: 'rec_asthma_track1_step5_lama_biologic' ('Track 1 Bậc 5...'). Đồng thời, lines 897-901 (rule 16): kiểm tra 'else if (currentStep === 4 || currentStep === 5)' và gán tiêu đề: 'Track 2 Bậc 4: Fluticasone/salmeterol 250/25 mcg liều trung bình + Salbutamol khi cần'. Hậu quả: Bệnh nhân nhận 2 khuyến cáo mâu thuẫn cùng lúc, và Bậc 5 Track 2 bị kê sai liều trung bình thay vì liều cao ICS-LABA theo GINA 2026 Strategy Report Box 4-6 (p. 83) và BYT 1851 Bảng 7 (p. 20).",
+    "suggestedFix": "Tổng quát hóa Rule 15 thành quản lý Hen nặng Bậc 5 áp dụng cho cả hai Track (như GINA 2026 p. 84: 'In Step 5, treatment options for Tracks 1 and 2 are similar'). Trong Rule 16, tách riêng Bậc 5: Nếu currentStep === 5 thì tiêu đề phải là 'Track 2 Bậc 5: Fluticasone/salmeterol liều cao (500/50 mcg x 2 lần/ngày) + phối hợp LAMA + Chuyển chuyên khoa'."
+  },
+  {
+    "id": "R1-ASTHMA-05",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "asthma.outpatient.step_down_stable",
+    "finding": "Bỏ sót tiền sử đợt cấp (exacerbationsLastYear) và chức năng phổi (fev1Pct) trong quy tắc hạ bậc điều trị (step_down_stable), vi phạm nguyên tắc an toàn của GINA 2026 và BYT 1851.",
+    "evidence": "rules.ts lines 584-602: Rule step_down_stable chỉ kiểm tra wellControlledMonths >= 3 mà hoàn toàn không đọc ci.exacerbationsLastYear hay ctx.patient.fev1Pct (mặc dù đã có trong inputs.ts). Nếu bệnh nhân có 2 đợt cấp nặng hoặc FEV1 < 60% trong 12 tháng qua nhưng gần đây ổn định 3 tháng, hệ thống vẫn sinh khuyến cáo hạ bậc giảm 25–50% liều ICS. Đối chiếu GINA 2026 Strategy Report Box 2-2B (p. 42) & p. 37: 'If the patient has risk factors for asthma exacerbations, step down treatment only with close supervision'; GINA Summary Guide p. 27: 'Assess risk factors for exacerbation, including history of previous exacerbations... before stepping down'; BYT 1851 Bảng 3B (p. 15).",
+    "suggestedFix": "Bổ sung kiểm tra trong when() của rule step_down_stable: Nếu ci.exacerbationsLastYear > 0 hoặc ctx.patient.fev1Pct < 60, không tự động sinh khuyến cáo hạ bậc, hoặc phải sinh cảnh báo nguy cơ đợt cấp cao (CAUTION) yêu cầu duy trì liều hiện tại và chỉ hạ bậc dưới sự giám sát trực tiếp của chuyên gia hô hấp."
+  },
+  {
+    "id": "R1-ASTHMA-06",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "asthma.inpatient.discharge_plan",
+    "finding": "Thiếu chặn độ tuổi < 12 tuổi trong quy tắc Kế hoạch xuất viện nội viện (asthma.inpatient.discharge_plan), dẫn đến nguy cơ kê đơn duy trì Track 1 MART liều người lớn cho trẻ em.",
+    "evidence": "rules.ts lines 464-473: when() chỉ kiểm tra: 'return ci.acuteResponseAfter1h === 'good_response';' mà không kiểm tra độ tuổi (age >= 12) như tất cả các rule khác. Nếu một bệnh nhi 7 tuổi nhập viện và đáp ứng tốt sau 1 giờ, hệ thống sẽ sinh đơn xuất viện: 'Budesonide/formoterol 160/4.5 mcg vừa duy trì vừa cắt cơn (tối đa 12 nhát/ngày)'. Đối chiếu GINA 2026 Table 7 (Summary Guide p. 45): Trẻ 6–11 tuổi chỉ dùng Budesonide/formoterol 80/4.5 mcg, tối đa 8 nhát/ngày; Bậc 5 MART không khuyến cáo.",
+    "suggestedFix": "Thêm kiểm tra tuổi vào when() của asthma.inpatient.discharge_plan: 'const age = need(ctx, 'age'); if (age !== undefined && age < th('asthma.age.min_adult_adolescent')) return false;' để đảm bảo chặn hoàn toàn trẻ < 12 tuổi khỏi phác đồ xuất viện người lớn."
+  },
+  {
+    "id": "R1-ASTHMA-07",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "asthma.inpatient.mild_moderate_exacerbation",
+    "finding": "Quy tắc Cơn hen cấp nhẹ - trung bình (asthma.inpatient.mild_moderate_exacerbation) tự động kích hoạt trên mọi bệnh nhân nội trú ngay cả khi đã hồi phục tốt chuẩn bị xuất viện.",
+    "evidence": "rules.ts lines 400-429: when() của rule này chỉ trả về '!isSevere'. Nó không kiểm tra xem bệnh nhân có thực sự đang trong cơn hen cấp hay không, và không loại trừ trường hợp acuteResponseAfter1h === 'good_response'. Kết quả là ở bệnh nhân đang hồi phục chuẩn bị xuất viện (Rule 8), hệ thống vẫn sinh thêm Rule 7 yêu cầu 'Khởi trị Cơn hen cấp nhẹ - trung bình (Salbutamol 4–10 nhát + Prednisolone 40–50 mg x 5–7 ngày)', gây xung đột và trùng lặp chỉ định.",
+    "suggestedFix": "Thêm điều kiện trong when(): 'if (ci.acuteResponseAfter1h === 'good_response') return false;' và đảm bảo có dấu hiệu cơn cấp hoạt động trước khi sinh khuyến cáo xử trí cấp cứu ban đầu."
+  },
+  {
+    "id": "R1-ASTHMA-08",
+    "severity": "major",
+    "itemType": "missing",
+    "itemId": "asthma.rules.profileDiff_vietnam",
+    "finding": "Thiếu hoàn toàn cơ chế phân nhánh khuyến cáo theo profile Việt Nam (profileDiff VN) giữa GINA 2026 và Bộ Y tế QĐ 1851/2020 & 5850/2021.",
+    "evidence": "Trong rules.ts, tất cả 17 rule đều khai báo profiles: ['INTL', 'VN', 'US'] nhưng trong code xử lý không có bất kỳ dòng nào kiểm tra ctx.profile. Các điểm khác biệt cốt lõi của hướng dẫn Việt Nam bị bỏ sót gồm: 1) BYT 1851 Bảng 5 & Bảng 7 cho phép dùng ICS liều thấp duy trì + SABA khi cần hoặc LTRA (Montelukast) ở Bậc 1–2 tại y tế cơ sở nơi chưa có sẵn ICS-formoterol hoặc chưa có BHYT; 2) Danh mục thuốc sinh học lưu hành tại VN (Omalizumab, Mepolizumab, Benralizumab, Dupilumab có phê duyệt; Tezepelumab chưa phổ biến); 3) Liều Salbutamol khởi đầu cơn cấp tại BYT 5850 là 4–10 nhát xịt (thay vì 6–10 nhát của GINA).",
+    "suggestedFix": "Bổ sung nhánh logic khi ctx.profile === 'VN' để tinh chỉnh khuyến cáo phù hợp với thực tiễn lâm sàng và phân tuyến kỹ thuật của Bộ Y tế Việt Nam."
+  },
+  {
+    "id": "R1-ASTHMA-09",
+    "severity": "minor",
+    "itemType": "ui",
+    "itemId": "customInputs.relieverNeededMoreThanTwiceWeek",
+    "finding": "Câu hỏi số 3 về thuốc cắt cơn trong inputs.ts chưa phân định rõ giữa SABA và thuốc cắt cơn chống viêm AIR (ICS-formoterol) theo đúng GINA 2026.",
+    "evidence": "inputs.ts line 36-41: labelVi ghi '3. Cần dùng thuốc cắt cơn (giảm triệu chứng) > 2 lần/tuần?'. GINA 2026 Table 2A (p. 12 Summary Guide) và Box 2-2A footnote † (p. 42 Report) nêu rõ: 'SABA reliever needed more than twice/week? *Only for patients using SABA reliever (not ICS-formoterol reliever)'. Bệnh nhân đang dùng Track 1 dùng ICS-formoterol cắt cơn không bị tính điểm mất kiểm soát như SABA.",
+    "suggestedFix": "Bổ sung chú thích rõ trong helpVi và label: 'Chỉ áp dụng khi người bệnh dùng thuốc cắt cơn là SABA (Salbutamol, Ventolin, Terbutaline); không tính thuốc cắt cơn ICS-formoterol trong Track 1'."
+  },
+  {
+    "id": "R1-ASTHMA-10",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "asthma.safety.mart_max_overuse",
+    "finding": "Hành động của cảnh báo quá liều MART gán action: 'HOLD' có thể gây nguy cơ bệnh nhân ngưng dùng thuốc cắt cơn ngay giữa cơn hen kịch phát.",
+    "evidence": "rules.ts line 176: action: 'HOLD', drugId: 'budesonide_formoterol'. GINA 2026 Table 7 (p. 45 Summary Guide) khuyến cáo: 'Seek medical care if >12 total inhalations needed in a 24-hour period'. Hành động 'HOLD' trên UI có thể khiến người bệnh hiểu lầm là phải cất bình hít đi không được dùng nữa trong khi đang khó thở nguy kịch.",
+    "suggestedFix": "Đổi action thành 'REFER' (hoặc MONITOR) với tiêu đề: 'BÁO ĐỘNG CẤP CỨU: Đã dùng ${puffs} nhát > 12 nhát/ngày – Cần đến ngay cơ sở y tế để được cấp cứu hồi sức'."
+  },
+  {
+    "id": "R1-ASTHMA-11",
+    "severity": "suggestion",
+    "itemType": "missing",
+    "itemId": "asthma.rules.acute_sedatives_antibiotics_warning",
+    "finding": "Bổ sung cảnh báo an toàn: Chống chỉ định dùng thuốc an thần và tránh lạm dụng kháng sinh thường quy trong cơn hen cấp.",
+    "evidence": "GINA 2026 Report p. 222 & BYT 5850 trang 17: Thuốc an thần bị chống chỉ định tuyệt đối trong cơn hen cấp vì nguy cơ ức chế hô hấp dẫn đến ngừng thở; Kháng sinh không được chỉ định thường quy trừ khi có bằng chứng nhiễm khuẩn phổi rõ ràng (sốt cao, đờm mủ, X-quang đông đặc).",
+    "suggestedFix": "Bổ sung một rule cảnh báo an toàn trong phân hệ Cơn hen cấp nội viện nhắc nhở bác sĩ không kê đơn an thần và tránh lạm dụng kháng sinh theo kinh nghiệm."
+  },
+  {
+    "id": "R1-ASTHMA-12",
+    "severity": "suggestion",
+    "itemType": "missing",
+    "itemId": "asthma.rules.non_pharm_smoking_vaccine",
+    "finding": "Bổ sung khuyến cáo can thiệp không dùng thuốc: Tư vấn cai thuốc lá và tiêm phòng vắc-xin cúm / phế cầu cho bệnh nhân hen phế quản.",
+    "evidence": "GINA 2026 Box 3-4, Box 4-6 & BYT 5850 trang 19: Khói thuốc lá gây kháng corticosteroid hít và tăng tần suất đợt cấp. Khuyến cáo Class I về hỗ trợ cai thuốc lá và tiêm phòng vắc-xin cúm hàng năm, vắc-xin phế cầu cho người bệnh hen.",
+    "suggestedFix": "Thêm rule tư vấn cai thuốc lá khi customInputs.smokingStatus === 'current' và nhắc lịch tiêm chủng định kỳ."
+  }
+]

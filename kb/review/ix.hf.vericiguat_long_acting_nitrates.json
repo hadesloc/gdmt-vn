@@ -1,0 +1,27 @@
+{
+  "itemId": "ix.hf.vericiguat_long_acting_nitrates",
+  "contentHash": "a551f14fdbacf2a25e91549c0e5a19d5b00b0e28a7f0ee925852dd0c2d499c00",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.hf.vericiguat_long_acting_nitrates",
+      "contentHash": "eaa6ae65efa055ab",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T09:00:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-28T09:00:00.000Z",
+          "role": "Agent G5 (HF Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF interaction ix.hf.vericiguat_long_acting_nitrates (Round 2 R1/R2/R3 remediation & verbatim PDF citation verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

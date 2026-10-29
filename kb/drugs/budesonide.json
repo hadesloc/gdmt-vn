@@ -1,0 +1,74 @@
+{
+  "id": "budesonide",
+  "nameVi": "Budesonide",
+  "inn": "Budesonide",
+  "class": "ICS",
+  "vnBrands": [
+    "Pulmicort",
+    "Pulmicort Respules",
+    "Budecort"
+  ],
+  "forms": [
+    "Khí dung hỗn dịch 0.5 mg/2 ml, 1 mg/2 ml",
+    "Bình hít bột khô Turbuhaler 100 mcg, 200 mcg"
+  ],
+  "start": {
+    "amount": 200,
+    "unit": "mcg",
+    "frequency": "1-2 lần/ngày",
+    "route": "hít",
+    "description": "Liều thấp 200–400 mcg/ngày"
+  },
+  "target": {
+    "amount": 800,
+    "unit": "mcg",
+    "frequency": "2 lần/ngày",
+    "route": "hít",
+    "description": "Liều cao >800 mcg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận",
+      "citationIds": [
+        "gina.asthma.2026.table_6_budesonide"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Chất ức chế mạnh CYP3A4 (ketoconazole, itraconazole, clarithromycin) làm tăng nồng độ budesonide toàn thân",
+    "Hướng dẫn dùng thuốc: Súc miệng kỹ bằng nước sạch và nhổ đi ngay sau khi hít thuốc để phòng ngừa nấm candida hầu họng và khản tiếng"
+  ],
+  "citationIds": [
+    "gina.asthma.2026.table_6_budesonide"
+  ],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Thuốc ICS được nghiên cứu nhiều nhất và an toàn nhất trong thai kỳ (FDA Category B). Tiếp tục duy trì để ngừa thiếu oxy phôi thai.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Budesonide bài tiết rất ít qua sữa mẹ, tương thích khi cho con bú.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity",
+      "messageVi": "Quá mẫn với budesonide",
+      "citationIds": [
+        "gina.asthma.2026.table_6_budesonide"
+      ]
+    }
+  ],
+  "classes": [
+    "ics"
+  ]
+}

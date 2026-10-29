@@ -1,0 +1,27 @@
+{
+  "itemId": "dm2.tirzepatide.contraception_barrier_weeks",
+  "contentHash": "fa6cb5049fd326353b2cf821fb1cf3959d186dd86e1cb55dc1fa3b8b3d01a675",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "dm2.tirzepatide.contraception_barrier_weeks",
+      "contentHash": "65166de422877e44",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T07:05:00.000Z",
+      "reports": [
+        {
+          "round": 3,
+          "reviewedAt": "2026-10-28T07:05:00.000Z",
+          "role": "Agent F4 (DM2 Round 3 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Verified threshold dm2.tirzepatide.contraception_barrier_weeks contentHash, verbatim PDF/HTML quotes, and Round 3 R1/R2/R3 clinical schema compliance."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

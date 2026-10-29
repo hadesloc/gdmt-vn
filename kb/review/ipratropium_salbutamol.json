@@ -1,0 +1,26 @@
+{
+  "itemId": "ipratropium_salbutamol",
+  "contentHash": "4e1a4f1111547cf9b7a3708edf86bcdbb1359d31428f5c56c7a026c7b006727b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ipratropium_salbutamol",
+      "contentHash": "e9027edd82f5b092",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD drug remediation: verified verbatim citations & content hash"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

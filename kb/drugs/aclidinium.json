@@ -1,0 +1,108 @@
+{
+  "id": "aclidinium",
+  "nameVi": "Aclidinium",
+  "inn": "Aclidinium bromide",
+  "class": "LAMA",
+  "vnBrands": [],
+  "forms": [
+    "Bột hít phân liều Genuair 322 mcg (Eklira Genuair – chưa đăng ký lưu hành tại VN)"
+  ],
+  "start": {
+    "amount": 322,
+    "unit": "mcg",
+    "frequency": "2 lần/ngày",
+    "route": "hít",
+    "description": "Hít 1 liều Genuair 322 mcg x 2 lần/ngày (sáng và tối)"
+  },
+  "target": {
+    "amount": 322,
+    "unit": "mcg",
+    "frequency": "2 lần/ngày",
+    "route": "hít",
+    "description": "Hít 1 liều Genuair 322 mcg x 2 lần/ngày"
+  },
+  "titration": {
+    "step": "Duy trì liều cố định hàng ngày",
+    "intervalDays": 30,
+    "maxDose": "322 mcg 2 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều khi eGFR ≥ 15 mL/phút/1.73m² (thủy phân nhanh trong huyết tương)",
+      "citationIds": [
+        "ema.trimbow.renal_pk_beclometasone_formoterol",
+        "ema.ultibro.renal_dosing_egfr30"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận (thải trừ qua thận dưới dạng nguyên vẹn < 1%)",
+      "citationIds": [
+        "ema.trimbow.renal_pk_beclometasone_formoterol",
+        "ema.ultibro.renal_dosing_egfr30"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Không phối hợp thêm LAMA hoặc SAMA thường quy khác",
+    "Thận trọng theo dõi triệu chứng tiểu khó ở người bệnh tăng sản lành tính tuyến tiền liệt (BPH) ổn định"
+  ],
+  "citationIds": [
+    "gold.copd.2026.lama_pharmacology_list",
+    "gold.copd.2026.lama_glaucoma_caution",
+    "gina.copd.2026.lama_urinary_retention",
+    "ema.trimbow.renal_pk_beclometasone_formoterol",
+    "ema.ultibro.renal_dosing_egfr30",
+    "ema.ultibro.pregnancy_lactation",
+    "ema.ultibro.lactose_excipient_contra",
+    "ema.ultibro.hypersensitivity_contra"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Dữ liệu trên thai kỳ hạn chế; cân nhắc lợi ích và nguy cơ.",
+    "citationIds": [
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Aclidinium thủy phân rất nhanh trong huyết tương nên nồng độ toàn thân thấp; cân nhắc lợi ích nuôi con bằng sữa mẹ và lợi ích điều trị.",
+    "citationIds": [
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "severe_milk_protein_allergy",
+      "messageVi": "Chống chỉ định ở bệnh nhân có tiền sử dị ứng nặng / phản vệ với protein sữa (chế phẩm bột khô DPI chứa tá dược lactose)",
+      "citationIds": [
+        "ema.ultibro.lactose_excipient_contra",
+        "ema.ultibro.hypersensitivity_contra"
+      ]
+    },
+    {
+      "code": "narrow_angle_glaucoma",
+      "messageVi": "Chống chỉ định hoặc tránh tiếp xúc mắt ở người bệnh glôcôm góc đóng cấp tính chưa điều trị",
+      "citationIds": [
+        "gold.copd.2026.lama_glaucoma_caution"
+      ]
+    },
+    {
+      "code": "urinary_retention",
+      "messageVi": "Chống chỉ định khi đang bí tiểu cấp chưa xử trí; thận trọng theo dõi triệu chứng đường tiểu ở người bệnh tăng sản tuyến tiền liệt",
+      "citationIds": [
+        "gina.copd.2026.lama_urinary_retention"
+      ]
+    }
+  ],
+  "classes": [
+    "lama"
+  ]
+}

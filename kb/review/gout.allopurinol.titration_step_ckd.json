@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.allopurinol.titration_step_ckd",
+  "contentHash": "19bfb43cf0aa39682a267b3103a98fa270036234a7d095db13683ad1022e789f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.allopurinol.titration_step_ckd",
+      "contentHash": "dfedce23a9eceb75",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.allopurinol.titration_step_ckd"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

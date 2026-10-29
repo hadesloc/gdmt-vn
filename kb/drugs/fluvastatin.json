@@ -1,0 +1,124 @@
+{
+  "id": "fluvastatin",
+  "nameVi": "Fluvastatin",
+  "inn": "Fluvastatin sodium",
+  "class": "Statin (ức chế HMG-CoA reductase)",
+  "classes": [
+    "statin"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Lescol",
+    "Lescol XL"
+  ],
+  "forms": [
+    "Viên nang 20 mg",
+    "Viên nang 40 mg",
+    "Viên nén phóng thích kéo dài (XL) 80 mg"
+  ],
+  "start": {
+    "amount": 40,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "20–40 mg uống buổi tối (cường độ thấp), hoặc 40 mg x 2 lần/ngày / 80 mg XL x 1 lần/ngày (cường độ trung bình)"
+  },
+  "target": {
+    "amount": 80,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "80 mg XL x 1 lần/ngày hoặc 40 mg x 2 lần/ngày"
+  },
+  "titration": {
+    "step": "Đánh giá lại LDL-C sau 4–12 tuần để tăng liều tối đa 80 mg/ngày",
+    "intervalDays": 28,
+    "maxDose": "80 mg/ngày (không vượt quá 20 mg x 2 lần/ngày khi dùng fluconazole hoặc 20 mg/ngày khi dùng clarithromycin)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "20–80 mg/ngày",
+      "citationIds": [
+        "acc.lipid.2026.fluvastatin_lovastatin_dosing",
+        "acc.lipid.2026.statin_ckd_safety"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "Khởi đầu 20–40 mg/ngày; thận trọng với liều > 40 mg/ngày ở suy thận nặng",
+      "note": "Fluvastatin thải trừ chủ yếu qua mật (< 6% qua nước tiểu), tuy nhiên liều > 40 mg/ngày chưa được nghiên cứu rộng ở suy thận nặng",
+      "citationIds": [
+        "acc.lipid.2026.statin_ckd_safety"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_fluvastatin_alt",
+      "parameter": "ALT",
+      "operator": ">",
+      "threshold": 3,
+      "unit": "x ULN",
+      "action": "hold",
+      "messageVi": "Men gan ALT tăng dai dẳng > 3 lần ULN: Tạm ngưng Fluvastatin và đánh giá nguyên nhân",
+      "citationIds": [
+        "acc.lipid.2026.active_liver_disease_contra"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Không sử dụng Fluvastatin trong thai kỳ; ngừng ngay khi có thai.",
+    "citationIds": [
+      "acc.lipid.2026.statin_pregnancy_lactation_avoid"
+    ]
+  },
+  "lactation": {
+    "status": "contra",
+    "notesVi": "Không sử dụng Fluvastatin trong thời kỳ cho con bú.",
+    "citationIds": [
+      "acc.lipid.2026.statin_pregnancy_lactation_avoid"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định/tránh dùng Fluvastatin trong thai kỳ",
+      "citationIds": [
+        "acc.lipid.2026.statin_pregnancy_lactation_avoid"
+      ]
+    },
+    {
+      "code": "active_liver_disease",
+      "messageVi": "Chống chỉ định trong bệnh gan cấp tính đang hoạt động hoặc tăng transaminase kéo dài chưa rõ nguyên nhân",
+      "citationIds": [
+        "acc.lipid.2026.active_liver_disease_contra"
+      ]
+    },
+    {
+      "code": "decompensated_cirrhosis",
+      "messageVi": "Chống chỉ định trong xơ gan mất bù",
+      "citationIds": [
+        "acc.lipid.2026.active_liver_disease_contra"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chuyển hóa chủ yếu qua CYP2C9 (ít phụ thuộc CYP3A4): fluconazole làm tăng gấp đôi nồng độ fluvastatin (không quá 20 mg x 2 lần/ngày)",
+    "Khi dùng đồng thời với clarithromycin, liều fluvastatin không vượt quá 20 mg/ngày (QĐ 2131/QĐ-BYT 2026); với cyclosporine không vượt quá 20 mg x 2 lần/ngày",
+    "Chống chỉ định phối hợp với gemfibrozil; theo dõi INR khi dùng cùng warfarin/acenocoumarol"
+  ],
+  "citationIds": [
+    "acc.lipid.2026.fluvastatin_lovastatin_dosing",
+    "acc.lipid.2026.statin_pregnancy_lactation_avoid",
+    "acc.lipid.2026.statin_ckd_safety",
+    "acc.lipid.2026.active_liver_disease_contra",
+    "byt.copd.2026.pravastatin_clarithromycin_limit_40mg"
+  ]
+}

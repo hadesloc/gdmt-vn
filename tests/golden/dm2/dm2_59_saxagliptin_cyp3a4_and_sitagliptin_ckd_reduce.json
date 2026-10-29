@@ -1,0 +1,70 @@
+{
+  "id": "dm2_59_saxagliptin_cyp3a4_and_sitagliptin_ckd_reduce",
+  "titleVi": "Tương tác Saxagliptin 5 mg với Clarithromycin (ức chế mạnh CYP3A4/5): Giảm liều tối đa còn 2.5 mg/ngày",
+  "source": "FDA Onglyza Prescribing Information Section 2.3 & 7.1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 56,
+    "sex": "male",
+    "weight": 66,
+    "height": 170,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 74,
+    "scr": 85,
+    "k": 4.2,
+    "glucose": 8.0,
+    "hba1c": 7.5,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "saxagliptin",
+        "name": "Saxagliptin",
+        "dose": 5,
+        "unit": "mg"
+      },
+      {
+        "drugId": "clarithromycin",
+        "name": "Clarithromycin",
+        "dose": 500,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "saxagliptin",
+        "action": "REDUCE",
+        "doseContains": "2.5 mg"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "saxagliptin",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Khi dùng đồng thời chất ức chế mạnh CYP3A4/5 (Clarithromycin, Ketoconazole, Itraconazole, Ritonavir), giới hạn liều Saxagliptin tối đa 2.5 mg x 1 lần/ngày dù chức năng thận bình thường."
+}

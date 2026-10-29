@@ -1,0 +1,80 @@
+{
+  "id": "lipid_49_outpatient_intolerance_dual_oral_add_pcsk9",
+  "titleVi": "Không dung nạp Statin đang dùng Ezetimibe 10 + Bempedoic acid 180 nhưng LDL 2.1 - Duy trì hai thuốc uống và thêm PCSK9i",
+  "source": "ESC/EAS 2025 & ACC/AHA 2026 / esc.lipid.2025.non_statin_intolerance_combo",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 63,
+    "sex": "female",
+    "weight": 59,
+    "height": 158,
+    "sbp": 126,
+    "dbp": 76,
+    "hr": 70,
+    "scr": 80,
+    "uricAcid": 310,
+    "tc": 4.2,
+    "hdl": 1.3,
+    "ldl": 2.1,
+    "tg": 1.5,
+    "conditions": {
+      "ascvd": true,
+      "statinIntolerance": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "ezetimibe",
+        "name": "Ezetimibe",
+        "dose": 10,
+        "unit": "mg"
+      },
+      {
+        "drugId": "bempedoic_acid",
+        "name": "Bempedoic acid",
+        "dose": 180,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "ezetimibe",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "bempedoic_acid",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "evolocumab",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R2-R1-02 & LIPID-R2-R3-08: Bệnh nhân ASCVD không dung nạp statin đã phối hợp đủ bộ đôi thuốc uống Ezetimibe + Bempedoic acid nhưng LDL-C 2.1 mmol/L chưa đạt đích < 1.4; phải duy trì cả hai thuốc nền và bổ sung PCSK9i thay vì ngõ cụt điều trị."
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "amiodarone",
+  "contentHash": "a9c0233e2bcf7c935b1ae86c5beb02c5eba226a4dec95c8dba178e95f0d8f826",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "amiodarone",
+      "contentHash": "4af2923d335e54c2",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF drug amiodarone (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

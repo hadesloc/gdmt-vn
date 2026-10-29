@@ -1,0 +1,51 @@
+{
+  "id": "ckd_26_inpatient_ci_aki_prevention",
+  "titleVi": "Nội viện - Gói dự phòng tổn thương thận cấp do thuốc cản quang (CI-AKI) ở CKD G4 (eGFR < 30 mL/phút/1.73m²)",
+  "source": "ESC 2026 CVD-CKD Table 30 (Class IIb, Level C) & KDIGO 2012 AKI Rec 4.3.2 & 4.4.1",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_26",
+    "name": "BN CKD 26",
+    "age": 67,
+    "sex": "male",
+    "weight": 68,
+    "sbp": 132,
+    "dbp": 80,
+    "hr": 76,
+    "scr": 230,
+    "conditions": {
+      "ckd": true
+    },
+    "customInputs": {
+      "contrastPlanned": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_ckd_ci_aki_bundle",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân CKD nặng giai đoạn G4 (eGFR ~26 < 30 mL/phút/1.73m²) cần dùng thuốc cản quang iod có chỉ định áp dụng gói dự phòng CI-AKI theo ESC 2026 Bảng 30."
+}

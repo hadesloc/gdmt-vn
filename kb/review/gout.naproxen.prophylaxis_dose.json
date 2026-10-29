@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.naproxen.prophylaxis_dose",
+  "contentHash": "d709e7d87847b9c4c04385e5fa5845a6417dc9c0deb88df8805bbe663abebd4e",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.naproxen.prophylaxis_dose",
+      "contentHash": "ecb3aabc18b05b23",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.naproxen.prophylaxis_dose"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

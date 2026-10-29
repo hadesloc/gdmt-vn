@@ -1,0 +1,105 @@
+{
+  "id": "linagliptin",
+  "nameVi": "Linagliptin",
+  "inn": "Linagliptin",
+  "class": "DPP-4i",
+  "vnBrands": [
+    "Trajenta"
+  ],
+  "forms": [
+    "Viên nén 5 mg"
+  ],
+  "start": {
+    "amount": 5,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Không cần hiệu chỉnh liều theo chức năng thận ở mọi giai đoạn CKD (kể cả lọc máu)"
+  },
+  "target": {
+    "amount": 5,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống"
+  },
+  "titration": {
+    "step": "0 mg",
+    "intervalDays": 0
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "5 mg 1 lần/ngày (không cần chỉnh liều)",
+      "citationIds": [
+        "fda.linagliptin.no_renal_adj"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "5 mg 1 lần/ngày (kể cả bệnh nhân đang lọc máu)",
+      "citationIds": [
+        "fda.linagliptin.no_renal_adj"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_linagliptin_glp1_conflict",
+      "parameter": "glp1_concurrent",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Không phối hợp Linagliptin với GLP-1 RA.",
+      "citationIds": [
+        "ada.dm2.2026.no_dpp4_plus_glp1"
+      ]
+    }
+  ],
+  "interactions": [
+    "Không dùng chung với GLP-1 RA"
+  ],
+  "citationIds": [
+    "fda.linagliptin.no_renal_adj",
+    "ada.dm2.2026.no_dpp4_plus_glp1",
+    "fda.linagliptin.pancreatitis",
+    "ada.dm2.2026.dpp4_pancreatitis"
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Tránh dùng trong thai kỳ do thiếu dữ liệu an toàn dài hạn (ADA 2026)",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_noninsulin"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo khi cho con bú",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_noninsulin"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Tránh sử dụng Linagliptin trong thai kỳ",
+      "citationIds": [
+        "ada.dm2.2026.pregnancy_noninsulin"
+      ]
+    },
+    {
+      "code": "acute_pancreatitis",
+      "messageVi": "Tiền sử viêm tụy cấp",
+      "citationIds": [
+        "fda.linagliptin.pancreatitis",
+        "ada.dm2.2026.dpp4_pancreatitis"
+      ]
+    }
+  ],
+  "classes": [
+    "dpp4i"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "itemId": "dm2.sitagliptin.egfr_lt30_dose",
+  "contentHash": "cbcfd6894135667c2e616936933ea277fef4f9dbf94e930e5cc69c65e2fdbff0",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "dm2.sitagliptin.egfr_lt30_dose",
+      "contentHash": "ca3c4da272030630",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-27T15:25:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T15:25:00.000Z",
+          "role": "Agent F3 (DM2 Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Created and verified dm2.sitagliptin.egfr_lt30_dose for DM2 Round 2 remediation."
+        },
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T15:25:00.000Z",
+          "role": "Agent F3 (DM2 Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Verified dm2.sitagliptin.egfr_lt30_dose contentHash, verbatim PDF quotes, and Round 2 R1/R2/R3 clinical schema compliance."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

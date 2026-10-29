@@ -1,0 +1,74 @@
+{
+  "id": "dm2_50_inpatient_eudka_immediate_dextrose",
+  "titleVi": "Euglycemic DKA nội viện với glucose < 13.9 mmol/L: Bổ sung Dextrose tĩnh mạch ngay từ đầu song song Regular insulin",
+  "source": "ADA/EASD/JBDS/DTI 2024 Hyperglycemic Crises Consensus",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 54,
+    "sex": "female",
+    "weight": 70,
+    "height": 160,
+    "sbp": 114,
+    "dbp": 72,
+    "hr": 106,
+    "scr": 82,
+    "k": 4.2,
+    "glucose": 8.8,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "dapagliflozin",
+        "name": "Dapagliflozin",
+        "dose": 10,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "inpatientUnit": "icu",
+      "bloodKetones": 4.4,
+      "venousPh": 7.19,
+      "serumBicarb": 11
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_dm2_dka_active_management",
+        "drugId": "insulin_regular",
+        "action": "START",
+        "doseContains": "ngay từ đầu"
+      },
+      {
+        "drugId": "dapagliflozin",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "dapagliflozin",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Trong Euglycemic DKA có glucose ban đầu < 13.9 mmol/L (250 mg/dL), phác đồ chỉ định truyền song song dung dịch Dextrose 5–10% ngay từ thời điểm bắt đầu Regular insulin tĩnh mạch để xóa toan ceton an toàn không gây hạ đường huyết."
+}

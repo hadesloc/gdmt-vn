@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.prednisolone.flare_dose_max",
+  "contentHash": "cece5e2212b54b5de9905ef2f94db1a483d05cb99c334272f765b99dde72bf5c",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.prednisolone.flare_dose_max",
+      "contentHash": "b57371960e07bc72",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.prednisolone.flare_dose_max"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

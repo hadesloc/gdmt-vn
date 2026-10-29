@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.bp.grade3_dbp",
+  "contentHash": "529365a946289a1d88521af35bba5babc961d92d3f4f4c803d6a5a1a51e7583a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.bp.grade3_dbp",
+      "contentHash": "024d71f552c417bc",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T15:55:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.bp.grade3_dbp."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T15:55:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

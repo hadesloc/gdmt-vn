@@ -1,0 +1,34 @@
+{
+  "itemId": "hf.digoxin.egfr_low_dose_max",
+  "contentHash": "bf4939e6983359af6465938cdbb1275b4a5f85c775e656b17f198d4df7309ccc",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "hf.digoxin.egfr_low_dose_max",
+      "contentHash": "c6d88ad5739229f3",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T09:00:00.000Z",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T14:39:00.000Z",
+          "role": "Agent G4 (HF Remediation & QA-10)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF threshold hf.digoxin.egfr_low_dose_max (Round 1 R1/R2/R3 remediation & QA-10 verified)."
+        },
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-28T09:00:00.000Z",
+          "role": "Agent G5 (HF Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF threshold hf.digoxin.egfr_low_dose_max (Round 2 R1/R2/R3 remediation & verbatim PDF citation verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "gout_08_acute_flare_cyclosporine_ckd_prednisolone",
+  "titleVi": "Ghép thận đang dùng Cyclosporine + tự uống Colchicine khi lên cơn gút: NGỪNG NGAY Colchicine & Dùng Prednisolone",
+  "source": "FDA Colchicine Label & KDIGO 2024 (fda.colchicine.cyp3a4_agents, kdigo.gout.2024.acute_flare_ckd)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 54,
+    "sex": "male",
+    "weight": 65,
+    "scr": 165,
+    "uricAcid": 540,
+    "conditions": {
+      "gout": true,
+      "ckd": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "cyclosporine",
+        "name": "Cyclosporine",
+        "dose": "100",
+        "unit": "mg"
+      },
+      {
+        "drugId": "colchicine",
+        "name": "Colchicine",
+        "dose": "1",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": true,
+      "goutFlaresYear": 2
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "colchicine",
+        "ruleId": "rec_gout_colchicine_stop_contra",
+        "action": "STOP"
+      },
+      {
+        "drugId": "naproxen",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "prednisolone",
+        "ruleId": "rec_gout_oral_corticosteroid_flare",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "colchicine",
+        "action": "START"
+      },
+      {
+        "drugId": "colchicine",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "naproxen",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": [
+      {
+        "code": "ix.colchicine_strong_cyp3a4"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân sau ghép thận đang dùng Cyclosporine (ức chế mạnh P-gp/CYP3A4), eGFR ~40, tự mua Colchicine uống khi đau gút. Phải phát lệnh STOP Colchicine khẩn cấp kèm cảnh báo tương tác và chuyển sang Prednisolone."
+}

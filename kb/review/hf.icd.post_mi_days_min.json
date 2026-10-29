@@ -1,0 +1,26 @@
+{
+  "itemId": "hf.icd.post_mi_days_min",
+  "contentHash": "74d4ff4360d581338c5135260792d14616fa592b44a9eb5e1a04a4aa978485be",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "hf.icd.post_mi_days_min",
+      "contentHash": "8d89dff484214d17",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-27T14:39:00.000Z",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T14:39:00.000Z",
+          "role": "Agent G4 (HF Remediation & QA-10)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF threshold hf.icd.post_mi_days_min (Round 1 R1/R2/R3 remediation & QA-10 verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

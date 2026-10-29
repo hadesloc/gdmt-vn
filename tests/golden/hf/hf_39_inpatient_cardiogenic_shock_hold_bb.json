@@ -1,0 +1,84 @@
+{
+  "id": "hf_39_inpatient_cardiogenic_shock_hold_bb",
+  "titleVi": "Suy tim cấp nội viện biến chứng Sốc tim (SBP 82 mmHg): Chuyển CCU/ICU, tạm ngưng Chẹn beta & Furosemide liều cao",
+  "source": "ESC 2026 HF Section Acute HF & Cardiogenic Shock",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 69,
+    "sex": "male",
+    "weight": 64,
+    "height": 165,
+    "sbp": 82,
+    "dbp": 52,
+    "hr": 108,
+    "rhythm": "sinus",
+    "lvef": 25,
+    "nyha": 4,
+    "scr": 145,
+    "k": 4.5,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "bisoprolol",
+        "name": "Bisoprolol",
+        "dose": "5 mg x 1 lần/ngày"
+      }
+    ],
+    "selectedModules": [
+      "hf"
+    ],
+    "customInputs": {
+      "congestion": "overt",
+      "cardiogenicShock": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_hf_inpatient_shock",
+        "action": "REFER"
+      },
+      {
+        "drugId": "bisoprolol",
+        "action": "HOLD"
+      },
+      {
+        "drugId": "furosemide",
+        "action": "HOLD"
+      },
+      {
+        "ruleId": "rec_hf_inpatient_predischarge",
+        "action": "DEFER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "bisoprolol",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "isosorbide_dinitrate",
+        "action": "CONSIDER"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Suy tim cấp biến chứng sốc tim / tụt huyết áp (SBP < 90 mmHg): chuyển ngay CCU/ICU (REFER), tạm ngưng chẹn beta đang dùng (HOLD) và ưu tiên hồi sức huyết động trước khi đẩy mạnh lợi tiểu hoặc GDMT đường uống."
+}

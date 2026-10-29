@@ -1,0 +1,51 @@
+{
+  "id": "dm2_09_cardiorenal_ascvd_glp1",
+  "titleVi": "Bệnh nhân ĐTĐ2 có tiền sử nhồi máu cơ tim (ASCVD) - Chỉ định GLP-1 RA",
+  "source": "ADA 2026 SOC Ch. 9 Rec 9.7",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 61,
+    "sex": "male",
+    "weight": 76,
+    "height": 169,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 70,
+    "scr": 95,
+    "k": 4.3,
+    "glucose": 9.1,
+    "hba1c": 8.3,
+    "conditions": {
+      "dm": true,
+      "ascvd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "semaglutide",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "ASCVD: GLP-1 RA giảm biến cố MACE và tử vong."
+}

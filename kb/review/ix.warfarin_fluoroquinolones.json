@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.warfarin_fluoroquinolones",
+  "contentHash": "302cdf32caac0eaa34bc23b8d693812e05499651ab70a9afce1f5a32f0f4c078",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.warfarin_fluoroquinolones",
+      "contentHash": "a4811e2e07a07633",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.warfarin_fluoroquinolones."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

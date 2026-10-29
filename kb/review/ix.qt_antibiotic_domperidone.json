@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.qt_antibiotic_domperidone",
+  "contentHash": "6977b6eb253bdf048f1edf69fc106c3dd9d29feac3d3c487b7514774afe09592",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.qt_antibiotic_domperidone",
+      "contentHash": "d2d1d92bba1c3ab4",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.qt_antibiotic_domperidone."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "omalizumab",
+  "contentHash": "26584ac699c51af385baad2d11125931a01555faf8f6766159abaa373d4abdeb",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "omalizumab",
+      "contentHash": "4d736f7adbf4e097",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T07:10:38.304Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Cập nhật và kiểm định tự động Round 2 cho thuốc Omalizumab."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T07:10:38.304Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

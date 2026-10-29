@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.ckd.uacr_albuminuria",
+  "contentHash": "3f9ae63451570b100be1a5c41bab37c71bb5b2ce04876f712dd35a346e625efd",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.ckd.uacr_albuminuria",
+      "contentHash": "9f33c079b1f62d89",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 3 mg/mmol (quantity: uacr) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

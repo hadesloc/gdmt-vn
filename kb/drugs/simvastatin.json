@@ -1,0 +1,152 @@
+{
+  "id": "simvastatin",
+  "nameVi": "Simvastatin",
+  "inn": "Simvastatin",
+  "class": "Statin",
+  "classes": [
+    "statin"
+  ],
+  "vnBrands": [
+    "Zocor",
+    "Simvastatin Stella",
+    "Simvahexal"
+  ],
+  "forms": [
+    "Viên nén bao phim 10 mg",
+    "Viên nén bao phim 20 mg",
+    "Viên nén bao phim 40 mg"
+  ],
+  "start": {
+    "amount": 20,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "20 mg uống 1 lần/ngày vào buổi tối (khởi đầu 5 mg/ngày nếu suy thận nặng eGFR < 30)"
+  },
+  "target": {
+    "amount": 40,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "20–40 mg uống 1 lần/ngày vào buổi tối (tối đa 40 mg/ngày)"
+  },
+  "titration": {
+    "step": "Tăng liều sau 4 tuần lên tối đa 40 mg/ngày (cần cường độ cao nên chuyển sang Atorvastatin hoặc Rosuvastatin)",
+    "intervalDays": 28,
+    "maxDose": "40 mg 1 lần/ngày (chống chỉ định khởi trị/tăng liều 80 mg; tối đa 20 mg với amlodipine/amiodarone/ranolazine/bempedoic acid; tối đa 10 mg với diltiazem/verapamil/dronedarone)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "20–40 mg 1 lần/ngày",
+      "citationIds": [
+        "acc.lipid.2026.simvastatin_dose"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "Khởi đầu 5 mg 1 lần/ngày; theo dõi sát (thận trọng khi vượt 10 mg/ngày)",
+      "note": "Suy thận nặng (eGFR < 30): khởi đầu thận trọng 5 mg/ngày và theo dõi chặt triệu chứng cơ (FDA Zocor / ACC 2026)",
+      "citationIds": [
+        "acc.lipid.2026.simvastatin_dose"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_simva_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối statin trong thai kỳ và thời kỳ cho con bú",
+      "citationIds": [
+        "esc.lipid.2024.ccs_pregnancy",
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    },
+    {
+      "id": "gate_simva_max_dose",
+      "parameter": "dose",
+      "operator": ">=",
+      "threshold": 80,
+      "unit": "mg",
+      "action": "contra",
+      "messageVi": "Chống chỉ định dùng liều Simvastatin 80 mg do nguy cơ tiêu cơ vân kịch phát (FDA / ACC 2026)",
+      "citationIds": [
+        "acc.lipid.2026.simva_contra_80mg"
+      ]
+    },
+    {
+      "id": "gate_simva_alt",
+      "parameter": "ALT",
+      "operator": ">=",
+      "threshold": 3,
+      "unit": "x ULN",
+      "action": "hold",
+      "messageVi": "Men gan ALT tăng >= 3 lần ULN: Tạm ngừng hoặc giảm liều statin",
+      "citationIds": [
+        "esc.lipid.2019.monitoring_alt_elevation"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định tuyệt đối phối hợp với chất ức chế CYP3A4 mạnh (clarithromycin, erythromycin, itraconazole, ketoconazole, posaconazole, voriconazole, ritonavir, nirmatrelvir/ritonavir, cobicistat), Cyclosporine và Gemfibrozil",
+    "Dùng kèm Ticagrelor: giới hạn liều Simvastatin tối đa 40 mg/ngày (ưu tiên chuyển sang Atorvastatin không giới hạn liều)",
+    "Dùng kèm Amiodarone, Amlodipine, Ranolazine hoặc Bempedoic acid: giới hạn liều Simvastatin tối đa 20 mg/ngày",
+    "Dùng kèm Verapamil, Diltiazem hoặc Dronedarone: giới hạn liều Simvastatin tối đa 10 mg/ngày",
+    "Tương tác với Colchicine: tăng nguy cơ bệnh cơ/tiêu cơ vân; thận trọng làm nặng triệu chứng nhược cơ (myasthenia gravis / nhược cơ thể mắt)"
+  ],
+  "citationIds": [
+    "acc.lipid.2026.simvastatin_dose",
+    "acc.lipid.2026.simva_contra_80mg",
+    "acc.lipid.2026.ddi_table27_simva_ticagrelor",
+    "fda.amiodarone.simvastatin_dose_limit",
+    "fda.amlodipine.simvastatin_limit_20mg",
+    "fda.diltiazem.simvastatin_limit_10mg",
+    "fda.bempedoic.simvastatin_avoid_gt_20mg",
+    "esc.lipid.2024.ccs_pregnancy",
+    "acc.lipid.2026.ddi_table27_simva_dronedarone",
+    "acc.lipid.2026.ddi_table27_verapamil_simva",
+    "acc.lipid.2026.ddi_table27_ranolazine_simva",
+    "fda.rosuvastatin.myasthenia_gravis"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối statin trong thai kỳ do nguy cơ ảnh hưởng phát triển phôi thai (FDA / ESC 2024 CCS)",
+    "citationIds": [
+      "esc.lipid.2024.ccs_pregnancy",
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "lactation": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong thời kỳ cho con bú do thuốc bài tiết qua sữa mẹ và nguy cơ tác dụng phụ trên trẻ sơ sinh (FDA / ESC)",
+    "citationIds": [
+      "esc.lipid.2024.ccs_pregnancy",
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định tuyệt đối statin trong thai kỳ và cho con bú",
+      "citationIds": [
+        "esc.lipid.2024.ccs_pregnancy",
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    },
+    {
+      "code": "active_liver_disease",
+      "messageVi": "Chống chỉ định khi có bệnh gan tiến triển hoặc tăng men gan dai dẳng >= 3 lần ULN chưa rõ nguyên nhân",
+      "citationIds": [
+        "esc.lipid.2019.monitoring_alt_elevation"
+      ]
+    }
+  ]
+}

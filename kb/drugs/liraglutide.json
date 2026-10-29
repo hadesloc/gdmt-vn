@@ -1,0 +1,156 @@
+{
+  "id": "liraglutide",
+  "nameVi": "Liraglutide",
+  "inn": "Liraglutide",
+  "class": "GLP-1 RA",
+  "vnBrands": [
+    "Victoza"
+  ],
+  "forms": [
+    "Bút tiêm 6 mg/mL (3 mL)"
+  ],
+  "start": {
+    "amount": 0.6,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "tiêm dưới da",
+    "description": "Dùng trong 1 tuần đầu để giảm triệu chứng tiêu hóa, sau đó tăng lên 1.2 mg/ngày"
+  },
+  "target": {
+    "amount": 1.2,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "tiêm dưới da",
+    "description": "Liều duy trì chuẩn; có thể tăng tối đa 1.8 mg/ngày sau ≥ 1 tuần nếu cần"
+  },
+  "titration": {
+    "step": "0.6 mg",
+    "intervalDays": 7,
+    "maxDose": "1.8 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "1.2 - 1.8 mg/ngày (khởi đầu 0.6 mg/ngày)",
+      "citationIds": [
+        "fda.liraglutide.dosing",
+        "fda.liraglutide.renal_no_adjust",
+        "ada.dm2.2026.glp1_ckd_no_dose_adjust"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "not_rec",
+      "continue": "caution",
+      "dose": "Dữ liệu hạn chế; theo dõi sát",
+      "note": "Dữ liệu lâm sàng rất hạn chế ở eGFR < 15 mL/phút/1.73m² hoặc lọc máu theo KDIGO 2022",
+      "citationIds": [
+        "fda.liraglutide.renal_no_adjust",
+        "ada.dm2.2026.glp1_dialysis_rec_11_11b"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_liraglutide_mtc_contra",
+      "parameter": "mtc",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối ở bệnh nhân có tiền sử ung thư tuyến giáp thể tủy (MTC)",
+      "citationIds": [
+        "fda.liraglutide.boxed_warning_mtc"
+      ]
+    },
+    {
+      "id": "gate_liraglutide_men2_contra",
+      "parameter": "men2",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối ở bệnh nhân mắc hội chứng MEN 2",
+      "citationIds": [
+        "fda.liraglutide.boxed_warning_mtc"
+      ]
+    },
+    {
+      "id": "gate_liraglutide_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 15,
+      "unit": "mL/min/1.73m2",
+      "action": "hold",
+      "messageVi": "Dữ liệu khởi trị mới hạn chế khi eGFR < 15 mL/phút/1.73m² theo KDIGO 2022",
+      "citationIds": [
+        "fda.liraglutide.renal_no_adjust",
+        "ada.dm2.2026.glp1_dialysis_rec_11_11b"
+      ]
+    }
+  ],
+  "interactions": [
+    "Không phối hợp với DPP-4i"
+  ],
+  "citationIds": [
+    "fda.liraglutide.dosing",
+    "ada.dm2.2026.rec_9_7_ascvd",
+    "ada.dm2.2026.no_dpp4_plus_glp1",
+    "fda.liraglutide.renal_no_adjust",
+    "ada.dm2.2026.glp1_ckd_no_dose_adjust",
+    "fda.liraglutide.pregnancy",
+    "fda.liraglutide.boxed_warning_mtc",
+    "fda.liraglutide.pancreatitis",
+    "ada.dm2.2026.incretin_pancreatitis"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong thai kỳ; ngừng trước khi thụ thai",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_glp1",
+      "fda.liraglutide.pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo khi cho con bú",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_glp1"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "mtc",
+      "messageVi": "Chống chỉ định tuyệt đối (FDA Boxed Warning) ở người có tiền sử bản thân hoặc gia đình mắc ung thư biểu mô tuyến giáp thể tủy (MTC)",
+      "citationIds": [
+        "fda.liraglutide.boxed_warning_mtc"
+      ]
+    },
+    {
+      "code": "men2",
+      "messageVi": "Chống chỉ định tuyệt đối (FDA Boxed Warning) ở bệnh nhân mắc hội chứng đa u tuyến nội tiết típ 2 (MEN 2)",
+      "citationIds": [
+        "fda.liraglutide.boxed_warning_mtc"
+      ]
+    },
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định trong thai kỳ do nguy cơ độc tính phôi thai",
+      "citationIds": [
+        "ada.dm2.2026.pregnancy_glp1"
+      ]
+    },
+    {
+      "code": "acute_pancreatitis",
+      "messageVi": "Thận trọng hoặc tránh dùng ở bệnh nhân có tiền sử viêm tụy cấp",
+      "citationIds": [
+        "fda.liraglutide.pancreatitis",
+        "ada.dm2.2026.incretin_pancreatitis"
+      ]
+    }
+  ],
+  "classes": [
+    "glp1ra",
+    "glp1_ra"
+  ]
+}

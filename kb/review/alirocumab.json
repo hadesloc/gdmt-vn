@@ -1,0 +1,26 @@
+{
+  "itemId": "alirocumab",
+  "contentHash": "7cc58df09edd8ed29cce5e43a076497bba0fe307a7e697047fdbee608e1d6e2e",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "alirocumab",
+      "contentHash": "abcf5200e563f0a1",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra schema QA-10, phân nhóm classes, dải thận, cổng an toàn thai kỳ/tương tác và trích dẫn cho thuốc Alirocumab."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

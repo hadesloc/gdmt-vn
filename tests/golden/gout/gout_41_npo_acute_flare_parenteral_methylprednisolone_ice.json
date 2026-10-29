@@ -1,0 +1,65 @@
+{
+  "id": "gout_41_npo_acute_flare_parenteral_methylprednisolone_ice",
+  "titleVi": "Nội viện hậu phẫu nhịn ăn đường miệng (NPO) lên cơn gút cấp: Glucocorticoid đường tiêm (IV/IM) kèm chườm đá lạnh bổ trợ",
+  "source": "ACR 2020 Table 6 PICO 31 & 32 (acr.gout.2020.npo_parenteral_steroid, acr.gout.2020.topical_ice_flare)",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "US",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 59,
+    "sex": "male",
+    "weight": 78,
+    "scr": 95,
+    "uricAcid": 490,
+    "conditions": {
+      "gout": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteFlare": true,
+      "unableToTakeOral": true,
+      "goutFlaresYear": 1,
+      "priorFlaresLifetime": 1
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "methylprednisolone",
+        "ruleId": "rec_gout_npo_parenteral_steroid",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_gout_topical_ice_flare",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "colchicine",
+        "action": "START"
+      },
+      {
+        "drugId": "naproxen",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 59 tuổi nội trú hậu phẫu đang nhịn ăn đường miệng (NPO / unableToTakeOral) bùng phát cơn gút cấp đa khớp. ACR 2020 khuyến cáo mạnh dùng Glucocorticoid đường tiêm (Methylprednisolone IV/IM) thay vì thuốc đường uống hay IL-1i, kết hợp chườm đá lạnh tại chỗ bổ trợ."
+}

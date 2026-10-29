@@ -1,0 +1,58 @@
+{
+  "id": "htn_42_outpatient_crisis_refer_no_routine_start",
+  "titleVi": "Ngoại trú Cơn THA kịch phát (212/126 mmHg): Phát lệnh REFER cấp cứu, chặn kê đơn thường quy mù quáng",
+  "source": "AHA/ACC 2025 / aha.acc.2025.severe_outpatient_msg10",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 55,
+    "sex": "male",
+    "weight": 74,
+    "height": 170,
+    "sbp": 212,
+    "dbp": 126,
+    "hr": 88,
+    "scr": 92,
+    "k": 4.1,
+    "conditions": {
+      "htn": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_htn_outpatient_crisis_triage",
+        "action": "REFER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "amlodipine",
+        "action": "START"
+      },
+      {
+        "drugId": "perindopril",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân ngoại trú có HA ≥ 180/120 mmHg cần được phân luồng đánh giá loại trừ HMOD cấp ngay lập tức thay vì tự động phát đơn phối hợp thường quy."
+}

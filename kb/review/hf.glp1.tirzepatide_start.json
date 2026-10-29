@@ -1,0 +1,27 @@
+{
+  "itemId": "hf.glp1.tirzepatide_start",
+  "contentHash": "2c3a4ceb9f9951ad29d22f9cab44d24a4d14257e853d1b8989d40f3cbdcc4859",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "hf.glp1.tirzepatide_start",
+      "contentHash": "8b03858875055bd2",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T09:00:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-28T09:00:00.000Z",
+          "role": "Agent G5 (HF Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF threshold hf.glp1.tirzepatide_start (Round 2 R1/R2/R3 remediation & verbatim PDF citation verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.spiro.dose_low_ckd",
+  "contentHash": "a7b0b24ad02dad971c58f3028199be3c965402f3e9641ad34b8a892a4b1475de",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.spiro.dose_low_ckd",
+      "contentHash": "d480272819035e03",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 12.5 mg/day (quantity: dose_mg) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

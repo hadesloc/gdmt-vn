@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.probenecid.start_dose",
+  "contentHash": "f179ff755441bb7c22e43b41d8e2f1a8c04450f6c73579e66b30d0a48a6eee4e",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.probenecid.start_dose",
+      "contentHash": "ffa1d910bc6e700d",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.probenecid.start_dose"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

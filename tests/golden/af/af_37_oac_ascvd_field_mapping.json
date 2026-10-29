@@ -1,0 +1,55 @@
+{
+  "id": "af_37_oac_ascvd_field_mapping",
+  "titleVi": "Đồng bộ xơ vữa mạch máu qua trường ascvd: CHA₂DS₂-VA = 1 (ADV_AF_64)",
+  "source": "ESC 2024 AF Rec Table 6 / esc.af.2024.cha2ds2va_rec_class2a",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 60,
+    "sex": "male",
+    "weight": 72,
+    "height": 170,
+    "sbp": 125,
+    "dbp": 78,
+    "hr": 75,
+    "rhythm": "afib",
+    "scr": 85,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "ascvd": true
+    },
+    "currentMeds": []
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_af_oac_intermediate_risk",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_af_oac_low_risk",
+        "action": "AVOID"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 60t nhập trường ascvd: true (ADV_AF_64): Hệ thống nhận diện chuẩn V = 1 điểm, tính đúng CHA₂DS₂-VA = 1, cân nhắc DOAC Class IIa."
+}

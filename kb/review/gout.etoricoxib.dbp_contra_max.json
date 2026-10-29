@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.etoricoxib.dbp_contra_max",
+  "contentHash": "5c39b2601098bcfb7be2711cb88cf1c3d1cd731d435439f8c796318ecc6bfbdc",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.etoricoxib.dbp_contra_max",
+      "contentHash": "87791855fdb69501",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold: gout.etoricoxib.dbp_contra_max"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "hf_16_hfref_afib_hr82_not_sinus",
+  "titleVi": "HFrEF kèm rung nhĩ (AF): Không chỉ định Ivabradine",
+  "source": "ESC 2026 HF Rec 6.1.5.1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "male",
+    "weight": 72,
+    "sbp": 124,
+    "dbp": 78,
+    "hr": 82,
+    "rhythm": "afib",
+    "lvef": 30,
+    "nyha": 2,
+    "scr": 95,
+    "k": 4.3,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dapagliflozin",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "ivabradine",
+        "action": "START"
+      },
+      {
+        "drugId": "ivabradine",
+        "action": "CONSIDER"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Ivabradine chỉ có tác dụng khi nhịp xoang; chống chỉ định/không dùng khi rung nhĩ."
+}

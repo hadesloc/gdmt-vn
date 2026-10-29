@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.acute.magnesium_fev1_pct_cutoff",
+  "contentHash": "e0d3618d28867d158b70572460ba2f43f0d2cd78a8f597dec31ca6f277a6b92a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.acute.magnesium_fev1_pct_cutoff",
+      "contentHash": "34e9f10db592cd30",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T07:10:38.304Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Kiểm định tự động ngưỡng lâm sàng asthma.acute.magnesium_fev1_pct_cutoff (30 %)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T07:10:38.304Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

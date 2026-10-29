@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.abpm.dbp_24h_threshold",
+  "contentHash": "f9779ce20b4660ef67528feed3d4958f21d8e68a103f3cfa3f732500a10e821a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.abpm.dbp_24h_threshold",
+      "contentHash": "6cff18a075c8e18b",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 80 mmHg (quantity: dbp) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

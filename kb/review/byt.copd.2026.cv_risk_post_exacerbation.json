@@ -1,0 +1,26 @@
+{
+  "itemId": "byt.copd.2026.cv_risk_post_exacerbation",
+  "contentHash": "520a8046038f2adc4e2c8fbb7c149429ad66fad2a82ba2706e5a876126f8f094",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "byt.copd.2026.cv_risk_post_exacerbation",
+      "contentHash": "380fbd68b389db99",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

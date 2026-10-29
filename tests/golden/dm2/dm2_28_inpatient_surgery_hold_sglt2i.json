@@ -1,0 +1,65 @@
+{
+  "id": "dm2_28_inpatient_surgery_hold_sglt2i",
+  "titleVi": "Bệnh nhân chuẩn bị phẫu thuật đang dùng Dapagliflozin - Ngừng trước mổ 3 ngày",
+  "source": "ADA 2026 SOC Ch. 16",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 59,
+    "sex": "female",
+    "weight": 65,
+    "height": 160,
+    "sbp": 124,
+    "dbp": 78,
+    "hr": 72,
+    "scr": 92,
+    "k": 4.3,
+    "glucose": 9.8,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "dapagliflozin",
+        "name": "Dapagliflozin",
+        "dose": 10,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "plannedSurgery": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dapagliflozin",
+        "action": "HOLD"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "dapagliflozin",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Phẫu thuật: Ngừng SGLT2i 3 ngày."
+}

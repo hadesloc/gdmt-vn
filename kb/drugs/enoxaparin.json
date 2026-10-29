@@ -1,0 +1,150 @@
+{
+  "id": "enoxaparin",
+  "nameVi": "Enoxaparin",
+  "inn": "Enoxaparin sodium",
+  "class": "Heparin trọng lượng phân tử thấp (LMWH)",
+  "classes": [
+    "lmwh",
+    "parenteral_anticoagulant"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Lovenox",
+    "Clexane",
+    "Enoxaparin"
+  ],
+  "forms": [
+    "Bơm tiêm nạp sẵn 20 mg/0.2 mL (2.000 UI anti-Xa)",
+    "Bơm tiêm nạp sẵn 40 mg/0.4 mL (4.000 UI anti-Xa)",
+    "Bơm tiêm nạp sẵn 60 mg/0.6 mL (6.000 UI anti-Xa)"
+  ],
+  "start": {
+    "amount": 40,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "tiêm dưới da",
+    "description": "Dự phòng huyết khối tĩnh mạch: 40 mg tiêm dưới da 1 lần/ngày (giảm còn 30 mg x 1 lần/ngày khi CrCl 15–29 mL/phút). Điều trị kháng đông đủ liều: 1 mg/kg tiêm dưới da mỗi 12 giờ (giảm còn 1 mg/kg x 1 lần/ngày khi CrCl 15–29 mL/phút)"
+  },
+  "target": {
+    "amount": "1 mg/kg",
+    "unit": "mg/kg",
+    "frequency": "2 lần/ngày",
+    "route": "tiêm dưới da",
+    "description": "Liều điều trị kháng đông chuẩn 1 mg/kg tiêm dưới da 2 lần/ngày (hoặc liều dự phòng 40 mg x 1 lần/ngày tùy chỉ định lâm sàng)"
+  },
+  "titration": {
+    "step": "Tính liều chính xác theo cân nặng thực và mức lọc cầu thận (CrCl); theo dõi tiểu cầu và hemoglobin",
+    "intervalDays": 1,
+    "maxDose": "1 mg/kg mỗi 12 giờ (chỉnh giảm 50% tần suất khi CrCl 15–29 mL/phút)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "crclFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Dự phòng: 40 mg TDD x 1 lần/ngày; Điều trị: 1 mg/kg TDD mỗi 12 giờ",
+      "citationIds": [
+        "byt.vte.2023.enoxaparin_prophylaxis_dose",
+        "aha.pe.2026.enoxaparin_1mg_kg_bid"
+      ]
+    },
+    {
+      "eGFRFrom": 15,
+      "eGFRTo": 30,
+      "crclFrom": 15,
+      "crclTo": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Giảm liều: Dự phòng 30 mg TDD x 1 lần/ngày; Điều trị 1 mg/kg TDD x 1 lần/ngày",
+      "note": "Suy thận nặng (CrCl 15–29 mL/phút): bắt buộc giảm liều enoxaparin và theo dõi sát xuất huyết (hoặc ưu tiên UFH)",
+      "citationIds": [
+        "byt.vte.2023.enoxaparin_prophylaxis_dose",
+        "byt.vte.2023.enoxaparin_renal_crcl15"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "crclTo": 15,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Không sử dụng (chuyển sang Heparin không phân đoạn UFH)",
+      "note": "QĐ 3908/QĐ-BYT 2023: Không sử dụng Enoxaparin khi MLCT < 15 mL/phút hoặc lọc máu ngoài cơ thể do tích lũy anti-Xa gây xuất huyết nặng; chuyển sang UFH",
+      "citationIds": [
+        "byt.vte.2023.enoxaparin_renal_crcl15",
+        "byt.vte.2023.ufh_vka_dosing_table"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_enoxaparin_egfr_lt_15",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 15,
+      "unit": "mL/min/1.73m2",
+      "action": "avoid",
+      "messageVi": "eGFR / CrCl < 15 mL/phút: Không sử dụng Enoxaparin do tích lũy thuốc qua thận; ưu tiên Heparin không phân đoạn (UFH)",
+      "citationIds": [
+        "byt.vte.2023.enoxaparin_renal_crcl15"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Enoxaparin (LMWH) không đi qua hàng rào nhau thai và không gây bệnh lý phôi/thai nhi; là thuốc chống đông được ưu tiên lựa chọn trong thai kỳ (ESC 2025 Pregnancy).",
+    "citationIds": [
+      "esc.preg.2025.lmwh_safe_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Trọng lượng phân tử lớn nên bài tiết không đáng kể vào sữa mẹ và bị bất hoạt ở đường tiêu hóa trẻ bú mẹ; an toàn khi cho con bú.",
+    "citationIds": [
+      "esc.preg.2025.lmwh_safe_pregnancy"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "active_bleeding",
+      "messageVi": "Chống chỉ định khi đang có xuất huyết tiến triển nặng",
+      "citationIds": [
+        "byt.vte.2023.anticoagulant_contraindications"
+      ]
+    },
+    {
+      "code": "acute_ich",
+      "messageVi": "Chống chỉ định trong xuất huyết nội sọ cấp tính",
+      "citationIds": [
+        "byt.vte.2023.anticoagulant_contraindications"
+      ]
+    },
+    {
+      "code": "heparin_induced_thrombocytopenia",
+      "messageVi": "Chống chỉ định ở bệnh nhân có tiền sử giảm tiểu cầu miễn dịch do heparin (HIT)",
+      "citationIds": [
+        "byt.vte.2023.anticoagulant_contraindications"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định khi suy gan nặng kèm rối loạn đông máu nguy cơ xuất huyết cao",
+      "citationIds": [
+        "byt.vte.2023.anticoagulant_contraindications"
+      ]
+    }
+  ],
+  "interactions": [
+    "Không phối hợp đồng thời với DOAC hoặc heparin khác; chỉ gối đầu ngắn hạn với kháng vitamin K cho đến khi INR đạt ngưỡng điều trị ≥ 2.0 trong 24 giờ",
+    "Tăng nguy cơ xuất huyết nặng và tụ máu ngoài màng cứng/tủy sống khi dùng cùng NSAID, kháng kết tập tiểu cầu hoặc tiêu sợi huyết",
+    "Có thể ức chế nhẹ tiết aldosterone gây tăng kali máu khi phối hợp với ACEi/ARB/MRA hoặc trimethoprim"
+  ],
+  "citationIds": [
+    "byt.vte.2023.enoxaparin_prophylaxis_dose",
+    "byt.vte.2023.enoxaparin_renal_crcl15",
+    "byt.vte.2023.anticoagulant_contraindications",
+    "aha.pe.2026.enoxaparin_1mg_kg_bid",
+    "esc.preg.2025.lmwh_safe_pregnancy"
+  ]
+}

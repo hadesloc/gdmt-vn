@@ -1,0 +1,26 @@
+{
+  "itemId": "byt.copd.2026.respiratory_failure_rr_gt30",
+  "contentHash": "6cb6ddac091970f27cca9bbc14cec772532c25db98143d72ed939317a654522f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "byt.copd.2026.respiratory_failure_rr_gt30",
+      "contentHash": "c2ce31629af88551",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

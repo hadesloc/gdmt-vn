@@ -1,0 +1,50 @@
+{
+  "id": "ckd_50_missing_sbp_fail_closed_defer",
+  "titleVi": "Ngoại trú - Khuyết số đo Huyết áp tâm thu (SBP undefined) -> Fail-closed DEFER SGLT2i, RASi và phát nhắc nhở đo HA (Regression CKD-R2-R1-02 & R3-03)",
+  "source": "KDIGO 2024 CKD & KDIGO 2021 BP in CKD (QA-1 Fail-closed)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_50",
+    "name": "BN CKD 50",
+    "age": 61,
+    "sex": "female",
+    "weight": 60,
+    "scr": 130,
+    "k": 4.4,
+    "uacr": 36,
+    "conditions": {
+      "ckd": true,
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "missing_input_sbp", "action": "CONSIDER" },
+      { "drugId": "dapagliflozin", "action": "DEFER" },
+      { "drugId": "losartan", "action": "DEFER" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "dapagliflozin", "action": "START" },
+      { "drugId": "losartan", "action": "START" },
+      { "drugId": "semaglutide", "action": "START" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R2-R1-02 & CKD-R2-R3-03: Không bao giờ phát lệnh START thuốc gây hạ áp/giảm thể tích khi chưa có số đo huyết áp tâm thu."
+}

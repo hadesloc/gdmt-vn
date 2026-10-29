@@ -1,0 +1,26 @@
+{
+  "itemId": "moxonidine",
+  "contentHash": "ce9194be039544fb15c181371dc181b32a5456262df365602900752d25f94bb0",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "moxonidine",
+      "contentHash": "7517e6ab06849ed6",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Moxonidine (Moxonidine) đầy đủ liều lượng, classes (central_imidazoline_agonist), dải thận, thai kỳ/cho con bú, chống chỉ định máy đọc và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

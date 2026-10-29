@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.verapamil_digoxin",
+  "contentHash": "901c9f470e8d20e8b8928d84c161d6f5f538b2e633b745a2643d5e741821e410",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.verapamil_digoxin",
+      "contentHash": "725e942c7ef4028d",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.verapamil_digoxin."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

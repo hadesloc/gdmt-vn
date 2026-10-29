@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.febuxostat.hepatic_moderate_max_dose",
+  "contentHash": "cad4826e790e0846b22fa289ef47465bb8143150306cf4f84c312c5cd9d56b22",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.febuxostat.hepatic_moderate_max_dose",
+      "contentHash": "6c0907f5741ba459",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold: gout.febuxostat.hepatic_moderate_max_dose"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

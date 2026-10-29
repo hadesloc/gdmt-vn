@@ -1,0 +1,77 @@
+{
+  "id": "copd_61_r3_ics_laba_high_eos_dyspnea_escalate_triple",
+  "titleVi": "Hồi quy R3 (COPD-R3-R1-09 & R3-11): Đang dùng ICS+LABA còn khó thở nặng (mMRC 3, CAT 18) kèm BCAT 360 /µL nâng lên Triple thay vì cắt ICS sang LABA+LAMA",
+  "source": "GOLD 2026 p. 77, 80 / BYT QĐ 2131/2026 Biểu đồ 0.2 tr. 26 (COPD-R3-R1-09, COPD-R3-R3-11)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_61",
+    "age": 65,
+    "sex": "male",
+    "weight": 61,
+    "height": 166,
+    "sbp": 126,
+    "dbp": 78,
+    "hr": 74,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "fluticasone_salmeterol",
+        "name": "Seretide Accuhaler",
+        "dose": 250,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.53,
+      "fev1PredPct": 55,
+      "mmrc": 3,
+      "cat": 18,
+      "moderateExacerbations": 0,
+      "hospitalizations": 0,
+      "bloodEos": 360,
+      "currentInhaler": "ics_laba",
+      "smokingStatus": "former"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "ruleId": "rec_copd_ics_laba_escalate_triple",
+        "action": "SWITCH"
+      },
+      {
+        "drugId": "fluticasone_salmeterol",
+        "ruleId": "rec_copd_stop_superseded_inhaler",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "tiotropium_olodaterol",
+        "ruleId": "rec_copd_ics_laba_switch_dual",
+        "action": "SWITCH"
+      }
+    ]
+  }
+}

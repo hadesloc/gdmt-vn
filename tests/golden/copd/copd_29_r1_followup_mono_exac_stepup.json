@@ -1,0 +1,70 @@
+{
+  "id": "copd_29_r1_followup_mono_exac_stepup",
+  "titleVi": "Hồi quy R1: Đang dùng LAMA đơn trị có đợt cấp + BCAT ≥ 300 chuyển lên Triple và ngừng LAMA cũ",
+  "source": "GOLD 2026 Follow-up Exacerbations p. 77 (COPD-R1-03, R3-COPD-03)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_29",
+    "age": 68,
+    "sex": "male",
+    "weight": 57,
+    "height": 164,
+    "sbp": 126,
+    "dbp": 78,
+    "hr": 76,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "tiotropium",
+        "name": "Spiriva Respimat",
+        "dose": 5,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.52,
+      "fev1PredPct": 54,
+      "mmrc": 1,
+      "cat": 9,
+      "currentInhaler": "lama_mono",
+      "moderateExacerbations": 1,
+      "hospitalizations": 0,
+      "bloodEos": 350,
+      "smokingStatus": "former"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "ruleId": "rec_copd_mono_exac_triple",
+        "action": "SWITCH"
+      },
+      {
+        "drugId": "tiotropium",
+        "ruleId": "rec_copd_stop_superseded_inhaler",
+        "action": "STOP"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.nsaid_aspirin_antiplatelet_blunting",
+  "contentHash": "48dc2ebd8cde9c96ccca105e7887578054bcdb3b9ad8dbd62675a1b9045ef94d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.nsaid_aspirin_antiplatelet_blunting",
+      "contentHash": "f36661e639a82ad5",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.nsaid_aspirin_antiplatelet_blunting."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

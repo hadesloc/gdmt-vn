@@ -1,0 +1,86 @@
+{
+  "id": "gout_01_im_acute_gout_monoarthritis_1520",
+  "titleVi": "Nội viện: Viêm đơn khớp gối phải gút cấp trên nền CKD giai đoạn 3b (On-Call 1520)",
+  "source": "on-call:im_acute_gout_monoarthritis_1520 + KDIGO 2024 / ACR 2020",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_im_acute_gout_monoarthritis_1520",
+    "name": "Ông Đặng Văn L., 64 tuổi (70 kg)",
+    "age": 64,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 142,
+    "dbp": 84,
+    "hr": 94,
+    "conditions": {
+      "gout": true,
+      "ckd": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [],
+    "uricAcid": 560,
+    "scr": 150,
+    "egfr": 42,
+    "customInputs": {
+      "acuteFlare": true,
+      "monoarthritisLargeJoint": true,
+      "priorFlaresLifetime": 1,
+      "goutFlaresYear": 1,
+      "southeastAsianDescent": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "prednisolone",
+        "ruleId": "rec_gout_intraarticular_steroid",
+        "action": "START"
+      },
+      {
+        "drugId": "naproxen",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "allopurinol",
+        "action": "START",
+        "doseContains": "50 mg"
+      },
+      {
+        "ruleId": "rec_gout_hlab5801_screening",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "naproxen",
+        "action": "START"
+      },
+      {
+        "drugId": "ibuprofen",
+        "action": "START"
+      },
+      {
+        "drugId": "diclofenac",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 64 tuổi có CKD giai đoạn 3b (eGFR 42 mL/phút/1.73m²), acid uric 560 µmol/L vào viện vì sưng nóng đỏ đau dữ dội khớp gối phải. Ưu tiên Corticoid nội khớp/uống, tránh NSAID, và cân nhắc khởi trị Allopurinol ≤ 50 mg/ngày (hồ sơ INTL)."
+}

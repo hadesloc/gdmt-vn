@@ -1,0 +1,57 @@
+{
+  "id": "af_11_rivaroxaban_dose_reduction_crcl_35",
+  "titleVi": "Giảm liều Rivaroxaban 15mg qd: CrCl 48.9 mL/min (ADV_AF_13)",
+  "source": "ESC 2024 AF Table 11 & Nhãn FDA / esc.af.2024.table11_doac_dosing",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "male",
+    "weight": 65,
+    "height": 165,
+    "sbp": 132,
+    "dbp": 80,
+    "hr": 76,
+    "rhythm": "afib",
+    "scr": 125,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "rivaroxaban",
+        "name": "Xarelto",
+        "dose": 20,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "rivaroxaban",
+        "action": "REDUCE",
+        "doseContains": "15 mg"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 68t, CrCl ~48.9 mL/min thuộc dải 15-49 mL/min (ADV_AF_13): Giảm liều Rivaroxaban xuống 15 mg x 1 lần/ngày."
+}

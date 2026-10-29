@@ -1,0 +1,26 @@
+{
+  "itemId": "salbutamol",
+  "contentHash": "f18ff0998efe8f14adf1482032f82351f0b17ca18dd4089b4e74170dac722e4c",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "salbutamol",
+      "contentHash": "32675e8c518cfb3e",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:53:57.954Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính hợp lệ của liều, cổng an toàn, thai kỳ, cho con bú, chống chỉ định, qtRisk và mã nhóm chuẩn hóa cho thuốc Salbutamol (Albuterol)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:53:57.954Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

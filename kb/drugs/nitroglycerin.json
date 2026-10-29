@@ -1,0 +1,141 @@
+{
+  "id": "nitroglycerin",
+  "nameVi": "Nitroglycerin (truyền tĩnh mạch)",
+  "inn": "Nitroglycerin",
+  "class": "Thuốc giãn mạch nhóm Nitrate hữu cơ",
+  "classes": [
+    "nitrate"
+  ],
+  "vnBrands": [
+    "Nitronal",
+    "Perlinganit",
+    "Nitroglycerin Renaudin"
+  ],
+  "forms": [
+    "Ống tiêm 10 mg / 10 mL (1 mg/mL)",
+    "Lọ tiêm truyền 50 mg / 50 mL (1 mg/mL)"
+  ],
+  "start": {
+    "amount": 5,
+    "unit": "mcg/phút",
+    "frequency": "truyền liên tục",
+    "route": "truyền tĩnh mạch",
+    "description": "Sử dụng dây truyền không hấp phụ PVC (polyethylene/thủy tinh); chỉ ưu tiên khi kèm hội chứng vành cấp hoặc phù phổi cấp"
+  },
+  "target": {
+    "amount": "20–200",
+    "unit": "mcg/phút",
+    "frequency": "truyền liên tục",
+    "route": "truyền tĩnh mạch",
+    "description": "Tăng thêm 5–10 mcg/phút mỗi 3–5 phút đến khi giảm triệu chứng và đạt HATT < 140 mmHg"
+  },
+  "titration": {
+    "step": "Tăng 5 mcg/phút mỗi 3–5 phút; nếu chưa đáp ứng ở 20 mcg/phút có thể tăng bậc 10–20 mcg/phút (tối đa 200 mcg/phút)",
+    "intervalDays": 1,
+    "maxDose": "200 mcg/phút"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "5–200 mcg/phút truyền tĩnh mạch",
+      "citationIds": [
+        "aha.acc.2025.iv_nitroglycerin"
+      ],
+      "note": "Thủy phân nhanh trong máu và gan; không cần chỉnh liều khởi đầu theo chức năng thận, theo dõi sát huyết động."
+    }
+  ],
+  "hepatic": {
+    "status": "caution",
+    "notesVi": "Chuyển hóa qua glutathione-organic nitrate reductase tại gan; thận trọng chuẩn độ liều ở suy gan nặng (nguy cơ tụt áp và methemoglobin máu khi truyền liều rất cao).",
+    "citationIds": [
+      "aha.acc.2025.iv_nitroglycerin"
+    ]
+  },
+  "gates": [
+    {
+      "id": "gate_ntg_sbp_90",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 90,
+      "unit": "mmHg",
+      "action": "contra",
+      "messageVi": "Chống chỉ định truyền Nitroglycerin khi HATT < 90 mmHg hoặc sốc giảm thể tích.",
+      "citationIds": [
+        "aha.acc.2025.iv_nitroglycerin"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Thuốc lựa chọn hàng đầu (Class I, Level C) khi tiền sản giật hoặc sản giật biến chứng PHÙ PHỔI CẤP theo ESC 2024 (Rec Table 33) và VSH/VNHA 2022 (Bảng 16).",
+    "citationIds": [
+      "esc.htn.2024.preeclampsia_pulm_edema_rec33",
+      "vsh.htn.2022.pregnancy_table16_drugs_postpartum"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Thời gian bán thải trong huyết tương cực ngắn (1–4 phút); thận trọng trong giai đoạn cấp cứu nội viện.",
+    "citationIds": [
+      "aha.acc.2025.iv_nitroglycerin"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pde5_inhibitor_use",
+      "messageVi": "CHỐNG CHỈ ĐỊNH TUYỆT ĐỐI nếu đã dùng thuốc ức chế PDE-5 (sildenafil/vardenafil trong vòng 24 giờ; tadalafil trong vòng 48 giờ) — gây trụy mạch tử vong",
+      "citationIds": [
+        "aha.acc.2025.table27_aortic_acs"
+      ]
+    },
+    {
+      "code": "riociguat_use",
+      "messageVi": "Chống chỉ định dùng đồng thời chất kích thích sGC (riociguat, vericiguat)",
+      "citationIds": [
+        "aha.acc.2025.table27_aortic_acs"
+      ]
+    },
+    {
+      "code": "severe_hypovolemia",
+      "messageVi": "Giảm thể tích tuần hoàn chưa bù dịch (volume-depleted patients)",
+      "citationIds": [
+        "aha.acc.2025.iv_nitroglycerin"
+      ]
+    },
+    {
+      "code": "right_ventricular_infarction",
+      "messageVi": "Nhồi máu cơ tim thất phải (phụ thuộc tiền tải thất phải — gây tụt cung lượng tim thảm khốc)",
+      "citationIds": [
+        "aha.acc.2025.iv_nitroglycerin"
+      ]
+    },
+    {
+      "code": "increased_icp",
+      "messageVi": "Tăng áp lực nội sọ / xuất huyết nội sọ cấp",
+      "citationIds": [
+        "aha.acc.2025.iv_nitroglycerin"
+      ]
+    },
+    {
+      "code": "cardiac_tamponade",
+      "messageVi": "Ép tim cấp (cardiac tamponade), viêm màng ngoài tim co thắt hoặc hẹp chủ/hẹp hai lá khít",
+      "citationIds": [
+        "aha.acc.2025.iv_nitroglycerin"
+      ]
+    }
+  ],
+  "interactions": [
+    "TUYỆT ĐỐI khai thác tiền sử dùng Sildenafil/Vardenafil (trong 24 giờ) và Tadalafil (trong 48 giờ) trước khi truyền — phối hợp gây hạ huyết áp sâu kháng trị và nhồi máu cơ tim/tử vong.",
+    "Hiện tượng quen thuốc nhanh (tachyphylaxis) thường xuất hiện sau 24–48 giờ truyền liên tục.",
+    "Nhựa PVC hấp phụ tới 40–80% hoạt chất nitroglycerin — cần dùng bộ dây truyền chuyên dụng không chứa PVC hoặc chuẩn độ theo đáp ứng huyết động thực tế."
+  ],
+  "citationIds": [
+    "aha.acc.2025.iv_nitroglycerin",
+    "aha.acc.2025.table27_aortic_acs",
+    "vsh.htn.2022.emergency_pulmonary_edema",
+    "vsh.htn.2022.emergency_acs_table14",
+    "esc.htn.2024.preeclampsia_pulm_edema_rec33"
+  ]
+}

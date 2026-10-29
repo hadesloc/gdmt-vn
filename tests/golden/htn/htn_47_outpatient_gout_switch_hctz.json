@@ -1,0 +1,69 @@
+{
+  "id": "htn_47_outpatient_gout_switch_hctz",
+  "titleVi": "Tăng huyết áp kèm Bệnh Gút đang dùng HCTZ: Chuyển đổi lợi tiểu Thiazide sang Losartan + Amlodipine",
+  "source": "ESC 2024 & VSH 2022 / esc.htn.2024.gout_thiazide_caution",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 54,
+    "sex": "male",
+    "weight": 78,
+    "height": 170,
+    "sbp": 150,
+    "dbp": 94,
+    "hr": 76,
+    "scr": 92,
+    "k": 4.2,
+    "conditions": {
+      "htn": true,
+      "gout": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "hydrochlorothiazide",
+        "dose": 25,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "hydrochlorothiazide",
+        "action": "SWITCH"
+      },
+      {
+        "drugId": "amlodipine",
+        "action": "START"
+      },
+      {
+        "drugId": "losartan",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "indapamide",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân Gút đang dùng Hydrochlorothiazide cần được ngừng/chuyển sang phác đồ phối hợp Amlodipine + Losartan (tăng thải acid uric qua thận)."
+}

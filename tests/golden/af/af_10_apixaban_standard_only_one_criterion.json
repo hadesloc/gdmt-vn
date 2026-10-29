@@ -1,0 +1,63 @@
+{
+  "id": "af_10_apixaban_standard_only_one_criterion",
+  "titleVi": "Apixaban giữ liều chuẩn 5mg x 2: Cân nặng 61 kg (>60), chỉ 1 tiêu chí (ADV_AF_05)",
+  "source": "ESC 2024 AF Table 11 & Rec Table 7 / esc.af.2024.doac_avoid_inappropriate_reduction",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 82,
+    "sex": "female",
+    "weight": 61,
+    "height": 155,
+    "sbp": 128,
+    "dbp": 76,
+    "hr": 85,
+    "rhythm": "afib",
+    "scr": 100,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "apixaban",
+        "name": "Eliquis",
+        "dose": 5,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "apixaban",
+        "action": "CONTINUE",
+        "doseContains": "5 mg"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "apixaban",
+        "action": "REDUCE"
+      }
+    ]
+  },
+  "descriptionVi": "Nữ 82t nhưng cân nặng 61 kg > 60 kg, Cr 100 < 133 (ADV_AF_05): Chỉ có 1 tiêu chí đơn độc -> Không giảm liều, dùng chuẩn 5 mg x 2."
+}

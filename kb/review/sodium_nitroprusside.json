@@ -1,0 +1,26 @@
+{
+  "itemId": "sodium_nitroprusside",
+  "contentHash": "322350f103a19a9c2a38ea895e9978836744864d8bbbf5a341d5efc4e38547bb",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "sodium_nitroprusside",
+      "contentHash": "1773b4387c533085",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Hypertension Specialist (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Natri Nitroprusside (truyền tĩnh mạch) (Sodium nitroprusside) đầy đủ liều lượng, classes (direct_vasodilator), dải thận, thai kỳ/cho con bú, chống chỉ định máy đọc và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "htn_01_outpatient_stage1_dual_spc",
+  "titleVi": "THA Độ 1 chưa điều trị: Khởi trị viên phối hợp đôi SPC",
+  "source": "ESC 2024 HTN / esc.htn.2024.initial_combination",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 52,
+    "sex": "male",
+    "weight": 72,
+    "height": 168,
+    "sbp": 148,
+    "dbp": 92,
+    "hr": 76,
+    "scr": 85,
+    "k": 4.3,
+    "conditions": {
+      "htn": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "amlodipine",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "spironolactone",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân nam 52 tuổi phát hiện THA độ 1, chưa từng dùng thuốc hạ áp, chỉ định phối hợp đôi liều thấp SPC."
+}

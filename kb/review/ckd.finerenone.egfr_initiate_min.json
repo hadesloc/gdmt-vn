@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.finerenone.egfr_initiate_min",
+  "contentHash": "063eafdc45fdedef6420f67da9a1e2d82d8c6588af4209ac0c282d183ec85c0d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.finerenone.egfr_initiate_min",
+      "contentHash": "2bdab94509e5634a",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.114Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.finerenone.egfr_initiate_min."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

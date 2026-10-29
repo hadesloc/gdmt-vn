@@ -1,0 +1,76 @@
+{
+  "id": "asthma_67_track2_step3_step_down_preserves_laba",
+  "titleVi": "Hạ bậc Track 2 Bậc 3 ổn định 6 tháng (Seretide): Giảm 25–50% liều ICS nhưng GIỮ NGUYÊN thành phần LABA (không cắt đột ngột LABA)",
+  "source": "GINA 2026 Box 3-13 Step-down / BYT 1851/2020 / ASTHMA-R3-R1-03 / ASTHMA-R3-R3-09",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_67",
+    "name": "Nữ 40 tuổi",
+    "age": 40,
+    "sex": "female",
+    "weight": 55,
+    "sbp": 114,
+    "dbp": 72,
+    "hr": 74,
+    "rhythm": "sinus",
+    "fev1Pct": 88,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "fluticasone_salmeterol",
+        "dose": "2 nhát",
+        "freq": "2 lần/ngày"
+      }
+    ],
+    "customInputs": {
+      "currentTrack": "track2",
+      "currentStep": 3,
+      "wellControlledMonths": 6,
+      "exacerbationsLastYear": 0,
+      "daytimeSymptomsMoreThanTwiceWeek": false,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_asthma_step_down_consider",
+        "action": "CONSIDER"
+      },
+      {
+        "drugId": "fluticasone_salmeterol",
+        "action": "REDUCE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "fluticasone_propionate",
+        "action": "SWITCH"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Theo GINA 2026 Box 3-13, ngừng hẳn LABA trong khi giữ nguyên ICS trên bệnh nhân đang dùng ICS-LABA làm tăng nguy cơ kịch phát nặng -> Khi hạ bậc ở Track 2 Bậc 3, phải REDUCE 25–50% liều ICS trong bình phối hợp ICS-LABA và giữ nguyên LABA."
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.steroid.severe_hyperglycemia_mmol",
+  "contentHash": "91e3c68978b6c0fa7b919d1a117dec924a77602e6aea4c9fbe3a3801f1f740eb",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.steroid.severe_hyperglycemia_mmol",
+      "contentHash": "287c32e64e9c7fa0",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold: gout.steroid.severe_hyperglycemia_mmol"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

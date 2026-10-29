@@ -1,0 +1,139 @@
+{
+  "id": "glimepiride",
+  "nameVi": "Glimepiride",
+  "inn": "Glimepiride",
+  "class": "Sulfonylurea",
+  "vnBrands": [
+    "Amaryl",
+    "Diapride"
+  ],
+  "forms": [
+    "Viên nén 1 mg, 2 mg, 4 mg"
+  ],
+  "start": {
+    "amount": 1,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Uống ngay trước hoặc trong bữa ăn sáng đầu tiên (người cao tuổi hoặc suy thận khởi đầu 1 mg/ngày)"
+  },
+  "target": {
+    "amount": 4,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống"
+  },
+  "titration": {
+    "step": "1 mg",
+    "intervalDays": 7,
+    "maxDose": "8 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "1 - 4 mg/ngày",
+      "citationIds": [
+        "fda.glimepiride.hypo_elderly_renal"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Khởi đầu 1 mg/ngày, chuẩn độ chậm",
+      "citationIds": [
+        "fda.glimepiride.hypo_elderly_renal"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Tránh dùng / Ngừng thuốc ở suy thận nặng (tích lũy chất chuyển hóa hoạt tính gây hạ đường huyết kéo dài)",
+      "citationIds": [
+        "kdigo.dm2.2022.su_avoid_low_egfr",
+        "fda.glimepiride.hypo_elderly_renal"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_glimepiride_egfr_contra",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "contra",
+      "messageVi": "Tránh dùng / Ngừng Glimepiride khi eGFR < 30 mL/phút/1.73m² do tích lũy chất chuyển hóa qua thận gây hạ đường huyết nặng kéo dài.",
+      "citationIds": [
+        "kdigo.dm2.2022.su_avoid_low_egfr",
+        "fda.glimepiride.hypo_elderly_renal"
+      ]
+    },
+    {
+      "id": "gate_glimepiride_elderly",
+      "parameter": "age",
+      "operator": ">=",
+      "threshold": 65,
+      "action": "caution",
+      "messageVi": "Khởi đầu liều thấp 1 mg/ngày ở người cao tuổi hoặc suy thận do nguy cơ hạ đường huyết kéo dài.",
+      "citationIds": [
+        "fda.glimepiride.hypo_elderly_renal"
+      ]
+    }
+  ],
+  "interactions": [
+    "Nguy cơ hạ đường huyết kéo dài khi dùng cùng thuốc ức chế enzym chuyển hóa qua gan"
+  ],
+  "citationIds": [
+    "fda.glimepiride.hypo_elderly_renal",
+    "ada.dm2.2026.older_deintensification",
+    "kdigo.dm2.2022.agi_avoid_severe_ckd",
+    "kdigo.dm2.2022.su_avoid_low_egfr",
+    "fda.glimepiride.hepatic_impairment"
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Tránh sử dụng trong thai kỳ; sulfonylurea qua nhau thai và gây nguy cơ hạ đường huyết sơ sinh kéo dài (ADA 2026)",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_sulfonylureas"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo khi cho con bú",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_sulfonylureas"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Tránh dùng Glimepiride trong thai kỳ, chuyển sang Insulin",
+      "citationIds": [
+        "ada.dm2.2026.pregnancy_sulfonylureas"
+      ]
+    },
+    {
+      "code": "dialysis",
+      "messageVi": "Tránh dùng Glimepiride ở bệnh nhân lọc máu hoặc suy thận nặng (eGFR < 30 mL/phút/1.73m²)",
+      "citationIds": [
+        "kdigo.dm2.2022.su_avoid_low_egfr"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định ở bệnh nhân suy gan nặng hoặc suy thận nặng",
+      "citationIds": [
+        "fda.glimepiride.hepatic_impairment"
+      ]
+    }
+  ],
+  "classes": [
+    "su",
+    "sulfonylurea"
+  ]
+}

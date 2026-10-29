@@ -1,0 +1,26 @@
+{
+  "itemId": "beclometasone_glycopyrronium_formoterol",
+  "contentHash": "311c533ba4420d1761e3bb46d25c2b6a963fa01d56baac43a46192fcdf816803",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "beclometasone_glycopyrronium_formoterol",
+      "contentHash": "fa7d3d542fcc70c6",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD drug remediation: verified verbatim citations & content hash"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

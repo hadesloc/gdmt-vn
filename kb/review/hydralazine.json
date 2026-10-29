@@ -1,0 +1,26 @@
+{
+  "itemId": "hydralazine",
+  "contentHash": "3803710c9145d38a6a3e4372f76f4e0a5a8c2cfd2066a124207f9b10c30324dd",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "hydralazine",
+      "contentHash": "369b92a37e1e5613",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Agent G4 (HF Remediation & QA-10)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF drug hydralazine (Round 1 R1/R2/R3 remediation & QA-10 verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

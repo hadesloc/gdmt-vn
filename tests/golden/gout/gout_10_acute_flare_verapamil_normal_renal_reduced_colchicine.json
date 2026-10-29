@@ -1,0 +1,65 @@
+{
+  "id": "gout_10_acute_flare_verapamil_normal_renal_reduced_colchicine",
+  "titleVi": "Đang dùng Verapamil nhưng thận - gan bình thường: Giảm liều cắt cơn Colchicine còn 1.2 mg liều duy nhất (không lặp lại trong 14 ngày)",
+  "source": "FDA Colchicine Label Table 1 (fda.colchicine.moderate_cyp3a4)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "US",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 50,
+    "sex": "male",
+    "weight": 76,
+    "scr": 80,
+    "uricAcid": 450,
+    "conditions": {
+      "gout": true,
+      "htn": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "verapamil",
+        "name": "Verapamil",
+        "dose": "120",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": true,
+      "priorFlaresLifetime": 1,
+      "goutFlaresYear": 1
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "colchicine",
+        "ruleId": "rec_gout_colchicine_acute_flare_reduced",
+        "action": "START",
+        "doseContains": "1.2 mg"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "colchicine",
+        "action": "AVOID"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 50 tuổi chức năng thận bình thường (eGFR ~98), không bệnh gan, đang dùng Verapamil (ức chế vừa CYP3A4 / P-gp) lên cơn gút cấp. Nhãn FDA Table 1 cho phép dùng Colchicine nhưng bắt buộc giảm liều cắt cơn xuống 1.2 mg một lần duy nhất (không uống liều thứ hai, không lặp lại trong ít nhất 14 ngày)."
+}

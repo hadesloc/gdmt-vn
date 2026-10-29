@@ -1,0 +1,233 @@
+{
+  "id": "etoricoxib",
+  "nameVi": "Etoricoxib",
+  "inn": "Etoricoxib",
+  "class": "COX-2i",
+  "classes": [
+    "anti_gout",
+    "nsaid",
+    "cox2_selective"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Arcoxia",
+    "Etorix"
+  ],
+  "forms": [
+    "Viên nén 60 mg",
+    "Viên nén 90 mg",
+    "Viên nén 120 mg"
+  ],
+  "start": {
+    "amount": 120,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "120 mg x 1 lần/ngày chỉ dùng trong giai đoạn gút cấp tính (tối đa tuyệt đối ≤ 8 ngày; lưu ý thuốc không được FDA Hoa Kỳ phê duyệt)"
+  },
+  "target": {
+    "amount": 120,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "90–120 mg x 1 lần/ngày trong đợt gút cấp (tối đa không quá 8 ngày)"
+  },
+  "titration": {
+    "step": 30,
+    "intervalDays": 1,
+    "maxDose": "120 mg/ngày (tối đa 8 ngày)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "120 mg x 1 lần/ngày chỉ trong đợt gút cấp (tối đa không quá 8 ngày)",
+      "citationIds": [
+        "ema.arcoxia.gout_posology_120mg_8d",
+        "byt.gout.2014.nsaid_agents",
+        "byt.gout.2014.nsaid_dosing_p201"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "SmPC không yêu cầu giảm liều khi CrCl ≥ 30 mL/phút nhưng KDIGO 2024 khuyến cáo tránh NSAID ở CKD giai đoạn ≥ 3; ưu tiên corticoid",
+      "citationIds": [
+        "ema.arcoxia.contra_severe_hepatic_renal_ibd",
+        "kdigo.gout.2024.acute_flare_ckd",
+        "byt.ckd.2024.gout_flare_table22"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Chống chỉ định khi CrCl / eGFR < 30 mL/phút hoặc lọc máu (EMA Arcoxia SmPC Mục 4.3)",
+      "citationIds": [
+        "ema.arcoxia.contra_severe_hepatic_renal_ibd",
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_etoricoxib_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "contra",
+      "messageVi": "Chống chỉ định etoricoxib khi CrCl / eGFR < 30 mL/phút (EMA Arcoxia SmPC Mục 4.3)",
+      "citationIds": [
+        "ema.arcoxia.contra_severe_hepatic_renal_ibd",
+        "byt.ckd.2024.gout_flare_table22"
+      ]
+    },
+    {
+      "id": "gate_etoricoxib_sbp_uncontrolled",
+      "parameter": "SBP",
+      "operator": ">",
+      "threshold": 140,
+      "unit": "mmHg",
+      "action": "contra",
+      "messageVi": "Chống chỉ định etoricoxib ở bệnh nhân tăng huyết áp có HA tăng dai dẳng > 140/90 mmHg chưa kiểm soát đầy đủ (EMA Arcoxia SmPC Mục 4.3)",
+      "citationIds": [
+        "ema.arcoxia.contra_htn_cv_aerd",
+        "byt.gout.2014.nsaid_cv_aspirin_p199"
+      ]
+    },
+    {
+      "id": "gate_etoricoxib_ascvd_hf",
+      "parameter": "ASCVD_HF",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "established",
+      "action": "contra",
+      "messageVi": "Chống chỉ định ở bệnh nhân suy tim sung huyết (NYHA II–IV), bệnh tim thiếu máu cục bộ, bệnh động mạch ngoại biên và/hoặc bệnh mạch máu não (EMA Arcoxia SmPC Mục 4.3)",
+      "citationIds": [
+        "ema.arcoxia.contra_htn_cv_aerd",
+        "byt.gout.2014.nsaid_dosing_p201"
+      ]
+    },
+    {
+      "id": "gate_etoricoxib_hepatic",
+      "parameter": "severe_hepatic_impairment",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "severe",
+      "action": "contra",
+      "messageVi": "Chống chỉ định khi suy gan nặng (Child-Pugh ≥ 10 hoặc albumin < 25 g/L); suy gan nhẹ (Child-Pugh A, 5–6 điểm) tối đa ≤ 60 mg/ngày; suy gan vừa (Child-Pugh B, 7–9 điểm) tối đa ≤ 30 mg/ngày — không đủ liều 120 mg cắt cơn gút cấp (EMA Arcoxia SmPC Mục 4.2–4.3)",
+      "citationIds": [
+        "ema.arcoxia.hepatic_renal_posology",
+        "ema.arcoxia.contra_severe_hepatic_renal_ibd"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối trong thai kỳ theo EMA Arcoxia SmPC Mục 4.3 & 4.6 (nguy cơ đóng sớm ống động mạch thai nhi và đờ tử cung); phải ngừng thuốc ngay nếu mang thai.",
+    "citationIds": [
+      "ema.arcoxia.pregnancy_lactation_contra",
+      "byt.gout.2014.nsaid_contra_p198"
+    ]
+  },
+  "lactation": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định khi đang cho con bú theo EMA Arcoxia SmPC Mục 4.3 & 4.6 (phụ nữ dùng etoricoxib không được cho con bú) và BYT 361/2014.",
+    "citationIds": [
+      "ema.arcoxia.lactation_contra",
+      "byt.gout.2014.nsaid_contra_p198"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định tuyệt đối trong thai kỳ và thời kỳ cho con bú (EMA Arcoxia SmPC Mục 4.3 & 4.6)",
+      "citationIds": [
+        "ema.arcoxia.pregnancy_lactation_contra",
+        "ema.arcoxia.lactation_contra"
+      ]
+    },
+    {
+      "code": "nsaid_allergy",
+      "messageVi": "Chống chỉ định ở bệnh nhân có tiền sử co thắt phế quản, viêm mũi cấp, polyp mũi, phù mạch hoặc mày đay sau khi dùng aspirin hoặc NSAID/COX-2i (AERD) (EMA Arcoxia SmPC Mục 4.3)",
+      "citationIds": [
+        "ema.arcoxia.contra_aerd"
+      ]
+    },
+    {
+      "code": "severe_ckd",
+      "messageVi": "Chống chỉ định khi CrCl / eGFR < 30 mL/phút (EMA Arcoxia SmPC Mục 4.3)",
+      "citationIds": [
+        "ema.arcoxia.contra_severe_hepatic_renal_ibd",
+        "byt.ckd.2024.gout_flare_table22"
+      ]
+    },
+    {
+      "code": "uncontrolled_hypertension",
+      "messageVi": "Chống chỉ định khi huyết áp tăng dai dẳng trên 140/90 mmHg chưa được kiểm soát ổn định (EMA Arcoxia SmPC Mục 4.3)",
+      "citationIds": [
+        "ema.arcoxia.contra_htn_cv_aerd"
+      ]
+    },
+    {
+      "code": "heart_failure",
+      "messageVi": "Chống chỉ định ở bệnh nhân suy tim sung huyết (NYHA II–IV), bệnh tim thiếu máu cục bộ, bệnh động mạch ngoại biên và/hoặc bệnh mạch máu não (EMA Arcoxia SmPC Mục 4.3)",
+      "citationIds": [
+        "ema.arcoxia.contra_htn_cv_aerd"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định khi suy gan nặng (Child-Pugh ≥ 10 hoặc albumin < 25 g/L) (EMA Arcoxia SmPC Mục 4.3)",
+      "citationIds": [
+        "ema.arcoxia.contra_severe_hepatic_renal_ibd"
+      ]
+    },
+    {
+      "code": "peptic_ulcer",
+      "messageVi": "Chống chỉ định khi đang có loét dạ dày tá tràng tiến triển, xuất huyết tiêu hóa hoặc bệnh viêm ruột mạn tính (IBD) (EMA Arcoxia SmPC Mục 4.3)",
+      "citationIds": [
+        "ema.arcoxia.contra_severe_hepatic_renal_ibd",
+        "byt.gout.2014.nsaid_contra_p198"
+      ]
+    },
+    {
+      "code": "anticoagulant_use",
+      "messageVi": "Tránh phối hợp với thuốc chống đông do làm tăng INR (~13%) và nguy cơ xuất huyết nghiêm trọng",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198"
+      ]
+    }
+  ],
+  "interactions": [
+    "Warfarin và thuốc chống đông: Tăng khoảng 13% INR và tăng nguy cơ xuất huyết nghiêm trọng",
+    "Rifampicin (chất cảm ứng CYP3A4): Làm giảm ~65% nồng độ etoricoxib huyết tương",
+    "ACEi / ARB / Lợi tiểu: Làm giảm hiệu quả hạ áp và tăng nguy cơ suy thận cấp",
+    "Ethinylestradiol: Làm tăng nồng độ estrogen huyết tương (tăng nguy cơ huyết khối)"
+  ],
+  "citationIds": [
+    "ema.arcoxia.gout_posology_120mg_8d",
+    "ema.arcoxia.hepatic_renal_posology",
+    "ema.arcoxia.contra_htn_cv_aerd",
+    "ema.arcoxia.contra_severe_hepatic_renal_ibd",
+    "ema.arcoxia.contra_aerd",
+    "ema.arcoxia.pregnancy_lactation_contra",
+    "ema.arcoxia.lactation_contra",
+    "byt.gout.2014.nsaid_dosing_p201",
+    "byt.ckd.2024.gout_flare_table22"
+  ],
+  "hepatic": {
+    "status": "avoid",
+    "note": "Chống chỉ định etoricoxib khi suy gan nặng (Child-Pugh C ≥ 10); giới hạn tối đa ≤ 60 mg/ngày ở Child-Pugh A và ≤ 30 mg/ngày ở Child-Pugh B theo EMA Arcoxia SmPC Mục 4.2–4.3.",
+    "notesVi": "Chống chỉ định etoricoxib khi suy gan nặng (Child-Pugh C ≥ 10); giới hạn tối đa ≤ 60 mg/ngày ở Child-Pugh A và ≤ 30 mg/ngày ở Child-Pugh B theo EMA Arcoxia SmPC Mục 4.2–4.3.",
+    "citationIds": [
+      "ema.arcoxia.hepatic_renal_posology",
+      "ema.arcoxia.contra_severe_hepatic_renal_ibd"
+    ]
+  }
+}

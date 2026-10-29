@@ -1,0 +1,51 @@
+{
+  "id": "af_26_inpatient_delayed_cv_need_tee",
+  "titleVi": "Nội viện Chuyển nhịp ≥ 24h: Bắt buộc TEE loại trừ huyết khối hoặc ≥ 3 tuần chống đông",
+  "source": "ESC 2024 AF Rec Table 15 / esc.af.2024.cardioversion_timing_24h",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 62,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 125,
+    "dbp": 78,
+    "hr": 120,
+    "rhythm": "afib",
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true
+    },
+    "customInputs": {
+      "afOnset": "more_than_48h_or_unknown",
+      "hemodynamicStability": "stable"
+    },
+    "currentMeds": []
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_af_cv_timing_delayed",
+        "action": "HOLD"
+      }
+    ]
+  },
+  "descriptionVi": "Rung nhĩ khởi phát không rõ thời điểm / > 48h: Hoãn chuyển nhịp sớm, bắt buộc làm TEE loại trừ huyết khối hoặc dùng đủ 3 tuần chống đông."
+}

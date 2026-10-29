@@ -1,0 +1,78 @@
+{
+  "id": "copd_34_r3_inpatient_elective_no_exac",
+  "titleVi": "Hồi quy R3: Bệnh nhân COPD nhập viện vì bệnh khác (acuteExacerbation = false, SpO₂ 97%) không tự kích hoạt phác đồ đợt cấp",
+  "source": "GOLD 2026 Ch. 3-4 / BYT QĐ 2131/2026 (R3-COPD-02)",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_34",
+    "age": 66,
+    "sex": "male",
+    "weight": 62,
+    "height": 166,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 74,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteExacerbation": false,
+      "fev1FvcRatio": 0.58,
+      "fev1PredPct": 64,
+      "mmrc": 2,
+      "cat": 14,
+      "moderateExacerbations": 0,
+      "hospitalizations": 0,
+      "bloodEos": 140,
+      "currentInhaler": "none",
+      "restingSpo2": 97,
+      "smokingStatus": "former"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "tiotropium_olodaterol",
+        "ruleId": "rec_copd_init_group_b",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_copd_inpatient_steroid",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_copd_inpatient_oxygen",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_copd_inpatient_saba_sama",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_copd_discharge_checklist",
+        "action": "MONITOR"
+      }
+    ]
+  }
+}

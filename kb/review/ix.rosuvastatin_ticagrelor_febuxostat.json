@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.rosuvastatin_ticagrelor_febuxostat",
+  "contentHash": "013e1845f4b96f6df482052b57a1cdd07d100c4efb9c991a4a42e986d1de4ee5",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.rosuvastatin_ticagrelor_febuxostat",
+      "contentHash": "c01c6ea20ff696f4",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T11:20:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.rosuvastatin_ticagrelor_febuxostat."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T11:20:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

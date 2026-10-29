@@ -1,0 +1,60 @@
+{
+  "id": "lipid_46_outpatient_high_risk_tg_statin_first",
+  "titleVi": "Bệnh nhân nguy cơ cao có tăng Triglyceride (TG 3.2 mmol/L > 2.3) dù LDL-C 1.6 - Khởi trị Statin đầu tay",
+  "source": "ESC/EAS 2019 & BYT 2020 / esc.lipid.2019.htg_statin_first",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 58,
+    "sex": "male",
+    "weight": 78,
+    "height": 168,
+    "sbp": 134,
+    "dbp": 82,
+    "hr": 74,
+    "scr": 86,
+    "tc": 4.2,
+    "hdl": 0.9,
+    "ldl": 1.6,
+    "tg": 3.2,
+    "conditions": {
+      "dm": true
+    },
+    "customInputs": {
+      "dmDurationYears": 12
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "fenofibrate",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R2-R1-06: Ở bệnh nhân nguy cơ cao / rất cao chưa dùng statin nhưng có TG > 2.3 mmol/L (200 mg/dL), Statin được khuyến cáo Class I là thuốc đầu tay giảm nguy cơ biến cố tim mạch ngay cả khi LDL-C đo được thấp."
+}

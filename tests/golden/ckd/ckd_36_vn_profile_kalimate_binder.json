@@ -1,0 +1,52 @@
+{
+  "id": "ckd_36_vn_profile_kalimate_binder",
+  "titleVi": "Ngoại trú (Hồ sơ VN) - Tăng Kali mạn 5.3 mmol/L khi dùng Losartan -> Khởi trị Calcium Polystyrene Sulfonate (Kalimate) theo BYT 2024 (Regression CKD-R2-02)",
+  "source": "BYT 2024 QĐ 2388/QĐ-BYT & KDIGO 2024 PP 3.6.3",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_36",
+    "name": "BN CKD 36",
+    "age": 63,
+    "sex": "female",
+    "weight": 56,
+    "sbp": 134,
+    "dbp": 82,
+    "hr": 74,
+    "scr": 165,
+    "k": 5.3,
+    "uacr": 24,
+    "conditions": {
+      "ckd": true,
+      "htn": true
+    },
+    "currentMeds": [
+      { "drugId": "losartan", "name": "Cozaar 50 mg", "dose": 50, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "calcium_polystyrene_sulfonate", "action": "START", "doseContains": "15 g" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "patiromer", "action": "START" },
+      { "drugId": "losartan", "action": "UPTITRATE" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R2-02 & R3-CKD-14: Ở hồ sơ thực hành Việt Nam (profile = VN), chỉ định Calcium Polystyrene Sulfonate (Kalimate) thực tế sẵn có tại bệnh viện thay vì Patiromer chưa lưu hành."
+}

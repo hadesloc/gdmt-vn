@@ -1,0 +1,26 @@
+{
+  "itemId": "gina.copd.2026.saba_overuse_3_canisters",
+  "contentHash": "8c1e67c4e7086d94394f2422c0078c71e054f1ee8ee8983c7529e20948a1df31",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gina.copd.2026.saba_overuse_3_canisters",
+      "contentHash": "6ff69e02f9a8d030",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

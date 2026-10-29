@@ -1,0 +1,115 @@
+{
+  "id": "sodium_zirconium_cyclosilicate",
+  "nameVi": "Sodium Zirconium Cyclosilicate (SZC)",
+  "inn": "Sodium zirconium cyclosilicate",
+  "class": "K_binder",
+  "classes": [
+    "potassium_binder"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Lokelma"
+  ],
+  "forms": [
+    "Gói bột pha hỗn dịch uống 5 g",
+    "Gói bột pha hỗn dịch uống 10 g"
+  ],
+  "start": {
+    "amount": 10,
+    "unit": "g",
+    "frequency": "3 lần/ngày",
+    "route": "uống",
+    "description": "10 g x 3 lần/ngày trong 48 giờ đầu"
+  },
+  "target": {
+    "amount": 10,
+    "unit": "g",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Liều duy trì 10 g 1 lần/ngày (hoặc 5 g cách ngày - 15 g/ngày)"
+  },
+  "titration": {
+    "step": 5,
+    "intervalDays": 7,
+    "maxDose": "15 g/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "10 g x 3 lần/ngày (tối đa 48 giờ đầu), sau đó duy trì 5–10 g x 1 lần/ngày",
+      "note": "An toàn ở bệnh nhân CKD chưa lọc máu; lưu ý mỗi 5 g chứa khoảng 400 mg natri",
+      "citationIds": [
+        "fda.szc.starting_dose",
+        "fda.szc.edema_sodium_400mg",
+        "kdigo.ckd.2024.pp_3_6_3_hyperkalemia_k_binders"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Chưa lọc máu: 10 g x 3 lần/ngày (48h đầu), duy trì 5–10 g/ngày; Lọc máu chu kỳ: 5 g x 1 lần/ngày chỉ vào NGÀY KHÔNG LỌC MÁU (10 g nếu K+ > 6.5 mmol/L; duy trì 5–15 g/ngày không lọc máu)",
+      "note": "Bệnh nhân chạy thận nhân tạo chu kỳ chỉ uống vào ngày không lọc máu, chỉnh liều dựa trên K+ trước buổi lọc sau khoảng nghỉ dài; theo dõi phù do tải lượng natri (~400 mg Na+ mỗi 5 g)",
+      "citationIds": [
+        "fda.szc.starting_dose",
+        "fda.szc.hemodialysis_dosing",
+        "fda.szc.hemodialysis_maintenance_sodium",
+        "fda.szc.edema_sodium_400mg"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_szc_k_low",
+      "parameter": "K",
+      "operator": "<",
+      "threshold": 4,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm ngừng hoặc giảm liều SZC nếu kali máu < 4.0 mmol/L (ngừng ngay nếu hạ kali máu < 3.5 mmol/L)",
+      "citationIds": [
+        "fda.szc.target_range_4_0",
+        "fda.szc.hypokalemia_discontinue"
+      ]
+    }
+  ],
+  "interactions": [
+    "Uống cách xa các thuốc đường uống khác phụ thuộc pH dạ dày ít nhất 2 giờ trước hoặc 2 giờ sau",
+    "Thận trọng nguy cơ phù và giữ nước do tải lượng natri (khoảng 400 mg natri trong mỗi 5 g SZC)"
+  ],
+  "citationIds": [
+    "fda.szc.starting_dose",
+    "fda.szc.hemodialysis_dosing",
+    "fda.szc.hemodialysis_maintenance_sodium",
+    "fda.szc.edema_sodium_400mg",
+    "fda.szc.target_range_4_0",
+    "fda.szc.hypokalemia_discontinue",
+    "ukka.2022.guideline_16_6_1_szc_emergency",
+    "kdigo.ckd.2024.pp_3_6_3_hyperkalemia_k_binders"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Thuốc vô cơ không hấp thu toàn thân; theo dõi nguy cơ phù do tải lượng natri",
+    "citationIds": [
+      "fda.szc.starting_dose"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Không hấp thu toàn thân nên không bài tiết qua sữa mẹ",
+    "citationIds": [
+      "fda.szc.starting_dose"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity",
+      "messageVi": "Tiền sử quá mẫn với sodium zirconium cyclosilicate",
+      "citationIds": [
+        "fda.szc.starting_dose"
+      ]
+    }
+  ]
+}

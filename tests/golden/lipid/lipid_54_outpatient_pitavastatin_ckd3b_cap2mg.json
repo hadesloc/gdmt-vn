@@ -1,0 +1,64 @@
+{
+  "id": "lipid_54_outpatient_pitavastatin_ckd3b_cap2mg",
+  "titleVi": "Bệnh nhân CKD giai đoạn 3b (eGFR ~36) đang dùng Pitavastatin 4 mg (LDL 1.6) - Giảm liều Pitavastatin ≤ 2 mg/ngày",
+  "source": "ACC/AHA 2026 & FDA / acc.lipid.2026.pitavastatin_dose",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "female",
+    "weight": 56,
+    "height": 155,
+    "sbp": 132,
+    "dbp": 78,
+    "hr": 70,
+    "scr": 135,
+    "tc": 3.8,
+    "hdl": 1.2,
+    "ldl": 1.6,
+    "tg": 1.5,
+    "conditions": {
+      "ckd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "pitavastatin",
+        "name": "Pitavastatin",
+        "dose": 4,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "pitavastatin",
+        "action": "REDUCE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "pitavastatin",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R2-R2-06 & LIPID-R2-R3-05: Khi eGFR < 60 mL/phút/1.73m², liều tối đa của Pitavastatin là 2 mg/ngày; không được phát CONTINUE Pitavastatin 4 mg dù LDL-C đã đạt < 1.8 mmol/L."
+}

@@ -1,0 +1,55 @@
+{
+  "id": "ckd_57_hypokalemia_stop_potassium_binders",
+  "titleVi": "Ngoại trú - Hạ Kali máu (K⁺ = 3.3 mmol/L < 3.5 mmol/L) trên bệnh nhân đang dùng chất gắn Kali -> Phát lệnh STOP khẩn cấp (Regression CKD-R2-R2-03)",
+  "source": "FDA Veltassa/Lokelma Label & UKKA 2022 Guideline 8.1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_57",
+    "name": "BN CKD 57",
+    "age": 65,
+    "sex": "male",
+    "weight": 62,
+    "sbp": 126,
+    "dbp": 76,
+    "hr": 74,
+    "scr": 190,
+    "k": 3.3,
+    "uacr": 22,
+    "conditions": {
+      "ckd": true,
+      "htn": true
+    },
+    "currentMeds": [
+      { "drugId": "calcium_polystyrene_sulfonate", "dose": 15, "unit": "g" },
+      { "drugId": "patiromer", "dose": 8.4, "unit": "g" },
+      { "drugId": "losartan", "dose": 50, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "calcium_polystyrene_sulfonate", "action": "STOP" },
+      { "drugId": "patiromer", "action": "STOP" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "calcium_polystyrene_sulfonate", "action": "CONTINUE" },
+      { "drugId": "patiromer", "action": "CONTINUE" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R2-R2-03: Phát lệnh STOP ngay toàn bộ chất gắn kali đường tiêu hóa khi Kali máu hạ < 3.5 mmol/L."
+}

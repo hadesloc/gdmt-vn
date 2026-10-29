@@ -1,0 +1,59 @@
+{
+  "id": "asthma_09_track2_step3_moderate",
+  "titleVi": "Track 2 Bậc 3: Fluticasone/salmeterol liều thấp duy trì",
+  "source": "GINA 2026 Strategy Report",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_09",
+    "name": "Nam 45 tuổi",
+    "age": 45,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 124,
+    "dbp": 78,
+    "hr": 80,
+    "rhythm": "sinus",
+    "fev1Pct": 70,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "currentTrack": "track2",
+      "currentStep": 3,
+      "daytimeSymptomsMoreThanTwiceWeek": true,
+      "nightWakingDueToAsthma": true,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "fluticasone_salmeterol",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Track 2 Bậc 3: Khởi trị Fluticasone/salmeterol 125/25 x 2 lần/ngày + SABA khi cần."
+}

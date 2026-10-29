@@ -1,0 +1,48 @@
+{
+  "id": "htn_26_inpatient_stroke_no_thrombolysis_extreme",
+  "titleVi": "Nhồi máu não không tiêu sợi huyết HA 226/124: Hạ thận trọng 15% MAP",
+  "source": "VSH 2022 / vsh.htn.2022.emergency_stroke_no_thrombolysis",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 67,
+    "sex": "male",
+    "weight": 70,
+    "height": 167,
+    "sbp": 226,
+    "dbp": 124,
+    "hr": 80,
+    "conditions": {
+      "htn": true,
+      "acuteIschemicStroke": true,
+      "thrombolysisEligible": false
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "nicardipine",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nhồi máu não không tiêu sợi huyết nhưng HA vượt ngưỡng > 220/120 mmHg: Hạ thận trọng 15% MAP."
+}

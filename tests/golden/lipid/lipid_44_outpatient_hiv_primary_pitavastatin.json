@@ -1,0 +1,57 @@
+{
+  "id": "lipid_44_outpatient_hiv_primary_pitavastatin",
+  "titleVi": "Người nhiễm HIV 45 tuổi dự phòng tiên phát (LDL 2.2) - Khởi trị Pitavastatin 4 mg/ngày (REPRIEVE)",
+  "source": "ESC/EAS 2025 & ACC/AHA 2026 / esc.lipid.2025.hiv_statin_primary",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 45,
+    "sex": "male",
+    "weight": 64,
+    "height": 168,
+    "sbp": 122,
+    "dbp": 76,
+    "hr": 72,
+    "scr": 78,
+    "tc": 4.3,
+    "hdl": 1.3,
+    "ldl": 2.2,
+    "tg": 1.4,
+    "conditions": {
+      "hiv": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "pitavastatin",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_lipid_primary_goal_achieved",
+        "action": "MONITOR"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R2-R1-04: Theo ESC/EAS 2025 (Class I-B) và ACC/AHA 2026 (COR 1) dựa trên thử nghiệm REPRIEVE, người nhiễm HIV ≥ 40 tuổi có chỉ định khởi trị Statin dự phòng tiên phát (ưu tiên Pitavastatin 4 mg/ngày) bất kể mức LDL-C nền hay điểm SCORE2."
+}

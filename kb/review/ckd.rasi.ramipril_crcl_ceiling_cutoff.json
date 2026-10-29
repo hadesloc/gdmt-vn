@@ -1,0 +1,27 @@
+{
+  "itemId": "ckd.rasi.ramipril_crcl_ceiling_cutoff",
+  "contentHash": "80f849c60c845ecb99145ca571bb8fd4ee4c37faa4bd3632fc9f4252972085ea",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.rasi.ramipril_crcl_ceiling_cutoff",
+      "contentHash": "2cdc237a10d2a3cb",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "round": 3,
+          "reviewedAt": "2026-10-27T18:00:00.000Z",
+          "role": "agent_e4_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 3 cho ckd.rasi.ramipril_crcl_ceiling_cutoff."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "lipid_34_outpatient_step3_add_pcsk9i",
+  "titleVi": "ASCVD đang dùng Atorvastatin 80 mg + Ezetimibe 10 mg chưa đạt đích - Bước 3 thêm PCSK9i",
+  "source": "ESC/EAS 2019 / esc.lipid.2019.pcsk9_add_on_secondary",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 59,
+    "sex": "male",
+    "weight": 74,
+    "height": 170,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 70,
+    "scr": 82,
+    "tc": 4.1,
+    "hdl": 1.1,
+    "ldl": 1.9,
+    "tg": 1.5,
+    "conditions": {
+      "ascvd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "atorvastatin",
+        "name": "Atorvastatin",
+        "dose": 80,
+        "unit": "mg"
+      },
+      {
+        "drugId": "ezetimibe",
+        "name": "Ezetimibe",
+        "dose": 10,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "ezetimibe",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "evolocumab",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R1-03 & LIPID-R2-03: Phối hợp kép Statin tối đa + Ezetimibe vẫn chưa đạt đích < 1.4 mmol/L -> Bước 3 bổ sung ức chế PCSK9 (Evolocumab)."
+}

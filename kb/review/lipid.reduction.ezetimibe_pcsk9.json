@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.reduction.ezetimibe_pcsk9",
+  "contentHash": "1c42a85c0f67a51c338b6cb54cebeb269c6e5284cd0ff89c85c95b9ae9b3c239",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.reduction.ezetimibe_pcsk9",
+      "contentHash": "af6ed61a27248443",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T15:55:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.reduction.ezetimibe_pcsk9."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T15:55:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

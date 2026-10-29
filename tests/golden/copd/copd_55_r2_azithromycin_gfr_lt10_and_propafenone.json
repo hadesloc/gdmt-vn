@@ -1,0 +1,77 @@
+{
+  "id": "copd_55_r2_azithromycin_gfr_lt10_and_propafenone",
+  "titleVi": "Hồi quy R2 (COPD-R1V2-06 & COPD-R2-208): Chống chỉ định Azithromycin dài hạn khi suy thận rất nặng (eGFR < 10 mL/phút) và đang dùng Propafenone kéo dài QT",
+  "source": "BYT QĐ 2131/2026 p. 29 & GOLD 2026 p. 84 (COPD-R1V2-06, COPD-R2-208)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_55",
+    "age": 72,
+    "sex": "male",
+    "weight": 60,
+    "height": 165,
+    "sbp": 134,
+    "dbp": 78,
+    "hr": 76,
+    "scr": 680,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "name": "Trelegy Ellipta",
+        "dose": 100,
+        "unit": "mcg"
+      },
+      {
+        "drugId": "propafenone",
+        "name": "Rytmonorm",
+        "dose": 150,
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.45,
+      "fev1PredPct": 42,
+      "mmrc": 2,
+      "cat": 18,
+      "moderateExacerbations": 2,
+      "hospitalizations": 1,
+      "bloodEos": 160,
+      "smokingStatus": "former"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "azithromycin",
+        "ruleId": "rec_copd_azithromycin_contra",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "azithromycin",
+        "action": "CONSIDER"
+      }
+    ]
+  }
+}

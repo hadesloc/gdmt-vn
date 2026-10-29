@@ -1,0 +1,75 @@
+{
+  "id": "copd_50_r2_milk_allergy_avoids_lactose_dpi",
+  "titleVi": "Hồi quy R2 (R3-R2-COPD-06): Dị ứng nặng đạm sữa bò đang dùng Anoro Ellipta (chứa lactose) – Ngừng Anoro và chuyển sang Spiolto Respimat",
+  "source": "FDA DPI Prescribing Information & GOLD 2026 p. 69 (R3-R2-COPD-06)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_50",
+    "age": 60,
+    "sex": "female",
+    "weight": 54,
+    "height": 158,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 74,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "umeclidinium_vilanterol",
+        "name": "Anoro Ellipta",
+        "dose": 62.5,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.56,
+      "fev1PredPct": 62,
+      "mmrc": 1,
+      "cat": 8,
+      "moderateExacerbations": 0,
+      "hospitalizations": 0,
+      "bloodEos": 150,
+      "severeMilkProteinAllergy": true,
+      "smokingStatus": "former"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "tiotropium_olodaterol",
+        "ruleId": "rec_copd_switch_dpi_inhaler",
+        "action": "SWITCH"
+      },
+      {
+        "drugId": "umeclidinium_vilanterol",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "umeclidinium_vilanterol",
+        "action": "CONTINUE"
+      }
+    ]
+  }
+}

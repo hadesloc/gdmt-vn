@@ -1,0 +1,65 @@
+{
+  "id": "dm2_14_hf_stop_saxagliptin",
+  "titleVi": "Bệnh nhân suy tim đang dùng Saxagliptin - Ngừng Saxagliptin (SAVOR-TIMI 53)",
+  "source": "ADA 2026 SOC Ch. 10",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 69,
+    "sex": "female",
+    "weight": 63,
+    "height": 155,
+    "sbp": 122,
+    "dbp": 76,
+    "hr": 80,
+    "lvef": 32,
+    "scr": 98,
+    "k": 4.3,
+    "glucose": 8.3,
+    "hba1c": 7.6,
+    "conditions": {
+      "dm": true,
+      "hf": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "saxagliptin",
+        "name": "Saxagliptin",
+        "dose": 5,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "saxagliptin",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "saxagliptin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Saxagliptin làm tăng nguy cơ nhập viện suy tim."
+}

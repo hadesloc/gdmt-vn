@@ -1,0 +1,133 @@
+{
+  "id": "isosorbide_dinitrate",
+  "nameVi": "Isosorbide dinitrate (ISDN)",
+  "inn": "Isosorbide dinitrate",
+  "class": "Organic nitrate",
+  "classes": [
+    "nitrate"
+  ],
+  "vnBrands": [
+    "Risordan",
+    "Isordil",
+    "Nitromint"
+  ],
+  "forms": [
+    "Viên nén 10 mg",
+    "Viên nén phóng thích kéo dài 20 mg",
+    "Viên nén 40 mg"
+  ],
+  "start": {
+    "amount": 20,
+    "unit": "mg",
+    "frequency": "3 lần/ngày",
+    "route": "uống",
+    "description": "phối hợp cùng Hydralazine 37.5 mg x 3 lần/ngày trong HFrEF (duy trì khoảng nghỉ không có nitrat ban đêm 10–12 giờ để tránh nhờn thuốc)"
+  },
+  "target": {
+    "amount": 40,
+    "unit": "mg",
+    "frequency": "3 lần/ngày",
+    "route": "uống",
+    "description": "40 mg uống 3 lần/ngày phối hợp Hydralazine 75 mg x 3 lần/ngày"
+  },
+  "titration": {
+    "step": "Tăng từ 20 mg lên 40 mg x 3 lần/ngày sau 2–4 tuần theo dung nạp huyết áp và triệu chứng đau đầu",
+    "intervalDays": 14,
+    "maxDose": "120 mg/ngày (40 mg x 3 lần/ngày)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "20 mg x 3 lần/ngày -> đích 40 mg x 3 lần/ngày (không cần chỉnh liều theo chức năng thận)",
+      "citationIds": [
+        "esc.hf.2026.amt_doses_table11",
+        "esc.hf.2026.hisdn_intolerant_rec"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "20 mg x 3 lần/ngày -> đích 40 mg x 3 lần/ngày (chuyển hoá qua gan, dùng được ở CKD G5)",
+      "citationIds": [
+        "esc.hf.2026.amt_doses_table11",
+        "esc.hf.2026.hisdn_intolerant_rec"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_isdn_sbp_min",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 90,
+      "unit": "mmHg",
+      "action": "contra",
+      "messageVi": "Huyết áp tâm thu < 90 mmHg: Chống chỉ định sử dụng Nitrat do nguy cơ trụy mạch",
+      "citationIds": [
+        "esc.hf.2026.acute_inotropes_shock_sbp90"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Có thể dùng đường uống phối hợp Hydralazine ở phụ nữ mang thai suy tim khi chống chỉ định hệ RAA (ESC 2025 Pregnancy).",
+    "citationIds": [
+      "esc.preg.2025.hf_preg_diuretics_bb_nitrates",
+      "esc.preg.2025.hydralazine_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Dữ liệu bài tiết nitrat qua sữa mẹ còn hạn chế; thận trọng theo dõi huyết áp trẻ bú mẹ hoặc ưu tiên Enalapril sau sinh.",
+    "citationIds": [
+      "esc.preg.2025.lactation_enalapril"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "concomitant_pde5_inhibitor",
+      "messageVi": "Chống chỉ định tuyệt đối phối hợp với thuốc ức chế PDE-5 (sildenafil trong 24 giờ, tadalafil trong 48 giờ) do nguy cơ tụt huyết áp kháng trị tử vong",
+      "citationIds": [
+        "esc.hf.2026.nitrates_pde5i_avoid"
+      ]
+    },
+    {
+      "code": "concomitant_sgc_stimulator",
+      "messageVi": "Không khuyến cáo / chống chỉ định phối hợp với thuốc kích thích sGC (riociguat, vericiguat)",
+      "citationIds": [
+        "fda.hf.vericiguat_pde5_contra"
+      ]
+    },
+    {
+      "code": "cardiogenic_shock",
+      "messageVi": "Chống chỉ định trong sốc tim, suy thất phải đơn độc hoặc hạ huyết áp nặng (SBP < 90 mmHg)",
+      "citationIds": [
+        "esc.hf.2026.acute_inotropes_shock_sbp90"
+      ]
+    }
+  ],
+  "interactions": [
+    "TƯƠNG TÁC TỬ VONG: Chống chỉ định tuyệt đối dùng cùng chất ức chế PDE-5 (sildenafil, tadalafil, vardenafil) hoặc riociguat; tránh phối hợp đồng thời với vericiguat"
+  ],
+  "citationIds": [
+    "esc.hf.2026.hisdn_black_rec",
+    "esc.hf.2026.hisdn_intolerant_rec",
+    "esc.hf.2026.amt_doses_table11",
+    "esc.hf.2026.acute_vasodilators",
+    "aha.hf.2022.hisdn_1a"
+  ],
+  "hepatic": {
+    "status": "caution",
+    "childA": "ok",
+    "childB": "caution",
+    "childC": "caution",
+    "note": "Chuyển hóa bước đầu qua gan; thận trọng nguy cơ hạ huyết áp ở bệnh nhân suy gan nặng.",
+    "notesVi": "Chuyển hóa bước đầu qua gan; thận trọng nguy cơ hạ huyết áp ở bệnh nhân suy gan nặng.",
+    "citationIds": [
+      "esc.hf.2026.hisdn_intolerant_rec"
+    ]
+  }
+}

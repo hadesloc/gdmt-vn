@@ -1,0 +1,79 @@
+{
+  "id": "icosapent_ethyl",
+  "nameVi": "Icosapent ethyl",
+  "inn": "Icosapent ethyl",
+  "class": "Acid béo Omega-3 tinh khiết (EPA)",
+  "classes": [
+    "omega3_epa"
+  ],
+  "vnBrands": [],
+  "forms": [
+    "Viên nang mềm 0.5 g (Vascepa - tham chiếu quốc tế, chưa đăng ký chính thức rộng rãi tại Việt Nam)",
+    "Viên nang mềm 1 g"
+  ],
+  "start": {
+    "amount": 2,
+    "unit": "g",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "2 g uống 2 lần/ngày (tổng 4 g/ngày) cùng bữa ăn"
+  },
+  "target": {
+    "amount": 2,
+    "unit": "g",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "2 g uống 2 lần/ngày (tổng 4 g/ngày) cùng bữa ăn"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "2 g x 2 lần/ngày (tổng 4 g/ngày)",
+      "note": "Không cần chỉnh liều ở bệnh nhân suy giảm chức năng thận",
+      "citationIds": [
+        "acc.lipid.2026.icosapent_dose",
+        "esc.lipid.2019.htg_icosapent_ethyl"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_icosapent_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "avoid",
+      "messageVi": "Không khuyến cáo dùng thuốc hạ lipid trong thai kỳ và thời kỳ cho con bú (ESC/EAS)",
+      "citationIds": [
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    }
+  ],
+  "interactions": [
+    "Tăng nguy cơ rung nhĩ / cuồng nhĩ cần nhập viện (3.1% so với 2.1% ở thử nghiệm REDUCE-IT): đặc biệt lưu ý ở bệnh nhân có tiền sử rung nhĩ kịch phát",
+    "Tăng nguy cơ chảy máu khi dùng đồng thời với thuốc chống đông hoặc thuốc kháng kết tập tiểu cầu: cần theo dõi định kỳ lâm sàng"
+  ],
+  "citationIds": [
+    "esc.lipid.2019.htg_icosapent_ethyl",
+    "acc.lipid.2026.icosapent_dose",
+    "acc.lipid.2026.icosapent_af_bleeding",
+    "acc.lipid.2026.icosapent_cor2b"
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Tránh sử dụng thuốc hạ lipid máu trong thai kỳ trừ trường hợp tăng Triglycerid cực nặng đe dọa viêm tụy cấp (ESC / FDA)",
+    "citationIds": [
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "EPA bài tiết qua sữa mẹ, cần cân nhắc lợi ích và nguy cơ khi dùng liều dược lý 4 g/ngày (FDA / ESC)",
+    "citationIds": [
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "contraindications": []
+}

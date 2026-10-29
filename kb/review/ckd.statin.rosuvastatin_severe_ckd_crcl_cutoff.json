@@ -1,0 +1,27 @@
+{
+  "itemId": "ckd.statin.rosuvastatin_severe_ckd_crcl_cutoff",
+  "contentHash": "aec72e78df543439fd5f4cc365b9f45d2dc8eae9f5ad7326421142b76fe49489",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.statin.rosuvastatin_severe_ckd_crcl_cutoff",
+      "contentHash": "a37f03b148bc5aa5",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "round": 4,
+          "reviewedAt": "2026-10-27T23:56:20.141Z",
+          "role": "agent_e5_round4_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và kiểm tra không số mồ côi Vòng 4 cho ngưỡng ckd.statin.rosuvastatin_severe_ckd_crcl_cutoff."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T23:56:20.141Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

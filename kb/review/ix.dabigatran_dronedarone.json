@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.dabigatran_dronedarone",
+  "contentHash": "a698a19283e14cbafc8f7531c07e7dc854edfc91865010014d730eff9989ca5f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.dabigatran_dronedarone",
+      "contentHash": "da1d631d43acda03",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.dabigatran_dronedarone."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

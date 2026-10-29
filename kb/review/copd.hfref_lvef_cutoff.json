@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.hfref_lvef_cutoff",
+  "contentHash": "1ca6f293ebf30a75acbef1183cd2fb198354a65abefa2e176edee5a33bbdd335",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.hfref_lvef_cutoff",
+      "contentHash": "1e4562e6b3de9c71",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

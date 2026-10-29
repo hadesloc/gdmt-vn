@@ -1,0 +1,59 @@
+{
+  "id": "asthma_24_gina_control_1q_missing_fail_closed",
+  "titleVi": "Fail-Closed: Chỉ trả lời 1 câu hỏi False -> Yêu cầu nhập đủ 4 câu",
+  "source": "GINA 2026 Table 2A / R1-03 / R3-05",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_24",
+    "name": "Nữ 31 tuổi",
+    "age": 31,
+    "sex": "female",
+    "weight": 52,
+    "sbp": 114,
+    "dbp": 72,
+    "hr": 76,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "currentTrack": "track1",
+      "daytimeSymptomsMoreThanTwiceWeek": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "missing_input_nightWakingDueToAsthma",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Chỉ trả lời 1 câu hỏi GINA không được kết luận kiểm soát tốt, fail-closed sinh CONSIDER yêu cầu nhập đủ."
+}

@@ -1,0 +1,66 @@
+{
+  "id": "af_43_periprocedural_mechanical_valve_warfarin_hold",
+  "titleVi": "Van tim cơ học đang dùng Warfarin chuẩn bị phẫu thuật chảy máu cao: Tạm ngưng 5 ngày + bắc cầu Heparin (R3-AF-07 / ADV_AF_63)",
+  "source": "ACC/AHA 2023 AF Table 19 & Section 6.6 / acc.af.2023.periprocedural_warfarin_doac",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "male",
+    "weight": 68,
+    "height": 168,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 78,
+    "rhythm": "afib",
+    "lvef": 55,
+    "scr": 88,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "mechanicalValve": true
+    },
+    "customInputs": {
+      "plannedProcedureRisk": "high_risk"
+    },
+    "currentMeds": [
+      {
+        "drugId": "warfarin",
+        "name": "Coumadin",
+        "dose": 5,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "warfarin",
+        "action": "HOLD"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "warfarin",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Van cơ học đang dùng Warfarin có kế hoạch phẫu thuật nguy cơ chảy máu cao (R3-AF-07): Tạm ngưng Warfarin 5 ngày để đạt INR < 1.5 và bắt buộc bắc cầu LMWH/UFH."
+}

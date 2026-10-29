@@ -1,0 +1,70 @@
+{
+  "id": "dm2_13_hf_stop_pioglitazone",
+  "titleVi": "Bệnh nhân suy tim đang dùng Pioglitazone - Ngừng ngay Pioglitazone",
+  "source": "FDA Boxed Warning Actos / ADA 2026 Ch. 10",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 67,
+    "sex": "male",
+    "weight": 72,
+    "height": 165,
+    "sbp": 120,
+    "dbp": 75,
+    "hr": 78,
+    "lvef": 35,
+    "nyha": 3,
+    "scr": 105,
+    "k": 4.4,
+    "glucose": 8.5,
+    "hba1c": 7.7,
+    "conditions": {
+      "dm": true,
+      "hf": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "pioglitazone",
+        "name": "Pioglitazone",
+        "dose": 30,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "pioglitazone",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "pioglitazone",
+        "action": "START"
+      },
+      {
+        "drugId": "pioglitazone",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Pioglitazone chống chỉ định ở bệnh nhân suy tim."
+}

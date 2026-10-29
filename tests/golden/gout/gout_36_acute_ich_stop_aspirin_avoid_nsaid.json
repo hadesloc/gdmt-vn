@@ -1,0 +1,73 @@
+{
+  "id": "gout_36_acute_ich_stop_aspirin_avoid_nsaid",
+  "titleVi": "Xuất huyết nội sọ cấp (Acute ICH) trên bệnh nhân gút đang dùng Aspirin liều thấp: Bắt buộc NGỪNG Aspirin",
+  "source": "BYT 361/2014 & ACR 2020 (byt.gout.2014.nsaid_contra_p198, acr.gout.2020.do_not_stop_aspirin)",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 69,
+    "sex": "male",
+    "weight": 67,
+    "sbp": 162,
+    "dbp": 94,
+    "scr": 102,
+    "uricAcid": 440,
+    "conditions": {
+      "gout": true,
+      "htn": true,
+      "acuteIntracerebralHemorrhage": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "aspirin",
+        "name": "Aspirin",
+        "dose": "81",
+        "unit": "mg"
+      },
+      {
+        "drugId": "allopurinol",
+        "name": "Allopurinol",
+        "dose": "200",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 1,
+      "hlab5801": "negative"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "aspirin",
+        "ruleId": "rec_gout_stop_aspirin_active_bleed",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "aspirin",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 69 tuổi gút mạn đang dùng Aspirin 81 mg nhập viện vì xuất huyết nội sọ cấp (acuteIntracerebralHemorrhage). Khác với ngoại trú ổn định (giữ Aspirin theo ACR 2020), khi có xuất huyết cấp đe dọa tính mạng bắt buộc phát lệnh NGỪNG KHẨN CẤP Aspirin."
+}

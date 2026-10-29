@@ -1,0 +1,60 @@
+{
+  "id": "ckd_05_finerenone_t2d_on_rasi",
+  "titleVi": "Khởi trị Finerenone 10 mg ở bệnh nhân ĐTĐ2 kèm CKD G3a còn albumin niệu",
+  "source": "KDIGO 2024 CKD Rec 3.8.1 / kdigo.ckd.2024.rec_3_8_1_finerenone_indication",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_05",
+    "name": "BN CKD 05",
+    "age": 63,
+    "sex": "male",
+    "weight": 76,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 74,
+    "scr": 150,
+    "k": 4.4,
+    "uacr": 28,
+    "conditions": {
+      "ckd": true,
+      "dm": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "losartan",
+        "name": "Cozaar 100 mg",
+        "dose": 100,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "ckd",
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "finerenone",
+        "action": "START",
+        "doseContains": "10 mg"
+      }
+    ]
+  },
+  "descriptionVi": "Chỉ định Finerenone 2A khi ĐTĐ2 có CKD eGFR > 25, K+ <= 5.0 và còn albumin niệu."
+}

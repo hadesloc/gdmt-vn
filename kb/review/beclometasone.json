@@ -1,0 +1,26 @@
+{
+  "itemId": "beclometasone",
+  "contentHash": "e675fcc7a9f58121dcb9103b8d52ceb998aba5f37e80d1c85c76ccb4f58f15d8",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "beclometasone",
+      "contentHash": "05a6ab47fbb23a63",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:53:57.954Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính hợp lệ của liều, cổng an toàn, thai kỳ, cho con bú, chống chỉ định, qtRisk và mã nhóm chuẩn hóa cho thuốc Beclometasone dipropionate."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:53:57.954Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

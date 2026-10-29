@@ -1,0 +1,202 @@
+{
+  "id": "rivaroxaban",
+  "nameVi": "Rivaroxaban",
+  "inn": "Rivaroxaban",
+  "class": "Thuốc chống đông đường uống ức chế trực tiếp yếu tố Xa (DOAC)",
+  "classes": [
+    "doac",
+    "oac",
+    "factor_xa_inhibitor"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Xarelto"
+  ],
+  "forms": [
+    "Viên nén bao phim 10 mg",
+    "Viên nén bao phim 15 mg",
+    "Viên nén bao phim 20 mg"
+  ],
+  "start": {
+    "amount": 20,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "20 mg uống 1 lần/ngày cùng bữa ăn tối (giảm xuống 15 mg 1 lần/ngày cùng bữa ăn tối nếu CrCl 15–49 mL/phút)"
+  },
+  "target": {
+    "amount": 20,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "20 mg uống 1 lần/ngày cùng bữa ăn tối (hoặc 15 mg 1 lần/ngày nếu CrCl 15–49 mL/phút)"
+  },
+  "titration": {
+    "step": "Không chuẩn độ; điều chỉnh liều theo độ thanh thải creatinin (CrCl)",
+    "intervalDays": 0,
+    "maxDose": "20 mg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 50,
+      "crclFrom": 50,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "20 mg 1 lần/ngày (bắt buộc uống cùng bữa ăn)",
+      "citationIds": [
+        "esc.af.2024.table11_doac_dosing",
+        "fda.rivaroxaban.af_dose"
+      ]
+    },
+    {
+      "eGFRFrom": 15,
+      "eGFRTo": 50,
+      "crclFrom": 15,
+      "crclTo": 50,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "15 mg 1 lần/ngày (bắt buộc uống cùng bữa ăn)",
+      "citationIds": [
+        "esc.af.2024.table11_doac_dosing",
+        "fda.rivaroxaban.af_dose"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "crclTo": 15,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Chống chỉ định / Tránh dùng khi CrCl < 15 mL/phút",
+      "citationIds": [
+        "esc.af.2024.table11_doac_dosing",
+        "fda.rivaroxaban.af_dose"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_rivaroxaban_crcl_min",
+      "parameter": "CrCl",
+      "operator": "<",
+      "threshold": 15,
+      "unit": "mL/min",
+      "action": "contra",
+      "messageVi": "Chống chỉ định rivaroxaban khi CrCl < 15 mL/phút",
+      "citationIds": [
+        "esc.af.2024.table11_doac_dosing",
+        "fda.rivaroxaban.af_dose"
+      ]
+    },
+    {
+      "id": "gate_rivaroxaban_mechanical_valve",
+      "parameter": "mechanical_valve",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "boolean",
+      "action": "contra",
+      "messageVi": "Chống chỉ định DOAC ở bệnh nhân có van tim cơ học hoặc hẹp hai lá vừa–nặng",
+      "citationIds": [
+        "esc.af.2024.doac_preferred_over_vka"
+      ]
+    }
+  ],
+  "interactions": [
+    "Tránh dùng đồng thời với chất ức chế kép mạnh CYP3A4 và P-gp (ketoconazole, itraconazole, ritonavir)",
+    "Tránh dùng đồng thời với chất cảm ứng mạnh CYP3A4/P-gp (rifampicin, carbamazepine, phenytoin, St. John's wort)",
+    "Bắt buộc uống viên 15 mg và 20 mg trong bữa ăn để đảm bảo sinh khả dụng đạt > 80%"
+  ],
+  "citationIds": [
+    "esc.af.2024.doac_preferred_over_vka",
+    "esc.af.2024.table11_doac_dosing",
+    "fda.rivaroxaban.af_dose",
+    "fda.rivaroxaban.hepatic_contra",
+    "acc.af.2023.doac_child_pugh",
+    "fda.apixaban.aps_not_recommended",
+    "esc.af.2024.bleeding_interrupt"
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo dùng trong thai kỳ do thuốc qua nhau thai và nguy cơ xuất huyết sản khoa (ESC 2025 Pregnancy / nhãn FDA); ưu tiên LMWH",
+    "citationIds": [
+      "esc.preg.2025.doac_not_recommended",
+      "esc.af.2024.pregnancy_oac",
+      "fda.rivaroxaban.pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Rivaroxaban bài tiết qua sữa mẹ ở lượng thấp (RID < 2% theo ESC 2025 Pregnancy); cân nhắc thận trọng lợi ích cho con bú so với nguy cơ chảy máu ở trẻ hoặc ưu tiên VKA/LMWH",
+    "citationIds": [
+      "esc.preg.2025.rivaroxaban_dabigatran_lactation",
+      "fda.rivaroxaban.lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "mechanical_valve",
+      "messageVi": "Chống chỉ định tuyệt đối DOAC ở bệnh nhân có van tim cơ học",
+      "citationIds": [
+        "esc.af.2024.doac_preferred_over_vka"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định rivaroxaban ở bệnh nhân suy gan vừa–nặng (Child-Pugh B và C) hoặc bệnh gan kèm rối loạn đông máu",
+      "citationIds": [
+        "fda.rivaroxaban.hepatic_contra",
+        "acc.af.2023.doac_child_pugh"
+      ]
+    },
+    {
+      "code": "pregnancy",
+      "messageVi": "Không khuyến cáo sử dụng rivaroxaban trong thai kỳ",
+      "citationIds": [
+        "esc.preg.2025.doac_not_recommended",
+        "fda.rivaroxaban.pregnancy"
+      ]
+    },
+    {
+      "code": "rheumatic_mitral_stenosis",
+      "messageVi": "Chống chỉ định DOAC ở bệnh nhân hẹp van hai lá vừa đến nặng",
+      "citationIds": [
+        "esc.af.2024.doac_preferred_over_vka"
+      ]
+    },
+    {
+      "code": "antiphospholipid_syndrome",
+      "messageVi": "Không khuyến cáo / Chống chỉ định DOAC ở bệnh nhân hội chứng kháng phospholipid (APS); bắt buộc dùng VKA",
+      "citationIds": [
+        "fda.apixaban.aps_not_recommended"
+      ]
+    },
+    {
+      "code": "active_bleeding",
+      "messageVi": "Chống chỉ định Rivaroxaban khi đang có xuất huyết tiến triển",
+      "citationIds": [
+        "esc.af.2024.bleeding_interrupt"
+      ]
+    },
+    {
+      "code": "acute_ich",
+      "messageVi": "Chống chỉ định Rivaroxaban trong xuất huyết nội sọ cấp tính",
+      "citationIds": [
+        "esc.af.2024.bleeding_interrupt"
+      ]
+    },
+    {
+      "code": "moderate_to_severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định Rivaroxaban ở bệnh nhân suy gan vừa–nặng (Child-Pugh B và C) hoặc bệnh gan kèm rối loạn đông máu",
+      "citationIds": [
+        "fda.rivaroxaban.hepatic_contra",
+        "acc.af.2023.doac_child_pugh"
+      ]
+    },
+    {
+      "code": "dialysis",
+      "messageVi": "Tránh dùng / Chống chỉ định Rivaroxaban ở bệnh nhân suy thận giai đoạn cuối đang lọc máu chu kỳ",
+      "citationIds": [
+        "esc.af.2024.table11_doac_dosing"
+      ]
+    }
+  ]
+}

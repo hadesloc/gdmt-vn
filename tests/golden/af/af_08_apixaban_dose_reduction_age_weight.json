@@ -1,0 +1,64 @@
+{
+  "id": "af_08_apixaban_dose_reduction_age_weight",
+  "titleVi": "Giảm liều Apixaban 2.5mg x 2: Tuổi 82 và Cân nặng 60 kg (ADV_AF_04)",
+  "source": "ESC 2024 AF Table 11 & Nhãn FDA / esc.af.2024.table11_doac_dosing",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 82,
+    "sex": "female",
+    "weight": 60,
+    "height": 155,
+    "sbp": 128,
+    "dbp": 76,
+    "hr": 85,
+    "rhythm": "afib",
+    "scr": 100,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "apixaban",
+        "name": "Eliquis",
+        "dose": 5,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "apixaban",
+        "action": "REDUCE",
+        "doseContains": "2.5 mg"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "apixaban",
+        "action": "CONTINUE",
+        "doseContains": "5 mg"
+      }
+    ]
+  },
+  "descriptionVi": "Nữ 82t, 60 kg (ADV_AF_04): Đạt 2/3 tiêu chí giảm liều Apixaban (Tuổi ≥ 80 và Cân nặng ≤ 60 kg) -> Giảm xuống 2.5 mg x 2 lần/ngày."
+}

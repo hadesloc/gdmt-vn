@@ -1,0 +1,50 @@
+{
+  "itemId": "ramipril",
+  "contentHash": "28b6caac731d7c1e66ff65e836846a99077877b3019c059f2e60335122755bec",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ramipril",
+      "contentHash": "8c24f3d6a7ba1656",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:58:18.001Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động bổ sung pregnancy, lactation và contraindications theo chuẩn QA-9 cho Ramipril."
+        },
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T07:03:44.560Z",
+          "role": "agent_e3_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 2 cho ramipril."
+        },
+        {
+          "round": 3,
+          "reviewedAt": "2026-10-27T18:00:00.000Z",
+          "role": "agent_e4_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 3 cho ramipril."
+        },
+        {
+          "round": 4,
+          "reviewedAt": "2026-10-27T23:56:20.141Z",
+          "role": "agent_e5_round4_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 4 cho thuốc ramipril."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T23:56:20.141Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

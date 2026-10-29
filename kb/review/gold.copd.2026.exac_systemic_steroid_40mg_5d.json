@@ -1,0 +1,26 @@
+{
+  "itemId": "gold.copd.2026.exac_systemic_steroid_40mg_5d",
+  "contentHash": "1cff43c9d34097fd17938142b03edfc217c2d1dc71836e4a0470b5b480965886",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gold.copd.2026.exac_systemic_steroid_40mg_5d",
+      "contentHash": "752fe084cdf0d9fa",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

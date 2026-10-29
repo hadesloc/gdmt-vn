@@ -1,0 +1,51 @@
+{
+  "id": "ckd_68_glp1ra_flow_uacr_exact_10_boundary",
+  "titleVi": "Ngoại trú - ĐTĐ2 + CKD G3b (eGFR ~40 mL/phút/1.73m²), HbA1c đạt đích 6.8% nhưng UACR đúng bằng ngưỡng ranh giới 10 mg/mmol (~100 mg/g) -> Khởi trị Semaglutide theo tiêu chuẩn FLOW (Regression CKD-R3-R1-03, R3-06)",
+  "source": "ESC 2026 CVD-CKD Class I Level A (FLOW trial inclusion >= 100 mg/g / >= 10 mg/mmol)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_68",
+    "name": "BN CKD 68",
+    "age": 62,
+    "sex": "male",
+    "weight": 72,
+    "sbp": 126,
+    "dbp": 76,
+    "hr": 70,
+    "scr": 165,
+    "k": 4.4,
+    "uacr": 10,
+    "hba1c": 6.8,
+    "conditions": {
+      "ckd": true,
+      "dm": true,
+      "htn": true
+    },
+    "currentMeds": [
+      { "drugId": "dapagliflozin", "name": "Forxiga 10 mg", "dose": 10, "unit": "mg" },
+      { "drugId": "losartan", "name": "Cozaar 100 mg", "dose": 100, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "semaglutide", "action": "START" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R3-R1-03 & R3-06: Toán tử ranh giới FLOW phải là >= (bao gồm đúng UACR = 10 mg/mmol ở dải eGFR 25–<50 và UACR = 30 mg/mmol ở dải eGFR 50–<75)."
+}

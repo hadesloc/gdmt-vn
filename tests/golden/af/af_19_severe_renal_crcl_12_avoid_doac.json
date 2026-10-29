@@ -1,0 +1,67 @@
+{
+  "id": "af_19_severe_renal_crcl_12_avoid_doac",
+  "titleVi": "Suy thận nặng CrCl 12 mL/min: Chống chỉ định toàn bộ DOAC",
+  "source": "ESC 2024 AF Table 11 / esc.af.2024.table11_doac_dosing",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 72,
+    "sex": "male",
+    "weight": 60,
+    "height": 165,
+    "sbp": 135,
+    "dbp": 80,
+    "hr": 82,
+    "rhythm": "afib",
+    "scr": 420,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "ckd": true
+    },
+    "currentMeds": []
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_af_oac_renal_contra",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "apixaban",
+        "action": "START"
+      },
+      {
+        "drugId": "rivaroxaban",
+        "action": "START"
+      },
+      {
+        "drugId": "dabigatran",
+        "action": "START"
+      },
+      {
+        "drugId": "edoxaban",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "CrCl 12 mL/min < 15 mL/min: Chống chỉ định toàn bộ các thuốc DOAC, cân nhắc hội chẩn thận học hoặc VKA."
+}

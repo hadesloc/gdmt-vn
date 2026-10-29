@@ -1,0 +1,26 @@
+{
+  "itemId": "fda.copd.roflumilast_dose",
+  "contentHash": "e4fb02936dc7c086173af993000e99fb6dfa7116c4c2f119d98a63899749af68",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "fda.copd.roflumilast_dose",
+      "contentHash": "af222dd592b4c37e",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

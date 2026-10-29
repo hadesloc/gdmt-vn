@@ -1,0 +1,26 @@
+{
+  "itemId": "gold.copd.2026.sedatives_hypercapnia",
+  "contentHash": "557a12ae07b55a45be184c2b34277b3f5e3d3baa4e9f2d08c90cbcb900b476ca",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gold.copd.2026.sedatives_hypercapnia",
+      "contentHash": "1fbd1116567f3057",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

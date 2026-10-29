@@ -1,0 +1,26 @@
+{
+  "itemId": "nifedipine",
+  "contentHash": "47e45e213ef19d068049dbca360cc3734cbe565ff864ea6281ccae63b2328cb0",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "nifedipine",
+      "contentHash": "3e76a0d784f56afb",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Hypertension Specialist (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Nifedipine (giải phóng kéo dài LA/GITS/Retard) (Nifedipine) đầy đủ liều lượng, classes (dhp_ccb), dải thận, thai kỳ/cho con bú, chống chỉ định máy đọc và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

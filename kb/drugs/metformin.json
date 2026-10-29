@@ -1,0 +1,148 @@
+{
+  "id": "metformin",
+  "nameVi": "Metformin",
+  "inn": "Metformin",
+  "class": "Biguanide",
+  "vnBrands": [
+    "Glucophage",
+    "Glucophage XR",
+    "Panfor SR",
+    "Metformin Stada"
+  ],
+  "forms": [
+    "Viên nén 500 mg, 850 mg, 1000 mg",
+    "Viên phóng thích kéo dài XR 500 mg, 750 mg, 1000 mg"
+  ],
+  "start": {
+    "amount": 500,
+    "unit": "mg",
+    "frequency": "1-2 lần/ngày",
+    "route": "uống",
+    "description": "Uống trong hoặc ngay sau bữa ăn để giảm tác dụng phụ tiêu hóa"
+  },
+  "target": {
+    "amount": 2000,
+    "unit": "mg",
+    "frequency": "chia 2 lần/ngày",
+    "route": "uống",
+    "description": "Chia 1000 mg x 2 lần/ngày (hoặc 2000 mg dạng XR uống 1 lần vào bữa tối)"
+  },
+  "titration": {
+    "step": "500 mg",
+    "intervalDays": 7,
+    "maxDose": "2000 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 45,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "500 - 2000 mg/ngày",
+      "citationIds": [
+        "fda.metformin.egfr_bands",
+        "byt.dm2.2020.metformin_renal_contra"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 45,
+      "initiate": "not_rec",
+      "continue": "caution",
+      "dose": "Tối đa 1000 mg/ngày",
+      "note": "Không khuyến cáo khởi trị mới khi eGFR 30-44 mL/phút; nếu đang dùng đánh giá lợi ích/nguy cơ và giảm tối đa 1000 mg/ngày",
+      "citationIds": [
+        "fda.metformin.egfr_bands",
+        "byt.dm2.2020.metformin_renal_contra",
+        "kdigo.dm2.2022.metformin_halve_30_44"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "contra",
+      "continue": "contra",
+      "note": "Chống chỉ định tuyệt đối khi eGFR < 30 mL/phút do nguy cơ toan acid lactic",
+      "citationIds": [
+        "fda.metformin.egfr_bands",
+        "byt.dm2.2020.metformin_renal_contra"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_metformin_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "contra",
+      "messageVi": "Chống chỉ định Metformin khi eGFR < 30 mL/phút/1.73m² do nguy cơ toan acid lactic.",
+      "citationIds": [
+        "fda.metformin.egfr_bands"
+      ]
+    },
+    {
+      "id": "gate_metformin_egfr_caution",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 45,
+      "unit": "mL/min/1.73m2",
+      "action": "caution",
+      "messageVi": "eGFR 30–44 mL/phút/1.73m²: Không khởi trị mới; nếu đang dùng giảm liều tối đa 1000 mg/ngày.",
+      "citationIds": [
+        "fda.metformin.egfr_bands"
+      ]
+    }
+  ],
+  "interactions": [
+    "Nguy cơ toan acid lactic tăng khi dùng thuốc cản quang iod đường tĩnh mạch (cần tạm ngừng trước chụp)",
+    "Nguy cơ toan lactic tăng ở bệnh nhân suy tim mất bù, sốc hoặc suy gan nặng"
+  ],
+  "citationIds": [
+    "fda.metformin.egfr_bands",
+    "byt.dm2.2020.metformin_renal_contra",
+    "fda.metformin.hepatic_contra",
+    "fda.metformin.iodinated_contrast_precaution",
+    "kdigo.dm2.2022.metformin_halve_30_44",
+    "fda.dm2.metformin.contrast_60_48h"
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Metformin qua được hàng rào nhau thai. Không khuyến cáo dùng làm thuốc đầu tay trong thai kỳ (ADA 2026), ưu tiên chuyển sang Insulin",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_metformin_glyburide"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Bài tiết một lượng nhỏ vào sữa mẹ; cân nhắc lợi ích/nguy cơ dưới sự giám sát y khoa",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_metformin_glyburide"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Tránh dùng Metformin trong thai kỳ, ưu tiên lựa chọn Insulin",
+      "citationIds": [
+        "ada.dm2.2026.pregnancy_metformin_glyburide"
+      ]
+    },
+    {
+      "code": "dialysis",
+      "messageVi": "Chống chỉ định Metformin ở bệnh nhân lọc máu hoặc eGFR < 30 mL/phút/1.73m² do nguy cơ toan acid lactic",
+      "citationIds": [
+        "fda.metformin.egfr_bands"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định Metformin ở bệnh nhân suy gan nặng do tăng nguy cơ toan acid lactic",
+      "citationIds": [
+        "fda.metformin.hepatic_contra"
+      ]
+    }
+  ],
+  "classes": [
+    "biguanide"
+  ]
+}

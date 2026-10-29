@@ -1,0 +1,952 @@
+[
+  {
+    "id": "gina.asthma.2026.pregnancy_safety",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 9,
+    "locator": "Pregnant women / PDF p. 9",
+    "quote": "Advise pregnant women with asthma that it is important to use ICS-containing treatment during pregnancy for their baby’s health, as well as their own health.",
+    "quoteVi": "Khuyên phụ nữ mang thai mắc hen rằng việc tiếp tục sử dụng điều trị chứa ICS trong thai kỳ là rất quan trọng cho sức khỏe của thai nhi cũng như của chính người mẹ.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.age_12",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 23,
+    "locator": "Box 4-6 / PDF p. 23",
+    "quote": "Adults & adolescents \n12+ years",
+    "quoteVi": "Áp dụng cho người lớn và trẻ vị thành niên từ 12 tuổi trở lên",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.symptom_control_table_2a",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 12,
+    "locator": "Table 2A / PDF p. 12",
+    "quote": "Assess symptom control \nIn the past 4 weeks, has the patient had:\nDaytime symptoms more than twice/week?\nAny night waking due to asthma?\nSABA* reliever needed more than twice/week?\nAny activity limitation due to asthma?",
+    "quoteVi": "Đánh giá mức độ kiểm soát triệu chứng hen theo GINA gồm 4 câu hỏi trong 4 tuần: Triệu chứng ban ngày > 2 lần/tuần, thức giấc đêm, thuốc cắt cơn > 2 lần/tuần, giới hạn hoạt động.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.track1_preferred",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 24,
+    "locator": "Track 1 Preferred / PDF p. 24",
+    "quote": "Track 1 treatment options for adults and adolescents \nIn Track 1, across all steps, the patient takes low-dose ICS-formoterol whenever needed to relieve asthma symptoms",
+    "quoteVi": "Track 1 là lựa chọn ưu tiên cho người lớn và trẻ ≥ 12 tuổi, dùng ICS-formoterol liều thấp làm thuốc cắt cơn ở mọi bậc.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.track1_step1_2",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 24,
+    "locator": "Track 1 Steps 1–2 / PDF p. 24",
+    "quote": "Steps 1–2: The recommended treatment is low-dose ICS-formoterol taken whenever needed to relieve asthma\nsymptoms.",
+    "quoteVi": "Bậc 1–2 (Track 1): Điều trị khuyến cáo là ICS-formoterol liều thấp dùng khi cần để giảm triệu chứng.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.track1_step3",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 22,
+    "locator": "Track 1 Step 3 / PDF p. 22",
+    "quote": "Low-dose ICS-formoterol\nmaintenance-and-reliever therapy \n(MART)",
+    "quoteVi": "Bậc 3 (Track 1): Liệu pháp duy trì và cắt cơn (MART) bằng ICS-formoterol liều thấp.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.track1_step4",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 22,
+    "locator": "Track 1 Step 4 / PDF p. 22",
+    "quote": "Medium-dose ICS-formoterol\nmaintenance-and-reliever\ntherapy (MART)",
+    "quoteVi": "Bậc 4 (Track 1): Liệu pháp duy trì và cắt cơn (MART) bằng ICS-formoterol liều trung bình.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.track1_step5_severe",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 26,
+    "locator": "Step 5 / PDF p. 26",
+    "quote": "Step 5: managing severe asthma in adults and adolescents",
+    "quoteVi": "Bậc 5 quản lý hen nặng: Đánh giá và tối ưu kỹ thuật hít, sự tuân thủ trước khi xem xét thêm thuốc sinh học hoặc LAMA.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.step5_biologics",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 26,
+    "locator": "Step 5 Biologics / PDF p. 26",
+    "quote": "• Anti-immunoglobin E (subcutaneous omalizumab or biosimilar omalizumab-igec) for patients aged ≥6 years with\nsevere allergic asthma",
+    "quoteVi": "Chỉ định thuốc sinh học Anti-IgE (omalizumab) cho hen dị ứng nặng từ 6 tuổi trở lên.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.biologics_benralizumab",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 26,
+    "locator": "Step 5 Benralizumab / PDF p. 26",
+    "quote": "subcutaneous benralizumab or depemokimab for patients aged ≥ 12 years.",
+    "quoteVi": "Benralizumab tiêm dưới da cho bệnh nhân từ 12 tuổi trở lên có hen tăng bạch cầu ái toan.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.biologics_tezepelumab",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 26,
+    "locator": "Step 5 Tezepelumab / PDF p. 26",
+    "quote": "• Anti-thymic stromal lymphopoietin (subcutaneous tezepelumab) for patients aged ≥12 years with severe asthma.",
+    "quoteVi": "Tezepelumab tiêm dưới da cho bệnh nhân từ 12 tuổi trở lên có hen nặng.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.step5_lama_triplet",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 26,
+    "locator": "Step 5 LAMA / PDF p. 26",
+    "quote": "including beclometasone-formoterol-glycopyrronium, fluticasone furoate-vilanterol-umeclidinium, and mometasone-indacaterol-glycopyrronium (patients ≥18 years)",
+    "quoteVi": "Thêm LAMA hoặc bình hít phối hợp ba thuốc ICS-LABA-LAMA.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "gina.asthma.2026.formoterol_max_inhalations",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 45,
+    "locator": "Table 7 Formoterol Max / PDF p. 45",
+    "quote": "Budesonide-formoterol DPI or pMDI 160/4.5 (200/6)\nor beclometasone-formoterol† DPI or pMDI 100/6\n(Seek medical care if >12 total inhalations needed in\na 24-hour period)",
+    "quoteVi": "Liều tối đa formoterol trong MART: Cần khám y tế nếu cần dùng > 12 nhát hít tổng cộng trong 24 giờ cho budesonide-formoterol 160/4.5 hoặc beclometasone-formoterol 100/6.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.formoterol_max_mcg",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 34,
+    "locator": "Action Plan Formoterol Max / PDF p. 34",
+    "quote": "total 12 \ninhalations of ICS-formoterol (total delivered dose of formoterol 54 mcg, metered dose 72 mcg) in a 24 hour period",
+    "quoteVi": "Tổng cộng tối đa 12 nhát hít ICS-formoterol trong ngày (tương đương 54 mcg liều phân liều hoặc 72 mcg liều định liều formoterol).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.step_down_months",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 27,
+    "locator": "Step-down timing / PDF p. 27",
+    "quote": "Stepping down treatment when asthma is well controlled \nWhen good asthma control has been maintained for 2–3 months, consider stepping down treatment. The aims are to find \nthe lowest treatment step that controls both symptoms and exacerbations, and to minimize side-effects.",
+    "quoteVi": "Hạ bậc điều trị khi kiểm soát tốt 2-3 tháng để tìm liều thấp nhất kiểm soát bệnh và giảm tác dụng phụ.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.step_down_reduction_rate",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 27,
+    "locator": "Step-down dose rate / PDF p. 27",
+    "quote": "Reduce the maintenance ICS dose by 25–50% by changing to an inhaler with a lower strength of the same ICS or by \nreducing the frequency of inhalations",
+    "quoteVi": "Giảm liều ICS duy trì 25-50% bằng cách giảm hàm lượng hoặc giảm số lần hít.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "gina.asthma.2026.never_saba_alone",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 13,
+    "locator": "Never SABA Alone / PDF p. 13",
+    "quote": "treatment with\nas-needed low-dose\nICS-formoterol, as-needed low-dose ICS-SABA or daily low-dose ICS reduces the risk of severe exacerbations by half to \ntwo-thirds, compared with SABA alone.",
+    "quoteVi": "Tuyệt đối không dùng SABA đơn độc vì làm tăng nguy cơ đợt cấp nặng so với dùng thuốc có ICS.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.saba_regular_adverse",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 27,
+    "locator": "Regular SABA Harm / PDF p. 27",
+    "quote": "Regular use of SABA is not recommended, because within 1–2 weeks, it increases airway hyperresponsiveness and \nairway inflammation, and decreases bronchodilator response.",
+    "quoteVi": "Dùng SABA thường xuyên làm tăng phản ứng phế quản và viêm đường thở chỉ sau 1-2 tuần.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.montelukast_neuropsychiatric",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 32,
+    "locator": "Montelukast Warning / PDF p. 32",
+    "quote": "risk of neuropsychiatric side effects with montelukast",
+    "quoteVi": "Cảnh báo nguy cơ tác dụng phụ tâm thần kinh khi dùng montelukast.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "gina.asthma.2026.table_6_budesonide",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 44,
+    "locator": "Table 6 Budesonide / PDF p. 44",
+    "quote": "Budesonide (DPI or pMDI)       200–400        >400–800   >800",
+    "quoteVi": "Budesonide liều định liều: Thấp 200–400 mcg, Trung bình >400–800 mcg, Cao >800 mcg/ngày.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.table_6_beclometasone_extrafine",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 44,
+    "locator": "Table 6 Beclometasone Extrafine / PDF p. 44",
+    "quote": "Beclometasone dipropionate (DPI or pMDI, extrafine particle)   100–200        >200–400   >400",
+    "quoteVi": "Beclometasone hạt siêu mịn: Thấp 100–200 mcg, Trung bình >200–400 mcg, Cao >400 mcg/ngày.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.table_6_fluticasone_propionate",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 44,
+    "locator": "Table 6 Fluticasone Propionate / PDF p. 44",
+    "quote": "Fluticasone propionate (DPI)       100–250        >250–500   >500\nFluticasone propionate (pMDI)       100–250        >250–500    >500",
+    "quoteVi": "Fluticasone propionate: Thấp 100–250 mcg, Trung bình >250–500 mcg, Cao >500 mcg/ngày.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.table_6_fluticasone_furoate",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 44,
+    "locator": "Table 6 Fluticasone Furoate / PDF p. 44",
+    "quote": "Fluticasone furoate (DPI)                   100    200",
+    "quoteVi": "Fluticasone furoate (DPI 1 lần/ngày): Liều thấp 100 mcg, Liều cao 200 mcg/ngày.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.table_6_ciclesonide",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 44,
+    "locator": "Table 6 Ciclesonide / PDF p. 44",
+    "quote": "Ciclesonide (pMDI, extrafine particle)       80–160         >160–320   >320",
+    "quoteVi": "Ciclesonide hạt siêu mịn: Thấp 80–160 mcg, Trung bình >160–320 mcg, Cao >320 mcg/ngày.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.table_6_mometasone",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 44,
+    "locator": "Table 6 Mometasone / PDF p. 44",
+    "quote": "Mometasone furoate (pMDI)                   200–400      400",
+    "quoteVi": "Mometasone furoate pMDI: Thấp/Trung bình 200–400 mcg, Cao 400 mcg/ngày.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.acute_saba_puffs",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 36,
+    "locator": "Acute Salbutamol / PDF p. 36",
+    "quote": "Give salbutamol 6–10 puffs by pMDI + spacer (or  \n5 mg by nebulizer), repeat if needed every 20–30 \nminutes",
+    "quoteVi": "Salbutamol cơn hen cấp: 6–10 nhát xịt qua buồng đệm (hoặc 5 mg khí dung), lặp lại mỗi 20–30 phút.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.acute_ipratropium_puffs",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 36,
+    "locator": "Acute Ipratropium / PDF p. 36",
+    "quote": "If ipratropium is available, give 4 puffs each time \nsalbutamol is given, for up to 3 times",
+    "quoteVi": "Ipratropium phối hợp salbutamol trong cơn vừa/nặng: 4 nhát xịt mỗi lần, tối đa 3 lần.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.acute_oxygen_target",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 36,
+    "locator": "Oxygen Target / PDF p. 36",
+    "quote": "Give oxygen; target saturation on oxygen 92–95%*",
+    "quoteVi": "Thở oxy duy trì SpO2 đích 92–95% ở người lớn.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.acute_prednisolone_daily",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 35,
+    "locator": "Acute Prednisolone / PDF p. 35",
+    "quote": "prednisolone 40–50 mg each morning for 5–7 days.",
+    "quoteVi": "Corticoid toàn thân đợt cấp: Prednisolone 40–50 mg/ngày trong 5–7 ngày.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.acute_icu_silent_chest",
+    "sourceId": "gina_2026_summary",
+    "pdfPage": 35,
+    "locator": "ICU silent chest / PDF p. 35",
+    "quote": "intensive care if the patient \nis drowsy, confused, or has a silent chest",
+    "quoteVi": "Chuyển hồi sức tích cực (ICU) ngay lập tức nếu bệnh nhân ngủ gà, lơ mơ hoặc lồng ngực im lặng (silent chest).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "byt.asthma.2021.acute_classification",
+    "sourceId": "byt_5850_2021_asthma",
+    "pdfPage": 17,
+    "locator": "QĐ 5850/QĐ-BYT Bảng phân độ / PDF p. 17",
+    "quote": "Cơn hen nhẹ - trung bình Cơn hen nặng Cơn hen nguy kịch \n Nói cả câu \n Ngồi dễ chịu hơn nằm \n Không co kéo cơ hô hấp \nphụ \n Nhịp thở < 25 l/p \n Nhịp tim < 120 l/p \n SpO2 (thở khí trời) > 92% \n PEF > 50% GTLT  \n Nói từng từ \n Ngồi ngả ra trước \n Hoảng hốt, lo lắng \n Co kéo cơ hô hấp phụ \n Nhịp thở > 30 l/p \n Nhịp tim > 120 l/p \n SpO2 (thở khí trời) < 90% \n PEF < 50% GTLT \nKhi có ít nhất một dấu hiệu: \n Ngủ gà, lú lẫn \n Thở chậm, có cơn ngừng \nthở \n Rối loạn nhịp tim, tụt huyết \náp, tím tái \n Lồng ngực im lặng",
+    "quoteVi": "Phân loại mức độ nặng cơn hen cấp: Nhẹ - trung bình, Nặng, Nguy kịch theo QĐ 5850/BYT.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "byt.asthma.2021.acute_hospital_treatment",
+    "sourceId": "byt_5850_2021_asthma",
+    "pdfPage": 18,
+    "locator": "QĐ 5850/QĐ-BYT Xử trí bệnh viện / PDF p. 18",
+    "quote": "SABA 4-10 nhát xịt định liều \n+ buồng đệm hoặc \nsalbutamol 5mg khí dung, \nnhắc lại sau 20 phút -1 giờ  \n Prednisolon: người lớn \n1mg/kg, tối đa 50mg; trẻ em \n1-2mg/kg, tối đa 40mg  \n Thở ôxy (nếu có): đảm bảo \nSpO2 93- 95%",
+    "quoteVi": "Phác đồ xử trí cơn hen cấp tại bệnh viện theo Bộ Y tế: SABA 4-10 nhát xịt hoặc 5mg khí dung, Prednisolon tối đa 50mg, Thở oxy SpO2 93-95%.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "byt.asthma.2021.action_plan_zones",
+    "sourceId": "byt_5850_2021_asthma",
+    "pdfPage": 28,
+    "locator": "QĐ 5850/QĐ-BYT Phụ lục 4 / PDF p. 28",
+    "quote": "Phụ lục 4. BẢN KẾ HOẠCH HÀNH ĐỘNG HEN PHẾ QUẢN \n \nVÙNG MÀU \nXANH: TỐT \n Không có bất kỳ biểu hiện nàu sau đâu: ho, khò khè, nặng ngực, \nkhó thở ngày và đêm \n Có thể làm việc và sinh hoạt bình thường \n Giá tr ị lưu lư ợng đ ỉnh:  từ.... đ ến....L/p ho ặc >80% giá tr ị lý \nthuyết hoặc giá trị tốt nhất của bạn",
+    "quoteVi": "Bản kế hoạch hành động hen tiếng Việt gồm 3 vùng màu: Xanh (Tốt > 80%), Vàng (Xấu đi 50-79%), Đỏ (Báo động < 50%).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "byt.asthma.2020.no_saba_monotherapy",
+    "sourceId": "byt_1851_2020_asthma",
+    "pdfPage": 19,
+    "locator": "QĐ 1851/QĐ-BYT Bảng 5 / PDF p. 19",
+    "quote": "Bảng 5. Khuyến cáo điều trị ban đầu bằng thuốc kiểm soát hen cho người lớn và \ntrẻ ≥ 12 tuổi \nTriệu chứng hiện tại Điều trị ban đầu ƣu tiên \nTất cả bệnh nhân Không khuyến cáo dùng SABA đơn thuần (không có ICS)",
+    "quoteVi": "Bộ Y tế QĐ 1851: Tất cả bệnh nhân không khuyến cáo dùng SABA đơn thuần không có ICS.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "byt.asthma.2020.magnesium_dose_2g",
+    "sourceId": "byt_1851_2020_asthma",
+    "pdfPage": 46,
+    "locator": "QĐ 1851/QĐ-BYT p. 46 / PDF p. 46",
+    "quote": "Magnesium sulfate tiêm tĩnh mạch không được đề nghị sử dụng thường qui trong \nđợt cấp hen phế quản. Truyền tĩnh mạch liều 2g trong 20 phút có thể giúp giảm khó \nthở, giảm tỷ lệ nhập viện ở một số bệnh nhân.",
+    "quoteVi": "Magnesium sulfate truyền tĩnh mạch liều 2g trong 20 phút trong đợt cấp hen phế quản giúp giảm khó thở, giảm nhập viện.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "byt.asthma.2020.type2_biomarkers",
+    "sourceId": "byt_1851_2020_asthma",
+    "pdfPage": 37,
+    "locator": "Chỉ điểm Type 2 / PDF p. 37",
+    "quote": "bạch cầu ái toan máu ≥300 \ntế bào/µl hoặc FENO ≥25 ppb",
+    "quoteVi": "Dấu ấn sinh học viêm Type 2: Bạch cầu ái toan máu ≥ 300 tế bào/µL hoặc FeNO ≥ 25 ppb.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "byt.asthma.2020.symptom_control_table_3",
+    "sourceId": "byt_1851_2020_asthma",
+    "pdfPage": 15,
+    "locator": "Bảng 3 / PDF p. 15",
+    "quote": "Bảng 3. Đánh giá việc kiểm soát triệu chứng và nguy cơ tương lai \nA. Mức độ kiểm soát triệu chứng bệnh hen \n4 tuần qua, bệnh nhân có: Kiểm soát hoàn toàn Kiểm soát một phần Không kiểm soát \n Triệu chứng ban ngày >2 \nlần/tuần? \n Bất kỳ đêm nào  thức giấc do \nhen? \n Cần thu ốc giảm triệu chứng >2 \nlần/tuần? \n Giới hạn bất kỳ hoạt động nào do \nhen?",
+    "quoteVi": "Bảng 3: Đánh giá việc kiểm soát triệu chứng hen theo BYT: Triệu chứng ban ngày >2 lần/tuần, thức giấc ban đêm do hen, cần thuốc giảm triệu chứng >2 lần/tuần, giới hạn bất kỳ hoạt động nào do hen.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "byt.asthma.2020.step_down_options",
+    "sourceId": "byt_1851_2020_asthma",
+    "pdfPage": 22,
+    "locator": "QĐ 1851/QĐ-BYT Bảng 8 / PDF p. 22",
+    "quote": "Bảng 8. Các lựa chọn giảm bậc khi hen được kiểm soát hoàn toàn \nBậc \nhiện \ntại \n oại và liều thuốc kiểm soát \nhen hiện tại  ựa chọn giảm bậc \nBậc 5 Liều cao ICS /LABA + corticoid uống  Tiếp tục liều cao ICS/LABA + giảm liều corticoid uống \nBậc 4 \nLiều trung bình-cao ICS/LABA \nhàng ngày \n Tiếp tục ICS/LABA hàng ngày  \nvới liều ICS giảm 50%",
+    "quoteVi": "Giảm bậc khi kiểm soát hoàn toàn: Tiếp tục ICS/LABA với liều ICS giảm 50%.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.beta_blocker_bronchospasm",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 65,
+    "locator": "Box 3-6 Oral or ophthalmic beta-blockers / PDF p. 65",
+    "quote": "Decide about prescription of oral or ophthalmic beta-blockers on a case-by- case basis. Initiate treatment under close medical supervision by a specialist.",
+    "quoteVi": "Thuốc chẹn beta đường uống hoặc nhỏ mắt (như timolol) có thể gây co thắt phế quản nặng; chỉ quyết định kê đơn từng trường hợp cụ thể dưới giám sát chặt chẽ của chuyên khoa.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.aerd_avoid_nsaid",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 139,
+    "locator": "Section 6 AERD Management / PDF p. 139",
+    "quote": "Patients with AERD should avoid aspirin or NSAID-containing products and other medications that inhibit cyclooxygenase- 1 (COX-1)",
+    "quoteVi": "Bệnh nhân mắc bệnh hô hấp kịch phát do aspirin (AERD / tam chứng Samter) phải tránh tuyệt đối aspirin, các chế phẩm chứa NSAID và thuốc ức chế COX-1.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.laba_without_ics_contra",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 101,
+    "locator": "Section 4 LABA safety / PDF p. 101",
+    "quote": "use of regular or frequent LABA without ICS is strongly discouraged because of the risk of exacerbations (Evidence A).",
+    "quoteVi": "Sử dụng LABA đơn độc thường xuyên không kèm ICS bị nghiêm cấm vì làm tăng nguy cơ đợt cấp nặng và tử vong.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.low_fev1_60_risk",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 62,
+    "locator": "Box 3-5 Modifiable risk factors / PDF p. 62",
+    "quote": "Low FEV1, especially if <60% predicted",
+    "quoteVi": "FEV1 thấp, đặc biệt khi < 60% giá trị dự đoán, là yếu tố nguy cơ độc lập mạnh cho đợt cấp hen tương lai.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.acute_hypercapnia_paco2_45",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 186,
+    "locator": "Section 9 Blood gas measurements / PDF p. 186",
+    "quote": "normal or increased PaCO2 (especially >45 mmHg, 6 kPa) indicate respiratory failure.",
+    "quoteVi": "PaCO2 bình thường hoặc tăng (đặc biệt > 45 mmHg) trong cơn hen cấp chỉ điểm suy hô hấp đe dọa tính mạng.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.acute_sedatives_avoid",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 190,
+    "locator": "Section 9 Sedatives / PDF p. 190",
+    "quote": "Sedatives (MUST BE AVOIDED) Sedation should be strictly avoided during exacerbations of asthma because of the respiratory depressant effect of anxiolytic and hypnotic drugs.",
+    "quoteVi": "Thuốc an thần (BẮT BUỘC TRÁNH): Tuyệt đối chống chỉ định thuốc an thần giải lo âu/gây ngủ trong đợt cấp hen do tác dụng ức chế trung tâm hô hấp.",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.acute_antibiotics_not_routine",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 183,
+    "locator": "Section 9 Antibiotics / PDF p. 183",
+    "quote": "Antibiotics (not recommended) Evidence does not support routine use of antibiotics in the treatment of acute asthma exacerbations unless there is strong evidence of lung infection (e.g., fever and purulent sputum or radiographic evidence of pneumonia).",
+    "quoteVi": "Không khuyến cáo dùng kháng sinh thường quy trong đợt cấp hen trừ khi có bằng chứng rõ ràng của nhiễm khuẩn phổi (sốt và đờm mủ hoặc X-quang viêm phổi).",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.smoking_cessation",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 64,
+    "locator": "Box 3-6 Smoking cessation / PDF p. 64",
+    "quote": "At every visit, strongly encourage people with asthma who smoke or vape to quit. Provide access to counseling and smoking cessation programs (if available).",
+    "quoteVi": "Tại mỗi lần khám, tích cực khuyên người bệnh hen đang hút thuốc lá hoặc thuốc lá điện tử cai thuốc và hỗ trợ chương trình cai thuốc.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.vaccination_influenza",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 102,
+    "locator": "Section 4 Vaccinations / PDF p. 102",
+    "quote": "Vaccination against influenza, RSV and COVID-19 does not only prevent severe disease (e.g., requiring hospitalization) across general populations, but also protects against virus-induced exacerbations of asthma.",
+    "quoteVi": "Tiêm vắc-xin phòng cúm, RSV và COVID-19 không chỉ ngừa bệnh nặng phải nhập viện mà còn bảo vệ khỏi đợt cấp hen do virus.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.pregnancy_no_step_down",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 113,
+    "locator": "Box 4-13 Stepping down / PDF p. 113",
+    "quote": "Choose an appropriate time (no respiratory infection, patient not travelling, not pregnant).",
+    "quoteVi": "Chỉ chọn thời điểm thích hợp để hạ bậc điều trị (không nhiễm trùng hô hấp, không đi xa, không đang mang thai).",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "byt.asthma.2021.acute_iv_steroid_ipratropium",
+    "sourceId": "byt_5850_2021_asthma",
+    "pdfPage": 18,
+    "locator": "QĐ 5850/QĐ-BYT Xử trí cơn nặng & nguy kịch / PDF p. 18",
+    "quote": "- SABA phun khí dung - Thở ôxy (nếu có): đảm bảo SpO2 93- 95% (trẻ em 94-98%) - Ipratropium 0,5 mg phun khí dung (nếu có) - Corticoid: methylprednisolon 40mg tiêm TM hoặc hydrocortisone 100 mg tiêm TM - Chuẩn bị dụng cụ đặt nội khí quản",
+    "quoteVi": "Phác đồ xử trí cơn hen nặng/nguy kịch: SABA khí dung, Oxy SpO2 93-95%, Ipratropium 0,5 mg khí dung, Methylprednisolon 40 mg tiêm TM (hoặc Hydrocortison 100 mg tiêm TM), chuẩn bị đặt nội khí quản.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "byt.asthma.2021.action_plan_yellow_50_79",
+    "sourceId": "byt_5850_2021_asthma",
+    "pdfPage": 28,
+    "locator": "QĐ 5850/QĐ-BYT Phụ lục 4 Vùng Vàng / PDF p. 28",
+    "quote": "50% đến 79% lưu lượng đỉnh tốt nhất của bạn",
+    "quoteVi": "Ngưỡng lưu lượng đỉnh Vùng Vàng trong Kế hoạch hành động hen: 50% đến 79% giá trị cá nhân tốt nhất (Vùng Đỏ < 50%).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "byt.asthma.2020.ics_laba_vn_strengths",
+    "sourceId": "byt_1851_2020_asthma",
+    "pdfPage": 19,
+    "locator": "QĐ 1851/QĐ-BYT Các chế phẩm ICS/LABA tại VN / PDF p. 19",
+    "quote": "- Formoterol/budesonide 4,5/160 mcg; 4,5/80 mcg; dạng DPI - Formoterol/budesonide 4,5/160 mcg; 4,5/80 mcg; 2,25/80 dạng pMDI - Salmeterol/fluticasone propionate 25/50; 25/125; 25/250 mcg dạng pMDI - Salmeterol/fluticasone propionate 50/100; 50/250; 50/500 mcg dạng DPI",
+    "quoteVi": "Các hàm lượng chế phẩm phối hợp ICS/LABA lưu hành tại Việt Nam theo QĐ 1851/BYT.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "byt.asthma.2020.discharge_followup_2_7_days",
+    "sourceId": "byt_1851_2020_asthma",
+    "pdfPage": 43,
+    "locator": "QĐ 1851/QĐ-BYT Theo dõi sau đợt cấp / PDF p. 43",
+    "quote": "Thuốc kiểm soát: bắt đầu hoặc nâng bậc Prednisolone: tiếp tục, thường trong 5 -7 ngày (3-5 ngày đối với trẻ em) Theo dõi: trong vòng 2-7 ngày",
+    "quoteVi": "Kế hoạch xuất viện sau đợt cấp: Bắt đầu hoặc nâng bậc thuốc kiểm soát, tiếp tục Prednisolone 5-7 ngày (trẻ em 3-5 ngày), hẹn tái khám trong 2-7 ngày.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.aerd_cox2_observation",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 139,
+    "locator": "Section 6 AERD / PDF p. 139",
+    "quote": "Where an NSAID is indicated for other medical conditions, a COX-2 inhibitor (e.g., celecoxib or etoricoxib), or paracetamol (acetaminophen), may be considered, 659,660 with appropriate healthcare provider supervision and observation for at least 2 hours after administration (Evidence B).",
+    "quoteVi": "Ở bệnh nhân AERD cần dùng kháng viêm giảm đau, có thể cân nhắc thuốc ức chế chọn lọc COX-2 (celecoxib hoặc etoricoxib) hoặc paracetamol dưới sự giám sát của nhân viên y tế và theo dõi ít nhất 2 giờ sau liều đầu (Chứng cứ B).",
+    "cor": "IIa",
+    "loe": "B"
+  },
+  {
+    "id": "gina.asthma.2026.cyp3a4_ics_laba_interaction",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 47,
+    "locator": "Section 2 Drug interactions with asthma medications / PDF p. 47",
+    "quote": "Drug interactions with asthma medications: concomitant treatment with cytochrome P450 inhibitors such as ketoconazole, ritonavir, itraconazole, erythromycin and clarithromycin may increase the risk of ICS adverse effects such as adrenal suppression, and with short-term use, may increase the risk of cardiovascular adverse effects of the LABAs salmeterol and vilanterol (alone or in combination with ICS). Concomitant use of these medications is not recommended (see also p.131).",
+    "quoteVi": "Dùng đồng thời các chất ức chế cytochrome P450 (ketoconazole, ritonavir, itraconazole, erythromycin, clarithromycin) làm tăng nguy cơ suy thượng thận/hội chứng Cushing do ICS và độc tính tim mạch của LABA (salmeterol, vilanterol); không khuyến cáo phối hợp.",
+    "cor": "III",
+    "loe": "B"
+  },
+  {
+    "id": "gina.asthma.2026.omalizumab_anaphylaxis_02pct",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 164,
+    "locator": "Section 8 Anti-IgE Omalizumab adverse effects / PDF p. 164",
+    "quote": "Adverse effects: injection site reactions, anaphylaxis (approximately 0.2% patients).",
+    "quoteVi": "Tác dụng bất lợi của Omalizumab: phản ứng tại chỗ tiêm và phản vệ (khoảng 0,2% bệnh nhân).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.omalizumab_polysorbate",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 163,
+    "locator": "Section 8 Biologic therapy practical advice / PDF p. 163",
+    "quote": "Omalizumab and biosimilar omalizumab-igec injections contain polysorbate, which may induce allergic reactions in some patients. GINA suggests that the first dose of asthma biologic therapy should not be given on the same day as a vaccine, so that adverse effects of either can be more easily distinguished.",
+    "quoteVi": "Thuốc tiêm Omalizumab và sinh phẩm tương tự chứa tá dược polysorbate có thể gây phản ứng dị ứng ở một số bệnh nhân; không tiêm liều đầu tiên cùng ngày với vắc-xin.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "gina.asthma.2026.rapihaler_80_225_double_actuations",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 92,
+    "locator": "Section 4 Other budesonide-formoterol formulations / PDF p. 92",
+    "quote": "Budesonide-formoterol 80/2.25 mcg (metered dose 100/3 mcg) pMDI is available in a few countries, and can be used as an anti-inflammatory reliever with double the above number of actuations per dose as for budesonide- formoterol 160/4.5 (200/6) mcg. For AIR-only (Step 1), the standard dose with budesonide-formoterol 80/2.25 (100/3) is 2 inhalations as-needed. For Step 3 MART, the dose is 2 inhalations twice daily and 2 inhalations as needed",
+    "quoteVi": "Chế phẩm Budesonide-formoterol pMDI 80/2.25 mcg (liều định liều 100/3 mcg) cần nhân đôi số nhát xịt mỗi lần so với hàm lượng 160/4.5 mcg (tối đa 24 nhát/24 giờ tương đương 72 mcg formoterol định liều).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.beclometasone_formoterol_max_72_vs_48",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 244,
+    "locator": "Glossary ICS-formoterol / PDF p. 244",
+    "quote": "if they need more than a total of 8 inhalations in a 24-hour period (i.e. delivering a total of 36 mcg (48 mcg metered dose) of the formoterol component).",
+    "quoteVi": "Theo tờ thông tin sản phẩm gốc (SmPC), bệnh nhân cần khám y tế nếu dùng quá 8 nhát hít/24 giờ (tương đương 36 mcg phân liều / 48 mcg định liều formoterol).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.beclometasone_formoterol_mart_12_puffs",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 90,
+    "locator": "Section 4 MART maximum daily formoterol dose / PDF p. 90",
+    "quote": "Based on this evidence, GINA suggests that the same total dose of formoterol in a single day should also apply for MART with beclometasone-formoterol (total 12 inhalations, total metered dose 72 mcg).",
+    "quoteVi": "Dựa trên dữ liệu an toàn lâm sàng lớn, GINA khuyến nghị áp dụng cùng trần liều tạm thời tối đa trong ngày cho MART với beclometasone-formoterol là 12 nhát hít (72 mcg formoterol định liều).",
+    "cor": "IIa",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.mometasone_dpi_vs_pmdi",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 78,
+    "locator": "Box 4-2 Low, medium and high daily metered doses of ICS / PDF p. 78",
+    "quote": "Mometasone furoate (DPI) Depends on DPI device – see product information Mometasone furoate (pMDI, standard particle, HFA) 200–400 >400",
+    "quoteVi": "Mometasone furoate dạng bột khô (DPI) có phân tầng liều phụ thuộc từng thiết bị cụ thể theo tờ thông tin sản phẩm; phân tầng Thấp 200–400 mcg và Cao > 400 mcg áp dụng cho pMDI hạt chuẩn HFA.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.discharge_box_9_7_mart_ocs",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 192,
+    "locator": "Box 9-7 Discharge management after acute care or ED / PDF p. 192",
+    "quote": "The preferred regimen is maintenance-and-reliever therapy with ICS-formoterol (MART) for adults/adolescents, starting at Step 4, as this will reduce risk of future exacerbations compared with using a SABA reliever. If prescribing ICS or ICS-LABA with SABA reliever, increase the ICS dose for 2–4 weeks. Emphasize adherence and correct inhaler technique. Oral corticosteroids (OCS): Prescribe prednisone/prednisolone 40–50 mg/day for 5–7 days for adults.",
+    "quoteVi": "Box 9-7 Xuất viện sau cấp cứu/nội trú: Ưu tiên khởi trị hoặc chuyển sang phác đồ MART với ICS-formoterol bắt đầu ở Bậc 4 kèm kê đơn Prednisolone uống 40–50 mg/ngày đủ liệu trình 5–7 ngày cho người lớn.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.pregnancy_acute_fetal_hypoxia",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 137,
+    "locator": "Section 6 Pregnancy acute asthma exacerbations / PDF p. 137",
+    "quote": "To avoid fetal hypoxia, it is important to manage acute asthma exacerbations during pregnancy aggressively with SABA, oxygen, and early administration of systemic corticosteroids.",
+    "quoteVi": "Để phòng ngừa thiếu oxy thai nhi, cần xử trí tích cực cơn hen cấp trong thai kỳ bằng SABA, thở oxy sớm và corticosteroid toàn thân sớm.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.sustained_step_up_2_3_months",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 111,
+    "locator": "Section 4 Sustained step-up / PDF p. 111",
+    "quote": "Sustained step-up (for at least 2–3 months) Although at a group level most benefit from ICS is obtained at low dose, individual ICS responsiveness varies ; some patients whose asthma is uncontrolled on low-dose ICS-LABA despite good adherence and correct technique may benefit from increasing the maintenance dose to medium.",
+    "quoteVi": "Tăng bậc duy trì thử nghiệm ít nhất 2–3 tháng khi hen chưa kiểm soát tốt dù đã tuân thủ tốt và hít đúng kỹ thuật, sau đó đánh giá lại đáp ứng.",
+    "cor": "IIa",
+    "loe": "B"
+  },
+  {
+    "id": "byt.asthma.2020.sustained_step_up_2_3_months",
+    "sourceId": "byt_1851_2020_asthma",
+    "pdfPage": 21,
+    "locator": "QĐ 1851/QĐ-BYT Mục 4.4.a Tăng bậc điều trị / PDF p. 21",
+    "quote": "Tăng bậc dài hạn (trong ít nhất 2 -3 tháng): bệnh nhân vẫn có triệu chứng và/ hoặc đợt cấp bất chấp việ c đã điều trị thuốc kiểm soát hen 2-3 tháng",
+    "quoteVi": "QĐ 1851/BYT: Tăng bậc dài hạn trong ít nhất 2–3 tháng ở bệnh nhân vẫn còn triệu chứng và/hoặc đợt cấp sau khi đã kiểm tra kỹ thuật hít, tuân thủ và bệnh đồng mắc.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.acute_magnesium_fev1_30",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 189,
+    "locator": "Section 9 Magnesium / PDF p. 189",
+    "quote": "However, in adults and children who fail to respond to initial treatment and have persistent hypoxemia, and in children whose FEV1 fails to reach 60% predicted after 1 hour of care, intravenous magnesium (as a single 2 g infusion over 20 minutes ) reduces hospital admissions, including in adults with FEV1 <25–30% predicted at presentation (Evidence A).",
+    "quoteVi": "Magnesium sulfate truyền tĩnh mạch liều duy nhất 2 g trong 20 phút giúp giảm nhập viện ở bệnh nhân thất bại với điều trị ban đầu sau 1 giờ, giảm oxy máu dai dẳng hoặc người lớn có FEV1 < 25–30% dự đoán lúc nhập viện (Chứng cứ A).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.acute_oxygen_spo2_92",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 186,
+    "locator": "Section 9 Oxygen therapy / PDF p. 186",
+    "quote": "Supplemental oxygen is suggested if oxygen saturation is <92% (in children, when awake). Oxygen can be administered by nasal cannulas or mask, with a target saturation on oxygen of 92–95%. Note the potential for overestimation of saturation in people with dark skin color. 797 In adults with severe exacerbations, controlled low flow oxygen therapy using pulse oximetry to maintain saturation at 93–95% is associated with better physiological outcomes than with high concentration (100%) oxygen therapy (Evidence B).",
+    "quoteVi": "Chỉ định thở oxy bổ sung khi SpO2 giảm thấp và kiểm soát oxy lưu lượng thấp duy trì mục tiêu SpO2 93–95% ở người lớn (Chứng cứ B).",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "gina.asthma.2026.acute_admission_predictors",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 190,
+    "locator": "Section 9 Prediction of need for hospitalization / PDF p. 190",
+    "quote": "Severity of the exacerbation (e.g., need for resuscitation or rapid medical intervention on arrival, respiratory rate >22 breaths/minute, oxygen saturation <95%, final PEF <50% predicted)",
+    "quoteVi": "Các dấu hiệu mức độ nặng của đợt cấp dự báo nhu cầu nhập viện: nhịp thở > 22 lần/phút, SpO2 < 95%, PEF < 50% dự đoán hoặc kém đáp ứng thuốc giãn phế quản ban đầu.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "gina.asthma.2026.mart_prior_exac_1",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 189,
+    "locator": "Section 9 On discharge home MART / PDF p. 189",
+    "quote": "In patients with a history of ≥1 severe exacerbations, MART reduces the risk of another severe exacerbation in the next 12 months by 32%, compared with same dose ICS or ICS-LABA plus as-needed SABA, and by 23% when compared with higher dose ICS-LABA plus as-needed SABA.",
+    "quoteVi": "Ở bệnh nhân có tiền sử ≥ 1 đợt cấp nặng, phác đồ MART giúp giảm 32% nguy cơ tái phát đợt cấp nặng trong 12 tháng tới.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "byt.asthma.2021.acute_hypotension_life_threatening",
+    "sourceId": "byt_5850_2021_asthma",
+    "pdfPage": 17,
+    "locator": "QĐ 5850/QĐ-BYT Dấu hiệu cơn hen nguy kịch / PDF p. 17",
+    "quote": "Khi có ít nhất một dấu hiệu:  Ngủ gà, lú lẫn  Thở chậm, có cơn ngừng thở  Rối loạn nhịp tim, tụt huyết áp, tím tái  Lồng ngực im lặng",
+    "quoteVi": "Các dấu hiệu cơn hen cấp đe dọa tính mạng theo QĐ 5850/BYT: ngủ gà, lú lẫn, thở chậm/ngừng thở, rối loạn nhịp tim, tụt huyết áp, tím tái, lồng ngực im lặng.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.lama_without_ics_contra",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 101,
+    "locator": "Section 4 Other controller options / PDF p. 101",
+    "quote": "Use of long-acting muscarinic antagonists (LAMA) in asthma without concomitant ICS is associated with an increased risk of severe exacerbations.",
+    "quoteVi": "Sử dụng thuốc kháng muscarinic tác dụng dài (LAMA) trong hen phế quản mà không kèm ICS làm tăng nguy cơ đợt cấp nặng.",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.laba_lama_without_ics_contra",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 142,
+    "locator": "Section 6 Asthma and COPD / PDF p. 142",
+    "quote": "treatment with a long-acting beta2-agonist (LABA) and long-acting muscarinic antagonist (LAMA) without inhaled corticosteroid (ICS) is recommended as initial treatment in COPD, but contraindicated in asthma due to the risk of severe exacerbations and death.",
+    "quoteVi": "Điều trị bằng LABA và LAMA không kèm ICS được khuyến cáo khởi trị trong COPD nhưng chống chỉ định tuyệt đối trong hen phế quản do nguy cơ đợt cấp nặng và tử vong.",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.theophylline_oral_not_recommended",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 101,
+    "locator": "Section 4 Reliever options not recommended / PDF p. 101",
+    "quote": "Oral adrenergic agonists (including oral ephedrine) and theophylline have a higher risk of side- effects than inhaled SABA and are not recommended.",
+    "quoteVi": "Thuốc cường giao cảm đường uống và theophylline có nguy cơ tác dụng bất lợi cao hơn SABA đường hít và không được khuyến cáo trong hen phế quản.",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.aminophylline_iv_not_recommended",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 190,
+    "locator": "Section 9 Aminophylline and theophylline / PDF p. 190",
+    "quote": "The use of intravenous aminophylline is associated with severe and potentially fatal side-effects, particularly in patients already treated with sustained-release theophylline. In adults with severe asthma exacerbations, add-on treatment with aminophylline does not improve outcomes, compared with SABA alone.",
+    "quoteVi": "Aminophylline tiêm tĩnh mạch không cải thiện kết cục so với SABA đơn thuần và liên quan đến các tác dụng phụ nặng có thể gây tử vong, đặc biệt ở người bệnh đang uống theophylline phóng thích kéo dài.",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "byt.asthma.2020.aminophylline_theophylline_not_rec",
+    "sourceId": "byt_1851_2020_asthma",
+    "pdfPage": 46,
+    "locator": "QĐ 1851/QĐ-BYT Xử trí cơn cấp hen / PDF p. 46",
+    "quote": "Aminophylline và theophylline tiêm tĩnh mạch không nên sử dụng trong xử trí cơn cấp hen, do hiệu quả kém và khả năng ngộ độc (đặc biệt khi dù ng cùng macrolide có thể gây xoắn đỉnh).",
+    "quoteVi": "QĐ 1851/BYT: Không nên sử dụng aminophylline và theophylline tiêm tĩnh mạch trong xử trí cơn hen cấp do hiệu quả kém và nguy cơ ngộ độc tim mạch (xoắn đỉnh khi dùng cùng macrolide).",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.foster_age_18",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 89,
+    "locator": "Section 4 Step 3 MART age limits / PDF p. 89",
+    "quote": "MART for Step 3 treatment can be prescribed with low-dose budesonide-formoterol (≥12 years) or low-dose beclometasone-formoterol (≥18 years).",
+    "quoteVi": "Phác đồ MART Bậc 3 được chỉ định với budesonide-formoterol liều thấp (≥ 12 tuổi) hoặc beclometasone-formoterol liều thấp (chỉ từ ≥ 18 tuổi).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.triple_tiotropium_age_limits",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 246,
+    "locator": "Glossary Long-acting muscarinic antagonists / PDF p. 246",
+    "quote": "Tiotropium, ≥6 years, by mist inhaler, added to separate ICS or ICS-LABA Combination ICS-LABA-LAMA inhalers: For patients aged ≥18 years, beclometasone-formoterol- glycopyrronium; fluticasone furoate-vilanterol-umeclidinium and mometasone-indacaterol- glycopyrronium. For patients aged ≥12 years, budesonide-formoterol-glycopyrronium.",
+    "quoteVi": "Tiotropium dạng phun sương mịn rời được phê duyệt từ ≥ 6 tuổi; các bình hít bộ ba cố định Trimbow, Trelegy và Enerzair chỉ được phê duyệt cho người lớn ≥ 18 tuổi. Riêng budesonide/formoterol/glycopyrronium dùng cho người bệnh hen từ ≥ 12 tuổi.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.dupilumab_eos_1500_contra",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 247,
+    "locator": "Glossary Anti-IL4Rα Dupilumab / PDF p. 247",
+    "quote": "Not advised for patients with current or historical blood eosinophils ≥1500/μL.",
+    "quoteVi": "Không khuyến cáo dùng Dupilumab ở người bệnh có bạch cầu ái toan máu hiện tại hoặc tiền sử ≥ 1500 tế bào/µL.",
+    "cor": "III",
+    "loe": "B"
+  },
+  {
+    "id": "fda.asthma.dupilumab_eos_1500_excluded",
+    "sourceId": "fda_label_dupilumab",
+    "pdfPage": 43,
+    "locator": "Clinical Studies Asthma / PDF p. 43",
+    "quote": "eosinophil level of >1500 cells/mcL (<1.3%) were excluded. DUPIXENT was administered as add-on to background asthma treatment.",
+    "quoteVi": "Nhãn FDA Dupixent: Các bệnh nhân có mức bạch cầu ái toan máu > 1500 tế bào/µL bị loại trừ khỏi thử nghiệm lâm sàng.",
+    "cor": "III",
+    "loe": "B"
+  },
+  {
+    "id": "gina.asthma.2026.hypereosinophilia_1500_egpa_strongyloides",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 160,
+    "locator": "Section 8 Investigation of severe asthma / PDF p. 160",
+    "quote": "Strongyloides infection is usually asymptomatic. 722 If hypereosinophilia is found, e.g., blood eosinophils ≥1500/µL, consider causes such as eosinophilic granulomatosis with polyangiitis (EGPA).",
+    "quoteVi": "Khi phát hiện tăng bạch cầu ái toan máu cao (≥ 1500 tế bào/µL), cần tầm soát các nguyên nhân như u hạt tăng bạch cầu ái toan kèm viêm đa mạch (EGPA) và nhiễm ký sinh trùng Strongyloides.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "gina.asthma.2026.step_down_no_stop_laba",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 112,
+    "locator": "Section 4 Stepping down ICS-LABA / PDF p. 112",
+    "quote": "However, stopping LABA was associated with lower lung function and more hospitalizations, and decreasing the ICS dose was inferior to maintaining a stable dose of ICS -LABA.",
+    "quoteVi": "Ngừng thành phần LABA khỏi phác đồ ICS-LABA làm giảm chức năng phổi và tăng nguy cơ nhập viện so với duy trì hoặc giảm liều ICS-LABA.",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.mart_saba_not_needed",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 183,
+    "locator": "Section 9 Follow-up after exacerbation / PDF p. 183",
+    "quote": "ICS-formoterol for symptom relief, to reduce the risk of another exacerbation; SABA is not needed.",
+    "quoteVi": "Bệnh nhân điều trị bằng phác đồ MART dùng chính bình ICS-formoterol để cắt cơn nhằm giảm nguy cơ đợt cấp tái phát; không cần dùng thêm bình SABA rời.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.acute_moderate_severe_ipratropium",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 186,
+    "locator": "Section 9 Ipratropium / PDF p. 186",
+    "quote": "For adults and children with moderate-severe exacerbations, treatment in the emergency department with both SABA and ipratropium, a short-acting anticholinergic, was associated with fewer hospitalizations (Evidence A for adults;804 Evidence B for adolescents/children805) and greater improvement in PEF and FEV1",
+    "quoteVi": "Ở người lớn và thanh thiếu niên có đợt cấp hen từ trung bình đến nặng tại khoa Cấp cứu, phối hợp SABA và ipratropium giúp giảm nhập viện và cải thiện PEF, FEV1 tốt hơn SABA đơn thuần (Chứng cứ A).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.acute_primary_care_transfer",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 171,
+    "locator": "Section 9 Key points primary care transfer / PDF p. 171",
+    "quote": "During transfer, give inhaled SABA and ipratropium bromide, controlled oxygen and systemic corticosteroids.",
+    "quoteVi": "Khi chuyển tuyến cấp cứu từ cơ sở chăm sóc ban đầu, dùng ngay SABA hít phối hợp ipratropium bromide, thở oxy có kiểm soát và corticosteroid toàn thân.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "byt.asthma.2020.acute_moderate_severe_ipratropium",
+    "sourceId": "byt_1851_2020_asthma",
+    "pdfPage": 46,
+    "locator": "QĐ 1851/QĐ-BYT Ipratropium bromide / PDF p. 46",
+    "quote": "Ipratropium bromide (SAMA) Bệnh nhân có đợt cấp trung bình đến nặng, điều trị trong khoa cấp cứu : phối hợp SAMA và SABA cho hiệu qu ả giãn phế quản tốt hơn, cải thiện FEV1, LLĐ nhiều hơn so với dùng SABA đơn thuần.",
+    "quoteVi": "QĐ 1851/BYT: Ở bệnh nhân có đợt cấp hen trung bình đến nặng tại khoa Cấp cứu, phối hợp Ipratropium và SABA cải thiện giãn phế quản, FEV1 và PEF tốt hơn dùng SABA đơn thuần.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.oxygen_target_revised_95",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 21,
+    "locator": "What's new in GINA 2026 Oxygen targets / PDF p. 21",
+    "quote": "If oxygen is given, the upper limit of the oxygen saturation target for adults, adolescents and children 6–11 years is 95% (Box 9-4, p.180; Box 9-6, p.186).",
+    "quoteVi": "GINA 2026 hiệu chỉnh ngưỡng bão hòa oxy mục tiêu khi thở oxy ở người lớn và trẻ vị thành niên là 95% (Box 9-4 và Box 9-6).",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "byt.asthma.2021.discharge_criteria_pef_60_80_spo2_94",
+    "sourceId": "byt_5850_2021_asthma",
+    "pdfPage": 17,
+    "locator": "QĐ 5850/QĐ-BYT Tiêu chuẩn cải thiện xem xét cho về nhà / PDF p. 17",
+    "quote": "CẢI THIỆN  Triệu chứng cải thiện, không cần dùng SABA  PEF hoặc FEV1 cải thiện và > 60-80% GTLT  Độ bão hòa ôxy > 94%  Điều kiện tại nhà cho phép điều trị XEM XÉT CHO VỀ NHÀ",
+    "quoteVi": "Tiêu chuẩn cải thiện xem xét xuất viện sau cơn hen cấp theo QĐ 5850/BYT: triệu chứng cải thiện không cần SABA liên tục, PEF hoặc FEV1 > 60–80% GTLT và SpO2 > 94%.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.pef_fev1_below_60_deterioration",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 175,
+    "locator": "Box 9-2 Self-management with short-course OCS / PDF p. 175",
+    "quote": "Consider adding short-course of OCS, e.g., if PEF or FEV1 <60% personal best or predicted.",
+    "quoteVi": "PEF hoặc FEV1 < 60% giá trị cá nhân tốt nhất hoặc dự đoán chỉ điểm đợt cấp diễn tiến nặng cần điều trị corticosteroid đường uống.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "gina.asthma.2026.spacer_no_facemask_eye_protection",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 121,
+    "locator": "Section 5 Inhaler skills and spacer / PDF p. 121",
+    "quote": "Facemask with spacer should be avoided (to reduce exposure of skin and eyes to medications)",
+    "quoteVi": "Tránh dùng mặt nạ hở (ưu tiên ống ngậm miệng mouthpiece) để giảm phơi nhiễm thuốc lên da mặt và mắt.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "gina.asthma.2026.slit_hdm_fev1_70",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 63,
+    "locator": "Box 3-6 Allergen immunotherapy SLIT / PDF p. 63",
+    "quote": "Consider adding SLIT in symptomatic HDM-sensitive adults or adolescents with partly-controlled asthma despite ICS, provided FEV1 is >70% predicted.",
+    "quoteVi": "Cân nhắc bổ sung miễn dịch trị liệu dưới lưỡi (SLIT) dị nguyên mạt bụi nhà ở người lớn/thanh thiếu niên hen kèm viêm mũi dị ứng còn triệu chứng dù đã dùng ICS, với điều kiện FEV1 > 70% dự đoán.",
+    "cor": "IIa",
+    "loe": "B"
+  },
+  {
+    "id": "gina.asthma.2026.montelukast_counseling",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 98,
+    "locator": "Section 4 Leukotriene receptor antagonists / PDF p. 98",
+    "quote": "Before prescribing montelukast, healthcare providers should consider its benefits and risks, and patients or parents/caregivers should be counselled about the risk of neuropsychiatric events.",
+    "quoteVi": "Trước khi kê montelukast, bác sĩ phải cân nhắc kỹ lợi ích – nguy cơ và tư vấn bắt buộc cho bệnh nhân/người nhà về nguy cơ biến cố tâm thần kinh.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "byt.asthma.2020.moderate_exacerbation_vitals_hr_100_120",
+    "sourceId": "byt_1851_2020_asthma",
+    "pdfPage": 45,
+    "locator": "QĐ 1851/QĐ-BYT Bảng 10 Phân độ đợt cấp / PDF p. 45",
+    "quote": "Nhịp tim 100-120 lần/phút Độ bão hòa oxy (trong không khí) 90-95% LLĐ > 50% dự đoán hoặc tốt nhất",
+    "quoteVi": "Đặc điểm sinh hiệu cơn hen cấp mức độ trung bình theo Bảng 10 QĐ 1851/BYT: nhịp tim 100–120 lần/phút, SpO2 khí trời 90–95%, PEF > 50% dự đoán.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "esc.pregnancy.2025.magnesium_toxicity_avblock_hypotension",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 57,
+    "locator": "Section 9 Magnesium toxicity / PDF p. 57",
+    "quote": "Magnesium toxicity can present with cardiac effects, including ECG interval changes (prolonged PR, QRS, and QT intervals) at magnesium levels of 2.5–5 mmol/L, and can progress to atrioventricular (AV) nodal con- duction block, bradycardia, hypotension, and cardiac arrest at levels of 6–10 mmol/L. If magnesium toxicity is suspected, it is recommended to stop the magnesium infusion and give 30 mL i.v. calcium gluco- nate.",
+    "quoteVi": "Ngộ độc Magnesium gây biến đổi ECG và tiến triển thành block dẫn truyền nhĩ thất (AV block), nhịp tim chậm, tụt huyết áp và ngừng tim; khi nghi ngờ ngộ độc phải ngừng truyền ngay và tiêm tĩnh mạch 30 mL calcium gluconate.",
+    "cor": "1",
+    "loe": "C"
+  },
+  {
+    "id": "kdigo.aki.2012.myasthenia_neuromuscular",
+    "sourceId": "kdigo_2012_aki",
+    "pdfPage": 65,
+    "locator": "Section 3.8 Neuromuscular transmission / PDF p. 65",
+    "quote": "when patients are receiving other potential neuromuscular block- ing agents, or have underlying disorders affecting neuro- muscular transmission (e.g., myasthenia gravis).",
+    "quoteVi": "Nguy cơ ức chế dẫn truyền thần kinh – cơ nặng ở người bệnh dùng các tác nhân ức chế thần kinh – cơ hoặc có bệnh lý nền dẫn truyền thần kinh – cơ như nhược cơ nặng (Myasthenia gravis).",
+    "cor": "1",
+    "loe": "C"
+  },
+  {
+    "id": "esc.hf.2026.shock_sbp_90_hypoperfusion",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 51,
+    "locator": "Recommendation Table 9 Acute HF / PDF p. 51",
+    "quote": "Inotropic agents may be considered in patients with systolic blood pressure <90 mmHg and evidence of hypoperfusion who do not respond to standard treatment, including fluid challenge, to improve perfusion.",
+    "quoteVi": "Huyết áp tâm thu < 90 mmHg kèm giảm tưới máu mô xác định tình trạng tụt huyết áp / sốc cần hồi sức dịch và vận mạch.",
+    "cor": "IIb",
+    "loe": "C"
+  },
+  {
+    "id": "byt.hf.2022.intubation_vitals_brady_hypotension",
+    "sourceId": "byt_2022_hf",
+    "pdfPage": 23,
+    "locator": "QĐ 1857/QĐ-BYT Mục 4.3 Tiêu chuẩn suy hô hấp – huyết động nguy kịch / PDF p. 23",
+    "quote": "- SpO2 < 90% (dù đang hỗ trợ bằng liệu pháp ôxy). - Co kéo các cơ hô hấp hoặc tần số thở > 25 chu kì/phút - Tần số tim < 40 hoặc > 130 chu kì/phút - Huyết áp tâm thu động mạch < 90 mmHg",
+    "quoteVi": "Các ngưỡng sinh hiệu suy hô hấp – tuần hoàn nguy kịch đe dọa đặt nội khí quản theo Bộ Y tế: SpO2 < 90%, nhịp thở > 25 lần/phút, nhịp tim chậm nặng < 40 hoặc > 130 chu kỳ/phút, huyết áp tâm thu < 90 mmHg.",
+    "cor": "1",
+    "loe": "A"
+  }
+]

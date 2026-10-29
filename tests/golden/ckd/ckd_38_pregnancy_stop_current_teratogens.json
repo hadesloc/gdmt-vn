@@ -1,0 +1,60 @@
+{
+  "id": "ckd_38_pregnancy_stop_current_teratogens",
+  "titleVi": "Thai kỳ - Phụ nữ 30 tuổi phát hiện mang thai khi đang dùng Enalapril + Atorvastatin + Dapagliflozin -> Phát lệnh STOP khẩn cấp & AVOID toàn bộ thuốc độc thai (Regression R3-CKD-02)",
+  "source": "FDA Boxed Warning (ACEi/ARB) & FDA Section 8.1 (SGLT2i, Statin)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_38",
+    "name": "BN CKD 38",
+    "age": 30,
+    "sex": "female",
+    "weight": 58,
+    "sbp": 126,
+    "dbp": 78,
+    "hr": 80,
+    "scr": 105,
+    "k": 4.3,
+    "uacr": 28,
+    "conditions": {
+      "ckd": true,
+      "dm": true,
+      "htn": true,
+      "pregnant": true
+    },
+    "currentMeds": [
+      { "drugId": "enalapril", "name": "Renitec 10 mg", "dose": 10, "unit": "mg" },
+      { "drugId": "atorvastatin", "name": "Lipitor 20 mg", "dose": 20, "unit": "mg" },
+      { "drugId": "dapagliflozin", "name": "Forxiga 10 mg", "dose": 10, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "rec_ckd_pregnancy_stop_teratogens", "action": "STOP" },
+      { "drugId": "enalapril", "action": "STOP" },
+      { "drugId": "atorvastatin", "action": "STOP" },
+      { "drugId": "dapagliflozin", "action": "STOP" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "enalapril", "action": "CONTINUE" },
+      { "drugId": "enalapril", "action": "UPTITRATE" },
+      { "drugId": "dapagliflozin", "action": "CONTINUE" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy R3-CKD-02: Hệ thống chủ động phát lệnh STOP khẩn cấp và gắn AVOID cho từng thuốc độc phôi thai đang có trong currentMeds khi phát hiện có thai."
+}

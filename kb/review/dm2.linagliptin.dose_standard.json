@@ -1,0 +1,42 @@
+{
+  "itemId": "dm2.linagliptin.dose_standard",
+  "contentHash": "b06cbf6e5543eda3b74efe9eba4f9dd717dd34f1eb4616137710baa2ff1c3e48",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "dm2.linagliptin.dose_standard",
+      "contentHash": "e6c6c1fddc38994f",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-27T15:25:00.000Z",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T08:45:00.000Z",
+          "role": "Agent F2 (DM2 Remediation & QA-10)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked threshold dm2.linagliptin.dose_standard (QA-10 quantity & verbatim quote verified)."
+        },
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T15:25:00.000Z",
+          "role": "Agent F3 (DM2 Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Verified dm2.linagliptin.dose_standard contentHash, verbatim PDF quotes, and Round 2 R1/R2/R3 clinical schema compliance."
+        },
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T15:25:00.000Z",
+          "role": "Agent F3 (DM2 Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Verified dm2.linagliptin.dose_standard contentHash, verbatim PDF quotes, and Round 2 R1/R2/R3 clinical schema compliance."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

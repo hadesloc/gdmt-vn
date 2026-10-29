@@ -1,0 +1,53 @@
+{
+  "id": "dm2_23_inpatient_ward_target",
+  "titleVi": "Bệnh nhân nội trú khoa thường - Đích glucose 5.6–10.0 mmol/L (100–180 mg/dL)",
+  "source": "ADA 2026 SOC Ch. 16",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 58,
+    "sex": "male",
+    "weight": 68,
+    "height": 166,
+    "sbp": 126,
+    "dbp": 80,
+    "hr": 76,
+    "scr": 90,
+    "k": 4.3,
+    "glucose": 9.5,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "inpatientUnit": "ward"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_dm2_inpatient_target",
+        "action": "MONITOR",
+        "doseContains": "5.6 – 10.0"
+      }
+    ]
+  },
+  "descriptionVi": "Nội trú khoa thường: 5.6–10.0 mmol/L."
+}

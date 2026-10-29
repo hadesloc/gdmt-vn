@@ -1,0 +1,78 @@
+{
+  "id": "dm2_44_ascvd_start_glp1_stop_sitagliptin",
+  "titleVi": "Bệnh nhân ĐTĐ2 + ASCVD đang uống Sitagliptin - Khởi trị mới Semaglutide và chủ động NGỪNG Sitagliptin",
+  "source": "ADA 2026 SOC Ch. 9",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 60,
+    "sex": "male",
+    "weight": 74,
+    "height": 170,
+    "sbp": 126,
+    "dbp": 78,
+    "hr": 72,
+    "scr": 84,
+    "k": 4.2,
+    "glucose": 8.5,
+    "hba1c": 7.8,
+    "conditions": {
+      "dm": true,
+      "ascvd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "metformin",
+        "name": "Metformin",
+        "dose": 1500,
+        "unit": "mg"
+      },
+      {
+        "drugId": "sitagliptin",
+        "name": "Sitagliptin",
+        "dose": 100,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "semaglutide",
+        "action": "START"
+      },
+      {
+        "drugId": "sitagliptin",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "sitagliptin",
+        "action": "SWITCH"
+      },
+      {
+        "drugId": "sitagliptin",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Khi engine chỉ định khởi trị mới Semaglutide trên bệnh nhân đang dùng Sitagliptin: Phát lệnh STOP trực tiếp cho Sitagliptin thay vì để tầng merge tạo nhãn SWITCH mơ hồ."
+}

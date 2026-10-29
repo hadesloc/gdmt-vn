@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.spiro.k_max_initiate",
+  "contentHash": "dc78f53e5a1cedb9d4fe61751f851293707c0d00297b34c0540c8c53ebe92f4b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.spiro.k_max_initiate",
+      "contentHash": "e8f244be14136a0d",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 4.5 mmol/L (quantity: k) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

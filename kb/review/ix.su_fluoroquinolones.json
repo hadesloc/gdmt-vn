@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.su_fluoroquinolones",
+  "contentHash": "f2dd0217d67f3a6f93d349c04ca3bdd223864b625fa6181da5aa61275949b9de",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.su_fluoroquinolones",
+      "contentHash": "b8e7abe3424662fb",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.su_fluoroquinolones."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

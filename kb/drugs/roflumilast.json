@@ -1,0 +1,124 @@
+{
+  "id": "roflumilast",
+  "nameVi": "Roflumilast",
+  "inn": "Roflumilast",
+  "class": "Phosphodiesterase-4 (PDE4) inhibitor",
+  "vnBrands": [],
+  "forms": [
+    "Viên nén 250 mcg (Daliresp / Daxas – lưu hành hạn chế tại VN)",
+    "Viên nén 500 mcg (Daliresp / Daxas – lưu hành hạn chế tại VN)"
+  ],
+  "start": {
+    "amount": 250,
+    "unit": "mcg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Khởi đầu 250 mcg uống 1 lần/ngày trong 4 tuần để giảm tác dụng phụ tiêu hóa, sau đó tăng lên 500 mcg/ngày"
+  },
+  "target": {
+    "amount": 500,
+    "unit": "mcg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "500 mcg uống 1 lần/ngày cùng hoặc không cùng thức ăn"
+  },
+  "titration": {
+    "step": "Sau 4 tuần liều 250 mcg, tăng lên liều duy trì 500 mcg 1 lần/ngày",
+    "intervalDays": 28,
+    "maxDose": "500 mcg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều ở bệnh nhân suy thận",
+      "citationIds": [
+        "fda.copd.roflumilast_renal_impairment"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều ở bệnh nhân suy thận nặng (eGFR < 15 mL/phút/1.73m²)",
+      "citationIds": [
+        "fda.copd.roflumilast_renal_impairment"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_roflumilast_cirrhosis",
+      "parameter": "cirrhosis",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định Roflumilast ở bệnh nhân có xơ gan hoặc suy gan trung bình–nặng (Child-Pugh B/C)",
+      "citationIds": [
+        "fda.copd.roflumilast_contra_liver"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định tuyệt đối ở bệnh nhân suy gan trung bình hoặc nặng (Child-Pugh B hoặc C); ở suy gan nhẹ (Child-Pugh A), AUC roflumilast tăng 51% và N-oxide tăng 24%, cần cân nhắc kỹ lợi ích/nguy cơ",
+    "Không khuyến cáo phối hợp đồng thời với theophylline; tránh phối hợp chất ức chế kép mạnh CYP1A2/CYP3A4 (fluvoxamine, enoxacin) và thận trọng tối đa với cimetidine, ketoconazole, itraconazole, voriconazole, posaconazole, macrolide (erythromycin, clarithromycin), ritonavir hoặc thuốc tránh thai chứa gestodene/ethinyl estradiol do tăng vọt phơi nhiễm và độc tính",
+    "Cảnh báo sụt cân, rối loạn giấc ngủ, trầm cảm/lo âu và ý nghĩ tự sát; tránh dùng đồng thời với các thuốc cảm ứng mạnh CYP3A4 (rifampin, carbamazepine, phenobarbital, phenytoin)"
+  ],
+  "citationIds": [
+    "fda.copd.roflumilast_dose",
+    "fda.copd.roflumilast_contra_liver",
+    "fda.copd.roflumilast_child_pugh_a_auc51",
+    "fda.copd.roflumilast_theophylline_prohibited",
+    "fda.copd.roflumilast_psychiatric_weight",
+    "gold.copd.2026.followup_roflumilast",
+    "gold.copd.2026.roflumilast_weight_depression",
+    "byt.copd.2026.followup_roflumilast_azithro",
+    "fda.copd.roflumilast_pregnancy",
+    "fda.copd.roflumilast_lactation",
+    "fda.copd.roflumilast_renal_impairment",
+    "fda.copd.roflumilast_cyp_inhibitors"
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Chưa có thử nghiệm lâm sàng ngẫu nhiên của Roflumilast trên phụ nữ mang thai; tránh dùng trong thai kỳ và không dùng trong chuyển dạ/sinh con.",
+    "citationIds": [
+      "fda.copd.roflumilast_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Roflumilast và chất chuyển hóa có khả năng bài tiết vào sữa mẹ; không nên sử dụng ở phụ nữ đang cho con bú.",
+    "citationIds": [
+      "fda.copd.roflumilast_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "moderate_to_severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định tuyệt đối ở bệnh nhân suy gan trung bình hoặc nặng (Child-Pugh B hoặc C)",
+      "citationIds": [
+        "fda.copd.roflumilast_contra_liver"
+      ]
+    },
+    {
+      "code": "underweight_or_unexplained_weight_loss",
+      "messageVi": "Tránh dùng ở người bệnh nhẹ cân/suy kiệt hoặc sụt cân không rõ nguyên nhân; cần theo dõi cân nặng định kỳ",
+      "citationIds": [
+        "gold.copd.2026.roflumilast_weight_depression"
+      ]
+    },
+    {
+      "code": "severe_depression_or_suicidality",
+      "messageVi": "Thận trọng tối đa / tránh dùng ở người có tiền sử trầm cảm nặng hoặc ý nghĩ/hành vi tự sát",
+      "citationIds": [
+        "fda.copd.roflumilast_psychiatric_weight",
+        "gold.copd.2026.roflumilast_weight_depression"
+      ]
+    }
+  ],
+  "classes": [
+    "pde4i"
+  ]
+}

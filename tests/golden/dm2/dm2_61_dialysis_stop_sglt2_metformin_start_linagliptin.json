@@ -1,0 +1,94 @@
+{
+  "id": "dm2_61_dialysis_stop_sglt2_metformin_start_linagliptin",
+  "titleVi": "Bệnh nhân chạy thận nhân tạo chu kỳ (onDialysis = true) dù Creatinin sau lọc thấp: Ngừng Metformin, Dapagliflozin, Gliclazide và khởi trị Linagliptin",
+  "source": "KDIGO 2022 Diabetes in CKD & ADA 2026 Chapter 11",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 62,
+    "sex": "male",
+    "weight": 64,
+    "height": 168,
+    "sbp": 134,
+    "dbp": 80,
+    "hr": 76,
+    "scr": 140,
+    "k": 4.7,
+    "glucose": 9.5,
+    "hba1c": 8.2,
+    "conditions": {
+      "dm": true,
+      "ckd": true,
+      "onDialysis": true,
+      "hf": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "metformin",
+        "name": "Metformin",
+        "dose": 1000,
+        "unit": "mg"
+      },
+      {
+        "drugId": "dapagliflozin",
+        "name": "Dapagliflozin",
+        "dose": 10,
+        "unit": "mg"
+      },
+      {
+        "drugId": "gliclazide",
+        "name": "Gliclazide MR",
+        "dose": 60,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "metformin",
+        "action": "STOP"
+      },
+      {
+        "drugId": "dapagliflozin",
+        "action": "STOP"
+      },
+      {
+        "drugId": "gliclazide",
+        "action": "STOP"
+      },
+      {
+        "drugId": "linagliptin",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "metformin",
+        "action": "REDUCE"
+      },
+      {
+        "drugId": "dapagliflozin",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Chặn hoàn toàn bẫy Creatinin giả tạo sau chạy thận nhân tạo (scr = 140 umol/L): Nhận diện onDialysis để ngừng Metformin, Dapagliflozin, Gliclazide và chọn Linagliptin 5 mg/ngày không cần chỉnh liều thận."
+}

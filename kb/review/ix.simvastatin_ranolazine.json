@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.simvastatin_ranolazine",
+  "contentHash": "d92ad9fdd3dbe5cdea4d118e2e543b7ad8cf5bc74169c723b0ea6d57910b84b0",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.simvastatin_ranolazine",
+      "contentHash": "c79cefc87d698da2",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.simvastatin_ranolazine."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

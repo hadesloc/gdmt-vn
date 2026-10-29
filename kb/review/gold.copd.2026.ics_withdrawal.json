@@ -1,0 +1,26 @@
+{
+  "itemId": "gold.copd.2026.ics_withdrawal",
+  "contentHash": "7d38af982629f3c9d44ea2bd477856af47cf1ad948ce2719047b93b87fad0f37",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gold.copd.2026.ics_withdrawal",
+      "contentHash": "973919f7e7be8ba1",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

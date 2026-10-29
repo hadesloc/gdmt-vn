@@ -1,0 +1,27 @@
+{
+  "itemId": "ckd.bp.shock_sbp_engine_cutoff",
+  "contentHash": "0413f7fec00d2d0cfefcbe327f11fe13903509e71a8243b2047d313ef560a90d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.bp.shock_sbp_engine_cutoff",
+      "contentHash": "e1769c0a508e5f95",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "round": 3,
+          "reviewedAt": "2026-10-27T18:00:00.000Z",
+          "role": "agent_e4_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 3 cho ckd.bp.shock_sbp_engine_cutoff."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.dabigatran_verapamil",
+  "contentHash": "7581bfc1c0b45c39d73c21c1b76d17e72d4dd3edbc0db99773a808a4243d6e55",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.dabigatran_verapamil",
+      "contentHash": "ca6851acd3afae55",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.dabigatran_verapamil."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

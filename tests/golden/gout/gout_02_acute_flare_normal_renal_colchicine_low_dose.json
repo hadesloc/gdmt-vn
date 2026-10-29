@@ -1,0 +1,65 @@
+{
+  "id": "gout_02_acute_flare_normal_renal_colchicine_low_dose",
+  "titleVi": "Cơn gút cấp đầu tiên không biến chứng: Colchicine liều thấp 1.2 + 0.6 mg & Trì hoãn ULT",
+  "source": "ACR 2020 Gout Guideline (acr.gout.2020.colchicine_low_dose, acr.gout.2020.indication_against_first_flare)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 45,
+    "sex": "male",
+    "weight": 74,
+    "scr": 82,
+    "uricAcid": 460,
+    "conditions": {
+      "gout": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteFlare": true,
+      "priorFlaresLifetime": 1,
+      "goutFlaresYear": 1
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "colchicine",
+        "ruleId": "rec_gout_colchicine_acute_flare",
+        "action": "START",
+        "doseContains": "1.2 mg"
+      },
+      {
+        "ruleId": "rec_gout_ult_not_indicated",
+        "action": "DEFER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "allopurinol",
+        "action": "START"
+      },
+      {
+        "drugId": "febuxostat",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 45 tuổi cơn gút cấp đầu tiên ở khớp bàn ngón chân cái, chức năng thận bình thường, urat 460 µmol/L, không sỏi thận. Cắt cơn bằng Colchicine liều thấp 1.2 mg + 0.6 mg sau 1 giờ và chưa chỉ định ULT."
+}

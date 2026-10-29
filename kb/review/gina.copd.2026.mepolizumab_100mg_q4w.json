@@ -1,0 +1,26 @@
+{
+  "itemId": "gina.copd.2026.mepolizumab_100mg_q4w",
+  "contentHash": "d72dcc1e27649aa81d0ed25493e0c6888d150a0d5f7addea41a42ca7b25699be",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gina.copd.2026.mepolizumab_100mg_q4w",
+      "contentHash": "d95b4c27d5c183b0",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

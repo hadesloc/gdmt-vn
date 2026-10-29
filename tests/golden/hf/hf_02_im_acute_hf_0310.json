@@ -1,0 +1,73 @@
+{
+  "id": "hf_02_im_acute_hf_0310",
+  "titleVi": "Khó thở đột ngột ở buồng Nội (Suy tim cấp kèm HA cao SBP 178, chưa có LVEF)",
+  "source": "on-call:im_acute_hf_0310",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 72,
+    "sex": "female",
+    "weight": 58,
+    "sbp": 178,
+    "dbp": 104,
+    "hr": 124,
+    "conditions": {
+      "hf": true
+    },
+    "selectedModules": [
+      "hf"
+    ],
+    "currentMeds": [],
+    "scr": 130,
+    "k": 4.2,
+    "customInputs": {
+      "congestion": "overt"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "furosemide",
+        "action": "START"
+      },
+      {
+        "drugId": "nitroglycerin",
+        "action": "CONSIDER"
+      },
+      {
+        "ruleId": "rec_hf_inpatient_predischarge",
+        "action": "DEFER"
+      },
+      {
+        "ruleId": "missing_input_lvef",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "START"
+      },
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Suy tim cấp nội viện tăng huyết áp (SBP 178 mmHg) chưa siêu âm tim LVEF: khởi trị lợi tiểu quai TM, cân nhắc giãn mạch TM, yêu cầu nhập LVEF và trì hoãn khởi trị mới GDMT đường uống cho tới khi hết pha cấp."
+}

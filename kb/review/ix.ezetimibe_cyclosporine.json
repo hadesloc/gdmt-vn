@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.ezetimibe_cyclosporine",
+  "contentHash": "221f1470a7d35bd4d03a3144376cd516c6365d0fcf7f9fbfcc1a95649819126b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.ezetimibe_cyclosporine",
+      "contentHash": "0dc49b204228d0a6",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T11:20:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.ezetimibe_cyclosporine."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T11:20:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

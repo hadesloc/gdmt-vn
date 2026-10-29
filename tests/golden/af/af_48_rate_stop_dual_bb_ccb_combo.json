@@ -1,0 +1,67 @@
+{
+  "id": "af_48_rate_stop_dual_bb_ccb_combo",
+  "titleVi": "Ngoại trú AF đang dùng chồng chéo Bisoprolol + Diltiazem: Ngừng Diltiazem, duy trì đơn trị Bisoprolol",
+  "source": "ESC 2024 AF Section 7.1.2 / esc.af.2024.rate_avoid_bb_ccb_combo",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 70,
+    "sex": "male",
+    "weight": 68,
+    "height": 166,
+    "sbp": 124,
+    "dbp": 74,
+    "hr": 84,
+    "rhythm": "afib",
+    "scr": 88,
+    "lvef": 55,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "bisoprolol",
+        "name": "Concor",
+        "dose": 5,
+        "unit": "mg"
+      },
+      {
+        "drugId": "diltiazem",
+        "name": "Herbesser",
+        "dose": 120,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "diltiazem",
+        "action": "STOP"
+      },
+      {
+        "drugId": "bisoprolol",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Phát hiện bệnh nhân đang dùng đồng thời cả Chẹn beta và Non-DHP CCB: phát lệnh STOP Diltiazem để phòng ngừa vô tâm thu / block nhĩ thất hoàn toàn."
+}

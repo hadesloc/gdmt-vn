@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.statin_gemfibrozil",
+  "contentHash": "f527bb56d111dddd1ec0bedb4a85e1d7bbceb14c82c3f825473b240d088e5f38",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.statin_gemfibrozil",
+      "contentHash": "1588da729fb97673",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T11:20:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.statin_gemfibrozil."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T11:20:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

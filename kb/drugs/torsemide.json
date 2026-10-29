@@ -1,0 +1,118 @@
+{
+  "id": "torsemide",
+  "nameVi": "Torsemide (Torasemide)",
+  "inn": "Torsemide",
+  "class": "Loop diuretic",
+  "classes": [
+    "loop_diuretic",
+    "diuretic"
+  ],
+  "vnBrands": [
+    "Demadex",
+    "Torem",
+    "Torsemide Stella"
+  ],
+  "forms": [
+    "Viên nén 5 mg",
+    "Viên nén 10 mg",
+    "Viên nén 20 mg"
+  ],
+  "start": {
+    "amount": "5–10",
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "sinh khả dụng đường uống cao và ổn định (> 80%), ít phụ thuộc phù niêm mạc ruột (10–20 mg Torsemide tương đương ~40 mg Furosemide uống)"
+  },
+  "target": {
+    "amount": "10–20",
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "liều duy trì thường dùng 10–20 mg/ngày để giữ đẳng tích"
+  },
+  "titration": {
+    "step": "Gấp đôi liều theo đáp ứng bài niệu cho đến khi đạt liều lợi tiểu hiệu quả, tối đa 200 mg/ngày",
+    "intervalDays": 3,
+    "maxDose": "200 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "5–10 mg x 1 lần/ngày (thường dùng 10–20 mg/ngày)",
+      "citationIds": [
+        "esc.hf.2026.loop_diuretics_doses_table_s7"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "10–20 mg/ngày, tăng dần theo đáp ứng (tối đa 200 mg/ngày)",
+      "note": "Chuyển hoá phần lớn qua gan (80%) nên ít tích luỹ ở suy thận nặng nhưng cần liều cao hơn để đạt hiệu quả ống thận; chống chỉ định nếu vô niệu",
+      "citationIds": [
+        "esc.hf.2026.loop_diuretics_doses_table_s7"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_torsemide_sbp_min",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 90,
+      "unit": "mmHg",
+      "action": "hold",
+      "messageVi": "Huyết áp tâm thu < 90 mmHg: Tạm hoãn lợi tiểu và đánh giá thể tích tuần hoàn",
+      "citationIds": [
+        "esc.hf.2026.loop_diuretics_doses_table_s7"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Chỉ dùng trong thai kỳ khi suy tim có quá tải dịch / phù phổi sung huyết rõ rệt; theo dõi sát thể tích tuần hoàn và tưới máu nhau thai.",
+    "citationIds": [
+      "esc.preg.2025.diuretics_preg",
+      "esc.preg.2025.hf_preg_diuretics_bb_nitrates",
+      "fda.hf.bumetanide_preg_lact"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Thận trọng khi cho con bú do lợi tiểu quai có thể bài tiết qua sữa mẹ và liều cao làm giảm tiết sữa.",
+    "citationIds": [
+      "fda.hf.bumetanide_preg_lact"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "anuria",
+      "messageVi": "Chống chỉ định trong vô niệu hoàn toàn hoặc hôn mê gan",
+      "citationIds": [
+        "fda.hf.bumetanide_contra_anuria_hepatic"
+      ]
+    }
+  ],
+  "interactions": [
+    "Nguy cơ hạ kali và magie máu làm tăng độc tính digoxin",
+    "NSAID làm giảm tác dụng bài niệu và tăng nguy cơ suy thận cấp"
+  ],
+  "citationIds": [
+    "esc.hf.2026.loop_diuretics_chronic",
+    "esc.hf.2026.loop_diuretics_doses_table_s7"
+  ],
+  "hepatic": {
+    "status": "caution",
+    "childA": "ok",
+    "childB": "caution",
+    "childC": "contra_hepatic_coma",
+    "note": "Chống chỉ định trong hôn mê gan và rối loạn điện giải nặng chưa bù; thận trọng theo dõi kali/natri máu ở bệnh nhân xơ gan cổ trướng.",
+    "notesVi": "Chống chỉ định trong hôn mê gan và rối loạn điện giải nặng chưa bù; thận trọng theo dõi kali/natri máu ở bệnh nhân xơ gan cổ trướng.",
+    "citationIds": [
+      "fda.hf.bumetanide_contra_anuria_hepatic"
+    ]
+  }
+}

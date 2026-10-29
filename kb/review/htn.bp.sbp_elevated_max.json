@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.bp.sbp_elevated_max",
+  "contentHash": "1b897740bae498aa1a66a95cc588ae8eb149b57b769f84f4bbd3d11475503836",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.bp.sbp_elevated_max",
+      "contentHash": "ae8fbc329a01cb1c",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 139 mmHg (quantity: sbp) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

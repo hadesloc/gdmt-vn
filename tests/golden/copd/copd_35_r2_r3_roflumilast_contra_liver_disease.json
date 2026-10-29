@@ -1,0 +1,75 @@
+{
+  "id": "copd_35_r2_r3_roflumilast_contra_liver_disease",
+  "titleVi": "Hồi quy R2-R3: Chống chỉ định Roflumilast khi có bệnh gan / xơ gan dù đủ tiêu chuẩn FEV₁ < 50% và viêm phế quản mạn",
+  "source": "FDA Daliresp Label Sec. 4 / GOLD 2026 p. 162 (COPD-R2-02, R3-COPD-04)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_35",
+    "age": 67,
+    "sex": "male",
+    "weight": 56,
+    "height": 164,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 78,
+    "conditions": {
+      "copd": true,
+      "liverDisease": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "tiotropium_olodaterol",
+        "name": "Spiolto Respimat",
+        "dose": 5,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.45,
+      "fev1PredPct": 40,
+      "chronicBronchitis": true,
+      "currentInhaler": "laba_lama",
+      "moderateExacerbations": 2,
+      "hospitalizations": 1,
+      "bloodEos": 70,
+      "smokingStatus": "current"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "roflumilast",
+        "ruleId": "rec_copd_roflumilast_contra",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "roflumilast",
+        "action": "CONSIDER"
+      },
+      {
+        "drugId": "roflumilast",
+        "action": "START"
+      }
+    ]
+  }
+}

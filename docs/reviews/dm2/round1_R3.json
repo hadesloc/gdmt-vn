@@ -1,0 +1,155 @@
+[
+  {
+    "id": "R3-DM2-01",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "dm2.outpatient.cardiorenal_glp1",
+    "finding": "Khuyến cáo KHỞI TRỊ (START) Semaglutide (GLP-1 RA) cho bệnh nhân có tiền sử Ung thư tuyến giáp thể tủy (MTC) hoặc Hội chứng Đa u tuyến nội tiết típ 2 (MEN 2), vi phạm cảnh báo hộp đen (Black Box Warning) tuyệt đối của FDA và ADA.",
+    "evidence": "Input BN ADV_DM2_31 (Nam 52 tuổi, conditions: { dm: true, ascvd: true, obesity: true, mtc: true }, customInputs: { historyMtcOrMen2: true }, BMI 31.2, currentMeds: [Metformin]). Output engine: [START] semaglutide (rec_dm2_glp1_cardiorenal): 'Khởi trị Semaglutide (SC) (0.25 mg x 1 lần/tuần...)', không có bất kỳ cổng an toàn (gates) kiểm tra tiền sử ung thư tuyến giáp, alerts = [].",
+    "suggestedFix": "Thêm điều kiện loại trừ tiền sử MTC/MEN 2 trong luật dm2.outpatient.cardiorenal_glp1: 'if (ctx.patient.conditions?.mtc || ctx.patient.conditions?.men2 || ctx.patient.customInputs?.historyMtcOrMen2) return false;'. Đồng thời bổ sung cổng an toàn tiền sử MTC/MEN 2 trong src/engine/safety/gates.ts áp dụng cho mọi thuốc GLP-1 RA (semaglutide, tirzepatide, dulaglutide, liraglutide) với action 'AVOID'."
+  },
+  {
+    "id": "R3-DM2-02",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "dm2.outpatient.cardiorenal_glp1",
+    "finding": "Khuyến cáo KHỞI TRỊ (START) Semaglutide (GLP-1 RA) cho phụ nữ mang thai mắc ĐTĐ típ 2 kèm béo phì do thiếu điều kiện kiểm tra thai kỳ và thiếu thuốc trong cổng an toàn thai kỳ của engine core.",
+    "evidence": "Input BN ADV_DM2_32 (Nữ 31 tuổi mang thai, conditions: { dm: true, pregnant: true, obesity: true }, BMI 32). Output engine: [START] semaglutide (rec_dm2_glp1_cardiorenal): 'Khởi trị Semaglutide (SC) (0.25 mg x 1 lần/tuần...)', gates: [], alerts = [].",
+    "suggestedFix": "Bổ sung điều kiện kiểm tra thai kỳ trong dm2.outpatient.cardiorenal_glp1: 'if (ctx.patient.conditions?.pregnant) return false;'. Đồng thời, thêm toàn bộ các thuốc nhóm đồng vận GLP-1 RA (semaglutide, dulaglutide, liraglutide, tirzepatide) vào tập hợp PREGNANCY_CONTRAINDICATED_DRUGS trong src/engine/safety/gates.ts (dòng 20-36) để chặn triệt để mọi chỉ định độc phôi thai."
+  },
+  {
+    "id": "R3-DM2-03",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "src/engine/safety/reviewMeds.ts",
+    "finding": "Bệnh nhân mang thai đang dùng sẵn thuốc GLP-1 RA (Semaglutide) và Thiazolidinedione (Pioglitazone) tại nhà không hề được hệ thống phát hiện hay khuyến cáo NGỪNG (STOP/AVOID).",
+    "evidence": "Input BN ADV_DM2_33 (Nữ 29 tuổi mang thai, conditions: { dm: true, pregnant: true }, currentMeds: [{ drugId: 'semaglutide', dose: 0.5 }, { drugId: 'pioglitazone', dose: 15 }]). Output engine: Chỉ có khuyến cáo START Metformin, CONTINUE chăm sóc toàn diện, MONITOR đích; HOÀN TOÀN KHÔNG CÓ khuyến cáo nào yêu cầu ngừng Semaglutide hay Pioglitazone; alerts = [].",
+    "suggestedFix": "Cập nhật PREGNANCY_CONTRAINDICATED_DRUGS trong gates.ts và reviewCurrentMedications trong reviewMeds.ts để bao gồm nhóm GLP-1 RA (semaglutide, dulaglutide, liraglutide, tirzepatide) và TZD (pioglitazone, rosiglitazone), tự động phát hành động STOP khẩn cấp khi patient.conditions?.pregnant === true."
+  },
+  {
+    "id": "R3-DM2-04",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "dm2.inpatient.hypoglycemia_protocol",
+    "finding": "Cấp cứu hạ đường huyết nặng (Glucose 2.4 mmol/L) nhưng hệ thống KHÔNG hề phát sinh y lệnh NGỪNG hoặc TẠM HOÃN (STOP/HOLD) Sulfonylurea (Glimepiride), tạo nguy cơ hạ đường huyết tái diễn đe dọa tính mạng.",
+    "evidence": "Input BN ADV_DM2_22 (Nữ 70 tuổi, glucose = 2.4 mmol/L [Level 2 hypoglycemia], đang dùng Glimepiride 4 mg + Metformin 1000 mg). Output engine: [START] CẤP CỨU HẠ ĐƯỜNG HUYẾT NẶNG (2.4 mmol/L): Tiêm Glucose tĩnh mạch. Tuy nhiên, Glimepiride KHÔNG bị STOP, KHÔNG bị HOLD, thậm chí Metformin vẫn [CONTINUE] và hệ thống còn [START] thêm Dapagliflozin + Semaglutide!",
+    "suggestedFix": "Trong dm2.inpatient.hypoglycemia_protocol, khi glucose < 3.9 mmol/L, bắt buộc duyệt patient.currentMeds: nếu phát hiện bất kỳ thuốc nào thuộc nhóm Sulfonylurea (glimepiride, gliclazide, glipizide) hoặc Insulin, phải phát sinh khuyến cáo HOLD/STOP ngay lập tức đối với thuốc đó; tạm hoãn việc khởi trị mới bất kỳ thuốc hạ đường huyết nào cho đến khi đường huyết ổn định an toàn."
+  },
+  {
+    "id": "R3-DM2-05",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "dm2.outpatient.early_insulin",
+    "finding": "Bệnh nhân ĐTĐ típ 2 đang điều trị liều cao Insulin Glargine (40 đơn vị/ngày) có HbA1c = 10.2%: Hệ thống đưa ra khuyến cáo [START] Khởi trị Insulin Glargine 10 đơn vị/ngày, gây sai lệch liều hoặc trùng lặp y lệnh nguy hiểm.",
+    "evidence": "Input BN ADV_DM2_25 (Nam 55 tuổi, đang tiêm Glargine 40 U/ngày + Metformin 1000 mg, HbA1c = 10.2%). Output engine: [START] insulin_glargine (rec_dm2_early_insulin): 'Khởi trị Insulin nền sớm (Tăng đường huyết nặng / Dị hóa cấp)', dose: 'Khởi đầu 10 đơn vị/ngày HOẶC 8–15 đơn vị/ngày (0.1–0.2 U/kg/ngày) tiêm dưới da 1 lần trước ngủ'.",
+    "suggestedFix": "Thêm kiểm tra loại trừ trong dm2.outpatient.early_insulin: 'const isTakingInsulin = ctx.patient.currentMeds.some(m => m.drugId.toLowerCase().includes(\"insulin\")); if (isTakingInsulin) return false;'. Nếu bệnh nhân đang dùng insulin mà HbA1c vẫn cao, cần chuyển sang đánh giá overbasalization, chỉnh liều hoặc phối hợp thêm GLP-1 RA / insulin bữa ăn (bolus), không được khởi trị lại liều 10 U/ngày."
+  },
+  {
+    "id": "R3-DM2-06",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "dm2.outpatient.pioglitazone_saxagliptin_hf",
+    "finding": "Bệnh nhân suy tim đang dùng đồng thời cả Pioglitazone VÀ Saxagliptin: Hệ thống chỉ dừng Pioglitazone và bỏ sót hoàn toàn Saxagliptin do lỗi logic toán tử rẽ nhánh.",
+    "evidence": "Input BN ADV_DM2_30 (Nam 67 tuổi, Suy tim LVEF 32%, đang dùng đồng thời Pioglitazone 30 mg VÀ Saxagliptin 5 mg). Output engine: Chỉ có duy nhất 1 khuyến cáo [STOP] pioglitazone: 'Ngừng Pioglitazone ở bệnh nhân Suy tim'. Hoàn toàn không có khuyến cáo ngừng Saxagliptin. Mã nguồn gây lỗi tại rules.outpatient.ts dòng 505-508: 'const hasPio = ...; const drugId = hasPio ? \"pioglitazone\" : \"saxagliptin\";'.",
+    "suggestedFix": "Tách luật thành 2 khuyến cáo độc lập hoặc duyệt qua cả 2 thuốc: nếu có Pioglitazone thì sinh rec STOP Pioglitazone, nếu có Saxagliptin thì sinh rec STOP Saxagliptin; không dùng cấu trúc if/else lồng loại trừ khiến thuốc thứ hai bị bỏ qua."
+  },
+  {
+    "id": "R3-DM2-07",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "dm2.outpatient.no_dpp4_plus_glp1",
+    "finding": "Bệnh nhân đang dùng Sitagliptin, khi hệ thống chỉ định [START] Semaglutide (do ASCVD/béo phì): Hệ thống chỉ thêm câu cảnh báo văn bản mà KHÔNG tạo khuyến cáo [STOP] Sitagliptin trong danh sách hành động điều trị.",
+    "evidence": "Input BN ADV_DM2_27 (Nam 62 tuổi có ASCVD, đang dùng Sitagliptin 100 mg). Output engine: [START] semaglutide (rec_dm2_glp1_cardiorenal) có chuỗi warning: 'Bắt buộc NGỪNG DPP-4 khi bắt đầu GLP-1 RA...'. Tuy nhiên, trong danh sách recommendations HOÀN TOÀN KHÔNG CÓ khuyến cáo nào có action: 'STOP', drugId: 'sitagliptin'. Luật dm2.outpatient.no_dpp4_plus_glp1 không kích hoạt vì chỉ kiểm tra khi cả 2 đã có trong currentMeds.",
+    "suggestedFix": "Trong luật dm2.outpatient.cardiorenal_glp1 hoặc no_dpp4_plus_glp1: khi GLP-1 RA được đề xuất START và bệnh nhân đang dùng DPP-4i trong currentMeds, tự động phát sinh một recommendation riêng biệt với action: 'STOP', drugId: dpp4Med.drugId, title: `Ngừng ${dpp4Med.name} (Chuyển sang dùng GLP-1 RA)`."
+  },
+  {
+    "id": "R3-DM2-08",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "dm2.inpatient.basal_bolus_regimen",
+    "finding": "Bệnh nhân cấp cứu Hội chứng tăng ALTT thuần túy (HHS không toan ceton): Hệ thống kích hoạt đồng thời cả phác đồ Cấp cứu HHS truyền tĩnh mạch VÀ phác đồ Basal-Bolus tiêm dưới da, gây nguy cơ tụt đường huyết và quá liều insulin nguy kịch.",
+    "evidence": "Input BN ADV_DM2_38 (Nam 72 tuổi, glucose 38 mmol/L, effectiveOsmolality = 345 mOsm/kg, bloodKetones = 0.3 mmol/L). Output engine đồng thời đề xuất: 1. [START] rec_dm2_inpatient_basal_bolus: 'Chỉ định phác đồ Insulin Basal-Bolus nội viện' (TDD 31 U, Basal 16 U, Bolus 5 U x 3 bữa) VÀ 2. [START] rec_dm2_dka_active_management: 'Phác đồ Cấp cứu HHS: Bù dịch · Insulin TM (3.4 U/h) · Bù Kali · Dextrose gối'.",
+    "suggestedFix": "Trong dm2.inpatient.basal_bolus_regimen, mở rộng điều kiện loại trừ: 'const isHhs = (glucose !== undefined && glucose >= 33.3) && (osmolality !== undefined && osmolality > 320); if (isDka || isHhs) return false;'. Trong giai đoạn cấp cứu tăng ALTT cấp, bệnh nhân mất nước nặng và huyết động không ổn định, chỉ dùng phác đồ truyền tĩnh mạch cấp cứu, tuyệt đối không tiêm Basal-Bolus dưới da."
+  },
+  {
+    "id": "R3-DM2-09",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "dm2.inpatient.dka_hhs_emergency",
+    "finding": "Cấp cứu DKA: Khuyến cáo tạm hoãn insulin khi K⁺ < 3.5 hoặc thiếu K⁺ bị gán nhầm `drugId: 'insulin_glargine'` thay vì Regular Insulin tĩnh mạch, trong khi khuyến cáo truyền insulin tích cực lại bị bỏ trống drugId.",
+    "evidence": "Input BN ADV_DM2_34 (DKA với K+ = 3.2 mmol/L) và ADV_DM2_39 (DKA thiếu K+). Output engine: [HOLD] drugId='insulin_glargine' (rec_dm2_dka_hold_insulin_hypokalemia): 'NGUY CẤP: HOÃN INSULIN NGAY – BÙ KALI TĨNH MẠCH...'. Thuốc cần hoãn truyền tĩnh mạch trong cấp cứu DKA là Regular insulin, không phải Glargine (insulin nền tiêm dưới da).",
+    "suggestedFix": "Sửa drugId trong rec_dm2_dka_hold_insulin_hypokalemia và rec_dm2_dka_need_k_before_insulin thành 'insulin_regular' (hoặc 'insulin_infusion'), đồng thời bổ sung drugId: 'insulin_regular' vào rec_dm2_dka_active_management."
+  },
+  {
+    "id": "R3-DM2-10",
+    "severity": "major",
+    "itemType": "ui",
+    "itemId": "dm2.inpatient.dka_hhs_emergency",
+    "finding": "Tiêu đề khuyến cáo phác đồ cấp cứu DKA hiển thị cụm từ '· Bù Kali ·' cố định ngay cả khi bệnh nhân đang bị TĂNG KALI MÁU NẶNG (K⁺ = 5.6 mmol/L), gây nhầm lẫn y lệnh truyền thừa kali dẫn tới ngừng tim.",
+    "evidence": "Input BN ADV_DM2_37 (DKA kèm K+ = 5.6 mmol/L). Output engine: [START] rec_dm2_dka_active_management có tiêu đề: 'Phác đồ Cấp cứu DKA: Bù dịch · Insulin TM (7.0 U/h) · Bù Kali · Dextrose gối'. Mã nguồn dòng 350: title được gán cứng chuỗi '· Bù Kali ·'.",
+    "suggestedFix": "Nội suy tiêu đề linh hoạt theo giá trị K+: Nếu K+ > 5.0 mmol/L, hiển thị '· Chưa bù Kali (K⁺ > 5.0) ·' thay vì '· Bù Kali ·' để tránh y tá/bác sĩ đọc nhanh tiêu đề cấp cứu thực hiện nhầm y lệnh bù kali."
+  },
+  {
+    "id": "R3-DM2-11",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "dm2.inpatient.hold_sglt2i_surgery",
+    "finding": "Quy tắc tạm ngừng SGLT2i trước phẫu thuật chương trình 3-4 ngày hoàn toàn không hoạt động tại phòng khám NGOẠI TRÚ tiền phẫu do bị giới hạn nhầm setting: 'inpatient'.",
+    "evidence": "Input BN ADV_DM2_46 (BN ngoại trú có lịch phẫu thuật chương trình trong 3 ngày tới [plannedSurgery: true, setting: 'outpatient'], đang dùng Empagliflozin 10 mg). Output engine: Hoàn toàn không phát sinh khuyến cáo tạm hoãn Empagliflozin, thuốc vẫn được duy trì ngầm định.",
+    "suggestedFix": "Sửa phạm vi setting của luật dm2.inpatient.hold_sglt2i_surgery từ 'inpatient' thành 'both' (hoặc bổ sung phiên bản luật ngoại trú tiền phẫu) để bệnh nhân khám ngoại trú trước ngày nhập viện mổ được hướng dẫn dừng SGLT2i đúng thời điểm (≥ 3 ngày trước mổ)."
+  },
+  {
+    "id": "R3-DM2-12",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "dm2.inpatient.steroid_induced_hyperglycemia",
+    "finding": "Phác đồ đối ứng tăng đường huyết do Glucocorticoid / Steroid hoàn toàn không hoạt động tại bối cảnh NGOẠI TRÚ do luật bị giới hạn setting: 'inpatient'.",
+    "evidence": "Input BN ADV_DM2_44 (BN ngoại trú đang dùng Methylprednisolone toàn thân liều cao [onSteroidTherapy: true, setting: 'outpatient'], đường huyết tăng cao 14.8 mmol/L). Output engine: Không có bất kỳ hướng dẫn hay khuyến cáo bổ sung Insulin NPH nào.",
+    "suggestedFix": "Chuyển setting của dm2.inpatient.steroid_induced_hyperglycemia thành 'both' để hỗ trợ các bác sĩ phòng khám ngoại trú (Cơ xương khớp, Dị ứng, Hô hấp) phối hợp phác đồ Insulin NPH buổi sáng đối ứng đỉnh tăng đường huyết do corticoid."
+  },
+  {
+    "id": "R3-DM2-13",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "src/engine/safety/gates.ts",
+    "finding": "Bệnh nhân suy thận nặng (eGFR = 29 mL/phút/1.73m²) chưa từng dùng Metformin nhưng hệ thống lại hiển thị khuyến cáo hành động là [STOP] kèm liều 'Ngừng hoàn toàn' thay vì [AVOID].",
+    "evidence": "Input BN ADV_DM2_09 (Nam 68 tuổi, eGFR 29 mL/phút/1.73m², currentMeds: []). Output engine: [STOP] metformin (rec_dm2_metformin): 'CHỐNG CHỈ ĐỊNH / NGỪNG Metformin (eGFR < 30)', dose: 'Ngừng hoàn toàn'. Dù rules.outpatient.ts đã gán action: 'AVOID' khi !isTaking, gates.ts (dòng 92) đã ghi đè mù quáng thành updatedAction = 'STOP'.",
+    "suggestedFix": "Trong src/engine/safety/gates.ts, kiểm tra trạng thái đang dùng thuốc trước khi gán action: 'if (rec.action === \"AVOID\" || !patient.currentMeds.some(m => m.drugId === \"metformin\")) updatedAction = \"AVOID\"; else updatedAction = \"STOP\";'."
+  },
+  {
+    "id": "R3-DM2-14",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "dm2.outpatient.deintensification",
+    "finding": "Khuyến cáo xuống thang điều trị ở người cao tuổi suy yếu (rec_dm2_deintensification) bị thiếu trường `drugId`, khiến UI không thể làm nổi bật chính xác thuốc cần giảm liều (Gliclazide hay Insulin).",
+    "evidence": "Input BN ADV_DM2_20 (Nữ 82 tuổi, rất suy yếu, đang dùng Gliclazide MR 60mg + Insulin Glargine 20U). Output engine: [REDUCE] drugId=undefined (rec_dm2_deintensification): 'Chủ động giảm liều / Xuống thang thuốc nguy cơ hạ đường huyết (SU / Insulin)'.",
+    "suggestedFix": "Gán drugId cụ thể cho khuyến cáo (ví dụ ưu tiên drugId của thuốc Sulfonylurea hoặc tách thành 2 khuyến cáo cụ thể nếu đang dùng cả SU lẫn Insulin) để giao diện người dùng hiển thị đúng thẻ thuốc."
+  },
+  {
+    "id": "R3-DM2-15",
+    "severity": "minor",
+    "itemType": "missing",
+    "itemId": "dm2.outpatient.deintensification",
+    "finding": "Người cao tuổi đang dùng Sulfonylurea có HbA1c thấp (< 6.5%) là dấu hiệu kiểm soát đường huyết quá mức (over-treatment) tiềm ẩn nguy cơ hạ đường huyết nhưng hệ thống không có cảnh báo hay khuyến cáo nới lỏng đích.",
+    "evidence": "Input BN ADV_DM2_01 (Nữ 72 tuổi, đang dùng Gliclazide MR 60mg + Metformin 1000mg, HbA1c 6.4%). Output engine: Mục tiêu HbA1c xác định là < 7.0–7.5%, nhưng hệ thống không đưa ra bất kỳ cảnh báo nào về việc HbA1c hiện tại đang thấp hơn ngưỡng an toàn của phác đồ chứa SU.",
+    "suggestedFix": "Bổ sung điều kiện trong luật deintensification: nếu bệnh nhân cao tuổi (≥ 65) đang dùng thuốc nguy cơ cao (SU/Insulin) mà HbA1c < 6.5%, phát cảnh báo over-treatment và đề xuất giảm liều hoặc ngừng SU để tránh biến cố hạ đường huyết."
+  },
+  {
+    "id": "R3-DM2-16",
+    "severity": "minor",
+    "itemType": "ui",
+    "itemId": "dm2.outpatient.rules",
+    "finding": "Tiêu đề khuyến cáo thuốc bị lặp từ rườm rà và khó đọc do nội suy chuỗi liều trùng lặp từ fmtDose(dose(drugId, 'start')).",
+    "evidence": "Các tiêu đề được sinh ra trên UI: 'Khởi trị Dapagliflozin (10 mg x 1 lần/ngày (uống) - 10 mg uống buổi sáng)' và 'Khởi trị Semaglutide (SC) (0.25 mg x 1 lần/tuần (tiêm dưới da) - 0.25 mg tiêm dưới da 1 lần/tuần x 4 tuần (liều thích nghi))'.",
+    "suggestedFix": "Đơn giản hóa tiêu đề hiển thị: Chỉ ghi `Khởi trị ${drug.nameVi} (Liều khởi đầu)` hoặc `Khởi trị ${drug.nameVi}`, để chi tiết cách dùng và chuẩn độ vào trường `dose` và `rationale`."
+  },
+  {
+    "id": "R3-DM2-17",
+    "severity": "suggestion",
+    "itemType": "rule",
+    "itemId": "dm2.outpatient.rules",
+    "finding": "Chuyển đổi profile INTL sang VN chưa thực sự thay đổi động logic khuyến cáo và bậc thang điều trị theo Hướng dẫn chẩn đoán và điều trị ĐTĐ típ 2 của Bộ Y tế (QĐ 5481/QĐ-BYT).",
+    "evidence": "Input BN ADV_DM2_48 với profile: 'VN': Logic kích hoạt các luật vẫn hoàn toàn giống hệt profile INTL (SGLT2i/GLP-1 RA vẫn được ưu tiên khởi đầu ngang hàng độc lập HbA1c), trong khi BYT 5481/2020 nhấn mạnh Metformin là nền tảng đầu tay bắt buộc cho mọi ca trước khi phối hợp.",
+    "suggestedFix": "Thêm các nhánh rẽ điều kiện theo ctx.settings.profile === 'VN' để cá thể hóa đúng bậc thang thuốc và trích dẫn theo Quyết định 5481/QĐ-BYT của Bộ Y tế Việt Nam."
+  }
+]

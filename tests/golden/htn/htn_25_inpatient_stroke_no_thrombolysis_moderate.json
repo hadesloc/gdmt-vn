@@ -1,0 +1,54 @@
+{
+  "id": "htn_25_inpatient_stroke_no_thrombolysis_moderate",
+  "titleVi": "Nhồi máu não không tiêu sợi huyết HA 190/104: Tạm hoãn hạ áp",
+  "source": "VSH 2022 / vsh.htn.2022.emergency_stroke_no_thrombolysis",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "male",
+    "weight": 68,
+    "height": 166,
+    "sbp": 190,
+    "dbp": 104,
+    "hr": 76,
+    "conditions": {
+      "htn": true,
+      "acuteIschemicStroke": true,
+      "thrombolysisEligible": false
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_htn_stroke_no_thrombolysis_hold",
+        "action": "HOLD"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "nicardipine",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nhồi máu não không tiêu sợi huyết, HA ≤ 220/120 mmHg: Tạm hoãn hạ áp để duy trì tưới máu não."
+}

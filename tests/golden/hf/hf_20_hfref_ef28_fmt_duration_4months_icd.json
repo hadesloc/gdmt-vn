@@ -1,0 +1,60 @@
+{
+  "id": "hf_20_hfref_ef28_fmt_duration_4months_icd",
+  "titleVi": "HFrEF EF 28% đã điều trị FMT 4 tháng: Chỉ định cấy ICD phòng ngừa tiên phát",
+  "source": "ESC 2026 HF Rec 6.2.1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 61,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 120,
+    "dbp": 75,
+    "hr": 72,
+    "lvef": 28,
+    "nyha": 2,
+    "scr": 88,
+    "k": 4.2,
+    "conditions": {
+      "hf": true,
+      "cad": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ],
+    "customInputs": {
+      "fmtDurationMonths": 4
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_hf_icd_start",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_hf_icd_defer",
+        "action": "DEFER"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "LVEF ≤ 35% sau ≥ 3 tháng FMT: Chỉ định cấy ICD."
+}

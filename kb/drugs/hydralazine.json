@@ -1,0 +1,108 @@
+{
+  "id": "hydralazine",
+  "nameVi": "Hydralazine",
+  "inn": "Hydralazine",
+  "class": "Arterial vasodilator",
+  "classes": [
+    "vasodilator"
+  ],
+  "vnBrands": [
+    "Apresoline"
+  ],
+  "forms": [
+    "Viên nén 25 mg (lưu ý: viên uống Hydralazine ít sẵn có trong danh mục thuốc thường quy tại Việt Nam)",
+    "Viên nén 50 mg",
+    "Ống tiêm tĩnh mạch/tiêm bắp 20 mg/mL (dùng trong cấp cứu nội viện/sản khoa)"
+  ],
+  "start": {
+    "amount": 37.5,
+    "unit": "mg",
+    "frequency": "3 lần/ngày",
+    "route": "uống",
+    "description": "phối hợp cùng Isosorbide dinitrate 20 mg x 3 lần/ngày cho HFrEF không dung nạp/chống chỉ định cả ARNI, ACEi và ARB (hoặc bệnh nhân da đen trên nền FMT)"
+  },
+  "target": {
+    "amount": 75,
+    "unit": "mg",
+    "frequency": "3 lần/ngày",
+    "route": "uống",
+    "description": "75 mg uống 3 lần/ngày phối hợp Isosorbide dinitrate 40 mg x 3 lần/ngày"
+  },
+  "titration": {
+    "step": "Tăng gấp đôi liều sau 2–4 tuần lên đích 75 mg x 3 lần/ngày nếu huyết áp dung nạp và không đau đầu/chóng mặt nặng",
+    "intervalDays": 14,
+    "maxDose": "300 mg/ngày (75–100 mg x 3 lần/ngày)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "37.5 mg x 3 lần/ngày -> đích 75 mg x 3 lần/ngày (lựa chọn thay thế hữu ích khi chống chỉ định hệ RAA do thận/tăng kali máu)",
+      "citationIds": [
+        "esc.hf.2026.hisdn_intolerant_rec",
+        "esc.hf.2026.amt_doses_table11"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "Khởi đầu 25–37.5 mg x 2–3 lần/ngày, chỉnh liều theo huyết áp",
+      "note": "Là phác đồ giãn mạch thay thế không làm tăng kali máu khi bệnh nhân HFrEF kèm suy thận nặng không dùng được ACEi/ARB/ARNI; chú ý tăng khoảng cách liều nếu tích luỹ",
+      "citationIds": [
+        "esc.hf.2026.hisdn_intolerant_rec",
+        "esc.hf.2026.amt_doses_table11"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_hydralazine_sbp_min",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 90,
+      "unit": "mmHg",
+      "action": "hold",
+      "messageVi": "Huyết áp tâm thu < 90 mmHg: Tạm hoãn khởi trị/tăng liều Hydralazine do nguy cơ tụt huyết áp và nhịp nhanh phản xạ",
+      "citationIds": [
+        "esc.hf.2026.acute_inotropes_shock_sbp90"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Có thể sử dụng thận trọng làm lựa chọn giãn mạch thay thế ACEi/ARB/ARNI trong suy tim thai kỳ (ESC 2025 Pregnancy trang 60 xếp là lựa chọn hàng hai kèm theo dõi tác dụng phụ).",
+    "citationIds": [
+      "esc.preg.2025.hydralazine_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Lượng hydralazine bài tiết vào sữa mẹ rất nhỏ, có thể sử dụng khi cho con bú.",
+    "citationIds": [
+      "esc.preg.2025.hydralazine_pregnancy"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "severe_hypotension",
+      "messageVi": "Chống chỉ định trong hạ huyết áp nặng, lupút ban đỏ hệ thống vô căn hoặc phình bóc tách động mạch chủ",
+      "citationIds": [
+        "esc.hf.2026.acute_inotropes_shock_sbp90"
+      ]
+    }
+  ],
+  "interactions": [
+    "Cộng gộp tác dụng hạ huyết áp khi phối hợp với nitrat và các thuốc hạ áp khác; cần dùng kèm chẹn beta trong HFrEF để hạn chế nhịp nhanh phản xạ",
+    "Sử dụng kéo dài liều cao (> 200 mg/ngày) có nguy cơ gây hội chứng giống lupus do thuốc"
+  ],
+  "citationIds": [
+    "esc.hf.2026.hisdn_black_rec",
+    "esc.hf.2026.hisdn_intolerant_rec",
+    "esc.hf.2026.amt_doses_table11",
+    "aha.hf.2022.hisdn_1a",
+    "esc.preg.2025.hydralazine_pregnancy",
+    "aha.acc.2025.pregnancy_iv_hydralazine"
+  ]
+}

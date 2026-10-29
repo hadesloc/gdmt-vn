@@ -1,0 +1,78 @@
+{
+  "id": "copd_48_r2_missing_spirometry_blocks_ics_stop_ltot",
+  "titleVi": "Hồi quy R2 (COPD-R2-206 & R3-R2-COPD-07): Thiếu FEV₁/FVC chặn tự động STOP ICS đơn trị, LTOT và Home NIV cho đến khi xác nhận CNHH",
+  "source": "GOLD 2026 p. 29, 75, 92, 95 (COPD-R2-206, R3-R2-COPD-07)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_48",
+    "age": 63,
+    "sex": "female",
+    "weight": 52,
+    "height": 156,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 80,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "budesonide",
+        "name": "Pulmicort Turbuhaler",
+        "dose": 200,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1PredPct": 58,
+      "restingSpo2": 86,
+      "pao2": 52,
+      "abgPaco2": 56,
+      "mmrc": 2,
+      "cat": 14,
+      "moderateExacerbations": 1,
+      "hospitalizations": 0,
+      "bloodEos": 200
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "missing_input_fev1FvcRatio",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_copd_stop_ics_monotherapy",
+        "action": "STOP"
+      },
+      {
+        "ruleId": "rec_copd_ltot",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_copd_home_niv",
+        "action": "CONSIDER"
+      }
+    ]
+  }
+}

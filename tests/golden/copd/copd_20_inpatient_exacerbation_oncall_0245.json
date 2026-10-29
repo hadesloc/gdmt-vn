@@ -1,0 +1,72 @@
+{
+  "id": "copd_20_inpatient_exacerbation_oncall_0245",
+  "titleVi": "Đợt cấp COPD nội viện: Ca chuẩn on-call 02:45",
+  "source": "on-call:im_copd_exacerbation_0245",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_20",
+    "age": 68,
+    "sex": "male",
+    "weight": 54,
+    "height": 163,
+    "sbp": 146,
+    "dbp": 84,
+    "hr": 112,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteExacerbation": true,
+      "fev1FvcRatio": 0.48,
+      "fev1PredPct": 38,
+      "restingSpo2": 84,
+      "abgPh": 7.31,
+      "abgPaco2": 56,
+      "pao2": 52,
+      "purulentSputum": true,
+      "increasedSputumVolume": true,
+      "accessoryMuscleUse": true,
+      "moderateExacerbations": 1,
+      "hospitalizations": 1
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_copd_inpatient_oxygen",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_copd_inpatient_steroid",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_copd_inpatient_antibiotics",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_copd_inpatient_niv",
+        "action": "START"
+      }
+    ]
+  }
+}

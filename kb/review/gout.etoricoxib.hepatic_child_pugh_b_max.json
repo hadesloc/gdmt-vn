@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.etoricoxib.hepatic_child_pugh_b_max",
+  "contentHash": "ee054de696f2d906d4aad9042352b9d60ebb2643c0c846553ac90adc98eb2f7f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.etoricoxib.hepatic_child_pugh_b_max",
+      "contentHash": "c268ecd1a7c5b294",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold: gout.etoricoxib.hepatic_child_pugh_b_max"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

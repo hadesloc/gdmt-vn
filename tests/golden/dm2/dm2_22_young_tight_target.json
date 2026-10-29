@@ -1,0 +1,55 @@
+{
+  "id": "dm2_22_young_tight_target",
+  "titleVi": "Người trẻ 35 tuổi mới chẩn đoán không biến chứng - Đích HbA1c < 6.5%",
+  "source": "BYT 5481 / ADA 2026 Ch. 6",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 35,
+    "sex": "male",
+    "weight": 70,
+    "height": 172,
+    "sbp": 118,
+    "dbp": 76,
+    "hr": 74,
+    "scr": 75,
+    "k": 4.2,
+    "glucose": 7.9,
+    "hba1c": 7.1,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "dmDurationYears": 1,
+      "recentHypo": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_dm2_hba1c_target",
+        "action": "MONITOR",
+        "doseContains": "< 6.5%"
+      }
+    ]
+  },
+  "descriptionVi": "Người trẻ mới mắc bệnh: Đích < 6.5%."
+}

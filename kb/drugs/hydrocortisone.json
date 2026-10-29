@@ -1,0 +1,90 @@
+{
+  "id": "hydrocortisone",
+  "nameVi": "Hydrocortisone",
+  "inn": "Hydrocortisone (Hydrocortisone sodium succinate)",
+  "class": "Corticosteroid toàn thân (Glucocorticoid tác dụng ngắn)",
+  "classes": [
+    "systemic_corticosteroid"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Solu-Cortef",
+    "Hydrocortisone Roussel"
+  ],
+  "forms": [
+    "Lọ bột pha tiêm tĩnh mạch / tiêm bắp 100 mg",
+    "Viên nén 10 mg"
+  ],
+  "start": {
+    "amount": 200,
+    "unit": "mg",
+    "frequency": "chia 3–4 lần/ngày",
+    "route": "tiêm tĩnh mạch",
+    "description": "Đợt cấp hen phế quản nặng (khi bệnh nhân khó thở nặng, nôn hoặc không uống được prednisolone): tổng liều 200 mg/ngày chia liều tiêm tĩnh mạch (ví dụ 50–100 mg mỗi 6 giờ); hoặc bao phủ chu phẫu dự phòng suy thượng thận cấp"
+  },
+  "target": {
+    "amount": 200,
+    "unit": "mg",
+    "frequency": "chia 3–4 lần/ngày",
+    "route": "tiêm tĩnh mạch",
+    "description": "200 mg/ngày chia liều tiêm tĩnh mạch, chuyển sớm sang prednisolone đường uống (40–50 mg/ngày) ngay khi bệnh nhân uống được"
+  },
+  "titration": {
+    "step": "Đợt điều trị ngắn ngày đợt cấp hen người lớn thường kéo dài 5–7 ngày; chuyển sang đường uống khi ổn định",
+    "intervalDays": 1,
+    "maxDose": "200–400 mg/ngày trong cấp cứu"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "200 mg/ngày chia liều (không cần giảm liều theo thận)",
+      "citationIds": [
+        "gina.asthma.2026.hydrocortisone_200mg_acute"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "Không cần giảm liều cấp cứu; theo dõi sát giữ muối nước, tăng huyết áp và điện giải ở suy thận nặng",
+      "citationIds": [
+        "gina.asthma.2026.hydrocortisone_200mg_acute"
+      ]
+    }
+  ],
+  "gates": [],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Trong đợt cấp hen nặng hoặc nguy cơ suy thượng thận cấp ở thai phụ, lợi ích cứu mạng mẹ và bảo đảm oxy cho thai vượt trội hoàn toàn nguy cơ; theo dõi đường huyết mẹ.",
+    "citationIds": [
+      "gina.asthma.2026.hydrocortisone_200mg_acute"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Bài tiết lượng rất nhỏ qua sữa mẹ và là hormone nội sinh sinh lý; tương thích khi cho con bú.",
+    "citationIds": [
+      "gina.asthma.2026.hydrocortisone_200mg_acute"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "systemic_fungal_infection",
+      "messageVi": "Tránh dùng corticosteroid toàn thân không bao phủ kháng nấm trong nhiễm nấm toàn thân (trừ cấp cứu suy thượng thận cấp đe dọa tính mạng)",
+      "citationIds": [
+        "gina.asthma.2026.hydrocortisone_perioperative"
+      ]
+    }
+  ],
+  "interactions": [
+    "Phối hợp với NSAID toàn thân làm tăng vọt nguy cơ viêm loét và xuất huyết tiêu hóa (cần bảo vệ dạ dày bằng PPI nếu bắt buộc phối hợp)",
+    "Gây tăng đường huyết cấp tính ở bệnh nhân đái tháo đường và cộng hưởng gây hạ kali máu khi dùng kèm SABA khí dung liều cao hoặc lợi tiểu thải kali"
+  ],
+  "citationIds": [
+    "gina.asthma.2026.hydrocortisone_200mg_acute",
+    "gina.asthma.2026.hydrocortisone_perioperative"
+  ]
+}

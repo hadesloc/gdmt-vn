@@ -1,0 +1,42 @@
+{
+  "itemId": "insulin_glargine",
+  "contentHash": "9771d120fac6378daec159eb90bcd049e2864b52d0441fef9ea9dc72aded281f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "insulin_glargine",
+      "contentHash": "a64ed449a3feae06",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-27T15:25:00.000Z",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T08:45:00.000Z",
+          "role": "Agent F2 (DM2 Remediation & QA-10)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked drug insulin_glargine (Round 1 R1/R2/R3 remediation & QA-10 metadata verified)."
+        },
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T15:25:00.000Z",
+          "role": "Agent F3 (DM2 Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Verified insulin_glargine contentHash, verbatim PDF quotes, and Round 2 R1/R2/R3 clinical schema compliance."
+        },
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T15:25:00.000Z",
+          "role": "Agent F3 (DM2 Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Verified insulin_glargine contentHash, verbatim PDF quotes, and Round 2 R1/R2/R3 clinical schema compliance."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

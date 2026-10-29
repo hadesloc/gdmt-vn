@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.dm.moderate_t1dm_max_age",
+  "contentHash": "0cad87d3fd1da7e35d6a5f62a0f6c992ef241dae3bc81245552472aaee43b921",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.dm.moderate_t1dm_max_age",
+      "contentHash": "3a28b976ac96cb72",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.dm.moderate_t1dm_max_age."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

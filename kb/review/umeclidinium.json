@@ -1,0 +1,26 @@
+{
+  "itemId": "umeclidinium",
+  "contentHash": "57433dab6d913569632a1880e9d9caf84f44110296f3462515da223a9ddf417d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "umeclidinium",
+      "contentHash": "eee66d0e7e583d20",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD drug remediation: verified verbatim citations & content hash"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

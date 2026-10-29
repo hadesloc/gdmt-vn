@@ -1,0 +1,26 @@
+{
+  "itemId": "fda.copd.azithromycin_renal_gfr10",
+  "contentHash": "6864e3aa2cf11da2992d3e561bac35a058b2f15955a791d69e731d86bdb8a91f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "fda.copd.azithromycin_renal_gfr10",
+      "contentHash": "7ef9b60dd9099400",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

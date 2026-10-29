@@ -1,0 +1,233 @@
+{
+  "id": "perindopril_indapamide",
+  "nameVi": "Perindopril + Indapamide (SPC)",
+  "inn": "Perindopril / Indapamide",
+  "class": "Viên phối hợp cố định liều ACEi + Lợi tiểu Thiazide-like",
+  "classes": [
+    "acei",
+    "thiazide_diuretic"
+  ],
+  "components": [
+    "perindopril",
+    "indapamide"
+  ],
+  "qtRisk": "conditional",
+  "vnBrands": [
+    "Preterax 2.5/0.625 mg",
+    "Coversyl Plus 5/1.25 mg",
+    "Bi-Preterax 10/2.5 mg",
+    "Noliprel"
+  ],
+  "forms": [
+    "Viên nén 2.5 mg / 0.625 mg",
+    "Viên nén 5 mg / 1.25 mg",
+    "Viên nén 10 mg / 2.5 mg"
+  ],
+  "start": {
+    "amount": "5/1.25",
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Khởi đầu 2.5/0.625 mg hoặc 5/1.25 mg buổi sáng trước ăn"
+  },
+  "target": {
+    "amount": "10/2.5",
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống"
+  },
+  "titration": {
+    "step": "Tăng từ 2.5/0.625 -> 5/1.25 -> 10/2.5 mg 1 lần/ngày sau 2–4 tuần; kiểm tra Na⁺, K⁺, Creatinin sau 2–4 tuần",
+    "intervalDays": 14,
+    "maxDose": "10/2.5 mg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "crclFrom": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "5/1.25 mg -> 10/2.5 mg 1 lần/ngày",
+      "citationIds": [
+        "ema.perindopril.table_1_renal_adjustment",
+        "ema.indapamide.renal_contra"
+      ]
+    },
+    {
+      "crclFrom": 30,
+      "crclTo": 60,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Tối đa Perindopril 2.5 mg / Indapamide 0.625 mg 1 lần/ngày",
+      "citationIds": [
+        "ema.perindopril.table_1_renal_adjustment",
+        "ema.indapamide.renal_contra"
+      ]
+    },
+    {
+      "crclTo": 30,
+      "initiate": "contra",
+      "continue": "contra",
+      "note": "CHỐNG CHỈ ĐỊNH khi CrCl < 30 mL/phút do thành phần Indapamide và Perindopril (SmPC & BYT 2024).",
+      "citationIds": [
+        "ema.indapamide.renal_contra",
+        "byt.ckd.2024.table_12_perindopril_crcl_30"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_per_ind_crcl_30",
+      "parameter": "CrCl",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min",
+      "action": "contra",
+      "messageVi": "Chống chỉ định viên phối hợp Perindopril + Indapamide khi CrCl < 30 mL/phút.",
+      "citationIds": [
+        "ema.indapamide.renal_contra",
+        "byt.ckd.2024.table_12_perindopril_crcl_30"
+      ]
+    },
+    {
+      "id": "gate_per_ind_egfr_30",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "contra",
+      "messageVi": "Chống chỉ định viên phối hợp Perindopril + Indapamide khi eGFR < 30 mL/phút/1,73m².",
+      "citationIds": [
+        "ema.indapamide.renal_contra",
+        "esc.htn.2024.ckd_loop_diuretic"
+      ]
+    },
+    {
+      "id": "gate_per_ind_k_low",
+      "parameter": "K",
+      "operator": "<",
+      "threshold": 3.5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm ngưng viên phối hợp chứa Indapamide khi K⁺ < 3,5 mmol/L.",
+      "citationIds": [
+        "ema.indapamide.hypokalemia_qt",
+        "esc.hf.2026.supp_diuretic_cautions"
+      ]
+    },
+    {
+      "id": "gate_per_ind_k_high",
+      "parameter": "K",
+      "operator": ">",
+      "threshold": 5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm hoãn viên phối hợp chứa Perindopril khi K⁺ > 5,0 mmol/L.",
+      "citationIds": [
+        "aha.acc.2025.table18_k50"
+      ]
+    },
+    {
+      "id": "gate_per_ind_na_130",
+      "parameter": "Na",
+      "operator": "<",
+      "threshold": 130,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm ngưng viên phối hợp chứa Indapamide khi Natri máu < 130 mmol/L.",
+      "citationIds": [
+        "ema.indapamide.hyponatraemia_uric",
+        "esc.hf.2026.supp_hyponatraemia_135"
+      ]
+    },
+    {
+      "id": "gate_per_ind_na_125",
+      "parameter": "Na",
+      "operator": "<",
+      "threshold": 125,
+      "unit": "mmol/L",
+      "action": "stop",
+      "messageVi": "Ngưng ngay viên phối hợp chứa Indapamide khi hạ natri máu nặng (Na⁺ < 125 mmol/L).",
+      "citationIds": [
+        "ema.indapamide.hyponatraemia_uric",
+        "esc.hf.2026.supp_hyponatraemia_135"
+      ]
+    },
+    {
+      "id": "gate_per_ind_preg",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối trong thai kỳ.",
+      "citationIds": [
+        "ema.perindopril.pregnancy",
+        "ema.indapamide.pregnancy_lactation"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối trong thai kỳ (thành phần ACEi gây độc thai nhi).",
+    "citationIds": [
+      "ema.perindopril.pregnancy",
+      "ema.indapamide.pregnancy_lactation"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo dùng trong thời kỳ cho con bú (cả Perindopril và Indapamide đều tránh dùng khi cho bú).",
+    "citationIds": [
+      "ema.perindopril.lactation_4_6",
+      "ema.indapamide.pregnancy_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Phụ nữ mang thai",
+      "citationIds": [
+        "ema.perindopril.pregnancy"
+      ]
+    },
+    {
+      "code": "angioedema_history",
+      "messageVi": "Tiền sử phù mạch",
+      "citationIds": [
+        "ema.perindopril.pregnancy"
+      ]
+    },
+    {
+      "code": "severe_renal_failure",
+      "messageVi": "Suy thận nặng (CrCl < 30 mL/phút) hoặc lọc máu",
+      "citationIds": [
+        "ema.indapamide.renal_contra"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Suy gan nặng hoặc bệnh não gan",
+      "citationIds": [
+        "ema.indapamide.contraindications_hepatic"
+      ]
+    },
+    {
+      "code": "sulfonamide_allergy",
+      "messageVi": "Dị ứng dẫn xuất sulfonamide",
+      "citationIds": [
+        "ema.indapamide.contraindications_hepatic"
+      ]
+    }
+  ],
+  "interactions": [
+    "ix.dual_rasi",
+    "ix.acei_arni_washout",
+    "ix.triple_whammy"
+  ],
+  "citationIds": [
+    "esc.htn.2024.initial_combination",
+    "vsh.htn.2022.table9_dual_spc",
+    "ema.perindopril.table_1_renal_adjustment",
+    "ema.indapamide.renal_contra",
+    "ema.indapamide.hyponatraemia_uric"
+  ]
+}

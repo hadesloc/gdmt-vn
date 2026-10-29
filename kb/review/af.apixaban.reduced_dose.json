@@ -1,0 +1,26 @@
+{
+  "itemId": "af.apixaban.reduced_dose",
+  "contentHash": "1e397cf86be497a201e6da0ea9a318622f50a2a9ea954b8ca64ab50dc6f123d0",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.apixaban.reduced_dose",
+      "contentHash": "e45c9c852e052ab5",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.apixaban.reduced_dose (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

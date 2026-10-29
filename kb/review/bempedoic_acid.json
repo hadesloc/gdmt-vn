@@ -1,0 +1,26 @@
+{
+  "itemId": "bempedoic_acid",
+  "contentHash": "f0f2101974e7efef6869c46dc4aac45555240bc60b931524105474d40f2ae09b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "bempedoic_acid",
+      "contentHash": "e85f699ac4e555b3",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T15:55:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra schema QA-10, phân nhóm classes, dải thận, cổng an toàn thai kỳ/tương tác và trích dẫn cho thuốc bempedoic_acid."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T15:55:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

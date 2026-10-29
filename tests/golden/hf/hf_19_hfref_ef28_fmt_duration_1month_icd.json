@@ -1,0 +1,59 @@
+{
+  "id": "hf_19_hfref_ef28_fmt_duration_1month_icd",
+  "titleVi": "HFrEF EF 28% mới điều trị FMT 1 tháng: Hoãn ICD chờ đủ 3 tháng",
+  "source": "ESC 2026 HF Rec 6.2.1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 61,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 120,
+    "dbp": 75,
+    "hr": 72,
+    "lvef": 28,
+    "nyha": 2,
+    "scr": 88,
+    "k": 4.2,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ],
+    "customInputs": {
+      "fmtDurationMonths": 1
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_hf_icd_defer",
+        "action": "DEFER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_hf_icd_start",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "FMT < 3 tháng: Hoãn chỉ định ICD chờ đánh giá lại LVEF."
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.abx_renal_crcl_cutoff",
+  "contentHash": "193916923211223f5c25cbb625c6d0947f123f032737c8a9624a1b2f73a379d6",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.abx_renal_crcl_cutoff",
+      "contentHash": "aab6a1bdac01f591",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

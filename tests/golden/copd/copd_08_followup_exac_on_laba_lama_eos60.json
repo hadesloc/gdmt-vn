@@ -1,0 +1,67 @@
+{
+  "id": "copd_08_followup_exac_on_laba_lama_eos60",
+  "titleVi": "COPD theo dõi đợt cấp trên LABA+LAMA + BCAT < 100: Tránh thêm ICS",
+  "source": "GOLD 2026 Report p. 161 / Eosinophils < 100",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_08",
+    "age": 72,
+    "sex": "male",
+    "weight": 58,
+    "height": 163,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 75,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "tiotropium_olodaterol",
+        "name": "Spiolto Respimat",
+        "dose": 5,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.52,
+      "fev1PredPct": 48,
+      "currentInhaler": "laba_lama",
+      "moderateExacerbations": 2,
+      "hospitalizations": 0,
+      "bloodEos": 60
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_copd_avoid_ics_low_eos",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "action": "UPTITRATE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "indacaterol",
+  "nameVi": "Indacaterol",
+  "inn": "Indacaterol maleate",
+  "class": "LABA",
+  "vnBrands": [
+    "Onbrez Breezhaler"
+  ],
+  "forms": [
+    "Viên nang chứa bột hít Breezhaler 150 mcg",
+    "Viên nang chứa bột hít Breezhaler 300 mcg"
+  ],
+  "start": {
+    "amount": 150,
+    "unit": "mcg",
+    "frequency": "1 lần/ngày",
+    "route": "hít",
+    "description": "Hít 1 viên nang Breezhaler 150 mcg x 1 lần/ngày vào cùng thời điểm mỗi ngày"
+  },
+  "target": {
+    "amount": 150,
+    "unit": "mcg",
+    "frequency": "1 lần/ngày",
+    "route": "hít",
+    "description": "Hít 150 mcg x 1 lần/ngày (tăng lên 300 mcg/ngày nếu khó thở nặng)"
+  },
+  "titration": {
+    "step": "Tăng lên 300 mcg/ngày nếu chưa kiểm soát tốt triệu chứng",
+    "intervalDays": 30,
+    "maxDose": "300 mcg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều khi eGFR ≥ 15 mL/phút/1.73m²",
+      "citationIds": [
+        "ema.trimbow.renal_pk_beclometasone_formoterol",
+        "ema.ultibro.renal_dosing_egfr30"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận (thải trừ qua thận không đáng kể)",
+      "citationIds": [
+        "ema.trimbow.renal_pk_beclometasone_formoterol",
+        "ema.ultibro.renal_dosing_egfr30"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Không phối hợp đồng thời với một thuốc LABA khác (nguy cơ run cơ, nhịp nhanh, hạ kali máu, kéo dài QTc)"
+  ],
+  "citationIds": [
+    "byt.copd.2026.indacaterol_glycopyrronium_dose",
+    "gold.copd.2026.initial_group_a",
+    "gold.copd.2026.concurrent_asthma",
+    "ema.trimbow.renal_pk_beclometasone_formoterol",
+    "ema.ultibro.renal_dosing_egfr30",
+    "ema.ultibro.pregnancy_lactation",
+    "ema.ultibro.lactose_excipient_contra",
+    "ema.ultibro.hypersensitivity_contra"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Như các thuốc kích thích beta-2 khác, có thể ức chế co bóp tử cung khi chuyển dạ; chỉ dùng khi thật cần thiết.",
+    "citationIds": [
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": " Thuốc kích thích beta-2 đường hít đạt nồng độ huyết tương thấp ở mẹ; cân nhắc lợi ích nuôi con bằng sữa mẹ và lợi ích điều trị.",
+    "citationIds": [
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "severe_milk_protein_allergy",
+      "messageVi": "Chống chỉ định ở bệnh nhân có tiền sử dị ứng nặng / phản vệ với protein sữa (chế phẩm bột khô DPI chứa tá dược lactose)",
+      "citationIds": [
+        "ema.ultibro.lactose_excipient_contra",
+        "ema.ultibro.hypersensitivity_contra"
+      ]
+    },
+    {
+      "code": "asthma_without_ics",
+      "messageVi": "Chống chỉ định dùng ở bệnh nhân có hen phế quản đồng mắc nếu không phối hợp corticosteroid hít (ICS)",
+      "citationIds": [
+        "gold.copd.2026.concurrent_asthma"
+      ]
+    }
+  ],
+  "classes": [
+    "laba"
+  ]
+}

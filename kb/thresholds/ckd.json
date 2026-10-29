@@ -1,0 +1,1093 @@
+[
+  {
+    "id": "ckd.egfr.g1_min",
+    "value": 90,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "kdigo.ckd.2024.table_2_gfr_categories"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối thiểu cho phân loại G1 (>= 90 mL/min/1.73m2)"
+  },
+  {
+    "id": "ckd.egfr.g2_min",
+    "value": 60,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "kdigo.ckd.2024.table_2_gfr_categories"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối thiểu cho phân loại G2 (60–89 mL/min/1.73m2)"
+  },
+  {
+    "id": "ckd.egfr.g3a_min",
+    "value": 45,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "kdigo.ckd.2024.table_2_gfr_categories"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối thiểu cho phân loại G3a (45–59 mL/min/1.73m2)"
+  },
+  {
+    "id": "ckd.egfr.g3b_min",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "kdigo.ckd.2024.table_2_gfr_categories"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối thiểu cho phân loại G3b (30–44 mL/min/1.73m2)"
+  },
+  {
+    "id": "ckd.egfr.g4_min",
+    "value": 15,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "kdigo.ckd.2024.table_2_gfr_categories"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối thiểu cho phân loại G4 (15–29 mL/min/1.73m2)"
+  },
+  {
+    "id": "ckd.egfr.g5_max",
+    "value": 15,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "kdigo.ckd.2024.table_2_gfr_categories"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối đa cho suy thận giai đoạn G5 (< 15 mL/min/1.73m2)"
+  },
+  {
+    "id": "ckd.uacr.a1_max_mgg",
+    "value": 30,
+    "unit": "mg/g",
+    "quantity": "uacr",
+    "citationIds": [
+      "kdigo.ckd.2024.table_3_albuminuria_categories"
+    ],
+    "descriptionVi": "Ngưỡng UACR tối đa cho phân loại Albumin niệu A1 (< 30 mg/g)"
+  },
+  {
+    "id": "ckd.uacr.a2_max_mgg",
+    "value": 300,
+    "unit": "mg/g",
+    "quantity": "uacr",
+    "citationIds": [
+      "kdigo.ckd.2024.table_3_albuminuria_categories"
+    ],
+    "descriptionVi": "Ngưỡng UACR tối đa cho phân loại Albumin niệu A2 (30–300 mg/g)"
+  },
+  {
+    "id": "ckd.uacr.a1_max_mgmmol",
+    "value": 3,
+    "unit": "mg/mmol",
+    "quantity": "uacr",
+    "citationIds": [
+      "kdigo.ckd.2024.table_3_albuminuria_categories"
+    ],
+    "descriptionVi": "Ngưỡng UACR tối đa cho phân loại A1 tính theo đơn vị mg/mmol (< 3 mg/mmol)"
+  },
+  {
+    "id": "ckd.uacr.a2_max_mgmmol",
+    "value": 30,
+    "unit": "mg/mmol",
+    "quantity": "uacr",
+    "citationIds": [
+      "kdigo.ckd.2024.table_3_albuminuria_categories"
+    ],
+    "descriptionVi": "Ngưỡng UACR tối đa cho phân loại A2 tính theo đơn vị mg/mmol (3–30 mg/mmol)"
+  },
+  {
+    "id": "ckd.sglt2i.egfr_initiate_min",
+    "value": 20,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "kdigo.ckd.2024.rec_3_7_1_sglt2i_t2d",
+      "kdigo.ckd.2024.rec_3_7_2_sglt2i_ckd_hf",
+      "kdigo.ckd.2024.pp_3_7_1_continue_below_20"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối thiểu để khởi trị thuốc ức chế SGLT2 (KDIGO 2024 1A)"
+  },
+  {
+    "id": "ckd.sglt2i.uacr_initiate_min_mgg",
+    "value": 200,
+    "unit": "mg/g",
+    "quantity": "uacr",
+    "citationIds": [
+      "kdigo.ckd.2024.rec_3_7_2_sglt2i_ckd_hf"
+    ],
+    "descriptionVi": "Ngưỡng UACR tối thiểu (>= 200 mg/g) để khởi trị SGLT2i ở bệnh nhân CKD không đái tháo đường (KDIGO 2024 1A)"
+  },
+  {
+    "id": "ckd.sglt2i.uacr_initiate_min_mgmmol",
+    "value": 20,
+    "unit": "mg/mmol",
+    "quantity": "uacr",
+    "citationIds": [
+      "kdigo.ckd.2024.rec_3_7_2_sglt2i_ckd_hf"
+    ],
+    "descriptionVi": "Ngưỡng UACR tối thiểu (>= 20 mg/mmol) để khởi trị SGLT2i ở bệnh nhân CKD không đái tháo đường (KDIGO 2024 1A)"
+  },
+  {
+    "id": "ckd.sglt2i.egfr_intermediate_max",
+    "value": 45,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "kdigo.ckd.2024.rec_3_7_3_sglt2i_egfr_20_45"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối đa cho nhóm eGFR 20–45 mL/min/1.73m2 cân nhắc dùng SGLT2i khi UACR < 200 mg/g (KDIGO 2024 2B)"
+  },
+  {
+    "id": "ckd.sglt2i.sbp_initiate_min",
+    "value": 100,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "kdigo.2021.bp.sbp_low_100"
+    ],
+    "descriptionVi": "Huyết áp tâm thu tối thiểu (>= 100 mmHg) đảm bảo an toàn huyết động khi khởi trị thuốc ức chế SGLT2"
+  },
+  {
+    "id": "ckd.finerenone.egfr_initiate_min",
+    "value": 25,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "kdigo.ckd.2024.rec_3_8_1_finerenone_indication",
+      "fda.finerenone.table_1_starting_dose"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối thiểu (>= 25 mL/min/1.73m2) để bắt đầu khởi trị finerenone ở bệnh nhân ĐTĐ2 có CKD"
+  },
+  {
+    "id": "ckd.finerenone.uacr_initiate_min_mgg",
+    "value": 30,
+    "unit": "mg/g",
+    "quantity": "uacr",
+    "citationIds": [
+      "kdigo.ckd.2024.rec_3_8_1_finerenone_indication"
+    ],
+    "descriptionVi": "Ngưỡng UACR tối thiểu (> 30 mg/g) để chỉ định finerenone"
+  },
+  {
+    "id": "ckd.finerenone.uacr_initiate_min_mgmmol",
+    "value": 3,
+    "unit": "mg/mmol",
+    "quantity": "uacr",
+    "citationIds": [
+      "kdigo.ckd.2024.rec_3_8_1_finerenone_indication"
+    ],
+    "descriptionVi": "Ngưỡng UACR tối thiểu (> 3 mg/mmol) để chỉ định finerenone"
+  },
+  {
+    "id": "ckd.finerenone.k_initiate_max",
+    "value": 5,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "fda.finerenone.table_2_dose_adjustment"
+    ],
+    "descriptionVi": "Ngưỡng kali máu tối đa (<= 5.0 mEq/L) cho phép khởi trị hoặc dùng lại finerenone"
+  },
+  {
+    "id": "ckd.finerenone.k_uptitrate_max",
+    "value": 4.8,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "fda.finerenone.table_2_dose_adjustment"
+    ],
+    "descriptionVi": "Ngưỡng kali máu tối đa (<= 4.8 mEq/L) cho phép tăng liều finerenone từ 10 mg lên 20 mg/ngày"
+  },
+  {
+    "id": "ckd.finerenone.k_hold_threshold",
+    "value": 5.5,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "fda.finerenone.table_2_dose_adjustment"
+    ],
+    "descriptionVi": "Ngưỡng kali máu (> 5.5 mEq/L) bắt buộc tạm ngừng finerenone"
+  },
+  {
+    "id": "ckd.finerenone.start_dose_low",
+    "value": 10,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.finerenone.table_1_starting_dose"
+    ],
+    "descriptionVi": "Liều khởi đầu của finerenone khi eGFR từ 25 đến < 60 mL/min/1.73m2 (10 mg 1 lần/ngày)"
+  },
+  {
+    "id": "ckd.finerenone.target_dose",
+    "value": 20,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.finerenone.table_1_starting_dose",
+      "fda.finerenone.table_2_dose_adjustment"
+    ],
+    "descriptionVi": "Liều đích tối ưu hàng ngày của finerenone (20 mg 1 lần/ngày)"
+  },
+  {
+    "id": "ckd.rasi.k_initiate_max",
+    "value": 5,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "kdigo.ckd.2024.sec_3_11_hyperkalemia_def_5_0"
+    ],
+    "descriptionVi": "Ngưỡng kali máu tối đa (<= 5.0 mmol/L) cho phép khởi trị an toàn thuốc ức chế hệ RAS (ACEi/ARB)"
+  },
+  {
+    "id": "ckd.rasi.k_uptitrate_max",
+    "value": 5,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "kdigo.ckd.2024.sec_3_11_hyperkalemia_def_5_0",
+      "kdigo.ckd.2024.pp_3_6_1_rasi_max_dose"
+    ],
+    "descriptionVi": "Ngưỡng kali máu tối đa (<= 5.0 mmol/L) cho phép chuẩn độ tăng liều thuốc ức chế hệ RAS tới liều tối đa dung nạp"
+  },
+  {
+    "id": "ckd.rasi.k_hold_threshold",
+    "value": 5.5,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "kdigo.ckd.2024.fig_32_hyperkalemia_5_5",
+      "kdigo.ckd.2024.pp_3_6_5_rasi_reduce_stop"
+    ],
+    "descriptionVi": "Ngưỡng tăng kali máu (> 5.5 mmol/L) yêu cầu can thiệp hạ kali và tạm ngừng/giảm liều thuốc giữ kali nhóm RASi/MRA (KDIGO 2024 Figure 32)"
+  },
+  {
+    "id": "ckd.rasi.creatinine_rise_max_pct",
+    "value": 30,
+    "unit": "%",
+    "quantity": "percentage",
+    "citationIds": [
+      "kdigo.ckd.2024.pp_3_6_4_creatinine_rise_30pct"
+    ],
+    "descriptionVi": "Mức tăng creatinin huyết thanh tối đa chấp nhận được (<= 30%) trong vòng 4 tuần sau khi khởi trị hoặc tăng liều RASi"
+  },
+  {
+    "id": "ckd.rasi.sbp_initiate_min",
+    "value": 100,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "kdigo.2021.bp.sbp_low_100"
+    ],
+    "descriptionVi": "Huyết áp tâm thu tối thiểu (>= 100 mmHg) cho phép khởi trị hoặc chuẩn độ tăng liều thuốc ức chế hệ RAS"
+  },
+  {
+    "id": "ckd.bp.target_sbp_kdigo",
+    "value": 120,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "kdigo.ckd.2024.rec_3_4_1_bp_target_120",
+      "kdigo.2021.bp.rec_3_1_1_target_sbp_120"
+    ],
+    "descriptionVi": "Huyết áp tâm thu mục tiêu chuẩn hóa theo KDIGO 2021/2024 (< 120 mmHg)"
+  },
+  {
+    "id": "ckd.bp.target_sbp_esc_min",
+    "value": 120,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.2026.ckd.bp_target_120_129"
+    ],
+    "descriptionVi": "Giới hạn dưới của đích huyết áp tâm thu theo ESC 2026 CVD-CKD (120 mmHg)"
+  },
+  {
+    "id": "ckd.bp.target_sbp_esc_max",
+    "value": 129,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.2026.ckd.bp_target_120_129"
+    ],
+    "descriptionVi": "Giới hạn trên của đích huyết áp tâm thu theo ESC 2026 CVD-CKD (129 mmHg)"
+  },
+  {
+    "id": "ckd.acidosis.hco3_min",
+    "value": 18,
+    "unit": "mmol/L",
+    "quantity": "hco3",
+    "citationIds": [
+      "kdigo.ckd.2024.pp_3_10_1_acidosis_bicarbonate",
+      "byt.ckd.2024.acidosis_bicarbonate_target"
+    ],
+    "descriptionVi": "Ngưỡng bicarbonat huyết thanh (< 18 mmol/L) chỉ định điều trị kiềm hóa bằng natri bicarbonat đường uống"
+  },
+  {
+    "id": "ckd.acidosis.hco3_target_min",
+    "value": 22,
+    "unit": "mmol/L",
+    "quantity": "hco3",
+    "citationIds": [
+      "byt.ckd.2024.acidosis_bicarbonate_target"
+    ],
+    "descriptionVi": "Mục tiêu bicarbonat huyết thanh tối thiểu (> 22 mmol/L) khi điều trị toan chuyển hóa theo BYT 2024"
+  },
+  {
+    "id": "ckd.statin.adult_age_min",
+    "value": 18,
+    "unit": "tuổi",
+    "quantity": "age",
+    "citationIds": [
+      "kdigo.ckd.2024.rec_3_15_1_3_statin_18_49"
+    ],
+    "descriptionVi": "Ngưỡng tuổi người trưởng thành (>= 18 tuổi) cân nhắc điều trị statin ở bệnh nhân CKD 18–49 tuổi có nguy cơ tim mạch cao (KDIGO 2024 2A)"
+  },
+  {
+    "id": "ckd.statin.age_min",
+    "value": 50,
+    "unit": "tuổi",
+    "quantity": "age",
+    "citationIds": [
+      "kdigo.ckd.2024.rec_3_15_1_1_statin_egfr_below_60",
+      "kdigo.ckd.2024.rec_3_15_1_2_statin_egfr_ge_60"
+    ],
+    "descriptionVi": "Ngưỡng tuổi (>= 50 tuổi) khuyến cáo dùng statin ở mọi bệnh nhân CKD (KDIGO 2024 1A/1B)"
+  },
+  {
+    "id": "ckd.nsaid.egfr_contra",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "byt.ckd.2024.nsaid_contra_egfr_30",
+      "kdigo.ckd.2024.nsaid_nephrotoxicity_p132"
+    ],
+    "descriptionVi": "Ngưỡng eGFR (< 30 mL/min/1.73m2) chống chỉ định tuyệt đối sử dụng thuốc chống viêm không steroid (NSAID) ở bệnh nhân CKD"
+  },
+  {
+    "id": "ckd.kfre.referral_5y_min",
+    "value": 3,
+    "unit": "%",
+    "quantity": "percentage",
+    "citationIds": [
+      "kdigo.ckd.2024.pp_2_2_1_kfre_referral_threshold"
+    ],
+    "descriptionVi": "Ngưỡng nguy cơ suy thận 5 năm (3%) để cân nhắc chuyển khám chuyên khoa thận"
+  },
+  {
+    "id": "ckd.kfre.referral_5y_max",
+    "value": 5,
+    "unit": "%",
+    "quantity": "percentage",
+    "citationIds": [
+      "kdigo.ckd.2024.pp_2_2_1_kfre_referral_threshold"
+    ],
+    "descriptionVi": "Ngưỡng nguy cơ suy thận 5 năm (5%) xác định chỉ định chuyển khám chuyên khoa thận"
+  },
+  {
+    "id": "ckd.kfre.multidisciplinary_2y",
+    "value": 10,
+    "unit": "%",
+    "quantity": "percentage",
+    "citationIds": [
+      "kdigo.ckd.2024.pp_2_2_1_kfre_referral_threshold"
+    ],
+    "descriptionVi": "Ngưỡng nguy cơ suy thận 2 năm (> 10%) xác định thời điểm chăm sóc đa chuyên khoa"
+  },
+  {
+    "id": "ckd.kfre.krt_prep_2y",
+    "value": 40,
+    "unit": "%",
+    "quantity": "percentage",
+    "citationIds": [
+      "kdigo.ckd.2024.pp_2_2_3_kfre_krt_prep"
+    ],
+    "descriptionVi": "Ngưỡng nguy cơ suy thận 2 năm (> 40%) chuẩn bị điều trị thay thế thận"
+  },
+  {
+    "id": "ckd.referral.egfr_threshold",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "kdigo.ckd.2024.fig_48_referral_criteria"
+    ],
+    "descriptionVi": "Ngưỡng eGFR (< 30 mL/min/1.73m2 - G4/G5) bắt buộc chuyển khám chuyên khoa thận"
+  },
+  {
+    "id": "ckd.referral.uacr_threshold_mgg",
+    "value": 300,
+    "unit": "mg/g",
+    "quantity": "uacr",
+    "citationIds": [
+      "kdigo.ckd.2024.fig_48_referral_criteria"
+    ],
+    "descriptionVi": "Ngưỡng albumin niệu nặng (ACR >= 300 mg/g) kèm tiểu máu cần chuyển khám chuyên khoa"
+  },
+  {
+    "id": "ckd.referral.uacr_high_threshold_mgg",
+    "value": 700,
+    "unit": "mg/g",
+    "quantity": "uacr",
+    "citationIds": [
+      "kdigo.ckd.2024.fig_48_referral_criteria"
+    ],
+    "descriptionVi": "Ngưỡng albumin niệu rất cao (ACR > 700 mg/g) bắt buộc chuyển khám chuyên khoa thận"
+  },
+  {
+    "id": "ckd.referral.uacr_high_threshold_mgmmol",
+    "value": 70,
+    "unit": "mg/mmol",
+    "quantity": "uacr",
+    "citationIds": [
+      "kdigo.ckd.2024.fig_48_referral_criteria"
+    ],
+    "descriptionVi": "Ngưỡng albumin niệu rất cao tính theo đơn vị SI (ACR > 70 mg/mmol) bắt buộc chuyển khám chuyên khoa thận"
+  },
+  {
+    "id": "ckd.contrast.egfr_risk_threshold",
+    "value": 60,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "kdigo.ckd.2024.table_2_gfr_categories",
+      "kdigo.aki.2012.ci_aki_volume_expansion"
+    ],
+    "descriptionVi": "Ngưỡng eGFR (< 60 mL/min/1.73m2) xác định nguy cơ cao tổn thương thận cấp do thuốc cản quang iod cần bù dịch dự phòng"
+  },
+  {
+    "id": "ckd.aki.scr_increase_stage1",
+    "value": 26.5,
+    "unit": "umol/L",
+    "quantity": "scr",
+    "citationIds": [
+      "kdigo.aki.2012.table_2_staging",
+      "byt.ckd.2024.aki_on_ckd_definition"
+    ],
+    "descriptionVi": "Mức tăng creatinin tối thiểu (>= 26.5 µmol/L hoặc 0.3 mg/dL) trong 48 giờ để chẩn đoán tổn thương thận cấp AKI Giai đoạn 1"
+  },
+  {
+    "id": "ckd.aki.scr_ratio_stage1",
+    "value": 1.5,
+    "unit": "x",
+    "quantity": "ratio",
+    "citationIds": [
+      "kdigo.aki.2012.table_2_staging"
+    ],
+    "descriptionVi": "Tỷ lệ tăng creatinin huyết thanh so với nền (>= 1.5 lần) để chẩn đoán AKI Giai đoạn 1"
+  },
+  {
+    "id": "ckd.aki.scr_ratio_stage2",
+    "value": 2,
+    "unit": "x",
+    "quantity": "ratio",
+    "citationIds": [
+      "kdigo.aki.2012.table_2_staging"
+    ],
+    "descriptionVi": "Tỷ lệ tăng creatinin huyết thanh so với nền (>= 2.0 lần) để phân độ AKI Giai đoạn 2"
+  },
+  {
+    "id": "ckd.aki.scr_ratio_stage3",
+    "value": 3,
+    "unit": "x",
+    "quantity": "ratio",
+    "citationIds": [
+      "kdigo.aki.2012.table_2_staging"
+    ],
+    "descriptionVi": "Tỷ lệ tăng creatinin huyết thanh so với nền (>= 3.0 lần) để phân độ AKI Giai đoạn 3"
+  },
+  {
+    "id": "ckd.aki.stage3_scr_abs",
+    "value": 353.6,
+    "unit": "umol/L",
+    "quantity": "scr",
+    "citationIds": [
+      "byt.ckd.2024.aki_stage3_table",
+      "kdigo.aki.2012.table_2_staging"
+    ],
+    "descriptionVi": "Nồng độ Creatinin tuyệt đối (>= 353.6 µmol/L tức 4.0 mg/dL) trong tiêu chuẩn chẩn đoán AKI Giai đoạn 3"
+  },
+  {
+    "id": "ckd.hyperkalemia.moderate_min",
+    "value": 6,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "ukka.2022.guideline_16_3_2_insulin_glucose_moderate"
+    ],
+    "descriptionVi": "Ngưỡng dưới của tăng kali máu mức độ trung bình (6.0 mmol/L) theo UKKA 2022"
+  },
+  {
+    "id": "ckd.hyperkalemia.moderate_max",
+    "value": 6.4,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "ukka.2022.guideline_16_3_2_insulin_glucose_moderate"
+    ],
+    "descriptionVi": "Ngưỡng trên của tăng kali máu mức độ trung bình (6.4 mmol/L) theo UKKA 2022"
+  },
+  {
+    "id": "ckd.hyperkalemia.severe_min",
+    "value": 6.5,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "ukka.2022.guideline_16_3_1_insulin_glucose_severe",
+      "ukka.2022.guideline_16_4_1_salbutamol_nebulised",
+      "ukka.2022.guideline_18_1_emergency_dialysis"
+    ],
+    "descriptionVi": "Ngưỡng tăng kali máu mức độ nặng (>= 6.5 mmol/L) theo UKKA 2022"
+  },
+  {
+    "id": "ckd.hyperkalemia.calcium_gluconate_dose",
+    "value": 6.8,
+    "unit": "mmol",
+    "quantity": "dose_mmol",
+    "citationIds": [
+      "ukka.2022.guideline_16_2_calcium_salts"
+    ],
+    "descriptionVi": "Liều canxi truyền tĩnh mạch bảo vệ tim (tương đương 6.8 mmol, tức 30 mL calci gluconat 10%)"
+  },
+  {
+    "id": "ckd.hyperkalemia.insulin_units",
+    "value": 10,
+    "unit": "units",
+    "quantity": "dose_units",
+    "citationIds": [
+      "ukka.2022.guideline_16_3_1_insulin_glucose_severe"
+    ],
+    "descriptionVi": "Liều insulin hòa tan (10 đơn vị) pha trong glucose truyền cấp cứu tăng kali máu"
+  },
+  {
+    "id": "ckd.hyperkalemia.glucose_grams",
+    "value": 25,
+    "unit": "g",
+    "quantity": "dose_g",
+    "citationIds": [
+      "ukka.2022.guideline_16_3_1_insulin_glucose_severe"
+    ],
+    "descriptionVi": "Lượng glucose (25 g, tương đương 125 mL glucose 20% hoặc 50 mL glucose 50%) pha cùng 10 IU insulin"
+  },
+  {
+    "id": "ckd.hyperkalemia.salbutamol_min",
+    "value": 10,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "ukka.2022.guideline_16_4_1_salbutamol_nebulised"
+    ],
+    "descriptionVi": "Liều khí dung salbutamol tối thiểu (10 mg) trong điều trị hỗ trợ tăng kali máu"
+  },
+  {
+    "id": "ckd.hyperkalemia.salbutamol_max",
+    "value": 20,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "ukka.2022.guideline_16_4_1_salbutamol_nebulised"
+    ],
+    "descriptionVi": "Liều khí dung salbutamol tối đa (20 mg) trong điều trị hỗ trợ tăng kali máu"
+  },
+  {
+    "id": "ckd.hyperkalemia.szc_start_dose",
+    "value": 10,
+    "unit": "g",
+    "quantity": "dose_g",
+    "citationIds": [
+      "fda.szc.starting_dose"
+    ],
+    "descriptionVi": "Liều khởi đầu của Lokelma (SZC): 10 g x 3 lần/ngày"
+  },
+  {
+    "id": "ckd.hyperkalemia.patiromer_start_dose",
+    "value": 8.4,
+    "unit": "g",
+    "quantity": "dose_g",
+    "citationIds": [
+      "fda.patiromer.starting_dose"
+    ],
+    "descriptionVi": "Liều khởi đầu của Veltassa (patiromer): 8.4 g x 1 lần/ngày"
+  },
+  {
+    "id": "ckd.hyperkalemia.resine_start_dose",
+    "value": 10,
+    "unit": "g",
+    "quantity": "dose_g",
+    "citationIds": [
+      "byt.ckd.2024.potassium_resine_dose"
+    ],
+    "descriptionVi": "Liều khởi đầu tối thiểu của hạt trao đổi ion canxi polystyrene sulfonate (10 g) theo BYT 2024"
+  },
+  {
+    "id": "ckd.hyperkalemia.resine_max_dose",
+    "value": 15,
+    "unit": "g",
+    "quantity": "dose_g",
+    "citationIds": [
+      "byt.ckd.2024.potassium_resine_dose"
+    ],
+    "descriptionVi": "Liều mỗi lần tối đa của hạt trao đổi ion canxi polystyrene sulfonate (15 g) theo BYT 2024"
+  },
+  {
+    "id": "ckd.dialysis.hco3_emergency_max",
+    "value": 8,
+    "unit": "mmol/L",
+    "quantity": "hco3",
+    "citationIds": [
+      "byt.ckd.2024.emergency_acidosis_hco3_8",
+      "kdigo.aki.2012.rec_5_1_1_rrt_emergently"
+    ],
+    "descriptionVi": "Ngưỡng bicarbonat huyết thanh cấp cứu nguy kịch (< 8 mmol/L) chỉ định lọc máu cấp cứu theo BYT 2024 & KDIGO 2012"
+  },
+  {
+    "id": "ckd.dialysis.k_emergency_refractory",
+    "value": 6.5,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "ukka.2022.guideline_18_1_emergency_dialysis",
+      "ukka.2022.guideline_20_1_rrt_uncontrolled"
+    ],
+    "descriptionVi": "Ngưỡng kali máu cấp cứu nguy kịch (>= 6.5 mmol/L) cần lọc máu cấp cứu khẩn cấp ở bệnh nhân lọc máu chu kỳ hoặc kháng trị nội khoa theo UKKA 2022"
+  },
+  {
+    "id": "ckd.bp.hypotension_crisis_sbp",
+    "value": 90,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.hf.2026.bb_guidance_table_s6"
+    ],
+    "descriptionVi": "Ngưỡng tụt huyết áp cấp tính nặng (SBP < 90 mmHg) tại phòng khám ngoại trú cần trì hoãn khởi trị GDMT mạn tính và đánh giá xử trí cấp cứu"
+  },
+  {
+    "id": "ckd.bp.target_sbp_acc_aha",
+    "value": 130,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "aha.acc.2025.ckd_bp_target_130_80",
+      "ada.2026.soc11.bp_target_130_80"
+    ],
+    "descriptionVi": "Đích huyết áp tâm thu phòng khám (< 130 mmHg) ở bệnh nhân CKD theo AHA/ACC 2025 và ADA 2026"
+  },
+  {
+    "id": "ckd.bp.target_dbp_max",
+    "value": 80,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "aha.acc.2025.ckd_bp_target_130_80",
+      "esc.2026.ckd.bp_office_130_80"
+    ],
+    "descriptionVi": "Đích huyết áp tâm trương phòng khám (< 80 mmHg) ở bệnh nhân CKD theo AHA/ACC 2025 và ESC 2026"
+  },
+  {
+    "id": "ckd.acidosis.hco3_target_max",
+    "value": 26,
+    "unit": "mmol/L",
+    "quantity": "hco3",
+    "citationIds": [
+      "kdigo.ckd.2024.table_23_bicarbonate_normal",
+      "kdigo.ckd.2024.pp_3_10_2_acidosis_upper_limit"
+    ],
+    "descriptionVi": "Giới hạn trên bình thường của bicarbonat huyết thanh (26 mmol/L); vượt quá ngưỡng này khi đang bù natri bicarbonat cần tạm ngừng/giảm liều để tránh kiềm chuyển hóa (KDIGO 2024 PP 3.10.2)"
+  },
+  {
+    "id": "ckd.acidosis.hco3_outpatient_emergency",
+    "value": 12,
+    "unit": "mmol/L",
+    "quantity": "hco3",
+    "citationIds": [
+      "byt.ckd.2024.acute_acidosis_target_10",
+      "byt.ckd.2024.acute_acidosis_iv_bicarb_10",
+      "ada.2024.crises.table_2_dka_severity_12"
+    ],
+    "descriptionVi": "Ngưỡng toan chuyển hóa nặng cấp tính (HCO3- < 12 mmol/L, tương đương pH < ~7.20) tại ngoại trú cần chuyển cấp cứu nội viện đánh giá khí máu động mạch, loại trừ toan lactic / euglycemic DKA và tạm hoãn khởi trị SGLT2i thay vì chỉ kê viên uống"
+  },
+  {
+    "id": "ckd.hfref.lvef_max",
+    "value": 40,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "esc.2026.ckd.hfref_steroidal_vs_nonsteroidal_mra",
+      "fda.finerenone.hf_lvef40_dosing"
+    ],
+    "descriptionVi": "Ngưỡng phân suất tống máu thất trái xác định suy tim phân suất tống máu giảm HFrEF (LVEF <= 40%), ưu tiên MRA steroid (spironolactone/eplerenone) thay vì finerenone"
+  },
+  {
+    "id": "ckd.finerenone.hf_target_dose_high",
+    "value": 40,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.finerenone.hf_lvef40_dosing",
+      "fda.finerenone.table_3_hf_titration"
+    ],
+    "descriptionVi": "Liều đích tối đa của finerenone (40 mg x 1 lần/ngày) cho chỉ định suy tim LVEF >= 40% khi eGFR >= 60 mL/phút/1.73m² và K+ < 5.0 mmol/L (FDA FINEARTS-HF)"
+  },
+  {
+    "id": "ckd.finerenone.k_hf_uptitrate_max",
+    "value": 5,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "fda.finerenone.table_3_hf_titration"
+    ],
+    "descriptionVi": "Ngưỡng kali máu (< 5.0 mmol/L) cho phép tăng liều finerenone từ 20 mg lên 40 mg/ngày ở bệnh nhân suy tim LVEF >= 40% (FDA Table 3)"
+  },
+  {
+    "id": "ckd.kbinder.k_hypokalemia_stop",
+    "value": 3.5,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "fda.patiromer.hypokalemia_3_5",
+      "fda.szc.hypokalemia_discontinue"
+    ],
+    "descriptionVi": "Ngưỡng hạ kali máu rõ trên xét nghiệm (K+ < 3.5 mmol/L) bắt buộc ngừng ngay mọi chất gắn kali đường tiêu hóa và đánh giá bù kali"
+  },
+  {
+    "id": "ckd.kbinder.k_low_hold",
+    "value": 4,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "fda.szc.target_range_4_0",
+      "fda.szc.hypokalemia_discontinue"
+    ],
+    "descriptionVi": "Ngưỡng dưới khoảng mục tiêu kali máu (< 4.0 mmol/L) cần tạm ngừng hoặc giảm liều chất gắn kali (SZC, patiromer, CPS) để phòng hạ kali máu"
+  },
+  {
+    "id": "ckd.kbinder.cps_k_contra",
+    "value": 5,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "ukka.2022.guideline_8_1_cps_target_5"
+    ],
+    "descriptionVi": "Ngưỡng kali máu (< 5.0 mmol/L) chống chỉ định khởi trị hoặc tiếp tục dùng nhựa trao đổi ion calcium polystyrene sulfonate theo SmPC và UKKA 2022 Guideline 8.1"
+  },
+  {
+    "id": "ckd.glp1ra.egfr_min",
+    "value": 15,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "ada.dm2.2026.flow_egfr_15",
+      "kdigo.dm2.2022.semaglutide_sc_dosing"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối thiểu (>= 15 mL/phút/1.73m²) để khởi trị đồng vận thụ thể GLP-1 (Semaglutide tiêm dưới da) ở bệnh nhân ĐTĐ2 kèm CKD chưa lọc máu"
+  },
+  {
+    "id": "ckd.glp1ra.hba1c_target",
+    "value": 7,
+    "unit": "%",
+    "quantity": "hba1c",
+    "citationIds": [
+      "ada.dm2.2026.hba1c_target_standard",
+      "kdigo.ckd.2024.rec_3_9_1_glp1ra_t2d"
+    ],
+    "descriptionVi": "Ngưỡng mục tiêu HbA1c tham chiếu (7.0%) để đánh giá kiểm soát đường huyết chưa đạt đích theo KDIGO 2024 Rec 3.9.1 và ADA 2026"
+  },
+  {
+    "id": "ckd.glp1ra.flow_egfr_mid_min",
+    "value": 25,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "esc.2026.ckd.table_12_semaglutide"
+    ],
+    "descriptionVi": "Ngưỡng dưới dải eGFR trung gian (25–49 mL/phút/1.73m²) trong tiêu chuẩn chọn bệnh nghiên cứu FLOW theo ESC 2026 Table 12"
+  },
+  {
+    "id": "ckd.glp1ra.flow_egfr_high_min",
+    "value": 50,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "esc.2026.ckd.table_12_semaglutide"
+    ],
+    "descriptionVi": "Ngưỡng dưới dải eGFR cao (50–74 mL/phút/1.73m²) kèm UACR >= 30 mg/mmol trong tiêu chuẩn FLOW theo ESC 2026 (Bảng 12, Class I, Level A)"
+  },
+  {
+    "id": "ckd.glp1ra.flow_egfr_high_max",
+    "value": 74,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "esc.2026.ckd.table_12_semaglutide"
+    ],
+    "descriptionVi": "Ngưỡng trên dải eGFR (74 mL/phút/1.73m², tức < 75) trong tiêu chuẩn FLOW theo ESC 2026 (Bảng 12, Class I, Level A)"
+  },
+  {
+    "id": "ckd.glp1ra.flow_uacr_mid_mgmmol",
+    "value": 10,
+    "unit": "mg/mmol",
+    "quantity": "uacr",
+    "citationIds": [
+      "esc.2026.ckd.table_12_semaglutide"
+    ],
+    "descriptionVi": "Ngưỡng UACR (>= 10 mg/mmol, ~100 mg/g) khi eGFR 25–49 mL/phút/1.73m² để khuyến cáo mạnh Semaglutide 1.0 mg/tuần bảo vệ tim-thận theo ESC 2026 (Bảng 12, Class I, Level A)"
+  },
+  {
+    "id": "ckd.glp1ra.flow_uacr_high_mgmmol",
+    "value": 30,
+    "unit": "mg/mmol",
+    "quantity": "uacr",
+    "citationIds": [
+      "esc.2026.ckd.table_12_semaglutide"
+    ],
+    "descriptionVi": "Ngưỡng UACR (>= 30 mg/mmol, ~300 mg/g) khi eGFR 50–74 mL/phút/1.73m² để khuyến cáo mạnh Semaglutide 1.0 mg/tuần bảo vệ tim-thận theo ESC 2026 (Bảng 12, Class I, Level A)"
+  },
+  {
+    "id": "ckd.rasi.ramipril_crcl_ceiling_cutoff",
+    "value": 40,
+    "unit": "mL/min",
+    "quantity": "crcl",
+    "citationIds": [
+      "byt.ckd.2024.table_12_ramipril_crcl_40"
+    ],
+    "descriptionVi": "Ngưỡng độ thanh thải creatinin (< 40 mL/phút) cần giảm liều khởi đầu và giới hạn trần liều Ramipril (khởi đầu 1.25 mg/ngày, tối đa 5 mg/ngày)"
+  },
+  {
+    "id": "ckd.bp.shock_sbp_engine_cutoff",
+    "value": 80,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.hf.2026.bb_guidance_table_s6",
+      "esc.2026.ckd.bp_office_130_80"
+    ],
+    "descriptionVi": "Ngưỡng sốc tụt huyết áp nguy kịch (SBP < 80 mmHg) đã được tầng an toàn chung của Engine phát thẻ chuyển cấp cứu khẩn cấp"
+  },
+  {
+    "id": "ckd.hyperkalemia.byt_calcium_k_min",
+    "value": 7,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "byt.ckd.2024.hyperkalemia_calcium_gt_7"
+    ],
+    "descriptionVi": "Ngưỡng kali máu (> 7.0 mmol/L) chỉ định tiêm canxi tĩnh mạch bảo vệ cơ tim theo BYT 2024 ngay cả khi chưa có biến đổi ECG"
+  },
+  {
+    "id": "ckd.acidosis.hco3_iv_bicarb_max",
+    "value": 10,
+    "unit": "mmol/L",
+    "quantity": "hco3",
+    "citationIds": [
+      "byt.ckd.2024.acute_acidosis_target_10"
+    ],
+    "descriptionVi": "Ngưỡng bicarbonat huyết thanh cấp tính (<= 10 mmol/L) cần truyền tĩnh mạch natri bicarbonat nội viện để nâng pH > 7.20 và HCO3- > 10 mmol/L theo BYT 2024"
+  },
+  {
+    "id": "ckd.szc.hd_start_dose",
+    "value": 5,
+    "unit": "g",
+    "quantity": "dose_g",
+    "citationIds": [
+      "fda.szc.hemodialysis_dosing"
+    ],
+    "descriptionVi": "Liều khởi đầu chuẩn của Lokelma (SZC) ở bệnh nhân chạy thận nhân tạo chu kỳ (5 g x 1 lần/ngày vào ngày không lọc máu)"
+  },
+  {
+    "id": "ckd.szc.hd_high_k_start_dose",
+    "value": 10,
+    "unit": "g",
+    "quantity": "dose_g",
+    "citationIds": [
+      "fda.szc.hemodialysis_dosing"
+    ],
+    "descriptionVi": "Liều khởi đầu của Lokelma (SZC) ở bệnh nhân chạy thận nhân tạo chu kỳ có K+ trước lọc > 6.5 mmol/L (10 g x 1 lần/ngày vào ngày không lọc máu)"
+  },
+  {
+    "id": "ckd.szc.hd_max_dose",
+    "value": 15,
+    "unit": "g",
+    "quantity": "dose_g",
+    "citationIds": [
+      "fda.szc.hemodialysis_maintenance_sodium"
+    ],
+    "descriptionVi": "Liều duy trì tối đa của Lokelma (SZC) ở bệnh nhân chạy thận nhân tạo chu kỳ (15 g x 1 lần/ngày vào ngày không lọc máu)"
+  },
+  {
+    "id": "ckd.szc.hd_high_k_threshold",
+    "value": 6.5,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "fda.szc.hemodialysis_dosing"
+    ],
+    "descriptionVi": "Ngưỡng kali máu trước lọc (> 6.5 mmol/L) cân nhắc khởi đầu Lokelma 10 g x 1 lần/ngày vào ngày không lọc máu"
+  },
+  {
+    "id": "ckd.szc.sodium_per_5g_mg",
+    "value": 400,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.szc.edema_sodium_400mg"
+    ],
+    "descriptionVi": "Hàm lượng natri nguyên tố (~400 mg) trong mỗi liều 5 g Lokelma cần lưu ý theo dõi phù và quá tải thể tích"
+  },
+  {
+    "id": "ckd.canagliflozin.egfr_initiate_min",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "fda.canagliflozin.table_1_renal_impairment"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối thiểu (>= 30 mL/phút/1.73m²) để khởi trị mới Canagliflozin theo nhãn FDA Invokana Bảng 1"
+  },
+  {
+    "id": "ckd.statin.rosuvastatin_severe_ckd_max_dose",
+    "value": 10,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.rosuvastatin.renal_impairment"
+    ],
+    "descriptionVi": "Liều tối đa hàng ngày của Rosuvastatin (10 mg/ngày) khi suy thận nặng eGFR hoặc CrCl < 30 mL/phút"
+  },
+  {
+    "id": "ckd.statin.rosuvastatin_severe_ckd_egfr_cutoff",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "fda.rosuvastatin.renal_impairment"
+    ],
+    "descriptionVi": "Ngưỡng eGFR (< 30 mL/phút/1.73m²) giới hạn trần liều Rosuvastatin không quá 10 mg/ngày"
+  },
+  {
+    "id": "ckd.statin.rosuvastatin_severe_ckd_crcl_cutoff",
+    "value": 30,
+    "unit": "mL/min",
+    "quantity": "crcl",
+    "citationIds": [
+      "fda.rosuvastatin.renal_impairment"
+    ],
+    "descriptionVi": "Ngưỡng CrCl (< 30 mL/phút) giới hạn trần liều Rosuvastatin không quá 10 mg/ngày theo nhãn FDA Crestor"
+  },
+  {
+    "id": "ckd.statin.young_cv_risk_10y_min",
+    "value": 10,
+    "unit": "%",
+    "quantity": "percentage",
+    "citationIds": [
+      "kdigo.ckd.2024.rec_3_15_1_3_statin_10pct_risk"
+    ],
+    "descriptionVi": "Ngưỡng nguy cơ biến cố mạch vành 10 năm (> 10%) chỉ định statin ở người trưởng thành 18–49 tuổi mắc CKD (KDIGO 2024 Rec 3.15.1.3)"
+  },
+  {
+    "id": "ckd.bp.very_old_age_min",
+    "value": 85,
+    "unit": "tuổi",
+    "quantity": "age",
+    "citationIds": [
+      "esc.htn.2024.lenient_bp_frailty_age85"
+    ],
+    "descriptionVi": "Ngưỡng tuổi rất cao (>= 85 tuổi) áp dụng mục tiêu huyết áp cá thể hóa nới lỏng hơn để tránh tụt huyết áp và té ngã"
+  },
+  {
+    "id": "ckd.bp.lenient_target_sbp_max",
+    "value": 140,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.htn.2024.lenient_bp_140_90"
+    ],
+    "descriptionVi": "Giới hạn trên tham chiếu của huyết áp tâm thu mục tiêu nới lỏng (< 140 mmHg) ở bệnh nhân lọc máu, suy yếu (frailty), hạ HA tư thế hoặc >= 85 tuổi"
+  },
+  {
+    "id": "ckd.bp.lenient_target_dbp_max",
+    "value": 90,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "esc.htn.2024.lenient_bp_140_90"
+    ],
+    "descriptionVi": "Giới hạn trên tham chiếu của huyết áp tâm trương mục tiêu nới lỏng (< 90 mmHg) ở bệnh nhân lọc máu hoặc suy yếu nặng"
+  },
+  {
+    "id": "ckd.rasi.telmisartan_hepatic_max_dose",
+    "value": 40,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "ema.telmisartan.hepatic_max_40"
+    ],
+    "descriptionVi": "Telmisartan: giới hạn 40 mg/ngày ở suy gan nhẹ–vừa theo EMA Micardis §4.2; GDMT-VN áp dụng thận trọng cả ba profile, không quy là ngưỡng FDA."
+  },
+  {
+    "id": "ckd.contrast.defer_gdmt_egfr_cutoff",
+    "value": 45,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "kdigo.ckd.2024.table_2_gfr_categories",
+      "kdigo.aki.2012.ci_aki_volume_expansion"
+    ],
+    "descriptionVi": "Ngưỡng eGFR (< 45 mL/phút/1.73m²) tạm hoãn khởi trị mới thuốc có tác động huyết động cầu thận (SGLT2i, RASi) ngay trước thủ thuật cản quang iod"
+  },
+  {
+    "id": "ckd.canagliflozin.renal_standard_max",
+    "value": 100,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.canagliflozin.table_1_renal_impairment"
+    ],
+    "descriptionVi": "Trần liều canagliflozin thông thường khi eGFR <60; không áp ngoại lệ UGT inducer tự động."
+  },
+  {
+    "id": "ckd.canagliflozin.renal_dose_cutoff",
+    "value": 60,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "fda.canagliflozin.table_1_renal_impairment"
+    ],
+    "descriptionVi": "Ngưỡng eGFR dưới đó áp dụng trần liều canagliflozin thông thường theo Table1."
+  },
+  {
+    "id": "ckd.glp1.lixisenatide_ada_avoid_max",
+    "value": 30,
+    "quantity": "egfr",
+    "unit": "mL/min/1.73m2",
+    "citationIds": [
+      "ada.dm2.2026.lixisenatide_exenatide_renal_avoid_30"
+    ],
+    "descriptionVi": "Tránh lixisenatide khi eGFR ≤30 theo ADA 2026, thận trọng hơn nhãn."
+  },
+  {
+    "id": "ckd.glp1.exenatide_ir_crcl_avoid_max",
+    "value": 30,
+    "quantity": "crcl",
+    "unit": "mL/min",
+    "citationIds": [
+      "ada.dm2.2026.lixisenatide_exenatide_renal_avoid_30",
+      "fda.exenatide_ir.renal_impairment"
+    ],
+    "descriptionVi": "Tránh exenatide dạng thường khi CrCl ≤30 theo ADA; không dùng eGFR thay CrCl."
+  },
+  {
+    "id": "ckd.glp1.exenatide_er_egfr_min",
+    "value": 45,
+    "quantity": "egfr",
+    "unit": "mL/min/1.73m2",
+    "citationIds": [
+      "fda.exenatide_er.renal_impairment"
+    ],
+    "descriptionVi": "Bydureon BCise: không khuyến cáo eGFR <45 theo nhãn sản phẩm."
+  }
+]

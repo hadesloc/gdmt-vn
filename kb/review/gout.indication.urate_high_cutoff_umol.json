@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.indication.urate_high_cutoff_umol",
+  "contentHash": "01372d63e8a4358d27e71ce431ed93a5c259735d6b6675a6d1a6f5dedc942a03",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.indication.urate_high_cutoff_umol",
+      "contentHash": "5768f48b30ed4133",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.indication.urate_high_cutoff_umol"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

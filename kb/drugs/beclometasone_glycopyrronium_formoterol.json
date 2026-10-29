@@ -1,0 +1,131 @@
+{
+  "id": "beclometasone_glycopyrronium_formoterol",
+  "nameVi": "Beclometasone/Glycopyrronium/Formoterol",
+  "inn": "Beclometasone dipropionate / Glycopyrronium bromide / Formoterol fumarate",
+  "class": "ICS + LAMA + LABA",
+  "classes": [
+    "ics",
+    "lama",
+    "laba"
+  ],
+  "components": [
+    "beclometasone",
+    "glycopyrronium",
+    "formoterol"
+  ],
+  "vnBrands": [
+    "Trimbow"
+  ],
+  "forms": [
+    "Bình xịt định liều pMDI hạt siêu mịn (Trimbow – tham chiếu EMA, chỉ định người lớn ≥ 18 tuổi): 87 mcg beclometasone / 9 mcg glycopyrronium / 5 mcg formoterol mỗi nhát (hoặc liều cao ICS 172/9/5 mcg trong hen nặng người lớn)"
+  ],
+  "start": {
+    "amount": 2,
+    "unit": "nhát",
+    "frequency": "2 lần/ngày",
+    "route": "hít",
+    "description": "Hít 2 nhát x 2 lần/ngày (sáng 2 nhát, tối 2 nhát cách nhau 12 giờ) cho người lớn ≥ 18 tuổi (COPD hoặc hen phế quản). Súc miệng sau khi hít"
+  },
+  "target": {
+    "amount": 2,
+    "unit": "nhát",
+    "frequency": "2 lần/ngày",
+    "route": "hít",
+    "description": "Hít 2 nhát x 2 lần/ngày (chỉ định cho người bệnh ≥ 18 tuổi theo SmPC Trimbow & GINA 2026)"
+  },
+  "titration": {
+    "step": "Duy trì liều cố định 2 nhát x 2 lần/ngày",
+    "intervalDays": 90,
+    "maxDose": "2 nhát 2 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều khi eGFR ≥ 30 mL/phút/1.73m²",
+      "citationIds": [
+        "ema.trimbow.renal_impairment_gfr30"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "note": "Phơi nhiễm toàn thân của thành phần kháng muscarinic thải trừ qua thận tăng gấp ~2 lần ở suy thận nặng (eGFR < 30 mL/phút/1.73m²) hoặc lọc máu; chỉ dùng khi lợi ích vượt trội nguy cơ và theo dõi sát bí tiểu, glôcôm góc đóng, khô miệng",
+      "citationIds": [
+        "ema.trimbow.severe_renal_benefit_risk",
+        "ema.ultibro.renal_impairment_auc22"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_trimbow_age_lt_18",
+      "parameter": "age",
+      "operator": "<",
+      "threshold": 18,
+      "unit": "tuổi",
+      "action": "contra",
+      "messageVi": "Tuổi < 18: Beclometasone/Glycopyrronium/Formoterol (Trimbow) chỉ được chỉ định cho người lớn ≥ 18 tuổi (chưa xác lập an toàn và hiệu quả ở bệnh nhi < 18 tuổi theo SmPC Trimbow & GINA 2026)",
+      "citationIds": [
+        "ema.trimbow.paediatric_under_18",
+        "gina.asthma.2026.triple_age_18_12"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Kiểm soát tốt triệu chứng hô hấp và phòng ngừa đợt cấp trong thai kỳ mang lại lợi ích vượt trội nguy cơ tiềm ẩn của thuốc hít ICS/LABA/LAMA; chỉ dùng khi lợi ích vượt trội nguy cơ.",
+    "citationIds": [
+      "ema.trimbow.pregnancy_lactation",
+      "gina.copd.2026.pregnancy_ics_laba_safety"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Phơi nhiễm toàn thân của các thành phần hít thấp; cân nhắc lợi ích nuôi con bằng sữa mẹ và lợi ích kiểm soát bệnh cho mẹ.",
+    "citationIds": [
+      "ema.trimbow.pregnancy_lactation",
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "narrow_angle_glaucoma",
+      "messageVi": "Chống chỉ định hoặc tránh tiếp xúc mắt ở người bệnh glôcôm góc đóng cấp tính chưa điều trị",
+      "citationIds": [
+        "gold.copd.2026.lama_glaucoma_caution"
+      ]
+    },
+    {
+      "code": "urinary_retention",
+      "messageVi": "Chống chỉ định khi đang bí tiểu cấp chưa xử trí; thận trọng theo dõi triệu chứng đường tiểu ở người bệnh tăng sản tuyến tiền liệt",
+      "citationIds": [
+        "gina.copd.2026.lama_urinary_retention"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chỉ định cho người lớn ≥ 18 tuổi (không dùng cho trẻ em và thanh thiếu niên < 18 tuổi theo SmPC Trimbow & GINA 2026)",
+    "Không dùng thêm ICS, LABA hoặc LAMA khác",
+    "Beclometasone dipropionate chuyển hóa rất nhanh qua enzym esterase (ít phụ thuộc CYP3A4 hơn fluticasone hoặc budesonide)",
+    "Thận trọng theo dõi triệu chứng tiểu khó ở người bệnh tăng sản lành tính tuyến tiền liệt (BPH) ổn định; súc miệng sau khi hít"
+  ],
+  "citationIds": [
+    "ema.trimbow.paediatric_under_18",
+    "gina.asthma.2026.triple_age_18_12",
+    "ema.fostair.beclometasone_esterase_cyp3a",
+    "byt.copd.2026.triple_therapy_indication",
+    "gold.copd.2026.initial_group_e_triple_eos300",
+    "gold.copd.2026.lama_glaucoma_caution",
+    "gina.copd.2026.lama_urinary_retention",
+    "ema.ultibro.renal_dosing_egfr30",
+    "ema.ultibro.renal_impairment_auc22",
+    "ema.trimbow.renal_impairment_gfr30",
+    "ema.trimbow.severe_renal_benefit_risk",
+    "ema.trimbow.pregnancy_lactation",
+    "ema.ultibro.pregnancy_lactation"
+  ]
+}

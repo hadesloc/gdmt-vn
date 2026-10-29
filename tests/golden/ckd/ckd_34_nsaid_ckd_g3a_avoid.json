@@ -1,0 +1,52 @@
+{
+  "id": "ckd_34_nsaid_ckd_g3a_avoid",
+  "titleVi": "Ngoại trú - Bệnh nhân CKD G3a (eGFR ~52 >= 30) đang dùng Meloxicam -> Khuyến cáo AVOID tránh dùng kéo dài (Regression CKD-R1-05)",
+  "source": "KDIGO 2024 CKD Chapter 4 p. 132 & BYT 2024 p. 53",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_34",
+    "name": "BN CKD 34",
+    "age": 62,
+    "sex": "male",
+    "weight": 68,
+    "sbp": 132,
+    "dbp": 80,
+    "hr": 74,
+    "scr": 130,
+    "k": 4.4,
+    "uacr": 8,
+    "conditions": {
+      "ckd": true
+    },
+    "currentMeds": [
+      { "drugId": "meloxicam", "name": "Mobic 7.5 mg", "dose": 7.5, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "meloxicam", "action": "AVOID" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "meloxicam", "action": "START" },
+      { "drugId": "meloxicam", "action": "CONTINUE" },
+      { "drugId": "meloxicam", "action": "CONSIDER" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R1-05 & Invariant 8: Khi eGFR >= 30 mL/phút/1.73m² và không có AKI/Triple Whammy, hệ thống phát cảnh báo AVOID tránh dùng NSAID kéo dài, ưu tiên Paracetamol (trong khi eGFR < 30 ở ckd_09 phát lệnh STOP tuyệt đối)."
+}

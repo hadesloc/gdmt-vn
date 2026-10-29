@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.exac_abx_outpatient_max_days",
+  "contentHash": "f6ac014f3a114ac79e757e6a4aea872cc365694562a37fbae99913a157f7abd0",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.exac_abx_outpatient_max_days",
+      "contentHash": "19f7f58830f30935",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

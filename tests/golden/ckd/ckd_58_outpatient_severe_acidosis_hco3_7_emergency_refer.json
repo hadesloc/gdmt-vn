@@ -1,0 +1,52 @@
+{
+  "id": "ckd_58_outpatient_severe_acidosis_hco3_7_emergency_refer",
+  "titleVi": "Ngoại trú - Toan chuyển hóa rất nặng (HCO₃⁻ = 7 mmol/L < 10 mmol/L) -> Chuyển cấp cứu nội viện REFER, không kê viên uống Natri Bicarbonat đơn thuần (Regression CKD-R2-R3-04)",
+  "source": "Hướng dẫn BYT 2024 Bệnh thận mạn Mục 4.10.3.1 (tr. 52–53)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_58",
+    "name": "BN CKD 58",
+    "age": 60,
+    "sex": "female",
+    "weight": 54,
+    "sbp": 124,
+    "dbp": 74,
+    "hr": 94,
+    "scr": 340,
+    "k": 4.9,
+    "hco3": 7,
+    "uacr": 42,
+    "conditions": {
+      "ckd": true,
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "rec_ckd_acidosis_emergency_refer", "action": "REFER" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "sodium_bicarbonate", "action": "START" },
+      { "drugId": "dapagliflozin", "action": "START" },
+      { "drugId": "atorvastatin", "action": "START" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R2-R3-04 & R3-05: HCO3- < 10 mmol/L tại phòng khám là tình trạng cấp cứu đe dọa tính mạng cần chuyển viện khẩn cấp và tạm hoãn khởi trị thuốc mạn tính."
+}

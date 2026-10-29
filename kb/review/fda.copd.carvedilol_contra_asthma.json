@@ -1,0 +1,26 @@
+{
+  "itemId": "fda.copd.carvedilol_contra_asthma",
+  "contentHash": "d36f399fd44545b003dd991cea2078416da625cfbf790de9000987b97b12bcf7",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "fda.copd.carvedilol_contra_asthma",
+      "contentHash": "7576338f50da8e86",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

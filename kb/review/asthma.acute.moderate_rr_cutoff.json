@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.acute.moderate_rr_cutoff",
+  "contentHash": "dbee406153e6d0f4b63b75414f4fea1ed14331a94c024dac63ab53287766dacf",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.acute.moderate_rr_cutoff",
+      "contentHash": "aa3331c06fd55973",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T07:10:38.304Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Kiểm định tự động ngưỡng lâm sàng asthma.acute.moderate_rr_cutoff (22 lần/phút)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T07:10:38.304Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

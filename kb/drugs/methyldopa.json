@@ -1,0 +1,139 @@
+{
+  "id": "methyldopa",
+  "nameVi": "Methyldopa",
+  "inn": "Methyldopa",
+  "class": "Chủ vận thụ thể Alpha-2 giao cảm trung ương",
+  "classes": [
+    "central_alpha2_agonist"
+  ],
+  "vnBrands": [
+    "Aldomet 250 mg",
+    "Dopegyt 250 mg"
+  ],
+  "forms": [
+    "Viên nén 250 mg",
+    "Viên nén 500 mg"
+  ],
+  "start": {
+    "amount": 250,
+    "unit": "mg",
+    "frequency": "2–3 lần/ngày",
+    "route": "uống",
+    "description": "Lựa chọn kinh điển trong thai kỳ (ngoài thai kỳ chỉ dùng hàng cuối)"
+  },
+  "target": {
+    "amount": 500,
+    "unit": "mg",
+    "frequency": "2–3 lần/ngày",
+    "route": "uống",
+    "description": "Tổng liều ngoài thai kỳ 250–1000 mg/ngày; trong thai kỳ tối đa 3000 mg/ngày chia 2–4 lần"
+  },
+  "titration": {
+    "step": "Tăng liều cách mỗi 2 ngày trở lên theo đáp ứng huyết áp; ngưng/đổi thuốc trong 48 giờ sau sinh",
+    "intervalDays": 2,
+    "maxDose": "3000 mg/ngày trong thai kỳ (ngoài thai kỳ 1000–2000 mg/ngày)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 50,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "250–500 mg mỗi 8 giờ (2–3 lần/ngày)",
+      "citationIds": [
+        "aha.acc.2025.pregnancy_table22_full",
+        "vsh.htn.2022.drugs_table_other"
+      ],
+      "note": "Khoảng cách liều tiêu chuẩn mỗi 8 giờ."
+    },
+    {
+      "eGFRFrom": 15,
+      "eGFRTo": 50,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "250–500 mg mỗi 8–12 giờ",
+      "citationIds": [
+        "vsh.htn.2022.drugs_table_other"
+      ],
+      "note": "Thải trừ qua thận giảm và chất chuyển hóa sulfat có hoạt tính tích lũy — kéo dài khoảng cách giữa các liều mỗi 8–12 giờ."
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "250 mg mỗi 12–24 giờ",
+      "citationIds": [
+        "vsh.htn.2022.drugs_table_other"
+      ],
+      "note": "Suy thận nặng (eGFR < 15): kéo dài khoảng cách giữa các liều mỗi 12–24 giờ để tránh an thần quá mức và tụt huyết áp."
+    }
+  ],
+  "hepatic": {
+    "status": "contra",
+    "notesVi": "CHỐNG CHỈ ĐỊNH trong bệnh gan đang hoạt động (viêm gan cấp, xơ gan hoạt động) hoặc tiền sử rối loạn chức năng gan do methyldopa.",
+    "citationIds": [
+      "aha.acc.2025.table13_methyldopa"
+    ]
+  },
+  "gates": [],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "An toàn dài hạn trên sự phát triển thần kinh trẻ tới 7 tuổi; tuy nhiên cần NGƯNG và đổi thuốc sau sinh (postpartum) vì nguy cơ trầm cảm sau sinh.",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_first_line",
+      "aha.acc.2025.pregnancy_table22_full",
+      "esc.htn.2024.pregnancy_aspirin_atenolol_methyldopa",
+      "vsh.htn.2022.pregnancy_table16_drugs_postpartum"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Bài tiết lượng rất thấp vào sữa mẹ nhưng cần tránh dùng giai đoạn hậu sản do nguy cơ gây trầm cảm sau sinh ở người mẹ (VSH 2022 Bảng 16, ESC 2024 Mục 9.2.7).",
+    "citationIds": [
+      "vsh.htn.2022.pregnancy_table16_drugs_postpartum",
+      "esc.htn.2024.pregnancy_aspirin_atenolol_methyldopa"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "active_liver_disease",
+      "messageVi": "Viêm gan cấp, xơ gan tiến triển hoặc tiền sử tổn thương gan do methyldopa",
+      "citationIds": [
+        "aha.acc.2025.table13_methyldopa"
+      ]
+    },
+    {
+      "code": "depression",
+      "messageVi": "Trầm cảm đang tiến triển hoặc giai đoạn hậu sản (nguy cơ trầm cảm sau sinh)",
+      "citationIds": [
+        "aha.acc.2025.pregnancy_table22_full",
+        "vsh.htn.2022.pregnancy_table16_drugs_postpartum"
+      ]
+    },
+    {
+      "code": "maoi_use",
+      "messageVi": "Đang dùng thuốc ức chế monoamine oxidase (MAOi)",
+      "citationIds": [
+        "aha.acc.2025.table13_methyldopa"
+      ]
+    },
+    {
+      "code": "pheochromocytoma",
+      "messageVi": "U tủy thượng thận (pheochromocytoma)",
+      "citationIds": [
+        "aha.acc.2025.table13_methyldopa"
+      ]
+    }
+  ],
+  "interactions": [
+    "Sắt đường uống (ferrous sulfate / ferrous gluconate — rất thường kê ở thai phụ!): tạo phức chelat làm giảm 40–70% hấp thu methyldopa gây mất kiểm soát huyết áp thai kỳ — phải uống cách nhau ít nhất ≥ 2 giờ.",
+    "Cần theo dõi men gan định kỳ và nghiệm pháp Coombs trực tiếp (thiếu máu tán huyết tự miễn hiếm gặp).",
+    "Lithium: tăng nguy cơ độc tính thần kinh của lithium ngay cả khi nồng độ lithium máu trong giới hạn bình thường."
+  ],
+  "citationIds": [
+    "esc.htn.2024.pregnancy_first_line",
+    "aha.acc.2025.pregnancy_table22_full",
+    "aha.acc.2025.table13_methyldopa",
+    "vsh.htn.2022.drugs_table_other",
+    "vsh.htn.2022.pregnancy_table16_drugs_postpartum"
+  ]
+}

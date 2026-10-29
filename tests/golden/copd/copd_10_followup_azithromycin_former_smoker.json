@@ -1,0 +1,61 @@
+{
+  "id": "copd_10_followup_azithromycin_former_smoker",
+  "titleVi": "COPD theo dõi đợt cấp: Cân nhắc Azithromycin dự phòng ở người cai thuốc",
+  "source": "GOLD 2026 Report p. 77 / Azithromycin Criteria",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_10",
+    "age": 73,
+    "sex": "male",
+    "weight": 60,
+    "height": 166,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 76,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "name": "Trelegy Ellipta",
+        "dose": 100,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.45,
+      "fev1PredPct": 43,
+      "smokingStatus": "former",
+      "currentInhaler": "triple",
+      "moderateExacerbations": 2,
+      "hospitalizations": 1
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "azithromycin",
+        "action": "CONSIDER"
+      }
+    ]
+  }
+}

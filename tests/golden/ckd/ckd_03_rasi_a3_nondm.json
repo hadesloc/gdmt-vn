@@ -1,0 +1,56 @@
+{
+  "id": "ckd_03_rasi_a3_nondm",
+  "titleVi": "Khởi trị Perindopril ở bệnh nhân CKD G2A3 không đái tháo đường",
+  "source": "KDIGO 2024 CKD Rec 3.6.1 / kdigo.ckd.2024.rec_3_6_1_rasi_a3_nondm",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_03",
+    "name": "BN CKD 03",
+    "age": 54,
+    "sex": "male",
+    "weight": 68,
+    "sbp": 136,
+    "dbp": 84,
+    "hr": 74,
+    "scr": 100,
+    "k": 4.3,
+    "uacr": 45,
+    "conditions": {
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "perindopril",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "perindopril",
+        "action": "STOP"
+      }
+    ]
+  },
+  "descriptionVi": "Khuyến cáo mức 1B bắt buộc khởi trị RASi khi có albumin niệu A3 không ĐTĐ."
+}

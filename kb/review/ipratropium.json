@@ -1,0 +1,26 @@
+{
+  "itemId": "ipratropium",
+  "contentHash": "71cb77a210cff877748c470fbbda3d0e27bea3d62c9fc6b62b9ce93e8d34d451",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ipratropium",
+      "contentHash": "2abe4a8274aa3b4d",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T12:52:49.357Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Cập nhật và kiểm định tự động Vòng 3 cho thuốc Ipratropium bromide."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T12:52:49.357Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

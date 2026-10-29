@@ -1,0 +1,70 @@
+{
+  "id": "hf_33_hfmref_finerenone_neurohormonal",
+  "titleVi": "HFmrEF (LVEF 45%): Khởi trị SGLT2i & Finerenone (Class I) + Cân nhắc điều hòa thần kinh thể dịch",
+  "source": "ESC 2026 HF Recs (HFmrEF SGLT2i & MRA Class I-A; RASi/BB Class IIb)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "US",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 66,
+    "sex": "male",
+    "weight": 72,
+    "height": 170,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 72,
+    "rhythm": "sinus",
+    "lvef": 45,
+    "nyha": 2,
+    "scr": 88,
+    "k": 4.3,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dapagliflozin",
+        "action": "START"
+      },
+      {
+        "drugId": "finerenone",
+        "action": "CONSIDER"
+      },
+      {
+        "ruleId": "rec_hf_hfmref_neurohormonal",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "START"
+      },
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Ở HFmrEF (LVEF 41–49%), ESC 2026 khuyến cáo Class I-A cho SGLT2i và Finerenone/MRA; ARNI/ACEi/ARB và chẹn beta ở mức cân nhắc cá thể hóa (CONSIDER), không ép START tự động như HFrEF."
+}

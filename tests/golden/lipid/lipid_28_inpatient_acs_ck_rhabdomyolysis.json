@@ -1,0 +1,76 @@
+{
+  "id": "lipid_28_inpatient_acs_ck_rhabdomyolysis",
+  "titleVi": "ACS nội viện kèm tiêu cơ vân cấp (CK 18x ULN) - Ngừng Statin & Cấp cứu bù dịch",
+  "source": "ESC/EAS 2019 / esc.lipid.2019.monitoring_ck_10x_stop",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 67,
+    "sex": "male",
+    "weight": 65,
+    "height": 165,
+    "sbp": 118,
+    "dbp": 72,
+    "hr": 88,
+    "scr": 135,
+    "tc": 4.9,
+    "hdl": 1.0,
+    "ldl": 3.1,
+    "tg": 1.7,
+    "conditions": {
+      "ascvd": true,
+      "acuteAcsWithin24h": true
+    },
+    "customInputs": {
+      "ckUlnTimes": 18
+    },
+    "currentMeds": [
+      {
+        "drugId": "atorvastatin",
+        "name": "Atorvastatin",
+        "dose": 40,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "STOP"
+      },
+      {
+        "ruleId": "rec_lipid_ck_rhabdo_refer",
+        "action": "REFER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      },
+      {
+        "drugId": "atorvastatin",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy R3-LIPID-01 & R3-LIPID-06: CK >= 10x ULN bắt buộc STOP statin ngay lập tức và REFER bù dịch bảo vệ thận."
+}

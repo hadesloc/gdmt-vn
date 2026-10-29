@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.hydralazine_iv.dose_preg_start",
+  "contentHash": "464a80f2ac58db635ab9470dca6aa92eaef6d59df34dd1476a8f839c8f26a622",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.hydralazine_iv.dose_preg_start",
+      "contentHash": "5327083979ec19fa",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực ngưỡng lâm sàng htn.hydralazine_iv.dose_preg_start (5 mg) và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

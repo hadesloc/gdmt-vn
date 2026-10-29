@@ -1,0 +1,86 @@
+{
+  "id": "tafamidis",
+  "nameVi": "Tafamidis",
+  "inn": "Tafamidis",
+  "class": "Transthyretin (TTR) tetramer stabilizer",
+  "classes": [
+    "ttr_stabilizer"
+  ],
+  "vnBrands": [
+    "Vyndaqel",
+    "Vyndamax"
+  ],
+  "forms": [
+    "Viên nang mềm 61 mg (tafamidis acid tự do)",
+    "Viên nang mềm 20 mg (tafamidis meglumine)"
+  ],
+  "start": {
+    "amount": 61,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "61 mg tafamidis acid tự do x 1 lần/ngày (hoặc 80 mg tafamidis meglumine = 4 viên 20 mg x 1 lần/ngày; hai dạng không hoán đổi theo mg)"
+  },
+  "target": {
+    "amount": 61,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "duy trì 61 mg tafamidis (hoặc 80 mg tafamidis meglumine) x 1 lần/ngày lâu dài ở NYHA I–III"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "61 mg x 1 lần/ngày (không cần chỉnh liều theo chức năng thận)",
+      "citationIds": [
+        "esc.hf.2026.amyloid_ttr_rec",
+        "aha.hf.2022.tafamidis_doses_80_61"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Dữ liệu hạn chế ở suy thận giai đoạn cuối/lọc máu; hội chẩn chuyên khoa bệnh cơ tim",
+      "citationIds": [
+        "esc.hf.2026.amyloid_ttr_rec"
+      ]
+    }
+  ],
+  "gates": [],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo sử dụng Tafamidis trong thai kỳ do độc tính phôi thai trên thực nghiệm động vật; phụ nữ độ tuổi sinh sản cần tránh thai.",
+    "citationIds": [
+      "esc.hf.2026.pregnancy_contra"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Khuyến cáo không cho con bú trong thời gian điều trị bằng Tafamidis.",
+    "citationIds": [
+      "esc.hf.2026.pregnancy_contra"
+    ]
+  },
+  "hepatic": {
+    "status": "caution",
+    "childA": "ok",
+    "childB": "ok",
+    "childC": "caution",
+    "note": "Không cần chỉnh liều ở suy gan nhẹ hoặc vừa; dữ liệu còn hạn chế ở suy gan nặng (Child-Pugh C).",
+    "notesVi": "Không cần chỉnh liều ở suy gan nhẹ hoặc vừa; dữ liệu còn hạn chế ở suy gan nặng (Child-Pugh C).",
+    "citationIds": [
+      "esc.hf.2026.amyloid_ttr_rec"
+    ]
+  },
+  "contraindications": [],
+  "interactions": [
+    "Có thể ức chế BCRP làm tăng phơi nhiễm methotrexate, rosuvastatin, imatinib (theo dõi và chỉnh liều cơ chất BCRP nếu cần)"
+  ],
+  "citationIds": [
+    "esc.hf.2026.amyloid_ttr_rec",
+    "aha.hf.2022.tafamidis_doses_80_61"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.action_plan.yellow_zone_min",
+  "contentHash": "7e39df679e37053a03f91cf431ff1ab098b3165d49973e6bcee88aafbd9711f3",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.action_plan.yellow_zone_min",
+      "contentHash": "abb15bf033eaa6eb",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:53:57.954Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng asthma.action_plan.yellow_zone_min có trích dẫn hợp lệ và đại lượng chuẩn hóa QA-10 (pef)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:53:57.954Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

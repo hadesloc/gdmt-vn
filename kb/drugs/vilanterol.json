@@ -1,0 +1,101 @@
+{
+  "id": "vilanterol",
+  "nameVi": "Vilanterol",
+  "inn": "Vilanterol trifenatate",
+  "class": "LABA",
+  "vnBrands": [],
+  "forms": [
+    "Bột hít phân liều Ellipta 25 mcg/liều (tại VN chỉ lưu hành dạng phối hợp Anoro/Trelegy/Relvar Ellipta)"
+  ],
+  "start": {
+    "amount": 25,
+    "unit": "mcg",
+    "frequency": "1 lần/ngày",
+    "route": "hít",
+    "description": "Hít 25 mcg (22 mcg giao tới phổi) x 1 lần/ngày trong các phối hợp cố định"
+  },
+  "target": {
+    "amount": 25,
+    "unit": "mcg",
+    "frequency": "1 lần/ngày",
+    "route": "hít",
+    "description": "Hít 25 mcg x 1 lần/ngày"
+  },
+  "titration": {
+    "step": "Duy trì liều cố định hàng ngày",
+    "intervalDays": 30,
+    "maxDose": "25 mcg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều khi eGFR ≥ 15 mL/phút/1.73m²",
+      "citationIds": [
+        "ema.trimbow.renal_pk_beclometasone_formoterol",
+        "ema.ultibro.renal_dosing_egfr30"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận (thải trừ qua thận không đáng kể)",
+      "citationIds": [
+        "ema.trimbow.renal_pk_beclometasone_formoterol",
+        "ema.ultibro.renal_dosing_egfr30"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Không phối hợp thêm LABA khác"
+  ],
+  "citationIds": [
+    "byt.copd.2026.vilanterol_umeclidinium_dose",
+    "gold.copd.2026.initial_group_a",
+    "gold.copd.2026.concurrent_asthma",
+    "ema.trimbow.renal_pk_beclometasone_formoterol",
+    "ema.ultibro.renal_dosing_egfr30",
+    "ema.ultibro.pregnancy_lactation",
+    "ema.ultibro.lactose_excipient_contra",
+    "ema.ultibro.hypersensitivity_contra"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Chỉ sử dụng khi lợi ích dự kiến lớn hơn nguy cơ đối với thai nhi.",
+    "citationIds": [
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Phơi nhiễm toàn thân của vilanterol đường hít thấp; cân nhắc lợi ích nuôi con bằng sữa mẹ và lợi ích điều trị.",
+    "citationIds": [
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "severe_milk_protein_allergy",
+      "messageVi": "Chống chỉ định ở bệnh nhân có tiền sử dị ứng nặng / phản vệ với protein sữa (chế phẩm bột khô DPI chứa tá dược lactose)",
+      "citationIds": [
+        "ema.ultibro.lactose_excipient_contra",
+        "ema.ultibro.hypersensitivity_contra"
+      ]
+    },
+    {
+      "code": "asthma_without_ics",
+      "messageVi": "Chống chỉ định dùng ở bệnh nhân có hen phế quản đồng mắc nếu không phối hợp corticosteroid hít (ICS)",
+      "citationIds": [
+        "gold.copd.2026.concurrent_asthma"
+      ]
+    }
+  ],
+  "classes": [
+    "laba"
+  ],
+  "qtRisk": "conditional"
+}

@@ -1,0 +1,155 @@
+{
+  "id": "digoxin",
+  "nameVi": "Digoxin",
+  "inn": "Digoxin",
+  "class": "Cardiac glycoside",
+  "classes": [
+    "cardiac_glycoside"
+  ],
+  "vnBrands": [
+    "Lanoxin",
+    "Digoxin 0.25mg"
+  ],
+  "forms": [
+    "Viên nén 0.0625 mg (62.5 mcg)",
+    "Viên nén 0.125 mg (125 mcg)",
+    "Viên nén 0.25 mg (250 mcg - tại VN thường bẻ đôi hoặc chia tư viên 0.25 mg)",
+    "Ống tiêm 0.5 mg/2 mL (250 mcg/mL)"
+  ],
+  "start": {
+    "amount": "0.0625–0.125",
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "0.125 mg/ngày ở người < 70 tuổi chức năng thận bình thường; hạ xuống 0.0625 mg (62.5 mcg)/ngày nếu ≥ 70 tuổi, cân nặng thấp (< 50 kg) hoặc eGFR 30–59 mL/min/1.73m²"
+  },
+  "target": {
+    "amount": "0.0625–0.125",
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "chỉnh liều theo nồng độ huyết thanh mục tiêu 0.5–0.9 ng/mL (tuyệt đối tránh ≥ 1.2 ng/mL)"
+  },
+  "titration": {
+    "step": "Không dùng liều tấn công trong suy tim mạn ổn định; định lượng nồng độ digoxin huyết thanh và giữ < 1.0–1.2 ng/mL",
+    "intervalDays": 14,
+    "maxDose": "0.25 mg (250 mcg) x 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "0.125 mg (125 mcg) x 1 lần/ngày (0.0625 mg/ngày nếu ≥ 70 tuổi hoặc nhẹ cân)",
+      "citationIds": [
+        "esc.hf.2026.digoxin_rec",
+        "esc.hf.2026.digoxin_doses_table11"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "0.0625 mg (62.5 mcg) x 1 lần/ngày",
+      "note": "Giảm liều duy trì và kiểm tra nồng độ digoxin huyết thanh (< 1.0–1.2 ng/mL) cùng điện giải đồ (K+, Mg2+)",
+      "citationIds": [
+        "esc.hf.2026.digoxin_doses_table11",
+        "fda.hf.digoxin_serum_1_2"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "not_rec",
+      "continue": "caution",
+      "dose": "0.0625 mg (62.5 mcg) uống cách ngày (chỉ khi thật sự cần và theo dõi sát nồng độ máu)",
+      "note": "Thải trừ qua thận giảm mạnh gây nguy cơ cao ngộ độc Digitalis tử vong; tránh khởi trị mới ở suy thận nặng / lọc máu nếu không theo dõi định lượng nồng độ thuốc chặt chẽ",
+      "citationIds": [
+        "esc.hf.2026.digoxin_doses_table11",
+        "fda.hf.digoxin_serum_1_2"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_digoxin_hr_min",
+      "parameter": "HR",
+      "operator": "<",
+      "threshold": 50,
+      "unit": "bpm",
+      "action": "hold",
+      "messageVi": "Nhịp tim < 50 bpm: Tạm hoãn Digoxin do nguy cơ nhịp chậm xoang hoặc block nhĩ-thất độ cao",
+      "citationIds": [
+        "esc.hf.2026.low_hr_50_digoxin_review",
+        "fda.hf.digoxin_wpw_af"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Có thể sử dụng trong thai kỳ để kiểm soát triệu chứng suy tim hoặc tần số thất trong rung nhĩ khi cần (kinh nghiệm lâm sàng lâu dài không ghi nhận gây dị tật bẩm sinh theo FDA §8.1).",
+    "citationIds": [
+      "fda.hf.digoxin_preg_lact"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Lượng digoxin trẻ nhận qua sữa mẹ tối đa ~4% liều duy trì sơ sinh, không có ý nghĩa lâm sàng (FDA Lanoxin §8.2).",
+    "citationIds": [
+      "fda.hf.digoxin_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "ventricular_fibrillation",
+      "messageVi": "Chống chỉ định tuyệt đối trong rung thất (FDA Lanoxin §4)",
+      "citationIds": [
+        "fda.hf.digoxin_contra_vf"
+      ]
+    },
+    {
+      "code": "wpw_afib",
+      "messageVi": "Chống chỉ định ở hội chứng Wolff-Parkinson-White (WPW) kèm rung nhĩ do nguy cơ dẫn truyền nhanh qua đường phụ gây rung thất",
+      "citationIds": [
+        "fda.hf.digoxin_wpw_af"
+      ]
+    },
+    {
+      "code": "av_block_2_3",
+      "messageVi": "Chống chỉ định khi block nhĩ-thất độ II–III hoặc hội chứng suy nút xoang chưa đặt máy tạo nhịp",
+      "citationIds": [
+        "fda.hf.digoxin_wpw_af"
+      ]
+    },
+    {
+      "code": "amyloid_heart_disease",
+      "messageVi": "Tránh dùng Digoxin trong bệnh cơ tim nhiễm bột (amyloidosis) do gắn kết sợi amyloid gây độc tính nặng ngay ở nồng độ điều trị (FDA Lanoxin §5.7)",
+      "citationIds": [
+        "fda.hf.digoxin_amyloid_avoid"
+      ]
+    }
+  ],
+  "interactions": [
+    "Amiodarone, verapamil, diltiazem, propafenone, clarithromycin, itraconazole và carvedilol (ức chế P-gp) làm tăng vọt nồng độ digoxin máu -> cần giảm 30–50% liều digoxin và theo dõi nồng độ máu",
+    "Hạ kali máu, hạ magie máu hoặc tăng canxi máu (do lợi tiểu quai/thiazide) làm tăng mạnh độc tính loạn nhịp của digoxin ngay cả khi nồng độ digoxin trong giới hạn bình thường"
+  ],
+  "citationIds": [
+    "esc.hf.2026.digoxin_rec",
+    "esc.hf.2026.digoxin_doses_table11",
+    "fda.hf.digoxin_contra_vf",
+    "fda.hf.digoxin_wpw_af",
+    "fda.hf.digoxin_serum_1_2",
+    "byt.2022.hf_doses"
+  ],
+  "hepatic": {
+    "status": "compatible",
+    "childA": "ok",
+    "childB": "ok",
+    "childC": "ok",
+    "note": "Thải trừ chủ yếu qua thận dưới dạng không đổi, ít phụ thuộc chuyển hóa gan; theo dõi chặt điện giải (K+, Mg2+) và chức năng thận ở bệnh nhân xơ gan.",
+    "notesVi": "Thải trừ chủ yếu qua thận dưới dạng không đổi, ít phụ thuộc chuyển hóa gan; theo dõi chặt điện giải (K+, Mg2+) và chức năng thận ở bệnh nhân xơ gan.",
+    "citationIds": [
+      "fda.hf.digoxin_renal_table3"
+    ]
+  }
+}

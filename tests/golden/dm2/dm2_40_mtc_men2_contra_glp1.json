@@ -1,0 +1,72 @@
+{
+  "id": "dm2_40_mtc_men2_contra_glp1",
+  "titleVi": "Chống chỉ định hộp đen (Boxed Warning) tiền sử MTC / MEN 2 - Ngừng ngay Semaglutide",
+  "source": "FDA Boxed Warning Semaglutide/Tirzepatide & ADA 2026 SOC Ch. 9",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 54,
+    "sex": "female",
+    "weight": 84,
+    "height": 160,
+    "sbp": 128,
+    "dbp": 80,
+    "hr": 76,
+    "scr": 76,
+    "k": 4.2,
+    "glucose": 8.8,
+    "hba1c": 8.1,
+    "conditions": {
+      "dm": true,
+      "ascvd": true,
+      "obesity": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "semaglutide",
+        "name": "Semaglutide",
+        "dose": 0.5,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "historyMtcOrMen2": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "semaglutide",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "semaglutide",
+        "action": "START"
+      },
+      {
+        "drugId": "semaglutide",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Tiền sử bản thân/gia đình mắc ung thư tuyến giáp thể tủy (MTC) hoặc MEN 2: Ngừng vĩnh viễn Semaglutide và chặn hoàn toàn nhóm GLP-1 / GIP-GLP-1 RA bất chấp chỉ định ASCVD và béo phì."
+}

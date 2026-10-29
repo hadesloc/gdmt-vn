@@ -1,0 +1,26 @@
+{
+  "itemId": "af.edoxaban.standard_dose",
+  "contentHash": "8dffaba3278ddd6176cf8ec703df9f0d6b2a432d87e0b1d2686d6fdd01195f5b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.edoxaban.standard_dose",
+      "contentHash": "1cb2540295338657",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.edoxaban.standard_dose (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

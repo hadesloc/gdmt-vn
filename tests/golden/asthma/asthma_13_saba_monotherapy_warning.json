@@ -1,0 +1,59 @@
+{
+  "id": "asthma_13_saba_monotherapy_warning",
+  "titleVi": "Cảnh báo nguy hiểm: Dùng SABA đơn độc không có ICS",
+  "source": "GINA 2026 Strategy Report / QĐ 1851/BYT",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_13",
+    "name": "Nam 25 tuổi",
+    "age": 25,
+    "sex": "male",
+    "weight": 62,
+    "sbp": 120,
+    "dbp": 75,
+    "hr": 80,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "salbutamol",
+        "dose": "100 mcg khi cần",
+        "freq": "khi cần"
+      }
+    ],
+    "customInputs": {
+      "sabaOnly": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "salbutamol",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bệnh nhân đang dùng Salbutamol đơn độc -> Bắt buộc ngừng và chuyển sang phối hợp ICS."
+}

@@ -1,0 +1,57 @@
+.current-meds { display: grid; gap: .75rem; min-width: 0; margin: 1rem 0; }
+.current-meds h3 { margin: 0; }
+.current-meds__list { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; }
+.current-meds__item { display: flex; align-items: flex-start; justify-content: space-between; gap: .75rem; padding: .75rem; border: 1px solid #cbd5e1; border-radius: .5rem; min-width: 0; }
+.current-meds__item > div:first-child { min-width: 0; overflow-wrap: anywhere; }
+.current-meds__details { display: grid; gap: .2rem; margin-top: .25rem; color: var(--text-muted); font-size: .9rem; }
+.current-meds__actions { display: flex; flex-wrap: wrap; gap: .5rem; }
+.current-meds__form { display: grid; gap: .75rem; padding: .75rem; border: 1px solid #94a3b8; border-radius: .5rem; }
+.current-meds__form label { display: grid; gap: .3rem; font-weight: 600; }
+.current-meds__form input { box-sizing: border-box; width: 100%; min-width: 0; min-height: 2.75rem; padding: .5rem .65rem; font: inherit; color: var(--text-main); background: var(--bg-main); border: 1px solid var(--border-color); border-radius: .4rem; }
+.current-meds__results { display: grid; gap: .4rem; max-height: 15rem; overflow: auto; }
+.current-meds button { min-height: 2.75rem; padding: .45rem .7rem; font: inherit; cursor: pointer; color: var(--text-main); background: var(--bg-muted); border: 1px solid var(--border-color); border-radius: .4rem; }
+.current-meds__results button { text-align: left; overflow-wrap: anywhere; }
+.current-meds__unit { color: #475569; font-size: .9rem; }
+.current-meds__error { margin: 0; color: #b91c1c; }
+.current-meds__heading { display: flex; justify-content: space-between; align-items: center; gap: .75rem; color: var(--header-bg); }
+.current-meds h3 { font-size: .95rem; font-weight: 700; }
+.current-meds__count { font-size: .74rem; font-weight: 600; background: var(--bg-muted); color: var(--text-muted); border-radius: 4px; padding: .18rem .4rem; white-space: nowrap; }
+.current-meds__hint { font-size: .76rem; color: var(--text-subtle); margin: -.25rem 0 .1rem; line-height: 1.5; }
+.current-meds__groups { display: grid; gap: .45rem; }
+.current-meds__group { display: grid; grid-template-columns: 112px minmax(0,1fr); gap: .6rem; border: 1px solid var(--border-subtle); border-radius: 4px; padding: .6rem; background: var(--bg-surface); }
+.current-meds__group-label { padding-top: .42rem; font-size: .76rem; color: var(--text-muted); line-height: 1.4; }
+.current-meds__group-content { min-width: 0; }
+.current-meds__chips { display: flex; flex-wrap: wrap; gap: .3rem; min-width: 0; }
+.current-meds__chips button { max-width: 100%; overflow-wrap: anywhere; }
+.current-meds .current-meds__drug { min-height: 33px; padding: .32rem .55rem; font-size: .81rem; border-radius: 3px; background: var(--bg-surface); line-height: 1.4; }
+.current-meds .current-meds__drug.is-selected { background: #1c285e; color: white; border-color: #1c285e; font-weight: 600; }
+.current-meds button:focus-visible, .current-meds summary:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
+.current-meds button:hover { border-color: var(--primary); }
+.current-meds__record { margin-top: .45rem; padding-top: .3rem; }
+.current-meds__record-heading { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem; color: var(--text-subtle); font-size: .73rem; margin-bottom: .3rem; }
+.current-meds .current-meds__edit { border: 0; background: transparent; color: var(--primary); min-height: 24px; padding: .1rem .2rem; font-size: .72rem; text-decoration: underline; text-underline-offset: 2px; }
+.current-meds .current-meds__dose { min-height: 27px; padding: .15rem .4rem; border-radius: 3px; font-size: .72rem; line-height: 1.4; background: var(--bg-surface); }
+.current-meds .current-meds__dose.is-selected { background: #dbefdf; color: #18552c; border-color: #77ad83; font-weight: 600; }
+.current-meds__missing, .current-meds__recorded { display: block; margin-top: .35rem; font-size: .72rem; line-height: 1.5; color: var(--text-muted); }
+.current-meds__missing { color: #a16207; }
+.current-meds__more { border: 1px solid var(--border-subtle); border-radius: 4px; }
+.current-meds__more summary { padding: .6rem; font-size: .8rem; color: var(--text-muted); cursor: pointer; }
+.current-meds__more summary span { font-size: .7rem; background: var(--bg-muted); padding: .1rem .3rem; border-radius: 3px; margin-left: .4rem; }
+.current-meds__more > div { padding: 0 .45rem .45rem; }
+.current-meds .current-meds__add { justify-self: start; font-size: .79rem; color: var(--primary); background: var(--primary-light); min-height: 36px; }
+.current-meds__form { background: var(--bg-surface); }
+.current-meds__form input { background: var(--bg-surface); }
+.current-meds__view { display: grid; gap: .3rem; color: var(--text-muted); font-size: .8rem; }
+.current-meds__view select { width: 100%; min-width: 0; min-height: 40px; padding: .45rem .6rem; font: inherit; color: var(--text-main); background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 4px; }
+.current-meds__view select:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
+@media (max-width: 620px) {
+  .current-meds__group { grid-template-columns: 1fr; gap: .35rem; }
+  .current-meds__group-label { padding-top: 0; font-weight: 600; }
+  .current-meds .current-meds__drug { min-height: 40px; }
+  .current-meds .current-meds__dose { min-height: 36px; }
+}
+@media (max-width: 420px) {
+  .current-meds__item { flex-direction: column; }
+  .current-meds__actions { width: 100%; }
+  .current-meds__actions button { flex: 1; }
+}

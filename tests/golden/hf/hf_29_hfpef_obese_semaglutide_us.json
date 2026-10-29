@@ -1,0 +1,70 @@
+{
+  "id": "hf_29_hfpef_obese_semaglutide_us",
+  "titleVi": "HFpEF béo phì (BMI 34 kg/m²) theo profile Hoa Kỳ: Cân nhắc Semaglutide cải thiện triệu chứng & giảm cân",
+  "source": "ESC 2026 HF Rec Class IIa-B1 / ACC 2026 ECDP HFpEF",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "US",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "female",
+    "weight": 88,
+    "height": 160,
+    "sbp": 136,
+    "dbp": 80,
+    "hr": 74,
+    "lvef": 55,
+    "nyha": 2,
+    "scr": 95,
+    "k": 4.4,
+    "conditions": {
+      "hf": true,
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dapagliflozin",
+        "action": "START"
+      },
+      {
+        "drugId": "finerenone",
+        "action": "CONSIDER"
+      },
+      {
+        "drugId": "semaglutide",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "semaglutide",
+        "action": "START"
+      },
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "HFpEF béo phì (BMI >= 30 kg/m²) theo profile US: SGLT2i Class I (START), Finerenone/MRA Class 2a/2b (CONSIDER) và Semaglutide (CONSIDER - Class IIa-B1 cải thiện triệu chứng KCCQ và giảm nhập viện suy tim)."
+}

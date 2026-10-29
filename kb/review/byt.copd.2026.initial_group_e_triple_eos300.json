@@ -1,0 +1,26 @@
+{
+  "itemId": "byt.copd.2026.initial_group_e_triple_eos300",
+  "contentHash": "02ae2d3b7d4c732fe2b50cf8c01f87ac8aca9a1e43750e9da90b900d45d4c578",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "byt.copd.2026.initial_group_e_triple_eos300",
+      "contentHash": "eaa3004480faba84",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:00:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T00:00:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

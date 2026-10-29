@@ -1,0 +1,26 @@
+{
+  "itemId": "pravastatin",
+  "contentHash": "18a548a1bab2adf6c75a863aa13b0533b54a4a42a189f104e923ec8febd60957",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "pravastatin",
+      "contentHash": "06112408904e6211",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra schema QA-10, phân nhóm classes, dải thận, cổng an toàn thai kỳ/cho con bú/tương tác và trích dẫn cho thuốc pravastatin."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

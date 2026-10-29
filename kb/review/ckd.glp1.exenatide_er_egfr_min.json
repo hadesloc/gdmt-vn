@@ -1,0 +1,18 @@
+{
+  "itemId": "ckd.glp1.exenatide_er_egfr_min",
+  "contentHash": "4bff17db2c7c2ba4779d6df596c1de626c8d80a046760325702ac149780db4ab",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.glp1.exenatide_er_egfr_min",
+      "itemType": "threshold",
+      "contentHash": "9374a2075ebb4e7d",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

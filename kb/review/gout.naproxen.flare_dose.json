@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.naproxen.flare_dose",
+  "contentHash": "db0dcb07816440f609e936cef55713a1b1b80787dc2fffdf0a3ccf1c50210068",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.naproxen.flare_dose",
+      "contentHash": "6389885e0829db08",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.naproxen.flare_dose"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

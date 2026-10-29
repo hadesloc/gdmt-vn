@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.rosuvastatin.febuxostat_max_dose",
+  "contentHash": "ec8a5aaf308e6b76c29949499f0576f27b1e9a442547c83da7be803e0bf17f85",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.rosuvastatin.febuxostat_max_dose",
+      "contentHash": "ce40268617b8ea7f",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold: gout.rosuvastatin.febuxostat_max_dose"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

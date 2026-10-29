@@ -1,0 +1,73 @@
+{
+  "id": "dm2_56_metformin_iodinated_contrast_hold_48h",
+  "titleVi": "Đang dùng Metformin chuẩn bị tiêm thuốc cản quang chứa iod với eGFR <= 60: Tạm ngừng và đánh giá lại eGFR sau 48 giờ",
+  "source": "FDA Glucophage Label Section 2.6 & 5.2 / BYT 5481",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 58,
+    "sex": "male",
+    "weight": 66,
+    "height": 170,
+    "sbp": 126,
+    "dbp": 78,
+    "hr": 74,
+    "scr": 135,
+    "k": 4.3,
+    "glucose": 8.4,
+    "hba1c": 7.8,
+    "conditions": {
+      "dm": true,
+      "ckd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "metformin",
+        "name": "Metformin",
+        "dose": 1000,
+        "unit": "mg",
+        "freq": "2 lần/ngày"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "contrastPlanned": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "metformin",
+        "action": "HOLD",
+        "doseContains": "48 giờ"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "metformin",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "metformin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Ở bệnh nhân có eGFR 30–60 mL/phút/1.73m² chuẩn bị chụp CT/can thiệp mạch dùng thuốc cản quang chứa iod, bắt buộc tạm ngừng Metformin và kiểm tra lại eGFR sau 48 giờ trước khi dùng lại."
+}

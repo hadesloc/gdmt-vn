@@ -1,0 +1,27 @@
+{
+  "itemId": "ckd.hyperkalemia.byt_calcium_k_min",
+  "contentHash": "63a5dc68ad5a6cca3485467bc6e1ed0f98dd0ed01ff892a8880967987a94b8f1",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.hyperkalemia.byt_calcium_k_min",
+      "contentHash": "91d5b5fec5dbdaa1",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "round": 4,
+          "reviewedAt": "2026-10-27T23:56:20.141Z",
+          "role": "agent_e5_round4_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và kiểm tra không số mồ côi Vòng 4 cho ngưỡng ckd.hyperkalemia.byt_calcium_k_min."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T23:56:20.141Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

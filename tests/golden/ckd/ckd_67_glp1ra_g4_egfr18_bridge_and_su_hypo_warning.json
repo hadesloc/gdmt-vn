@@ -1,0 +1,54 @@
+{
+  "id": "ckd_67_glp1ra_g4_egfr18_bridge_and_su_hypo_warning",
+  "titleVi": "Ngoại trú - ĐTĐ2 + CKD G4 (eGFR ~18 mL/phút/1.73m², dưới ngưỡng khởi trị SGLT2i) đang dùng Gliclazide -> Khởi trị Semaglutide bảo vệ tim-thận kèm cảnh báo giảm liều Sulfonylurea (Regression CKD-R3-R1-03, R2-06, R3-06)",
+  "source": "ADA 2026 Rec 11.7b, ESC 2026 CVD-CKD Class I Level A, BYT 2024 Bảng 45 & FDA Ozempic Label",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_67",
+    "name": "BN CKD 67",
+    "age": 66,
+    "sex": "male",
+    "weight": 68,
+    "sbp": 132,
+    "dbp": 78,
+    "hr": 74,
+    "scr": 300,
+    "k": 4.5,
+    "uacr": 40,
+    "hba1c": 8.1,
+    "conditions": {
+      "ckd": true,
+      "dm": true,
+      "htn": true
+    },
+    "currentMeds": [
+      { "drugId": "losartan", "name": "Cozaar 100 mg", "dose": 100, "unit": "mg" },
+      { "drugId": "gliclazide", "name": "Diamicron MR 60 mg", "dose": 60, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "semaglutide", "action": "START" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "dapagliflozin", "action": "START" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R3-R1-03, R2-06 & R3-06: Ở dải CKD G4 có 15 <= eGFR < 20 mL/phút/1.73m² (không khởi trị mới SGLT2i), Semaglutide SC vẫn được chỉ định an toàn ở chế độ đơn module CKD và đính kèm cổng cảnh báo giảm liều Sulfonylurea."
+}

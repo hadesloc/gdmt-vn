@@ -1,0 +1,67 @@
+{
+  "id": "hf_41_hfref_narrow_qrs105_crt_contra",
+  "titleVi": "HFrEF (LVEF 28%) phức bộ QRS hẹp (105 ms < 130 ms): Chống chỉ định cấy CRT (Class III-A)",
+  "source": "ESC 2026 HF Section CRT Contraindications (QRS < 130 ms Class III-A)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 61,
+    "sex": "female",
+    "weight": 60,
+    "height": 156,
+    "sbp": 118,
+    "dbp": 74,
+    "hr": 68,
+    "rhythm": "sinus",
+    "lvef": 28,
+    "nyha": 2,
+    "scr": 86,
+    "k": 4.2,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ],
+    "customInputs": {
+      "fmtDurationMonths": 6,
+      "qrsDuration": 105,
+      "qrsMorphology": "normal"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_hf_crt_contra",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_hf_crt_start",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_hf_crt_start",
+        "action": "CONSIDER"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Ở bệnh nhân HFrEF có phức bộ QRS < 130 ms (105 ms), cấy CRT không mang lại lợi ích và có thể gây hại (Class III-A)."
+}

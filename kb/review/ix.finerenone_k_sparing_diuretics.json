@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.finerenone_k_sparing_diuretics",
+  "contentHash": "e12e09ccc362353d9b9ac461f007d47acec7a19739d8b79bce44868a83143d36",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.finerenone_k_sparing_diuretics",
+      "contentHash": "154a2db23dc1ce3f",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T11:20:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.finerenone_k_sparing_diuretics."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T11:20:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

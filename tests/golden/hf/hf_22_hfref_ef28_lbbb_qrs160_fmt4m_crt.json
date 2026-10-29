@@ -1,0 +1,57 @@
+{
+  "id": "hf_22_hfref_ef28_lbbb_qrs160_fmt4m_crt",
+  "titleVi": "HFrEF EF 28% LBBB QRS 160 ms sau 4 tháng FMT: Chỉ định cấy CRT (Class I)",
+  "source": "ESC 2026 HF Table 3",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 62,
+    "sex": "male",
+    "weight": 72,
+    "sbp": 118,
+    "dbp": 74,
+    "hr": 74,
+    "rhythm": "sinus",
+    "lvef": 28,
+    "nyha": 3,
+    "scr": 92,
+    "k": 4.5,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ],
+    "customInputs": {
+      "qrsDuration": 160,
+      "qrsMorphology": "lbbb",
+      "fmtDurationMonths": 4
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_hf_crt_start",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "LBBB QRS ≥ 150 ms sau 4 tháng FMT: Chỉ định CRT mạnh nhất (Class I)."
+}

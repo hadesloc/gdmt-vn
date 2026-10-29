@@ -1,0 +1,64 @@
+{
+  "id": "asthma_21_mart_overuse_warning",
+  "titleVi": "Cảnh báo quá liều MART: Đã dùng > 12 nhát hít formoterol trong ngày",
+  "source": "GINA 2026 Table 7 / Box 9-2",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_21",
+    "name": "Nam 37 tuổi",
+    "age": 37,
+    "sex": "male",
+    "weight": 68,
+    "sbp": 124,
+    "dbp": 80,
+    "hr": 104,
+    "rhythm": "sinus",
+    "fev1Pct": 62,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "budesonide_formoterol",
+        "dose": "160/4.5 mcg",
+        "freq": "khi cần"
+      }
+    ],
+    "customInputs": {
+      "totalDailyPuffsUsed": 15
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "HOLD"
+      },
+      {
+        "ruleId": "rec_asthma_mart_overuse_refer",
+        "action": "REFER"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bệnh nhân dùng 15 nhát hít formoterol trong ngày (> 12 nhát) -> Cảnh báo quá liều khẩn cấp."
+}

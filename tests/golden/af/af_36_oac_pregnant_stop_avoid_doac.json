@@ -1,0 +1,59 @@
+{
+  "id": "af_36_oac_pregnant_stop_avoid_doac",
+  "titleVi": "Phụ nữ mang thai mắc Rung nhĩ: Chống chỉ định Warfarin và DOAC, ưu tiên LMWH (ADV_AF_60)",
+  "source": "ESC 2024 / FDA Labels / esc.af.2024.doac_preferred_over_vka",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 28,
+    "sex": "female",
+    "weight": 58,
+    "height": 160,
+    "sbp": 115,
+    "dbp": 72,
+    "hr": 82,
+    "rhythm": "afib",
+    "scr": 65,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "pregnant": true
+    },
+    "currentMeds": []
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_af_pregnancy_oac_contra",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "apixaban",
+        "action": "START"
+      },
+      {
+        "drugId": "warfarin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Phụ nữ mang thai (ADV_AF_60): Chống chỉ định Warfarin và DOAC do độc phôi thai, ưu tiên LMWH (Enoxaparin)."
+}

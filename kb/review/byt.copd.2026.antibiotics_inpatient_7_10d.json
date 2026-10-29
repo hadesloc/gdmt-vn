@@ -1,0 +1,26 @@
+{
+  "itemId": "byt.copd.2026.antibiotics_inpatient_7_10d",
+  "contentHash": "87705f59cb5612f24309485d224181ba28f43d72e261e6767282343cad01fd25",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "byt.copd.2026.antibiotics_inpatient_7_10d",
+      "contentHash": "b66708accaf5911d",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

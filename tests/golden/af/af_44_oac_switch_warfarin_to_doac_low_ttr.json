@@ -1,0 +1,60 @@
+{
+  "id": "af_44_oac_switch_warfarin_to_doac_low_ttr",
+  "titleVi": "Rung nhĩ không bệnh van cơ học dùng Warfarin có TTR 55% (< 70%): Chuyển đổi sang DOAC Class I (AF-R1-09)",
+  "source": "ESC 2024 AF Rec Table 7 / esc.af.2024.switch_vka_to_doac_ttr",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "male",
+    "weight": 70,
+    "height": 170,
+    "sbp": 132,
+    "dbp": 80,
+    "hr": 80,
+    "rhythm": "afib",
+    "lvef": 58,
+    "scr": 85,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true
+    },
+    "customInputs": {
+      "vkaTtr": 55
+    },
+    "currentMeds": [
+      {
+        "drugId": "warfarin",
+        "name": "Coumadin",
+        "dose": 3,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_af_switch_vka_to_doac_ttr",
+        "action": "SWITCH"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân rung nhĩ dùng Warfarin nhưng TTR < 70% (55%): Khuyến cáo Class I ESC 2024 bắt buộc chuyển sang DOAC."
+}

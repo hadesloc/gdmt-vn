@@ -1,0 +1,71 @@
+{
+  "id": "asthma_66_cyp3a4_clarithromycin_selects_foster",
+  "titleVi": "Đang dùng thuốc ức chế mạnh CYP3A4 (Clarithromycin) cần khởi trị MART Bậc 3: Tự động chọn Foster (Beclometasone/Formoterol) tránh hội chứng Cushing",
+  "source": "SmPC Symbicort & Foster / GINA 2026 / ASTHMA-R3-R2-10 / ASTHMA-R3-R3-10",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_66",
+    "name": "Nữ 36 tuổi",
+    "age": 36,
+    "sex": "female",
+    "weight": 54,
+    "sbp": 116,
+    "dbp": 72,
+    "hr": 78,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "clarithromycin",
+        "dose": "500 mg",
+        "freq": "2 lần/ngày"
+      }
+    ],
+    "customInputs": {
+      "currentTrack": "track1",
+      "currentStep": 2,
+      "inhalerTechniqueCorrect": true,
+      "goodAdherence": true,
+      "daytimeSymptomsMoreThanTwiceWeek": true,
+      "nightWakingDueToAsthma": true,
+      "relieverNeededMoreThanTwiceWeek": true,
+      "activityLimitationDueToAsthma": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "beclometasone_formoterol",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Clarithromycin ức chế mạnh CYP3A4 làm tăng vọt nồng độ Budesonide/Fluticasone toàn thân gây hội chứng Cushing và suy thượng thận thứ phát; ở người ≥ 18 tuổi, engine tự động chọn Beclometasone/Formoterol (Foster, thủy phân qua esterase ít phụ thuộc CYP3A4)."
+}

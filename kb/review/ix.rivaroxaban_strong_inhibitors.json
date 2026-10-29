@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.rivaroxaban_strong_inhibitors",
+  "contentHash": "a5a34791315d7b9d82c4009331c8f3f0ebeb9ab1c8d2dc733f3324c84f59256c",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.rivaroxaban_strong_inhibitors",
+      "contentHash": "2c09adb2345b61e3",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.rivaroxaban_strong_inhibitors."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "itemId": "hf.arni.start_std_sac_mg",
+  "contentHash": "0aadf2b0ca74085b6bd7771b743cc6ca7dea86248ef2ca7bdd600c7776ddc23f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "hf.arni.start_std_sac_mg",
+      "contentHash": "e56abf32b759a792",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T09:00:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-28T09:00:00.000Z",
+          "role": "Agent G5 (HF Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF threshold hf.arni.start_std_sac_mg (Round 2 R1/R2/R3 remediation & verbatim PDF citation verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

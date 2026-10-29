@@ -1,0 +1,51 @@
+{
+  "id": "ckd_48_consider_refer_kfre_3_to_5",
+  "titleVi": "Ngoại trú - CKD G3bA2 có nguy cơ suy thận 5 năm KFRE ~4.0% (dải 3%–<5%) -> Phát khuyến cáo CONSIDER hội chẩn chuyên khoa Thận (Regression CKD-R1-11)",
+  "source": "KDIGO 2024 CKD PP 2.2.1 (KFRE 5-year threshold 3%–5%)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_48",
+    "name": "BN CKD 48",
+    "age": 60,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 72,
+    "scr": 165,
+    "k": 4.4,
+    "uacr": 10,
+    "conditions": {
+      "ckd": true,
+      "htn": true
+    },
+    "currentMeds": [
+      { "drugId": "perindopril", "name": "Coversyl 5 mg", "dose": 5, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "rec_ckd_consider_refer_kfre", "action": "CONSIDER" }
+    ],
+    "mustNotInclude": [
+      { "ruleId": "rec_ckd_refer_specialist", "action": "REFER" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R1-11: Kích hoạt ngưỡng ckd.kfre.referral_5y_min (3%) cho vùng KFRE 5 năm 3%–<5% dưới dạng khuyến cáo CONSIDER tùy nguồn lực cơ sở y tế."
+}

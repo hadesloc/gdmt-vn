@@ -1,0 +1,67 @@
+{
+  "id": "gout_15_on_allopurinol_hlab5801_positive_stop",
+  "titleVi": "Đang dùng Allopurinol trả kết quả HLA-B*58:01 dương tính: NGỪNG NGAY Allopurinol",
+  "source": "ACR 2020 & FDA Allopurinol Label (acr.gout.2020.hlab5801_contra, fda.allopurinol.hlab5801_scar)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 56,
+    "sex": "female",
+    "weight": 55,
+    "scr": 75,
+    "uricAcid": 470,
+    "conditions": {
+      "gout": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "allopurinol",
+        "name": "Allopurinol",
+        "dose": "100",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 2,
+      "hlab5801": "positive"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_stop_hlab5801",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "allopurinol",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "allopurinol",
+        "action": "UPTITRATE"
+      }
+    ]
+  },
+  "descriptionVi": "Nữ 56 tuổi mới uống Allopurinol vài ngày thì có kết quả HLA-B*58:01 dương tính. Bắt buộc phát lệnh STOP Allopurinol ngay lập tức để ngăn ngừa hội chứng DRESS/SJS/TEN."
+}

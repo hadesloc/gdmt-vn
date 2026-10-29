@@ -1,0 +1,58 @@
+{
+  "id": "hf_28_hfref_uptitrate_bisoprolol",
+  "titleVi": "HFrEF đang dùng Bisoprolol 2.5 mg/ngày: Chuẩn độ tăng liều",
+  "source": "ESC 2026 HF Table 11",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 120,
+    "dbp": 75,
+    "hr": 72,
+    "lvef": 30,
+    "nyha": 2,
+    "scr": 90,
+    "k": 4.2,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "bisoprolol",
+        "name": "Bisoprolol",
+        "dose": 2.5,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "hf"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "bisoprolol",
+        "action": "UPTITRATE"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Chưa đạt liều đích 10 mg/ngày và dung nạp tốt -> Tiếp tục chuẩn độ tăng liều."
+}

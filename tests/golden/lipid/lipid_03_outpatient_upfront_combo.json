@@ -1,0 +1,56 @@
+{
+  "id": "lipid_03_outpatient_upfront_combo",
+  "titleVi": "Nguy cơ rất cao xa đích - Phối hợp sớm Statin + Ezetimibe",
+  "source": "ESC 2025 / esc.lipid.2025.acs_naive_combination",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 55,
+    "sex": "male",
+    "weight": 75,
+    "height": 172,
+    "sbp": 135,
+    "dbp": 85,
+    "hr": 78,
+    "scr": 80,
+    "tc": 6.5,
+    "hdl": 1,
+    "ldl": 4.2,
+    "tg": 2.2,
+    "conditions": {
+      "ascvd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      },
+      {
+        "drugId": "ezetimibe",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": []
+  },
+  "descriptionVi": "LDL 4.2 mmol/L cách rất xa đích 1.4 mmol/L, cần phối hợp kép Statin + Ezetimibe."
+}

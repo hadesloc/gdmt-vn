@@ -1,0 +1,173 @@
+[
+  {
+    "id": "ix.qt_macrolide_antiarrhythmic",
+    "titleVi": "Tương tác Kéo dài khoảng QTc & Xoắn đỉnh: Macrolide + Thuốc chống loạn nhịp (Amiodarone, Sotalol)",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "azithromycin",
+        "clarithromycin",
+        "erythromycin",
+        "roxithromycin",
+        "spiramycin"
+      ],
+      "classes": [
+        "macrolide"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "amiodarone",
+        "sotalol",
+        "dronedarone",
+        "flecainide",
+        "propafenone"
+      ],
+      "classes": [
+        "antiarrhythmic_class_3",
+        "antiarrhythmic_class_1c"
+      ]
+    },
+    "mechanismVi": "Tác dụng cộng dồn ức chế dòng kali tái cực chậm I_Kr trên tế bào cơ tim làm kéo dài khoảng QT kịch phát trên 500 ms.",
+    "effectVi": "Bùng phát rối loạn nhịp thất đa hình thái nguy hiểm tính mạng, xoắn đỉnh (Torsades de Pointes) và đột tử do tim.",
+    "managementVi": "Chống chỉ định hoặc tránh tuyệt đối phối hợp. Nếu bệnh nhân đang dùng amiodarone/sotalol cần kháng sinh, chọn nhóm beta-lactam; không kê azithromycin hoặc clarithromycin.",
+    "citationIds": [
+      "fda.azithromycin.qt_prolongation_torsades"
+    ]
+  },
+  {
+    "id": "ix.qt_fluoroquinolone_antiarrhythmic",
+    "titleVi": "Tương tác Kéo dài khoảng QTc & Xoắn đỉnh: Fluoroquinolone + Thuốc chống loạn nhịp",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "ciprofloxacin",
+        "levofloxacin",
+        "moxifloxacin"
+      ],
+      "classes": [
+        "fluoroquinolone"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "amiodarone",
+        "sotalol",
+        "dronedarone",
+        "flecainide",
+        "propafenone"
+      ],
+      "classes": [
+        "antiarrhythmic_class_3",
+        "antiarrhythmic_class_1c"
+      ]
+    },
+    "mechanismVi": "Hiệp đồng ức chế kênh kali tái cực qua màng tế bào cơ tim HERG/I_Kr gây kéo dài quá trình tái cực thất.",
+    "effectVi": "Xoắn đỉnh (Torsades de Pointes), rung thất và ngưng tuần hoàn đột ngột.",
+    "managementVi": "Tránh phối hợp fluoroquinolone với các thuốc chống loạn nhịp kéo dài khoảng QT. Ưu tiên các nhóm kháng sinh an toàn cho nhịp tim (nhóm penicillin, cephalosporin).",
+    "citationIds": [
+      "fda.amiodarone.qt_prolonging_drugs_avoid"
+    ]
+  },
+  {
+    "id": "ix.qt_multi_drug_pool",
+    "titleVi": "Cảnh báo Nguy cơ Xoắn đỉnh khi phối hợp ≥ 2 thuốc kéo dài khoảng QT",
+    "severity": "major",
+    "members": [
+      {
+        "drugIds": [
+          "amiodarone",
+          "sotalol",
+          "dronedarone",
+          "flecainide",
+          "propafenone",
+          "azithromycin",
+          "clarithromycin",
+          "erythromycin",
+          "ciprofloxacin",
+          "levofloxacin",
+          "moxifloxacin",
+          "ondansetron",
+          "domperidone",
+          "haloperidol",
+          "citalopram",
+          "escitalopram",
+          "roxithromycin",
+          "spiramycin"
+        ],
+        "classes": [
+          "qt_known"
+        ]
+      }
+    ],
+    "minCount": 2,
+    "mechanismVi": "Tác dụng cộng dồn làm kéo dài thời gian điện thế hoạt động thất và tăng tính phân tán tái cực cơ tim qua ức chế dòng I_Kr.",
+    "effectVi": "Khoảng QTc kéo dài > 500 ms (hoặc tăng > 60 ms so với nền), thúc đẩy loạn nhịp thất xoắn đỉnh và đột tử do tim.",
+    "managementVi": "Tránh phối hợp đồng thời ≥ 2 thuốc có nguy cơ kéo dài QT; theo dõi sát điện tâm đồ khoảng QTc trước và trong khi điều trị; kiểm tra và duy trì K⁺ máu ≥ 4.0 mmol/L và Mg²⁺ máu ≥ 0.8 mmol/L.",
+    "citationIds": [
+      "fda.amiodarone.qt_prolonging_drugs_avoid"
+    ]
+  },
+  {
+    "id": "ix.qt_antibiotic_domperidone",
+    "titleVi": "Chống chỉ định Tuyệt đối: Kháng sinh Macrolide / Fluoroquinolone + Domperidone",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "azithromycin",
+        "clarithromycin",
+        "erythromycin",
+        "roxithromycin",
+        "spiramycin",
+        "ciprofloxacin",
+        "levofloxacin",
+        "moxifloxacin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "domperidone"
+      ]
+    },
+    "mechanismVi": "Domperidone chẹn kênh kali HERG/I_Kr cơ tim và được chuyển hóa mạnh qua CYP3A4; nhóm Macrolide (đặc biệt clarithromycin, erythromycin, roxithromycin) vừa ức chế CYP3A4 làm tăng vọt nồng độ domperidone vừa cộng dồn kéo dài khoảng QTc cùng với nhóm Fluoroquinolone (ciprofloxacin, levofloxacin, moxifloxacin).",
+    "effectVi": "Kéo dài khoảng QTc nghiêm trọng, khởi phát xoắn đỉnh (Torsades de Pointes), rung thất và đột tử do tim.",
+    "managementVi": "Chống chỉ định tuyệt đối phối hợp Domperidone với kháng sinh nhóm Macrolide hoặc Fluoroquinolone (Danh mục tương tác chống chỉ định QĐ 2131/QĐ-BYT 2026 Phụ lục 11). Ngừng Domperidone trong thời gian dùng kháng sinh.",
+    "citationIds": [
+      "byt.copd.2026.macrolide_domperidone_qt_contra",
+      "byt.copd.2026.fq_domperidone_qt_contra"
+    ]
+  },
+  {
+    "id": "ix.qt_macrolide_fluoroquinolone",
+    "titleVi": "Tương tác Cộng dồn Kéo dài khoảng QTc & Xoắn đỉnh: Kháng sinh Macrolide + Fluoroquinolone",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "azithromycin",
+        "clarithromycin",
+        "erythromycin",
+        "roxithromycin",
+        "spiramycin"
+      ],
+      "classes": [
+        "macrolide"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "ciprofloxacin",
+        "levofloxacin",
+        "moxifloxacin"
+      ],
+      "classes": [
+        "fluoroquinolone"
+      ]
+    },
+    "mechanismVi": "Phối hợp đồng thời hai nhóm kháng sinh đều có đặc tính phong bế kênh kali tái cực chậm I_Kr trên màng tế bào cơ tim làm kéo dài hiệp đồng thời gian tái cực thất.",
+    "effectVi": "Tăng nguy cơ kéo dài khoảng QTc > 500 ms và loạn nhịp thất đa hình thái xoắn đỉnh (Torsades de Pointes), nhất là ở người cao tuổi, nữ giới, suy tim hoặc hạ K+/Mg2+ máu.",
+    "managementVi": "Tránh phối hợp đồng thời Macrolide + Fluoroquinolone (ưu tiên Beta-lactam + Macrolide hoặc đơn trị Fluoroquinolone hô hấp theo phác đồ). Nếu bắt buộc phối hợp, đo ECG kiểm tra QTc và bù đủ K+ ≥ 4.0 mmol/L, Mg2+ ≥ 0.8 mmol/L.",
+    "citationIds": [
+      "fda.azithromycin.qt_prolongation_torsades"
+    ]
+  }
+]

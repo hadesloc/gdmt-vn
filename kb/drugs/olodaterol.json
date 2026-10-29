@@ -1,0 +1,92 @@
+{
+  "id": "olodaterol",
+  "nameVi": "Olodaterol",
+  "inn": "Olodaterol hydrochloride",
+  "class": "LABA",
+  "vnBrands": [
+    "Striverdi Respimat"
+  ],
+  "forms": [
+    "Dung dịch phun hạt mịn Respimat 2.5 mcg/nhát (tại VN chủ yếu lưu hành dạng phối hợp Spiolto Respimat)"
+  ],
+  "start": {
+    "amount": 5,
+    "unit": "mcg",
+    "frequency": "1 lần/ngày",
+    "route": "hít",
+    "description": "Hít 2 nhát Respimat (2.5 mcg/nhát) x 1 lần/ngày = tổng liều 5 mcg"
+  },
+  "target": {
+    "amount": 5,
+    "unit": "mcg",
+    "frequency": "1 lần/ngày",
+    "route": "hít",
+    "description": "Hít 2 nhát Respimat x 1 lần/ngày"
+  },
+  "titration": {
+    "step": "Duy trì liều cố định hàng ngày",
+    "intervalDays": 30,
+    "maxDose": "5 mcg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều khi eGFR ≥ 15 mL/phút/1.73m²",
+      "citationIds": [
+        "ema.trimbow.renal_pk_beclometasone_formoterol",
+        "ema.ultibro.renal_dosing_egfr30"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận (thải trừ qua thận không đáng kể)",
+      "citationIds": [
+        "ema.trimbow.renal_pk_beclometasone_formoterol",
+        "ema.ultibro.renal_dosing_egfr30"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Không phối hợp thêm LABA khác"
+  ],
+  "citationIds": [
+    "byt.copd.2026.olodaterol_tiotropium_dose",
+    "gold.copd.2026.initial_group_a",
+    "gold.copd.2026.concurrent_asthma",
+    "ema.trimbow.renal_pk_beclometasone_formoterol",
+    "ema.ultibro.renal_dosing_egfr30",
+    "ema.ultibro.pregnancy_lactation"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Thận trọng trong thời kỳ mang thai, đặc biệt quanh thời điểm chuyển dạ do tác dụng giãn cơ trơn tử cung.",
+    "citationIds": [
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Nồng độ toàn thân của olodaterol sau khi hít rất thấp; cân nhắc lợi ích nuôi con bằng sữa mẹ và lợi ích điều trị.",
+    "citationIds": [
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "asthma_without_ics",
+      "messageVi": "Chống chỉ định dùng ở bệnh nhân có hen phế quản đồng mắc nếu không phối hợp corticosteroid hít (ICS)",
+      "citationIds": [
+        "gold.copd.2026.concurrent_asthma"
+      ]
+    }
+  ],
+  "classes": [
+    "laba"
+  ]
+}

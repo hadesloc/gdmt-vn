@@ -1,0 +1,68 @@
+{
+  "id": "dm2_05_metformin_contra_g4",
+  "titleVi": "Bệnh nhân ĐTĐ2 suy thận nặng G4 (eGFR 24) đang dùng Metformin - Ngừng ngay Metformin",
+  "source": "FDA Label Metformin / ADA 2026 SOC Ch. 9",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 70,
+    "sex": "female",
+    "weight": 55,
+    "height": 152,
+    "sbp": 138,
+    "dbp": 80,
+    "hr": 76,
+    "scr": 210,
+    "k": 4.8,
+    "glucose": 9.5,
+    "hba1c": 8.3,
+    "conditions": {
+      "dm": true,
+      "ckd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "metformin",
+        "name": "Metformin",
+        "dose": 1000,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "metformin",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "metformin",
+        "action": "START"
+      },
+      {
+        "drugId": "metformin",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "eGFR < 30 mL/min/1.73m²: Chống chỉ định tuyệt đối Metformin, ngừng ngay."
+}

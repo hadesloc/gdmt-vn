@@ -1,0 +1,27 @@
+{
+  "itemId": "ckd.szc.hd_high_k_start_dose",
+  "contentHash": "b0657a9aed25785fa228d757d54f7a464319942a083b4e339899a0fda1b29921",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.szc.hd_high_k_start_dose",
+      "contentHash": "4d4688d921fd6721",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "round": 4,
+          "reviewedAt": "2026-10-27T23:56:20.141Z",
+          "role": "agent_e5_round4_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và kiểm tra không số mồ côi Vòng 4 cho ngưỡng ckd.szc.hd_high_k_start_dose."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T23:56:20.141Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

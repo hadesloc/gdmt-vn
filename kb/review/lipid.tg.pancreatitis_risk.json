@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.tg.pancreatitis_risk",
+  "contentHash": "62e3610fd0c0d36d03f3706da3aff0111e847c6194a755827c2cd68f990a837b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.tg.pancreatitis_risk",
+      "contentHash": "a6d6f4be3d75e116",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.tg.pancreatitis_risk."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

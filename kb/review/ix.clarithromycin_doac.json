@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.clarithromycin_doac",
+  "contentHash": "25f06b658a813ff033ef15bb1cba91a42224a08a5e1ce1ee99ba45ca0cfb0799",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.clarithromycin_doac",
+      "contentHash": "5943792677bf0ca5",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.clarithromycin_doac."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

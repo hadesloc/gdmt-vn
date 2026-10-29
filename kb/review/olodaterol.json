@@ -1,0 +1,26 @@
+{
+  "itemId": "olodaterol",
+  "contentHash": "ae2b9f90303a7026a3d72c121d2c973f4f3948c9759805f70138384733437862",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "olodaterol",
+      "contentHash": "b06bac34bf9aefc2",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD drug remediation: verified verbatim citations & content hash"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

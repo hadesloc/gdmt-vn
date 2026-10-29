@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.ldct_pack_years_min",
+  "contentHash": "17dd3f3b984b011bed0e8628a943ab1801ebe8aefdd1024b039a6044a658cfee",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.ldct_pack_years_min",
+      "contentHash": "8b22c129e4dd2536",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

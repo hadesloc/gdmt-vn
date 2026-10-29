@@ -1,0 +1,67 @@
+{
+  "id": "asthma_46_acute_mgso4_ckd_hypotension_dose_reduction",
+  "titleVi": "Cơn hen nguy kịch kèm tụt huyết áp/sốc (SBP 86 < 90 mmHg): Chống chỉ định tuyệt đối (AVOID) Magnesium sulfate tĩnh mạch",
+  "source": "GINA 2026 / BYT 1851/2020 / ASTHMA-R3-R1-07 / ASTHMA-R3-R2-03",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_46",
+    "name": "Nam 68 tuổi",
+    "age": 68,
+    "sex": "male",
+    "weight": 60,
+    "sbp": 86,
+    "dbp": 54,
+    "hr": 130,
+    "rhythm": "sinus",
+    "scr": 280,
+    "conditions": {
+      "asthma": true,
+      "ckd": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "isAcuteExacerbation": true,
+      "silentChest": true,
+      "spo2": 85,
+      "respiratoryRate": 34
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_asthma_acute_life_threatening_icu",
+        "action": "REFER"
+      },
+      {
+        "drugId": "magnesium_sulfate",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "magnesium_sulfate",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Tụt huyết áp/sốc (SBP 86 < 90 mmHg) trong cơn hen nguy kịch -> Chống chỉ định truyền Magnesium sulfate tĩnh mạch (AVOID, không mang dose thừa) để tránh trụy tim mạch do giãn mạch động mạch (ASTHMA-R3-R1-07)."
+}

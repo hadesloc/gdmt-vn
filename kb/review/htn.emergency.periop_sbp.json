@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.emergency.periop_sbp",
+  "contentHash": "6344eb8652c1adcf9f12f4ececfd7e029112c3ba9880be651b753cd81f6752d6",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.emergency.periop_sbp",
+      "contentHash": "7b895068d79f31c9",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực ngưỡng lâm sàng htn.emergency.periop_sbp (160 mmHg) và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

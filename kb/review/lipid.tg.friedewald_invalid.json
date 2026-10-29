@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.tg.friedewald_invalid",
+  "contentHash": "8244050cb7b4371f7d5e2aa32dc770ffadee472be291d1b7aa8dba41e6af26ff",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.tg.friedewald_invalid",
+      "contentHash": "1b2a39c6b5ffdc4e",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.tg.friedewald_invalid."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

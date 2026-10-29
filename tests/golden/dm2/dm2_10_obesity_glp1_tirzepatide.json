@@ -1,0 +1,50 @@
+{
+  "id": "dm2_10_obesity_glp1_tirzepatide",
+  "titleVi": "Bệnh nhân ĐTĐ2 béo phì (BMI 31 kg/m2) - Khởi trị GLP-1 RA giảm cân & đường huyết",
+  "source": "ADA 2026 SOC Ch. 9",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 48,
+    "sex": "female",
+    "weight": 86,
+    "height": 166,
+    "sbp": 132,
+    "dbp": 84,
+    "hr": 76,
+    "scr": 82,
+    "k": 4.2,
+    "glucose": 9.6,
+    "hba1c": 8.5,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "semaglutide",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Béo phì kèm ĐTĐ2: Ưu tiên nhóm thuốc có hiệu quả giảm cân cao."
+}

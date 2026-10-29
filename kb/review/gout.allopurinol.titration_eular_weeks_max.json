@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.allopurinol.titration_eular_weeks_max",
+  "contentHash": "8d9b1587af3d92b3fd00ee74b44268b8066e3f7a8161f40daa1546d4634ae11d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.allopurinol.titration_eular_weeks_max",
+      "contentHash": "deb75e0327407646",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.allopurinol.titration_eular_weeks_max"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.hematocrit_polycythemia_pct",
+  "contentHash": "4d3eedd445e68929cd1a469a9ed8ea99df4d907c54a69bb299c15af6f9d4f61d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.hematocrit_polycythemia_pct",
+      "contentHash": "713c9927934cfa04",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "copd_57_r3_hfref_carvedilol_switch_bisoprolol",
+  "titleVi": "Hồi quy R3 (COPD-R3-R3-02): Đồng mắc COPD + Suy tim HFrEF (LVEF 30%) đang dùng Carvedilol chuyển sang Bisoprolol chọn lọc beta-1 (không ngừng chẹn beta)",
+  "source": "GOLD 2026 p. 129 / ESC HF / FDA Coreg Label (COPD-R3-R3-02, COPD-R3-R1-03)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_57",
+    "age": 67,
+    "sex": "male",
+    "weight": 68,
+    "height": 168,
+    "sbp": 122,
+    "dbp": 74,
+    "hr": 76,
+    "lvef": 30,
+    "nyha": 2,
+    "egfr": 62,
+    "k": 4.3,
+    "conditions": {
+      "copd": true,
+      "hf": true
+    },
+    "selectedModules": [
+      "copd",
+      "hf"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "carvedilol",
+        "name": "Carvedilol",
+        "dose": 12.5,
+        "unit": "mg"
+      },
+      {
+        "drugId": "tiotropium_olodaterol",
+        "name": "Spiolto Respimat",
+        "dose": 5,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.52,
+      "fev1PredPct": 58,
+      "mmrc": 2,
+      "cat": 12,
+      "moderateExacerbations": 0,
+      "hospitalizations": 0,
+      "bloodEos": 120,
+      "currentInhaler": "laba_lama",
+      "smokingStatus": "former"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "carvedilol",
+        "action": "STOP"
+      },
+      {
+        "drugId": "bisoprolol",
+        "action": "SWITCH"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "carvedilol",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "carvedilol",
+        "action": "UPTITRATE"
+      }
+    ]
+  }
+}

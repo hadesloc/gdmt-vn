@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.rasi_mra_potassium_sparing",
+  "contentHash": "cbd9852c8ee4160679611141d82c32203151afd101d9723c6bf1e61761893ea0",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.rasi_mra_potassium_sparing",
+      "contentHash": "dac0f04abf050c40",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.rasi_mra_potassium_sparing."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

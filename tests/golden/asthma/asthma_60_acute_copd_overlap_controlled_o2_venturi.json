@@ -1,0 +1,58 @@
+{
+  "id": "asthma_60_acute_copd_overlap_controlled_o2_venturi",
+  "titleVi": "Cơn hen cấp nặng chồng lấp COPD (ACO): Đích Oxy kiểm soát chặt 88–92% qua mặt nạ Venturi để phòng toan hô hấp tăng CO2",
+  "source": "GINA 2026 / GOLD 2026 / BTS Oxygen Guideline / ASTHMA-R3-R2-07 / ASTHMA-R3-R3-04",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_60",
+    "name": "Nam 66 tuổi",
+    "age": 66,
+    "sex": "male",
+    "weight": 62,
+    "sbp": 138,
+    "dbp": 84,
+    "hr": 116,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true,
+      "copd": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "isAcuteExacerbation": true,
+      "speechAbility": "words",
+      "spo2": 86,
+      "respiratoryRate": 30
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "salbutamol",
+        "action": "START",
+        "doseContains": "88–92%"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bệnh nhân hen chồng lấp COPD (ACO) nhập viện vì cơn cấp nặng (SpO2 86%): Đích SpO2 tự động hạ xuống 88–92% qua mặt nạ Venturi (thay vì 93–95% hoặc thở lưu lượng cao tự do) để ngăn ức chế trung tâm hô hấp và tăng thán khí cấp."
+}

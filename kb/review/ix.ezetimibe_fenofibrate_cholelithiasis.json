@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.ezetimibe_fenofibrate_cholelithiasis",
+  "contentHash": "de0307f4399949685f0ef02427878e7a0afd295ab738d5613bcb5b0d7fee8244",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.ezetimibe_fenofibrate_cholelithiasis",
+      "contentHash": "5ec1b0ee108e401e",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T11:20:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.ezetimibe_fenofibrate_cholelithiasis."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T11:20:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

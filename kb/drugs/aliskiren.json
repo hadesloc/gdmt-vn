@@ -1,0 +1,131 @@
+{
+  "id": "aliskiren",
+  "nameVi": "Aliskiren",
+  "inn": "Aliskiren",
+  "class": "Thuốc ức chế trực tiếp Renin (DRI)",
+  "classes": [
+    "renin_inhibitor"
+  ],
+  "vnBrands": [
+    "Rasilez 150 mg",
+    "Rasilez 300 mg"
+  ],
+  "forms": [
+    "Viên nén bao phim 150 mg",
+    "Viên nén bao phim 300 mg"
+  ],
+  "start": {
+    "amount": 150,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống"
+  },
+  "target": {
+    "amount": 300,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống"
+  },
+  "titration": {
+    "step": "Tăng từ 150 mg lên 300 mg 1 lần/ngày sau 2–4 tuần nếu chưa đạt huyết áp mục tiêu; tuyệt đối không phối hợp ACEi, ARB hoặc ARNI",
+    "intervalDays": 14,
+    "maxDose": "300 mg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "150–300 mg 1 lần/ngày (cấm phối hợp với ACEi/ARB)",
+      "citationIds": [
+        "aha.acc.2025.table13_aliskiren",
+        "vsh.htn.2022.table10_aliskiren"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "not_rec",
+      "continue": "caution",
+      "citationIds": [
+        "aha.acc.2025.table13_aliskiren",
+        "kdigo.ckd.2024.avoid_dual_rasi"
+      ],
+      "note": "Tránh khởi trị ở suy thận nặng (eGFR < 30 mL/phút/1,73m²) do nguy cơ tăng kali máu và suy thận cấp."
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_aliskiren_k_high",
+      "parameter": "K",
+      "operator": ">",
+      "threshold": 5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm hoãn Aliskiren khi Kali máu > 5,0 mmol/L do nguy cơ tăng kali máu nặng.",
+      "citationIds": [
+        "aha.acc.2025.table18_k50",
+        "aha.acc.2025.table13_aliskiren"
+      ]
+    },
+    {
+      "id": "gate_aliskiren_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối thuốc ức chế trực tiếp renin (Aliskiren) trong thai kỳ (AHA/ACC 2025 COR 3: Harm).",
+      "citationIds": [
+        "aha.acc.2025.pregnancy_contra_rec5"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối trong thai kỳ và phụ nữ dự định mang thai do độc tính trực tiếp lên hệ RAA thai nhi (AHA/ACC 2025 COR 3: Harm).",
+    "citationIds": [
+      "aha.acc.2025.pregnancy_contra_rec5"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Tránh sử dụng trong thời kỳ cho con bú do thiếu dữ liệu an toàn trên trẻ sơ sinh.",
+    "citationIds": [
+      "esc.2025.pregnancy.rasi_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Phụ nữ có thai hoặc dự định mang thai",
+      "citationIds": [
+        "aha.acc.2025.pregnancy_contra_rec5"
+      ]
+    },
+    {
+      "code": "concomitant_rasi",
+      "messageVi": "Cấm phối hợp với ACEi, ARB hoặc ARNI (đặc biệt ở ĐTĐ và bệnh thận mạn — thử nghiệm ALTITUDE)",
+      "citationIds": [
+        "aha.acc.2025.table13_aliskiren",
+        "aha.acc.2025.dual_rasi_aliskiren_harm",
+        "kdigo.ckd.2024.avoid_dual_rasi"
+      ]
+    },
+    {
+      "code": "bilateral_renal_artery_stenosis",
+      "messageVi": "Hẹp động mạch thận hai bên nặng (nguy cơ suy thận cấp)",
+      "citationIds": [
+        "aha.acc.2025.table13_aliskiren"
+      ]
+    }
+  ],
+  "interactions": [
+    "ix.dual_rasi"
+  ],
+  "citationIds": [
+    "aha.acc.2025.table13_aliskiren",
+    "aha.acc.2025.dual_rasi_aliskiren_harm",
+    "vsh.htn.2022.table10_aliskiren",
+    "aha.acc.2025.pregnancy_contra_rec5",
+    "kdigo.ckd.2024.avoid_dual_rasi"
+  ]
+}

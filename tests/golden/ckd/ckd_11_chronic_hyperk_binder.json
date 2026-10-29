@@ -1,0 +1,57 @@
+{
+  "id": "ckd_11_chronic_hyperk_binder",
+  "titleVi": "Dùng chất gắn Kali để tiếp tục duy trì thuốc ức chế hệ RAS",
+  "source": "KDIGO 2024 CKD PP 3.6.3 / kdigo.ckd.2024.pp_3_6_3_hyperkalemia_k_binders",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_11",
+    "name": "BN CKD 11",
+    "age": 64,
+    "sex": "male",
+    "weight": 72,
+    "sbp": 135,
+    "dbp": 84,
+    "hr": 72,
+    "scr": 180,
+    "k": 5.3,
+    "uacr": 24,
+    "conditions": {
+      "ckd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "perindopril",
+        "name": "Coversyl 5 mg",
+        "dose": 5,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_ckd_k_binder_start",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Ưu tiên thêm chất gắn kali thay vì ngừng thuốc bảo vệ thận RASi."
+}

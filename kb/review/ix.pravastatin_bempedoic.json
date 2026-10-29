@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.pravastatin_bempedoic",
+  "contentHash": "552c39d9a7ee88484356ee0a0cf5fcb37f23d37fb64133b24036fd57061045be",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.pravastatin_bempedoic",
+      "contentHash": "d2d7b2777332d7d1",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T11:20:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.pravastatin_bempedoic."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T11:20:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

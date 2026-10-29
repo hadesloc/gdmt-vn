@@ -1,0 +1,66 @@
+{
+  "id": "hf_12_hfref_euvolaemic_chronic_diuretic",
+  "titleVi": "HFrEF đã hết phù (euvolaemic) đang dùng Furosemide: Duy trì liều tối thiểu",
+  "source": "ESC 2026 HF Rec 6.1.3.1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 120,
+    "dbp": 75,
+    "hr": 70,
+    "lvef": 30,
+    "nyha": 2,
+    "scr": 90,
+    "k": 4.3,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "furosemide",
+        "name": "Furosemide",
+        "dose": 20,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "hf"
+    ],
+    "customInputs": {
+      "congestion": "euvolaemic"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "furosemide",
+        "action": "CONTINUE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "furosemide",
+        "action": "UPTITRATE"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Đã hết sung huyết: Duy trì liều lợi tiểu thấp nhất có hiệu quả."
+}

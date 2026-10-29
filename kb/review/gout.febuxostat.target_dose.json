@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.febuxostat.target_dose",
+  "contentHash": "4ec8846d7781f8bc524b4e3ad6aa82e52d227f957c11d4fecf35fd8f1b7f9f94",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.febuxostat.target_dose",
+      "contentHash": "676a1f85881266c8",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.febuxostat.target_dose"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.acute.ipratropium_repeat_max",
+  "contentHash": "94cffc9e845fff938e8ee89212c2b35b88fa0556b05be164cc1e868979bbba7f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.acute.ipratropium_repeat_max",
+      "contentHash": "73d9983423972777",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:53:57.954Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng asthma.acute.ipratropium_repeat_max có trích dẫn hợp lệ và đại lượng chuẩn hóa QA-10 (count)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:53:57.954Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

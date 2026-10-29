@@ -1,0 +1,77 @@
+{
+  "id": "gout_06_acute_flare_continue_existing_allopurinol",
+  "titleVi": "Nguyên tắc vàng trong cơn gút cấp: TIẾP TỤC duy trì Allopurinol đang dùng, tuyệt đối không ngừng",
+  "source": "ACR 2020 & EULAR 2016 (acr.gout.2020.continue_ult_in_flare)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 58,
+    "sex": "male",
+    "weight": 72,
+    "scr": 88,
+    "uricAcid": 450,
+    "conditions": {
+      "gout": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "allopurinol",
+        "name": "Allopurinol",
+        "dose": "300",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": true,
+      "goutFlaresYear": 2,
+      "hlab5801": "negative"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_continue_ult_during_flare",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "colchicine",
+        "ruleId": "rec_gout_colchicine_acute_flare",
+        "action": "START",
+        "doseContains": "1.2 mg"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "allopurinol",
+        "action": "STOP"
+      },
+      {
+        "drugId": "allopurinol",
+        "action": "HOLD"
+      },
+      {
+        "drugId": "allopurinol",
+        "action": "UPTITRATE"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 58 tuổi đang uống Allopurinol 300 mg/ngày bùng phát cơn gút cấp. Giữ nguyên liều Allopurinol đang dùng (không ngừng, không tăng liều giữa cơn cấp) và phối hợp Colchicine liều thấp cắt cơn."
+}

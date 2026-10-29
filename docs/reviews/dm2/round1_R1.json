@@ -1,0 +1,137 @@
+[
+  {
+    "id": "DM2-R1-01",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "dm2.inpatient.dka_hhs_emergency",
+    "finding": "Bỏ sót chẩn đoán cấp cứu Toan ceton đái tháo đường đường huyết bình thường (Euglycemic DKA) do áp đặt điều kiện tiên quyết Glucose máu ≥ 11.1 mmol/L (200 mg/dL).",
+    "evidence": "Tại src/modules/dm2/rules.inpatient.ts (dòng 262): `const isDka = (glucose !== undefined && glucose >= th('dm2.dka.glucose_mmol') || isSuspected) && (ketones !== undefined && ketones >= th('dm2.dka.bhb_threshold')) && ((ph !== undefined && ph < th('dm2.dka.ph_threshold')) || (bicarb !== undefined && bicarb < th('dm2.dka.bicarb_threshold')));`. Đồng thuận Quốc tế 2024 về Khủng hoảng tăng đường huyết (Diabetes Care 2024;47(8):1257–1275, Figure 2A, trang 6) quy định rõ tiêu chuẩn ĐTĐ/Tăng đường huyết trong DKA là: 'Glucose ≥ 200 mg/dL (11.1 mmol/L) OR prior history of diabetes'. Tất cả bệnh nhân trong module ĐTĐ2 đều đã có tiền sử ĐTĐ. Khi bệnh nhân dùng thuốc ức chế SGLT2 bị biến chứng euglycemic DKA nhập viện với Glucose = 9.8 mmol/L, Ketones = 4.2 mmol/L, pH = 7.18, HCO3- = 11 mmol/L mà bác sĩ chưa tích chọn checkbox 'dkaSuspected', hệ thống đánh giá `isDka = false` và không kích hoạt phác đồ cấp cứu bù dịch - insulin tĩnh mạch, đe dọa trực tiếp tính mạng người bệnh (đã kiểm chứng qua test Scenario 1 trong docs/reviews/dm2/scratch/eval_findings.test.ts).",
+    "suggestedFix": "Sửa logic chẩn đoán DKA trong `dm2.inpatient.dka_hhs_emergency`: Đối với bệnh nhân đã có chẩn đoán ĐTĐ (`conditions.dm || selectedModules.includes('dm2')`), tiêu chuẩn đường huyết tự động thỏa mãn; chỉ cần ceton máu ≥ 3.0 mmol/L và toan chuyển hóa (pH < 7.30 hoặc HCO3- < 18 mmol/L) là kích hoạt ngay phác đồ cấp cứu DKA (kèm ghi chú thể Euglycemic DKA nếu Glucose < 11.1 mmol/L)."
+  },
+  {
+    "id": "DM2-R1-02",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "dm2.outpatient.early_insulin",
+    "finding": "Khởi trị Insulin sớm (Early Insulin) tái áp đặt liều khởi đầu 10 đơn vị/ngày cho bệnh nhân ĐANG DÙNG insulin nền liều cao, nguy cơ gây tụt liều đột ngột và mất bù toan ceton/HHS.",
+    "evidence": "Tại src/modules/dm2/rules.outpatient.ts (dòng 341-363): Quy tắc `dm2.outpatient.early_insulin` hoàn toàn không kiểm tra xem bệnh nhân đã dùng insulin trong `ctx.patient.currentMeds` hay chưa. Khi bệnh nhân đang điều trị ngoại trú với Insulin Glargine liều cao (ví dụ 35 đơn vị/ngày) nhưng đường huyết vẫn mất kiểm soát (Glucose 18.0 mmol/L, HbA1c 10.8%), quy tắc này kích hoạt và phát lệnh: `action: 'START'`, `title: 'Khởi trị Insulin nền sớm (Tăng đường huyết nặng / Dị hóa cấp)'`, `dose: 'Khởi đầu 10 đơn vị/ngày...'. Lệnh này làm giảm liều insulin của bệnh nhân từ 35 đơn vị xuống 10 đơn vị (giảm 71% liều), dẫn đến bùng phát tăng đường huyết kịch phát và toan ceton nguy kịch (đã kiểm chứng qua test Scenario 2 trong docs/reviews/dm2/scratch/eval_findings.test.ts). Theo ADA 2026 Ch. 9 (Rec 9.20 & Fig 9.5), bệnh nhân đã dùng insulin nền cần được chuẩn độ tăng liều (uptitrate 2–4 đơn vị mỗi 3 ngày) hoặc leo thang phối hợp thêm GLP-1 RA / insulin bữa ăn (bolus), tuyệt đối không hạ liều về mức khởi trị 10 đơn vị.",
+    "suggestedFix": "Bổ sung kiểm tra `ctx.patient.currentMeds`: Nếu bệnh nhân đã dùng insulin nền (glargine, degludec, detemir, nph), chuyển hành động thành `UPTITRATE` (chuẩn độ tăng liều nền hiện tại) hoặc `CONSIDER` phối hợp thêm GLP-1 RA / insulin bolus bữa ăn; chỉ phát lệnh `START 10 đơn vị/ngày` khi bệnh nhân chưa từng sử dụng bất kỳ loại insulin nào."
+  },
+  {
+    "id": "DM2-R1-03",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "dm2.inpatient.basal_bolus_regimen",
+    "finding": "Kích hoạt đồng thời phác đồ Insulin Basal-Bolus tiêm dưới da cho bệnh nhân Cấp cứu Hội chứng Tăng áp lực thẩm thấu (HHS) tại ICU đang truyền Insulin tĩnh mạch liên tục.",
+    "evidence": "Tại src/modules/dm2/rules.inpatient.ts (dòng 56-62): Điều kiện `when` của quy tắc `dm2.inpatient.basal_bolus_regimen` chỉ loại trừ DKA (`const isDka = Boolean(...); return !isDka;`), hoàn toàn KHÔNG loại trừ HHS hoặc bệnh nhân ICU đang truyền insulin tĩnh mạch. Khi một bệnh nhân nhập viện khoa Hồi sức tích cực (ICU) vì HHS cấp cứu (Glucose 36 mmol/L, áp lực thẩm thấu 335 mOsm/kg, ceton âm tính), hệ thống đồng thời sản sinh cả 2 phác đồ điều trị: `rec_dm2_dka_active_management` (truyền tĩnh mạch insulin liên tục) VÀ `rec_dm2_inpatient_basal_bolus` (khởi trị tiêm dưới da Glargine + Aspart theo cân nặng) (đã kiểm chứng qua test Scenario 3 trong docs/reviews/dm2/scratch/eval_findings.test.ts). Theo ADA 2026 Ch. 16 (Rec 16.6) và Đồng thuận Quốc tế 2024, trong giai đoạn cấp cứu HHS ở ICU, chỉ sử dụng insulin truyền tĩnh mạch liên tục và bù dịch đẳng trương; việc tiêm đồng thời insulin dưới da liều cao (basal-bolus) sẽ gây tích lũy insulin mô dưới da do tưới máu kém, và khi thể tích tuần hoàn hồi phục sẽ gây hạ đường huyết đột ngột, tử vong.",
+    "suggestedFix": "Cập nhật điều kiện `when` của `dm2.inpatient.basal_bolus_regimen`: Loại trừ mọi trường hợp đang có khủng hoảng tăng đường huyết cấp hoặc đang nằm ICU cần truyền insulin tĩnh mạch (`const isCrisis = isDka || isHhs || ctx.patient.customInputs?.inpatientUnit === 'icu'; return !isCrisis;`). Chỉ chuyển sang phác đồ tiêm dưới da khi tình trạng HHS/DKA đã giải quyết và bệnh nhân sẵn sàng ăn uống."
+  },
+  {
+    "id": "DM2-R1-04",
+    "severity": "major",
+    "itemType": "threshold",
+    "itemId": "dm2.hhs.osmolality_threshold",
+    "finding": "Tiêu chuẩn chẩn đoán Hội chứng Tăng áp lực thẩm thấu (HHS) sai lệch: Lấy ngưỡng áp lực thẩm thấu toàn phần (> 320 mOsm/kg) áp cho Áp lực thẩm thấu hiệu dụng (> 300 mOsm/kg), gây bỏ sót chẩn đoán cấp cứu.",
+    "evidence": "Đồng thuận Quốc tế 2024 về Khủng hoảng tăng đường huyết (Diabetes Care 2024;47(8):1257–1275, Figure 2B, trang 6): 'HHS Diagnostic Criteria: Calculated effective serum osmolality > 300 mOsm/kg (calculated as [2xNa+ (mmol/L) + glucose (mmol/L)]), OR total serum osmolality > 320 mOsm/kg [(2xNa+ (mmol/L) + glucose (mmol/L) + urea (mmol/L)]'. Tại kb/thresholds/dm2.json, ngưỡng `dm2.hhs.osmolality_threshold` được gán giá trị 320. Tại src/modules/dm2/inputs.ts (dòng 156-163), nhãn ghi rõ 'Áp lực thẩm thấu huyết thanh hiệu dụng... > 320 mOsm/kg là tiêu chuẩn chẩn đoán'. Khi bệnh nhân có áp lực thẩm thấu hiệu dụng = 310 mOsm/kg (đã vượt ngưỡng 300 mOsm/kg và đủ tiêu chuẩn HHS), hệ thống đánh giá `effectiveOsmolality > 320` là false và bỏ sót hoàn toàn chẩn đoán HHS (đã kiểm chứng qua test Scenario 4 trong docs/reviews/dm2/scratch/eval_findings.test.ts).",
+    "suggestedFix": "Sửa giá trị ngưỡng áp lực thẩm thấu hiệu dụng `dm2.hhs.osmolality_threshold` thành 300 mOsm/kg theo đúng tiêu chuẩn Effective Osmolality của Đồng thuận Quốc tế 2024. Nếu muốn giữ giá trị 320 mOsm/kg, phải đổi tên trường đầu vào thành Áp lực thẩm thấu toàn phần (kèm Urea)."
+  },
+  {
+    "id": "DM2-R1-05",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "dm2.outpatient.cardiorenal_glp1",
+    "finding": "Bỏ sót Khuyến cáo Class 1A của ADA 2026 và KDIGO 2025 về chỉ định GLP-1 RA trên bệnh nhân ĐTĐ típ 2 có Bệnh thận đái tháo đường (CKD) biểu hiện bằng Albumin niệu (FLOW trial).",
+    "evidence": "ADA 2026 SOC Ch. 9 (Khuyến cáo 9.10) & Ch. 11 (Khuyến cáo 11.5a): 'In adults with type 2 diabetes who have chronic kidney disease (CKD) (with confirmed eGFR 20–60 mL/min/1.73 m2 and/or albuminuria), an SGLT2 inhibitor or GLP-1 RA with demonstrated benefit in this population is recommended to reduce CKD progression and cardiovascular events (A)'. Thử nghiệm FLOW (NEJM 2024) và Đồng thuận KDIGO 2025 khẳng định Semaglutide 1.0 mg/tuần giảm 24% biến cố thận và tử vong tim mạch ở bệnh nhân có albumin niệu. Tuy nhiên, tại src/modules/dm2/rules.outpatient.ts (dòng 181): `const hasCkd = Boolean(ctx.patient.conditions?.ckd || (egfr !== undefined && egfr < th('dm2.ckd.egfr_threshold')));` chỉ kiểm tra `egfr < 60`, hoàn toàn không kiểm tra `uacr`. Bệnh nhân ĐTĐ típ 2 có tổn thương thận biểu hiện bằng albumin niệu nặng A3 (UACR = 35 mg/mmol) nhưng eGFR còn bảo tồn (eGFR = 75 mL/phút/1.73m²) bị loại bỏ khỏi chỉ định GLP-1 RA bảo vệ tim-thận (đã kiểm chứng qua test Scenario 5 trong docs/reviews/dm2/scratch/eval_findings.test.ts).",
+    "suggestedFix": "Bổ sung kiểm tra albumin niệu vào biến `hasCkd` trong quy tắc `dm2.outpatient.cardiorenal_glp1`: `const hasCkd = Boolean(ctx.patient.conditions?.ckd || (egfr !== undefined && egfr < th('dm2.ckd.egfr_threshold')) || (uacr !== undefined && uacr >= th('ckd.uacr.a1_max_mgmmol')));`."
+  },
+  {
+    "id": "DM2-R1-06",
+    "severity": "major",
+    "itemType": "missing",
+    "itemId": "dm2.inpatient.hold_oral_meds_acute",
+    "finding": "Thiếu hoàn toàn quy tắc Tạm ngừng Sulfonylurea (Gliclazide, Glimepiride) và SGLT2i khi bệnh nhân nhập viện vì bệnh nội khoa cấp tính không phẫu thuật.",
+    "evidence": "ADA 2026 Ch. 16 ('Noninsulin Therapies in the Hospital', trang 5-6) & BYT 5481/2020 (trang 36): Thuốc nhóm Sulfonylurea phải tạm ngừng khi nhập viện do nguy cơ hạ đường huyết nghiêm trọng và kéo dài khi người bệnh ăn kém; Thuốc ức chế SGLT2 phải tạm ngừng khi nhập viện có bệnh cấp tính nặng, sốt mất nước, suy giảm huyết động để phòng ngừa toan ceton euglycemic DKA. Trong src/modules/dm2/rules.inpatient.ts, quy tắc `dm2.inpatient.hold_sglt2i_surgery` chỉ chạy khi `plannedSurgery === true`, bỏ rơi toàn bộ bệnh nhân nội khoa cấp tính; và hoàn toàn không có quy tắc tạm ngừng Sulfonylurea nội viện.",
+    "suggestedFix": "Xây dựng quy tắc nội viện `dm2.inpatient.hold_su_and_sglt2i_acute`: Kích hoạt hành động `HOLD` cho Sulfonylurea (gliclazide, glimepiride) và SGLT2i (dapagliflozin, empagliflozin) đối với mọi bệnh nhân nội trú có bệnh cấp tính, ăn uống kém hoặc điều trị tại ICU."
+  },
+  {
+    "id": "DM2-R1-07",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "dm2.outpatient.overbasalization",
+    "finding": "Bỏ sót cảnh báo Overbasalization khi bác sĩ nhập liều insulin nền trong danh mục thuốc thường quy (`currentMeds`).",
+    "evidence": "Tại src/modules/dm2/rules.outpatient.ts (dòng 376-379): `const currentBasal = need(ctx, 'currentBasalDoseUnits'); ... const dosePerKg = weight !== undefined && weight > 0 && currentBasal !== undefined ? currentBasal / weight : 0;`. Logic chỉ đọc từ `customInputs.currentBasalDoseUnits`. Nếu bác sĩ kê khai insulin trong danh mục thuốc dùng tại nhà `ctx.patient.currentMeds` (ví dụ Glargine 45 đơn vị/ngày, cân nặng 60 kg -> 0.75 U/kg/ngày) mà không nhập lại vào customInputs, `dosePerKg` bị tính là 0 và hệ thống im lặng, bỏ sót dấu hiệu cảnh báo quá liều insulin nền nghiêm trọng.",
+    "suggestedFix": "Bổ sung logic tự động trích xuất liều insulin nền từ `ctx.patient.currentMeds` (tìm các thuốc `insulin_glargine`, `insulin_degludec`, `insulin_detemir`, `insulin_nph`) nếu `customInputs.currentBasalDoseUnits` chưa được điền thủ công."
+  },
+  {
+    "id": "DM2-R1-08",
+    "severity": "major",
+    "itemType": "citation",
+    "itemId": "kb/drugs/acarbose.json",
+    "finding": "Trích dẫn sai lệch nội dung (Citation Mismatch) nghiêm trọng trong Danh mục thuốc: Acarbose trích dẫn Metformin; Insulin Premix trích dẫn Đích HbA1c.",
+    "evidence": "1. Tại kb/drugs/acarbose.json (dòng 37, 46, 60, 68): Dẫn chiếu citationId `byt.dm2.2020.metformin_renal_contra` (Mục 2 Metformin / Trang 59 của BYT 5481). Acarbose được quy định tại Trang 66 Bảng thuốc hạ đường huyết của BYT 5481.\n2. Tại kb/drugs/insulin_premix.json (dòng 40, 53, 61): Dẫn chiếu citationId `byt.dm2.2020.hba1c_goals` (Bảng 4 / Trang 19 của BYT 5481, vốn là bảng mục tiêu HbA1c chung). Insulin Premix được quy định tại Trang 25-28 và Trang 67 của BYT 5481.\n3. Tại kb/drugs/insulin_aspart.json và insulin_lispro.json: Dẫn chiếu `ada.dm2.2026.inpatient_target` (Khuyến cáo 16.4 về đích đường huyết 140-180 mg/dL) làm căn cứ cho liều khởi đầu 4 đơn vị và cổng an toàn nhịn ăn NPO (vốn thuộc Rec 16.7 / Table 16.1).",
+    "suggestedFix": "Tạo các trích dẫn chuẩn xác trong kb/citations/dm2.json: `byt.dm2.2020.acarbose_renal` (Trang 66), `byt.dm2.2020.premix_dosing` (Trang 25-28), và `ada.dm2.2026.prandial_npo_hold` (Ch. 16 Rec 16.7) để liên kết đúng dữ liệu thuốc."
+  },
+  {
+    "id": "DM2-R1-09",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "dm2.inpatient.basal_bolus_regimen",
+    "finding": "Bỏ sót hoàn toàn khuyến cáo của Quyết định Bộ Y tế số 1353/QĐ-BYT năm 2021 về lựa chọn phác đồ insulin trộn hỗn hợp (premixed) nội trú trong profileDiff VN.",
+    "evidence": "Báo cáo docs/modules/DM2.md tuyên bố sử dụng BYT 1353/2021 làm nguồn tài liệu nền tảng, nhưng toàn bộ mã nguồn module và KB hoàn toàn không có bất kỳ trích dẫn hay luật nào thể hiện nội dung sửa đổi của QĐ 1353/2021. QĐ 1353/QĐ-BYT năm 2021 sửa đổi điểm b, mục 3, trang 37 của Hướng dẫn ĐTĐ típ 2: 'Chế độ insulin nền - nhanh, trộn hỗn hợp (tiêm dưới da) là các lựa chọn để kiểm soát glucose máu ở bệnh nhân có tăng glucose máu kèm bệnh nặng không nguy kịch'. Trong `rules.inpatient.ts` quy tắc `dm2.inpatient.basal_bolus_regimen`, hệ thống chỉ khuyến cáo duy nhất phác đồ Basal-Bolus, không có trường `profileDiff.VN` ghi nhận việc BYT cho phép sử dụng insulin trộn hỗn hợp (premixed) ở bệnh phòng thường không nguy kịch.",
+    "suggestedFix": "Bổ sung citation `byt.dm2.2021.inpatient_insulin_1353` và cập nhật `profileDiff.VN` trong `dm2.inpatient.basal_bolus_regimen`: Nêu rõ theo BYT 1353/2021, insulin trộn hỗn hợp (tiêm dưới da) là một lựa chọn hợp lệ ở khoa phòng thông thường không nguy kịch."
+  },
+  {
+    "id": "DM2-R1-10",
+    "severity": "minor",
+    "itemType": "ui",
+    "itemId": "dm2.inpatient.glycemic_target",
+    "finding": "Lỗi hiển thị giao diện và thiếu Threshold: Mục tiêu Glucose ICU hiển thị thiếu cận dưới mg/dL (`7.8 – 10.0 mmol/L (180 mg/dL)`).",
+    "evidence": "Tại src/modules/dm2/rules.inpatient.ts dòng 29: `const targetText = isIcu ? `${th('dm2.glucose.icu_target_min_mmol').toFixed(1)} – ${th('dm2.glucose.icu_target_max_mmol').toFixed(1)} mmol/L (${th('dm2.glucose.inpatient_target_max')} mg/dL)``. Do thiếu threshold `dm2.glucose.icu_target_min` (140 mg/dL) trong kb/thresholds/dm2.json, chuỗi text hiển thị trên giao diện bị mất cận dưới 140 mg/dL và chỉ hiện `(180 mg/dL)`.",
+    "suggestedFix": "Thêm threshold `dm2.glucose.icu_target_min` (140 mg/dL) vào kb/thresholds/dm2.json và sửa chuỗi hiển thị thành `${th('dm2.glucose.icu_target_min')}–${th('dm2.glucose.inpatient_target_max')} mg/dL`."
+  },
+  {
+    "id": "DM2-R1-11",
+    "severity": "minor",
+    "itemType": "matrix",
+    "itemId": "kb/drugs/gliclazide.json",
+    "finding": "Khai báo sai mức độ khuyến nghị Sulfonylurea trong Ma trận dải lọc thận: Gliclazide được gán `initiate: 'rec'` ở dải eGFR ≥ 30 mL/phút.",
+    "evidence": "kb/drugs/gliclazide.json dòng 34: `\"eGFRFrom\": 30, \"initiate\": \"rec\", \"continue\": \"rec\"`. Điều này khiến Gliclazide hiển thị màu xanh 'Khuyến nghị ưu tiên' trong Ma trận 1 (Thuốc × eGFR) cho các giai đoạn G1–G3a, trái ngược với ADA 2026 / KDIGO 2022 (vốn chỉ xếp SU ở mức cân nhắc khi cần chi phí thấp do nguy cơ hạ đường huyết). Tại Ma trận 2 (`dm2MatrixComorbidities`), tác giả lại ghi chú SU có `hypo_risk: not_rec`.",
+    "suggestedFix": "Sửa `initiate` của Gliclazide ở dải eGFR ≥ 30 thành `'ok'` hoặc `'caution'`."
+  },
+  {
+    "id": "DM2-R1-12",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "dm2.outpatient.comprehensive_care",
+    "finding": "Quy tắc Điều trị toàn diện (`dm2.outpatient.comprehensive_care`) gom chung Huyết áp + Statin + Aspirin thành một khuyến cáo duy nhất không có `drugId` cụ thể.",
+    "evidence": "src/modules/dm2/rules.outpatient.ts dòng 540-579: Quy tắc trả về hành động `UPTITRATE` khi huyết áp chưa đạt đích nhưng không chỉ định hoạt chất cụ thể, không phân tầng chỉ định Statin cường độ trung bình vs cao theo tuổi (40-75 vs >75), và không cảnh báo tránh dùng Aspirin dự phòng tiên phát ở người có nguy cơ xuất huyết cao.",
+    "suggestedFix": "Tách thành các khuyến cáo rõ ràng hoặc chỉ dẫn chi tiết nhóm thuốc ưu tiên hạ áp (ACEi/ARB khi có albumin niệu) và phân tầng statin chuẩn theo ADA SOC 10."
+  },
+  {
+    "id": "DM2-R1-13",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "dm2.inpatient.hypoglycemia_protocol",
+    "finding": "Thiếu cảnh báo bắt buộc dùng Glucose đơn đường (Dextrose) thay vì đường ăn (Sucrose) trong giao thức hạ đường huyết khi bệnh nhân đang dùng Acarbose.",
+    "evidence": "src/modules/dm2/rules.inpatient.ts dòng 238: 'uống ngay 15 gam carbohydrate... (3–4 viên glucose hoặc 120 mL nước trái cây)'. Nếu bệnh nhân đang uống Acarbose, nước trái cây hoặc đường mía sucrose sẽ không thể thủy phân kịp do enzym alpha-glucosidase bị ức chế, dẫn đến hạ đường huyết kéo dài nguy kịch.",
+    "suggestedFix": "Thêm kiểm tra nếu `currentMeds` có `acarbose`: Bắt buộc ghi rõ chỉ sử dụng viên Glucose/Dextrose nguyên chất hoặc tiêm tĩnh mạch, không dùng đường mía hoặc nước ngọt thông thường."
+  },
+  {
+    "id": "DM2-R1-14",
+    "severity": "minor",
+    "itemType": "citation",
+    "itemId": "ada.dm2.2026.elderly_age_75",
+    "finding": "Citation `ada.dm2.2026.elderly_age_75` trích dẫn Danh mục tài liệu tham khảo (Reference 115) thay vì nội dung khuyến cáo chính.",
+    "evidence": "kb/citations/dm2.json dòng locator 'Reference 115 / PDF p. 19': Đoạn trích 'adults aged 75 to 79 years with type 2 diabetes....' nằm trong danh mục tài liệu tham khảo cuối bài của ADA Ch. 13, không phải câu văn trong phần khuyến cáo chính sách.",
+    "suggestedFix": "Thay locator và trích dẫn bằng đoạn văn chính thức trong Section 'Pharmacotherapy in Older Adults' hoặc Khuyến cáo 13.14a bàn về người cao tuổi ≥ 75 tuổi có nguy cơ hạ đường huyết cao."
+  },
+  {
+    "id": "DM2-R1-15",
+    "severity": "suggestion",
+    "itemType": "threshold",
+    "itemId": "dm2.obesity.bmi_asian_threshold",
+    "finding": "Bổ sung ngưỡng phân loại Béo phì chuẩn Châu Á (BMI ≥ 25 kg/m² theo IDI-WPRO / Bộ Y tế 5481) vào hệ thống ngưỡng.",
+    "evidence": "Báo cáo DM2.md ghi nhận chuẩn béo phì Châu Á BMI ≥ 25 kg/m², nhưng hệ thống hiện chỉ dùng ngưỡng `hf.glp1.bmi_min` = 30 kg/m² của phương Tây. Người bệnh Việt Nam có BMI 26–29 kg/m² bị bỏ sót nếu không tích chọn thủ công ô 'Béo phì'.",
+    "suggestedFix": "Tạo threshold `dm2.obesity.bmi_asian_threshold` (giá trị 25 kg/m²) để tự động nhận diện chỉ định GLP-1 RA cho bệnh nhân thừa cân/béo phì tại Việt Nam."
+  }
+]

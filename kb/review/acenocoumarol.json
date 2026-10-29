@@ -1,0 +1,26 @@
+{
+  "itemId": "acenocoumarol",
+  "contentHash": "06b87e99b65801dc893c55cb002881c143b0443553078d63e5511e86d9191483",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "acenocoumarol",
+      "contentHash": "4dfd5bacc32e7834",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:10:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF drug acenocoumarol (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:10:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

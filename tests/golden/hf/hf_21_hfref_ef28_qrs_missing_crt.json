@@ -1,0 +1,51 @@
+{
+  "id": "hf_21_hfref_ef28_qrs_missing_crt",
+  "titleVi": "HFrEF EF 28% chưa có thông số QRS: Yêu cầu nhập QRS đánh giá CRT",
+  "source": "ESC 2026 HF Table 3",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 63,
+    "sex": "male",
+    "weight": 72,
+    "sbp": 120,
+    "dbp": 75,
+    "hr": 72,
+    "lvef": 28,
+    "nyha": 2,
+    "scr": 90,
+    "k": 4.2,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_hf_crt_enter_qrs",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Thiếu QRS: Gợi ý nhập độ rộng QRS và dạng sóng (như gdmt.org)."
+}

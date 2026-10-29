@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.indication.ckd_stage_min",
+  "contentHash": "e4a31221f1e8540e7b81fcea223ab29c6f5c140bd268434fecb7b457745c6b02",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.indication.ckd_stage_min",
+      "contentHash": "95afb53ad5b7c379",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.indication.ckd_stage_min"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

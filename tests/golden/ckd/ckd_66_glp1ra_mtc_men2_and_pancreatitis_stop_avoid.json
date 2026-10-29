@@ -1,0 +1,58 @@
+{
+  "id": "ckd_66_glp1ra_mtc_men2_and_pancreatitis_stop_avoid",
+  "titleVi": "Ngoại trú - Chế độ đơn module CKD: Bệnh nhân đang dùng Semaglutide có tiền sử ung thư tuyến giáp thể tủy (MTC / MEN 2) -> Phát lệnh STOP Semaglutide khẩn cấp (Regression CKD-R3-R3-04)",
+  "source": "FDA Ozempic Boxed Warning (MTC / MEN 2) / fda.semaglutide.boxed_mtc",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_66",
+    "name": "BN CKD 66",
+    "age": 60,
+    "sex": "female",
+    "weight": 64,
+    "sbp": 128,
+    "dbp": 76,
+    "hr": 72,
+    "scr": 135,
+    "k": 4.3,
+    "uacr": 38,
+    "hba1c": 7.6,
+    "conditions": {
+      "ckd": true,
+      "dm": true
+    },
+    "customInputs": {
+      "historyMtcOrMen2": true
+    },
+    "currentMeds": [
+      { "drugId": "semaglutide", "name": "Ozempic 0.5 mg", "dose": 0.5, "unit": "mg" },
+      { "drugId": "dapagliflozin", "name": "Forxiga 10 mg", "dose": 10, "unit": "mg" },
+      { "drugId": "losartan", "name": "Cozaar 100 mg", "dose": 100, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "semaglutide", "action": "STOP" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "semaglutide", "action": "START" },
+      { "drugId": "semaglutide", "action": "CONTINUE" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R3-R3-04: Chặn chống chỉ định Boxed Warning MTC/MEN 2 trực tiếp trong module CKD ngay cả khi người dùng không bật module ĐTĐ2."
+}

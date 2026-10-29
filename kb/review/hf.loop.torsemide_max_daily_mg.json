@@ -1,0 +1,27 @@
+{
+  "itemId": "hf.loop.torsemide_max_daily_mg",
+  "contentHash": "22af8bcb5ba44d1c9977e50daf3638abf6cc81987ed8af370b0456846fe7651b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "hf.loop.torsemide_max_daily_mg",
+      "contentHash": "e9e90e985cfeeb34",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T09:00:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-28T09:00:00.000Z",
+          "role": "Agent G5 (HF Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF threshold hf.loop.torsemide_max_daily_mg (Round 2 R1/R2/R3 remediation & verbatim PDF citation verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "im_heart_failure_gdmt_predischarge_1020",
+  "titleVi": "Suy tim mất bù cấp thể ấm - ướt: Điều trị nội trú từ giảm sung huyết bằng lợi tiểu đến tối ưu hóa tứ trụ GDMT và xuất viện",
+  "source": "on-call:im_heart_failure_gdmt_predischarge_1020",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_im_heart_failure_gdmt_predischarge_1020",
+    "name": "Ông Lê Minh T., 65 tuổi (70 kg)",
+    "age": 65,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 138,
+    "dbp": 84,
+    "hr": 104,
+    "conditions": {
+      "hf": true,
+      "ckd": true
+    },
+    "selectedModules": [
+      "hf",
+      "ckd"
+    ],
+    "currentMeds": [],
+    "scr": 120,
+    "k": 4.5,
+    "lvef": 32
+  },
+  "expect": {
+    "mustInclude": [],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bác sĩ ơi, bệnh nhân nam 65 tuổi có tiền sử suy tim phân suất tống máu giảm (HFrEF, EF 32%) nhập khoa vì khó thở khi nằm đầu thấp, phù hai cẳng chân và tăng 4 kg trong 1 tuần qua! Người bệnh ngồi thở trên giường kê 3 gối, chi ấm hồng (tưới máu ngoại vi tốt — Warm), tĩnh mạch cổ nổi 10 cmH₂O, nghe hai đáy phổi có ran ẩm nhỏ hạt và phù ấn lõm hai cẳng chân (sung huyết — Wet). Người bệnh tỉnh táo, trả lời câu ngắn vì khó thở khi gắng sức nhẹ, nhịp thở hơi nhanh, bụng mềm kèm bờ gan mấp mé dưới hạ sườn phải.",
+  "notes": "TODO: Ca nháp nội viện chuyển từ on-call. Module agent chịu trách nhiệm điền expect.mustInclude và mustNotInclude."
+}

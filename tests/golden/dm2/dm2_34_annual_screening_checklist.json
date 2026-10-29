@@ -1,0 +1,50 @@
+{
+  "id": "dm2_34_annual_screening_checklist",
+  "titleVi": "Tầm soát định kỳ ngoại trú (Mắt, chân, thận, tiêm chủng)",
+  "source": "ADA 2026 SOC Ch. 11 & 12",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 55,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 120,
+    "dbp": 78,
+    "hr": 72,
+    "scr": 85,
+    "k": 4.2,
+    "glucose": 7.5,
+    "hba1c": 7.0,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_dm2_screening_checklist",
+        "action": "MONITOR"
+      }
+    ]
+  },
+  "descriptionVi": "Tầm soát định kỳ mắt, chân, thận."
+}

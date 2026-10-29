@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.qt_macrolide_fluoroquinolone",
+  "contentHash": "9c6f7d5c0953dd9b2f8ccdc6a7cd21d255d98ed467e43cc0ba3b0a70b658f697",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.qt_macrolide_fluoroquinolone",
+      "contentHash": "9a1fca52a4a1fd99",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.qt_macrolide_fluoroquinolone."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

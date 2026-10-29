@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.bp.dbp_grade2",
+  "contentHash": "6c36d019ff228e8a055bdda67da32c481c9dfdaf8a3f0fa9bcab6a2a19b7fe78",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.bp.dbp_grade2",
+      "contentHash": "cdc379cda8730711",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 100 mmHg (quantity: dbp) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+[
+  {
+    "id": "AF-R1-01",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "af.inpatient.rvr_acute_rate_control",
+    "finding": "Cấp cứu nội viện RVR tự động chỉ định Diltiazem IV khi chưa có LVEF (lvef === undefined); nguy cơ sốc tim và ngưng tim nếu người bệnh có suy tim HFrEF tiềm ẩn, vi phạm nguyên tắc Fail-Closed (QA-1).",
+    "evidence": "Code tại src/modules/af/rules.ts (L793-830): `const isHfRef = ef !== undefined && ef <= th('af.rate.lvef_cutoff');` và sau đó `if (isHfRef) { return rec_af_acute_rate_hfref; } return rec_af_acute_rate_preserved;`. Khi bệnh nhân vào viện cấp cứu vì rung nhĩ đáp ứng thất nhanh (AF with RVR) mà chưa có kết quả siêu âm tim xác định LVEF (`ef === undefined`), biến `isHfRef` đánh giá thành `false`. Hệ thống lập tức rơi vào nhánh mặc định và sinh khuyến cáo chỉ định Diltiazem IV 0.25 mg/kg tiêm bolus (`rec_af_acute_rate_preserved`). Nếu bệnh nhân có suy tim phân suất tống máu giảm (HFrEF) chưa được phát hiện hoặc đợt cấp suy tim, việc tiêm bolus thuốc chẹn kênh canxi Non-DHP (ức chế co bóp cơ tim mạnh) có thể dẫn tới tụt huyết áp nghiêm trọng, sốc tim (cardiogenic shock), phù phổi cấp và tử vong. ESC 2024 (Table 14 & Section 7.1, tr. 38, 40) và ACC/AHA 2023 (Section 7.1) nhấn mạnh: Non-DHP CCB chống chỉ định tuyệt đối khi có suy tim mất bù hoặc LVEF giảm; khi chưa rõ LVEF trong cấp cứu, chỉ có chẹn beta hoặc amiodarone/digoxin tĩnh mạch kèm theo dõi huyết động sát mới là lựa chọn an toàn. Điều này vi phạm nghiêm trọng QA-1 (Fail-Closed): khi thiếu thông số LVEF, hệ thống lại tự giả định là LVEF bình thường để ra y lệnh thuốc nguy hiểm.",
+    "suggestedFix": "Sửa logic rule `af.inpatient.rvr_acute_rate_control`: Khi `ef === undefined`, hệ thống phải chuyển sang trạng thái an toàn: tuyệt đối KHÔNG chỉ định Diltiazem/Verapamil IV; sinh khuyến cáo ưu tiên thăm dò khẩn LVEF (POCUS/Echocardiography) và sử dụng thuốc hạ nhịp an toàn không ức chế cơ tim (hoặc Amiodarone IV / Digoxin IV thận trọng), gắn cờ cảnh báo thận trọng cao độ."
+  },
+  {
+    "id": "AF-R1-02",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "af.rhythm.aad_selection",
+    "finding": "Bỏ sót hoàn toàn lệnh STOP thuốc chống loạn nhịp nhóm IC (Flecainide, Propafenone) khi người bệnh có Bệnh mạch vành (CAD) hoặc Suy tim HFrEF; nguy cơ loạn nhịp thất chết người theo thử nghiệm CAST.",
+    "evidence": "Code tại src/modules/af/rules.ts (L598-675): Trong rule `af.rhythm.aad_selection`, khi bệnh nhân có HFrEF (`ef <= 40`), code sinh `rec_af_aad_hfref` với action `CONSIDER` hoặc `CONTINUE` cho Amiodarone. Khi bệnh nhân có bệnh mạch vành (`vascularDisease: true`), code sinh `rec_af_aad_cad` với action `CONSIDER` cho Dronedarone. Hệ thống KHÔNG HỀ kiểm tra xem bệnh nhân có đang dùng Flecainide hoặc Propafenone hay không, và KHÔNG HỀ sinh khuyến cáo `STOP` (dừng khẩn cấp) đối với hai thuốc này. Thử nghiệm kinh điển CAST (Cardiac Arrhythmia Suppression Trial) và ESC 2024 Rec Table 18 (PDF p. 45, tr. 3358) quy định chống chỉ định tuyệt đối (Class III) Flecainide và Propafenone ở bệnh nhân có bệnh tim thiếu máu cục bộ / sau nhồi máu cơ tim hoặc suy giảm chức năng tâm thu thất trái do tăng gấp đôi tỷ lệ tử vong và ngừng tim do loạn nhịp thất. Bệnh nhân có CAD hoặc HFrEF đang uống Flecainide ngoại trú nhập viện nếu chỉ nhận được khuyến cáo 'CONSIDER Amiodarone' mà không bị chặn dừng Flecainide sẽ tiếp tục uống thuốc độc lực cao này.",
+    "suggestedFix": "Bổ sung kiểm tra `const onIc = hasCurrentMed(ctx, ['flecainide', 'propafenone']);` trong cả hai nhánh `isHfRef` và `hasCad`. Nếu `onIc` là true, bắt buộc sinh ngay recommendation độc lập với action: 'STOP', priority: 100, drugId: 'flecainide' / 'propafenone', tiêu đề: 'DỪNG NGAY Flecainide / Propafenone: Chống chỉ định tuyệt đối khi có bệnh mạch vành hoặc suy tim HFrEF (nguy cơ tử vong do loạn nhịp thất theo CAST trial)'."
+  },
+  {
+    "id": "AF-R1-03",
+    "severity": "critical",
+    "itemType": "missing",
+    "itemId": "af.oac.risk_stratification",
+    "finding": "Bỏ sót khuyến cáo Class I (Level B) của ESC 2024: Bắt buộc chỉ định chống đông ở bệnh nhân Rung nhĩ có Bệnh cơ tim phì đại (HCM) hoặc Bệnh thoái hóa dạng bột tim (Cardiac Amyloidosis) BẤT KỂ ĐIỂM CHA₂DS₂-VA; hệ thống thậm chí còn ra lệnh cấm dùng (AVOID) nếu điểm bằng 0.",
+    "evidence": "ESC 2024 Guidelines for the management of atrial fibrillation (Recommendation Table 6 / PDF p. 29, tr. 3342 & Key Recommendations PDF p. 9): 'Oral anticoagulation is recommended in all patients with AF and hypertrophic cardiomyopathy or cardiac amyloidosis, regardless of CHA2DS2-VA score, to prevent ischaemic stroke and thromboembolism. (Class I, Level B)'. Trong hệ thống GDMT-VN hiện tại, module `af` hoàn toàn không kiểm tra điều kiện bệnh cơ tim phì đại (`hypertrophicCardiomyopathy` hoặc `cardiacAmyloidosis`). Một bệnh nhân 38 tuổi mắc HCM có cơn rung nhĩ kịch phát có điểm CHA₂DS₂-VA = 0. Theo rule `af.oac.risk_stratification` (L329-350), hệ thống sẽ sinh ra khuyến cáo `rec_af_oac_low_risk` với action: 'AVOID' kèm tiêu đề 'Không chỉ định thuốc chống đông hoặc kháng tiểu cầu (CHA₂DS₂-VA = 0: Nguy cơ thấp)'! Khuyến cáo AVOID này trực tiếp tước đoạt chỉ định chống đông bảo vệ tính mạng nhóm 1B, đẩy người bệnh HCM (vốn có nguy cơ huyết khối tiểu nhĩ và đột quỵ tắc mạch não cực cao do rối loạn chức năng tâm trương nặng và giãn nhĩ) vào thảm họa đột quỵ tàn phế.",
+    "suggestedFix": "Bổ sung kiểm tra điều kiện bệnh tim nguy cơ cao đặc biệt trong `af.oac.risk_stratification`: `const isSpecialHighRisk = Boolean(ctx.patient.conditions?.hypertrophicCardiomyopathy || ctx.patient.conditions?.cardiacAmyloidosis);`. Nếu `isSpecialHighRisk` là true, bắt buộc phân tầng trực tiếp vào nhóm nguy cơ cao chỉ định DOAC (Class I, Level B) ngay cả khi điểm CHA₂DS₂-VA bằng 0."
+  },
+  {
+    "id": "AF-R1-04",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "af.rate.reduced_lvef",
+    "finding": "Ngắt sớm quy tắc kiểm soát tần số ở HFrEF khi phát hiện Non-DHP CCB, khiến người bệnh bị dừng Diltiazem nhưng không bao giờ nhận được khuyến cáo khởi trị thuốc thay thế (Chẹn beta / Digoxin).",
+    "evidence": "Code tại src/modules/af/rules.ts (L536-588): Trong rule `af.rate.reduced_lvef`, nhánh kiểm tra `onNonDhp` (L536): `if (onNonDhp) { return rec_af_contra_non_dhp_hfref; }`. Lệnh `return` này kết thúc việc thực thi của hàm `produce`. Kết quả là khuyến cáo `rec_af_rate_reduced_ef_bb` (L564) hướng dẫn khởi trị Chẹn beta chọn lọc suy tim hoặc Digoxin không bao giờ được sinh ra. Bác sĩ nhận được thông báo dừng Diltiazem nhưng hệ thống bị 'câm' hoàn toàn về việc phải cho bệnh nhân dùng thuốc gì tiếp theo để kiểm soát tần số tim đang nhanh trong suy tim HFrEF. Hơn nữa, nếu bệnh nhân đang dùng đồng thời cả Diltiazem lẫn Bisoprolol, khuyến cáo duy trì Bisoprolol cũng bị triệt tiêu do nhánh `return` sớm này.",
+    "suggestedFix": "Tách quy tắc chống chỉ định Non-DHP CCB ở HFrEF thành một rule độc lập (`af.rate.reduced_lvef_contra_ccb`), hoặc cho phép rule `af.rate.reduced_lvef` sinh khuyến cáo phối hợp: vừa lệnh STOP Diltiazem/Verapamil vừa chỉ định START/CONTINUE Chẹn beta suy tim (Bisoprolol/Metoprolol succinate/Carvedilol) ± Digoxin."
+  },
+  {
+    "id": "AF-R1-05",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "af.oac.risk_stratification",
+    "finding": "Tuyên bố hỗ trợ profile US (ACC/AHA 2023 CHA₂DS₂-VASc) nhưng code hoàn toàn hardcode thang điểm CHA₂DS₂-VA của ESC 2024, không hề kiểm tra hay sử dụng ctx.settings.profile.",
+    "evidence": "Tài liệu docs/modules/AF.md (L7, L71) và code rules.ts (L39, L179) ghi nhận hỗ trợ 3 hồ sơ 'INTL', 'VN', 'US'. Hàm `computeCha2ds2va` cũng đã tính sẵn cả hai điểm `scoreVa` và `scoreVasc` kèm `recommendationAccAha`. Tuy nhiên, trong toàn bộ file `src/modules/af/rules.ts`, biến `ctx.settings` hoặc `ctx.settings.profile` có số lần xuất hiện là 0. Logic chỉ định chống đông (L213-297) lấy cứng `const scoreVa = chaResult.scoreVa;` và so sánh với threshold `af.cha2ds2va.high_risk`. Khi người dùng chọn profile 'US', hệ thống vẫn áp dụng thang điểm CHA₂DS₂-VA của Châu Âu. Ví dụ: Bệnh nhân nữ 66 tuổi không có yếu tố nguy cơ nào khác, theo ACC/AHA 2023 có điểm CHA₂DS₂-VASc = 2 (Tuổi 65-74 = 1, Nữ = 1), thuộc chỉ định Class 2a (Cân nhắc chống đông đường uống). Nhưng trên GDMT-VN, hệ thống lấy CHA₂DS₂-VA = 1 và hiển thị ngưỡng Class IIa của ESC với gates và titles ghi cứng chuỗi 'CHA₂DS₂-VA'.",
+    "suggestedFix": "Đọc `const profile = ctx.settings?.profile ?? 'INTL';` trong `af.oac.risk_stratification`. Nếu profile === 'US', sử dụng `chaResult.scoreVasc` và phân tầng theo ngưỡng ACC/AHA 2023: Nam ≥ 2 / Nữ ≥ 3 là Class 1; Nam 1 / Nữ 2 là Class 2a; Nam 0 / Nữ 1 là Class 3. Hiển thị đúng tên thang điểm 'CHA₂DS₂-VASc' trên Title, Rationale và Gates."
+  },
+  {
+    "id": "AF-R1-06",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "af.oac.risk_stratification",
+    "finding": "Khẳng định sai lệch rằng DOAC bị chống chỉ định Class III theo FDA ở bệnh nhân CrCl < 15 mL/phút hoặc chạy thận nhân tạo; bỏ sót khuyến cáo Class 2b của ACC/AHA 2023 và nhãn FDA của Apixaban.",
+    "evidence": "Code tại src/modules/af/rules.ts (L228): `rationale: 'Khuyến cáo Class III (ESC 2024 / FDA): Bệnh nhân suy thận giai đoạn cuối với CrCl dưới 15 mL/phút chưa có đủ bằng chứng an toàn từ các thử nghiệm ngẫu nhiên lớn về DOAC. Cân nhắc VKA hoặc thảo luận hội chẩn chuyên khoa.'`. Đây là phát biểu sai đối với cơ quan quản lý FDA và hướng dẫn ACC/AHA Hoa Kỳ: (1) Nhãn chính thức FDA của Apixaban (Eliquis) (Section 8.6 Patients with End-Stage Renal Disease on Dialysis, PDF p. 20): FDA chính thức phê duyệt Apixaban cho bệnh nhân suy thận giai đoạn cuối đang lọc máu chu kỳ với liều 5 mg x 2 lần/ngày (hoặc 2.5 mg x 2 lần/ngày nếu tuổi ≥ 80 hoặc cân nặng ≤ 60 kg). (2) Hướng dẫn ACC/AHA 2023 AF (Section 6.8.4, PDF p. 61, Recommendation 3, Class 2b, LOE B-NR) khẳng định: 'For patients with AF at elevated risk for stroke and who have end-stage CKD (CrCl <15 mL/min) or are on dialysis, it might be reasonable to prescribe warfarin (INR 2.0-3.0) or an evidence-based dose of apixaban for oral anticoagulation to reduce the risk of stroke.' Việc ghi gộp 'Class III (ESC 2024 / FDA)' phủ nhận nhãn FDA và hướng dẫn ACC/AHA, thiếu hẳn cấu trúc `profileDiff` phân định ranh giới giữa Châu Âu (EMA cấm DOAC < 15) và Hoa Kỳ (FDA/ACC cho phép apixaban ở ESRD/lọc máu).",
+    "suggestedFix": "Sửa rationale và bổ sung `profileDiff`: INTL/VN ghi rõ theo ESC 2024 Table 11 / EMA: Chống chỉ định DOAC khi CrCl < 15 mL/phút hoặc chạy thận nhân tạo, ưu tiên VKA Warfarin; US ghi rõ theo ACC/AHA 2023 Rec 6.8.4.3 & nhãn FDA: Cân nhắc Warfarin (INR 2.0-3.0) hoặc Apixaban liều dựa trên chứng cứ (5 mg x 2 lần/ngày, giảm 2.5 mg x 2 lần/ngày nếu tuổi ≥ 80 hoặc cân nặng ≤ 60 kg) (Class 2b)."
+  },
+  {
+    "id": "AF-R1-07",
+    "severity": "major",
+    "itemType": "citation",
+    "itemId": "esc.af.2024.cha2ds2va_score_0",
+    "finding": "Gán trích dẫn giả mạo (Citation Mismatch) tại ngưỡng và quy tắc không chỉ định chống đông nguy cơ thấp: Dẫn chiếu Hình 12 về chống đông sau sốc điện thay vì khuyến cáo Class III của Bảng 6.",
+    "evidence": "Threshold `af.cha2ds2va.low_risk` (kb/thresholds/af.json L7) và rule `af.oac.risk_stratification` (src/modules/af/rules.ts L347) gắn citationId `esc.af.2024.cha2ds2va_score_0`. Nội dung citation này trong kb/citations/af.json (L25-34): `locator: 'Figure 12 / PDF p. 41'`, `quote: 'Short-term OAC after cardioversion (4 weeks) for all patients, even if CHA2DS2-VA = 0 (optional if AF onset definitely <24 h and low thromboembolic risk)'`, `cor: 'IIa'`, `loe: 'B'`. Câu trích dẫn này nói về việc DÙNG thuốc chống đông ngắn hạn 4 tuần sau chuyển nhịp tim kể cả khi điểm bằng 0! Nó hoàn toàn không hỗ trợ và thậm chí mâu thuẫn trực tiếp với khẳng định trong rationale: 'Khuyến cáo Class III, Mức A (ESC 2024 Rec Table 6): Bệnh nhân không có yếu tố nguy cơ thuyên tắc mạch (CHA₂DS₂-VA = 0). Thuốc chống đông hoặc chống kết tập tiểu cầu không đem lại lợi ích lâm sàng ròng'.",
+    "suggestedFix": "Thay thế citationId trên bằng trích dẫn chuẩn xác từ ESC 2024 Recommendation Table 6 (PDF p. 29, tr. 3342) và Section 6.1: Khuyến cáo Class III không dùng thuốc chống đông đường uống cho bệnh nhân có điểm CHA₂DS₂-VA = 0."
+  },
+  {
+    "id": "AF-R1-08",
+    "severity": "major",
+    "itemType": "citation",
+    "itemId": "esc.af.2024.non_dhp_ccb_contra_lvef40",
+    "finding": "Trích dẫn sai nội dung tại quy tắc cấm Non-DHP CCB ở HFrEF: Trích dẫn câu chỉ dẫn liều dùng của Diltiazem và gắn nhãn Class I thay vì câu khuyến cáo chống chỉ định Class III.",
+    "evidence": "Citation `esc.af.2024.non_dhp_ccb_contra_lvef40` trong kb/citations/af.json (L157-166) được gắn vào rule `af.rate.reduced_lvef` (L556) để chứng minh cho khuyến cáo Class III chống chỉ định Diltiazem khi LVEF ≤ 40%. Tuy nhiên, nội dung trường `quote` lại là: 'Diltiazem 0.25 mg/kg i.v. bolus over 5 min, then 5–15 mg/h 60 mg three times daily to 360 mg (extended release) once daily' kèm theo `cor: 'I'`, `loe: 'B'`. Đây là hướng dẫn liều dùng thông thường của Diltiazem, không có bất kỳ từ ngữ nào về chống chỉ định ở LVEF giảm và bị gán sai thành Class I. Trích dẫn thực tế cấm dùng nằm tại bảng Calcium channel antagonists trang 40: 'Contraindicated if LVEF ≤40%.'",
+    "suggestedFix": "Sửa trường `quote` của `esc.af.2024.non_dhp_ccb_contra_lvef40` thành: 'Contraindicated if LVEF ≤40%.' (ESC 2024 Section 7.1, Calcium channel antagonists table, p. 40), sửa `cor` thành 'III' và `quoteVi` phản ánh chuẩn xác chống chỉ định."
+  },
+  {
+    "id": "AF-R1-09",
+    "severity": "major",
+    "itemType": "missing",
+    "itemId": "af.oac.risk_stratification",
+    "finding": "Bỏ sót khuyến cáo Class I (Level B) của ESC 2024: Khuyến cáo chuyển đổi từ Warfarin (VKA) sang DOAC khi bệnh nhân không duy trì được thời gian trong khoảng điều trị (TTR < 70%).",
+    "evidence": "ESC 2024 AF Guidelines (Recommendation Table 7 / PDF p. 31 & 67, tr. 3344): 'Switching to a DOAC is recommended for eligible patients that have failed to maintain an adequate time in therapeutic range on a VKA (TTR <70%) to prevent thromboembolism and intracranial haemorrhage. (Class I, Level B)'. Trong code hiện tại tại dòng 217 và 245 của `rules.ts`: Biến `onOac` bao gồm cả `warfarin`. Nếu bệnh nhân đang dùng Warfarin, dòng 245 `if (onOac) return null;` sẽ lập tức kết thúc rule. Bệnh nhân rung nhĩ không do van tim đang dùng Warfarin nhưng có INR dao động hoặc TTR < 70% không bao giờ nhận được khuyến cáo chuyển đổi sang DOAC nhóm 1B để giảm nguy cơ xuất huyết nội sọ và thuyên tắc mạch não.",
+    "suggestedFix": "Bổ sung kiểm tra thông số TTR hoặc INR không ổn định ở bệnh nhân đang dùng Warfarin không có van cơ học/hẹp hai lá: Nếu TTR < 70% hoặc INR biến động nhiều lần, sinh khuyến cáo action: 'SWITCH', drugId: 'apixaban', tiêu đề: 'Khuyến cáo chuyển đổi từ Warfarin sang DOAC do không đạt TTR ≥ 70% (Class I, Level B)'."
+  },
+  {
+    "id": "AF-R1-10",
+    "severity": "major",
+    "itemType": "matrix",
+    "itemId": "afMatrixDoacCrCl",
+    "finding": "Bỏ sót Cảnh báo Hộp đen (Black Box Warning) của FDA và ESC 2024 đối với Edoxaban trong Ma trận DOAC khi CrCl > 95 mL/phút.",
+    "evidence": "FDA Savaysa Black Box Warning & ESC 2024 Section 6.2.1 / Table 11: Không dùng Edoxaban khi CrCl > 95 mL/phút do tăng thanh thải qua thận làm giảm nồng độ thuốc trong huyết tương và tăng tỷ lệ đột quỵ thiếu máu não so với Warfarin (thử nghiệm ENGAGE AF-TIMI 48). Trong ma trận `afMatrixDoacCrCl` (src/modules/af/matrices.ts L35-95), dải thận cao nhất được định nghĩa là `crcl_ge50` (CrCl từ 50 trở lên), tại đó Edoxaban hiển thị trạng thái `rec` (khuyến cáo dùng) với liều 60 mg/ngày. Ma trận hoàn toàn không có cột hoặc ghi chú cảnh báo cho phân nhóm CrCl > 95 mL/phút. Bác sĩ lâm sàng khi tra cứu ma trận trên giao diện web có thể bị dẫn dắt sai lầm rằng Edoxaban được khuyến cáo an toàn cho mọi bệnh nhân có CrCl ≥ 50 mL/phút (bao gồm cả bệnh nhân có thanh thải thận trên 95 mL/min).",
+    "suggestedFix": "Thêm ghi chú cảnh báo trực tiếp vào ô `crcl_ge50` của Edoxaban trong ma trận hoặc bổ sung cột cảnh báo chuyên biệt `crcl_gt95` với trạng thái `caution`/`contra`, ghi chú rõ cảnh báo Hộp đen (Black Box Warning) của FDA."
+  },
+  {
+    "id": "AF-R1-11",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "af.inpatient.cardioversion_anticoag_timing",
+    "finding": "Hardcode số literal giả định (12, 48, 0, 1) trong các cổng an toàn (Gates) của quy tắc chuyển nhịp tim, vi phạm quy chuẩn QA-8.",
+    "evidence": "Code tại src/modules/af/rules.ts: Tại dòng 765-766 (`rec_af_emergency_ecv`): `value: 0, threshold: 1`. Tại dòng 877-878 (`rec_af_cv_timing_early`): `value: 12, threshold: th('af.cardioversion.onset_hours_early')`. Tại dòng 899-900 (`rec_af_cv_timing_delayed`): `value: 48, threshold: th('af.cardioversion.onset_hours_early')`. Dữ liệu đầu vào của bệnh nhân là chuỗi phân loại enum (`less_than_24h` / `24h_to_48h` / `more_than_48h_or_unknown`), nhưng lập trình viên lại gán các số literal giả định 12 và 48 vào trường `value` của Gates để so sánh số học với threshold 24 giờ. Điều này vi phạm quy chuẩn QA-8 về cấm hardcode số literal trong logic lâm sàng.",
+    "suggestedFix": "Ánh xạ giá trị enum thành các biến số học chuẩn từ threshold hoặc thiết kế Gate dưới dạng kiểm tra logic chuỗi/boolean tường minh, loại bỏ hoàn toàn các số literal 12 và 48."
+  },
+  {
+    "id": "AF-R1-12",
+    "severity": "minor",
+    "itemType": "drug",
+    "itemId": "amiodarone",
+    "finding": "Mô tả liều khởi đầu của Amiodarone và Diltiazem trộn lẫn phác đồ uống duy trì 4 tuần với phác đồ tiêm truyền cấp cứu tĩnh mạch, gây rối mắt và nhầm lẫn trên UI cấp cứu nội viện.",
+    "evidence": "Trong `kb/drugs/amiodarone.json` (L18): `description: 'Liều nạp uống 200 mg x 3 lần/ngày trong 4 tuần; hoặc cấp cứu TM 300 mg pha trong 250 mL Dextrose 5% truyền qua 30–60 phút'`. Trong `kb/drugs/diltiazem.json` (L23): `description: '60 mg uống 3 lần/ngày; hoặc dạng giải phóng kéo dài 120–180 mg 1 lần/ngày; cấp cứu TM bolus 0.25 mg/kg qua 5 phút'`. Khi rule cấp cứu nội viện (`rec_af_acute_rate_hfref` hoặc `rec_af_acute_rate_preserved`) gọi helper `getStartDescription()`, trường `dose` hiển thị nguyên văn đoạn văn dài này trên thẻ khuyến cáo cấp cứu. Bác sĩ trực cấp cứu khi tiếp nhận ca rung nhĩ đáp ứng thất nhanh 150 bpm cần nhìn thấy ngay liều cấp tĩnh mạch chuẩn xác (ví dụ '300 mg TM pha trong 250 mL Glucose 5% truyền 30–60 phút') thay vì phải đọc một đoạn dài chứa cả liều uống duy trì ngoại trú 4 tuần.",
+    "suggestedFix": "Tách biệt liều cấp cứu đường tĩnh mạch (`start.inpatient` hoặc `start.iv`) và liều ngoại trú đường uống (`start.outpatient` hoặc `start.oral`) trong DrugEntry của Amiodarone và Diltiazem, để giao diện cấp cứu hiển thị chính xác y lệnh tĩnh mạch."
+  },
+  {
+    "id": "AF-R1-13",
+    "severity": "suggestion",
+    "itemType": "rule",
+    "itemId": "af.care.comorbidities",
+    "finding": "Đề xuất bổ sung khuyến cáo chỉ định Siêu âm tim qua thành ngực (TTE) thường quy cho mọi ca rung nhĩ mới chẩn đoán theo ESC 2024 Class I (Level C).",
+    "evidence": "ESC 2024 Guidelines for the management of atrial fibrillation (Recommendation Table 3 / PDF p. 15, tr. 3328): 'A transthoracic echocardiogram is recommended in patients with an AF diagnosis where this will guide treatment decisions. (Class I, Level C)'. Hiện tại quy tắc `af.care.comorbidities` chỉ nhắc nhở chung chung về THA, ĐTĐ, suy tim. Khi bệnh nhân có `customInputs.afType === 'first_diagnosed'`, hệ thống nên sinh thêm khuyến cáo chỉ định TTE để đo kích thước nhĩ trái, đánh giá LVEF và phát hiện các bệnh cơ tim/bệnh van tim tiềm ẩn giúp định hướng chiến lược AF-CARE.",
+    "suggestedFix": "Bổ sung một khuyến cáo hoặc mục trong `af.care.comorbidities`: Khi `afType === 'first_diagnosed'`, sinh khuyến cáo action: 'CONSIDER', title: 'Chỉ định Siêu âm tim qua thành ngực (TTE) để hướng dẫn chiến lược điều trị (Class I, Level C)'."
+  }
+]

@@ -1,0 +1,114 @@
+{
+  "id": "ferric_carboxymaltose",
+  "nameVi": "Ferric carboxymaltose (FCM)",
+  "inn": "Ferric carboxymaltose",
+  "class": "Intravenous iron",
+  "classes": [
+    "iv_iron"
+  ],
+  "vnBrands": [
+    "Ferinject"
+  ],
+  "forms": [
+    "Lọ dung dịch tiêm/truyền tĩnh mạch 500 mg sắt/10 mL (50 mg/mL)",
+    "Lọ dung dịch tiêm/truyền tĩnh mạch 1000 mg sắt/20 mL (50 mg/mL)"
+  ],
+  "start": {
+    "amount": "500–1000",
+    "unit": "mg",
+    "frequency": "truyền TM liều nạp",
+    "route": "tĩnh mạch",
+    "description": "tính tổng liều sắt cần bù (500–2000 mg) theo Hb và cân nặng (người < 70 kg & Hb ≥ 10 g/dL: 500–1000 mg; ≥ 70 kg hoặc Hb < 10 g/dL: 1000–2000 mg chia mỗi lần tối đa 1000 mg cách nhau ≥ 1 tuần)"
+  },
+  "target": {
+    "amount": "500–1000",
+    "unit": "mg",
+    "frequency": "đánh giá lại Ferritin & TSAT sau 3–6 tháng",
+    "route": "tĩnh mạch",
+    "description": "bù lại nếu tái thiếu sắt (Ferritin < 100 ng/mL hoặc Ferritin 100–299 ng/mL kèm TSAT < 20%)"
+  },
+  "titration": {
+    "step": "Không vượt quá 1000 mg sắt (hoặc 20 mg sắt/kg) mỗi lần truyền và mỗi tuần; không truyền nếu Hb > 15 g/dL",
+    "intervalDays": 7,
+    "maxDose": "1000 mg sắt/lần truyền (tối đa 1000 mg/tuần)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "500–1000 mg truyền TM (không cần chỉnh liều theo chức năng thận)",
+      "citationIds": [
+        "esc.hf.2026.iron_definition",
+        "esc.hf.2026.iron_rec"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "500–1000 mg truyền TM; theo dõi nồng độ phosphat máu ở bệnh nhân bệnh thận mạn",
+      "citationIds": [
+        "esc.hf.2026.iron_rec"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_fcm_ferritin_overload",
+      "parameter": "ferritin",
+      "operator": ">=",
+      "threshold": 300,
+      "unit": "ng/mL",
+      "action": "avoid",
+      "messageVi": "Ferritin ≥ 300 ng/mL: Không có chỉ định bù sắt tĩnh mạch trong suy tim",
+      "citationIds": [
+        "esc.hf.2026.iron_definition"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Cần điều trị thiếu sắt ở phụ nữ suy tim; tránh truyền sắt tĩnh mạch trong tam cá nguyệt 1 và cân nhắc thận trọng ở tam cá nguyệt 2–3 khi lợi ích vượt trội nguy cơ.",
+    "citationIds": [
+      "esc.preg.2025.hf_iron_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Có thể sử dụng điều trị thiếu sắt thời kỳ hậu sản/cho con bú theo chỉ định lâm sàng.",
+    "citationIds": [
+      "esc.preg.2025.hf_iron_pregnancy",
+      "esc.hf.2026.iron_rec"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "iron_overload",
+      "messageVi": "Chống chỉ định khi quá tải sắt (hemochromatosis, hemosiderosis), thiếu máu không do thiếu sắt hoặc nhiễm khuẩn huyết cấp đang hoạt động",
+      "citationIds": [
+        "esc.hf.2026.iron_definition"
+      ]
+    }
+  ],
+  "interactions": [
+    "Làm giảm hấp thu các chế phẩm sắt đường uống nếu dùng đồng thời (ngừng sắt uống ít nhất 5 ngày sau truyền FCM)",
+    "Theo dõi hạ phosphat máu có triệu chứng khi truyền lặp lại nhiều đợt"
+  ],
+  "citationIds": [
+    "esc.hf.2026.iron_screening",
+    "esc.hf.2026.iron_definition",
+    "esc.hf.2026.iron_rec"
+  ],
+  "hepatic": {
+    "status": "caution",
+    "childA": "ok",
+    "childB": "caution",
+    "childC": "caution",
+    "note": "Thận trọng đánh giá kỹ dự trữ sắt và tránh gây quá tải sắt ở bệnh nhân rối loạn chức năng gan nặng.",
+    "notesVi": "Thận trọng đánh giá kỹ dự trữ sắt và tránh gây quá tải sắt ở bệnh nhân rối loạn chức năng gan nặng.",
+    "citationIds": [
+      "esc.hf.2026.iron_definition"
+    ]
+  }
+}

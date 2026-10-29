@@ -1,0 +1,70 @@
+{
+  "id": "htn_45_outpatient_lercanidipine_severe_ckd_stop",
+  "titleVi": "Cổng an toàn DHP-CCB chuyên biệt: Ngừng Lercanidipine khi suy thận nặng (eGFR < 30 mL/min/1.73m²)",
+  "source": "VSH 2022 & EMA SmPC / vsh.htn.2022.drugs_table_rasi_bb",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 71,
+    "sex": "male",
+    "weight": 64,
+    "height": 165,
+    "sbp": 152,
+    "dbp": 90,
+    "hr": 72,
+    "scr": 240,
+    "k": 4.4,
+    "conditions": {
+      "htn": true,
+      "ckd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "losartan",
+        "dose": 50,
+        "unit": "mg"
+      },
+      {
+        "drugId": "lercanidipine",
+        "dose": 10,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "lercanidipine",
+        "action": "STOP"
+      },
+      {
+        "drugId": "amlodipine",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "lercanidipine",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Khác với Amlodipine, Lercanidipine bị chống chỉ định khi eGFR < 30 mL/min/1.73m² (hoặc dùng kèm ức chế mạnh CYP3A4/Ciclosporin); cần ngừng ngay và đổi sang Amlodipine."
+}

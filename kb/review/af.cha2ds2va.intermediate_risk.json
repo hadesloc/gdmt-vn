@@ -1,0 +1,26 @@
+{
+  "itemId": "af.cha2ds2va.intermediate_risk",
+  "contentHash": "353ac1886047e9b417ad6d19e9ab38c8774206d616722503def806da34066b26",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.cha2ds2va.intermediate_risk",
+      "contentHash": "b97d18f113463f63",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.cha2ds2va.intermediate_risk (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

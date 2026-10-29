@@ -1,0 +1,66 @@
+{
+  "id": "asthma_31_timolol_eyedrops_contra",
+  "titleVi": "Bệnh nhân hen dùng thuốc nhỏ mắt Timolol điều trị glôcôm: Bắt buộc STOP",
+  "source": "GINA 2026 p. 65 / ASTHMA-R2-13",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_31",
+    "name": "Nam 64 tuổi",
+    "age": 64,
+    "sex": "male",
+    "weight": 66,
+    "sbp": 132,
+    "dbp": 80,
+    "hr": 62,
+    "rhythm": "sinus",
+    "fev1Pct": 72,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "timolol",
+        "name": "Timolol 0.5% nhỏ mắt",
+        "dose": "1 giọt",
+        "freq": "2 lần/ngày"
+      }
+    ],
+    "customInputs": {
+      "currentTrack": "track1",
+      "currentStep": 2,
+      "daytimeSymptomsMoreThanTwiceWeek": false,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "timolol",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Thuốc nhỏ mắt chẹn beta không chọn lọc Timolol hấp thu qua ống lệ mũi có thể gây co thắt phế quản ác tính -> Bắt buộc STOP."
+}

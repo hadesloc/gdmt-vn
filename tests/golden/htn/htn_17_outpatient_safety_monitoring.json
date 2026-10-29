@@ -1,0 +1,55 @@
+{
+  "id": "htn_17_outpatient_safety_monitoring",
+  "titleVi": "Theo dõi chức năng thận và Kali máu sau khởi trị",
+  "source": "ESC 2024 HTN / esc.htn.2024.bp_target_general",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 55,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 132,
+    "dbp": 82,
+    "hr": 72,
+    "scr": 95,
+    "k": 4.4,
+    "conditions": {
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "perindopril",
+        "name": "Coversyl",
+        "dose": 5,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_htn_monitor_cr_k",
+        "action": "MONITOR"
+      }
+    ]
+  },
+  "descriptionVi": "Yêu cầu kiểm tra Creatinin và Kali máu sau 1–4 tuần dùng RASi."
+}

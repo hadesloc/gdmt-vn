@@ -1,0 +1,26 @@
+{
+  "itemId": "fenofibrate",
+  "contentHash": "46bc42b34b8ef20b023fb4ab6693c5e406bc9148fefd835c6293bf6ba0d57172",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "fenofibrate",
+      "contentHash": "d6fbb766ea084a0c",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra schema QA-10, phân nhóm classes, dải thận, cổng an toàn thai kỳ/cho con bú/tương tác và trích dẫn cho thuốc fenofibrate."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

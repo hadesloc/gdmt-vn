@@ -1,0 +1,115 @@
+{
+  "id": "calcium_polystyrene_sulfonate",
+  "nameVi": "Calcium Polystyrene Sulfonate (Kalimate)",
+  "inn": "Calcium polystyrene sulfonate",
+  "class": "K_binder",
+  "classes": [
+    "potassium_binder"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Kalimate",
+    "K-Pion",
+    "Calcium Resonium"
+  ],
+  "forms": [
+    "Gói bột uống/thụt 5 g",
+    "Gói bột 15 g",
+    "Hộp 500 g"
+  ],
+  "start": {
+    "amount": 15,
+    "unit": "g",
+    "frequency": "2–3 lần/ngày",
+    "route": "uống",
+    "description": "15 g x 2–3 lần/ngày pha với nước"
+  },
+  "target": {
+    "amount": 15,
+    "unit": "g",
+    "frequency": "2–3 lần/ngày",
+    "route": "uống",
+    "description": "10–15 g x 2–3 lần/ngày"
+  },
+  "titration": {
+    "step": 5,
+    "intervalDays": 3,
+    "maxDose": "45 g/ngày"
+  },
+  "renal": [
+    {
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "10–15 g x 2–3 lần/ngày",
+      "note": "Thuốc trao đổi ion kali lấy canxi tại đại tràng, thường dùng điều trị tăng kali mạn tính tại VN",
+      "citationIds": [
+        "byt.ckd.2024.potassium_resine_dose"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_cps_k_low",
+      "parameter": "K",
+      "operator": "<",
+      "threshold": 5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Ngừng nhựa trao đổi ion calcium polystyrene sulfonate khi kali máu < 5.0 mmol/L để phòng tránh hạ kali máu (SmPC / UKKA 2022 Guideline 8.1)",
+      "citationIds": [
+        "ukka.2022.guideline_8_1_cps_target_5"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định phối hợp với dung dịch sorbitol đường uống hoặc thụt trực tràng (nguy cơ hoại tử ruột và thủng đại tràng)",
+    "Uống cách xa các thuốc đường uống khác ít nhất 3 giờ trước hoặc 3 giờ sau (cân nhắc cách 6 giờ ở bệnh nhân liệt dạ dày - UKKA 2022 Appendix 3F)"
+  ],
+  "citationIds": [
+    "byt.ckd.2024.potassium_resine_dose",
+    "ukka.2022.guideline_8_1_cps_target_5",
+    "ukka.2022.guideline_16_6_3_cps_not_emergency",
+    "ukka.2022.appendix_3f_cps_safety_3h_bowel",
+    "ukka.2022.appendix_3f_cps_contra_bowel"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Chưa có dữ liệu lâm sàng đầy đủ trong thai kỳ; nhựa trao đổi ion không hấp thu toàn thân nhưng chỉ dùng khi lợi ích vượt trội nguy cơ và chống chỉ định phối hợp sorbitol",
+    "citationIds": [
+      "byt.ckd.2024.potassium_resine_dose",
+      "ukka.2022.appendix_3f_cps_safety_3h_bowel"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Chưa có dữ liệu lâm sàng đầy đủ ở phụ nữ cho con bú; thận trọng cân nhắc lợi ích/nguy cơ và theo dõi điện giải mẹ",
+    "citationIds": [
+      "byt.ckd.2024.potassium_resine_dose",
+      "ukka.2022.appendix_3f_cps_safety_3h_bowel"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypokalemia",
+      "messageVi": "Chống chỉ định khi nồng độ kali huyết thanh < 5.0 mmol/L hoặc có tăng canxi máu (SmPC / UKKA 2022)",
+      "citationIds": [
+        "ukka.2022.guideline_8_1_cps_target_5",
+        "ukka.2022.appendix_3f_cps_contra_bowel"
+      ]
+    },
+    {
+      "code": "obstructive_bowel_disease",
+      "messageVi": "Chống chỉ định tuyệt đối ở bệnh nhân tắc ruột, liệt ruột hoặc giảm nhu động ruột nặng sau phẫu thuật (nguy cơ hoại tử/thủng đại tràng)",
+      "citationIds": [
+        "ukka.2022.appendix_3f_cps_contra_bowel"
+      ]
+    },
+    {
+      "code": "concomitant_sorbitol",
+      "messageVi": "Chống chỉ định phối hợp đồng thời với sorbitol đường uống hoặc thụt trực tràng do nguy cơ hoại tử đại tràng",
+      "citationIds": [
+        "byt.ckd.2024.potassium_resine_dose"
+      ]
+    }
+  ]
+}

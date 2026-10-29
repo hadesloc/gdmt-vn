@@ -1,0 +1,173 @@
+{
+  "id": "rosuvastatin",
+  "nameVi": "Rosuvastatin",
+  "inn": "Rosuvastatin",
+  "class": "Statin",
+  "classes": [
+    "statin"
+  ],
+  "vnBrands": [
+    "Crestor",
+    "Rosuvastatin Stella",
+    "Rosuvastatin Stada",
+    "Crestatin"
+  ],
+  "forms": [
+    "Viên nén bao phim 5 mg",
+    "Viên nén bao phim 10 mg",
+    "Viên nén bao phim 20 mg",
+    "Viên nén bao phim 40 mg"
+  ],
+  "start": {
+    "amount": 5,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "5 mg uống 1 lần/ngày ở người châu Á (nguy cơ rất cao eGFR >= 30 có thể dùng 10–20 mg/ngày)"
+  },
+  "target": {
+    "amount": 40,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "20–40 mg uống 1 lần/ngày (cường độ cao khi eGFR >= 30)"
+  },
+  "titration": {
+    "step": "Tăng liều sau 4–12 tuần dựa trên khoảng cách tới đích LDL-C",
+    "intervalDays": 28,
+    "maxDose": "40 mg 1 lần/ngày (tối đa 10 mg khi eGFR < 30; tối đa 5 mg với cyclosporine; tối đa 20 mg với ticagrelor hoặc febuxostat)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "5–40 mg 1 lần/ngày",
+      "note": "Khởi đầu 5 mg ở người châu Á, chuẩn độ tới 20–40 mg nếu dung nạp tốt",
+      "citationIds": [
+        "fda.rosuvastatin.asian_dose",
+        "acc.lipid.2026.statin_doses"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "Khởi đầu 5 mg 1 lần/ngày; tối đa 10 mg 1 lần/ngày",
+      "note": "Suy thận nặng (eGFR < 30, chưa lọc máu): không vượt quá 10 mg/ngày; lọc máu chưa có ASCVD không khuyến cáo khởi trị mới",
+      "citationIds": [
+        "fda.rosuvastatin.renal_impairment",
+        "esc.lipid.2019.ckd_dialysis_no_init"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_rosuva_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối statin trong thai kỳ và thời kỳ cho con bú",
+      "citationIds": [
+        "esc.lipid.2024.ccs_pregnancy",
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    },
+    {
+      "id": "gate_rosuva_alt",
+      "parameter": "ALT",
+      "operator": ">=",
+      "threshold": 3,
+      "unit": "x ULN",
+      "action": "hold",
+      "messageVi": "Men gan ALT tăng >= 3 lần ULN: Tạm ngừng hoặc giảm liều statin và kiểm tra lại sau 4–6 tuần",
+      "citationIds": [
+        "esc.lipid.2019.monitoring_alt_elevation",
+        "acc.lipid.2026.transaminase_3x_uln"
+      ]
+    },
+    {
+      "id": "gate_rosuva_severe_ckd_max",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "reduce",
+      "messageVi": "eGFR < 30 mL/phút/1.73m²: Liều tối đa Rosuvastatin là 10 mg/ngày",
+      "citationIds": [
+        "fda.rosuvastatin.renal_impairment"
+      ]
+    },
+    {
+      "id": "gate_rosuva_ck_rhabdo",
+      "parameter": "CK",
+      "operator": ">",
+      "threshold": 10,
+      "unit": "x ULN",
+      "action": "stop",
+      "messageVi": "Men cơ CK > 10 lần ULN: Ngừng statin khẩn cấp, đánh giá chức năng thận và xử trí nguy cơ tiêu cơ vân",
+      "citationIds": [
+        "esc.lipid.2019.monitoring_ck_10x_stop"
+      ]
+    }
+  ],
+  "interactions": [
+    "Tránh phối hợp với Gemfibrozil và phác đồ sofosbuvir/velpatasvir/voxilaprevir hoặc ledipasvir/sofosbuvir do tăng mạnh phơi nhiễm Rosuvastatin và nguy cơ tiêu cơ vân",
+    "Dùng kèm Cyclosporine hoặc Darolutamide: giới hạn liều tối đa Rosuvastatin không quá 5 mg 1 lần/ngày (ức chế OATP1B1/BCRP)",
+    "Dùng kèm thuốc kháng virus ức chế protease/tăng cường dược động học (nirmatrelvir/ritonavir, atazanavir/ritonavir, lopinavir/ritonavir, cobicistat) hoặc Regorafenib / Capmatinib: giới hạn liều tối đa Rosuvastatin không quá 10 mg 1 lần/ngày",
+    "Dùng kèm Ticagrelor hoặc Febuxostat: giới hạn liều tối đa Rosuvastatin không quá 20 mg 1 lần/ngày (ức chế BCRP)",
+    "Dùng kèm thuốc kháng đông kháng vitamin K (Warfarin): có thể làm tăng INR, cần kiểm tra INR trước khởi trị và khi chỉnh liều",
+    "Thận trọng ở bệnh nhân có bệnh nhược cơ (myasthenia gravis / nhược cơ thể mắt): statin hiếm gặp có thể khởi phát mới hoặc làm nặng triệu chứng nhược cơ"
+  ],
+  "citationIds": [
+    "fda.rosuvastatin.asian_dose",
+    "fda.rosuvastatin.renal_impairment",
+    "fda.rosuvastatin.cyclosporine_dose_cap",
+    "fda.rosuvastatin.darolutamide_5mg_cap",
+    "fda.rosuvastatin.antiviral_10mg_cap",
+    "fda.rosuvastatin.regorafenib_10mg_cap",
+    "fda.rosuvastatin.ledipasvir_voxilaprevir_avoid",
+    "fda.rosuvastatin.gemfibrozil_avoid",
+    "acc.lipid.2026.statin_doses",
+    "esc.lipid.2024.ccs_pregnancy",
+    "fda.rosuvastatin.ticagrelor_limit_20mg",
+    "fda.rosuvastatin.febuxostat_limit_20mg",
+    "fda.rosuvastatin.warfarin_inr",
+    "fda.rosuvastatin.myasthenia_gravis"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối statin trong thai kỳ do nguy cơ ảnh hưởng phát triển phôi thai (FDA / ESC 2024 CCS)",
+    "citationIds": [
+      "esc.lipid.2024.ccs_pregnancy",
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "lactation": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong thời kỳ cho con bú do thuốc bài tiết qua sữa mẹ và nguy cơ tác dụng phụ trên trẻ sơ sinh (FDA / ESC)",
+    "citationIds": [
+      "esc.lipid.2024.ccs_pregnancy",
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định tuyệt đối statin trong thai kỳ và cho con bú",
+      "citationIds": [
+        "esc.lipid.2024.ccs_pregnancy",
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    },
+    {
+      "code": "active_liver_disease",
+      "messageVi": "Chống chỉ định khi có bệnh gan tiến triển hoặc tăng men gan dai dẳng >= 3 lần ULN chưa rõ nguyên nhân",
+      "citationIds": [
+        "esc.lipid.2019.monitoring_alt_elevation"
+      ]
+    }
+  ]
+}

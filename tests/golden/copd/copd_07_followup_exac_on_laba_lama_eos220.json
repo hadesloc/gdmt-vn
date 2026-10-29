@@ -1,0 +1,61 @@
+{
+  "id": "copd_07_followup_exac_on_laba_lama_eos220",
+  "titleVi": "COPD theo dõi đợt cấp trên LABA+LAMA + BCAT ≥ 100: Thêm ICS (Triple)",
+  "source": "GOLD 2026 Report p. 77 / Exacerbation Pathway",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_07",
+    "age": 70,
+    "sex": "male",
+    "weight": 60,
+    "height": 165,
+    "sbp": 132,
+    "dbp": 80,
+    "hr": 78,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "tiotropium_olodaterol",
+        "name": "Spiolto Respimat",
+        "dose": 5,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.5,
+      "fev1PredPct": 50,
+      "currentInhaler": "laba_lama",
+      "moderateExacerbations": 1,
+      "hospitalizations": 0,
+      "bloodEos": 220
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "action": "UPTITRATE"
+      }
+    ]
+  }
+}

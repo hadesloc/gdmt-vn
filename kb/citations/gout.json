@@ -1,0 +1,1293 @@
+[
+  {
+    "id": "acr.gout.2020.indication_strong",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 6,
+    "printedPage": "747",
+    "locator": "Indications for pharmacologic ULT (Table 1, PICO 1–3) / p. 747",
+    "quote": "Initiating ULT is strongly recommended for gout patients with any of the following: ≥1 subcutaneous tophi; evidence of radiographic damage (any modality) attributable to gout; OR frequent gout flares, with frequent being defined as ≥2 annually.",
+    "quoteVi": "Chỉ định mạnh khởi trị ULT cho bệnh nhân gút có bất kỳ dấu hiệu nào: ≥1 hạt tophi dưới da; tổn thương khuyết xương trên X-quang do gút; hoặc ≥2 đợt cấp/năm.",
+    "cor": "strong",
+    "loe": "high"
+  },
+  {
+    "id": "acr.gout.2020.indication_conditional_infrequent",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 6,
+    "printedPage": "747",
+    "locator": "Indications for pharmacologic ULT (Table 1, PICO 4) / p. 747",
+    "quote": "Initiating ULT is conditionally recommended for patients who have previously experienced >1 flare but have infrequent flares (<2/year).",
+    "quoteVi": "Chỉ định có điều kiện khởi trị ULT cho người đã từng bị >1 đợt cấp nhưng cơn thưa (<2 đợt/năm).",
+    "cor": "conditional",
+    "loe": "moderate"
+  },
+  {
+    "id": "acr.gout.2020.indication_conditional_first_flare",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 6,
+    "printedPage": "747",
+    "locator": "Indications for pharmacologic ULT (Table 1, PICO 5) / p. 747",
+    "quote": "initiating ULT is conditionally recommended for patients with experiencing their first flare when comorbid moderate-to-severe CKD (stage ≥3), SU concentration >9 mg/dl, or urolithiasis is present.",
+    "quoteVi": "Chỉ định có điều kiện khởi trị ULT cho cơn gút đầu tiên khi kèm theo CKD giai đoạn ≥ 3, acid uric > 9 mg/dL (535 µmol/L), hoặc sỏi thận.",
+    "cor": "conditional",
+    "loe": "very_low"
+  },
+  {
+    "id": "acr.gout.2020.indication_against_first_flare",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 6,
+    "printedPage": "747",
+    "locator": "Indications for pharmacologic ULT (Table 1, PICO 5) / p. 747",
+    "quote": "Initiating ULT is conditionally recommended against in patients with gout experiencing their first gout flare.",
+    "quoteVi": "Khuyến cáo không nên khởi trị ULT ở bệnh nhân chỉ mới bị cơn gút đầu tiên không kèm biến chứng/yếu tố nguy cơ.",
+    "cor": "conditional",
+    "loe": "moderate"
+  },
+  {
+    "id": "acr.gout.2020.indication_against_asymptomatic",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 7,
+    "printedPage": "748",
+    "locator": "Indications for pharmacologic ULT (Table 1, PICO 57) / p. 748",
+    "quote": "Initiating ULT is conditionally recommended against in patients with asymptomatic hyperuricemia.",
+    "quoteVi": "Khuyến cáo không nên dùng thuốc hạ urat cho người tăng acid uric máu không triệu chứng.",
+    "cor": "conditional",
+    "loe": "high"
+  },
+  {
+    "id": "acr.gout.2020.treat_to_target",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 9,
+    "printedPage": "750",
+    "locator": "Treat-to-target strategy (Table 3, PICO 13) / p. 750",
+    "quote": "A treat-to-target management strategy that includes ULT dose titration and subsequent dosing guided by serial SU measurements to achieve a target SU, over a fixed-dose ULT strategy, is strongly recommended for all patients receiving ULT.",
+    "quoteVi": "Chiến lược Treat-to-Target chuẩn độ tăng dần liều ULT theo dõi nồng độ urat máu định kỳ để đạt đích được khuyến cáo mạnh mẽ cho mọi bệnh nhân dùng ULT thay vì dùng liều cố định.",
+    "cor": "strong",
+    "loe": "moderate"
+  },
+  {
+    "id": "acr.gout.2020.target_urate_under_6",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 9,
+    "printedPage": "750",
+    "locator": "Target serum urate (Table 3, PICO 14) / p. 750",
+    "quote": "Achieving and maintaining an SU target of <6 mg/dl over the use of no target is strongly recommended for all patients receiving ULT.",
+    "quoteVi": "Đạt và duy trì nồng độ acid uric máu < 6 mg/dL (< 360 µmol/L) được khuyến cáo mạnh mẽ cho tất cả người bệnh dùng ULT.",
+    "cor": "strong",
+    "loe": "high"
+  },
+  {
+    "id": "eular.gout.2016.target_urate_tophi",
+    "sourceId": "eular_2016_gout",
+    "pdfPage": 3,
+    "printedPage": "31",
+    "locator": "Table 1, Recommendation 6 / p. 31",
+    "quote": "For patients on ULT, SUA level should be monitored and maintained to <6 mg/dL (360 mmol/L). A lower SUA target (<5 mg/dL; 300 mmol/L) to facilitate faster dissolution of crystals is recommended for patients with severe gout (tophi, chronic arthropathy, frequent attacks) until total crystal dissolution and resolution of gout. SUA level <3 mg/dL is not recommended in the long term.",
+    "quoteVi": "Mục tiêu acid uric máu duy trì < 6 mg/dL (360 µmol/L). Mục tiêu thấp hơn (< 5 mg/dL; 300 µmol/L) để thúc đẩy tinh thể tan nhanh hơn được khuyến cáo cho gút nặng (tophi, bệnh khớp mạn, cơn dày) cho đến khi tan hết tinh thể. Không khuyến cáo duy trì SUA < 3 mg/dL (180 µmol/L) kéo dài.",
+    "cor": "strong",
+    "loe": "C"
+  },
+  {
+    "id": "acr.gout.2020.allopurinol_first_line",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 7,
+    "printedPage": "748",
+    "locator": "Choice of initial ULT (Table 2, PICO 10) / p. 748",
+    "quote": "Treatment with allopurinol as the preferred first-line agent, over all other ULTs, is strongly recommended for all patients, including those with moderate-to-severe CKD (stage ≥3).",
+    "quoteVi": "Allopurinol là lựa chọn hàng đầu ưu tiên tuyệt đối cho mọi bệnh nhân, kể cả bệnh nhân có CKD giai đoạn ≥ 3.",
+    "cor": "strong",
+    "loe": "moderate"
+  },
+  {
+    "id": "acr.gout.2020.allopurinol_low_dose_start",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 7,
+    "printedPage": "748",
+    "locator": "Starting dose (Table 2, PICO 7) / p. 748",
+    "quote": "Starting treatment with low-dose allopurinol (≤100 mg/day and lower in patients with CKD [stage ≥3]) and febuxostat (≤40 mg/day) with subsequent dose titration over starting at a higher dose is strongly recommended.",
+    "quoteVi": "Bắt đầu điều trị bằng liều thấp allopurinol (≤ 100 mg/ngày và thấp hơn ở bệnh nhân CKD giai đoạn ≥ 3) hoặc febuxostat (≤ 40 mg/ngày) rồi chuẩn độ tăng dần liều được khuyến cáo mạnh mẽ.",
+    "cor": "strong",
+    "loe": "moderate"
+  },
+  {
+    "id": "acr.gout.2020.allopurinol_start_dose_ckd_50",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 8,
+    "printedPage": "749",
+    "locator": "Starting dose in CKD discussion / p. 749",
+    "quote": "Even lower initial allopurinol doses (e.g., ≤50 mg/day) should be considered in patients with CKD. While higher starting doses and CKD are associated with risk of AHS (39), patients with CKD may still require dose titration above 300 mg/day to achieve the SU target (42,43).",
+    "quoteVi": "Liều khởi đầu allopurinol thấp hơn nữa (≤ 50 mg/ngày) nên được cân nhắc ở bệnh nhân có CKD, sau đó chuẩn độ thận trọng từng bước nhỏ để đạt đích urat."
+  },
+  {
+    "id": "acr.gout.2020.hlab5801_screening",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 10,
+    "printedPage": "751",
+    "locator": "Recommendations for allopurinol (Table 4, PICO 12) / p. 751",
+    "quote": "Testing for the HLA–B*5801 allele prior to starting allopurinol is conditionally recommended for patients of Southeast Asian descent (e.g., Han Chinese, Korean, Thai) and for African American patients, over not testing for the HLA–B*5801 allele.",
+    "quoteVi": "Xét nghiệm alen HLA-B*58:01 trước khi bắt đầu allopurinol được khuyến cáo cho người gốc Đông Nam Á (Hoa, Hàn, Thái, Việt) và người Mỹ gốc Phi để phòng ngừa hội chứng quá mẫn nghiêm trọng (AHS/SCAR).",
+    "cor": "conditional",
+    "loe": "very_low"
+  },
+  {
+    "id": "acr.gout.2020.febuxostat_cvd_switch",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 10,
+    "printedPage": "751",
+    "locator": "Febuxostat cardiovascular safety (Table 4, PICO 22) / p. 751",
+    "quote": "Switching to an alternative oral ULT agent, if available and consistent with other recommendations in this guideline, is conditionally recommended for patients taking febuxostat with a history of CVD or a new CVD-related event.",
+    "quoteVi": "Chuyển sang thuốc hạ urat đường uống khác (như allopurinol nếu không dị ứng) được khuyến cáo cho bệnh nhân đang dùng febuxostat có tiền sử bệnh tim mạch hoặc có biến cố tim mạch mới.",
+    "cor": "conditional",
+    "loe": "moderate"
+  },
+  {
+    "id": "acr.gout.2020.xoi_over_probenecid",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 7,
+    "printedPage": "748",
+    "locator": "Choice of initial ULT (Table 2, PICO 10) / p. 748",
+    "quote": "The choice of either allopurinol or febuxostat over probenecid is strongly recommended for patients with moderate-to-severe CKD (stage ≥3).",
+    "quoteVi": "Ưu tiên chọn thuốc ức chế xanthine oxidase (allopurinol hoặc febuxostat) hơn probenecid cho bệnh nhân bệnh thận mạn vừa đến nặng (giai đoạn ≥ 3).",
+    "cor": "strong",
+    "loe": "moderate"
+  },
+  {
+    "id": "acr.gout.2020.probenecid_low_dose",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 8,
+    "printedPage": "749",
+    "locator": "Probenecid dosing (Table 2, PICO 7) / p. 749",
+    "quote": "Starting treatment with low-dose probenecid (500 mg once to twice daily) with subsequent dose titration over starting at a higher dose is conditionally recommended.",
+    "quoteVi": "Khởi đầu probenecid liều thấp 500 mg x 1–2 lần/ngày rồi chuẩn độ tăng liều dần được khuyến cáo.",
+    "cor": "conditional",
+    "loe": "moderate"
+  },
+  {
+    "id": "acr.gout.2020.uricosuric_renal_stones_contra",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 11,
+    "printedPage": "752",
+    "locator": "Uricosurics discussion / p. 752",
+    "quote": "patients with known renal calculi or moderate-to-severe CKD (stage ≥3) should not be treated with uricosurics. For patients who are treated with uricosurics, patients should receive counseling about adequate hydration, but they need not be prescribed alkalinizing agents given the lack of evidence for efficacy.",
+    "quoteVi": "Bệnh nhân có tiền sử sỏi thận hoặc CKD mức độ vừa–nặng (giai đoạn ≥ 3) không nên điều trị bằng thuốc tăng thải urat; người dùng thuốc tăng thải urat cần uống đủ nước nhưng không khuyến cáo kiềm hóa nước tiểu thường quy."
+  },
+  {
+    "id": "acr.gout.2020.uricosuric_no_urine_check_alkalinize",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 11,
+    "printedPage": "752",
+    "locator": "Uricosurics (Table 4, PICO 28–29) / p. 752",
+    "quote": "Checking urinary uric acid is conditionally recommend against for patients considered for or receiving uricosuric treatment. Alkalinizing the urine is conditionally recommended against for patients receiving uricosuric treatment.",
+    "quoteVi": "ACR 2020 khuyến cáo có điều kiện không cần xét nghiệm acid uric niệu 24 giờ trước khi dùng thuốc tăng thải urat và không cần kiềm hóa nước tiểu thường quy.",
+    "cor": "conditional",
+    "loe": "very_low"
+  },
+  {
+    "id": "acr.gout.2020.switch_second_xoi",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 12,
+    "printedPage": "753",
+    "locator": "Changing ULT strategy (Table 5, PICO 24) / p. 753",
+    "quote": "Switching to a second XOI over adding a uricosuric agent is conditionally recommended for patients taking their first XOI, who have persistently high SU concentrations (>6 mg/dl) despite maximum-tolerated or FDA-indicated XOI dose, and who have continued frequent gout flares (>2 flares/year) OR who have nonresolving subcutaneous tophi.",
+    "quoteVi": "Ở bệnh nhân đã dùng XOI đầu tay liều tối đa dung nạp/theo nhãn nhưng acid uric vẫn > 6 mg/dL kèm cơn gút dày hoặc hạt tophi không tan, khuyến cáo chuyển sang XOI thứ hai ưu tiên hơn phối hợp thêm thuốc tăng thải urat.",
+    "cor": "conditional",
+    "loe": "very_low"
+  },
+  {
+    "id": "acr.gout.2020.pegloticase_refractory",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 12,
+    "printedPage": "753",
+    "locator": "Pegloticase in refractory gout (Table 5, PICO 27) / p. 753",
+    "quote": "Switching to pegloticase over continuing current ULT is strongly recommended for patients with gout for whom XOI treatment, uricosurics, and other interventions have failed to achieve the SU target, and who continue to have frequent gout flares (≥2 flares/year) OR who have nonresolving subcutaneous tophi.",
+    "quoteVi": "Khuyến cáo mạnh chuyển sang pegloticase cho bệnh nhân gút kháng trị đã thất bại với XOI, thuốc tăng thải urat và các can thiệp khác mà vẫn còn ≥ 2 đợt cấp/năm hoặc hạt tophi dưới da không tiêu.",
+    "cor": "strong",
+    "loe": "moderate"
+  },
+  {
+    "id": "acr.gout.2020.pegloticase_against_mild",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 12,
+    "printedPage": "753",
+    "locator": "Pegloticase in mild gout (Table 5, PICO 27) / p. 753",
+    "quote": "Switching to pegloticase over continuing current ULT is strongly recommended against for patients with gout for whom XOI treatment, uricosurics, and other interventions have failed to achieve the SU target, but who have infrequent gout flares (<2 flares/year) AND no tophi.",
+    "quoteVi": "Khuyến cáo mạnh KHÔNG chuyển sang pegloticase nếu bệnh nhân có cơn gút thưa (< 2 đợt/năm) và không có hạt tophi.",
+    "cor": "strong",
+    "loe": "moderate"
+  },
+  {
+    "id": "acr.gout.2020.prophylaxis_agents",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 8,
+    "printedPage": "749",
+    "locator": "Prophylaxis therapy (Table 2, PICO 9) / p. 749",
+    "quote": "Administering concomitant antiinflammatory prophylaxis therapy (e.g., colchicine, nonsteroidal antiinflammatory drugs [NSAIDs], prednisone/prednisolone) over no antiinflammatory prophylaxis therapy is strongly recommended.",
+    "quoteVi": "Dùng đồng thời liệu pháp chống viêm dự phòng cơn cấp (colchicine, NSAID, hoặc prednisone/prednisolone) khi bắt đầu ULT được khuyến cáo mạnh mẽ.",
+    "cor": "strong",
+    "loe": "moderate"
+  },
+  {
+    "id": "acr.gout.2020.prophylaxis_duration",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 8,
+    "printedPage": "749",
+    "locator": "Prophylaxis duration (Table 2, PICO 9) / p. 749",
+    "quote": "Continuing concomitant antiinflammatory prophylaxis therapy for 3–6 months over <3 months, with ongoing evaluation and continued prophylaxis as needed if the patient continues to experience gout flares, is strongly recommended.",
+    "quoteVi": "Tiếp tục dự phòng cơn cấp trong 3–6 tháng sau khi bắt đầu ULT (tiếp tục thêm nếu bệnh nhân vẫn còn đợt cấp) được khuyến cáo mạnh mẽ.",
+    "cor": "strong",
+    "loe": "moderate"
+  },
+  {
+    "id": "acr.gout.2020.start_ult_during_flare",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 8,
+    "printedPage": "749",
+    "locator": "Timing of ULT initiation (Table 2, PICO 6) / p. 749",
+    "quote": "When the decision is made that ULT is indicated while the patient is experiencing a gout flare, starting ULT during the gout flare over starting ULT after the gout flare has resolved is conditionally recommended.",
+    "quoteVi": "Khi đã có chỉ định khởi trị ULT và bệnh nhân đang có đợt cấp, có thể bắt đầu ULT ngay trong đợt cấp (kèm theo thuốc chống viêm) thay vì trì hoãn đợi cơn lui.",
+    "cor": "conditional",
+    "loe": "moderate"
+  },
+  {
+    "id": "acr.gout.2020.flare_first_line",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 13,
+    "printedPage": "754",
+    "locator": "Gout flare management (Table 6, PICO 32) / p. 754",
+    "quote": "Using colchicine, NSAIDs, or glucocorticoids (oral, intraarticular, or intramuscular) as appropriate first-line therapy for gout flares over IL-1 inhibitors or adrenocorticotropic hormone (ACTH) is strongly recommended for patients experiencing a gout flare.",
+    "quoteVi": "Colchicine, NSAID, hoặc glucocorticoid (uống, tiêm nội khớp hoặc tiêm bắp) là lựa chọn đầu tay thích hợp để điều trị đợt cấp gút.",
+    "cor": "strong",
+    "loe": "high"
+  },
+  {
+    "id": "acr.gout.2020.colchicine_low_dose",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 13,
+    "printedPage": "754",
+    "locator": "Colchicine dosing (Table 6, PICO 32) / p. 754",
+    "quote": "Given similar efficacy and a lower risk of adverse effects, low-dose colchicine over high-dose colchicine is strongly recommended when colchicine is the chosen agent.",
+    "quoteVi": "Khi chọn colchicine, khuyến cáo mạnh mẽ dùng liều thấp thay vì liều cao do hiệu quả tương đương nhưng tác dụng phụ trên đường tiêu hóa thấp hơn rõ rệt.",
+    "cor": "strong",
+    "loe": "high"
+  },
+  {
+    "id": "acr.gout.2020.topical_ice_flare",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 13,
+    "printedPage": "754",
+    "locator": "Gout flare management (Table 6, PICO 31) / p. 754",
+    "quote": "Using topical ice as an adjuvant treatment over no adjuvant treatment is conditionally recommended for patients experiencing a gout flare.",
+    "quoteVi": "Khuyến cáo có điều kiện việc chườm đá lạnh tại chỗ làm biện pháp bổ trợ giảm đau – sưng nóng khớp đang bùng phát cơn gút cấp.",
+    "cor": "conditional",
+    "loe": "low"
+  },
+  {
+    "id": "acr.gout.2020.il1_inhibitor_flare",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 13,
+    "printedPage": "754",
+    "locator": "Gout flare management (Table 6, PICO 33) / p. 754",
+    "quote": "Using an IL-1 inhibitor over no therapy (beyond supportive/analgesic treatment) is conditionally recommended for patients experiencing a gout flare for whom the above antiinflammatory therapies are either ineffective, poorly tolerated, or contraindicated.",
+    "quoteVi": "Cân nhắc dùng thuốc ức chế IL-1 (anakinra, canakinumab) cho bệnh nhân cơn gút cấp khi tất cả thuốc chống viêm đầu tay (colchicine, NSAID, corticoid) đều không hiệu quả, không dung nạp hoặc chống chỉ định.",
+    "cor": "conditional",
+    "loe": "moderate"
+  },
+  {
+    "id": "acr.gout.2020.npo_parenteral_steroid",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 13,
+    "printedPage": "754",
+    "locator": "Gout flare management NPO (Table 6, PICO 32) / p. 754",
+    "quote": "Treatment with glucocorticoids (intramuscular, intravenous, or intraarticular) over IL-1 inhibitors or ACTH is strongly recommended for patients who are unable to take oral medications.",
+    "quoteVi": "Khuyến cáo mạnh dùng glucocorticoid đường tiêm (tiêm bắp, tiêm tĩnh mạch hoặc tiêm nội khớp) cho bệnh nhân cơn gút cấp không thể uống thuốc (NPO).",
+    "cor": "strong",
+    "loe": "high"
+  },
+  {
+    "id": "acr.gout.2020.switch_thiazide_losartan",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 15,
+    "printedPage": "756",
+    "locator": "Concurrent medications (Table 8, PICO 47) / p. 756",
+    "quote": "Switching hydrochlorothiazide to an alternate antihypertensive when feasible is conditionally recommended for patients with gout, regardless of disease activity.",
+    "quoteVi": "Cân nhắc đổi hydrochlorothiazide sang thuốc hạ áp khác (như losartan hoặc CCB) khi khả thi ở người bệnh gút do thiazide làm giảm thải acid uric.",
+    "cor": "conditional",
+    "loe": "very_low"
+  },
+  {
+    "id": "acr.gout.2020.prefer_losartan",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 16,
+    "printedPage": "757",
+    "locator": "Concurrent medications (Table 8, PICO 47) / p. 757",
+    "quote": "Choosing losartan preferentially as an antihy-pertensive agent when feasible is conditionally recommended for patients with gout, regardless of disease activity.",
+    "quoteVi": "Ưu tiên chọn losartan làm thuốc điều trị tăng huyết áp ở bệnh nhân gút khi khả thi vì losartan có tác dụng tăng bài tiết acid uric qua nước tiểu.",
+    "cor": "conditional",
+    "loe": "very_low"
+  },
+  {
+    "id": "acr.gout.2020.do_not_stop_aspirin",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 16,
+    "printedPage": "757",
+    "locator": "Low-dose aspirin (Table 8, PICO 47) / p. 757",
+    "quote": "Stopping low-dose aspirin (for patients taking this medication for appropriate indications) is conditionally recommended against for patients with gout, regardless of disease activity.",
+    "quoteVi": "Khuyến cáo KHÔNG ngừng aspirin liều thấp ở bệnh nhân đang dùng thuốc này vì chỉ định tim mạch phù hợp, bất kể nồng độ urat hay hoạt tính bệnh gút.",
+    "cor": "conditional",
+    "loe": "very_low"
+  },
+  {
+    "id": "acr.gout.2020.against_fenofibrate_switch",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 16,
+    "printedPage": "757",
+    "locator": "Management of concurrent medications / p. 16",
+    "quote": "Adding or switching cholesterol-lowering agents to fenofibrate is conditionally recommended against for patients with gout, regardless of disease activity.",
+    "quoteVi": "ACR 2020 khuyến cáo có điều kiện KHÔNG thêm hoặc chuyển thuốc hạ mỡ máu sang fenofibrate chỉ vì mục đích hạ acid uric ở bệnh nhân gút, bất kể mức độ hoạt động bệnh.",
+    "cor": "conditional",
+    "loe": "low"
+  },
+  {
+    "id": "acr.gout.2020.lifestyle_alcohol",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 14,
+    "printedPage": "755",
+    "locator": "Management of lifestyle factors (Table 7, PICO 41) / p. 755",
+    "quote": "Limiting alcohol intake is conditionally recommended for patients with gout, regardless of disease activity.",
+    "quoteVi": "Khuyến cáo hạn chế rượu bia (đặc biệt là bia và rượu mạnh) ở bệnh nhân gút.",
+    "cor": "conditional",
+    "loe": "low"
+  },
+  {
+    "id": "acr.gout.2020.lifestyle_purine",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 14,
+    "printedPage": "755",
+    "locator": "Management of lifestyle factors (Table 7, PICO 42) / p. 755",
+    "quote": "Limiting purine intake is conditionally recommended for patients with gout, regardless of disease activity.",
+    "quoteVi": "Khuyến cáo hạn chế thực phẩm giàu nhân purin (nội tạng động vật, thịt đỏ, hải sản) ở bệnh nhân gút.",
+    "cor": "conditional",
+    "loe": "low"
+  },
+  {
+    "id": "acr.gout.2020.lifestyle_hfcs",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 14,
+    "printedPage": "755",
+    "locator": "Management of lifestyle factors (Table 7, PICO 43) / p. 755",
+    "quote": "Limiting high-fructose corn syrup intake is conditionally recommended for patients with gout, regardless of disease activity.",
+    "quoteVi": "Khuyến cáo hạn chế đồ uống và thực phẩm chứa siro ngô hàm lượng fructose cao (nước ngọt có gas, bánh kẹo ngọt).",
+    "cor": "conditional",
+    "loe": "very_low"
+  },
+  {
+    "id": "acr.gout.2020.lifestyle_weight",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 14,
+    "printedPage": "755",
+    "locator": "Management of lifestyle factors (Table 7, PICO 46) / p. 755",
+    "quote": "Using a weight loss program (no specific program endorsed) is conditionally recommended for those patients with gout who are overweight/obese, regardless of disease activity.",
+    "quoteVi": "Khuyến cáo giảm cân đối với bệnh nhân gút thừa cân hoặc béo phì.",
+    "cor": "conditional",
+    "loe": "very_low"
+  },
+  {
+    "id": "acr.gout.2020.titration_weeks",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 17,
+    "printedPage": "758",
+    "locator": "ULT titration discussion / p. 758",
+    "quote": "The 2012 ACR Guidelines for the Management of Gout recommended titration every 2–5 weeks (5). As noted in the ACR Clinical Quality Measures for Gout, SU concentrations should be checked after each",
+    "quoteVi": "Chuẩn độ tăng liều thuốc hạ urat máu mỗi 2–5 tuần kèm xét nghiệm kiểm tra nồng độ acid uric huyết thanh sau mỗi bước chỉnh liều."
+  },
+  {
+    "id": "eular.gout.2016.allopurinol_titration",
+    "sourceId": "eular_2016_gout",
+    "pdfPage": 3,
+    "printedPage": "31",
+    "locator": "Table 1, Recommendation 8 / p. 31",
+    "quote": "In patients with normal kidney function, allopurinol is recommended for first-line ULT, starting at a low dose (100 mg/day) and increasing by 100 mg increments every 2–4 weeks if required, to reach the uricaemia target. If the SUA target cannot be reached by an appropriate dose of allopurinol, allopurinol should be switched to febuxostat or a uricosuric or combined with a uricosuric.",
+    "quoteVi": "Ở người chức năng thận bình thường, allopurinol là thuốc khởi đầu hàng đầu, bắt đầu liều thấp 100 mg/ngày và tăng dần mỗi 100 mg sau mỗi 2–4 tuần để đạt đích urat; nếu không đạt đích có thể chuyển sang febuxostat hoặc phối hợp/đổi sang thuốc tăng thải urat.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "eular.gout.2016.flare_options",
+    "sourceId": "eular_2016_gout",
+    "pdfPage": 3,
+    "printedPage": "31",
+    "locator": "Table 1, Recommendation 2 / p. 31",
+    "quote": "Recommended first-line options for acute flares are colchicine (within 12 hours of flare onset) at a loading dose of 1 mg followed 1 hour later by 0.5 mg on day 1 and/or an NSAID (plus proton pump inhibitors if appropriate), oral corticosteroid (30 –35 mg/day of equivalent prednisolone for 3 –5 days) or articular aspiration and injection of corticosteroids.",
+    "quoteVi": "Lựa chọn hàng đầu cho cơn cấp là colchicine (trong vòng 12 giờ) liều nạp 1 mg sau đó 1 giờ dùng 0.5 mg; và/hoặc NSAID (kèm PPI nếu cần), corticoid uống (30–35 mg/ngày tương đương prednisolone trong 3–5 ngày) hoặc chọc hút và tiêm corticoid nội khớp.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "eular.gout.2016.colchicine_nsaid_contra",
+    "sourceId": "eular_2016_gout",
+    "pdfPage": 3,
+    "printedPage": "31",
+    "locator": "Table 1, Recommendation 2 / p. 31",
+    "quote": "Colchicine and NSAIDs should be avoided in patients with severe renal impairment. Colchicine should not be given to patients receiving strong P-glycoprotein and/or CYP3A4 inhibitors such as cyclosporin or clarithromycin.",
+    "quoteVi": "Tránh dùng colchicine và NSAID ở bệnh nhân suy thận nặng. Không dùng colchicine cho bệnh nhân đang dùng thuốc ức chế mạnh P-gp và/hoặc CYP3A4 như cyclosporin hoặc clarithromycin.",
+    "cor": "strong",
+    "loe": "C"
+  },
+  {
+    "id": "eular.gout.2016.il1_blockers_flare",
+    "sourceId": "eular_2016_gout",
+    "pdfPage": 3,
+    "printedPage": "31",
+    "locator": "Table 1, Recommendation 3 / p. 31",
+    "quote": "In patients with frequent flares and contraindications to colchicine, NSAIDs and corticosteroid (oral and injectable), IL-1 blockers should be considered for treating flares. Current infection is a contraindication to the use of IL-1 blockers.",
+    "quoteVi": "Ở bệnh nhân gút tái phát nhiều đợt có chống chỉ định với cả colchicine, NSAID và corticoid (uống và tiêm), cân nhắc dùng thuốc ức chế IL-1 (anakinra, canakinumab); chống chỉ định khi đang có nhiễm trùng tiến triển.",
+    "cor": "conditional",
+    "loe": "A"
+  },
+  {
+    "id": "eular.gout.2016.flare_prophylaxis",
+    "sourceId": "eular_2016_gout",
+    "pdfPage": 3,
+    "printedPage": "31",
+    "locator": "Table 1, Recommendation 4 / p. 31",
+    "quote": "Prophylaxis is recommended during the first 6 months of ULT. Recommended prophylactic treatment is colchicine, 0.5 –1 mg/day, a dose that should be reduced in patients with renal impairment. In cases of renal impairment or statin treatment, patients and physicians should be aware of potential neurotoxicity and/or muscular toxicity with prophylactic colchicine.",
+    "quoteVi": "Dự phòng cơn bùng phát được khuyến cáo trong 6 tháng đầu dùng ULT bằng colchicine 0.5–1 mg/ngày (giảm liều khi suy thận); lưu ý nguy cơ độc tính thần kinh–cơ khi suy thận hoặc dùng kèm statin.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "eular.gout.2016.early_ult_young_high_sua",
+    "sourceId": "eular_2016_gout",
+    "pdfPage": 3,
+    "printedPage": "31",
+    "locator": "Table 1, Recommendation 5 / p. 31",
+    "quote": "Initiation of ULT is recommended close to the time of first diagnosis in patients presenting at a young age (<40 years) or with a very high SUA level (>8.0 mg/dL; 480 mmol/L) and/or comorbidities (renal impairment, hypertension, ischaemic heart disease, heart failure).",
+    "quoteVi": "EULAR 2016 khuyến cáo khởi trị ULT sớm ngay từ lần chẩn đoán đầu tiên nếu bệnh nhân trẻ tuổi (< 40 tuổi) hoặc acid uric rất cao (> 8.0 mg/dL; 480 µmol/L) và/hoặc có bệnh đồng mắc (suy thận, tăng huyết áp, bệnh tim thiếu máu cục bộ, suy tim).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "eular.gout.2016.benzbromarone_probenecid_dosing",
+    "sourceId": "eular_2016_gout",
+    "pdfPage": 7,
+    "printedPage": "35",
+    "locator": "Uricosurics discussion / p. 35",
+    "quote": "Uricosurics are recommended, where available, alone or in combination with allopurinol in patients without proper control with allopurinol alone. Benzbromarone (50–200 mg/day) is a more potent uricosuric as compared with probenecid (1– 2g / d a y ) .155",
+    "quoteVi": "Benzbromarone (50–200 mg/ngày) có hiệu lực tăng thải urat mạnh hơn probenecid (1–2 g/ngày), có thể dùng đơn trị hoặc phối hợp allopurinol."
+  },
+  {
+    "id": "eular.gout.2016.benzbromarone_egfr30",
+    "sourceId": "eular_2016_gout",
+    "pdfPage": 3,
+    "printedPage": "31",
+    "locator": "Table 1, Recommendation 9 / p. 31",
+    "quote": "In patients with renal impairment, the allopurinol maximum dosage should be adjusted to creatinine clearance. If the SUA target cannot be achieved at this dose, the patient should be switched to febuxostat or given benzbromarone with or without allopurinol, except in patients with estimated glomerular filtration rate <30 mL/min.",
+    "quoteVi": "Ở người suy thận, EULAR 2016 khuyến cáo giới hạn liều tối đa allopurinol theo độ thanh thải creatinin; nếu chưa đạt đích urat thì chuyển sang febuxostat hoặc dùng benzbromarone (trừ khi eGFR < 30 mL/phút chống chỉ định).",
+    "cor": "strong",
+    "loe": "C"
+  },
+  {
+    "id": "eular.gout.2016.benzbromarone_hepatic_spc",
+    "sourceId": "eular_2016_gout",
+    "pdfPage": 8,
+    "printedPage": "36",
+    "locator": "Recommendation 9 discussion / p. 36",
+    "quote": "benzbromarone is not recommended for use in patients with eGFR <30 mL/min, but can be used in patients with moderate renal impairment 171 172 because it is predominately metabolised by the liver.",
+    "quoteVi": "Benzbromarone không khuyến cáo khi eGFR < 30 mL/phút và chuyển hóa chủ yếu qua gan (cần kiểm soát chặt chức năng gan và tuân thủ chống chỉ định theo Tờ thông tin sản phẩm SmPC địa phương)."
+  },
+  {
+    "id": "eular.gout.2016.pegloticase_refractory",
+    "sourceId": "eular_2016_gout",
+    "pdfPage": 3,
+    "printedPage": "31",
+    "locator": "Table 1, Recommendation 10 / p. 31",
+    "quote": "In patients with crystal-proven, severe debilitating chronic tophaceous gout and poor quality of life, in whom the SUA target cannot be reached with any other available drug at the maximal dosage (including combinations), pegloticase is indicated.",
+    "quoteVi": "Ở bệnh nhân gút mạn có tophi nặng gây tàn phế, chất lượng sống kém, không đạt đích acid uric với mọi thuốc hiện có ở liều tối đa (kể cả phối hợp), chỉ định pegloticase.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "eular.gout.2016.comorbid_meds_losartan_ccb",
+    "sourceId": "eular_2016_gout",
+    "pdfPage": 3,
+    "printedPage": "31",
+    "locator": "Table 1, Recommendation 11 / p. 31",
+    "quote": "When gout occurs in a patient receiving loop or thiazide diuretics, substitute the diuretic if possible; for hypertension consider losartan or calcium channel blockers; for hyperlipidaemia, consider a statin or fenofibrate.",
+    "quoteVi": "Khi xảy ra gút ở người đang dùng lợi tiểu quai hoặc thiazide, cân nhắc đổi thuốc lợi tiểu nếu khả thi; đối với tăng huyết áp ưu tiên losartan hoặc chẹn kênh canxi; đối với rối loạn mỡ máu cân nhắc statin hoặc fenofibrate.",
+    "cor": "conditional",
+    "loe": "C"
+  },
+  {
+    "id": "eular.gout.2016.colchicine_gfr30_avoid",
+    "sourceId": "eular_2016_gout",
+    "pdfPage": 5,
+    "printedPage": "33",
+    "locator": "Management of flare / p. 33",
+    "quote": "The safe use of colchicine in patients with severe renal impairment (GFR <30 mL/min) has not been established. Because colchicine clearance is decreased in patients with severe renal impairment, 74 75 the group considered that it should be avoided in these patients",
+    "quoteVi": "Độ an toàn của colchicine ở người suy thận nặng (GFR < 30 mL/phút) chưa được xác lập; do độ thanh thải giảm mạnh, EULAR khuyến cáo tránh dùng colchicine ở nhóm bệnh nhân này."
+  },
+  {
+    "id": "eular.gout.2016.cyp3a4_list",
+    "sourceId": "eular_2016_gout",
+    "pdfPage": 5,
+    "printedPage": "33",
+    "locator": "Figure 1 Management of acute flare / p. 33",
+    "quote": "Strong P-glycoprotein or CYP3A4 inhibitors are cyclosporin, clarithromycin, ketoconazole and ritonavir.",
+    "quoteVi": "Các thuốc ức chế mạnh P-glycoprotein hoặc CYP3A4 gồm cyclosporin, clarithromycin, ketoconazole và ritonavir."
+  },
+  {
+    "id": "eular.gout.2016.naproxen_flare",
+    "sourceId": "eular_2016_gout",
+    "pdfPage": 5,
+    "printedPage": "33",
+    "locator": "Management of flare / p. 33",
+    "quote": "that prednisolone (35 mg/day for 5 days) was equivalent to naproxen (500 mg twice a day for 5 days) for treating ﬂare.",
+    "quoteVi": "Prednisolone (35 mg/ngày trong 5 ngày) có hiệu quả tương đương naproxen (500 mg x 2 lần/ngày trong 5 ngày) trong điều trị cơn gút cấp."
+  },
+  {
+    "id": "eular.gout.2016.naproxen_prophylaxis",
+    "sourceId": "eular_2016_gout",
+    "pdfPage": 6,
+    "printedPage": "34",
+    "locator": "Prophylaxis against flares / p. 34",
+    "quote": "low-dose colchicine (colchicine, 0.6 mg/day) or low-dose NSAID (naproxen, 250 mg twice daily) for up to 6 months appeared to provide greater bene ﬁt",
+    "quoteVi": "Dự phòng bằng colchicine liều thấp (0.6 mg/ngày) hoặc NSAID liều thấp (naproxen 250 mg x 2 lần/ngày) tới 6 tháng mang lại lợi ích vượt trội."
+  },
+  {
+    "id": "kdigo.gout.2024.rec_3_14_1",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 46,
+    "printedPage": "S161",
+    "locator": "Recommendation 3.14.1 / p. S161",
+    "quote": "Recommendation 3.14.1: We recommend people with CKD and symptomatic hyperuricemia should be offered uric acid –lowering intervention (1C).",
+    "quoteVi": "Khuyến cáo điều trị hạ acid uric máu cho người bệnh thận mạn có tăng acid uric máu có triệu chứng (gút) (1C).",
+    "cor": "1",
+    "loe": "C"
+  },
+  {
+    "id": "kdigo.gout.2024.ckd_first_flare",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 46,
+    "printedPage": "S161",
+    "locator": "Practice Point 3.14.1 / p. S161",
+    "quote": "Practice Point 3.14.1: Consider initiating uric acid– lowering therapy for people with CKD after their ﬁrst episode of gout (particularly where there is no avoidable precipitant or serum uric acid concentration is >9 mg/dl [535 mmol/l]).",
+    "quoteVi": "Cân nhắc khởi trị thuốc hạ acid uric cho người bệnh CKD sau cơn gút đầu tiên (đặc biệt khi acid uric máu > 9 mg/dL [535 µmol/L])."
+  },
+  {
+    "id": "kdigo.gout.2024.xoi_preference",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 46,
+    "printedPage": "S161",
+    "locator": "Practice Point 3.14.2 / p. S161",
+    "quote": "Practice Point 3.14.2: Prescribe xanthine oxidase inhibitors in preference to uricosuric agents in people with CKD and symptomatic hyperuricemia.",
+    "quoteVi": "Kê đơn thuốc ức chế xanthine oxidase ưu tiên hơn thuốc tăng thải urat qua nước tiểu ở người có CKD và tăng acid uric máu có triệu chứng."
+  },
+  {
+    "id": "kdigo.gout.2024.acute_flare_ckd",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 46,
+    "printedPage": "S161",
+    "locator": "Practice Point 3.14.3 / p. S161",
+    "quote": "Practice Point 3.14.3: For symptomatic treatment of acute gout in CKD, low-dose colchicine or intra-articular/oral glu- cocorticoids are preferable to nonsteroidal anti-in ﬂammatory drugs (NSAIDs).",
+    "quoteVi": "Để điều trị triệu chứng cơn gút cấp ở người bệnh CKD, colchicine liều thấp hoặc glucocorticoid uống/tiêm nội khớp được ưu tiên hơn NSAID."
+  },
+  {
+    "id": "kdigo.gout.2024.rec_3_14_2_asymptomatic",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 46,
+    "printedPage": "S161",
+    "locator": "Recommendation 3.14.2 / p. S161",
+    "quote": "Recommendation 3.14.2: We suggest not using agents to lower serum uric acid in people with CKD and asymptomatic hyperuricemia to delay CKD progression (2D).",
+    "quoteVi": "Đề xuất không dùng thuốc hạ acid uric máu ở người bệnh CKD có tăng acid uric máu không triệu chứng chỉ nhằm làm chậm tiến triển bệnh thận mạn (2D).",
+    "cor": "2",
+    "loe": "D"
+  },
+  {
+    "id": "kdigo.gout.2024.sglt2i_urate_benefit",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 116,
+    "printedPage": "S231",
+    "locator": "Section 3.14 Hyperuricemia rationale / p. S231",
+    "quote": "In people with T2D, post hoc analyses from 2 large, placebo-controlled RCTs have reported that SGL T2i reduce serum uric acid concentration and appeared to reduce gout adverse event reports or initiations of uric acid –lowering therapy.",
+    "quoteVi": "Ở người bệnh ĐTĐ típ 2, các phân tích từ các thử nghiệm ngẫu nhiên lớn cho thấy thuốc ức chế SGLT2 làm giảm nồng độ acid uric máu và giảm biến cố gút cũng như nhu cầu khởi trị thuốc hạ urat."
+  },
+  {
+    "id": "kdigo.gout.2024.hyperkalemia_k_5_0",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 45,
+    "printedPage": "S160",
+    "locator": "Figure 26 Serum potassium monitoring / p. S160",
+    "quote": "Consider reinitiation if/when K+ ≤5.0 mmol/l",
+    "quoteVi": "Ngưỡng kali huyết thanh an toàn ≤ 5.0 mmol/L khi cân nhắc khởi trị/dùng lại thuốc tác động trục RAA–aldosterone tránh tăng kali máu."
+  },
+  {
+    "id": "byt.ckd.2024.gout_ult_table21",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 53,
+    "printedPage": "52",
+    "locator": "Bảng 21 Liều khuyến cáo thuốc hạ acid uric máu ở BTM / tr. 52",
+    "quote": "Allopurinol Ức chế XO (iXO) Khởi đầu: 50-100 mg/ngày Tối đa: 800mg/ngày MLCT ≥ 30 Khởi đầu 50-100 mg/ngày MLCT < 30 Khởi đầu 50 mg/ngày HD: khởi đầu 100 mg sau lọc máu PD: khởi đầu 50 mg/ngày Febuxostatb Ức chế XO Khởi đầu: 40mg/ngày Tối đa: 120mg/ngày Chưa đủ dữ liệu ở bn với MLCT < 30 ml/phút Chưa đủ dữ liệu Các thuốc tăng đào thải acid uric qua nước tiểu Chỉnh liều tùy theo MLCT, cần dùng phối hợp với iXO Chống chỉ định",
+    "quoteVi": "BYT 2024 (Bảng 21): Allopurinol khởi đầu 50–100 mg/ngày (MLCT < 30: 50 mg/ngày; HD: 100 mg sau lọc máu; PD: 50 mg/ngày; tối đa 800 mg/ngày); Febuxostat khởi đầu 40 mg/ngày, tối đa 120 mg/ngày, chưa đủ dữ liệu ở MLCT < 30 mL/phút và lọc máu; nhóm tăng thải urat chống chỉ định khi lọc máu."
+  },
+  {
+    "id": "byt.ckd.2024.gout_flare_table22",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 53,
+    "printedPage": "52",
+    "locator": "Bảng 22 Thuốc điều trị cơn gút cấp trong BTM / tr. 52",
+    "quote": "Bảng 22. Thuốc chỉ định điều trị cơn gút cấp và chỉnh liều trong BTM Thuốc Chức năng thận bình thường BTM (G3-G5) Lọc máu Colchicine 1-2 mg/ngày, tối đa 2 mg/ngày. Không vượt quá 6 mg trong 4 ngày GĐ G3 giảm nửa liều và tăng khoảng cách Chống chỉ định NSAIDs Bất cứ loại nào với liều thông thường MLCT< 30: chống chỉ định GĐ G3 dùng thận trọng và giảm liều",
+    "quoteVi": "BYT 2024 (Bảng 22): Trong cơn gút cấp ở BTM, Colchicine giai đoạn G3 giảm nửa liều và tăng khoảng cách, lọc máu chống chỉ định; NSAID chống chỉ định khi MLCT < 30 mL/phút, giai đoạn G3 dùng thận trọng; Glucocorticoid và ức chế IL-1 (Anakinra 100 mg, Canakinumab 150 mg) dùng khi chống chỉ định Colchicine/NSAID."
+  },
+  {
+    "id": "byt.gout.2014.diagnostic_bennet_wood",
+    "sourceId": "byt_361_2014_gout",
+    "pdfPage": 91,
+    "printedPage": "91",
+    "locator": "Mục 3.3 Tiêu chuẩn Bennet và Wood / tr. 91",
+    "quote": "Tiêu chu ẩn Bennet và Wood (1968): Độ nh ạy 70%, độ đặc hi ệu 82,7% \nTiêu chu ẩn Bennet và Wood (1968)  được áp d ụng r ộng rãi nh ất ở Vi ệt Nam do d ễ \nnh ớ và phù h ợp v ới điều ki ện thi ếu xét nghi ệm.",
+    "quoteVi": "Tiêu chuẩn Bennet và Wood (1968) được áp dụng rộng rãi nhất ở Việt Nam do dễ nhớ và phù hợp với điều kiện thiếu xét nghiệm."
+  },
+  {
+    "id": "byt.gout.2014.target_urate",
+    "sourceId": "byt_361_2014_gout",
+    "pdfPage": 92,
+    "printedPage": "92",
+    "locator": "Mục 4.1 Nguyên tắc chung / tr. 92",
+    "quote": "Dự phòng tái phát c ơn gút, d ự phòng l ắng đọng urat trong các t ổ ch ức và d ự phòng bi ến ch ứng thông qua điều tr ị h ội ch ứng t ăng acid uric máu v ới m ục tiêu ki ểm soát acid uric máu d ưới 360 µmol/l (60 mg/l) v ới gút ch ưa có h ạt tô phi và d ưới 320 µmol/l (50 mg/l) khi gút có h ạt tô phi.",
+    "quoteVi": "Mục tiêu kiểm soát acid uric máu dưới 360 µmol/l với gút chưa có tophi và dưới 320 µmol/l khi có hạt tophi (BYT 361/2014)."
+  },
+  {
+    "id": "byt.gout.2014.allopurinol_start",
+    "sourceId": "byt_361_2014_gout",
+    "pdfPage": 93,
+    "printedPage": "93",
+    "locator": "Mục 4.2.2 Điều trị nội khoa - Allopurinol / tr. 93",
+    "quote": "Allopurinol: Li ều l ượng h ằng ngày d ựa vào n ồng độ acid uric máu. Li ều kh ởi đầu: Allopurinol 100mg/ngày trong vòng 1 tu ần, sau đó t ăng 200-300mg/ngày. N ồng độ acid uric máu th ường tr ở v ề bình th ường v ới li ều 200-300mg/ngày.",
+    "quoteVi": "Allopurinol: Liều khởi đầu 100mg/ngày trong vòng 1 tuần, sau đó tăng 200-300mg/ngày."
+  },
+  {
+    "id": "byt.gout.2014.ult_after_flare",
+    "sourceId": "byt_361_2014_gout",
+    "pdfPage": 93,
+    "printedPage": "93",
+    "locator": "Mục 4.2.2 Allopurinol / tr. 93",
+    "quote": "Không nên ch ỉ định trong trong c ơn gút c ấp mà nên ch ỉ định khi tình tr ạng viêm kh ớp đã thuyên gi ảm, sau 1-2 tu ần s ử d ụng colchicin.",
+    "quoteVi": "Theo BYT 361/2014, allopurinol không nên mở đầu ngay trong cơn gút cấp mà nên chỉ định khi tình trạng viêm khớp cấp đã thuyên giảm, sau 1–2 tuần sử dụng colchicin."
+  },
+  {
+    "id": "byt.gout.2014.colchicine_dosing",
+    "sourceId": "byt_361_2014_gout",
+    "pdfPage": 93,
+    "printedPage": "93",
+    "locator": "Mục 4.2.2 Colchicin / tr. 93",
+    "quote": "Dự phòng tái phát: 0,5- 1,2 mg u ống 1-2 l ần/ ngày, trung bình 1mg/ ngày kéo dài ít nh ất 6 tháng. C ần chú ý gi ảm li ều ở b ệnh nhân có b ệnh th ận m ạn tính, l ớn tu ổi (trên 70 tu ổi)…",
+    "quoteVi": "Dự phòng tái phát: 0,5–1,2 mg uống 1–2 lần/ngày, trung bình 1 mg/ngày kéo dài ít nhất 6 tháng. Chú ý giảm liều ở người CKD, lớn tuổi (> 70 tuổi)."
+  },
+  {
+    "id": "byt.gout.2014.nsaid_agents",
+    "sourceId": "byt_361_2014_gout",
+    "pdfPage": 93,
+    "printedPage": "93",
+    "locator": "Mục 4.2.2 Thuốc kháng viêm không steroid / tr. 93",
+    "quote": "Có th ể dùng m ột trong các thu ốc sau: Indometacin, Naproxen, Ibuprofen, Ketoprofen, Piroxicam, Diclofena, các nhóm thu ốc ức ch ế ch ọn l ọc COX-2 (meloxicam, celecoxib, etoricoxib...). L ưu ý các ch ống ch ỉ định c ủa thu ốc này (viêm loét d ạ dày tá tràng, suy th ận…).",
+    "quoteVi": "Có thể dùng Indometacin, Naproxen, Ibuprofen, Diclofenac, hoặc ức chế chọn lọc COX-2 (celecoxib, etoricoxib...). Lưu ý các chống chỉ định (viêm loét dạ dày tá tràng, suy thận…)."
+  },
+  {
+    "id": "byt.gout.2014.uricosuric_contra",
+    "sourceId": "byt_361_2014_gout",
+    "pdfPage": 94,
+    "printedPage": "94",
+    "locator": "Mục 4.2.2 Nhóm thuốc tăng thải acid uric / tr. 94",
+    "quote": "Probenecid (250mg- 3g/ngày), Sunfinpyrazol (100-800mg/ngày), Benzbriodaron, Benzbromaron… Ch ỉ định nhóm này c ần xét nghi ệm acid uric ni ệu. Ch ống ch ỉ định khi acid uric ni ệu trên 600 mg/24 gi ờ, suy th ận, s ỏi th ận, ng ười cao tu ổi, gút m ạn có h ạt tophi.",
+    "quoteVi": "Thuốc tăng thải acid uric (Probenecid, Benzbromaron): theo BYT 361/2014 cần xét nghiệm acid uric niệu và chống chỉ định khi acid uric niệu > 600 mg/24h, suy thận, sỏi thận, người cao tuổi, gút mạn có hạt tophi."
+  },
+  {
+    "id": "byt.gout.2014.nsaid_contra_p198",
+    "sourceId": "byt_361_2014_gout",
+    "pdfPage": 198,
+    "printedPage": "198",
+    "locator": "Mục 3.2 Chống chỉ định của thuốc chống viêm không steroid / tr. 198",
+    "quote": "3.2. Ch ống ch ỉ định của thu ốc ch ống viêm không steroid − Ch ống ch ỉ định tuy ệt đối: + Bệnh lý ch ảy máu không được ki ểm soát. + Ti ền s ử d ị ứng, m ẫn c ảm v ới thu ốc. + Loét d ạ dày tá tràng đang ti ến tri ển. + Suy t ế bào gan m ức độ v ừa đến n ặng. + Ph ụ n ữ có thai ba tháng đầu ho ặc ba tháng cu ối, ph ụ n ữ đang cho con bú.",
+    "quoteVi": "Chống chỉ định tuyệt đối của NSAID: bệnh lý chảy máu không kiểm soát, tiền sử dị ứng thuốc, loét dạ dày tá tràng tiến triển, suy tế bào gan vừa đến nặng, phụ nữ có thai 3 tháng đầu/cuối và đang cho con bú."
+  },
+  {
+    "id": "byt.gout.2014.nsaid_cv_aspirin_p199",
+    "sourceId": "byt_361_2014_gout",
+    "pdfPage": 199,
+    "printedPage": "199",
+    "locator": "Mục 3.3 Nguyên tắc sử dụng NSAID ở đối tượng nguy cơ tiêu hóa, tim mạch / tr. 199",
+    "quote": "+ Nếu dùng aspirin, u ống aspirin tr ước khi u ống thu ốc ch ống viêm không steroid ít nh ất 02 gi ờ ( đặc biệt n ếu là ibuprofen; n ếu celecoxib thì không c ần). + Không s ử d ụng thu ốc ch ống viêm không steroid trong vòng 3-6 tháng n ếu có bệnh lý tim m ạch c ấp ho ặc can thi ệp tim m ạch.",
+    "quoteVi": "Nếu đang dùng aspirin liều thấp, phải uống aspirin trước NSAID ít nhất 2 giờ (đặc biệt với ibuprofen); không dùng NSAID trong vòng 3–6 tháng sau biến cố hoặc can thiệp tim mạch cấp."
+  },
+  {
+    "id": "byt.gout.2014.nsaid_dosing_p201",
+    "sourceId": "byt_361_2014_gout",
+    "pdfPage": 201,
+    "printedPage": "201",
+    "locator": "Mục 4 Bảng liều và ví dụ một số thuốc NSAID / tr. 201",
+    "quote": "− Celecoxib: Viên 200 mg li ều 1 đến 2 viên/ngày, u ống sau ăn no. Không nên dùng cho b ệnh nhân có ti ền s ử b ệnh tim m ạch và th ận tr ọng h ơn ở ng ười cao tu ổi. − Etoricoxib: Tùy theo ch ỉ định. V ới gút c ấp có th ể u ống 1 viên 90 mg ho ặc 120 mg trong vài ngày đầu (không quá 8 ngày). V ới các b ệnh khác, dùng li ều 30-45- 60-90 mg m ỗi ngày (lúc no). Nên tránh ch ỉ định cho b ệnh nhân có ti ền s ử b ệnh tim m ạch và th ận tr ọng h ơn ở ng ười cao tu ổi.",
+    "quoteVi": "Liều NSAID theo BYT 361/2014: Diclofenac 50–150 mg/24h, Naproxen 250–1000 mg/24h, Ibuprofen 400–1200 mg/24h, Celecoxib 200 mg x 1–2 viên/ngày, Etoricoxib gút cấp 90–120 mg/ngày (không quá 8 ngày); tránh chỉ định COX-2i cho người có bệnh lý tim mạch."
+  },
+  {
+    "id": "fda.allopurinol.start_and_max",
+    "sourceId": "fda_allopurinol",
+    "pdfPage": 8,
+    "printedPage": "8",
+    "locator": "Dosage and Administration / p. 8",
+    "quote": "The minimal effective dosage is 100 to 200 mg daily and the maximal recommended dosage is 800 mg daily. To reduce the possibility of flare-up of acute gouty attacks, it is recommended that the patient start with a low dose of ZYLOPRIM (100 mg daily) and increase at weekly intervals by 100 mg until a serum uric acid level of 6 mg/dL or less is attained but without exceeding the maximal recommended dosage.",
+    "quoteVi": "Khởi đầu liều thấp 100 mg/ngày và tăng liều 100 mg mỗi tuần cho đến khi nồng độ acid uric đạt ≤ 6 mg/dL nhưng không vượt quá liều tối đa khuyến cáo 800 mg/ngày (liều > 300 mg/ngày nên chia liều)."
+  },
+  {
+    "id": "fda.allopurinol.renal_dosing",
+    "sourceId": "fda_allopurinol",
+    "pdfPage": 9,
+    "printedPage": "9",
+    "locator": "Patients with Impaired Renal Function / p. 9",
+    "quote": "With a creatinine clearance of 10 to 20 mL/min, a daily dosage of 200 mg of ZYLOPRIM is suitable. When the creatinine clearance is less than 10 mL/min, the daily dosage should not exceed 100 mg. With extreme renal impairment (creatinine clearance less than 3 mL/min) the interval between doses may also need to be lengthened.",
+    "quoteVi": "Chỉnh liều theo độ thanh thải creatinin: CrCl 10–20 mL/phút dùng 200 mg/ngày; CrCl < 10 mL/phút tối đa 100 mg/ngày; suy thận cực nặng CrCl < 3 mL/phút cần giãn thêm khoảng cách giữa các liều."
+  },
+  {
+    "id": "fda.allopurinol.hepatic_and_thiazide",
+    "sourceId": "fda_allopurinol",
+    "pdfPage": 4,
+    "printedPage": "4",
+    "locator": "Warnings / p. 4",
+    "quote": "In patients with pre-existing liver disease, periodic liver function tests are recommended during the early stages of therapy. Due to the occasional occurrence of drowsiness, patients should be alerted to the need for due precaution when engaging in activities where alertness is mandatory. The occurrence of hypersensitivity reactions to ZYLOPRIM may be increased in patients with decreased renal function receiving thiazides and ZYLOPRIM concurrently.",
+    "quoteVi": "Ở người có bệnh gan từ trước cần xét nghiệm chức năng gan định kỳ giai đoạn đầu điều trị; nguy cơ phản ứng quá mẫn với allopurinol tăng lên ở bệnh nhân suy giảm chức năng thận dùng đồng thời lợi tiểu thiazide."
+  },
+  {
+    "id": "fda.allopurinol.azathioprine_interaction",
+    "sourceId": "fda_allopurinol",
+    "pdfPage": 3,
+    "printedPage": "3",
+    "locator": "Warnings - Drug Interactions / p. 3",
+    "quote": "In patients receiving PURINETHOL (mercaptopurine) or IMURAN (azathioprine), the concomitant administration of 300 to 600 mg of ZYLOPRIM per day will require a reduction in dose to approximately one-third to one-fourth of the usual dose of mercaptopurine or azathioprine.",
+    "quoteVi": "Ở bệnh nhân dùng azathioprine hoặc mercaptopurine, dùng allopurinol bắt buộc phải giảm liều azathioprine/6-MP xuống còn 1/3 đến 1/4 liều thông thường để tránh ức chế tủy xương nghiêm trọng."
+  },
+  {
+    "id": "fda.allopurinol.skin_rash_scar",
+    "sourceId": "fda_allopurinol",
+    "pdfPage": 3,
+    "printedPage": "3",
+    "locator": "Warnings / p. 3",
+    "quote": "ZYLOPRIM SHOULD BE DISCONTINUED AT THE FIRST APPEARANCE OF SKIN RASH OR OTHER SIGNS WHICH MAY INDICATE AN ALLERGIC REACTION. In some instances a skin rash may be followed by more severe hypersensitivity reactions such as exfoliative, urticarial, and purpuric lesions, as well as Stevens-Johnson syndrome",
+    "quoteVi": "Phải ngừng ngay allopurinol khi xuất hiện ban da hoặc dấu hiệu phản ứng dị ứng đầu tiên vì có thể dẫn tới hội chứng Stevens-Johnson, viêm mạch và nhiễm độc gan đe dọa tính mạng."
+  },
+  {
+    "id": "fda.allopurinol.pregnancy",
+    "sourceId": "fda_allopurinol",
+    "pdfPage": 6,
+    "printedPage": "6",
+    "locator": "Pregnancy Category C / p. 6",
+    "quote": "Because animal reproduction studies are not always predictive of human response, this drug should be used during pregnancy only if clearly needed. Experience with ZYLOPRIM during human pregnancy has been limited",
+    "quoteVi": "Phân loại thai kỳ C (FDA): Chưa có nghiên cứu đầy đủ có đối chứng trên phụ nữ mang thai; chỉ sử dụng allopurinol trong thai kỳ khi thật sự cần thiết."
+  },
+  {
+    "id": "fda.allopurinol.lactation",
+    "sourceId": "fda_allopurinol",
+    "pdfPage": 6,
+    "printedPage": "6",
+    "locator": "Nursing Mothers / p. 6",
+    "quote": "Allopurinol and oxipurinol have been found in the milk of a mother who was receiving ZYLOPRIM. Since the effect of allopurinol on the nursing infant is unknown, caution should be exercised when ZYLOPRIM is administered to a nursing woman.",
+    "quoteVi": "Allopurinol và oxipurinol bài tiết vào sữa mẹ; do chưa rõ ảnh hưởng trên trẻ bú mẹ nên cần thận trọng."
+  },
+  {
+    "id": "fda.febuxostat.boxed_warning",
+    "sourceId": "fda_febuxostat",
+    "pdfPage": 1,
+    "printedPage": "1",
+    "locator": "Boxed Warning / p. 1",
+    "quote": "Gout patients with established cardiovascular (CV) disease treated with ULORIC had a higher rate of CV death compared to those treated with allopurinol in a CV outcomes study.",
+    "quoteVi": "Cảnh báo hộp đen FDA: Bệnh nhân gút có bệnh tim mạch đã xác lập điều trị bằng febuxostat có tỷ lệ tử vong tim mạch cao hơn so với allopurinol."
+  },
+  {
+    "id": "fda.febuxostat.dosage",
+    "sourceId": "fda_febuxostat",
+    "pdfPage": 1,
+    "printedPage": "1",
+    "locator": "Dosage and Administration (2.1) / p. 1",
+    "quote": "Recommended dosage is 40 mg or 80 mg once daily. The recommended starting dosage is 40 mg once daily. For patients who do not achieve a serum uric acid (sUA) less than 6 mg/dL after 2 weeks, the recommended dosage is 80 mg once daily.",
+    "quoteVi": "Liều khởi đầu khuyến cáo: 40 mg x 1 lần/ngày. Nếu acid uric máu chưa đạt < 6 mg/dL sau 2 tuần, tăng liều lên 80 mg x 1 lần/ngày."
+  },
+  {
+    "id": "fda.febuxostat.severe_renal",
+    "sourceId": "fda_febuxostat",
+    "pdfPage": 1,
+    "printedPage": "1",
+    "locator": "Dosage in Renal Impairment (2.2, 8.6) / p. 1",
+    "quote": "Patients with severe renal impairment: Limit the dosage to 40 mg once daily.",
+    "quoteVi": "Bệnh nhân suy thận nặng (CrCl < 30 mL/phút): Giới hạn liều tối đa 40 mg x 1 lần/ngày."
+  },
+  {
+    "id": "fda.febuxostat.renal_clcr_30",
+    "sourceId": "fda_febuxostat",
+    "pdfPage": 10,
+    "printedPage": "10",
+    "locator": "Section 8.6 Renal Impairment / p. 10",
+    "quote": "No dose adjustment is necessary in patients with mild to moderate renal impairment (Cl 30 to 89 mL/min). For patients with severe renal impairment (Cl 15 to 29 mL/min)",
+    "quoteVi": "Không cần chỉnh liều febuxostat ở suy thận nhẹ–vừa (CrCl 30–89 mL/phút); suy thận nặng được định nghĩa là CrCl 15–29 mL/phút (< 30 mL/phút) cần giới hạn tối đa 40 mg/ngày."
+  },
+  {
+    "id": "fda.febuxostat.dialysis_hepatic",
+    "sourceId": "fda_febuxostat",
+    "pdfPage": 14,
+    "printedPage": "14",
+    "locator": "Section 12.3 Pharmacokinetics in Renal & Hepatic Impairment / p. 14",
+    "quote": "ULORIC has not been studied in end stage renal impairment patients who are on dialysis. Patients with Hepatic Impairment Following multiple 80 mg doses of ULORIC in patients with mild (Child-Pugh Class A) or moderate (Child-Pugh Class B) hepatic impairment, an average of 20% to 30% increase was observed",
+    "quoteVi": "Febuxostat chưa được nghiên cứu ở bệnh nhân suy thận giai đoạn cuối lọc máu; không cần chỉnh liều ở suy gan nhẹ–vừa (Child-Pugh A/B) nhưng chưa có nghiên cứu ở suy gan nặng (Child-Pugh C), cần thận trọng và ngừng thuốc nếu có tổn thương gan."
+  },
+  {
+    "id": "fda.febuxostat.pregnancy",
+    "sourceId": "fda_febuxostat",
+    "pdfPage": 9,
+    "printedPage": "9",
+    "locator": "Section 8.1 Pregnancy / p. 9",
+    "quote": "Limited available data with ULORIC use in pregnant women are insufficient to inform a drug associated risk of adverse developmental outcomes.",
+    "quoteVi": "Dữ liệu trên phụ nữ mang thai chưa đầy đủ để xác định nguy cơ dị tật thai nhi liên quan đến thuốc; khuyến cáo tránh khởi trị/tạm ngừng trong thai kỳ."
+  },
+  {
+    "id": "fda.febuxostat.azathioprine_contra",
+    "sourceId": "fda_febuxostat",
+    "pdfPage": 4,
+    "printedPage": "4",
+    "locator": "Section 4 Contraindications / p. 4",
+    "quote": "ULORIC is contraindicated in patients being treated with azathioprine or mercaptopurine [see Drug Interactions (7) ] .",
+    "quoteVi": "Chống chỉ định tuyệt đối dùng febuxostat ở bệnh nhân đang điều trị bằng azathioprine hoặc mercaptopurine."
+  },
+  {
+    "id": "fda.febuxostat.lactation",
+    "sourceId": "fda_febuxostat",
+    "pdfPage": 10,
+    "printedPage": "10",
+    "locator": "Section 8.2 Lactation / p. 10",
+    "quote": "There are no data on the presence of febuxostat in human milk, the effects on the breastfed infant, or the effects on milk production. Febuxostat is present in rat milk. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for ULORIC",
+    "quoteVi": "Chưa có dữ liệu về sự bài tiết febuxostat qua sữa người (có bài tiết qua sữa chuột); cần cân nhắc lợi ích nuôi con bằng sữa mẹ và nhu cầu điều trị của người mẹ."
+  },
+  {
+    "id": "fda.colchicine.flare_treatment",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 1,
+    "printedPage": "1",
+    "locator": "Dosage and Administration (2.1) / p. 1",
+    "quote": "Treatment of Gout Flares: 1.2 mg (two tablets) at the first sign of a gout flare followed by 0.6 mg (one tablet) one hour later ( 2.1 ).",
+    "quoteVi": "Điều trị cơn gút cấp: 1.2 mg (2 viên 0.6 mg) khi có dấu hiệu đầu tiên của cơn, sau đó 1 giờ uống tiếp 0.6 mg (1 viên)."
+  },
+  {
+    "id": "fda.colchicine.prophylaxis_dosage",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 1,
+    "printedPage": "1",
+    "locator": "Prophylaxis of Gout Flares (2.1) / p. 1",
+    "quote": "Prophylaxis of Gout Flares: 0.6 mg once or twice daily in adults and adolescents older than 16 years of age ( 2.1 ). Maximum dose 1.2 mg/day.",
+    "quoteVi": "Dự phòng cơn cấp: 0.6 mg x 1–2 lần/ngày ở người lớn và thiếu niên > 16 tuổi (tối đa 1.2 mg/ngày)."
+  },
+  {
+    "id": "fda.colchicine.renal_and_cyp3a4",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 10,
+    "printedPage": "10",
+    "locator": "Section 4 Contraindications / p. 10",
+    "quote": "Patients with renal or hepatic impairment should not be given COLCRYS in conjunction with P-gp or strong CYP3A4 inhibitors (this includes all protease inhibitors except fosamprenavir). In these patients, life-threatening and fatal colchicine toxicity has been reported with colchicine taken in therapeutic doses.",
+    "quoteVi": "Chống chỉ định dùng colchicine cùng thuốc ức chế P-gp hoặc ức chế mạnh CYP3A4 ở người bệnh có suy giảm chức năng gan hoặc thận vì nguy cơ ngộ độc colchicine tử vong ngay ở liều điều trị."
+  },
+  {
+    "id": "fda.colchicine.severe_renal_prophylaxis",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 15,
+    "printedPage": "15",
+    "locator": "Section 8.6 Renal Impairment - Prophylaxis / p. 15",
+    "quote": "However, in patients with severe impairment, the starting dose should be 0.3 mg per day and any increase in dose should be done with close monitoring. For the prophylaxis of gout flares in patients undergoing dialysis, the starting doses should be 0.3 mg given twice a week with close monitoring",
+    "quoteVi": "Ở người suy thận nặng (CrCl < 30 mL/phút), liều dự phòng cơn gút khởi đầu là 0.3 mg/ngày theo dõi sát; nếu đang lọc máu, liều dự phòng tối đa 0.3 mg x 2 lần/tuần."
+  },
+  {
+    "id": "fda.colchicine.severe_renal_flare_repeat",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 15,
+    "printedPage": "15",
+    "locator": "Section 8.6 Renal Impairment - Treatment of Gout Flares / p. 15",
+    "quote": "However, in patients with severe impairment, while the dose does not need to be adjusted for the treatment of gout flares, a treatment course should be repeated no more than once every two weeks. For patients with gout flares requiring repeated courses, consideration should be given to alternate therapy. For patients undergoing dialysis, the total recommended dose for the treatment of gout flares should be reduced to a single dose of 0.6 mg (one tablet).",
+    "quoteVi": "Khi điều trị cơn gút cấp theo nhãn FDA ở suy thận nặng, không được lặp lại đợt colchicine sớm hơn 1 lần mỗi 2 tuần (14 ngày); ở người lọc máu chỉ dùng liều đơn 0.6 mg và ưu tiên liệu pháp thay thế."
+  },
+  {
+    "id": "fda.colchicine.statin_fibrate_myopathy",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 13,
+    "printedPage": "13",
+    "locator": "Section 7 Table 4 Other Potentially Significant Drug Interactions / p. 13",
+    "quote": "has resulted in myopathy and rhabdomyolysis (including a fatality) P-gp substrate; rhabdomyolysis has been Weigh the potential benefits and risks and carefully monitor patients for any signs or symptoms of muscle pain, tenderness, or weakness, particularly during initial therapy; monitoring CPK (creatine phosphokinase) will not necessarily prevent the occurrence of severe Other Lipid-Lowering Drugs: fibrates, gemfibrozil",
+    "quoteVi": "Phối hợp colchicine với nhóm statin hoặc fibrate/gemfibrozil làm tăng nguy cơ bệnh cơ và tiêu cơ vân cấp (đã có ca tử vong), đặc biệt khi kèm suy thận."
+  },
+  {
+    "id": "fda.colchicine.pregnancy",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 14,
+    "printedPage": "14",
+    "locator": "Section 8.1 Pregnancy / p. 14",
+    "quote": "Pregnancy Category C. There are no adequate and well-controlled studies with colchicine in pregnant women. Colchicine crosses the human placenta.",
+    "quoteVi": "Phân loại thai kỳ C (FDA): Colchicine qua nhau thai; chỉ sử dụng trong thai kỳ khi lợi ích vượt trội nguy cơ."
+  },
+  {
+    "id": "fda.colchicine.lactation",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 14,
+    "printedPage": "14",
+    "locator": "Section 8.3 Nursing Mothers / p. 14",
+    "quote": "Colchicine is excreted into human milk. Limited information suggests that exclusively breastfed infants receive less than 10 percent of the maternal weight-adjusted dose.",
+    "quoteVi": "Colchicine bài tiết vào sữa mẹ (< 10% liều hiệu chỉnh theo cân nặng mẹ); cần thận trọng và theo dõi trẻ bú mẹ."
+  },
+  {
+    "id": "fda.colchicine.cyp3a4_agents",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 2,
+    "printedPage": "2",
+    "locator": "Drug Interactions (2.4, 5.3, 7) / p. 2",
+    "quote": "Coadministration of P-gp and/or CYP3A4 inhibitors (e.g.,clarithromycin or cyclosporine) have been demonstrated to alter the concentration of colchicine.",
+    "quoteVi": "Dùng đồng thời thuốc ức chế P-gp (cyclosporine, ranolazine) và/hoặc CYP3A4 mạnh (clarithromycin, ketoconazole, itraconazole, ritonavir) làm tăng vọt nồng độ colchicine."
+  },
+  {
+    "id": "fda.colchicine.moderate_cyp3a4",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 6,
+    "printedPage": "6",
+    "locator": "Table 1 Drug Interactions - Moderate CYP3A4 Inhibitors / p. 6",
+    "quote": "Neuromuscular toxicity has been reported with diltiazem and verapamil interactions. 0.6 mg twice a day 0.6 mg once a day 0.3 mg twice a day or 0.6 mg once a day 0.3 mg once a day 1.2 mg (2 tablets) followed by 0.6 mg (1 tablet) 1 hour later. Dose to be repeated no earlier than 3 days. 1.2 mg (2 tablets) × 1 dose.",
+    "quoteVi": "Khi dùng cùng thuốc ức chế vừa CYP3A4 (diltiazem, verapamil, fluconazole, erythromycin): giảm liều dự phòng xuống 0.3 mg x 1–2 lần/ngày (hoặc 0.6 mg/ngày); liều cắt cơn cấp giảm còn 1.2 mg × 1 liều duy nhất, không lặp lại sớm hơn 3 ngày."
+  },
+  {
+    "id": "fda.celecoxib.boxed_contra_cv_gi",
+    "sourceId": "fda_celecoxib",
+    "pdfPage": 1,
+    "printedPage": "1",
+    "locator": "Boxed Warning Cardiovascular and GI Risk / p. 1",
+    "quote": "Nonsteroidal anti-inflammatory drugs (NSAIDs) cause an increased risk of serious cardiovascular thrombotic events, including myocardial infarction and stroke, which can be fatal. This risk may occur early in the treatment and may increase with duration of use. ( 5.1 ) CELEBREX is contraindicated in the setting of coronary artery bypass graft (CABG) surgery.",
+    "quoteVi": "Cảnh báo hộp đen nhóm NSAID: Tăng nguy cơ biến cố huyết khối tim mạch nghiêm trọng (nhồi máu cơ tim, đột quỵ) và xuất huyết/thủng đường tiêu hóa; chống chỉ định quanh phẫu thuật bắc cầu động mạch vành (CABG)."
+  },
+  {
+    "id": "fda.celecoxib.fetal_toxicity_pregnancy",
+    "sourceId": "fda_celecoxib",
+    "pdfPage": 12,
+    "printedPage": "12",
+    "locator": "Section 5.11 Fetal Toxicity / p. 12",
+    "quote": "Avoid use of NSAIDs, including CELEBREX, in pregnant women at about 30 weeks gestation and later. NSAIDs, including CELEBREX, increase the risk of premature closure of the fetal ductus arteriosus at approximately this gestational age. Oligohydramnios/Neonatal Renal Impairment Use of NSAIDs, including CELEBREX, at about 20 weeks gestation or later in pregnancy may cause fetal renal dysfunction leading to oligohydramnios and, in some cases, neonatal renal impairment.",
+    "quoteVi": "Độc tính thai nhi nhóm NSAID: Dùng từ tuần 20 thai kỳ gây suy chức năng thận thai nhi và thiểu ối; dùng từ tuần 30 trở đi gây đóng sớm ống động mạch thai nhi; tránh dùng NSAID trong thai kỳ."
+  },
+  {
+    "id": "fda.celecoxib.lactation",
+    "sourceId": "fda_celecoxib",
+    "pdfPage": 25,
+    "printedPage": "25",
+    "locator": "Section 8.2 Lactation / p. 25",
+    "quote": "Caution should be exercised when CELEBREX is administered to a nursing woman. The developmental and health benefits of breastfeeding should be considered along with the mother’s clinical need for CELEBREX",
+    "quoteVi": "Celecoxib bài tiết lượng rất thấp vào sữa mẹ (< 1% liều trẻ nhỏ theo cân nặng); thận trọng khi dùng ở phụ nữ đang cho con bú."
+  },
+  {
+    "id": "fda.celecoxib.hepatic_cyp2c9",
+    "sourceId": "fda_celecoxib",
+    "pdfPage": 26,
+    "printedPage": "26",
+    "locator": "Sections 8.6 Hepatic Impairment & 8.8 CYP2C9 Poor Metabolizers / p. 26",
+    "quote": "The daily recommended dose of CELEBREX capsules in patients with moderate hepatic impairment (Child-Pugh Class B) should be reduced by 50%. The use of CELEBREX in patients with severe hepatic impairment is not recommended",
+    "quoteVi": "Giảm 50% liều celecoxib ở người suy gan vừa (Child-Pugh B) hoặc người chuyển hóa kém qua CYP2C9 / dùng cùng fluconazole; không khuyến cáo dùng khi suy gan nặng (Child-Pugh C)."
+  },
+  {
+    "id": "acr.gout.2020.hlab5801_against_others",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 10,
+    "printedPage": "751",
+    "locator": "Recommendations for patients receiving ULT medications / Allopurinol / p. 10",
+    "quote": "Universal testing for the HLA–B*5801 allele prior to starting allopurinol is conditionally recommended against in patients of other ethnic or racial background over testing for the HLA–B*5801 allele.",
+    "quoteVi": "ACR 2020 khuyến cáo có điều kiện KHÔNG xét nghiệm đại trà alen HLA-B*58:01 trước khi khởi trị allopurinol ở bệnh nhân thuộc các chủng tộc khác ngoài người gốc Đông Nam Á/Hán/Hàn/Thái và người Mỹ gốc Phi.",
+    "cor": "conditional",
+    "loe": "very_low"
+  },
+  {
+    "id": "acr.gout.2020.pegloticase_first_line_against",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 7,
+    "printedPage": "748",
+    "locator": "Choice of initial ULT / p. 7",
+    "quote": "The choice of pegloticase as a first-line therapy is strongly recommended against.",
+    "quoteVi": "ACR 2020 khuyến cáo mạnh KHÔNG lựa chọn pegloticase làm thuốc hạ urat đầu tay.",
+    "cor": "strong",
+    "loe": "moderate"
+  },
+  {
+    "id": "acr.gout.2020.medication_in_pocket",
+    "sourceId": "acr_2020_gout",
+    "pdfPage": 14,
+    "printedPage": "755",
+    "locator": "Gout flare management / p. 14",
+    "quote": "including an at-home “medication-in-pocket” strategy for patients who are able to identify the early signs of flare onset.",
+    "quoteVi": "ACR 2020 nhấn mạnh chiến lược chuẩn bị sẵn thuốc cắt cơn tại nhà (“medication-in-pocket”) để bệnh nhân uống ngay khi nhận biết dấu hiệu báo trước của cơn gút cấp."
+  },
+  {
+    "id": "eular.gout.2016.pill_in_pocket",
+    "sourceId": "eular_2016_gout",
+    "pdfPage": 4,
+    "printedPage": "32",
+    "locator": "Recommendation 1 / p. 32",
+    "quote": "Acute ﬂares of gout should be treated as early as possible. Fully informed patients should be educated to self-medicate at the ﬁrst warning symptoms.",
+    "quoteVi": "EULAR 2016 Khuyến cáo 1: Cơn gút cấp cần được điều trị càng sớm càng tốt; bệnh nhân được tư vấn đầy đủ cần được hướng dẫn tự dùng thuốc cắt cơn ngay từ triệu chứng báo hiệu đầu tiên (“pill-in-the-pocket”)."
+  },
+  {
+    "id": "eular.gout.2016.flare_combination_severe",
+    "sourceId": "eular_2016_gout",
+    "pdfPage": 4,
+    "printedPage": "32",
+    "locator": "Recommendation 2 commentary / p. 32",
+    "quote": "recommends considering combination therapy , such as colchicine and an NSAID or colchicine and corticosteroids, which can be proposed for patients with particularly severe acute gout",
+    "quoteVi": "EULAR 2016 khuyến cáo cân nhắc phác đồ phối hợp từ đầu (như colchicine + NSAID hoặc colchicine + corticoid; tránh phối hợp NSAID + corticoid) cho cơn gút cấp đặc biệt nặng hoặc viêm đa khớp."
+  },
+  {
+    "id": "eular.gout.2016.pegloticase_8mg_q2w",
+    "sourceId": "eular_2016_gout",
+    "pdfPage": 8,
+    "printedPage": "36",
+    "locator": "Recommendation 10 commentary / p. 36",
+    "quote": "was 42%, on average, in patients who received pegloticase, 8 mg, every 2 weeks and 0% in the placebo group.",
+    "quoteVi": "EULAR 2016 Khuyến cáo 10: Liều chuẩn pegloticase truyền tĩnh mạch 8 mg mỗi 2 tuần cho bệnh nhân gút mạn tính có hạt tophi nặng kháng trị với các thuốc hạ urat đường uống tối đa."
+  },
+  {
+    "id": "eular.gout.2016.hlab5801_ethnic_discretion",
+    "sourceId": "eular_2016_gout",
+    "pdfPage": 10,
+    "printedPage": "38",
+    "locator": "Discussion / HLA-B*5801 screening / p. 38",
+    "quote": "The association between carriage of this allele and increased risk of SCARs has been mainly observed in certain ethnic populations, including Han Chinese, Thai and Korean patients, showing high allele frequency .",
+    "quoteVi": "EULAR 2016 ghi nhận mối liên quan chặt chẽ giữa mang alen HLA-B*58:01 và nguy cơ SCAR do allopurinol chủ yếu ở các quần thể dân tộc có tần suất alen cao (người Hoa Hán, Thái, Hàn Quốc/Đông Nam Á), trong khi không khuyến cáo sàng lọc thường quy đại trà ở quần thể tần suất thấp."
+  },
+  {
+    "id": "byt.gout.2014.septic_arthritis_exclude_p93",
+    "sourceId": "byt_361_2014_gout",
+    "pdfPage": 93,
+    "printedPage": "93",
+    "locator": "Bài Bệnh Gút / Mục 4.2.2 Corticoid / tr. 93",
+    "quote": "Đường t ại ch ỗ (tiêm corticoid tr ực ti ếp vào kh ớp viêm) ph ải được th ực hi ện b ởi th ầy thu ốc chuyên khoa c ơ x ươ ng kh ớp sau khi lo ại tr ừ viêm kh ớp nhi ễm khu ẩn.",
+    "quoteVi": "Bộ Y tế QĐ 361/QĐ-BYT (2014): Tiêm corticoid nội khớp phải do bác sĩ chuyên khoa cơ xương khớp thực hiện và bắt buộc sau khi đã loại trừ viêm khớp nhiễm khuẩn."
+  },
+  {
+    "id": "byt.gout.2014.septic_arthritis_urgent_workup_p96",
+    "sourceId": "byt_361_2014_gout",
+    "pdfPage": 96,
+    "printedPage": "96",
+    "locator": "Bài Viêm khớp nhiễm khuẩn / Mục 4.1 Nguyên tắc điều trị / tr. 96",
+    "quote": "Chẩn đoán và ch ỉ định kháng sinh s ớm; th ực hi ện ngay c ấy máu, c ấy d ịch kh ớp, soi t ươ i d ịch nhu ộm gram tìm vi khu ẩn tr ước khi cho kháng sinh.",
+    "quoteVi": "Bộ Y tế QĐ 361/QĐ-BYT (2014): Khi nghi ngờ viêm khớp nhiễm khuẩn cần chọc hút dịch khớp cấp cứu đếm tế bào, soi tươi nhuộm Gram, cấy dịch khớp và cấy máu trước khi cho kháng sinh; tuyệt đối không tiêm corticoid nội khớp hoặc trì hoãn xử trí nhiễm khuẩn."
+  },
+  {
+    "id": "byt.gout.2014.nsaid_ppi_gastroprotection_p199",
+    "sourceId": "byt_361_2014_gout",
+    "pdfPage": 199,
+    "printedPage": "199",
+    "locator": "Hướng dẫn sử dụng NSAID / Mục 3.3 Dự phòng biến chứng tiêu hóa / tr. 199",
+    "quote": "+ Sử d ụng kèm các thu ốc ức ch ế b ơm proton: Thu ốc nhóm này có hi ệu qu ả d ự phòng và điều tr ị các t ổn th ươ ng d ạ dày tá tràng do ch ống viêm không steroid (Omeprazole 20mg ho ặc các thu ốc trong nhóm nh ư Esomeprazole 20 mg u ống 1 viên vào bu ổi t ối tr ước khi đi ng ủ).",
+    "quoteVi": "Bộ Y tế QĐ 361/QĐ-BYT (2014): Phối hợp thuốc ức chế bơm proton (như Omeprazole 20 mg hoặc Esomeprazole 20 mg/ngày) để dự phòng tổn thương dạ dày – tá tràng ở bệnh nhân dùng NSAID có yếu tố nguy cơ tiêu hóa."
+  },
+  {
+    "id": "byt.gout.2014.nsaid_gi_risk_age65_p200",
+    "sourceId": "byt_361_2014_gout",
+    "pdfPage": 200,
+    "printedPage": "200",
+    "locator": "Hướng dẫn sử dụng NSAID / Phân tầng nguy cơ tiêu hóa / tr. 200",
+    "quote": "-  ≥65 tu ổi \n- Cần ph ải s ử d ụng thu ốc ch ống \nviêm không steroid li ều cao và \nkéo dài",
+    "quoteVi": "Bộ Y tế QĐ 361/QĐ-BYT (2014): Tuổi ≥ 65 hoặc dùng NSAID liều cao là yếu tố nguy cơ tiêu hóa cần phối hợp thuốc ức chế bơm proton (PPI) bảo vệ dạ dày."
+  },
+  {
+    "id": "byt.gout.2014.nsaid_table_oxicam_p201",
+    "sourceId": "byt_361_2014_gout",
+    "pdfPage": 201,
+    "printedPage": "201",
+    "locator": "Bảng liều một số thuốc chống viêm không steroid / tr. 201",
+    "quote": "− Meloxicam: Viên 7,5mg: 2 viên/ngày, sau ăn no ho ặc d ạng ống tiêm b ắp 15 mg/ngày x 2- 3 ngày n ếu b ệnh nhân đau nhi ều, sau đó chuy ển sang đường u ống.  \n− Piroxicam: Viên ho ặc ống 20 mg, u ống 1 viên/ngày, u ống sau ăn no",
+    "quoteVi": "Bộ Y tế QĐ 361/QĐ-BYT (2014): Liều Meloxicam 7,5–15 mg/ngày (tối đa 15 mg/ngày) và Piroxicam 20 mg/ngày uống sau ăn no."
+  },
+  {
+    "id": "ema.arcoxia.gout_posology_120mg_8d",
+    "sourceId": "ema_arcoxia_smpc",
+    "pdfPage": 2,
+    "printedPage": "2",
+    "locator": "Section 4.2 Posology and method of administration / Acute gouty arthritis / p. 2",
+    "quote": "The dose for acute gout should not exceed 120 mg daily, limited to a maximum of 8 days treatment.",
+    "quoteVi": "EMA/HPRA SmPC Etoricoxib (Arcoxia): Liều điều trị viêm khớp gút cấp không được vượt quá 120 mg/ngày và giới hạn tối đa không quá 8 ngày."
+  },
+  {
+    "id": "ema.arcoxia.hepatic_renal_posology",
+    "sourceId": "ema_arcoxia_smpc",
+    "pdfPage": 3,
+    "printedPage": "3",
+    "locator": "Section 4.2 Special populations – Hepatic impairment / p. 3",
+    "quote": "Regardless of indication, in patients with mild hepatic dysfunction (Child-Pugh score 5-6) a dose of 60 mg once daily should not be exceeded. In patients with moderate hepatic dysfunction (Child-Pugh score 7-9), regardless of indication, the dose of 30 mg once daily should not be exceeded.",
+    "quoteVi": "EMA/HPRA SmPC Etoricoxib (Mục 4.2): Bất kể chỉ định, ở bệnh nhân suy gan nhẹ (Child-Pugh A, 5–6 điểm) không vượt quá 60 mg/ngày; suy gan vừa (Child-Pugh B, 7–9 điểm) không vượt quá 30 mg/ngày; chống chỉ định khi suy gan nặng (Child-Pugh ≥ 10)."
+  },
+  {
+    "id": "ema.arcoxia.contra_htn_cv_aerd",
+    "sourceId": "ema_arcoxia_smpc",
+    "pdfPage": 3,
+    "printedPage": "3",
+    "locator": "Section 4.3 Contraindications / p. 3",
+    "quote": "Congestive heart failure (NYHA II-IV). \n \nPatients with hypertension whose blood pressure is persistently elevated above 140/90 mmHg and has not been adequately controlled. \n \nEstablished ischaemic heart disease, peripheral arterial disease, and/or cerebrovascular disease.",
+    "quoteVi": "EMA/HPRA SmPC Etoricoxib (Mục 4.3): Chống chỉ định ở bệnh nhân suy tim sung huyết (NYHA II–IV), tăng huyết áp có huyết áp tăng dai dẳng trên 140/90 mmHg chưa kiểm soát đầy đủ, bệnh tim thiếu máu cục bộ, bệnh động mạch ngoại biên và/hoặc bệnh mạch máu não."
+  },
+  {
+    "id": "ema.arcoxia.contra_severe_hepatic_renal_ibd",
+    "sourceId": "ema_arcoxia_smpc",
+    "pdfPage": 3,
+    "printedPage": "3",
+    "locator": "Section 4.3 Contraindications / p. 3",
+    "quote": "Severe hepatic dysfunction (serum albumin <25 g/L or Child-Pugh score ≥10). \n \nEstimated renal creatinine clearance <30 mL/min.",
+    "quoteVi": "EMA/HPRA SmPC Etoricoxib (Mục 4.3): Chống chỉ định ở bệnh nhân suy gan nặng (albumin huyết thanh < 25 g/L hoặc điểm Child-Pugh ≥ 10) và độ thanh thải creatinin ước tính < 30 mL/phút."
+  },
+  {
+    "id": "ema.arcoxia.contra_aerd",
+    "sourceId": "ema_arcoxia_smpc",
+    "pdfPage": 3,
+    "printedPage": "3",
+    "locator": "Section 4.3 Contraindications / p. 3",
+    "quote": "Patients who,  after taking acetylsalicylic acid or NSAIDs including COX-2 (cyclooxygenase-2) inhibitors, experience bronchospasm, acute rhinitis, nasal polyps, angioneurotic oedema, urticaria, or allergic-type reactions.",
+    "quoteVi": "EMA/HPRA SmPC Etoricoxib (Mục 4.3): Chống chỉ định ở bệnh nhân từng bị co thắt phế quản, viêm mũi cấp, polyp mũi, phù mạch, mày đay hoặc phản ứng dị ứng sau khi dùng aspirin hoặc NSAID (kể cả thuốc ức chế COX-2)."
+  },
+  {
+    "id": "ema.arcoxia.pregnancy_lactation_contra",
+    "sourceId": "ema_arcoxia_smpc",
+    "pdfPage": 8,
+    "printedPage": "8",
+    "locator": "Section 4.6 Fertility, pregnancy and lactation / p. 8",
+    "quote": "Etoricoxib is contraindicated in pregnancy (see section 4.3). If a woman becomes pregnant during treatment, etoricoxib must be discontinued.",
+    "quoteVi": "EMA/HPRA SmPC Etoricoxib (Mục 4.6): Chống chỉ định etoricoxib trong thai kỳ; nếu phát hiện mang thai phải ngừng thuốc ngay."
+  },
+  {
+    "id": "ema.arcoxia.lactation_contra",
+    "sourceId": "ema_arcoxia_smpc",
+    "pdfPage": 8,
+    "printedPage": "8",
+    "locator": "Section 4.6 Breast-feeding / p. 8",
+    "quote": "It is not known whether etoricoxib is excreted in human milk. Etoricoxib is excreted in the milk of lactating rats. Women who use etoricoxib must not breast feed (see sections 4.3 and 5.3).",
+    "quoteVi": "EMA/HPRA SmPC Etoricoxib (Mục 4.6): Phụ nữ sử dụng etoricoxib không được cho con bú (chống chỉ định trong thời kỳ cho con bú)."
+  },
+  {
+    "id": "ema.desuric.contra_hepatic_porphyria",
+    "sourceId": "ema_desuric_smpc",
+    "pdfPage": 1,
+    "printedPage": "1",
+    "locator": "Contre-indications / p. 1",
+    "quote": "- Patient présentant une atteinte hépatique connue \n- Porphyrie hépatique",
+    "quoteVi": "ANSM Desuric (benzbromarone) Thông tin điều trị: Chống chỉ định ở bệnh nhân có tổn thương gan đã biết hoặc rối loạn chuyển hóa porphyrin gan, cũng như phối hợp với các thuốc độc gan (như thuốc kháng lao pyrazinamide)."
+  },
+  {
+    "id": "ema.desuric.contra_lithiase_hemopathy",
+    "sourceId": "ema_desuric_smpc",
+    "pdfPage": 1,
+    "printedPage": "1",
+    "locator": "Contre-indications / p. 1",
+    "quote": "- Lithiase rénale \n- Goutte secondaire aux hémopathies",
+    "quoteVi": "ANSM Desuric (benzbromarone): Chống chỉ định khi có sỏi thận, bài tiết acid uric niệu ≥ 700 mg/24h, suy thận eGFR < 30 mL/phút hoặc gút thứ phát sau bệnh lý huyết học ác tính."
+  },
+  {
+    "id": "ema.desuric.never_start_acute_flare",
+    "sourceId": "ema_desuric_smpc",
+    "pdfPage": 2,
+    "printedPage": "2",
+    "locator": "Précautions d’emploi / p. 2",
+    "quote": "Ne jamais commencer un traitement par benzbromarone lors d’une crise aiguë de goutte.",
+    "quoteVi": "ANSM Desuric (benzbromarone): Tuyệt đối không khởi trị benzbromarone ngay trong cơn gút cấp."
+  },
+  {
+    "id": "ema.desuric.interactions_salicylate",
+    "sourceId": "ema_desuric_smpc",
+    "pdfPage": 2,
+    "printedPage": "2",
+    "locator": "Interactions – Association déconseillée / p. 2",
+    "quote": "Salicylés : diminution  de l’effet uricosurique par compétition  de l’élimination de l’acide urique au niveau des tubules rénaux. Utiliser un autre antalgique.",
+    "quoteVi": "ANSM Desuric (benzbromarone): Không khuyến cáo phối hợp salicylat liều giảm đau/chống viêm do cạnh tranh bài tiết acid uric tại ống thận làm mất hiệu lực tăng thải urat."
+  },
+  {
+    "id": "ema.desuric.pregnancy_precaution",
+    "sourceId": "ema_desuric_smpc",
+    "pdfPage": 2,
+    "printedPage": "2",
+    "locator": "Grossesse et allaitement – Grossesse / p. 2",
+    "quote": "par mesure de précaution, il est préfé rable  de ne pas utiliser la benzbromarone pendant la grossesse.",
+    "quoteVi": "ANSM Desuric (benzbromarone): Nghiên cứu động vật không ghi nhận quái thai nhưng dữ liệu lâm sàng chưa đủ loại trừ nguy cơ; như biện pháp thận trọng, tránh sử dụng benzbromarone trong thai kỳ."
+  },
+  {
+    "id": "ema.desuric.lactation_avoid",
+    "sourceId": "ema_desuric_smpc",
+    "pdfPage": 2,
+    "printedPage": "2",
+    "locator": "Grossesse et allaitement – Allaitement / p. 2",
+    "quote": "Allaitement : En l’absence de données sur le passage dans le lait  maternel, l’allaitement est à éviter pendant la durée du traitement.",
+    "quoteVi": "ANSM Desuric (benzbromarone): Do chưa có dữ liệu bài tiết vào sữa mẹ, cần tránh cho con bú trong suốt thời gian điều trị benzbromarone."
+  },
+  {
+    "id": "fda.colchicine.flare_during_prophylaxis_wait12h",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 4,
+    "locator": "Section 2.1 Gout Flares – Treatment of Gout Flares / p. 4",
+    "quote": "COLCRYS may be administered for treatment of a gout flare during prophylaxis at doses not to exceed 1.2 mg (two tablets) at the first sign of the flare followed by 0.6 mg (one tablet) one hour later. Wait 12 hours and then resume the prophylactic dose.",
+    "quoteVi": "Nhãn FDA Colcrys (Mục 2.1): Ở người chức năng thận–gan bình thường không dùng chất ức chế CYP3A4, nếu dùng colchicine cắt cơn khi đang uống colchicine dự phòng (tối đa 1.2 mg rồi 0.6 mg sau 1 giờ), bắt buộc tạm nghỉ 12 giờ rồi mới nối lại liều dự phòng."
+  },
+  {
+    "id": "fda.colchicine.flare_not_rec_prophylaxis_cyp3a4",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 9,
+    "locator": "Section 2.4 Table 2 footnote / p. 9",
+    "quote": "Treatment of gout flares with COLCRYS is not recommended in patients receiving prophylactic dose of COLCRYS and CYP3A4 inhibitors.",
+    "quoteVi": "Nhãn FDA Colcrys (Mục 2.4): Không khuyến cáo dùng colchicine để cắt cơn gút cấp ở bệnh nhân đang dùng colchicine liều dự phòng kèm thuốc ức chế CYP3A4."
+  },
+  {
+    "id": "fda.colchicine.flare_not_rec_prophylaxis_renal",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 9,
+    "locator": "Section 2.5 Dose Modification in Renal Impairment / p. 9",
+    "quote": "Treatment of gout flares with COLCRYS is not recommended in patients with renal impairment who are receiving COLCRYS for prophylaxis.",
+    "quoteVi": "Nhãn FDA Colcrys (Mục 2.5): Không khuyến cáo dùng colchicine để cắt cơn gút cấp ở bệnh nhân suy giảm chức năng thận đang dùng sẵn colchicine dự phòng."
+  },
+  {
+    "id": "fda.colchicine.flare_not_rec_prophylaxis_hepatic",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 10,
+    "locator": "Section 2.6 Dose Modification in Hepatic Impairment / p. 10",
+    "quote": "Treatment of gout flares with COLCRYS is not recommended in patients with hepatic impairment who are receiving COLCRYS for prophylaxis.",
+    "quoteVi": "Nhãn FDA Colcrys (Mục 2.6): Không khuyến cáo dùng colchicine để cắt cơn gút cấp ở bệnh nhân suy gan đang dùng sẵn colchicine dự phòng."
+  },
+  {
+    "id": "fda.colchicine.hepatic_impairment_dosing",
+    "sourceId": "fda_colchicine",
+    "pdfPage": 15,
+    "locator": "Section 8.7 Hepatic Impairment / p. 15",
+    "quote": "The clearance of colchicine may be significantly reduced and plasma half-life prolonged in patients with chronic hepatic impairment compared to healthy subjects",
+    "quoteVi": "Nhãn FDA Colcrys (Mục 8.7): Độ thanh thải colchicine giảm đáng kể và thời gian bán thải kéo dài ở bệnh nhân suy gan mạn tính; cần theo dõi sát ở suy gan nhẹ–vừa và giảm liều/chuyển phương án khác ở suy gan nặng."
+  },
+  {
+    "id": "fda.febuxostat.allopurinol_skin_cross_caution",
+    "sourceId": "fda_febuxostat",
+    "pdfPage": 6,
+    "locator": "Section 5.4 Serious Skin Reactions / p. 6",
+    "quote": "Many of these patients had reported previous similar skin reactions to allopurinol. ULORIC should be used with close monitoring in these patients.",
+    "quoteVi": "Nhãn FDA Uloric (Mục 5.4): Đã có báo cáo phản ứng da nghiêm trọng (SJS/TEN/DRESS) khi dùng febuxostat, trong đó nhiều bệnh nhân từng có tiền sử phản ứng da tương tự với allopurinol; bắt buộc theo dõi sát và ngừng ngay nếu xuất hiện ban da."
+  },
+  {
+    "id": "fda.febuxostat.secondary_hyperuricemia_not_rec",
+    "sourceId": "fda_febuxostat",
+    "pdfPage": 11,
+    "locator": "Section 8.8 Secondary Hyperuricemia / p. 11",
+    "quote": "No studies have been conducted in patients with secondary hyperuricemia (including organ transplant recipients); ULORIC is not recommended for use in patients whom the rate of urate formation is greatly increased (e.g., malignant disease and its treatment, Lesch-Nyhan syndrome).",
+    "quoteVi": "Nhãn FDA Uloric (Mục 8.8): Không khuyến cáo dùng febuxostat trong tăng acid uric thứ phát do tốc độ tạo urat tăng quá mức (như bệnh lý ác tính huyết học/hóa trị hội chứng ly giải khối u hoặc hội chứng Lesch-Nyhan) do nguy cơ lắng đọng xanthine đường tiết niệu."
+  },
+  {
+    "id": "fda.rosuvastatin.febuxostat_max_20mg",
+    "sourceId": "fda_rosuvastatin",
+    "pdfPage": 13,
+    "locator": "Section 7.1 Table 5 – Febuxostat / p. 13",
+    "quote": "In patients taking febuxostat, do not exceed a dosage of CRESTOR 20 mg once daily .",
+    "quoteVi": "Nhãn FDA Crestor (Mục 7.1 Bảng 5): Ở bệnh nhân đang dùng febuxostat, không được vượt quá liều rosuvastatin 20 mg x 1 lần/ngày do febuxostat làm tăng phơi nhiễm rosuvastatin hơn 1,9 lần và tăng nguy cơ tiêu cơ vân."
+  },
+  {
+    "id": "fda.celecoxib.contra_sulfa_aerd",
+    "sourceId": "fda_celecoxib",
+    "pdfPage": 11,
+    "locator": "Section 5.7 Anaphylactic Reactions / p. 11",
+    "quote": "CELEBREX is a sulfonamide and both NSAIDs and sulfonamides may cause allergic type reactions including anaphylactic symptoms and life-threatening or less severe asthmatic episodes in certain susceptible people",
+    "quoteVi": "Nhãn FDA Celebrex (Mục 4 & 5.7): Celecoxib có cấu trúc sulfonamide; chống chỉ định ở người có tiền sử dị ứng/quá mẫn với sulfonamide hoặc hen suyễn/mày đay khởi phát do aspirin/NSAID (AERD)."
+  }
+]

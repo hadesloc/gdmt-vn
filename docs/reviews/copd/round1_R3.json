@@ -1,0 +1,146 @@
+[
+  {
+    "id": "R3-COPD-01",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "copd.outpatient.initial_group_a",
+    "finding": "Bệnh nhân có tiền sử Hen phế quản / Chồng lấp Hen-COPD (ACO) nhưng hệ thống kê đơn giãn phế quản đơn độc (LAMA hoặc LABA+LAMA) KHÔNG CÓ thành phần ICS (Nguy cơ bùng phát cơn hen ác tính và tử vong).",
+    "evidence": "Ca ADV_COPD_35 (Nữ 58 tuổi, FEV1/FVC 0.65, mMRC 1, priorAsthma=true, asthma=true): Output engine sinh [START] tiotropium: 'Khởi trị Nhóm A: Thuốc giãn phế quản tác dụng kéo dài (LAMA hoặc LABA)'. Ca ADV_COPD_36 (priorAsthma=true, mMRC 2): Output sinh [START] tiotropium_olodaterol: 'Khởi trị Nhóm B: Phối hợp đôi LABA + LAMA'. Cả 2 ca đều không có ICS.",
+    "suggestedFix": "Trong copd.outpatient.initial_group_a và initial_group_b, kiểm tra nếu ctx.patient.conditions?.priorAsthma || ctx.patient.conditions?.asthma thì return false; và tạo luật khởi trị riêng cho ACO bắt buộc phải có thành phần ICS (ICS+LABA hoặc phác đồ 3 thuốc)."
+  },
+  {
+    "id": "R3-COPD-02",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "copd.inpatient.systemic_steroid",
+    "finding": "Bệnh nhân COPD ổn định vào viện vì lý do khác (phẫu thuật chương trình, chấn thương...), hoàn toàn KHÔNG CÓ đợt cấp (acuteExacerbation: false), hệ thống vẫn tự động kê Corticoid toàn thân 40 mg/ngày trong 5 ngày và Thở oxy có kiểm soát.",
+    "evidence": "Ca ADV_COPD_42 (Nam 65 tuổi, setting='inpatient', acuteExacerbation=false, restingSpo2=97%): Output engine sinh [START] rec_copd_inpatient_steroid ('Prednisolone 40 mg uống/ngày trong 5 ngày') và [START] rec_copd_inpatient_oxygen ('Thở oxy có kiểm soát: Đích SpO2 88-92%'). Cơ chế: Luật có điều kiện when: isAcute || ctx.settings.setting === 'inpatient'.",
+    "suggestedFix": "Sửa điều kiện when thành Boolean(ctx.patient.customInputs?.acuteExacerbation), loại bỏ điều kiện fallback ctx.settings.setting === 'inpatient'. Với thở oxy, bắt buộc kiểm tra SpO2 < 88% mới được START."
+  },
+  {
+    "id": "R3-COPD-03",
+    "severity": "critical",
+    "itemType": "missing",
+    "itemId": "dup.lama",
+    "finding": "Bỏ sót hoàn toàn việc kiểm tra trùng lặp thuốc LAMA (Tiotropium + Spiolto) gây ngộ độc kháng cholinergic tích lũy nghiêm trọng (bí tiểu cấp, glôcôm góc đóng cấp, khô miệng, nhịp nhanh).",
+    "evidence": "Ca ADV_COPD_30 (Bệnh nhân đang dùng tiotropium 5 mcg Respimat + tiotropium_olodaterol 2 nhát Spiolto Respimat): Output engine sinh plan.alerts = [] (hoàn toàn không có SafetyAlert nào về trùng lặp nhóm thuốc). Trong src/engine/safety/duplicates.ts, DUPLICATE_CLASS_RULES hoàn toàn không có nhóm LAMA, LABA, hay ICS.",
+    "suggestedFix": "Thêm nhóm LAMA ('dup.lama'), LABA ('dup.laba'), và ICS ('dup.ics') vào DUPLICATE_CLASS_RULES trong src/engine/safety/duplicates.ts."
+  },
+  {
+    "id": "R3-COPD-04",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "copd.followup.roflumilast_indication",
+    "finding": "Hệ thống khuyến cáo START Roflumilast ở bệnh nhân có tiền sử bệnh gan / suy gan (Chống chỉ định tuyệt đối theo nhãn FDA và GOLD 2026).",
+    "evidence": "Ca ADV_COPD_33 (Nam 63 tuổi, FEV1% 40%, viêm phế quản mạn, đợt cấp 2 lần, liverDisease: true): Output engine sinh [START] roflumilast: 'Bổ sung Roflumilast uống (FEV1 < 50%, viêm phế quản mạn)'. Cơ chế: Luật roflumilast_indication và cổng an toàn gates.ts không kiểm tra điều kiện bệnh gan.",
+    "suggestedFix": "Trong copd.followup.roflumilast_indication, thêm điều kiện if (ctx.patient.conditions?.liverDisease) return false; và bổ sung kiểm tra bệnh gan cho Roflumilast trong src/engine/safety/gates.ts."
+  },
+  {
+    "id": "R3-COPD-05",
+    "severity": "critical",
+    "itemType": "missing",
+    "itemId": "ix.amiodarone_macrolide",
+    "finding": "Kê đơn Azithromycin dự phòng đợt cấp trên bệnh nhân đang dùng Amiodarone mà không có cảnh báo tương tác thuốc kéo dài QTc / xoắn đỉnh đe dọa tính mạng.",
+    "evidence": "Ca ADV_COPD_34 và ADV_COPD_52 (Bệnh nhân COPD + Rung nhĩ đang dùng Amiodarone 200 mg/ngày): Output engine sinh [CONSIDER] azithromycin: 'Cân nhắc Azithromycin dự phòng đợt cấp ở người đã cai thuốc lá' nhưng plan.alerts không có bất kỳ cảnh báo nào. File interactions.ts thiếu tương tác giữa Macrolid và Amiodarone.",
+    "suggestedFix": "Bổ sung tương tác mức critical giữa Macrolid (azithromycin, clarithromycin) và Amiodarone trong INTERACTION_RULES của src/engine/safety/interactions.ts, đồng thời trong luật azithromycin_prophylaxis thêm kiểm tra thuốc kéo dài QTc."
+  },
+  {
+    "id": "R3-COPD-06",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "copd.followup.dyspnea_step_up",
+    "finding": "Bệnh nhân có chức năng hô hấp bình thường (FEV1/FVC = 0.72) nhưng luật theo dõi khó thở vẫn tự động nâng bậc lên phối hợp đôi LABA + LAMA do thiếu điều kiện kiểm tra tỷ lệ tắc nghẽn.",
+    "evidence": "Ca ADV_COPD_04 (FEV1/FVC = 0.72, FEV1% = 85%, đang dùng Tiotropium, mMRC = 2): Output engine sinh [SWITCH] tiotropium_olodaterol: 'Nâng bậc lên LABA + LAMA do khó thở dai dẳng trên đơn trị liệu'. Cơ chế: copd.followup.dyspnea_step_up chỉ kiểm tra currentInhaler === 'lama_mono' và mMRC >= 2, hoàn toàn không kiểm tra fev1FvcRatio.",
+    "suggestedFix": "Thêm kiểm tra fev1FvcRatio vào tất cả các luật theo dõi (follow-up rules): nếu fev1FvcRatio !== undefined && fev1FvcRatio >= th('copd.fev1_fvc_diagnostic') thì return false; và phát cảnh báo xem xét ngừng thuốc giãn phế quản do không có tắc nghẽn cố định."
+  },
+  {
+    "id": "R3-COPD-07",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "copd.outpatient.initial_group_b",
+    "finding": "Kích hoạt đồng thời COPD và Hen phế quản gây kê đơn trùng lặp 2 thuốc LABA (Spiolto Respimat chứa Olodaterol + Symbicort chứa Formoterol) không được gộp hoặc chặn.",
+    "evidence": "Ca ADV_COPD_50 (selectedModules: ['copd', 'asthma'], priorAsthma=true, mMRC=2): Output engine sinh cùng lúc 2 khuyến cáo: [START] tiotropium_olodaterol (Spiolto) và [START] budesonide_formoterol (Symbicort) mà không có bất kỳ cảnh báo trùng lặp nhóm LABA nào.",
+    "suggestedFix": "Bổ sung quy tắc hòa giải chéo (cross-module reconciliation): Khi cả COPD và Hen cùng kích hoạt, ưu tiên phác đồ tích hợp 3 trong 1 (Trelegy/Breztri: ICS+LAMA+LABA) hoặc đơn dụng cụ, ngăn chặn kê 2 dụng cụ cùng chứa LABA."
+  },
+  {
+    "id": "R3-COPD-08",
+    "severity": "major",
+    "itemType": "threshold",
+    "itemId": "copd.nonpharm.ltot_oxygen",
+    "finding": "Lỗi logic ngưỡng khiến bệnh nhân SpO2 89% kèm tâm phế mạn bị bỏ sót, không được chỉ định thở oxy dài hạn tại nhà (LTOT mở rộng theo GOLD).",
+    "evidence": "Ca ADV_COPD_41 (SpO2 khi nghỉ = 89%, corPulmonaleOrPolycythemia: true): Output engine KHÔNG CÓ khuyến cáo rec_copd_ltot. Cơ chế: Dòng 635 rules.ts viết 'if (spo2 <= th(\"copd.oxygen_target_spo2_min\"))' mà oxygen_target_spo2_min là 88%, dẫn đến SpO2 = 89% bị loại trừ.",
+    "suggestedFix": "Tạo ngưỡng copd.ltot_cor_pulmonale_spo2_cutoff = 89 trong kb/thresholds/copd.json và sửa dòng 635 thành spo2 <= th('copd.ltot_cor_pulmonale_spo2_cutoff')."
+  },
+  {
+    "id": "R3-COPD-09",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "copd.inpatient.antibiotics",
+    "finding": "Kê đơn kháng sinh đợt cấp vi phạm tiêu chuẩn Anthonisen và stewardship kháng sinh khi đờm trong không mủ (purulentSputum: false).",
+    "evidence": "Ca ADV_COPD_49 (Đợt cấp có tăng lượng đờm nhưng đờm trong purulentSputum: false): Output engine sinh [START] rec_copd_inpatient_antibiotics: 'Kháng sinh điều trị đợt cấp trong 5 ngày khi có đờm mủ'. Cơ chế: Dòng 753 rules.ts dùng toán tử 'return isPurulent || isIncreasedVol;'.",
+    "suggestedFix": "Sửa điều kiện kích hoạt: Chỉ kê kháng sinh khi có đờm mủ (isPurulent === true) hoặc bệnh nhân cần thở máy (NIV/IMV), tuân thủ đúng Anthonisen Type 1 và Type 2."
+  },
+  {
+    "id": "R3-COPD-10",
+    "severity": "major",
+    "itemType": "missing",
+    "itemId": "copd.followup.dyspnea_step_up",
+    "finding": "Bệnh nhân đang dùng LAMA đơn trị (lama_mono) bị đợt cấp rơi vào ngõ cụt (Dead-end), không nhận được bất kỳ khuyến cáo nâng bậc nào từ engine.",
+    "evidence": "Ca ADV_COPD_31 (Bệnh nhân đang dùng Tiotropium đơn trị, có 2 đợt cấp vừa trong năm): Output engine không sinh khuyến cáo nào về điều chỉnh thuốc. Cơ chế: dyspnea_step_up bị chặn bởi checkHasExacerbations, còn exac_add_ics chỉ áp dụng cho laba_lama.",
+    "suggestedFix": "Bổ sung luật copd.followup.exac_step_up_from_mono: Nâng từ LAMA hoặc LABA đơn trị lên LABA+LAMA (nếu BCAT < 300) hoặc phác đồ ba thuốc (nếu BCAT >= 300) khi xuất hiện đợt cấp."
+  },
+  {
+    "id": "R3-COPD-11",
+    "severity": "major",
+    "itemType": "missing",
+    "itemId": "copd.safety.ics_monotherapy",
+    "finding": "Bỏ sót không phát hiện và không khuyến cáo ngừng/chuyển đổi khi bệnh nhân COPD đang dùng đơn trị liệu ICS (Budesonide hoặc Fluticasone đơn độc).",
+    "evidence": "Ca ADV_COPD_29 (Bệnh nhân COPD đang dùng Budesonide 400 mcg đơn độc): Output engine hoàn toàn im lặng, không có SafetyAlert và không có khuyến cáo STOP/SWITCH nào.",
+    "suggestedFix": "Thêm luật rà soát currentMeds: Nếu phát hiện ICS đơn độc trong COPD (không kèm LABA và không có tiền sử hen), phát cảnh báo nguy cơ viêm phổi và khuyến cáo SWITCH sang LABA+LAMA."
+  },
+  {
+    "id": "R3-COPD-12",
+    "severity": "major",
+    "itemType": "missing",
+    "itemId": "copd.inpatient.abg_required",
+    "finding": "Thiếu khuyến cáo bắt buộc làm Khí máu động mạch (ABG) ở bệnh nhân đợt cấp cấp cứu có suy hô hấp cấp (SpO2 83%, thở co kéo cơ phụ).",
+    "evidence": "Ca ADV_COPD_48 (Đợt cấp cấp cứu, SpO2 83%, accessoryMuscleUse=true, thiếu abgPh và abgPaco2): Output engine chỉ kê oxy và steroid, hoàn toàn không có dòng nào yêu cầu làm Khí máu động mạch khẩn cấp để đánh giá toan hô hấp.",
+    "suggestedFix": "Thêm luật copd.inpatient.abg_required: Khi có đợt cấp nội viện mà thiếu abgPh hoặc abgPaco2, phát sinh khuyến cáo khẩn cấp yêu cầu làm xét nghiệm Khí máu động mạch."
+  },
+  {
+    "id": "R3-COPD-13",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "copd.diagnosis.spirometry_required",
+    "finding": "Đòi hỏi đo chức năng hô hấp phế dung kế khi bệnh nhân đang suy hô hấp / đợt cấp cấp cứu nội viện (Chống chỉ định trong đợt cấp theo GOLD 2026).",
+    "evidence": "Ca ADV_COPD_06 (Bệnh nhân đợt cấp nội viện, SpO2 86%, pH 7.32): Output engine sinh [CONSIDER] 'Cần nhập fev1FvcRatio để đánh giá tiếp...'. Cơ chế: Luật có setting: 'both' nên chạy cả trong nội viện cấp cứu.",
+    "suggestedFix": "Đổi setting của copd.diagnosis.spirometry_required thành setting: 'outpatient'. Khi acuteExacerbation: true, hoãn chỉ định đo phế dung kế sau xuất viện 2-3 tháng."
+  },
+  {
+    "id": "R3-COPD-14",
+    "severity": "minor",
+    "itemType": "ui",
+    "itemId": "missingInputRec.fieldLabels",
+    "finding": "Lỗi giao tiếp UI: Tên trường mã code kỹ thuật tiếng Anh ('fev1FvcRatio', 'fev1PredPct') bị hiển thị trực tiếp cho bác sĩ thay vì tiếng Việt.",
+    "evidence": "Ca ADV_COPD_05, ADV_COPD_06, ADV_COPD_48: Tiêu đề khuyến cáo hiển thị: 'Cần nhập fev1FvcRatio để đánh giá tiếp'. Cơ chế: FIELD_LABELS trong src/engine/require.ts thiếu khai báo cho các trường hô hấp.",
+    "suggestedFix": "Bổ sung vào FIELD_LABELS: fev1FvcRatio: 'Chỉ số FEV₁/FVC sau giãn phế quản', fev1PredPct: 'FEV₁ % trị số dự đoán', bloodEos: 'Bạch cầu ái toan máu', restingSpo2: 'SpO₂ khi nghỉ', abgPh: 'pH máu động mạch', abgPaco2: 'PaCO₂ máu động mạch'."
+  },
+  {
+    "id": "R3-COPD-15",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "src/engine/derive.ts",
+    "finding": "Máy tính phân độ GOLD (computeGold) đã viết hoàn chỉnh trong src/engine/calculators/gold.ts nhưng hoàn toàn không được tích hợp vào derivePatientData, khiến derived.goldGrade và derived.goldGroup luôn bị undefined.",
+    "evidence": "Kiểm tra src/engine/derive.ts: Hoàn toàn không import hay gọi computeGold. Derived trong types.ts có trường goldGrade và goldGroup nhưng không bao giờ có giá trị.",
+    "suggestedFix": "Gọi computeGold trong derivePatientData khi patient có fev1PredPct và fev1FvcRatio để điền tự động derived.goldGrade và derived.goldGroup."
+  },
+  {
+    "id": "R3-COPD-16",
+    "severity": "suggestion",
+    "itemType": "missing",
+    "itemId": "ix.bb_non_selective_copd",
+    "finding": "Quy tắc an toàn chẹn beta không chọn lọc hiện tại chỉ kiểm tra bệnh hen, chưa có hướng dẫn cảnh báo cho bệnh nhân COPD.",
+    "evidence": "File src/engine/safety/interactions.ts có ix.bb_non_selective_asthma chỉ kiểm tra conditions.asthma, bỏ sót conditions.copd.",
+    "suggestedFix": "Mở rộng quy tắc để cảnh báo nguy cơ co thắt phế quản và đối kháng LABA khi dùng thuốc chẹn beta không chọn lọc (Propranolol, Nadolol, Carvedilol liều cao) ở bệnh nhân COPD, khuyến nghị ưu tiên chẹn beta chọn lọc beta-1 (Bisoprolol, Metoprolol succinate)."
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "itemId": "dm2.contrast.metformin_egfr_cutoff",
+  "contentHash": "9b8a329a4e1bbc15964a4f3c86a2a0b8e96b43e2f76acf98bedbf21e7e96ea33",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "dm2.contrast.metformin_egfr_cutoff",
+      "contentHash": "df8e2db037500c90",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

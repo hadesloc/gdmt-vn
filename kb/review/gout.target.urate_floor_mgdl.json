@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.target.urate_floor_mgdl",
+  "contentHash": "c45afba91bc13e6274c59acf23271198f330e19fd926b267292270657190e089",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.target.urate_floor_mgdl",
+      "contentHash": "fc930ee2896a8118",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.target.urate_floor_mgdl"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

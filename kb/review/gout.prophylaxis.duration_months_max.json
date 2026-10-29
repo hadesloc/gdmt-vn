@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.prophylaxis.duration_months_max",
+  "contentHash": "7b52b54dd41994df2590966175720e5f767a1111369786a834f117b00e766e61",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.prophylaxis.duration_months_max",
+      "contentHash": "edce62ba440b15b4",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.prophylaxis.duration_months_max"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

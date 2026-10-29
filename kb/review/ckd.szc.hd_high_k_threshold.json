@@ -1,0 +1,27 @@
+{
+  "itemId": "ckd.szc.hd_high_k_threshold",
+  "contentHash": "9d59896cdb5d4cc74053b92bbc672a98041d6dca828117bfb7d00b09a71febba",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.szc.hd_high_k_threshold",
+      "contentHash": "bdf73c4366d3b276",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "round": 4,
+          "reviewedAt": "2026-10-27T23:56:20.141Z",
+          "role": "agent_e5_round4_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và kiểm tra không số mồ côi Vòng 4 cho ngưỡng ckd.szc.hd_high_k_threshold."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T23:56:20.141Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

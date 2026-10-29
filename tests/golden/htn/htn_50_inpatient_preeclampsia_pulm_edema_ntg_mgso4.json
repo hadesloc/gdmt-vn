@@ -1,0 +1,69 @@
+{
+  "id": "htn_50_inpatient_preeclampsia_pulm_edema_ntg_mgso4",
+  "titleVi": "Nội viện Tiền sản giật nặng biến chứng Phù phổi cấp: Ưu tiên Nitroglycerin tĩnh mạch + Magnesium sulfate (tránh Labetalol)",
+  "source": "ESC 2024 HTN / esc.htn.2024.preeclampsia_pulm_edema_rec33",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 32,
+    "sex": "female",
+    "weight": 68,
+    "height": 160,
+    "sbp": 184,
+    "dbp": 114,
+    "hr": 110,
+    "scr": 76,
+    "k": 4.1,
+    "conditions": {
+      "pregnant": true,
+      "severePreeclampsiaEclampsia": true,
+      "acutePulmonaryEdema": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_htn_emergency_preeclampsia",
+        "drugId": "nitroglycerin",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_htn_preeclampsia_mgso4",
+        "action": "START"
+      },
+      {
+        "drugId": "sodium_nitroprusside",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "labetalol",
+        "action": "START"
+      },
+      {
+        "drugId": "sodium_nitroprusside",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Theo ESC 2024 (Class I, Rec 33), tiền sản giật nặng biến chứng phù phổi cấp được chỉ định truyền Nitroglycerin tĩnh mạch là thuốc lựa chọn số 1 kết hợp Magnesium sulfate, tuyệt đối tránh Labetalol và Sodium nitroprusside."
+}

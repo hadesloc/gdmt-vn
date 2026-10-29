@@ -1,0 +1,53 @@
+{
+  "id": "dm2_07_cardiorenal_hf_sglt2i",
+  "titleVi": "Bệnh nhân ĐTĐ2 có Suy tim HFrEF (LVEF 35%) - Chỉ định SGLT2i độc lập HbA1c",
+  "source": "ADA 2026 SOC Ch. 9 Rec 9.8",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 63,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 118,
+    "dbp": 74,
+    "hr": 78,
+    "lvef": 35,
+    "scr": 105,
+    "k": 4.4,
+    "glucose": 7.6,
+    "hba1c": 7.2,
+    "conditions": {
+      "dm": true,
+      "hf": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dapagliflozin",
+        "action": "START",
+        "doseContains": "10 mg"
+      }
+    ]
+  },
+  "descriptionVi": "Suy tim kèm ĐTĐ2: Chỉ định SGLT2i độc lập với HbA1c ban đầu."
+}

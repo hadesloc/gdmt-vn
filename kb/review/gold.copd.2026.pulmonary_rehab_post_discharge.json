@@ -1,0 +1,26 @@
+{
+  "itemId": "gold.copd.2026.pulmonary_rehab_post_discharge",
+  "contentHash": "62550592067581de82d848bd1577cee44f4298a5f22708d53d67918e6d1270e1",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gold.copd.2026.pulmonary_rehab_post_discharge",
+      "contentHash": "8319d41658cd87a2",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

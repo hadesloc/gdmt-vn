@@ -1,0 +1,131 @@
+{
+  "id": "urapidil",
+  "nameVi": "Urapidil (tiêm/truyền tĩnh mạch)",
+  "inn": "Urapidil",
+  "class": "Chẹn Alpha-1 ngoại biên & Chủ vận 5-HT1A trung ương",
+  "classes": [
+    "alpha1_blocker"
+  ],
+  "vnBrands": [
+    "Ebrantil IV"
+  ],
+  "forms": [
+    "Ống tiêm 25 mg / 5 mL (5 mg/mL)",
+    "Ống tiêm 50 mg / 10 mL (5 mg/mL)"
+  ],
+  "start": {
+    "amount": "12.5–25",
+    "unit": "mg",
+    "frequency": "tiêm tĩnh mạch chậm",
+    "route": "tiêm/truyền tĩnh mạch",
+    "description": "Tiêm TM chậm trong 20 giây (có thể lặp lại sau 5 phút đến tổng liều 100 mg), sau đó truyền duy trì"
+  },
+  "target": {
+    "amount": "9–30",
+    "unit": "mg/giờ",
+    "frequency": "truyền liên tục",
+    "route": "truyền tĩnh mạch",
+    "description": "Tốc độ truyền khởi đầu tối đa 2 mg/phút (120 mg/giờ), hạ dần về liều duy trì trung bình 9–30 mg/giờ"
+  },
+  "titration": {
+    "step": "Chỉnh tốc độ truyền theo huyết áp động mạch; thời gian truyền cấp cứu thường không quá 7 ngày",
+    "intervalDays": 1,
+    "maxDose": "Tốc độ khởi đầu 2 mg/phút (120 mg/giờ); duy trì 9–30 mg/giờ"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "12.5–25 mg tiêm TM chậm, duy trì 9–30 mg/giờ",
+      "citationIds": [
+        "esc.htn.2025.urapidil_iv",
+        "vsh.htn.2022.emergency_pulmonary_edema"
+      ],
+      "note": "Không gây nhịp nhanh phản xạ và không làm tăng áp lực nội sọ."
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Giảm liều duy trì và chuẩn độ chậm theo huyết động",
+      "citationIds": [
+        "vsh.htn.2022.emergency_pulmonary_edema"
+      ],
+      "note": "Khoảng 50–70% chất chuyển hóa thải trừ qua thận — cần giảm tốc độ truyền duy trì khi dùng kéo dài ở suy thận vừa–nặng."
+    }
+  ],
+  "hepatic": {
+    "status": "caution",
+    "notesVi": "Cần giảm liều ở bệnh nhân suy giảm chức năng gan vừa–nặng theo SmPC Ebrantil Mục 4.4.",
+    "citationIds": [
+      "ema.ebrantil.warnings_stenosis_renal_hepatic"
+    ]
+  },
+  "gates": [
+    {
+      "id": "gate_urapidil_sbp_90",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 90,
+      "unit": "mmHg",
+      "action": "stop",
+      "messageVi": "Ngưng truyền Urapidil khi HATT < 90 mmHg.",
+      "citationIds": [
+        "esc.htn.2025.urapidil_iv"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Được khuyến cáo hạ áp cấp cứu trong THA nặng thai kỳ / tiền sản giật (ESC 2025 Section 12 Class I, VSH 2022 Bảng 16); lưu ý một số chế phẩm tiêm chứa tá dược propylene glycol nên chỉ truyền ngắn hạn cấp cứu.",
+    "citationIds": [
+      "esc.htn.2025.urapidil_iv",
+      "vsh.htn.2022.pregnancy_table16_drugs_postpartum"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không cho con bú trong thời gian điều trị bằng Urapidil do thiếu dữ liệu bài tiết qua sữa mẹ (SmPC Ebrantil).",
+    "citationIds": [
+      "ema.ebrantil.contraindications_sec4_3",
+      "ema.ebrantil.pregnancy_sec4_6"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "aortic_coarctation",
+      "messageVi": "Hẹp eo động mạch chủ (Aortenisthmusstenose — chống chỉ định theo SmPC Ebrantil Mục 4.3)",
+      "citationIds": [
+        "ema.ebrantil.contraindications_sec4_3"
+      ]
+    },
+    {
+      "code": "arteriovenous_shunt",
+      "messageVi": "Thông động-tĩnh mạch (ngoại trừ shunt lọc máu không ảnh hưởng huyết động — SmPC Ebrantil Mục 4.3)",
+      "citationIds": [
+        "ema.ebrantil.contraindications_sec4_3"
+      ]
+    },
+    {
+      "code": "mechanical_valve_stenosis_caution",
+      "messageVi": "Thận trọng đặc biệt khi suy tim do cản trở cơ học như hẹp van động mạch chủ hoặc hẹp van hai lá (SmPC Ebrantil Mục 4.4)",
+      "citationIds": [
+        "ema.ebrantil.warnings_stenosis_renal_hepatic"
+      ]
+    }
+  ],
+  "interactions": [
+    "Cimetidine làm ức chế chuyển hóa tăng nồng độ urapidil huyết tương ~15% — cân nhắc giảm liều.",
+    "Hiệp đồng hạ áp mạnh với thuốc ức chế PDE-5, rượu và các thuốc hạ áp đường tĩnh mạch khác.",
+    "Ưu điểm nổi bật: kết hợp chẹn alpha-1 ngoại biên và chủ vận 5-HT1A trung ương nên KHÔNG gây nhịp nhanh phản xạ — là lựa chọn thay thế rất hữu ích trong phù phổi cấp, hội chứng vành cấp (khi chống chỉ định nitrate) hoặc xuất huyết não."
+  ],
+  "citationIds": [
+    "ema.ebrantil.contraindications_sec4_3",
+    "ema.ebrantil.warnings_stenosis_renal_hepatic",
+    "ema.ebrantil.pregnancy_sec4_6",
+    "esc.htn.2025.urapidil_iv",
+    "vsh.htn.2022.emergency_pulmonary_edema",
+    "vsh.htn.2022.emergency_acs_table14"
+  ]
+}

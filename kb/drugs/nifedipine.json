@@ -1,0 +1,112 @@
+{
+  "id": "nifedipine",
+  "nameVi": "Nifedipine (giải phóng kéo dài LA/GITS/Retard)",
+  "inn": "Nifedipine",
+  "class": "CCB (Dihydropyridine)",
+  "classes": [
+    "dhp_ccb"
+  ],
+  "vnBrands": [
+    "Adalat LA",
+    "Nifedipin T20 Stada Retard",
+    "Loxen / Nifedipine Hasan"
+  ],
+  "forms": [
+    "Viên giải phóng kéo dài GITS/LA 30 mg",
+    "Viên giải phóng kéo dài GITS/LA 60 mg",
+    "Viên nén tác dụng kéo dài Retard 20 mg"
+  ],
+  "start": {
+    "amount": 30,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Dạng LA/GITS nuốt nguyên viên (hoặc Retard 20 mg x 2 lần/ngày); TUYỆT ĐỐI cấm bẻ/ngậm dưới lưỡi viên giải phóng nhanh"
+  },
+  "target": {
+    "amount": 60,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Tối đa 90 mg/ngày ngoài thai kỳ; trong thai kỳ tối đa 120 mg/ngày (dạng giải phóng kéo dài)"
+  },
+  "titration": {
+    "step": "Tăng bậc mỗi 30 mg dạng LA/GITS sau 2–4 tuần theo đáp ứng huyết áp",
+    "intervalDays": 14,
+    "maxDose": "90 mg 1 lần/ngày (thai kỳ tối đa 120 mg/ngày dạng kéo dài)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "30–90 mg 1 lần/ngày",
+      "citationIds": [
+        "vsh.htn.2022.drugs_table_rasi_bb",
+        "esc.htn.2024.first_line_classes"
+      ],
+      "note": "Không cần chỉnh liều theo mức lọc cầu thận; theo dõi huyết áp và phù ngoại biên ở CKD nặng."
+    }
+  ],
+  "hepatic": {
+    "status": "caution",
+    "notesVi": "Chuyển hóa qua gan (CYP3A4); giảm độ thanh thải ở xơ gan/suy gan nặng — khởi đầu liều thấp và giám sát chặt huyết áp.",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_rasi_bb"
+    ]
+  },
+  "gates": [],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Thuốc lựa chọn hàng đầu (dạng giải phóng kéo dài) trong thai kỳ theo ESC 2024, AHA/ACC 2025 và VSH/VNHA 2022. Cấm tuyệt đối ngậm dưới lưỡi.",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_first_line",
+      "aha.acc.2025.pregnancy_recs",
+      "aha.acc.2025.pregnancy_table22_full"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "AHA/ACC 2025 & LactMed xếp tương thích nhưng ESC 2024 (Mục 9.2.9) và VSH/VNHA 2022 (Bảng 16) lưu ý nồng độ trong sữa mẹ cao hơn các DHP-CCB kéo dài khác — thận trọng theo dõi trẻ hoặc cân nhắc amlodipine.",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_lactation_thiazide",
+      "vsh.htn.2022.pregnancy_table16_drugs_postpartum"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "cardiogenic_shock",
+      "messageVi": "Sốc tim hoặc tụt huyết áp nặng",
+      "citationIds": [
+        "aha.acc.2025.nifedipine_no_sublingual"
+      ]
+    },
+    {
+      "code": "unstable_angina",
+      "messageVi": "Đau thắt ngực không ổn định / nhồi máu cơ tim cấp (đặc biệt dạng giải phóng nhanh gây nhịp nhanh phản xạ)",
+      "citationIds": [
+        "aha.acc.2025.pregnancy_table22_full"
+      ]
+    },
+    {
+      "code": "severe_aortic_stenosis",
+      "messageVi": "Hẹp khít van động mạch chủ có triệu chứng",
+      "citationIds": [
+        "aha.acc.2025.iv_nicardipine"
+      ]
+    }
+  ],
+  "interactions": [
+    "TUYỆT ĐỐI cấm dùng nifedipine giải phóng nhanh ngậm dưới lưỡi để hạ áp cấp ngoại trú do nguy cơ tụt áp không kiểm soát, thiếu máu cơ tim và đột quỵ.",
+    "Magnesium sulfate đường tĩnh mạch (tiền sản giật): có nguy cơ hiệp đồng gây tụt huyết áp và ức chế thần kinh-cơ sâu (ESC 2024 Mục 10.4.1) — theo dõi sát huyết áp.",
+    "Chất cảm ứng mạnh CYP3A4 (rifampicin, phenytoin, carbamazepine): làm giảm mạnh sinh khả dụng nifedipine dẫn đến mất hiệu quả hạ áp.",
+    "Chất ức chế CYP3A4 và nước bưởi chùm (grapefruit juice): làm tăng nồng độ nifedipine gây tụt huyết áp và đỏ bừng mặt."
+  ],
+  "citationIds": [
+    "vsh.htn.2022.drugs_table_rasi_bb",
+    "esc.htn.2024.pregnancy_first_line",
+    "aha.acc.2025.pregnancy_table22_full",
+    "aha.acc.2025.nifedipine_no_sublingual",
+    "esc.htn.2024.preeclampsia_mgso4"
+  ]
+}

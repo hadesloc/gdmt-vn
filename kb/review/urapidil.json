@@ -1,0 +1,26 @@
+{
+  "itemId": "urapidil",
+  "contentHash": "fe9af352e5a9a2e2d8c47211dfc887180426798c1d65a2d6ca1b0f5cd1ad6663",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "urapidil",
+      "contentHash": "58449a25028fc869",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Urapidil (tiêm/truyền tĩnh mạch) (Urapidil) đầy đủ liều lượng, classes (alpha1_blocker), dải thận, thai kỳ/cho con bú, chống chỉ định máy đọc và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

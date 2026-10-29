@@ -1,0 +1,62 @@
+{
+  "id": "hf_40_hfref_nyha4_icd_contra",
+  "titleVi": "HFrEF (LVEF 24%) NYHA IV kháng trị nội khoa: Chống chỉ định cấy ICD dự phòng tiên phát (Class III)",
+  "source": "ESC 2026 HF Section ICD Contraindications (Class III-C NYHA IV)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 63,
+    "sex": "male",
+    "weight": 68,
+    "height": 168,
+    "sbp": 106,
+    "dbp": 68,
+    "hr": 78,
+    "rhythm": "sinus",
+    "lvef": 24,
+    "nyha": 4,
+    "scr": 96,
+    "k": 4.4,
+    "conditions": {
+      "hf": true,
+      "ascvd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ],
+    "customInputs": {
+      "fmtDurationMonths": 6
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_hf_icd_contra",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_hf_icd_start",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Dù LVEF <= 35% và đã điều trị nội khoa >= 3 tháng, bệnh nhân suy tim NYHA IV dai dẳng không có chỉ định CRT/LVAD/ghép tim bị chống chỉ định cấy ICD dự phòng tiên phát (Class III-C)."
+}

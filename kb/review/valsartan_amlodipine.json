@@ -1,0 +1,26 @@
+{
+  "itemId": "valsartan_amlodipine",
+  "contentHash": "5cd3f9d3bda7834f330ae3eb8c0b731c8db3e5deba9e02b687abe4a79ac03675",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "valsartan_amlodipine",
+      "contentHash": "d4fd3dd9a7e71ca9",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Valsartan + Amlodipine (SPC) (valsartan_amlodipine) đầy đủ phân nhóm, dải thận, thai kỳ/cho con bú, cổng an toàn và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

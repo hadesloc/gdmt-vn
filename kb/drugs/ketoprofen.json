@@ -1,0 +1,180 @@
+{
+  "id": "ketoprofen",
+  "nameVi": "Ketoprofen",
+  "inn": "Ketoprofen",
+  "class": "NSAID (Propionic)",
+  "classes": [
+    "anti_gout",
+    "nsaid"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Profenid",
+    "Oruvail"
+  ],
+  "forms": [
+    "Viên nang 50 mg",
+    "Viên nén 100 mg"
+  ],
+  "start": {
+    "amount": 50,
+    "unit": "mg",
+    "frequency": "3 lần/ngày",
+    "route": "uống",
+    "description": "Dùng ngắn ngày sau ăn no theo liều kháng viêm chuẩn trong đợt gút cấp (BYT 361/2014 tr. 93)"
+  },
+  "target": {
+    "amount": 50,
+    "unit": "mg",
+    "frequency": "3 lần/ngày",
+    "route": "uống",
+    "description": "Dùng liều thấp nhất có hiệu quả trong thời gian ngắn nhất sau ăn no"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "Dùng liều kháng viêm thông thường ngắn ngày sau ăn no kèm PPI nếu có nguy cơ tiêu hóa",
+      "citationIds": [
+        "byt.gout.2014.nsaid_agents",
+        "acr.gout.2020.flare_first_line"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "not_rec",
+      "continue": "caution",
+      "dose": "Tránh dùng NSAID ở CKD giai đoạn ≥ 3 theo KDIGO 2024; ưu tiên corticoid hoặc colchicine liều thấp",
+      "citationIds": [
+        "kdigo.gout.2024.acute_flare_ckd",
+        "byt.ckd.2024.gout_flare_table22"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Chống chỉ định khi eGFR < 30 mL/phút hoặc lọc máu",
+      "citationIds": [
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_ketoprofen_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "contra",
+      "messageVi": "Chống chỉ định NSAID khi eGFR < 30 mL/phút/1.73m2 do nguy cơ suy thận cấp",
+      "citationIds": [
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra"
+      ]
+    },
+    {
+      "id": "gate_ketoprofen_hepatic",
+      "parameter": "severe_hepatic_impairment",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "moderate_severe",
+      "action": "contra",
+      "messageVi": "Chống chỉ định ở bệnh nhân suy tế bào gan mức độ vừa đến nặng (BYT 361/2014 tr. 198)",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong thai kỳ (đặc biệt 3 tháng đầu/cuối theo BYT 361/2014 và từ tuần 20–30 trở đi do nguy cơ thiểu ối và đóng sớm ống động mạch thai nhi).",
+    "citationIds": [
+      "byt.gout.2014.nsaid_contra_p198",
+      "fda.celecoxib.fetal_toxicity_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Chống chỉ định/tránh dùng nhóm NSAID ở phụ nữ đang cho con bú theo BYT 361/2014.",
+    "citationIds": [
+      "byt.gout.2014.nsaid_contra_p198"
+    ]
+  },
+  "hepatic": {
+    "status": "contra",
+    "note": "Chống chỉ định NSAID đường toàn thân ở bệnh nhân suy tế bào gan mức độ vừa đến nặng (Child-Pugh B/C hoặc xơ gan mất bù) (BYT 361/2014 tr. 198).",
+    "notesVi": "Chống chỉ định NSAID đường toàn thân ở bệnh nhân suy tế bào gan mức độ vừa đến nặng (Child-Pugh B/C hoặc xơ gan mất bù) (BYT 361/2014 tr. 198).",
+    "citationIds": [
+      "byt.gout.2014.nsaid_contra_p198"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định trong thai kỳ (đóng sớm ống động mạch thai nhi và thiểu ối)",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198",
+        "fda.celecoxib.fetal_toxicity_pregnancy"
+      ]
+    },
+    {
+      "code": "severe_ckd",
+      "messageVi": "Chống chỉ định khi eGFR < 30 mL/phút",
+      "citationIds": [
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra"
+      ]
+    },
+    {
+      "code": "peptic_ulcer",
+      "messageVi": "Chống chỉ định khi có loét dạ dày tá tràng tiến triển hoặc xuất huyết tiêu hóa",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198",
+        "fda.celecoxib.boxed_contra_cv_gi"
+      ]
+    },
+    {
+      "code": "heart_failure",
+      "messageVi": "Chống chỉ định ở bệnh nhân suy tim, CABG hoặc biến cố tim mạch cấp",
+      "citationIds": [
+        "byt.gout.2014.nsaid_cv_aspirin_p199",
+        "fda.celecoxib.boxed_contra_cv_gi"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định khi suy tế bào gan mức độ vừa đến nặng",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198"
+      ]
+    },
+    {
+      "code": "anticoagulant_use",
+      "messageVi": "Chống chỉ định/tránh phối hợp với thuốc chống đông do nguy cơ xuất huyết tiêu hóa nặng",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198",
+        "fda.celecoxib.boxed_contra_cv_gi"
+      ]
+    }
+  ],
+  "interactions": [
+    "Thuốc chống đông (Warfarin, Acenocoumarol, DOAC) và Corticosteroid đường toàn thân: Tăng mạnh nguy cơ loét và xuất huyết tiêu hóa",
+    "Thuốc ức chế men chuyển / ARB / ARNI + Lợi tiểu: Phối hợp 'Triple Whammy' gây suy thận cấp huyết động",
+    "Các NSAID khác (bao gồm COX-2i và aspirin liều giảm đau): Chống chỉ định phối hợp hai thuốc NSAID đồng thời",
+    "Probenecid: Giảm liên hợp và thải trừ qua thận làm tăng mạnh nồng độ ketoprofen tự do trong huyết tương (tránh phối hợp)"
+  ],
+  "citationIds": [
+    "byt.gout.2014.nsaid_agents",
+    "byt.gout.2014.nsaid_contra_p198",
+    "byt.gout.2014.nsaid_cv_aspirin_p199",
+    "byt.ckd.2024.gout_flare_table22",
+    "eular.gout.2016.colchicine_nsaid_contra",
+    "fda.celecoxib.boxed_contra_cv_gi",
+    "acr.gout.2020.flare_first_line"
+  ]
+}

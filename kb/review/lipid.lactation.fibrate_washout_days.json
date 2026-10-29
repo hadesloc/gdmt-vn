@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.lactation.fibrate_washout_days",
+  "contentHash": "b6e5e3796f29594e2ea6282acdc2a0da83e73d377e71c7276e3c982478813486",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.lactation.fibrate_washout_days",
+      "contentHash": "5617f37199bd1837",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T15:55:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.lactation.fibrate_washout_days."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T15:55:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

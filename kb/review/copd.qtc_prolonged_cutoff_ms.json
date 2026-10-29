@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.qtc_prolonged_cutoff_ms",
+  "contentHash": "b32ad25aa724310d76541b0c441d4940f46664b60f53eb9cd9bd59586115c4c9",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.qtc_prolonged_cutoff_ms",
+      "contentHash": "d714ec619ef925b0",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

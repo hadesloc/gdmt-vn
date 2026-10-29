@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.colchicine.moderate_cyp3a4_flare_dose",
+  "contentHash": "fbda36d94d60295dfa8143921dc76a11d06cc48085ce415d8d9373144f6550d6",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.colchicine.moderate_cyp3a4_flare_dose",
+      "contentHash": "1446d28d28670d9a",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.colchicine.moderate_cyp3a4_flare_dose"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

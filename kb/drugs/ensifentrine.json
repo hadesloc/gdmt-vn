@@ -1,0 +1,87 @@
+{
+  "id": "ensifentrine",
+  "nameVi": "Ensifentrine",
+  "inn": "Ensifentrine",
+  "class": "Thuốc ức chế kép PDE3 và PDE4 đường khí dung",
+  "classes": [
+    "pde3_pde4_inhibitor"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Ohtuvayre"
+  ],
+  "forms": [
+    "Ống hỗn dịch khí dung đơn liều 3 mg/2.5 mL (hiện mới lưu hành tại Hoa Kỳ theo GOLD 2026)"
+  ],
+  "start": {
+    "amount": 3,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "khí dung",
+    "description": "Khí dung qua máy khí dung tia chuẩn (jet nebulizer) 2 lần/ngày (sáng, tối) điều trị duy trì cải thiện triệu chứng khó thở ở bệnh nhân COPD trưởng thành"
+  },
+  "target": {
+    "amount": 3,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "khí dung",
+    "description": "Duy trì khí dung 2 lần/ngày"
+  },
+  "titration": {
+    "step": "Duy trì liều cố định; không dùng để cắt cơn co thắt phế quản cấp",
+    "intervalDays": 90,
+    "maxDose": "2 lần khí dung/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều ở suy thận nhẹ – trung bình",
+      "citationIds": [
+        "gold.copd.2026.ensifentrine_pde3_pde4"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Thận trọng ở suy thận giai đoạn cuối do dữ liệu lâm sàng hạn chế",
+      "citationIds": [
+        "gold.copd.2026.ensifentrine_pde3_pde4"
+      ]
+    }
+  ],
+  "gates": [],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Chưa có dữ liệu lâm sàng đầy đủ trên phụ nữ mang thai; chỉ cân nhắc khi lợi ích vượt trội nguy cơ.",
+    "citationIds": [
+      "gold.copd.2026.ensifentrine_pde3_pde4"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Chưa có dữ liệu về bài tiết ensifentrine qua sữa người; thận trọng khi cho con bú.",
+    "citationIds": [
+      "gold.copd.2026.ensifentrine_pde3_pde4"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity_ensifentrine",
+      "messageVi": "Chống chỉ định khi có tiền sử quá mẫn nghiêm trọng với ensifentrine hoặc tá dược của thuốc",
+      "citationIds": [
+        "gold.copd.2026.ensifentrine_pde3_pde4"
+      ]
+    }
+  ],
+  "interactions": [
+    "Không sử dụng để cắt cơn khó thở cấp tính (cần dự phòng sẵn thuốc cắt cơn SABA)",
+    "Theo dõi triệu chứng co thắt phế quản nghịch thường và các biến cố tâm thần kinh liên quan cơ chế ức chế PDE4; thận trọng ở suy gan trung bình – nặng"
+  ],
+  "citationIds": [
+    "gold.copd.2026.ensifentrine_pde3_pde4"
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "id": "semaglutide_oral",
+  "nameVi": "Semaglutide (Uống)",
+  "inn": "Semaglutide",
+  "class": "GLP-1 RA",
+  "vnBrands": [
+    "Rybelsus"
+  ],
+  "forms": [
+    "Viên nén 3 mg, 7 mg, 14 mg"
+  ],
+  "start": {
+    "amount": 3,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Uống buổi sáng lúc bụng đói với không quá 120 mL nước lọc, đợi ≥ 30 phút trước khi ăn (dùng 30 ngày đầu)"
+  },
+  "target": {
+    "amount": 7,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Duy trì từ ngày 31; có thể tăng lên tối đa 14 mg/ngày sau ≥ 30 ngày nếu cần kiểm soát thêm đường huyết"
+  },
+  "titration": {
+    "step": "7 mg",
+    "intervalDays": 30,
+    "maxDose": "14 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "7 - 14 mg/ngày (khởi đầu 3 mg/ngày)",
+      "citationIds": [
+        "kdigo.dm2.2022.semaglutide_sc_dosing",
+        "ada.dm2.2026.glp1_ckd_no_dose_adjust",
+        "fda.semaglutide.renal_no_adjust"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "not_rec",
+      "continue": "caution",
+      "dose": "Dữ liệu hạn chế; theo dõi sát",
+      "note": "Dữ liệu lâm sàng rất hạn chế ở eGFR < 15 mL/phút/1.73m² hoặc lọc máu theo KDIGO 2022",
+      "citationIds": [
+        "kdigo.dm2.2022.semaglutide_sc_dosing",
+        "ada.dm2.2026.glp1_dialysis_rec_11_11b"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_semaglutide_oral_mtc_contra",
+      "parameter": "mtc",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối ở bệnh nhân có tiền sử ung thư tuyến giáp thể tủy (MTC)",
+      "citationIds": [
+        "fda.semaglutide_rybelsus.boxed_warning_mtc"
+      ]
+    },
+    {
+      "id": "gate_semaglutide_oral_men2_contra",
+      "parameter": "men2",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối ở bệnh nhân mắc hội chứng MEN 2",
+      "citationIds": [
+        "fda.semaglutide_rybelsus.boxed_warning_mtc"
+      ]
+    },
+    {
+      "id": "gate_semaglutide_oral_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 15,
+      "unit": "mL/min/1.73m2",
+      "action": "hold",
+      "messageVi": "Dữ liệu khởi trị mới rất hạn chế khi eGFR < 15 mL/phút/1.73m² theo KDIGO 2022",
+      "citationIds": [
+        "kdigo.dm2.2022.semaglutide_sc_dosing",
+        "ada.dm2.2026.glp1_dialysis_rec_11_11b"
+      ]
+    }
+  ],
+  "interactions": [
+    "Không phối hợp với thuốc ức chế DPP-4",
+    "Phải uống trước bữa ăn sáng ít nhất 30 phút chỉ với nước lọc"
+  ],
+  "citationIds": [
+    "fda.semaglutide_rybelsus.dosing",
+    "fda.semaglutide_rybelsus.titration_7_14",
+    "fda.semaglutide_rybelsus.empty_stomach",
+    "ada.dm2.2026.no_dpp4_plus_glp1",
+    "ada.dm2.2026.glp1_ckd_no_dose_adjust",
+    "fda.semaglutide_rybelsus.pregnancy",
+    "fda.semaglutide_rybelsus.boxed_warning_mtc",
+    "fda.semaglutide_rybelsus.pancreatitis",
+    "ada.dm2.2026.incretin_pancreatitis",
+    "kdigo.dm2.2022.semaglutide_sc_dosing"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong thai kỳ; ngừng trước mang thai ít nhất 2 tháng",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_glp1",
+      "fda.semaglutide_rybelsus.pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo khi cho con bú",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_glp1"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "mtc",
+      "messageVi": "Chống chỉ định tuyệt đối (FDA Boxed Warning) ở người có tiền sử bản thân hoặc gia đình mắc ung thư biểu mô tuyến giáp thể tủy (MTC)",
+      "citationIds": [
+        "fda.semaglutide_rybelsus.boxed_warning_mtc"
+      ]
+    },
+    {
+      "code": "men2",
+      "messageVi": "Chống chỉ định tuyệt đối (FDA Boxed Warning) ở bệnh nhân mắc hội chứng đa u tuyến nội tiết típ 2 (MEN 2)",
+      "citationIds": [
+        "fda.semaglutide_rybelsus.boxed_warning_mtc"
+      ]
+    },
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định trong thai kỳ do nguy cơ độc tính phôi thai",
+      "citationIds": [
+        "ada.dm2.2026.pregnancy_glp1"
+      ]
+    },
+    {
+      "code": "acute_pancreatitis",
+      "messageVi": "Thận trọng hoặc tránh dùng ở bệnh nhân có tiền sử viêm tụy cấp",
+      "citationIds": [
+        "fda.semaglutide_rybelsus.pancreatitis",
+        "ada.dm2.2026.incretin_pancreatitis"
+      ]
+    }
+  ],
+  "classes": [
+    "glp1ra",
+    "glp1_ra"
+  ]
+}

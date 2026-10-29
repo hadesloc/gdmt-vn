@@ -1,0 +1,170 @@
+{
+  "id": "chlorthalidone",
+  "nameVi": "Chlorthalidone",
+  "inn": "Chlorthalidone",
+  "class": "Lợi tiểu Thiazide-like",
+  "classes": [
+    "thiazide_diuretic"
+  ],
+  "qtRisk": "conditional",
+  "vnBrands": [
+    "Hygroton",
+    "Edarbyclor (phối hợp Azilsartan)"
+  ],
+  "forms": [
+    "Viên nén 12.5 mg",
+    "Viên nén 25 mg"
+  ],
+  "start": {
+    "amount": 12.5,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Uống buổi sáng (t½ dài 40–60 giờ, mạnh hơn HCTZ tính theo mg)"
+  },
+  "target": {
+    "amount": 25,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống"
+  },
+  "titration": {
+    "step": "Tăng từ 12,5 mg lên 25 mg 1 lần/ngày sau 2–4 tuần; kiểm tra Na⁺/K⁺/Creatinin sau 2–4 tuần",
+    "intervalDays": 14,
+    "maxDose": "25 mg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "12.5–25 mg 1 lần/ngày",
+      "citationIds": [
+        "aha.acc.2025.table13_chlorthalidone",
+        "esc.htn.2024.first_line_classes"
+      ],
+      "note": "Lợi tiểu thiazide-like ưu tiên có bằng chứng giảm biến cố tim mạch vượt trội (ALLHAT, SPRINT)."
+    },
+    {
+      "eGFRFrom": 15,
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "12.5–25 mg 1 lần/ngày",
+      "citationIds": [
+        "esc.htn.2024.ckd_albuminuria_click"
+      ],
+      "note": "CKD giai đoạn 4 (eGFR 15–29): thử nghiệm CLICK (ESC 2024 Mục 9.7.3) chứng minh Chlorthalidone (thường phối hợp lợi tiểu quai) vẫn hạ áp và giảm albumin niệu hiệu quả trong THA kháng trị; theo dõi sát Na⁺, K⁺ và eGFR."
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "not_rec",
+      "continue": "not_rec",
+      "citationIds": [
+        "esc.htn.2024.ckd_loop_diuretic"
+      ],
+      "note": "Không khuyến cáo khi eGFR < 15 mL/phút/1,73m² hoặc vô niệu — dùng lợi tiểu quai liều thích hợp."
+    }
+  ],
+  "hepatic": {
+    "status": "caution",
+    "notesVi": "Thận trọng ở suy gan tiến triển/xơ gan vì hạ kali và kiềm chuyển hóa dễ khởi phát bệnh não gan.",
+    "citationIds": [
+      "aha.acc.2025.table13_chlorthalidone"
+    ]
+  },
+  "gates": [
+    {
+      "id": "gate_chlorthalidone_k_low",
+      "parameter": "K",
+      "operator": "<",
+      "threshold": 3.5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm hoãn Chlorthalidone khi K⁺ < 3,5 mmol/L (nguy cơ hạ kali và hạ natri máu cao hơn HCTZ).",
+      "citationIds": [
+        "aha.acc.2025.table13_chlorthalidone",
+        "esc.hf.2026.supp_diuretic_cautions"
+      ]
+    },
+    {
+      "id": "gate_chlorthalidone_na_130",
+      "parameter": "Na",
+      "operator": "<",
+      "threshold": 130,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm ngưng/tránh khởi trị Chlorthalidone khi Natri máu < 130 mmol/L do nguy cơ hạ natri máu nặng tiến triển.",
+      "citationIds": [
+        "aha.acc.2025.table13_chlorthalidone",
+        "esc.hf.2026.supp_hyponatraemia_135"
+      ]
+    },
+    {
+      "id": "gate_chlorthalidone_na_125",
+      "parameter": "Na",
+      "operator": "<",
+      "threshold": 125,
+      "unit": "mmol/L",
+      "action": "stop",
+      "messageVi": "Ngưng ngay Chlorthalidone khi hạ natri máu nặng (Na⁺ < 125 mmol/L) — nguy cơ phù não và co giật.",
+      "citationIds": [
+        "aha.acc.2025.table13_chlorthalidone",
+        "esc.hf.2026.supp_hyponatraemia_135"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Tránh khởi trị trong thai kỳ do nguy cơ giảm tưới máu nhau-thai, vàng da và giảm tiểu cầu sơ sinh.",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_lactation_thiazide"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Thời gian bán thải rất dài và bài tiết vào sữa mẹ, có thể ức chế tiết sữa — tránh dùng khi cho con bú.",
+    "citationIds": [
+      "fda.chlorthalidone.nursing",
+      "esc.htn.2024.pregnancy_lactation_thiazide"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "anuria",
+      "messageVi": "Vô niệu",
+      "citationIds": [
+        "fda.chlorthalidone.contraindications"
+      ]
+    },
+    {
+      "code": "sulfonamide_allergy",
+      "messageVi": "Quá mẫn với chlorthalidone hoặc dẫn xuất sulfonamide",
+      "citationIds": [
+        "fda.chlorthalidone.contraindications"
+      ]
+    },
+    {
+      "code": "hypokalemia",
+      "messageVi": "Hạ kali máu hoặc hạ natri máu nặng chưa bù chỉnh",
+      "citationIds": [
+        "aha.acc.2025.table13_chlorthalidone"
+      ]
+    }
+  ],
+  "interactions": [
+    "Nguy cơ hạ natri máu và hạ kali máu cao hơn hydrochlorothiazide do thời gian bán thải kéo dài — cần xét nghiệm điện giải đồ sau 2–4 tuần.",
+    "Lithium: giảm thải trừ lithium qua thận gây ngộ độc lithium.",
+    "Gút cấp: làm tăng acid uric máu, tránh dùng trừ khi đang điều trị hạ acid uric ổn định (AHA Table 13)."
+  ],
+  "citationIds": [
+    "aha.acc.2025.table13_chlorthalidone",
+    "esc.htn.2024.ckd_albuminuria_click",
+    "vsh.htn.2022.drugs_table_diuretic",
+    "esc.htn.2024.gout_thiazide_caution",
+    "fda.chlorthalidone.contraindications",
+    "fda.chlorthalidone.electrolytes",
+    "fda.chlorthalidone.nursing",
+    "esc.hf.2026.supp_hyponatraemia_135"
+  ]
+}

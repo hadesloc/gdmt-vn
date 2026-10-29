@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.emergency.preeclampsia_dbp_us",
+  "contentHash": "ca5177c322b39d89a35454b6c83fea045e4fefc3ab6005809bdc70138a62fb62",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.emergency.preeclampsia_dbp_us",
+      "contentHash": "a284e0c416ead4f1",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực ngưỡng lâm sàng htn.emergency.preeclampsia_dbp_us (110 mmHg) và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

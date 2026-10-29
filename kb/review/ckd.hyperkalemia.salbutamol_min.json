@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.hyperkalemia.salbutamol_min",
+  "contentHash": "f4daa5891f43512e30b50c8eec204e299e83208a665f0e35c2bc5d226dad3295",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.hyperkalemia.salbutamol_min",
+      "contentHash": "27d7600944411c04",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.132Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.hyperkalemia.salbutamol_min."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

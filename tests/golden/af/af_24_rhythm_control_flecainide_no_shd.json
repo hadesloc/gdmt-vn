@@ -1,0 +1,51 @@
+{
+  "id": "af_24_rhythm_control_flecainide_no_shd",
+  "titleVi": "Kiểm soát nhịp không có bệnh tim cấu trúc: Flecainide duy trì nhịp xoang",
+  "source": "ESC 2024 AF Rec Table 18 / esc.af.2024.aad_flecainide_propafenone",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 52,
+    "sex": "male",
+    "weight": 70,
+    "height": 172,
+    "sbp": 122,
+    "dbp": 78,
+    "hr": 88,
+    "rhythm": "afib",
+    "lvef": 60,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true
+    },
+    "customInputs": {
+      "ehraScore": 3
+    },
+    "currentMeds": []
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "flecainide",
+        "action": "CONSIDER"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân trẻ 52 tuổi, LVEF 60%, không bệnh mạch vành/suy tim: Flecainide hoặc Propafenone là lựa chọn hàng đầu."
+}

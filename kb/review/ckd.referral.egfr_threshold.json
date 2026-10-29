@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.referral.egfr_threshold",
+  "contentHash": "f3746ba583f3f952def161904b2e37542dee46ab8b6654ed1815892e9009872a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.referral.egfr_threshold",
+      "contentHash": "27e7893af00ffd1c",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.126Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.referral.egfr_threshold."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

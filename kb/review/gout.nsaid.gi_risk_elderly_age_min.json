@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.nsaid.gi_risk_elderly_age_min",
+  "contentHash": "50aa85899676e551e582d2f37507f1f2595b2ef721cfdbb111b00a7eb63477e7",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.nsaid.gi_risk_elderly_age_min",
+      "contentHash": "35b1823331ddea68",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold: gout.nsaid.gi_risk_elderly_age_min"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

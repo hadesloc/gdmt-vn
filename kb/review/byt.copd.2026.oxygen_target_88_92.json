@@ -1,0 +1,26 @@
+{
+  "itemId": "byt.copd.2026.oxygen_target_88_92",
+  "contentHash": "43356bd33b209ae4a5073ae2717dd58651711bd5f624b26ab76ed3986b147e6b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "byt.copd.2026.oxygen_target_88_92",
+      "contentHash": "bab70ed970d64053",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

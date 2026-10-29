@@ -1,0 +1,86 @@
+{
+  "id": "inclisiran",
+  "nameVi": "Inclisiran",
+  "inn": "Inclisiran",
+  "class": "siRNA ức chế tổng hợp PCSK9",
+  "classes": [
+    "pcsk9i",
+    "pcsk9_sirna"
+  ],
+  "vnBrands": [
+    "Leqvio"
+  ],
+  "forms": [
+    "Bơm tiêm nạp sẵn 284 mg/1.5 mL"
+  ],
+  "start": {
+    "amount": 284,
+    "unit": "mg",
+    "frequency": "ngày đầu, lặp lại sau 3 tháng, rồi mỗi 6 tháng",
+    "route": "tiêm dưới da",
+    "description": "284 mg tiêm dưới da liều đầu, lặp lại sau 3 tháng, rồi duy trì mỗi 6 tháng"
+  },
+  "target": {
+    "amount": 284,
+    "unit": "mg",
+    "frequency": "mỗi 6 tháng",
+    "route": "tiêm dưới da",
+    "description": "284 mg tiêm dưới da định kỳ mỗi 6 tháng"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "284 mg tiêm dưới da (ngày đầu, tháng thứ 3, rồi mỗi 6 tháng)",
+      "note": "Không cần chỉnh liều ở bệnh nhân suy thận nhẹ, trung bình và nặng (chưa có dữ liệu đầy đủ trên bệnh nhân lọc máu)",
+      "citationIds": [
+        "fda.inclisiran.dose",
+        "esc.lipid.2019.pcsk9_add_on_secondary"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_inclisiran_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "avoid",
+      "messageVi": "Tránh sử dụng Inclisiran trong thai kỳ và thời kỳ cho con bú do nguy cơ ức chế thu nhận cholesterol của thai nhi",
+      "citationIds": [
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    }
+  ],
+  "interactions": [
+    "Không phải cơ chất, chất ức chế hay cảm ứng của cytochrome P450 hoặc các protein vận chuyển thuốc phổ biến; không có tương tác thuốc đáng kể"
+  ],
+  "citationIds": [
+    "fda.inclisiran.dose",
+    "esc.lipid.2025.non_statin_intolerance_combo"
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Tránh sử dụng trong thai kỳ do cơ chế tác dụng và thiếu dữ liệu an toàn trên người mang thai (ESC / FDA)",
+    "citationIds": [
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Tránh sử dụng trong thời kỳ cho con bú do thiếu dữ liệu an toàn trên trẻ bú mẹ (ESC / FDA)",
+    "citationIds": [
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Không khuyến cáo sử dụng thuốc hạ lipid trong thai kỳ và cho con bú",
+      "citationIds": [
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    }
+  ]
+}

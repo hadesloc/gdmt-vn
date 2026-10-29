@@ -1,0 +1,68 @@
+{
+  "id": "gout_16_ult_init_ckd_g3b_allopurinol_50mg",
+  "titleVi": "Khởi trị Allopurinol ở CKD giai đoạn 3b (eGFR < 60): Liều khởi đầu bắt buộc ≤ 50 mg/ngày",
+  "source": "ACR 2020 & KDIGO 2024 (acr.gout.2020.allopurinol_start_dose_ckd_50, acr.gout.2020.allopurinol_first_line)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 67,
+    "sex": "male",
+    "weight": 66,
+    "scr": 170,
+    "uricAcid": 530,
+    "conditions": {
+      "gout": true,
+      "ckd": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 2,
+      "hlab5801": "negative"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_start",
+        "action": "START",
+        "doseContains": "50 mg"
+      },
+      {
+        "drugId": "colchicine",
+        "ruleId": "rec_gout_colchicine_prophylaxis",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "allopurinol",
+        "action": "START",
+        "doseContains": "100 mg"
+      },
+      {
+        "drugId": "probenecid",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 67 tuổi CKD giai đoạn 3b (SCr 170 µmol/L, eGFR ~36 mL/phút/1.73m²), HLA-B*58:01 âm tính. Allopurinol vẫn là lựa chọn đầu tay ở CKD ≥ 3 nhưng bắt buộc khởi đầu ≤ 50 mg/ngày, không được khởi đầu 100 mg/ngày."
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.ult.vn_defer_after_flare_weeks_max",
+  "contentHash": "258461157d5e5946c665fca94f573b4897e77a71de9a9dcd5afe2508c83857ee",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.ult.vn_defer_after_flare_weeks_max",
+      "contentHash": "fe6c61434fdd4569",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.ult.vn_defer_after_flare_weeks_max"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

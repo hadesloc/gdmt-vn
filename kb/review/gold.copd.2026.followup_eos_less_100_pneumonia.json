@@ -1,0 +1,26 @@
+{
+  "itemId": "gold.copd.2026.followup_eos_less_100_pneumonia",
+  "contentHash": "e088714946fe6935e6a41803c7650bb7df66662657d08ab8a5d9289663445f1e",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gold.copd.2026.followup_eos_less_100_pneumonia",
+      "contentHash": "b0fe3c6a2da09efc",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

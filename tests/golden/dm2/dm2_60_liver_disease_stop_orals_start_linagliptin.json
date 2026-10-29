@@ -1,0 +1,105 @@
+{
+  "id": "dm2_60_liver_disease_stop_orals_start_linagliptin",
+  "titleVi": "Bệnh gan mạn tính / ALT > 3 lần ULN: Ngừng Metformin, Pioglitazone, Gliclazide, Vildagliptin và chuyển sang Insulin nền liều thấp",
+  "source": "FDA Glucophage / Actos / EMA Galvus & Diamicron SmPC / ADA 2026",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 59,
+    "sex": "male",
+    "weight": 68,
+    "height": 168,
+    "sbp": 126,
+    "dbp": 78,
+    "hr": 76,
+    "scr": 85,
+    "k": 4.2,
+    "glucose": 10.4,
+    "hba1c": 8.4,
+    "conditions": {
+      "dm": true,
+      "liverDisease": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "metformin",
+        "name": "Metformin",
+        "dose": 2000,
+        "unit": "mg"
+      },
+      {
+        "drugId": "pioglitazone",
+        "name": "Pioglitazone",
+        "dose": 30,
+        "unit": "mg"
+      },
+      {
+        "drugId": "gliclazide",
+        "name": "Gliclazide MR",
+        "dose": 60,
+        "unit": "mg"
+      },
+      {
+        "drugId": "vildagliptin",
+        "name": "Vildagliptin",
+        "dose": 50,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "altUlnTimes": 4.2
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "metformin",
+        "action": "STOP"
+      },
+      {
+        "drugId": "pioglitazone",
+        "action": "STOP"
+      },
+      {
+        "drugId": "gliclazide",
+        "action": "STOP"
+      },
+      {
+        "drugId": "vildagliptin",
+        "action": "STOP"
+      },
+      {
+        "drugId": "insulin_glargine",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "metformin",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "pioglitazone",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Trên bệnh nhân suy gan mạn tính kèm ALT > 3 lần ULN, ngừng đồng bộ Metformin (nguy cơ toan lactic), Pioglitazone, Gliclazide và Vildagliptin; chuyển sang Insulin Glargine liều thấp an toàn."
+}

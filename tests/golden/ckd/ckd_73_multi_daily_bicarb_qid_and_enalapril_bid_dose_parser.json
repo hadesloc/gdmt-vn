@@ -1,0 +1,56 @@
+{
+  "id": "ckd_73_multi_daily_bicarb_qid_and_enalapril_bid_dose_parser",
+  "titleVi": "Ngoại trú - Phân tích chính xác tổng liều ngày của thuốc chia nhiều lần (NaHCO3 1000 mg x 4 lần/ngày = 4000 mg/ngày đạt trần & Enalapril 10 mg x 2 lần/ngày = 20 mg/ngày đạt đích) -> MONITOR NaHCO3 và mở cổng START Finerenone (Regression CKD-R4-R1-01, CKD-R4-R2-02)",
+  "source": "BYT 2024 Mục 3.2 & KDIGO 2024 Rec 3.8.1 (Finerenone trên nền RASi đạt liều đích)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_73",
+    "name": "BN CKD 73",
+    "age": 61,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 132,
+    "dbp": 78,
+    "scr": 140,
+    "k": 4.4,
+    "hco3": 16,
+    "uacr": 35,
+    "conditions": {
+      "ckd": true,
+      "dm": true
+    },
+    "currentMeds": [
+      { "drugId": "sodium_bicarbonate", "name": "Natri Bicarbonat 1000 mg", "dose": 1000, "unit": "mg", "freq": "4 lần/ngày" },
+      { "drugId": "enalapril", "name": "Renitec 10 mg", "dose": 10, "unit": "mg", "freq": "2 lần/ngày" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "sodium_bicarbonate", "action": "MONITOR" },
+      { "drugId": "finerenone", "action": "START" },
+      { "ruleId": "rec_ckd_rasi_monitor", "action": "MONITOR" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "sodium_bicarbonate", "action": "UPTITRATE" },
+      { "drugId": "enalapril", "action": "UPTITRATE" },
+      { "drugId": "finerenone", "action": "DEFER" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R4-R1-01 & CKD-R4-R2-02: Nhân đúng CurrentMed.freq nhiều lần/ngày để nhận diện NaHCO3 đã đạt trần 4000 mg/ngày và Enalapril 10 mg BID đã đạt liều đích 20 mg/ngày."
+}

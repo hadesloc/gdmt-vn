@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.bp.dbp_floor_vn_cad",
+  "contentHash": "76a13211b7b855d07505f424bf14e0a60a9dd5ff436b4ef88fa61bcde82f03d8",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.bp.dbp_floor_vn_cad",
+      "contentHash": "5d5bab834eb832e7",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực ngưỡng lâm sàng htn.bp.dbp_floor_vn_cad (70 mmHg) và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

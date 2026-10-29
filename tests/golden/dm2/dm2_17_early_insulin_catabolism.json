@@ -1,0 +1,53 @@
+{
+  "id": "dm2_17_early_insulin_catabolism",
+  "titleVi": "Bệnh nhân có triệu chứng dị hóa (sụt cân nhanh, gầy sút) - Khởi trị Insulin sớm",
+  "source": "ADA 2026 SOC Ch. 9",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 54,
+    "sex": "male",
+    "weight": 58,
+    "height": 168,
+    "sbp": 120,
+    "dbp": 76,
+    "hr": 82,
+    "scr": 85,
+    "k": 4.1,
+    "glucose": 13.5,
+    "hba1c": 9.4,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "catabolicSymptoms": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "insulin_glargine",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Triệu chứng dị hóa cấp: Bắt buộc insulin."
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "fluticasone_furoate",
+  "contentHash": "0c994a78bbb96aebaf436385d0489aa6e2785b71eccda9eae7cc1cacd779f2d2",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "fluticasone_furoate",
+      "contentHash": "57b8c1827fd24fb2",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T12:52:49.357Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Cập nhật và kiểm định tự động Vòng 3 cho thuốc Fluticasone furoate."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T12:52:49.357Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

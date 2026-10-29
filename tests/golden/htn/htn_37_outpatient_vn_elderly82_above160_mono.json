@@ -1,0 +1,59 @@
+{
+  "id": "htn_37_outpatient_vn_elderly82_above160_mono",
+  "titleVi": "Profile VN (VSH 2022): Người ≥ 80 tuổi có HA 166/88 (≥ 160/90 mmHg) khởi trị đơn trị liều thấp",
+  "source": "VSH/VNHA 2022 / vsh.htn.2022.monotherapy_elderly",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 82,
+    "sex": "male",
+    "weight": 58,
+    "height": 162,
+    "sbp": 166,
+    "dbp": 88,
+    "hr": 72,
+    "scr": 88,
+    "k": 4.2,
+    "conditions": {
+      "htn": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_htn_step1_elderly_monotherapy",
+        "action": "START"
+      },
+      {
+        "drugId": "amlodipine",
+        "action": "START",
+        "doseContains": "2.5"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "perindopril",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Người bệnh 82 tuổi tại Việt Nam có HATT 166 mmHg (≥ 160 mmHg) được khởi trị đơn trị liệu DHP-CCB liều thấp (Amlodipine 2,5 mg/ngày)."
+}

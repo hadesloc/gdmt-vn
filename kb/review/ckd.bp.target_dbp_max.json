@@ -1,0 +1,27 @@
+{
+  "itemId": "ckd.bp.target_dbp_max",
+  "contentHash": "838596475b70f73a705a5fe8d04daeb7762bb1b0afbcf57ed01400db9a204d2d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.bp.target_dbp_max",
+      "contentHash": "0d41ce3dc5293174",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T07:03:44.560Z",
+          "role": "agent_e3_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 2 cho ckd.bp.target_dbp_max."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T07:03:44.560Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.ltot_pao2_cor_pulmonale_max",
+  "contentHash": "4e8635326bbc4634803cddcaa134022f6b756645c3fc95a016ea0d068e6252da",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.ltot_pao2_cor_pulmonale_max",
+      "contentHash": "65ca6c81bbfbe395",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

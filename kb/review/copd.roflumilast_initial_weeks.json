@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.roflumilast_initial_weeks",
+  "contentHash": "d73e0dc7186132a0402eb7a7199ea1a4fe61a5bdb7a01ae98052e7313543ab2e",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.roflumilast_initial_weeks",
+      "contentHash": "7c0602fafd727447",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

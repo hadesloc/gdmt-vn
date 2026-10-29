@@ -1,0 +1,77 @@
+{
+  "id": "dm2_62_basal_insulin_uptitrate_and_overbasal_beam_mgdl",
+  "titleVi": "Đơn vị Mỹ (mg/dL): Nhận diện quá liều Insulin nền qua chênh lệch đường huyết tối – sáng (BeAM = 58 mg/dL >= 50 mg/dL) và giữ liều Glargine",
+  "source": "ADA Standards of Care 2026 Chapter 9 (Overbasalization)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "US",
+    "units": {
+      "cr": "mg_dL",
+      "glucose": "mg_dL",
+      "lipid": "mg_dL",
+      "urat": "mg_dL",
+      "uacr": "mg_g",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 58,
+    "sex": "male",
+    "weight": 78,
+    "height": 175,
+    "sbp": 126,
+    "dbp": 78,
+    "hr": 74,
+    "scr": 1.0,
+    "k": 4.2,
+    "glucose": 152,
+    "hba1c": 8.2,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "metformin",
+        "name": "Metformin",
+        "dose": 2000,
+        "unit": "mg"
+      },
+      {
+        "drugId": "insulin_glargine",
+        "name": "Insulin Glargine",
+        "dose": 24,
+        "unit": "U"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "bedtimeToMorningDiff": 58
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_dm2_overbasalization",
+        "action": "CONSIDER"
+      },
+      {
+        "ruleId": "rec_dm2_basal_insulin_maintenance",
+        "drugId": "insulin_glargine",
+        "action": "CONTINUE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "insulin_glargine",
+        "action": "UPTITRATE"
+      }
+    ]
+  },
+  "descriptionVi": "Chuẩn hóa chính xác bedtimeToMorningDiff từ mg/dL sang mmol/L (58 mg/dL -> 3.22 mmol/L >= 2.8 mmol/L): Phát hiện overbasalization dù liều nền chỉ 0.31 U/kg/ngày và giữ liều Glargine thay vì tăng tiếp liều nền."
+}

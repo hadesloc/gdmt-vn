@@ -1,0 +1,42 @@
+{
+  "itemId": "sodium_zirconium_cyclosilicate",
+  "contentHash": "2f7dcb1df632251db39506bf5bb89b4dd5d0628ad36c705a7e0854a42d80e5b3",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "sodium_zirconium_cyclosilicate",
+      "contentHash": "2c593f07ba24282f",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:58:18.022Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động bổ sung pregnancy, lactation và contraindications theo chuẩn QA-9 cho Sodium Zirconium Cyclosilicate (SZC)."
+        },
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T07:03:44.560Z",
+          "role": "agent_e3_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 2 cho sodium_zirconium_cyclosilicate."
+        },
+        {
+          "round": 4,
+          "reviewedAt": "2026-10-27T23:56:20.141Z",
+          "role": "agent_e5_round4_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 4 cho thuốc sodium_zirconium_cyclosilicate."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T23:56:20.141Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

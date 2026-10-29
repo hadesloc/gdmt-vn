@@ -1,0 +1,69 @@
+{
+  "id": "asthma_37_inpatient_stable_non_acute_no_ocs",
+  "titleVi": "Bệnh nhân hen ổn định nhập viện mổ phiên (isAcuteExacerbation = false): Không kê SABA/OCS cấp cứu",
+  "source": "GINA 2026 / ASTHMA-R2-03",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_37",
+    "name": "Nữ 50 tuổi",
+    "age": 50,
+    "sex": "female",
+    "weight": 62,
+    "sbp": 122,
+    "dbp": 76,
+    "hr": 74,
+    "rhythm": "sinus",
+    "fev1Pct": 85,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "budesonide_formoterol",
+        "name": "Symbicort",
+        "dose": "160/4.5 mcg",
+        "freq": "2 lần/ngày"
+      }
+    ],
+    "customInputs": {
+      "isAcuteExacerbation": false
+    }
+  },
+  "expect": {
+    "mustInclude": [],
+    "mustNotInclude": [
+      {
+        "drugId": "salbutamol",
+        "action": "START"
+      },
+      {
+        "drugId": "prednisolone",
+        "action": "START"
+      },
+      {
+        "drugId": "methylprednisolone",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bệnh nhân có tiền sử hen ổn định nhập viện vì lý do khác (isAcuteExacerbation = false) không bị kê nhầm Prednisolone 40-50 mg và khí dung Salbutamol."
+}

@@ -1,0 +1,49 @@
+{
+  "id": "er_hypoglycemia_0415",
+  "titleVi": "Lơ mơ sau ca lọc máu",
+  "source": "on-call:er_hypoglycemia_0415",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_er_hypoglycemia_0415",
+    "name": "Nam 71 tuổi",
+    "age": 71,
+    "sex": "male",
+    "weight": 62,
+    "sbp": 102,
+    "dbp": 64,
+    "hr": 116,
+    "conditions": {
+      "dm": true,
+      "ckd": true
+    },
+    "selectedModules": [
+      "dm2",
+      "ckd"
+    ],
+    "currentMeds": [],
+    "glucose": 2.1,
+    "scr": 160
+  },
+  "expect": {
+    "mustInclude": [],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bác sĩ ơi, ông run vã mồ hôi rồi lơ mơ, không trả lời rõ. Người bệnh đái tháo đường, bệnh thận mạn; vừa bỏ bữa tối. Đang lơ mơ, làm theo y lệnh không ổn định. Vã mồ hôi, run tay; chưa rõ đã dùng thuốc hạ đường huyết lúc nào.",
+  "notes": "TODO: Ca nháp nội viện chuyển từ on-call. Module agent chịu trách nhiệm điền expect.mustInclude và mustNotInclude."
+}

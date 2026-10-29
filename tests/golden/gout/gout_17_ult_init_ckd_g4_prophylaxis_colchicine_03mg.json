@@ -1,0 +1,70 @@
+{
+  "id": "gout_17_ult_init_ckd_g4_prophylaxis_colchicine_03mg",
+  "titleVi": "Khởi trị ULT trên nền CKD giai đoạn 4 (eGFR 15–29): Allopurinol ≤ 50 mg/ngày + Dự phòng Colchicine giảm liều 0.3 mg/ngày",
+  "source": "ACR 2020 & FDA Colchicine Label (acr.gout.2020.allopurinol_start_dose_ckd_50, fda.colchicine.prophylaxis_dose)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "US",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 70,
+    "sex": "male",
+    "weight": 64,
+    "scr": 250,
+    "uricAcid": 590,
+    "tophi": true,
+    "conditions": {
+      "gout": true,
+      "ckd": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 3,
+      "tophi": true,
+      "hlab5801": "negative"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_start",
+        "action": "START",
+        "doseContains": "50 mg"
+      },
+      {
+        "drugId": "colchicine",
+        "ruleId": "rec_gout_colchicine_prophylaxis",
+        "action": "START",
+        "doseContains": "0.3 mg"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "naproxen",
+        "action": "START"
+      },
+      {
+        "drugId": "probenecid",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 70 tuổi gút tophi kèm CKD giai đoạn 4 (eGFR ~22 mL/phút/1.73m²). Khởi trị Allopurinol ≤ 50 mg/ngày và giảm liều dự phòng Colchicine xuống 0.3 mg/ngày theo nhãn FDA."
+}

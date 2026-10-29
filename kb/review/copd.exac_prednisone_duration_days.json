@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.exac_prednisone_duration_days",
+  "contentHash": "21cf9ae4ab190ead2dfb04c5880dabb0b925b965418691511cd9fa061b5766fb",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.exac_prednisone_duration_days",
+      "contentHash": "7ad5b8c6848dee88",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

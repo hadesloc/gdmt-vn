@@ -1,0 +1,87 @@
+{
+  "id": "gout_34_triple_whammy_rasi_loop_ibuprofen_stop",
+  "titleVi": "Tương tác 'Triple Whammy' (Losartan + Furosemide + Ibuprofen): Bắt buộc NGỪNG Ibuprofen để phòng suy thận cấp",
+  "source": "KDIGO 2024 & BYT 2024 CKD (kdigo.gout.2024.acute_flare_ckd, byt.ckd.2024.gout_flare_table22)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 63,
+    "sex": "male",
+    "weight": 75,
+    "sbp": 134,
+    "dbp": 82,
+    "scr": 96,
+    "uricAcid": 480,
+    "conditions": {
+      "gout": true,
+      "htn": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "losartan",
+        "name": "Losartan",
+        "dose": "50",
+        "unit": "mg"
+      },
+      {
+        "drugId": "furosemide",
+        "name": "Furosemide",
+        "dose": "40",
+        "unit": "mg"
+      },
+      {
+        "drugId": "ibuprofen",
+        "name": "Ibuprofen",
+        "dose": "400",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": true,
+      "goutFlaresYear": 1,
+      "priorFlaresLifetime": 1
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "ibuprofen",
+        "ruleId": "rec_gout_nsaid_stop_ibuprofen",
+        "action": "STOP"
+      },
+      {
+        "drugId": "colchicine",
+        "ruleId": "rec_gout_colchicine_acute_flare",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "ibuprofen",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "naproxen",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 63 tuổi đang dùng Losartan + Furosemide tự mua Ibuprofen uống cắt cơn gút cấp (tổ hợp 'Triple Whammy' gây co tiểu động mạch đến kèm giãn tiểu động mạch đi cầu thận). Hệ thống phát lệnh NGỪNG Ibuprofen ngay lập tức và chuyển sang Colchicine liều thấp an toàn."
+}

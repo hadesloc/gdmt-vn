@@ -1,0 +1,42 @@
+{
+  "itemId": "dm2.metformin.dose_max",
+  "contentHash": "5143680165844a18c400420804b370d1531d55ed70c0d97069b3bab6d592dca4",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "dm2.metformin.dose_max",
+      "contentHash": "bbf8fc0239b2ef2e",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-27T15:25:00.000Z",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T08:45:00.000Z",
+          "role": "Agent F2 (DM2 Remediation & QA-10)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked threshold dm2.metformin.dose_max (QA-10 quantity & verbatim quote verified)."
+        },
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T15:25:00.000Z",
+          "role": "Agent F3 (DM2 Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Verified dm2.metformin.dose_max contentHash, verbatim PDF quotes, and Round 2 R1/R2/R3 clinical schema compliance."
+        },
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T15:25:00.000Z",
+          "role": "Agent F3 (DM2 Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Verified dm2.metformin.dose_max contentHash, verbatim PDF quotes, and Round 2 R1/R2/R3 clinical schema compliance."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

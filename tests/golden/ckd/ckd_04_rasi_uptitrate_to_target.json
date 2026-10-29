@@ -1,0 +1,58 @@
+{
+  "id": "ckd_04_rasi_uptitrate_to_target",
+  "titleVi": "Chuẩn độ tăng liều Losartan từ 50 mg lên 100 mg ở bệnh nhân CKD có albumin niệu",
+  "source": "KDIGO 2024 CKD PP 3.6.1 / kdigo.ckd.2024.pp_3_6_1_rasi_max_dose",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_04",
+    "name": "BN CKD 04",
+    "age": 60,
+    "sex": "male",
+    "weight": 74,
+    "sbp": 138,
+    "dbp": 86,
+    "hr": 72,
+    "scr": 140,
+    "k": 4.4,
+    "uacr": 22,
+    "conditions": {
+      "ckd": true,
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "losartan",
+        "name": "Cozaar 50 mg",
+        "dose": 50,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "losartan",
+        "action": "UPTITRATE"
+      }
+    ]
+  },
+  "descriptionVi": "Tăng liều RASi tới liều tối đa khi huyết động và kali máu cho phép."
+}

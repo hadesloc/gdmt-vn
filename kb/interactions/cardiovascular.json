@@ -1,0 +1,600 @@
+[
+  {
+    "id": "ix.bb_non_dhp_ccb",
+    "titleVi": "Tương tác Nguy cơ Chậm nhịp tim & Block AV nặng: Chẹn Beta + Diltiazem / Verapamil",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "bisoprolol",
+        "carvedilol",
+        "metoprolol_succinate",
+        "nebivolol",
+        "atenolol",
+        "propranolol",
+        "labetalol",
+        "esmolol",
+        "sotalol"
+      ],
+      "classes": [
+        "bb_selective",
+        "bb_nonselective",
+        "beta_blocker"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "diltiazem",
+        "verapamil"
+      ],
+      "classes": [
+        "ndhp_ccb"
+      ]
+    },
+    "mechanismVi": "Tác dụng hiệp đồng ức chế dẫn truyền qua nút nhĩ thất (AV) và tự động tính của nút xoang, đồng thời cộng dồn tác dụng ức chế co bóp cơ tim (inotropic âm tính).",
+    "effectVi": "Chậm nhịp xoang nghiêm trọng, ngưng xoang, block nhĩ thất độ II-III, tụt huyết áp và khởi phát suy tim cấp.",
+    "managementVi": "Tránh phối hợp thường quy đường uống; chống chỉ định phối hợp tiêm tĩnh mạch. Nếu bắt buộc phải phối hợp để kiểm soát nhịp trong rung nhĩ, phải theo dõi sát nhịp tim và điện tâm đồ.",
+    "citationIds": [
+      "fda.diltiazem.beta_blocker_additive_conduction"
+    ]
+  },
+  {
+    "id": "ix.amiodarone_digoxin",
+    "titleVi": "Tương tác Amiodarone + Digoxin",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "amiodarone"
+      ],
+      "classes": [
+        "antiarrhythmic_class_3"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "digoxin"
+      ],
+      "classes": [
+        "cardiac_glycoside"
+      ]
+    },
+    "mechanismVi": "Amiodarone ức chế mạnh bơm P-glycoprotein tại ống thận và đường mật, làm giảm độ thanh thải digoxin khoảng 50% và tăng gấp đôi nồng độ digoxin huyết thanh.",
+    "effectVi": "Ngộ độc digoxin cấp tính: buồn nôn, rối loạn thị giác, loạn nhịp thất nguy hiểm, block nhĩ thất hoàn toàn và ngừng tim.",
+    "managementVi": "Khi bắt đầu dùng amiodarone, bắt buộc giảm ngay 50% liều Digoxin (hoặc dùng cách nhật); theo dõi nồng độ digoxin trong máu và điện tâm đồ.",
+    "doseLimit": {
+      "drugId": "digoxin",
+      "maxDose": 0.125,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Giảm 50% liều Digoxin khi dùng kèm Amiodarone"
+    },
+    "citationIds": [
+      "fda.amiodarone.digoxin_reduce_half"
+    ]
+  },
+  {
+    "id": "ix.verapamil_digoxin",
+    "titleVi": "Tương tác Verapamil + Digoxin",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "verapamil"
+      ],
+      "classes": [
+        "ndhp_ccb"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "digoxin"
+      ],
+      "classes": [
+        "cardiac_glycoside"
+      ]
+    },
+    "mechanismVi": "Verapamil ức chế bài tiết digoxin qua P-glycoprotein ở ống thận, làm tăng nồng độ digoxin trong huyết thanh từ 50% đến 75%, kèm cộng dồn ức chế nút AV.",
+    "effectVi": "Ngộ độc digitalis, chậm nhịp tim nặng và block dẫn truyền nhĩ thất.",
+    "managementVi": "Giảm liều Digoxin khoảng 30%–50% khi bắt đầu dùng verapamil; theo dõi nồng độ digoxin máu và nhịp tim định kỳ.",
+    "citationIds": [
+      "fda.digoxin.amiodarone_verapamil_interactions"
+    ]
+  },
+  {
+    "id": "ix.diltiazem_digoxin",
+    "titleVi": "Tương tác Diltiazem + Digoxin",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "diltiazem"
+      ],
+      "classes": [
+        "ndhp_ccb"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "digoxin"
+      ],
+      "classes": [
+        "cardiac_glycoside"
+      ]
+    },
+    "mechanismVi": "Diltiazem ức chế vừa P-gp làm tăng nồng độ digoxin huyết tương khoảng 20%–40%, đồng thời cộng dồn ức chế dẫn truyền nhĩ thất.",
+    "effectVi": "Nguy cơ chậm nhịp tim kịch phát và block nhĩ thất độ II-III.",
+    "managementVi": "Theo dõi sát điện tâm đồ và tần số tim; cân nhắc giảm liều digoxin nếu có biểu hiện chậm nhịp.",
+    "citationIds": [
+      "fda.diltiazem.beta_blocker_additive_conduction"
+    ]
+  },
+  {
+    "id": "ix.ivabradine_diltiazem_verapamil",
+    "titleVi": "Chống chỉ định phối hợp Ivabradine + Diltiazem / Verapamil",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "ivabradine"
+      ],
+      "classes": [
+        "if_inhibitor"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "diltiazem",
+        "verapamil"
+      ],
+      "classes": [
+        "ndhp_ccb"
+      ]
+    },
+    "mechanismVi": "Diltiazem và verapamil là các thuốc ức chế vừa CYP3A4 làm tăng nồng độ ivabradine trong máu lên 2–3 lần, cộng dồn tác dụng làm chậm tần số tim quá mức.",
+    "effectVi": "Chậm nhịp tim trầm trọng, ngưng tim, block nhĩ thất và biến cố tim mạch bất lợi.",
+    "managementVi": "Chống chỉ định phối hợp ivabradine với diltiazem hoặc verapamil.",
+    "citationIds": [
+      "fda.ivabradine.verapamil_diltiazem_avoid"
+    ]
+  },
+  {
+    "id": "ix.ivabradine_strong_cyp3a4",
+    "titleVi": "Chống chỉ định phối hợp Ivabradine + Thuốc ức chế mạnh CYP3A4",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "ivabradine"
+      ],
+      "classes": [
+        "if_inhibitor"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "clarithromycin",
+        "ketoconazole",
+        "itraconazole",
+        "posaconazole",
+        "voriconazole",
+        "ritonavir",
+        "nirmatrelvir_ritonavir",
+        "cobicistat",
+        "nefazodone"
+      ],
+      "classes": [
+        "strong_cyp3a4_inhibitor"
+      ]
+    },
+    "mechanismVi": "Chất ức chế mạnh CYP3A4 làm tăng nồng độ ivabradine huyết tương lên 7–8 lần.",
+    "effectVi": "Chậm nhịp tim nghiêm trọng đe dọa tính mạng.",
+    "managementVi": "Chống chỉ định tuyệt đối phối hợp.",
+    "citationIds": [
+      "fda.ivabradine.contraindication_strong_cyp3a4"
+    ]
+  },
+  {
+    "id": "ix.ccb_non_dhp_hfref",
+    "titleVi": "Chống chỉ định CCB Non-DHP (Diltiazem, Verapamil) ở Suy tim phân suất tống máu giảm (HFrEF)",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "diltiazem",
+        "verapamil"
+      ],
+      "classes": [
+        "ndhp_ccb"
+      ]
+    },
+    "b": {
+      "classes": [
+        "hfref_condition"
+      ]
+    },
+    "mechanismVi": "Tác dụng ức chế co bóp cơ tim trực tiếp (inotropic âm tính) làm suy giảm thêm cung lượng tim đã suy giảm sẵn ở bệnh nhân có LVEF ≤ 40%.",
+    "effectVi": "Làm trầm trọng thêm tình trạng suy tim, khởi phát đợt cấp suy tim mất bù và tăng tỷ lệ tử vong.",
+    "managementVi": "Chống chỉ định CCB Non-DHP ở bệnh nhân suy tim HFrEF (LVEF ≤ 40%). Để kiểm soát huyết áp ở HFrEF chỉ dùng DHP-CCB an toàn (Amlodipine, Felodipine).",
+    "citationIds": [
+      "esc.hf.2026.non_dhp_ccb_contraindicated"
+    ]
+  },
+  {
+    "id": "ix.bb_non_selective_asthma",
+    "titleVi": "Chống chỉ định Thuốc chẹn beta không chọn lọc (kể cả nhỏ mắt Timolol) ở Hen phế quản",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "propranolol",
+        "timolol",
+        "timolol_ophthalmic",
+        "nadolol",
+        "carvedilol",
+        "labetalol",
+        "sotalol"
+      ],
+      "classes": [
+        "bb_nonselective"
+      ]
+    },
+    "b": {
+      "classes": [
+        "asthma_condition"
+      ]
+    },
+    "mechanismVi": "Chẹn thụ thể beta-2 giao cảm trên cơ trơn phế quản (kể cả hấp thu toàn thân từ thuốc nhỏ mắt timolol qua ống lệ tỵ không qua chuyển hóa bước đầu ở gan) dẫn đến co thắt phế quản cấp tính dữ dội kháng với thuốc giãn phế quản.",
+    "effectVi": "Cơn hen phế quản cấp nặng, suy hô hấp cấp đe dọa tính mạng.",
+    "managementVi": "Chống chỉ định ở bệnh nhân hen phế quản (bao gồm cả dạng nhỏ mắt điều trị tăng nhãn áp như timolol). Nếu có chỉ định tim mạch bắt buộc ở bệnh nhân COPD hoặc hen ổn định, chỉ được dùng chẹn beta chọn lọc beta-1 (Bisoprolol, Metoprolol succinate) ở liều thấp nhất dưới sự giám sát chặt chẽ của chuyên khoa.",
+    "citationIds": [
+      "fda.carvedilol.contraindication_asthma",
+      "gina.asthma.2026.ix_ophthalmic_bb_bronchospasm"
+    ]
+  },
+  {
+    "id": "ix.bb_beta2_agonist",
+    "titleVi": "Tương tác Đối kháng Dược lực & Co thắt phế quản nặng: Chẹn Beta không chọn lọc (kể cả Timolol nhỏ mắt) + Thuốc giãn phế quản chủ vận Beta-2 (Hen/COPD)",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "propranolol",
+        "timolol",
+        "timolol_ophthalmic",
+        "nadolol",
+        "carvedilol",
+        "labetalol",
+        "sotalol"
+      ],
+      "classes": [
+        "bb_nonselective"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "salbutamol",
+        "terbutaline",
+        "formoterol",
+        "salmeterol",
+        "indacaterol",
+        "olodaterol",
+        "vilanterol",
+        "budesonide_formoterol",
+        "beclometasone_formoterol",
+        "fluticasone_salmeterol",
+        "fluticasone_vilanterol",
+        "mometasone_formoterol",
+        "umeclidinium_vilanterol",
+        "tiotropium_olodaterol",
+        "glycopyrronium_indacaterol",
+        "fluticasone_furoate_umeclidinium_vilanterol",
+        "fluticasone_umeclidinium_vilanterol",
+        "budesonide_glycopyrronium_formoterol",
+        "beclometasone_glycopyrronium_formoterol",
+        "beclometasone_formoterol_glycopyrronium"
+      ],
+      "classes": [
+        "saba",
+        "laba",
+        "ics_laba",
+        "lama_laba",
+        "ics_lama_laba"
+      ]
+    },
+    "mechanismVi": "Thuốc chẹn beta không chọn lọc (kể cả chế phẩm nhỏ mắt timolol hấp thu trực tiếp vào tuần hoàn hệ thống qua niêm mạc lệ mũi) phong bế cạnh tranh trực tiếp thụ thể beta-2 adrenergic trên cơ trơn phế quản, triệt tiêu tác dụng giãn phế quản của SABA/LABA.",
+    "effectVi": "Co thắt phế quản cấp tính nghiêm trọng, mất đáp ứng với thuốc cắt cơn SABA (salbutamol/terbutaline) hoặc ICS-formoterol và khởi phát suy hô hấp cấp ở người bệnh Hen/COPD.",
+    "managementVi": "Tránh phối hợp chẹn beta không chọn lọc đường toàn thân hoặc nhỏ mắt (timolol) ở người bệnh Hen/COPD đang dùng thuốc giãn phế quản beta-2. Đổi thuốc nhỏ mắt sang nhóm prostaglandin/ức chế carbonic anhydrase; nếu có chỉ định tim mạch bắt buộc (suy tim, mạch vành), chuyển sang chẹn beta chọn lọc beta-1 trên tim (bisoprolol, metoprolol succinate, nebivolol).",
+    "citationIds": [
+      "fda.carvedilol.contraindication_asthma",
+      "gina.asthma.2026.ix_ophthalmic_bb_bronchospasm"
+    ]
+  },
+  {
+    "id": "ix.lercanidipine_cyp3a4_cyclosporine",
+    "titleVi": "Chống chỉ định phối hợp Lercanidipine + Thuốc ức chế mạnh CYP3A4 hoặc Cyclosporine",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "lercanidipine"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "clarithromycin",
+        "itraconazole",
+        "ketoconazole",
+        "posaconazole",
+        "voriconazole",
+        "ritonavir",
+        "nirmatrelvir_ritonavir",
+        "cobicistat",
+        "cyclosporine",
+        "ciclosporin"
+      ],
+      "classes": [
+        "strong_cyp3a4_inhibitor",
+        "calcineurin_inhibitor"
+      ]
+    },
+    "mechanismVi": "Lercanidipine chịu chuyển hóa bước đầu rất mạnh qua enzym CYP3A4 tại ruột và gan; các chất ức chế mạnh CYP3A4 làm tăng vọt AUC của lercanidipine (ketoconazole tăng ~15 lần), đồng thời phối hợp cyclosporine làm tăng AUC lercanidipine ~3 lần và tăng nồng độ cyclosporine huyết tương.",
+    "effectVi": "Giãn mạch quá mức gây tụt huyết áp nặng kéo dài, choáng váng, ngất, thiếu máu cơ quan tưới máu và tăng nguy cơ độc tính thận của cyclosporine.",
+    "managementVi": "Chống chỉ định tuyệt đối phối hợp lercanidipine với thuốc ức chế mạnh CYP3A4 (clarithromycin, itraconazole, ketoconazole, ritonavir) hoặc cyclosporine. Cân nhắc đổi sang thuốc hạ áp nhóm khác hoặc Amlodipine liều thấp kèm theo dõi sát huyết áp và nồng độ cyclosporine.",
+    "citationIds": [
+      "ema.zanidip.contra_cyp3a4_ciclosporin",
+      "ema.zanidip.ketoconazole_15x_ciclosporin_3x",
+      "ema.zanidip.cyp3a4_metabolism"
+    ]
+  },
+  {
+    "id": "ix.alpha2_agonist_beta_blocker_rebound",
+    "titleVi": "Nguy cơ Cơn Tăng huyết áp Dội ngược: Clonidine / Moxonidine + Thuốc chẹn Beta",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "clonidine",
+        "moxonidine"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "bisoprolol",
+        "metoprolol_succinate",
+        "carvedilol",
+        "nebivolol",
+        "atenolol",
+        "propranolol",
+        "labetalol",
+        "esmolol",
+        "sotalol"
+      ],
+      "classes": [
+        "bb_selective",
+        "bb_nonselective",
+        "beta_blocker"
+      ]
+    },
+    "mechanismVi": "Ngưng đột ngột thuốc hạ áp giao cảm trung ương (clonidine, moxonidine) gây phóng thích ồ ạt catecholamine ngoại biên; khi thụ thể beta-2 giãn mạch đang bị chẹn bởi thuốc chẹn beta, hiện tượng kích thích alpha-1 co mạch không đối kháng làm kháng lực mạch hệ thống tăng vọt.",
+    "effectVi": "Cơn tăng huyết áp cấp cứu dội ngược (rebound hypertensive crisis) đe dọa xuất huyết não và phù phổi cấp; ngoài ra phối hợp đồng thời cũng làm tăng nguy cơ nhịp chậm xoang và tụt huyết áp.",
+    "managementVi": "Không ngưng đột ngột clonidine hoặc moxonidine. Khi cần chấm dứt phác đồ phối hợp, BẮT BUỘC phải ngừng thuốc chẹn beta trước vài ngày, sau đó mới giảm liều từ từ clonidine/moxonidine.",
+    "citationIds": [
+      "fda.carvedilol.clonidine_rebound_withdrawal",
+      "ema.bisoprolol.central_alpha2_clonidine_moxonidine",
+      "ema.bisoprolol.rebound_hypertension_withdrawal",
+      "aha.acc.2025.table17_clonidine_bb_crisis"
+    ]
+  },
+  {
+    "id": "ix.nitroprusside_pde5i",
+    "titleVi": "Chống chỉ định Tuyệt đối: Natri Nitroprusside + Thuốc ức chế PDE-5 (Sildenafil, Tadalafil, Vardenafil) hoặc Riociguat",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "sodium_nitroprusside"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "sildenafil",
+        "tadalafil",
+        "vardenafil",
+        "avanafil",
+        "riociguat"
+      ],
+      "classes": [
+        "pde5i"
+      ]
+    },
+    "mechanismVi": "Natri nitroprusside giải phóng trực tiếp nitric oxide (NO) kích hoạt guanylate cyclase hòa tan (sGC) làm tăng cGMP nội bào; thuốc ức chế PDE-5 ngăn thoái giáng cGMP và riociguat kích thích trực tiếp sGC, gây tích tụ cGMP hiệp đồng cực mạnh.",
+    "effectVi": "Giãn mạch toàn thân dữ dội, hạ huyết áp tụt sâu kháng trị đe dọa tính mạng, thiếu máu cơ tim cấp và trụy tuần hoàn tử vong.",
+    "managementVi": "Chống chỉ định tuyệt đối truyền Natri nitroprusside ở bệnh nhân đang dùng riociguat hoặc đã dùng sildenafil/vardenafil/avanafil (trong 24 giờ) hay tadalafil (trong 48 giờ). Sử dụng thuốc hạ áp tĩnh mạch cơ chế khác như Nicardipine hoặc Clevidipine.",
+    "citationIds": [
+      "aha.acc.2025.table26_nitroprusside_no_donor",
+      "aha.acc.2025.table27_nitrates_pde5i_hypotension",
+      "aha.acc.2025.sec6_3_pde5i_nitrates_contra",
+      "fda.vericiguat.sgc_pde5i_contra"
+    ]
+  },
+  {
+    "id": "ix.clonidine_non_dhp_ccb",
+    "titleVi": "Tương tác Nhịp chậm xoang & Block nhĩ thất nặng: Clonidine + Diltiazem / Verapamil",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "clonidine"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "diltiazem",
+        "verapamil"
+      ],
+      "classes": [
+        "ndhp_ccb"
+      ]
+    },
+    "mechanismVi": "Hiệp đồng ức chế giao cảm trung ương của clonidine với tác dụng ức chế nút xoang và làm chậm dẫn truyền nút nhĩ thất của thuốc chẹn kênh canxi nhóm non-dihydropyridine (diltiazem, verapamil).",
+    "effectVi": "Nhịp chậm xoang nghiêm trọng, ngưng xoang và block nhĩ thất độ cao có thể dẫn tới nhập viện và phải đặt máy tạo nhịp tim.",
+    "managementVi": "Tránh phối hợp nếu có thuốc hạ áp thay thế phù hợp hơn; nếu bắt buộc dùng đồng thời phải theo dõi chặt chẽ tần số tim, huyết áp và điện tâm đồ.",
+    "citationIds": [
+      "fda.diltiazem.clonidine_sinus_bradycardia"
+    ]
+  },
+  {
+    "id": "ix.digoxin_pgp_inhibitors",
+    "titleVi": "Tương tác Ngộ độc Digitalis & Giảm 50% liều: Digoxin + Thuốc ức chế P-gp (Dronedarone, Amiodarone, Verapamil, Macrolide, Azole, Cyclosporine, Propafenone, Ranolazine)",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "digoxin"
+      ],
+      "classes": [
+        "cardiac_glycoside"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "amiodarone",
+        "dronedarone",
+        "verapamil",
+        "clarithromycin",
+        "erythromycin",
+        "itraconazole",
+        "ketoconazole",
+        "cyclosporine",
+        "propafenone",
+        "quinidine",
+        "ritonavir",
+        "nirmatrelvir_ritonavir",
+        "ranolazine"
+      ]
+    },
+    "mechanismVi": "Digoxin có khoảng điều trị rất hẹp và được thải trừ chủ yếu qua bơm đẩy P-glycoprotein (P-gp) tại ruột và ống thận. Các thuốc ức chế P-gp (dronedarone tăng 2.5 lần phơi nhiễm digoxin, amiodarone, verapamil, clarithromycin, erythromycin, itraconazole, cyclosporine, propafenone, quinidine, ranolazine...) làm tăng vọt nồng độ digoxin huyết thanh và cộng dồn ức chế nút AV.",
+    "effectVi": "Ngộ độc digoxin cấp tính (buồn nôn, chán ăn, rối loạn thị giác sắc vàng-xanh), block nhĩ thất độ cao, nhịp nhanh thất hai hướng và ngừng tim.",
+    "managementVi": "Giảm ngay 50% liều Digoxin (hoặc ngừng hẳn Digoxin nếu có lựa chọn kiểm soát tần số tốt hơn khi khởi trị Dronedarone/Amiodarone), định lượng nồng độ digoxin huyết thanh (duy trì < 0.9 ng/mL trong suy tim) và theo dõi điện tâm đồ, K+/Mg2+ máu (FDA Lanoxin Table 1 & Multaq §7.2).",
+    "doseLimit": {
+      "drugId": "digoxin",
+      "maxDose": 0.125,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Giảm 30%–50% liều Digoxin khi phối hợp thuốc ức chế P-gp và theo dõi nồng độ digoxin huyết thanh"
+    },
+    "citationIds": [
+      "fda.digoxin.pgp_inhibitors_reduce_dose",
+      "fda.dronedarone.digoxin_halve_dose"
+    ]
+  },
+  {
+    "id": "ix.dronedarone_strong_cyp3a4",
+    "titleVi": "Chống chỉ định Tuyệt đối: Dronedarone + Thuốc ức chế mạnh CYP3A4 (Ketoconazole, Itraconazole, Voriconazole, Clarithromycin, Ritonavir/Paxlovid, Cyclosporine)",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "dronedarone"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "ketoconazole",
+        "itraconazole",
+        "voriconazole",
+        "posaconazole",
+        "clarithromycin",
+        "ritonavir",
+        "nirmatrelvir_ritonavir",
+        "cobicistat",
+        "cyclosporine",
+        "telithromycin",
+        "nefazodone"
+      ],
+      "classes": [
+        "strong_cyp3a4_inhibitor"
+      ]
+    },
+    "mechanismVi": "Dronedarone chịu chuyển hóa bước đầu mạnh qua enzym CYP3A4; phối hợp với ketoconazole hoặc các chất ức chế mạnh CYP3A4 làm tăng nồng độ đỉnh và AUC của dronedarone lên tới 17 lần.",
+    "effectVi": "Kéo dài khoảng QTc nghiêm trọng, khởi phát xoắn đỉnh (Torsades de Pointes), suy tim mất bù và ngừng tuần hoàn.",
+    "managementVi": "Chống chỉ định tuyệt đối sử dụng đồng thời Dronedarone với các thuốc ức chế mạnh CYP3A4 hoặc Cyclosporine (nhãn FDA Multaq §4 & §7.3).",
+    "citationIds": [
+      "fda.dronedarone.strong_cyp3a_contra"
+    ]
+  },
+  {
+    "id": "ix.alpha1_blocker_pde5i",
+    "titleVi": "Tương tác Hạ huyết áp Tư thế Có triệu chứng: Chẹn Alpha-1 (Doxazosin, Prazosin, Terazosin, Tamsulosin, Alfuzosin) + Thuốc ức chế PDE-5 (Sildenafil, Tadalafil, Vardenafil)",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "doxazosin",
+        "prazosin",
+        "terazosin",
+        "tamsulosin",
+        "alfuzosin"
+      ],
+      "classes": [
+        "alpha1_blocker"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "sildenafil",
+        "tadalafil",
+        "vardenafil",
+        "avanafil"
+      ],
+      "classes": [
+        "pde5i"
+      ]
+    },
+    "mechanismVi": "Cả thuốc chẹn thụ thể giao cảm alpha-1 ngoại biên và thuốc ức chế PDE-5 đều gây giãn mạch hệ thống; dùng đồng thời gây tác dụng hiệp đồng hạ huyết áp mạnh.",
+    "effectVi": "Tụt huyết áp tư thế đứng nghiêm trọng, choáng váng, ngất và chấn thương do té ngã.",
+    "managementVi": "Bệnh nhân phải đạt huyết động ổn định trên phác đồ chẹn alpha-1 trước khi khởi trị thuốc ức chế PDE-5 ở mức liều thấp nhất (hoặc ngược lại khởi đầu chẹn alpha-1 ở liều thấp nhất và uống cách xa nhau tối thiểu 4–6 giờ; nhãn FDA Cardura §5.1 & §7.2).",
+    "citationIds": [
+      "fda.doxazosin.pde5i_hypotension"
+    ]
+  },
+  {
+    "id": "ix.methyldopa_iron",
+    "titleVi": "Tương tác Giảm hấp thu & Mất kiểm soát Huyết áp: Methyldopa + Chế phẩm Sắt đường uống (Ferrous Sulfate / Fumarate / Gluconate)",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "methyldopa"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "ferrous_sulfate",
+        "ferrous_fumarate",
+        "ferrous_gluconate",
+        "oral_iron",
+        "iron_polymaltose"
+      ]
+    },
+    "mechanismVi": "Các muối sắt đường uống tạo phức hợp chelat không tan với methyldopa trong lòng đường tiêu hóa, làm giảm 40%–73% sinh khả dụng đường uống của methyldopa.",
+    "effectVi": "Mất hiệu quả kiểm soát huyết áp của Methyldopa — đặc biệt nguy hiểm ở phụ nữ mang thai đang đồng thời uống viên sắt bổ sung và điều trị tăng huyết áp thai kỳ.",
+    "managementVi": "Tránh uống cùng thời điểm; tách thời điểm uống viên sắt và Methyldopa cách nhau ít nhất 2–4 giờ và theo dõi sát huyết áp (AHA/ACC 2025 HTN Guideline), hoặc cân nhắc chuyển thuốc hạ áp an toàn trong thai kỳ không bị cản trở bởi sắt như Labetalol hoặc Nifedipine phóng thích kéo dài.",
+    "citationIds": [
+      "aha.acc.2025.methyldopa_iron_salts"
+    ]
+  },
+  {
+    "id": "ix.magnesium_sulfate_ccb",
+    "titleVi": "Tương tác Hạ huyết áp Hiệp đồng & Ức chế Thần kinh-Cơ: Magnesium Sulfate + Chẹn kênh Canxi Dihydropyridine (Nifedipine, Nicardipine)",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "magnesium_sulfate"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "nifedipine",
+        "nicardipine",
+        "amlodipine",
+        "clevidipine",
+        "felodipine",
+        "lercanidipine"
+      ],
+      "classes": [
+        "dhp_ccb"
+      ]
+    },
+    "mechanismVi": "Magnesium sulfate đối kháng dòng canxi tại màng tế bào cơ trơn mạch máu và tấm vận động thần kinh-cơ, hiệp đồng dược lực trực tiếp với thuốc chẹn kênh canxi nhóm dihydropyridine (đặc biệt nifedipine và nicardipine trong tiền sản giật nặng).",
+    "effectVi": "Nguy cơ tụt huyết áp mẹ đột ngột gây suy thai cấp và tăng nguy cơ ức chế dẫn truyền thần kinh-cơ (mất phản xạ gân xương, yếu cơ hô hấp).",
+    "managementVi": "Vẫn có thể phối hợp khi có chỉ định bắt buộc trong tiền sản giật nặng/sản giật nhưng phải theo dõi sát huyết áp mẹ mỗi 5–15 phút, tim thai liên tục, phản xạ gân xương bánh chè, nhịp thở và lượng nước tiểu (ESC 2024 Section 10.4.1).",
+    "citationIds": [
+      "esc.htn.2024.ix_mgso4_ccb_hypotension"
+    ]
+  }
+]

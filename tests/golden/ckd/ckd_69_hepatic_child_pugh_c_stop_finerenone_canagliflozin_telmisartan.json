@@ -1,0 +1,62 @@
+{
+  "id": "ckd_69_hepatic_child_pugh_c_stop_finerenone_canagliflozin_telmisartan",
+  "titleVi": "Ngoại trú - Xơ gan mất bù (Child-Pugh C) trên nền ĐTĐ2 + CKD đang dùng Finerenone, Canagliflozin và Telmisartan -> Phát lệnh STOP cả 3 thuốc và AVOID Atorvastatin (Regression CKD-R3-R2-03)",
+  "source": "FDA Kerendia 8.6, FDA Invokana 8.7 & Micardis SmPC (biliary excretion contraindication)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_69",
+    "name": "BN CKD 69",
+    "age": 59,
+    "sex": "male",
+    "weight": 66,
+    "sbp": 128,
+    "dbp": 76,
+    "hr": 78,
+    "scr": 145,
+    "k": 4.5,
+    "uacr": 35,
+    "conditions": {
+      "ckd": true,
+      "dm": true,
+      "htn": true
+    },
+    "customInputs": {
+      "childPugh": "C"
+    },
+    "currentMeds": [
+      { "drugId": "finerenone", "name": "Kerendia 10 mg", "dose": 10, "unit": "mg" },
+      { "drugId": "canagliflozin", "name": "Invokana 100 mg", "dose": 100, "unit": "mg" },
+      { "drugId": "telmisartan", "name": "Micardis 40 mg", "dose": 40, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "finerenone", "action": "STOP" },
+      { "drugId": "canagliflozin", "action": "STOP" },
+      { "drugId": "telmisartan", "action": "STOP" },
+      { "drugId": "atorvastatin", "action": "AVOID" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "finerenone", "action": "CONTINUE" },
+      { "drugId": "canagliflozin", "action": "CONTINUE" },
+      { "drugId": "atorvastatin", "action": "START" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R3-R2-03: Tích hợp đầy đủ cổng an toàn suy gan Child-Pugh C đối với Finerenone, Canagliflozin, Telmisartan và Statin ngay trong module CKD."
+}

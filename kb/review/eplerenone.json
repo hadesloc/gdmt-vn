@@ -1,0 +1,34 @@
+{
+  "itemId": "eplerenone",
+  "contentHash": "0e82fc86c8a4af0aaa797bf15d56358e3b9ac7ca558117cd9e5a535dd5369820",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "eplerenone",
+      "contentHash": "f66aa9d6327f5384",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T14:39:00.000Z",
+          "role": "Agent G4 (HF Remediation & QA-10)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF drug eplerenone (Round 1 R1/R2/R3 remediation & QA-10 verified)."
+        },
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Agent G5 (HF Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF drug eplerenone (Round 2 R1/R2/R3 remediation & verbatim PDF citation verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

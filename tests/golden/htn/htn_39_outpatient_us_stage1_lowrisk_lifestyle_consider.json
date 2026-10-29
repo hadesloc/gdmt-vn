@@ -1,0 +1,61 @@
+{
+  "id": "htn_39_outpatient_us_stage1_lowrisk_lifestyle_consider",
+  "titleVi": "Profile US (AHA/ACC 2025): THA Giai đoạn 1 (134/84 mmHg) kèm PREVENT < 7.5% ưu tiên lối sống 3–6 tháng",
+  "source": "AHA/ACC 2025 / aha.acc.2025.stage1_prevent_low_risk",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "US",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 46,
+    "sex": "female",
+    "weight": 60,
+    "height": 160,
+    "sbp": 134,
+    "dbp": 84,
+    "hr": 72,
+    "scr": 70,
+    "k": 4.1,
+    "customInputs": {
+      "preventRiskPct": 3.2
+    },
+    "conditions": {
+      "htn": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_htn_step1_us_stage1_lowrisk_lifestyle",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "amlodipine",
+        "action": "START"
+      },
+      {
+        "drugId": "perindopril",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Theo AHA/ACC 2025, bệnh nhân THA Giai đoạn 1 nguy cơ thấp (PREVENT < 7,5%) can thiệp lối sống tích cực 3–6 tháng trước khi bắt đầu dùng thuốc."
+}

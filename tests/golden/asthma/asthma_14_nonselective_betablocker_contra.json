@@ -1,0 +1,58 @@
+{
+  "id": "asthma_14_nonselective_betablocker_contra",
+  "titleVi": "Chống chỉ định: Thuốc chẹn beta không chọn lọc (Carvedilol) ở người hen",
+  "source": "GINA 2026 Strategy Report",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_14",
+    "name": "Nam 55 tuổi",
+    "age": 55,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 135,
+    "dbp": 85,
+    "hr": 75,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true,
+      "htn": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "carvedilol",
+        "dose": "12.5 mg x 2 lần/ngày",
+        "freq": "2 lần/ngày"
+      }
+    ],
+    "customInputs": {}
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "carvedilol",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bệnh nhân hen đang dùng Carvedilol -> Cảnh báo chống chỉ định đối kháng beta-2 gây co thắt phế quản."
+}

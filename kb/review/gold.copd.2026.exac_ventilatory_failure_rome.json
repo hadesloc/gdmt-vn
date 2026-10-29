@@ -1,0 +1,26 @@
+{
+  "itemId": "gold.copd.2026.exac_ventilatory_failure_rome",
+  "contentHash": "377cf1e4c6a0d99a2f35b46d9c56e8d26583d7a17fb3b71703f1b7dc1e1e1634",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gold.copd.2026.exac_ventilatory_failure_rome",
+      "contentHash": "3b8b14b358884db3",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

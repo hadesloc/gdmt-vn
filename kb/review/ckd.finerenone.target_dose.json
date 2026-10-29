@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.finerenone.target_dose",
+  "contentHash": "3489d2112d25f1162e7ae317c24518b00b2041ab59cce31b6fc91e520872545a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.finerenone.target_dose",
+      "contentHash": "957e5d900b154f64",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.118Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.finerenone.target_dose."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

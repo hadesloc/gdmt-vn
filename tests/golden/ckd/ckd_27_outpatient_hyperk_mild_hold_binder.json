@@ -1,0 +1,54 @@
+{
+  "id": "ckd_27_outpatient_hyperk_mild_hold_binder",
+  "titleVi": "Ngoại trú - Tăng Kali máu 5.7 mmol/L khi đang dùng Losartan -> Tạm ngừng Losartan & Khởi trị chất gắn Kali",
+  "source": "KDIGO 2024 CKD PP 3.6.5 / fda.finerenone.table_2_dose_adjustment",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_27",
+    "name": "BN CKD 27",
+    "age": 64,
+    "sex": "male",
+    "weight": 72,
+    "sbp": 135,
+    "dbp": 82,
+    "hr": 74,
+    "scr": 160,
+    "k": 5.7,
+    "uacr": 28,
+    "conditions": {
+      "ckd": true,
+      "htn": true
+    },
+    "currentMeds": [
+      { "drugId": "losartan", "name": "Cozaar 50 mg", "dose": 50, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "rec_ckd_outpatient_hold_k_meds", "action": "HOLD" },
+      { "drugId": "calcium_polystyrene_sulfonate", "action": "START" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "losartan", "action": "START" },
+      { "drugId": "losartan", "action": "UPTITRATE" },
+      { "ruleId": "rec_ckd_rasi_monitor", "action": "MONITOR" }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân ngoại trú có Kali máu 5.7 mmol/L (> 5.5): Hệ thống phải phát lệnh HOLD Losartan."
+}

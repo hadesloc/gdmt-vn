@@ -1,0 +1,80 @@
+{
+  "id": "ipratropium",
+  "nameVi": "Ipratropium bromide",
+  "inn": "Ipratropium bromide",
+  "class": "SAMA",
+  "vnBrands": [
+    "Atrovent",
+    "Berodual",
+    "Combivent"
+  ],
+  "forms": [
+    "Khí dung đơn chất 0.5 mg/2 ml",
+    "Khí dung phối hợp Fenoterol (Berodual)",
+    "Khí dung phối hợp Salbutamol (Combivent)"
+  ],
+  "start": {
+    "amount": 4,
+    "unit": "nhát",
+    "frequency": "mỗi 20–30 phút",
+    "route": "hít",
+    "description": "Cơn hen cấp vừa–nặng: 4 nhát xịt hoặc 0.5 mg khí dung phối hợp với SABA"
+  },
+  "target": {
+    "amount": 3,
+    "unit": "lần",
+    "frequency": "giờ đầu",
+    "route": "hít",
+    "description": "Tối đa 3 lần trong giờ đầu"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận",
+      "citationIds": [
+        "gina.asthma.2026.acute_ipratropium_puffs"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Glôcôm góc đóng (Narrow-angle glaucoma): Bắt buộc xịt pMDI qua buồng đệm hoặc phun khí dung qua ống ngậm miệng (mouthpiece) và bảo vệ kín mắt; tuyệt đối tránh mặt nạ khí dung hở (face mask) vì hơi sương kháng muscarinic vào mắt gây giãn đồng tử và cơn glôcôm góc đóng cấp tính",
+    "Phì đại tuyến tiền liệt (BPH) / tắc nghẽn cổ bàng quang: Thận trọng và theo dõi sát triệu chứng bí tiểu cấp khi phun khí dung lặp lại liều cao"
+  ],
+  "citationIds": [
+    "gina.asthma.2026.acute_ipratropium_puffs",
+    "gina.asthma.2026.acute_moderate_severe_ipratropium",
+    "byt.asthma.2021.acute_hospital_treatment",
+    "gold.copd.2026.lama_glaucoma_caution",
+    "gina.asthma.2026.spacer_no_facemask_eye_protection",
+    "gina.copd.2026.lama_urinary_retention"
+  ],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Hấp thu toàn thân rất kém sau khi hít, an toàn trong thai kỳ khi xử trí cơn hen cấp.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Tương thích khi cho con bú.",
+    "citationIds": [
+      "gina.asthma.2026.acute_ipratropium_puffs"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity",
+      "messageVi": "Quá mẫn với atropine hoặc dẫn xuất ipratropium",
+      "citationIds": [
+        "gina.asthma.2026.acute_ipratropium_puffs"
+      ]
+    }
+  ],
+  "classes": [
+    "sama"
+  ]
+}

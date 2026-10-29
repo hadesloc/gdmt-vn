@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.dose.lovastatin_dronedarone_max",
+  "contentHash": "dd2612a828bf76f5d8469990171f187aca045767b21735a0f254c5c08b1d19a7",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.dose.lovastatin_dronedarone_max",
+      "contentHash": "5e275475177beb13",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.dose.lovastatin_dronedarone_max."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

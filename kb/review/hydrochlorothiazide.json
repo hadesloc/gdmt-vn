@@ -1,0 +1,26 @@
+{
+  "itemId": "hydrochlorothiazide",
+  "contentHash": "fe79720e787840e0d7c98b1148432fd040bef4c3fbe5ee4a1789b838270ff467",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "hydrochlorothiazide",
+      "contentHash": "ba1b69921d2e10d4",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Hydrochlorothiazide (HCTZ) (Hydrochlorothiazide) đầy đủ liều lượng, classes (thiazide_diuretic), dải thận, thai kỳ/cho con bú, chống chỉ định máy đọc và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

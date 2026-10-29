@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.qt_multi_drug_pool",
+  "contentHash": "9b64246e1568f9b5c731187d3882296f369c699d9fd8834716bae748de8b3bc4",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.qt_multi_drug_pool",
+      "contentHash": "356d38393eb390f1",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.qt_multi_drug_pool."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

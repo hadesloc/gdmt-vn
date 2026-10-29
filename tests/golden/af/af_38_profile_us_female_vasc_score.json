@@ -1,0 +1,50 @@
+{
+  "id": "af_38_profile_us_female_vasc_score",
+  "titleVi": "Profile US: Nữ 68t kèm THA tính đúng CHA₂DS₂-VASc = 3 điểm (ADV_AF_24)",
+  "source": "ACC/AHA 2023 AF Section 6.1.1 / acc.af.2023.cha2ds2vasc_thresholds",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "US",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "female",
+    "weight": 58,
+    "height": 155,
+    "sbp": 142,
+    "dbp": 84,
+    "hr": 80,
+    "rhythm": "afib",
+    "scr": 82,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true
+    },
+    "currentMeds": []
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "apixaban",
+        "action": "START",
+        "doseContains": "CHA₂DS₂-VASc = 3"
+      }
+    ]
+  },
+  "descriptionVi": "Profile US (ADV_AF_24): Nữ 68t kèm THA tính đúng CHA₂DS₂-VASc = 3 điểm theo ACC/AHA 2023, khuyến cáo Class 1."
+}

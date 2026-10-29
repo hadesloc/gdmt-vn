@@ -1,0 +1,50 @@
+{
+  "id": "im_acute_gout_monoarthritis_1520",
+  "titleVi": "Sưng nóng đỏ đau dữ dội khớp gối phải khởi phát đột ngột trên nền bệnh thận mạn",
+  "source": "on-call:im_acute_gout_monoarthritis_1520",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_im_acute_gout_monoarthritis_1520",
+    "name": "Ông Đặng Văn L., 64 tuổi (70 kg)",
+    "age": 64,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 142,
+    "dbp": 84,
+    "hr": 94,
+    "conditions": {
+      "gout": true,
+      "ckd": true
+    },
+    "selectedModules": [
+      "gout",
+      "ckd"
+    ],
+    "currentMeds": [],
+    "uricAcid": 560,
+    "scr": 150,
+    "egfr": 42
+  },
+  "expect": {
+    "mustInclude": [],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bác sĩ ơi, bệnh nhân nam 64 tuổi có bệnh thận mạn vào viện vì khớp gối phải sưng to, nóng đỏ và đau nhức dữ dội từ nửa đêm qua không bước đi được! Khớp gối phải sưng căng bóng, đỏ rực, chạm nhẹ khăn trải giường cũng đau chói (VAS 8/10). Người bệnh tỉnh táo hoàn toàn, nằm giữ chân phải ở tư thế hơi gấp nhẹ để đỡ căng đau, các khớp khác không sưng nóng đỏ.",
+  "notes": "TODO: Ca nháp nội viện chuyển từ on-call. Module agent chịu trách nhiệm điền expect.mustInclude và mustNotInclude."
+}

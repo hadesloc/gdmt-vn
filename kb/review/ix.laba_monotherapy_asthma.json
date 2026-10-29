@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.laba_monotherapy_asthma",
+  "contentHash": "38e8a16a2a35f9c34a16b8493d9783dfb9c4319c5c92433dc9bd7b1a941e9b0f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.laba_monotherapy_asthma",
+      "contentHash": "9cab1769e79edd29",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.laba_monotherapy_asthma."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

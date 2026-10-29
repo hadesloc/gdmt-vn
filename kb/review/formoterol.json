@@ -1,0 +1,26 @@
+{
+  "itemId": "formoterol",
+  "contentHash": "0bd5263ede496716d1a39700305ba4535285fb255dc32ab8dda9d2146d1f5b32",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "formoterol",
+      "contentHash": "43c54f3215c311c8",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD drug remediation: verified verbatim citations & content hash"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

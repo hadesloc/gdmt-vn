@@ -1,0 +1,67 @@
+{
+  "id": "asthma_04_track1_step4_uncontrolled_step3",
+  "titleVi": "Hen Bậc 3 MART không kiểm soát: Tăng lên Bậc 4 MART liều trung bình",
+  "source": "GINA 2026 Strategy Report",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_04",
+    "name": "Nữ 42 tuổi",
+    "age": 42,
+    "sex": "female",
+    "weight": 58,
+    "sbp": 118,
+    "dbp": 75,
+    "hr": 84,
+    "rhythm": "sinus",
+    "fev1Pct": 65,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "budesonide_formoterol",
+        "dose": "160/4.5 mcg x 1 nhát x 2 lần/ngày",
+        "freq": "2 lần/ngày"
+      }
+    ],
+    "customInputs": {
+      "currentTrack": "track1",
+      "currentStep": 3,
+      "daytimeSymptomsMoreThanTwiceWeek": true,
+      "nightWakingDueToAsthma": true,
+      "relieverNeededMoreThanTwiceWeek": true,
+      "activityLimitationDueToAsthma": true,
+      "inhalerTechniqueCorrect": true,
+      "goodAdherence": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "UPTITRATE"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bệnh nhân Bậc 3 không kiểm soát (4 tiêu chí), kỹ thuật đúng, tăng lên Bậc 4 MART (2 nhát x 2 lần/ngày)."
+}

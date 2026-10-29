@@ -1,0 +1,155 @@
+{
+  "id": "canagliflozin",
+  "nameVi": "Canagliflozin",
+  "inn": "Canagliflozin",
+  "class": "SGLT2i",
+  "classes": [
+    "sglt2i"
+  ],
+  "components": [],
+  "vnBrands": [],
+  "forms": [
+    "Viên nén bao phim 100 mg",
+    "Viên nén bao phim 300 mg"
+  ],
+  "start": {
+    "amount": 100,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "100 mg uống trước bữa ăn sáng"
+  },
+  "target": {
+    "amount": 100,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "100 mg uống 1 lần/ngày"
+  },
+  "titration": {
+    "step": 0,
+    "intervalDays": 0
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "100–300 mg 1 lần/ngày (100 mg 1 lần/ngày cho chỉ định bảo vệ thận–tim mạch)",
+      "citationIds": [
+        "kdigo.ckd.2024.rec_3_7_1_sglt2i_t2d",
+        "fda.canagliflozin.ckd_dose"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "100 mg 1 lần/ngày (tối đa 100 mg/ngày)",
+      "note": "Giới hạn liều tối đa khuyến cáo 100 mg uống 1 lần/ngày khi eGFR 30 đến < 60 mL/phút/1.73m² (FDA Invokana Bảng 1)",
+      "citationIds": [
+        "kdigo.ckd.2024.rec_3_7_1_sglt2i_t2d",
+        "fda.canagliflozin.table_1_renal_impairment"
+      ]
+    },
+    {
+      "eGFRFrom": 20,
+      "eGFRTo": 30,
+      "initiate": "not_rec",
+      "continue": "rec",
+      "dose": "100 mg 1 lần/ngày (tiếp tục nếu đang dùng kèm albumin niệu > 300 mg/ngày)",
+      "note": "Nhãn FDA Invokana Bảng 1 không khuyến cáo khởi trị mới khi eGFR < 30 mL/phút/1.73m² (ưu tiên khởi trị Dapagliflozin hoặc Empagliflozin ở eGFR 20–29); người bệnh đang dùng kèm albumin niệu > 300 mg/ngày có thể tiếp tục 100 mg/ngày",
+      "citationIds": [
+        "fda.canagliflozin.table_1_renal_impairment",
+        "kdigo.ckd.2024.rec_3_7_1_sglt2i_t2d"
+      ]
+    },
+    {
+      "eGFRTo": 20,
+      "initiate": "not_rec",
+      "continue": "ok",
+      "dose": "100 mg 1 lần/ngày",
+      "note": "Không khởi trị mới; tiếp tục 100 mg/ngày nếu đang dùng cho tới khi bắt đầu lọc máu hoặc ghép thận",
+      "citationIds": [
+        "fda.canagliflozin.table_1_renal_impairment",
+        "kdigo.ckd.2024.pp_3_7_1_continue_below_20"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_cana_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "hold",
+      "messageVi": "Không khuyến cáo khởi trị mới canagliflozin khi eGFR < 30 mL/phút/1.73m² theo nhãn FDA Invokana Bảng 1 (ưu tiên dapagliflozin hoặc empagliflozin khi eGFR 20–29)",
+      "citationIds": [
+        "fda.canagliflozin.table_1_renal_impairment"
+      ]
+    },
+    {
+      "id": "gate_canagliflozin_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "avoid",
+      "messageVi": "Không khuyến cáo dùng SGLT2i trong thai kỳ (đặc biệt tam cá nguyệt 2 và 3) do nguy cơ gây độc thận thai nhi (FDA Section 8.1)",
+      "citationIds": [
+        "fda.canagliflozin.pregnancy"
+      ]
+    }
+  ],
+  "interactions": [
+    "Tăng kali máu khi phối hợp với thuốc giữ kali hoặc bệnh nhân suy thận trung bình-nặng",
+    "Tạm ngừng ít nhất 3 ngày trước phẫu thuật lớn để phòng ngừa toan ceton đái tháo đường euglycemic"
+  ],
+  "citationIds": [
+    "kdigo.ckd.2024.rec_3_7_1_sglt2i_t2d",
+    "kdigo.ckd.2024.pp_3_7_1_continue_below_20",
+    "fda.canagliflozin.ckd_dose",
+    "fda.canagliflozin.table_1_renal_impairment",
+    "fda.canagliflozin.pregnancy",
+    "fda.canagliflozin.hepatic_impairment"
+  ],
+  "hepatic": {
+    "status": "avoid",
+    "note": "Không cần chỉnh liều ở suy gan nhẹ–trung bình (Child-Pugh A/B); chưa được nghiên cứu và không khuyến cáo sử dụng ở bệnh nhân suy gan nặng (Child-Pugh C) theo nhãn FDA Invokana Mục 8.7.",
+    "notesVi": "Không cần chỉnh liều ở suy gan nhẹ–trung bình (Child-Pugh A/B); chưa được nghiên cứu và không khuyến cáo sử dụng ở bệnh nhân suy gan nặng (Child-Pugh C) theo nhãn FDA Invokana Mục 8.7.",
+    "citationIds": [
+      "fda.canagliflozin.hepatic_impairment"
+    ]
+  },
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo dùng Canagliflozin trong thai kỳ (đặc biệt tam cá nguyệt 2 và 3 do dữ liệu động vật ghi nhận tổn thương thận đang phát triển - FDA Section 8.1); chưa lưu hành thương mại tại Việt Nam",
+    "citationIds": [
+      "fda.canagliflozin.pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo cho con bú do nguy cơ tiềm ẩn trên sự phát triển thận của trẻ nhũ nhi (FDA Section 8.2)",
+    "citationIds": [
+      "fda.canagliflozin.pregnancy"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity",
+      "messageVi": "Tiền sử phản ứng quá mẫn nghiêm trọng với canagliflozin",
+      "citationIds": [
+        "fda.canagliflozin.ckd_dose"
+      ]
+    },
+    {
+      "code": "dialysis",
+      "messageVi": "Không khởi trị mới và cần ngừng thuốc ức chế SGLT2 khi bệnh nhân bắt đầu lọc máu định kỳ / điều trị thay thế thận (KDIGO 2024 PP 3.7.1)",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_7_1_continue_below_20"
+      ]
+    }
+  ]
+}

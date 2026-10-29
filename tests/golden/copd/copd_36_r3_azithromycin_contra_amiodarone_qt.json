@@ -1,0 +1,80 @@
+{
+  "id": "copd_36_r3_azithromycin_contra_amiodarone_qt",
+  "titleVi": "Hồi quy R3: Chống chỉ định Azithromycin dự phòng dài hạn khi đang dùng Amiodarone kéo dài khoảng QT",
+  "source": "GOLD 2026 Report p. 163 / Azithromycin Safety (R3-COPD-05)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_36",
+    "age": 74,
+    "sex": "male",
+    "weight": 60,
+    "height": 165,
+    "sbp": 126,
+    "dbp": 76,
+    "hr": 68,
+    "conditions": {
+      "copd": true,
+      "af": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "name": "Trelegy Ellipta",
+        "dose": 100,
+        "unit": "mcg"
+      },
+      {
+        "drugId": "amiodarone",
+        "name": "Cordarone",
+        "dose": 200,
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.44,
+      "fev1PredPct": 41,
+      "smokingStatus": "former",
+      "currentInhaler": "triple",
+      "moderateExacerbations": 2,
+      "hospitalizations": 1,
+      "bloodEos": 140
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "azithromycin",
+        "ruleId": "rec_copd_azithromycin_contra",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "azithromycin",
+        "action": "CONSIDER"
+      },
+      {
+        "drugId": "azithromycin",
+        "action": "START"
+      }
+    ]
+  }
+}

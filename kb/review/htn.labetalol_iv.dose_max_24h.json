@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.labetalol_iv.dose_max_24h",
+  "contentHash": "17b5a6bdc9bf9ad01eee3ddb6eaa9b19757d6139dbcb3e9b0a731ba507f2b818",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.labetalol_iv.dose_max_24h",
+      "contentHash": "ea22c61109e261f0",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 300 mg (quantity: dose_mg) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "itemId": "dm2.glucose.icu_target_min",
+  "contentHash": "9a1743324dbfc9fc6beab6995d9f7bdf0f47e5540678859173c0c5f233295e75",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "dm2.glucose.icu_target_min",
+      "contentHash": "95a4877497cba4ca",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-27T15:25:00.000Z",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T08:45:00.000Z",
+          "role": "Agent F2 (DM2 Remediation & QA-10)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked threshold dm2.glucose.icu_target_min (QA-10 quantity & verbatim quote verified)."
+        },
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T15:25:00.000Z",
+          "role": "Agent F3 (DM2 Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Verified dm2.glucose.icu_target_min contentHash, verbatim PDF quotes, and Round 2 R1/R2/R3 clinical schema compliance."
+        },
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T15:25:00.000Z",
+          "role": "Agent F3 (DM2 Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Verified dm2.glucose.icu_target_min contentHash, verbatim PDF quotes, and Round 2 R1/R2/R3 clinical schema compliance."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

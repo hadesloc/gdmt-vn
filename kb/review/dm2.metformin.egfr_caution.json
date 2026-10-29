@@ -1,0 +1,17 @@
+{
+  "itemId": "dm2.metformin.egfr_caution",
+  "contentHash": "174d1b2e1e59939df0b2393527f046e6b08f70ffa6a9fb12c1ae9f9b5fc8916c",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "dm2.metformin.egfr_caution",
+      "contentHash": "8f2651e0c59bb398",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

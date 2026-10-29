@@ -1,0 +1,64 @@
+{
+  "id": "gout_38_allopurinol_max_800mg_switch_febuxostat",
+  "titleVi": "Đã chạm trần liều tối đa Allopurinol (400 mg BID = 800 mg/ngày) chưa đạt đích urat: Chuyển sang XOI thứ hai (Febuxostat)",
+  "source": "FDA Zyloprim Label & ACR 2020 PICO 24 (fda.allopurinol.start_and_max, acr.gout.2020.switch_second_xoi)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "US",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 46,
+    "sex": "male",
+    "weight": 88,
+    "scr": 86,
+    "uricAcid": 460,
+    "conditions": {
+      "gout": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "allopurinol",
+        "name": "Allopurinol",
+        "dose": "400",
+        "unit": "mg",
+        "freq": "BID"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 3,
+      "hlab5801": "negative"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_max_switch_xoi",
+        "action": "SWITCH"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "allopurinol",
+        "action": "UPTITRATE"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 46 tuổi đang dùng Allopurinol 400 mg x 2 lần/ngày (tổng liều 800 mg/ngày — chạm trần FDA Zyloprim) nhưng Acid uric máu vẫn còn 460 µmol/L (> 360 µmol/L). Bộ phân tích liều nhận diện đúng tần suất BID = 800 mg/ngày, chặn UPTITRATE vượt trần và khuyến cáo chuyển sang XOI thứ hai (Febuxostat)."
+}

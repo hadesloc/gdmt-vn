@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.pregnancy.dbp_min_esc",
+  "contentHash": "d9f42996b41e22e083817e7ab55a4ace50b6cbbed107e492a535375cd1132f75",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.pregnancy.dbp_min_esc",
+      "contentHash": "b6e7d502a3432d6f",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 80 mmHg (quantity: dbp) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

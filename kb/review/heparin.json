@@ -1,0 +1,26 @@
+{
+  "itemId": "heparin",
+  "contentHash": "65ff3b06de6c97aa9db9ee39a0cb76223436f1d45284691cf5a17a3ffee1b5b6",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "heparin",
+      "contentHash": "8d94c014e23362d8",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateDrugEntry, dải thận liên tục không chồng lấn, an toàn thai kỳ/cho con bú và trích dẫn nguyên văn PDF cho heparin."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

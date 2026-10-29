@@ -1,0 +1,80 @@
+{
+  "id": "asthma_26_inpatient_life_threatening_has_meds",
+  "titleVi": "Cơn hen đe dọa tử vong: Có ĐỦ y lệnh cấp cứu Salbutamol + REFER ICU",
+  "source": "BYT 5850/2021 / GINA 2026 / R1-01 / R2-01 / R3-01",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_26",
+    "name": "Nữ 39 tuổi",
+    "age": 39,
+    "sex": "female",
+    "weight": 56,
+    "sbp": 145,
+    "dbp": 92,
+    "hr": 132,
+    "rhythm": "sinus",
+    "fev1Pct": 28,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "isAcuteExacerbation": true,
+      "speechAbility": "unable",
+      "respiratoryRate": 38,
+      "silentChest": true,
+      "mentalStatus": "drowsy_confused",
+      "spo2": 80
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_asthma_acute_life_threatening_icu",
+        "action": "REFER"
+      },
+      {
+        "drugId": "salbutamol",
+        "action": "START"
+      },
+      {
+        "drugId": "ipratropium",
+        "action": "START"
+      },
+      {
+        "drugId": "methylprednisolone",
+        "action": "START"
+      },
+      {
+        "drugId": "magnesium_sulfate",
+        "action": "DEFER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_asthma_action_plan_doc",
+        "action": "MONITOR"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Phổi im lặng và lơ mơ bắt buộc có đồng thời Báo động ICU VÀ gói thuốc cấp cứu Salbutamol+Ipratropium+Methylprednisolone. Chưa có creatinine/chức năng thận: MgSO4 bổ trợ DEFER chờ bác sĩ xác nhận liều, không trì hoãn hồi sức đầu tay."
+}

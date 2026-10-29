@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.etoricoxib.sbp_contra_max",
+  "contentHash": "30e00ebb3dbe69423d2c5fdd8952258765e278bdc08bdb06885825efc92ca087",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.etoricoxib.sbp_contra_max",
+      "contentHash": "7c82f96fa7e3ec06",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold: gout.etoricoxib.sbp_contra_max"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

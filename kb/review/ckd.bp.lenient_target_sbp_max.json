@@ -1,0 +1,27 @@
+{
+  "itemId": "ckd.bp.lenient_target_sbp_max",
+  "contentHash": "1684fe54c29c4573cf46f9e54c468f464c0d19b9f0864a9c49d66fbb0103ed52",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.bp.lenient_target_sbp_max",
+      "contentHash": "77fcd083c1db6e69",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "round": 4,
+          "reviewedAt": "2026-10-27T23:56:20.141Z",
+          "role": "agent_e5_round4_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và kiểm tra không số mồ côi Vòng 4 cho ngưỡng ckd.bp.lenient_target_sbp_max."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T23:56:20.141Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

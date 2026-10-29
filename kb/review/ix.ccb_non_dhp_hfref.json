@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.ccb_non_dhp_hfref",
+  "contentHash": "c77cd5854d866f301353892bbbcdc2803ef2eb205187e24113a7237cd3c818dd",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.ccb_non_dhp_hfref",
+      "contentHash": "76d28e6dfa965c3e",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.ccb_non_dhp_hfref."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

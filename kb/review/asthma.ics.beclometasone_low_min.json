@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.ics.beclometasone_low_min",
+  "contentHash": "ff1e08d43717b1a118a28bfae82354ef129ea2908879f2dc7e9c1f9181024a5c",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.ics.beclometasone_low_min",
+      "contentHash": "b943dc3fdc8f2ab7",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:53:57.954Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng asthma.ics.beclometasone_low_min có trích dẫn hợp lệ và đại lượng chuẩn hóa QA-10 (dose_daily)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:53:57.954Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

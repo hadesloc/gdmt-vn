@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.probenecid_methotrexate",
+  "contentHash": "18293452b937fa1e1b29388937590a2879cb9f2a44568fd8e86e1d2847ccf051",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.probenecid_methotrexate",
+      "contentHash": "979b6de01097fb92",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.probenecid_methotrexate."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

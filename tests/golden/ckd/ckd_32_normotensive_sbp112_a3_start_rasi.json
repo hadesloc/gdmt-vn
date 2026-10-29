@@ -1,0 +1,48 @@
+{
+  "id": "ckd_32_normotensive_sbp112_a3_start_rasi",
+  "titleVi": "Ngoại trú - Bệnh nhân huyết áp bình thường (SBP 112 mmHg) có Albumin niệu A3 -> Khởi trị ngay RASi (Regression CKD-R1-02 / R3-CKD-03)",
+  "source": "KDIGO 2024 CKD Rec 3.6.1 (1B) & KDIGO 2021 BP in CKD",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_32",
+    "name": "BN CKD 32",
+    "age": 42,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 112,
+    "dbp": 70,
+    "hr": 72,
+    "scr": 125,
+    "k": 4.3,
+    "uacr": 95,
+    "conditions": {
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "perindopril", "action": "START" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "perindopril", "action": "DEFER" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R1-02 & R3-CKD-03: SBP 112 mmHg (>= 100 mmHg) ở bệnh nhân viêm cầu thận mạn có UACR A3 không tăng huyết áp -> Phải START Perindopril thay vì DEFER sai do dùng nhầm ngưỡng đích 120 mmHg."
+}

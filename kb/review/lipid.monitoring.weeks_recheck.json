@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.monitoring.weeks_recheck",
+  "contentHash": "2d6975f5bfab2cbddbe55e0e34e85cd58ba80a73109366d8610a3915dee5a6c5",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.monitoring.weeks_recheck",
+      "contentHash": "5a6c29962f137972",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.monitoring.weeks_recheck."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "gout_31_duplicate_xoi_allopurinol_febuxostat_stop",
+  "titleVi": "Trùng lặp 2 thuốc ức chế Xanthine Oxidase (Allopurinol + Febuxostat): Bắt buộc NGỪNG thuốc trùng lặp",
+  "source": "ACR 2020 & EULAR 2016 (acr.gout.2020.switch_second_xoi, eular.gout.2016.allopurinol_titration)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 54,
+    "sex": "male",
+    "weight": 72,
+    "scr": 92,
+    "uricAcid": 330,
+    "conditions": {
+      "gout": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "allopurinol",
+        "name": "Allopurinol",
+        "dose": "200",
+        "unit": "mg"
+      },
+      {
+        "drugId": "febuxostat",
+        "name": "Febuxostat",
+        "dose": "40",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 2,
+      "hlab5801": "negative"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "febuxostat",
+        "ruleId": "rec_gout_stop_duplicate_xoi",
+        "action": "STOP"
+      },
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_continue",
+        "action": "CONTINUE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "febuxostat",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "febuxostat",
+        "action": "UPTITRATE"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 54 tuổi đang dùng đồng thời cả Allopurinol và Febuxostat do tự ý mua thêm đơn ngoài. Hai thuốc cùng cơ chế ức chế Xanthine Oxidase làm tăng nguy cơ độc tính gan – da mà không tăng lợi ích: bắt buộc NGỪNG Febuxostat trùng lặp và chỉ duy trì đơn trị Allopurinol."
+}

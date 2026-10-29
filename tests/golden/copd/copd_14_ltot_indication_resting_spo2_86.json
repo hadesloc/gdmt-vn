@@ -1,0 +1,51 @@
+{
+  "id": "copd_14_ltot_indication_resting_spo2_86",
+  "titleVi": "COPD giảm oxy máu mạn: Chỉ định oxy dài hạn tại nhà (LTOT)",
+  "source": "GOLD 2026 Report p. 87 / LTOT Criteria",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_14",
+    "age": 75,
+    "sex": "male",
+    "weight": 52,
+    "height": 160,
+    "sbp": 134,
+    "dbp": 82,
+    "hr": 82,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "fev1FvcRatio": 0.38,
+      "fev1PredPct": 28,
+      "restingSpo2": 86
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_copd_ltot",
+        "action": "START"
+      }
+    ]
+  }
+}

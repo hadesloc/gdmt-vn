@@ -1,0 +1,82 @@
+{
+  "id": "asthma_65_step5_dupilumab_eos_1800_contra_egpa",
+  "titleVi": "Hen nặng Bậc 5 tăng bạch cầu ái toan rất cao (EOS 1800 cells/mcL ≥ 1500): Chống chỉ định/STOP Dupilumab và tầm soát EGPA + Strongyloides",
+  "source": "GINA 2026 Severe Asthma Guide / FDA Label Dupixent / ASTHMA-R3-R2-11 / ASTHMA-R3-R3-11",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_65",
+    "name": "Nam 49 tuổi",
+    "age": 49,
+    "sex": "male",
+    "weight": 64,
+    "sbp": 122,
+    "dbp": 76,
+    "hr": 82,
+    "rhythm": "sinus",
+    "fev1Pct": 58,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "budesonide_formoterol",
+        "dose": "2 nhát",
+        "freq": "2 lần/ngày"
+      },
+      {
+        "drugId": "dupilumab",
+        "dose": "300 mg",
+        "freq": "mỗi 2 tuần"
+      }
+    ],
+    "customInputs": {
+      "currentTrack": "track1",
+      "currentStep": 5,
+      "bloodEosinophils": 1800,
+      "feno": 65,
+      "inhalerTechniqueCorrect": true,
+      "goodAdherence": true,
+      "daytimeSymptomsMoreThanTwiceWeek": true,
+      "nightWakingDueToAsthma": true,
+      "relieverNeededMoreThanTwiceWeek": true,
+      "activityLimitationDueToAsthma": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dupilumab",
+        "action": "STOP"
+      },
+      {
+        "ruleId": "rec_asthma_track1_step5_lama_biologic",
+        "action": "REFER"
+      },
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "CONTINUE"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Theo GINA 2026, không chỉ định/phải ngừng Dupilumab khi bạch cầu ái toan máu ≥ 1500 cells/mcL do nguy cơ bộc lộ hội chứng viêm mạch u hạt kèm tăng bạch cầu ái toan (EGPA); bắt buộc làm bilan ANCA và huyết thanh giun lươn Strongyloides trước khi dùng sinh học kháng IL-5/5R."
+}

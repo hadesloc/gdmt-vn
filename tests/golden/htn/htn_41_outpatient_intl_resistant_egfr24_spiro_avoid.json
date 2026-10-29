@@ -1,0 +1,75 @@
+{
+  "id": "htn_41_outpatient_intl_resistant_egfr24_spiro_avoid",
+  "titleVi": "Profile INTL (ESC 2024): THA kháng trị trên nền CKD G4 (eGFR ~24 < 30) chặn tuyệt đối Spironolactone",
+  "source": "ESC 2024 HTN / esc.htn.2024.spiro_gates_egfr30_k45",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 158,
+    "dbp": 94,
+    "hr": 76,
+    "scr": 245,
+    "k": 4.3,
+    "conditions": {
+      "htn": true,
+      "ckd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "losartan",
+        "dose": 100,
+        "unit": "mg"
+      },
+      {
+        "drugId": "amlodipine",
+        "dose": 10,
+        "unit": "mg"
+      },
+      {
+        "drugId": "torsemide",
+        "dose": 10,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "spironolactone",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "spironolactone",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân THA kháng trị đang dùng ARB + CCB + Torsemide (lợi tiểu quai) có eGFR < 30 mL/min/1.73m²: chặn Spironolactone và chuyển sang Bisoprolol hàng thứ 4."
+}

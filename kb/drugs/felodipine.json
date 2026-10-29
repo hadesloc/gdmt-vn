@@ -1,0 +1,99 @@
+{
+  "id": "felodipine",
+  "nameVi": "Felodipine",
+  "inn": "Felodipine",
+  "class": "CCB (Dihydropyridine)",
+  "classes": [
+    "dhp_ccb"
+  ],
+  "vnBrands": [
+    "Plendil 2.5 mg",
+    "Plendil 5 mg",
+    "Plendil 10 mg"
+  ],
+  "forms": [
+    "Viên nén giải phóng kéo dài 2.5 mg",
+    "Viên nén giải phóng kéo dài 5 mg",
+    "Viên nén giải phóng kéo dài 10 mg"
+  ],
+  "start": {
+    "amount": 5,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Uống buổi sáng, nuốt nguyên viên; khởi đầu 2,5 mg ở người cao tuổi hoặc suy gan"
+  },
+  "target": {
+    "amount": 10,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống"
+  },
+  "titration": {
+    "step": "Tăng từ 5 mg lên 10 mg sau ít nhất 2 tuần nếu cần thiết",
+    "intervalDays": 14,
+    "maxDose": "10 mg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "5–10 mg 1 lần/ngày",
+      "citationIds": [
+        "vsh.htn.2022.drugs_table_ccb",
+        "esc.htn.2024.first_line_classes"
+      ],
+      "note": "Không tích lũy chất chuyển hóa có hoạt tính ở suy thận; không cần chỉnh liều thường quy, thận trọng theo dõi huyết áp khi eGFR < 15."
+    }
+  ],
+  "hepatic": {
+    "status": "caution",
+    "notesVi": "Độ thanh thải gan giảm ở xơ gan/suy gan — khởi đầu 2,5 mg 1 lần/ngày và theo dõi huyết áp.",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_ccb"
+    ]
+  },
+  "gates": [],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Tránh dùng thường quy nếu có lựa chọn ưu tiên hơn (nifedipine giải phóng kéo dài, labetalol, methyldopa); ESC 2024 ghi nhận chỉ là lựa chọn thay thế thứ yếu.",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_aspirin_atenolol_methyldopa",
+      "esc.htn.2024.pregnancy_first_line"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Bài tiết lượng nhỏ qua sữa mẹ; ưu tiên nifedipine kéo dài hoặc amlodipine/labetalol có dữ liệu đầy đủ hơn.",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_lactation_thiazide"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "cardiogenic_shock",
+      "messageVi": "Sốc tim, nhồi máu cơ tim cấp hoặc đau thắt ngực không ổn định",
+      "citationIds": [
+        "vsh.htn.2022.drugs_table_ccb"
+      ]
+    },
+    {
+      "code": "decompensated_heart_failure",
+      "messageVi": "Suy tim mất bù chưa kiểm soát huyết động hoặc hẹp van động mạch chủ nặng",
+      "citationIds": [
+        "vsh.htn.2022.drugs_table_ccb"
+      ]
+    }
+  ],
+  "interactions": [
+    "Thuốc ức chế mạnh CYP3A4 (itraconazole, ketoconazole, erythromycin, clarithromycin, ritonavir) và nước bưởi chùm làm tăng vọt AUC felodipine (2–8 lần) — tránh phối hợp.",
+    "Thuốc cảm ứng CYP3A4 (phenytoin, carbamazepine, rifampicin) làm giảm mạnh nồng độ felodipine gây mất tác dụng hạ áp.",
+    "Tacrolimus: felodipine có thể làm tăng nồng độ tacrolimus trong máu, cần theo dõi nồng độ đáy."
+  ],
+  "citationIds": [
+    "vsh.htn.2022.drugs_table_ccb",
+    "esc.htn.2024.first_line_classes",
+    "esc.htn.2024.pregnancy_aspirin_atenolol_methyldopa"
+  ]
+}

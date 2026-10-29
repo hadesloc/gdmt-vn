@@ -1,0 +1,70 @@
+{
+  "id": "copd_37_r3_ics_monotherapy_stop",
+  "titleVi": "Hồi quy R3: Phát hiện ICS đơn trị trong currentMeds ở bệnh nhân COPD (không hen) phải phát lệnh STOP và chuyển sang giãn phế quản chuẩn",
+  "source": "GOLD 2026 Report p. 159 (R3-COPD-11)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_37",
+    "age": 68,
+    "sex": "male",
+    "weight": 57,
+    "height": 163,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 76,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "budesonide",
+        "name": "Pulmicort",
+        "dose": 200,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.55,
+      "fev1PredPct": 60,
+      "mmrc": 2,
+      "cat": 15,
+      "moderateExacerbations": 0,
+      "hospitalizations": 0,
+      "bloodEos": 120,
+      "currentInhaler": "none",
+      "smokingStatus": "former"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "budesonide",
+        "ruleId": "rec_copd_stop_ics_monotherapy",
+        "action": "STOP"
+      },
+      {
+        "drugId": "tiotropium_olodaterol",
+        "ruleId": "rec_copd_init_group_b",
+        "action": "START"
+      }
+    ]
+  }
+}

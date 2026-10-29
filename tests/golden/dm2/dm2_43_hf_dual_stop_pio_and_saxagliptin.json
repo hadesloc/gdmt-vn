@@ -1,0 +1,83 @@
+{
+  "id": "dm2_43_hf_dual_stop_pio_and_saxagliptin",
+  "titleVi": "Bệnh nhân ĐTĐ2 kèm suy tim HFrEF (LVEF 32%) đang dùng đồng thời cả Pioglitazone và Saxagliptin",
+  "source": "ADA 2026 SOC Ch. 9 & SAVOR-TIMI 53 / FDA Boxed Warning",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 64,
+    "sex": "male",
+    "weight": 72,
+    "height": 168,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 78,
+    "scr": 98,
+    "k": 4.4,
+    "glucose": 8.9,
+    "hba1c": 8.0,
+    "lvef": 32,
+    "conditions": {
+      "dm": true,
+      "hf": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "pioglitazone",
+        "name": "Pioglitazone",
+        "dose": 30,
+        "unit": "mg"
+      },
+      {
+        "drugId": "saxagliptin",
+        "name": "Saxagliptin",
+        "dose": 5,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "pioglitazone",
+        "action": "STOP"
+      },
+      {
+        "drugId": "saxagliptin",
+        "action": "STOP"
+      },
+      {
+        "drugId": "dapagliflozin",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "pioglitazone",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "saxagliptin",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Tách riêng hai luật chống chỉ định suy tim độc lập để phát đồng thời lệnh STOP cho cả Pioglitazone lẫn Saxagliptin mà không bị rẽ nhánh loại trừ lẫn nhau."
+}

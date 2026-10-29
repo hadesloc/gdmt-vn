@@ -1,0 +1,125 @@
+{
+  "id": "lovastatin",
+  "nameVi": "Lovastatin",
+  "inn": "Lovastatin",
+  "class": "Statin (ức chế HMG-CoA reductase)",
+  "classes": [
+    "statin"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Mevacor",
+    "Lovastatin Stada"
+  ],
+  "forms": [
+    "Viên nén 10 mg",
+    "Viên nén 20 mg",
+    "Viên nén 40 mg"
+  ],
+  "start": {
+    "amount": 20,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "20 mg uống 1 lần/ngày vào bữa ăn tối (cường độ thấp: 20 mg; cường độ trung bình: 40–80 mg)"
+  },
+  "target": {
+    "amount": 40,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "40 mg uống 1 lần/ngày cùng bữa tối (tối đa 80 mg/ngày chia 1–2 lần nếu không có tương tác thuốc)"
+  },
+  "titration": {
+    "step": "Đánh giá lại bộ mỡ máu sau 4–12 tuần để điều chỉnh liều trong khoảng 10–80 mg/ngày",
+    "intervalDays": 28,
+    "maxDose": "80 mg/ngày (giới hạn 40 mg với amiodarone/ticagrelor, 20 mg với amlodipine/diltiazem/verapamil, 10 mg với dronedarone)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "20–40 mg x 1 lần/ngày cùng bữa tối",
+      "citationIds": [
+        "acc.lipid.2026.fluvastatin_lovastatin_dosing",
+        "acc.lipid.2026.statin_ckd_safety"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "Thận trọng dùng liều > 20 mg/ngày ở suy thận nặng (eGFR < 30 mL/phút/1.73m²)",
+      "note": "Ở suy thận nặng (CrCl < 30 mL/phút), tăng liều trên 20 mg/ngày cần hết sức thận trọng hoặc ưu tiên atorvastatin",
+      "citationIds": [
+        "acc.lipid.2026.statin_ckd_safety"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_lovastatin_alt",
+      "parameter": "ALT",
+      "operator": ">",
+      "threshold": 3,
+      "unit": "x ULN",
+      "action": "hold",
+      "messageVi": "Men gan ALT tăng dai dẳng > 3 lần giới hạn trên bình thường (ULN): Tạm ngưng Lovastatin và đánh giá nguyên nhân",
+      "citationIds": [
+        "acc.lipid.2026.active_liver_disease_contra"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Không sử dụng Lovastatin trong thai kỳ; ngừng ngay khi phát hiện có thai.",
+    "citationIds": [
+      "acc.lipid.2026.statin_pregnancy_lactation_avoid"
+    ]
+  },
+  "lactation": {
+    "status": "contra",
+    "notesVi": "Không sử dụng Lovastatin trong thời kỳ cho con bú do nguy cơ ảnh hưởng chuyển hóa lipid ở trẻ bú mẹ.",
+    "citationIds": [
+      "acc.lipid.2026.statin_pregnancy_lactation_avoid"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định/tránh dùng Lovastatin trong thai kỳ",
+      "citationIds": [
+        "acc.lipid.2026.statin_pregnancy_lactation_avoid"
+      ]
+    },
+    {
+      "code": "active_liver_disease",
+      "messageVi": "Chống chỉ định trong bệnh gan cấp tính đang hoạt động hoặc suy gan mất bù",
+      "citationIds": [
+        "acc.lipid.2026.active_liver_disease_contra"
+      ]
+    },
+    {
+      "code": "decompensated_cirrhosis",
+      "messageVi": "Chống chỉ định trong xơ gan mất bù",
+      "citationIds": [
+        "acc.lipid.2026.active_liver_disease_contra"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định phối hợp với các thuốc ức chế mạnh CYP3A4 (itraconazole, ketoconazole, posaconazole, voriconazole, clarithromycin, erythromycin, ritonavir, nirmatrelvir/ritonavir, cobicistat), cyclosporine và gemfibrozil do nguy cơ tiêu cơ vân cấp tử vong",
+    "Giới hạn liều tối đa 40 mg/ngày khi dùng cùng amiodarone hoặc ticagrelor; tối đa 20 mg/ngày với amlodipine, diltiazem hoặc verapamil; tối đa 10 mg/ngày với dronedarone",
+    "Tránh phối hợp cùng niacin liều hạ mỡ máu (≥ 1 g/ngày) hoặc colchicine ở bệnh nhân suy thận"
+  ],
+  "citationIds": [
+    "acc.lipid.2026.fluvastatin_lovastatin_dosing",
+    "acc.lipid.2026.statin_pregnancy_lactation_avoid",
+    "acc.lipid.2026.statin_ckd_safety",
+    "acc.lipid.2026.lovastatin_pi_contra",
+    "acc.lipid.2026.ddi_table27_lovastatin_caps",
+    "acc.lipid.2026.active_liver_disease_contra"
+  ]
+}

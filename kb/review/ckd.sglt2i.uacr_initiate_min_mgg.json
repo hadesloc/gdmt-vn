@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.sglt2i.uacr_initiate_min_mgg",
+  "contentHash": "e35576d525d893b406353a87c41168a6aae63d89cabf11f14169b1228f47928b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.sglt2i.uacr_initiate_min_mgg",
+      "contentHash": "4e8c4742ba0fbc92",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.111Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.sglt2i.uacr_initiate_min_mgg."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

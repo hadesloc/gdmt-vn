@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.exac_steroid_min_mg",
+  "contentHash": "9b44c60ff8f5734aee948e05aa2e7884994eb60ffd04378f1010ad3c4f27f3f6",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.exac_steroid_min_mg",
+      "contentHash": "4b9a37904d938084",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+[
+  {
+    "id": "dapagliflozin",
+    "nameVi": "Dapagliflozin",
+    "inn": "Dapagliflozin",
+    "class": "SGLT2i",
+    "classes": [
+      "sglt2i"
+    ],
+    "components": [],
+    "vnBrands": [
+      "Forxiga"
+    ],
+    "forms": [
+      "Viên nén bao phim 5 mg",
+      "Viên nén bao phim 10 mg"
+    ],
+    "start": {
+      "amount": 10,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "route": "uống",
+      "description": "10 mg uống buổi sáng"
+    },
+    "target": {
+      "amount": 10,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "route": "uống",
+      "description": "10 mg uống 1 lần/ngày"
+    },
+    "titration": {
+      "step": 0,
+      "intervalDays": 0
+    },
+    "renal": [
+      {
+        "eGFRFrom": 20,
+        "initiate": "rec",
+        "continue": "rec",
+        "dose": "10 mg 1 lần/ngày",
+        "citationIds": [
+          "kdigo.ckd.2024.rec_3_7_1_sglt2i_t2d",
+          "kdigo.ckd.2024.rec_3_7_2_sglt2i_ckd_hf",
+          "fda.dapagliflozin.ckd_dose"
+        ]
+      },
+      {
+        "eGFRTo": 20,
+        "initiate": "not_rec",
+        "continue": "ok",
+        "dose": "10 mg 1 lần/ngày",
+        "note": "Không khởi trị mới khi eGFR < 20; tiếp tục duy trì nếu đã dùng trước đó cho tới khi lọc máu",
+        "citationIds": [
+          "kdigo.ckd.2024.pp_3_7_1_continue_below_20"
+        ]
+      }
+    ],
+    "gates": [
+      {
+        "id": "gate_dapa_egfr_min",
+        "parameter": "eGFR",
+        "operator": "<",
+        "threshold": 20,
+        "unit": "mL/min/1.73m2",
+        "action": "hold",
+        "messageVi": "Không khởi trị dapagliflozin nếu eGFR < 20 mL/phút/1.73m² (KDIGO 2024 1A)",
+        "citationIds": [
+          "kdigo.ckd.2024.rec_3_7_1_sglt2i_t2d"
+        ]
+      },
+      {
+        "id": "gate_dapagliflozin_pregnancy",
+        "parameter": "pregnancy",
+        "operator": "==",
+        "threshold": 1,
+        "action": "avoid",
+        "messageVi": "Không khuyến cáo dùng SGLT2i trong thai kỳ (đặc biệt tam cá nguyệt 2 và 3) do nguy cơ gây độc thận thai nhi (FDA Section 8.1)",
+        "citationIds": [
+          "fda.dapagliflozin.pregnancy"
+        ]
+      }
+    ],
+    "pregnancy": {
+      "status": "avoid",
+      "notesVi": "Không khuyến cáo dùng Dapagliflozin trong thai kỳ (đặc biệt tam cá nguyệt 2 và 3 do dữ liệu động vật ghi nhận giãn bể thận và ống thận thai nhi - FDA Section 8.1); ngừng thuốc khi phát hiện mang thai",
+      "citationIds": [
+        "fda.dapagliflozin.pregnancy"
+      ]
+    },
+    "lactation": {
+      "status": "avoid",
+      "notesVi": "Không khuyến cáo dùng khi cho con bú do nguy cơ tiềm ẩn ảnh hưởng thận đang phát triển của trẻ nhũ nhi (FDA Section 8.2)",
+      "citationIds": [
+        "fda.dapagliflozin.pregnancy"
+      ]
+    },
+    "contraindications": [
+      {
+        "code": "hypersensitivity",
+        "messageVi": "Tiền sử phản ứng quá mẫn nghiêm trọng (phản vệ, phù mạch) với dapagliflozin",
+        "citationIds": [
+          "fda.dapagliflozin.ckd_dose"
+        ]
+      },
+      {
+        "code": "dialysis",
+        "messageVi": "Không khuyến cáo khởi trị mới ở bệnh nhân đang lọc máu định kỳ",
+        "citationIds": [
+          "kdigo.ckd.2024.pp_3_7_1_continue_below_20"
+        ]
+      }
+    ],
+    "interactions": [
+      "Nguy cơ mất nước và tụt huyết áp tư thế khi phối hợp với thuốc lợi tiểu quai liều cao",
+      "Tạm ngừng trước phẫu thuật lớn ít nhất 3 ngày để tránh toan ceton đái tháo đường euglycemic"
+    ],
+    "citationIds": [
+      "kdigo.ckd.2024.rec_3_7_1_sglt2i_t2d",
+      "kdigo.ckd.2024.rec_3_7_2_sglt2i_ckd_hf",
+      "kdigo.ckd.2024.pp_3_7_1_continue_below_20",
+      "fda.dapagliflozin.ckd_dose",
+      "fda.dapagliflozin.pregnancy"
+    ]
+  }
+]

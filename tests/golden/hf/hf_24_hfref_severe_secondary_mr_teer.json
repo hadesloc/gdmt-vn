@@ -1,0 +1,54 @@
+{
+  "id": "hf_24_hfref_severe_secondary_mr_teer",
+  "titleVi": "HFrEF có hở van 2 lá thứ phát nặng dai dẳng: Cân nhắc Mitral TEER",
+  "source": "ESC 2026 HF Rec 9.3.3.2",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "female",
+    "weight": 64,
+    "sbp": 120,
+    "dbp": 75,
+    "hr": 74,
+    "lvef": 30,
+    "nyha": 3,
+    "scr": 95,
+    "k": 4.3,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ],
+    "customInputs": {
+      "severeSecondaryMr": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_hf_teer",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Hở 2 lá thứ phát nặng: Cân nhắc sửa van qua ống thông (Mitral TEER)."
+}

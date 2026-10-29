@@ -1,0 +1,53 @@
+{
+  "id": "lipid_24_outpatient_dm_target_organ_damage",
+  "titleVi": "ĐTĐ kèm tổn thương cơ quan đích - Nguy cơ rất cao",
+  "source": "ESC/EAS 2019 / esc.lipid.2019.target_very_high",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 61,
+    "sex": "male",
+    "weight": 70,
+    "height": 165,
+    "sbp": 135,
+    "dbp": 82,
+    "hr": 76,
+    "scr": 95,
+    "tc": 5.2,
+    "hdl": 1,
+    "ldl": 3,
+    "tg": 2,
+    "conditions": {
+      "dm": true,
+      "dmTargetOrganDamage": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": []
+  },
+  "descriptionVi": "ĐTĐ có tổn thương cơ quan đích xếp ngay vào nguy cơ rất cao (đích < 1.4 mmol/L)."
+}

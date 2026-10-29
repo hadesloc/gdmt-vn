@@ -1,0 +1,166 @@
+{
+  "id": "semaglutide",
+  "nameVi": "Semaglutide (SC)",
+  "inn": "Semaglutide",
+  "class": "GLP-1 RA",
+  "vnBrands": [
+    "Ozempic",
+    "Wegovy"
+  ],
+  "forms": [
+    "Bút tiêm 2 mg/1.5 mL, 4 mg/3 mL, 8 mg/3 mL (Ozempic - ĐTĐ típ 2)",
+    "Bút tiêm đơn liều 0.25 mg, 0.5 mg, 1 mg, 1.7 mg, 2.4 mg (Wegovy - quản lý cân nặng & HFpEF kèm béo phì)"
+  ],
+  "start": {
+    "amount": 0.25,
+    "unit": "mg",
+    "frequency": "1 lần/tuần",
+    "route": "tiêm dưới da",
+    "description": "Dùng trong 4 tuần đầu (liều thích nghi giảm tác dụng phụ tiêu hóa)"
+  },
+  "target": {
+    "amount": 1,
+    "unit": "mg",
+    "frequency": "1 lần/tuần",
+    "route": "tiêm dưới da",
+    "description": "Chuẩn độ ĐTĐ típ 2: 0.5–1.0 mg/tuần (tối đa 2.0 mg/tuần Ozempic); béo phì & suy tim HFpEF kèm béo phì chuẩn độ tới 2.4 mg/tuần (Wegovy)"
+  },
+  "titration": {
+    "step": "0.5 mg",
+    "intervalDays": 28,
+    "maxDose": "2.0 mg/tuần (ĐTĐ típ 2 - Ozempic); 2.4 mg/tuần (quản lý cân nặng & HFpEF kèm béo phì - Wegovy)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "0.5 - 2.0 mg/tuần (khởi đầu 0.25 mg/tuần)",
+      "citationIds": [
+        "kdigo.dm2.2022.semaglutide_sc_dosing",
+        "ada.dm2.2026.glp1_ckd_no_dose_adjust",
+        "fda.semaglutide.renal_no_adjust"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "not_rec",
+      "continue": "caution",
+      "dose": "Dữ liệu hạn chế; theo dõi sát",
+      "note": "Dữ liệu khởi trị hạn chế ở eGFR < 15 mL/phút/1.73m² theo KDIGO 2022 (ADA 2026 Rec 11.11b cho phép cân nhắc ở lọc máu mức chứng cứ C)",
+      "citationIds": [
+        "kdigo.dm2.2022.semaglutide_sc_dosing",
+        "ada.dm2.2026.glp1_dialysis_rec_11_11b",
+        "fda.semaglutide.renal_no_adjust"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_semaglutide_mtc_contra",
+      "parameter": "mtc",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối ở bệnh nhân có tiền sử ung thư tuyến giáp thể tủy (MTC)",
+      "citationIds": [
+        "fda.semaglutide.boxed_warning_mtc"
+      ]
+    },
+    {
+      "id": "gate_semaglutide_men2_contra",
+      "parameter": "men2",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối ở bệnh nhân mắc hội chứng MEN 2",
+      "citationIds": [
+        "fda.semaglutide.boxed_warning_mtc"
+      ]
+    },
+    {
+      "id": "gate_semaglutide_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 15,
+      "unit": "mL/min/1.73m2",
+      "action": "hold",
+      "messageVi": "Dữ liệu khởi trị mới hạn chế khi eGFR < 15 mL/phút/1.73m² theo KDIGO 2022 (ADA 2026 Rec 11.11b cho phép cân nhắc mức chứng cứ C)",
+      "citationIds": [
+        "kdigo.dm2.2022.semaglutide_sc_dosing",
+        "ada.dm2.2026.glp1_dialysis_rec_11_11b"
+      ]
+    }
+  ],
+  "interactions": [
+    "Không dùng chung với thuốc ức chế DPP-4",
+    "Làm chậm rỗng dạ dày, có thể ảnh hưởng hấp thu thuốc uống dùng cùng",
+    "Phân biệt liều đích theo chỉ định: ĐTĐ típ 2 duy trì 0.5–1.0 mg/tuần (tối đa 2.0 mg/tuần Ozempic); béo phì & HFpEF kèm béo phì chuẩn độ tới 2.4 mg/tuần (Wegovy)"
+  ],
+  "citationIds": [
+    "ada.dm2.2026.rec_9_7_ascvd",
+    "ada.dm2.2026.no_dpp4_plus_glp1",
+    "fda.semaglutide.boxed_warning_mtc",
+    "ada.dm2.2026.flow_egfr_15",
+    "kdigo.dm2.2022.semaglutide_sc_dosing",
+    "ada.dm2.2026.glp1_ckd_no_dose_adjust",
+    "fda.semaglutide.renal_no_adjust",
+    "fda.semaglutide.pregnancy",
+    "fda.semaglutide.gastroparesis_avoid",
+    "ada.dm2.2026.semaglutide_tirzepatide_max_dose",
+    "acc.hfpef.2026.glp1_obesity",
+    "fda.semaglutide.pancreatitis",
+    "ada.dm2.2026.incretin_pancreatitis",
+    "ada.dm2.2026.glp1_dialysis_rec_11_11b"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong thai kỳ do nguy cơ độc tính phôi thai trong nghiên cứu tiền lâm sàng; ngừng trước mang thai ít nhất 2 tháng",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_glp1",
+      "fda.semaglutide.pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo khi cho con bú do thiếu dữ liệu an toàn",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_glp1"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "mtc",
+      "messageVi": "Chống chỉ định tuyệt đối (FDA Boxed Warning) ở người có tiền sử bản thân hoặc gia đình mắc ung thư biểu mô tuyến giáp thể tủy (MTC)",
+      "citationIds": [
+        "fda.semaglutide.boxed_warning_mtc"
+      ]
+    },
+    {
+      "code": "men2",
+      "messageVi": "Chống chỉ định tuyệt đối (FDA Boxed Warning) ở bệnh nhân mắc hội chứng đa u tuyến nội tiết típ 2 (MEN 2)",
+      "citationIds": [
+        "fda.semaglutide.boxed_warning_mtc"
+      ]
+    },
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định trong thai kỳ do nguy cơ độc tính phôi thai",
+      "citationIds": [
+        "ada.dm2.2026.pregnancy_glp1"
+      ]
+    },
+    {
+      "code": "acute_pancreatitis",
+      "messageVi": "Thận trọng hoặc tránh dùng ở bệnh nhân có tiền sử viêm tụy cấp",
+      "citationIds": [
+        "fda.semaglutide.pancreatitis",
+        "ada.dm2.2026.incretin_pancreatitis"
+      ]
+    }
+  ],
+  "classes": [
+    "glp1ra",
+    "glp1_ra"
+  ]
+}

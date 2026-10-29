@@ -1,0 +1,66 @@
+{
+  "id": "dm2_27_inpatient_hold_metformin",
+  "titleVi": "Bệnh nhân nhập viện đợt cấp đang dùng Metformin - Tạm ngừng Metformin",
+  "source": "ADA 2026 SOC Ch. 16 / BYT 5481",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 62,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 130,
+    "dbp": 82,
+    "hr": 78,
+    "scr": 115,
+    "k": 4.4,
+    "glucose": 11.5,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "metformin",
+        "name": "Metformin",
+        "dose": 1000,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "metformin",
+        "action": "HOLD"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "metformin",
+        "action": "START"
+      },
+      {
+        "drugId": "metformin",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Nội trú bệnh cấp tính: Tạm ngừng Metformin."
+}

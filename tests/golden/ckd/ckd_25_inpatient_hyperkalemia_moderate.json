@@ -1,0 +1,50 @@
+{
+  "id": "ckd_25_inpatient_hyperkalemia_moderate",
+  "titleVi": "Nội viện - Xử trí tăng kali máu trung bình (6.2 mmol/L) bằng Insulin-Glucose",
+  "source": "UKKA 2022 Guideline 16.3.2 / ukka.2022.guideline_16_3_2_insulin_glucose_moderate",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_25",
+    "name": "BN CKD 25",
+    "age": 61,
+    "sex": "female",
+    "weight": 60,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 74,
+    "scr": 190,
+    "k": 6.2,
+    "conditions": {
+      "ckd": true
+    },
+    "customInputs": {},
+    "currentMeds": [],
+    "selectedModules": [
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_ckd_hyperkalemia_mod",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Tăng kali trung bình 6.0–6.4 chỉ định insulin-glucose tĩnh mạch."
+}

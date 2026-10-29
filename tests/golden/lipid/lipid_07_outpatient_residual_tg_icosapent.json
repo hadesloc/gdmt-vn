@@ -1,0 +1,59 @@
+{
+  "id": "lipid_07_outpatient_residual_tg_icosapent",
+  "titleVi": "Triglycerid tồn dư (2.8 mmol/L) ở bệnh nhân ASCVD - Cân nhắc Icosapent ethyl",
+  "source": "ESC/EAS 2019 / esc.lipid.2019.htg_icosapent_ethyl",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 64,
+    "sex": "male",
+    "weight": 72,
+    "height": 168,
+    "sbp": 125,
+    "dbp": 75,
+    "hr": 70,
+    "scr": 85,
+    "tc": 4.8,
+    "hdl": 1,
+    "ldl": 1.8,
+    "tg": 2.8,
+    "conditions": {
+      "ascvd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "atorvastatin",
+        "name": "Atorvastatin",
+        "dose": 40,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "icosapent_ethyl",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": []
+  },
+  "descriptionVi": "TG 1.5–5.6 mmol/L ở bệnh nhân ASCVD, cân nhắc Icosapent ethyl 2g BID."
+}

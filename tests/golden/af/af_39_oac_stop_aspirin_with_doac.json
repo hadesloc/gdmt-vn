@@ -1,0 +1,63 @@
+{
+  "id": "af_39_oac_stop_aspirin_with_doac",
+  "titleVi": "Bệnh nhân dùng DOAC kèm Aspirin mạn tính: DỪNG NGAY Aspirin (ADV_AF_49)",
+  "source": "ESC 2024 Figure 10 / esc.af.2024.aspirin_stop_when_oac",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 78,
+    "rhythm": "afib",
+    "scr": 90,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true,
+      "vascularDisease": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "apixaban",
+        "name": "Eliquis",
+        "dose": 5,
+        "unit": "mg"
+      },
+      {
+        "drugId": "aspirin",
+        "name": "Aspirin",
+        "dose": 81,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "aspirin",
+        "action": "STOP"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân dùng DOAC kèm Aspirin mạn tính không có ACS gần đây (ADV_AF_49): Dừng Aspirin để tránh tăng nguy cơ xuất huyết vô ích."
+}

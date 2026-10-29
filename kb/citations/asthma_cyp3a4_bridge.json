@@ -1,0 +1,24 @@
+[
+  {
+    "id": "chiesi.fostair.fixed_maintenance",
+    "sourceId": "chiesi_2026_fostair_smpc",
+    "locator": "4.2 Maintenance therapy (HTML)",
+    "quote": "One or two inhalations twice daily.",
+    "quoteVi": "Người lớn: duy trì cố định một hoặc hai nhát hít hai lần mỗi ngày; dùng thuốc cắt cơn nhanh riêng theo mục 4.2."
+  },
+  {
+    "id": "chiesi.fostair.cyp3a4_caution",
+    "sourceId": "chiesi_2026_fostair_smpc",
+    "locator": "4.5 Interactions (HTML)",
+    "quote": "Beclometasone is less dependent on CYP3A metabolism than some other corticosteroids, and in general interactions are unlikely; however, the possibility of systemic effects with concomitant use of strong CYP3A inhibitors (e.g. ritonavir, cobicistat) cannot be excluded, and therefore caution and appropriate monitoring is advised with the use of such agents.",
+    "quoteVi": "Beclometasone ít phụ thuộc CYP3A hơn một số corticosteroid khác nhưng không loại trừ tác dụng toàn thân khi dùng với thuốc ức chế mạnh CYP3A; cần thận trọng và theo dõi."
+  },
+  {
+    "id": "ema.trimbow.pmdi_excipients",
+    "sourceId": "ema_trimbow_smpc",
+    "pdfPage": 20,
+    "locator": "6.1 List of excipients, pressurised inhalation solution",
+    "quote": "Ethanol anhydrous Hydrochloric acid Norflurane (propellant)",
+    "quoteVi": "Tá dược Trimbow dạng bình xịt pMDI gồm ethanol khan, acid hydrochloric và chất đẩy norflurane; không liệt kê lactose."
+  }
+]

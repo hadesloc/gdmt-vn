@@ -1,0 +1,57 @@
+{
+  "id": "af_09_apixaban_dose_reduction_age_scr",
+  "titleVi": "Giảm liều Apixaban 2.5mg x 2: Tuổi 81 và Creatinin 133 µmol/L (ADV_AF_07)",
+  "source": "ESC 2024 AF Table 11 & Nhãn FDA / esc.af.2024.table11_doac_dosing",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 81,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 132,
+    "dbp": 80,
+    "hr": 80,
+    "rhythm": "afib",
+    "scr": 133,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "apixaban",
+        "name": "Eliquis",
+        "dose": 5,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "apixaban",
+        "action": "REDUCE",
+        "doseContains": "2.5 mg"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 81t, 70 kg, Cr 133 µmol/L (ADV_AF_07): Đạt 2 tiêu chí (Tuổi ≥ 80 và Cr ≥ 133 µmol/L) -> Giảm liều Apixaban 2.5 mg x 2 lần/ngày."
+}

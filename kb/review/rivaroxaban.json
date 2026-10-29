@@ -1,0 +1,26 @@
+{
+  "itemId": "rivaroxaban",
+  "contentHash": "0b339988642ff525472e03a86ac3e0ddce7cedbf6f3866fe47b38cffc23ee70a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "rivaroxaban",
+      "contentHash": "ffe902715f23fa26",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF drug rivaroxaban (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

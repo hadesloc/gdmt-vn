@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.qt_macrolide_antiarrhythmic",
+  "contentHash": "9cc0b5f29fa2f8a4b7ac16156886c02b05aded7acaaeef48400dc2e93e461007",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.qt_macrolide_antiarrhythmic",
+      "contentHash": "5e47e9a42a5b5e66",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.qt_macrolide_antiarrhythmic."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

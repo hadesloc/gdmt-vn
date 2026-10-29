@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.ckd.egfr_severe_cutoff",
+  "contentHash": "683fe2947d18b33b87fec34780a3470e161cd1ee943ee1423d0d0b77fdce8582",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.ckd.egfr_severe_cutoff",
+      "contentHash": "28bd4ec8a149558f",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực ngưỡng lâm sàng htn.ckd.egfr_severe_cutoff (30 mL/min/1.73m2) và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

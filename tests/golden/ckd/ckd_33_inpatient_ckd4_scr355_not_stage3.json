@@ -1,0 +1,54 @@
+{
+  "id": "ckd_33_inpatient_ckd4_scr355_not_stage3",
+  "titleVi": "Nội viện - CKD G4/G5 nền Scr 340 tăng nhẹ lên 355 µmol/L (+15 µmol/L) KHÔNG bị xếp nhầm AKI Giai đoạn 3 (Regression CKD-R1-04)",
+  "source": "KDIGO 2012 AKI Table 2 & BYT 2024 QĐ 2388/QĐ-BYT",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_33",
+    "name": "BN CKD 33",
+    "age": 69,
+    "sex": "male",
+    "weight": 64,
+    "sbp": 128,
+    "dbp": 76,
+    "hr": 78,
+    "scr": 355,
+    "k": 4.8,
+    "hco3": 20,
+    "conditions": {
+      "ckd": true,
+      "htn": true
+    },
+    "customInputs": {
+      "akiSuspected": true,
+      "baselineScr": 340,
+      "urineOutputRate": "oliguria_6h"
+    },
+    "currentMeds": [],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "rec_ckd_aki_stage_alert", "action": "MONITOR" }
+    ],
+    "mustNotInclude": [
+      { "ruleId": "rec_ckd_emergency_rrt", "action": "REFER" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R1-04: Tiêu chuẩn Scr >= 353.6 µmol/L của KDIGO AKI Giai đoạn 3 bắt buộc kèm mức tăng cấp tính >= 26.5 µmol/L; tăng 15 µmol/L trên nền 340 chỉ xếp Giai đoạn 1 theo thiểu niệu 6h."
+}

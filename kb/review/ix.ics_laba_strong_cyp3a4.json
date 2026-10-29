@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.ics_laba_strong_cyp3a4",
+  "contentHash": "ceea0bec854944e49ae065148c789877925ed6acff2bf4804fec0ec70c4a6aa7",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.ics_laba_strong_cyp3a4",
+      "contentHash": "e012b1e38a023157",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.ics_laba_strong_cyp3a4."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.finerenone.k_initiate_max",
+  "contentHash": "ebe9e08e3d46c764797f65d6319689392c3c01859162321dd5009165dfd81949",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.finerenone.k_initiate_max",
+      "contentHash": "1c0802dafca8c4b2",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.116Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.finerenone.k_initiate_max."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

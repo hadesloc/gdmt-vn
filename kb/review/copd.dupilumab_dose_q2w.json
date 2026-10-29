@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.dupilumab_dose_q2w",
+  "contentHash": "15407794f6582827c42cf867e218deb8a2a39ba4e10944ba6640240065777334",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.dupilumab_dose_q2w",
+      "contentHash": "62df173396a32e9e",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

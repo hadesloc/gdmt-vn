@@ -1,0 +1,58 @@
+{
+  "id": "asthma_23_laba_monotherapy_stopped",
+  "titleVi": "Chống chỉ định: LABA đơn độc (Salmeterol) không có ICS bị STOP",
+  "source": "FDA Boxed Warning / GINA 2026 / R3-03",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_23",
+    "name": "Nam 38 tuổi",
+    "age": 38,
+    "sex": "male",
+    "weight": 68,
+    "sbp": 120,
+    "dbp": 75,
+    "hr": 78,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "salmeterol",
+        "name": "Salmeterol",
+        "dose": "50 mcg x 2 lần/ngày",
+        "freq": "2 lần/ngày"
+      }
+    ],
+    "customInputs": {}
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "salmeterol",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bệnh nhân dùng Salmeterol đơn độc không có ICS -> Lập tức cảnh báo hộp đen và yêu cầu STOP."
+}

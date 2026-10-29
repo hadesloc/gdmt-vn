@@ -1,0 +1,26 @@
+{
+  "itemId": "evolocumab",
+  "contentHash": "1ae011f13874c074304b55fb10acbd77d953fcb25afe3ada42682a779bc8c336",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "evolocumab",
+      "contentHash": "e337433ea95cbf29",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra schema QA-10, phân nhóm classes, dải thận, cổng an toàn thai kỳ/tương tác và trích dẫn cho thuốc Evolocumab."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

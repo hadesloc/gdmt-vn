@@ -1,0 +1,55 @@
+{
+  "id": "htn_03_outpatient_very_elderly_monotherapy",
+  "titleVi": "Người rất cao tuổi (86 tuổi): Ngoại lệ khởi đầu đơn trị liệu liều thấp",
+  "source": "ESC 2024 HTN / esc.htn.2024.bp_target_lenient",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 86,
+    "sex": "female",
+    "weight": 48,
+    "height": 152,
+    "sbp": 154,
+    "dbp": 82,
+    "hr": 70,
+    "scr": 88,
+    "k": 4.3,
+    "conditions": {
+      "htn": true,
+      "frailty": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "amlodipine",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "spironolactone",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Cụ bà 86 tuổi suy yếu, ngoại lệ khởi đầu đơn trị liệu CCB liều thấp và đích nới lỏng < 140 mmHg."
+}

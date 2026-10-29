@@ -1,0 +1,53 @@
+{
+  "id": "ckd_21_inpatient_aki_stage1",
+  "titleVi": "Nội viện - Chẩn đoán AKI Giai đoạn 1 khi Creatinin tăng >= 26.5 µmol/L",
+  "source": "KDIGO 2012 AKI Table 2 / kdigo.aki.2012.table_2_staging",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_21",
+    "name": "BN CKD 21",
+    "age": 68,
+    "sex": "male",
+    "weight": 65,
+    "sbp": 118,
+    "dbp": 72,
+    "hr": 78,
+    "scr": 170,
+    "k": 4.6,
+    "conditions": {
+      "ckd": true
+    },
+    "customInputs": {
+      "baselineScr": 135,
+      "akiSuspected": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_ckd_aki_stage_alert",
+        "action": "MONITOR"
+      }
+    ]
+  },
+  "descriptionVi": "Creatinin tăng >= 26.5 µmol/L chẩn đoán AKI Stage 1."
+}

@@ -1,0 +1,17 @@
+{
+  "itemId": "ckd.canagliflozin.renal_standard_max",
+  "contentHash": "110ec7c501afb320c5ec3c13c914a0113996cd7d4e49b36d6b5ae1c427191c2d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.canagliflozin.renal_standard_max",
+      "contentHash": "72de8d8017b8ab40",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

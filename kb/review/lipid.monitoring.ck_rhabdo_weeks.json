@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.monitoring.ck_rhabdo_weeks",
+  "contentHash": "8e6a3612913ab9382621bf57fa8b37446d580fcf8067ef88f0467947e7c9f83b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.monitoring.ck_rhabdo_weeks",
+      "contentHash": "564cbe967b400e84",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.monitoring.ck_rhabdo_weeks."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

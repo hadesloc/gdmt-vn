@@ -1,0 +1,60 @@
+{
+  "id": "af_22_rate_control_reduced_ef_beta_blocker",
+  "titleVi": "Suy tim LVEF 32%: Khởi trị Chẹn beta suy tim kiểm soát tần số",
+  "source": "ESC 2024 AF Rec Table 14 / esc.af.2024.rate_control_lvef_reduced",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 70,
+    "sex": "female",
+    "weight": 60,
+    "height": 156,
+    "sbp": 118,
+    "dbp": 75,
+    "hr": 118,
+    "rhythm": "afib",
+    "lvef": 32,
+    "selectedModules": [
+      "af",
+      "hf"
+    ],
+    "conditions": {
+      "af": true,
+      "hf": true
+    },
+    "currentMeds": []
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "diltiazem",
+        "action": "START"
+      },
+      {
+        "drugId": "verapamil",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Rung nhĩ kèm HFrEF (LVEF 32%): Khởi trị chẹn beta suy tim (Bisoprolol/Carvedilol), tuyệt đối không dùng Non-DHP CCB."
+}

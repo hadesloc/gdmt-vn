@@ -1,0 +1,69 @@
+{
+  "id": "gout_19_tophaceous_gout_vn_target_320_continue",
+  "titleVi": "Khác biệt hồ sơ VN (BYT 361/2014): Gút tophi có Urat 310 µmol/L (< 320 µmol/L) -> Đạt đích, duy trì Allopurinol",
+  "source": "BYT QĐ 361/QĐ-BYT 2014 (byt.gout.2014.target_uric_acid)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 59,
+    "sex": "male",
+    "weight": 71,
+    "scr": 85,
+    "uricAcid": 310,
+    "tophi": true,
+    "conditions": {
+      "gout": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "allopurinol",
+        "name": "Allopurinol",
+        "dose": "300",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 1,
+      "tophi": true,
+      "hlab5801": "negative"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_continue",
+        "action": "CONTINUE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "allopurinol",
+        "action": "UPTITRATE"
+      },
+      {
+        "drugId": "colchicine",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Theo BYT 361/2014 (hồ sơ VN), đích acid uric cho gút mạn có tophi là < 320 µmol/L. Mức 310 µmol/L đã đạt mục tiêu trên hồ sơ VN nên tiếp tục duy trì liều Allopurinol hiện tại."
+}

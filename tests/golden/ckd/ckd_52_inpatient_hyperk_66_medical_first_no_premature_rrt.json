@@ -1,0 +1,57 @@
+{
+  "id": "ckd_52_inpatient_hyperk_66_medical_first_no_premature_rrt",
+  "titleVi": "Nội viện - Tăng Kali máu 6.6 mmol/L còn nước tiểu ở CKD G3a chưa kháng trị nội khoa -> Cấp cứu UKKA 5 bước + SZC, chưa chỉ định lọc máu ngay (Regression CKD-R2-R1-04 & R1-11)",
+  "source": "UKKA 2022 Guideline 16.6.1 & 18.1, BYT 2024 CKD",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_52",
+    "name": "BN CKD 52",
+    "age": 59,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 134,
+    "dbp": 80,
+    "hr": 76,
+    "scr": 130,
+    "k": 6.6,
+    "hco3": 20,
+    "conditions": {
+      "ckd": true,
+      "htn": true
+    },
+    "currentMeds": [
+      { "drugId": "ramipril", "dose": 5, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"],
+    "customInputs": {
+      "urineOutputRate": "normal",
+      "ecgHyperkalemiaChanges": true,
+      "refractoryHyperkalemia": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "rec_ckd_hyperkalemia_severe_bundle", "action": "START" },
+      { "drugId": "sodium_zirconium_cyclosilicate", "action": "START" }
+    ],
+    "mustNotInclude": [
+      { "ruleId": "rec_ckd_emergency_rrt", "action": "REFER" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R2-R1-04 & R1-11: K+ = 6.6 mmol/L ở bệnh nhân G3a còn nước tiểu ưu tiên cấp cứu nội khoa (Canxi TM, Insulin-Glucose, SZC) trước; chỉ lọc máu cấp cứu khi kháng trị nội khoa hoặc suy thận nặng/thiểu vô niệu."
+}

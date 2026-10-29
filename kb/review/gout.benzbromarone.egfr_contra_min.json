@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.benzbromarone.egfr_contra_min",
+  "contentHash": "1c69108ff4c86ee962606cfcc7f92f25f8e4cf50a79e943253de4166dc97d28e",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.benzbromarone.egfr_contra_min",
+      "contentHash": "305c80186683d23d",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.benzbromarone.egfr_contra_min"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

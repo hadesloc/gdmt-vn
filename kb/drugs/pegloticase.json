@@ -1,0 +1,100 @@
+{
+  "id": "pegloticase",
+  "nameVi": "Pegloticase",
+  "inn": "Pegloticase",
+  "class": "Uricase tái tổ hợp",
+  "classes": [
+    "urate_lowering",
+    "uricase"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Krystexxa"
+  ],
+  "forms": [
+    "Dung dịch đậm đặc pha tiêm truyền tĩnh mạch 8 mg/mL"
+  ],
+  "start": {
+    "amount": 8,
+    "unit": "mg",
+    "frequency": "mỗi 2 tuần",
+    "route": "truyền tĩnh mạch",
+    "description": "8 mg truyền tĩnh mạch trong ít nhất 120 phút mỗi 2 tuần tại cơ sở chuyên khoa có trang bị cấp cứu phản vệ (bắt buộc sàng lọc thiếu men G6PD trước truyền, ngừng toàn bộ thuốc hạ urat đường uống và định lượng acid uric huyết thanh trước mỗi lần truyền)"
+  },
+  "target": {
+    "amount": 8,
+    "unit": "mg",
+    "frequency": "mỗi 2 tuần",
+    "route": "truyền tĩnh mạch",
+    "description": "8 mg truyền tĩnh mạch mỗi 2 tuần (chỉ định khu trú cho gút mạn tính nặng có hạt tophi hoặc ≥ 2 đợt cấp/năm thất bại/chống chỉ định với XOI và uricosuric liều tối đa)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "8 mg truyền tĩnh mạch mỗi 2 tuần (không cần chỉnh liều theo mức lọc cầu thận, kể cả bệnh thận mạn giai đoạn 3–5 hoặc lọc máu)",
+      "citationIds": [
+        "acr.gout.2020.pegloticase_refractory",
+        "eular.gout.2016.pegloticase_8mg_q2w"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_pegloticase_not_first_line",
+      "parameter": "first_line_ult",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "line",
+      "action": "contra",
+      "messageVi": "ACR 2020 khuyến cáo mạnh KHÔNG dùng pegloticase làm thuốc hạ urat đầu tay hoặc cho gút thể nhẹ (< 2 đợt cấp/năm và không có tophi)",
+      "citationIds": [
+        "acr.gout.2020.pegloticase_first_line_against",
+        "acr.gout.2020.pegloticase_against_mild"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Dữ liệu trên phụ nữ mang thai còn hạn chế; chỉ cân nhắc tại chuyên khoa sâu khi gút mạn tính tàn phế nặng không còn lựa chọn khác.",
+    "citationIds": [
+      "acr.gout.2020.pegloticase_refractory"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Chưa rõ mức bài tiết qua sữa người và nguy cơ phản ứng miễn dịch trên trẻ bú mẹ; tránh cho con bú trong thời gian truyền pegloticase.",
+    "citationIds": [
+      "acr.gout.2020.pegloticase_refractory"
+    ]
+  },
+  "hepatic": {
+    "status": "caution",
+    "note": "Không cần chỉnh liều pegloticase theo chức năng gan, nhưng cần giám sát chặt phản ứng truyền và huyết động tại cơ sở chuyên khoa.",
+    "notesVi": "Không cần chỉnh liều pegloticase theo chức năng gan, nhưng cần giám sát chặt phản ứng truyền và huyết động tại cơ sở chuyên khoa.",
+    "citationIds": [
+      "eular.gout.2016.pegloticase_8mg_q2w"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "g6pd_deficiency",
+      "messageVi": "Chống chỉ định tuyệt đối ở bệnh nhân thiếu men G6PD do nguy cơ tan máu nội mạch cấp và methemoglobin máu đe dọa tính mạng (bắt buộc xét nghiệm sàng lọc G6PD trước khi khởi trị)",
+      "citationIds": [
+        "acr.gout.2020.pegloticase_refractory",
+        "eular.gout.2016.pegloticase_8mg_q2w"
+      ]
+    }
+  ],
+  "interactions": [
+    "Các thuốc hạ acid uric máu đường uống (Allopurinol, Febuxostat, Probenecid, Benzbromarone): BẮT BUỘC NGỪNG TOÀN BỘ trước và trong suốt quá trình truyền pegloticase vì thuốc uống làm che lấp hiện tượng tăng lại acid uric máu (> 6 mg/dL) — dấu hiệu cảnh báo sớm kháng thể kháng thuốc và nguy cơ sốc phản vệ nặng khi truyền"
+  ],
+  "citationIds": [
+    "acr.gout.2020.pegloticase_refractory",
+    "acr.gout.2020.pegloticase_against_mild",
+    "acr.gout.2020.pegloticase_first_line_against",
+    "eular.gout.2016.pegloticase_refractory",
+    "eular.gout.2016.pegloticase_8mg_q2w"
+  ]
+}

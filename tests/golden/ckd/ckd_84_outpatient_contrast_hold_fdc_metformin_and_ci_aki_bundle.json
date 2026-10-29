@@ -1,0 +1,55 @@
+{
+  "id": "ckd_84_outpatient_contrast_hold_fdc_metformin_and_ci_aki_bundle",
+  "titleVi": "Ngoại trú - Bệnh nhân ĐTĐ típ 2 + CKD G3b (SCr 170 umol/L, eGFR ~38) sắp chụp cản quang iod (contrastPlanned = true) đang dùng Janumet (sitagliptin_metformin) -> Cá thể hóa dự phòng CI-AKI (CONSIDER), TẠM NGỪNG sitagliptin_metformin và DEFER khởi trị mới SGLT2i (Regression CKD-R4-R2-06, CKD-R4-R3-10)",
+  "source": "ESC 2026 CVD-CKD Table 30 & FDA Glucophage Label Section 2.4 (Iodinated Contrast Imaging)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_84",
+    "name": "BN CKD 84",
+    "age": 64,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 128,
+    "dbp": 78,
+    "scr": 170,
+    "k": 4.4,
+    "uacr": 35,
+    "conditions": {
+      "ckd": true,
+      "dm": true
+    },
+    "customInputs": {
+      "contrastPlanned": true
+    },
+    "currentMeds": [
+      { "drugId": "sitagliptin_metformin", "name": "Janumet 50/1000 mg", "dose": "50/1000", "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "rec_ckd_ci_aki_bundle", "action": "CONSIDER" },
+      { "drugId": "sitagliptin_metformin", "action": "HOLD" },
+      { "drugId": "dapagliflozin", "action": "DEFER" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "dapagliflozin", "action": "START" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R4-R2-06 & CKD-R4-R3-10: Mở rộng dự phòng CI-AKI sang ngoại trú, tự động phát lệnh HOLD độc lập cho viên phối hợp chứa Metformin trước tiêm cản quang ở eGFR 30–60 và trì hoãn khởi trị SGLT2i quanh thủ thuật."
+}

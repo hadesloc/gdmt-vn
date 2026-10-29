@@ -1,0 +1,17 @@
+{
+  "itemId": "ckd.canagliflozin.renal_dose_cutoff",
+  "contentHash": "39a6dbae96a8ec4064520e3f687767a78dc32cb54fefeec2f4e3dec1ed683f92",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.canagliflozin.renal_dose_cutoff",
+      "contentHash": "4fa53b66b2f9676d",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

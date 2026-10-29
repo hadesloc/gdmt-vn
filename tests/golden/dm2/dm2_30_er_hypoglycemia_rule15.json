@@ -1,0 +1,49 @@
+{
+  "id": "dm2_30_er_hypoglycemia_rule15",
+  "titleVi": "Cấp cứu hạ đường huyết (glucose 2.6 mmol/L) - Quy tắc 15 gam",
+  "source": "ADA 2026 SOC Ch. 6 (từ oncall er_hypoglycemia_0415)",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "male",
+    "weight": 64,
+    "height": 164,
+    "sbp": 115,
+    "dbp": 70,
+    "hr": 96,
+    "scr": 105,
+    "k": 4.1,
+    "glucose": 2.6,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_dm2_hypo_rule15",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Glucose < 3.9: Xử trí hạ đường huyết ngay lập tức."
+}

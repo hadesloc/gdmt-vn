@@ -1,0 +1,57 @@
+{
+  "id": "copd_03_group_e_high_eos_naive",
+  "titleVi": "COPD Nhóm E mới chẩn đoán + BCAT ≥ 300 /µL: Khởi đầu liệu pháp ba thuốc",
+  "source": "GOLD 2026 Report p. 75 / Initial Group E Triple",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_03",
+    "age": 71,
+    "sex": "male",
+    "weight": 55,
+    "height": 162,
+    "sbp": 135,
+    "dbp": 82,
+    "hr": 82,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "fev1FvcRatio": 0.46,
+      "fev1PredPct": 44,
+      "mmrc": 2,
+      "cat": 16,
+      "moderateExacerbations": 2,
+      "hospitalizations": 1,
+      "bloodEos": 380,
+      "smokingStatus": "former",
+      "currentInhaler": "none"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "action": "START"
+      }
+    ]
+  }
+}

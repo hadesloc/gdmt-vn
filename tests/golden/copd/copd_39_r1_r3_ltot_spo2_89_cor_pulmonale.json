@@ -1,0 +1,67 @@
+{
+  "id": "copd_39_r1_r3_ltot_spo2_89_cor_pulmonale",
+  "titleVi": "Hồi quy R1-R3: PaO₂ 58 mmHg (56–59 mmHg, SpO₂ nghỉ 89%) kèm tâm phế mạn / tăng áp phổi / đa hồng cầu đủ tiêu chuẩn mở rộng LTOT tại nhà",
+  "source": "GOLD 2026 Report p. 87 / BYT QĐ 2131/2026 p. 26 (COPD-R1-09, COPD-R3-R1-13, COPD-R3-R3-12)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_39",
+    "age": 71,
+    "sex": "male",
+    "weight": 53,
+    "height": 161,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 84,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "tiotropium_olodaterol",
+        "name": "Spiolto Respimat",
+        "dose": 5,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.41,
+      "fev1PredPct": 32,
+      "mmrc": 3,
+      "cat": 20,
+      "moderateExacerbations": 0,
+      "hospitalizations": 0,
+      "bloodEos": 110,
+      "currentInhaler": "laba_lama",
+      "restingSpo2": 89,
+      "pao2": 58,
+      "corPulmonaleOrPolycythemia": true,
+      "smokingStatus": "former"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_copd_ltot",
+        "action": "START"
+      }
+    ]
+  }
+}

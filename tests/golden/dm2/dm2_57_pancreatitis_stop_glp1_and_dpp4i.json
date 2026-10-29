@@ -1,0 +1,89 @@
+{
+  "id": "dm2_57_pancreatitis_stop_glp1_and_dpp4i",
+  "titleVi": "Tiền sử viêm tụy cấp: Ngừng toàn bộ thuốc trục Incretin (Semaglutide và Sitagliptin) và chặn khởi trị mới",
+  "source": "ADA Standards of Care 2026 Chapter 9 & FDA Prescribing Information",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 57,
+    "sex": "male",
+    "weight": 82,
+    "height": 170,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 76,
+    "scr": 84,
+    "k": 4.2,
+    "glucose": 9.2,
+    "hba1c": 8.4,
+    "conditions": {
+      "dm": true,
+      "ascvd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "semaglutide",
+        "name": "Semaglutide",
+        "dose": 0.5,
+        "unit": "mg"
+      },
+      {
+        "drugId": "sitagliptin",
+        "name": "Sitagliptin",
+        "dose": 100,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "historyPancreatitis": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "semaglutide",
+        "action": "STOP"
+      },
+      {
+        "drugId": "sitagliptin",
+        "action": "STOP"
+      },
+      {
+        "drugId": "dapagliflozin",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "semaglutide",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "tirzepatide",
+        "action": "START"
+      },
+      {
+        "drugId": "linagliptin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Tiền sử hoặc nghi ngờ viêm tụy cấp yêu cầu ngừng cả nhóm đồng vận GLP-1 RA lẫn ức chế DPP-4i và chuyển sang trụ cột SGLT2i / Metformin an toàn."
+}

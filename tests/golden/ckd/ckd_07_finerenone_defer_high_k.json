@@ -1,0 +1,64 @@
+{
+  "id": "ckd_07_finerenone_defer_high_k",
+  "titleVi": "Tạm hoãn khởi trị Finerenone khi Kali máu > 5.0 mmol/L",
+  "source": "FDA Kerendia Table 2 / fda.finerenone.table_2_dose_adjustment",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_07",
+    "name": "BN CKD 07",
+    "age": 62,
+    "sex": "male",
+    "weight": 72,
+    "sbp": 134,
+    "dbp": 82,
+    "hr": 70,
+    "scr": 145,
+    "k": 5.3,
+    "uacr": 30,
+    "conditions": {
+      "ckd": true,
+      "dm": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "losartan",
+        "name": "Cozaar 100 mg",
+        "dose": 100,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "finerenone",
+        "action": "DEFER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "finerenone",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Không được khởi trị finerenone nếu kali máu > 5.0 mmol/L."
+}

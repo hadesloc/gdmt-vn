@@ -1,0 +1,173 @@
+[
+  {
+    "id": "R3-GOUT-01",
+    "severity": "critical",
+    "itemType": "missing",
+    "itemId": "gout.safety.duplicate_xoi",
+    "finding": "Hoàn toàn không phát hiện và không chặn phác đồ phối hợp trùng lặp 2 thuốc ức chế Xanthine Oxidase (Allopurinol + Febuxostat), thậm chí phát lệnh tăng liều đồng thời cả hai thuốc (UPTITRATE Allopurinol + UPTITRATE Febuxostat), trái ngược khuyến cáo chống chỉ định mạnh của ACR 2020 và làm tăng vọt độc tính gan, tủy xương và hội chứng SCAR.",
+    "evidence": "Input BN ADV_GOUT_50 (Nam 56 tuổi, INTL/outpatient, currentMeds: [{drugId: 'allopurinol', dose: '300'}, {drugId: 'febuxostat', dose: '40'}], uricAcid: 450 µmol/L). Output engine: phát đồng thời [UPTITRATE] drugId=allopurinol ('Chuẩn độ tăng liều Allopurinol thêm 100 mg/ngày') VÀ [UPTITRATE] drugId=febuxostat ('Tăng liều Febuxostat lên 80 mg/ngày'); STOP = 0, alerts = []. Input BN ADV_GOUT_51 (VN/outpatient, uricAcid: 280 µmol/L): phát đồng thời [CONTINUE] allopurinol VÀ [CONTINUE] febuxostat; alerts = []. Cơ chế lỗi: src/modules/gout/rules.ts không có luật kiểm tra trùng lặp XOI (gout.allopurinol.uptitrate dòng 1559 và gout.febuxostat.manage dòng 1775 chạy độc lập); CLASS_CONFLICT_GROUPS trong src/engine/merge.ts (dòng 100-209), DUPLICATE_CLASS_RULES trong src/engine/safety/duplicates.ts (dòng 48-178) và kb/interactions/gout_metabolic.json đều bỏ sót nhóm xoi.",
+    "suggestedFix": "(1) Bổ sung nhóm 'xoi' (classes: ['xoi'], drugIds: ['allopurinol', 'febuxostat']) vào DUPLICATE_CLASS_RULES (src/engine/safety/duplicates.ts) và CLASS_CONFLICT_GROUPS (src/engine/merge.ts); (2) Bổ sung luật tương tác 'ix.duplicate_xoi' (severity: 'contraindicated') vào kb/interactions/gout_metabolic.json; (3) Thêm luật an toàn ưu tiên cao 'gout.safety.duplicate_xoi' trong src/modules/gout/rules.ts phát lệnh [STOP] 1 trong 2 thuốc XOI (dừng allopurinol nếu HLA-B*58:01 dương tính/dị ứng allopurinol; dừng febuxostat trong các trường hợp còn lại, đặc biệt khi có tiền sử bệnh tim mạch)."
+  },
+  {
+    "id": "R3-GOUT-02",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "gout.allopurinol.uptitrate",
+    "finding": "Bệnh nhân đã có tiền sử dị ứng / không dung nạp Allopurinol (customInputs.allopurinolIntolerant = true) nhưng đơn thuốc hiện tại vẫn có Allopurinol không những không được phát lệnh STOP mà còn bị hệ thống ra lệnh CONTINUE trong cơn gút cấp và UPTITRATE tăng thêm 100 mg/ngày ngoài cơn cấp, đe dọa kích hoạt hội chứng SJS/TEN/DRESS tử vong.",
+    "evidence": "Input BN ADV_GOUT_35 (Nữ 58 tuổi, VN/outpatient, customInputs: {acuteFlare: true, allopurinolIntolerant: true}, currentMeds: [{drugId: 'allopurinol', dose: '100'}]). Output engine: [CONTINUE] drugId=allopurinol title='TIẾP TỤC Allopurinol (TUYỆT ĐỐI KHÔNG NGỪNG ULT TRONG CƠN GÚT CẤP) (100 mg)'; STOP = 0, alerts = []. Input BN ADV_GOUT_49 (VN/outpatient, ngoài cơn cấp, allopurinolIntolerant: true, currentMeds: [{drugId: 'allopurinol', dose: '100'}], uricAcid: 480 µmol/L). Output engine: [UPTITRATE] drugId=allopurinol title='Chuẩn độ tăng liều Allopurinol thêm 100 mg/ngày'; STOP = 0. Cơ chế lỗi: isAllopurinolContraindicated(ctx) (rules.ts dòng 287-293) có đọc allopurinolIntolerant nhưng chỉ được gọi khi khởi trị mới. Các luật gout.acute_flare.continue_ult (dòng 1170) và gout.allopurinol.uptitrate (dòng 1562) chỉ chặn hlab5801 === 'positive' và isTakingAzathioprine, quên hoàn toàn customInputs.allopurinolIntolerant và chưa có luật safety phát lệnh STOP.",
+    "suggestedFix": "Bổ sung luật an toàn ưu tiên cao 'gout.safety.allopurinol_intolerant' trong src/modules/gout/rules.ts: Khi Boolean(ctx.normalized.customInputs?.allopurinolIntolerant) hoặc patient.allergies chứa 'allopurinol' mà bệnh nhân đang có 'allopurinol' trong currentMeds, bắt buộc phát [STOP] drugId='allopurinol' ngay lập tức (kể cả trong cơn gút cấp); đồng thời gọi '!isAllopurinolContraindicated(ctx)' trong gout.acute_flare.continue_ult và gout.allopurinol.uptitrate, và cho phép chuyển sang Febuxostat an toàn."
+  },
+  {
+    "id": "R3-GOUT-03",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "gout.safety.nsaid_contra",
+    "finding": "Rò rỉ thuốc kháng viêm NSAID / COX-2i trên bệnh nhân tim mạch nguy cơ rất cao và suy tim HFrEF: (1) Không phát lệnh STOP khi bệnh nhân vừa nhồi máu cơ tim cấp (ascvd=true, recentAcs=true) đang tự uống Diclofenac 75 mg hoặc Etoricoxib 120 mg; (2) Vẫn kê mới [START] Naproxen 500 mg x 2 lần/ngày khi người dùng tích ô UI 'Có tiền sử bệnh tim mạch' (customInputs.hasCvd=true) hoặc nhập LVEF = 28% nhưng quên tích cờ conditions.hf.",
+    "evidence": "Input BN ADV_GOUT_28 (Nam 62 tuổi, VN/outpatient, conditions: {gout: true, ascvd: true, recentAcs: true}, currentMeds: [{drugId: 'diclofenac', dose: '75'}]): Output engine STOP = 0, alerts = []. Input BN ADV_GOUT_29 (INTL/outpatient, recentAcs: true, currentMeds: [{drugId: 'etoricoxib', dose: '120'}]): Output engine STOP = 0, alerts = []. Input BN ADV_GOUT_27 (customInputs: {acuteFlare: true, hasCvd: true}, đang dùng clarithromycin): Output engine kê [START] drugId=naproxen ('500 mg x 2 lần/ngày trong 5 ngày', gate NSAID_Eligible passed=true). Input BN ADV_GOUT_26 (lvef: 28, không tích conditions.hf, đang dùng clarithromycin): Output engine kê [START] drugId=naproxen 500 mg x 2 lần/ngày. Cơ chế lỗi: (a) isNsaidHardContraindicated (rules.ts dòng 303-313) bỏ sót hoàn toàn ascvd, recentAcs, strokeOrTia, hasCvd và lvef < 50; (b) isNsaidAvoidedInGout (dòng 318-326) chỉ kiểm tra conditions.ascvd mà quên đọc customInputs.hasCvd (ô checkbox thực tế trên giao diện src/modules/gout/inputs.ts dòng 103) và strokeOrTia; (c) gates.ts dòng 786-840 không ánh xạ contra.code === 'heart_failure' hay 'ischemic_heart_disease' của nhóm NSAID/COX-2i.",
+    "suggestedFix": "(1) Định nghĩa hàm dùng chung hasHeartFailure(ctx) = Boolean(ctx.normalized.conditions?.hf || (ctx.normalized.lvef !== undefined && ctx.normalized.lvef < 50)) và hasCvdHistory(ctx) = Boolean(hasHeartFailure(ctx) || ctx.normalized.conditions?.ascvd || ctx.normalized.conditions?.recentAcs || ctx.normalized.conditions?.strokeOrTia || ctx.normalized.customInputs?.hasCvd); đưa vào cả isNsaidHardContraindicated (để bắt buộc STOP mọi NSAID/COX-2i, đặc biệt Diclofenac/Etoricoxib/Celecoxib ở bệnh nhân recentAcs/ascvd/hasCvd/HFrEF) và isNsaidAvoidedInGout; (2) Bổ sung kiểm tra contra.code 'heart_failure', 'ischemic_heart_disease', 'cerebrovascular_disease' trong src/engine/safety/gates.ts và reviewMeds.ts."
+  },
+  {
+    "id": "R3-GOUT-04",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "gout.acute_flare.colchicine",
+    "finding": "Kích hoạt giả tạo (false-positive) phác đồ cắt cơn gút cấp ở 100% bệnh nhân nội viện (setting === 'inpatient') có tiền sử gút khi chưa nhập trường customInputs.acuteFlare (undefined), tự động kê đơn liều nạp Colchicine cấp hoặc Corticoid liều cao cho bệnh nhân nhập viện vì suy tim cấp hoặc bệnh nội khoa khác.",
+    "evidence": "Input BN ADV_GOUT_33 (Nam 68 tuổi, INTL/inpatient, nhập viện vì suy tim cấp LVEF 30%, tiền sử gút mạn ổn định đang duy trì allopurinol 300 mg, uricAcid: 310 µmol/L, customInputs: {}): Output engine tự suy diễn đang có cơn gút cấp, phát [AVOID] naproxen ('Tránh dùng NSAID trong cơn gút cấp') và kê đơn [START] drugId=colchicine ('1.2 mg ngay khi khởi phát cơn, sau đó 0.6 mg sau 1 giờ'). Input BN ADV_GOUT_34 (VN/inpatient, customInputs: {}): Tự kê [START] colchicine ('1 mg sau đó 0.5 mg sau 1 giờ') và [DEFER] ULT do cơn cấp. Cơ chế lỗi: Hàm isAcuteGoutFlare(ctx) tại src/modules/gout/rules.ts dòng 147-154 viết: 'if (typeof explicit === \"boolean\") return explicit; if (ctx.settings.setting === \"inpatient\") { return Boolean(ctx.normalized.conditions?.gout); }'. Khi checkbox chưa được tương tác (undefined), mọi bệnh nhân nội trú có tiền sử gút đều bị gán nhãn đang lên cơn gút cấp.",
+    "suggestedFix": "Sửa hàm isAcuteGoutFlare(ctx) tại src/modules/gout/rules.ts dòng 147-154 theo nguyên tắc fail-closed: Chỉ trả về true khi 'ctx.normalized.customInputs?.acuteFlare === true'. Tuyệt đối không suy diễn 'setting === inpatient && conditions.gout' đồng nghĩa với đang có cơn viêm khớp gút cấp."
+  },
+  {
+    "id": "R3-GOUT-05",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "gout.prophylaxis.flare",
+    "finding": "Trên bệnh nhân suy thận mạn nặng CKD G4 (eGFR = 18 mL/phút/1.73m²) đang uống sẵn Colchicine 1 mg/ngày, khi khởi trị Allopurinol hệ thống ra lệnh [CONTINUE] TIẾP TỤC DUY TRÌ Colchicine ở nguyên liều độc tính 1 mg/ngày kéo dài 3–6 tháng (vượt > 3 lần trần thận 0.3 mg/ngày), gây nguy cơ tiêu cơ vân, bệnh cơ-thần kinh và suy tủy xương tử vong.",
+    "evidence": "Input BN ADV_GOUT_12 (Nam 64 tuổi, VN/outpatient, scr: 310 µmol/L -> eGFR = 18.4, currentMeds: [{drugId: 'colchicine', dose: '1', frequency: 'qd'}], goutFlaresYear: 3, uricAcid: 560 µmol/L). Output engine: [CONTINUE] drugId=colchicine title='TIẾP TỤC DUY TRÌ Colchicine (Dự phòng cơn bùng phát) [Liều hiện tại: 1]' với dose='1'; STOP = 0, REDUCE = 0, alerts = []. Cơ chế lỗi kép: (1) gout.prophylaxis.flare (rules.ts dòng 2368-2384) tính đúng doseStr giảm liều thận '0.3 mg x 1 lần/ngày', nhưng vẫn phát action='START' bất kể bệnh nhân đang dùng sẵn Colchicine liều cao; (2) mergeRecommendations (src/engine/merge.ts dòng 509-520) thấy currentMedIds.has('colchicine') && r.action === 'START' liền đổi thành action='CONTINUE' và ghi đè dose bằng curMed.dose ('1'), xóa mất hoàn toàn chỉ định giảm liều thận; đồng thời gout.safety.colchicine không phát REDUCE khi 10 <= eGFR < 30 với liều hiện tại > 0.5 mg/ngày.",
+    "suggestedFix": "(1) Trong gout.prophylaxis.flare (và gout.safety.colchicine), kiểm tra nếu bệnh nhân đã có 'colchicine' trong currentMeds với liều vượt ngưỡng cho phép theo chức năng thận (eGFR < 30) hoặc tương tác CYP3A4 vừa (Verapamil/Diltiazem), phải phát action='REDUCE' (thay vì 'START') kèm liều đích giảm liều cụ thể; (2) Trong src/engine/merge.ts dòng 509-520, không được tự động ghi đè r.dose bằng curMed.dose nếu khuyến cáo gốc chứa cổng giảm liều thận/tương tác thuốc."
+  },
+  {
+    "id": "R3-GOUT-06",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "gout.acute_flare.nsaid",
+    "finding": "Trên bệnh nhân nội viện đang xuất huyết nội sọ cấp (conditions.acuteIntracerebralHemorrhage = true), hệ thống vẫn kê đơn [START] Naproxen 500 mg x 2 lần/ngày và phát lệnh [CONTINUE] Aspirin liều thấp do hàm kiểm tra xuất huyết của module Gút bỏ sót cờ acuteIntracerebralHemorrhage.",
+    "evidence": "Input BN ADV_GOUT_23 (Nam 65 tuổi, INTL/inpatient, conditions: {gout: true, acuteIntracerebralHemorrhage: true}, currentMeds: [{drugId: 'clarithromycin', dose: '500'}, {drugId: 'aspirin', dose: '81'}]). Output engine: [START] drugId=naproxen ('500 mg x 2 lần/ngày trong 5 ngày') VÀ [CONTINUE] drugId=aspirin ('Tiếp tục duy trì Aspirin liều thấp (KHÔNG ngừng vì bệnh Gút)'). Cơ chế lỗi: Hàm hasPepticUlcerOrBleed(ctx) tại src/modules/gout/rules.ts dòng 114-120 chỉ đọc 'pepticUlcer' và 'bleedingHistory', bỏ sót hoàn toàn 'acuteIntracerebralHemorrhage'; đồng thời gates.ts và reviewMeds.ts không có cổng chặn toàn cục nhóm NSAID/kháng tiểu cầu khi acuteIntracerebralHemorrhage === true.",
+    "suggestedFix": "Bổ sung 'Boolean(ctx.normalized.conditions?.acuteIntracerebralHemorrhage)' vào hàm hasPepticUlcerOrBleed(ctx) tại src/modules/gout/rules.ts dòng 114-120 (chặn đồng thời cả NSAID lẫn gout.concurrent.keep_aspirin), và bổ sung cổng an toàn xuất huyết nội sọ cấp trong src/engine/safety/gates.ts & reviewMeds.ts để chuyển mọi NSAID, kháng tiểu cầu và thuốc chống đông sang STOP / AVOID."
+  },
+  {
+    "id": "R3-GOUT-07",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "gout.allopurinol.uptitrate",
+    "finding": "Chuẩn độ tăng liều và duy trì thuốc XOI vượt trần tối đa FDA và vượt trần an toàn suy thận nặng: (1) gout.allopurinol.uptitrate ra lệnh tăng thêm 100 mg/ngày ngay cả khi bệnh nhân đã uống kịch trần tối đa 800 mg/ngày, và ra lệnh tăng lên 400 mg/ngày ở bệnh nhân suy thận giai đoạn cuối CKD G5 (eGFR = 8, CrCl = 9 mL/phút, vượt gấp 4 lần trần thận 100 mg/ngày trong KB); (2) gout.febuxostat.manage ra lệnh CONTINUE Febuxostat 80 mg/ngày ở CKD G4 (eGFR = 18) dù vượt trần thận FDA 40 mg/ngày.",
+    "evidence": "Input BN ADV_GOUT_57 (US/outpatient, currentMeds: [{drugId: 'allopurinol', dose: '800'}], uricAcid: 460 µmol/L): Output [UPTITRATE] drugId=allopurinol ('Tăng thêm 100 mg mỗi 2–5 tuần (tối đa 800 mg/ngày)'). Input BN ADV_GOUT_13 (INTL/outpatient, scr: 620 µmol/L -> eGFR = 8.0, CrCl = 9.4, currentMeds: [{drugId: 'allopurinol', dose: '300'}], uricAcid: 460 µmol/L): Output [UPTITRATE] drugId=allopurinol thêm 100 mg/ngày dù kb/drugs/allopurinol.json quy định CrCl 0–10 tối đa 100 mg/ngày. Input BN ADV_GOUT_14 (US/outpatient, eGFR = 18.4, currentMeds: [{drugId: 'febuxostat', dose: '80'}], uricAcid: 310 µmol/L): Output [CONTINUE] drugId=febuxostat (do gout.febuxostat.manage dòng 1806 kiểm tra uricAcid < target TRƯỚC khi kiểm tra egfr < 30 ở dòng 1833).",
+    "suggestedFix": "(1) Trong gout.allopurinol.uptitrate (rules.ts dòng 1555-1660), trích xuất liều số học từ currentMed.dose: nếu dose >= maxDose (800 mg US/INTL, 600–800 mg VN), không phát UPTITRATE mà chuyển sang phối hợp uricosuric hoặc đổi sang Febuxostat; khi eGFR < 30 / CrCl < 10, giới hạn bước tăng tối đa ≤ 50 mg/lần kèm cảnh báo theo dõi sát độc tính DRESS/SCAR (hoặc chặn theo trần thận BYT/FDA tùy profile); (2) Trong gout.febuxostat.manage (dòng 1800-1860), kiểm tra vượt trần thận (egfr < 30 && currentDose > 40 -> phát [REDUCE] về 40 mg/ngày) và kiểm tra kịch trần (currentDose >= 80) trước khi phát CONTINUE hoặc UPTITRATE."
+  },
+  {
+    "id": "R3-GOUT-08",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "gout.safety.pregnancy_ult",
+    "finding": "Sử dụng hàm findMed(...) chỉ lấy phần tử khớp đầu tiên trong mảng currentMeds khiến hệ thống bỏ sót không dừng thuốc chống chỉ định thứ hai trong thai kỳ, và đánh rơi lệnh CONTINUE Allopurinol trong cơn gút cấp khi bệnh nhân đang dùng phác đồ phối hợp 2 thuốc hạ acid uric máu.",
+    "evidence": "Input BN ADV_GOUT_59 (Nữ 31 tuổi, conditions: {gout: true, pregnant: true}, currentMeds: [{drugId: 'allopurinol', dose: '100'}, {drugId: 'probenecid', dose: '500'}]). Output engine chỉ phát duy nhất [STOP] drugId=allopurinol ('NGỪNG Allopurinol trong thai kỳ'); probenecid hoàn toàn không có lệnh STOP hay cảnh báo nào (alerts = []). Input BN ADV_GOUT_32 (Nam 55 tuổi, cơn gút cấp, eGFR = 22, currentMeds: [{drugId: 'probenecid', dose: '500'}, {drugId: 'allopurinol', dose: '300'}]): gout.acute_flare.continue_ult (rules.ts dòng 1185) gọi findMed(ctx, ULT_DRUG_IDS) lấy trúng probenecid đứng đầu rồi bị đè bởi lệnh STOP probenecid (do eGFR < 30), làm mất hoàn toàn chỉ định [CONTINUE] allopurinol 300 mg trong cơn cấp. Cơ chế lỗi: gout.safety.pregnancy_ult (dòng 515), gout.safety.pregnancy_nsaid (dòng 429) và gout.acute_flare.continue_ult (dòng 1185) chỉ xử lý 1 thuốc duy nhất từ findMed.",
+    "suggestedFix": "(1) Tách luật dừng ULT trong thai kỳ theo từng nhóm (XOI và Uricosuric) hoặc hỗ trợ trả về danh sách lệnh STOP cho mọi thuốc ULT/NSAID đang có trong currentMeds (đồng thời cập nhật reviewMeds.ts chặn nhóm ULT trong thai kỳ); (2) Trong gout.acute_flare.continue_ult, lọc bỏ các thuốc ULT đang bị chống chỉ định (suy thận nặng eGFR < 30 cho uricosuric, sỏi thận, dị ứng, HLA-B*58:01+, Azathioprine) trước khi chọn thuốc ULT hợp lệ để phát lệnh CONTINUE."
+  },
+  {
+    "id": "R3-GOUT-09",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "gout.acute_flare.corticosteroid",
+    "finding": "Kê đơn Prednisolone đường uống liều cao (30–35 mg/ngày × 3–5 ngày) và Prednisolone dự phòng kéo dài (3–6 tháng) cho bệnh nhân đái tháo đường típ 2 mất kiểm soát nặng (HbA1c 10.5%, Glucose 18–24.5 mmol/L, nghi ngờ DKA) hoặc đang có nhiễm nấm/nhiễm khuẩn toàn thân mà hoàn toàn không có cảnh báo theo dõi sát đường huyết hay loại trừ nhiễm trùng; đồng thời thiếu trần liều số học (≤ 10 mg/ngày) ở phác đồ dự phòng.",
+    "evidence": "Input BN ADV_GOUT_15 (VN/inpatient, dm: true, hba1c: 10.5, glucose: 18.0 mmol/L, eGFR: 18.4), ADV_GOUT_16 (glucose: 24.5 mmol/L, customInputs.dkaSuspected: true), ADV_GOUT_17 (nhiễm nấm toàn thân/nhiễm trùng huyết): Cả 3 ca đều phát [START] drugId=prednisolone ('30–35 mg/ngày trong 3–5 ngày') với warnings = undefined, rationale không hề nhắc tới kiểm soát đường huyết hay loại trừ nhiễm khuẩn. Input BN ADV_GOUT_18 (dm: true, hba1c: 10.8, warfarin): Phát [START] prednisolone dự phòng với dose='Liều thấp uống buổi sáng sau ăn trong 3–6 tháng' (không ghi liều mg cụ thể, warnings = undefined). Ngoài ra gates.ts dòng 786-840 bỏ qua contra.code === 'systemic_fungal_infection' trong kb/drugs/prednisolone.json.",
+    "suggestedFix": "(1) Bổ sung mảng warnings động cho rec_gout_oral_corticosteroid_flare, rec_gout_intraarticular_steroid, rec_gout_pregnancy_steroid_flare và rec_gout_steroid_prophylaxis: Bắt buộc cảnh báo loại trừ viêm khớp nhiễm khuẩn / nhiễm trùng toàn thân trước khi dùng Corticoid; khi có ĐTĐ hoặc glucose ≥ 10 mmol/L hoặc HbA1c ≥ 8.5%, cảnh báo theo dõi đường huyết mao mạch 4 lần/ngày và chỉnh tăng liều Insulin (chuyển HOLD / ưu tiên chọc hút tiêm nội khớp đơn khớp + chườm lạnh nếu glucose ≥ 20 mmol/L hoặc dkaSuspected === true); (2) Ghi rõ trần liều dự phòng '5–10 mg/ngày (tối đa ≤ 10 mg/ngày theo ACR 2020)' trong rec_gout_steroid_prophylaxis; (3) Ánh xạ contra.code 'systemic_fungal_infection' trong gates.ts."
+  },
+  {
+    "id": "R3-GOUT-10",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "gout.safety.colchicine",
+    "finding": "Ba lỗ hổng an toàn trong kiểm soát tương tác và suy thận của Colchicine: (1) Fail-open khi thiếu Creatinin (scr = undefined) trên bệnh nhân đang dùng đồng thời Colchicine 1 mg + Verapamil 120 mg (không đòi nhập eGFR và không giảm liều/ngừng Colchicine); (2) Vẫn kê [START] Colchicine trên bệnh nhân đang dùng Statin liều cao (Atorvastatin 80 mg, Rosuvastatin 20 mg) kèm CKD G3b–G4 (eGFR 20–35), tự mâu thuẫn với cảnh báo !CRITICAL:ix.statin_colchicine của chính hệ thống; (3) Bỏ sót thuốc ức chế mạnh P-gp Amiodarone / Dronedarone ở bệnh nhân suy thận CKD G3b.",
+    "evidence": "Input BN ADV_GOUT_06 (colchicine 1 mg + verapamil 120 mg, scr: undefined): Output RECS không có bất kỳ khuyến cáo nào cho colchicine và không có missing_input_egfr (do checkColchicineSafety dòng 258 viết 'egfr !== undefined && egfr < modCypRenalCutoff' -> trả về false khi egfr === undefined). Input BN ADV_GOUT_40 (atorvastatin 80 mg + eGFR 35.1) & ADV_GOUT_41 (rosuvastatin 20 mg + eGFR 20.0): Hệ thống vừa phát [START] colchicine vừa phát SafetyAlert !CRITICAL:ix.statin_colchicine ('Tránh phối hợp ở bệnh nhân có suy thận hoặc suy gan'). Input BN ADV_GOUT_42 (amiodarone 200 mg + eGFR 35.1): Phát [START] colchicine liều đầy đủ 1.2 mg + 0.6 mg, alerts = [].",
+    "suggestedFix": "(1) Trong gout.safety.colchicine, nếu bệnh nhân đang có 'colchicine' trong currentMeds mà egfr === undefined, bắt buộc phát missingInputRec('gout', 'egfr', ...) để đảm bảo fail-closed; (2) Bổ sung kiểm tra phối hợp Statin (đặc biệt Simvastatin/Lovastatin/Atorvastatin hoặc mọi Statin khi eGFR < 60) trong checkColchicineSafety / lựa chọn thuốc cắt cơn để ưu tiên chuyển sang Prednisolone ngắn ngày khi có CKD kèm Statin liều cao; (3) Bổ sung 'amiodarone' và 'dronedarone' (chất ức chế P-gp mạnh) vào danh sách kiểm soát tương tác Colchicine trong rules.ts và kb/interactions/gout_metabolic.json."
+  },
+  {
+    "id": "R3-GOUT-11",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "gout.allopurinol.uptitrate",
+    "finding": "Trên bệnh nhân tăng acid uric máu không triệu chứng (asymptomaticHyperuricemia = true, 0 cơn gút, không tophi) đang bị kê nhầm Allopurinol 100 mg, hệ thống không cảnh báo rà soát ngừng thuốc mà ngược lại phát lệnh [UPTITRATE] tăng liều Allopurinol + [START] Colchicine dự phòng 3–6 tháng; đồng thời khi nhập goutFlaresYear = 0, uricAcid = 580 µmol/L nhưng bỏ trống priorFlaresLifetime, hệ thống giải thích sai là 'mới bị cơn gút đầu tiên... acid uric ≤ 535 µmol/L'.",
+    "evidence": "Input BN ADV_GOUT_61 (VN/outpatient, customInputs: {asymptomaticHyperuricemia: true, goutFlaresYear: 0, priorFlaresLifetime: 0, hasTophi: false}, currentMeds: [{drugId: 'allopurinol', dose: '100'}], uricAcid: 430 µmol/L): Output phát [UPTITRATE] allopurinol thêm 100 mg/ngày VÀ [START] colchicine dự phòng 3–6 tháng. Input BN ADV_GOUT_60 (INTL/outpatient, uricAcid: 580 µmol/L, goutFlaresYear: 0, priorFlaresLifetime: undefined): Output phát rec_gout_ult_not_indicated với rationale sai sự thật: 'Người bệnh mới bị cơn gút đầu tiên, không có bệnh thận mạn giai đoạn ≥ 3, acid uric máu ≤ 535 µmol/L' (dù uricAcid thực tế là 580 > 535, do nhánh fallback dòng 226 chép cứng văn bản của cơn đầu tiên).",
+    "suggestedFix": "(1) Bổ sung điều kiện chặn 'if (isAsymptomaticHyperuricemia(ctx)) return false;' trong gout.allopurinol.uptitrate, gout.febuxostat.manage, gout.prophylaxis.flare, và thêm luật 'gout.safety.asymptomatic_on_ult' phát [CONSIDER] xem xét ngừng ULT không có chỉ định (trừ dự phòng hội chứng ly giải khối u); (2) Trong assessUltIndication (rules.ts dòng 177-233), khi flaresYear === 0 và priorFlaresLifetime === undefined (không có tophi/xói mòn khớp), gọi need(ctx, 'priorFlaresLifetime') hoặc sinh thông điệp đúng cho nhóm chưa rõ tiền sử cơn gút thay vì gán nhầm nhãn 'cơn gút đầu tiên, acid uric ≤ 535'."
+  },
+  {
+    "id": "R3-GOUT-12",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "gout.concurrent.switch_thiazide",
+    "finding": "Luật gout.concurrent.switch_thiazide gán sai drugId='losartan' (thuốc đích thay vì thuốc đang dùng 'hydrochlorothiazide') và không kiểm tra Kali máu số học (patient.k) hay tiếng thổi động mạch thận (renalBruit), khiến hệ thống phát lệnh vô lý [HOLD] TẠM HOÃN Losartan trên bệnh nhân hề không dùng Losartan khi K+ = 5.8 mmol/L, và gây xung đột phác đồ đa module với HTN.",
+    "evidence": "Input BN ADV_GOUT_65 (currentMeds: [{drugId: 'hydrochlorothiazide', dose: '25'}], k: 5.8 mmol/L, renalBruit: true): Do hasAngioedemaOrRasContra (rules.ts dòng 2499-2503) chỉ đọc cờ boolean conditions.hyperkalemia / bilateralRenalArteryStenosis mà bỏ qua patient.k = 5.8 và renalBruit = true, luật sinh [SWITCH] drugId='losartan', sau đó bị gates.ts (dòng 489) biến đổi thành [HOLD] drugId=losartan title='TẠM HOÃN Losartan (Chẹn thụ thể Angiotensin II) (K⁺ = 5.8 > 5.5 mmol/L)' trên bệnh nhân không hề uống Losartan! Ngoài ra tại ADV_GOUT_64 và preset chuẩn gout_preset_htn_on_thiazide (selectedModules: ['gout', 'htn']), phác đồ xuất đồng thời [START] amlodipine ('để hoàn thiện phác đồ 2 thuốc') và [SWITCH] losartan (không có dose).",
+    "suggestedFix": "(1) Bổ sung '(ctx.normalized.k !== undefined && ctx.normalized.k > 5.0) || Boolean(ctx.normalized.renalBruit)' vào biến hasAngioedemaOrRasContra tại src/modules/gout/rules.ts dòng 2499-2503; (2) Sửa drugId của rec_gout_switch_thiazide_losartan (dòng 2539) thành medId ('hydrochlorothiazide') đồng nhất với nhánh rec_gout_switch_thiazide_ccb (dòng 2515) để đúng ngữ nghĩa action='SWITCH' là đổi thuốc đang dùng trong currentMeds và không làm gates.ts / merge.ts hiểu nhầm bệnh nhân đang dùng hoặc được kê đơn không liều Losartan."
+  },
+  {
+    "id": "R3-GOUT-13",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "gout.febuxostat.initiate",
+    "finding": "Ngõ cụt điều trị (therapeutic dead-end) ở hai nhóm bệnh nhân nguy cơ cao có chỉ định mạnh ULT: (1) Bệnh nhân mang gen HLA-B*58:01 dương tính đang lỡ uống Allopurinol chỉ nhận được lệnh [STOP] Allopurinol mà không được chuyển tiếp sang Febuxostat; (2) Bệnh nhân gút tophi nặng đang dùng Azathioprine / 6-MP chỉ nhận được 2 lệnh [AVOID] Allopurinol & Febuxostat mà không được gợi ý thuốc tăng thải acid uric niệu (Probenecid) hay hội chẩn chuyên khoa.",
+    "evidence": "Input BN ADV_GOUT_47 (VN/outpatient, hlab5801: 'positive', goutFlaresYear: 3, uricAcid: 520 µmol/L, currentMeds: [{drugId: 'allopurinol', dose: '100'}]): Output chỉ có [STOP] allopurinol, không có [START/SWITCH] febuxostat (do canInitiateUltNow dòng 241 chặn 'if (isOnMed(ctx, ULT_DRUG_IDS)) return false;' ngay cả khi thuốc ULT duy nhất trong currentMeds vừa bị lệnh STOP!). Input BN ADV_GOUT_44 (azathioprine 100 mg, hasTophi: true, uricAcid: 610 µmol/L, eGFR: 84, không sỏi thận): Output chỉ có [AVOID] allopurinol + [AVOID] febuxostat + [MONITOR] Xác nhận chỉ định mạnh ULT, bỏ trống hoàn toàn thuốc điều trị (do gout.uricosuric.probenecid dòng 1953 đòi cờ customInputs.preferUricosuric vốn không hề tồn tại trên giao diện inputs.ts!).",
+    "suggestedFix": "(1) Cập nhật canInitiateUltNow(ctx) / gout.febuxostat.initiate: cho phép khởi trị chuyển tiếp Febuxostat khi thuốc ULT hiện có là Allopurinol nhưng đang bị STOP do HLA-B*58:01 dương tính hoặc dị ứng/không dung nạp (ngoài cơn cấp hoặc trên INTL/US); (2) Khi bệnh nhân đang dùng Azathioprine / 6-MP có chỉ định ULT, tự động kích hoạt nhánh đánh giá Probenecid (nếu eGFR ≥ 30 và không sỏi thận) kèm khuyến cáo [REFER] hội chẩn chuyên khoa Khớp – Ghép tạng."
+  },
+  {
+    "id": "R3-GOUT-14",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "gout.allopurinol.initiate",
+    "finding": "Mâu thuẫn y lệnh nội tại trên bệnh nhân Việt Nam (Profile VN / chủng tộc Đông Nam Á) chưa xét nghiệm HLA-B*58:01 (not_done / undefined): Hệ thống phát đồng thời lệnh [START] Khởi trị Allopurinol 100 mg/ngày ngay lập tức song song với khuyến cáo [CONSIDER] Xét nghiệm alen HLA-B*58:01 TRƯỚC KHI khởi trị Allopurinol.",
+    "evidence": "Input BN ADV_GOUT_48 (VN/outpatient, customInputs: {hlab5801: 'not_done', goutFlaresYear: 3}, uricAcid: 530 µmol/L). Output engine xếp dòng 1: [START] drugId=allopurinol ('Khởi trị Allopurinol liều thấp 100 mg/ngày') và dòng 2: [CONSIDER] ('Khuyến cáo xét nghiệm alen HLA-B*58:01 trước khi khởi trị Allopurinol'). Với tỷ lệ người Kinh Việt Nam mang alen HLA-B*58:01 cao (~7–8%), hai dòng khuyến cáo mâu thuẫn trực tiếp về trình tự thời gian ('kê uống ngay' vs 'xét nghiệm trước khi khởi trị').",
+    "suggestedFix": "Ở bệnh nhân thuộc nhóm nguy cơ cao (profile === 'VN' hoặc southeastAsianDescent === true) khi hlab5801 chưa có kết quả ('not_done' hoặc undefined): chuyển hành động khởi trị Allopurinol sang [CONSIDER] (hoặc giữ [START] nhưng bắt buộc chèn cảnh báo nổi bật trong mảng warnings và title: ưu tiên làm xét nghiệm HLA-B*58:01 trước khi uống viên đầu tiên tại cơ sở có sẵn xét nghiệm, hoặc cân nhắc Febuxostat nếu cần hạ urat ngay mà chưa sàng lọc được gen)."
+  },
+  {
+    "id": "R3-GOUT-15",
+    "severity": "major",
+    "itemType": "threshold",
+    "itemId": "gout.target.urate_tophi_umol",
+    "finding": "Hai lỗi lệch chuẩn tại biên mục tiêu điều trị Acid uric: (1) Trên Profile US khi có hạt tophi, hệ thống áp ngưỡng < 300 µmol/L (< 5 mg/dL) của EULAR 2016 nhưng gắn trích dẫn acr.gout.2020.urate_target_360, ép bệnh nhân US có acid uric 330 µmol/L (5.55 mg/dL < 6.0 mg/dL) phải UPTITRATE Allopurinol; (2) Khi bác sĩ chọn đơn vị mg/dL và nhập đúng uricAcid = 6.0 mg/dL (chưa đạt < 6.0 mg/dL), sai số quy đổi 6.0 * 59.48 = 356.88 < 360 khiến hệ thống báo sai 'ĐÃ ĐẠT ĐÍCH' và giữ nguyên liều CONTINUE thay vì tăng liều.",
+    "evidence": "Input BN ADV_GOUT_62 (US/outpatient, hasTophi: true, uricAcid: 330 µmol/L = 5.55 mg/dL, đang uống allopurinol 300 mg): Output phát [UPTITRATE] allopurinol với mục tiêu '< 300 µmol/L (< 5 mg/dL)'. Input BN ADV_GOUT_63 (US/outpatient, units.urat = 'mg_dL', nhập uricAcid: 6.0, đang uống allopurinol 100 mg): Do src/engine/units.ts dòng 24 tính 6.0 * 59.48 = 356.88 < 360, output phát [CONTINUE] allopurinol ('Đã đạt đích Acid Uric', gate: 'Acid uric 357 µmol/L < 360 µmol/L: ĐẠT MỤC TIÊU') dù giá trị nhập vào là 6.0 mg/dL (không nhỏ hơn 6.0 mg/dL). Tương tự 5.0 mg/dL * 59.48 = 297.4 < 300 cũng lọt qua ngưỡng < 5.0 mg/dL.",
+    "suggestedFix": "(1) Trong kb/thresholds/gout.json, tách chuẩn đích tophi theo guideline ('US': 360 theo ACR 2020 hoặc nếu giữ 300 thì ghi rõ tham chiếu EULAR 2016 và gỡ citation sai acr.gout.2020.urate_target_360 khỏi mục tiêu < 300); (2) Đồng bộ phép quy đổi đơn vị urat trong src/engine/units.ts (hoặc đặt ngưỡng SI tương ứng 356.88 / làm tròn nhất quán trước khi so sánh) để nhập 6.0 mg/dL và 5.0 mg/dL không bị tính nhầm là đã đạt '< 6.0 mg/dL' và '< 5.0 mg/dL'."
+  },
+  {
+    "id": "R3-GOUT-16",
+    "severity": "minor",
+    "itemType": "threshold",
+    "itemId": "gout.colchicine.severe_renal_start_dose",
+    "finding": "Khuyến cáo liều Colchicine dự phòng '0.3 mg x 1 lần/ngày' trên Profile VN không khả thi về mặt thực hành bào chế tại Việt Nam do viên Colchicine lưu hành phổ biến tại Việt Nam có hàm lượng 1 mg (không thể bẻ thành 3/10 viên; liều 0.3 mg là nửa viên 0.6 mg tại Hoa Kỳ).",
+    "evidence": "Tại kb/thresholds/gout.json dòng 120-145, 'gout.colchicine.severe_renal_start_dose' và 'gout.colchicine.moderate_cyp3a4_prophylaxis_dose' gán cứng 'VN': 0.3 giống hệt 'US': 0.3. Khi chạy trên Profile VN với eGFR < 30 hoặc dùng kèm Verapamil/Diltiazem, hệ thống xuất liều '0.3 mg x 1 lần/ngày', không thể thực hiện trên viên nén Colchicine 1 mg tại các bệnh viện Việt Nam.",
+    "suggestedFix": "Điều chỉnh chế độ liều giảm dự phòng Colchicine trên Profile VN phù hợp với viên 1 mg tại Việt Nam (ví dụ '0.5 mg uống cách ngày (mỗi 48 giờ)' hoặc ưu tiên chuyển sang Prednisolone liều thấp ở eGFR < 30), giữ '0.3 mg x 1 lần/ngày' riêng cho Profile US (viên 0.6 mg)."
+  },
+  {
+    "id": "R3-GOUT-17",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "src/engine/safety/interactions.ts",
+    "finding": "Phát sinh cảnh báo tương tác thuốc giả dương tính mức CRITICAL (ix.nsaid_corticosteroid_gi_bleed) giữa một thuốc NSAID trong currentMeds đã bị chính hệ thống phát lệnh STOP khẩn cấp và thuốc Prednisolone mới được hệ thống kê START để thay thế cắt cơn.",
+    "evidence": "Input BN ADV_GOUT_10 (Lọc máu chu kỳ tự uống diclofenac -> Hệ thống phát [STOP] diclofenac và [START] prednisolone) và ADV_GOUT_58 (Thai phụ đang uống etoricoxib -> Hệ thống phát [STOP] etoricoxib và [START] prednisolone): Cả 2 ca đều phát SafetyAlert !CRITICAL:ix.nsaid_corticosteroid_gi_bleed ('Phát hiện: diclofenac/etoricoxib, prednisolone'). Cơ chế lỗi: checkInteractions (src/engine/safety/interactions.ts dòng 293-315) nạp toàn bộ currentMeds (kể cả thuốc vừa có lệnh STOP) chung vào tập activeDrugIds cùng với các thuốc mới START.",
+    "suggestedFix": "Trong src/engine/safety/interactions.ts, vẫn giữ kiểm tra tương tác giữa các thuốc cùng nằm trong patient.currentMeds, nhưng loại bỏ các hoạt chất đã có khuyến cáo action === 'STOP' khỏi phép ghép cặp tương tác với một hoạt chất mới được kê action === 'START' (chưa từng có trong currentMeds)."
+  },
+  {
+    "id": "R3-GOUT-18",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "gout.target.urate",
+    "finding": "Hiển thị thẻ [MONITOR] Mục tiêu Acid Uric chuẩn < 360 µmol/L ('khuyến cáo duy trì suốt đời', trạng thái 'CHƯA ĐẠT ĐÍCH') ngay cả khi hệ thống vừa kết luận bệnh nhân chưa có chỉ định dùng thuốc hạ acid uric máu ([DEFER] Cơn gút đầu tiên không biến chứng); đồng thời gout.concurrent.keep_aspirin phát [CONTINUE] Aspirin cứng trên bệnh nhân rung nhĩ đang dùng DOAC không có bệnh mạch vành cấp.",
+    "evidence": "Trên preset chuẩn gout_preset_first_flare_mild (cả 3 profile INTL/VN/US) và ADV_GOUT_60: Hệ thống phát đồng thời [DEFER] 'Chưa có chỉ định khởi trị thuốc hạ acid uric máu' VÀ [MONITOR] 'Mục tiêu Acid Uric chuẩn: < 360 µmol/L (< 6 mg/dL)' với gate 'CHƯA ĐẠT ĐÍCH'. Trên ADV_GOUT_24 (AF không CAD đang uống apixaban + aspirin, chỉ bật module gout): Hệ thống phát đồng thời [CONTINUE] aspirin ('KHÔNG ngừng vì bệnh Gút') và cảnh báo !CRITICAL:ix.doac_antiplatelet (khuyến cáo ngừng kháng tiểu cầu để tránh xuất huyết).",
+    "suggestedFix": "(1) Trong gout.target.urate (rules.ts dòng 1265-1272), chỉ kích hoạt mục tiêu Treat-to-Target < 360 / < 300 µmol/L khi bệnh nhân đang dùng ULT hoặc có chỉ định ULT (ind.status === 'strong' || ind.status === 'conditional'); (2) Trong gout.concurrent.keep_aspirin, nếu bệnh nhân đang dùng đồng thời OAC (DOAC/Warfarin) mà không có recentAcs, điều chỉnh khuyến cáo sang lưu ý rà soát chỉ định tim mạch thay vì phát lệnh CONTINUE cứng."
+  },
+  {
+    "id": "R3-GOUT-19",
+    "severity": "suggestion",
+    "itemType": "ui",
+    "itemId": "src/modules/gout/inputs.ts",
+    "finding": "Một số biến đầu vào lâm sàng đã được lập trình đầy đủ trong src/modules/gout/rules.ts (preferUricosuric, erosions, uricAcidOverproduction) nhưng chưa được khai báo trên giao diện nhập liệu src/modules/gout/inputs.ts, khiến người dùng cuối trên UI không thể kích hoạt nhóm thuốc tăng thải acid uric niệu (Probenecid / Benzbromarone) hoặc tiêu chuẩn bào mòn khớp.",
+    "evidence": "Đối chiếu src/modules/gout/inputs.ts (125 dòng) với src/modules/gout/rules.ts (dòng 196 đọc customInputs.erosions, dòng 604 đọc customInputs.uricAcidOverproduction, dòng 1953 & 2042 đọc customInputs.preferUricosuric): Ba trường này không có mặt trong goutInputs.",
+    "suggestedFix": "Bổ sung các trường tùy chọn chuyên sâu vào src/modules/gout/inputs.ts: 'erosions' (Hình ảnh bào mòn khớp do gút), 'preferUricosuric' (Cân nhắc nhóm tăng thải acid uric niệu khi chống chỉ định/thất bại XOI), và 'uricAcidOverproduction' (Tăng bài tiết acid uric niệu > 800 mg/24h)."
+  }
+]

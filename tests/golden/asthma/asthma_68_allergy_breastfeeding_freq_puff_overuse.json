@@ -1,0 +1,90 @@
+{
+  "id": "asthma_68_allergy_breastfeeding_freq_puff_overuse",
+  "titleVi": "Tiêu chuẩn toàn cục: Cho con bú + Dị ứng Salbutamol + Nhân tần suất (4 nhát x 4 lần/ngày = 16 nhát > 12 nhát) phát hiện quá liều MART",
+  "source": "GINA 2026 / LactMed / Global Safety Standards #1-#4 / ASTHMA-R3-R1-12",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_68",
+    "name": "Sản phụ cho con bú 29 tuổi",
+    "age": 29,
+    "sex": "female",
+    "weight": 56,
+    "sbp": 112,
+    "dbp": 70,
+    "hr": 104,
+    "rhythm": "sinus",
+    "breastfeeding": true,
+    "allergies": [
+      "salbutamol"
+    ],
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "beclometasone_formoterol",
+        "dose": "4 nhát",
+        "freq": "4 lần/ngày"
+      },
+      {
+        "drugId": "salbutamol",
+        "dose": "2 nhát",
+        "freq": "khi cần"
+      }
+    ],
+    "customInputs": {
+      "currentTrack": "track1",
+      "currentStep": 3,
+      "daytimeSymptomsMoreThanTwiceWeek": true,
+      "nightWakingDueToAsthma": true,
+      "relieverNeededMoreThanTwiceWeek": true,
+      "activityLimitationDueToAsthma": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "beclometasone_formoterol",
+        "action": "HOLD"
+      },
+      {
+        "ruleId": "rec_asthma_mart_overuse_refer",
+        "action": "REFER"
+      },
+      {
+        "drugId": "salbutamol",
+        "action": "STOP"
+      },
+      {
+        "ruleId": "rec_asthma_breastfeeding_safety",
+        "action": "MONITOR"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "beclometasone_formoterol",
+        "action": "UPTITRATE"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Kiểm chứng đồng thời 4 tiêu chuẩn toàn cục: (1) Parser nhân dose 4 nhát với freq 4 lần/ngày = 16 nhát/ngày (> trần 12 nhát MART) -> HOLD Foster + REFER cấp cứu; (2) Dị ứng Salbutamol -> AVOID; (3) Đang cho con bú -> tư vấn an toàn tiết sữa (MONITOR)."
+}

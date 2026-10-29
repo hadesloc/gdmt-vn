@@ -1,0 +1,138 @@
+{
+  "id": "saxagliptin",
+  "nameVi": "Saxagliptin",
+  "inn": "Saxagliptin",
+  "class": "DPP-4i",
+  "vnBrands": [
+    "Onglyza"
+  ],
+  "forms": [
+    "Viên nén 2.5 mg, 5 mg"
+  ],
+  "start": {
+    "amount": 5,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Giảm tối đa 2.5 mg/ngày khi eGFR < 45 mL/phút hoặc dùng kèm thuốc ức chế mạnh CYP3A4/5"
+  },
+  "target": {
+    "amount": 5,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống"
+  },
+  "titration": {
+    "step": "0 mg",
+    "intervalDays": 0
+  },
+  "renal": [
+    {
+      "eGFRFrom": 45,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "5 mg 1 lần/ngày",
+      "citationIds": [
+        "fda.saxagliptin.renal_dose"
+      ]
+    },
+    {
+      "eGFRTo": 45,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "2.5 mg 1 lần/ngày",
+      "note": "Giảm còn 2.5 mg 1 lần/ngày khi suy thận vừa-nặng (CrCl ≤ 50 mL/min hoặc eGFR < 45)",
+      "citationIds": [
+        "fda.saxagliptin.renal_dose"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_saxagliptin_hf_avoid",
+      "parameter": "heart_failure",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Tránh dùng Saxagliptin ở bệnh nhân suy tim do làm tăng nguy cơ nhập viện vì suy tim (SAVOR-TIMI 53).",
+      "citationIds": [
+        "ada.dm2.2026.saxagliptin_heart_failure"
+      ]
+    },
+    {
+      "id": "gate_saxagliptin_glp1_conflict",
+      "parameter": "glp1_concurrent",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Không phối hợp Saxagliptin với GLP-1 RA.",
+      "citationIds": [
+        "ada.dm2.2026.no_dpp4_plus_glp1"
+      ]
+    },
+    {
+      "id": "gate_saxagliptin_cyp3a4_reduce",
+      "parameter": "strong_cyp3a4_inhibitor",
+      "operator": "==",
+      "threshold": 1,
+      "action": "reduce",
+      "messageVi": "Giới hạn liều Saxagliptin tối đa 2.5 mg x 1 lần/ngày khi dùng đồng thời thuốc ức chế mạnh CYP3A4/5 (clarithromycin, ketoconazole, itraconazole, ritonavir).",
+      "citationIds": [
+        "fda.saxagliptin.cyp3a4_2_5mg"
+      ]
+    }
+  ],
+  "interactions": [
+    "Không dùng chung với GLP-1 RA",
+    "Dùng chung thuốc ức chế mạnh CYP3A4/5 (clarithromycin, ketoconazole, itraconazole, ritonavir, atazanavir): bắt buộc giảm liều Saxagliptin tối đa 2.5 mg x 1 lần/ngày (FDA Onglyza Mục 2.3 & 7.1)"
+  ],
+  "citationIds": [
+    "fda.saxagliptin.renal_dose",
+    "ada.dm2.2026.saxagliptin_heart_failure",
+    "ada.dm2.2026.no_dpp4_plus_glp1",
+    "fda.saxagliptin.cyp3a4_2_5mg",
+    "fda.saxagliptin.pancreatitis",
+    "ada.dm2.2026.dpp4_pancreatitis"
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Tránh dùng trong thai kỳ do thiếu dữ liệu an toàn dài hạn (ADA 2026)",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_noninsulin"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo khi cho con bú",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_noninsulin"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "heart_failure",
+      "messageVi": "Tránh sử dụng Saxagliptin ở bệnh nhân suy tim do làm tăng nguy cơ nhập viện vì suy tim (SAVOR-TIMI 53)",
+      "citationIds": [
+        "ada.dm2.2026.saxagliptin_heart_failure"
+      ]
+    },
+    {
+      "code": "pregnancy",
+      "messageVi": "Tránh sử dụng Saxagliptin trong thai kỳ",
+      "citationIds": [
+        "ada.dm2.2026.pregnancy_noninsulin"
+      ]
+    },
+    {
+      "code": "acute_pancreatitis",
+      "messageVi": "Tiền sử viêm tụy cấp",
+      "citationIds": [
+        "fda.saxagliptin.pancreatitis",
+        "ada.dm2.2026.dpp4_pancreatitis"
+      ]
+    }
+  ],
+  "classes": [
+    "dpp4i"
+  ]
+}

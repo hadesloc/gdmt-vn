@@ -1,0 +1,60 @@
+{
+  "id": "af_01_outpatient_high_risk_start_apixaban",
+  "titleVi": "Rung nhĩ Nam 68t, THA (CHA₂DS₂-VA = 2): Khởi trị DOAC Apixaban chuẩn",
+  "source": "ESC 2024 AF Rec Table 6 / esc.af.2024.cha2ds2va_rec_class1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 135,
+    "dbp": 82,
+    "hr": 95,
+    "rhythm": "afib",
+    "scr": 95,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true
+    },
+    "currentMeds": []
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "apixaban",
+        "action": "START",
+        "doseContains": "5 mg"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "apixaban",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "warfarin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 68 tuổi kèm THA (CHA₂DS₂-VA = 2, nguy cơ cao), chức năng thận bình thường. Khuyến cáo khởi trị DOAC chuẩn (Class I)."
+}

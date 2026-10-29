@@ -1,0 +1,27 @@
+{
+  "itemId": "ckd.finerenone.k_hf_uptitrate_max",
+  "contentHash": "08210f9b19a4a0085d78502c47b2ebfa8cd51f8ed402e3d9f1d60ce613a058e8",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.finerenone.k_hf_uptitrate_max",
+      "contentHash": "fbe6ff18f55363ae",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T07:03:44.560Z",
+          "role": "agent_e3_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 2 cho ckd.finerenone.k_hf_uptitrate_max."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T07:03:44.560Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

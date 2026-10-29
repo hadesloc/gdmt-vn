@@ -1,0 +1,75 @@
+{
+  "id": "asthma_62_theophylline_aminophylline_stop",
+  "titleVi": "Hen phế quản đang dùng Theophylline uống và Aminophylline: Bắt buộc STOP cả hai nhóm Methylxanthine",
+  "source": "GINA 2026 Safety Warning / BYT 1851/2020 / ASTHMA-R3-R1-05 / ASTHMA-R3-R2-18",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_62",
+    "name": "Nam 58 tuổi",
+    "age": 58,
+    "sex": "male",
+    "weight": 60,
+    "sbp": 128,
+    "dbp": 80,
+    "hr": 96,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "theophylline",
+        "dose": "200 mg",
+        "freq": "2 lần/ngày"
+      },
+      {
+        "drugId": "aminophylline",
+        "dose": "100 mg",
+        "freq": "2 lần/ngày"
+      }
+    ],
+    "customInputs": {
+      "daytimeSymptomsMoreThanTwiceWeek": true,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "theophylline",
+        "action": "STOP"
+      },
+      {
+        "drugId": "aminophylline",
+        "action": "STOP"
+      },
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Theo GINA 2026, không sử dụng Theophylline uống phóng thích chậm và Aminophylline trong điều trị hen phế quản do cửa sổ điều trị rất hẹp, nguy cơ loạn nhịp thất và co giật tử vong."
+}

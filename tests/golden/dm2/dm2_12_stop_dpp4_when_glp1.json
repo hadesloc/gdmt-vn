@@ -1,0 +1,73 @@
+{
+  "id": "dm2_12_stop_dpp4_when_glp1",
+  "titleVi": "Bệnh nhân đang dùng Sitagliptin và Semaglutide - Bắt buộc NGỪNG Sitagliptin",
+  "source": "ADA 2026 SOC Ch. 9 Rec 9.18",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 58,
+    "sex": "female",
+    "weight": 68,
+    "height": 160,
+    "sbp": 126,
+    "dbp": 78,
+    "hr": 72,
+    "scr": 88,
+    "k": 4.3,
+    "glucose": 8.2,
+    "hba1c": 7.5,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "sitagliptin",
+        "name": "Sitagliptin",
+        "dose": 100,
+        "unit": "mg"
+      },
+      {
+        "drugId": "semaglutide",
+        "name": "Semaglutide",
+        "dose": 0.5,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "sitagliptin",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "sitagliptin",
+        "action": "START"
+      },
+      {
+        "drugId": "sitagliptin",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Trùng lặp cơ chế incretin: Bắt buộc dừng DPP-4i."
+}

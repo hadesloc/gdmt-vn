@@ -1,0 +1,57 @@
+{
+  "id": "af_18_edoxaban_dose_reduction_weight_54kg",
+  "titleVi": "Giảm liều Edoxaban 30mg qd: Cân nặng ≤ 60 kg",
+  "source": "ESC 2024 AF Table 11 & Nhãn FDA / esc.af.2024.table11_doac_dosing",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "female",
+    "weight": 54,
+    "height": 156,
+    "sbp": 126,
+    "dbp": 76,
+    "hr": 78,
+    "rhythm": "afib",
+    "scr": 80,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "edoxaban",
+        "name": "Lixiana",
+        "dose": 60,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "edoxaban",
+        "action": "REDUCE",
+        "doseContains": "30 mg"
+      }
+    ]
+  },
+  "descriptionVi": "Cân nặng 54 kg ≤ 60 kg: Tiêu chí giảm liều Edoxaban xuống 30 mg x 1 lần/ngày."
+}

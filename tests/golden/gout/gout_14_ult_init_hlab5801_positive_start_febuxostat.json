@@ -1,0 +1,69 @@
+{
+  "id": "gout_14_ult_init_hlab5801_positive_start_febuxostat",
+  "titleVi": "HLA-B*58:01 DƯƠNG TÍNH: Chống chỉ định tuyệt đối Allopurinol -> Khởi trị Febuxostat 40 mg/ngày",
+  "source": "ACR 2020 & EULAR 2016 (acr.gout.2020.hlab5801_contra, fda.febuxostat.dosage)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 51,
+    "sex": "male",
+    "weight": 70,
+    "scr": 86,
+    "uricAcid": 580,
+    "tophi": true,
+    "conditions": {
+      "gout": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 3,
+      "tophi": true,
+      "hlab5801": "positive"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_avoid_hlab5801",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "febuxostat",
+        "ruleId": "rec_gout_febuxostat_start",
+        "action": "START",
+        "doseContains": "40 mg"
+      },
+      {
+        "drugId": "colchicine",
+        "ruleId": "rec_gout_colchicine_prophylaxis",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "allopurinol",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 51 tuổi gút có hạt tophi, xét nghiệm HLA-B*58:01 dương tính. Chống chỉ định tuyệt đối Allopurinol (nguy cơ SJS/TEN tử vong); chuyển sang khởi trị Febuxostat 40 mg/ngày kèm Colchicine dự phòng."
+}

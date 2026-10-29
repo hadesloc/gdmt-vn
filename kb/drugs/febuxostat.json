@@ -1,0 +1,164 @@
+{
+  "id": "febuxostat",
+  "nameVi": "Febuxostat",
+  "inn": "Febuxostat",
+  "class": "XOI",
+  "classes": [
+    "urate_lowering",
+    "xoi"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Uloric",
+    "Feburic",
+    "Adenuric",
+    "Febuget"
+  ],
+  "forms": [
+    "Viên nén 40 mg",
+    "Viên nén 80 mg",
+    "Viên nén 120 mg"
+  ],
+  "start": {
+    "amount": 40,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "40 mg x 1 lần/ngày (không phụ thuộc bữa ăn)"
+  },
+  "target": {
+    "amount": 80,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "80 mg/ngày nếu sau 2 tuần acid uric ≥ 6 mg/dL (tối đa 80 mg/ngày theo FDA Hoa Kỳ; tối đa 120 mg/ngày theo EMA/BYT 2024 khi eGFR ≥ 30 mL/phút)"
+  },
+  "titration": {
+    "step": 40,
+    "intervalDays": 14,
+    "maxDose": "80 mg/ngày (US FDA) / 120 mg/ngày (EMA, BYT 2024)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "40–80 mg/ngày (không cần chỉnh liều ở suy thận nhẹ–vừa CrCl 30–89 mL/phút; EMA/BYT 2024 cho phép tối đa 120 mg/ngày)",
+      "citationIds": [
+        "fda.febuxostat.dosage",
+        "fda.febuxostat.renal_clcr_30",
+        "byt.ckd.2024.gout_ult_table21"
+      ]
+    },
+    {
+      "eGFRFrom": 15,
+      "eGFRTo": 30,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "Giới hạn liều tối đa 40 mg x 1 lần/ngày ở suy thận nặng (CrCl 15–29 mL/phút)",
+      "citationIds": [
+        "fda.febuxostat.severe_renal",
+        "fda.febuxostat.renal_clcr_30"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Giới hạn tối đa 40 mg/ngày; thận trọng vì chưa có đủ nghiên cứu ở bệnh nhân suy thận giai đoạn cuối đang lọc máu",
+      "citationIds": [
+        "fda.febuxostat.severe_renal",
+        "fda.febuxostat.dialysis_hepatic",
+        "byt.ckd.2024.gout_ult_table21"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_febuxostat_cvd",
+      "parameter": "CVD",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "history",
+      "action": "caution",
+      "messageVi": "Cảnh báo hộp đen FDA (CARES trial): Tăng nguy cơ tử vong tim mạch so với allopurinol ở bệnh nhân có bệnh tim mạch đã xác lập; cân nhắc chuyển sang thuốc hạ urat khác nếu khả thi",
+      "citationIds": [
+        "fda.febuxostat.boxed_warning",
+        "acr.gout.2020.febuxostat_cvd_switch"
+      ]
+    },
+    {
+      "id": "gate_febuxostat_azathioprine",
+      "parameter": "Azathioprine_6MP",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "concomitant",
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối dùng đồng thời febuxostat với azathioprine hoặc mercaptopurine do nguy cơ ngộ độc tủy xương tử vong",
+      "citationIds": [
+        "fda.febuxostat.azathioprine_contra"
+      ]
+    },
+    {
+      "id": "gate_febuxostat_hepatic_severe",
+      "parameter": "ChildPugh_C",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "severe",
+      "action": "caution",
+      "messageVi": "Không cần chỉnh liều ở suy gan nhẹ–vừa (Child-Pugh A/B); thận trọng ở suy gan nặng (Child-Pugh C) do chưa có dữ liệu nghiên cứu và ngừng thuốc ngay nếu xác nhận tổn thương gan cấp",
+      "citationIds": [
+        "fda.febuxostat.dialysis_hepatic"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Dữ liệu hạn chế trên phụ nữ mang thai chưa đủ xác định nguy cơ dị tật liên quan thuốc (FDA Section 8.1); đối với gút thông thường khuyến cáo tạm ngừng/trì hoãn thuốc hạ urat trong thai kỳ",
+    "citationIds": [
+      "fda.febuxostat.pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Chưa có dữ liệu về bài tiết febuxostat qua sữa người (có bài tiết trong sữa chuột); cân nhắc lợi ích nuôi con bằng sữa mẹ và nhu cầu điều trị của người mẹ (FDA Section 8.2)",
+    "citationIds": [
+      "fda.febuxostat.lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "azathioprine_use",
+      "messageVi": "Chống chỉ định tuyệt đối dùng đồng thời febuxostat với azathioprine hoặc mercaptopurine",
+      "citationIds": [
+        "fda.febuxostat.azathioprine_contra"
+      ]
+    }
+  ],
+  "interactions": [
+    "Azathioprine / 6-Mercaptopurine: Chống chỉ định tuyệt đối do ức chế xanthine oxidase làm tăng vọt nồng độ 6-MP gây suy tủy xương tử vong",
+    "Rosuvastatin (ức chế bơm BCRP): Febuxostat làm tăng phơi nhiễm rosuvastatin > 1,9 lần và tăng nguy cơ tiêu cơ vân; giới hạn liều rosuvastatin tối đa ≤ 20 mg/ngày (FDA Crestor Mục 7.1)",
+    "Allopurinol: Chống chỉ định phối hợp hai thuốc cùng nhóm ức chế xanthine oxidase; lưu ý theo dõi sát phản ứng da nặng (SJS/TEN/DRESS) ở bệnh nhân từng bị phản ứng da với allopurinol (FDA Uloric Mục 5.4)",
+    "Theophylline: Làm thay đổi chuyển hóa theophylline qua XO, cần thận trọng và theo dõi nồng độ theophylline"
+  ],
+  "citationIds": [
+    "fda.febuxostat.boxed_warning",
+    "fda.febuxostat.dosage",
+    "fda.febuxostat.severe_renal",
+    "fda.febuxostat.renal_clcr_30",
+    "fda.febuxostat.dialysis_hepatic",
+    "fda.febuxostat.azathioprine_contra",
+    "acr.gout.2020.febuxostat_cvd_switch",
+    "fda.febuxostat.allopurinol_skin_cross_caution",
+    "fda.febuxostat.secondary_hyperuricemia_not_rec",
+    "fda.rosuvastatin.febuxostat_max_20mg"
+  ],
+  "hepatic": {
+    "status": "caution",
+    "note": "Không cần chỉnh liều khởi đầu ở suy gan nhẹ–vừa (Child-Pugh A/B, giới hạn tối đa ≤ 80 mg/ngày ở Child-Pugh B); thận trọng tối đa ở suy gan nặng (Child-Pugh C) do chưa có dữ liệu nghiên cứu và ngừng ngay nếu có tổn thương gan cấp (FDA Uloric Mục 8.7).",
+    "notesVi": "Không cần chỉnh liều khởi đầu ở suy gan nhẹ–vừa (Child-Pugh A/B, giới hạn tối đa ≤ 80 mg/ngày ở Child-Pugh B); thận trọng tối đa ở suy gan nặng (Child-Pugh C) do chưa có dữ liệu nghiên cứu và ngừng ngay nếu có tổn thương gan cấp (FDA Uloric Mục 8.7).",
+    "citationIds": [
+      "fda.febuxostat.dialysis_hepatic"
+    ]
+  }
+}

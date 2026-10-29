@@ -1,0 +1,27 @@
+{
+  "itemId": "ckd.glp1ra.flow_egfr_mid_min",
+  "contentHash": "4012c43235468be7c0f7b6331cfafc3722060621bb49afd36e7b9bd114be056e",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.glp1ra.flow_egfr_mid_min",
+      "contentHash": "1f79c18aba4d9b2a",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T07:03:44.560Z",
+          "role": "agent_e3_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 2 cho ckd.glp1ra.flow_egfr_mid_min."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T07:03:44.560Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

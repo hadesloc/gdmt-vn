@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.bp.dbp_cad_jcurve_caution",
+  "contentHash": "755f6bb4cb23c2dda320d8ddd47e1c92c0b375f54e2d7f98b8032726a4940b05",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.bp.dbp_cad_jcurve_caution",
+      "contentHash": "51f01eb7df9fef5a",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực ngưỡng lâm sàng htn.bp.dbp_cad_jcurve_caution (60 mmHg) và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

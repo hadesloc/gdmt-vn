@@ -1,0 +1,82 @@
+{
+  "id": "asthma_59_acute_pregnancy_premature_discharge_block",
+  "titleVi": "Cơn hen cấp ở thai phụ (SpO2 91% < 95%): Đích Oxy bảo vệ thai ≥ 95% và chặn xuất viện non dù lâm sàng báo đáp ứng tốt",
+  "source": "GINA 2026 Pregnancy / BYT 1851/2020 / ASTHMA-R3-R1-08 / ASTHMA-R3-R3-03 / ASTHMA-R3-R3-12",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_59",
+    "name": "Thai phụ 27 tuổi",
+    "age": 27,
+    "sex": "female",
+    "weight": 58,
+    "sbp": 116,
+    "dbp": 72,
+    "hr": 98,
+    "rhythm": "sinus",
+    "pregnant": true,
+    "conditions": {
+      "asthma": true,
+      "pregnant": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "isAcuteExacerbation": true,
+      "isPregnant": true,
+      "spo2": 91,
+      "respiratoryRate": 22,
+      "speechAbility": "sentences",
+      "acuteResponseAfter1h": "good_response"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "salbutamol",
+        "action": "START",
+        "doseContains": "95%"
+      },
+      {
+        "drugId": "prednisolone",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_asthma_pregnancy_ics_safety",
+        "action": "MONITOR"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_asthma_discharge_plan",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_asthma_discharge_plan",
+        "action": "UPTITRATE"
+      },
+      {
+        "ruleId": "rec_asthma_discharge_ocs",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Ở thai phụ lên cơn hen cấp có SpO2 91% (< ngưỡng 95% bảo vệ thai nhi): Bắt buộc nâng đích SpO2 ≥ 95% để phòng suy thai và chặn không cho phát gói xuất viện dù bác sĩ chọn đánh giá chủ quan good_response."
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "icosapent_ethyl",
+  "contentHash": "b7f69e48a8912838e3e25c262fedc83b0b2000e1d84ee78e6a8d4a95cb6d746d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "icosapent_ethyl",
+      "contentHash": "87fc7ca44373b740",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T15:55:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra schema QA-10, phân nhóm classes, dải thận, cổng an toàn thai kỳ/tương tác và trích dẫn cho thuốc icosapent_ethyl."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T15:55:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

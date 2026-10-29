@@ -1,0 +1,50 @@
+{
+  "id": "lipid_16_inpatient_tg_crisis",
+  "titleVi": "Cấp cứu nội viện tăng Triglycerid máu (11.2 mmol/L)",
+  "source": "ESC/EAS 2019 / esc.lipid.2019.htg_fenofibrate_pancreatitis",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 42,
+    "sex": "male",
+    "weight": 85,
+    "height": 172,
+    "sbp": 135,
+    "dbp": 85,
+    "hr": 88,
+    "scr": 80,
+    "tc": 9.5,
+    "hdl": 0.8,
+    "ldl": 2.2,
+    "tg": 11.2,
+    "conditions": {},
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "fenofibrate",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": []
+  },
+  "descriptionVi": "TG > 10 mmol/L cấp cứu nội viện, dùng Fenofibrate phòng viêm tụy cấp."
+}

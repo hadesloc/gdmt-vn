@@ -1,0 +1,27 @@
+{
+  "itemId": "ckd.statin.rosuvastatin_severe_ckd_egfr_cutoff",
+  "contentHash": "ed203480430df62101deaf7d75234243bb73392fc848120c5d369c34a041b1cd",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.statin.rosuvastatin_severe_ckd_egfr_cutoff",
+      "contentHash": "c0f1d91204b84ec9",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "round": 4,
+          "reviewedAt": "2026-10-27T23:56:20.141Z",
+          "role": "agent_e5_round4_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và kiểm tra không số mồ côi Vòng 4 cho ngưỡng ckd.statin.rosuvastatin_severe_ckd_egfr_cutoff."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T23:56:20.141Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

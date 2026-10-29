@@ -1,0 +1,101 @@
+{
+  "id": "ipratropium_salbutamol",
+  "nameVi": "Ipratropium/Salbutamol",
+  "inn": "Ipratropium bromide / Salbutamol sulfate",
+  "class": "SAMA + SABA (Giãn phế quản tác dụng ngắn phối hợp)",
+  "classes": [
+    "sama",
+    "saba"
+  ],
+  "components": [
+    "ipratropium",
+    "salbutamol"
+  ],
+  "vnBrands": [
+    "Combivent"
+  ],
+  "forms": [
+    "Ống dung dịch khí dung đơn liều 2.5 mL chứa 0.5 mg ipratropium bromide + 2.5 mg salbutamol"
+  ],
+  "start": {
+    "amount": 1,
+    "unit": "ống",
+    "frequency": "3–4 lần/ngày",
+    "route": "khí dung",
+    "description": "Khí dung 1 ống đơn liều 2.5 mL (ipratropium 0.5 mg / salbutamol 2.5 mg) mỗi 6–8 giờ (3–4 lần/ngày) và khi cần cắt cơn khó thở cấp; tránh để hơi sương bay vào mắt"
+  },
+  "target": {
+    "amount": 1,
+    "unit": "ống",
+    "frequency": "3–4 lần/ngày",
+    "route": "khí dung",
+    "description": "Khí dung 1 ống x 3–4 lần/ngày trong đợt cấp"
+  },
+  "titration": {
+    "step": "Giảm dần tần suất khí dung khi đợt cấp ổn định và chuyển về phác đồ hít duy trì",
+    "intervalDays": 1,
+    "maxDose": "6 ống/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "1 ống 2.5 mL khí dung 3–4 lần/ngày",
+      "citationIds": [
+        "byt.copd.2026.sama_saba_nebulizer_mdi_p36"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "Không cần giảm liều chuẩn; theo dõi sát kali máu và nhịp tim khi khí dung lặp lại",
+      "citationIds": [
+        "byt.copd.2026.sama_saba_nebulizer_mdi_p36"
+      ]
+    }
+  ],
+  "gates": [],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Có thể sử dụng cắt cơn khó thở cấp trong thai kỳ khi cần thiết (hạ oxy máu của mẹ nguy hiểm cho thai nhi hơn thuốc khí dung tác dụng ngắn).",
+    "citationIds": [
+      "byt.copd.2026.sama_saba_nebulizer_mdi_p36"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Hấp thu toàn thân của ipratropium và salbutamol đường hít/khí dung rất thấp; tương thích khi cho con bú.",
+    "citationIds": [
+      "byt.copd.2026.sama_saba_nebulizer_mdi_p36"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "narrow_angle_glaucoma",
+      "messageVi": "Thận trọng tối đa / chống chỉ định để hơi khí dung tiếp xúc mắt ở người bệnh glôcôm góc đóng (sử dụng ống ngậm miệng thay vì mặt nạ hở)",
+      "citationIds": [
+        "gold.copd.2026.lama_glaucoma_caution"
+      ]
+    },
+    {
+      "code": "urinary_retention",
+      "messageVi": "Chống chỉ định khi đang bí tiểu cấp chưa giải áp; thận trọng ở bệnh nhân tăng sản tuyến tiền liệt",
+      "citationIds": [
+        "gina.copd.2026.lama_urinary_retention"
+      ]
+    }
+  ],
+  "interactions": [
+    "Tránh cộng dồn tác dụng kháng muscarinic quá mức nếu bệnh nhân vẫn đang tiếp tục dùng LAMA đường hít",
+    "Thuốc chẹn beta không chọn lọc đối kháng trực tiếp thành phần salbutamol gây co thắt phế quản nặng",
+    "Khí dung liều cao lặp lại cùng corticosteroid toàn thân hoặc lợi tiểu quai làm tăng nguy cơ hạ kali máu"
+  ],
+  "citationIds": [
+    "byt.copd.2026.sama_saba_nebulizer_mdi_p36",
+    "gold.copd.2026.lama_glaucoma_caution",
+    "gina.copd.2026.lama_urinary_retention"
+  ]
+}

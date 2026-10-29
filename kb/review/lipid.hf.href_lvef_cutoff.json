@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.hf.href_lvef_cutoff",
+  "contentHash": "ff0cca13e113431a86273e0041137b19051062c498458e20dfa144e4229c1c28",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.hf.href_lvef_cutoff",
+      "contentHash": "d163a39ca2fc0846",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.hf.href_lvef_cutoff."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

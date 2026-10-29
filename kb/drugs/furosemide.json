@@ -1,0 +1,136 @@
+{
+  "id": "furosemide",
+  "nameVi": "Furosemide",
+  "inn": "Furosemide",
+  "class": "Loop diuretic",
+  "classes": [
+    "loop_diuretic",
+    "diuretic"
+  ],
+  "qtRisk": "conditional",
+  "vnBrands": [
+    "Lasix",
+    "Furosemid 40mg",
+    "Vincix"
+  ],
+  "forms": [
+    "Viên nén 40 mg",
+    "Ống tiêm 20 mg/2 mL"
+  ],
+  "start": {
+    "amount": "20–40",
+    "unit": "mg",
+    "frequency": "1–2 lần/ngày",
+    "route": "uống",
+    "description": "ngoại trú uống 20–40 mg/ngày khi có sung huyết; suy tim mất bù cấp nội viện: 40 mg tiêm TM nếu chưa dùng lợi tiểu hoặc gấp đôi tổng liều uống hàng ngày nếu đang dùng mạn tính"
+  },
+  "target": {
+    "amount": "40–240",
+    "unit": "mg",
+    "frequency": "chia 1–2 lần/ngày",
+    "route": "uống",
+    "description": "dùng liều thấp nhất có hiệu quả để duy trì trạng thái đẳng tích (dry weight)"
+  },
+  "titration": {
+    "step": "Điều chỉnh linh hoạt theo triệu chứng sung huyết và cân nặng hàng ngày; có thể giảm liều hoặc ngừng khi đã đạt đẳng tích bền vững trên nền FMT tối ưu",
+    "intervalDays": 3,
+    "maxDose": "600 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "20–40 mg/ngày (thường dùng 40–240 mg/ngày tuỳ mức sung huyết)",
+      "citationIds": [
+        "esc.hf.2026.loop_diuretics_doses_table_s7"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "40–240 mg/ngày (tối đa 600 mg/ngày đường TM trong suy tim cấp kháng lợi tiểu)",
+      "note": "Vẫn có hiệu quả ở eGFR < 30 mL/min/1.73m² nhưng thường cần liều cao hơn để đạt ngưỡng bài niệu ống thận; chống chỉ định nếu vô niệu hoàn toàn",
+      "citationIds": [
+        "esc.hf.2026.loop_diuretics_doses_table_s7",
+        "esc.hf.2026.acute_furosemide_40_max600"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_furosemide_sbp_min",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 90,
+      "unit": "mmHg",
+      "action": "hold",
+      "messageVi": "Huyết áp tâm thu < 90 mmHg: Tạm hoãn lợi tiểu cho đến khi loại trừ giảm thể tích / đảm bảo tưới máu mô (ESC 2026 Table S7 & Section 7)",
+      "citationIds": [
+        "esc.hf.2026.loop_diuretics_doses_table_s7",
+        "esc.hf.2026.acute_inotropes_shock_sbp90"
+      ]
+    },
+    {
+      "id": "gate_furosemide_k_low",
+      "parameter": "K",
+      "operator": "<=",
+      "threshold": 3.5,
+      "unit": "mmol/L",
+      "action": "caution",
+      "messageVi": "Hạ kali máu (K+ ≤ 3.5 mmol/L): Cần bù kali và/hoặc phối hợp MRA để tránh loạn nhịp thất khi dùng lợi tiểu quai",
+      "citationIds": [
+        "esc.hf.2026.hypokalaemia_3_5_diuretic"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Chỉ dùng trong thai kỳ khi suy tim có quá tải dịch / phù phổi sung huyết rõ rệt; theo dõi sát thể tích tuần hoàn và tưới máu nhau thai.",
+    "citationIds": [
+      "esc.preg.2025.diuretics_preg",
+      "esc.preg.2025.hf_preg_diuretics_bb_nitrates",
+      "fda.hf.bumetanide_preg_lact"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Thận trọng khi cho con bú do lợi tiểu quai có thể bài tiết qua sữa mẹ và liều cao làm giảm tiết sữa.",
+    "citationIds": [
+      "fda.hf.bumetanide_preg_lact"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "anuria",
+      "messageVi": "Chống chỉ định ở bệnh nhân vô niệu hoàn toàn không đáp ứng hoặc giảm thể tích tuần hoàn nặng",
+      "citationIds": [
+        "fda.hf.bumetanide_contra_anuria_hepatic"
+      ]
+    }
+  ],
+  "interactions": [
+    "Gây hạ kali và magie máu làm tăng nguy cơ ngộ độc digoxin và kéo dài QT",
+    "NSAID làm giảm đáp ứng bài niệu của lợi tiểu quai và tăng nguy cơ tổn thương thận cấp",
+    "Tăng độc tính trên tai khi phối hợp với kháng sinh nhóm aminoglycoside liều cao"
+  ],
+  "citationIds": [
+    "esc.hf.2026.loop_diuretics_chronic",
+    "esc.hf.2026.loop_diuretics_doses_table_s7",
+    "esc.hf.2026.acute_iv_diuretics",
+    "esc.hf.2026.acute_diuretic_protocol",
+    "esc.hf.2026.acute_furosemide_40_max600"
+  ],
+  "hepatic": {
+    "status": "caution",
+    "childA": "ok",
+    "childB": "caution",
+    "childC": "contra_hepatic_coma",
+    "note": "Chống chỉ định trong hôn mê gan và rối loạn điện giải nặng chưa bù; thận trọng theo dõi kali/natri máu ở bệnh nhân xơ gan cổ trướng.",
+    "notesVi": "Chống chỉ định trong hôn mê gan và rối loạn điện giải nặng chưa bù; thận trọng theo dõi kali/natri máu ở bệnh nhân xơ gan cổ trướng.",
+    "citationIds": [
+      "fda.hf.bumetanide_contra_anuria_hepatic"
+    ]
+  }
+}

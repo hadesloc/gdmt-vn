@@ -1,0 +1,17 @@
+{
+  "itemId": "asthma.acute.magnesium_sbp_caution_min",
+  "contentHash": "d84fa62a752a62c22a519df84d2c5fdaa06484e2f11e4466fa0a45066927baf1",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.acute.magnesium_sbp_caution_min",
+      "contentHash": "ba281fde0339e1e7",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "id": "enalapril",
+  "nameVi": "Enalapril",
+  "inn": "Enalapril",
+  "class": "ACEi",
+  "classes": [
+    "acei"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Renitec",
+    "Ednyt",
+    "Enap"
+  ],
+  "forms": [
+    "Viên nén 5 mg",
+    "Viên nén 10 mg",
+    "Viên nén 20 mg"
+  ],
+  "start": {
+    "amount": 5,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "5 mg/ngày (2.5 mg nếu eGFR < 30 mL/min)"
+  },
+  "target": {
+    "amount": 20,
+    "unit": "mg",
+    "frequency": "1–2 lần/ngày",
+    "route": "uống",
+    "description": "20 mg/ngày (tối đa 40 mg/ngày)"
+  },
+  "titration": {
+    "step": 5,
+    "intervalDays": 14,
+    "maxDose": "40 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "5–40 mg/ngày (liều đích thường dùng 10–20 mg/ngày, tối đa 40 mg/ngày)",
+      "citationIds": [
+        "kdigo.ckd.2024.rec_3_6_1_rasi_a3_nondm",
+        "kdigo.ckd.2024.rec_3_6_3_rasi_dm",
+        "byt.ckd.2024.table_12_acei_dosing"
+      ]
+    },
+    {
+      "eGFRFrom": 15,
+      "eGFRTo": 30,
+      "initiate": "ok",
+      "continue": "rec",
+      "dose": "2.5–40 mg/ngày (khởi đầu 2.5 mg/ngày khi CrCl <= 30 mL/phút, chuẩn độ tối đa 40 mg/ngày)",
+      "note": "Khởi đầu 2.5 mg x 1 lần/ngày khi CrCl <= 30 mL/phút, chuẩn độ theo đáp ứng lâm sàng tối đa 40 mg/ngày (BYT 2024 Bảng 12)",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_7_continue_egfr_below_30",
+        "byt.ckd.2024.table_12_acei_dosing"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "2.5–40 mg/ngày (khởi đầu 2.5 mg/ngày hoặc 2.5 mg ngày lọc máu, chỉnh liều theo đáp ứng)",
+      "note": "Liều 2.5 mg vào ngày lọc máu; ở bệnh nhân chưa lọc máu chỉnh liều dựa trên đáp ứng huyết áp và kali máu, tối đa 40 mg/ngày (BYT 2024 Bảng 12)",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_5_rasi_reduce_stop",
+        "byt.ckd.2024.table_12_acei_dosing"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_enalapril_k_max",
+      "parameter": "K",
+      "operator": ">",
+      "threshold": 5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Không khởi trị hoặc tăng liều enalapril nếu kali máu > 5.0 mmol/L",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_2_rasi_monitoring"
+      ]
+    },
+    {
+      "id": "gate_enalapril_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối nhóm thuốc ức chế men chuyển trong thai kỳ (Boxed Warning: độc tính phôi thai và tử vong chu sinh)",
+      "citationIds": [
+        "ema.perindopril.pregnancy",
+        "fda.losartan.boxed_pregnancy"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định phối hợp đồng thời với thuốc ức chế thụ thể ARB hoặc ARNI (nguy cơ suy thận cấp và tăng kali máu)",
+    "Tăng nồng độ lithi huyết thanh và độc tính lithi",
+    "Bắt buộc khoảng trống đào thải (washout period) ít nhất 36 giờ trước hoặc sau khi dùng Sacubitril/Valsartan (ARNI) để tránh phù mạch thanh quản cấp tử vong"
+  ],
+  "citationIds": [
+    "kdigo.ckd.2024.rec_3_6_1_rasi_a3_nondm",
+    "kdigo.ckd.2024.rec_3_6_4_avoid_dual_rasi",
+    "kdigo.ckd.2024.pp_3_6_1_rasi_max_dose",
+    "kdigo.ckd.2024.pp_3_6_4_creatinine_rise_30pct",
+    "ema.perindopril.pregnancy",
+    "esc.2025.pregnancy.rasi_lactation",
+    "byt.ckd.2024.table_12_acei_dosing"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối nhóm thuốc ức chế men chuyển trong thai kỳ (Boxed Warning FDA / EMA: độc tính phôi thai, vô niệu thai nhi, thiểu ối và tử vong chu sinh); ngừng thuốc ngay khi phát hiện có thai",
+    "citationIds": [
+      "ema.perindopril.pregnancy",
+      "fda.losartan.boxed_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Thuốc ức chế men chuyển ưu tiên hàng đầu, tương thích an toàn trong thời kỳ cho con bú theo ESC 2025 (trừ trẻ sinh non hoặc suy thận sơ sinh)",
+    "citationIds": [
+      "esc.2025.pregnancy.rasi_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định tuyệt đối ACEi trong thai kỳ (Boxed Warning)",
+      "citationIds": [
+        "ema.perindopril.pregnancy",
+        "fda.losartan.boxed_pregnancy"
+      ]
+    },
+    {
+      "code": "angioedema_history",
+      "messageVi": "Chống chỉ định tuyệt đối khi có tiền sử phù mạch liên quan ACEi hoặc phù mạch di truyền/vô căn",
+      "citationIds": [
+        "ema.perindopril.pregnancy"
+      ]
+    }
+  ]
+}

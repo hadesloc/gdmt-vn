@@ -1,0 +1,83 @@
+{
+  "id": "tezepelumab",
+  "nameVi": "Tezepelumab",
+  "inn": "Tezepelumab",
+  "class": "Anti-TSLP Biologic",
+  "vnBrands": [
+    "Chưa lưu hành đại trà tại VN (Biệt dược FDA/EMA: Tezspire)"
+  ],
+  "forms": [
+    "Bút tiêm dưới da đóng sẵn 210 mg/1.91 ml"
+  ],
+  "start": {
+    "amount": 210,
+    "unit": "mg",
+    "frequency": "mỗi 4 tuần",
+    "route": "tiêm dưới da",
+    "description": "210 mg tiêm dưới da mỗi 4 tuần"
+  },
+  "target": {
+    "amount": 210,
+    "unit": "mg",
+    "frequency": "mỗi 4 tuần",
+    "route": "tiêm dưới da",
+    "description": "210 mg mỗi 4 tuần"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận",
+      "citationIds": [
+        "gina.asthma.2026.biologics_tezepelumab"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_tezepelumab_age",
+      "parameter": "age",
+      "operator": "<",
+      "threshold": 12,
+      "unit": "tuổi",
+      "action": "hold",
+      "messageVi": "Tezepelumab (kháng TSLP) chỉ định cho bệnh nhân hen nặng từ 12 tuổi trở lên",
+      "citationIds": [
+        "gina.asthma.2026.biologics_tezepelumab"
+      ]
+    }
+  ],
+  "interactions": [
+    "Tránh dùng đồng thời vắc-xin sống giảm độc lực; theo dõi phản ứng quá mẫn sau tiêm"
+  ],
+  "citationIds": [
+    "gina.asthma.2026.biologics_tezepelumab"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Kháng thể đơn dòng kháng TSLP, dữ liệu thai kỳ còn mới, cân nhắc lợi ích vượt trội nguy cơ.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Thận trọng khi cho con bú.",
+    "citationIds": [
+      "gina.asthma.2026.biologics_tezepelumab"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity",
+      "messageVi": "Quá mẫn với tezepelumab",
+      "citationIds": [
+        "gina.asthma.2026.biologics_tezepelumab"
+      ]
+    }
+  ],
+  "classes": [
+    "biologic_asthma"
+  ]
+}

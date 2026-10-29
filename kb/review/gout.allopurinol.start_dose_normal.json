@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.allopurinol.start_dose_normal",
+  "contentHash": "2b225fd726b6f39d94c13053bd068122f126c60edaf9e35ab5455977f8194a4f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.allopurinol.start_dose_normal",
+      "contentHash": "2b2ae63775931b12",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.allopurinol.start_dose_normal"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

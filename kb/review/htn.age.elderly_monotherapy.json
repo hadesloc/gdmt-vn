@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.age.elderly_monotherapy",
+  "contentHash": "bce44f7b56a78f359b5aad821941e7a4d04936b91fd8ded8aac8f46ecfd0db01",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.age.elderly_monotherapy",
+      "contentHash": "d97f22c0479c8abe",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 80 tuổi (quantity: age) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

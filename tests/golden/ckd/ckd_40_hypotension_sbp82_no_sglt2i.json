@@ -1,0 +1,50 @@
+{
+  "id": "ckd_40_hypotension_sbp82_no_sglt2i",
+  "titleVi": "Ngoại trú - Hạ huyết áp nặng (SBP 82 mmHg < 100 mmHg) ở bệnh nhân ĐTĐ2 + CKD -> Không khởi trị SGLT2i hay RASi (Regression R3-CKD-05)",
+  "source": "KDIGO 2021 BP in CKD & KDIGO 2024 CKD",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_40",
+    "name": "BN CKD 40",
+    "age": 66,
+    "sex": "male",
+    "weight": 62,
+    "sbp": 82,
+    "dbp": 50,
+    "hr": 96,
+    "scr": 135,
+    "k": 4.4,
+    "uacr": 38,
+    "conditions": {
+      "ckd": true,
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "losartan", "action": "DEFER" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "dapagliflozin", "action": "START" },
+      { "drugId": "losartan", "action": "START" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy R3-CKD-05: Cổng huyết động SBP < 100 mmHg chặn khởi trị cả SGLT2i và RASi để tránh làm nặng thêm tụt huyết áp và giảm thể tích tuần hoàn."
+}

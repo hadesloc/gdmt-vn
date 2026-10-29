@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.bb_non_selective_asthma",
+  "contentHash": "f512bafdd105ab02be0fc2b7748d97b201371ea05807adcda3753e7e582a7ac5",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.bb_non_selective_asthma",
+      "contentHash": "b6ca847f27d464a6",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.bb_non_selective_asthma."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

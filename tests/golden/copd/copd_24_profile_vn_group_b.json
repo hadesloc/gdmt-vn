@@ -1,0 +1,55 @@
+{
+  "id": "copd_24_profile_vn_group_b",
+  "titleVi": "COPD Nhóm B với Profile Bộ Y tế: Khởi trị LABA + LAMA",
+  "source": "BYT QĐ 2131/2026 p. 23 / Profile VN Group B",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_24",
+    "age": 67,
+    "sex": "male",
+    "weight": 60,
+    "height": 165,
+    "sbp": 128,
+    "dbp": 80,
+    "hr": 76,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "fev1FvcRatio": 0.56,
+      "fev1PredPct": 58,
+      "mmrc": 3,
+      "cat": 17,
+      "moderateExacerbations": 0,
+      "hospitalizations": 0,
+      "currentInhaler": "none"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "tiotropium_olodaterol",
+        "action": "START"
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ckd_47_rasi_uptitrate_k49",
+  "titleVi": "Ngoại trú - Chuẩn độ tăng liều Losartan từ 50 mg lên 100 mg khi K+ = 4.9 mmol/L (<= 5.0 mmol/L theo ngưỡng riêng ckd.rasi.k_uptitrate_max) (Regression CKD-R1-07 & QA-10)",
+  "source": "KDIGO 2024 CKD PP 3.6.1 & Section 3.11",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_47",
+    "name": "BN CKD 47",
+    "age": 59,
+    "sex": "male",
+    "weight": 74,
+    "sbp": 138,
+    "dbp": 84,
+    "hr": 72,
+    "scr": 135,
+    "k": 4.9,
+    "uacr": 28,
+    "conditions": {
+      "ckd": true,
+      "htn": true
+    },
+    "currentMeds": [
+      { "drugId": "losartan", "name": "Cozaar 50 mg", "dose": 50, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "losartan", "action": "UPTITRATE" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R1-07 (Phần B) & QA-10: RASi dùng ngưỡng kali riêng ckd.rasi.k_uptitrate_max = 5.0 mmol/L thay vì mượn nhầm ngưỡng 4.8 mmol/L của Finerenone."
+}

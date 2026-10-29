@@ -1,0 +1,27 @@
+{
+  "itemId": "ckd.kbinder.k_low_hold",
+  "contentHash": "21597e1d73c241984a53b387f3e3c4a81b11890c08c31e210bfa0a1c8c969aa8",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.kbinder.k_low_hold",
+      "contentHash": "a9a515b37906889f",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T07:03:44.560Z",
+          "role": "agent_e3_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 2 cho ckd.kbinder.k_low_hold."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T07:03:44.560Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

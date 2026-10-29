@@ -1,0 +1,32 @@
+# GDMT-VN – Tiến độ Agent B (App Shell & Engine Core)
+
+- [x] Scaffold done (Vite 7, React 18, TypeScript 5.9 strict, Vitest 4, jsdom, vite-plugin-pwa, @fontsource/be-vietnam-pro, playwright, package scripts)
+- [x] Thư mục rỗng tạo sẵn: `src/engine/calculators/`, `src/kb-types/`, `tools/kb/`, `kb/`, `tests/kb/`, `tests/calculators/`
+- [x] Engine core:
+  - `types.ts`: Patient, Settings, Derived, Action, Recommendation, Rule, ModuleDefinition, Plan, SafetyAlert...
+  - `kbTypes.pending.ts`: Compatibility bridge sang `src/kb-types`
+  - `units.ts`: Chuyển đổi đơn vị Creatinin, Glucose, Lipid, Urat, UACR, HbA1c và hàm chuẩn hóa
+  - `derive.ts`: Tính toán BMI, BSA, MAP, eGFR CKD-EPI 2021, CrCl Cockcroft-Gault, KDIGO G/A, CHA2DS2-VA
+  - `safety/gates.ts`: Cổng an toàn thận (eGFR/CrCl), kali máu (K+), huyết áp (SBP), nhịp tim (HR), thai kỳ, dị ứng/phù mạch
+  - `safety/interactions.ts`: Tương tác thuốc (Triple Whammy, Allopurinol+Azathioprine, Colchicine+CYP3A4/P-gp, Amiodarone+Digoxin/Warfarin, Non-DHP CCB ở HFrEF...)
+  - `safety/duplicates.ts`: Phát hiện trùng nhóm (RASi/ARNI, MRA, Anticoagulant, DPP4i+GLP1, BB, SGLT2i, Statin)
+  - `merge.ts`: Gộp thuốc trùng đa bệnh với `benefitsAlso`, ưu tiên an toàn AVOID/STOP > ...
+  - `note.ts`: Sinh ghi chú bệnh án lâm sàng EMR/HIS tiếng Việt
+  - `urlState.ts`: Mã hóa/giải mã trạng thái vào URL hash an toàn Unicode UTF-8
+- [x] Module demo: `src/modules/_demo/` (3-4 luật giả đánh dấu rõ DEMO, ma trận thận, lộ trình, ca bệnh nhân mẫu)
+- [x] UI shell kiểu gdmt.org:
+  - Header navy `#14285a`, logo, A-/A+, nút tối/tương phản, nút "Báo sai" mở modal sao chép JSON trạng thái
+  - Tabs: Lộ trình · Phác đồ · Bằng chứng · Học · Cài đặt · Giới thiệu
+  - Phác đồ: Segmented Ngoại trú/Nội viện, Quốc tế/Bộ Y tế/Hoa Kỳ, chip đa chọn bệnh, slider LVEF, BN mẫu, giữ 1s để xóa
+  - PlanList: Chip tóm tắt, cảnh báo tương tác thuốc, mở/thu tất cả, phân tầng
+  - PlanRow: Badge màu theo hành động (BẮT ĐẦU, TĂNG LIỀU, TIẾP TỤC, CÂN NHẮC, HOÃN, GIẢM LIỀU, NGỪNG/TRÁNH, THEO DÕI, CHUYỂN KHÁM), mở rộng xem gating & EvidenceQuote
+  - EvidenceQuote: Trích dẫn nguyên văn, dịch tham khảo, tên nguồn, trang/bảng, huy hiệu kiểm duyệt
+  - Matrix generic: Bảng ma trận theo cột dải eGFR, ô trên khởi trị / ô dưới duy trì, chú giải màu, modal xem trích dẫn
+  - Pathway generic: Lộ trình timeline các bước điều trị
+  - Responsive: Desktop (≥1024px) 2 cột song song; Mobile (<1024px) segmented + nút nổi "Xem kế hoạch (n)" + thanh tab bar cố định ở đáy
+  - Font Be Vietnam Pro offline, không thư viện UI nặng, CSS thuần biến CSS, CSS print
+- [x] PWA: `vite-plugin-pwa`, manifest tiếng Việt, icons (`favicon.svg`, `pwa-192x192.png`, `pwa-512x512.png`), offline precache
+- [x] Xử lý REQUESTS.md: Đã bổ sung các script `verify:kb`, `kb:search`, `kb:review`, cấu hình `prebuild`
+- [x] Test suite: 24 test files (142 tests) passed 100%
+- [x] Typecheck & Build: `npm run typecheck` và `npm run build` đạt mã 0
+- [x] Screenshots: Đã tự động chụp bằng Playwright vào `docs/screenshots/` (desktop_plan.png, desktop_matrix.png, mobile_patient.png, mobile_plan.png, mobile_matrix.png)

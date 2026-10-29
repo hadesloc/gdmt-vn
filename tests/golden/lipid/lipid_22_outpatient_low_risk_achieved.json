@@ -1,0 +1,55 @@
+{
+  "id": "lipid_22_outpatient_low_risk_achieved",
+  "titleVi": "Bệnh nhân nguy cơ thấp đã đạt đích LDL-C",
+  "source": "ESC/EAS 2019 / esc.lipid.2019.target_low",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 35,
+    "sex": "male",
+    "weight": 65,
+    "height": 172,
+    "sbp": 118,
+    "dbp": 74,
+    "hr": 68,
+    "scr": 75,
+    "tc": 4.2,
+    "hdl": 1.3,
+    "ldl": 2.2,
+    "tg": 1.2,
+    "conditions": {},
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_lipid_retest_schedule",
+        "action": "MONITOR"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Người trẻ không có bệnh đồng mắc, LDL-C 2.2 đạt đích < 3.0 mmol/L."
+}

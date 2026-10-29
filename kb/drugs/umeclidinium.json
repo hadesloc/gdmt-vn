@@ -1,0 +1,109 @@
+{
+  "id": "umeclidinium",
+  "nameVi": "Umeclidinium",
+  "inn": "Umeclidinium bromide",
+  "class": "LAMA",
+  "vnBrands": [],
+  "forms": [
+    "Bột hít phân liều Ellipta 55 mcg/liều (tại VN chỉ lưu hành dạng phối hợp Anoro/Trelegy Ellipta)"
+  ],
+  "start": {
+    "amount": 55,
+    "unit": "mcg",
+    "frequency": "1 lần/ngày",
+    "route": "hít",
+    "description": "Hít 1 liều Ellipta 55 mcg x 1 lần/ngày vào cùng thời điểm mỗi ngày"
+  },
+  "target": {
+    "amount": 55,
+    "unit": "mcg",
+    "frequency": "1 lần/ngày",
+    "route": "hít",
+    "description": "Hít 1 liều Ellipta 55 mcg x 1 lần/ngày"
+  },
+  "titration": {
+    "step": "Duy trì liều cố định hàng ngày",
+    "intervalDays": 30,
+    "maxDose": "55 mcg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều khi eGFR ≥ 15 mL/phút/1.73m²",
+      "citationIds": [
+        "ema.trimbow.renal_pk_beclometasone_formoterol",
+        "ema.ultibro.renal_dosing_egfr30"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận (thải trừ qua thận không đáng kể)",
+      "citationIds": [
+        "ema.trimbow.renal_pk_beclometasone_formoterol",
+        "ema.ultibro.renal_dosing_egfr30"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Tránh dùng đồng thời với các thuốc kháng cholinergic (LAMA/SAMA thường quy) khác",
+    "Thận trọng theo dõi triệu chứng tiểu khó ở người bệnh tăng sản lành tính tuyến tiền liệt (BPH) ổn định"
+  ],
+  "citationIds": [
+    "byt.copd.2026.vilanterol_umeclidinium_dose",
+    "gold.copd.2026.lama_pharmacology_list",
+    "gold.copd.2026.lama_glaucoma_caution",
+    "gina.copd.2026.lama_urinary_retention",
+    "ema.trimbow.renal_pk_beclometasone_formoterol",
+    "ema.ultibro.renal_dosing_egfr30",
+    "ema.ultibro.pregnancy_lactation",
+    "ema.ultibro.lactose_excipient_contra",
+    "ema.ultibro.hypersensitivity_contra"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Dữ liệu ở phụ nữ mang thai chưa đầy đủ; chỉ dùng khi lợi ích vượt trội nguy cơ.",
+    "citationIds": [
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Hấp thu toàn thân của umeclidinium đường hít thấp; cân nhắc lợi ích nuôi con bằng sữa mẹ và lợi ích điều trị cho mẹ.",
+    "citationIds": [
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "severe_milk_protein_allergy",
+      "messageVi": "Chống chỉ định ở bệnh nhân dị ứng nặng với protein sữa (bình bột khô Ellipta chứa tá dược lactose)",
+      "citationIds": [
+        "ema.ultibro.lactose_excipient_contra",
+        "ema.ultibro.hypersensitivity_contra"
+      ]
+    },
+    {
+      "code": "narrow_angle_glaucoma",
+      "messageVi": "Chống chỉ định hoặc tránh tiếp xúc mắt ở người bệnh glôcôm góc đóng cấp tính chưa điều trị",
+      "citationIds": [
+        "gold.copd.2026.lama_glaucoma_caution"
+      ]
+    },
+    {
+      "code": "urinary_retention",
+      "messageVi": "Chống chỉ định khi đang bí tiểu cấp chưa xử trí; thận trọng theo dõi triệu chứng đường tiểu ở người bệnh tăng sản tuyến tiền liệt",
+      "citationIds": [
+        "gina.copd.2026.lama_urinary_retention"
+      ]
+    }
+  ],
+  "classes": [
+    "lama"
+  ]
+}

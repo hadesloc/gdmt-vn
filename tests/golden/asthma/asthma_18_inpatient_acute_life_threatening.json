@@ -1,0 +1,80 @@
+{
+  "id": "asthma_18_inpatient_acute_life_threatening",
+  "titleVi": "Cơn hen nguy kịch đe dọa tính mạng: Phổi im lặng & Lơ mơ → Báo động ICU + Thuốc hồi sức",
+  "source": "GINA 2026 Box 9-3 / BYT 5850/2021",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_18",
+    "name": "Nam 44 tuổi",
+    "age": 44,
+    "sex": "male",
+    "weight": 72,
+    "sbp": 140,
+    "dbp": 90,
+    "hr": 135,
+    "rhythm": "sinus",
+    "fev1Pct": 30,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "isAcuteExacerbation": true,
+      "speechAbility": "unable",
+      "respiratoryRate": 36,
+      "silentChest": true,
+      "mentalStatus": "drowsy_confused",
+      "spo2": 82
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_asthma_acute_life_threatening_icu",
+        "action": "REFER"
+      },
+      {
+        "drugId": "salbutamol",
+        "action": "START"
+      },
+      {
+        "drugId": "ipratropium",
+        "action": "START"
+      },
+      {
+        "drugId": "methylprednisolone",
+        "action": "START"
+      },
+      {
+        "drugId": "magnesium_sulfate",
+        "action": "DEFER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_asthma_action_plan_doc",
+        "action": "MONITOR"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Cơn hen đe dọa tử vong: Lồng ngực im lặng, lơ mơ -> Báo động ICU VÀ phát sinh đồng thời gói thuốc hồi sức cấp cứu (Salbutamol+Ipratropium+Methylprednisolone), không sinh action plan tại nhà. Chưa có creatinine/chức năng thận: MgSO4 bổ trợ DEFER chờ bác sĩ xác nhận liều, không trì hoãn hồi sức đầu tay."
+}

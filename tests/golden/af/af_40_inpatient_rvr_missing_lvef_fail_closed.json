@@ -1,0 +1,54 @@
+{
+  "id": "af_40_inpatient_rvr_missing_lvef_fail_closed",
+  "titleVi": "Cấp cứu RVR nội viện thiếu LVEF: Fail-Closed yêu cầu đo LVEF khẩn, CẤM Diltiazem IV (ADV_AF_41)",
+  "source": "ESC 2024 tr. 40 / QA-1 Fail-Closed / esc.af.2024.rate_control_lvef_preserved",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "male",
+    "weight": 68,
+    "height": 165,
+    "sbp": 125,
+    "dbp": 78,
+    "hr": 135,
+    "rhythm": "afib",
+    "scr": 95,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true
+    },
+    "currentMeds": []
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "missing_input_lvef",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "diltiazem",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Cấp cứu RVR 135 bpm khuyết thiếu LVEF (ADV_AF_41): Fail-closed bắt buộc yêu cầu đo LVEF, tuyệt đối cấm tiêm bolus Diltiazem IV mù."
+}

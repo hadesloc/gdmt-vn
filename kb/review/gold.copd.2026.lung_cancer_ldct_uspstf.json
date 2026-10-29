@@ -1,0 +1,26 @@
+{
+  "itemId": "gold.copd.2026.lung_cancer_ldct_uspstf",
+  "contentHash": "109e45ef3e693cd83440ba2e8ce6295bf0d6503c0cb6e5e0d932e9ff75421db0",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gold.copd.2026.lung_cancer_ldct_uspstf",
+      "contentHash": "68750e59ffe83ac7",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

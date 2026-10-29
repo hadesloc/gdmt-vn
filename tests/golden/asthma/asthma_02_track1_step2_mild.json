@@ -1,0 +1,59 @@
+{
+  "id": "asthma_02_track1_step2_mild",
+  "titleVi": "Hen Bậc 2 triệu chứng nhẹ: Khởi đầu Track 1 AIR khi cần",
+  "source": "GINA 2026 Strategy Report",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_02",
+    "name": "Nữ 28 tuổi",
+    "age": 28,
+    "sex": "female",
+    "weight": 52,
+    "sbp": 112,
+    "dbp": 70,
+    "hr": 78,
+    "rhythm": "sinus",
+    "fev1Pct": 82,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "currentTrack": "track1",
+      "currentStep": 1,
+      "daytimeSymptomsMoreThanTwiceWeek": true,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bệnh nhân Bậc 2 có triệu chứng ban ngày > 2 lần/tuần, dùng Track 1 AIR."
+}

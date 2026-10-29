@@ -1,0 +1,100 @@
+{
+  "id": "insulin_detemir",
+  "nameVi": "Insulin Detemir",
+  "inn": "Insulin detemir",
+  "class": "Basal Insulin",
+  "vnBrands": [
+    "Levemir"
+  ],
+  "forms": [
+    "Bút tiêm FlexPen 100 U/mL (3 mL)"
+  ],
+  "start": {
+    "amount": 10,
+    "unit": "đơn vị",
+    "frequency": "1-2 lần/ngày",
+    "route": "tiêm dưới da",
+    "description": "Hoặc 0.1–0.2 đơn vị/kg/ngày tiêm vào bữa tối hoặc trước khi đi ngủ"
+  },
+  "target": {
+    "amount": 20,
+    "unit": "đơn vị",
+    "frequency": "1-2 lần/ngày",
+    "route": "tiêm dưới da"
+  },
+  "titration": {
+    "step": "2 đơn vị",
+    "intervalDays": 3
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Liều chuẩn theo đường huyết đói",
+      "citationIds": [
+        "ada.dm2.2026.basal_start_and_titration"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Theo dõi đường huyết và giảm liều khi cần",
+      "citationIds": [
+        "ada.dm2.2026.basal_start_and_titration",
+        "ada.dm2.2026.kidney_failure_hypo_clearance"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Giảm 25–50% liều và theo dõi sát đường huyết (kể cả lọc máu)",
+      "citationIds": [
+        "ada.dm2.2026.kidney_failure_hypo_clearance"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_detemir_hypo_recent",
+      "parameter": "recent_hypo",
+      "operator": "==",
+      "threshold": 1,
+      "action": "hold",
+      "messageVi": "Có hạ đường huyết gần đây: Không tăng liều insulin.",
+      "citationIds": [
+        "ada.dm2.2026.basal_start_and_titration"
+      ]
+    }
+  ],
+  "interactions": [
+    "Thuốc chẹn beta che giấu triệu chứng hạ đường huyết"
+  ],
+  "citationIds": [
+    "ada.dm2.2026.basal_start_and_titration",
+    "ada.dm2.2026.kidney_failure_hypo_clearance"
+  ],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Insulin nền analog an toàn và được phê duyệt sử dụng trong thai kỳ (FDA Category B / ADA 2026 & BYT 2020)",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_insulin",
+      "byt.dm2.2020.pregnancy_insulin"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "An toàn khi nuôi con bú",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_insulin"
+    ]
+  },
+  "contraindications": [],
+  "classes": [
+    "insulin",
+    "insulin_basal"
+  ]
+}

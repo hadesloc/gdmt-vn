@@ -1,0 +1,26 @@
+{
+  "itemId": "af.elderly.frail_vka_age",
+  "contentHash": "784d5db86bc2a1b3195fc0abba90f136412e911aa6956a628c8b409c586638c9",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.elderly.frail_vka_age",
+      "contentHash": "fdf60a2174eba166",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.elderly.frail_vka_age (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

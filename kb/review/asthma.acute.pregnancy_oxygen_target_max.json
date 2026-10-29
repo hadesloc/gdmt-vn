@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.acute.pregnancy_oxygen_target_max",
+  "contentHash": "776279882a89ba3d6a10353296c8230e7131f13ba373ba4ccf4f9b35c661a411",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.acute.pregnancy_oxygen_target_max",
+      "contentHash": "66e55b67d346d9e3",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T12:52:49.357Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Kiểm định tự động ngưỡng lâm sàng asthma.acute.pregnancy_oxygen_target_max (95 %)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T12:52:49.357Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

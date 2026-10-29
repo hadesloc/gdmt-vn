@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.indacaterol_glycopyrronium_inda_mcg",
+  "contentHash": "571455a343e7e2e0401c8c4024ef4aad5cd15817ff12bb565c89d297c1a16aa1",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.indacaterol_glycopyrronium_inda_mcg",
+      "contentHash": "5e5bdd836bbbea25",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

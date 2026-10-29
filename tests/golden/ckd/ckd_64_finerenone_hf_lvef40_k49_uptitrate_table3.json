@@ -1,0 +1,55 @@
+{
+  "id": "ckd_64_finerenone_hf_lvef40_k49_uptitrate_table3",
+  "titleVi": "Ngoại trú - Suy tim LVEF = 40% (ranh giới HFmrEF) kèm K⁺ = 4.9 mmol/L đang dùng Finerenone 10 mg -> Chuẩn độ UPTITRATE lên 20 mg theo Bảng 3 nhãn FDA Kerendia (Regression CKD-R3-R1-04)",
+  "source": "FDA Kerendia Label Section 2.3 & Table 3 (LVEF >= 40%, K+ < 5.0 mmol/L)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "US",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_64",
+    "name": "BN CKD 64",
+    "age": 65,
+    "sex": "female",
+    "weight": 62,
+    "sbp": 126,
+    "dbp": 76,
+    "hr": 70,
+    "lvef": 40,
+    "scr": 130,
+    "k": 4.9,
+    "uacr": 28,
+    "conditions": {
+      "ckd": true,
+      "dm": true,
+      "hf": true
+    },
+    "currentMeds": [
+      { "drugId": "losartan", "name": "Cozaar 100 mg", "dose": 100, "unit": "mg" },
+      { "drugId": "finerenone", "name": "Kerendia 10 mg", "dose": 10, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "finerenone", "action": "UPTITRATE", "doseContains": "20 mg" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "finerenone", "action": "CONTINUE" },
+      { "drugId": "finerenone", "action": "HOLD" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R3-R1-04: Ở suy tim LVEF >= 40% (bao gồm đúng ranh giới LVEF = 40%), ngưỡng Kali máu cho phép chuẩn độ Finerenone từ 10 -> 20 mg/ngày là K+ < 5.0 mmol/L theo Bảng 3 FDA Kerendia."
+}

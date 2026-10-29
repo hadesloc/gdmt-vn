@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.moxonidine.max_daily_egfr30_59",
+  "contentHash": "2b42b01108b55a7347d83ef3393999aa1d44ccf6dd26302cace6e994e789fd51",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.moxonidine.max_daily_egfr30_59",
+      "contentHash": "9d2178321fbe0163",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực ngưỡng lâm sàng htn.moxonidine.max_daily_egfr30_59 (0.4 mg/day) và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

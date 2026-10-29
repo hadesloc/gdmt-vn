@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.simvastatin_dronedarone",
+  "contentHash": "44f562944fd441169995764bd64e5160fe0331b05fb2218c42e259c1bb3dd08a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.simvastatin_dronedarone",
+      "contentHash": "4639776d14bed4a9",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.simvastatin_dronedarone."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

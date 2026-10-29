@@ -1,0 +1,150 @@
+{
+  "id": "losartan",
+  "nameVi": "Losartan",
+  "inn": "Losartan",
+  "class": "ARB",
+  "classes": [
+    "arb"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Cozaar",
+    "Zaart"
+  ],
+  "forms": [
+    "Viên nén bao phim 50 mg",
+    "Viên nén bao phim 100 mg"
+  ],
+  "start": {
+    "amount": 50,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "50 mg/ngày (25 mg nếu giảm thể tích tuần hoàn)"
+  },
+  "target": {
+    "amount": 100,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "100 mg/ngày"
+  },
+  "titration": {
+    "step": 50,
+    "intervalDays": 14,
+    "maxDose": "100 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "50–100 mg/ngày",
+      "citationIds": [
+        "kdigo.ckd.2024.rec_3_6_1_rasi_a3_nondm",
+        "fda.losartan.diabetic_nephropathy_dose"
+      ]
+    },
+    {
+      "eGFRFrom": 15,
+      "eGFRTo": 30,
+      "initiate": "ok",
+      "continue": "rec",
+      "dose": "25–100 mg/ngày (khởi đầu 25–50 mg/ngày, chuẩn độ theo đáp ứng tối đa 100 mg/ngày)",
+      "note": "Không cần giảm trần liều đích 100 mg/ngày theo chức năng thận; khởi đầu 25 mg/ngày nếu giảm thể tích tuần hoàn (FDA Cozaar Mục 8.7 & BYT 2024 Bảng 12)",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_7_continue_egfr_below_30",
+        "fda.losartan.renal_impairment_no_adjustment",
+        "byt.ckd.2024.table_12_arb_no_renal_ceiling"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "25–100 mg/ngày (khởi đầu 25 mg/ngày, chuẩn độ theo HA và K+ tối đa 100 mg/ngày)",
+      "note": "Không thải qua màng lọc thận nhân tạo; khởi đầu thận trọng 25 mg/ngày và chuẩn độ theo đáp ứng huyết áp, kali máu (FDA Mục 8.7 & BYT 2024 Bảng 12)",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_5_rasi_reduce_stop",
+        "fda.losartan.renal_impairment_no_adjustment",
+        "byt.ckd.2024.table_12_arb_no_renal_ceiling"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_losartan_k_max",
+      "parameter": "K",
+      "operator": ">",
+      "threshold": 5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm hoãn losartan khi kali máu > 5.0 mmol/L",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_2_rasi_monitoring"
+      ]
+    },
+    {
+      "id": "gate_losartan_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối nhóm thuốc ức chế thụ thể ARB trong thai kỳ (Boxed Warning: độc tính thai nhi)",
+      "citationIds": [
+        "fda.losartan.boxed_pregnancy"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định phối hợp ACEi (nguy cơ suy thận cấp, tăng kali máu)",
+    "Losartan có tác dụng ức chế URAT1 giúp hạ nhẹ acid uric máu (lợi thế ở bệnh nhân gút)"
+  ],
+  "citationIds": [
+    "kdigo.ckd.2024.rec_3_6_1_rasi_a3_nondm",
+    "kdigo.ckd.2024.rec_3_6_4_avoid_dual_rasi",
+    "fda.losartan.diabetic_nephropathy_dose",
+    "fda.losartan.boxed_pregnancy",
+    "fda.losartan.hepatic_impairment",
+    "fda.losartan.renal_impairment_no_adjustment",
+    "byt.ckd.2024.table_12_arb_no_renal_ceiling"
+  ],
+  "hepatic": {
+    "status": "caution",
+    "note": "Suy gan nhẹ–trung bình: giảm liều khởi đầu xuống 25 mg uống 1 lần/ngày do tăng phơi nhiễm huyết tương; chưa được nghiên cứu ở suy gan nặng (FDA Section 2.4 & 8.8).",
+    "notesVi": "Suy gan nhẹ–trung bình: giảm liều khởi đầu xuống 25 mg uống 1 lần/ngày do tăng phơi nhiễm huyết tương; chưa được nghiên cứu ở suy gan nặng (FDA Section 2.4 & 8.8).",
+    "citationIds": [
+      "fda.losartan.hepatic_impairment"
+    ]
+  },
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối nhóm thuốc ức chế thụ thể ARB trong thai kỳ (Boxed Warning FDA: độc tính thai nhi, giảm sản sọ và tử vong sơ sinh)",
+    "citationIds": [
+      "fda.losartan.boxed_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Tránh dùng khi cho con bú do nguy cơ tác dụng bất lợi nghiêm trọng trên trẻ bú mẹ",
+    "citationIds": [
+      "fda.losartan.boxed_pregnancy"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định tuyệt đối ARB trong thai kỳ (Boxed Warning)",
+      "citationIds": [
+        "fda.losartan.boxed_pregnancy"
+      ]
+    },
+    {
+      "code": "concomitant_acei_dri",
+      "messageVi": "Chống chỉ định phối hợp đồng thời với thuốc ức chế men chuyển (ACEi) hoặc aliskiren",
+      "citationIds": [
+        "kdigo.ckd.2024.rec_3_6_4_avoid_dual_rasi"
+      ]
+    }
+  ]
+}

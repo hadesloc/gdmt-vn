@@ -1,0 +1,79 @@
+{
+  "id": "lipid_48_outpatient_polyvascular_extreme_consider_pcsk9",
+  "titleVi": "Bệnh đa giường mạch (CAD + PAD) trên nền Atorvastatin 80 + Ezetimibe 10 (LDL 1.2) - Cân nhắc PCSK9i hướng đích < 1.0 (Class IIb)",
+  "source": "ESC/EAS 2025 Figure 1 / esc.lipid.2025.extreme_risk_polyvascular",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 66,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 126,
+    "dbp": 76,
+    "hr": 66,
+    "scr": 92,
+    "tc": 3.4,
+    "hdl": 1.1,
+    "ldl": 1.2,
+    "tg": 1.4,
+    "conditions": {
+      "cad": true,
+      "pad": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "atorvastatin",
+        "name": "Atorvastatin",
+        "dose": 80,
+        "unit": "mg"
+      },
+      {
+        "drugId": "ezetimibe",
+        "name": "Ezetimibe",
+        "dose": 10,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "ezetimibe",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "evolocumab",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "evolocumab",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R2-R1-09: Bệnh nhân tổn thương xơ vữa ≥ 2 giường mạch (CAD + PAD) thuộc tầng Nguy cơ Cực cao theo ESC 2025; khi đã đạt đích Class I (< 1.4 mmol/L) với LDL 1.2, việc bổ sung PCSK9i để hướng tới đích sâu < 1.0 mmol/L mang mức chứng cứ Class IIb (CONSIDER)."
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.gold4_fev1_max",
+  "contentHash": "17d368a355839c3f745804f6b84ce4325e889efdc53b7af41ba23ee95241ef6c",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.gold4_fev1_max",
+      "contentHash": "a6a033c0543852ce",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

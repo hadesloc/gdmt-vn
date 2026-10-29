@@ -1,0 +1,47 @@
+{
+  "id": "im_acute_hf_0310",
+  "titleVi": "Khó thở đột ngột ở buồng Nội",
+  "source": "on-call:im_acute_hf_0310",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_im_acute_hf_0310",
+    "name": "Nữ 72 tuổi",
+    "age": 72,
+    "sex": "female",
+    "weight": 58,
+    "sbp": 178,
+    "dbp": 104,
+    "hr": 124,
+    "conditions": {
+      "hf": true
+    },
+    "selectedModules": [
+      "hf"
+    ],
+    "currentMeds": [],
+    "scr": 130,
+    "k": 4.2
+  },
+  "expect": {
+    "mustInclude": [],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bác sĩ ơi, cô giường 14 thức giấc vì khó thở, ngồi không nằm được. Người bệnh tỉnh, phải ngồi dậy để thở và chỉ nói được từng cụm ngắn. Vã mồ hôi, da lạnh ẩm, ho khạc ít bọt hồng. Hai cẳng chân phù; người bệnh lo lắng nhưng làm theo hướng dẫn khi được trấn an. Khi tiếp nhận chưa có hỗ trợ oxy đang chạy; SpO₂ ban đầu đo trên khí phòng.",
+  "notes": "TODO: Ca nháp nội viện chuyển từ on-call. Module agent chịu trách nhiệm điền expect.mustInclude và mustNotInclude."
+}

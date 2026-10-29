@@ -1,0 +1,51 @@
+{
+  "id": "dm2_15_early_insulin_severe_glucose",
+  "titleVi": "Đường huyết tăng cao nặng (18.5 mmol/L) - Khởi trị Insulin sớm",
+  "source": "ADA 2026 SOC Ch. 9",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 50,
+    "sex": "male",
+    "weight": 75,
+    "height": 172,
+    "sbp": 130,
+    "dbp": 82,
+    "hr": 84,
+    "scr": 90,
+    "k": 4.3,
+    "glucose": 18.5,
+    "hba1c": 11.5,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "insulin_glargine",
+        "action": "START",
+        "doseContains": "10 đơn vị"
+      }
+    ]
+  },
+  "descriptionVi": "Glucose ≥ 16.7 mmol/L (300 mg/dL): Khởi trị insulin nền sớm."
+}

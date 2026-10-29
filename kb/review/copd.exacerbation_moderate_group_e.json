@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.exacerbation_moderate_group_e",
+  "contentHash": "f19eb566a8b5e0829d7afb14b65aa7ac31337d88dc9114a0b1937795feeef586",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.exacerbation_moderate_group_e",
+      "contentHash": "c6de509657550ff5",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "dm2_29_inpatient_steroid_nph",
+  "titleVi": "Bệnh nhân ĐTĐ nội viện đang dùng Prednisone - Khởi trị Insulin NPH buổi sáng",
+  "source": "ADA 2026 SOC Ch. 16",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 57,
+    "sex": "male",
+    "weight": 65,
+    "height": 165,
+    "sbp": 134,
+    "dbp": 84,
+    "hr": 80,
+    "scr": 90,
+    "k": 4.3,
+    "glucose": 13.8,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "onSteroidTherapy": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "insulin_nph",
+        "action": "START",
+        "doseContains": "Insulin NPH"
+      }
+    ]
+  },
+  "descriptionVi": "Tăng đường huyết do steroid: Phác đồ NPH buổi sáng."
+}

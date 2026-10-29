@@ -1,0 +1,69 @@
+{
+  "id": "gout_07_acute_flare_strong_cyp3a4_clarithromycin_nsaid",
+  "titleVi": "Cơn gút cấp đang dùng Clarithromycin (ức chế mạnh CYP3A4/P-gp): Chống chỉ định Colchicine -> Chọn Naproxen",
+  "source": "FDA Colchicine Label & EULAR 2016 (fda.colchicine.renal_and_cyp3a4, eular.gout.2016.naproxen_flare)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 40,
+    "sex": "male",
+    "weight": 75,
+    "scr": 78,
+    "uricAcid": 440,
+    "conditions": {
+      "gout": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "clarithromycin",
+        "name": "Clarithromycin",
+        "dose": "500",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": true,
+      "priorFlaresLifetime": 1,
+      "goutFlaresYear": 1
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "colchicine",
+        "ruleId": "rec_gout_colchicine_avoid_contra",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "naproxen",
+        "ruleId": "rec_gout_nsaid_acute_flare",
+        "action": "START",
+        "doseContains": "500 mg"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "colchicine",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 40 tuổi khỏe mạnh đang uống Clarithromycin điều trị viêm phổi mắc phải cộng đồng xuất hiện cơn gút cấp đầu tiên, eGFR bình thường, không bệnh dạ dày/tim mạch. Chống chỉ định tuyệt đối Colchicine; dùng Naproxen 500 mg x 2 lần/ngày × 5 ngày."
+}

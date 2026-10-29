@@ -1,0 +1,113 @@
+{
+  "id": "insulin_premix",
+  "nameVi": "Insulin Hỗn hợp (Premix)",
+  "inn": "Biphasic insulin",
+  "class": "Premixed Insulin",
+  "vnBrands": [
+    "Mixtard 30",
+    "Novomix 30",
+    "Humalog Mix 25/75",
+    "Humalog Mix 50/50"
+  ],
+  "forms": [
+    "Bút tiêm FlexPen 100 U/mL (3 mL - Novomix 30)",
+    "Bút tiêm KwikPen 100 U/mL (3 mL - Humalog Mix 25/75, 50/50)",
+    "Lọ 100 U/mL (10 mL - Mixtard 30)"
+  ],
+  "start": {
+    "amount": 10,
+    "unit": "đơn vị",
+    "frequency": "chia 2 lần/ngày",
+    "route": "tiêm dưới da",
+    "description": "Chia 2/3 trước ăn sáng và 1/3 trước ăn chiều (Mixtard 30 tiêm trước ăn 30 phút; Novomix 30 / Humalog Mix tiêm trước ăn 0–15 phút)"
+  },
+  "target": {
+    "amount": 20,
+    "unit": "đơn vị",
+    "frequency": "chia 2 lần/ngày",
+    "route": "tiêm dưới da"
+  },
+  "titration": {
+    "step": "2 đơn vị",
+    "intervalDays": 3
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "Chia 2/3 sáng, 1/3 chiều",
+      "citationIds": [
+        "byt.dm2.2020.premix_split_2_3"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "Giảm 10–25% liều và ăn đúng giờ để tránh hạ đường huyết",
+      "citationIds": [
+        "byt.dm2.2020.premix_split_2_3",
+        "ada.dm2.2026.kidney_failure_hypo_clearance"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Giảm 25–50% liều; ưu tiên chuyển sang phác đồ Basal hoặc Basal-Bolus linh hoạt hơn ở suy thận nặng",
+      "citationIds": [
+        "ada.dm2.2026.kidney_failure_hypo_clearance"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_premix_hypo_recent",
+      "parameter": "recent_hypo",
+      "operator": "==",
+      "threshold": 1,
+      "action": "hold",
+      "messageVi": "Có hạ đường huyết gần đây: Giảm liều 2–4 đơn vị (10–20%).",
+      "citationIds": [
+        "byt.dm2.2020.insulin_hypo_reduce_10_20"
+      ]
+    }
+  ],
+  "interactions": [
+    "Phân biệt thời điểm tiêm: Premix người (Mixtard 30) tiêm trước ăn 30 phút; Premix analog (Novomix 30, Humalog Mix) tiêm ngay trước bữa ăn (0-10 phút)",
+    "Nguy cơ hạ đường huyết tăng khi dùng chung với Sulfonylurea (cần ngừng hoặc giảm liều SU)"
+  ],
+  "citationIds": [
+    "byt.dm2.2020.premix_split_2_3",
+    "byt.dm2.2020.insulin_hypo_reduce_10_20",
+    "ada.dm2.2026.kidney_failure_hypo_clearance",
+    "ada.dm2.2026.pregnancy_insulin",
+    "byt.dm2.2021.inpatient_insulin_1353"
+  ],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Insulin trộn sẵn sử dụng được trong thai kỳ khi cần kiểm soát đường huyết cả lúc đói và sau ăn",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_insulin",
+      "byt.dm2.2020.pregnancy_insulin"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "An toàn khi nuôi con bú",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_insulin"
+    ]
+  },
+  "contraindications": [],
+  "components": [
+    "insulin_regular",
+    "insulin_nph"
+  ],
+  "classes": [
+    "insulin",
+    "insulin_premix"
+  ]
+}

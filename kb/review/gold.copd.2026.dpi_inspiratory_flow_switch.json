@@ -1,0 +1,26 @@
+{
+  "itemId": "gold.copd.2026.dpi_inspiratory_flow_switch",
+  "contentHash": "84f30f0eb54560f772451bd5176ab8f481c76691b09579e0b0f40b0fcf0c763a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gold.copd.2026.dpi_inspiratory_flow_switch",
+      "contentHash": "9fe5045200c24296",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

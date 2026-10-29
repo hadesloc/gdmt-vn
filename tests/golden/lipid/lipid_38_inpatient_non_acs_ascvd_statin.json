@@ -1,0 +1,53 @@
+{
+  "id": "lipid_38_inpatient_non_acs_ascvd_statin",
+  "titleVi": "Bệnh nhân nội viện suy tim / ASCVD mạn (không phải ACS cấp) - Vẫn khởi trị Statin cường độ cao",
+  "source": "ESC/EAS 2019 / esc.lipid.2019.statin_high_dose_rec",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 69,
+    "sex": "male",
+    "weight": 66,
+    "height": 165,
+    "sbp": 120,
+    "dbp": 74,
+    "hr": 76,
+    "scr": 105,
+    "tc": 5.1,
+    "hdl": 1.0,
+    "ldl": 3.2,
+    "tg": 1.6,
+    "conditions": {
+      "ascvd": true,
+      "hf": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": []
+  },
+  "descriptionVi": "Hồi quy R3-LIPID-13: Bệnh nhân nội viện không gắn cờ ACS 24h nhưng có ASCVD mạn và LDL-C 3.2 mmol/L vẫn được chỉ định đầy đủ phác đồ hạ lipid."
+}

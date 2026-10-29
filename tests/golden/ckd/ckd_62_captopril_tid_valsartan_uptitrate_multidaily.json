@@ -1,0 +1,51 @@
+{
+  "id": "ckd_62_captopril_tid_valsartan_uptitrate_multidaily",
+  "titleVi": "Ngoại trú - CKD G3a đang dùng Captopril 50 mg/ngày -> Nhân đúng tần suất 3 lần/ngày (liều đích 150 mg/ngày) để phát UPTITRATE (Regression CKD-R3-R2-04)",
+  "source": "BYT 2024 Bảng 12 & KDIGO 2024 PP 3.6.1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_62",
+    "name": "BN CKD 62",
+    "age": 58,
+    "sex": "male",
+    "weight": 74,
+    "sbp": 136,
+    "dbp": 82,
+    "hr": 74,
+    "scr": 135,
+    "k": 4.4,
+    "uacr": 40,
+    "conditions": {
+      "ckd": true,
+      "htn": true
+    },
+    "currentMeds": [
+      { "drugId": "captopril", "name": "Captopril", "dose": "25 mg x 2 lần/ngày" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "captopril", "action": "UPTITRATE", "doseContains": "50 mg" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "captopril", "action": "REDUCE" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R3-R2-04: Captopril có liều đích 50 mg x 3 lần/ngày (= 150 mg/ngày); bệnh nhân mới dùng 25 mg x 2 lần/ngày (= 50 mg/ngày) phải được UPTITRATE lên liều đích thay vì bỏ sót."
+}

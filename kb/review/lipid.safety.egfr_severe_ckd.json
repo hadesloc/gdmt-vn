@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.safety.egfr_severe_ckd",
+  "contentHash": "d1d6b151fd68b5a0cfb7b33a61fecc5e8bc2ecea76fb199de91b96a2f99d5028",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.safety.egfr_severe_ckd",
+      "contentHash": "ab425738aae48a53",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.safety.egfr_severe_ckd."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.roflumilast_underweight_bmi",
+  "contentHash": "f9c0ed7c5e8350fc12cc953b4f55b08ff815cc9cf3ed5797fb2e47cd250fb506",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.roflumilast_underweight_bmi",
+      "contentHash": "189dd961fa14636c",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "clonidine",
+  "contentHash": "84e8754f623ec675ad86394ab63e63b781d16d2427cfcbe75eb538227d4958e3",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "clonidine",
+      "contentHash": "74e2cff27a3bdde6",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Clonidine (Clonidine) đầy đủ liều lượng, classes (central_alpha2_agonist), dải thận, thai kỳ/cho con bú, chống chỉ định máy đọc và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.aki.scr_increase_stage1",
+  "contentHash": "6d5c6b11e0b6d37e7aa5cd4e4d1b627f21850ef21eb946db3479b77feefb2296",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.aki.scr_increase_stage1",
+      "contentHash": "13e27d8199aa6eef",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.128Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.aki.scr_increase_stage1."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

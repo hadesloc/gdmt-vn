@@ -1,0 +1,59 @@
+{
+  "id": "af_33_rhythm_flecainide_contra_severe_renal",
+  "titleVi": "CrCl 21.3 mL/min (< 35): Chống chỉ định Flecainide do độc tính thận (AF-R2-01 / Preset 3)",
+  "source": "ESC 2024 Table 13 & FDA / esc.af.2024.flecainide_crcl_35",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 82,
+    "sex": "female",
+    "weight": 50,
+    "height": 152,
+    "sbp": 132,
+    "dbp": 78,
+    "hr": 92,
+    "rhythm": "afib",
+    "lvef": 50,
+    "scr": 142,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true
+    },
+    "customInputs": {
+      "ehraScore": 3
+    },
+    "currentMeds": []
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_af_aad_renal_contra_flec",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "flecainide",
+        "action": "CONSIDER"
+      }
+    ]
+  },
+  "descriptionVi": "CrCl 21.3 mL/min < 35 (AF-R2-01 / Preset 3): Chống chỉ định tuyệt đối Flecainide do thải thận, chuyển sang Dronedarone an toàn."
+}

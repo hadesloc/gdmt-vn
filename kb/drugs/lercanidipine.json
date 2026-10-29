@@ -1,0 +1,152 @@
+{
+  "id": "lercanidipine",
+  "nameVi": "Lercanidipine",
+  "inn": "Lercanidipine",
+  "class": "CCB (Dihydropyridine)",
+  "classes": [
+    "dhp_ccb"
+  ],
+  "vnBrands": [
+    "Zanidip 10 mg",
+    "Zanidip 20 mg",
+    "Lercadip",
+    "Zanextra (phối hợp Enalapril)"
+  ],
+  "forms": [
+    "Viên nén bao phim 10 mg",
+    "Viên nén bao phim 20 mg"
+  ],
+  "start": {
+    "amount": 10,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Uống ít nhất 15 phút TRƯỚC bữa ăn (bữa ăn giàu chất béo làm tăng sinh khả dụng gấp 4 lần)"
+  },
+  "target": {
+    "amount": 20,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Uống ít nhất 15 phút trước bữa ăn"
+  },
+  "titration": {
+    "step": "Tăng lên 20 mg/ngày sau ít nhất 2 tuần (tác dụng hạ áp tối đa đạt sau ~2 tuần)",
+    "intervalDays": 14,
+    "maxDose": "20 mg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "10–20 mg 1 lần/ngày",
+      "citationIds": [
+        "vsh.htn.2022.drugs_table_rasi_bb",
+        "esc.htn.2024.first_line_classes"
+      ],
+      "note": "Dùng liều thông thường khi suy thận nhẹ–vừa; thận trọng khi tăng liều lên 20 mg."
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "contra",
+      "continue": "contra",
+      "citationIds": [
+        "ema.zanidip.contra_renal_hepatic_cyp3a4"
+      ],
+      "note": "CHỐNG CHỈ ĐỊNH ở suy thận nặng (eGFR < 30 mL/phút/1,73m²) và bệnh nhân lọc máu theo SmPC Zanidip — chuyển sang Amlodipine."
+    }
+  ],
+  "hepatic": {
+    "status": "contra",
+    "notesVi": "CHỐNG CHỈ ĐỊNH ở suy gan nặng; thận trọng khi suy gan nhẹ–vừa.",
+    "citationIds": [
+      "ema.zanidip.contra_renal_hepatic_cyp3a4"
+    ]
+  },
+  "gates": [
+    {
+      "id": "gate_lercanidipine_egfr_30",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "contra",
+      "messageVi": "Chống chỉ định Lercanidipine khi eGFR < 30 mL/phút/1,73m² hoặc đang lọc máu — cần chuyển sang Amlodipine.",
+      "citationIds": [
+        "ema.zanidip.contra_renal_hepatic_cyp3a4"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo trong thai kỳ và phụ nữ có khả năng mang thai không dùng biện pháp tránh thai.",
+    "citationIds": [
+      "ema.zanidip.lactation_pregnancy",
+      "esc.htn.2024.pregnancy_first_line"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Tính thân dầu cao, có khả năng bài tiết vào sữa mẹ — không dùng khi cho con bú.",
+    "citationIds": [
+      "ema.zanidip.lactation_pregnancy"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "severe_renal_failure",
+      "messageVi": "Suy thận nặng (eGFR < 30 mL/phút/1,73m²) hoặc đang lọc máu",
+      "citationIds": [
+        "ema.zanidip.contra_renal_hepatic_cyp3a4"
+      ]
+    },
+    {
+      "code": "dialysis",
+      "messageVi": "Bệnh nhân thẩm phân phúc mạc hoặc chạy thận nhân tạo",
+      "citationIds": [
+        "ema.zanidip.contra_renal_hepatic_cyp3a4"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Suy gan nặng",
+      "citationIds": [
+        "ema.zanidip.contra_renal_hepatic_cyp3a4"
+      ]
+    },
+    {
+      "code": "strong_cyp3a4_inhibitors",
+      "messageVi": "Chống chỉ định dùng đồng thời thuốc ức chế mạnh CYP3A4 (ketoconazole, itraconazole, ritonavir, erythromycin/clarithromycin, troleandomycin)",
+      "citationIds": [
+        "ema.zanidip.contra_renal_hepatic_cyp3a4"
+      ]
+    },
+    {
+      "code": "ciclosporin",
+      "messageVi": "Chống chỉ định dùng đồng thời ciclosporin (tăng AUC lercanidipine 3 lần và AUC ciclosporin 21%)",
+      "citationIds": [
+        "ema.zanidip.contra_renal_hepatic_cyp3a4"
+      ]
+    },
+    {
+      "code": "lvot_obstruction",
+      "messageVi": "Tắc nghẽn đường ra thất trái (hẹp chủ nặng), suy tim sung huyết chưa điều trị, đau thắt ngực không ổn định hoặc trong 1 tháng sau nhồi máu cơ tim",
+      "citationIds": [
+        "ema.zanidip.contra_renal_hepatic_cyp3a4"
+      ]
+    }
+  ],
+  "interactions": [
+    "CHỐNG CHỈ ĐỊNH phối hợp thuốc ức chế mạnh CYP3A4 (ketoconazole làm tăng AUC lercanidipine 15 lần), ciclosporin và nước bưởi chùm (grapefruit).",
+    "Bữa ăn nhiều chất béo làm tăng sinh khả dụng đường uống lên gấp 4 lần — bắt buộc uống ít nhất 15 phút trước bữa ăn.",
+    "Rượu (alcohol) làm tăng tác dụng giãn mạch gây tụt huyết áp — tránh uống rượu khi dùng thuốc.",
+    "Ít gây phù mắt cá chân hơn amlodipine/nifedipine nhờ tính chọn lọc mạch máu và giãn cân bằng hơn."
+  ],
+  "citationIds": [
+    "ema.zanidip.contra_renal_hepatic_cyp3a4",
+    "ema.zanidip.lactation_pregnancy",
+    "vsh.htn.2022.drugs_table_ccb",
+    "esc.htn.2024.first_line_classes"
+  ]
+}

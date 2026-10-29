@@ -1,0 +1,26 @@
+{
+  "itemId": "mometasone",
+  "contentHash": "16c9a07d91112a99c9cfd6c8bdb01ac237c21316095af63704f0b866edec2f47",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "mometasone",
+      "contentHash": "3b827a14a7e8f7b5",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T07:10:38.304Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Cập nhật và kiểm định tự động Round 2 cho thuốc Mometasone furoate."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T07:10:38.304Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

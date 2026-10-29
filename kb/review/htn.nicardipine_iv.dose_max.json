@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.nicardipine_iv.dose_max",
+  "contentHash": "b92c02af6dabac361488a40ddf77ec3fbd089e4bc347025dae55a20bc52d1307",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.nicardipine_iv.dose_max",
+      "contentHash": "8cb38dd8815b238d",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 15 mg/h (quantity: dose_rate) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

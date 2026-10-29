@@ -1,0 +1,51 @@
+{
+  "id": "htn_21_inpatient_emergency_general",
+  "titleVi": "Cấp cứu tăng huyết áp có tổn thương cơ quan đích: Nicardipine IV",
+  "source": "VSH 2022 / vsh.htn.2022.emergency_encephalopathy",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 54,
+    "sex": "male",
+    "weight": 68,
+    "height": 168,
+    "sbp": 228,
+    "dbp": 134,
+    "hr": 104,
+    "conditions": {
+      "htn": true,
+      "hypertensiveEncephalopathy": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "nicardipine",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_htn_hypertensive_emergency_general",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "HA 228/134 mmHg kèm lú lẫn đau đầu nhìn mờ (bệnh não THA), chỉ định truyền Nicardipine IV cấp cứu."
+}

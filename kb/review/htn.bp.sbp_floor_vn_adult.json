@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.bp.sbp_floor_vn_adult",
+  "contentHash": "0ddb79a080dd32d49f2e4e7cbe917ce1367c0696417ba9bcf850317353713bd7",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.bp.sbp_floor_vn_adult",
+      "contentHash": "e73065b7e9f95679",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực ngưỡng lâm sàng htn.bp.sbp_floor_vn_adult (120 mmHg) và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

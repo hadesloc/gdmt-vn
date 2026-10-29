@@ -1,0 +1,155 @@
+{
+  "id": "esmolol",
+  "nameVi": "Esmolol (truyền tĩnh mạch)",
+  "inn": "Esmolol",
+  "class": "Chẹn Beta-1 chọn lọc tác dụng cực ngắn (Tĩnh mạch)",
+  "classes": [
+    "bb_selective"
+  ],
+  "vnBrands": [
+    "Brevibloc"
+  ],
+  "forms": [
+    "Ống tiêm 100 mg / 10 mL (10 mg/mL)",
+    "Túi truyền pha sẵn 2500 mg / 250 mL (10 mg/mL)"
+  ],
+  "start": {
+    "amount": "500–1000",
+    "unit": "mcg/kg/phút",
+    "frequency": "liều nạp trong 1 phút, sau đó 50 mcg/kg/phút",
+    "route": "truyền tĩnh mạch",
+    "description": "Tác dụng cực ngắn (t½ ~9 phút), đạt đích nhịp tim < 60 chu kỳ/phút trước khi phối hợp thuốc giãn mạch trong bóc tách ĐMC"
+  },
+  "target": {
+    "amount": "50–200",
+    "unit": "mcg/kg/phút",
+    "frequency": "truyền liên tục",
+    "route": "truyền tĩnh mạch",
+    "description": "Có thể lặp lại liều nạp và tăng bậc 50 mcg/kg/phút đến tối đa 300 mcg/kg/phút"
+  },
+  "titration": {
+    "step": "Lặp lại bolus 500 mcg/kg trong 1 phút và tăng tốc độ truyền thêm 50 mcg/kg/phút mỗi 4–5 phút đến tối đa 300 mcg/kg/phút",
+    "intervalDays": 1,
+    "maxDose": "300 mcg/kg/phút"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "50–300 mcg/kg/phút truyền tĩnh mạch",
+      "citationIds": [
+        "aha.acc.2025.iv_esmolol"
+      ],
+      "note": "Hoạt chất mẹ thủy phân nhanh bởi esterase hồng cầu không phụ thuộc thận."
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "50–200 mcg/kg/phút (thận trọng khi truyền kéo dài > 24 giờ)",
+      "citationIds": [
+        "aha.acc.2025.iv_esmolol"
+      ],
+      "note": "Chất chuyển hóa acid (ASL-8123, hoạt tính yếu ~1/1500) thải trừ qua thận bị kéo dài t½ gấp 10 lần ở ESRD — thận trọng theo dõi nhịp chậm/tụt áp và tăng kali máu khi truyền kéo dài."
+    }
+  ],
+  "hepatic": {
+    "status": "ok",
+    "notesVi": "Thủy phân bởi esterase trong bào tương hồng cầu, không phụ thuộc chức năng gan — không cần chỉnh liều ở suy gan.",
+    "citationIds": [
+      "aha.acc.2025.iv_esmolol"
+    ]
+  },
+  "gates": [
+    {
+      "id": "gate_esmolol_hr_60",
+      "parameter": "HR",
+      "operator": "<",
+      "threshold": 60,
+      "unit": "bpm",
+      "action": "hold",
+      "messageVi": "Đã đạt hoặc dưới ngưỡng nhịp tim 60 lần/phút — không nạp thêm Esmolol để tránh vô tâm thu/nhịp chậm nặng.",
+      "citationIds": [
+        "aha.acc.2025.iv_esmolol",
+        "aha.acc.2025.table27_aortic_acs"
+      ]
+    },
+    {
+      "id": "gate_esmolol_sbp_100",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 100,
+      "unit": "mmHg",
+      "action": "contra",
+      "messageVi": "Chống chỉ định khởi truyền Esmolol khi HATT < 100 mmHg.",
+      "citationIds": [
+        "aha.acc.2025.table27_aortic_acs"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Có thể dùng ngắn hạn trong cấp cứu bóc tách động mạch chủ hoặc THA nặng ở thai phụ nhưng bắt buộc giám sát tim thai liên tục (nguy cơ nhịp chậm thai nhi).",
+    "citationIds": [
+      "vsh.htn.2022.pregnancy_table16_drugs_postpartum"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Thời gian bán thải cực ngắn (~9 phút) nên lượng bài tiết có hoạt tính qua sữa mẹ không đáng kể.",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_lactation_thiazide"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "concurrent_beta_blocker",
+      "messageVi": "Đang dùng đồng thời thuốc chẹn beta khác (concurrent beta-blocker therapy — AHA Table 26)",
+      "citationIds": [
+        "aha.acc.2025.iv_esmolol"
+      ]
+    },
+    {
+      "code": "iv_ndhp_ccb",
+      "messageVi": "Phối hợp đường tĩnh mạch gần kề (trong vòng 48 giờ) với verapamil hoặc diltiazem — nguy cơ ngừng xoang/vô tâm thu tử vong",
+      "citationIds": [
+        "aha.acc.2025.table13_losartan_ccb_bb"
+      ]
+    },
+    {
+      "code": "decompensated_heart_failure",
+      "messageVi": "Suy tim mất bù cấp, phù phổi cấp do tim hoặc sốc tim",
+      "citationIds": [
+        "aha.acc.2025.iv_esmolol",
+        "aha.acc.2025.pulmonary_edema_bb_contra"
+      ]
+    },
+    {
+      "code": "av_block_2_3",
+      "messageVi": "Block nhĩ thất độ 2–3 hoặc hội chứng suy nút xoang chưa có máy tạo nhịp",
+      "citationIds": [
+        "aha.acc.2025.table27_aortic_acs",
+        "vsh.htn.2022.bb_contraindications_table11"
+      ]
+    },
+    {
+      "code": "severe_bradycardia",
+      "messageVi": "Nhịp chậm xoang nặng (< 60 lần/phút)",
+      "citationIds": [
+        "aha.acc.2025.iv_esmolol"
+      ]
+    }
+  ],
+  "interactions": [
+    "Verapamil / Diltiazem tĩnh mạch, Digoxin, Clonidine/Moxonidine: cộng gộp ức chế dẫn truyền nhĩ thất và co bóp cơ tim.",
+    "Ở liều cao (> 150–200 mcg/kg/phút) tính chọn lọc beta-1 giảm và có thể ức chế beta-2 gây co thắt phế quản ở bệnh nhân hen/COPD (AHA Table 26) — nhờ t½ 9 phút có thể ngưng truyền ngay nếu xuất hiện ran rít.",
+    "Nguy cơ kích ứng tĩnh mạch và hoại tử da nặng nếu thoát mạch (extravasation): không truyền nồng độ > 10 mg/mL qua tĩnh mạch ngoại biên nhỏ hoặc kim cánh bướm."
+  ],
+  "citationIds": [
+    "aha.acc.2025.iv_esmolol",
+    "aha.acc.2025.table27_aortic_acs",
+    "aha.acc.2025.pulmonary_edema_bb_contra",
+    "vsh.htn.2022.emergency_aortic_dissection"
+  ]
+}

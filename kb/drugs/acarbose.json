@@ -1,0 +1,125 @@
+{
+  "id": "acarbose",
+  "nameVi": "Acarbose",
+  "inn": "Acarbose",
+  "class": "Alpha-glucosidase inhibitor",
+  "vnBrands": [
+    "Glucobay"
+  ],
+  "forms": [
+    "Viên nén 50 mg, 100 mg"
+  ],
+  "start": {
+    "amount": 50,
+    "unit": "mg",
+    "frequency": "3 lần/ngày",
+    "route": "uống",
+    "description": "Nhai cùng miếng cơm đầu tiên hoặc nuốt nguyên viên ngay trước mỗi bữa ăn chính"
+  },
+  "target": {
+    "amount": 100,
+    "unit": "mg",
+    "frequency": "3 lần/ngày",
+    "route": "uống"
+  },
+  "titration": {
+    "step": "50 mg",
+    "intervalDays": 14,
+    "maxDose": "300 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "50 - 100 mg x 3 lần/ngày",
+      "citationIds": [
+        "byt.dm2.2020.acarbose_dosing"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Chống chỉ định",
+      "note": "Chống chỉ định / tránh dùng khi suy thận nặng (eGFR < 30 mL/phút/1.73m² hoặc lọc máu) theo KDIGO 2022 và nhãn thuốc",
+      "citationIds": [
+        "kdigo.dm2.2022.agi_avoid_severe_ckd",
+        "byt.dm2.2020.acarbose_dosing"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_acarbose_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "contra",
+      "messageVi": "Chống chỉ định Acarbose khi suy thận nặng (eGFR < 30 mL/phút/1.73m²).",
+      "citationIds": [
+        "kdigo.dm2.2022.agi_avoid_severe_ckd"
+      ]
+    }
+  ],
+  "interactions": [
+    "Khi hạ đường huyết do phối hợp với SU hoặc insulin, bắt buộc dùng glucose đơn đường (dextrose), không dùng đường ăn (sucrose)"
+  ],
+  "citationIds": [
+    "byt.dm2.2020.acarbose_dosing",
+    "byt.dm2.2020.acarbose_mechanism_monosaccharide",
+    "kdigo.dm2.2022.agi_avoid_severe_ckd",
+    "ada.dm2.2026.pregnancy_noninsulin",
+    "ada.dm2.2026.decompensated_cirrhosis_insulin"
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Tránh sử dụng trong thai kỳ do thiếu dữ liệu an toàn đầy đủ trên người (ADA 2026)",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_noninsulin"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo khi cho con bú",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_noninsulin"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Tránh sử dụng Acarbose trong thai kỳ",
+      "citationIds": [
+        "ada.dm2.2026.pregnancy_noninsulin"
+      ]
+    },
+    {
+      "code": "dialysis",
+      "messageVi": "Chống chỉ định / tránh dùng Acarbose ở bệnh nhân suy thận nặng (eGFR < 30 mL/phút/1.73m² hoặc CrCl < 25 mL/phút) hoặc lọc máu",
+      "citationIds": [
+        "kdigo.dm2.2022.agi_avoid_severe_ckd"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định Acarbose ở bệnh nhân xơ gan hoặc suy gan nặng",
+      "citationIds": [
+        "ada.dm2.2026.decompensated_cirrhosis_insulin"
+      ]
+    },
+    {
+      "code": "cirrhosis",
+      "messageVi": "Chống chỉ định Acarbose ở bệnh nhân xơ gan (mọi phân độ Child-Pugh) và bệnh viêm ruột mạn tính / tắc ruột",
+      "citationIds": [
+        "ada.dm2.2026.decompensated_cirrhosis_insulin",
+        "byt.dm2.2020.acarbose_mechanism_monosaccharide"
+      ]
+    }
+  ],
+  "classes": [
+    "ag_inhibitor",
+    "alpha_glucosidase_inhibitor"
+  ]
+}

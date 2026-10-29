@@ -1,0 +1,196 @@
+{
+  "id": "colchicine",
+  "nameVi": "Colchicine",
+  "inn": "Colchicine",
+  "class": "Chống viêm gút",
+  "classes": [
+    "anti_gout",
+    "colchicine"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Colchicine Roussel",
+    "Colchimax",
+    "Colchicine",
+    "Colchicina"
+  ],
+  "forms": [
+    "Viên nén 0.5 mg",
+    "Viên nén 0.6 mg (có vạch bẻ đôi)",
+    "Viên nén 1 mg"
+  ],
+  "start": {
+    "amount": 1,
+    "unit": "mg",
+    "frequency": "ngày đầu cơn cấp: 1 mg sau đó 0.5 mg sau 1 giờ (EULAR/VN) hoặc 1.2 mg sau đó 0.6 mg sau 1 giờ (FDA)",
+    "route": "uống",
+    "description": "Cơn cấp (tốt nhất trong 12 giờ đầu): 1 mg + 0.5 mg sau 1 giờ (nếu chỉ có viên 1 mg không vạch bẻ tại VN: dùng 1 mg khởi đầu, không bẻ vụn thất thường)"
+  },
+  "target": {
+    "amount": 0.5,
+    "unit": "mg",
+    "frequency": "1–2 lần/ngày",
+    "route": "uống",
+    "description": "0.5–1.0 mg/ngày (VN/EULAR) hoặc 0.6 mg x 1–2 lần/ngày (US FDA) dự phòng cơn bùng phát trong 3–6 tháng"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Cơn cấp: 1 mg + 0.5 mg sau 1h (hoặc 1.2 mg + 0.6 mg sau 1h); Dự phòng: 0.5–1.0 mg/ngày (hoặc 0.6 mg x 1–2 lần/ngày)",
+      "citationIds": [
+        "eular.gout.2016.flare_options",
+        "eular.gout.2016.flare_prophylaxis",
+        "fda.colchicine.flare_treatment"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Giảm liều dự phòng tối đa 0.5 mg/ngày (VN/EULAR) hoặc 0.6 mg/ngày (US); tránh phối hợp cùng CYP3A4/P-gp ức chế và thận trọng/tránh khi đang dùng statin hoặc fibrate; theo dõi tiêu chảy và đau yếu cơ",
+      "citationIds": [
+        "eular.gout.2016.flare_prophylaxis",
+        "byt.gout.2014.colchicine_dosing",
+        "byt.ckd.2024.gout_flare_table22"
+      ]
+    },
+    {
+      "eGFRFrom": 15,
+      "eGFRTo": 30,
+      "initiate": "not_rec",
+      "continue": "caution",
+      "dose": "EULAR 2016 khuyến cáo tránh dùng khi GFR < 30 mL/phút (đặc biệt tại VN với viên 1 mg khó chia liều 0.3 mg, ưu tiên corticoid); theo FDA (viên 0.6 mg): dự phòng khởi đầu 0.3 mg/ngày, cơn cấp không lặp lại trong vòng 14 ngày",
+      "citationIds": [
+        "eular.gout.2016.colchicine_gfr30_avoid",
+        "fda.colchicine.severe_renal_prophylaxis",
+        "fda.colchicine.severe_renal_flare_repeat"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Chống chỉ định theo BYT 2024 CKD và tránh dùng theo EULAR 2016 ở suy thận giai đoạn cuối / lọc máu (ưu tiên corticoid đường uống hoặc tiêm nội khớp)",
+      "citationIds": [
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra",
+        "fda.colchicine.severe_renal_prophylaxis"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_colchicine_cyp3a4_pgp",
+      "parameter": "CYP3A4_Pgp_Strong",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "concomitant",
+      "action": "contra",
+      "messageVi": "Chống chỉ định phối hợp colchicine với thuốc ức chế mạnh CYP3A4 (clarithromycin, ketoconazole, itraconazole, ritonavir...) hoặc ức chế P-gp mạnh (cyclosporine, ranolazine), đặc biệt ở người suy thận hoặc suy gan do nguy cơ ngộ độc tử vong",
+      "citationIds": [
+        "fda.colchicine.renal_and_cyp3a4",
+        "eular.gout.2016.colchicine_nsaid_contra"
+      ]
+    },
+    {
+      "id": "gate_colchicine_hepatic",
+      "parameter": "severe_hepatic_impairment",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "severe",
+      "action": "avoid",
+      "messageVi": "Suy gan nặng làm giảm mạnh độ thanh thải colchicine: chống chỉ định tuyệt đối nếu dùng kèm chất ức chế CYP3A4/P-gp; cần giảm liều dự phòng, không lặp lại đợt cắt cơn cấp trong vòng 14 ngày hoặc chuyển sang phương án khác",
+      "citationIds": [
+        "fda.colchicine.hepatic_impairment_dosing",
+        "fda.colchicine.flare_not_rec_prophylaxis_hepatic",
+        "fda.colchicine.renal_and_cyp3a4"
+      ]
+    },
+    {
+      "id": "gate_colchicine_statin_ckd",
+      "parameter": "Statin_Fibrate_Renal",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "concomitant",
+      "action": "caution",
+      "messageVi": "Phối hợp colchicine với statin hoặc fibrate (đặc biệt khi kèm suy thận) làm tăng cao nguy cơ bệnh cơ thần kinh và tiêu cơ vân cấp tính gây tử vong",
+      "citationIds": [
+        "fda.colchicine.statin_fibrate_myopathy",
+        "eular.gout.2016.flare_prophylaxis"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Phân loại C (FDA Colcrys Mục 8.1); colchicine qua nhau thai nên trong thai kỳ chỉ sử dụng khi lợi ích dự kiến vượt trội nguy cơ cho thai nhi (đối với cơn gút cấp trong thai kỳ, ưu tiên prednisolone ngắn ngày hoặc tiêm nội khớp nếu phù hợp).",
+    "citationIds": [
+      "fda.colchicine.pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Colchicine bài tiết vào sữa mẹ (< 10% liều mẹ hiệu chỉnh theo cân nặng); thận trọng và theo dõi trẻ bú mẹ",
+    "citationIds": [
+      "fda.colchicine.lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "cyp3a4_renal_hepatic",
+      "messageVi": "Chống chỉ định phối hợp với thuốc ức chế P-gp (cyclosporine, ranolazine) hoặc ức chế mạnh CYP3A4 (clarithromycin, ketoconazole, itraconazole, posaconazole, voriconazole, ritonavir, cobicistat), đặc biệt khi có suy thận hoặc suy gan",
+      "citationIds": [
+        "fda.colchicine.renal_and_cyp3a4",
+        "eular.gout.2016.colchicine_nsaid_contra",
+        "eular.gout.2016.cyp3a4_list"
+      ]
+    },
+    {
+      "code": "dialysis",
+      "messageVi": "Chống chỉ định theo BYT 2024 CKD và tránh dùng theo EULAR 2016 ở bệnh nhân suy thận giai đoạn cuối (eGFR < 15 mL/phút) hoặc lọc máu",
+      "citationIds": [
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chất ức chế mạnh CYP3A4 (clarithromycin, ketoconazole, itraconazole, voriconazole, posaconazole, ritonavir, cobicistat): Chống chỉ định do nguy cơ suy tủy, suy đa tạng và tử vong",
+    "Chất ức chế P-glycoprotein mạnh (cyclosporine, ranolazine): Chống chỉ định ở người suy thận/gan; EULAR khuyến cáo tránh phối hợp hoàn toàn (theo FDA trên người gan thận bình thường giảm còn 0.6 mg × 1 liều cơn cấp)",
+    "Chất ức chế vừa CYP3A4 (verapamil, diltiazem, fluconazole, erythromycin) và P-gp (amiodarone, dronedarone): Chống chỉ định/tránh dùng khi suy thận hoặc suy gan; ở người gan thận bình thường phải giảm liều cơn cấp còn 1.2 mg × 1 liều duy nhất (không lặp lại trong 3 ngày) và dự phòng 0.3 mg/ngày (hoặc 0.5 mg cách ngày tại VN)",
+    "Statin (atorvastatin, simvastatin, rosuvastatin, lovastatin, pravastatin, fluvastatin) và Fibrate (fenofibrate, gemfibrozil): Tăng nguy cơ bệnh cơ thần kinh và tiêu cơ vân cấp tính, đặc biệt khi có suy giảm chức năng thận",
+    "Bệnh nhân đang uống sẵn Colchicine dự phòng: Chống chỉ định/không khuyến cáo nạp liều cắt cơn bằng colchicine nếu có suy thận, suy gan hoặc dùng kèm chất ức chế CYP3A4; ở người chức năng gan–thận bình thường không có tương tác thuốc, bắt buộc nghỉ 12 giờ sau phác đồ cắt cơn rồi mới nối lại liều dự phòng (FDA Colcrys Mục 2.1, 2.4–2.6)",
+    "Bệnh nhân đang uống sẵn Colchicine dự phòng: Chống chỉ định/không khuyến cáo nạp liều cắt cơn bằng colchicine nếu có suy thận, suy gan hoặc dùng kèm chất ức chế CYP3A4; ở người chức năng gan–thận bình thường không có tương tác thuốc, bắt buộc nghỉ 12 giờ sau phác đồ cắt cơn rồi mới nối lại liều dự phòng (FDA Colcrys Mục 2.1, 2.4–2.6)"
+  ],
+  "citationIds": [
+    "fda.colchicine.flare_treatment",
+    "fda.colchicine.prophylaxis_dosage",
+    "fda.colchicine.renal_and_cyp3a4",
+    "fda.colchicine.severe_renal_prophylaxis",
+    "fda.colchicine.severe_renal_flare_repeat",
+    "fda.colchicine.statin_fibrate_myopathy",
+    "fda.colchicine.cyp3a4_agents",
+    "fda.colchicine.moderate_cyp3a4",
+    "eular.gout.2016.flare_options",
+    "eular.gout.2016.colchicine_nsaid_contra",
+    "eular.gout.2016.colchicine_gfr30_avoid",
+    "byt.ckd.2024.gout_flare_table22",
+    "fda.colchicine.flare_during_prophylaxis_wait12h",
+    "fda.colchicine.flare_not_rec_prophylaxis_cyp3a4",
+    "fda.colchicine.flare_not_rec_prophylaxis_renal",
+    "fda.colchicine.flare_not_rec_prophylaxis_hepatic",
+    "fda.colchicine.hepatic_impairment_dosing"
+  ],
+  "hepatic": {
+    "status": "avoid",
+    "note": "Suy gan nặng/xơ gan mất bù (Child-Pugh C) làm giảm mạnh thanh thải colchicine: tránh dùng hoặc chuyển phương án khác; chống chỉ định tuyệt đối khi dùng kèm chất ức chế CYP3A4/P-gp ở mọi mức độ suy gan; không nạp liều cắt cơn bằng colchicine nếu đang uống colchicine dự phòng trên nền suy gan (FDA Colcrys Mục 2.6 & 8.7).",
+    "notesVi": "Suy gan nặng/xơ gan mất bù (Child-Pugh C) làm giảm mạnh thanh thải colchicine: tránh dùng hoặc chuyển phương án khác; chống chỉ định tuyệt đối khi dùng kèm chất ức chế CYP3A4/P-gp ở mọi mức độ suy gan; không nạp liều cắt cơn bằng colchicine nếu đang uống colchicine dự phòng trên nền suy gan (FDA Colcrys Mục 2.6 & 8.7).",
+    "citationIds": [
+      "fda.colchicine.hepatic_impairment_dosing",
+      "fda.colchicine.flare_not_rec_prophylaxis_hepatic",
+      "fda.colchicine.renal_and_cyp3a4"
+    ]
+  }
+}

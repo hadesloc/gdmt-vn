@@ -1,0 +1,1070 @@
+[
+  {
+    "id": "dm2.hba1c.target_standard",
+    "value": 7,
+    "unit": "%",
+    "citationIds": [
+      "ada.dm2.2026.hba1c_target_standard",
+      "byt.dm2.2020.hba1c_goals"
+    ],
+    "descriptionVi": "Đích HbA1c chuẩn cho đa số người lớn mắc ĐTĐ típ 2 không mang thai (< 7.0% / < 53 mmol/mol)",
+    "quantity": "hba1c"
+  },
+  {
+    "id": "dm2.glucose.inpatient_target_min",
+    "value": 100,
+    "unit": "mg/dL",
+    "citationIds": [
+      "ada.dm2.2026.inpatient_target"
+    ],
+    "descriptionVi": "Giới hạn dưới của đích glucose máu nội viện cho bệnh nhân không nằm ICU (100 mg/dL / 5.6 mmol/L)",
+    "quantity": "glucose"
+  },
+  {
+    "id": "dm2.glucose.inpatient_target_max",
+    "value": 180,
+    "unit": "mg/dL",
+    "citationIds": [
+      "ada.dm2.2026.inpatient_target",
+      "byt.dm2.2020.inpatient_target_140"
+    ],
+    "descriptionVi": "Giới hạn trên của đích glucose máu nội viện (180 mg/dL / 10.0 mmol/L)",
+    "quantity": "glucose"
+  },
+  {
+    "id": "dm2.hypo.threshold_level1_mgdl",
+    "value": 70,
+    "unit": "mg/dL",
+    "citationIds": [
+      "ada.dm2.2026.hypo_rule_of_15"
+    ],
+    "descriptionVi": "Ngưỡng định nghĩa hạ đường huyết độ 1 (< 70 mg/dL / < 3.9 mmol/L) cần xử trí quy tắc 15 g",
+    "quantity": "glucose"
+  },
+  {
+    "id": "dm2.hypo.threshold_level1_mmol",
+    "value": 3.9,
+    "unit": "mmol/L",
+    "citationIds": [
+      "ada.dm2.2026.hypo_rule_of_15"
+    ],
+    "descriptionVi": "Ngưỡng định nghĩa hạ đường huyết độ 1 (< 3.9 mmol/L)",
+    "quantity": "glucose"
+  },
+  {
+    "id": "dm2.hypo.rule15_minutes",
+    "value": 15,
+    "unit": "min",
+    "citationIds": [
+      "ada.dm2.2026.hypo_rule_15min_recheck"
+    ],
+    "descriptionVi": "Thời gian kiểm tra lại đường huyết sau khi xử trí 15 g carbohydrate (15 phút)",
+    "quantity": "duration_minutes"
+  },
+  {
+    "id": "dm2.early_insulin.glucose_mgdl",
+    "value": 300,
+    "unit": "mg/dL",
+    "citationIds": [
+      "ada.dm2.2026.early_insulin_severe"
+    ],
+    "descriptionVi": "Ngưỡng glucose máu (≥ 300 mg/dL) chỉ định khởi trị insulin sớm",
+    "quantity": "glucose"
+  },
+  {
+    "id": "dm2.early_insulin.glucose_mmol",
+    "value": 16.7,
+    "unit": "mmol/L",
+    "citationIds": [
+      "ada.dm2.2026.early_insulin_severe"
+    ],
+    "descriptionVi": "Ngưỡng glucose máu (≥ 16.7 mmol/L) chỉ định khởi trị insulin sớm",
+    "quantity": "glucose"
+  },
+  {
+    "id": "dm2.early_insulin.hba1c",
+    "value": 10,
+    "unit": "%",
+    "citationIds": [
+      "ada.dm2.2026.early_insulin_severe"
+    ],
+    "descriptionVi": "Ngưỡng HbA1c (> 10% / > 86 mmol/mol) chỉ định khởi trị insulin sớm",
+    "quantity": "hba1c"
+  },
+  {
+    "id": "dm2.overbasal.bedtime_morning_diff_mgdl",
+    "value": 50,
+    "unit": "mg/dL",
+    "citationIds": [
+      "ada.dm2.2026.overbasalization"
+    ],
+    "descriptionVi": "Chênh lệch glucose trước ngủ và sáng sớm (≥ 50 mg/dL) gợi ý overbasalization",
+    "quantity": "glucose"
+  },
+  {
+    "id": "dm2.overbasal.bedtime_morning_diff_mmol",
+    "value": 2.8,
+    "unit": "mmol/L",
+    "citationIds": [
+      "ada.dm2.2026.overbasalization"
+    ],
+    "descriptionVi": "Chênh lệch glucose trước ngủ và sáng sớm (≥ 2.8 mmol/L) gợi ý overbasalization",
+    "quantity": "glucose"
+  },
+  {
+    "id": "dm2.insulin.basal_weight_start_min",
+    "value": 0.1,
+    "unit": "units/kg/day",
+    "citationIds": [
+      "ada.dm2.2026.basal_start_and_titration"
+    ],
+    "descriptionVi": "Liều khởi đầu insulin nền tối thiểu theo cân nặng (0.1 U/kg/ngày)",
+    "quantity": "insulin_u_per_kg"
+  },
+  {
+    "id": "dm2.insulin.basal_weight_start_max",
+    "value": 0.2,
+    "unit": "units/kg/day",
+    "citationIds": [
+      "ada.dm2.2026.basal_start_and_titration"
+    ],
+    "descriptionVi": "Liều khởi đầu insulin nền tối đa theo cân nặng (0.2 U/kg/ngày)",
+    "quantity": "insulin_u_per_kg"
+  },
+  {
+    "id": "dm2.sglt2i.surgery_withhold_days",
+    "value": 3,
+    "unit": "days",
+    "citationIds": [
+      "ada.dm2.2026.sglt2i_withhold_surgery"
+    ],
+    "descriptionVi": "Số ngày tạm ngừng SGLT2i trước phẫu thuật chương trình (ít nhất 3 ngày)",
+    "quantity": "duration_days"
+  },
+  {
+    "id": "dm2.bp.target_sbp",
+    "value": 130,
+    "unit": "mmHg",
+    "citationIds": [
+      "ada.dm2.2026.bp_target"
+    ],
+    "descriptionVi": "Đích huyết áp tâm thu cho bệnh nhân đái tháo đường (< 130 mmHg)",
+    "quantity": "sbp"
+  },
+  {
+    "id": "dm2.bp.target_dbp",
+    "value": 80,
+    "unit": "mmHg",
+    "citationIds": [
+      "ada.dm2.2026.bp_target"
+    ],
+    "descriptionVi": "Đích huyết áp tâm trương cho bệnh nhân đái tháo đường (< 80 mmHg)",
+    "quantity": "dbp"
+  },
+  {
+    "id": "dm2.aspirin.secondary_min_dose",
+    "value": 75,
+    "unit": "mg/day",
+    "citationIds": [
+      "ada.dm2.2026.aspirin_secondary"
+    ],
+    "descriptionVi": "Liều aspirin tối thiểu trong dự phòng thứ phát ASCVD (75 mg/ngày)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.aspirin.secondary_max_dose",
+    "value": 162,
+    "unit": "mg/day",
+    "citationIds": [
+      "ada.dm2.2026.aspirin_secondary"
+    ],
+    "descriptionVi": "Liều aspirin tối đa trong dự phòng thứ phát ASCVD (162 mg/ngày)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.dka.glucose_mgdl",
+    "value": 200,
+    "unit": "mg/dL",
+    "citationIds": [
+      "ada.dm2.2024.dka_criteria"
+    ],
+    "descriptionVi": "Ngưỡng glucose huyết tương (≥ 200 mg/dL) trong tiêu chuẩn chẩn đoán DKA 2024",
+    "quantity": "glucose"
+  },
+  {
+    "id": "dm2.dka.glucose_mmol",
+    "value": 11.1,
+    "unit": "mmol/L",
+    "citationIds": [
+      "ada.dm2.2024.dka_criteria"
+    ],
+    "descriptionVi": "Ngưỡng glucose huyết tương (≥ 11.1 mmol/L) trong tiêu chuẩn chẩn đoán DKA 2024",
+    "quantity": "glucose"
+  },
+  {
+    "id": "dm2.dka.bhb_threshold",
+    "value": 3,
+    "unit": "mmol/L",
+    "citationIds": [
+      "ada.dm2.2024.dka_bhb_threshold"
+    ],
+    "descriptionVi": "Ngưỡng beta-hydroxybutyrate máu (≥ 3.0 mmol/L) chẩn đoán toan ceton",
+    "quantity": "blood_ketones"
+  },
+  {
+    "id": "dm2.dka.dextrose_glucose_threshold_mgdl",
+    "value": 250,
+    "unit": "mg/dL",
+    "citationIds": [
+      "ada.dm2.2024.dka_dextrose_add"
+    ],
+    "descriptionVi": "Ngưỡng glucose máu (< 250 mg/dL) cần thêm dextrose 5-10% trong DKA",
+    "quantity": "glucose"
+  },
+  {
+    "id": "dm2.dka.dextrose_glucose_threshold_mmol",
+    "value": 13.9,
+    "unit": "mmol/L",
+    "citationIds": [
+      "ada.dm2.2024.dka_dextrose_add"
+    ],
+    "descriptionVi": "Ngưỡng glucose máu (< 13.9 mmol/L) cần thêm dextrose 5-10% trong DKA",
+    "quantity": "glucose"
+  },
+  {
+    "id": "dm2.dka.k_hold_insulin",
+    "value": 3.5,
+    "unit": "mmol/L",
+    "citationIds": [
+      "ada.dm2.2024.dka_potassium_hold_insulin"
+    ],
+    "descriptionVi": "Ngưỡng kali máu (< 3.5 mmol/L) bắt buộc trì hoãn insulin và bù kali trước",
+    "quantity": "k"
+  },
+  {
+    "id": "dm2.dka.k_replacement_rate",
+    "value": 10,
+    "unit": "mmol/h",
+    "citationIds": [
+      "ada.dm2.2024.dka_potassium_hold_insulin"
+    ],
+    "descriptionVi": "Tốc độ bù kali tĩnh mạch ban đầu khi K+ < 3.5 mmol/L (10 mmol/h)",
+    "quantity": "infusion_rate_mmol_h"
+  },
+  {
+    "id": "dm2.dka.k_maintenance_threshold",
+    "value": 5,
+    "unit": "mmol/L",
+    "citationIds": [
+      "ada.dm2.2024.dka_potassium_maintenance"
+    ],
+    "descriptionVi": "Ngưỡng kali máu (< 5.0 mmol/L) bắt đầu thêm kali vào dịch duy trì DKA",
+    "quantity": "k"
+  },
+  {
+    "id": "dm2.dka.insulin_infusion_rate",
+    "value": 0.1,
+    "unit": "units/kg/h",
+    "citationIds": [
+      "ada.dm2.2024.dka_insulin_rate"
+    ],
+    "descriptionVi": "Tốc độ truyền tĩnh mạch insulin liều cố định trong DKA (0.1 U/kg/h)",
+    "quantity": "rate"
+  },
+  {
+    "id": "dm2.metformin.egfr_contra",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "citationIds": [
+      "fda.metformin.egfr_bands",
+      "byt.dm2.2020.metformin_renal_contra"
+    ],
+    "descriptionVi": "Ngưỡng eGFR (< 30 mL/min/1.73m2) chống chỉ định tuyệt đối Metformin",
+    "quantity": "egfr"
+  },
+  {
+    "id": "dm2.metformin.egfr_caution",
+    "value": 45,
+    "unit": "mL/min/1.73m2",
+    "citationIds": [
+      "fda.metformin.egfr_bands",
+      "byt.dm2.2020.metformin_renal_contra"
+    ],
+    "descriptionVi": "Ngưỡng eGFR (30-45 mL/min/1.73m2) không khuyến cáo khởi trị mới Metformin",
+    "quantity": "egfr"
+  },
+  {
+    "id": "dm2.sitagliptin.dose_standard",
+    "value": 100,
+    "unit": "mg",
+    "citationIds": [
+      "fda.sitagliptin.renal_bands"
+    ],
+    "descriptionVi": "Liều chuẩn hàng ngày của Sitagliptin (100 mg/ngày)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.sitagliptin.dose_moderate",
+    "value": 50,
+    "unit": "mg",
+    "citationIds": [
+      "fda.sitagliptin.renal_bands"
+    ],
+    "descriptionVi": "Liều Sitagliptin hiệu chỉnh khi eGFR 30 đến < 45 mL/min/1.73m2 (50 mg/ngày)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.sitagliptin.dose_severe",
+    "value": 25,
+    "unit": "mg",
+    "citationIds": [
+      "fda.sitagliptin.renal_bands"
+    ],
+    "descriptionVi": "Liều Sitagliptin hiệu chỉnh khi eGFR < 30 mL/min/1.73m2 (25 mg/ngày)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.linagliptin.dose_standard",
+    "value": 5,
+    "unit": "mg",
+    "citationIds": [
+      "fda.linagliptin.no_renal_adj"
+    ],
+    "descriptionVi": "Liều chuẩn hàng ngày của Linagliptin (5 mg/ngày, không cần chỉnh liều thận)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.saxagliptin.dose_reduced",
+    "value": 2.5,
+    "unit": "mg",
+    "citationIds": [
+      "fda.saxagliptin.renal_dose"
+    ],
+    "descriptionVi": "Liều Saxagliptin hiệu chỉnh khi suy thận vừa-nặng (2.5 mg/ngày)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.glimepiride.start_dose_elderly",
+    "value": 1,
+    "unit": "mg",
+    "citationIds": [
+      "fda.glimepiride.hypo_elderly_renal"
+    ],
+    "descriptionVi": "Liều khởi đầu Glimepiride ở người cao tuổi hoặc suy thận (1 mg/ngày)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.gliclazide.min_dose",
+    "value": 30,
+    "unit": "mg",
+    "citationIds": [
+      "ema.gliclazide.dosing_renal"
+    ],
+    "descriptionVi": "Liều khởi đầu Diamicron MR (30 mg/ngày)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.gliclazide.max_dose",
+    "value": 120,
+    "unit": "mg",
+    "citationIds": [
+      "ema.gliclazide.dosing_renal"
+    ],
+    "descriptionVi": "Liều tối đa hàng ngày của Diamicron MR (120 mg/ngày)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.vildagliptin.egfr_threshold",
+    "value": 50,
+    "unit": "ml/min",
+    "citationIds": [
+      "ema.vildagliptin.renal_dose"
+    ],
+    "descriptionVi": "Ngưỡng CrCl/eGFR (50 mL/min) để giảm liều Vildagliptin xuống 50 mg/ngày",
+    "quantity": "egfr"
+  },
+  {
+    "id": "dm2.semaglutide_rybelsus.start_dose",
+    "value": 3,
+    "unit": "mg",
+    "citationIds": [
+      "fda.semaglutide_rybelsus.dosing"
+    ],
+    "descriptionVi": "Liều khởi đầu Rybelsus đường uống (3 mg/ngày x 30 ngày)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.semaglutide_rybelsus.maintenance_step1",
+    "value": 7,
+    "unit": "mg",
+    "citationIds": [
+      "fda.semaglutide_rybelsus.titration_7_14"
+    ],
+    "descriptionVi": "Liều duy trì bậc 1 của Rybelsus đường uống (7 mg/ngày)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.semaglutide_rybelsus.max_dose",
+    "value": 14,
+    "unit": "mg",
+    "citationIds": [
+      "fda.semaglutide_rybelsus.titration_7_14"
+    ],
+    "descriptionVi": "Liều tối đa của Rybelsus đường uống (14 mg/ngày)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.tirzepatide.start_dose",
+    "value": 2.5,
+    "unit": "mg",
+    "citationIds": [
+      "fda.tirzepatide.dosing"
+    ],
+    "descriptionVi": "Liều khởi đầu Tirzepatide (2.5 mg tiêm dưới da 1 lần/tuần x 4 tuần)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.dulaglutide.start_dose",
+    "value": 0.75,
+    "unit": "mg",
+    "citationIds": [
+      "fda.dulaglutide.dosing"
+    ],
+    "descriptionVi": "Liều khởi đầu Dulaglutide (0.75 mg tiêm dưới da 1 lần/tuần)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.dulaglutide.maintenance_step1",
+    "value": 1.5,
+    "unit": "mg",
+    "citationIds": [
+      "fda.dulaglutide.dosing"
+    ],
+    "descriptionVi": "Liều chuẩn độ bậc 1 của Dulaglutide (1.5 mg tiêm dưới da 1 lần/tuần)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.liraglutide.start_dose",
+    "value": 0.6,
+    "unit": "mg",
+    "citationIds": [
+      "fda.liraglutide.dosing"
+    ],
+    "descriptionVi": "Liều khởi đầu Liraglutide (0.6 mg tiêm dưới da 1 lần/ngày x 1 tuần)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.liraglutide.maintenance_step1",
+    "value": 1.2,
+    "unit": "mg",
+    "citationIds": [
+      "fda.liraglutide.dosing"
+    ],
+    "descriptionVi": "Liều duy trì chuẩn của Liraglutide (1.2 mg tiêm dưới da 1 lần/ngày)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.liraglutide.max_dose",
+    "value": 1.8,
+    "unit": "mg",
+    "citationIds": [
+      "fda.liraglutide.dosing"
+    ],
+    "descriptionVi": "Liều tối đa của Liraglutide trong điều trị ĐTĐ (1.8 mg tiêm dưới da 1 lần/ngày)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.insulin_glargine.fixed_start",
+    "value": 10,
+    "unit": "units",
+    "citationIds": [
+      "fda.insulin_glargine.dosing"
+    ],
+    "descriptionVi": "Liều khởi đầu cố định thông thường của Insulin Glargine (10 đơn vị/ngày)",
+    "quantity": "dose_units"
+  },
+  {
+    "id": "dm2.hba1c.target_older_very_complex",
+    "value": 8.5,
+    "unit": "%",
+    "citationIds": [
+      "byt.dm2.2020.older_adults_table5"
+    ],
+    "descriptionVi": "Đích HbA1c ở người cao tuổi sức khỏe rất kém hoặc có nhiều bệnh phức tạp (< 8.5% theo BYT 5481 Bảng 5)",
+    "quantity": "hba1c"
+  },
+  {
+    "id": "dm2.hba1c.target_older_complex",
+    "value": 8,
+    "unit": "%",
+    "citationIds": [
+      "byt.dm2.2020.older_adults_table5",
+      "ada.dm2.2026.older_complex_goal"
+    ],
+    "descriptionVi": "Đích HbA1c ở người cao tuổi có nhiều bệnh đồng mắc hoặc suy giảm nhẹ chức năng/nhận thức (< 8.0%)",
+    "quantity": "hba1c"
+  },
+  {
+    "id": "dm2.hba1c.target_older_healthy",
+    "value": 7.5,
+    "unit": "%",
+    "citationIds": [
+      "byt.dm2.2020.older_adults_table5",
+      "ada.dm2.2026.older_healthy_goal"
+    ],
+    "descriptionVi": "Đích HbA1c ở người cao tuổi khỏe mạnh, ít bệnh đồng mắc (< 7.5%)",
+    "quantity": "hba1c"
+  },
+  {
+    "id": "dm2.hba1c.target_young",
+    "value": 6.5,
+    "unit": "%",
+    "citationIds": [
+      "byt.dm2.2020.hba1c_young"
+    ],
+    "descriptionVi": "Đích HbA1c ở người trẻ tuổi, mới chẩn đoán, nguy cơ hạ đường huyết thấp (< 6.5%)",
+    "quantity": "hba1c"
+  },
+  {
+    "id": "dm2.ckd.egfr_threshold",
+    "value": 60,
+    "unit": "mL/min/1.73m2",
+    "citationIds": [
+      "ada.dm2.2026.ckd_egfr_60"
+    ],
+    "descriptionVi": "Ngưỡng định nghĩa suy giảm chức năng thận (eGFR < 60 mL/min/1.73m2) trong bệnh thận mạn",
+    "quantity": "egfr"
+  },
+  {
+    "id": "dm2.elderly.age_threshold",
+    "value": 65,
+    "unit": "tuổi",
+    "citationIds": [
+      "ada.dm2.2026.elderly_age_65"
+    ],
+    "descriptionVi": "Ngưỡng tuổi định nghĩa người cao tuổi (≥ 65 tuổi) cần cá thể hóa mục tiêu và đánh giá nguy cơ",
+    "quantity": "age"
+  },
+  {
+    "id": "dm2.elderly.high_risk_age",
+    "value": 75,
+    "unit": "tuổi",
+    "citationIds": [
+      "fda.empagliflozin.geriatric_75",
+      "ada.dm2.2026.older_deintensification_rec13_14a"
+    ],
+    "descriptionVi": "Ngưỡng người cao tuổi rất cao (≥ 75 tuổi) tăng nguy cơ mất dịch, hạ đường huyết và biến cố thuốc cần ưu tiên đơn giản hóa/chuyển sang nhóm an toàn",
+    "quantity": "age"
+  },
+  {
+    "id": "dm2.glucose.inpatient_target_min_mmol",
+    "value": 5.6,
+    "unit": "mmol/L",
+    "citationIds": [
+      "ada.dm2.2026.inpatient_target"
+    ],
+    "descriptionVi": "Giới hạn dưới của đích glucose máu nội viện (5.6 mmol/L / 100 mg/dL)",
+    "quantity": "glucose"
+  },
+  {
+    "id": "dm2.glucose.inpatient_target_max_mmol",
+    "value": 10,
+    "unit": "mmol/L",
+    "citationIds": [
+      "ada.dm2.2026.inpatient_target"
+    ],
+    "descriptionVi": "Giới hạn trên của đích glucose máu nội viện (10.0 mmol/L / 180 mg/dL)",
+    "quantity": "glucose"
+  },
+  {
+    "id": "dm2.glucose.icu_target_min_mmol",
+    "value": 7.8,
+    "unit": "mmol/L",
+    "citationIds": [
+      "ada.dm2.2026.icu_target"
+    ],
+    "descriptionVi": "Giới hạn dưới của đích glucose máu ICU (7.8 mmol/L / 140 mg/dL)",
+    "quantity": "glucose"
+  },
+  {
+    "id": "dm2.glucose.icu_target_max_mmol",
+    "value": 10,
+    "unit": "mmol/L",
+    "citationIds": [
+      "ada.dm2.2026.icu_target",
+      "ada.dm2.2026.inpatient_target"
+    ],
+    "descriptionVi": "Giới hạn trên của đích glucose máu ICU (10.0 mmol/L / 180 mg/dL)",
+    "quantity": "glucose"
+  },
+  {
+    "id": "dm2.hypo.threshold_level2_mmol",
+    "value": 3,
+    "unit": "mmol/L",
+    "citationIds": [
+      "ada.dm2.2026.hypo_level2_3mmol"
+    ],
+    "descriptionVi": "Ngưỡng hạ đường huyết mức độ 2 (< 3.0 mmol/L / < 54 mg/dL)",
+    "quantity": "glucose"
+  },
+  {
+    "id": "dm2.dka.ph_threshold",
+    "value": 7.3,
+    "unit": "pH",
+    "citationIds": [
+      "ada.dm2.2024.dka_resolution_criteria"
+    ],
+    "descriptionVi": "Ngưỡng pH máu chẩn đoán và đánh giá giải quyết DKA (7.30)",
+    "quantity": "venous_ph"
+  },
+  {
+    "id": "dm2.dka.bicarb_threshold",
+    "value": 18,
+    "unit": "mmol/L",
+    "citationIds": [
+      "ada.dm2.2024.dka_resolution_criteria"
+    ],
+    "descriptionVi": "Ngưỡng Bicarbonate huyết thanh (18 mmol/L) chẩn đoán toan chuyển hóa DKA",
+    "quantity": "serum_bicarb"
+  },
+  {
+    "id": "dm2.hhs.osmolality_threshold",
+    "value": 320,
+    "unit": "mOsm/kg",
+    "citationIds": [
+      "ada.dm2.2024.hhs_osmolality_320"
+    ],
+    "descriptionVi": "Ngưỡng áp lực thẩm thấu huyết thanh (> 320 mOsm/kg) chẩn đoán HHS",
+    "quantity": "effective_osmolality"
+  },
+  {
+    "id": "dm2.metformin.dose_start",
+    "value": 500,
+    "unit": "mg",
+    "citationIds": [
+      "byt.dm2.2020.metformin_formulations_p68"
+    ],
+    "descriptionVi": "Liều khởi đầu tiêu chuẩn của Metformin (500 mg)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.metformin.dose_max",
+    "value": 2000,
+    "unit": "mg",
+    "citationIds": [
+      "byt.dm2.2020.metformin_formulations_p68"
+    ],
+    "descriptionVi": "Liều tối đa hàng ngày của Metformin (2000 mg/ngày)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.metformin.dose_reduced_max",
+    "value": 1000,
+    "unit": "mg",
+    "citationIds": [
+      "kdigo.dm2.2022.metformin_halve_30_44",
+      "kdigo.dm2.2022.metformin_max_2000_1000"
+    ],
+    "descriptionVi": "Liều tối đa hàng ngày của Metformin khi suy thận vừa eGFR 30–44 (1000 mg/ngày)",
+    "quantity": "dose_mg"
+  },
+  {
+    "id": "dm2.hhs.glucose_threshold",
+    "value": 33.3,
+    "unit": "mmol/L",
+    "citationIds": [
+      "ada.dm2.2024.hhs_criteria"
+    ],
+    "descriptionVi": "Ngưỡng glucose huyết tương (≥ 33.3 mmol/L / ≥ 600 mg/dL) chẩn đoán HHS",
+    "quantity": "glucose"
+  },
+  {
+    "id": "dm2.hhs.effective_osmolality_threshold",
+    "value": 300,
+    "unit": "mOsm/kg",
+    "citationIds": [
+      "ada.dm2.2024.hhs_effective_osmolality_300"
+    ],
+    "descriptionVi": "Ngưỡng áp lực thẩm thấu máu hiệu dụng (> 300 mOsm/kg) chẩn đoán và giải quyết HHS theo Đồng thuận Quốc tế 2024",
+    "quantity": "effective_osmolality"
+  },
+  {
+    "id": "dm2.glucose.icu_target_min",
+    "value": 140,
+    "unit": "mg/dL",
+    "citationIds": [
+      "ada.dm2.2026.icu_target",
+      "byt.dm2.2020.inpatient_target_140"
+    ],
+    "descriptionVi": "Đích đường huyết nội viện tối thiểu tại khoa ICU (140 mg/dL / 7.8 mmol/L)",
+    "quantity": "glucose"
+  },
+  {
+    "id": "dm2.obesity.bmi_asian_threshold",
+    "value": 25,
+    "unit": "kg/m2",
+    "citationIds": [
+      "byt.dm2.2020.obesity_asian_bmi25"
+    ],
+    "descriptionVi": "Ngưỡng BMI phân loại thừa cân/béo phì chuẩn Châu Á (≥ 25 kg/m² theo BYT 5481)",
+    "quantity": "bmi"
+  },
+  {
+    "id": "dm2.glp1.egfr_min",
+    "value": 15,
+    "unit": "mL/min/1.73m2",
+    "citationIds": [
+      "kdigo.dm2.2022.semaglutide_sc_dosing",
+      "ada.dm2.2026.glp1_ckd_no_dose_adjust"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối thiểu có dữ liệu thực hành KDIGO 2022 để khởi trị đồng vận GLP-1 RA (> 15 mL/phút/1.73m²; ADA 2026 & nhãn FDA không cần chỉnh liều thận)",
+    "quantity": "egfr"
+  },
+  {
+    "id": "dm2.hypo.rule15_grams",
+    "value": 15,
+    "unit": "g",
+    "citationIds": [
+      "ada.dm2.2026.hypo_15g_glucose"
+    ],
+    "descriptionVi": "Lượng glucose/carbohydrate tác dụng nhanh dùng khởi đầu trong Quy tắc 15–15 (15 gam)",
+    "quantity": "carbohydrate_g"
+  },
+  {
+    "id": "dm2.hhs.insulin_infusion_rate",
+    "value": 0.05,
+    "unit": "units/kg/h",
+    "citationIds": [
+      "ada.dm2.2024.hhs_insulin_rate_005"
+    ],
+    "descriptionVi": "Tốc độ truyền tĩnh mạch insulin liều cố định khởi đầu trong HHS đơn thuần không kèm toan chuyển hóa (0.05 U/kg/h)",
+    "quantity": "rate"
+  },
+  {
+    "id": "dm2.insulin.t2d_typical_tdd_per_kg",
+    "value": 1,
+    "unit": "units/kg/day",
+    "citationIds": [
+      "ada.dm2.2026.t2d_tdd_1ukg"
+    ],
+    "descriptionVi": "Tổng nhu cầu insulin hàng ngày điển hình ở người bệnh ĐTĐ típ 2 đề kháng insulin (~1.0 U/kg/ngày)",
+    "quantity": "insulin_u_per_kg"
+  },
+  {
+    "id": "dm2.insulin.basal_share_of_tdd_pct",
+    "value": 50,
+    "unit": "%",
+    "citationIds": [
+      "ada.dm2.2026.basal_50pct_tdd",
+      "ada.dm2.2026.tdd_half_basal_half_nutritional"
+    ],
+    "descriptionVi": "Tỷ trọng chuẩn của insulin nền trong tổng liều insulin hàng ngày (50% TDD, tương đương ngưỡng cảnh báo > 0.5 U/kg/ngày)",
+    "quantity": "percentage"
+  },
+  {
+    "id": "dm2.insulin.hypo_dose_reduction_pct",
+    "value": 20,
+    "unit": "%",
+    "citationIds": [
+      "byt.dm2.2020.insulin_hypo_reduce_10_20"
+    ],
+    "descriptionVi": "Tỷ lệ giảm liều insulin khuyến cáo khi xảy ra hạ đường huyết hoặc điều trị quá mức (10–20%)",
+    "quantity": "percentage"
+  },
+  {
+    "id": "dm2.vildagliptin.alt_uln_max",
+    "value": 3,
+    "unit": "xULN",
+    "citationIds": [
+      "ema.vildagliptin.hepatic_contra"
+    ],
+    "descriptionVi": "Ngưỡng men gan ALT/AST (> 3 lần giới hạn trên bình thường) chống chỉ định dùng Vildagliptin",
+    "quantity": "alt_uln"
+  },
+  {
+    "id": "dm2.su_agi.egfr_contra",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "citationIds": [
+      "kdigo.dm2.2022.agi_avoid_severe_ckd",
+      "kdigo.dm2.2022.su_avoid_low_egfr",
+      "ema.gliclazide.severe_renal_contra"
+    ],
+    "descriptionVi": "Ngưỡng suy thận nặng (eGFR < 30 mL/phút/1.73m²) chống chỉ định/tránh dùng Sulfonylurea tác dụng dài và Acarbose",
+    "quantity": "egfr"
+  },
+  {
+    "id": "dm2.dka.resolution_ketone_mmol",
+    "value": 0.6,
+    "unit": "mmol/L",
+    "citationIds": [
+      "ada.dm2.2024.dka_resolution_criteria"
+    ],
+    "descriptionVi": "Ngưỡng beta-hydroxybutyrate máu (< 0.6 mmol/L) xác nhận giải quyết DKA",
+    "quantity": "blood_ketones"
+  },
+  {
+    "id": "dm2.hhs.resolution_urine_output_ml_kg_h",
+    "value": 0.5,
+    "unit": "mL/kg/h",
+    "citationIds": [
+      "ada.dm2.2024.hhs_resolution"
+    ],
+    "descriptionVi": "Ngưỡng lượng nước tiểu (> 0.5 mL/kg/giờ) trong tiêu chuẩn hồi phục HHS",
+    "quantity": "urine_output"
+  },
+  {
+    "id": "dm2.dka.subq_overlap_min_hours",
+    "value": 1,
+    "unit": "h",
+    "citationIds": [
+      "ada.dm2.2024.dka_subq_transition"
+    ],
+    "descriptionVi": "Thời gian gối đầu tối thiểu tiêm insulin dưới da trước khi ngừng truyền insulin tĩnh mạch (1 giờ)",
+    "quantity": "duration_hours"
+  },
+  {
+    "id": "dm2.dka.subq_overlap_max_hours",
+    "value": 2,
+    "unit": "h",
+    "citationIds": [
+      "ada.dm2.2024.dka_subq_transition"
+    ],
+    "descriptionVi": "Thời gian gối đầu tối đa tiêm insulin dưới da trước khi ngừng truyền insulin tĩnh mạch (2 giờ)",
+    "quantity": "duration_hours"
+  },
+  {
+    "id": "dm2.saxagliptin.cyp3a4_max_dose",
+    "value": 2.5,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.saxagliptin.cyp3a4_2_5mg"
+    ],
+    "descriptionVi": "Liều tối đa Saxagliptin khi dùng kèm thuốc ức chế mạnh CYP3A4/5 hoặc suy thận vừa-nặng (2.5 mg/ngày)"
+  },
+  {
+    "id": "dm2.gliclazide.renal_moderate_max",
+    "value": 60,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "ema.gliclazide.titration_60_120",
+      "ema.gliclazide.dosing_renal"
+    ],
+    "descriptionVi": "Liều tối đa thận trọng của Gliclazide MR khi suy thận mức độ vừa eGFR 30–44 mL/phút (60 mg/ngày)"
+  },
+  {
+    "id": "dm2.vildagliptin.renal_reduced_dose",
+    "value": 50,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "ema.vildagliptin.renal_50mg_od"
+    ],
+    "descriptionVi": "Liều Vildagliptin hiệu chỉnh khi eGFR < 50 mL/phút (50 mg uống 1 lần/ngày)"
+  },
+  {
+    "id": "dm2.sitagliptin.egfr_30_44_dose",
+    "value": 50,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.sitagliptin.renal_bands"
+    ],
+    "descriptionVi": "Liều Sitagliptin hiệu chỉnh khi eGFR 30 đến < 45 mL/phút/1.73m² (50 mg uống 1 lần/ngày)"
+  },
+  {
+    "id": "dm2.sitagliptin.egfr_lt30_dose",
+    "value": 25,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.sitagliptin.renal_bands"
+    ],
+    "descriptionVi": "Liều Sitagliptin hiệu chỉnh khi eGFR < 30 mL/phút/1.73m² hoặc lọc máu (25 mg uống 1 lần/ngày)"
+  },
+  {
+    "id": "dm2.vildagliptin.egfr_reduce_cutoff",
+    "value": 50,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "ema.vildagliptin.renal_50mg_od"
+    ],
+    "descriptionVi": "Ngưỡng chức năng thận (eGFR/CrCl < 50 mL/phút) cần giảm liều Vildagliptin xuống 50 mg 1 lần/ngày"
+  },
+  {
+    "id": "dm2.perioperative.basal_reduce_pct",
+    "value": 25,
+    "unit": "%",
+    "quantity": "percentage",
+    "citationIds": [
+      "ada.dm2.2026.perioperative_basal_reduce_25_quote"
+    ],
+    "descriptionVi": "Tỷ lệ giảm liều insulin nền vào buổi tối trước ngày phẫu thuật chương trình (25%)"
+  },
+  {
+    "id": "dm2.hba1c.combo_delta",
+    "value": 1.5,
+    "unit": "%",
+    "quantity": "hba1c",
+    "citationIds": [
+      "ada.dm2.2026.combo_hba1c_1_5_above"
+    ],
+    "descriptionVi": "Mức chênh HbA1c vượt trên mục tiêu cá thể hóa (≥ 1.5%) chỉ định phối hợp kép ngay từ đầu"
+  },
+  {
+    "id": "dm2.finerenone.egfr_min",
+    "value": 25,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "ada.dm2.2026.finerenone_rec_11_8"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối thiểu (≥ 25 mL/phút/1.73m²) để cân nhắc khởi trị Finerenone ở ĐTĐ típ 2 kèm CKD có albumin niệu"
+  },
+  {
+    "id": "dm2.statin.primary_age_min",
+    "value": 40,
+    "unit": "tuổi",
+    "quantity": "age",
+    "citationIds": [
+      "ada.dm2.2026.statin_primary_40_75"
+    ],
+    "descriptionVi": "Ngưỡng tuổi tối thiểu (≥ 40 tuổi) khuyến cáo thường quy Statin dự phòng tiên phát ở bệnh nhân ĐTĐ"
+  },
+  {
+    "id": "dm2.contrast.metformin_egfr_cutoff",
+    "value": 60,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "fda.dm2.metformin.contrast_60_48h"
+    ],
+    "descriptionVi": "Ngưỡng eGFR (≤ 60 mL/phút/1.73m²) bắt buộc tạm ngừng Metformin trước/tại thời điểm chụp cản quang iod tĩnh mạch và kiểm tra lại eGFR sau 48 giờ"
+  },
+  {
+    "id": "dm2.contrast.recheck_hours",
+    "value": 48,
+    "unit": "h",
+    "quantity": "duration_hours",
+    "citationIds": [
+      "fda.dm2.metformin.contrast_60_48h"
+    ],
+    "descriptionVi": "Thời gian đánh giá lại eGFR sau chụp thuốc cản quang iod trước khi dùng lại Metformin (48 giờ)"
+  },
+  {
+    "id": "dm2.ertugliflozin.surgery_withhold_days",
+    "value": 4,
+    "unit": "days",
+    "quantity": "duration_days",
+    "citationIds": [
+      "ada.dm2.2026.sglt2i_withhold_surgery"
+    ],
+    "descriptionVi": "Số ngày bắt buộc tạm ngừng Ertugliflozin (Steglatro / Segluromet) trước phẫu thuật chương trình (ít nhất 4 ngày)"
+  },
+  {
+    "id": "dm2.pioglitazone.alt_uln_max",
+    "value": 2.5,
+    "unit": "xULN",
+    "quantity": "alt_uln",
+    "citationIds": [
+      "fda.pioglitazone.hepatic_alt_2_5",
+      "byt.dm2.2020.pioglitazone_contra_alt_2_5"
+    ],
+    "descriptionVi": "Ngưỡng men gan ALT (> 2.5 lần giới hạn trên bình thường) chống chỉ định/ngừng Pioglitazone"
+  },
+  {
+    "id": "dm2.glucose.fpg_target_min_mmol",
+    "value": 4.4,
+    "unit": "mmol/L",
+    "quantity": "glucose",
+    "citationIds": [
+      "ada.dm2.2026.fpg_target_44_72",
+      "byt.dm2.2020.hba1c_goals"
+    ],
+    "descriptionVi": "Giới hạn dưới của đích glucose lúc đói / trước ăn ngoại trú (4.4 mmol/L / 80 mg/dL)"
+  },
+  {
+    "id": "dm2.glucose.fpg_target_max_mmol",
+    "value": 7.2,
+    "unit": "mmol/L",
+    "quantity": "glucose",
+    "citationIds": [
+      "ada.dm2.2026.fpg_target_44_72",
+      "byt.dm2.2020.hba1c_goals"
+    ],
+    "descriptionVi": "Giới hạn trên của đích glucose lúc đói / trước ăn ngoại trú (7.2 mmol/L / 130 mg/dL)"
+  },
+  {
+    "id": "dm2.dka.resolving_insulin_rate",
+    "value": 0.05,
+    "unit": "units/kg/h",
+    "quantity": "rate",
+    "citationIds": [
+      "ada.dm2.2024.dka_resolving_insulin_005"
+    ],
+    "descriptionVi": "Tốc độ truyền tĩnh mạch insulin giảm bậc (0.05 U/kg/h) kèm Dextrose 5–10% khi đường huyết giảm < 13.9 mmol/L trong DKA đang hồi phục"
+  },
+  {
+    "id": "dm2.inpatient.home_insulin_conversion_pct",
+    "value": 80,
+    "unit": "%",
+    "quantity": "percentage",
+    "citationIds": [
+      "ada.dm2.2026.inpatient_home_insulin_80pct"
+    ],
+    "descriptionVi": "Tỷ lệ quy đổi tổng liều insulin nội viện ban đầu từ tổng liều insulin ngoại trú tại nhà (80%)"
+  },
+  {
+    "id": "dm2.tirzepatide.contraception_barrier_weeks",
+    "value": 4,
+    "unit": "weeks",
+    "quantity": "interval_weeks",
+    "citationIds": [
+      "fda.tirzepatide.oral_contraceptive_4wk"
+    ],
+    "descriptionVi": "Số tuần cần dùng thêm biện pháp tránh thai rào chắn/không đường uống sau khởi trị và sau mỗi lần tăng liều Tirzepatide (4 tuần)"
+  },
+  {
+    "id": "dm2.hypo.glucagon_im_mg",
+    "value": 1,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "ada.dm2.2026.hypo_glucagon_doses"
+    ],
+    "descriptionVi": "Liều Glucagon tiêm bắp/tiêm dưới da cấp cứu hạ đường huyết nặng ở người lớn (1 mg)"
+  },
+  {
+    "id": "dm2.hypo.glucagon_nasal_mg",
+    "value": 3,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "ada.dm2.2026.hypo_glucagon_doses"
+    ],
+    "descriptionVi": "Liều Glucagon bột xịt mũi cấp cứu hạ đường huyết nặng (3 mg)"
+  },
+  {
+    "id": "dm2.statin.time_to_benefit_years",
+    "value": 2.5,
+    "unit": "years",
+    "quantity": "duration_years",
+    "citationIds": [
+      "ada.dm2.2026.statin_time_to_benefit_2_5y"
+    ],
+    "descriptionVi": "Thời gian tối thiểu cần thiết để đạt lợi ích lâm sàng dự phòng tiên phát của Statin ở người cao tuổi (2.5 năm)"
+  },
+  {
+    "id": "dm2.metformin.egfr_dose_reduction",
+    "value": 45,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "kdigo.dm2.2022.metformin_adjust_below_45"
+    ],
+    "descriptionVi": "Ngưỡng eGFR dưới45 (và >=30) cần giảm liều metformin theo Figure27 KDIGO2022."
+  }
+]

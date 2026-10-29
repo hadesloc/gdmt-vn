@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.doac_strong_cyp3a4_pgp_inhibitors",
+  "contentHash": "d7eb41677df7880f47ce02a34344fe34ed0c881f8964e844b84ca35e28ddedfa",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.doac_strong_cyp3a4_pgp_inhibitors",
+      "contentHash": "679f7ac8a6a0d5b4",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.doac_strong_cyp3a4_pgp_inhibitors."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

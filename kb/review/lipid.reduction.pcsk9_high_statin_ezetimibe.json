@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.reduction.pcsk9_high_statin_ezetimibe",
+  "contentHash": "c89c6efb404d57d6334608ac5872fee216e069b3d22aa0d854fa8cfac81cd168",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.reduction.pcsk9_high_statin_ezetimibe",
+      "contentHash": "bf1b7d6690e6e961",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.reduction.pcsk9_high_statin_ezetimibe."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

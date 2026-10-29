@@ -1,0 +1,197 @@
+{
+  "id": "indomethacin",
+  "nameVi": "Indomethacin",
+  "inn": "Indomethacin",
+  "class": "NSAID",
+  "classes": [
+    "anti_gout",
+    "nsaid"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Indocin",
+    "Indocid",
+    "Indomethacin"
+  ],
+  "forms": [
+    "Viên nang 25 mg",
+    "Viên nang 50 mg"
+  ],
+  "start": {
+    "amount": 50,
+    "unit": "mg",
+    "frequency": "3 lần/ngày",
+    "route": "uống",
+    "description": "50 mg x 3 lần/ngày sau ăn no trong đợt cấp (tối đa 150–200 mg/ngày; không ưu tiên hơn các NSAID khác do tỷ lệ độc tính thần kinh trung ương và tiêu hóa cao, tránh dùng ở người ≥ 65 tuổi theo Beers Criteria)"
+  },
+  "target": {
+    "amount": 50,
+    "unit": "mg",
+    "frequency": "3 lần/ngày",
+    "route": "uống",
+    "description": "50 mg x 3 lần/ngày trong 3–5 ngày rồi giảm dần và ngừng sớm"
+  },
+  "titration": {
+    "step": 25,
+    "intervalDays": 1,
+    "maxDose": "150–200 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "50 mg x 3 lần/ngày sau ăn trong 3–5 ngày (ưu tiên naproxen hơn ở người cao tuổi do indomethacin gây lú lẫn, chóng mặt, đau đầu và độc tính tiêu hóa–thận cao nhất nhóm NSAID)",
+      "citationIds": [
+        "byt.gout.2014.nsaid_agents",
+        "acr.gout.2020.flare_first_line"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "not_rec",
+      "continue": "caution",
+      "dose": "Tránh dùng ở CKD giai đoạn ≥ 3 do nguy cơ co mạch thận và suy thận cấp cao hơn các NSAID khác; ưu tiên corticoid",
+      "citationIds": [
+        "kdigo.gout.2024.acute_flare_ckd",
+        "byt.ckd.2024.gout_flare_table22"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Chống chỉ định khi eGFR < 30 mL/phút hoặc lọc máu",
+      "citationIds": [
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_indomethacin_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "contra",
+      "messageVi": "Chống chỉ định khi eGFR < 30 mL/phút/1.73m2",
+      "citationIds": [
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra"
+      ]
+    },
+    {
+      "id": "gate_indomethacin_elderly_beers",
+      "parameter": "age",
+      "operator": ">=",
+      "threshold": 65,
+      "unit": "years",
+      "action": "avoid",
+      "messageVi": "Tránh dùng indomethacin ở người cao tuổi (≥ 65 tuổi, Beers Criteria) do nguy cơ độc tính thần kinh trung ương (đau đầu dữ dội, lú lẫn, ảo giác, té ngã) và xuất huyết tiêu hóa cao nhất nhóm NSAID",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198",
+        "fda.celecoxib.boxed_contra_cv_gi"
+      ]
+    },
+    {
+      "id": "gate_indomethacin_hepatic",
+      "parameter": "severe_hepatic_impairment",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "moderate_severe",
+      "action": "contra",
+      "messageVi": "Chống chỉ định ở bệnh nhân suy tế bào gan mức độ vừa đến nặng",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong thai kỳ (đặc biệt từ tuần 20–30 trở đi do co thắt đóng sớm ống động mạch thai nhi mạnh và suy thận thai nhi gây thiểu ối)",
+    "citationIds": [
+      "byt.gout.2014.nsaid_contra_p198",
+      "fda.celecoxib.fetal_toxicity_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "contra",
+    "notesVi": "Bài tiết qua sữa mẹ (đã có báo cáo co giật ở trẻ bú mẹ) và chống chỉ định theo BYT 361/2014 khi đang cho con bú",
+    "citationIds": [
+      "byt.gout.2014.nsaid_contra_p198"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định trong thai kỳ (đóng sớm ống động mạch thai nhi và thiểu ối)",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198",
+        "fda.celecoxib.fetal_toxicity_pregnancy"
+      ]
+    },
+    {
+      "code": "severe_ckd",
+      "messageVi": "Chống chỉ định khi eGFR < 30 mL/phút",
+      "citationIds": [
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra"
+      ]
+    },
+    {
+      "code": "peptic_ulcer",
+      "messageVi": "Chống chỉ định khi có loét dạ dày tá tràng tiến triển hoặc tiền sử xuất huyết tiêu hóa",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198",
+        "fda.celecoxib.boxed_contra_cv_gi"
+      ]
+    },
+    {
+      "code": "heart_failure",
+      "messageVi": "Chống chỉ định ở bệnh nhân suy tim, CABG hoặc biến cố tim mạch cấp",
+      "citationIds": [
+        "byt.gout.2014.nsaid_cv_aspirin_p199",
+        "fda.celecoxib.boxed_contra_cv_gi"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định khi suy tế bào gan mức độ vừa đến nặng",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198"
+      ]
+    },
+    {
+      "code": "anticoagulant_use",
+      "messageVi": "Chống chỉ định/tránh phối hợp với thuốc chống đông",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198",
+        "fda.celecoxib.boxed_contra_cv_gi"
+      ]
+    }
+  ],
+  "interactions": [
+    "Probenecid: Làm giảm thải trừ qua thận và mật, tăng gấp đôi nồng độ indomethacin huyết tương (tăng độc tính thần kinh–tiêu hóa)",
+    "Triamterene: Phối hợp gây suy thận cấp không hồi phục (chống chỉ định phối hợp)",
+    "Lithium / Digoxin / Methotrexate: Tăng mạnh nồng độ các thuốc có khoảng điều trị hẹp này",
+    "Thuốc chống đông, Corticosteroid, Lợi tiểu + ACEi/ARB ('Triple Whammy'): Tăng xuất huyết tiêu hóa và suy thận cấp"
+  ],
+  "citationIds": [
+    "byt.gout.2014.nsaid_agents",
+    "byt.gout.2014.nsaid_contra_p198",
+    "byt.gout.2014.nsaid_cv_aspirin_p199",
+    "byt.ckd.2024.gout_flare_table22",
+    "acr.gout.2020.flare_first_line"
+  ],
+  "hepatic": {
+    "status": "contra",
+    "note": "Chống chỉ định NSAID đường toàn thân ở bệnh nhân suy tế bào gan mức độ vừa đến nặng (Child-Pugh B/C hoặc xơ gan mất bù) do nguy cơ xuất huyết tiêu hóa, hội chứng gan – thận và suy gan cấp (BYT 361/2014 tr. 198).",
+    "notesVi": "Chống chỉ định NSAID đường toàn thân ở bệnh nhân suy tế bào gan mức độ vừa đến nặng (Child-Pugh B/C hoặc xơ gan mất bù) do nguy cơ xuất huyết tiêu hóa, hội chứng gan – thận và suy gan cấp (BYT 361/2014 tr. 198).",
+    "citationIds": [
+      "byt.gout.2014.nsaid_contra_p198"
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "gout_24_febuxostat_severe_ckd_cap_40mg",
+  "titleVi": "Đang dùng Febuxostat 40 mg trên nền CKD giai đoạn 4 (eGFR < 30, HLA-B*58:01+): Giữ trần ≤ 40 mg/ngày, không tăng lên 80 mg",
+  "source": "FDA Febuxostat Label Section 2.2 (fda.febuxostat.severe_renal)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "US",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 71,
+    "sex": "female",
+    "weight": 54,
+    "scr": 230,
+    "uricAcid": 410,
+    "tophi": true,
+    "conditions": {
+      "gout": true,
+      "ckd": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "febuxostat",
+        "name": "Febuxostat",
+        "dose": "40",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 2,
+      "tophi": true,
+      "hlab5801": "positive"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "febuxostat",
+        "ruleId": "rec_gout_febuxostat_renal_cap",
+        "action": "CONTINUE",
+        "doseContains": "40 mg"
+      },
+      {
+        "drugId": "allopurinol",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "febuxostat",
+        "action": "UPTITRATE"
+      },
+      {
+        "drugId": "allopurinol",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nữ 71 tuổi HLA-B*58:01 dương tính, CKD giai đoạn 4 (eGFR ~19 mL/phút/1.73m²), đang uống Febuxostat 40 mg/ngày nhưng urat còn 410 µmol/L. Do suy thận nặng nên nhãn FDA giới hạn liều tối đa 40 mg/ngày, không tăng lên 80 mg."
+}

@@ -1,0 +1,75 @@
+{
+  "id": "asthma_61_lama_monotherapy_and_laba_lama_stop",
+  "titleVi": "Hen phế quản đơn thuần dùng LAMA đơn trị (Umeclidinium) và LABA-LAMA không có ICS (Ultibro): Bắt buộc STOP cả hai",
+  "source": "GINA 2026 Safety Warning / FDA Warning / ASTHMA-R3-R1-02 / ASTHMA-R3-R2-01",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_61",
+    "name": "Nam 54 tuổi",
+    "age": 54,
+    "sex": "male",
+    "weight": 65,
+    "sbp": 124,
+    "dbp": 78,
+    "hr": 80,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "umeclidinium",
+        "dose": "62.5 mcg",
+        "freq": "1 lần/ngày"
+      },
+      {
+        "drugId": "glycopyrronium_indacaterol",
+        "dose": "110/50 mcg",
+        "freq": "1 lần/ngày"
+      }
+    ],
+    "customInputs": {
+      "daytimeSymptomsMoreThanTwiceWeek": true,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": true,
+      "activityLimitationDueToAsthma": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "umeclidinium",
+        "action": "STOP"
+      },
+      {
+        "drugId": "glycopyrronium_indacaterol",
+        "action": "STOP"
+      },
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Chặn triệt để mọi giãn phế quản tác dụng dài không kèm ICS ở bệnh nhân hen không mắc COPD: Ngừng ngay cả LAMA đơn trị (Umeclidinium) lẫn bình gộp LABA-LAMA (Glycopyrronium/Indacaterol) và chuyển sang phác đồ có ICS."
+}

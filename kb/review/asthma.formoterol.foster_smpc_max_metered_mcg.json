@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.formoterol.foster_smpc_max_metered_mcg",
+  "contentHash": "61dc2ffdf2bab49e71d2d9dfade9f412b17effd057587183fbca6dc3325cbdb9",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.formoterol.foster_smpc_max_metered_mcg",
+      "contentHash": "9e2f476527a9695a",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T07:10:38.304Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Kiểm định tự động ngưỡng lâm sàng asthma.formoterol.foster_smpc_max_metered_mcg (48 mcg/ngày)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T07:10:38.304Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

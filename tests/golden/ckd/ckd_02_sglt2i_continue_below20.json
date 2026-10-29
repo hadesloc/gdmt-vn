@@ -1,0 +1,64 @@
+{
+  "id": "ckd_02_sglt2i_continue_below20",
+  "titleVi": "Tiếp tục duy trì Dapagliflozin khi eGFR giảm xuống 16 mL/phút",
+  "source": "KDIGO 2024 CKD PP 3.7.1 / kdigo.ckd.2024.pp_3_7_1_continue_below_20",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_02",
+    "name": "BN CKD 02",
+    "age": 66,
+    "sex": "female",
+    "weight": 56,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 70,
+    "scr": 280,
+    "k": 4.8,
+    "uacr": 35,
+    "conditions": {
+      "ckd": true,
+      "dm": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "dapagliflozin",
+        "name": "Forxiga 10 mg",
+        "dose": 10,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dapagliflozin",
+        "action": "CONTINUE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "dapagliflozin",
+        "action": "STOP"
+      }
+    ]
+  },
+  "descriptionVi": "KDIGO 2024 cho phép tiếp tục SGLT2i khi eGFR < 20 cho tới khi lọc máu."
+}

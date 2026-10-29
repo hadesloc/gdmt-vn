@@ -1,0 +1,17 @@
+{
+  "itemId": "semaglutide_oral",
+  "contentHash": "4597e59c8239f95afce516619d9065c930801e3a30c7727cc1d846d004745095",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "semaglutide_oral",
+      "contentHash": "7ab36356f6b3f65a",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

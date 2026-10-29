@@ -1,0 +1,183 @@
+{
+  "id": "sotalol",
+  "nameVi": "Sotalol",
+  "inn": "Sotalol hydrochloride",
+  "class": "Thuốc chống loạn nhịp nhóm III kèm chẹn beta không chọn lọc",
+  "classes": [
+    "antiarrhythmic_iii",
+    "bb_nonselective"
+  ],
+  "components": [],
+  "qtRisk": "known",
+  "vnBrands": [
+    "Sotalex"
+  ],
+  "forms": [
+    "Viên nén 80 mg",
+    "Viên nén 160 mg"
+  ],
+  "start": {
+    "amount": 80,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "Khởi đầu 80 mg uống 2 lần/ngày (hoặc 80 mg 1 lần/ngày nếu CrCl 40–60 mL/phút), theo dõi sát QTc, kali/magnesi máu và độ thanh thải thận"
+  },
+  "target": {
+    "amount": 80,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "80–160 mg uống 2 lần/ngày"
+  },
+  "titration": {
+    "step": "Tăng thêm 40–80 mg/liều mỗi 3 ngày sau khi kiểm tra khoảng QTc trên ECG (< 500 ms)",
+    "intervalDays": 3,
+    "maxDose": "160 mg 2 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60.0001,
+      "crclFrom": 60.0001,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "80–160 mg 2 lần/ngày (khi CrCl > 60 mL/phút)",
+      "citationIds": [
+        "esc.af.2024.table13_dronedarone_sotalol",
+        "acc.af.2023.sotalol_renal_40"
+      ]
+    },
+    {
+      "eGFRFrom": 40,
+      "eGFRTo": 60.0001,
+      "crclFrom": 40,
+      "crclTo": 60.0001,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "80 mg 1 lần/ngày (giãn liều mỗi 24 giờ khi CrCl 40–60 mL/phút và theo dõi sát QTc)",
+      "citationIds": [
+        "acc.af.2023.sotalol_renal_40",
+        "esc.af.2024.table13_dronedarone_sotalol"
+      ]
+    },
+    {
+      "eGFRTo": 40,
+      "crclTo": 40,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Chống chỉ định trong rung nhĩ khi CrCl < 40 mL/phút",
+      "note": "Chống chỉ định sotalol để duy trì nhịp xoang trong rung nhĩ khi CrCl < 40 mL/phút (ACC/AHA 2023 Table 23) do thải trừ qua thận gây tích lũy thuốc và xoắn đỉnh",
+      "citationIds": [
+        "acc.af.2023.sotalol_renal_40"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_sotalol_qt",
+      "parameter": "qtc",
+      "operator": ">",
+      "threshold": 500,
+      "unit": "ms",
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối Sotalol khi khoảng QTc > 500 ms do nguy cơ xoắn đỉnh gây tử vong",
+      "citationIds": [
+        "esc.af.2024.qtc_500_conduction_contra",
+        "esc.af.2024.aad_sotalol_rec"
+      ]
+    },
+    {
+      "id": "gate_sotalol_lvef",
+      "parameter": "LVEF",
+      "operator": "<=",
+      "threshold": 40,
+      "unit": "%",
+      "action": "contra",
+      "messageVi": "Chống chỉ định Sotalol ở bệnh nhân suy tim có LVEF ≤ 40% do nguy cơ xoắn đỉnh và mất bù suy tim",
+      "citationIds": [
+        "esc.af.2024.aad_sotalol_rec"
+      ]
+    },
+    {
+      "id": "gate_sotalol_crcl",
+      "parameter": "CrCl",
+      "operator": "<",
+      "threshold": 40,
+      "unit": "mL/min",
+      "action": "contra",
+      "messageVi": "Chống chỉ định Sotalol trong rung nhĩ khi CrCl < 40 mL/phút do nguy cơ xoắn đỉnh",
+      "citationIds": [
+        "acc.af.2023.sotalol_renal_40"
+      ]
+    }
+  ],
+  "interactions": [
+    "Nguy cơ xoắn đỉnh (Torsades de Pointes) cao khi dùng kèm các thuốc kéo dài khoảng QT khác hoặc khi có hạ kali máu / hạ magnesi máu",
+    "Hoạt tính chẹn beta không chọn lọc: chống chỉ định ở bệnh nhân hen phế quản hoặc co thắt phế quản nặng"
+  ],
+  "citationIds": [
+    "esc.af.2024.aad_sotalol_rec",
+    "esc.af.2024.table13_dronedarone_sotalol",
+    "acc.af.2023.sotalol_renal_40",
+    "esc.preg.2025.sotalol_rhythm_pregnancy",
+    "esc.preg.2025.sotalol_pregnancy_lactation",
+    "esc.af.2024.qtc_500_conduction_contra",
+    "acc.af.2023.table23_sotalol_bronchospasm",
+    "esc.af.2024.table12_bb_iv_doses",
+    "acc.af.2023.wpw_av_blockers_harm"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Có thể cân nhắc kiểm soát nhịp trong thai kỳ (ESC 2025 Pregnancy Class IIb); thuốc qua nhau thai nên cần theo dõi sát QTc mẹ, nhịp tim thai và hạ đường huyết sơ sinh",
+    "citationIds": [
+      "esc.preg.2025.sotalol_rhythm_pregnancy",
+      "esc.preg.2025.sotalol_pregnancy_lactation"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Sotalol cô đặc cao trong sữa mẹ (tỷ lệ sữa/huyết tương khoảng 5:1), không khuyến cáo dùng đồng thời khi cho con bú do nguy cơ chậm nhịp tim và hạ đường huyết ở trẻ (ESC 2025 Pregnancy)",
+    "citationIds": [
+      "esc.preg.2025.sotalol_pregnancy_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "qt_prolongation",
+      "messageVi": "Chống chỉ định Sotalol khi khoảng QTc kéo dài (> 500 ms)",
+      "citationIds": [
+        "esc.af.2024.qtc_500_conduction_contra",
+        "esc.af.2024.aad_sotalol_rec"
+      ]
+    },
+    {
+      "code": "reduced_lvef",
+      "messageVi": "Chống chỉ định Sotalol ở bệnh nhân suy tim HFrEF (LVEF ≤ 40%)",
+      "citationIds": [
+        "esc.af.2024.aad_sotalol_rec"
+      ]
+    },
+    {
+      "code": "reactive_airway_disease",
+      "messageVi": "Chống chỉ định Sotalol (chẹn beta không chọn lọc) ở bệnh nhân hen phế quản hoặc co thắt phế quản",
+      "citationIds": [
+        "acc.af.2023.table23_sotalol_bronchospasm",
+        "esc.af.2024.table12_bb_iv_doses"
+      ]
+    },
+    {
+      "code": "wpw_afib",
+      "messageVi": "Chống chỉ định Sotalol trong rung nhĩ tiền kích thích (WPW)",
+      "citationIds": [
+        "acc.af.2023.wpw_av_blockers_harm"
+      ]
+    },
+    {
+      "code": "av_block_2_3",
+      "messageVi": "Chống chỉ định Sotalol ở bệnh nhân block nhĩ thất độ 2–3 hoặc suy nút xoang chưa đặt máy tạo nhịp",
+      "citationIds": [
+        "esc.af.2024.qtc_500_conduction_contra"
+      ]
+    }
+  ]
+}

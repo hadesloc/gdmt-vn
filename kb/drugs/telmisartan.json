@@ -1,0 +1,151 @@
+{
+  "id": "telmisartan",
+  "nameVi": "Telmisartan",
+  "inn": "Telmisartan",
+  "class": "ARB",
+  "classes": [
+    "arb"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Micardis",
+    "Telma"
+  ],
+  "forms": [
+    "Viên nén 40 mg",
+    "Viên nén 80 mg"
+  ],
+  "start": {
+    "amount": 40,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Khởi trị thận trọng ở suy gan nhẹ–vừa; giới hạn liều theo SmPC EMA, không vượt 40 mg/ngày."
+  },
+  "target": {
+    "amount": 80,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "80 mg/ngày"
+  },
+  "titration": {
+    "step": 40,
+    "intervalDays": 14,
+    "maxDose": "80 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "40–80 mg/ngày (thải trừ chủ yếu qua mật, không cần giảm liều khi suy thận)",
+      "citationIds": [
+        "kdigo.ckd.2024.rec_3_6_1_rasi_a3_nondm"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "20–80 mg/ngày (khởi đầu thận trọng 20–40 mg/ngày, tối đa 80 mg/ngày)",
+      "note": "Thải trừ chủ yếu qua mật (> 97%), không thải qua lọc máu; theo dõi sát huyết áp và kali máu ở CKD G5",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_5_rasi_reduce_stop",
+        "byt.ckd.2024.table_12_telmisartan_valsartan"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_telmi_k_max",
+      "parameter": "K",
+      "operator": ">",
+      "threshold": 5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm hoãn telmisartan khi kali máu > 5.0 mmol/L",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_2_rasi_monitoring"
+      ]
+    },
+    {
+      "id": "gate_telmisartan_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối nhóm thuốc ức chế thụ thể ARB trong thai kỳ (Boxed Warning: độc tính thai nhi)",
+      "citationIds": [
+        "fda.losartan.boxed_pregnancy"
+      ]
+    }
+  ],
+  "interactions": [
+    "Tránh phối hợp ACEi"
+  ],
+  "citationIds": [
+    "kdigo.ckd.2024.rec_3_6_1_rasi_a3_nondm",
+    "kdigo.ckd.2024.rec_3_6_4_avoid_dual_rasi",
+    "fda.losartan.boxed_pregnancy",
+    "esc.2025.pregnancy.rasi_lactation",
+    "fda.losartan.lactation_8_2",
+    "byt.ckd.2024.table_12_telmisartan_valsartan",
+    "ema.telmisartan.hepatic_max_40",
+    "ema.telmisartan.hepatic_biliary_contra"
+  ],
+  "hepatic": {
+    "status": "caution",
+    "note": "Theo EMA Micardis: không dùng khi ứ mật/tắc mật/suy gan nặng; suy gan nhẹ–vừa không vượt 40 mg/ngày. GDMT-VN áp dụng giới hạn thận trọng này ở cả ba profile; không coi đây là chống chỉ định hoặc trần liều của FDA. Cờ bệnh gan chưa rõ mức độ cần đánh giá phân độ; giới hạn tạm thời không xác nhận người bệnh thuộc Child-Pugh A/B.",
+    "notesVi": "Theo EMA Micardis: không dùng khi ứ mật/tắc mật/suy gan nặng; suy gan nhẹ–vừa không vượt 40 mg/ngày. GDMT-VN áp dụng giới hạn thận trọng này ở cả ba profile; không coi đây là chống chỉ định hoặc trần liều của FDA. Cờ bệnh gan chưa rõ mức độ cần đánh giá phân độ; giới hạn tạm thời không xác nhận người bệnh thuộc Child-Pugh A/B.",
+    "citationIds": [
+      "ema.telmisartan.hepatic_max_40",
+      "ema.telmisartan.hepatic_biliary_contra"
+    ]
+  },
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối nhóm thuốc ức chế thụ thể ARB trong thai kỳ (Boxed Warning FDA: độc tính thai nhi, giảm sản sọ và tử vong sơ sinh)",
+    "citationIds": [
+      "fda.losartan.boxed_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo dùng nhóm ARB khi cho con bú; ưu tiên chuyển sang thuốc hạ áp an toàn khi cho con bú như Enalapril hoặc Captopril (ESC 2025)",
+    "citationIds": [
+      "esc.2025.pregnancy.rasi_lactation",
+      "fda.losartan.lactation_8_2"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định tuyệt đối ARB trong thai kỳ (Boxed Warning)",
+      "citationIds": [
+        "fda.losartan.boxed_pregnancy"
+      ]
+    },
+    {
+      "code": "concomitant_acei_dri",
+      "messageVi": "Chống chỉ định phối hợp đồng thời với thuốc ức chế men chuyển (ACEi) hoặc aliskiren",
+      "citationIds": [
+        "kdigo.ckd.2024.rec_3_6_4_avoid_dual_rasi"
+      ]
+    },
+    {
+      "code": "biliary_obstruction",
+      "messageVi": "Chống chỉ định theo SmPC EMA khi tắc mật hoặc suy gan nặng; GDMT-VN áp dụng cổng thận trọng này cho cả ba profile.",
+      "citationIds": [
+        "ema.telmisartan.hepatic_biliary_contra"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định theo SmPC EMA khi tắc mật hoặc suy gan nặng; GDMT-VN áp dụng cổng thận trọng này cho cả ba profile.",
+      "citationIds": [
+        "ema.telmisartan.hepatic_biliary_contra"
+      ]
+    }
+  ]
+}

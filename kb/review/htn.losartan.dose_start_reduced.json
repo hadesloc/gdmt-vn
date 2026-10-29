@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.losartan.dose_start_reduced",
+  "contentHash": "946fcbfd5c2d62bc56935891773a27d3a7c9c94e9e3b8d7ac697fffa12641ad1",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.losartan.dose_start_reduced",
+      "contentHash": "857400e291ebd50f",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực ngưỡng lâm sàng htn.losartan.dose_start_reduced (25 mg/day) và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "hf_31_inpatient_acute_hf_poor_diuretic_response",
+  "titleVi": "Suy tim cấp nội viện đáp ứng bài niệu kém (uNa⁺ 42 mmol/L): Tăng gấp đôi liều lợi tiểu TM",
+  "source": "ESC 2026 HF Figure 7",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 66,
+    "sex": "male",
+    "weight": 80,
+    "sbp": 135,
+    "dbp": 82,
+    "hr": 88,
+    "lvef": 30,
+    "nyha": 4,
+    "scr": 135,
+    "k": 4.3,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ],
+    "customInputs": {
+      "congestion": "overt",
+      "urinarySodium2h": 42,
+      "urineOutputRate6h": 65
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "furosemide",
+        "action": "START",
+        "doseContains": "Furosemide"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Đáp ứng bài niệu kém sau 2h/6h: Tăng liều lợi tiểu TM hoặc phối hợp lợi tiểu thứ 2."
+}

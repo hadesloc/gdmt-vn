@@ -1,0 +1,327 @@
+[
+  {
+    "id": "ix.statin_clarithromycin",
+    "titleVi": "Tương tác Statin (Atorvastatin, Simvastatin, Lovastatin) + Clarithromycin / Erythromycin",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "atorvastatin",
+        "simvastatin",
+        "lovastatin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "clarithromycin",
+        "erythromycin"
+      ]
+    },
+    "mechanismVi": "Clarithromycin và erythromycin ức chế mạnh CYP3A4 làm tăng nồng độ và diện tích dưới đường cong (AUC) của Atorvastatin và Simvastatin gấp nhiều lần.",
+    "effectVi": "Tăng nguy cơ tiêu cơ vân cấp tính, myoglobin niệu, suy thận cấp và tử vong do tăng kali máu.",
+    "managementVi": "Chống chỉ định phối hợp với Simvastatin và Lovastatin (hoặc tạm ngưng Simvastatin/Lovastatin trong đợt kháng sinh). Với Atorvastatin: không dùng quá 20 mg/ngày khi dùng cùng clarithromycin (hoặc đổi sang azithromycin).",
+    "doseLimit": {
+      "drugId": "atorvastatin",
+      "maxDose": 20,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Liều tối đa Atorvastatin khi dùng chung với Clarithromycin là 20 mg/ngày"
+    },
+    "citationIds": [
+      "fda.atorvastatin.clarithromycin_dose_cap"
+    ]
+  },
+  {
+    "id": "ix.statin_cyclosporine",
+    "titleVi": "Tương tác Statin (Rosuvastatin, Atorvastatin, Simvastatin, Pitavastatin, Pravastatin) + Cyclosporine",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "rosuvastatin",
+        "atorvastatin",
+        "simvastatin",
+        "lovastatin",
+        "pitavastatin",
+        "pravastatin",
+        "fluvastatin"
+      ],
+      "classes": [
+        "statin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "cyclosporine"
+      ],
+      "classes": [
+        "immunosuppressant"
+      ]
+    },
+    "mechanismVi": "Cyclosporine ức chế mạnh các protein vận chuyển OATP1B1, OATP1B3, BCRP và men CYP3A4, làm tăng nồng độ statin trong huyết tương lên nhiều lần (AUC Rosuvastatin tăng 7 lần).",
+    "effectVi": "Nguy cơ cao gây viêm cơ nặng và tiêu cơ vân cấp dẫn đến hoại tử ống thận cấp.",
+    "managementVi": "Chống chỉ định phối hợp Cyclosporine với Simvastatin và Pitavastatin; không khuyến cáo phối hợp với Atorvastatin. Với Rosuvastatin: giới hạn liều tối đa 5 mg/ngày; với Pravastatin: dùng liều thấp và theo dõi sát triệu chứng cơ, CK.",
+    "doseLimit": {
+      "drugId": "rosuvastatin",
+      "maxDose": 5,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Liều tối đa Rosuvastatin khi phối hợp với Cyclosporine là 5 mg/ngày"
+    },
+    "citationIds": [
+      "fda.rosuvastatin.cyclosporine_dose_cap"
+    ]
+  },
+  {
+    "id": "ix.statin_gemfibrozil",
+    "titleVi": "Chống chỉ định phối hợp Statin + Gemfibrozil",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "atorvastatin",
+        "rosuvastatin",
+        "simvastatin",
+        "lovastatin",
+        "pravastatin",
+        "pitavastatin",
+        "fluvastatin"
+      ],
+      "classes": [
+        "statin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "gemfibrozil"
+      ]
+    },
+    "mechanismVi": "Gemfibrozil ức chế quá trình glucuronid hóa statin qua men UGT1A1/1A3 và ức chế OATP1B1, làm tăng nồng độ statin trong huyết tương và ngăn thoái giáng thuốc.",
+    "effectVi": "Gia tăng đột biến nguy cơ viêm cơ, đau cơ dữ dội và tiêu cơ vân cấp đe dọa tính mạng.",
+    "managementVi": "Chống chỉ định phối hợp hoặc tránh phối hợp statin với gemfibrozil. Nếu cần hạ triglycerid kết hợp statin, fenofibrate có thể cân nhắc với theo dõi sát.",
+    "citationIds": [
+      "fda.rosuvastatin.gemfibrozil_avoid"
+    ]
+  },
+  {
+    "id": "ix.statin_amiodarone",
+    "titleVi": "Tương tác Simvastatin / Lovastatin / Atorvastatin + Amiodarone",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "simvastatin",
+        "lovastatin",
+        "atorvastatin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "amiodarone"
+      ]
+    },
+    "mechanismVi": "Amiodarone ức chế chuyển hóa qua CYP3A4, làm giảm độ thanh thải và tăng nồng độ simvastatin/atorvastatin trong huyết tương.",
+    "effectVi": "Tăng nguy cơ bệnh cơ (myopathy) và tiêu cơ vân (rhabdomyolysis).",
+    "managementVi": "Liều Simvastatin không vượt quá 20 mg/ngày và liều Lovastatin không vượt quá 40 mg/ngày khi phối hợp với Amiodarone (ACC/AHA 2026 Table 27). Với Atorvastatin: thận trọng theo dõi triệu chứng đau mỏi cơ.",
+    "doseLimit": {
+      "drugId": "simvastatin",
+      "maxDose": 20,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Không vượt quá 20 mg/ngày Simvastatin khi dùng chung Amiodarone"
+    },
+    "citationIds": [
+      "fda.amiodarone.simvastatin_dose_limit",
+      "acc.lipid.2026.ddi_table27_lovastatin_caps"
+    ]
+  },
+  {
+    "id": "ix.statin_diltiazem",
+    "titleVi": "Tương tác Giới hạn liều: Simvastatin / Lovastatin + Diltiazem",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "simvastatin",
+        "lovastatin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "diltiazem"
+      ]
+    },
+    "mechanismVi": "Diltiazem là chất ức chế vừa CYP3A4, làm tăng nồng độ huyết tương của Simvastatin gấp 2–3 lần.",
+    "effectVi": "Tăng nguy cơ viêm cơ và tiêu cơ vân.",
+    "managementVi": "Liều Simvastatin không vượt quá 10 mg/ngày và liều Lovastatin không vượt quá 20 mg/ngày khi phối hợp với Diltiazem (hoặc chuyển sang Rosuvastatin/Pravastatin).",
+    "doseLimit": {
+      "drugId": "simvastatin",
+      "maxDose": 10,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Liều Simvastatin tối đa 10 mg/ngày khi dùng cùng Diltiazem"
+    },
+    "citationIds": [
+      "fda.diltiazem.simvastatin_limit_10mg",
+      "acc.lipid.2026.ddi_table27_lovastatin_caps"
+    ]
+  },
+  {
+    "id": "ix.statin_verapamil",
+    "titleVi": "Tương tác Giới hạn liều: Simvastatin / Lovastatin / Atorvastatin + Verapamil",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "simvastatin",
+        "lovastatin",
+        "atorvastatin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "verapamil"
+      ]
+    },
+    "mechanismVi": "Verapamil ức chế men CYP3A4 và bơm P-glycoprotein, làm tăng nồng độ statin chuyển hóa qua CYP3A4 trong tuần hoàn.",
+    "effectVi": "Gia tăng rõ rệt độc tính trên cơ (đau cơ, tăng CK huyết thanh, tiêu cơ vân).",
+    "managementVi": "Không dùng quá 10 mg Simvastatin/ngày và không quá 20 mg Lovastatin/ngày khi phối hợp với Verapamil. Với Atorvastatin: dùng liều thấp và theo dõi sát triệu chứng cơ.",
+    "doseLimit": {
+      "drugId": "simvastatin",
+      "maxDose": 10,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Liều tối đa Simvastatin khi dùng cùng Verapamil là 10 mg/ngày"
+    },
+    "citationIds": [
+      "fda.atorvastatin.cyp3a4_inhibitors_myopathy",
+      "acc.lipid.2026.ddi_table27_lovastatin_caps"
+    ]
+  },
+  {
+    "id": "ix.statin_colchicine",
+    "titleVi": "Tương tác tăng độc tính trên cơ: Statin + Colchicine",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "atorvastatin",
+        "rosuvastatin",
+        "simvastatin",
+        "lovastatin",
+        "pravastatin",
+        "pitavastatin",
+        "fluvastatin"
+      ],
+      "classes": [
+        "statin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "colchicine"
+      ],
+      "classes": [
+        "anti_gout"
+      ]
+    },
+    "mechanismVi": "Cả statin và colchicine đều có độc tính nội tại trên tế bào cơ và dùng chung con đường vận chuyển P-glycoprotein / CYP3A4. Tác dụng hiệp đồng làm tổn thương màng tế bào cơ vân.",
+    "effectVi": "Gây bệnh cơ nặng, yếu cơ gốc chi, tăng men cơ CK và tiêu cơ vân cấp kịch phát, có thể dẫn đến suy thận cấp.",
+    "managementVi": "Theo dõi chặt chẽ nồng độ CK và triệu chứng đau cơ, yếu cơ khi phối hợp. Tránh phối hợp ở bệnh nhân có suy thận hoặc suy gan.",
+    "citationIds": [
+      "fda.colchicine.statin_myopathy_cases"
+    ]
+  },
+  {
+    "id": "ix.statin_amlodipine",
+    "titleVi": "Tương tác Giới hạn liều: Simvastatin / Lovastatin + Amlodipine",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "simvastatin",
+        "lovastatin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "amlodipine"
+      ]
+    },
+    "mechanismVi": "Amlodipine ức chế nhẹ/vừa men CYP3A4, làm tăng nồng độ Simvastatin trong huyết tương khoảng 77%.",
+    "effectVi": "Tăng nguy cơ tổn thương cơ và tiêu cơ vân khi dùng Simvastatin liều cao.",
+    "managementVi": "Liều Simvastatin không được vượt quá 20 mg/ngày khi dùng đồng thời với Amlodipine (thận trọng tương tự với Lovastatin liều cao; ưu tiên Atorvastatin hoặc Rosuvastatin nếu cần cường độ cao).",
+    "doseLimit": {
+      "drugId": "simvastatin",
+      "maxDose": 20,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Liều tối đa Simvastatin khi phối hợp với Amlodipine là 20 mg/ngày"
+    },
+    "citationIds": [
+      "fda.amlodipine.simvastatin_limit_20mg"
+    ]
+  },
+  {
+    "id": "ix.statin_bempedoic",
+    "titleVi": "Tương tác Giới hạn liều: Simvastatin + Bempedoic Acid",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "simvastatin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "bempedoic_acid"
+      ],
+      "classes": [
+        "atp_citrate_lyase_inhibitor"
+      ]
+    },
+    "mechanismVi": "Bempedoic acid làm tăng nồng độ simvastatin trong huyết tương lên xấp xỉ 2 lần (do ức chế OATP1B1/1B3).",
+    "effectVi": "Tăng nguy cơ bệnh cơ và tiêu cơ vân.",
+    "managementVi": "Tránh dùng đồng thời Bempedoic acid với Simvastatin liều > 20 mg/ngày (giới hạn tối đa 20 mg/ngày).",
+    "doseLimit": {
+      "drugId": "simvastatin",
+      "maxDose": 20,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Liều Simvastatin tối đa 20 mg/ngày khi dùng cùng Bempedoic acid"
+    },
+    "citationIds": [
+      "fda.bempedoic.simvastatin_avoid_gt_20mg"
+    ]
+  },
+  {
+    "id": "ix.statin_itraconazole",
+    "titleVi": "Chống chỉ định / Giới hạn liều: Simvastatin / Lovastatin / Atorvastatin + Thuốc ức chế mạnh CYP3A4 (Azole, Ritonavir, Cobicistat, Paxlovid, HIV PI)",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "simvastatin",
+        "lovastatin",
+        "atorvastatin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "itraconazole",
+        "ketoconazole",
+        "posaconazole",
+        "voriconazole",
+        "ritonavir",
+        "cobicistat",
+        "nirmatrelvir_ritonavir",
+        "atazanavir",
+        "darunavir",
+        "lopinavir_ritonavir",
+        "nelfinavir",
+        "saquinavir",
+        "indinavir"
+      ],
+      "classes": [
+        "strong_cyp3a4_inhibitor"
+      ]
+    },
+    "mechanismVi": "Các thuốc kháng nấm nhóm azole (itraconazole, ketoconazole, posaconazole, voriconazole) và thuốc kháng virus tăng cường (ritonavir, cobicistat, nirmatrelvir/ritonavir) ức chế mạnh CYP3A4, làm tăng nồng độ huyết tương của Simvastatin/Atorvastatin lên nhiều lần.",
+    "effectVi": "Khởi phát tiêu cơ vân cấp tính, suy thận cấp vô niệu và tăng kali máu tử vong.",
+    "managementVi": "Chống chỉ định tuyệt đối phối hợp với Simvastatin và Lovastatin (ACC/AHA 2026 & nhãn FDA). Với Atorvastatin: tạm ngừng statin trong đợt dùng ngắn ngày (như Nirmatrelvir/ritonavir) hoặc không dùng quá 20 mg/ngày với Itraconazole và theo dõi sát CK.",
+    "citationIds": [
+      "fda.atorvastatin.itraconazole_limit_20mg",
+      "acc.lipid.2026.lovastatin_pi_contra"
+    ]
+  }
+]

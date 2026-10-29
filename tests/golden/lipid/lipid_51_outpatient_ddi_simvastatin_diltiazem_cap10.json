@@ -1,0 +1,73 @@
+{
+  "id": "lipid_51_outpatient_ddi_simvastatin_diltiazem_cap10",
+  "titleVi": "Tương tác Diltiazem + Simvastatin 20 mg đã đạt đích nguy cơ trung bình (LDL 2.1) - Hạ liều Simvastatin ≤ 10 mg/ngày",
+  "source": "FDA & ACC/AHA 2026 / fda.diltiazem.simvastatin_limit_10mg",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 45,
+    "sex": "female",
+    "weight": 57,
+    "height": 158,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 68,
+    "scr": 70,
+    "tc": 4.1,
+    "hdl": 1.3,
+    "ldl": 2.1,
+    "tg": 1.3,
+    "conditions": {
+      "dm": true
+    },
+    "customInputs": {
+      "dmDurationYears": 4
+    },
+    "currentMeds": [
+      {
+        "drugId": "simvastatin",
+        "name": "Simvastatin",
+        "dose": 20,
+        "unit": "mg"
+      },
+      {
+        "drugId": "diltiazem",
+        "name": "Diltiazem",
+        "dose": 120,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "simvastatin",
+        "action": "REDUCE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "simvastatin",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R2-R2-01 & LIPID-R2-R3-01: Khi phối hợp Diltiazem/Verapamil/Dronedarone, trần an toàn của Simvastatin là ≤ 10 mg/ngày (không phải 20 mg); ngay cả khi LDL-C đã đạt mục tiêu < 2.6 mmol/L, không được phát CONTINUE Simvastatin 20 mg mà phải REDUCE về ≤ 10 mg/ngày."
+}

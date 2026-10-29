@@ -1,0 +1,57 @@
+{
+  "id": "hf_10_hfref_renal_egfr16_naive",
+  "titleVi": "HFrEF có eGFR 16 mL/phút chưa từng dùng thuốc: SGLT2i không khởi trị",
+  "source": "KDIGO 2024 / ESC 2026",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 76,
+    "sex": "female",
+    "weight": 55,
+    "sbp": 120,
+    "dbp": 70,
+    "hr": 72,
+    "lvef": 32,
+    "nyha": 3,
+    "scr": 260,
+    "k": 4.5,
+    "conditions": {
+      "hf": true,
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "spironolactone",
+        "action": "HOLD"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "spironolactone",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "eGFR < 20 ở bệnh nhân treatment-naïve: không khởi trị MRA và thận trọng SGLT2i."
+}

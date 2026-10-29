@@ -1,0 +1,89 @@
+{
+  "id": "terbutaline",
+  "nameVi": "Terbutaline",
+  "inn": "Terbutaline sulfate",
+  "class": "SABA",
+  "vnBrands": [
+    "Bricanyl Turbuhaler",
+    "Bricanyl Respules"
+  ],
+  "forms": [
+    "Bình hít bột khô Turbuhaler 0.5 mg/nhát",
+    "Khí dung Respules 5 mg/2 ml",
+    "Ống tiêm 0.5 mg/1 ml"
+  ],
+  "start": {
+    "amount": 1,
+    "unit": "nhát",
+    "frequency": "khi cần",
+    "route": "hít",
+    "description": "Cắt cơn thay thế: 1 nhát (0.5 mg) khi cần"
+  },
+  "target": {
+    "amount": 8,
+    "unit": "nhát",
+    "frequency": "ngày",
+    "route": "hít",
+    "description": "Tối đa 8 nhát/ngày (4 mg/24 giờ) cho người lớn trong đợt co thắt phế quản cấp"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận",
+      "citationIds": [
+        "gina.asthma.2026.never_saba_alone"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_terbutaline_not_alone",
+      "parameter": "hasIcsMaintenance",
+      "operator": "==",
+      "threshold": 0,
+      "unit": "cờ",
+      "action": "caution",
+      "messageVi": "CẢNH BÁO: Tuyệt đối không dùng Terbutaline (SABA) đơn độc không kèm ICS vì làm tăng nguy cơ đợt cấp nặng và tử vong",
+      "citationIds": [
+        "gina.asthma.2026.never_saba_alone",
+        "byt.asthma.2020.no_saba_monotherapy"
+      ]
+    }
+  ],
+  "interactions": [
+    "Thuốc chẹn beta không chọn lọc đối kháng tác dụng; phối hợp lợi tiểu thải kali có thể làm nặng hạ kali máu"
+  ],
+  "citationIds": [
+    "gina.asthma.2026.never_saba_alone",
+    "byt.asthma.2020.no_saba_monotherapy"
+  ],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Thuốc giãn phế quản beta-2 an toàn trong thai kỳ (FDA Category B).",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Tương thích khi cho con bú.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity",
+      "messageVi": "Quá mẫn với terbutaline",
+      "citationIds": [
+        "gina.asthma.2026.never_saba_alone"
+      ]
+    }
+  ],
+  "classes": [
+    "saba"
+  ],
+  "qtRisk": "conditional"
+}

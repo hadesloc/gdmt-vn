@@ -1,0 +1,69 @@
+{
+  "id": "copd_41_r2_aco_missing_age_fail_closed",
+  "titleVi": "Hồi quy R2 (COPD-R1V2-01): Đồng chọn ['copd', 'asthma'] khi thiếu tuổi – Hen fail-closed nên COPD bắt buộc kê bộ ba có ICS",
+  "source": "GOLD 2026 p. 75 & GINA 2026 Box 4-6 (COPD-R1V2-01)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_41",
+    "sex": "male",
+    "weight": 62,
+    "height": 166,
+    "sbp": 126,
+    "dbp": 78,
+    "hr": 76,
+    "conditions": {
+      "copd": true,
+      "asthma": true
+    },
+    "selectedModules": [
+      "copd",
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "fev1FvcRatio": 0.58,
+      "fev1PredPct": 68,
+      "mmrc": 1,
+      "cat": 8,
+      "moderateExacerbations": 0,
+      "hospitalizations": 0,
+      "bloodEos": 180,
+      "currentInhaler": "none",
+      "smokingStatus": "former",
+      "daytimeSymptomsMoreThanTwiceWeek": false,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "budesonide_glycopyrronium_formoterol",
+        "ruleId": "rec_copd_aco_triple",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "tiotropium",
+        "action": "START"
+      }
+    ]
+  }
+}

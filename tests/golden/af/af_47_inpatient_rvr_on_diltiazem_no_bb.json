@@ -1,0 +1,71 @@
+{
+  "id": "af_47_inpatient_rvr_on_diltiazem_no_bb",
+  "titleVi": "Nội viện AF RVR (LVEF 56%) đã dùng nền Diltiazem: Tối ưu Diltiazem, TUYỆT ĐỐI KHÔNG kê Chẹn beta",
+  "source": "ESC 2024 AF Section 7.1.2 / esc.af.2024.rate_avoid_bb_ccb_combo",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 64,
+    "sex": "female",
+    "weight": 62,
+    "height": 158,
+    "sbp": 126,
+    "dbp": 76,
+    "hr": 142,
+    "rhythm": "afib",
+    "scr": 78,
+    "lvef": 56,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true
+    },
+    "customInputs": {
+      "hemodynamicStability": "stable",
+      "afOnset": "more_than_48h_or_unknown"
+    },
+    "currentMeds": [
+      {
+        "drugId": "diltiazem",
+        "name": "Herbesser",
+        "dose": 120,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "diltiazem",
+        "action": "UPTITRATE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      },
+      {
+        "drugId": "bisoprolol",
+        "action": "CONSIDER"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân nội viện RVR đang dùng Diltiazem nền: tối ưu hóa Diltiazem, tuyệt đối không phát sinh START/CONSIDER Chẹn beta chồng chéo."
+}

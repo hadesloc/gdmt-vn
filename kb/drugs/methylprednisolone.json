@@ -1,0 +1,74 @@
+{
+  "id": "methylprednisolone",
+  "nameVi": "Methylprednisolone",
+  "inn": "Methylprednisolone sodium succinate",
+  "class": "Systemic Corticosteroid",
+  "vnBrands": [
+    "Medrol 4mg, 16mg",
+    "Solu-Medrol 40mg, 125mg"
+  ],
+  "forms": [
+    "Viên nén 4 mg, 16 mg",
+    "Lọ bột pha tiêm 40 mg, 125 mg, 500 mg"
+  ],
+  "start": {
+    "amount": 40,
+    "unit": "mg",
+    "frequency": "tiêm tĩnh mạch",
+    "route": "tiêm tĩnh mạch",
+    "description": "Cơn hen cấp nặng nội viện: 40 mg tiêm tĩnh mạch"
+  },
+  "target": {
+    "amount": 40,
+    "unit": "mg",
+    "frequency": "tiêm TM",
+    "route": "tiêm tĩnh mạch",
+    "description": "Chuyển sang đường uống khi bệnh nhân cải thiện"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận",
+      "citationIds": [
+        "byt.asthma.2021.acute_hospital_treatment"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Tăng đường huyết, kích ứng tiêu hóa"
+  ],
+  "citationIds": [
+    "byt.asthma.2021.acute_hospital_treatment",
+    "byt.asthma.2021.acute_iv_steroid_ipratropium",
+    "gina.asthma.2026.acute_prednisolone_daily"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Chỉ định trong cơn hen cấp nặng nội viện để bảo vệ mẹ và ngăn ngừa tử vong thai nhi do thiếu oxy.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Thận trọng khi cho con bú.",
+    "citationIds": [
+      "byt.asthma.2021.acute_hospital_treatment"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "systemic_fungal_infection",
+      "messageVi": "Nhiễm nấm toàn thân",
+      "citationIds": [
+        "byt.asthma.2021.acute_hospital_treatment"
+      ]
+    }
+  ],
+  "classes": [
+    "systemic_corticosteroid"
+  ]
+}

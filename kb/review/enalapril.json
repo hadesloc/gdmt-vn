@@ -1,0 +1,42 @@
+{
+  "itemId": "enalapril",
+  "contentHash": "3958c175b9373a748d3d6bf33a6dfcf162ca9b60e0dc3472b42aa0f61f942a90",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "enalapril",
+      "contentHash": "e03bccb2a77ed450",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:58:17.994Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động bổ sung pregnancy, lactation và contraindications theo chuẩn QA-9 cho Enalapril."
+        },
+        {
+          "round": 3,
+          "reviewedAt": "2026-10-27T18:00:00.000Z",
+          "role": "agent_e4_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 3 cho enalapril."
+        },
+        {
+          "round": 4,
+          "reviewedAt": "2026-10-27T23:57:04.773Z",
+          "role": "agent_e5_round4_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 4 cho thuốc enalapril."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T23:57:04.773Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.colchicine.severe_renal_start_dose",
+  "contentHash": "23d75e626566e7bc8f1b601990da692712d82f544416bb175b340b8a2e0c0b3f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.colchicine.severe_renal_start_dose",
+      "contentHash": "e55fd20f27bd836f",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.colchicine.severe_renal_start_dose"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

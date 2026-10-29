@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.step_up.trial_months_max",
+  "contentHash": "9364963ece39338eaa6db4fdf4368accfb2ca7af90f6e251590b04bd54b88b93",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.step_up.trial_months_max",
+      "contentHash": "1166be220371d74e",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T07:10:38.304Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Kiểm định tự động ngưỡng lâm sàng asthma.step_up.trial_months_max (3 tháng)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T07:10:38.304Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

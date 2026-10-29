@@ -1,0 +1,63 @@
+{
+  "id": "hf_32_inpatient_acute_hf_continue_bb",
+  "titleVi": "Suy tim cấp nội viện đang dùng chẹn beta không có sốc: Tiếp tục duy trì chẹn beta",
+  "source": "ESC 2026 HF Rec 7.5.3",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 84,
+    "lvef": 30,
+    "nyha": 3,
+    "scr": 105,
+    "k": 4.4,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "bisoprolol",
+        "name": "Bisoprolol",
+        "dose": 10,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "hf"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "bisoprolol",
+        "action": "CONTINUE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "bisoprolol",
+        "action": "HOLD"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Không có sốc tim hoặc tụt HA nặng: Tiếp tục duy trì chẹn beta trong đợt suy tim cấp."
+}

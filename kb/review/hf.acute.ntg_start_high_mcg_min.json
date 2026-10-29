@@ -1,0 +1,27 @@
+{
+  "itemId": "hf.acute.ntg_start_high_mcg_min",
+  "contentHash": "7cd57cbf52cb83a2aaa56f3dbe8a3a6598fef24be98e2014b9c4775427455473",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "hf.acute.ntg_start_high_mcg_min",
+      "contentHash": "678dc3c50d6f800a",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T09:00:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-28T09:00:00.000Z",
+          "role": "Agent G5 (HF Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF threshold hf.acute.ntg_start_high_mcg_min (Round 2 R1/R2/R3 remediation & verbatim PDF citation verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

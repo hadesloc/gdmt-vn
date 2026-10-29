@@ -1,0 +1,1497 @@
+[
+  {
+    "id": "esc.htn.2024.definition_classes",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 51,
+    "locator": "Section 8.4 / PDF p. 51",
+    "quote": "When a patient is diagnosed with confirmed hypertension (sustained BP ≥ 140/90 mmHg), starting BP-lowering treatment is recommended irrespective of CVD risk",
+    "quoteVi": "Khi bệnh nhân được chẩn đoán tăng huyết áp xác định (HA duy trì ≥ 140/90 mmHg), khuyến cáo khởi trị hạ áp bất kể mức nguy cơ tim mạch."
+  },
+  {
+    "id": "esc.htn.2024.elevated_definition",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 51,
+    "locator": "Section 8.4 / PDF p. 51",
+    "quote": "When office BP is 120–139/70–89 mmHg, the patient is considered as having elevated BP",
+    "quoteVi": "Khi HA phòng khám từ 120–139/70–89 mmHg, bệnh nhân được coi là có huyết áp tăng."
+  },
+  {
+    "id": "esc.htn.2024.bp_target_general",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 55,
+    "locator": "Recommendation Table 18 / PDF p. 55",
+    "quote": "To reduce CVD risk, it is recommended that treated systolic BP values in most adults be targeted to 120– 129 mmHg, provided the treatment is well tolerated.",
+    "quoteVi": "Để giảm nguy cơ tim mạch, khuyến cáo đích HA tâm thu điều trị ở đa số người lớn là 120–129 mmHg, với điều kiện điều trị dung nạp tốt (Nhóm I, Mức A).",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.htn.2024.bp_target_alara",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 55,
+    "locator": "Recommendation Table 18 / PDF p. 55",
+    "quote": "In cases where BP-lowering treatment is poorly tolerated and achieving a systolic of 120–129 mmHg is not possible, it is recommended to target a systolic BP level that is ‘as low as reasonably achievable’ (ALARA principle).",
+    "quoteVi": "Trong trường hợp điều trị hạ áp kém dung nạp và không thể đạt HA tâm thu 120–129 mmHg, khuyến cáo nhắm tới mức HA tâm thu thấp nhất có thể đạt được một cách hợp lý (nguyên lý ALARA) (Nhóm I, Mức A).",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.htn.2024.bp_target_lenient",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 55,
+    "locator": "Recommendation Table 18 / PDF p. 55",
+    "quote": "Because the CVD benefit of an on-treatment systolic BP target of 120–129 mmHg may not generalize to the following specific settings, personalized and more lenient BP targets (e.g. <140 mmHg) should be considered among patients meeting the following criteria: pre-treatment symptomatic orthostatic hypotension, and/or age ≥85 years.",
+    "quoteVi": "Đích HA cá thể hóa và nới lỏng hơn (< 140 mmHg) nên được xem xét ở bệnh nhân có hạ HA tư thế có triệu chứng trước điều trị, và/hoặc tuổi ≥ 85 (Nhóm IIa, Mức C).",
+    "cor": "IIa",
+    "loe": "C"
+  },
+  {
+    "id": "esc.htn.2024.bp_target_frailty",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 55,
+    "locator": "Recommendation Table 18 / PDF p. 55",
+    "quote": "Because the CVD benefit of an on-treatment systolic BP target of 120–129 mmHg may not generalize to the following specific settings, personalized and more lenient BP targets (e.g. <140/90 mmHg) may be considered among patients meeting the following criteria: clinically significant moderate-to-severe frailty at any age, and/or limited predicted lifespan (<3 years).",
+    "quoteVi": "Đích HA nới lỏng hơn (< 140/90 mmHg) có thể được cân nhắc ở bệnh nhân suy yếu mức độ vừa đến nặng ở mọi lứa tuổi, và/hoặc kỳ vọng sống hạn chế < 3 năm (Nhóm IIb, Mức C).",
+    "cor": "IIb",
+    "loe": "C"
+  },
+  {
+    "id": "esc.htn.2024.bp_target_dbp",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 55,
+    "locator": "Recommendation Table 18 / PDF p. 55",
+    "quote": "In cases where on-treatment systolic BP is at or below target (120–129 mmHg) but diastolic BP is not at target (≥80 mmHg), intensifying BP-lowering treatment to achieve an on-treatment diastolic BP of 70–79 mmHg may be considered to reduce CVD risk.",
+    "quoteVi": "Nếu HA tâm thu đã đạt đích (120–129 mmHg) nhưng HA tâm trương chưa đạt (≥ 80 mmHg), có thể cân nhắc tăng cường điều trị để đạt HA tâm trương 70–79 mmHg nhằm giảm nguy cơ tim mạch (Nhóm IIb, Mức C).",
+    "cor": "IIb",
+    "loe": "C"
+  },
+  {
+    "id": "esc.htn.2024.initial_combination",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 51,
+    "locator": "Recommendation Table 16 / PDF p. 51",
+    "quote": "Given trial evidence for more effective BP control vs. monotherapy, combination BP-lowering treatment is recommended for most patients with confirmed hypertension (BP ≥140/90 mmHg) as initial therapy. Preferred combinations are a RAS blocker (either an ACE inhibitor or an ARB) with a dihydropyridine CCB or diuretic.",
+    "quoteVi": "Khuyến cáo phối hợp thuốc hạ áp ngay từ đầu cho hầu hết bệnh nhân tăng huyết áp xác định (HA ≥ 140/90 mmHg). Phối hợp ưu tiên là thuốc ức chế hệ RAS (ACEi hoặc ARB) với chẹn kênh canxi DHP hoặc lợi tiểu (Nhóm I, Mức B).",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.htn.2024.first_line_classes",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 51,
+    "locator": "Recommendation Table 16 / PDF p. 51",
+    "quote": "Among all BP-lowering drugs, ACE inhibitors, ARBs, dihydropyridine CCBs, and diuretics (thiazides and thiazide-like drugs such as chlorthalidone and indapamide) have demonstrated the most effective reduction of BP and CVD events, and are therefore recommended as first-line treatments to lower BP.",
+    "quoteVi": "Trong tất cả các thuốc hạ áp, ACEi, ARB, CCB dihydropyridine và lợi tiểu (thiazide và thiazide-like như chlorthalidone và indapamide) chứng minh hiệu quả giảm HA và biến cố tim mạch tốt nhất, được khuyến cáo là điều trị bước đầu (Nhóm I, Mức A).",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.htn.2024.beta_blocker_indications",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 51,
+    "locator": "Recommendation Table 16 / PDF p. 51",
+    "quote": "It is recommended that beta-blockers are combined with any of the other major BP-lowering drug classes when there are other compelling indications for their use, e.g. angina, post-myocardial infarction, heart failure with reduced ejection fraction, or for heart rate control.",
+    "quoteVi": "Khuyến cáo phối hợp thuốc chẹn beta với bất kỳ nhóm thuốc hạ áp chính nào khác khi có chỉ định bắt buộc riêng như: đau thắt ngực, sau nhồi máu cơ tim, suy tim phân suất tống máu giảm (HFrEF), hoặc để kiểm soát tần số tim (Nhóm I, Mức A).",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.htn.2024.triple_combination",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 51,
+    "locator": "Recommendation Table 16 / PDF p. 51",
+    "quote": "If BP is not controlled with a two-drug combination, increasing to a three-drug combination is recommended, usually a RAS blocker with a dihydropyridine CCB and a thiazide/thiazide-like diuretic, and preferably in a single-pill combination.",
+    "quoteVi": "Nếu HA không kiểm soát được với phác đồ 2 thuốc, khuyến cáo tăng lên phác đồ 3 thuốc, thông thường gồm 1 thuốc ức chế RAS + 1 CCB dihydropyridine + 1 lợi tiểu thiazide/thiazide-like, ưu tiên viên phối hợp cố định (SPC) (Nhóm I, Mức B).",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.htn.2024.spiro_resistant",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 51,
+    "locator": "Recommendation Table 16 / PDF p. 51",
+    "quote": "If BP is not controlled with a three-drug combination, adding spironolactone should be considered.",
+    "quoteVi": "Nếu HA không kiểm soát được với phác đồ 3 thuốc, nên cân nhắc bổ sung spironolactone (Nhóm IIa, Mức B).",
+    "cor": "IIa",
+    "loe": "B"
+  },
+  {
+    "id": "esc.htn.2024.resistant_definition",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 70,
+    "locator": "Recommendation Table 30 / PDF p. 70",
+    "quote": "In patients with resistant hypertension and uncontrolled BP despite use of first-line BP lowering therapies, the addition of spironolactone to existing treatment should be considered.",
+    "quoteVi": "Ở bệnh nhân tăng huyết áp kháng trị chưa kiểm soát được huyết áp dù đã dùng các liệu pháp bước một, nên cân nhắc bổ sung spironolactone vào phác đồ hiện có.",
+    "cor": "IIa",
+    "loe": "B"
+  },
+  {
+    "id": "esc.htn.2024.ban_dual_rasi",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 51,
+    "locator": "Recommendation Table 16 / PDF p. 51",
+    "quote": "Combining two RAS blockers (ACE inhibitor and an ARB) is not recommended.",
+    "quoteVi": "Không khuyến cáo phối hợp đồng thời hai thuốc ức chế hệ renin-angiotensin (ACEi và ARB).",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "esc.htn.2024.pregnancy_contraindication_rasi",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 81,
+    "locator": "Section 13 Tables of Recommendations / PDF p. 81",
+    "quote": "RAS blockers are not recommended during pregnancy.",
+    "quoteVi": "Các thuốc ức chế hệ renin-angiotensin (ACEi, ARB, ARNI) không được khuyến cáo trong thai kỳ (chống chỉ định do độc tính trên thai).",
+    "cor": "III",
+    "loe": "B"
+  },
+  {
+    "id": "esc.htn.2024.pregnancy_first_line",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 81,
+    "locator": "Section 13 Tables of Recommendations / PDF p. 81",
+    "quote": "Dihydropyridine CCBs (preferably extended-release nifedipine), labetalol, and methyldopa are recommended first-line BP-lowering medications for treating hypertension in pregnancy.",
+    "quoteVi": "CCB dihydropyridine (ưu tiên nifedipine phóng thích kéo dài), labetalol và methyldopa là những thuốc hạ áp hàng đầu được khuyến cáo điều trị tăng huyết áp trong thai kỳ (Nhóm I, Mức C).",
+    "cor": "I",
+    "loe": "C"
+  },
+  {
+    "id": "esc.htn.2024.gout_thiazide_caution",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 62,
+    "locator": "Section 9.3.3 / PDF p. 62",
+    "quote": "thiazides or thiazide-like diuretics are preferred unless there is a specific contraindication, such as gout, orthostatic hypotension, or disturbed micturition (including micturition syncope).",
+    "quoteVi": "Lợi tiểu thiazide hoặc thiazide-like được ưu tiên trừ khi có chống chỉ định đặc thù như bệnh gút, hạ HA tư thế, hoặc rối loạn tiểu tiện."
+  },
+  {
+    "id": "kdigo.bp.2021.target_sbp_120",
+    "sourceId": "kdigo_2021_bp",
+    "pdfPage": 29,
+    "locator": "Chapter 3 Recommendation 3.1.1 / PDF p. 29",
+    "quote": "suggest that adults with high BP and CKD be treated with a target systolic blood pressure (SBP) of <120 mm Hg, when tolerated, using standardized ofﬁce BP measurement (2B).",
+    "quoteVi": "KDIGO 2021 đề xuất người lớn tăng HA có CKD nên được điều trị với đích HA tâm thu < 120 mmHg khi dung nạp được, sử dụng phương pháp đo HA phòng khám chuẩn hóa (Khuyến cáo 2B).",
+    "cor": "2",
+    "loe": "B"
+  },
+  {
+    "id": "byt.3192.2010.target",
+    "sourceId": "byt_3192_2010_htn",
+    "pdfPage": 3,
+    "locator": "Mục 4.1 Nguyên tắc chung / PDF tr. 3",
+    "quote": "“Huyết áp mục tiêu” cần đạt là < 140/90 mmHg và thấp hơn nữa nếu người bệnh vẫn dung nạp được. Nếu nguy cơ tim mạch từ cao đến rất cao thì huyết áp mục tiêu cần đạt là < 130/80 mmHg.",
+    "quoteVi": "Huyết áp mục tiêu theo Bộ Y tế (QĐ 3192/QĐ-BYT) là < 140/90 mmHg; nếu nguy cơ tim mạch từ cao đến rất cao thì huyết áp mục tiêu cần đạt là < 130/80 mmHg."
+  },
+  {
+    "id": "byt.3192.2010.step_treatment",
+    "sourceId": "byt_3192_2010_htn",
+    "pdfPage": 4,
+    "locator": "Mục 4.3 Tuyến cơ sở / PDF tr. 4",
+    "quote": "Tăng huyết áp độ 1: có thể lựa chọn một thuốc trong số các nhóm: lợi tiểu thiazide liều thấp; ức chế men chuyển; chẹn kênh canxi loại tác dụng kéo dài; chẹn beta giao cảm (nếu không có chống chỉ định). + Tăng huyết áp từ độ 2 trở lên: nên phối hợp 2 loại thuốc",
+    "quoteVi": "Tăng huyết áp độ 1: khởi đầu 1 thuốc. Tăng huyết áp từ độ 2 trở lên: nên phối hợp 2 loại thuốc cơ bản liều thấp."
+  },
+  {
+    "id": "vsh.htn.2022.monotherapy_elderly",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 29,
+    "locator": "Bảng 9 / PDF tr. 29",
+    "quote": "Đơn trị có thể xem xét ở những bệnh nhân rất già (> 80 tuổi) hoặc suy yếu và những người có HA bình thường - cao với nguy cơ thấp và trung bình",
+    "quoteVi": "Đơn trị liệu có thể xem xét ở bệnh nhân rất già (> 80 tuổi) hoặc suy yếu và những người có HA bình thường-cao với nguy cơ thấp và trung bình.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "vsh.htn.2022.drugs_table_ccb",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 30,
+    "locator": "Bảng 10 / PDF tr. 30",
+    "quote": "Nhóm Dihyropyridine\nAmlodipine 2.5 5 - 10\nFelodipine 2.5 5 - 10\nIsradipine 2.5 x 2 lần/ngày 5 - 10 x 2 lần/ngày\nNifedipine 30 30 - 90\nNitrendipine 10 20\nLercanidipine 10 20",
+    "quoteVi": "Bảng liều thuốc CCB nhóm Dihydropyridine (VSH 2022): Amlodipine 2.5 mg (thấp), 5–10 mg (chuẩn - tối đa); Felodipine 2.5 mg (thấp), 5–10 mg; Nifedipine 30 mg (thấp), 30–90 mg; Lercanidipine 10 mg (thấp), 20 mg (chuẩn - tối đa)."
+  },
+  {
+    "id": "vsh.htn.2022.drugs_table_diuretic",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 31,
+    "locator": "Bảng 10 / PDF tr. 31",
+    "quote": "Lợi tiểu (LT)\nNhóm Thiazides và Thiazide-like\nBendroflumethiazide 5 10\nChlorthalidone 12.5 12.5 - 25\nHydrochlorothiazide 12.5 12.5 - 50\nIndapamide 1.25 2.5",
+    "quoteVi": "Bảng liều thuốc lợi tiểu Thiazide và Thiazide-like (VSH 2022): Chlorthalidone 12.5 mg (thấp), 12.5–25 mg (chuẩn); Hydrochlorothiazide 12.5 mg (thấp), 12.5–50 mg; Indapamide 1.25 mg (thấp), 2.5 mg (chuẩn)."
+  },
+  {
+    "id": "vsh.htn.2022.drugs_table_other",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 32,
+    "locator": "Bảng 10 / PDF tr. 32",
+    "quote": "Doxazosin 1 1 - 2\nPrazosin 1 x 2 lần/ngày 1 - 5 x 2 lần/ngày\nTerazosin 1 1 - 2\nGiãn mạch\nHydralazin 10 x 2 lần/ngày 25 - 100 x 2 lần/ngày\nMinoxidil 2.5 5 - 10\nChủ vận chọn lọc alpha-2 giao cảm\nClonidine 0.1 x 2 lần/ngày 0.1 - 0.2 x 2 lần/ngày\nMethyldopa 125 x 2 lần/ngày 250 - 500 x 2 lần/ngày",
+    "quoteVi": "Bảng liều thuốc chẹn alpha và tác động trung ương (VSH 2022): Doxazosin 1 mg (thấp), 1–2 mg; Clonidine 0.1 mg x 2 lần/ngày (thấp), 0.1–0.2 mg x 2 lần/ngày; Methyldopa 125 mg x 2 lần/ngày (thấp), 250–500 mg x 2 lần/ngày."
+  },
+  {
+    "id": "vsh.htn.2022.emergency_malignant",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 40,
+    "locator": "Mục 3.6.5 THA cấp cứu / PDF tr. 40",
+    "quote": "Tăng huyết áp ác tính: Tăng HA nặng (≥ 180/120 mmHg) liên quan đến bệnh võng mạc hai bên tiến triển (xuất huyết, xuất tiết dạng bông, phù gai thị).",
+    "quoteVi": "Định nghĩa THA ác tính: Huyết áp tăng rất nặng (≥ 180/120 mmHg) kèm tổn thương võng mạc tiến triển (xuất huyết, xuất tiết, phù gai thị)."
+  },
+  {
+    "id": "vsh.htn.2022.emergency_encephalopathy",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 41,
+    "locator": "Bảng 14 / PDF tr. 41",
+    "quote": "Bệnh não THA Ngay lập tức, MAP - 20% đến - 25% Labetalol; Nicardipine",
+    "quoteVi": "Bệnh não do tăng huyết áp: Hạ HA ngay lập tức, giảm 20% đến 25% huyết áp trung bình (MAP); thuốc ưu tiên: Labetalol, Nicardipine."
+  },
+  {
+    "id": "vsh.htn.2022.emergency_aortic_dissection",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 41,
+    "locator": "Bảng 14 / PDF tr. 41",
+    "quote": "Bệnh động mạch chủ cấp Ngay lập tức, HATT < 120 mmHg và nhịp tim < 60 lần / phút Esmolol và Nitroprusside hoặc Nitroglycerine hoặc Nicardipine",
+    "quoteVi": "Bóc tách / bệnh động mạch chủ cấp: Hạ áp ngay lập tức, đích HA tâm thu < 120 mmHg và nhịp tim < 60 chu kỳ/phút; thuốc ưu tiên: Esmolol phối hợp giãn mạch (Nitroprusside, Nitroglycerin hoặc Nicardipine)."
+  },
+  {
+    "id": "vsh.htn.2022.emergency_pulmonary_edema",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 41,
+    "locator": "Bảng 14 / PDF tr. 41",
+    "quote": "Phù phổi cấp do tim Ngay lập tức, HATT < 140 mmHg Nitroprusside hoặc Nitroglycerine (với lợi tiểu quai) Urapidil (với lợi tiểu quai)",
+    "quoteVi": "Phù phổi cấp do tim: Hạ áp ngay lập tức, đích HA tâm thu < 140 mmHg; thuốc ưu tiên: Nitroprusside hoặc Nitroglycerin (phối hợp với lợi tiểu quai); thay thế: Urapidil."
+  },
+  {
+    "id": "vsh.htn.2022.emergency_stroke_thrombolysis",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 41,
+    "locator": "Bảng 14 / PDF tr. 41",
+    "quote": "Nhồi máu não cấp có chí định tiêu sợi huyết và HATT >185 mmHg hoặc HATTr > 110 mmHg 1 giờ, MAP - 15% Labetalol; Nicardipine",
+    "quoteVi": "Nhồi máu não cấp có chỉ định tiêu sợi huyết và HATT > 185 mmHg hoặc HATTr > 110 mmHg: Hạ áp trong 1 giờ, giảm 15% MAP; thuốc ưu tiên: Labetalol, Nicardipine."
+  },
+  {
+    "id": "vsh.htn.2022.emergency_stroke_no_thrombolysis",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 41,
+    "locator": "Bảng 14 / PDF tr. 41",
+    "quote": "Nhồi máu não cấp và HATT > 220 mmHg hoặc HATTr > 120 mmHg 1 giờ, MAP - 15% Labetalol; Nicardipine",
+    "quoteVi": "Nhồi máu não cấp không tiêu sợi huyết: Chỉ hạ áp khi HATT > 220 mmHg hoặc HATTr > 120 mmHg, hạ 15% MAP trong 1 giờ đầu; thuốc ưu tiên: Labetalol, Nicardipine."
+  },
+  {
+    "id": "vsh.htn.2022.emergency_ich",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 41,
+    "locator": "Bảng 14 / PDF tr. 41",
+    "quote": "Xuất huyết não cấp và HATT > 180 mmHg 130 < HATT < 180 mmHg Labetalol; Nicardipine",
+    "quoteVi": "Xuất huyết não cấp có HATT > 180 mmHg: Hạ HA nhanh nhưng thận trọng về khoảng 130–180 mmHg (tránh hạ quá mức < 130 mmHg); thuốc ưu tiên: Labetalol, Nicardipine."
+  },
+  {
+    "id": "vsh.htn.2022.emergency_preeclampsia",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 41,
+    "locator": "Bảng 14 / PDF tr. 41",
+    "quote": "Sản giật và Tiền sản giật nặng / HELLP Ngay lập tức, HATT <160mmHg và HATTr <105 mmHg Labetalol hoặc Nicardipine và Magnesium sulfate",
+    "quoteVi": "Sản giật và Tiền sản giật nặng / HELLP: Hạ áp ngay lập tức, đích HATT < 160 mmHg và HATTr < 105 mmHg; thuốc ưu tiên: Labetalol hoặc Nicardipine phối hợp Magnesium sulfate."
+  },
+  {
+    "id": "fda.amlodipine.dosing",
+    "sourceId": "fda_label_amlodipine",
+    "pdfPage": 4,
+    "locator": "Section 2.1 Adults / PDF p. 4",
+    "quote": "The usual initial antihypertensive oral dose of NORVASC is 5 mg once daily, and the maximum dose is 10 mg once daily. Small, fragile, or elderly patients, or patients with hepatic insufficiency may be started on 2.5 mg once daily",
+    "quoteVi": "Liều khởi đầu uống thông thường của amlodipine là 5 mg 1 lần/ngày, liều tối đa là 10 mg 1 lần/ngày. Bệnh nhân nhỏ người, suy yếu, cao tuổi hoặc suy gan có thể khởi đầu với 2.5 mg 1 lần/ngày."
+  },
+  {
+    "id": "ema.indapamide.dosing",
+    "sourceId": "ema_label_indapamide",
+    "pdfPage": 2,
+    "locator": "Section 2 & Section 4.2 Posology / PDF p. 2",
+    "quote": "Indapamide 1.5 mg per prolonged -release film -coated tablet. Excipients: contains lactose monohydrate. For a full list of excipients see section 6.1. 3 PHARMACEUTICAL FORM Prolonged -release tablet Product imported from the UK and Poland: White, round film -coated tablet. 4 CLINICAL PARTICULARS 4.1 Therapeutic Indications Essential hypertension. 4.2 Posology and method of administration Oral use. One tablet per 24 hours, preferably in the morning, to be swallowed whole with water and not chewed.",
+    "quoteVi": "Indapamide 1,5 mg viên nén bao phim giải phóng kéo dài; uống 1 viên mỗi 24 giờ, ưu tiên vào buổi sáng, nuốt nguyên viên với nước và không nhai."
+  },
+  {
+    "id": "ema.indapamide.renal_contra",
+    "sourceId": "ema_label_indapamide",
+    "pdfPage": 2,
+    "locator": "Section 4.2 Renal failure / PDF p. 2",
+    "quote": "In severe renal failure (creatinine clearance below 30 ml/min), treatment is contraindicated.",
+    "quoteVi": "Trong suy thận nặng (độ thanh thải creatinin dưới 30 ml/phút), indapamide chống chỉ định."
+  },
+  {
+    "id": "aha.acc.2025.bp_target_130",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 6,
+    "locator": "Executive Summary / PDF p. 6",
+    "quote": "The over- arching blood pressure treatment goal is <130/80 mm Hg for all adults, with additional considerations for those who require institutional care, have a limited predicted lifespan, or are pregnant.",
+    "quoteVi": "Đích huyết áp điều trị bao trùm theo AHA/ACC 2025 là < 130/80 mmHg cho tất cả người lớn, với các lưu ý riêng cho đối tượng chăm sóc tại cơ sở điều dưỡng, kỳ vọng sống giới hạn, hoặc phụ nữ mang thai."
+  },
+  {
+    "id": "aha.acc.2025.table13_chlorthalidone",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 40,
+    "locator": "Table 13 / PDF p. 40",
+    "quote": "Chlorthalidone 12.5-25 1 Chlorthalidone has a longer half-life and is more potent than hydrochlorothiazide on a mg-to-mg basis. Monitor for hyponatremia and hypokalemia, increased glucose, uric acid, and calcium levels. Monitor patients with history of acute gout unless patient is on uric acid- lowering therapy.",
+    "quoteVi": "Chlorthalidone liều 12.5–25 mg/ngày 1 lần/ngày. Theo dõi nồng độ natri, kali, glucose, acid uric máu. Cảnh báo theo dõi bệnh nhân có tiền sử gút cấp."
+  },
+  {
+    "id": "aha.acc.2025.table13_spiro_egfr45",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 40,
+    "locator": "Table 13 / PDF p. 40",
+    "quote": "Avoid use with K þ supplements, other K þ-sparing diuretics, or signi ﬁcant renal dysfunction (eg, GFR <45 mL/min). Eplerenone often requires twice-daily dosing for adequate BP lowering. Avoid use in pregnancy. Spironolactone 25-100 1",
+    "quoteVi": "Spironolactone liều 25–100 mg/ngày trong THA kháng trị. Tránh dùng khi suy thận đáng kể (GFR < 45 mL/min) hoặc phối hợp thuốc giữ kali do nguy cơ tăng kali máu."
+  },
+  {
+    "id": "aha.acc.2025.table13_alpha1",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 41,
+    "locator": "Table 13 / PDF p. 41",
+    "quote": "Doxazosin 1-16 1 These are associated with orthostatic hypotension, especially in older adults with a greater BP drop with ﬁrst dose effect. These may be considered a second-line agent in patients with symptomatic benign prostatic hypertrophy.",
+    "quoteVi": "Doxazosin 1–16 mg/ngày 1 lần/ngày. Nguy cơ hạ HA tư thế (hiệu ứng liều đầu). Lựa chọn thứ hai ưu tiên ở bệnh nhân có phì đại lành tính tuyến tiền liệt có triệu chứng."
+  },
+  {
+    "id": "aha.acc.2025.table13_central_clonidine",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 41,
+    "locator": "Table 13 / PDF p. 41",
+    "quote": "Clonidine oral 0.1-0.8 2 These are generally reserved as last-line choices because of signi ﬁcant CNS adverse effects, especially in older adults. Avoid abrupt discontinuation of clonidine, which may induce hypertensive crisis. Clonidine must be tapered to avoid rebound hypertension.",
+    "quoteVi": "Clonidine uống 0.1–0.8 mg/ngày chia 2 lần. Lựa chọn hàng sau do tác dụng phụ thần kinh trung ương. Cấm ngừng thuốc đột ngột vì nguy cơ cơn THA dội ngược (phải giảm liều từ từ)."
+  },
+  {
+    "id": "aha.acc.2025.table13_methyldopa",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 41,
+    "locator": "Table 13 / PDF p. 41",
+    "quote": "Methyldopa 250-1,000 2",
+    "quoteVi": "Methyldopa liều 250–1,000 mg/ngày chia 2 lần."
+  },
+  {
+    "id": "aha.acc.2025.iv_nicardipine",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 74,
+    "locator": "Table 26 / PDF p. 74",
+    "quote": "CCB—dihydropyridines Nicardipine Initial 5 mg/h, increasing every 5 min by 2.5 mg/h to maximum 15 mg/h Contraindicated in advanced aortic stenosis; no dose adjustment needed for persons aged $65 y. No negative inotropic or chronotropic effects.",
+    "quoteVi": "Nicardipine TM: Khởi đầu 5 mg/giờ, tăng mỗi 5 phút thêm 2,5 mg/giờ đến tối đa 15 mg/giờ. Chống chỉ định trong hẹp van động mạch chủ nặng; không cần chỉnh liều ở người ≥ 65 tuổi; không gây ức chế co bóp cơ tim hay nhịp tim."
+  },
+  {
+    "id": "aha.acc.2025.iv_clevidipine",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 74,
+    "locator": "Table 26 / PDF p. 74",
+    "quote": "Clevidipine Initial 1-2 mg/h, doubling every 90 s until BP approaches target, then increasing by less than double every 5-10 min; maximum dose 21 mg/h; maximum duration 72 h Contraindicated in patients with soybean, soy product, egg, and egg product allergy and in patients with defective lipid metabolism (eg, pathological hyperlipidemia, lipoid nephrosis [minimal change disease] or acute pancreatitis). No negative inotropic or chronotropic effects. Decreased risk of reﬂex tachycardia.",
+    "quoteVi": "Clevidipine TM: Khởi đầu 1–2 mg/giờ, nhân đôi mỗi 90 giây khi gần đạt đích, tối đa 21 mg/giờ trong tối đa 72 giờ. Chống chỉ định khi dị ứng đậu nành/trứng hoặc rối loạn chuyển hóa lipid nặng (tăng lipid máu bệnh lý, thận hư nhiễm mỡ, viêm tụy cấp)."
+  },
+  {
+    "id": "aha.acc.2025.iv_nitroprusside",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 74,
+    "locator": "Table 26 / PDF p. 74",
+    "quote": "Sodium nitroprusside Initial 0.3-0.5 mcg/kg/min; increase in increments of 0.5 mcg/kg/min every 5 min to achieve BP target; maximum dose 10 mcg/kg/min; duration of treatment as short as possible Due to potency, intra-arterial BP monitoring is recommended to prevent “overshoot.” Lower dose required for older adults. Tachyphylaxis is common with extended use. No negative inotropic or chronotropic effects. Due to increased mortality risk, should be avoided in acute cerebrovascular disease unless other agents are not available. Use cautiously in pregnancy or older adults. Cyanide toxicity (increased risk in liver dysfunction and chronic kidney disease) and thiocyanate toxicity (increased risk in kidney dysfunction, sCr >3) may occur for infusion rates $3 mcg/kg/min and/or duration $3 d. Cyanide toxicity and thiocyanate toxicity may present similarly with metabolic acidosis, altered mental status, and cardiac arrhythmia. For either toxicity state, nitroprusside should be discontinued and sodium thiosulfate or cyanocobalamin should be administered.",
+    "quoteVi": "Natri nitroprusside TM: Khởi đầu 0,3–0,5 mcg/kg/phút, tăng 0,5 mcg/kg/phút mỗi 5 phút đến tối đa 10 mcg/kg/phút trong thời gian ngắn nhất có thể; cần theo dõi HA động mạch xâm lấn, tránh dùng trong bệnh mạch máu não cấp, thận trọng thai kỳ; nguy cơ ngộ độc cyanide/thiocyanate (nhất là suy gan/suy thận, tốc độ ≥ 3 mcg/kg/phút hoặc ≥ 3 ngày), xử trí bằng ngưng thuốc và dùng sodium thiosulfate hoặc cyanocobalamin."
+  },
+  {
+    "id": "aha.acc.2025.iv_nitroglycerin",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 74,
+    "locator": "Table 26 / PDF p. 74",
+    "quote": "Nitroglycerin Initial 5 mcg/min; increase in increments of 5 mcg/min every 3-5 min to a maximum rate of 200 mcg/min Use only in patients with acute coronary syndrome and/ or acute pulmonary edema. Do not use in volume- depleted patients. Tachyphylaxis is common with extended use.",
+    "quoteVi": "Nitroglycerin TM: Khởi đầu 5 mcg/phút, tăng mỗi 3–5 phút thêm 5 mcg/phút đến tối đa 200 mcg/phút. Chỉ dùng trong hội chứng vành cấp và/hoặc phù phổi cấp; chống chỉ định khi giảm thể tích tuần hoàn; dễ quen thuốc nhanh khi truyền kéo dài."
+  },
+  {
+    "id": "aha.acc.2025.iv_esmolol",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 74,
+    "locator": "Table 26 / PDF p. 74",
+    "quote": "Esmolol Loading dose 500-1,000 mcg/kg/min over 1 min followed by a 50-mcg/kg/min infusion. For additional dosing, the bolus dose is repeated, and the infusion increased in 50-mcg/kg/min increments as needed to a maximum of 300 mcg/kg/min Contraindicated in patients with concurrent beta- blocker therapy, bradycardia, or decompensated HF. Monitor for bradycardia. Higher doses may block beta-2 receptors and impact lung function in reactive airway and obstructive pulmonary disease.",
+    "quoteVi": "Esmolol TM: Liều nạp 500–1000 mcg/kg/phút trong 1 phút, duy trì 50 mcg/kg/phút, tăng bậc 50 mcg/kg/phút đến tối đa 300 mcg/kg/phút. Chống chỉ định khi đang dùng chẹn beta khác đồng thời, nhịp chậm hoặc suy tim mất bù; liều cao có thể ức chế beta-2 làm xấu chức năng phổi ở bệnh phổi tắc nghẽn/co thắt phế quản."
+  },
+  {
+    "id": "aha.acc.2025.iv_labetalol",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 74,
+    "locator": "Table 26 / PDF p. 74",
+    "quote": "Labetalol Initial 0.3- to 1.0-mg/kg dose (maximum 20 mg) slow IV injection at 10-min intervals or 0.4-1.0-mg/kg/h IV infusion up to 3 mg/kg/h. Adjust rate up to total cumulative dose of 300 mg/24 h Contraindicated in reactive airway or obstructive pulmonary disease. Especially useful in hyperadrenergic syndromes. May worsen HF and should not be given in patients with second- or third-degree heart block or bradycardia.",
+    "quoteVi": "Labetalol TM: Tiêm chậm 0,3–1,0 mg/kg (tối đa 20 mg) mỗi 10 phút hoặc truyền 0,4–1,0 mg/kg/giờ (tối đa 3 mg/kg/giờ), tổng liều tối đa 300 mg/24 giờ. Chống chỉ định trong hen/COPD, suy tim mất bù, block nhĩ thất độ 2–3 hoặc nhịp chậm."
+  },
+  {
+    "id": "esc.htn.2025.urapidil_iv",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 10,
+    "locator": "Section 12 / PDF p. 10",
+    "quote": "In severe hypertension, drug treatment with i.v. labetalol, urapidil, nicardipine, or oral short acting nifedipine or methyldopa is recommended for acute reduction in blood pressure.",
+    "quoteVi": "Trong THA nặng thai kỳ, điều trị thuốc bằng labetalol TM, urapidil TM, nicardipine TM, hoặc nifedipine/methyldopa uống được khuyến cáo để hạ áp cấp cứu.",
+    "cor": "I",
+    "loe": "C"
+  },
+  {
+    "id": "esc.hf.2026.moxonidine_contra",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 64,
+    "locator": "Section 7.3 Other treatments / PDF p. 64",
+    "quote": "and central sym- pathetic agonists, e.g. moxonidine, are contraindicated due to poor outcomes in patients with HFrEF.",
+    "quoteVi": "Thuốc chủ vận giao cảm trung ương (như moxonidine) chống chỉ định ở bệnh nhân suy tim phân suất tống máu giảm (HFrEF) do làm tăng biến cố tử vong.",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "esc.cvd.2021.score2",
+    "sourceId": "esc_2021_prevention",
+    "pdfPage": 11,
+    "locator": "Table of Recommendations / PDF p. 11",
+    "quote": "estimation of 10-year fatal and nonfatal CVD risk with SCORE2 is recommended.",
+    "quoteVi": "Ước tính nguy cơ biến cố tim mạch 10 năm gây tử vong và không tử vong bằng thang điểm SCORE2 được khuyến cáo ở người lớn 40–69 tuổi (Khuyến cáo Nhóm I).",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.htn.2024.elevated_high_risk",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 52,
+    "locator": "Recommendation Table 17 / PDF p. 52",
+    "quote": "after 3 months of lifestyle intervention, BP lowering with pharmacological treatment is recommended for those with confirmed BP ≥130/ 80 mmHg to reduce CVD risk.",
+    "quoteVi": "Ở người lớn có huyết áp tăng kèm nguy cơ tim mạch đủ cao, sau 3 tháng can thiệp lối sống, khuyến cáo khởi trị thuốc hạ áp nếu HA xác định vẫn ≥ 130/80 mmHg nhằm giảm nguy cơ tim mạch.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.htn.2024.table14_elevated_score2",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 52,
+    "locator": "Table 14 / PDF p. 52",
+    "quote": "(a) SBP 130–139 AND high-risk conditions (e.g. established CVD, diabetes mellitus, CKD, FH or HMOD) (b) SBP 130–139 AND 10-year estimated CVD risk ≥10%",
+    "quoteVi": "Khởi trị thuốc hạ áp ở nhóm HA tăng có SBP 130–139 mmHg kèm bệnh nguy cơ cao (CVD đã xác lập, ĐTĐ, CKD, tăng cholesterol máu gia đình hoặc tổn thương cơ quan đích) hoặc nguy cơ CVD 10 năm ước tính ≥ 10%."
+  },
+  {
+    "id": "esc.htn.2024.spiro_gates_egfr30_k45",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 69,
+    "locator": "Section 9.13.3 / PDF p. 69",
+    "quote": "Therefore, spironolactone should be restricted to patients with an eGFR of ≥30 mL/min/1.73 m 2 and a plasma potassium concentration of ≤4.5 mmol/L. 459 Steroidal MRAs are contraindicated in patients with an eGFR of <30 mL/min/1.73 m 2",
+    "quoteVi": "Spironolactone chỉ nên giới hạn cho bệnh nhân có eGFR ≥ 30 mL/phút/1.73m² và nồng độ kali huyết tương ≤ 4.5 mmol/L; các thuốc MRA steroid chống chỉ định ở bệnh nhân có eGFR < 30 mL/phút/1.73m²."
+  },
+  {
+    "id": "esc.htn.2024.ckd_loop_diuretic",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 69,
+    "locator": "Section 9.13.3 / PDF p. 69",
+    "quote": "In patients with eGFR < 30 mL/min/1.73 m 2 , an adequately up- titrated loop diuretic is necessary to define resistant hypertension.",
+    "quoteVi": "Ở bệnh nhân có eGFR < 30 mL/phút/1.73m², cần sử dụng lợi tiểu quai đã chuẩn độ liều thích hợp thay cho lợi tiểu thiazide thông thường."
+  },
+  {
+    "id": "esc.htn.2024.resistant_alternatives",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 71,
+    "locator": "Recommendation Table 30 / PDF p. 71",
+    "quote": "In patients with resistant hypertension in whom spironolactone is not effective or tolerated, treatment with eplerenone instead of spironolactone, 503 or the addition of a beta-blocker if not already indicated 459 and, next, a centrally acting BP-lowering medication, 515 an alpha-blocker, 515 hydralazine, or a potassium-sparing diuretic 516 should be considered.",
+    "quoteVi": "Ở bệnh nhân THA kháng trị khi spironolactone không hiệu quả hoặc không dung nạp, nên cân nhắc dùng eplerenone thay thế, hoặc thêm chẹn beta (nếu chưa dùng), tiếp theo là thuốc tác động trung ương, chẹn alpha-1, hydralazine hoặc lợi tiểu giữ kali (Nhóm IIa, Mức B).",
+    "cor": "IIa",
+    "loe": "B"
+  },
+  {
+    "id": "esc.htn.2024.arr_screening",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 43,
+    "locator": "Recommendation Table 13 / PDF p. 43",
+    "quote": "Screening for primary aldosteronism by renin and aldosterone measurements should be considered in all adults with confirmed hypertension (BP ≥140/90 mmHg).",
+    "quoteVi": "Cân nhắc sàng lọc cường aldosterone tiên phát bằng định lượng renin và aldosterone ở tất cả người lớn được chẩn đoán tăng huyết áp xác định (HA ≥ 140/90 mmHg).",
+    "cor": "IIa",
+    "loe": "B"
+  },
+  {
+    "id": "aha.acc.2025.stage1_prevent_75",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 36,
+    "locator": "Section 5.2.2 Recommendation 5 / PDF p. 36",
+    "quote": "5. In adults with hypertension without clinical CVD but with diabetes or CKD or at increased short-term CVD risk (ie, estimated 10-year CVD risk $7.5% based on PREVENT *), initiation of medications to lower BP is recommended when average SBP is $130 mm Hg to reduce the risk of CVD events and total mortality.",
+    "quoteVi": "Ở người lớn tăng huyết áp chưa có bệnh tim mạch lâm sàng nhưng có đái tháo đường, bệnh thận mạn hoặc nguy cơ tim mạch 10 năm theo PREVENT ≥ 7,5%, khuyến cáo khởi trị thuốc hạ áp khi HATT trung bình ≥ 130 mmHg.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "aha.acc.2025.acei_angioedema_contra",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 40,
+    "locator": "Table 13 (ACEi) / PDF p. 40",
+    "quote": "Do not use in combination with ARB or direct renin inhibitor. There is an increased risk of hyperkalemia, especially in patients with CKD or in those on K þ supplements or K þ-sparing drugs. There is a risk of acute renal failure in patients with severe bilateral renal artery stenosis. Do not use if patient has history of angioedema with ACEi. Avoid use in pregnancy.",
+    "quoteVi": "Không phối hợp ACEi với ARB hoặc thuốc ức chế trực tiếp renin. Tăng nguy cơ tăng kali máu (nhất là ở CKD hoặc dùng bù K+/lợi tiểu giữ K+) và suy thận cấp nếu hẹp động mạch thận hai bên nặng. Tuyệt đối không dùng nếu có tiền sử phù mạch với ACEi. Tránh dùng trong thai kỳ."
+  },
+  {
+    "id": "aha.acc.2025.nifedipine_no_sublingual",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 65,
+    "locator": "Table 22 / PDF p. 65",
+    "quote": "Do not use sublingual form.",
+    "quoteVi": "Tuyệt đối không sử dụng nifedipine dạng ngậm/nhỏ dưới lưỡi do nguy cơ tụt huyết áp không kiểm soát gây thiếu máu não và cơ tim."
+  },
+  {
+    "id": "aha.acc.2025.severe_asymptomatic_inpatient",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 73,
+    "locator": "Section 6.2 Recommendation 4 (COR 3: Harm) / PDF p. 73",
+    "quote": "4. For adults with severe hypertension (>180/120 mm Hg) who are hospi- talized for noncardiac conditions without evidence of acute target organ damage, intermittent use of additional IV or oral antihyperten- sive medications are not recom- mended to acutely reduce BP.",
+    "quoteVi": "Ở người lớn tăng huyết áp nặng (> 180/120 mmHg) đang nằm viện vì bệnh lý ngoài tim mạch mà không có bằng chứng tổn thương cơ quan đích cấp tính, không khuyến cáo (COR 3: Gây hại) dùng thêm thuốc hạ áp đường tĩnh mạch hoặc đường uống ngắt quãng để hạ áp cấp thời.",
+    "cor": "III",
+    "loe": "B-NR"
+  },
+  {
+    "id": "aha.acc.2025.pulmonary_edema_bb_contra",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 75,
+    "locator": "Table 27 / PDF p. 75",
+    "quote": "Acute pulmonary edema Clevidipine, nitroglycerin, nitroprusside Beta blockers contraindicated.",
+    "quoteVi": "Trong phù phổi cấp do tim kèm THA cấp cứu, ưu tiên nitroglycerin, clevidipine hoặc nitroprusside; chống chỉ định thuốc chẹn beta."
+  },
+  {
+    "id": "vsh.htn.2022.bp_classification",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 9,
+    "locator": "Bảng 1 / PDF tr. 9",
+    "quote": "HA bình thường - cao (Tiền tăng huyết áp) 130 - 139 và/hoặc 85 - 89 Tăng huyết áp độ 1 140 - 159 và/hoặc 90 - 99 Tăng huyết áp độ 2 ≥ 160 và/hoặc ≥ 100 Cơn tăng huyết áp ≥ 180 và/hoặc ≥ 120",
+    "quoteVi": "Phân loại huyết áp phòng khám theo VSH/VNHA 2022: HA bình thường-cao 130–139/85–89; THA độ 1: 140–159/90–99; THA độ 2: ≥ 160/100; Cơn THA: ≥ 180/120 mmHg."
+  },
+  {
+    "id": "vsh.htn.2022.contraindications_table11",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 33,
+    "locator": "Bảng 11 / PDF tr. 33",
+    "quote": "Ức chế men chuyển • Mang thai • Tiền sử có phù mạch • Tăng kali máu (> 5.5 mmol/L) • Hẹp động mạch thận hai bên",
+    "quoteVi": "Chống chỉ định bắt buộc của thuốc ức chế men chuyển / ARB (VSH 2022): Mang thai, tiền sử phù mạch (với ACEi), tăng kali máu > 5.5 mmol/L, hẹp động mạch thận hai bên."
+  },
+  {
+    "id": "vsh.htn.2022.bb_contraindications_table11",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 33,
+    "locator": "Bảng 11 / PDF tr. 33",
+    "quote": "Chẹn Beta • Hen • Bloc xoang nhĩ hoặc Bloc AV cao độ • Nhịp tim chậm (nhịp tim < 60 lần/phút)",
+    "quoteVi": "Chống chỉ định bắt buộc của thuốc chẹn beta (VSH 2022): Hen phế quản, block xoang nhĩ hoặc block nhĩ thất cao độ, nhịp tim chậm < 60 chu kỳ/phút."
+  },
+  {
+    "id": "byt.3192.2010.bp_grades",
+    "sourceId": "byt_3192_2010_htn",
+    "pdfPage": 2,
+    "locator": "Bảng 3 / PDF tr. 2",
+    "quote": "Huyết áp tâm thu 140-159 mmHg và/hoặc Huyết áp tâm trương 90-99 mmHg Huyết áp tâm thu 160-179 mmHg và/hoặc Huyết áp tâm trương 100-109 mmHg Huyết áp tâm thu ≥ 180 mmHg và/hoặc Huyết áp tâm trương ≥ 110 mmHg",
+    "quoteVi": "Phân độ tăng huyết áp theo Bộ Y tế (QĐ 3192/QĐ-BYT): Độ 1 (140–159/90–99 mmHg), Độ 2 (160–179/100–109 mmHg), Độ 3 (≥ 180/110 mmHg)."
+  },
+  {
+    "id": "esc.hf.2026.supp_diuretic_cautions",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 16,
+    "locator": "Supplementary Table / PDF p. 16",
+    "quote": "(1) Significant hypokalaemia (K+ ≤3.5 mmol/L)—may be made worse by diuretic. (2) Significant renal dysfunction (eGFR <30 mL/min/1.73 m2)—may be made worse by diuretic or patient may not respond to diuretic (especially thiazide diuretic). (3) Symptomatic or severe asymptomatic hypotension (systolic blood pressure <90 mmHg)",
+    "quoteVi": "Thận trọng khi dùng lợi tiểu: hạ kali máu đáng kể (K⁺ ≤ 3.5 mmol/L), suy thận nặng (eGFR < 30 mL/phút/1.73m² - kém đáp ứng thiazide), hoặc tụt huyết áp (SBP < 90 mmHg)."
+  },
+  {
+    "id": "aha.acc.2025.severe_outpatient_msg10",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 6,
+    "locator": "Top Take-Home Message 10 / PDF p. 6",
+    "quote": "10. Severe hypertension in nonpregnant individuals, deﬁned as blood pressure >180/120 mm Hg, without evidence of acute target organ damage, should be evaluated and treated in the outpatient setting with initiation, reinstitution, or intensi ﬁcation of oral antihypertensive medications in a timely manner.",
+    "quoteVi": "Tăng huyết áp nặng ở người không mang thai (> 180/120 mmHg) không có bằng chứng tổn thương cơ quan đích cấp tính nên được đánh giá và điều trị ngoại trú bằng khởi trị, tái lập hoặc tối ưu hóa thuốc hạ áp đường uống kịp thời."
+  },
+  {
+    "id": "aha.acc.2025.stage1_prevent_dbp_rec6",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 36,
+    "locator": "Section 5.2.2 Recommendation 6 / PDF p. 36",
+    "quote": "6. In adults with hypertension without clinical CVD but with diabetes or CKD or at increased 10-year CVD risk (ie, $7.5% based on PREVENT *), initiation of medications to lower BP is recommended when average DBP is $80 mm Hg to reduce the risk of CVD events and total mortality.",
+    "quoteVi": "Ở người lớn tăng huyết áp chưa có bệnh tim mạch lâm sàng nhưng có ĐTĐ, CKD hoặc nguy cơ tim mạch 10 năm theo PREVENT ≥ 7,5%, khuyến cáo khởi trị thuốc hạ áp khi HATTr trung bình ≥ 80 mmHg.",
+    "cor": "1",
+    "loe": "C-LD"
+  },
+  {
+    "id": "aha.acc.2025.stage1_prevent_low_risk",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 36,
+    "locator": "Section 5.2.2 Recommendation 7 / PDF p. 36",
+    "quote": "7. In adults with hypertension without clinical CVD and with estimated 10- year CVD risk <7.5% based on PREVENT, * initiation of medications to lower BP is recommended if average SBP remains $130 mm Hg after a 3- to 6-month trial of lifestyle intervention to prevent target organ damage and mitigate further rise in BP.",
+    "quoteVi": "Ở người lớn tăng huyết áp chưa có bệnh tim mạch lâm sàng và nguy cơ tim mạch 10 năm theo PREVENT < 7,5%, khuyến cáo khởi trị thuốc hạ áp nếu HATT trung bình vẫn ≥ 130 mmHg sau 3–6 tháng thay đổi lối sống.",
+    "cor": "1",
+    "loe": "B-R"
+  },
+  {
+    "id": "aha.acc.2025.arb_angioedema_6wk",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 40,
+    "locator": "Table 13 (ARBs) / PDF p. 40",
+    "quote": "Do not use if patient has history of angioedema with ARBs. Patients with a history of angioedema with an ACE inhibitor can receive an ARB beginning 6 weeks after ACE inhibitor is discontinued.",
+    "quoteVi": "Không dùng ARB nếu có tiền sử phù mạch với ARB. Bệnh nhân có tiền sử phù mạch do ACEi có thể dùng ARB sau khi đã ngưng ACEi ít nhất 6 tuần."
+  },
+  {
+    "id": "aha.acc.2025.table13_doses_extra",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 40,
+    "locator": "Table 13 / PDF p. 40",
+    "quote": "Hydrochlorothiazide 25-50 1 Indapamide 1.25-2.5 1",
+    "quoteVi": "Liều thường dùng hàng ngày AHA/ACC 2025 Table 13: Hydrochlorothiazide 25–50 mg 1 lần/ngày; Indapamide 1,25–2,5 mg 1 lần/ngày."
+  },
+  {
+    "id": "aha.acc.2025.table13_losartan_ccb_bb",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 40,
+    "locator": "Table 13 / PDF p. 40",
+    "quote": "Diltiazem ER 120-360 1 Avoid routine use with beta blockers because of increased risk of bradycardia and heart block.",
+    "quoteVi": "Diltiazem ER 120–360 mg 1 lần/ngày: tránh dùng thường quy cùng thuốc chẹn beta do tăng nguy cơ nhịp chậm và block tim."
+  },
+  {
+    "id": "aha.acc.2025.table13_eplerenone_furosemide",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 40,
+    "locator": "Table 13 (Aldosterone Antagonists) / PDF p. 40",
+    "quote": "Eplerenone 50-100 1 or 2 These are preferred agents in primary aldosteronism and resistant hypertension.",
+    "quoteVi": "AHA/ACC 2025 Table 13: Eplerenone liều thường dùng điều trị tăng huyết áp 50–100 mg/ngày chia 1 hoặc 2 lần; thuốc ưu tiên trong cường aldosterone nguyên phát và THA kháng trị."
+  },
+  {
+    "id": "aha.acc.2025.table13_bisoprolol_labetalol",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 41,
+    "locator": "Table 13 / PDF p. 41",
+    "quote": "Bisoprolol 2.5-10 1 Metoprolol tartrate",
+    "quoteVi": "Bisoprolol liều thường dùng trong tăng huyết áp: 2,5–10 mg 1 lần/ngày; tránh ngưng đột ngột thuốc chẹn beta."
+  },
+  {
+    "id": "aha.acc.2025.stage2_spc_rec1",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 42,
+    "locator": "Section 5.2.4 Recommendation 1 / PDF p. 42",
+    "quote": "1. In adults with stage 2 hypertension (SBP $140 mm Hg and DBP $90 mm Hg), initiation of antihyperten- sive drug therapy with 2 ﬁrst-line agents of different cl asses, ideally in a single-pill combination (SPC), is recommended to improve BP control and adherence.",
+    "quoteVi": "Ở người lớn tăng huyết áp giai đoạn 2 (HATT ≥ 140 mmHg hoặc HATTr ≥ 90 mmHg), khuyến cáo khởi trị bằng 2 thuốc hàng đầu thuộc 2 nhóm khác nhau, lý tưởng nhất trong viên phối hợp cố định liều (SPC).",
+    "cor": "1",
+    "loe": "B-R"
+  },
+  {
+    "id": "aha.acc.2025.stage1_mono_rec2",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 42,
+    "locator": "Section 5.2.4 Recommendation 2 (COR 2a) / PDF p. 42",
+    "quote": "2. In adults with stage 1 hypertension (SBP 130-139 mm Hg and DBP 80- 89 mm Hg), initiation of antihyper- tensive drug therapy with a single ﬁrst-line antihypertensive drug is reasonable, with dosage titration and sequential addition of other agents as needed to achieve BP control.",
+    "quoteVi": "Ở người lớn tăng huyết áp giai đoạn 1 (130–139/80–89 mmHg), hợp lý khi khởi trị bằng đơn trị liệu 1 thuốc hạ áp hàng đầu rồi chỉnh liều và phối hợp tuần tự để đạt đích.",
+    "cor": "2",
+    "loe": "C-EO"
+  },
+  {
+    "id": "aha.acc.2025.monitoring_bmp_2_4wk",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 49,
+    "locator": "Section 5.2.8 / PDF p. 49",
+    "quote": "A basic metabolic panel should be checked 2 to 4 weeks after initiation or dose titration of speci ﬁc antihypertensive medication classes, including diuretics, ACEi, ARB, and MRA.",
+    "quoteVi": "Cần kiểm tra xét nghiệm sinh hóa cơ bản (creatinin, điện giải đồ) sau 2 đến 4 tuần kể từ khi khởi trị hoặc tăng liều lợi tiểu, ACEi, ARB và MRA."
+  },
+  {
+    "id": "aha.acc.2025.egfr_dip_30pct",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 49,
+    "locator": "Section 5.2.9 / PDF p. 49",
+    "quote": "should not lead to discontinuation of the RAASi un- less the decline in eGFR is persistently >30%.",
+    "quoteVi": "Mức giảm eGFR nhẹ ban đầu khi khởi trị RAASi gắn liền với bảo tồn chức năng thận dài hạn và không nên ngưng RAASi trừ khi mức giảm eGFR kéo dài > 30%."
+  },
+  {
+    "id": "aha.acc.2025.hfpef_no_routine_bb",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 53,
+    "locator": "Section 5.3.4.2 / PDF p. 53",
+    "quote": "BB are not recommended for hypertension management with HFpEF given negative chronotropic effects and should be restricted to speci ﬁc comorbid conditions (eg, arrhythmia, ACS).",
+    "quoteVi": "Không khuyến cáo dùng thuốc chẹn beta thường quy chỉ để hạ áp ở bệnh nhân HFpEF do tác dụng giảm tần số tim, trừ khi có chỉ định bắt buộc kèm theo (như loạn nhịp, hội chứng vành cấp)."
+  },
+  {
+    "id": "aha.acc.2025.table18_k50",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 53,
+    "locator": "Table 18 / PDF p. 53",
+    "quote": "if eGFR is >30 mL/min/ 1.73 m 2 and potassium is <5.0 mEq/L.",
+    "quoteVi": "Điều kiện an toàn điện giải và chức năng thận (eGFR > 30 mL/phút/1,73m² và Kali huyết thanh < 5,0 mEq/L)."
+  },
+  {
+    "id": "aha.acc.2025.ich_rec1",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 55,
+    "locator": "Section 5.3.9.1 Recommendation 1 (COR 2a) / PDF p. 55",
+    "quote": "1. For adult patients with acute spon- taneous intracerebral hemorrhage (ICH) who present with SBP between 150 and 220 mm Hg, it can be bene ﬁcial to immediat ely lower SBP to 130 to <140 mm Hg for at least 7 days after ICH to improve functional outcomes but stop antihypertensive medications if SBP <130 mm Hg.",
+    "quoteVi": "Ở người lớn xuất huyết não tự phát cấp có HATT nhập viện 150–220 mmHg, có lợi khi hạ ngay HATT về 130 đến < 140 mmHg trong ít nhất 7 ngày, nhưng phải ngưng thuốc hạ áp nếu HATT < 130 mmHg.",
+    "cor": "2",
+    "loe": "A"
+  },
+  {
+    "id": "aha.acc.2025.ich_severe_220",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 56,
+    "locator": "Section 5.3.9.1 Supportive Text / PDF p. 56",
+    "quote": "cautious, modest lowering of SBP (in the range of 160-180 mm Hg) in ICH pa- tients with markedly high SBP levels ( >220 mm Hg) might be reasonable.",
+    "quoteVi": "Ở bệnh nhân xuất huyết não cấp có HATT tăng rất cao (> 220 mmHg), hạ HATT thận trọng vừa phải về khoảng 160–180 mmHg có thể hợp lý (tránh hạ sâu < 140 mmHg gây hại)."
+  },
+  {
+    "id": "aha.acc.2025.ais_rec2_rtpa",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 56,
+    "locator": "Section 5.3.9.2 Recommendation 2 / PDF p. 56",
+    "quote": "2. Patients who have elevated BP and are otherwise eligible for treatment with IV thrombolytics should have their BP lowered to SBP <185 mm Hg and DBP <110 mm Hg before IV thrombolytic therapy is initiated and should be maintained below 180/105 mm Hg for at least the ﬁrst 24 hours after initiating thrombo- lytic therapy",
+    "quoteVi": "Bệnh nhân đột quỵ thiếu máu não cấp có chỉ định tiêu sợi huyết tĩnh mạch phải được hạ HA xuống < 185/110 mmHg trước khi truyền và duy trì < 180/105 mmHg trong ít nhất 24 giờ đầu sau tiêu sợi huyết.",
+    "cor": "1",
+    "loe": "B-NR"
+  },
+  {
+    "id": "aha.acc.2025.ais_rec4_no_rtpa",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 56,
+    "locator": "Section 5.3.9.2 Recommendation 4 (COR 2b) / PDF p. 56",
+    "quote": "4. In patients with BP of $220/120 mm Hg who did not receive IV thrombolytic or endovascular treat- ment and have no comorbid condi- tions requiring acute antihypertensive treatment, it might be reasonable to lower BP by 15% during the ﬁrst 24 hours",
+    "quoteVi": "Ở bệnh nhân đột quỵ thiếu máu não cấp có HA ≥ 220/120 mmHg không điều trị tiêu sợi huyết hay can thiệp nội mạch và không có bệnh lý cấp cứu khác, có thể cân nhắc hạ HA khoảng 15% trong 24 giờ đầu.",
+    "cor": "2",
+    "loe": "C-LD"
+  },
+  {
+    "id": "aha.acc.2025.ais_rec6_evt_harm",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 57,
+    "locator": "Section 5.3.9.2 Recommendation 6 (COR 3: Harm) / PDF p. 57",
+    "quote": "6. In patients undergoing successful brain reperfusion with endovascular treatment for a large vessel occlu- sion, lowering SBP <140 mm Hg within the ﬁrst 24 to 72 hours after reperfusion can worsen long-term functional outcome.",
+    "quoteVi": "Ở bệnh nhân đột quỵ tắc mạch lớn đã tái thông thành công bằng lấy huyết khối cơ học (EVT), việc hạ tích cực HATT < 140 mmHg trong 24–72 giờ đầu gây hại và làm xấu kết cục chức năng dài hạn (COR 3: Harm).",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "aha.acc.2025.pregnancy_recs",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 64,
+    "locator": "Section 5.5 Recommendations 2–4 / PDF p. 64",
+    "quote": "2. Individuals with hypertension who are planning a pregnancy or who become pregnant should be coun- seled about the bene ﬁts of low-dose (81 mg/day) aspirin to reduce the risk of preeclampsia and its sequelae. 2 1 B-R 3. Pregnant individuals with SBP $160 mm Hg or DBP $110 mm Hg conﬁrmed on repeat measurement within 15 minutes should receive antihypertensive medication (Table 23 ) to lower BP to <160/ <110 mm Hg within 30 to 60 mi- nutes to prevent adverse events. 3-7 1 B-R 4. Pregnant individuals with chronic † hypertension (de ﬁned as prepreg- nancy hypertension or SBP 140 to 159 mm Hg and/or DBP 90 to 109 mm Hg prior to 20 weeks ’ gestation) should receive antihypertensive therapy to achieve BP <140/90 mm Hg to prevent maternal and perinatal morbidity and mortality.",
+    "quoteVi": "AHA/ACC 2025 Mục 5.5 (Rec 2–4, COR 1, LOE B-R): Tư vấn aspirin liều thấp 81 mg/ngày dự phòng tiền sản giật; hạ HA xuống < 160/110 mmHg trong 30–60 phút nếu HA ≥ 160/110 mmHg; điều trị THA mạn tính thai kỳ đạt đích < 140/90 mmHg.",
+    "cor": "1",
+    "loe": "B-R"
+  },
+  {
+    "id": "aha.acc.2025.pregnancy_contra_rec5",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 64,
+    "locator": "Section 5.5 Recommendation 5 (COR 3: Harm) / PDF p. 64",
+    "quote": "5. Individuals with hypertension who are planning a pregnancy or who become pregnant should not be treated with atenolol, ACEi, ARB, direct renin inhibitors, nitroprusside, or MRA to avoid fetal harm.",
+    "quoteVi": "Phụ nữ tăng huyết áp dự định mang thai hoặc đang mang thai không được điều trị bằng atenolol, ACEi, ARB, thuốc ức chế renin trực tiếp, nitroprusside hoặc MRA để tránh gây hại cho thai nhi (COR 3: Harm).",
+    "cor": "III",
+    "loe": "C-LD"
+  },
+  {
+    "id": "aha.acc.2025.pregnancy_table22_full",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 65,
+    "locator": "Table 22 / PDF p. 65",
+    "quote": "Labetalol 200-2,400 mg/d orally in 2 to 3 divided doses. Commonly initiated at 100-200 mg twice daily. Potential bronchoconstrictive effects. Avoid in women with asthma, preexisting myocardial disease, decompensated cardiac function, and heart block and bradycardia. Nifedipine 30-120 mg/d orally of an extended-release preparation. Commonly initiated at 30-60 mg once daily (extended release). Do not use sublingual form. Immediate-release formulation should generally be reserved for control of severe, acutely elevated blood pressures in hospitalized patients. Should be avoided in tachycardia. Methyldopa 500-3,000 mg/d orally in 2 to 4 divided doses. Commonly initiated at 250 mg 2 or 3 times daily. Safety data up to 7 y of age in offspring. May not be as effective as other medications, especially in control of severe hypertension. Use limited by side effect pro ﬁle (sedation, depression, dizziness). Hydrochlorothiazide 12.5-50 mg daily Second- or third-line agent.",
+    "quoteVi": "Thuốc uống thai kỳ (AHA/ACC 2025 Table 22): Labetalol 200–2400 mg/ngày (khởi đầu 100–200 mg x 2 lần/ngày; tránh ở hen, suy tim mất bù, block tim, nhịp chậm); Nifedipine giải phóng kéo dài 30–120 mg/ngày (khởi đầu 30–60 mg 1 lần/ngày; cấm dùng dạng ngậm dưới lưỡi); Methyldopa 500–3000 mg/ngày chia 2–4 lần; Hydrochlorothiazide 12,5–50 mg/ngày chỉ là lựa chọn hàng 2–3."
+  },
+  {
+    "id": "aha.acc.2025.emergency_compelling_rec2",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 73,
+    "locator": "Section 6.2 Recommendation 2 / PDF p. 73",
+    "quote": "2. For adults with a hypertensive emergency related to a compelling condition (eg, acute aortic syndrome or acute aortic dissection), SBP should be reduced to <140 mm Hg for most conditions and to <120 mm Hg in aortic dissection during the ﬁrst hour, while monitoring for other target organ dysfunction.",
+    "quoteVi": "Cấp cứu tăng huyết áp kèm bệnh cảnh bắt buộc: giảm HATT xuống < 140 mmHg ở đa số bệnh cảnh (hội chứng vành cấp, phù phổi cấp) và xuống < 120 mmHg trong bóc tách động mạch chủ cấp ngay trong giờ đầu.",
+    "cor": "1",
+    "loe": "C-LD"
+  },
+  {
+    "id": "aha.acc.2025.emergency_general_rec3",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 73,
+    "locator": "Section 6.2 Recommendation 3 / PDF p. 73",
+    "quote": "3. For adults with a hypertensive emergency but without a compelling condition, SBP should be reduced with oral or parenteral therapy by no more than 25% within the ﬁrst hour; then, if stable, to <160/100 mm Hg within the next 2 to 6 hours; and then cautiously to 130 to 140 mm Hg",
+    "quoteVi": "Cấp cứu tăng huyết áp không kèm bệnh cảnh chuyên biệt (bóc tách ĐMC/phù phổi/sản giật): giảm HATT tối đa không quá 25% trong giờ đầu, sau đó đưa về < 160/100 mmHg trong 2–6 giờ tiếp theo rồi thận trọng về 130–140 mmHg.",
+    "cor": "1",
+    "loe": "C-LD"
+  },
+  {
+    "id": "aha.acc.2025.table27_aortic_acs",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 75,
+    "locator": "Table 27 / PDF p. 75",
+    "quote": "Acute aortic dissection Esmolol, labetalol Requires rapid lowering of SBP to #120 mm Hg. Beta blockade should precede vasodilator (eg, nicardipine or nitroprusside) administration, if needed for BP control or to prevent re ﬂex tachycardia or inotropic effect; SBP #120 mm Hg should be achieved within 20 min. Acute pulmonary edema Clevidipine, nitroglycerin, nitroprusside Beta blockers contraindicated. Acute coronary syndromes Esmolol†, labetalol, nicardipine, nitroglycerin† Nitrates given in the presence of PDE-5 inhibitors may induce profound hypotension. Contraindications to beta blockers include moderate-to-severe LV failure with pulmonary edema, bradycardia ( <60 beats/min), hypotension (SBP <100 mm Hg), poor peripheral perfusion, second- or third-degree heart block, and reactive airways disease.",
+    "quoteVi": "Table 27 AHA/ACC 2025: Bóc tách ĐMC cấp cần chẹn beta (esmolol, labetalol) TRƯỚC thuốc giãn mạch và đạt HATT ≤ 120 mmHg trong vòng 20 phút; Phù phổi cấp chống chỉ định chẹn beta; Hội chứng vành cấp ưu tiên esmolol, labetalol, nicardipine, nitroglycerin (tránh nitrate nếu dùng PDE-5i; chống chỉ định chẹn beta khi nhịp < 60, HATT < 100 mmHg, suy tim mất bù, block nhĩ thất độ 2–3 hoặc bệnh đường thở phản ứng)."
+  },
+  {
+    "id": "esc.htn.2024.abpm_hbpm_thresholds",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 22,
+    "locator": "Figure 5 & Section 5.2.4 / PDF p. 22",
+    "quote": "ABPM ≥130/80 mmHg over 24 h or ≥135/85 mmHg for the daytime average or ≥120/70 mmHg for the night-time average",
+    "quoteVi": "Ngưỡng chẩn đoán tăng huyết áp ngoài phòng khám (ESC 2024): ABPM 24 giờ ≥ 130/80 mmHg, trung bình ban ngày (hoặc HBPM tại nhà) ≥ 135/85 mmHg, trung bình ban đêm ≥ 120/70 mmHg."
+  },
+  {
+    "id": "esc.htn.2024.young_onset_secondary",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 58,
+    "locator": "Recommendation Table 21 / PDF p. 58",
+    "quote": "Comprehensive screening for the main causes of secondary hypertension is recommended in adults diagnosed with hypertension before the age of 40 years, except for obese young adults where it is recommended to start with an obstructive sleep apnoea evaluation.",
+    "quoteVi": "Khuyến cáo tầm soát toàn diện các nguyên nhân tăng huyết áp thứ phát ở người lớn khởi phát tăng huyết áp trước 40 tuổi (trừ người trẻ béo phì nên đánh giá ngưng thở khi ngủ trước).",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.htn.2024.pregnancy_aspirin_atenolol_methyldopa",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 59,
+    "locator": "Section 9.2.5–9.2.7 / PDF p. 59",
+    "quote": "Women at high or moderate risk of pre-eclampsia should be advised to take 100–150 mg of aspirin daily at bedtime from gestational weeks 12–36. 647,656,657 Oral calcium supplementation of 0.5–2 g daily is recommended for preventing pre-eclampsia in women with low dietary intake of calcium (<600 mg daily). 658,659 9.2.6. Treatment initiation and blood pressure targets Acute management of BP in pre-eclampsia and eclampsia is detailed in Section 10.4. Meta-analyses have found no evidence for an increased risk for deli- vering small-for-gestational-age babies in pregnant women with mild hypertension receiving BP-lowering medications. 660 Despite a historical paucity of trial data, previous European guidelines 1,89 recommended initiating BP-lowering drug treatment (i) in all women with persistently elevated office BP of ≥150/90 mmHg, and (ii) in women with gestation- al hypertension (with or without proteinuria), pre-existing hyperten- sion with superimposed gestational hypertension, or hypertension with subclinical HMOD, when office BP is >140/90 mmHg. In the CHAP trial, treating pregnant women with chronic hyperten- sion and BP of ≥140/90 mmHg reduced the occurrence of pre- eclampsia with severe features, and reduced medically indicated pre-term birth <35 weeks, compared with only treating severe hyper- tension (BP ≥ 160/105 mmHg). 88 Tight BP control (target diastolic BP < 85 mmHg) compared with less-tight BP control (target diastolic BP < 100 mmHg) reduces the incidence of subsequent severe maternal hypertension (BP ≥ 160/110 mmHg), but not foetal or other maternal outcomes in women with mild hypertension at baseline (diastolic BP of 85–105 mmHg). 661 Treatment with BP-lowering drugs in all pregnant women with con- firmed BP of ≥140/90 mmHg is recommended to reduce the progres- sion to severe hypertension and the related risks for adverse pregnancy outcomes. 660,661 In women with pre-existing and gestational hyperten- sion with and without pre-eclampsia, we recommend lowering BP be- low 140 mmHg for systolic and to 80–90 mmHg for diastolic BP. 661 Evidence to support a BP target as low as 120–129/70–79 mmHg is lacking in pregnancy, though such evidence exists for non-pregnant pa- tients receiving BP-lowering medication. 9.2.7. Managing mild hypertension in pregnancy (office blood pressure 140–159/90–109 mmHg) RAS inhibitors are not recommended in pregnancy due to adverse foe- tal and neonatal outcomes. The BP-lowering drugs of choice are: beta- blockers (most data are available for labetalol, a non-selective beta- blocker that also acts as an alpha-blocker in higher doses; metoprolol and bisoprolol are also considered safe), dihydropyridine CCBs (most data are available for nifedipine, which is generally considered first choice, also felodipine, nitrendipine, amlodipine, and isradipine can be used), and methyldopa. 662,663 A meta-analysis suggests that beta- blockers and CCBs are more effective than methyldopa in preventing severe hypertension. 660 Of note, however, atenolol should be avoided, as it is associated with foetal growth restriction. 664,665 Methyldopa has been associated with an increased risk of post-partum depression and caution is therefore advised both intra-partum and post-partum.",
+    "quoteVi": "ESC 2024 Mục 9.2: Dự phòng tiền sản giật bằng aspirin 100–150 mg buổi tối từ tuần 12–36; đích HA thai kỳ < 140 mmHg tâm thu và 80–90 mmHg tâm trương; tránh atenolol (chậm tăng trưởng thai); thận trọng methyldopa quanh cuộc đẻ và hậu sản do nguy cơ trầm cảm sau sinh."
+  },
+  {
+    "id": "esc.htn.2024.pregnancy_lactation_thiazide",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 60,
+    "locator": "Section 9.2.7 & 9.2.9 / PDF p. 60",
+    "quote": "While thiazide diuretics in pregnancy have limited safety data and should be used with caution, other diuretics such as furosemide are not contraindicated and may be necessary in some situations (see Supplementary data online). 669 9.2.8. Managing severe hypertension in pregnancy (>160/110 mmHg) Acute onset of severe hypertension persisting for more than 15 min is considered a hypertensive emergency in pregnancy and is covered in Section 10.4.2. 9.2.9. Managing blood pressure post-partum For women with hypertension during pregnancy, BP should be mea- sured within 6 h of delivery and, if possible, daily for at least a week after discharge from the hospital. 637 Post-partum hypertension is common in the first week and associated with prolonged hospitalization. 670 Women with hypertension in pregnancy are at increased risk of chronic hypertension, 671 CKD, 672 and CVD. 177,223,640 The relative risk of chronic hypertension is highest in the first 6 months following delivery, motivating regular screening in these women. 673 Women with gestational hypertension, especially those with pre-eclampsia, have higher risk of masked hypertension. 674 BP measurements, ideally including out-of-office measurements, urine analyses, and CVD risk as- sessment, should at least be performed 6–12 weeks, 6 months, and 12 months post-partum and, after that, annually. Recent data indicate the potential utility of self-monitoring of BP during the busy early post- partum period. 675 All BP-lowering drugs are excreted into breast milk. 637 Except for propranolol, atenolol, acebutolol, and nifedipine, most drugs are ex- creted in very low concentrations in breast milk (see Supplementary data online, Table S11).",
+    "quoteVi": "ESC 2024 Mục 9.2: Lợi tiểu thiazide có dữ liệu an toàn hạn chế trong thai kỳ; hầu hết thuốc hạ áp bài tiết rất thấp qua sữa mẹ ngoại trừ propranolol, atenolol, acebutolol và nifedipine."
+  },
+  {
+    "id": "esc.htn.2024.pregnancy_targets_rec22",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 60,
+    "locator": "Recommendation Table 22 / PDF p. 60",
+    "quote": "In women with chronic and gestational hypertension, it is recommended to lower BP below 140/90 mmHg but not below 80 mmHg for diastolic BP.",
+    "quoteVi": "Ở phụ nữ tăng huyết áp mạn tính hoặc tăng huyết áp thai kỳ, khuyến cáo hạ HA xuống dưới 140/90 mmHg nhưng không hạ HATTr xuống dưới 80 mmHg.",
+    "cor": "I",
+    "loe": "C"
+  },
+  {
+    "id": "esc.htn.2024.pregnancy_severe_rec22",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 60,
+    "locator": "Recommendation Table 22 / PDF p. 60",
+    "quote": "Systolic BP ≥160 mmHg or diastolic BP ≥110 mmHg in pregnancy can indicate an emergency, and immediate hospitalization should be considered.",
+    "quoteVi": "HATT ≥ 160 mmHg hoặc HATTr ≥ 110 mmHg trong thai kỳ là dấu hiệu cấp cứu nội-sản khoa, cần nhập viện ngay lập tức.",
+    "cor": "IIa",
+    "loe": "C"
+  },
+  {
+    "id": "esc.htn.2024.oh_switch_rec24",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 64,
+    "locator": "Recommendation Table 24 / PDF p. 64",
+    "quote": "It is recommended to pursue non-pharmacological approaches as the first-line treatment of orthostatic hypotension among persons with supine hypertension. For such patients, it is also recommended to switch BP-lowering medications that worsen orthostatic hypotension to an alternative BP-lowering therapy and not to simply de-intensify therapy.",
+    "quoteVi": "Ở bệnh nhân có hạ huyết áp tư thế kèm tăng huyết áp tư thế nằm, khuyến cáo áp dụng biện pháp không dùng thuốc làm nền tảng và CHUYỂN ĐỔI (SWITCH) các thuốc làm nặng hạ HA tư thế sang nhóm hạ áp khác thay vì chỉ đơn thuần giảm liều/bỏ thuốc.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.htn.2024.ckd_albuminuria_click",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 65,
+    "locator": "Section 9.7.1 & 9.7.3 / PDF p. 65",
+    "quote": "our def- inition of moderate-to-severe CKD comprises persons with an eGFR of <60 mL/min/1.73 m 2 and/or albuminuria of ≥30 mg/g (≥3 mg/mmol). 19 For persons with mild CKD and elevated BP, a CVD risk assessment should be conducted before deciding on BP-lowering treatment. 9.7.2. Blood pressure lowering in chronic kidney disease BP lowering in patients with CKD is associated with beneficial effect on CVD events and mortality. 275,763–766 BP lowering reduces progression of CKD and the incidence of end-stage renal disease, but this tends to be only in those with significant proteinuria at baseline. 766,767 9.7.3. Managing blood pressure in chronic kidney disease Patients with CKD should receive lifestyle advice, especially regarding reducing sodium intake. Dietary potassium supplementation recom- mendations are provided in Section 8, with caution required among per- sons with moderate-to-severe CKD. While exercise appears to have little effect on improving BP in patients with CKD 768 or patients on dia- lysis, 769 those with CKD on ACE inhibitor monotherapy have protec- tion against adverse kidney outcomes, CVD events, cardiovascular death, and all-cause death. 770,771 Both ACE inhibitors and ARBs reduce the risk of CVD events and kidney failure compared with placebo; how- ever, ACE inhibitors appear to do so with higher probability than ARBs. 772,773 Patients with CKD usually require combination therapy, and this should be initiated as a combination of a RAS inhibitor and a CCB or diuretic. In patients with eGFR < 30 mL/min/1.73 m 2 , an ad- equately up-titrated loop diuretic is necessary to define resistant hyper- tension. Chlorthalidone, typically added to a loop diuretic, also effectively lowers BP and reduces microalbuminuria in patients with resistant hyper- tension with stage 4 CKD (eGFR of 15–30 mL/min/1.73 m 2",
+    "quoteVi": "ESC 2024 Mục 9.7: CKD vừa-nặng định nghĩa là eGFR < 60 mL/phút/1,73m² và/hoặc albumin niệu ≥ 30 mg/g (≥ 3 mg/mmol). Chlorthalidone (thường phối hợp lợi tiểu quai) vẫn hạ áp và giảm albumin niệu hiệu quả trong THA kháng trị kèm CKD giai đoạn 4 (eGFR 15–30 mL/phút/1,73m²)."
+  },
+  {
+    "id": "esc.htn.2024.ckd_rec26",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 65,
+    "locator": "Recommendation Table 26 (Class I, Level A) / PDF p. 65",
+    "quote": "In patients with diabetic or non-diabetic moderate-to-severe CKD and confirmed BP ≥130/ 80 mmHg, lifestyle optimization and BP-lowering medication are recommended to reduce CVD risk, provided such treatment is well tolerated. 275,766 I A In adults with moderate-to-severe CKD who are receiving BP-lowering drugs and who have eGFR >30 mL/min/1.73 m 2 , it is recommended to target systolic BP to 120–129 mmHg, if tolerated. Individualized BP targets are recommended for those with lower eGFR or renal transplantation. 274,779 I A In hypertensive patients with CKD and eGFR >20 mL/min/1.73 m 2 , SGLT2 inhibitors are recommended to improve outcomes in the context of their modest BP-lowering properties.",
+    "quoteVi": "ESC 2024 Rec Table 26 (Nhóm I, Mức A): Ở CKD vừa-nặng có HA ≥ 130/80 mmHg khuyến cáo tối ưu lối sống và thuốc hạ áp; đích HATT 120–129 mmHg nếu eGFR > 30 mL/phút/1,73m² và dung nạp; phối hợp SGLT2i khi eGFR > 20 mL/phút/1,73m².",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.htn.2024.stroke_no_rtpa_rec32",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 74,
+    "locator": "Recommendation Table 32 / PDF p. 74",
+    "quote": "In patients with ischaemic stroke not receiving re-perfusion treatment and BP of ≥220/110 mmHg, BP should be carefully lowered by approximately 15% during the first 24 h after stroke onset.",
+    "quoteVi": "Đột quỵ thiếu máu não cấp không điều trị tái tưới máu có HA ≥ 220/110 mmHg: cân nhắc hạ HA thận trọng khoảng 15% trong 24 giờ đầu.",
+    "cor": "IIa",
+    "loe": "C"
+  },
+  {
+    "id": "esc.htn.2024.ich_rec32",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 74,
+    "locator": "Recommendation Table 32 / PDF p. 74",
+    "quote": "In patients with intracerebral haemorrhage, immediate BP lowering (within 6 h of symptom onset) should be considered to a systolic target 140– 160 mmHg to prevent haematoma expansion and improve functional outcome.",
+    "quoteVi": "Xuất huyết não cấp: cân nhắc hạ HA ngay (trong 6 giờ đầu) về đích HATT 140–160 mmHg để hạn chế lan rộng khối máu tụ và cải thiện kết cục chức năng.",
+    "cor": "IIa",
+    "loe": "A"
+  },
+  {
+    "id": "esc.htn.2024.ich_drop70_rec32",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 74,
+    "locator": "Recommendation Table 32 / PDF p. 74",
+    "quote": "In patients with intracerebral haemorrhage presenting with systolic BP ≥220 mmHg, acute reduction in systolic BP >70 mmHg from initial levels within 1 h of commencing treatment is not recommended.",
+    "quoteVi": "Ở bệnh nhân xuất huyết não cấp có HATT ban đầu ≥ 220 mmHg, không khuyến cáo (Class III) hạ HATT quá 70 mmHg trong vòng 1 giờ đầu điều trị.",
+    "cor": "III",
+    "loe": "B"
+  },
+  {
+    "id": "esc.htn.2024.preeclampsia_mgso4",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 74,
+    "locator": "Section 10.4.1 / PDF p. 74",
+    "quote": "In women with pre-eclampsia and se- vere hypertension, immediately reducing systolic BP to <160 mmHg and diastolic BP to <105 mmHg using i.v. labetalol or nicardipine (with admin- istration of magnesium sulfate if appropriate and consideration of deliv- ery if appropriate) was recommended in the 2018 ESC/ESH Guidelines on the management of arterial hypertension and the 2022 ESC Guidelines for management of cardiovascular disease in pregnancy. 1,89 The objective of treatment is to lower BP within 150–180 min. Magnesium sulfate [4 g i.v. over 5 min, then 1 g/h i.v.; or 5 g intramus- cularly (i.m.) into each buttock, then 5 g i.m. every 4 h] is recommended for eclampsia treatment but also for women with pre-eclampsia who have severe hypertension and proteinuria or hypertension and neuro- logical symptoms or signs. 966 There is a risk of hypotension when mag- nesium is given concomitantly with nifedipine. 967 If BP control is not achieved by 360 min despite two medications, consulting critical care is recommended for intensive care unit admission, stabilization, and de- livery (if appropriate). 966 Since plasma volume is reduced in pre- eclampsia, diuretic therapy should be avoided.",
+    "quoteVi": "Tiền sản giật có tăng huyết áp nặng: hạ ngay HATT < 160 mmHg và HATTr < 105 mmHg bằng labetalol hoặc nicardipine TM; truyền Magnesium sulfate (liều nạp 4 g TM trong 5 phút, duy trì 1 g/giờ TM) để dự phòng/điều trị sản giật; tránh lợi tiểu do thể tích huyết tương giảm."
+  },
+  {
+    "id": "esc.htn.2024.preeclampsia_pulm_edema_rec33",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 74,
+    "locator": "Recommendation Table 33 / PDF p. 74",
+    "quote": "In pre-eclampsia or eclampsia associated with pulmonary oedema, nitroglycerin given as an i.v. infusion is recommended.",
+    "quoteVi": "Trong tiền sản giật hoặc sản giật biến chứng phù phổi cấp, khuyến cáo truyền tĩnh mạch nitroglycerin.",
+    "cor": "I",
+    "loe": "C"
+  },
+  {
+    "id": "vsh.htn.2022.targets_age_dbp80",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 45,
+    "locator": "Bảng 17 / PDF tr. 45",
+    "quote": "Ngưỡng HA ở người cao tuổi cần điều trị hạ áp phụ thuộc vào tình trạng của bệnh nhân. Nói chung, 70 - 79 tuổi là ≥ 140/90 mmHg. Ngưỡng HA ở bệnh nhân rất già, ≥ 80 tuổi là ≥ 160/90 mmHg I B Mục tiêu HA chung được khuyến cáo ở người cao tuổi là HATT < 140 mmHg, có thể < 130 mmHg nếu dung nạp được và đang sống chung với gia đình. Mục tiêu của HATTr là 70 - < 80 mmHg",
+    "quoteVi": "VSH/VNHA 2022 Bảng 17: Ngưỡng khởi trị thuốc ở nhóm 70–79 tuổi là ≥ 140/90 mmHg, ở bệnh nhân rất già ≥ 80 tuổi là ≥ 160/90 mmHg; mục tiêu HATT chung ở người cao tuổi < 140 mmHg (< 130 nếu dung nạp) và HATTr 70 đến < 80 mmHg.",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "vsh.htn.2022.table9_dual_spc",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 29,
+    "locator": "Bảng 9 / PDF tr. 29",
+    "quote": "Khuyến cáo điều trị ban đầu tối ưu với 2 thuốc ưu tiên A+ C hoặc D trong 1 viên cố định liều với liều thấp (=1/2 liều thông thường): liều thấp + liều thấp, nếu HA không kiểm soát có thể tăng liều: liều thấp + liều thông thường hoặc liều thông thường + liều thông thường hoặc phối hợp 3 thuốc cố định liều sớm A+C+D",
+    "quoteVi": "Khuyến cáo điều trị ban đầu tối ưu bằng 2 thuốc ưu tiên A + C hoặc D trong 1 viên phối hợp cố định liều (SPC) liều thấp; nếu chưa kiểm soát tăng lên liều thông thường hoặc phối hợp 3 thuốc A + C + D.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "vsh.htn.2022.drugs_table_rasi_bb",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 30,
+    "locator": "Bảng 10 / PDF tr. 30",
+    "quote": "Nifedipine 30 30 - 90 Nitrendipine 10 20 Lercanidipine 10 20 Ức chế men chuyển (ƯCMC) Benazepril 5 10 - 40 Captopril 12.5 x 2 lần/ngày 50 - 100 x 2 lần/ngày Enalapril 5 10 - 40 Fosinopril 10 10 - 40 Lisinopril 5 10 - 40 Perindopril 3.5 5 - 10 Quinapril 5 10 - 40 Ramipril 2.5 5 - 10 Trandolapril 1 - 2 2 - 8 Imidapril 2.5 - 5 5 - 10 Chẹn thụ thể Angiotensin II (CTTA) Azilsartan 40 80 Candesartan 4 8 - 32 Eprosatan 400 600 - 800 Irbesartan 150 150 - 300 Losartan 50 50 - 100",
+    "quoteVi": "VSH/VNHA 2022 Bảng 10 liều hàng ngày: Nifedipine 30–90 mg, Lercanidipine 10–20 mg, Perindopril 3,5–10 mg (5–10 mg), Losartan 50–100 mg."
+  },
+  {
+    "id": "vsh.htn.2022.drugs_table_mra_bb",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 31,
+    "locator": "Bảng 10 / PDF tr. 31",
+    "quote": "Furosemide 20 x 2 lần/ngày 40 x 2 lần/ngày Torsemide 5 10 Nhóm lợi tiểu giữ Kali Amiloride 5 5 -10 Eplerenone 25 50 - 100 Spironolactone 12.5 25 - 5 0 Triamterene 100 100 Chẹn Bêta (CB) Acebutalol 200 200 - 400 Atenolol 25 100 Bisoprolol 5 5 - 10",
+    "quoteVi": "VSH/VNHA 2022 Bảng 10 liều hàng ngày: Furosemide 20–40 mg x 2 lần/ngày, Eplerenone 25–100 mg, Spironolactone 12,5–50 mg, Bisoprolol 5–10 mg."
+  },
+  {
+    "id": "vsh.htn.2022.resistant_k5",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 35,
+    "printedPage": "33",
+    "locator": "Mục 3.6.1 Tăng huyết áp kháng trị / PDF tr. 35",
+    "quote": "bước tiếp theo có thể bao gồm phối hợp thêm thuốc đối kháng thụ thể mineral-corticocoid (MRA) hoặc nếu không dung nạp được (khi MLCT giảm xuống < 30 đến 40 ml/ phút/1,73m2 da cơ thể, kali huyết thanh > 5 mmol/L) thì chuyển sang thuốc lợi tiểu như amiloride",
+    "quoteVi": "VSH/VNHA 2022 Mục 3.6.1: Trong THA kháng trị sau phối hợp A+C+D, thêm MRA hoặc nếu không dung nạp (MLCT < 30–40 mL/phút/1,73m², kali huyết thanh > 5 mmol/L) thì chuyển sang amiloride hoặc lợi tiểu khác/chẹn beta/chẹn alpha."
+  },
+  {
+    "id": "vsh.htn.2022.lvef_40",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 33,
+    "locator": "Bảng 11 / PDF tr. 33",
+    "quote": "hoặc Bloc AV cao độ • Rối loạn chức năng thất trái (LVEF <40%) • Nhịp tim chậm (< 60 lần/phút) Táo bón Ức chế men",
+    "quoteVi": "Ngưỡng phân suất tống máu thất trái giảm (LVEF < 40%) trong phân tầng suy tim và chống chỉ định chẹn kênh canxi non-DHP."
+  },
+  {
+    "id": "vsh.htn.2022.arr_screening_table13",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 39,
+    "locator": "Bảng 13 / PDF tr. 39",
+    "quote": "Ở người lớn THA, việc sàng lọc cường aldosteron nguyên phát được khuyến cáo khi có bất kỳ một trong nhưng tình trạng sau: THA kháng trị, hạ kali máu (ngẫu phát hay thật sự, nếu dùng lợi tiểu), phát hiện có khối u thượng thận, tiền sử gia đình có THA sớm, hoặc đột quị khi tuổi còn trẻ (< 40 tuổi). I C Định lượng aldosterone huyết thanh: tỷ lệ renin hoạt động được khuyến cáo khi sàng lọc cường aldosterone nguyên phát ở người lớn.",
+    "quoteVi": "VSH/VNHA 2022 Bảng 13 (Loại I, Mức C): Khuyến cáo sàng lọc cường aldosterone nguyên phát bằng tỷ số aldosterone/renin hoạt động (ARR) khi có THA kháng trị, hạ kali máu (tự nhiên hoặc do lợi tiểu), u thượng thận, tiền sử gia đình THA sớm hoặc đột quỵ trẻ tuổi (< 40 tuổi).",
+    "cor": "I",
+    "loe": "C"
+  },
+  {
+    "id": "vsh.htn.2022.emergency_acs_table14",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 41,
+    "locator": "Bảng 14 / PDF tr. 41",
+    "quote": "Hội chứng vành cấp Ngay lập tức, HATT < 140 mmHg Nitroglycerine; Labetalol Urapidil",
+    "quoteVi": "Hội chứng vành cấp kèm tăng huyết áp cấp cứu (Bảng 14 VSH 2022): Hạ ngay lập tức HATT < 140 mmHg bằng Nitroglycerin hoặc Labetalol đường tĩnh mạch (thay thế: Urapidil)."
+  },
+  {
+    "id": "vsh.htn.2022.pregnancy_table16_targets",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 43,
+    "locator": "Bảng 16 / PDF tr. 43",
+    "quote": "Ngưỡng và mục tiêu điều trị: Bất kể phân loại THA trong thai kỳ, HA ổn định ≥ 140/90 mmHg đo tại phòng khám (hoặc ≥ 135/85 mmHg đo tại nhà) nên được điều trị, nhằm đạt được HATTr mục tiêu là 85 mmHg tại phòng khám (và HATT từ 110 - 140 mmHg). I C Phòng ngừa tiền sản giật: 75 - 162 mg Aspirin vào tuần 12 - 36. Bổ sung canxi đường uống 1,5 - 2 g/ ngày",
+    "quoteVi": "VSH/VNHA 2022 Bảng 16 (Loại I, Mức C): Khởi trị khi HA phòng khám ≥ 140/90 mmHg (hoặc tại nhà ≥ 135/85 mmHg), mục tiêu HATTr 85 mmHg và HATT 110–140 mmHg; dự phòng tiền sản giật bằng Aspirin 75–162 mg/ngày tuần 12–36.",
+    "cor": "I",
+    "loe": "C"
+  },
+  {
+    "id": "vsh.htn.2022.pregnancy_table16_drugs_postpartum",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 44,
+    "locator": "Bảng 16 / PDF tr. 44",
+    "quote": "THA nhẹ: Lựa chọn đầu tiên: methyldopa, chẹn beta (Labetalol), và chẹn kênh canxi dihydropyridine (Nifedipine [trừ dạng viên nang], Nicardipine). • THA nặng: Điều trị bằng Labetalol đường tĩnh mạch (hoặc thay thế bằng Nicardipine đường tĩnh mạch, Esmolol, Hydralazine, Urapidil), Methyldopa uống hoặc chẹn kênh canxi dihydropyridine (Nifedipine [trừ dạng viên nang], Nicardipine). Bổ sung magiê (trong cơn THA để ngăn ngừa sản giật). Trong phù phổi: Truyền TM Nitroglycerin. Nên tránh dùng Natri nitroprusside do nguy cơ nhiễm độc xyanua thai nhi khi điều trị kéo dài. Chấm dứt thai kỳ trong THA thai kỳ hoặc Tiền sản giật: được khuyến cáo ở tuần thứ 37 nếu không có triệu chứng. Lấy thai cấp cứu khi có rối loạn thị giác, rối loạn đông cầm máu. Chăm sóc sau sinh: • HA sau sinh: Nếu HA cao vẫn tiếp diễn, có thể dùng bất kỳ loại thuốc nào được khuyến cáo ngoại trừ Methyldopa (vì gây trầm cảm sau sinh) • Thời kỳ cho con bú: Tất cả các thuốc hạ huyết áp đều được bài tiết vào sữa mẹ ở nồng độ thấp. Tránh sử dụng Atenolol, Propranolol và Nifedipine (vì nồng độ cao trong sữa). Ưu tiên các thuốc chẹn kênh canxi tác dụng kéo dài.",
+    "quoteVi": "VSH/VNHA 2022 Bảng 16: THA nhẹ dùng methyldopa, labetalol, nifedipine kéo dài (tránh viên nang ngậm); THA nặng dùng labetalol TM (hoặc nicardipine TM, urapidil, esmolol), bổ sung MgSO4, phù phổi truyền nitroglycerin, tránh nitroprusside; sau sinh tránh methyldopa (trầm cảm sau sinh); cho con bú tránh atenolol, propranolol và lưu ý nồng độ nifedipine trong sữa.",
+    "cor": "I",
+    "loe": "C"
+  },
+  {
+    "id": "kdigo.bp.2021.pp_3_1_1_standardized_bp",
+    "sourceId": "kdigo_2021_bp",
+    "pdfPage": 29,
+    "locator": "Practice Point 3.1.1 / PDF p. 29",
+    "quote": "Practice Point 3.1.1: It is potentially hazardous to apply the recommended SBP target of <120 mm Hg to BP mea- surements obtained in a non-standardized manner.",
+    "quoteVi": "KDIGO 2021 PP 3.1.1: Việc áp dụng đích HATT < 120 mmHg trên số đo huyết áp phòng khám thông thường không chuẩn hóa có thể gây nguy hiểm."
+  },
+  {
+    "id": "kdigo.bp.2021.rec_3_2_albuminuria_rasi",
+    "sourceId": "kdigo_2021_bp",
+    "pdfPage": 29,
+    "locator": "Recommendations 3.2.1–3.2.3 / PDF p. 29",
+    "quote": "Recommendation 3.2.1: We recommend starting renin-angiotensin-system inhibitors (RASi) (angiotensin-con- verting enzyme inhibitor [ACEi] or angiotensin II receptor blocker [ARB]) for people with high BP, CKD, and severely increased albuminuria (G1 –G4, A3) without diabetes (1B). Recommendation 3.2.2: We suggest starting RASi (ACEi or ARB) for people with high BP, CKD, and moderately increased albuminuria (G1 –G4, A2) without diabetes (2C). Recommendation 3.2.3: We recommend starting RASi (ACEi or ARB) for people with high BP, CKD, and moderately-to-severely increased albuminuria (G1 –G4, A2 and A3) with diabetes (1B).",
+    "quoteVi": "KDIGO 2021 Rec 3.2.1–3.2.3: Khuyến cáo khởi trị ức chế hệ RAA (ACEi hoặc ARB) cho người lớn tăng huyết áp kèm bệnh thận mạn có albumin niệu tăng vừa đến nặng (A2–A3).",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "kdigo.bp.2021.pp_3_2_3_monitoring",
+    "sourceId": "kdigo_2021_bp",
+    "pdfPage": 29,
+    "locator": "Practice Point 3.2.3 & 3.2.5 / PDF p. 29",
+    "quote": "Practice Point 3.2.3: Changes in BP, serum creatinine, and serum potassium should be checked within 2-4 weeks of initiation or increase in the dose of a RASi, depending on the current GFR and serum potassium. Practice Point 3.2.4: Hyperkalemia associated with use of RASi can often be managed by measures to reduce the serum potassium levels rather than decreasing the dose or stopping RASi. Practice Point 3.2.5: Continue ACEi or ARB therapy unless serum creatinine rises by more than 30% within 4 weeks following initiation of treatment or an increase in dose.",
+    "quoteVi": "KDIGO 2021 PP 3.2.3 & 3.2.5: Kiểm tra lại huyết áp, creatinin và kali máu trong vòng 2–4 tuần sau khi khởi trị hoặc tăng liều RASi; tiếp tục duy trì ACEi/ARB trừ khi creatinin huyết thanh tăng > 30% trong vòng 4 tuần."
+  },
+  {
+    "id": "fda.amlodipine.warnings_as_hepatic",
+    "sourceId": "fda_label_amlodipine",
+    "pdfPage": 5,
+    "locator": "Section 5.1–5.3 Warnings and Precautions / PDF p. 5",
+    "quote": "Symptomatic hypotension is possible, particularly in patients with severe aortic stenosis. Because of the gradual onset of action, acute hypotension is unlikely. 5.2 Increased Angina or Myocardial Infarction Worsening angina and acute myocardial infarction can develop after starting or increasing the dose of NORVASC, particularly in patients with severe obstructive coronary artery disease. 5.3 Patients with Hepatic Failure Because NORVASC is extensively metabolized by the liver and the plasma elimination half‑life (t ) is 56 hours in patients with impaired hepatic function, titrate slowly when administering NORVASC to patients with severe hepatic impairment.",
+    "quoteVi": "Nhãn FDA Amlodipine (Norvasc) Mục 5.1–5.3: Có thể gây tụt HA triệu chứng đặc biệt ở hẹp chủ nặng; cơn đau thắt ngực/nhồi máu cơ tim nặng lên khi hẹp mạch vành khít; nửa đời thải trừ kéo dài 56 giờ ở suy gan nên cần khởi đầu thấp và chỉnh liều chậm."
+  },
+  {
+    "id": "fda.amlodipine.renal_hepatic_ddi",
+    "sourceId": "fda_label_amlodipine",
+    "pdfPage": 13,
+    "locator": "Section 12.3 Pharmacokinetics & Drug Interactions / PDF p. 13",
+    "quote": "The pharmacokinetics of amlodipine are not significantly influenced by renal impairment. Patients with renal failure may therefore receive the usual initial dose. Elderly patients and patients with hepatic insufficiency have decreased clearance of amlodipine with a resulting increase in AUC of approximately 40–60%, and a lower initial dose may be required. A similar increase in AUC was observed in patients with moderate to severe heart failure. Drug interactions In vitro data indicate that amlodipine has no effect on the human plasma protein binding of digoxin, phenytoin, warfarin, and indomethacin. Impact of other drugs on amlodipine Co-administered cimetidine, magnesium-and aluminum hydroxide antacids, sildenafil, and grapefruit juice have no impact on the exposure to amlodipine. CYP3A inhibitors : Co-administration of a 180 mg daily dose of diltiazem with 5 mg amlodipine in elderly hypertensive patients resulted in a 60% increase in amlodipine systemic exposure. Erythromycin co-administration in healthy volunteers did not significantly change amlodipine systemic exposure. However, strong inhibitors of CYP3A (e.g., itraconazole, clarithromycin) may increase the plasma concentrations of amlodipine to a greater extent [see Drug Interactions (7.1) ] . Impact of amlodipine on other drugs Amlodipine is a weak inhibitor of CYP3A and may increase exposure to CYP3A substrates. Co-administered amlodipine does not affect the exposure to atorvastatin, digoxin, ethanol and the warfarin prothrombin response time. Simvastatin : Co-administration of multiple doses of 10 mg of amlodipine with 80 mg simvastatin resulted in a 77% increase in exposure to simvastatin compared to simvastatin alone",
+    "quoteVi": "Nhãn FDA Amlodipine Mục 12.3: Dược động học không bị ảnh hưởng bởi suy thận nên dùng liều thông thường; suy gan/người cao tuổi tăng AUC 40–60% cần khởi đầu liều thấp (2,5 mg); diltiazem 180 mg làm tăng phơi nhiễm amlodipine 60%; dùng kèm amlodipine làm tăng phơi nhiễm simvastatin 77% (giới hạn simvastatin ≤ 20 mg/ngày)."
+  },
+  {
+    "id": "fda.amlodipine.simva_20mg",
+    "sourceId": "fda_label_amlodipine",
+    "pdfPage": 2,
+    "locator": "Highlights — Drug Interactions (7.2) / PDF p. 2",
+    "quote": "Do not exceed doses greater than 20 mg daily of simvastatin.",
+    "quoteVi": "Không vượt quá liều simvastatin 20 mg/ngày khi dùng đồng thời với amlodipine."
+  },
+  {
+    "id": "ema.indapamide.contraindications_hepatic",
+    "sourceId": "ema_label_indapamide",
+    "pdfPage": 2,
+    "locator": "Section 4.2 & 4.3 Contraindications / PDF p. 2",
+    "quote": "In severe hepatic impairment, treatment is contraindicated. Children and adolescents: Natrilix SR is not recommended for use in children and adolescents due to a lack of data on safety and efficacy. 4.3 Contraindications - Hypersensitivity to indapamide, to other sulfonamides or to any of the excipients. - Severe renal failure. - Hepatic encephalopathy or severe impairment of liver function. - Hypokalaemia.",
+    "quoteVi": "SmPC Indapamide (Natrilix SR) Mục 4.2–4.3: Chống chỉ định trong suy thận nặng, bệnh não gan hoặc suy gan nặng, hạ kali máu và quá mẫn với sulfonamide."
+  },
+  {
+    "id": "ema.indapamide.hypokalemia_qt",
+    "sourceId": "ema_label_indapamide",
+    "pdfPage": 3,
+    "locator": "Section 4.4 Special Warnings / PDF p. 3",
+    "quote": "The risk of onset of hypokalaemia (< 3.4 mmol/l) must be prevented in certain high risk populations, i.e . the elderly, malnourished and/or polymedicated, cirrhotic patients with oedema and ascites, coronary artery disease and cardiac failure patients. In this situation, hypokalaemia increases the cardiac toxicity of digitalis preparations and the risks of arrhythmias. Individuals with a long QT interval are also at risk, whether the origin is congenital or iatrogenic. Hypokalaemia, as well as bradycardia, is then a predisposing factor to the onset of severe arrhythmias, in particular, potentially fatal torsades de pointes.",
+    "quoteVi": "SmPC Indapamide Mục 4.4: Cần dự phòng nguy cơ hạ kali máu (< 3,4 mmol/L); hạ kali máu kèm nhịp chậm hoặc khoảng QT dài làm tăng nguy cơ loạn nhịp thất nặng, đặc biệt xoắn đỉnh (torsades de pointes)."
+  },
+  {
+    "id": "ema.indapamide.pregnancy_lactation",
+    "sourceId": "ema_label_indapamide",
+    "pdfPage": 5,
+    "locator": "Section 4.6 Pregnancy and Lactation / PDF p. 5",
+    "quote": "As a general rule, the administration of diuretics should be avoided in pregnant women and should never be used to treat physiological oedema of pregnancy. Diuretics can cause foetoplacental ischaemia, with a risk of impaired foetal growth. Lactation: Breast -feeding is inadvisable (Indapamide is excreted in human milk).",
+    "quoteVi": "SmPC Indapamide Mục 4.6: Tránh dùng lợi tiểu ở phụ nữ mang thai (nguy cơ thiếu máu nhau-thai và chậm tăng trưởng thai); không khuyên cho con bú do thuốc bài tiết qua sữa mẹ."
+  },
+  {
+    "id": "ema.perindopril.htn_dosing",
+    "sourceId": "ema_perindopril",
+    "pdfPage": 1,
+    "locator": "Section 4.2 Posology / PDF p. 1",
+    "quote": "The recommended starting dose is 5 mg given once daily in the morning. Patients",
+    "quoteVi": "SmPC Perindopril arginine (Coversyl): Liều khởi đầu khuyến cáo điều trị tăng huyết áp ở người lớn."
+  },
+  {
+    "id": "esc.htn.2024.ckd_rec26_albuminuria",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 65,
+    "locator": "Recommendation Table 26 (Class IIa, Level B) / PDF p. 65",
+    "quote": "ACE inhibitors or ARBs are more effective at reducing albuminuria than other BP-lowering agents and should be considered as part of the treatment strategy for patients with hypertension and microalbuminuria or proteinuria.",
+    "quoteVi": "ESC 2024 Rec Table 26 (Nhóm IIa, Mức B): ACEi hoặc ARB giảm albumin niệu hiệu quả hơn các thuốc hạ áp khác và nên được xem xét trong chiến lược điều trị THA kèm tiểu albumin vi thể hoặc protein niệu.",
+    "cor": "IIa",
+    "loe": "B"
+  },
+  {
+    "id": "aha.acc.2025.pregnancy_rec1_labetalol_nifedipine",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 64,
+    "locator": "Section 5.5 Recommendation 1 / PDF p. 64",
+    "quote": "1. For individuals with hypertension who are planning a pregnancy or who become pregnant, labetalol and extended-release nifedipine are preferred agents to treat hypertension and minimize fetal risk.",
+    "quoteVi": "AHA/ACC 2025 Mục 5.5 (Rec 1, COR 1, LOE A): Ở phụ nữ tăng huyết áp dự định mang thai hoặc đang mang thai, labetalol và nifedipine giải phóng kéo dài là thuốc ưu tiên để kiểm soát HA và giảm thiểu nguy cơ cho thai.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "aha.acc.2025.table13_losartan",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 40,
+    "locator": "Table 13 (ARBs) / PDF p. 40",
+    "quote": "Losartan 50-100 1 or 2 Olmesartan 20-40 1 Telmisartan 20-80 1 Valsartan 80-320 1",
+    "quoteVi": "AHA/ACC 2025 Table 13 (ARB): Losartan 50–100 mg/ngày chia 1–2 lần; Olmesartan 20–40 mg 1 lần; Telmisartan 20–80 mg 1 lần; Valsartan 80–320 mg 1 lần."
+  },
+  {
+    "id": "aha.acc.2025.table13_furosemide",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 40,
+    "locator": "Table 13 (Loop Diuretics) / PDF p. 40",
+    "quote": "Furosemide 20-80 2 Torsemide 5-10 1",
+    "quoteVi": "AHA/ACC 2025 Table 13 (Lợi tiểu quai): Furosemide 20–80 mg/ngày chia 2 lần; Torsemide 5–10 mg 1 lần/ngày."
+  },
+  {
+    "id": "aha.acc.2025.table13_aliskiren",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 41,
+    "locator": "Table 13 (Direct Renin Inhibitor) / PDF p. 41",
+    "quote": "Direct renin inhibitor Aliskiren 150-300 1 Do not use in combination with ACEi or ARB. Aliskiren is very long acting. There is an increased risk of hyperkalemia in CKD or in those on K þ supplements or K þ-sparing drugs. Aliskiren may cause acute renal failure in patients with severe bilateral renal artery stenosis.",
+    "quoteVi": "AHA/ACC 2025 Table 13: Aliskiren 150–300 mg 1 lần/ngày; cấm phối hợp với ACEi hoặc ARB; tăng nguy cơ tăng kali máu ở CKD và suy thận cấp khi hẹp động mạch thận hai bên nặng."
+  },
+  {
+    "id": "aha.acc.2025.dual_rasi_aliskiren_harm",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 44,
+    "locator": "Section 5.2.4 Supportive Text 3 / PDF p. 44",
+    "quote": "High-quality RCT reports demonstrate that simulta- neous administration of RAS blockers (ie, an ACEi combined with an ARB or an ACEi or ARB combined with the direct renin inhibitor, aliskiren) increases the risk of CVD, kidney disease, and hyperkalemia.",
+    "quoteVi": "Các thử nghiệm RCT chất lượng cao chứng minh dùng đồng thời các thuốc ức chế hệ RAS (ACEi + ARB, hoặc ACEi/ARB + chất ức chế trực tiếp renin aliskiren) làm tăng nguy cơ biến cố tim mạch, bệnh thận và tăng kali máu."
+  },
+  {
+    "id": "aha.acc.2025.ckd_dm_rasi_rec",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 50,
+    "locator": "Section 5.3.2 Diabetes / PDF p. 50",
+    "quote": "An ACEi or ARB is also appropriate for less severe CKD (stage 1 or 2 when moderate or severe albu- minuria is present).",
+    "quoteVi": "AHA/ACC 2025 Mục 5.3.2: Thuốc ACEi hoặc ARB được ưu tiên thích hợp cho bệnh nhân tăng huyết áp kèm bệnh thận mạn có tiểu albumin niệu mức độ vừa hoặc nặng (≥ 30 mg/g)."
+  },
+  {
+    "id": "aha.acc.2025.ich_rec3_harm",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 55,
+    "locator": "Section 5.3.9.1 Recommendation 3 (COR 3: Harm) / PDF p. 55",
+    "quote": "3. For adult patients with acute spon- taneous ICH who present with SBP >220 mm Hg, SBP should not be lowered below 130 mm Hg to reduce adverse events.",
+    "quoteVi": "AHA/ACC 2025 Mục 5.3.9.1 (Rec 3, COR 3: Gây hại, LOE B-NR): Ở bệnh nhân xuất huyết não tự phát cấp nhập viện với HATT > 220 mmHg, không được hạ HATT xuống dưới 130 mmHg.",
+    "cor": "III",
+    "loe": "B-NR"
+  },
+  {
+    "id": "aha.acc.2025.ais_evt_rec3",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 56,
+    "locator": "Section 5.3.9.2 Recommendation 3 (COR 2a) / PDF p. 56",
+    "quote": "3. In patients who undergo endovas- cular treatment, it is reasonable to maintain the BP at #180/105 mm Hg during and for 24 hours after the procedure to improve long-term functional outcomes and prevent death.",
+    "quoteVi": "AHA/ACC 2025 Mục 5.3.9.2 (Rec 3, COR 2a, LOE B-NR): Ở bệnh nhân đột quỵ thiếu máu não cấp được can thiệp nội mạch lấy huyết khối (EVT), hợp lý khi duy trì HA ≤ 180/105 mmHg trong và 24 giờ sau thủ thuật.",
+    "cor": "2",
+    "loe": "B-NR"
+  },
+  {
+    "id": "aha.acc.2025.ais_rec5_no_benefit",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 56,
+    "locator": "Section 5.3.9.2 Recommendation 5 (COR 3: No Benefit) / PDF p. 56",
+    "quote": "5. In patients with BP <220/120 mm Hg who do not receive IV thrombolysis or endovascular treat- ment and do not have a comorbid condition requiring urgent antihy- pertensive treatment, initiating or reinitiating treatment of hyperten- sion within the ﬁrst 48 to 72 hours after an acute ischemic stroke is not effective to prevent death or disability.",
+    "quoteVi": "AHA/ACC 2025 Mục 5.3.9.2 (Rec 5, COR 3: Không lợi ích, LOE A): Ở bệnh nhân đột quỵ thiếu máu não cấp có HA < 220/120 mmHg không tiêu sợi huyết/EVT và không kèm cấp cứu tim-mạch khác, khởi trị/tái lập thuốc hạ áp trong 48–72 giờ đầu không có hiệu quả giảm tử vong hay tàn phế.",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "aha.acc.2025.pregnancy_iv_hydralazine",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 66,
+    "locator": "Table 23 / PDF p. 66",
+    "quote": "Hydralazine 5 mg IV or IM, then 5-10 mg IV every 20-40 min to a maximum cumulative dosage of 20 mg; or constant infusion of 0.5-10 mg/h",
+    "quoteVi": "AHA/ACC 2025 Table 23: Hydralazine trong tăng huyết áp nặng thai kỳ: 5 mg tiêm TM hoặc TB, sau đó 5–10 mg TM mỗi 20–40 phút đến tổng liều tích lũy tối đa 20 mg (hoặc truyền 0,5–10 mg/giờ)."
+  },
+  {
+    "id": "aha.acc.2025.outpatient_severe_oral_synopsis",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 73,
+    "locator": "Section 6.2 Synopsis / PDF p. 73",
+    "quote": "In contrast, patients with sever e hypertension without evi- dence of acute target organ damage (previously called hypertensive urgency) should not have aggressive BP lowering in the short-term or be given parenteral anti- hypertensive drug therapy. Reinstitution or intensi ﬁca- tion of oral antihypertensive medications, preferably in the outpatient setting, is recommended for these pa- tients.",
+    "quoteVi": "AHA/ACC 2025 Mục 6.2: Bệnh nhân tăng huyết áp nặng (> 180/120 mmHg) không có bằng chứng tổn thương cơ quan đích cấp tính không nên hạ áp tích cực ngắn hạn hoặc truyền thuốc tĩnh mạch; khuyến cáo tái lập hoặc tăng cường thuốc hạ áp đường uống tại ngoại trú."
+  },
+  {
+    "id": "aha.acc.2025.catecholamine_excess",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 74,
+    "locator": "Table 26 (Phentolamine) / PDF p. 74",
+    "quote": "hypertensive emergencies induced by catecholamine excess (pheochromocytoma, interactions between monoamine oxidase inhibitors and other drugs or food, cocaine toxicity, amphetamine overdose, or clonidine withdrawal).",
+    "quoteVi": "AHA/ACC 2025 Table 26: Cấp cứu tăng huyết áp do cường catecholamine (u tủy thượng thận pheochromocytoma, tương tác MAOI, ngộ độc cocaine/amphetamine hoặc hội chứng ngưng clonidine) ưu tiên chẹn alpha (phentolamine) hoặc giãn mạch (nicardipine/clevidipine)."
+  },
+  {
+    "id": "aha.acc.2025.table27_periop_160_90",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 75,
+    "locator": "Table 27 (Perioperative Hypertension) / PDF p. 75",
+    "quote": "Perioperative hypertension (BP $160/90 mm Hg or SBP elevation $20% of the preoperative value that persists for >15 min) Clevidipine, esmolol, nicardipine, nitroglycerin",
+    "quoteVi": "AHA/ACC 2025 Table 27: Tăng huyết áp chu phẫu (HA ≥ 160/90 mmHg hoặc HATT tăng ≥ 20% so với trước mổ kéo dài > 15 phút) sử dụng clevidipine, esmolol, nicardipine hoặc nitroglycerin tĩnh mạch."
+  },
+  {
+    "id": "esc.htn.2024.defer_egfr30",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 52,
+    "locator": "Section 8.4 / PDF p. 52",
+    "quote": "consideration of BP-lowering drug treatment should be deferred until BP is >140/90 mmHg in the following settings: pre- treatment symptomatic orthostatic hypotension, age ≥85 years, clinic- ally significant moderate-to-severe frailty, and/or limited predicted life- span (<3 years) due to high competing risk (including eGFR < 30 mL/ min/1.73 m 2 ).",
+    "quoteVi": "ESC 2024 Mục 8.4: Ở nhóm HA tăng (130–139/80–89 mmHg), nên trì hoãn khởi trị thuốc cho tới khi HA > 140/90 mmHg nếu có hạ HA tư thế triệu chứng, tuổi ≥ 85, suy yếu vừa–nặng hoặc nguy cơ cạnh tranh cao (bao gồm eGFR < 30 mL/phút/1,73m²)."
+  },
+  {
+    "id": "esc.htn.2024.jcurve_dbp60_no_deintensify",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 66,
+    "locator": "Section 9.8.1 / PDF p. 66",
+    "quote": "systolic BP of 100–120 mmHg and diastolic BP of 60–80 mmHg). For this reason, the J-curve is sometimes also called the U-curve, with both terms typically used interchangeably.",
+    "quoteVi": "ESC 2024 Mục 9.8.1: Hiện tượng đường cong J ở bệnh nhân bệnh mạch vành (đặc biệt khi HATTr thấp ~60 mmHg) cần thận trọng theo dõi tưới máu vành nhưng không tự động giảm bậc điều trị khi bệnh nhân không có triệu chứng và HATT còn cao."
+  },
+  {
+    "id": "esc.htn.2024.adrenergic_crisis",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 73,
+    "locator": "Section 10.3 / PDF p. 73",
+    "quote": "sympathomimetics such as methamphetamine or cocaine, when cau- tion around beta-blocker use is also needed.",
+    "quoteVi": "ESC 2024 Mục 10.3: Trong tăng huyết áp cấp tính do chất kích thích giao cảm như methamphetamine hoặc cocaine, cần thận trọng/tránh dùng thuốc chẹn beta đơn độc không đối kháng alpha."
+  },
+  {
+    "id": "esc.htn.2024.periop_bb_continue",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 74,
+    "locator": "Section 10.5 / PDF p. 74",
+    "quote": "10.5. Peri-operative acute management of elevated blood pressure Details are provided in the ESC Guidelines on cardiovascular assessment and management of patients undergoing non-cardiac surgery. 972 Peri-operative hypertension, hypotension, and BP variability are associated with",
+    "quoteVi": "ESC 2024 Mục 10.5: Quản lý tăng huyết áp cấp tính chu phẫu — tăng huyết áp, tụt huyết áp và dao động huyết áp chu phẫu đều liên quan tới biến cố bất lợi."
+  },
+  {
+    "id": "esc.hf.2026.supp_hyponatraemia_135",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 17,
+    "locator": "Supplementary Table / PDF p. 17",
+    "quote": "Hyponatraemia (<135 mmol/L): • Volume depleted: ⚬ Stop thiazide or switch to loop diuretic, if possible.",
+    "quoteVi": "ESC 2026 HF Supplementary Table: Hạ natri máu (< 135 mmol/L) cần ngưng lợi tiểu thiazide hoặc chuyển sang lợi tiểu quai nếu có thể."
+  },
+  {
+    "id": "vsh.htn.2022.bp_floor_table7",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 23,
+    "printedPage": "21",
+    "locator": "Bảng 7 / PDF tr. 23",
+    "quote": "Bảng 7. Mục tiêu huyết áp phòng khám trong điều trị tăng huyết áp theo nhóm tuổi Nhóm tuổi (năm) Ranh giới đích HATT theo HAPK (mmHg) THA không có bệnh đồng mắc THA có bệnh đồng mắc 18 - 69 120 - < 140 mmHg 120 - < 130 mmHg Có thể hạ thấp HATT hơn nữa nếu dung nạp ≥ 70 <140 mmHg, nếu dung nạp được hạ xuống 130mmHg Có thể hạ thấp HATT hơn nữa nếu dung nạp Đích HATTr (mmHg) < 80 mmHg cho tất cả bệnh nhân* *THA + ĐTĐ týp 2 / BMV: Mục tiêu HATTr ở bệnh nhân > 65 tuổi không điều trị tái tưới máu là 70 - 79mmHg",
+    "quoteVi": "VSH/VNHA 2022 Bảng 7: Ranh giới đích HATT người 18–69 tuổi là 120 đến < 130 mmHg (có bệnh đồng mắc) hoặc 120 đến < 140 mmHg; ở bệnh nhân > 65 tuổi kèm ĐTĐ/BMV không tái tưới máu đích HATTr là 70–79 mmHg."
+  },
+  {
+    "id": "vsh.htn.2022.table10_aliskiren",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 32,
+    "printedPage": "30",
+    "locator": "Bảng 10 / PDF tr. 32",
+    "quote": "Ức chế Renin trực tiếp Aliskiren 75 150 - 300",
+    "quoteVi": "VSH/VNHA 2022 Bảng 10: Thuốc ức chế trực tiếp renin Aliskiren liều thấp 75 mg, liều thông thường 150–300 mg/ngày."
+  },
+  {
+    "id": "vsh.htn.2022.hbpm_whitecoat_masked",
+    "sourceId": "vsh_vnha_2022_htn",
+    "pdfPage": 14,
+    "printedPage": "12",
+    "locator": "Mục 2.4 Đo huyết áp tại nhà / PDF tr. 14",
+    "quote": "Vì THA áo choàng trắng và đặc biệt THA ẩn giấu có thể làm tăng nguy cơ mắc bệnh tim mạch, bệnh nhân nên đo HA tại cả phòng khám và tại nhà thường xuyên. Đo HATN cũng là một phương pháp hiệu quả được sử dụng để đánh giá hiệu quả của liệu pháp điều trị, chỉnh liều thuốc hạ áp",
+    "quoteVi": "VSH/VNHA 2022 Mục 2.4: Đo huyết áp tại nhà (HBPM) giúp phát hiện tăng huyết áp áo choàng trắng và tăng huyết áp ẩn giấu/không kiểm soát ẩn giấu để chỉnh liều thuốc chính xác."
+  },
+  {
+    "id": "ema.zanidip.contra_renal_hepatic_cyp3a4",
+    "sourceId": "ema_zanidip_smpc",
+    "pdfPage": 2,
+    "locator": "Section 4.3 Contraindications / PDF p. 2",
+    "quote": "4.3 Contraindications  Hypersensitivity to the active substance or to any of the excipients listed in section 6.1  Left ventricular outflow tract obstruction.  Untreated congestive cardiac failure.  Unstable angina pectoris or recent (within 1 month) myocardial infarction.  Severe hepatic impairment.  Severe renal impairment ( GFR < 30 ml/min), including patients undergoing dialysis  Co-adminstration with:  strong inhibitors of CYP3A4 (see section 4.5),  ciclosporin (see section 4.5),  grapefruit or grapefruit juice (see section 4.5).",
+    "quoteVi": "SmPC Zanidip (Lercanidipine) Mục 4.3: Chống chỉ định khi tắc nghẽn đường ra thất trái, suy tim sung huyết chưa điều trị, đau thắt ngực không ổn định hoặc NMCT trong vòng 1 tháng, suy gan nặng, suy thận nặng (GFR < 30 mL/phút) kể cả lọc máu, dùng kèm ức chế mạnh CYP3A4, ciclosporin hoặc nước bưởi chùm."
+  },
+  {
+    "id": "ema.zanidip.lactation_pregnancy",
+    "sourceId": "ema_zanidip_smpc",
+    "pdfPage": 4,
+    "locator": "Section 4.6 Fertility, pregnancy and lactation / PDF p. 4",
+    "quote": "ZANIDIP is not recommended during pregnancy and in women of childbearing-potential not using contraception. Breast-feeding It is unknown whether lercanidipine/metabolites are excreted in human milk. A risk to the newborns/infants cannot be excluded. ZANIDIP should not be used during breast-feeding.",
+    "quoteVi": "SmPC Zanidip Mục 4.6: Không khuyến cáo dùng Lercanidipine trong thai kỳ và không được sử dụng trong thời kỳ cho con bú."
+  },
+  {
+    "id": "ema.ebrantil.contraindications_sec4_3",
+    "sourceId": "ema_ebrantil_smpc",
+    "pdfPage": 3,
+    "locator": "Section 4.3 Gegenanzeigen / PDF p. 3",
+    "quote": "4.3 Gegenanzeigen -Überempfindlichkeit gegen den Wirkstoff oder einen der in Abschnitt 6.1 genannten sonstigen Bestandteile -Aortenisthmusstenose -arteriovenöser Shunt (hämodynamisch nicht wirksamer Dialyse-Shunt ausgenommen) -Stillzeit (siehe auch Abschnitt 4.6)",
+    "quoteVi": "SmPC Ebrantil (Urapidil) Mục 4.3: Chống chỉ định khi quá mẫn với thuốc, hẹp eo động mạch chủ (Aortenisthmusstenose), thông động-tĩnh mạch (trừ shunt chạy thận không ảnh hưởng huyết động) và thời kỳ cho con bú."
+  },
+  {
+    "id": "ema.ebrantil.warnings_stenosis_renal_hepatic",
+    "sourceId": "ema_ebrantil_smpc",
+    "pdfPage": 3,
+    "locator": "Section 4.4 Besondere Warnhinweise / PDF p. 3",
+    "quote": "Aortenklappen- oder Mitralklappenstenose, bei Lungenembolie oder bei durch Perikarderkrankungen bedingter Einschränkung der Herzaktion. -Kindern und Jugendlichen unter 16 Jahren, da keine Untersuchungen hierzu vorliegen -Patienten mit Leberfunktionsstörungen",
+    "quoteVi": "SmPC Ebrantil Mục 4.4: Thận trọng đặc biệt khi suy tim do cản trở cơ học như hẹp van động mạch chủ hoặc hẹp van hai lá, thuyên tắc phổi, bệnh màng ngoài tim, và bệnh nhân rối loạn chức năng gan/thận vừa–nặng."
+  },
+  {
+    "id": "ema.ebrantil.pregnancy_sec4_6",
+    "sourceId": "ema_ebrantil_smpc",
+    "pdfPage": 4,
+    "locator": "Section 4.6 Fertilität, Schwangerschaft und Stillzeit / PDF p. 4",
+    "quote": "4.6 Fertilität, Schwangerschaft und Stillzeit Schwangerschaft Es gibt keine oder nur begrenzte Daten zur Anwendung von Ebrantil in der Schwangerschaft. Tierexperimentelle Studien haben Reproduktionstoxizität gezeigt (siehe Abschnitt 5.3).",
+    "quoteVi": "SmPC Ebrantil Mục 4.6: Dữ liệu trên phụ nữ mang thai còn hạn chế; không cho con bú trong thời gian điều trị bằng Ebrantil."
+  },
+  {
+    "id": "ema.physiotens.posology_renal",
+    "sourceId": "ema_physiotens_smpc",
+    "locator": "Section 4.2 Posology — Renal impairment",
+    "quote": "In patients with moderately impaired renal function (GFR > 30 ml/min but < 60 ml/min), the single dose should be not more than 0.2 mg and the daily dose not more than 0.4 mg moxonidine.",
+    "quoteVi": "SmPC Moxonidine Mục 4.2: Ở bệnh nhân suy thận vừa (GFR 30–60 mL/phút), liều đơn tối đa không quá 0,2 mg và tổng liều hàng ngày không quá 0,4 mg."
+  },
+  {
+    "id": "ema.physiotens.contraindications_sec4_3",
+    "sourceId": "ema_physiotens_smpc",
+    "locator": "Section 4.3 Contraindications",
+    "quote": "4.3 Contraindications Moxonidine is contraindicated in patients with: - hypersensitivity to the active substance or to any of the excipients listed in section 6 . 1 - sick sinus syndrome - bradycardia (resting heart rate < 50 beats/minute) - AV-block 2nd and 3rd degree - cardiac insufficiency",
+    "quoteVi": "SmPC Moxonidine Mục 4.3: Chống chỉ định trong hội chứng suy nút xoang, nhịp chậm lúc nghỉ < 50 lần/phút, block nhĩ thất độ 2 và độ 3, và suy tim (cardiac insufficiency)."
+  },
+  {
+    "id": "ema.physiotens.warnings_bb_severe_renal",
+    "sourceId": "ema_physiotens_smpc",
+    "locator": "Section 4.4 Special warnings and precautions for use",
+    "quote": "If moxonidine is used in combination with a β-blocker and both treatments have to be discontinued, the β-blocker should be discontinued first, and then moxonidine after a few days. So far, no rebound-effect has been observed on the blood pressure after discontinuing the treatment with moxonidine. However, an abrupt discontinuance of the moxonidine treatment is not advisable; instead the dose should be reduced gradually over a period of two weeks.",
+    "quoteVi": "SmPC Moxonidine Mục 4.4: Nếu dùng phối hợp với chẹn beta và cần ngưng cả hai, bắt buộc ngưng chẹn beta trước rồi mới giảm liều moxonidine từ từ trong 2 tuần."
+  },
+  {
+    "id": "ema.physiotens.pregnancy_lactation",
+    "sourceId": "ema_physiotens_smpc",
+    "locator": "Section 4.6 Fertility, pregnancy and lactation",
+    "quote": "Moxonidine should not be used during pregnancy unless clearly necessary. Breast-feeding Moxonidine is secreted in breast milk and should therefore not be used during breast-feeding. If therapy with moxonidine is considered absolutely necessary, the breast feeding shall be stopped.",
+    "quoteVi": "SmPC Moxonidine Mục 4.6: Không dùng trong thai kỳ trừ khi thật sự cần thiết; thuốc bài tiết vào sữa mẹ nên không dùng khi cho con bú."
+  },
+  {
+    "id": "ema.physiotens.adverse_angioedema",
+    "sourceId": "ema_physiotens_smpc",
+    "locator": "Section 4.8 Undesirable effects",
+    "quote": "Skin and subcutaneous tissue disorders Rash, pruritus Angioedema",
+    "quoteVi": "SmPC Moxonidine Mục 4.8: Phù mạch (angioedema) là tác dụng không mong muốn ít gặp trên da và mô dưới da."
+  },
+  {
+    "id": "fda.chlorthalidone.contraindications",
+    "sourceId": "fda_chlorthalidone",
+    "pdfPage": 2,
+    "locator": "CONTRAINDICATIONS & WARNINGS / PDF p. 2",
+    "quote": "CONTRAINDICATIONS Anuria. Known hypersensitivity to chlorthalidone or other sulfonamide-derived drugs.",
+    "quoteVi": "Nhãn FDA Chlorthalidone: Chống chỉ định khi vô niệu hoặc quá mẫn đã biết với chlorthalidone hay các dẫn xuất sulfonamide khác."
+  },
+  {
+    "id": "fda.chlorthalidone.electrolytes",
+    "sourceId": "fda_chlorthalidone",
+    "pdfPage": 3,
+    "locator": "PRECAUTIONS — General / PDF p. 3",
+    "quote": "Hypokalemia may develop with chlorthalidone as with any other diuretic, especially with brisk diuresis when severe cirrhosis is present",
+    "quoteVi": "Nhãn FDA Chlorthalidone: Hạ kali máu có thể xảy ra khi dùng chlorthalidone, đặc biệt khi lợi tiểu mạnh hoặc có xơ gan nặng."
+  },
+  {
+    "id": "fda.chlorthalidone.nursing",
+    "sourceId": "fda_chlorthalidone",
+    "pdfPage": 5,
+    "locator": "PRECAUTIONS — Nursing Mothers / PDF p. 5",
+    "quote": "NURSING MOTHERS Thiazides are excreted in human milk. Because of the potential for serious adverse reactions in nursing infants from chlorthalidone, a decision should be made whether to discontinue nursing or to discontinue the drug",
+    "quoteVi": "Nhãn FDA Chlorthalidone: Lợi tiểu thiazide bài tiết vào sữa mẹ; do nguy cơ phản ứng bất lợi nghiêm trọng ở trẻ bú mẹ, cần cân nhắc ngưng cho bú hoặc ngưng thuốc."
+  },
+  {
+    "id": "fda.clevidipine.contraindications_sec4",
+    "sourceId": "fda_clevidipine",
+    "pdfPage": 4,
+    "locator": "Section 4 CONTRAINDICATIONS / PDF p. 4",
+    "quote": "4 CONTRAINDICATIONS 4.1 Known Allergy Cleviprex is contraindicated in patients with allergies to soybeans, soy products, eggs, or egg products. 4.2 Defective Lipid Metabolism Cleviprex is contraindicated in patients with defective lipid metabolism such as pathologic hyperlipemia, lipoid nephrosis",
+    "quoteVi": "Nhãn FDA Cleviprex (Clevidipine) Mục 4: Chống chỉ định ở bệnh nhân dị ứng đậu nành, sản phẩm đậu nành, trứng hoặc sản phẩm từ trứng, và rối loạn chuyển hóa lipid nặng."
+  },
+  {
+    "id": "fda.clevidipine.lipid_1000ml",
+    "sourceId": "fda_clevidipine",
+    "pdfPage": 1,
+    "locator": "Highlights — Dosage and Administration (2.2) / PDF p. 1",
+    "quote": "no more than 1000 mL or an average of 21 mg/hour of Cleviprex infusion is recommended per 24 hour period.",
+    "quoteVi": "Nhãn FDA Cleviprex Mục 2.2: Do giới hạn tải lượng lipid nhũ tương, khuyến cáo không truyền quá 1000 mL (hoặc tốc độ trung bình 21 mg/giờ) trong mỗi 24 giờ."
+  },
+  {
+    "id": "fda.clonidine.withdrawal_bb",
+    "sourceId": "fda_clonidine",
+    "pdfPage": 4,
+    "locator": "WARNINGS — Withdrawal / PDF p. 4",
+    "quote": "If therapy is to be discontinued in patients receiving a beta‑blocker and clonidine concurrently, the beta‑blocker should be withdrawn several days before the gradual discontinuation of Catapres‑TTS",
+    "quoteVi": "Nhãn FDA Clonidine (Catapres): Nếu cần ngưng điều trị ở bệnh nhân đang dùng đồng thời chẹn beta và clonidine, phải ngưng thuốc chẹn beta trước vài ngày rồi mới giảm liều từ từ clonidine."
+  },
+  {
+    "id": "fda.clonidine.conduction_bradycardia",
+    "sourceId": "fda_clonidine",
+    "pdfPage": 4,
+    "locator": "PRECAUTIONS — General / PDF p. 4",
+    "quote": "clonidine may worsen sinus node dysfunction and atrioventricular (AV) block, especially in patients taking other sympatholytic drugs. There are post-marketing reports of patients with conduction abnormalities and/or taking other sympatholytic drugs who developed severe bradycardia",
+    "quoteVi": "Nhãn FDA Clonidine: Tác dụng ức chế giao cảm của clonidine có thể làm nặng suy nút xoang và block nhĩ thất (AV), gây nhịp chậm nặng đặc biệt khi dùng kèm thuốc ức chế giao cảm khác."
+  },
+  {
+    "id": "fda.clonidine.renal_halflife",
+    "sourceId": "fda_clonidine",
+    "pdfPage": 3,
+    "locator": "CLINICAL PHARMACOLOGY — Pharmacokinetics / PDF p. 3",
+    "quote": "The half-life increases up to 41 hours in patients with severe impairment of renal function.",
+    "quoteVi": "Nhãn FDA Clonidine: Thời gian bán thải tăng lên tới 41 giờ ở bệnh nhân suy giảm chức năng thận nặng."
+  },
+  {
+    "id": "fda.clonidine.nursing",
+    "sourceId": "fda_clonidine",
+    "pdfPage": 7,
+    "locator": "PRECAUTIONS — Nursing Mothers / PDF p. 7",
+    "quote": "Nursing Mothers As clonidine is excreted in human milk, caution should be exercised when Catapres‑TTS is administered to a nursing woman.",
+    "quoteVi": "Nhãn FDA Clonidine: Clonidine bài tiết vào sữa mẹ, cần thận trọng đặc biệt/tránh dùng ở phụ nữ đang cho con bú."
+  },
+  {
+    "id": "fda.doxazosin.contraindications_quinazolines",
+    "sourceId": "fda_doxazosin",
+    "pdfPage": 4,
+    "locator": "Section 4 CONTRAINDICATIONS / PDF p. 4",
+    "quote": "4 CONTRAINDICATIONS The use of CARDURA is contraindicated in patients with a hypersensitivity to doxazosin, other quinazolines (e.g., prazosin, terazosin), or any of its components.",
+    "quoteVi": "Nhãn FDA Cardura (Doxazosin) Mục 4: Chống chỉ định ở bệnh nhân quá mẫn với doxazosin, các dẫn xuất quinazoline khác (prazosin, terazosin) hoặc bất kỳ tá dược nào."
+  },
+  {
+    "id": "fda.doxazosin.hepatic_c",
+    "sourceId": "fda_doxazosin",
+    "pdfPage": 9,
+    "locator": "Section 8.6 Hepatic Impairment / PDF p. 9",
+    "quote": "severe hepatic impairment (Child-Pugh Class C) is not recommended. Monitor blood pressure and for symptoms of hypotension in patients with lesser degrees of hepatic impairment (Child- Pugh Class A and B)",
+    "quoteVi": "Nhãn FDA Cardura Mục 8.6: Không khuyến cáo sử dụng doxazosin ở bệnh nhân suy gan nặng (Child-Pugh C); theo dõi sát huyết áp ở suy gan nhẹ–vừa (Child-Pugh A và B)."
+  },
+  {
+    "id": "fda.doxazosin.lactation",
+    "sourceId": "fda_doxazosin",
+    "pdfPage": 8,
+    "locator": "Section 8.2 Lactation / PDF p. 8",
+    "quote": "8.2 Lactation Risk Summary There is limited information on the presence of CARDURA in human milk [see Data ]. There is no information on the effects of CARDURA on the breastfeed infant or the effects on milk production.",
+    "quoteVi": "Nhãn FDA Cardura Mục 8.2: Dữ liệu về sự hiện diện của doxazosin trong sữa mẹ và ảnh hưởng trên trẻ bú mẹ còn hạn chế."
+  },
+  {
+    "id": "fda.eplerenone.htn_contraindications",
+    "sourceId": "fda_eplerenone",
+    "pdfPage": 5,
+    "locator": "Section 4 CONTRAINDICATIONS — Hypertension / PDF p. 5",
+    "quote": "type 2 diabetes with microalbuminuria, serum creatinine >2.0 mg/dL in males or >1.8 mg/dL in females, creatinine clearance <50 mL/min, or concomitant administration of potassium supplements or potassium-sparing diuretics (e.g., amiloride, spironolactone, or triamterene)",
+    "quoteVi": "Nhãn FDA Inspra (Eplerenone) Mục 4: Trong chỉ định điều trị tăng huyết áp, chống chỉ định khi có đái tháo đường týp 2 kèm albumin niệu vi thể, creatinin huyết thanh > 2,0 mg/dL (nam) hoặc > 1,8 mg/dL (nữ), CrCl < 50 mL/phút, hoặc dùng kèm bù kali / lợi tiểu giữ kali."
+  },
+  {
+    "id": "fda.eplerenone.htn_moderate_cyp3a",
+    "sourceId": "fda_eplerenone",
+    "pdfPage": 4,
+    "locator": "Section 2.4 Dose Modification for Use with Moderate CYP3A Inhibitors / PDF p. 4",
+    "quote": "In patients with hypertension receiving a moderate CYP3A inhibitor, initiate at 25 mg once daily. For inadequate blood pressure response, dosing may be increased to a maximum of 25 mg twice daily",
+    "quoteVi": "Nhãn FDA Inspra Mục 2.4: Ở bệnh nhân tăng huyết áp đang dùng thuốc ức chế CYP3A4 mức độ vừa (như verapamil, diltiazem, erythromycin, fluconazole), khởi đầu 25 mg 1 lần/ngày và tối đa 25 mg x 2 lần/ngày."
+  },
+  {
+    "id": "fda.losartan.starting_25mg_diuretic",
+    "sourceId": "fda_losartan",
+    "pdfPage": 4,
+    "locator": "Section 2.1 Adult Hypertension / PDF p. 4",
+    "quote": "A starting dose of 25 mg is recommended for patients with possible intravascular depletion (e.g., on diuretic therapy).",
+    "quoteVi": "Nhãn FDA Cozaar (Losartan) Mục 2.1: Khuyến cáo liều khởi đầu giảm còn 25 mg 1 lần/ngày ở bệnh nhân có nguy cơ giảm thể tích nội mạch (như đang dùng lợi tiểu)."
+  },
+  {
+    "id": "ema.indapamide.hyponatraemia_uric",
+    "sourceId": "ema_label_indapamide",
+    "pdfPage": 3,
+    "locator": "Section 4.4 Special warnings — Natraemia & Uric acid / PDF p. 3",
+    "quote": "Any diuretic treatment may cause hyponatraemia, sometimes with very serious consequences. The fall in plasma sodium may be asymptomatic initially and regular monitoring is therefore essential, and should be even more frequent in the elderly and cirrhotic patients (see sections 4.8 and 4.9).",
+    "quoteVi": "SmPC Natrilix SR (Indapamide) Mục 4.4: Mọi điều trị lợi tiểu đều có thể gây hạ natri máu với hậu quả nghiêm trọng; cần theo dõi natri máu định kỳ, nhất là ở người cao tuổi và xơ gan."
+  }
+]

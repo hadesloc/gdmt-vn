@@ -1,0 +1,75 @@
+{
+  "id": "copd_62_r3_outpatient_acute_respiratory_failure_refer",
+  "titleVi": "Hồi quy R3 (COPD-R3-R3-04 & R1-13): Khám ngoại trú có toan hô hấp cấp mất bù (pH 7.26, PaCO₂ 64, SpO₂ 82%, lơ mơ) chuyển Cấp cứu/ICU ngay và chặn LTOT/Home NIV",
+  "source": "GOLD 2026 p. 108 / BYT QĐ 2131/2026 tr. 34, 42 (COPD-R3-R3-04, COPD-R3-R1-13)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_62",
+    "age": 70,
+    "sex": "male",
+    "weight": 54,
+    "height": 162,
+    "sbp": 118,
+    "dbp": 72,
+    "hr": 116,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "fev1FvcRatio": 0.44,
+      "fev1PredPct": 34,
+      "mmrc": 3,
+      "cat": 22,
+      "moderateExacerbations": 2,
+      "hospitalizations": 1,
+      "bloodEos": 220,
+      "currentInhaler": "none",
+      "restingSpo2": 82,
+      "abgPh": 7.26,
+      "abgPaco2": 64,
+      "alteredMentalStatus": true,
+      "smokingStatus": "former"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_copd_outpatient_emergency_refer",
+        "action": "REFER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_copd_ltot",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_copd_home_niv",
+        "action": "CONSIDER"
+      },
+      {
+        "ruleId": "rec_copd_init_group_e_laba_lama",
+        "action": "START"
+      }
+    ]
+  }
+}

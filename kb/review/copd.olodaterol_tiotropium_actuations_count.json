@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.olodaterol_tiotropium_actuations_count",
+  "contentHash": "0528c2c61a43ea2de4fe46fa0a5c0a56552570fb8d153e1209d505722c54bcc9",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.olodaterol_tiotropium_actuations_count",
+      "contentHash": "c9dcaa687a59cb90",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

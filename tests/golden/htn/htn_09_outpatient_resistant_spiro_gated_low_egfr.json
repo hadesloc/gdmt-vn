@@ -1,0 +1,74 @@
+{
+  "id": "htn_09_outpatient_resistant_spiro_gated_low_egfr",
+  "titleVi": "THA kháng trị nhưng suy thận eGFR < 45: Chặn Spironolactone",
+  "source": "AHA/ACC 2025 / aha.acc.2025.table13_spiro_egfr45",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "US",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "female",
+    "weight": 58,
+    "height": 154,
+    "sbp": 152,
+    "dbp": 92,
+    "hr": 74,
+    "scr": 160,
+    "k": 4.3,
+    "conditions": {
+      "htn": true,
+      "ckd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "losartan",
+        "name": "Cozaar",
+        "dose": 100,
+        "unit": "mg"
+      },
+      {
+        "drugId": "amlodipine",
+        "name": "Amlor",
+        "dose": 10,
+        "unit": "mg"
+      },
+      {
+        "drugId": "hydrochlorothiazide",
+        "name": "HCTZ",
+        "dose": 25,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "spironolactone",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "spironolactone",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "THA kháng trị nhưng eGFR ~30 mL/min < 45, không đủ điều kiện an toàn khởi trị Spironolactone."
+}

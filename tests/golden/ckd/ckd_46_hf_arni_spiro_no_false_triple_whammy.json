@@ -1,0 +1,62 @@
+{
+  "id": "ckd_46_hf_arni_spiro_no_false_triple_whammy",
+  "titleVi": "Đa bệnh lý (CKD + Suy tim HFrEF đang dùng ARNI + Empagliflozin + Spironolactone, KHÔNG dùng NSAID) -> Không báo động giả Triple Whammy và không kê thêm ACEi/Finerenone (Regression R3-CKD-04, R3-CKD-07, R3-CKD-13)",
+  "source": "ESC 2026 HF & KDIGO 2024 CKD",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_46",
+    "name": "BN CKD 46",
+    "age": 66,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 118,
+    "dbp": 72,
+    "hr": 68,
+    "lvef": 32,
+    "nyha": 2,
+    "scr": 135,
+    "k": 4.6,
+    "uacr": 36,
+    "conditions": {
+      "ckd": true,
+      "hf": true,
+      "dm": true,
+      "htn": true
+    },
+    "currentMeds": [
+      { "drugId": "sacubitril_valsartan", "name": "Entresto 100 mg", "dose": 100, "unit": "mg" },
+      { "drugId": "empagliflozin", "name": "Jardiance 10 mg", "dose": 10, "unit": "mg" },
+      { "drugId": "spironolactone", "name": "Spironolactone 25 mg", "dose": 25, "unit": "mg" },
+      { "drugId": "bisoprolol", "name": "Concor 5 mg", "dose": 5, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "empagliflozin", "action": "CONTINUE" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "losartan", "action": "START" },
+      { "drugId": "perindopril", "action": "START" },
+      { "drugId": "finerenone", "action": "START" },
+      { "drugId": "sacubitril_valsartan", "action": "SWITCH" },
+      { "drugId": "spironolactone", "action": "SWITCH" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy R3-CKD-04, R3-CKD-07 & R3-CKD-13: Phác đồ GDMT chuẩn của HFrEF (ARNI + SGLT2i + Spironolactone + BB, không có NSAID) được bảo tồn nguyên vẹn, không đề xuất ACEi/ARB hay Finerenone gây SWITCH sai."
+}

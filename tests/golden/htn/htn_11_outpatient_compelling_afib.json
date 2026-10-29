@@ -1,0 +1,50 @@
+{
+  "id": "htn_11_outpatient_compelling_afib",
+  "titleVi": "Tăng huyết áp kèm Rung nhĩ đáp ứng thất nhanh: Chỉ định chẹn beta",
+  "source": "ESC 2024 HTN / esc.htn.2024.beta_blocker_indications",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 70,
+    "sex": "female",
+    "weight": 60,
+    "height": 156,
+    "sbp": 150,
+    "dbp": 92,
+    "hr": 106,
+    "rhythm": "afib",
+    "scr": 88,
+    "k": 4.1,
+    "conditions": {
+      "htn": true,
+      "afib": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Rung nhĩ đáp ứng thất nhanh HR 106 bpm, chỉ định chẹn beta kiểm soát nhịp và hạ áp."
+}

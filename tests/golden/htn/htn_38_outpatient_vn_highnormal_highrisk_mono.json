@@ -1,0 +1,63 @@
+{
+  "id": "htn_38_outpatient_vn_highnormal_highrisk_mono",
+  "titleVi": "Profile VN (VSH 2022): HA bình thường - cao (136/86 mmHg) kèm ASCVD khởi trị đơn trị sớm",
+  "source": "VSH/VNHA 2022 / vsh.htn.2022.table9_dual_spc",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 58,
+    "sex": "male",
+    "weight": 68,
+    "height": 168,
+    "sbp": 136,
+    "dbp": 86,
+    "hr": 74,
+    "scr": 84,
+    "k": 4.2,
+    "conditions": {
+      "htn": true,
+      "ascvd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_htn_step1_vn_highnormal_monotherapy",
+        "action": "START"
+      },
+      {
+        "drugId": "amlodipine",
+        "action": "START"
+      },
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "perindopril",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân dưới 70 tuổi thuộc nhóm HA bình thường - cao (130–139/85–89 mmHg) có bệnh tim mạch do xơ vữa (nguy cơ rất cao) được khởi trị đơn trị hạ áp sớm kèm chẹn beta bắt buộc."
+}

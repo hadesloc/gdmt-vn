@@ -1,0 +1,27 @@
+{
+  "itemId": "ix.hf.digoxin_loop_thiazide_hypokalemia",
+  "contentHash": "a693fa63bf8794ef1832e8c7fb896b5246e2085c6027a51648a132f89fb1ab31",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.hf.digoxin_loop_thiazide_hypokalemia",
+      "contentHash": "feb62343f8d54a82",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T09:00:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-28T09:00:00.000Z",
+          "role": "Agent G5 (HF Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF interaction ix.hf.digoxin_loop_thiazide_hypokalemia (Round 2 R1/R2/R3 remediation & verbatim PDF citation verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

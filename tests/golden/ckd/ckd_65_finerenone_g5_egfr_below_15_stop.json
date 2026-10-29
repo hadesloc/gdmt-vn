@@ -1,0 +1,53 @@
+{
+  "id": "ckd_65_finerenone_g5_egfr_below_15_stop",
+  "titleVi": "Ngoại trú - CKD G5 chưa lọc máu (eGFR < 15 mL/phút/1.73m²) đang dùng Finerenone 10 mg -> Phát lệnh STOP thay vì CONTINUE sai (Regression CKD-R3-R2-05)",
+  "source": "FDA Kerendia Label Section 8.6 & KDIGO 2024 Rec 3.8.1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_65",
+    "name": "BN CKD 65",
+    "age": 68,
+    "sex": "male",
+    "weight": 66,
+    "sbp": 134,
+    "dbp": 78,
+    "hr": 74,
+    "scr": 420,
+    "k": 4.7,
+    "uacr": 60,
+    "conditions": {
+      "ckd": true,
+      "dm": true
+    },
+    "currentMeds": [
+      { "drugId": "finerenone", "name": "Kerendia 10 mg", "dose": 10, "unit": "mg" },
+      { "drugId": "losartan", "name": "Cozaar 100 mg", "dose": 100, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "finerenone", "action": "STOP" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "finerenone", "action": "CONTINUE" },
+      { "drugId": "finerenone", "action": "UPTITRATE" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R3-R2-05: Khi chức năng thận suy giảm đến CKD G5 (eGFR < 15 mL/phút/1.73m²) dù chưa lọc máu, Finerenone không được khuyến cáo duy trì và phải STOP."
+}

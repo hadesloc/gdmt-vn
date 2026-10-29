@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.monitoring.recheck_weeks_min",
+  "contentHash": "ee09c1f041f447b121a1cf6adadc49d55012baad75c1d5baa95f4a2422d376b3",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.monitoring.recheck_weeks_min",
+      "contentHash": "6bfaf9a9fc11dda9",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 2 weeks (quantity: interval_weeks) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

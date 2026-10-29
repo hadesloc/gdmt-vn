@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.allopurinol_amoxicillin_ampicillin",
+  "contentHash": "5fae99f42672c9e00eebad09d71c310dab445ad4f771413cc2fd294c22a872c9",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.allopurinol_amoxicillin_ampicillin",
+      "contentHash": "53a1d840966e9be4",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.allopurinol_amoxicillin_ampicillin."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

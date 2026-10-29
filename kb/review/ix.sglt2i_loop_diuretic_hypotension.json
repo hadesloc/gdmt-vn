@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.sglt2i_loop_diuretic_hypotension",
+  "contentHash": "6a8bc6a3bb146ef92cc309260175252c3306f5202a8e91fd73ffe3e443528617",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.sglt2i_loop_diuretic_hypotension",
+      "contentHash": "bcaf37eb33761947",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.sglt2i_loop_diuretic_hypotension."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

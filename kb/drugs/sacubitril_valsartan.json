@@ -1,0 +1,204 @@
+{
+  "id": "sacubitril_valsartan",
+  "nameVi": "Sacubitril / Valsartan (ARNI)",
+  "inn": "Sacubitril / Valsartan",
+  "class": "ARNI",
+  "classes": [
+    "arni"
+  ],
+  "components": [
+    "sacubitril",
+    "valsartan"
+  ],
+  "vnBrands": [
+    "Entresto",
+    "Uperio"
+  ],
+  "forms": [
+    "Viên nén bao phim 24/26 mg (50 mg)",
+    "Viên nén bao phim 49/51 mg (100 mg)",
+    "Viên nén bao phim 97/103 mg (200 mg)"
+  ],
+  "start": {
+    "amount": "49/51",
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "khởi đầu 24/26 mg x 2 lần/ngày nếu chưa từng dùng ACEi/ARB hoặc đang dùng liều thấp, SBP 100–110 mmHg, eGFR < 30 mL/min/1.73m² (bắt buộc theo FDA), thận trọng ở eGFR 30–60 mL/min/1.73m² hoặc suy gan Child-Pugh B"
+  },
+  "target": {
+    "amount": "97/103",
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "liều đích chứng minh giảm tử vong và nhập viện suy tim"
+  },
+  "titration": {
+    "step": "Gấp đôi liều mỗi 2–4 tuần (24/26 -> 49/51 -> 97/103 mg x 2 lần/ngày) khi dung nạp huyết áp, thận và kali máu",
+    "intervalDays": 14,
+    "maxDose": "97/103 mg x 2 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "49/51 mg x 2 lần/ngày -> đích 97/103 mg x 2 lần/ngày (24/26 mg x 2 lần/ngày nếu chưa từng dùng ACEi/ARB)",
+      "citationIds": [
+        "esc.hf.2026.sacubitril_valsartan_dose",
+        "fda.hf.sacubitril_naive_low_dose"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "24/26–49/51 mg x 2 lần/ngày -> chuẩn độ tới đích 97/103 mg x 2 lần/ngày",
+      "note": "Cân nhắc khởi đầu liều thấp 24/26 mg x 2 lần/ngày ở eGFR 30–60 mL/min/1.73m² theo ESC 2026 Table 11",
+      "citationIds": [
+        "esc.hf.2026.sacubitril_valsartan_low_dose"
+      ]
+    },
+    {
+      "eGFRFrom": 15,
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "24/26 mg x 2 lần/ngày -> chuẩn độ thận trọng",
+      "note": "Bắt buộc khởi đầu nửa liều 24/26 mg x 2 lần/ngày khi eGFR < 30 mL/min/1.73m² (FDA §2.7 & ESC Table S5); theo dõi sát creatinin và K+ sau 1–2 tuần",
+      "citationIds": [
+        "fda.hf.sacubitril_renal_egfr30",
+        "esc.hf.2026.arni_sbp_100_egfr_30"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "not_rec",
+      "continue": "caution",
+      "note": "Chưa có đủ dữ liệu RCT khởi trị mới khi eGFR < 15 mL/min/1.73m² hoặc đang lọc máu; cần hội chẩn chuyên khoa tim mạch – thận học",
+      "citationIds": [
+        "fda.hf.sacubitril_renal_egfr30",
+        "esc.hf.2026.arni_table_s5_contra_caution"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_arni_sbp_contra",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 90,
+      "unit": "mmHg",
+      "action": "hold",
+      "messageVi": "Huyết áp tâm thu < 90 mmHg: Chống chỉ định khởi trị / tạm hoãn ARNI do nguy cơ tụt huyết áp nặng (ESC 2026 Table S5)",
+      "citationIds": [
+        "esc.hf.2026.arni_table_s5_contra_caution"
+      ]
+    },
+    {
+      "id": "gate_arni_washout_acei",
+      "parameter": "washout_acei",
+      "operator": "<",
+      "threshold": 36,
+      "unit": "hours",
+      "action": "contra",
+      "messageVi": "Bắt buộc khoảng nghỉ (washout) ít nhất 36 giờ sau liều ACEi cuối cùng trước khi bắt đầu ARNI để phòng phù mạch (ESC 2026 / FDA)",
+      "citationIds": [
+        "esc.hf.2026.washout_acei_arni_36h",
+        "fda.hf.sacubitril_angioedema"
+      ]
+    },
+    {
+      "id": "gate_arni_k_caution",
+      "parameter": "K",
+      "operator": ">",
+      "threshold": 5.2,
+      "unit": "mmol/L",
+      "action": "caution",
+      "messageVi": "Kali máu > 5.2 mmol/L: Thận trọng đặc biệt / kiểm soát kali máu trước khi khởi trị hoặc tăng liều ARNI (ESC 2026 Table S5)",
+      "citationIds": [
+        "esc.hf.2026.arni_table_s5_contra_caution"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối trong thai kỳ (Boxed Warning độc tính bào thai: suy thận thai nhi, thiểu ối, tử vong thai); ngừng ngay lập tức khi phát hiện có thai.",
+    "citationIds": [
+      "esc.hf.2026.pregnancy_contra",
+      "fda.hf.sacubitril_fetal_toxicity"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo cho con bú trong thời gian điều trị bằng Sacubitril/valsartan do nguy cơ phản ứng có hại nghiêm trọng trên trẻ bú mẹ.",
+    "citationIds": [
+      "fda.hf.sacubitril_lactation_hepatic"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định tuyệt đối trong thai kỳ (gây độc tính và tử vong bào thai)",
+      "citationIds": [
+        "esc.hf.2026.pregnancy_contra",
+        "fda.hf.sacubitril_fetal_toxicity"
+      ]
+    },
+    {
+      "code": "angioedema_history",
+      "messageVi": "Chống chỉ định tuyệt đối khi có tiền sử phù mạch liên quan ACEi/ARB hoặc phù mạch di truyền/vô căn",
+      "citationIds": [
+        "fda.hf.sacubitril_angioedema"
+      ]
+    },
+    {
+      "code": "concomitant_acei",
+      "messageVi": "Chống chỉ định dùng đồng thời với ACEi hoặc trong vòng 36 giờ sau liều ACEi cuối cùng",
+      "citationIds": [
+        "fda.hf.sacubitril_contra_acei_aliskiren",
+        "esc.hf.2026.washout_acei_arni_36h"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Không khuyến cáo sử dụng ở suy gan nặng (Child-Pugh C); giảm nửa liều khởi đầu (24/26 mg x 2 lần/ngày) ở suy gan vừa (Child-Pugh B)",
+      "citationIds": [
+        "fda.hf.sacubitril_hepatic"
+      ]
+    },
+    {
+      "code": "bilateral_renal_artery_stenosis",
+      "messageVi": "Chống chỉ định trong hẹp động mạch thận hai bên (ESC 2026 Table S5)",
+      "citationIds": [
+        "esc.hf.2026.arni_table_s5_contra_caution"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định tuyệt đối dùng đồng thời với ACEi (bắt buộc nghỉ tối thiểu 36 giờ) hoặc phối hợp kép cùng ARB/Aliskiren",
+    "Tăng nguy cơ tăng kali máu khi phối hợp MRA, thuốc lợi tiểu giữ kali hoặc chế phẩm bổ sung kali",
+    "NSAID / ức chế COX-2 làm giảm hiệu quả huyết động và tăng nguy cơ suy thận cấp (triple whammy)"
+  ],
+  "citationIds": [
+    "esc.hf.2026.sacubitril_valsartan_dose",
+    "esc.hf.2026.sacubitril_valsartan_low_dose",
+    "esc.hf.2026.washout_acei_arni_36h",
+    "esc.hf.2026.arni_table_s5_contra_caution",
+    "fda.hf.sacubitril_angioedema",
+    "fda.hf.sacubitril_renal_egfr30",
+    "byt.2022.hf_doses"
+  ],
+  "hepatic": {
+    "status": "caution",
+    "childA": "ok",
+    "childB": "reduce_start_24_26_bid",
+    "childC": "contra",
+    "note": "Child-Pugh A: không cần chỉnh liều; Child-Pugh B: khởi đầu nửa liều (24/26 mg x 2 lần/ngày); Child-Pugh C: không khuyến cáo sử dụng.",
+    "notesVi": "Child-Pugh A: không cần chỉnh liều; Child-Pugh B: khởi đầu nửa liều (24/26 mg x 2 lần/ngày); Child-Pugh C: không khuyến cáo sử dụng.",
+    "citationIds": [
+      "fda.hf.sacubitril_hepatic"
+    ]
+  }
+}

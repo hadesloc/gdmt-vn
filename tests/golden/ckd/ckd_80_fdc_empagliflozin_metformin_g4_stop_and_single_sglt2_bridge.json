@@ -1,0 +1,51 @@
+{
+  "id": "ckd_80_fdc_empagliflozin_metformin_g4_stop_and_single_sglt2_bridge",
+  "titleVi": "Ngoại trú - Đái tháo đường típ 2 kèm CKD G4 (SCr 260 umol/L, eGFR ~22) đang dùng viên phối hợp Synjardy (empagliflozin_metformin) -> STOP viên phối hợp do chống chỉ định Metformin ở eGFR < 30 & START empagliflozin đơn chất để bảo toàn lợi ích bảo vệ thận (Regression CKD-R4-R2-01, CKD-R4-R3-03)",
+  "source": "KDIGO 2024 PP 3.7.2 & FDA Glucophage/Synjardy Label (Contraindicated eGFR < 30 mL/min/1.73m2)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_80",
+    "name": "BN CKD 80",
+    "age": 64,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 128,
+    "dbp": 78,
+    "scr": 260,
+    "k": 4.5,
+    "uacr": 35,
+    "conditions": {
+      "ckd": true,
+      "dm": true
+    },
+    "currentMeds": [
+      { "drugId": "empagliflozin_metformin", "name": "Synjardy 12.5/1000 mg", "dose": "12.5/1000", "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "empagliflozin_metformin", "action": "STOP" },
+      { "drugId": "empagliflozin", "action": "START" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "empagliflozin_metformin", "action": "CONTINUE" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R4-R2-01 & CKD-R4-R3-03: Nhận diện thành phần Metformin trong viên phối hợp FDC để STOP khi eGFR < 30 mL/phút/1.73m² đồng thời chuyển đổi (bridge) sang SGLT2i đơn chất."
+}

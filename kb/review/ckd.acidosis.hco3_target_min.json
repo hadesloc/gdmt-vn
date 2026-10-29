@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.acidosis.hco3_target_min",
+  "contentHash": "2f2478f109ce891cbcb6e08a254d4804202c4ba9d85011ad7337133d12c566dc",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.acidosis.hco3_target_min",
+      "contentHash": "42c6fa128f098864",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.122Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.acidosis.hco3_target_min."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

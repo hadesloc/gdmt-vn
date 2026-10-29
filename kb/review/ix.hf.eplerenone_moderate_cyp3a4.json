@@ -1,0 +1,27 @@
+{
+  "itemId": "ix.hf.eplerenone_moderate_cyp3a4",
+  "contentHash": "a1f1a9d7fb2a01d86aa4fced29458af0127cf1e242e0b7afbed8d3f201c39cc4",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.hf.eplerenone_moderate_cyp3a4",
+      "contentHash": "16ba4fb0a151bbf9",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T09:00:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-28T09:00:00.000Z",
+          "role": "Agent G5 (HF Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF interaction ix.hf.eplerenone_moderate_cyp3a4 (Round 2 R1/R2/R3 remediation & verbatim PDF citation verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

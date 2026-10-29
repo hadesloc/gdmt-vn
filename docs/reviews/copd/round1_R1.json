@@ -1,0 +1,128 @@
+[
+  {
+    "id": "COPD-R1-01",
+    "severity": "critical",
+    "itemType": "missing",
+    "itemId": "copd.inpatient.short_acting_bronchodilators",
+    "finding": "Bỏ sót hoàn toàn Thuốc giãn phế quản tác dụng ngắn (SABA / SAMA) trong phác đồ xử trí Đợt cấp cấp cứu nội viện (Acute Exacerbation).",
+    "evidence": "GOLD 2026 Report (p. 103 & 112, Chapter 4): 'Inhaled short-acting beta2-agonists (SABA), with or without short-acting anticholinergics (SAMA), are recommended as the initial bronchodilators to treat an acute exacerbation (Evidence A)'. BYT QĐ 2131/QĐ-BYT 2026 (p. 36, Mục 3.4.4): 'Thuốc giãn phế quản tác dụng ngắn (SABA, SAMA hoặc phối hợp SABA/SAMA) là điều trị đầu tay không thể thiếu trong xử trí đợt cấp... Khí dung Salbutamol 5mg hoặc Salbutamol + Ipratropium lặp lại mỗi 20–30 phút'. Trong gdmt-vn/src/modules/copd/rules.ts (dòng 685–858), khi bệnh nhân vào đợt cấp nội viện, engine chỉ khuyến cáo oxy, corticoid, kháng sinh, NIV, ICU; hoàn toàn không có bất kỳ quy tắc nào chỉ định SABA/SAMA khí dung cấp cứu. Bệnh nhân co thắt phế quản cấp tính bị bỏ quên liệu pháp cắt cơn sống còn.",
+    "suggestedFix": "Bổ sung quy tắc copd.inpatient.short_acting_bronchodilators (action: 'START', drugId: 'salbutamol', tier: 'Xử trí đợt cấp cấp cứu', priority: 100) khuyến cáo khí dung Salbutamol 2.5–5 mg hoặc phối hợp Salbutamol + Ipratropium qua máy khí dung/buồng đệm lặp lại mỗi 20–30 phút trong giờ đầu."
+  },
+  {
+    "id": "COPD-R1-02",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "copd.outpatient.initial_group_e_triple",
+    "finding": "Tiêu chí Phân nhóm E sai lệch so với GOLD 2026 và BYT QĐ 2131/2026 do tái sử dụng sai ngưỡng mMRC (copd.mmrc_high = 2) cho đợt cấp vừa; làm lọt bệnh nhân có 1 đợt cấp vừa trong năm vào Nhóm A hoặc B thay vì Nhóm E.",
+    "evidence": "GOLD 2026 Report (p. 54, Chapter 2): 'Consequently, Group E has been modified to include individuals with one moderate exacerbation in the previous year.' BYT QĐ 2131/QĐ-BYT 2026 (p. 18, Mục 1.4.4): '- BPTNMT nhóm E - Nguy cơ cao: có từ 1 đợt cấp mức độ trung bình hoặc nặng trong năm trước.' Trích dẫn gốc kb/citations/copd.json (gold.copd.2026.group_e_definition và byt.copd.2026.abe_groups) đều trích dẫn nguyên văn 1 đợt cấp vừa là nhóm E. Tuy nhiên tại rules.ts dòng 11: 'if (modExac !== undefined && modExac >= th(\"copd.mmrc_high\")) return true;' so sánh với copd.mmrc_high (= 2!). Khi bệnh nhân có moderateExacerbations = 1 và hospitalizations = 0, hàm trả về false, tước bỏ chỉ định nhóm E và bộ ba thuốc khi BCAT ≥ 300 /µL. Đồng thời inputs.ts dòng 79 và COPD.md dòng 29 & 132 ghi nhầm '≥ 2 đợt cấp vừa'.",
+    "suggestedFix": "Tạo threshold mới copd.moderate_exac_group_e có giá trị = 1 (citationIds: gold.copd.2026.group_e_definition, byt.copd.2026.abe_groups). Sửa checkHighExacerbationRisk: 'if (modExac !== undefined && modExac >= th(\"copd.moderate_exac_group_e\")) return true;'. Đính chính lại mô tả trong inputs.ts và docs/modules/COPD.md."
+  },
+  {
+    "id": "COPD-R1-03",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "copd.followup.exac_add_ics",
+    "finding": "Bế tắc điều trị theo dõi (Follow-up Dead End): Bỏ sót toàn bộ bệnh nhân đang dùng đơn trị liệu LAMA hoặc LABA xuất hiện đợt cấp – Engine không sinh bất kỳ khuyến cáo nâng bậc nào.",
+    "evidence": "GOLD 2026 Report (p. 76, Figure 3.11): Lưu đồ điều trị theo dõi khuyến cáo bệnh nhân đang dùng đơn trị liệu (LABA hoặc LAMA) nếu xuất hiện đợt cấp phải được nâng bậc lên LABA+LAMA (nếu BCAT < 300 /µL) hoặc LABA+LAMA+ICS (nếu BCAT ≥ 300 /µL). Trong rules.ts: copd.followup.dyspnea_step_up bị chặn bởi checkHasExacerbations(ctx); copd.followup.exac_add_ics và avoid_ics_low_eos chỉ chấp nhận currentInhaler === 'laba_lama'; các rule khởi trị chặn currentInhaler !== 'none'. Do đó, bệnh nhân đang dùng Tiotropium (lama_mono) bị đợt cấp không nhận được bất kỳ khuyến cáo điều trị duy trì nào từ engine.",
+    "suggestedFix": "Bổ sung quy tắc theo dõi copd.followup.mono_exac_step_up cho bệnh nhân có currentInhaler === 'lama_mono' || currentInhaler === 'laba_mono' kèm checkHasExacerbations(ctx): hướng dẫn nâng lên LABA+LAMA khi BCAT < 300, hoặc nâng thẳng lên Triple therapy khi BCAT ≥ 300 /µL hoặc có tiền sử hen."
+  },
+  {
+    "id": "COPD-R1-04",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "copd.inpatient.antibiotics",
+    "finding": "Tiêu chuẩn chỉ định kháng sinh đợt cấp (Anthonisen) bị mã hóa sai logic (isPurulent || isIncreasedVol), kích hoạt kháng sinh ngay cả khi bệnh nhân không có đờm mủ.",
+    "evidence": "GOLD 2026 Report (p. 103, Chapter 4): Kháng sinh chỉ được chỉ định khi có đủ 3 triệu chứng kinh điển Anthonisen, hoặc có 2 triệu chứng trong đó BẮT BUỘC phải có đờm chuyển mủ, hoặc bệnh nhân phải thở máy. BYT QĐ 2131/QĐ-BYT 2026 (p. 37, Mục 3.4.4) khẳng định tương tự. Trong rules.ts dòng 751–753: 'return isPurulent || isIncreasedVol;'. Khi bệnh nhân có increasedSputumVolume === true nhưng purulentSputum === false (đờm nhầy trong, không nhiễm trùng), engine vẫn sinh START kháng sinh. Ngược lại, bệnh nhân thở máy (NIV/IMV) là chỉ định kháng sinh bắt buộc thì rule không kiểm tra.",
+    "suggestedFix": "Sửa điều kiện kích hoạt: const isNiv = (ph !== undefined && ph <= th('copd.niv_ph_cutoff') && paco2 !== undefined && paco2 >= th('copd.niv_paco2_cutoff')); return isPurulent || isNiv; (hoặc nếu đánh giá đủ 3 triệu chứng Anthonisen thì yêu cầu isPurulent là điều kiện tiên quyết trừ khi có thở máy)."
+  },
+  {
+    "id": "COPD-R1-05",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "copd.followup.mepolizumab_indication",
+    "finding": "Mã hóa sai lệch tiêu chí chỉ định Mepolizumab trong GOLD 2026: Cấm Mepolizumab ở bệnh nhân có viêm phế quản mạn (!isChronicBronchitis), đi ngược lại trích dẫn và văn bản guideline gốc.",
+    "evidence": "GOLD 2026 Report (p. 77, Chapter 3): 'Among patients with blood eosinophils ≥ 300 cells/µL, consider adding dupilumab (if chronic bronchitis) or mepolizumab (with and without chronic bronchitis) (Figure 3.11).' Trích dẫn gốc kb/citations/copd.json (ID: gold.copd.2026.biologics_dupilumab_mepolizumab) ghi rõ: 'mepolizumab (with and without chronic bronchitis)'. Tuy nhiên rules.ts dòng 528–529 đặt điều kiện cứng: 'const isChronicBronchitis = Boolean(ctx.patient.customInputs?.chronicBronchitis); return !isChronicBronchitis;'. Điều này tước bỏ chỉ định Mepolizumab ở bệnh nhân viêm phế quản mạn khi không dùng được Dupilumab.",
+    "suggestedFix": "Xóa bỏ điều kiện 'return !isChronicBronchitis;'. Cho phép xem xét Mepolizumab cho mọi bệnh nhân COPD có đợt cấp tái phát trên phác đồ ba thuốc và BCAT ≥ 300 /µL (có hoặc không có viêm phế quản mạn)."
+  },
+  {
+    "id": "COPD-R1-06",
+    "severity": "major",
+    "itemType": "missing",
+    "itemId": "copd.outpatient.home_niv",
+    "finding": "Bỏ sót hoàn toàn Khuyến cáo Class I / Chỉ định Thở máy không xâm nhập tại nhà (Home Non-invasive Ventilation / Long-term NIV) ở bệnh nhân tăng CO2 máu mạn tính kéo dài sau đợt cấp có toan hô hấp.",
+    "evidence": "GOLD 2026 Report (p. 89, Chapter 3 / Ventilatory Support): 'In patients with severe chronic hypercapnia and a history of hospitalization for acute respiratory failure, long-term home non-invasive positive pressure ventilation (NIV) may be considered to improve survival without readmission.' BYT QĐ 2131/QĐ-BYT 2026 (p. 15, 26, 33): 'Chỉ định thở máy không xâm nhập tại nhà cho người bệnh BPTNMT có tăng CO2 máu mạn tính (PaCO2 ban ngày ≥ 52–53 mmHg) kéo dài sau đợt cấp có toan hô hấp.' Module hiện chỉ có NIV cấp cứu nội viện, thiếu hoàn toàn quy tắc ngoại trú dài hạn.",
+    "suggestedFix": "Bổ sung quy tắc copd.outpatient.home_niv (setting: 'outpatient', action: 'CONSIDER', tier: 'Điều trị không dùng thuốc') kích hoạt khi bệnh nhân có tiền sử đợt cấp toan hô hấp nhập viện và PaCO2 ban ngày ≥ 53 mmHg (hoặc SpO2 thấp kèm tăng CO2 mạn tính)."
+  },
+  {
+    "id": "COPD-R1-07",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "copd.diagnosis.spirometry_required",
+    "finding": "Bỏ sót quy tắc Phân độ mức độ tắc nghẽn GOLD 1–4: Bắt buộc người dùng nhập FEV₁% dự đoán (fail-closed) nhưng không bao giờ xuất kết quả phân loại GOLD 1, 2, 3, 4 cho lâm sàng.",
+    "evidence": "GOLD 2026 Report (p. 39, Table 2.4) và BYT QĐ 2131/2026 (p. 16, Bảng 1.1) quy định 4 mức độ tắc nghẽn thông khí: GOLD 1 (≥80%), GOLD 2 (50–79%), GOLD 3 (30–49%), GOLD 4 (<30%). Trong KB có đầy đủ 4 thresholds (copd.gold1_fev1_min, gold2, gold3, gold4). Tuy nhiên trong rules.ts, FEV₁% chỉ dùng để kiểm tra thiếu dữ liệu (dòng 37–56) và roflumilast (dòng 403), hoàn toàn không có rule nào phân độ và kết luận bệnh nhân thuộc GOLD 1, 2, 3 hay 4.",
+    "suggestedFix": "Bổ sung quy tắc copd.diagnosis.gold_staging (setting: 'both', tier: 'Chẩn đoán xác định', tierOrder: 0, action: 'MONITOR') tự động phân loại và hiển thị rõ mức độ tắc nghẽn GOLD 1 (Nhẹ), GOLD 2 (Trung bình), GOLD 3 (Nặng), hay GOLD 4 (Rất nặng)."
+  },
+  {
+    "id": "COPD-R1-08",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "copd.followup.*",
+    "finding": "Cổng an toàn chẩn đoán (Diagnostic Gate) bị bỏ quên ở toàn bộ nhánh điều trị theo dõi (Follow-up): Bệnh nhân có FEV₁/FVC ≥ 0.70 bình thường (không mắc COPD) nếu đang dùng thuốc hít vẫn bị hệ thống tiếp tục nâng bậc và chỉ định thuốc độc tính cao (Roflumilast, Sinh học).",
+    "evidence": "GOLD 2026 Report (p. 15, Chapter 1): FEV1/FVC < 0.70 sau giãn phế quản là điều kiện tiên quyết xác nhận COPD. Các rule khởi trị ban đầu đều có cổng chặn fev1Fvc >= 0.70. Nhưng toàn bộ các rule theo dõi (copd.followup.dyspnea_step_up, exac_add_ics, avoid_ics_low_eos, roflumilast_indication, azithromycin_prophylaxis, dupilumab_indication, mepolizumab_indication) hoàn toàn không kiểm tra fev1FvcRatio. Một bệnh nhân có FEV₁/FVC = 0.78 (không mắc COPD) đang dùng thuốc hít nhầm ngoài cộng đồng vẫn bị kích hoạt chỉ định Roflumilast và Dupilumab/Mepolizumab.",
+    "suggestedFix": "Bổ sung cổng an toàn chẩn đoán vào đầu tất cả các rule theo dõi: if (fev1Fvc !== undefined && fev1Fvc >= th('copd.fev1_fvc_diagnostic')) return false;."
+  },
+  {
+    "id": "COPD-R1-09",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "copd.nonpharm.ltot_oxygen",
+    "finding": "Ngưỡng SpO2/PaO2 chỉ định Oxy trị liệu dài hạn (LTOT) mở rộng khi có Tâm phế mạn / Đa hồng cầu bị gộp nhầm vào ngưỡng SpO2 ≤ 88%, bỏ sót bệnh nhân SpO2 = 89%.",
+    "evidence": "GOLD 2026 Report (p. 87, Chapter 3) và Citation gold.copd.2026.ltot_criteria: Chỉ định LTOT mở rộng cho bệnh nhân có tâm phế mạn, phù suy tim phải hoặc đa hồng cầu (Hct > 55%) khi PaO2 55–60 mmHg hoặc SaO2 88–89%. Trong rules.ts dòng 635: 'if (hasCorPulm) { if (spo2 !== undefined && spo2 <= th(\"copd.oxygen_target_spo2_min\")) return true; }' với copd.oxygen_target_spo2_min = 88. Điều kiện này hoàn toàn trùng lặp với dòng 632 (spo2 <= 88), làm mất đi giá trị của tiêu chuẩn mở rộng cho SpO2 = 89%. Đồng thời đây là sự tái sử dụng sai ngưỡng oxy đích đợt cấp cho LTOT ngoại trú.",
+    "suggestedFix": "Tạo threshold copd.ltot_spo2_cor_pulmonale = 89 (%), copd.ltot_pao2_cor_pulmonale_max = 60 (mmHg) và cập nhật logic kiểm tra."
+  },
+  {
+    "id": "COPD-R1-10",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "copd.followup.azithromycin_prophylaxis",
+    "finding": "Chỉ định Azithromycin dự phòng thu hẹp sai vào người 'đã cai thuốc lá' (smokingStatus === 'former'), loại trừ người chưa từng hút thuốc ('never' smoker) bị COPD do phơi nhiễm môi trường.",
+    "evidence": "GOLD 2026 Report (p. 77, Chapter 3): 'Among those who are not currently smoking, consider adding azithromycin.' Nhóm 'not currently smoking' bao gồm cả former smokers và never smokers (nhóm bệnh nhân COPD quan trọng do khói bếp củi than và bụi nghề nghiệp). Trong rules.ts dòng 444: 'if (smoking !== 'former') return false;' đã khóa chặt chỉ cho phép former smoker.",
+    "suggestedFix": "Sửa điều kiện dòng 444 thành: 'if (smoking === 'current') return false;' để bao gồm cả bệnh nhân không hút thuốc."
+  },
+  {
+    "id": "COPD-R1-11",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "copd.followup.roflumilast_indication",
+    "finding": "Chỉ định Roflumilast gán hành động START thay vì CONSIDER, thiếu các cổng an toàn về suy gan trung bình-nặng và thể trạng gầy/thiếu cân (BMI thấp).",
+    "evidence": "GOLD 2026 Report (p. 77 & 162) ghi rõ: 'consider adding roflumilast... avoiding roflumilast treatment in underweight patients... contraindicated in moderate-to-severe hepatic impairment'. Nhãn FDA DailyMed Roflumilast chống chỉ định suy gan Child-Pugh B/C. Trong rules.ts dòng 420: action: 'START', priority: 70, gates: [] không có kiểm tra chống chỉ định suy gan hoặc cảnh báo BMI.",
+    "suggestedFix": "Chuyển action thành 'CONSIDER', bổ sung cảnh báo hoặc gate chống chỉ định suy gan Child-Pugh B/C và thận trọng ở người có BMI thấp hoặc trầm cảm."
+  },
+  {
+    "id": "COPD-R1-12",
+    "severity": "minor",
+    "itemType": "missing",
+    "itemId": "copd.inpatient.vte_prophylaxis",
+    "finding": "Bỏ sót khuyến cáo Dự phòng thuyên tắc huyết khối tĩnh mạch (VTE Prophylaxis) bằng LMWH trong đợt cấp COPD nội viện dù đã cam kết trong tài liệu đặc tả COPD.md.",
+    "evidence": "GOLD 2026 Report (p. 115, Chapter 4) và BYT QĐ 2131/2026 (p. 39, Mục 3.4.4) khuyến cáo dự phòng huyết khối tĩnh mạch bằng LMWH cho bệnh nhân đợt cấp COPD nằm viện giảm vận động. Tài liệu COPD.md dòng 175 đã mô tả mục này nhưng trong rules.ts hoàn toàn không có rule tương ứng.",
+    "suggestedFix": "Bổ sung quy tắc copd.inpatient.vte_prophylaxis (action: 'CONSIDER', tier: 'Xử trí đợt cấp cấp cứu') khuyến cáo LMWH (Enoxaparin 40 mg tiêm dưới da 1 lần/ngày) cho bệnh nhân nằm bất động tại giường."
+  },
+  {
+    "id": "COPD-R1-13",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "copd.followup.dupilumab_indication",
+    "finding": "Thiếu profileDiff cho Thuốc sinh học Dupilumab và thiếu phân tầng nguy cơ Pseudomonas aeruginosa cho kháng sinh kinh nghiệm tại Việt Nam.",
+    "evidence": "Tài liệu COPD.md dòng 192 cam kết: 'Profile INTL sinh CONSIDER Dupilumab/Mepolizumab; Profile VN gắn ghi chú tham khảo chuyên khoa sâu do chưa được BHYT chi trả'. Tuy nhiên trong rules.ts dòng 474–509, Dupilumab mở cả INTL và VN nhưng không có profileDiff. Quy tắc copd.inpatient.antibiotics cũng thiếu profileDiff phân tầng nguy cơ nhiễm Pseudomonas aeruginosa theo BYT QĐ 2131/2026 trang 33 & 37.",
+    "suggestedFix": "Bổ sung profileDiff cho copd.followup.dupilumab_indication và bổ sung phân tầng nguy cơ Pseudomonas aeruginosa cho profile VN trong copd.inpatient.antibiotics."
+  },
+  {
+    "id": "COPD-R1-14",
+    "severity": "suggestion",
+    "itemType": "rule",
+    "itemId": "copd.followup.dyspnea_on_dual",
+    "finding": "Đề xuất bổ sung hướng dẫn đổi thiết bị hít hoặc thay đổi phân tử thuốc khi bệnh nhân có khó thở dai dẳng trên phối hợp đôi LABA + LAMA.",
+    "evidence": "GOLD 2026 Figure 3.11 (Follow-up treatment - Dyspnea): Nếu bệnh nhân đang dùng LABA + LAMA mà vẫn khó thở dai dẳng, guideline khuyến cáo kiểm tra kỹ thuật hít, cân nhắc chuyển đổi thiết bị phân phối (switching inhaler device) hoặc đổi phân tử khác, kết hợp phục hồi chức năng hô hấp. Hiện tại engine chưa có quy tắc nào cho tình huống này.",
+    "suggestedFix": "Thêm quy tắc copd.followup.dyspnea_on_dual (action: 'MONITOR', tier: 'Theo dõi & Chuẩn độ') nhắc nhở kiểm tra lưu lượng hít thở, cân nhắc đổi thiết bị hít và chuyển gửi phục hồi chức năng hô hấp."
+  }
+]

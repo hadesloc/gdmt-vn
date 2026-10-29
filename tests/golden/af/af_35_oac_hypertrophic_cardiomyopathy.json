@@ -1,0 +1,55 @@
+{
+  "id": "af_35_oac_hypertrophic_cardiomyopathy",
+  "titleVi": "Bệnh cơ tim phì đại (HCM): Bắt buộc chỉ định DOAC bất kể điểm CHA₂DS₂-VA (AF-R1-03)",
+  "source": "ESC 2024 AF Rec Table 6 / esc.af.2024.hcm_amyloidosis_oac",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 40,
+    "sex": "male",
+    "weight": 70,
+    "height": 172,
+    "sbp": 120,
+    "dbp": 75,
+    "hr": 78,
+    "rhythm": "afib",
+    "scr": 85,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "hypertrophicCardiomyopathy": true
+    },
+    "currentMeds": []
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "apixaban",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_af_oac_low_risk",
+        "action": "AVOID"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 40t mắc HCM (CHA₂DS₂-VA = 0, AF-R1-03): ESC 2024 quy định bắt buộc dùng thuốc chống đông Class I, cấm phát lệnh AVOID."
+}

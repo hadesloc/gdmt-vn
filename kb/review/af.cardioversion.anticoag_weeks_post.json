@@ -1,0 +1,26 @@
+{
+  "itemId": "af.cardioversion.anticoag_weeks_post",
+  "contentHash": "c367053496a11de00cad498c389260b8002e32b272a33ef3dc6277c22d2a0db5",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.cardioversion.anticoag_weeks_post",
+      "contentHash": "0d7a6105257a5f59",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.cardioversion.anticoag_weeks_post (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

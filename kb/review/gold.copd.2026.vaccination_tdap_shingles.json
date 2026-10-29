@@ -1,0 +1,26 @@
+{
+  "itemId": "gold.copd.2026.vaccination_tdap_shingles",
+  "contentHash": "2db08faee31b20b152f02a9c7512fd240f72bc384742d2301e225419969b36e2",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gold.copd.2026.vaccination_tdap_shingles",
+      "contentHash": "18c427f24e7ea25d",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

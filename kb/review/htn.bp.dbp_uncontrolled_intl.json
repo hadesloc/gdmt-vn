@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.bp.dbp_uncontrolled_intl",
+  "contentHash": "f56db738fd8ee38e504af3706e27568ec11b1837b6ef40be07db6258e7d8487a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.bp.dbp_uncontrolled_intl",
+      "contentHash": "e3d575a95b605957",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực ngưỡng lâm sàng htn.bp.dbp_uncontrolled_intl (80 mmHg) và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

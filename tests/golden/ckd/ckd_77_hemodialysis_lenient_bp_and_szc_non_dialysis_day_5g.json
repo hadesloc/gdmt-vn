@@ -1,0 +1,51 @@
+{
+  "id": "ckd_77_hemodialysis_lenient_bp_and_szc_non_dialysis_day_5g",
+  "titleVi": "Ngoại trú - Bệnh nhân thận nhân tạo chu kỳ (onDialysis = true), HA 132/78 mmHg ở profile INTL và K+ = 5.4 mmol/L -> Mục tiêu HA nới lỏng (CONTINUE, không ép < 120) & Lokelma 5 g x 1 lần vào ngày không lọc máu (Regression CKD-R4-R1-03, CKD-R4-R1-04)",
+  "source": "KDIGO BP 2021 Rec 3.1.1 & FDA Lokelma Label Section 2.2 (Chronic Hemodialysis)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_77",
+    "name": "BN CKD 77",
+    "age": 62,
+    "sex": "male",
+    "weight": 64,
+    "sbp": 132,
+    "dbp": 78,
+    "scr": 620,
+    "k": 5.4,
+    "conditions": {
+      "ckd": true,
+      "htn": true,
+      "onDialysis": true
+    },
+    "currentMeds": [
+      { "drugId": "losartan", "name": "Cozaar 50 mg", "dose": 50, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "rec_ckd_bp_target", "action": "CONTINUE" },
+      { "drugId": "sodium_zirconium_cyclosilicate", "action": "START", "doseContains": "5 g" }
+    ],
+    "mustNotInclude": [
+      { "ruleId": "rec_ckd_bp_target", "action": "UPTITRATE" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R4-R1-03 & CKD-R4-R1-04: Loại trừ nhóm lọc máu khỏi mục tiêu SBP < 120 mmHg của SPRINT và chỉ định đúng phác đồ Lokelma 5 g x 1 lần/ngày vào những ngày không chạy thận."
+}

@@ -1,0 +1,72 @@
+{
+  "id": "htn_31_outpatient_ckd_egfr24_loop_diuretic",
+  "titleVi": "Nâng bậc Bước 2 trên nền CKD G4 (eGFR < 30): Bổ sung Furosemide thay vì Indapamide",
+  "source": "ESC 2024 HTN / esc.htn.2024.ckd_loop_diuretic",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 66,
+    "sex": "male",
+    "weight": 70,
+    "height": 167,
+    "sbp": 154,
+    "dbp": 92,
+    "hr": 74,
+    "scr": 230,
+    "k": 4.5,
+    "conditions": {
+      "htn": true,
+      "ckd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "losartan",
+        "name": "Cozaar",
+        "dose": 50,
+        "unit": "mg"
+      },
+      {
+        "drugId": "amlodipine",
+        "name": "Amlor",
+        "dose": 10,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "furosemide",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "indapamide",
+        "action": "START"
+      },
+      {
+        "drugId": "hydrochlorothiazide",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân CKD G4 (eGFR ~24 mL/min/1.73m2 < 30) chưa kiểm soát HA với ARB + CCB: chuyển dùng lợi tiểu quai Furosemide thay cho Indapamide/Thiazide."
+}

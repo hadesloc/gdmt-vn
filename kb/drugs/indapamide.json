@@ -1,0 +1,185 @@
+{
+  "id": "indapamide",
+  "nameVi": "Indapamide",
+  "inn": "Indapamide",
+  "class": "Lợi tiểu Thiazide-like",
+  "classes": [
+    "thiazide_diuretic"
+  ],
+  "qtRisk": "conditional",
+  "vnBrands": [
+    "Natrilix SR 1.5 mg",
+    "Fludex",
+    "Indapamide Stada",
+    "Preterax / Noliprel (phối hợp Perindopril)",
+    "Triplixam (phối hợp Perindopril + Amlodipine)"
+  ],
+  "forms": [
+    "Viên nén bao phim giải phóng kéo dài (SR) 1.5 mg",
+    "Viên nén 2.5 mg"
+  ],
+  "start": {
+    "amount": 1.5,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Viên SR 1,5 mg uống buổi sáng, nuốt nguyên viên (hoặc viên thường 1,25–2,5 mg)"
+  },
+  "target": {
+    "amount": 1.5,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Dạng SR 1,5 mg (hoặc 2,5 mg dạng phóng thích tức thì); tăng liều cao hơn không tăng hiệu quả hạ áp"
+  },
+  "titration": {
+    "step": "Duy trì liều cố định 1,5 mg SR/ngày; liều cao hơn chỉ làm tăng mất muối-kali mà không tăng thêm tác dụng hạ áp",
+    "intervalDays": 28,
+    "maxDose": "1.5 mg SR (hoặc 2.5 mg IR) 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "1.5 mg SR 1 lần/ngày",
+      "citationIds": [
+        "ema.indapamide.dosing",
+        "esc.htn.2024.first_line_classes"
+      ],
+      "note": "Đạt hiệu quả tối ưu khi chức năng thận bình thường hoặc giảm nhẹ–vừa (CrCl ≥ 30 mL/phút)."
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "contra",
+      "continue": "contra",
+      "citationIds": [
+        "ema.indapamide.renal_contra",
+        "esc.htn.2024.ckd_loop_diuretic"
+      ],
+      "note": "Chống chỉ định trong suy thận nặng (CrCl < 30 mL/phút) theo SmPC Natrilix SR; chuyển sang lợi tiểu quai khi eGFR < 30."
+    }
+  ],
+  "hepatic": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong suy gan nặng hoặc bệnh não gan; ngưng thuốc ngay nếu xuất hiện dấu hiệu bệnh não gan ở bệnh nhân xơ gan.",
+    "citationIds": [
+      "ema.indapamide.contraindications_hepatic"
+    ]
+  },
+  "gates": [
+    {
+      "id": "gate_indapamide_crcl_30",
+      "parameter": "CrCl",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min",
+      "action": "contra",
+      "messageVi": "Chống chỉ định Indapamide khi CrCl < 30 mL/phút (chuyển sang lợi tiểu quai).",
+      "citationIds": [
+        "ema.indapamide.renal_contra"
+      ]
+    },
+    {
+      "id": "gate_indapamide_k_low",
+      "parameter": "K",
+      "operator": "<",
+      "threshold": 3.5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm hoãn Indapamide khi hạ kali máu (K⁺ < 3,5 mmol/L); đặc biệt nguy cơ xoắn đỉnh khi K⁺ < 3,4 mmol/L.",
+      "citationIds": [
+        "ema.indapamide.hypokalemia_qt",
+        "esc.hf.2026.supp_diuretic_cautions"
+      ]
+    },
+    {
+      "id": "gate_indapamide_na_130",
+      "parameter": "Na",
+      "operator": "<",
+      "threshold": 130,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm ngưng/tránh khởi trị Indapamide khi Natri máu < 130 mmol/L do nguy cơ hạ natri máu nặng tiến triển.",
+      "citationIds": [
+        "ema.indapamide.hyponatraemia_uric",
+        "esc.hf.2026.supp_hyponatraemia_135"
+      ]
+    },
+    {
+      "id": "gate_indapamide_na_125",
+      "parameter": "Na",
+      "operator": "<",
+      "threshold": 125,
+      "unit": "mmol/L",
+      "action": "stop",
+      "messageVi": "Ngưng ngay Indapamide khi hạ natri máu nặng (Na⁺ < 125 mmol/L) — nguy cơ phù não và co giật.",
+      "citationIds": [
+        "ema.indapamide.hyponatraemia_uric",
+        "esc.hf.2026.supp_hyponatraemia_135"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Tránh dùng trong thai kỳ (gây giảm tưới máu nhau-thai, nguy cơ chậm tăng trưởng thai nhi); tuyệt đối không dùng để trị phù sinh lý thai kỳ.",
+    "citationIds": [
+      "ema.indapamide.pregnancy_lactation"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo cho con bú vì indapamide bài tiết vào sữa mẹ và có thể giảm tiết sữa.",
+    "citationIds": [
+      "ema.indapamide.pregnancy_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "severe_renal_failure",
+      "messageVi": "Suy thận nặng (CrCl < 30 mL/phút)",
+      "citationIds": [
+        "ema.indapamide.renal_contra"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Suy gan nặng hoặc bệnh não gan",
+      "citationIds": [
+        "ema.indapamide.contraindications_hepatic"
+      ]
+    },
+    {
+      "code": "sulfonamide_allergy",
+      "messageVi": "Quá mẫn với indapamide hoặc các dẫn xuất sulfonamide khác",
+      "citationIds": [
+        "ema.indapamide.contraindications_hepatic"
+      ]
+    },
+    {
+      "code": "hypokalemia",
+      "messageVi": "Hạ kali máu chưa được bù chỉnh",
+      "citationIds": [
+        "ema.indapamide.contraindications_hepatic",
+        "ema.indapamide.hypokalemia_qt"
+      ]
+    }
+  ],
+  "interactions": [
+    "Lithium: giảm thải trừ lithium qua thận gây ngộ độc lithium — tránh phối hợp hoặc theo dõi sát nồng độ lithium máu.",
+    "Thuốc kéo dài khoảng QT / gây xoắn đỉnh (amiodarone, sotalol, haloperidol, moxifloxacin, erythromycin TM) và Digoxin: hạ kali máu (< 3,4 mmol/L) thúc đẩy xoắn đỉnh (torsades de pointes) và ngộ độc digitalis.",
+    "NSAID toàn thân: làm giảm hiệu quả hạ áp và tăng nguy cơ suy thận cấp ở bệnh nhân thiếu dịch.",
+    "Tăng acid uric máu: thận trọng ở bệnh nhân có tiền sử gút cấp (ưu tiên losartan hoặc CCB)."
+  ],
+  "citationIds": [
+    "ema.indapamide.dosing",
+    "ema.indapamide.renal_contra",
+    "ema.indapamide.contraindications_hepatic",
+    "ema.indapamide.hypokalemia_qt",
+    "ema.indapamide.pregnancy_lactation",
+    "esc.htn.2024.first_line_classes",
+    "vsh.htn.2022.drugs_table_diuretic",
+    "ema.indapamide.hyponatraemia_uric",
+    "esc.hf.2026.supp_hyponatraemia_135"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "salmeterol",
+  "nameVi": "Salmeterol",
+  "inn": "Salmeterol xinafoate",
+  "class": "LABA",
+  "vnBrands": [
+    "Serevent Accuhaler",
+    "Serevent Evohaler"
+  ],
+  "forms": [
+    "Bột hít phân liều Accuhaler 50 mcg/liều",
+    "Bình xịt định liều MDI 25 mcg/nhát"
+  ],
+  "start": {
+    "amount": 50,
+    "unit": "mcg",
+    "frequency": "2 lần/ngày",
+    "route": "hít",
+    "description": "Hít 50 mcg x 2 lần/ngày (sáng và tối)"
+  },
+  "target": {
+    "amount": 50,
+    "unit": "mcg",
+    "frequency": "2 lần/ngày",
+    "route": "hít",
+    "description": "Hít 50 mcg x 2 lần/ngày"
+  },
+  "titration": {
+    "step": "Duy trì liều cố định hàng ngày",
+    "intervalDays": 30,
+    "maxDose": "50 mcg 2 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều khi eGFR ≥ 15 mL/phút/1.73m² (chuyển hóa chủ yếu qua CYP3A4 tại gan)",
+      "citationIds": [
+        "ema.trimbow.renal_pk_beclometasone_formoterol",
+        "ema.ultibro.renal_dosing_egfr30"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận (thải trừ qua thận không đáng kể)",
+      "citationIds": [
+        "ema.trimbow.renal_pk_beclometasone_formoterol",
+        "ema.ultibro.renal_dosing_egfr30"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Dị ứng nặng protein sữa: tránh dạng bột khô Accuhaler/Diskus chứa lactose; dạng Serevent Evohaler pMDI dùng tá dược HFA không chứa lactose. Phải xác minh thiết bị trước khi cấp phát.",
+    "Không dùng đơn trị liệu LABA ở bệnh nhân có kiểu hình hen hoặc tiền sử hen kèm theo (nguy cơ tử vong liên quan hen)",
+    "Không khuyến cáo phối hợp với thuốc ức chế mạnh CYP3A4 (clarithromycin, itraconazole, ketoconazole, ritonavir) do tăng nồng độ salmeterol huyết thanh và nguy cơ kéo dài khoảng QT, loạn nhịp thất"
+  ],
+  "citationIds": [
+    "gsk.serevent_evohaler.excipients",
+    "gsk.serevent_accuhaler.excipients",
+    "byt.copd.2026.salmeterol_cyp3a4_contra",
+    "gold.copd.2026.concurrent_asthma",
+    "gold.copd.2026.dpi_inspiratory_flow_switch",
+    "ema.trimbow.renal_pk_beclometasone_formoterol",
+    "ema.ultibro.renal_dosing_egfr30",
+    "ema.ultibro.pregnancy_lactation",
+    "ema.ultibro.lactose_excipient_contra",
+    "ema.ultibro.hypersensitivity_contra"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Dữ liệu dịch tễ học không cho thấy tăng dị tật thai nhi; chỉ dùng khi lợi ích vượt trội nguy cơ.",
+    "citationIds": [
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Nồng độ salmeterol trong huyết tương mẹ sau liều hít điều trị rất thấp; tương thích khi cho con bú.",
+    "citationIds": [
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "asthma_monotherapy",
+      "messageVi": "Chống chỉ định dùng đơn trị liệu ở bệnh nhân có hen đồng mắc mà không có ICS",
+      "citationIds": [
+        "gold.copd.2026.concurrent_asthma"
+      ]
+    }
+  ],
+  "classes": [
+    "laba"
+  ],
+  "qtRisk": "conditional"
+}

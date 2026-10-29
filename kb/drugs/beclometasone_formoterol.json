@@ -1,0 +1,115 @@
+{
+  "id": "beclometasone_formoterol",
+  "nameVi": "Beclometasone / Formoterol",
+  "inn": "Beclometasone dipropionate / Formoterol fumarate",
+  "class": "ICS-LABA",
+  "vnBrands": [
+    "Foster",
+    "Foster Nexthaler"
+  ],
+  "forms": [
+    "Bình xịt định liều hạt siêu mịn pMDI 100/6 mcg",
+    "Bình hít bột khô Nexthaler 100/6 mcg"
+  ],
+  "start": {
+    "amount": 1,
+    "unit": "nhát",
+    "frequency": "khi cần",
+    "route": "hít",
+    "description": "AIR Bậc 1–2 (theo GINA 2026): 1 nhát khi cần; MART Bậc 3: 1 nhát x 2 lần/ngày + 1 nhát khi cần"
+  },
+  "target": {
+    "amount": 2,
+    "unit": "nhát",
+    "frequency": "2 lần/ngày",
+    "route": "hít",
+    "description": "MART Bậc 4–5: 2 nhát x 2 lần/ngày + 1 nhát khi cần. Lưu ý trần liều: Tờ thông tin sản phẩm gốc (EMA SmPC / Dược thư VN) giới hạn tối đa 8 nhát/ngày (48 mcg formoterol định liều); GINA 2026 cho phép tối đa tạm thời 12 nhát/ngày (72 mcg formoterol định liều) dựa trên dữ liệu an toàn lâm sàng lớn"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận",
+      "citationIds": [
+        "gina.asthma.2026.formoterol_max_inhalations"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_foster_age_18",
+      "parameter": "age",
+      "operator": "<",
+      "threshold": 18,
+      "unit": "tuổi",
+      "action": "avoid",
+      "messageVi": "Beclometasone/Formoterol (Foster) chỉ được phê duyệt cho người lớn ≥ 18 tuổi theo GINA 2026 và SmPC; ở trẻ vị thành niên 12–17 tuổi chuyển sang Budesonide/Formoterol (≥ 12 tuổi)",
+      "citationIds": [
+        "gina.asthma.2026.foster_age_18"
+      ]
+    },
+    {
+      "id": "gate_formoterol_max_daily",
+      "parameter": "totalDailyPuffs",
+      "operator": ">",
+      "threshold": 12,
+      "unit": "nhát/ngày",
+      "action": "hold",
+      "messageVi": "Khám y tế ngay nếu cần dùng quá 12 nhát hít Foster tổng cộng trong ngày theo ngưỡng tối đa tạm thời GINA 2026 (72 mcg formoterol định liều; lưu ý nhãn SmPC gốc khuyến cáo khám y tế khi vượt quá 8 nhát/ngày = 48 mcg formoterol)",
+      "citationIds": [
+        "gina.asthma.2026.formoterol_max_inhalations",
+        "gina.asthma.2026.formoterol_max_mcg",
+        "gina.asthma.2026.beclometasone_formoterol_max_72_vs_48",
+        "gina.asthma.2026.beclometasone_formoterol_mart_12_puffs"
+      ]
+    }
+  ],
+  "interactions": [
+    "Giới hạn độ tuổi: Chỉ được phê duyệt cho người lớn ≥ 18 tuổi (không dùng cho trẻ vị thành niên 12–17 tuổi)",
+    "Thuốc chẹn beta không chọn lọc (kể cả thuốc nhỏ mắt) làm giảm tác dụng giãn phế quản và có thể kích phát co thắt phế quản nặng",
+    "Dạng bột khô Foster Nexthaler (DPI) chứa tá dược lactose monohydrate (tránh dùng ở người dị ứng nặng / phản vệ với protein sữa bò — bắt buộc chọn bình xịt định liều Foster pMDI không chứa lactose)",
+    "Lưu ý khác biệt nhãn thuốc: Nhãn sản phẩm EMA SmPC / VN ghi tối đa 8 nhát/24 giờ (48 mcg formoterol), trong khi GINA 2026 cho phép trần tối đa tạm thời 12 nhát/24 giờ (72 mcg formoterol)",
+    "Hướng dẫn dùng thuốc: Súc miệng kỹ bằng nước sạch và nhổ đi ngay sau các liều duy trì để phòng ngừa nấm candida hầu họng và khản tiếng"
+  ],
+  "citationIds": [
+    "gina.asthma.2026.foster_age_18",
+    "gina.asthma.2026.formoterol_max_inhalations",
+    "gina.asthma.2026.formoterol_max_mcg",
+    "gina.asthma.2026.beclometasone_formoterol_max_72_vs_48",
+    "gina.asthma.2026.beclometasone_formoterol_mart_12_puffs"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Thận trọng theo nhãn SmPC, nhưng GINA 2026 khẳng định lợi ích duy trì kiểm soát hen bằng ICS-LABA vượt trội hoàn toàn nguy cơ tiềm tàng cho thai nhi; tuyệt đối không tự ý ngừng ICS-LABA khi mang thai.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety",
+      "gina.asthma.2026.pregnancy_no_step_down"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Thận trọng theo nhãn SmPC do dữ liệu bài tiết formoterol qua sữa người còn hạn chế; phơi nhiễm toàn thân từ liều hít điều trị rất thấp và lợi ích kiểm soát hen cho mẹ vượt trội nguy cơ.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity",
+      "messageVi": "Quá mẫn với beclometasone hoặc formoterol",
+      "citationIds": [
+        "gina.asthma.2026.formoterol_max_inhalations"
+      ]
+    }
+  ],
+  "classes": [
+    "ics",
+    "laba"
+  ],
+  "components": [
+    "beclometasone",
+    "formoterol"
+  ],
+  "qtRisk": "conditional"
+}

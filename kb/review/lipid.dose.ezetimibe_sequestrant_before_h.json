@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.dose.ezetimibe_sequestrant_before_h",
+  "contentHash": "6aeca9815e6808d60330b9a9a2cc22bcdd921e1d152a7bb4e924fb76b3f62b7b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.dose.ezetimibe_sequestrant_before_h",
+      "contentHash": "7d680fe2f7b4e865",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T15:55:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.dose.ezetimibe_sequestrant_before_h."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T15:55:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "htn_06_outpatient_step2_add_ccb",
+  "titleVi": "Chưa kiểm soát với RASi + Lợi tiểu: Nâng lên ba thuốc thêm Amlodipine",
+  "source": "ESC 2024 HTN / esc.htn.2024.triple_combination",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 58,
+    "sex": "female",
+    "weight": 62,
+    "height": 156,
+    "sbp": 148,
+    "dbp": 92,
+    "hr": 74,
+    "scr": 82,
+    "k": 4.1,
+    "conditions": {
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "losartan",
+        "name": "Cozaar",
+        "dose": 50,
+        "unit": "mg"
+      },
+      {
+        "drugId": "hydrochlorothiazide",
+        "name": "HCTZ",
+        "dose": 12.5,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "amlodipine",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Chưa kiểm soát trên ARB + Thiazide, bổ sung Amlodipine hoàn thiện bộ ba."
+}

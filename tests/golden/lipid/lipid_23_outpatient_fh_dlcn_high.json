@@ -1,0 +1,55 @@
+{
+  "id": "lipid_23_outpatient_fh_dlcn_high",
+  "titleVi": "Tăng cholesterol máu gia đình (FH) - Nguy cơ cao",
+  "source": "ESC/EAS 2019 / esc.lipid.2019.target_high",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 38,
+    "sex": "male",
+    "weight": 70,
+    "height": 170,
+    "sbp": 125,
+    "dbp": 80,
+    "hr": 72,
+    "scr": 80,
+    "tc": 8.5,
+    "hdl": 1.1,
+    "ldl": 6.2,
+    "tg": 1.8,
+    "conditions": {
+      "familialHypercholesterolemia": true
+    },
+    "customInputs": {
+      "dlcnScore": 9
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": []
+  },
+  "descriptionVi": "FH chắc chắn (DLCN > 8) xếp nguy cơ cao/rất cao, chỉ định statin liều cao."
+}

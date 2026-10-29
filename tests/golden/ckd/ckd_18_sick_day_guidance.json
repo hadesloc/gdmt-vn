@@ -1,0 +1,49 @@
+{
+  "id": "ckd_18_sick_day_guidance",
+  "titleVi": "Kế hoạch xử trí ngày ốm (Sick-day rules) cho bệnh nhân CKD ngoại trú",
+  "source": "KDIGO 2024 CKD PP 3.7.2 / kdigo.ckd.2024.pp_3_7_2_sick_day_hold",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_18",
+    "name": "BN CKD 18",
+    "age": 59,
+    "sex": "male",
+    "weight": 68,
+    "sbp": 126,
+    "dbp": 80,
+    "hr": 72,
+    "scr": 135,
+    "k": 4.5,
+    "conditions": {
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_ckd_sick_day_plan",
+        "action": "MONITOR"
+      }
+    ]
+  },
+  "descriptionVi": "Luật giáo dục ngày ốm sinh dòng MONITOR."
+}

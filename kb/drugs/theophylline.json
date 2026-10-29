@@ -1,0 +1,97 @@
+{
+  "id": "theophylline",
+  "nameVi": "Theophylline",
+  "inn": "Theophylline",
+  "class": "Methylxanthine bronchodilator",
+  "vnBrands": [
+    "Theostat",
+    "Theophylline",
+    "Asmacon"
+  ],
+  "forms": [
+    "Viên nén phóng thích kéo dài 100 mg",
+    "Viên nén phóng thích kéo dài 200 mg",
+    "Viên nén phóng thích kéo dài 300 mg"
+  ],
+  "start": {
+    "amount": 100,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "Khởi đầu 100-200 mg x 2 lần/ngày sau bữa ăn; chuẩn độ thận trọng theo nồng độ theophylline máu"
+  },
+  "target": {
+    "amount": 200,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "200-300 mg x 2 lần/ngày, duy trì nồng độ đích huyết thanh 8-12 mcg/mL"
+  },
+  "titration": {
+    "step": "Tăng liều mỗi 3-5 ngày dựa trên đáp ứng và nồng độ thuốc huyết thanh",
+    "intervalDays": 7,
+    "maxDose": "600 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "caution",
+      "continue": "caution",
+      "note": "Thận trọng và theo dõi nồng độ theophylline huyết thanh (8–12 mcg/mL); khoảng điều trị hẹp, thanh thải giảm ở người cao tuổi, xơ gan và suy tim",
+      "citationIds": [
+        "gold.copd.2026.theophylline_narrow_toxicity",
+        "byt.copd.2026.theophylline_dose_max10"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "caution",
+      "note": "Suy thận giai đoạn cuối (eGFR < 15 mL/phút/1.73m²): tích lũy các chất chuyển hóa methylxanthine; bắt buộc theo dõi nồng độ huyết thanh (TDM) và dấu hiệu ngộ độc",
+      "citationIds": [
+        "gold.copd.2026.theophylline_narrow_toxicity",
+        "byt.copd.2026.theophylline_dose_max10"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Khoảng điều trị rất hẹp (nồng độ đích huyết thanh 8–12 mcg/mL; ngộ độc nặng khi > 15–20 mcg/mL: loạn nhịp thất, co giật, buồn nôn/nôn ói); tổng liều methylxanthine không quá 10 mg/kg/ngày và bắt buộc giám sát TDM",
+    "Tương tác ức chế CYP1A2 mạnh làm tăng vọt nồng độ gây độc: ciprofloxacin, macrolide (erythromycin, clarithromycin), fluvoxamine, cimetidine",
+    "Không khuyến cáo dùng trong đợt cấp COPD (đặc biệt đường tĩnh mạch) hoặc phối hợp với Roflumilast; thuốc cảm ứng chuyển hóa (rifampin, phenytoin, hút thuốc lá) làm giảm nồng độ theophylline"
+  ],
+  "citationIds": [
+    "gold.copd.2026.theophylline_narrow_toxicity",
+    "gold.copd.2026.theophylline_arrhythmia_seizure",
+    "byt.copd.2026.theophylline_dose_max10",
+    "gold.copd.2026.exac_no_iv_methylxanthines"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Theophylline qua nhau thai tự do và có thể gây độc tính (nhịp nhanh, kích thích) ở trẻ sơ sinh nếu nồng độ mẹ cao quanh chuyển dạ. Cần theo dõi nồng độ thuốc máu sát sao.",
+    "citationIds": [
+      "gina.copd.2026.pregnancy_inhaled_theophylline"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Theophylline bài tiết vào sữa mẹ (< 10% liều của mẹ) và có thể gây kích thích, bứt rứt hoặc khó ngủ ở trẻ bú mẹ; dùng liều thấp nhất có hiệu quả và theo dõi sát trẻ.",
+    "citationIds": [
+      "gina.copd.2026.pregnancy_inhaled_theophylline"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "uncontrolled_seizure_or_tachyarrhythmia",
+      "messageVi": "Chống chỉ định ở người bệnh động kinh/co giật chưa kiểm soát, loạn nhịp nhanh cấp tính hoặc loét dạ dày tá tràng tiến triển",
+      "citationIds": [
+        "gold.copd.2026.theophylline_arrhythmia_seizure",
+        "byt.copd.2026.theophylline_dose_max10"
+      ]
+    }
+  ],
+  "classes": [
+    "methylxanthine"
+  ]
+}

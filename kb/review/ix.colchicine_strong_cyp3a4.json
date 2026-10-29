@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.colchicine_strong_cyp3a4",
+  "contentHash": "a90eec707eb5cf5195ca0d0104f928e3c72da3249ba1746d3c173a745239e2d4",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.colchicine_strong_cyp3a4",
+      "contentHash": "38a8066403d91f73",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của InteractionRule: ix.colchicine_strong_cyp3a4"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

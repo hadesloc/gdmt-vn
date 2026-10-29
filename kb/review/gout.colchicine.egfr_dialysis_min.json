@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.colchicine.egfr_dialysis_min",
+  "contentHash": "4b4053cb25e53fd7cbfda8d895e30614954963c3562244f8818520ccc71571a0",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.colchicine.egfr_dialysis_min",
+      "contentHash": "99ba68fd5f58789c",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.colchicine.egfr_dialysis_min"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

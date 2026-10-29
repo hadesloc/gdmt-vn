@@ -1,0 +1,68 @@
+{
+  "id": "hf_06_hfref_hypotension_sbp88",
+  "titleVi": "HFrEF có huyết áp thấp SBP 88 mmHg: Tạm hoãn ARNI và chẹn beta",
+  "source": "ESC 2026 HF Table S5 & S6",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "female",
+    "weight": 52,
+    "sbp": 88,
+    "dbp": 55,
+    "hr": 68,
+    "lvef": 28,
+    "nyha": 3,
+    "scr": 100,
+    "k": 4.5,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "HOLD"
+      },
+      {
+        "drugId": "bisoprolol",
+        "action": "HOLD"
+      },
+      {
+        "drugId": "dapagliflozin",
+        "action": "HOLD"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "START"
+      },
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "SBP < 100 mmHg tạm hoãn ARNI; SBP < 90 mmHg tạm hoãn BB; SGLT2i ít ảnh hưởng HA vẫn có thể dùng."
+}

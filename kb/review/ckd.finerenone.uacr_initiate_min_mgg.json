@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.finerenone.uacr_initiate_min_mgg",
+  "contentHash": "879d9dfd91974e58d702a4804a7e1c2403ed295b81144ef691ce5cedeab83278",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.finerenone.uacr_initiate_min_mgg",
+      "contentHash": "632ba926aa32ed22",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.114Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.finerenone.uacr_initiate_min_mgg."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

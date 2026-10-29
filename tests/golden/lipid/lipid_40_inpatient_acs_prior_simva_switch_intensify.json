@@ -1,0 +1,73 @@
+{
+  "id": "lipid_40_inpatient_acs_prior_simva_switch_intensify",
+  "titleVi": "ACS nội viện đã dùng Simvastatin 20 mg trước nhập viện - Chuyển sang Atorvastatin cường độ cao + Ezetimibe",
+  "source": "ESC 2025 / esc.lipid.2025.acs_prior_llt",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 61,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 126,
+    "dbp": 78,
+    "hr": 82,
+    "scr": 88,
+    "tc": 4.7,
+    "hdl": 1.0,
+    "ldl": 2.7,
+    "tg": 1.6,
+    "conditions": {
+      "ascvd": true,
+      "acuteAcsWithin24h": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "simvastatin",
+        "name": "Simvastatin",
+        "dose": 20,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "SWITCH"
+      },
+      {
+        "drugId": "ezetimibe",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "simvastatin",
+        "action": "UPTITRATE"
+      },
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R1-09: Bệnh nhân ACS nội viện đang dùng Simvastatin 20 mg trước nhập viện được tăng cường phác đồ ngay tại viện (SWITCH sang Atorvastatin 40–80 mg + cân nhắc Ezetimibe)."
+}

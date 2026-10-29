@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.safety.hr_critical_min",
+  "contentHash": "301f67770511948a4e09d0cebfa1d09c5d3abcc783ab79ec7c1b7f978498849b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.safety.hr_critical_min",
+      "contentHash": "e2b08ba6731acbb0",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực ngưỡng lâm sàng htn.safety.hr_critical_min (40 bpm) và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

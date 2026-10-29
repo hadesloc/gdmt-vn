@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.lama_severe_renal_egfr",
+  "contentHash": "5764eb2cd770f8dcd08998f1d88d4c3c26242ca97eb99da29982a061fa196743",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.lama_severe_renal_egfr",
+      "contentHash": "6dfa22d837ea8724",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.colchicine.prophylaxis_dose_min",
+  "contentHash": "a01fc43918f44335f2324bce54565aa6460a192e48cd0ef3db1ff1247ccf5cbe",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.colchicine.prophylaxis_dose_min",
+      "contentHash": "b46479e225217fbd",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.colchicine.prophylaxis_dose_min"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

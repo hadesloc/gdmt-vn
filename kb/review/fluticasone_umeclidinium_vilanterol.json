@@ -1,0 +1,26 @@
+{
+  "itemId": "fluticasone_umeclidinium_vilanterol",
+  "contentHash": "9ec3deb2cb8f3f0cdb4605306a078eeecd0f2d39024c075f13432c414589bbb3",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "fluticasone_umeclidinium_vilanterol",
+      "contentHash": "0059e30f1fd8e311",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateDrugEntry, dải thận liên tục không chồng lấn, an toàn thai kỳ/cho con bú và trích dẫn nguyên văn PDF cho fluticasone_umeclidinium_vilanterol."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

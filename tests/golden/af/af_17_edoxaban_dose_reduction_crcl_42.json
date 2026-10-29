@@ -1,0 +1,57 @@
+{
+  "id": "af_17_edoxaban_dose_reduction_crcl_42",
+  "titleVi": "Giảm liều Edoxaban 30mg qd: CrCl 42 mL/min (15–50 mL/min)",
+  "source": "ESC 2024 AF Table 11 & Nhãn FDA / esc.af.2024.table11_doac_dosing",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 72,
+    "sex": "male",
+    "weight": 68,
+    "height": 166,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 80,
+    "rhythm": "afib",
+    "scr": 135,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "edoxaban",
+        "name": "Lixiana",
+        "dose": 60,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "edoxaban",
+        "action": "REDUCE",
+        "doseContains": "30 mg"
+      }
+    ]
+  },
+  "descriptionVi": "CrCl 42 mL/min (thuộc dải 15-50 mL/min): Giảm liều Edoxaban xuống 30 mg x 1 lần/ngày."
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.pregnancy.preconception_stop_max_months",
+  "contentHash": "51cdc8d1c8ed478752a2e91ac3dd0d73131c1dd45c9e4a18a5e10edef6fd94e0",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.pregnancy.preconception_stop_max_months",
+      "contentHash": "060145271761e631",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.pregnancy.preconception_stop_max_months."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

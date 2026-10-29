@@ -1,0 +1,26 @@
+{
+  "itemId": "af.periprocedural.doac_hold_low_days",
+  "contentHash": "ffdab7c1ec9665a15fc974d6600a93150d547053fa4dcc99b17aebfc7e5c839c",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.periprocedural.doac_hold_low_days",
+      "contentHash": "eb201294cd516beb",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.periprocedural.doac_hold_low_days (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

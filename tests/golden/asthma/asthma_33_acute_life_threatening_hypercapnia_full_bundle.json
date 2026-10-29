@@ -1,0 +1,82 @@
+{
+  "id": "asthma_33_acute_life_threatening_hypercapnia_full_bundle",
+  "titleVi": "Cơn hen nguy kịch tăng thán khí (PaCO2 52 mmHg): Đủ 4 thuốc hồi sức + Báo động ICU & Chuẩn bị NKQ",
+  "source": "GINA 2026 p. 186 / BYT 5850/2021 p. 18 / R2-01 / R2-05 / R3-01",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_33",
+    "name": "Nam 41 tuổi",
+    "age": 41,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 148,
+    "dbp": 88,
+    "hr": 126,
+    "rhythm": "sinus",
+    "fev1Pct": 35,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "isAcuteExacerbation": true,
+      "speechAbility": "words",
+      "respiratoryRate": 34,
+      "accessoryMuscleUse": true,
+      "silentChest": false,
+      "mentalStatus": "anxious",
+      "spo2": 86,
+      "paco2": 52
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_asthma_acute_life_threatening_icu",
+        "action": "REFER"
+      },
+      {
+        "drugId": "salbutamol",
+        "action": "START"
+      },
+      {
+        "drugId": "ipratropium",
+        "action": "START"
+      },
+      {
+        "drugId": "methylprednisolone",
+        "action": "START"
+      },
+      {
+        "drugId": "magnesium_sulfate",
+        "action": "DEFER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_asthma_action_plan_doc",
+        "action": "MONITOR"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Tăng PaCO2 > 45 mmHg (52 mmHg) dù phổi chưa im lặng vẫn phân tầng đe dọa tử vong -> REFER ICU + chuẩn bị NKQ + đủ 4 thuốc cấp cứu (Salbutamol, Ipratropium, Methylprednisolone, MgSO4). Chưa có creatinine/chức năng thận: MgSO4 bổ trợ DEFER chờ bác sĩ xác nhận liều, không trì hoãn hồi sức đầu tay."
+}

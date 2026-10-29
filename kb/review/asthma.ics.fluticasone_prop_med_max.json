@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.ics.fluticasone_prop_med_max",
+  "contentHash": "43bc13b5895e41a34860ca1676cbde1197f94902bb67486b09e3f52b41757ef0",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.ics.fluticasone_prop_med_max",
+      "contentHash": "7c0d820e03808f01",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:53:57.954Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng asthma.ics.fluticasone_prop_med_max có trích dẫn hợp lệ và đại lượng chuẩn hóa QA-10 (dose_daily)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:53:57.954Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

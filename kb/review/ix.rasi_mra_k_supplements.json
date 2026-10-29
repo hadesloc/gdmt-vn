@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.rasi_mra_k_supplements",
+  "contentHash": "96e16b569129cefb30bd9672be02aa262dcf7b9755d6266c9c29b63ee7db655d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.rasi_mra_k_supplements",
+      "contentHash": "8f0b26fd0d6fd598",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.rasi_mra_k_supplements."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

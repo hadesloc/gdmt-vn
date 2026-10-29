@@ -1,0 +1,71 @@
+{
+  "id": "asthma_48_poor_technique_step3_keeps_controller",
+  "titleVi": "Hen Bậc 3 không kiểm soát nhưng hít sai kỹ thuật: Giữ nguyên thuốc kiểm soát Bậc 3 kèm hướng dẫn kỹ thuật (không nâng bậc mù, không bỏ trống đơn)",
+  "source": "GINA 2026 Box 4-3 / ASTHMA-R2-R3-08",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_48",
+    "name": "Nam 33 tuổi",
+    "age": 33,
+    "sex": "male",
+    "weight": 64,
+    "sbp": 118,
+    "dbp": 76,
+    "hr": 80,
+    "rhythm": "sinus",
+    "fev1Pct": 74,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "currentTrack": "track1",
+      "currentStep": 3,
+      "daytimeSymptomsMoreThanTwiceWeek": true,
+      "nightWakingDueToAsthma": true,
+      "relieverNeededMoreThanTwiceWeek": true,
+      "activityLimitationDueToAsthma": true,
+      "inhalerTechniqueCorrect": false,
+      "goodAdherence": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_asthma_check_technique_first",
+        "action": "MONITOR"
+      },
+      {
+        "ruleId": "rec_asthma_track1_step3_mart_low",
+        "drugId": "budesonide_formoterol",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_asthma_track1_step4_mart",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Khi bệnh nhân Bậc 3 không kiểm soát do hít sai kỹ thuật, hệ thống sinh MONITOR chỉnh kỹ thuật đồng thời vẫn kê duy trì phác đồ Bậc 3 hiện tại (tránh hố đen mất đơn thuốc nền)."
+}

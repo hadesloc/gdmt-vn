@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.reduction.pcsk9_alone",
+  "contentHash": "83fce82d8cac3954e0f7e4949e909cfbe692088a6a777dedb8e01c5dc1fd38f4",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.reduction.pcsk9_alone",
+      "contentHash": "902fb17171b13282",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.reduction.pcsk9_alone."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

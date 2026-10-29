@@ -1,0 +1,57 @@
+{
+  "id": "lipid_18_inpatient_pregnancy",
+  "titleVi": "Thai kỳ nội viện - Chống chỉ định Statin",
+  "source": "ESC 2024 CCS / esc.lipid.2024.ccs_pregnancy",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 28,
+    "sex": "female",
+    "weight": 62,
+    "height": 160,
+    "sbp": 120,
+    "dbp": 75,
+    "hr": 82,
+    "scr": 60,
+    "tc": 6,
+    "hdl": 1.2,
+    "ldl": 3.8,
+    "tg": 1.9,
+    "conditions": {
+      "pregnant": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Chống chỉ định Statin trong thai kỳ nội viện."
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.etoricoxib.acute_gout_dose",
+  "contentHash": "2f1ced85408069982e27aafcbf08d0d775b34d250e71a72ce844e2c7ce8c4698",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.etoricoxib.acute_gout_dose",
+      "contentHash": "0d26f7b7f281c460",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold: gout.etoricoxib.acute_gout_dose"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

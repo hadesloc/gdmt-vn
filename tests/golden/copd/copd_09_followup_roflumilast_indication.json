@@ -1,0 +1,62 @@
+{
+  "id": "copd_09_followup_roflumilast_indication",
+  "titleVi": "COPD theo dõi đợt cấp: Chỉ định Roflumilast (FEV₁ < 50%, viêm PQ mạn)",
+  "source": "GOLD 2026 Report p. 77 / Roflumilast Criteria",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_09",
+    "age": 66,
+    "sex": "male",
+    "weight": 54,
+    "height": 162,
+    "sbp": 125,
+    "dbp": 76,
+    "hr": 74,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "tiotropium_olodaterol",
+        "name": "Spiolto Respimat",
+        "dose": 5,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.44,
+      "fev1PredPct": 42,
+      "chronicBronchitis": true,
+      "currentInhaler": "laba_lama",
+      "moderateExacerbations": 2,
+      "hospitalizations": 1,
+      "bloodEos": 80
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "roflumilast",
+        "action": "CONSIDER"
+      }
+    ]
+  }
+}

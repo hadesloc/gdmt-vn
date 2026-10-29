@@ -1,0 +1,57 @@
+{
+  "id": "htn_23_inpatient_pulmonary_edema",
+  "titleVi": "Phù phổi cấp do tim: Nitroglycerin IV, chống chỉ định chẹn beta",
+  "source": "VSH 2022 / vsh.htn.2022.emergency_pulmonary_edema",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 66,
+    "sex": "female",
+    "weight": 64,
+    "height": 155,
+    "sbp": 204,
+    "dbp": 118,
+    "hr": 98,
+    "conditions": {
+      "htn": true,
+      "acutePulmonaryEdema": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "nitroglycerin",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      },
+      {
+        "drugId": "esmolol",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Phù phổi cấp do tim, hạ áp bằng Nitroglycerin IV kết hợp lợi tiểu quai, chống chỉ định chẹn beta."
+}

@@ -1,0 +1,134 @@
+{
+  "id": "pravastatin",
+  "nameVi": "Pravastatin",
+  "inn": "Pravastatin",
+  "class": "Statin",
+  "classes": [
+    "statin"
+  ],
+  "vnBrands": [
+    "Pravachol",
+    "Pravastatin Stella"
+  ],
+  "forms": [
+    "Viên nén 10 mg",
+    "Viên nén 20 mg",
+    "Viên nén 40 mg"
+  ],
+  "start": {
+    "amount": 20,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "20–40 mg uống 1 lần/ngày (khởi đầu 10 mg/ngày nếu suy thận nặng)"
+  },
+  "target": {
+    "amount": 40,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "40–80 mg uống 1 lần/ngày (cường độ trung bình)"
+  },
+  "titration": {
+    "step": "Tăng liều sau 4 tuần",
+    "intervalDays": 28,
+    "maxDose": "80 mg 1 lần/ngày (tối đa 40 mg khi dùng kèm clarithromycin hoặc bempedoic acid; tối đa 20 mg với cyclosporine)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "20–80 mg 1 lần/ngày",
+      "citationIds": [
+        "acc.lipid.2026.pravastatin_dose",
+        "acc.lipid.2026.statin_table_doses"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "Khởi đầu 10 mg 1 lần/ngày; chỉnh liều thận trọng tối đa 40 mg/ngày",
+      "note": "Suy thận nặng: khởi đầu 10 mg/ngày và theo dõi sát triệu chứng cơ",
+      "citationIds": [
+        "acc.lipid.2026.pravastatin_dose",
+        "acc.lipid.2026.statin_table_doses"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_prava_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối statin trong thai kỳ và thời kỳ cho con bú",
+      "citationIds": [
+        "esc.lipid.2024.ccs_pregnancy",
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    },
+    {
+      "id": "gate_prava_alt",
+      "parameter": "ALT",
+      "operator": ">=",
+      "threshold": 3,
+      "unit": "x ULN",
+      "action": "hold",
+      "messageVi": "Men gan ALT tăng >= 3 lần ULN: Tạm ngừng hoặc giảm liều statin",
+      "citationIds": [
+        "esc.lipid.2019.monitoring_alt_elevation"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định/tránh phối hợp với Gemfibrozil do nguy cơ tiêu cơ vân",
+    "Tan trong nước, không chuyển hóa đáng kể qua CYP3A4 nên ưu tiên thay thế khi đang dùng thuốc ức chế CYP3A4",
+    "Giới hạn liều tối đa 20–40 mg/ngày khi dùng kèm Cyclosporine; tối đa 40 mg/ngày khi dùng kèm Clarithromycin hoặc Bempedoic acid",
+    "Thận trọng ở bệnh nhân có bệnh nhược cơ (myasthenia gravis / nhược cơ thể mắt)"
+  ],
+  "citationIds": [
+    "acc.lipid.2026.pravastatin_dose",
+    "acc.lipid.2026.statin_table_doses",
+    "esc.lipid.2024.ccs_pregnancy",
+    "fda.bempedoic.pravastatin_avoid_gt_40mg",
+    "acc.lipid.2026.ddi_table27_prava_bempedoic",
+    "fda.rosuvastatin.myasthenia_gravis"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối statin trong thai kỳ do nguy cơ ảnh hưởng phát triển phôi thai (FDA / ESC 2024 CCS)",
+    "citationIds": [
+      "esc.lipid.2024.ccs_pregnancy",
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "lactation": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong thời kỳ cho con bú do thuốc bài tiết qua sữa mẹ và nguy cơ tác dụng phụ trên trẻ sơ sinh (FDA / ESC)",
+    "citationIds": [
+      "esc.lipid.2024.ccs_pregnancy",
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định tuyệt đối statin trong thai kỳ và cho con bú",
+      "citationIds": [
+        "esc.lipid.2024.ccs_pregnancy",
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    },
+    {
+      "code": "active_liver_disease",
+      "messageVi": "Chống chỉ định khi có bệnh gan tiến triển hoặc tăng men gan dai dẳng >= 3 lần ULN chưa rõ nguyên nhân",
+      "citationIds": [
+        "esc.lipid.2019.monitoring_alt_elevation"
+      ]
+    }
+  ]
+}

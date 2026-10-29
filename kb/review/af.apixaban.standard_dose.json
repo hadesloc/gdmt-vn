@@ -1,0 +1,26 @@
+{
+  "itemId": "af.apixaban.standard_dose",
+  "contentHash": "2b3c6fc92428e99a49fa788f512022ec0da623ed48c8dcd8547ab3cc5a67e63d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.apixaban.standard_dose",
+      "contentHash": "97bd7341700719f3",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.apixaban.standard_dose (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

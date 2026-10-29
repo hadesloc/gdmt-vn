@@ -1,0 +1,78 @@
+{
+  "id": "lipid_52_outpatient_rosuvastatin_clarithromycin_step2_eze",
+  "titleVi": "ASCVD đang dùng Rosuvastatin 20 mg kèm Clarithromycin (LDL 2.0 chưa đạt đích) - Không bị chặn giả CYP3A4, bổ sung Ezetimibe",
+  "source": "ESC/EAS 2019 & FDA / esc.lipid.2019.ezetimibe_add_on",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 62,
+    "sex": "male",
+    "weight": 68,
+    "height": 166,
+    "sbp": 128,
+    "dbp": 76,
+    "hr": 72,
+    "scr": 86,
+    "tc": 4.1,
+    "hdl": 1.1,
+    "ldl": 2.0,
+    "tg": 1.5,
+    "conditions": {
+      "ascvd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "rosuvastatin",
+        "name": "Rosuvastatin",
+        "dose": 20,
+        "unit": "mg"
+      },
+      {
+        "drugId": "clarithromycin",
+        "name": "Clarithromycin",
+        "dose": 500,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "rosuvastatin",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "ezetimibe",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "rosuvastatin",
+        "action": "HOLD"
+      },
+      {
+        "drugId": "rosuvastatin",
+        "action": "STOP"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R2-R2-02 & LIPID-R2-R3-07: Rosuvastatin không chuyển hóa qua CYP3A4 nên dùng Clarithromycin không được làm đóng băng lộ trình nâng bậc Bước 2 thêm Ezetimibe."
+}

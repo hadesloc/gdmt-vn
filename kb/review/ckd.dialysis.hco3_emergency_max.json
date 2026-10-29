@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.dialysis.hco3_emergency_max",
+  "contentHash": "0b7b8b2bfcf161ccf25f8098afe4185a5b8ce30815803ca02493e4b4525aee63",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.dialysis.hco3_emergency_max",
+      "contentHash": "50f950aa851f9817",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.135Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.dialysis.hco3_emergency_max."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.fh.dlcn_probable",
+  "contentHash": "de46a2a3efea31d2ac442e51aa76c181047edb50dc79f4f8cdf5fd7eed71d5e6",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.fh.dlcn_probable",
+      "contentHash": "0156dc1c90c71818",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.fh.dlcn_probable."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

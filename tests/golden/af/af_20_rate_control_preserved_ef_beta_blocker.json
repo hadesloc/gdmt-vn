@@ -1,0 +1,49 @@
+{
+  "id": "af_20_rate_control_preserved_ef_beta_blocker",
+  "titleVi": "Kiểm soát tần số khi LVEF 55% > 40%: Khởi trị Chẹn beta",
+  "source": "ESC 2024 AF Rec Table 14 / esc.af.2024.rate_control_lvef_preserved",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "male",
+    "weight": 72,
+    "height": 168,
+    "sbp": 130,
+    "dbp": 82,
+    "hr": 115,
+    "rhythm": "afib",
+    "lvef": 55,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true
+    },
+    "currentMeds": []
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Rung nhĩ có LVEF 55% (> 40%), HR 115 bpm: Khởi trị thuốc chẹn beta hoặc Non-DHP CCB kiểm soát tần số tim."
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.warfarin_amiodarone",
+  "contentHash": "014e34b11fe25c4a7c98f5f317d0d72d1919b89d921a55e3e48d5d9364855907",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.warfarin_amiodarone",
+      "contentHash": "be0e70be386e1336",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.warfarin_amiodarone."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

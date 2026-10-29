@@ -1,0 +1,213 @@
+{
+  "id": "finerenone",
+  "nameVi": "Finerenone",
+  "inn": "Finerenone",
+  "class": "nsMRA",
+  "classes": [
+    "mra_nonsteroidal",
+    "mra"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Kerendia"
+  ],
+  "forms": [
+    "Viên nén bao phim 10 mg",
+    "Viên nén bao phim 20 mg",
+    "Viên nén bao phim 40 mg"
+  ],
+  "start": {
+    "amount": 10,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "khởi đầu khi eGFR 25–59 mL/phút/1.73m² (CKD & HFmrEF/HFpEF); khởi đầu 20 mg/ngày khi eGFR >= 60 mL/phút/1.73m²"
+  },
+  "target": {
+    "amount": 20,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "liều đích trong CKD (hoặc khởi đầu khi eGFR >= 60 mL/phút/1.73m²); trong suy tim LVEF >= 40% (HFmrEF/HFpEF) tăng lên liều đích 40 mg/ngày nếu eGFR khởi đầu >= 60 mL/phút/1.73m²"
+  },
+  "titration": {
+    "step": 10,
+    "intervalDays": 28,
+    "maxDose": "20 mg/ngày (CKD); 40 mg/ngày (suy tim LVEF >= 40% có eGFR khởi đầu >= 60 mL/phút/1.73m²)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "CKD: 20 mg 1 lần/ngày; Suy tim LVEF >= 40% (HFmrEF/HFpEF): khởi đầu 20 mg, chuẩn độ lên liều đích 40 mg 1 lần/ngày sau 4 tuần",
+      "note": "Theo ESC 2026 Table 11 & nhãn FDA Kerendia Mục 2.3: ở bệnh nhân suy tim LVEF >= 40% có eGFR >= 60 mL/phút/1.73m², liều khởi đầu 20 mg/ngày và liều đích 40 mg/ngày",
+      "citationIds": [
+        "kdigo.ckd.2024.rec_3_8_1_finerenone_indication",
+        "fda.finerenone.table_1_starting_dose",
+        "fda.finerenone.hf_lvef40_dosing",
+        "esc.hf.2026.table_11_finerenone_doses"
+      ]
+    },
+    {
+      "eGFRFrom": 25,
+      "eGFRTo": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "10 mg 1 lần/ngày (tăng lên liều đích 20 mg/ngày sau 4 tuần cho cả CKD và suy tim LVEF >= 40% nếu K+ cho phép)",
+      "citationIds": [
+        "fda.finerenone.table_1_starting_dose",
+        "fda.finerenone.table_2_dose_adjustment",
+        "fda.finerenone.hf_lvef40_dosing",
+        "esc.hf.2026.table_11_finerenone_doses"
+      ]
+    },
+    {
+      "eGFRFrom": 15,
+      "eGFRTo": 25,
+      "initiate": "not_rec",
+      "continue": "caution",
+      "dose": "10 mg 1 lần/ngày (theo dõi sát K+)",
+      "note": "Không khởi trị mới khi eGFR < 25 mL/phút/1.73m²; có thể tiếp tục duy trì thận trọng liều 10 mg/ngày nếu đã dùng trước đó và K+ <= 5.5 mmol/L",
+      "citationIds": [
+        "fda.finerenone.table_1_starting_dose",
+        "kdigo.ckd.2024.rec_3_8_1_finerenone_indication"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "contra",
+      "continue": "not_rec",
+      "dose": "Ngừng thuốc khi eGFR < 15 mL/phút/1.73m² hoặc bắt đầu lọc máu",
+      "note": "Ngừng Finerenone khi tiến triển đến suy thận giai đoạn cuối (eGFR < 15 mL/phút/1.73m²) hoặc bắt đầu lọc máu định kỳ do thiếu dữ liệu an toàn và nguy cơ tăng kali máu đe dọa tính mạng",
+      "citationIds": [
+        "fda.finerenone.table_1_starting_dose",
+        "esc.2026.ckd.mra_dialysis_not_recommended"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_fine_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 25,
+      "unit": "mL/min/1.73m2",
+      "action": "hold",
+      "messageVi": "Không khởi trị finerenone nếu eGFR < 25 mL/phút/1.73m² (KDIGO 2024 / FDA)",
+      "citationIds": [
+        "kdigo.ckd.2024.rec_3_8_1_finerenone_indication"
+      ]
+    },
+    {
+      "id": "gate_fine_k_init_max",
+      "parameter": "K",
+      "operator": ">",
+      "threshold": 5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Không bắt đầu finerenone nếu kali máu > 5.0 mmol/L",
+      "citationIds": [
+        "fda.finerenone.table_2_dose_adjustment"
+      ]
+    },
+    {
+      "id": "gate_fine_k_hold",
+      "parameter": "K",
+      "operator": ">",
+      "threshold": 5.5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm ngừng finerenone khi kali máu > 5.5 mmol/L; dùng lại 10 mg khi K+ <= 5.0 mmol/L",
+      "citationIds": [
+        "fda.finerenone.table_2_dose_adjustment"
+      ]
+    },
+    {
+      "id": "gate_finerenone_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "avoid",
+      "messageVi": "Tránh dùng Finerenone trong thai kỳ do độc tính phát triển phôi thai trên nghiên cứu động vật (FDA Section 8.1)",
+      "citationIds": [
+        "fda.finerenone.pregnancy"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định phối hợp với thuốc ức chế mạnh CYP3A4 (itraconazole, ketoconazole, clarithromycin)",
+    "Theo dõi sát kali huyết thanh và điều chỉnh liều Finerenone khi khởi trị hoặc tăng liều các chất ức chế CYP3A4 trung bình hoặc yếu (diltiazem, verapamil, erythromycin, fluconazole, amiodarone, fluvoxamine; FDA Section 7.1)",
+    "Tránh dùng cùng các thuốc đối kháng aldosterone steroid (spironolactone, eplerenone) do nguy cơ tăng kali máu trầm trọng",
+    "Ở liều 40 mg/ngày (suy tim LVEF >= 40%): Finerenone ức chế yếu CYP2C8, cần theo dõi sát tác dụng phụ khi dùng cùng cơ chất nhạy cảm CYP2C8"
+  ],
+  "citationIds": [
+    "kdigo.ckd.2024.rec_3_8_1_finerenone_indication",
+    "kdigo.ckd.2024.pp_3_8_2_finerenone_add_on",
+    "fda.finerenone.table_1_starting_dose",
+    "fda.finerenone.table_2_dose_adjustment",
+    "fda.finerenone.k_borderline_4_8_to_5_0",
+    "fda.finerenone.cyp3a4_moderate_weak",
+    "fda.finerenone.hf_lvef40_dosing",
+    "fda.finerenone.strengths_10_20_40",
+    "esc.hf.2026.table_11_finerenone_doses",
+    "fda.finerenone.contraindications",
+    "fda.finerenone.pregnancy",
+    "fda.finerenone.hepatic_impairment",
+    "fda.finerenone.table_3_hf_titration",
+    "esc.2026.ckd.mra_dialysis_not_recommended"
+  ],
+  "hepatic": {
+    "status": "avoid",
+    "note": "Tránh dùng ở suy gan nặng (Child-Pugh C); không cần chỉnh liều khởi đầu ở suy gan nhẹ–trung bình (Child-Pugh A/B), cân nhắc theo dõi thêm kali huyết thanh ở Child-Pugh B (FDA Section 8.6).",
+    "notesVi": "Tránh dùng ở suy gan nặng (Child-Pugh C); không cần chỉnh liều khởi đầu ở suy gan nhẹ–trung bình (Child-Pugh A/B), cân nhắc theo dõi thêm kali huyết thanh ở Child-Pugh B (FDA Section 8.6).",
+    "citationIds": [
+      "fda.finerenone.hepatic_impairment"
+    ]
+  },
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Tránh dùng trong thai kỳ: Chưa có dữ liệu lâm sàng trên phụ nữ mang thai; dữ liệu động vật ghi nhận độc tính phát triển phôi thai ở mức phơi nhiễm gấp ~2 lần liều điều trị ở người (FDA Section 8.1)",
+    "citationIds": [
+      "fda.finerenone.pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo cho con bú trong thời gian dùng Finerenone và trong 1 ngày sau liều cuối cùng (FDA Section 8.2)",
+    "citationIds": [
+      "fda.finerenone.pregnancy"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "strong_cyp3a4_inhibitors",
+      "messageVi": "Chống chỉ định dùng đồng thời với chất ức chế CYP3A4 mạnh (itraconazole, ketoconazole, clarithromycin, ritonavir)",
+      "citationIds": [
+        "fda.finerenone.contraindications"
+      ]
+    },
+    {
+      "code": "adrenal_insufficiency",
+      "messageVi": "Chống chỉ định ở bệnh nhân suy tuyến thượng thận",
+      "citationIds": [
+        "fda.finerenone.contraindications"
+      ]
+    },
+    {
+      "code": "hyperkalemia",
+      "messageVi": "Không khởi trị khi kali máu > 5.0 mmol/L trước điều trị",
+      "citationIds": [
+        "fda.finerenone.table_2_dose_adjustment"
+      ]
+    },
+    {
+      "code": "dialysis",
+      "messageVi": "Không sử dụng Finerenone ở bệnh nhân suy thận giai đoạn cuối đang lọc máu định kỳ (nguy cơ tăng kali máu đe dọa tính mạng)",
+      "citationIds": [
+        "fda.finerenone.table_1_starting_dose",
+        "esc.2026.ckd.mra_dialysis_not_recommended"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "ckd_37_pregnancy_t2d_ckd_no_sglt2i_statin_avoid",
+  "titleVi": "Thai kỳ - Phụ nữ 28 tuổi mang thai kèm ĐTĐ típ 2 + CKD A3 -> Tuyệt đối KHÔNG khởi trị SGLT2i/Finerenone và cảnh báo AVOID RASi & Statin (Regression R3-CKD-01 & R3-CKD-11)",
+  "source": "FDA Labels (Forxiga, Kerendia, Cozaar) & KDIGO 2024",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_37",
+    "name": "BN CKD 37",
+    "age": 28,
+    "sex": "female",
+    "weight": 60,
+    "sbp": 134,
+    "dbp": 84,
+    "hr": 82,
+    "scr": 110,
+    "k": 4.2,
+    "uacr": 65,
+    "conditions": {
+      "ckd": true,
+      "dm": true,
+      "htn": true,
+      "pregnant": true
+    },
+    "currentMeds": [],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "rec_ckd_rasi_contra_preg", "action": "AVOID" },
+      { "drugId": "atorvastatin", "action": "AVOID" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "dapagliflozin", "action": "START" },
+      { "drugId": "finerenone", "action": "START" },
+      { "drugId": "losartan", "action": "START" },
+      { "drugId": "atorvastatin", "action": "START" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy R3-CKD-01 & R3-CKD-11: Phụ nữ mang thai có ĐTĐ2 + CKD không bao giờ được đề xuất START SGLT2i, Finerenone, RASi hay Statin."
+}

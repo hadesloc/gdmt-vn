@@ -1,0 +1,27 @@
+{
+  "itemId": "hf.digoxin.ef_nyha2_max",
+  "contentHash": "351ed78cf357810af3dd4c6100df78c742a8393d516e7e81c2cb0f04264ec4fe",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "hf.digoxin.ef_nyha2_max",
+      "contentHash": "9ff5f1a6544d9779",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T09:00:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-28T09:00:00.000Z",
+          "role": "Agent G5 (HF Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF threshold hf.digoxin.ef_nyha2_max (Round 2 R1/R2/R3 remediation & verbatim PDF citation verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "hf_09_hfref_renal_egfr24",
+  "titleVi": "HFrEF có suy thận nặng eGFR 24 mL/phút: Chống chỉ định MRA, ARNI liều thấp",
+  "source": "ESC 2026 HF Table 11 & Table S8",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 74,
+    "sex": "male",
+    "weight": 65,
+    "sbp": 118,
+    "dbp": 70,
+    "hr": 70,
+    "lvef": 30,
+    "nyha": 3,
+    "scr": 220,
+    "k": 4.6,
+    "conditions": {
+      "hf": true,
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "spironolactone",
+        "action": "HOLD"
+      },
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "START",
+        "doseContains": "24/26"
+      },
+      {
+        "drugId": "dapagliflozin",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "spironolactone",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "eGFR 24 (< 30) chống chỉ định khởi trị Spironolactone; ARNI khởi đầu 24/26 mg; SGLT2i vẫn chỉ định vì eGFR ≥ 20."
+}

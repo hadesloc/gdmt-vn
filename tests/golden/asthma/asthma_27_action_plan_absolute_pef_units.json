@@ -1,0 +1,58 @@
+{
+  "id": "asthma_27_action_plan_absolute_pef_units",
+  "titleVi": "Kế hoạch hành động: Nhập PEF 500 L/phút tính ngưỡng L/phút chuẩn",
+  "source": "BYT 5850/2021 Phụ lục 4 / R1-01 / R3-06",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_27",
+    "name": "Vũ Văn K (35 tuổi)",
+    "age": 35,
+    "sex": "male",
+    "weight": 65,
+    "sbp": 120,
+    "dbp": 80,
+    "hr": 75,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "currentTrack": "track1",
+      "daytimeSymptomsMoreThanTwiceWeek": false,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false,
+      "pefBestLMin": 500
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_asthma_action_plan_doc",
+        "action": "MONITOR"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bệnh nhân có PEF tốt nhất 500 L/phút, kế hoạch tính Vùng Xanh > 400 L/phút (không bị nhầm > 64 L/phút)."
+}

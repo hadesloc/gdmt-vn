@@ -1,0 +1,26 @@
+{
+  "itemId": "af.apixaban.criteria_weight",
+  "contentHash": "3083e577ceddb5af220d3f1d19fd00551514b89c8d2f5ba5e53a2607ceff39e4",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.apixaban.criteria_weight",
+      "contentHash": "11b67fff5c5f5a5e",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.apixaban.criteria_weight (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

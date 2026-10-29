@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.lercanidipine_cyp3a4_cyclosporine",
+  "contentHash": "c50d97090423d633bc175889bdf79764b3c5c1e353dfc1a64b61d3a59f7c3fe9",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.lercanidipine_cyp3a4_cyclosporine",
+      "contentHash": "2ae07f474b268ffb",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.lercanidipine_cyp3a4_cyclosporine."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

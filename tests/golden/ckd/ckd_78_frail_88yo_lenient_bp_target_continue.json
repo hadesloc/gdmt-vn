@@ -1,0 +1,50 @@
+{
+  "id": "ckd_78_frail_88yo_lenient_bp_target_continue",
+  "titleVi": "Ngoại trú - Bệnh nhân 88 tuổi suy yếu (frailty = true), HA 134/76 mmHg ở profile INTL đang dùng Losartan -> Áp dụng mục tiêu HA nới lỏng < 140/90 mmHg (CONTINUE, không ép < 120 mmHg) (Regression CKD-R4-R3-08)",
+  "source": "ESC 2024 Hypertension & KDIGO 2024 PP 3.4.2 (Frailty / Age >= 85 Lenient BP Target)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_78",
+    "name": "BN CKD 78",
+    "age": 88,
+    "sex": "female",
+    "weight": 48,
+    "sbp": 134,
+    "dbp": 76,
+    "scr": 150,
+    "k": 4.3,
+    "uacr": 15,
+    "conditions": {
+      "ckd": true,
+      "frailty": true
+    },
+    "currentMeds": [
+      { "drugId": "losartan", "name": "Cozaar 50 mg", "dose": 50, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "rec_ckd_bp_target", "action": "CONTINUE" }
+    ],
+    "mustNotInclude": [
+      { "ruleId": "rec_ckd_bp_target", "action": "UPTITRATE" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R4-R3-08: Cá thể hóa mục tiêu huyết áp < 140/90 mmHg ở người rất cao tuổi (>= 85 tuổi) hoặc suy yếu để tránh hạ huyết áp tư thế và té ngã."
+}

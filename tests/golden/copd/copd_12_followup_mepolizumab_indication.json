@@ -1,0 +1,62 @@
+{
+  "id": "copd_12_followup_mepolizumab_indication",
+  "titleVi": "COPD theo dõi đợt cấp: Chỉ định Mepolizumab (BCAT ≥ 300, không viêm PQ mạn)",
+  "source": "GOLD 2026 Report p. 77 / Mepolizumab Criteria",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_12",
+    "age": 69,
+    "sex": "female",
+    "weight": 50,
+    "height": 155,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 74,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "name": "Trelegy Ellipta",
+        "dose": 100,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.45,
+      "fev1PredPct": 45,
+      "chronicBronchitis": false,
+      "bloodEos": 360,
+      "currentInhaler": "triple",
+      "moderateExacerbations": 2,
+      "hospitalizations": 1
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "mepolizumab",
+        "action": "CONSIDER"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "lipid_25_outpatient_no_gemfibrozil_with_statin",
+  "titleVi": "Không bao giờ phối hợp Gemfibrozil với Statin",
+  "source": "ACC 2026 / acc.lipid.2026.gemfibrozil_statin_contra",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 55,
+    "sex": "male",
+    "weight": 74,
+    "height": 168,
+    "sbp": 128,
+    "dbp": 80,
+    "hr": 72,
+    "scr": 85,
+    "tc": 4.8,
+    "hdl": 1,
+    "ldl": 2.2,
+    "tg": 2.5,
+    "conditions": {
+      "ascvd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "atorvastatin",
+        "name": "Atorvastatin",
+        "dose": 40,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [],
+    "mustNotInclude": [
+      {
+        "drugId": "gemfibrozil",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Tuyệt đối không chỉ định Gemfibrozil khi bệnh nhân đang dùng Statin."
+}

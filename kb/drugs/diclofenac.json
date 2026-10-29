@@ -1,0 +1,198 @@
+{
+  "id": "diclofenac",
+  "nameVi": "Diclofenac",
+  "inn": "Diclofenac",
+  "class": "NSAID",
+  "classes": [
+    "anti_gout",
+    "nsaid"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Voltaren",
+    "Cataflam"
+  ],
+  "forms": [
+    "Viên nén 50 mg",
+    "Viên nén phóng thích chậm 75 mg"
+  ],
+  "start": {
+    "amount": 50,
+    "unit": "mg",
+    "frequency": "3 lần/ngày",
+    "route": "uống",
+    "description": "50 mg x 3 lần/ngày sau ăn no trong đợt gút cấp (tối đa 150 mg/ngày)"
+  },
+  "target": {
+    "amount": 50,
+    "unit": "mg",
+    "frequency": "2–3 lần/ngày",
+    "route": "uống",
+    "description": "50 mg x 2–3 lần/ngày (tối đa tuyệt đối 150 mg/ngày)"
+  },
+  "titration": {
+    "step": 50,
+    "intervalDays": 1,
+    "maxDose": "150 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "50 mg x 2–3 lần/ngày trong 3–5 ngày (tối đa 150 mg/ngày)",
+      "citationIds": [
+        "byt.gout.2014.nsaid_agents",
+        "byt.gout.2014.nsaid_dosing_p201",
+        "acr.gout.2020.flare_first_line"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Thận trọng hoặc tránh dùng theo KDIGO 2024; ưu tiên corticoid",
+      "citationIds": [
+        "kdigo.gout.2024.acute_flare_ckd",
+        "byt.ckd.2024.gout_flare_table22"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Chống chỉ định khi eGFR < 30 mL/phút hoặc lọc máu",
+      "citationIds": [
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_diclofenac_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "contra",
+      "messageVi": "Chống chỉ định khi eGFR < 30 mL/phút/1.73m2",
+      "citationIds": [
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra"
+      ]
+    },
+    {
+      "id": "gate_diclofenac_ascvd_hf",
+      "parameter": "ASCVD_HF",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "established",
+      "action": "contra",
+      "messageVi": "Chống chỉ định diclofenac ở bệnh nhân suy tim sung huyết (NYHA II–IV), bệnh tim thiếu máu cục bộ, bệnh động mạch ngoại biên hoặc bệnh mạch máu não do nguy cơ huyết khối động mạch cao tương đương nhóm coxib",
+      "citationIds": [
+        "fda.celecoxib.boxed_contra_cv_gi",
+        "byt.gout.2014.nsaid_cv_aspirin_p199"
+      ]
+    },
+    {
+      "id": "gate_diclofenac_hepatic",
+      "parameter": "severe_hepatic_impairment",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "moderate_severe",
+      "action": "contra",
+      "messageVi": "Chống chỉ định ở bệnh nhân suy tế bào gan vừa đến nặng (diclofenac có tỷ lệ tăng transaminase gan cao nhất trong các NSAID thông dụng)",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong thai kỳ (đặc biệt 3 tháng đầu/cuối và từ tuần 20–30 trở đi do nguy cơ thiểu ối và đóng sớm ống động mạch thai nhi)",
+    "citationIds": [
+      "byt.gout.2014.nsaid_contra_p198",
+      "fda.celecoxib.fetal_toxicity_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Chống chỉ định khi đang cho con bú theo BYT 361/2014",
+    "citationIds": [
+      "byt.gout.2014.nsaid_contra_p198"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định trong thai kỳ (đặc biệt từ tuần 20–30 trở đi do đóng sớm ống động mạch thai nhi và thiểu ối)",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198",
+        "fda.celecoxib.fetal_toxicity_pregnancy"
+      ]
+    },
+    {
+      "code": "severe_ckd",
+      "messageVi": "Chống chỉ định khi eGFR < 30 mL/phút",
+      "citationIds": [
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra"
+      ]
+    },
+    {
+      "code": "peptic_ulcer",
+      "messageVi": "Chống chỉ định khi có loét dạ dày tá tràng tiến triển hoặc xuất huyết tiêu hóa",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198",
+        "fda.celecoxib.boxed_contra_cv_gi"
+      ]
+    },
+    {
+      "code": "heart_failure",
+      "messageVi": "Chống chỉ định ở bệnh nhân suy tim sung huyết (NYHA II–IV), bệnh tim thiếu máu cục bộ, bệnh mạch máu não và bệnh động mạch ngoại biên",
+      "citationIds": [
+        "fda.celecoxib.boxed_contra_cv_gi",
+        "byt.gout.2014.nsaid_cv_aspirin_p199"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định khi suy tế bào gan mức độ vừa đến nặng",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198"
+      ]
+    },
+    {
+      "code": "anticoagulant_use",
+      "messageVi": "Chống chỉ định/tránh phối hợp với thuốc chống đông",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198",
+        "fda.celecoxib.boxed_contra_cv_gi"
+      ]
+    }
+  ],
+  "interactions": [
+    "Thuốc chống đông và Corticosteroid toàn thân: Tăng mạnh nguy cơ xuất huyết tiêu hóa",
+    "Chất ức chế CYP2C9 mạnh (Voriconazole, Sulfinpyrazone): Tăng đáng kể nồng độ diclofenac huyết tương",
+    "Lợi tiểu và ACEi/ARB/ARNI ('Triple Whammy'): Gây suy thận cấp",
+    "Methotrexate / Cyclosporine: Tăng nồng độ methotrexate và độc tính thận của cyclosporine"
+  ],
+  "citationIds": [
+    "byt.gout.2014.nsaid_agents",
+    "byt.gout.2014.nsaid_contra_p198",
+    "byt.gout.2014.nsaid_cv_aspirin_p199",
+    "byt.gout.2014.nsaid_dosing_p201",
+    "byt.ckd.2024.gout_flare_table22",
+    "acr.gout.2020.flare_first_line"
+  ],
+  "hepatic": {
+    "status": "contra",
+    "note": "Chống chỉ định NSAID đường toàn thân ở bệnh nhân suy tế bào gan mức độ vừa đến nặng (Child-Pugh B/C hoặc xơ gan mất bù) do nguy cơ xuất huyết tiêu hóa, hội chứng gan – thận và suy gan cấp (BYT 361/2014 tr. 198).",
+    "notesVi": "Chống chỉ định NSAID đường toàn thân ở bệnh nhân suy tế bào gan mức độ vừa đến nặng (Child-Pugh B/C hoặc xơ gan mất bù) do nguy cơ xuất huyết tiêu hóa, hội chứng gan – thận và suy gan cấp (BYT 361/2014 tr. 198).",
+    "citationIds": [
+      "byt.gout.2014.nsaid_contra_p198"
+    ]
+  }
+}

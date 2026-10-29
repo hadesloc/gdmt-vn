@@ -1,0 +1,73 @@
+{
+  "id": "asthma_17_er_asthma_0218",
+  "titleVi": "Cơn hen cấp nặng tại Cấp cứu (Ca on-call er_asthma_0218)",
+  "source": "on-call:er_asthma_0218 / GINA 2026",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_er_asthma_0218",
+    "name": "Nữ 29 tuổi",
+    "age": 29,
+    "sex": "female",
+    "weight": 54,
+    "sbp": 142,
+    "dbp": 86,
+    "hr": 128,
+    "rhythm": "sinus",
+    "fev1Pct": 45,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "isAcuteExacerbation": true,
+      "speechAbility": "words",
+      "respiratoryRate": 32,
+      "accessoryMuscleUse": true,
+      "silentChest": false,
+      "mentalStatus": "anxious",
+      "pefPct": 45,
+      "spo2": 88
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "salbutamol",
+        "action": "START"
+      },
+      {
+        "drugId": "ipratropium",
+        "action": "START"
+      },
+      {
+        "drugId": "methylprednisolone",
+        "action": "START"
+      },
+      {
+        "drugId": "magnesium_sulfate",
+        "action": "DEFER"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Cơn hen cấp nặng: Nói từng từ, co kéo cơ hô hấp, HR 128, RR 32, SpO2 88% -> Phác đồ hồi sức cấp cứu phối hợp SABA + Ipratropium + Corticoid TM. Chưa có creatinine/chức năng thận: MgSO4 bổ trợ DEFER chờ bác sĩ xác nhận liều, không trì hoãn hồi sức đầu tay."
+}

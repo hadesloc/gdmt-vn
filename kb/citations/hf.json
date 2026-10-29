@@ -1,0 +1,1667 @@
+[
+  {
+    "id": "esc.hf.2026.lvef_phenotypes",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 16,
+    "locator": "Section 3.2.1 / Classification by LVEF / p. 16",
+    "quote": "HF with mildly reduced ejection fraction (HFmrEF, LVEF 41%–49%); and HFpEF (LVEF ≥50%). 3 The ra- tionale behind this classification relates to the inclusion criteria of the trials of therapies that improved outcomes in patients with HF and LVEF ≤40%.",
+    "quoteVi": "Phân loại suy tim theo LVEF: HFrEF (LVEF ≤ 40%), HFmrEF (LVEF 41%–49%), và HFpEF (LVEF ≥ 50%)."
+  },
+  {
+    "id": "esc.hf.2026.hfimpef_definition",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 16,
+    "locator": "Section 3.2.1 / Improved LVEF / p. 16",
+    "quote": "Patients with HFrEF and improved LVEF have a more favourable prognosis. However, it is important to ensure that these patients are still managed with optimal medical ther- apy except for selected patients. The current definition of im- proved LVEF requires an increase of at least 10% in LVEF (absolute) and must be at least above 40% (often normal).",
+    "quoteVi": "Bệnh nhân HFrEF có LVEF cải thiện (tăng tuyệt đối ≥ 10% và đạt > 40%) vẫn cần tiếp tục duy trì điều trị nội khoa tối ưu (GDMT/FMT)."
+  },
+  {
+    "id": "esc.hf.2026.new_concept_hfref_expanded",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 11,
+    "locator": "Table 4 / New concepts / p. 11",
+    "quote": "Table 4 New concepts New concepts HFrEF has been expanded to include LVEF up to 50%",
+    "quoteVi": "Khái niệm mở rộng phổ giảm chức năng tâm thu dưới 50% theo ESC 2026."
+  },
+  {
+    "id": "esc.hf.2026.sglt2i_all_lvef",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "locator": "Recommendation Table 5 / All patients with HF / p. 37",
+    "quote": "An SGLT2-I (dapagliflozin or empagliflozin) is recommended in patients with symptomatic HF independent of LVEF to reduce the risk of HFH or CV death. 241–245,326 I A",
+    "quoteVi": "Thuốc ức chế SGLT2 (dapagliflozin hoặc empagliflozin) được khuyến cáo cho mọi bệnh nhân suy tim có triệu chứng bất kể LVEF để giảm nhập viện do suy tim hoặc tử vong tim mạch (Class I, Level A).",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.hf.2026.mra_all_lvef",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "locator": "Recommendation Table 5 / All patients with HF / p. 37",
+    "quote": "An MRA (sMRA for HFrEF and sMRA/nsMRA for HFpEF) is recommended in patients with symptomatic HF independent of LVEF to reduce the risk of HFH or CV death. c43,254–257 I A",
+    "quoteVi": "MRA (MRA steroid cho HFrEF và MRA steroid hoặc không steroid Finerenone cho HFpEF) được khuyến cáo cho bệnh nhân suy tim có triệu chứng bất kể LVEF nhằm giảm nhập viện suy tim hoặc tử vong tim mạch (Class I, Level A).",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.hf.2026.loop_diuretics_chronic",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "locator": "Recommendation Table 5 / Loop diuretics / p. 37",
+    "quote": "Dynamic individualized dosing of loop diuretics according to volume status is recommended in patients with HF and signs and/ or symptoms of congestion to alleviate HF symptoms, improve exercise capacity, and reduce the risk of HFH. d 327–329 I A",
+    "quoteVi": "Điều chỉnh liều lợi tiểu quai cá thể hoá linh hoạt theo tình trạng dịch được khuyến cáo ở bệnh nhân suy tim có dấu hiệu/triệu chứng sung huyết để giảm triệu chứng và giảm tái nhập viện (Class I, Level A).",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.hf.2026.fmt_uptitration",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "locator": "Recommendation Table 5 / Uptitration of FMT / p. 37",
+    "quote": "Uptitration of FMT at least every 1–2 weeks in patients with HF, guided by symptoms, vital signs, and laboratory findings, to achieve optimal target doses shown to be efficacious in RCTs is recommended to reduce the risk of HFH or death. 274,311 I C",
+    "quoteVi": "Chuẩn độ tăng liều các thuốc nền tảng (FMT) mỗi 1–2 tuần dựa trên triệu chứng, sinh hiệu và xét nghiệm để đạt liều đích khuyến cáo (Class I, Level C).",
+    "cor": "I",
+    "loe": "C"
+  },
+  {
+    "id": "esc.hf.2026.fmt_continuation_hfimpef",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "locator": "Recommendation Table 5 / Continuation of FMT / p. 37",
+    "quote": "Continuation of FMT at the highest tolerated doses is recommended in all patients with HF, including those who become asymptomatic or with LVEF improvement, in order to reduce the risk of HFH and death. 321 I C",
+    "quoteVi": "Tiếp tục duy trì điều trị nền tảng (FMT) ở liều dung nạp cao nhất cho mọi bệnh nhân suy tim, kể cả khi hết triệu chứng hoặc khi LVEF đã hồi phục (HFimpEF), để ngăn ngừa tái phát suy tim và tử vong (Class I, Level C).",
+    "cor": "I",
+    "loe": "C"
+  },
+  {
+    "id": "esc.hf.2026.bb_hfref_rec",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "locator": "Recommendation Table 5 / Beta-blocker in HFrEF / p. 37",
+    "quote": "A beta-blocker is recommended in stable patients with symptomatic HFrEF to reduce the risk of HFH and death. e 36,287–293,330 I A",
+    "quoteVi": "Thuốc chẹn beta được khuyến cáo cho bệnh nhân HFrEF có triệu chứng đã ổn định để giảm nhập viện do suy tim và tử vong (Class I, Level A).",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.hf.2026.arni_acei_hfref_rec",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "locator": "Recommendation Table 5 / ACE-I or ARNI in HFrEF / p. 37",
+    "quote": "An ACE-I or ARNI is recommended in patients with symptomatic HFrEF to reduce the risk of HFH and death. e 274–278 I A",
+    "quoteVi": "Thuốc ức chế men chuyển (ACEi) hoặc ARNI được khuyến cáo ở bệnh nhân HFrEF có triệu chứng để giảm nhập viện suy tim và tử vong (Class I, Level A).",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.hf.2026.arni_switch_rec",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "locator": "Recommendation Table 5 / Switching ACE-I/ARB to ARNI / p. 37",
+    "quote": "Switching from an ACE-I or ARB to an ARNI is recommended in patients with symptomatic HFrEF to reduce the risk of HFH and death. e 278 I B1",
+    "quoteVi": "Khuyến cáo chuyển đổi từ ACEi hoặc ARB sang ARNI ở bệnh nhân HFrEF còn triệu chứng để giảm nhập viện suy tim và tử vong (Class I, Level B1).",
+    "cor": "I",
+    "loe": "B1"
+  },
+  {
+    "id": "esc.hf.2026.arb_intolerant_rec",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "locator": "Recommendation Table 5 / ARB if intolerant to ACE-I or ARNI / p. 37",
+    "quote": "An ARB is recommended in patients with symptomatic HFrEF to reduce the risk of HFH and CV death if they are unable to tolerate an ACE-I or ARNI. e 284–286,331 I A",
+    "quoteVi": "Thuốc chẹn thụ thể angiotensin (ARB) được khuyến cáo ở bệnh nhân HFrEF có triệu chứng không dung nạp được ACEi hoặc ARNI để giảm nhập viện suy tim và tử vong tim mạch (Class I, Level A).",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.hf.2026.hfpef_rasi_rec",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 38,
+    "locator": "Recommendation Table 5 / ACE-I/ARB/ARNI in HFpEF / p. 38",
+    "quote": "ACE-I/ARB/ARNI may be considered in patients with symptomatic HFpEF to reduce the risk of HFH. 39,40,42,319,332–337 IIb C",
+    "quoteVi": "Có thể cân nhắc ACEi/ARB/ARNI ở bệnh nhân HFpEF có triệu chứng nhằm giảm nguy cơ nhập viện do suy tim (Class IIb, Level C).",
+    "cor": "IIb",
+    "loe": "C"
+  },
+  {
+    "id": "esc.hf.2026.sacubitril_valsartan_dose",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 36,
+    "locator": "Table 11 / Doses of disease-modifying drugs / p. 36",
+    "quote": "ARNIs Sacubitril–valsartan 49/51 mg b.i.d. c 97/103 mg b.i.d.",
+    "quoteVi": "Liều chuẩn Sacubitril/valsartan trong suy tim: khởi đầu 49/51 mg x 2 lần/ngày, liều đích 97/103 mg x 2 lần/ngày.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.hf.2026.sacubitril_valsartan_low_dose",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "locator": "Table 11 footnote c / p. 37",
+    "quote": "c Sacubitril–valsartan may have an optional lower starting dose of 24/26 mg twice daily for those with a history of symptomatic hypotension, ACE-I naïve patients and patients with eGFR 30–60 mL/min/1.73 m 2 .",
+    "quoteVi": "Sacubitril/valsartan có liều khởi đầu thấp 24/26 mg x 2 lần/ngày cho bệnh nhân có tiền sử hạ huyết áp có triệu chứng, chưa từng dùng ACEi/ARB hoặc eGFR 30–60 mL/min/1.73m²."
+  },
+  {
+    "id": "esc.hf.2026.washout_acei_arni_36h",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 33,
+    "locator": "Section 6.1.1 / p. 33",
+    "quote": "washout period of at least 36 h after ACE-I therapy is required to minimize the risk of angio-oedema.",
+    "quoteVi": "Bắt buộc ngừng thuốc ức chế men chuyển (ACEi) tối thiểu 36 giờ trước khi khởi trị ARNI nhằm giảm nguy cơ phù mạch."
+  },
+  {
+    "id": "esc.hf.2026.arni_sbp_100_egfr_30",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 33,
+    "locator": "Section 6.1.1 / p. 33",
+    "quote": "systolic blood pressure <100 mmHg), kidney insufficiency (eGFR <30 mL/min/ 1.73 m 2 ), or elevated serum potassium (>5.2 mEq/L).",
+    "quoteVi": "Thận trọng khi dùng ARNI ở bệnh nhân có huyết áp tâm thu thấp (< 100 mmHg), suy giảm chức năng thận (eGFR < 30 mL/min/1.73m²) hoặc tăng kali máu (> 5.2 mmol/L)."
+  },
+  {
+    "id": "esc.hf.2026.arni_table_s5_contra_caution",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 12,
+    "locator": "Table S5 / Practical guidance for ARNI / p. 12",
+    "quote": "Contraindications: (1) History of angio-oedema.a (2) Known bilateral renal artery stenosis. (3) Pregnancy/risk of pregnancy and breastfeeding period. (4) Known allergic reaction/other adverse reaction (drug-specific). (5) Symptoms of hypotension or a systolic blood pressure <90 mmHg (PARADIGM-HF enrolled patients with a systolic blood pressure >95 mmHg at randomization). Cautions/seek specialist advice: (1) A washout period of at least 36 h after ACE-I therapy is required in order to minimize the risk of angio-oedema. (2) Significant hyperkalaemia (K+ >5.2 mmol/L). (3) eGFR <30 mL/min/1.73 m2.",
+    "quoteVi": "Bảng S5 (ARNI): Chống chỉ định gồm tiền sử phù mạch, hẹp động mạch thận hai bên, mang thai/cho con bú, dị ứng thuốc và hạ huyết áp (SBP < 90 mmHg). Thận trọng: bắt buộc ngưng ACEi tối thiểu 36 giờ trước khởi trị ARNI, K+ > 5.2 mmol/L, eGFR < 30 mL/phút/1,73 m²."
+  },
+  {
+    "id": "esc.hf.2026.arni_table_s5_sbp_100_110",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 13,
+    "locator": "Table S5 / Starting dose 24/26 mg in SBP 100–110 mmHg / p. 13",
+    "quote": "24/26 mg b.i.d.), namely in those with systolic blood pressure 100–110 mmHg, ACE-I/ARB naïve patients, and in those with CKD.",
+    "quoteVi": "Table S5: Khởi đầu Sacubitril/valsartan liều thấp 24/26 mg x 2 lần/ngày ở bệnh nhân có huyết áp tâm thu 100–110 mmHg, chưa từng dùng ACEi/ARB hoặc có bệnh thận mạn."
+  },
+  {
+    "id": "esc.hf.2026.bb_doses",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 36,
+    "locator": "Table 11 / Beta-blockers starting and target doses / p. 36",
+    "quote": "Beta-blockers Bisoprolol 1.25 mg o.d. 10 mg o.d. Carvedilol 3.125 mg b.i.d. 25 mg b.i.d. d Metoprolol succinate (CR/XL) 12.5–25 mg o.d. 200 mg o.d. Nebivolol e 1.25 mg o.d. 10 mg o.d.",
+    "quoteVi": "Bảng 11 liều khởi đầu và liều đích chẹn beta trong suy tim: Bisoprolol 1.25 -> 10 mg/ngày; Carvedilol 3.125 -> 25 mg x 2 lần/ngày; Metoprolol succinate 12.5–25 -> 200 mg/ngày; Nebivolol 1.25 -> 10 mg/ngày.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.hf.2026.carvedilol_85kg_footnote_d",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "locator": "Table 11 footnote d / p. 37",
+    "quote": "d A maximum dose of 50 mg twice daily can be administered to patients weighing over 85 kg.",
+    "quoteVi": "Carvedilol có thể tăng tới liều đích tối đa 50 mg x 2 lần/ngày ở bệnh nhân cân nặng trên 85 kg."
+  },
+  {
+    "id": "esc.hf.2026.bb_guidance_table_s6",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 14,
+    "locator": "Table S6 / Practical guidance for beta-blockers / p. 14",
+    "quote": "heart block, or heart rate <50 b.p.m. (3) If persisting signs of congestion, hypotension (systolic <90 mmHg), raised jugular venous pressure, ascites, marked peripheral oedema—try to relieve congestion and achieve ‘euvolaemia’ before starting a beta-blocker. (4) Drug interactions to look out for (because of risk of bradycardia/AV block): • Verapamil, diltiazem (are not recommended and should be discontinued",
+    "quoteVi": "Bảng S6 hướng dẫn chẹn beta: Thận trọng/trìãn khi nhịp tim < 50 chu kỳ/phút, huyết áp tâm thu < 90 mmHg hoặc đang sung huyết nặng (cần giảm sung huyết đạt đẳng tích trước khi khởi trị); ngừng verapamil/diltiazem do nguy cơ nhịp chậm và block nhĩ thất."
+  },
+  {
+    "id": "esc.hf.2026.bb_table_s6_asthma_contra",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 14,
+    "locator": "Table S6 / Contraindications and Asthma / p. 14",
+    "quote": "Contraindications: (1) Second- or third-degree AV block (in the absence of a permanent pacemaker). (2) Critical limb ischaemia. (3) Asthma (relative contraindication): if cardio-selective beta-blockers are indicated, asthma is not an absolute contraindication, but these medications should only be used under close medical supervision by a specialist, with consideration of the risks for and against their use; COPD is not a contraindication.",
+    "quoteVi": "Bảng S6: Chống chỉ định chẹn beta khi block nhĩ-thất độ II–III không có máy tạo nhịp; hen phế quản là chống chỉ định tương đối (chỉ cân nhắc chẹn beta chọn lọc tim mạch dưới giám sát chuyên khoa chặt chẽ, tránh chẹn beta không chọn lọc); COPD không phải chống chỉ định."
+  },
+  {
+    "id": "esc.hf.2026.mra_doses",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "locator": "Table 11 / MRA doses / p. 37",
+    "quote": "MRAs Steroidal Eplerenone 25 mg o.d. 50 mg o.d. Spironolactone 12.5–25 mg o.d. f 50 mg o.d. Non-steroidal Finerenone 10–20 mg o.d. g 20–40 mg o.d. g",
+    "quoteVi": "Bảng 11 liều MRA trong suy tim: Eplerenone 25 -> 50 mg/ngày; Spironolactone 12.5–25 -> 50 mg/ngày; Finerenone 10–20 -> 20–40 mg/ngày.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.hf.2026.spironolactone_12_5_footnote_f",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "locator": "Table 11 footnote f / p. 37",
+    "quote": "f Spironolactone has an optional starting dose of 12.5 mg in patients where kidney status or hyperkalaemia warrant caution.",
+    "quoteVi": "Spironolactone có thể khởi đầu ở liều thấp 12.5 mg/ngày ở bệnh nhân cần thận trọng về chức năng thận hoặc nguy cơ tăng kali máu."
+  },
+  {
+    "id": "esc.hf.2026.finerenone_doses_footnote_g",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "locator": "Table 11 footnote g / p. 37",
+    "quote": "g Finerenone has a different starting and target dose according to eGFR (10–20 mg, if eGFR ≤60 mL/min/1.73 m 2 ; 20–40 mg, if eGFR >60 mL/min/1.73 m 2 ).",
+    "quoteVi": "Finerenone trong suy tim phân tầng liều theo eGFR lúc khởi trị: khởi đầu 10 mg -> đích 20 mg/ngày nếu eGFR ≤ 60 mL/min/1.73m²; khởi đầu 20 mg -> đích 40 mg/ngày nếu eGFR > 60 mL/min/1.73m²."
+  },
+  {
+    "id": "esc.hf.2026.mra_guidance_table_s8",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 18,
+    "locator": "Table S8 / Practical guidance for MRAs / p. 18",
+    "quote": "Significant hyperkalaemia before initiation (K+ >5.0 mmol/L).a (2) Significant renal dysfunction: • Steroidal MRA: eGFR <30 mL/min/1.73 m2.b • Non-steroidal MRA: eGFR <25 mL/min/1.73 m2. (1) Drug interactions to look out for: ⚬ K+ supplements/K+-sparing diuretics (e.g. amiloride and triamterene; beware combination preparations with furosemide). ⚬ ACE-Is/ARBs/renin inhibitors.b ⚬ NSAIDs.c ⚬ Trimethoprim/trimethoprim-sulfamethoxazole. ⚬ ‘Low-salt’ substitutes with a high K+ content. ⚬ Strong CYP3A4 inhibitors, e.g. ketoconazole, itraconazole, nefazodone, telithromycin, clarithromycin, ritonavir, and nelfinavir (when eplerenone used). WHICH MRA AND WHAT DOSE?d Eplerenone: starting dose 25 mg o.d., target dose 50 mg o.d. Spironolactone: starting dose 12.5–25 mg o.d., target dose 50 mg o.d. Finerenone: starting and target dose is dependent on eGFR at time of initiation: • eGFR ≤60 mL/min/1.73 m2: starting dose 10 mg o.d., target dose 20 mg o.d. • eGFR >60 mL/min/1.73 m2: starting dose 20 mg o.d., target dose 40 mg o.d. WHERE? In the community or in the hospital. Exceptions—see ‘Cautions/seek specialist advice’. HOW TO USE? • Check renal function and electrolytes (particularly K+). • Start with a low dose (see aboved). • Rapid dose uptitration may be carried out in patients in hospital or who are otherwise closely monitored, tolerability permitting. In those patients where close monitoring is not possible, dose should be doubled at not less than 2-week intervals. • Aim for the target dose (see above) or, failing that, the highest tolerated dose (remember: some MRA is better than no MRA). • Recheck blood chemistry (urea/BUN, creatinine, K+) 1–2 weeks after initiation and 1–2 weeks after final dose titration. • Monitor blood chemistry 4–6 monthly thereafter. • If K+ rises above 5.5 mmol/L, halve a dose and monitor blood chemistry closely. • If K+ rises to >6.0 mmol/L, interrupt MRA immediately and seek specialist advice.",
+    "quoteVi": "Bảng S8 hướng dẫn MRA: Không khởi trị khi K+ > 5.0 mmol/L, eGFR < 30 (MRA steroid) hoặc eGFR < 25 (Finerenone); khi đang điều trị nếu K+ > 5.5 mmol/L thì giảm nửa liều, nếu K+ > 6.0 mmol/L thì ngừng MRA ngay lập tức."
+  },
+  {
+    "id": "esc.hf.2026.mra_table_s4_egfr15",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 10,
+    "locator": "Table S3/S4 / MRA renal cutoffs eGFR <15 / p. 10",
+    "quote": "Potassium increase >5.5 mmol/L If eGFR decreases <15 mL/min/ 1.73 m2 or eGFR decreases >40%",
+    "quoteVi": "Ngưỡng ngừng Finerenone khi eGFR giảm xuống dưới 15 mL/min/1.73m² hoặc K+ tăng > 5.5 mmol/L."
+  },
+  {
+    "id": "esc.hf.2026.loop_diuretics_doses_table_s7",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 16,
+    "locator": "Table S7 / Practical guidance and doses of diuretics / p. 16",
+    "quote": "Significant hypokalaemia (K+ ≤3.5 mmol/L)—may be made worse by diuretic. (2) Significant renal dysfunction (eGFR <30 mL/min/1.73 m2)—may be made worse by diuretic or patient may not respond to diuretic (especially thiazide diuretic). (3) Symptomatic or severe asymptomatic hypotension (systolic blood pressure <90 mmHg)—may be made worse by diuretic-induced hypovolaemia. (4) Drug interactions to look out for: • Combination with an ACE-I, an ARB, or a renin inhibitora—risk of hypotension (usually not a problem). • Combination with other diuretics (e.g. loop plus thiazide)—risk of hypovolaemia, hypotension, hypokalaemia, and renal impairment.b • NSAIDsc—may attenuate effect of diuretic. WHICH DIURETIC AND WHAT DAILY DOSE? • Loop diuretics should be first choice drug. • Long-term use of thiazide diuretics should be avoided, as this often induces severe electrolyte disturbances that could go undetected in the ambulatory setting. Loop diuretics: Furosemide: starting dose 20–40 mg, usual dose 40–240 mg. Bumetanide: starting dose 0.5–1.0 mg, usual dose 1–5 mg. Torasemide: starting dose 5–10 mg, usual dose 10–20 mg.",
+    "quoteVi": "Bảng S7 hướng dẫn lợi tiểu quai mạn tính: Thận trọng khi K+ ≤ 3.5 mmol/L, eGFR < 30 mL/min/1.73m² hoặc SBP < 90 mmHg; Furosemide khởi đầu 20–40 mg (thường dùng 40–240 mg/ngày), Bumetanide 0.5–1.0 mg (1–5 mg/ngày), Torasemide 5–10 mg (10–20 mg/ngày)."
+  },
+  {
+    "id": "esc.hf.2026.sglt2i_table_s9",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 19,
+    "locator": "Table S9 / Practical guidance for SGLT2 inhibitors / p. 19",
+    "quote": "Table S9 Practical guidance for the use of sodium–glucose co-transporter 2 inhibitors in patients with chronic heart failure WHY? To improve quality of life, reduce the risk of HF hospitalization and increase survival. IN WHOM AND WHEN? (1) All patients with HF and persisting symptoms (NYHA classes II–IV), irrespective of LVEF. Contraindications: (1) Known allergic reaction/other adverse reaction (drug-specific). (2) Pregnancy/risk of pregnancy and breastfeeding period. (3) eGFR <20 mL/min/1.73 m2. (4) Currently not approved for type 1 diabetes due to risk of ketoacidosis. Cautions/seek specialist advice: (1) Symptoms of hypotension and a systolic blood pressure <95 mmHg.",
+    "quoteVi": "Bảng S9 hướng dẫn SGLT2i trong suy tim: Không khởi trị khi eGFR < 20 mL/min/1.73m², phụ nữ mang thai/cho con bú, hoặc đái tháo đường típ 1 (nguy cơ nhiễm toan ceton); thận trọng khi có triệu chứng hạ huyết áp và SBP < 95 mmHg."
+  },
+  {
+    "id": "esc.hf.2026.ivabradine_rec",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 34,
+    "locator": "Section 6.1.5.1 & Recommendation Table 5 / Ivabradine / p. 34",
+    "quote": "with symptomatic HFrEF who at rest are in sinus rhythm with heart rate ≥70 b.p.m., LVEF ≤35%, and recent HFH, despite stable FMT in- cluding optimized beta-blocker",
+    "quoteVi": "Ivabradine được cân nhắc ở bệnh nhân HFrEF có triệu chứng, LVEF ≤ 35%, nhịp xoang với tần số tim lúc nghỉ ≥ 70 chu kỳ/phút dù đã dùng liều tối đa dung nạp chẹn beta (Class IIa, Level B1).",
+    "cor": "IIa",
+    "loe": "B1"
+  },
+  {
+    "id": "esc.hf.2026.ivabradine_bb_intolerant",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 38,
+    "locator": "Recommendation Table 5 / Ivabradine if unable to tolerate beta-blocker / p. 38",
+    "quote": "Ivabradine should be considered in patients with symptomatic HFrEF, LVEF ≤35%, in sinus rhythm, who are unable to tolerate a beta-blocker, on the highest tolerated ACE-I/ARNI and MRA to reduce the risk of HFH or CV death. 294 IIa C",
+    "quoteVi": "Ivabradine nên được cân nhắc ở bệnh nhân HFrEF có triệu chứng, LVEF ≤ 35%, nhịp xoang không dung nạp hoặc chống chỉ định chẹn beta (Class IIa, Level C).",
+    "cor": "IIa",
+    "loe": "C"
+  },
+  {
+    "id": "esc.hf.2026.vericiguat_rec",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 38,
+    "locator": "Recommendation Table 5 / Vericiguat / p. 38",
+    "quote": "Vericiguat may be considered in patients with symptomatic HFrEF and LVEF <45% despite treatment with optimal FMT to reduce the risk of HFH and CV death. 295,297,298 IIb B1",
+    "quoteVi": "Vericiguat có thể được cân nhắc ở bệnh nhân HFrEF có triệu chứng và LVEF < 45% có đợt suy tim tiến triển/mất bù dù đã điều trị FMT tối ưu để giảm nhập viện suy tim và tử vong tim mạch (Class IIb, Level B1).",
+    "cor": "IIb",
+    "loe": "B1"
+  },
+  {
+    "id": "esc.hf.2026.digoxin_rec",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "locator": "Recommendation Table 5 / Digoxin / p. 37",
+    "quote": "A cardiac glycoside (digoxin or digitoxin) should be considered in patients with symptomatic HFrEF with LVEF ≤40%, despite optimal FMT, to reduce the risk of HFH. 303,304 IIa B1",
+    "quoteVi": "Glycosid trợ tim (digoxin hoặc digitoxin) nên được cân nhắc ở bệnh nhân HFrEF có triệu chứng với LVEF ≤ 40% dù đã điều trị FMT tối ưu để giảm nguy cơ nhập viện do suy tim (Class IIa, Level B1).",
+    "cor": "IIa",
+    "loe": "B1"
+  },
+  {
+    "id": "esc.hf.2026.digoxin_doses_table11",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "locator": "Table 11 / Digoxin doses / p. 37",
+    "quote": "Other agents Digoxin h 62.5 µg o.d. 250 µg o.d.",
+    "quoteVi": "Bảng 11 liều Digoxin trong suy tim: khởi đầu 62.5 µg (0.0625 mg) x 1 lần/ngày (đặc biệt ở người cao tuổi/suy thận), tối đa 250 µg/ngày theo nồng độ huyết thanh."
+  },
+  {
+    "id": "esc.hf.2026.hisdn_black_rec",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 38,
+    "locator": "Recommendation Table 5 / Hydralazine and isosorbide dinitrate / p. 38",
+    "quote": "Hydralazine and isosorbide dinitrate should be considered in self-identified black patients with symptomatic HFrEF with LVEF ≤40% on top of optimal FMT to reduce the risk of HFH and death. 300 IIa B2",
+    "quoteVi": "Phối hợp Hydralazine và Isosorbide dinitrate nên được cân nhắc ở bệnh nhân da đen có HFrEF triệu chứng (LVEF ≤ 40%) trên nền FMT tối ưu để giảm nhập viện suy tim và tử vong (Class IIa, Level B2).",
+    "cor": "IIa",
+    "loe": "B2"
+  },
+  {
+    "id": "esc.hf.2026.hisdn_intolerant_rec",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 38,
+    "locator": "Recommendation Table 5 / Hydralazine and ISDN if intolerant to RASi / p. 38",
+    "quote": "Hydralazine and isosorbide dinitrate may be considered in patients with symptomatic HFrEF with LVEF ≤40% who cannot tolerate ARNI, ACE-I, or ARB to reduce the risk of HFH and death. 301 IIb C",
+    "quoteVi": "Phối hợp Hydralazine và Isosorbide dinitrate có thể được cân nhắc ở bệnh nhân HFrEF có triệu chứng (LVEF ≤ 40%) không dung nạp hoặc chống chỉ định cả ARNI, ACEi và ARB để giảm nhập viện và tử vong (Class IIb, Level C).",
+    "cor": "IIb",
+    "loe": "C"
+  },
+  {
+    "id": "esc.hf.2026.amt_doses_table11",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "locator": "Table 11 / Doses of Ivabradine, Vericiguat, Hydralazine/ISDN / p. 37",
+    "quote": "Ivabradine 5 mg b.i.d. 7.5 mg b.i.d. Vericiguat 2.5 mg o.d. 10 mg o.d. Hydralazine/isosorbide dinitrate 37.5 mg t.i.d./20 mg t.i.d. 75 mg t.i.d./40 mg t.i.d.",
+    "quoteVi": "Bảng 11 liều khởi đầu và liều đích thuốc bổ trợ: Ivabradine 5 -> 7.5 mg x 2 lần/ngày; Vericiguat 2.5 -> 10 mg x 1 lần/ngày; Hydralazine/ISDN 37.5/20 mg x 3 lần/ngày -> đích 75/40 mg x 3 lần/ngày."
+  },
+  {
+    "id": "esc.hf.2026.iron_screening",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 24,
+    "locator": "Section 4.2 / Diagnostic workup / p. 24",
+    "quote": "iron sta- tus [transferrin saturation (TSAT) and ferritin], liver and thyroid function",
+    "quoteVi": "Tầm soát thường quy dự trữ sắt bằng Ferritin huyết thanh và độ bão hoà Transferrin (TSAT) ở bệnh nhân suy tim.",
+    "cor": "I",
+    "loe": "C"
+  },
+  {
+    "id": "esc.hf.2026.iron_definition",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 67,
+    "locator": "Section 10.4 / Iron deficiency criteria / p. 67",
+    "quote": "where ID was defined as either ferritin <100 ng/mL, or ferritin 100– 299 ng/mL with TSAT <20%), have demonstrated that iron sup- plementation with i.v. ferric carboxymaltose is safe and effective in improving symptoms and QoL in patients with HF and LVEF <40%–45%. Thus, i.v. iron supplementation is recommended in patients with symptomatic HFrEF and ID to alleviate HF symp- toms and improve QoL.",
+    "quoteVi": "Bù sắt đường tĩnh mạch được khuyến cáo (Class I, Level B1) ở bệnh nhân HFrEF có triệu chứng kèm thiếu sắt (Ferritin < 100 ng/mL hoặc Ferritin 100–299 ng/mL với TSAT < 20%) nhằm cải thiện triệu chứng và chất lượng cuộc sống.",
+    "cor": "I",
+    "loe": "B1"
+  },
+  {
+    "id": "esc.hf.2026.iron_rec",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 67,
+    "locator": "Section 10.4 / IV ferric carboxymaltose or ferric derisomaltose / p. 67",
+    "quote": "i.v. iron supplementation with fer- ric carboxymaltose or ferric derisomaltose should be considered in patients with symptomatic HFrEF and ID to re- duce the risk of HFH, taking into account that patients with TSAT <20% might benefit most.",
+    "quoteVi": "Bù sắt đường tĩnh mạch với ferric carboxymaltose hoặc ferric derisomaltose nên được cân nhắc (Class IIa, Level B1) ở bệnh nhân HFrEF có triệu chứng kèm thiếu sắt nhằm giảm nguy cơ nhập viện vì suy tim.",
+    "cor": "IIa",
+    "loe": "B1"
+  },
+  {
+    "id": "esc.hf.2026.icd_primary_prevention",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 39,
+    "locator": "Recommendation Table 6 / Primary prevention ICD / p. 39",
+    "quote": "An ICD is recommended in patients with symptomatic HFrEF (NYHA class II/III) of an ischaemic aetiology (unless they have had an MI in the prior 40 days), and an LVEF ≤35% despite ≥3 months of optimal FMT, provided they are expected to survive longer than 1 year with good functional status, to reduce the risk of sudden death and all-cause death. 340,342,373,374 I B1 An ICD should be considered in patients with symptomatic HFrEF (NYHA class II/III) of a non-ischaemic aetiology, and an LVEF ≤35% despite ≥3 months of optimal FMT, provided they are expected to survive longer than 1 year with good functional status, to reduce the risk of sudden death and all-cause death. 340,341,344,375 IIa B1",
+    "quoteVi": "Cấy ICD dự phòng tiên phát cho bệnh nhân HFrEF có triệu chứng NYHA II–III, LVEF ≤ 35% sau ≥ 3 tháng điều trị FMT tối ưu và kỳ vọng sống > 1 năm (ngoài 40 ngày sau NMCT): Class I, Level B1 cho nguyên nhân thiếu máu cục bộ và Class IIa, Level B1 cho nguyên nhân không thiếu máu cục bộ.",
+    "cor": "I",
+    "loe": "B1"
+  },
+  {
+    "id": "esc.hf.2026.icd_contra_nyha4_mi40d",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 39,
+    "locator": "Recommendation Table 6 / ICD Class III Contraindications / p. 39",
+    "quote": "ICD implantation for primary prevention is not recommended within 40 days of an MI as implantation during this period does not improve prognosis. 358,359 III B1 ICD implantation is not recommended in patients in NYHA class IV with severe symptoms refractory to pharmacological therapy unless they are candidates for CRT, a ventricular assist device, or heart transplantation. 374,385–387 III C",
+    "quoteVi": "Không khuyến cáo (Class III) cấy ICD dự phòng tiên phát trong vòng 40 ngày đầu sau nhồi máu cơ tim (Level B1) hoặc ở bệnh nhân NYHA độ IV kháng trị nội khoa trừ khi là ứng viên CRT, LVAD hoặc ghép tim (Level C).",
+    "cor": "III",
+    "loe": "C"
+  },
+  {
+    "id": "esc.hf.2026.crt_lbbb_qrs_150",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 41,
+    "locator": "Recommendation Table 7 / CRT Class I LBBB QRS ≥150 ms / p. 41",
+    "quote": "CRT is recommended in patients with symptomatic HFrEF, LVEF ≤35%, despite optimal FMT, in SR with LBBB and QRS duration ≥150 ms in order to improve symptoms and reduce the risk of hospitalizations and death. 388– 398 I A",
+    "quoteVi": "CRT được khuyến cáo (Class I, Level A) ở bệnh nhân HFrEF có triệu chứng, LVEF ≤ 35% dù đã điều trị FMT tối ưu, nhịp xoang kèm LBBB và QRS ≥ 150 ms.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.hf.2026.crt_non_lbbb_150_lbbb_130_149",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 41,
+    "locator": "Recommendation Table 7 / CRT Class IIa & IIb / p. 41",
+    "quote": "CRT should be considered in patients with symptomatic HFrEF, LVEF ≤35%, despite optimal FMT, who are in SR with non-LBBB QRS morphology and QRS duration ≥150 ms in order to improve symptoms and reduce morbidity and death. 388–398 IIa C CRT should be considered in patients with symptomatic HFrEF, LVEF ≤35%, despite optimal FMT, who are in SR with LBBB QRS morphology and QRS duration of 130–149 ms in order to improve symptoms and reduce morbidity and death. 390,417 IIa C Continued CRT may be considered in patients with symptomatic HFrEF, LVEF ≤35%, despite optimal FMT, who are in SR with non-LBBB QRS morphology and QRS duration of 130–149 ms in order to improve symptoms and reduce morbidity and death. 391,397 IIb C",
+    "quoteVi": "Ở bệnh nhân HFrEF có triệu chứng, LVEF ≤ 35% trên nền FMT tối ưu và nhịp xoang: CRT mức Class IIa, Level C cho LBBB QRS 130–149 ms hoặc non-LBBB QRS ≥ 150 ms; mức Class IIb, Level C cho non-LBBB QRS 130–149 ms.",
+    "cor": "IIa",
+    "loe": "C"
+  },
+  {
+    "id": "esc.hf.2026.crt_reassessment",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 41,
+    "locator": "Recommendation Table 7 / Simultaneous FMT and CRT planning / p. 41",
+    "quote": "Initiation of FMT and planning for CRT implantation may be considered simultaneously in patients with symptomatic HFrEF, an LBBB with QRS ≥150 ms, and LVEF ≤35%, to improve symptoms and reduce morbidity and death, although reassessment of LVEF should be conducted prior to CRT implantation. 418–423 IIb C",
+    "quoteVi": "Có thể lên kế hoạch CRT đồng thời khi khởi trị FMT ở bệnh nhân LBBB QRS ≥ 150 ms và LVEF ≤ 35%, nhưng bắt buộc đánh giá lại LVEF trước khi cấy CRT (Class IIb, Level C).",
+    "cor": "IIb",
+    "loe": "C"
+  },
+  {
+    "id": "esc.hf.2026.crt_qrs_130",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 41,
+    "locator": "Recommendation Table 7 / CRT Class III QRS <130 ms / p. 41",
+    "quote": "CRT is not recommended in patients with a QRS duration <130 ms who do not have an indication for pacing due to high-degree AV block. 410,424,425 III A",
+    "quoteVi": "Chống chỉ định / không khuyến cáo CRT ở bệnh nhân có độ rộng QRS < 130 ms nếu không có chỉ định tạo nhịp thất do block nhĩ-thất độ cao (Class III, Level A).",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "esc.hf.2026.teer_indication",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 64,
+    "locator": "Recommendation Table 17 / Secondary mitral regurgitation M-TEER / p. 64",
+    "quote": "Mitral transcatheter edge-to-edge repair is recommended in haemodynamically stable, symptomatic patients with HFrEF and persistent severe secondary mitral regurgitation despite optimized FMT and CRT if indicated, who fulfil specific clinical and echocardiographic criteria, d in order to reduce the risk of HFH and improve QoL. 750–753 I B1",
+    "quoteVi": "Sửa van hai lá qua đường ống thông (M-TEER) được khuyến cáo (Class I, Level B1) ở bệnh nhân suy tim huyết động ổn định, còn triệu chứng và hở van hai lá thứ phát nặng dai dẳng dù đã tối ưu FMT (và CRT nếu có chỉ định) thoả tiêu chuẩn lâm sàng/siêu âm tim.",
+    "cor": "I",
+    "loe": "B1"
+  },
+  {
+    "id": "esc.hf.2026.teer_table19_criteria",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 63,
+    "locator": "Table 19 / Criteria for mitral TEER in ventricular SMR / p. 63",
+    "quote": "LVEF 20%–50% LVESD ≤70 mm Anatomy deemed suitable for mitral TEER sPAP ≤70 mmHg No severe RV dysfunction",
+    "quoteVi": "Tiêu chuẩn chọn bệnh M-TEER trong hở hai lá thứ phát cơ năng thất trái (Table 19): LVEF 20%–50%, LVESD ≤ 70 mm, sPAP ≤ 70 mmHg, không suy thất phải nặng."
+  },
+  {
+    "id": "esc.hf.2026.glp1_obesity",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 65,
+    "locator": "Recommendation Table 18 / Obesity in HF / p. 65",
+    "quote": "Semaglutide or tirzepatide should be considered for patients with symptomatic HF, LVEF ≥45%, and BMI ≥30 kg/m 2 , regardless of diabetes status, to reduce body weight, and improve exercise capacity and QoL. 315–317,819,820,825 IIa B1",
+    "quoteVi": "Semaglutide hoặc Tirzepatide nên được cân nhắc ở bệnh nhân suy tim có triệu chứng với LVEF ≥ 45% và BMI ≥ 30 kg/m² (bất kể tình trạng đái tháo đường) để giảm cân, cải thiện khả năng gắng sức và chất lượng cuộc sống (Class IIa, Level B1).",
+    "cor": "IIa",
+    "loe": "B1"
+  },
+  {
+    "id": "esc.hf.2026.rehab_indication",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 12,
+    "locator": "Section 11 / Exercise-based cardiac rehabilitation / p. 12",
+    "quote": "Personalized exercise training, in the context of multidisciplinary exercise-based cardiac rehabilitation, is recommended for all stable patients, unless there are specific contraindications, in order to improve exercise capacity, and QoL, and reduce the risk of all-cause hospitalization. I B1",
+    "quoteVi": "Tập luyện thể lực cá thể hoá trong chương trình phục hồi chức năng tim mạch đa chuyên khoa được khuyến cáo cho mọi bệnh nhân suy tim đã ổn định để cải thiện khả năng gắng sức, chất lượng cuộc sống và giảm nhập viện (Class I, Level B1).",
+    "cor": "I",
+    "loe": "B1"
+  },
+  {
+    "id": "esc.hf.2026.acute_iv_diuretics",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 50,
+    "locator": "Recommendation Table 9 / Diuretics in DHF / p. 50",
+    "quote": "Intravenous loop diuretics are recommended for all patients with DHF admitted with fluid overload to improve symptoms d . I A",
+    "quoteVi": "Lợi tiểu quai đường tĩnh mạch được khuyến cáo cho tất cả bệnh nhân suy tim mất bù cấp nhập viện có quá tải dịch để cải thiện triệu chứng sung huyết (Class I, Level A).",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.hf.2026.acute_diuretic_protocol",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 48,
+    "locator": "Section 7.5.1 / Satisfactory diuretic response / p. 48",
+    "quote": "A satisfactory diuretic response can be defined as a uNa + content ≥70 mEq/L at 2 h or by a urine output ≥100 mL/h dur- ing the first 6 h (Figure 15).",
+    "quoteVi": "Đáp ứng lợi tiểu đạt yêu cầu trong suy tim cấp được xác định khi Natri niệu (uNa+) ≥ 70 mmol/L ở thời điểm 2 giờ hoặc lưu lượng nước tiểu ≥ 100 mL/giờ trong 6 giờ đầu."
+  },
+  {
+    "id": "esc.hf.2026.acute_furosemide_40_max600",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 49,
+    "locator": "Figure 15 / Management of decongestion / p. 49",
+    "quote": "Start i.v. loop diuretic (40 mg furosemide in diuretic naive or double daily oral dose in chronic users)a Spot uNa+ at 2 h ≥70 mmol/L OR Urine output at 6h ≥100 mL/h Repeat the diuretic regime every 12 h until complete decongestionb Double the dose of loop diuretic OR Consider adding i.v. acetazolamide or eGFR based hydrochlorothiazidec (in case of chronic loop diuretic use) Spot uNa+ at 2–6 h ≥70 mmol/L OR Urine output at 6h ≥100 mL/h Progressive escalation of loop diuretics up to the maximum i.v. dosed AND Consider adding other non-loop diuretics Consider ultra/f_iltration in case of unsuccessful decongestion despite maximal diuretic therapy Figure 15 Management of decongestion. CKD, chronic kidney disease; eGFR, estimated glomerular filtration rate; FMT, foundational medical therapy; i.v., intravenous; K + , potassium; MRA, mineralocorticoid receptor antagonist; uNa + , urinary sodium. a Higher initial i.v. dose in case of CKD. b After 24 h of treatment, total diuresis should be taken into consideration. If diuresis remains <3 l and congestion persists, further diuretic escalation should be considered during the second day of treatment. c Acetazolamide (500 mg i.v. once daily) or hydrochlorothiazide (if eGFR >50 mL/min/1.73 m 2 : 25 mg daily; eGFR 20–50 mL/min/1.73 m 2 : 50 mg daily; and eGFR <20 mL/min/ 1.73 m 2 : 100 mg daily). Acetazolamide might be preferable in more advanced CKD. d The highest daily dose for i.v. loop diuretics is gen- erally considered furosemide 600 mg",
+    "quoteVi": "Phác đồ lợi tiểu quai tĩnh mạch trong suy tim cấp (Figure 15): Khởi đầu 40 mg Furosemide IV nếu chưa dùng lợi tiểu hoặc gấp đôi tổng liều uống hàng ngày nếu đang dùng lợi tiểu mạn tính; tổng liều tối đa thông thường 600 mg/ngày."
+  },
+  {
+    "id": "esc.hf.2026.acute_vasodilators",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 51,
+    "locator": "Recommendation Table 9 / Vasodilators in DHF / p. 51",
+    "quote": "Intravenous vasodilators may be considered as initial therapy in patients with DHF and systolic blood pressure >110 mmHg to improve symptoms and reduce congestion. 534 IIb C",
+    "quoteVi": "Thuốc giãn mạch đường tĩnh mạch có thể được cân nhắc ở bệnh nhân suy tim cấp sung huyết kèm huyết áp tâm thu > 110 mmHg để giảm triệu chứng và giảm sung huyết phổi (Class IIb, Level C).",
+    "cor": "IIb",
+    "loe": "C"
+  },
+  {
+    "id": "esc.hf.2026.acute_inotropes_shock_sbp90",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 51,
+    "locator": "Recommendation Table 9 / Inotropes and Vasopressors / p. 51",
+    "quote": "Inotropic agents may be considered in patients with systolic blood pressure <90 mmHg and evidence of hypoperfusion who do not respond to standard treatment, including fluid challenge, to improve perfusion. IIb C Vasopressors Vasopressors, preferably norepinephrine, may be considered in patients with cardiogenic shock",
+    "quoteVi": "Thuốc tăng co bóp cơ tim (inotropes) có thể cân nhắc khi huyết áp tâm thu < 90 mmHg kèm bằng chứng giảm tưới máu mô; thuốc vận mạch (ưu tiên norepinephrine) cân nhắc khi có sốc tim (Class IIb, Level C).",
+    "cor": "IIb",
+    "loe": "C"
+  },
+  {
+    "id": "esc.hf.2026.acute_bb_hypoperfusion",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 54,
+    "locator": "Recommendation Table 12 / Beta-blockers in hypoperfusion / p. 54",
+    "quote": "Down-titration or discontinuation of beta-blockers or ivabradine should be considered in selected patients with advanced HFrEF and evidence of organ hypoperfusion, despite initial treatment, to increase cardiac output and improve symptoms. IIa C",
+    "quoteVi": "Giảm liều hoặc tạm ngừng thuốc chẹn beta hoặc ivabradine nên được cân nhắc ở bệnh nhân suy tim nặng có bằng chứng giảm tưới máu cơ quan/sốc tim nhằm cải thiện cung lượng tim (Class IIa, Level C).",
+    "cor": "IIa",
+    "loe": "C"
+  },
+  {
+    "id": "esc.hf.2026.acute_predischarge_fmt",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 47,
+    "locator": "Recommendation Table 8 / Pre-discharge FMT / p. 47",
+    "quote": "Careful evaluation c before discharge is recommended in patients hospitalized for DHF to exclude persistent signs of congestion. I C An intensive strategy of rapid initiation and uptitration of FMT before discharge and during frequent follow-up visits in the first 6 weeks following an HFH is recommended to reduce the risk of HF rehospitalization or death. 311 I B2",
+    "quoteVi": "Đánh giá kỹ loại trừ sung huyết tồn dư trước xuất viện (Class I, Level C) và chiến lược khởi trị sớm – chuẩn độ nhanh các trụ cột FMT ngay trước xuất viện và trong 6 tuần đầu sau ra viện để giảm tái nhập viện hoặc tử vong (Class I, Level B2).",
+    "cor": "I",
+    "loe": "B2"
+  },
+  {
+    "id": "esc.hf.2026.harm_ccbs_hfref",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 60,
+    "locator": "Section 9.3.1 / Non-dihydropyridine CCBs in HFrEF / p. 60",
+    "quote": "ver- apamil and diltiazem) are not recommended in patients with HFrEF due to their negative inotropic effects which may precipi- tate the risk of HF events.",
+    "quoteVi": "Chẹn kênh canxi nhóm non-dihydropyridine (verapamil, diltiazem) không được khuyến cáo ở bệnh nhân HFrEF do tác dụng giảm co bóp cơ tim làm nặng suy tim.",
+    "cor": "III",
+    "loe": "C"
+  },
+  {
+    "id": "esc.hf.2026.harm_nsaids",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 69,
+    "locator": "Section 10 / NSAIDs and COX-2 inhibitors in HF / p. 69",
+    "quote": "NSAIDs and COX-2 inhibitors are not recommended in patients with HF as they increase the risk of HF worsening and HFH. 942,946–948 III B2",
+    "quoteVi": "NSAID và thuốc ức chế chọn lọc COX-2 chống chỉ định / không khuyến cáo ở bệnh nhân suy tim do làm giữ muối nước, nặng suy tim và tăng nhập viện (Class III, Level B2).",
+    "cor": "III",
+    "loe": "B2"
+  },
+  {
+    "id": "esc.hf.2026.pregnancy_contra",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 74,
+    "locator": "Recommendation Table 27 / Pregnancy contraindicated HF drugs / p. 74",
+    "quote": "ACE-Is, ARBs, ARNIs, MRAs, ivabradine, and SGLT2-Is are not recommended during pregnancy due to the risk of foetotocixity or teratogenicity. 1074–1076 III C",
+    "quoteVi": "Chống chỉ định ACEi, ARB, ARNI, MRA, Ivabradine và SGLT2i trong thai kỳ do nguy cơ độc tính bào thai và gây quái thai (Class III, Level C).",
+    "cor": "III",
+    "loe": "C"
+  },
+  {
+    "id": "esc.hf.2026.pregnancy_bb_switch",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 74,
+    "locator": "Recommendation Table 27 / Beta-1 selective blockers in pregnancy / p. 74",
+    "quote": "In pregnant women with HFrEF, it is recommended that non-selective beta-blockers are switched to beta 1 -selective blockers (metoprolol, bisoprolol) with close mother and foetus monitoring to reduce the risk of adverse foetal events and a lower birth weight. 1072,1073 I C",
+    "quoteVi": "Ở phụ nữ mang thai có HFrEF, khuyến cáo chuyển từ chẹn beta không chọn lọc (như carvedilol) sang chẹn beta chọn lọc beta-1 (metoprolol, bisoprolol) kèm theo dõi sát mẹ và thai (Class I, Level C).",
+    "cor": "I",
+    "loe": "C"
+  },
+  {
+    "id": "esc.preg.2025.spironolactone_lactation",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 32,
+    "locator": "Section 5.2.7 / Spironolactone in pregnancy and lactation / p. 32",
+    "quote": "spironolactone can have anti- androgenetic effects and are contraindicated in pregnancy. Spironolactone is considered safe during lactation because of exten- sive metabolism to canrenone, thus the infant would receive less than 1% of the mother’s daily dosage",
+    "quoteVi": "Spironolactone chống chỉ định trong thai kỳ do tác dụng kháng androgen, nhưng được xem là an toàn khi cho con bú theo ESC 2025 vì lượng canrenone qua sữa mẹ dưới 1% liều của mẹ."
+  },
+  {
+    "id": "esc.preg.2025.hydralazine_pregnancy",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 60,
+    "locator": "Section 8 / Hydralazine in pregnancy / p. 60",
+    "quote": "hydralazine is less effective than other drugs and is asso- ciated with more side effects. 616 Hydralazine is therefore a second-line option to be used only if other drugs are not available.",
+    "quoteVi": "Hydralazine có thể sử dụng thận trọng làm lựa chọn hàng hai trong thai kỳ khi các thuốc ưu tiên khác không phù hợp."
+  },
+  {
+    "id": "acc.hfpef.2026.glp1_obesity",
+    "sourceId": "acc_2026_ecdp_hfpef",
+    "pdfPage": 14,
+    "locator": "Table 4 / Starting and Target Doses for HFpEF / p. 14",
+    "quote": "Semaglutide 0.25 mg weekly 2.4 mg weekly Tirzepatide 2.5 mg weekly",
+    "quoteVi": "ACC 2026 ECDP HFpEF Table 4: Semaglutide tiêm dưới da khởi đầu 0.25 mg/tuần, chuẩn độ tới liều đích 2.4 mg/tuần; Tirzepatide khởi đầu 2.5 mg/tuần."
+  },
+  {
+    "id": "acc.hfpef.2026.finerenone",
+    "sourceId": "acc_2026_ecdp_hfpef",
+    "pdfPage": 15,
+    "locator": "Table 5 / Nonsteroidal MRA (finerenone) in HFpEF / p. 15",
+    "quote": "Nonsteroidal MRA (finerenone) n eGFR <25 mL/min/1.73 m 2 n Potassium $5.0 mmol/L",
+    "quoteVi": "ACC 2026 ECDP HFpEF: Finerenone không khởi trị khi eGFR < 25 mL/min/1.73m² hoặc Kali máu > 5.0 mmol/L."
+  },
+  {
+    "id": "aha.hf.2022.hfmref_2b",
+    "sourceId": "aha_acc_2022_hf",
+    "pdfPage": 4,
+    "locator": "Top 10 Take-Home Messages & Section 7.4 / HFmrEF (41%–49%) / p. 4",
+    "quote": "mildly reduced ejection fraction (HFmrEF). Weaker recommendations (Class of Recommendation 2b) are made for ARNi, ACEi, ARB, MRA, and beta blockers in this population. 3. New recommendations for HFpEF are made for SGLT2i (Class of Recommendation 2a)",
+    "quoteVi": "AHA/ACC/HFSA 2022 xếp mức khuyến cáo Class 2b cho ARNI, ACEi, ARB, MRA steroid và chẹn beta ở phân nhóm HFmrEF (LVEF 41%–49%) và Class 2a cho SGLT2i.",
+    "cor": "IIb",
+    "loe": "B-NR"
+  },
+  {
+    "id": "aha.hf.2022.hisdn_1a",
+    "sourceId": "aha_acc_2022_hf",
+    "pdfPage": 47,
+    "locator": "Section 7.3.5 / Hydralazine and Isosorbide Dinitrate / p. 47",
+    "quote": "the combination of hydralazine and isosorbide dinitrate is appropriate for African Ameri- cans with HFrEF who remain symptomatic despite concomitant use of ACEi (or ARB), beta blockers, and MRA.",
+    "quoteVi": "AHA/ACC/HFSA 2022 khuyến cáo Class 1A phối hợp Hydralazine + Isosorbide dinitrate cho bệnh nhân gốc Phi có HFrEF còn triệu chứng trên nền GDMT.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "byt.2022.hf_4pillars",
+    "sourceId": "byt_2022_hf",
+    "pdfPage": 12,
+    "locator": "Mục 4.1. Điều trị suy tim phân suất tống máu giảm / trang 12",
+    "quote": "Hai thuốc trong nhóm này là dapagliflozin hoặc empagliflozin được khuyến cáo chỉ định bất kể người bệnh có kèm theo đái tháo đường hay không.",
+    "quoteVi": "Bộ Y tế QĐ 1857/QĐ-BYT (2022): Dapagliflozin hoặc Empagliflozin được khuyến cáo trong 4 trụ cột điều trị HFrEF bất kể tình trạng đái tháo đường.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "byt.2022.hf_doses",
+    "sourceId": "byt_2022_hf",
+    "pdfPage": 16,
+    "locator": "Bảng 3: Liều lượng các thuốc điều trị suy tim / trang 16",
+    "quote": "ARNI Sacubitril/valsartan 49/51 mg, ngày 2 lần 97/103 mg, ngày 2 lần CHẸN BETA GIAO CẢM Bisoprolol 1.25 mg, ngày 1 lần 10 mg, ngày 1 lần Carvedilol 3.125 mg, ngày 2 lần 25 mg, ngày 2 lần Metoprololsuccinate (CR/XL) 12.5-25 mg, ngày 1 lần 200 mg, ngày 1 lần Nebivolol 1.25 mg, ngày 1 lần 10 mg, ngày 1 lần MRA Spironolactone 25 mg",
+    "quoteVi": "Bảng 3 Bộ Y tế QĐ 1857/QĐ-BYT (2022): Liều khởi đầu và liều đích của ARNI, 4 thuốc chẹn beta suy tim và Spironolactone tại Việt Nam.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "byt.2022.hf_predischarge",
+    "sourceId": "byt_2022_hf",
+    "pdfPage": 26,
+    "locator": "Mục điều trị suy tim cấp giai đoạn ổn định trước ra viện / trang 26",
+    "quote": "Khởi trị ARNI (sacubitril/valsartan) ở các bệnh nhân suy tim cấp có phân suất tống máu giảm giai đoạn ổn định trước khi ra viện được chứng minh giảm NT-proBNP. - Xem xét khởi trị sớm chẹn beta giao cảm giao cảm với liều lượng thấp khi lâm sàng không còn các dấu hiệu sung huyết.",
+    "quoteVi": "Bộ Y tế QĐ 1857/QĐ-BYT (2022): Khởi trị ARNI ở giai đoạn ổn định trước ra viện và chỉ khởi trị sớm chẹn beta liều thấp khi lâm sàng không còn dấu hiệu sung huyết."
+  },
+  {
+    "id": "fda.hf.sacubitril_angioedema",
+    "sourceId": "fda_sacubitril_valsartan",
+    "pdfPage": 1,
+    "locator": "Highlights / Contraindications (Section 4) / p. 1",
+    "quote": "CONTRAINDICATIONS Hypersensitivity to any component. ( 4 ) History of angioedema related to previous ACEi or ARB therapy. ( 4 ) Concomitant use with ACE inhibitors. ( 4 , 7.1 ) Concomitant use with aliskiren in patients with diabetes. ( 4 , 7.1 )",
+    "quoteVi": "Nhãn FDA Entresto §4: Chống chỉ định khi có tiền sử phù mạch liên quan ACEi/ARB, dùng đồng thời với ACEi (trong vòng 36 giờ), hoặc dùng cùng aliskiren ở bệnh nhân đái tháo đường.",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "fda.hf.sacubitril_fetal_toxicity",
+    "sourceId": "fda_sacubitril_valsartan",
+    "pdfPage": 1,
+    "locator": "Boxed Warning / Fetal Toxicity / p. 1",
+    "quote": "WARNING: FETAL TOXICITY See full prescribing information for complete boxed warning. When pregnancy is detected, discontinue ENTRESTO as soon as possible. ( 5.1 ) Drugs that act directly on the renin-angiotensin system can cause injury and death to the developing fetus.",
+    "quoteVi": "Cảnh báo đóng khung FDA Entresto: Độc tính bào thai nghiêm trọng; ngừng ngay Sacubitril/valsartan khi phát hiện có thai.",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "fda.hf.sacubitril_lactation_hepatic",
+    "sourceId": "fda_sacubitril_valsartan",
+    "pdfPage": 2,
+    "locator": "Highlights / Use in Specific Populations (8.2, 8.6) / p. 2",
+    "quote": "Lactation: Breastfeeding not recommended. ( 8.2 ) Severe Hepatic Impairment: Use not recommended. ( 2.8 , 8.6 )",
+    "quoteVi": "Nhãn FDA Entresto §8.2 & §8.6: Không khuyến cáo cho con bú trong thời gian dùng thuốc; không khuyến cáo sử dụng ở bệnh nhân suy gan nặng (Child-Pugh C)."
+  },
+  {
+    "id": "fda.hf.sacubitril_renal_egfr30",
+    "sourceId": "fda_sacubitril_valsartan",
+    "pdfPage": 7,
+    "locator": "Section 2.7 & 2.8 / Severe Renal & Moderate Hepatic Impairment / p. 7",
+    "quote": "2.7 Dose Adjustment for Severe Renal Impairment In adults and pediatric patients with severe renal impairment estimated glomerular filtration rate (eGFR less than 30 mL/min/1.73 m ), start ENTRESTO at half the usually recommended starting dose. After initiation, increase the dose to follow the recommended dose escalation thereafter [see Dosage and Administration (2.2, 2.3)] . Note: Initiate pediatric patients weighing 40 to 50 kg who meet this criterion at 0.8 mg/kg twice daily using the oral suspension or oral pellets [see Dosage and Administration (2.3, 2.4, 2.5)] . No starting dose adjustment is needed for mild or moderate renal impairment. 2.8 Dose Adjustment for Hepatic Impairment In adults and pediatric patients with moderate hepatic impairment (Child-Pugh B classification), start ENTRESTO at half the usually recommended starting dose.",
+    "quoteVi": "Nhãn FDA Entresto §2.7–2.8: Ở bệnh nhân suy thận nặng (eGFR < 30 mL/min/1.73m²) hoặc suy gan trung bình (Child-Pugh B), bắt buộc khởi đầu bằng nửa liều chuẩn (24/26 mg x 2 lần/ngày)."
+  },
+  {
+    "id": "fda.hf.sacubitril_naive_low_dose",
+    "sourceId": "fda_sacubitril_valsartan",
+    "pdfPage": 6,
+    "locator": "Section 2.6 / Patients Not Taking an ACEi or ARB / p. 6",
+    "quote": "In patients not currently taking an ACE inhibitor or an angiotensin II receptor blocker (ARB) and for patients previously taking low doses of these agents, start ENTRESTO at",
+    "quoteVi": "Nhãn FDA Entresto §2.6: Bệnh nhân chưa từng dùng ACEi/ARB hoặc đang dùng ACEi/ARB liều thấp phải khởi đầu Sacubitril/valsartan ở nửa liều chuẩn (24/26 mg x 2 lần/ngày)."
+  },
+  {
+    "id": "ema.hf.bisoprolol_titration",
+    "sourceId": "ema_bisoprolol",
+    "pdfPage": 1,
+    "locator": "Section 4.2 / Posology in chronic heart failure / p. 1",
+    "quote": "1.25 mg once daily for 1 week, if well tolerated increase to  2.5 mg once daily for a further week, if well tolerated increase to  3.75 mg once daily for a further week, if well tolerated increase to  5 mg once daily for the 4 following weeks, if well tolerated increase to  7.5 mg once",
+    "quoteVi": "SmPC Cardicor (Bisoprolol) §4.2: Các bậc chuẩn độ tăng liều trong suy tim mạn gồm 1.25 mg -> 2.5 mg -> 3.75 mg -> 5 mg -> 7.5 mg -> 10 mg x 1 lần/ngày."
+  },
+  {
+    "id": "ema.hf.bisoprolol_contra",
+    "sourceId": "ema_bisoprolol",
+    "pdfPage": 2,
+    "locator": "Section 4.3 / Contraindications / p. 2",
+    "quote": "4.3 Contraindications Bisoprolol is contraindicated in chronic heart failure patients with:  acute heart failure or during episodes of heart failure decompensation requiring i.v. inotropic therapy  cardiogenic shock  second or third degree AV block  sick sinus syndrome  sinoatrial block",
+    "quoteVi": "SmPC Cardicor (Bisoprolol) §4.3: Chống chỉ định trong suy tim cấp hoặc đợt mất bù cần thuốc tăng co bóp tĩnh mạch, sốc tim, block nhĩ-thất độ II–III, hội chứng suy nút xoang, block xoang nhĩ."
+  },
+  {
+    "id": "ema.hf.bisoprolol_renal_hepatic",
+    "sourceId": "ema_bisoprolol",
+    "pdfPage": 2,
+    "locator": "Section 4.2 / Patients with hepatic or renal impairment / p. 2",
+    "quote": "Patients with hepatic or renal impairment There is no information regarding pharmacokinetics of bisoprolol in patients with chronic heart failure and with impaired hepatic or renal function. Uptitration of the dose in these populations should therefore be made with additional caution.",
+    "quoteVi": "SmPC Cardicor (Bisoprolol) §4.2: Thận trọng đặc biệt khi chuẩn độ tăng liều bisoprolol ở bệnh nhân suy tim kèm suy thận hoặc suy gan."
+  },
+  {
+    "id": "ema.hf.bisoprolol_preg_lact",
+    "sourceId": "ema_bisoprolol",
+    "pdfPage": 4,
+    "locator": "Section 4.6 / Fertility, pregnancy and lactation / p. 4",
+    "quote": "4.6 Fertility, pregnancy and lactation Pregnancy Bisoprolol has pharmacological effects that may cause harmful effects on pregnancy and/or the fetus/newborn. In general, beta-adrenoceptor blockers reduce placental perfusion, which has been associated with growth retardation, intrauterine death, abortion or early labour. Adverse effects (e.g. hypoglycaemia and bradycardia) may occur in the fetus and newborn infant. If treatment with beta-adrenoceptor blockers is necessary, beta 1 -selective adrenoceptor blockers are preferable. Bisoprolol should not be used during pregnancy unless clearly necessary. If treatment with bisoprolol is considered necessary, the uteroplacental blood flow and the fetal growth should be monitored. In case of harmful effects on pregnancy or the fetus alternative treatment should be considered. The newborn infant must be closely monitored. Symptoms of hypoglycaemia and bradycardia are generally to be expected within the first 3 days. Breast-feeding It is not known whether this drug is excreted in human milk. Therefore, breastfeeding is not recommended during administration of bisoprolol.",
+    "quoteVi": "SmPC Cardicor §4.6: Chẹn beta làm giảm tưới máu nhau thai, cần theo dõi sát thai nhi và trẻ sơ sinh nếu bắt buộc dùng trong thai kỳ; không khuyến cáo cho con bú khi dùng bisoprolol."
+  },
+  {
+    "id": "fda.hf.carvedilol_contra",
+    "sourceId": "fda_carvedilol",
+    "pdfPage": 1,
+    "locator": "Highlights / Contraindications (Section 4) / p. 1",
+    "quote": "CONTRAINDICATIONS Bronchial asthma or related bronchospastic conditions. ( 4 ) Second- or third-degree AV block. ( 4 ) Sick sinus syndrome. ( 4 ) Severe bradycardia (unless permanent pacemaker in place). ( 4 ) Patients in cardiogenic shock or decompensated heart failure requiring the use of IV inotropic therapy. (4) Severe hepatic impairment ( 2.4 , 4 )",
+    "quoteVi": "Nhãn FDA Coreg (Carvedilol) §4: Chống chỉ định tuyệt đối ở bệnh nhân hen phế quản/co thắt phế quản, block nhĩ-thất độ II–III, suy nút xoang, nhịp chậm nặng, sốc tim/suy tim mất bù cần vận mạch/inotrope, và suy gan nặng."
+  },
+  {
+    "id": "fda.hf.carvedilol_85kg",
+    "sourceId": "fda_carvedilol",
+    "pdfPage": 4,
+    "locator": "Section 2.1 / Heart Failure Dosing over 85 kg / p. 4",
+    "quote": "50 mg twice daily has been administered to patients with mild-to-moderate heart failure weighing over 85 kg",
+    "quoteVi": "Nhãn FDA Coreg §2.1: Liều tối đa Carvedilol trong suy tim là 25 mg x 2 lần/ngày ở người ≤ 85 kg và 50 mg x 2 lần/ngày ở người > 85 kg."
+  },
+  {
+    "id": "fda.hf.carvedilol_preg_lact",
+    "sourceId": "fda_carvedilol",
+    "pdfPage": 15,
+    "locator": "Section 8.1 & 8.2 / Pregnancy and Lactation / p. 15",
+    "quote": "8.1 Pregnancy Risk Summary Available data regarding use of COREG in pregnant women are insufficient to determine whether there are drug-associated risks of adverse developmental outcomes.",
+    "quoteVi": "Nhãn FDA Coreg §8.1: Dữ liệu an toàn của carvedilol trên phụ nữ mang thai còn hạn chế; theo ESC 2026 nên chuyển sang chẹn beta chọn lọc beta-1 (bisoprolol/metoprolol)."
+  },
+  {
+    "id": "fda.hf.carvedilol_lactation",
+    "sourceId": "fda_carvedilol",
+    "pdfPage": 16,
+    "locator": "Section 8.2 / Lactation / p. 16",
+    "quote": "8.2 Lactation Risk Summary There are no data on the presence of carvedilol in human milk, the effects on the breastfed infant, or the effects on milk production. Carvedilol is present in the milk of lactating rats.",
+    "quoteVi": "Nhãn FDA Coreg §8.2: Chưa có dữ liệu về bài tiết carvedilol qua sữa người (có mặt trong sữa chuột cống), cần cân nhắc lợi ích/nguy cơ khi cho con bú."
+  },
+  {
+    "id": "fda.hf.spironolactone_dose_renal",
+    "sourceId": "fda_spironolactone",
+    "pdfPage": 5,
+    "locator": "Section 2.2 / Treatment of Heart Failure / p. 5",
+    "quote": "In patients with serum potassium ≤5.0 mEq/L and eGFR >50 mL/min/1.73 m , initiate treatment at 25 mg once daily.",
+    "quoteVi": "Nhãn FDA Aldactone §2.2: Ở bệnh nhân suy tim có Kali máu ≤ 5.0 mmol/L và eGFR > 50 mL/min/1.73m², khởi đầu Spironolactone 25 mg x 1 lần/ngày."
+  },
+  {
+    "id": "fda.hf.spironolactone_egfr_30_50",
+    "sourceId": "fda_spironolactone",
+    "pdfPage": 5,
+    "locator": "Section 2.2 / eGFR 30 to 50 mL/min/1.73m2 / p. 5",
+    "quote": "In patients with an eGFR between 30 and 50 mL/min/1.73 m , consider initiating therapy at 25 mg every other day because of the risk of hyperkalemia",
+    "quoteVi": "Nhãn FDA Aldactone §2.2: Ở bệnh nhân có eGFR từ 30 đến 50 mL/min/1.73m², cân nhắc khởi đầu Spironolactone liều 25 mg cách ngày (tương đương 12.5 mg/ngày) do nguy cơ tăng kali máu."
+  },
+  {
+    "id": "fda.hf.spironolactone_contra",
+    "sourceId": "fda_spironolactone",
+    "pdfPage": 5,
+    "locator": "Section 4 / Contraindications / p. 5",
+    "quote": "4 CONTRAINDICATIONS ALDACTONE is contraindicated in the patients with: • • • 5 WARNINGS AND PRECAUTIONS 2 2 Hyperkalemia Addison's disease Concomitant use of eplerenone",
+    "quoteVi": "Nhãn FDA Aldactone §4: Chống chỉ định Spironolactone khi tăng kali máu, bệnh Addison hoặc dùng đồng thời với eplerenone."
+  },
+  {
+    "id": "fda.hf.spironolactone_preg_lact",
+    "sourceId": "fda_spironolactone",
+    "pdfPage": 10,
+    "locator": "Section 8.2 / Lactation / p. 10",
+    "quote": "canrenone, in human breast milk in low amounts that are expected to be clinically inconsequential.",
+    "quoteVi": "Nhãn FDA Aldactone §8.2: Spironolactone không qua sữa mẹ và chất chuyển hoá canrenone chỉ hiện diện với lượng rất nhỏ không có ý nghĩa lâm sàng trên trẻ bú mẹ."
+  },
+  {
+    "id": "fda.hf.eplerenone_contra_crcl30",
+    "sourceId": "fda_eplerenone",
+    "pdfPage": 5,
+    "locator": "Section 4 / Contraindications for All Patients / p. 5",
+    "quote": "serum potassium >5.5 mEq/L at initiation, creatinine clearance ≤30 mL/min, or concomitant administration of strong CYP3A inhibitors",
+    "quoteVi": "Nhãn FDA Inspra (Eplerenone) §4: Chống chỉ định tuyệt đối cho mọi bệnh nhân khi Kali máu > 5.5 mEq/L lúc khởi trị, độ thanh thải creatinin ≤ 30 mL/phút, hoặc dùng cùng chất ức chế mạnh CYP3A4."
+  },
+  {
+    "id": "fda.hf.eplerenone_preg_lact",
+    "sourceId": "fda_eplerenone",
+    "pdfPage": 9,
+    "locator": "Section 8.2 / Lactation / p. 9",
+    "quote": "8.2 Lactation Risk Summary There are no human data available on whether eplerenone is present in human milk, or has effects on breastfed infants or on milk production. Eplerenone was present in the milk of lactating rats.",
+    "quoteVi": "Nhãn FDA Inspra §8.2: Chưa có dữ liệu về bài tiết eplerenone vào sữa mẹ ở người (có qua sữa chuột), cần thận trọng/tránh dùng khi cho con bú."
+  },
+  {
+    "id": "fda.hf.ivabradine_indication_dose",
+    "sourceId": "fda_ivabradine",
+    "pdfPage": 3,
+    "locator": "Section 1.1 & 2.1 / Adult Heart Failure Indication and Dosing / p. 3",
+    "quote": "Corlanor is indicated to reduce the risk of hospitalization for worsening heart failure in adult patients with stable, symptomatic chronic heart failure with left ventricular ejection fraction ≤ 35%, who are in sinus rhythm with resting heart rate ≥ 70 beats per minute and either are on maximally tolerated doses of beta-blockers or have a contraindication to beta-blocker use. 1.2 Heart Failure in Pediatric Patients Corlanor is indicated for the treatment of stable symptomatic heart failure due to dilated cardiomyopathy (DCM) in pediatric patients aged 6 months and older, who are in sinus rhythm with an elevated heart rate. 2. DOSAGE AND ADMINIST R ATION 2.1 Adults The recommended starting dose of Corlanor is 5 mg twice daily with food.",
+    "quoteVi": "Nhãn FDA Corlanor §1.1 & §2.1: Chỉ định cho suy tim mạn ổn định LVEF ≤ 35%, nhịp xoang HR ≥ 70 bpm đã dùng chẹn beta liều tối đa dung nạp hoặc chống chỉ định chẹn beta; khởi đầu 5 mg x 2 lần/ngày cùng bữa ăn (tối đa 7.5 mg x 2 lần/ngày)."
+  },
+  {
+    "id": "fda.hf.ivabradine_low_dose_2_5mg",
+    "sourceId": "fda_ivabradine",
+    "pdfPage": 3,
+    "locator": "Section 2.1 / Starting dose 2.5 mg twice daily in conduction defects / elderly / p. 3",
+    "quote": "In patients with a history of conduction defects or other patients in whom bradycardia could lead to hemodynamic compromise, initiate therapy at 2.5 mg twice daily",
+    "quoteVi": "Nhãn FDA Corlanor §2.1: Khởi đầu Ivabradine liều thấp 2.5 mg x 2 lần/ngày cùng bữa ăn ở bệnh nhân có rối loạn dẫn truyền hoặc nguy cơ tụt huyết động do nhịp chậm (bao gồm bệnh nhân cao tuổi ≥ 75 tuổi theo SmPC/ESC)."
+  },
+  {
+    "id": "fda.hf.ivabradine_contra",
+    "sourceId": "fda_ivabradine",
+    "pdfPage": 5,
+    "locator": "Section 4 Contraindications / p. 5",
+    "quote": "4. CONTRAINDICATIONS Corlanor is contraindicated in patients with: • Acute decompensated heart failure • Clinically significant hypotension • Sick sinus syndrome, sinoatrial block or 3 degree AV block, unless a functioning demand pacemaker is present • Clinically significant bradycardia [see Warnings and Precautions ( 5.3 )] • Severe hepatic impairment [see Use in Specific Populations ( 8.6 )] • Pacemaker dependence (heart rate maintained exclusively by the pacemaker) [see Drug Interactions ( 7.3 )] • Concomitant use of strong cytochrome P450 3A4 (CYP3A4) inhibitors",
+    "quoteVi": "Chống chỉ định Ivabradine (FDA Corlanor §4): suy tim mất bù cấp, hạ huyết áp có ý nghĩa lâm sàng, hội chứng suy nút xoang / block xoang nhĩ / block AV độ 3 chưa có máy tạo nhịp, nhịp chậm nặng, suy gan nặng, phụ thuộc máy tạo nhịp và dùng đồng thời chất ức chế mạnh CYP3A4."
+  },
+  {
+    "id": "fda.hf.ivabradine_preg_lact",
+    "sourceId": "fda_ivabradine",
+    "pdfPage": 8,
+    "locator": "Section 8.1 & 8.2 / Pregnancy and Lactation / p. 8",
+    "quote": "8.1 Pregnancy Risk Summary Based on findings in animals, Corlanor may cause fetal harm when administered to a pregnant woman.",
+    "quoteVi": "Nhãn FDA Corlanor §8.1: Ivabradine gây độc tính phôi thai và quái thai tim mạch trên động vật, chống chỉ định sử dụng trong thai kỳ."
+  },
+  {
+    "id": "fda.hf.ivabradine_lactation",
+    "sourceId": "fda_ivabradine",
+    "pdfPage": 9,
+    "locator": "Section 8.2 / Lactation / p. 9",
+    "quote": "8.2 Lactation Risk Summary There is no information regarding the presence of ivabradine in human milk, the effects of ivabradine on the breastfed infant, or the effects of the drug on milk production. Animal studies have shown, however, that ivabradine is present in rat milk [ s ee Data ] . Because of the potential risk to breastfed infants from exposure to Corlanor, breastfeeding is not recommended.",
+    "quoteVi": "Nhãn FDA Corlanor §8.2: Không khuyến cáo cho con bú trong thời gian điều trị bằng Ivabradine."
+  },
+  {
+    "id": "fda.hf.vericiguat_boxed_preg",
+    "sourceId": "fda_vericiguat",
+    "pdfPage": 3,
+    "locator": "Boxed Warning / Embryo-Fetal Toxicity / p. 3",
+    "quote": "WARNING: EMBRYO-FETAL TOXICITY Females of reproductive potential: Exclude pregnancy before the start of treatment. To prevent pregnancy, females of reproductive potential must use effective forms of contraception during treatment and for one month after stopping treatment. Do not administer VERQUVO to a pregnant female because it may cause fetal harm",
+    "quoteVi": "Cảnh báo đóng khung FDA Verquvo: Chống chỉ định ở phụ nữ mang thai; phụ nữ trong độ tuổi sinh sản bắt buộc thử thai âm tính trước khởi trị và dùng biện pháp tránh thai hiệu quả trong suốt thời gian điều trị và thêm 1 tháng sau khi ngưng thuốc."
+  },
+  {
+    "id": "fda.hf.vericiguat_pde5_contra",
+    "sourceId": "fda_vericiguat",
+    "pdfPage": 5,
+    "locator": "Section 7.1 & 7.2 / Concomitant sGC Stimulators and PDE-5 Inhibitors / p. 5",
+    "quote": "soluble guanylate cyclase (sGC) stimulators [see Contraindications (4) ] . 7.2 PDE-5 Inhibitors Concomitant use of VERQUVO with PDE-5 inhibitors is not recommended because of the potential for hypotension",
+    "quoteVi": "Nhãn FDA Verquvo §4 & §7.2: Chống chỉ định dùng đồng thời với các thuốc kích thích sGC khác (như riociguat); không khuyến cáo phối hợp với thuốc ức chế PDE-5 (sildenafil, tadalafil) do nguy cơ tụt huyết áp nặng."
+  },
+  {
+    "id": "fda.hf.vericiguat_lactation",
+    "sourceId": "fda_vericiguat",
+    "pdfPage": 6,
+    "locator": "Section 8.2 / Lactation / p. 6",
+    "quote": "8.2 Lactation Risk Summary There are no data on the presence of vericiguat in human milk, the effects on the breastfed infant, or the effects on milk production. Vericiguat is present in the milk of lactating rats and it is likely that vericiguat or its metabolites are present in human milk (see Data ). Because of the potential for serious adverse reactions in breastfed infants from VERQUVO, advise women not to breastfeed during treatment with VERQUVO.",
+    "quoteVi": "Nhãn FDA Verquvo §8.2: Không khuyến cáo cho con bú trong thời gian điều trị bằng Vericiguat."
+  },
+  {
+    "id": "fda.hf.vericiguat_renal_hepatic",
+    "sourceId": "fda_vericiguat",
+    "pdfPage": 7,
+    "locator": "Section 8.6 & 8.7 / Renal and Hepatic Impairment / p. 7",
+    "quote": "not been studied in patients with eGFR <15 mL/min/1.73m at treatment initiation or on dialysis [see Clinical Pharmacology (12.3) and Clinical Studies (14) ] . 8.7 Hepatic Impairment No dosage adjustment of VERQUVO is recommended in patients with mild or moderate hepatic impairment (e.g., Child-Pugh A or B). VERQUVO has not been studied in patients with severe hepatic impairment (e.g., Child-Pugh C)",
+    "quoteVi": "Nhãn FDA Verquvo §8.6 & §8.7: Vericiguat chưa được nghiên cứu khi khởi trị ở eGFR < 15 mL/min/1.73m², bệnh nhân lọc máu, hoặc suy gan nặng (Child-Pugh C)."
+  },
+  {
+    "id": "fda.hf.digoxin_contra_vf",
+    "sourceId": "fda_digoxin",
+    "pdfPage": 7,
+    "locator": "Section 4 / Contraindications / p. 7",
+    "quote": "4 CONTRAINDICATIONS LANOXIN is contraindicated in patients with: Ventricular fibrillation [see Warnings and Precautions ( 5.1 )] Known hypersensitivity to digoxin",
+    "quoteVi": "Nhãn FDA Lanoxin (Digoxin) §4: Chống chỉ định trong rung thất hoặc quá mẫn với digoxin/digitalis."
+  },
+  {
+    "id": "fda.hf.digoxin_wpw_af",
+    "sourceId": "fda_digoxin",
+    "pdfPage": 8,
+    "locator": "Section 5.1 & 5.2 / WPW Syndrome and Sinus Bradycardia / AV Block / p. 8",
+    "quote": "5.1 Ventricular Fibrillation in Patients With Accessory AV Pathway (Wolff- Parkinson-White Syndrome) Patients with Wolff-Parkinson-White syndrome who develop atrial fibrillation are at high risk of ventricular fibrillation. Treatment of these patients with digoxin leads to greater slowing of conduction in the atrioventricular node than in accessory pathways, and the risks of rapid ventricular response leading to ventricular fibrillation are thereby increased. 5.2 Sinus Bradycardia and Sino-atrial Block LANOXIN may cause severe sinus bradycardia or sinoatrial block particularly in patients with pre-existing sinus node disease and may cause advanced or complete heart block",
+    "quoteVi": "Nhãn FDA Lanoxin §5.1–5.2: Nguy cơ rung thất tử vong nếu dùng digoxin ở hội chứng WPW kèm rung nhĩ; digoxin có thể gây nhịp chậm xoang nặng, block xoang nhĩ hoặc block nhĩ-thất độ cao."
+  },
+  {
+    "id": "fda.hf.digoxin_serum_1_2",
+    "sourceId": "fda_digoxin",
+    "pdfPage": 15,
+    "locator": "Section 10 / Digoxin serum concentration > 1.2 ng/mL / p. 15",
+    "quote": "Digoxin toxicity is related to serum concentration. As digoxin serum levels increase above 1.2 ng/mL, there is a potential for increase in adverse reactions. Furthermore, lower potassium levels increases the risk for adverse reactions",
+    "quoteVi": "Nhãn FDA Lanoxin: Độc tính Digoxin tăng rõ rệt khi nồng độ digoxin huyết thanh vượt quá 1.2 ng/mL hoặc khi có hạ kali máu kèm theo."
+  },
+  {
+    "id": "fda.hf.digoxin_preg_lact",
+    "sourceId": "fda_digoxin",
+    "pdfPage": 13,
+    "locator": "Section 8.1 / Pregnancy / p. 13",
+    "quote": "8.1 Pregnancy Risk Summary Experience with digoxin in pregnant women over several decades, based on published retrospective clinical studies and case reports, has not led to the identification of a drug associated risk of major birth defects, miscarriage or adverse maternal and fetal outcomes.",
+    "quoteVi": "Nhãn FDA Lanoxin §8.1: Kinh nghiệm lâm sàng nhiều thập kỷ sử dụng digoxin ở phụ nữ mang thai không ghi nhận tăng nguy cơ dị tật bẩm sinh lớn do thuốc."
+  },
+  {
+    "id": "aha.hf.2022.vericiguat_victoria_sbp100",
+    "sourceId": "aha_acc_2022_hf",
+    "pdfPage": 55,
+    "locator": "Section 7.3.8, Vericiguat Supportive Text, p. e317",
+    "quote": "Patients with HFrEF in the VICTORIA trial had LVEF <45%, NYHA class II to IV, were on GDMT, with elevated natriuretic peptides (BNP $300 pg/mL or NT- proBNP $1000 pg/mL if in sinus rhythm; higher cut- offs with AF), and recent HF worsening (hospitalized within 6 months or recently received intravenous diuretic therapy without hospitalization). Patients on long-acting nitrates, with SBP <100 mm Hg, or eGFR <15 mL/min/1.73 m 2 were excluded",
+    "quoteVi": "Trong thử nghiệm VICTORIA (LVEF <45%, NYHA II–IV, suy tim nặng lên gần đây), các bệnh nhân đang dùng nitrat tác dụng kéo dài, có huyết áp tâm thu SBP < 100 mmHg hoặc eGFR < 15 mL/phút/1,73m² đều bị loại trừ.",
+    "cor": "IIb",
+    "loe": "B"
+  },
+  {
+    "id": "aha.hf.2022.digoxin_dosing_age70",
+    "sourceId": "aha_acc_2022_hf",
+    "pdfPage": 55,
+    "locator": "Section 7.3.6, Digoxin Supportive Text, p. e317",
+    "quote": "Therapy with digoxin is commonly initiated and maintained at a dose of 0.125 to 0.25 mg daily. Low doses (0.125 mg daily or every other day) should be used initially if the patient is >70 years of age, has impaired renal function, or has a low lean body mass.",
+    "quoteVi": "Digoxin thường được khởi trị và duy trì ở liều 0,125 đến 0,25 mg/ngày; nên dùng liều thấp (0,125 mg/ngày hoặc cách ngày / 62,5 mcg) ban đầu nếu bệnh nhân > 70 tuổi, suy giảm chức năng thận hoặc khối cơ gầy thấp.",
+    "cor": "IIb",
+    "loe": "B"
+  },
+  {
+    "id": "fda.hf.digoxin_oral_tablets_mcg",
+    "sourceId": "fda_digoxin",
+    "pdfPage": 7,
+    "locator": "Section 2.6 Table 6, Equivalent Doses of Oral LANOXIN, p. 7",
+    "quote": "Table 6. Comparison of the Systemic Availability and Equivalent Doses of Oral and Intravenous LANOXIN Absolute Bioavailability Equivalent Doses (mcg) LANOXIN Tablets 60-80% 62.5 125 250 500",
+    "quoteVi": "Bảng liều tương đương viên uống Digoxin (Lanoxin): hàm lượng 62,5 mcg (0,0625 mg), 125 mcg (0,125 mg), 250 mcg (0,25 mg)."
+  },
+  {
+    "id": "fda.hf.ivabradine_target_hr_60_age75",
+    "sourceId": "fda_ivabradine",
+    "pdfPage": 8,
+    "locator": "Section 5.3 & 8.5, Bradycardia/Pacemaker Rate 60 bpm & Geriatric Use ≥75 years, p. 8 & 10",
+    "quote": "targeting a heart rate of 50 to 60 beats per minute in adults [see Dos ag e and Administration ( 2.1 )] . Patients with demand pacemakers set to a rate ≥ 60 beats per minute cannot achieve a target heart rate < 60 beats per minute, and these patients were excluded from clinical trials [see Clinical Studies ( 14.1 )] . The use of Corlanor is not recommended in patients with demand pacemakers set to rates ≥ 60 beats per minute.",
+    "quoteVi": "Liều Ivabradine được chỉnh nhằm đạt nhịp tim lúc nghỉ 50–60 chu kỳ/phút; không khuyến cáo dùng khi máy tạo nhịp đặt tần số ≥ 60 chu kỳ/phút."
+  },
+  {
+    "id": "fda.hf.ivabradine_elderly_75",
+    "sourceId": "fda_ivabradine",
+    "pdfPage": 10,
+    "locator": "Section 8.5 Geriatric Use, p. 10",
+    "quote": "Corlanor has only been studied in a limited number of patients ≥ 75 years of age.",
+    "quoteVi": "Ivabradine mới chỉ được nghiên cứu trên số lượng hạn chế bệnh nhân ≥ 75 tuổi (cần khởi đầu liều thấp 2,5 mg x 2 lần/ngày)."
+  },
+  {
+    "id": "esc.hf.2026.hfref_redefined_lt50",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 16,
+    "locator": "Section 3.3.1 Classification based on LVEF / p. 16",
+    "quote": "The Task Force for the 2026 ESC Guidelines for the management of heart failure has eliminated the phenotype of HFmrEF and reclassified HF based on a pathophysiological classification of HF, including two dis- tinct phenotypes: (i) HFrEF: characterized by LVEF <50% and symptoms and/or signs of HF. (ii) HFpEF: characterized by LVEF ≥50% and symptoms and/or signs of HF",
+    "quoteVi": "ESC 2026 xóa bỏ phân nhóm HFmrEF và phân loại lại suy tim thành hai kiểu hình: HFrEF (LVEF < 50% kèm triệu chứng/dấu hiệu suy tim) và HFpEF (LVEF ≥ 50%).",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.sglt2i_doses_table11",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "locator": "Table 11 Evidence-based doses of FMT (SGLT2-Is) / p. 37",
+    "cor": "I",
+    "loe": "A",
+    "quote": "Dapagliflozin 10 mg o.d. 10 mg o.d. Empagliflozin 10 mg o.d. 10 mg o.d.",
+    "quoteVi": "Liều chuẩn chứng cứ của thuốc ức chế SGLT2 trong suy tim: Dapagliflozin 10 mg x 1 lần/ngày; Empagliflozin 10 mg x 1 lần/ngày.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.dapagliflozin_egfr25",
+    "sourceId": "fda_dapagliflozin",
+    "pdfPage": 5,
+    "locator": "Section 2.3 Renal Impairment / p. 5",
+    "quote": "Initiation with FARXIGA is not recommended in patients with an eGFR less than 25 mL/min/1.73 m . 2 If the eGFR falls below 25 mL/min/1.73 m while receiving treatment with FARXIGA, patients may continue FARXIGA 10 mg orally once daily to reduce the risk of eGFR decline, ESKD, CV death and hHF.",
+    "quoteVi": "Nhãn FDA Farxiga: Không khuyến cáo khởi trị mới Dapagliflozin khi eGFR < 25 mL/phút/1,73 m², nhưng nếu đang điều trị mà eGFR giảm dưới 25 mL/phút/1,73 m² thì tiếp tục duy trì 10 mg/ngày tới khi lọc máu.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.dapagliflozin_withhold_3days",
+    "sourceId": "fda_dapagliflozin",
+    "pdfPage": 5,
+    "locator": "Section 2.4 Temporary Interruption for Surgery / p. 5",
+    "quote": "Withhold FARXIGA for at least 3 days, if possible, prior to surgery or procedures associated with prolonged fasting.",
+    "quoteVi": "Tạm ngưng Dapagliflozin tối thiểu 3 ngày trước phẫu thuật hoặc thủ thuật cần nhịn ăn kéo dài để phòng nhiễm toan ceton đẳng đường huyết.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.dapagliflozin_lactation",
+    "sourceId": "fda_dapagliflozin",
+    "pdfPage": 15,
+    "locator": "Section 8.2 Lactation / p. 15",
+    "quote": "Because of the potential for serious adverse reactions in breastfed infants, advise women that use of FARXIGA is not recommended while breastfeeding.",
+    "quoteVi": "Không khuyến cáo sử dụng Dapagliflozin trong thời kỳ cho con bú do nguy cơ phản ứng có hại nghiêm trọng trên thận đang trưởng thành của trẻ.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.metformin_egfr30_hf",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 66,
+    "locator": "Section 10.2 Diabetes / p. 66",
+    "quote": "Metformin is not recommended in patients with an eGFR <30 mL/min/1.73 m 2 or hepatic impairment be- cause of the risk of lactic acidosis.",
+    "quoteVi": "Không khuyến cáo dùng Metformin ở bệnh nhân suy tim có eGFR < 30 mL/phút/1,73 m² hoặc suy gan do nguy cơ nhiễm toan lactic.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.saxagliptin_tzd_contra_hf",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 66,
+    "locator": "Section 10.2 Diabetes / p. 66",
+    "cor": "III",
+    "quote": "The dipeptidyl peptidase-4 inhibitor saxagliptin and thiazolidi- nediones (glitazones) have been associated with an approximate- ly 30% increased risk of HFH and, thus, are contraindicated in patients with HF.",
+    "quoteVi": "Saxagliptin và nhóm thiazolidinedione (glitazones) làm tăng ~30% nguy cơ nhập viện suy tim nên chống chỉ định ở bệnh nhân suy tim.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.rasi_arni_aki_egfr15_k",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 35,
+    "locator": "Section 6.1.6 Uptitrating FMT / p. 35",
+    "quote": "However, tem- porary discontinuation of MRAs/ARNIs/ACE-Is/ARBs and SGLT2-Is may be needed in cases with acute kidney injury and eGFR <15 mL/min/1.73 m 2 . Severe hyperkalaemia (potassium >5.5 or >6 mmol/L) should lead to temporary down-titration or discontinuation of MRAs and/or ARNIs/ACE-Is/ARBs",
+    "quoteVi": "Cần tạm ngưng MRA, ARNI/ACEi/ARB và SGLT2i khi có tổn thương thận cấp (AKI) hoặc eGFR < 15 mL/phút/1,73 m²; tăng kali máu nặng (K+ > 5.5 hoặc > 6.0 mmol/L) cần giảm liều hoặc tạm ngưng MRA và/hoặc ARNI/ACEi/ARB.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.rasi_table_s4_k55",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 12,
+    "locator": "Table S4 Practical guidance for ACE-I/ARB / p. 12",
+    "quote": "If potassium rises to >5.5 mmol/L or creatinine increases by >100% or to eGFR <20 mL/min/1.73 m2, the ACE-I (or ARB) should be stopped and specialist advice sought.",
+    "quoteVi": "Nếu Kali máu tăng > 5.5 mmol/L hoặc creatinin tăng > 100% / eGFR < 20 mL/phút/1,73 m², cần tạm ngưng ACEi/ARB và hội chẩn chuyên khoa.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.arni_table_s5_k55",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 13,
+    "locator": "Table S5 Practical guidance for ARNI / p. 13",
+    "quote": "A decrease in eGFR of <30% is acceptable. • An increase in potassium up to ≤5.5 mmol/L is acceptable.",
+    "quoteVi": "Khi đang duy trì ARNI, mức tăng kali máu đến ≤ 5.5 mmol/L có thể chấp nhận được kèm theo dõi sát; nếu > 5.5 mmol/L cần tạm ngưng/xử trí.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.arni_table_s5_doses",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 12,
+    "locator": "Table S5 ARNI Doses / p. 12",
+    "quote": "ACE-I/ARB naïve patients: Starting dose 24/26 or 49/51 mg b.i.d., depending on clinical assessment. Target dose 97/103 mg b.i.d.",
+    "quoteVi": "Bệnh nhân chưa dùng ACEi/ARB: Khởi trị Sacubitril/valsartan 24/26 mg hoặc 49/51 mg x 2 lần/ngày tùy đánh giá lâm sàng; liều đích 97/103 mg x 2 lần/ngày.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.valsartan_doses_table11",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 36,
+    "locator": "Table 11 Evidence-based doses of ARBs / p. 36",
+    "cor": "I",
+    "loe": "A",
+    "quote": "Valsartan 40 mg b.i.d. 160 mg b.i.d.",
+    "quoteVi": "Liều chuẩn của Valsartan trong suy tim HFrEF: khởi đầu 40 mg x 2 lần/ngày, liều đích 160 mg x 2 lần/ngày.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.sacubitril_hepatic",
+    "sourceId": "fda_sacubitril_valsartan",
+    "pdfPage": 15,
+    "locator": "Section 8.7 Hepatic Impairment / p. 15",
+    "quote": "Half of the starting dose is recommended in adult and pediatric patients with heart failure and with moderate hepatic impairment (Child-Pugh B classification). The use of ENTRESTO in patients with severe hepatic impairment (Child-Pugh C classification) is not recommended, as no studies have been conducted in these patients",
+    "quoteVi": "Suy gan vừa (Child-Pugh B): giảm nửa liều khởi đầu Sacubitril/valsartan (24/26 mg x 2 lần/ngày). Suy gan nặng (Child-Pugh C): không khuyến cáo sử dụng.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.sacubitril_contra_acei_aliskiren",
+    "sourceId": "fda_sacubitril_valsartan",
+    "pdfPage": 8,
+    "locator": "Section 4 Contraindications / p. 8",
+    "cor": "III",
+    "quote": "ENTRESTO is contraindicated: in patients with hypersensitivity to any component in patients with a history of angioedema related to previous ACE inhibitor or ARB therapy [see Warnings and Precautions (5.2)] with concomitant use of ACE inhibitors. Do not administer within 36 hours of switching from or to an ACE inhibitor [see Drug Interactions (7.1)] with concomitant use of aliskiren in patients with diabetes",
+    "quoteVi": "Chống chỉ định tuyệt đối Sacubitril/valsartan khi quá mẫn với bất kỳ thành phần nào, tiền sử phù mạch với ACEi/ARB, dùng đồng thời ACEi (bắt buộc nghỉ 36 giờ), hoặc dùng kèm aliskiren ở bệnh nhân đái tháo đường.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "acc.hfpef.2026.table4_incretin_doses",
+    "sourceId": "acc_2026_ecdp_hfpef",
+    "pdfPage": 14,
+    "locator": "Table 4 Incretin-based therapies doses / p. 14",
+    "quote": "Semaglutide 0.25 mg weekly 2.4 mg weekly Tirzepatide 2.5 mg weekly 15 mg weekly",
+    "quoteVi": "Liều liệu pháp incretin trong HFpEF béo phì: Semaglutide khởi đầu 0.25 mg/tuần, đích 2.4 mg/tuần; Tirzepatide khởi đầu 2.5 mg/tuần, đích 15 mg/tuần.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "acc.hfpef.2026.table5_contra_mtc_arb",
+    "sourceId": "acc_2026_ecdp_hfpef",
+    "pdfPage": 15,
+    "locator": "Table 5 Contraindications for HFpEF therapies / p. 15",
+    "quote": "Personal or family history of thyroid C-cell tumors (including medullary thyroid carcinoma) or in individuals with multiple endocrine neoplasia syndrome type 2 n Pregnancy n Lactation n Known hypersensitivity n Severe gastrointestinal adverse reactions with possible subsequent volume depletion n Severe gastroparesis n Acute gallbladder disease n Acute pancreatitis n Hypoglycemia with concomitant use of insulin or sulfonylurea n Pulmonary aspiration during general anesthesia or deep sedation n Hair loss ARNI n Coadministration within 36 h of ACEI use n History of any angioedema n Pregnancy n Lactation n Severe (Child-Pugh C) hepatic impairment n Known hypersensitivity Reduce the starting dose to half the usually recommended starting dose if: n Not currently taking an ACEI or ARB or taking a low dose of an ACEI or ARB n eGFR <30 mL/min/1.73 m 2 n Moderate (Child-Pugh B) hepatic impairment n Renal artery stenosis n Hypotension ARB n Pregnancy/lactation n Avoid concomitant use with an ACEI, aliskiren, or ARNI",
+    "quoteVi": "ACC 2026 ECDP HFpEF Bảng 5: Chống chỉ định incretin khi có tiền sử cá nhân/gia đình ung thư biểu mô tuyến giáp thể tủy (MTC), MEN2, mang thai hoặc cho con bú; tránh phối hợp ARB đồng thời với ACEi, aliskiren hoặc ARNI.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.preg.2025.diuretics_preg",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 31,
+    "locator": "Section 5.2.3 Diuretics and SGLT2 inhibitors / p. 31",
+    "quote": "Diuretics may be used in pregnancy to treat systemic hypertension es- pecially in emergencies or HF-related volume overload conditions. Care must be taken to monitor for reduction in plasma volume or CO, and decrease in placental perfusion.",
+    "quoteVi": "Có thể dùng thuốc lợi tiểu trong thai kỳ khi suy tim có quá tải dịch sung huyết, nhưng cần theo dõi sát nguy cơ giảm thể tích tuần hoàn và giảm tưới máu nhau thai.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.preg.2025.sglt2i_stop_preg_lact",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 31,
+    "locator": "Section 5.2.3 Diuretics and SGLT2 inhibitors / p. 31",
+    "quote": "SGLT2 inhibitors should be stopped before pregnancy and during lactation.",
+    "quoteVi": "Phải ngừng thuốc ức chế SGLT2 trước/trong thai kỳ và trong suốt thời gian cho con bú.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.preg.2025.lactation_enalapril",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 32,
+    "locator": "Section 5.2.7 RAAS inhibitors / p. 32",
+    "quote": "Captopril, enalapril, and benaze- pril are safe during lactation, 146 whereas ARBs are not recom- mended.",
+    "quoteVi": "Captopril, enalapril và benazepril an toàn trong thời kỳ cho con bú, trong khi nhóm ARB không được khuyến cáo.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.preg.2025.lactation_metoprolol_bb",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 32,
+    "locator": "Section 5.2.9 Beta-adrenergic blocking agents / p. 32",
+    "quote": "Propranolol, metoprolol (combined with hydralazine), and labetalol had the lowest and sotalol the highest risk of neonatal bradycardia dur- ing lactation. 274 For the lipophilic beta-blockers, milk level was <1% of the maternal weight-adjusted dose, thus reducing the risks associated with neonatal exposure during lactation.",
+    "quoteVi": "Metoprolol, propranolol và labetalol có lượng bài tiết qua sữa mẹ rất thấp (< 1% liều hiệu chỉnh theo cân nặng mẹ) và nguy cơ nhịp chậm sơ sinh thấp nhất khi cho con bú.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.preg.2025.hf_preg_diuretics_bb_nitrates",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 75,
+    "locator": "Section 12.6 Heart failure in pregnancy / p. 75",
+    "quote": "Milder cases of acute HF can be treated with oral diuretics, b1-selective beta-blockers (bisoprolol, metoprolol succinate), hydrala- zine, and oral nitrates. Diuretics (loop diuretics and thiazides if re- quired) should be used with caution due to a potential reduction in uterine blood flow, but may be necessary in pulmonary congestion",
+    "quoteVi": "Suy tim trong thai kỳ có thể điều trị bằng lợi tiểu (thận trọng tưới máu tử cung-nhau thai), chẹn beta chọn lọc beta-1 (bisoprolol, metoprolol succinate), hydralazine và nitrat đường uống.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.preg.2025.hf_iron_pregnancy",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 47,
+    "locator": "Section 10 Heart failure & Iron deficiency in pregnancy / p. 47",
+    "quote": "Diuretics may be needed in women with HF, and iron deficiency should be treated.",
+    "quoteVi": "Ở phụ nữ mang thai có suy tim, có thể cần dùng lợi tiểu khi sung huyết và cần điều trị tình trạng thiếu sắt.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "ema.hf.bisoprolol_contra_hepatic",
+    "sourceId": "ema_bisoprolol",
+    "pdfPage": 3,
+    "locator": "Section 4.3/4.4 Hepatic & Renal Function / p. 3",
+    "quote": "severely impaired renal function  severely impaired hepatic function",
+    "quoteVi": "SmPC Cardicor (Bisoprolol): Cần đặc biệt thận trọng ở bệnh nhân suy thận nặng hoặc suy gan nặng.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.carvedilol_hepatic_contra",
+    "sourceId": "fda_carvedilol",
+    "pdfPage": 21,
+    "locator": "Section 12.4 Hepatic Impairment / p. 21",
+    "quote": "Compared with healthy subjects, patients with severe liver impairment (cirrhosis) exhibit a 4- to 7-fold increase in carvedilol levels. Carvedilol is contraindicated in patients with severe liver impairment.",
+    "quoteVi": "Bệnh nhân xơ gan / suy gan nặng có nồng độ carvedilol tăng gấp 4–7 lần; chống chỉ định tuyệt đối Carvedilol ở suy gan nặng.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.carvedilol_digoxin_ix",
+    "sourceId": "fda_carvedilol",
+    "pdfPage": 2,
+    "locator": "Highlights Drug Interactions / p. 2",
+    "quote": "Cyclosporine or digoxin levels may increase. ( 7.3 , 7.4 ) Both digitalis glycosides and β-blockers slow atrioventricular conduction and decrease heart rate. Concomitant use can increase the risk of bradycardia.",
+    "quoteVi": "Carvedilol làm tăng nồng độ digoxin qua ức chế P-gp và cộng hợp làm chậm dẫn truyền nhĩ-thất, tăng nguy cơ nhịp chậm.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "aha.hf.2022.bb_3_mortality_proven",
+    "sourceId": "aha_acc_2022_hf",
+    "pdfPage": 43,
+    "locator": "Section 7.3.2 Beta Blockers Rec 1 / p. 43",
+    "cor": "1",
+    "loe": "A",
+    "quote": "In patients with HFrEF, with current or previous symptoms, use of 1 of the 3 beta blockers proven to reduce mortality (e.g., bisoprolol, carvedilol, sustained-release metoprolol succinate) is recommended to reduce mortality and hospitalizations",
+    "quoteVi": "AHA/ACC/HFSA 2022 (COR 1, LOE A): Khuyến cáo sử dụng 1 trong 3 chẹn beta đã chứng minh giảm tử vong (bisoprolol, carvedilol, metoprolol succinate phóng thích kéo dài) ở HFrEF.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.nebivolol_seniors_mortality",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 34,
+    "locator": "Section 6.1.2 Beta-blockers / p. 34",
+    "quote": "Bisoprolol, sustained-release metoprolol (succinate), and carvedilol have been shown to re- duce the risk of death in patients with HFrEF, whereas nebivolol only reduced the combined endpoint of all-cause mortality and CV hospitalization.",
+    "quoteVi": "Bisoprolol, metoprolol succinate và carvedilol đã chứng minh giảm tử vong ở HFrEF, trong khi nebivolol chỉ giảm tiêu chí gộp tử vong mọi nguyên nhân và nhập viện tim mạch (SENIORS).",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.eplerenone_mod_cyp3a4_25mg",
+    "sourceId": "fda_eplerenone",
+    "pdfPage": 4,
+    "locator": "Section 2.4 Dose Modification for Moderate CYP3A Inhibitors / p. 4",
+    "quote": "In post-MI HFrEF patients receiving a moderate CYP3A inhibitor (e.g., erythromycin, saquinavir, verapamil, and fluconazole), do not exceed 25 mg once daily.",
+    "quoteVi": "Ở bệnh nhân HFrEF dùng kèm chất ức chế CYP3A4 mức độ vừa (erythromycin, verapamil, diltiazem, fluconazole), không vượt quá liều Eplerenone 25 mg x 1 lần/ngày.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.eplerenone_lactation",
+    "sourceId": "fda_eplerenone",
+    "pdfPage": 9,
+    "locator": "Section 8.2 Lactation / p. 9",
+    "quote": "There are no human data available on whether eplerenone is present in human milk, or has effects on breastfed infants or on milk production.",
+    "quoteVi": "Chưa có dữ liệu trên người về sự bài tiết của eplerenone qua sữa mẹ hoặc ảnh hưởng trên trẻ bú mẹ.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.eplerenone_hepatic",
+    "sourceId": "fda_eplerenone",
+    "pdfPage": 13,
+    "locator": "Section 12.3 Hepatic Impairment / p. 13",
+    "quote": "The pharmacokinetics of eplerenone 400 mg has been investigated in patients with moderate (Child-Pugh Class B) hepatic impairment and compared with normal subjects. Steady state C and AUC of eplerenone were increased by 3.6% and 42%, respectively.",
+    "quoteVi": "Ở suy gan vừa (Child-Pugh B), AUC eplerenone tăng 42%; chưa được nghiên cứu và cần tránh dùng ở suy gan nặng (Child-Pugh C).",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.spironolactone_gynaecomastia_switch",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 19,
+    "locator": "Table S8 Problem Solving (Gynaecomastia) / p. 19",
+    "quote": "Male patients treated with spironolactone may uncommonly develop breast discomfort or gynaecomastia (switching to eplerenone/finerenone should be considered).",
+    "quoteVi": "Bệnh nhân gặp đau tuyến vú hoặc vú to do spironolactone nên được cân nhắc chuyển sang eplerenone (hoặc finerenone nếu LVEF ≥ 40%).",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.ivabradine_dosing_table1",
+    "sourceId": "fda_ivabradine",
+    "pdfPage": 3,
+    "locator": "Section 2.1 Table 1 Dose Adjustment / p. 3",
+    "quote": "Assess patient after two weeks and adjust dose to achieve a resting heart rate between 50 and 60 beats per minute (bpm) as shown in Table 1. Thereafter, adjust dose as needed based on resting heart rate and tolerability. The maximum dose is 7.5 mg twice daily. In adult patients unable to swallow tablets, Corlanor oral solution can be used [see Clinical Pharmacology ( 12.3 )]. In patients with a history of conduction defects or other patients in whom bradycardia could lead to hemodynamic compromise, initiate therapy at 2.5 mg twice daily before increasing the dose based on heart rate [see Warnings and Precautions ( 5.3 )]. Table 1. Dose Adjustment for Adults Heart Rate Dose Adjustment > 60 bpm Increase dose by 2.5 mg (given twice daily) up to a maximum dose of 7.5 mg twice daily 50-60 bpm Maintain dose",
+    "quoteVi": "Chỉnh liều Ivabradine nhằm đạt nhịp tim lúc nghỉ 50–60 chu kỳ/phút: duy trì liều khi HR 50–60 bpm, chỉ tăng thêm 2.5 mg x 2 lần/ngày (tối đa 7.5 mg x 2) khi HR > 60 bpm.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.ivabradine_verapamil_diltiazem",
+    "sourceId": "fda_ivabradine",
+    "pdfPage": 6,
+    "locator": "Section 5.3 Bradycardia & Conduction Disturbances / p. 6",
+    "quote": "Concurrent use of verapamil or diltiazem will increase Corlanor exposure, may themselves contribute to heart rate lowering, and should be avoided",
+    "quoteVi": "Dùng đồng thời verapamil hoặc diltiazem làm tăng phơi nhiễm Ivabradine và cộng hợp làm chậm nhịp tim; bắt buộc tránh phối hợp.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.ivabradine_hepatic",
+    "sourceId": "fda_ivabradine",
+    "pdfPage": 10,
+    "locator": "Section 8.6 Hepatic Impairment / p. 10",
+    "quote": "No dose adjustment is required in patients with mild or moderate hepatic impairment. Corlanor is contraindicated in patients with severe hepatic impairment (Child-Pugh C)",
+    "quoteVi": "Không cần chỉnh liều Ivabradine ở suy gan nhẹ hoặc vừa (Child-Pugh A/B); chống chỉ định tuyệt đối ở suy gan nặng (Child-Pugh C).",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.vericiguat_dose_5mg_2026",
+    "sourceId": "fda_vericiguat",
+    "pdfPage": 3,
+    "locator": "Section 2.1 Recommended Dosage (01/2026 Update) / p. 3",
+    "quote": "The recommended starting dose of VERQUVO is 5 mg orally once daily with food. For patients at risk of symptomatic hypotension, the recommended starting dose is 2.5 mg orally once daily with food [see Clinical Trials Experience (6.1) ]. Double the dose approximately every 2 weeks to reach the target maintenance dose of 10 mg once daily, as tolerated by the patient.",
+    "quoteVi": "Nhãn FDA Verquvo cập nhật 01/2026 (VELOCITY): Liều khởi đầu khuyến cáo 5 mg uống 1 lần/ngày cùng thức ăn (2.5 mg/ngày nếu có nguy cơ hạ huyết áp có triệu chứng), tăng gấp đôi mỗi 2 tuần tới đích 10 mg/ngày.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.digoxin_renal_table3",
+    "sourceId": "fda_digoxin",
+    "pdfPage": 5,
+    "locator": "Section 2.3 Table 3 Maintenance Dose by Renal Function / p. 5",
+    "quote": "Table 3. Recommended Maintenance Dose (in micrograms given once daily) of LANOXIN Injection in Pediatric Patients Over 10 Years Old and Adults by Lean Body Weight and by Renal Function For adults , creatinine clearance was corrected to 70-kg body weight or 1.73 m body surface area. If only serum creatinine concentrations (Scr) are available, a corrected Ccr may be estimated in men as (140 – Age)/Scr. For women, this result should be multiplied by 0.85. For pediatric patients, the modified Schwartz equation may be used. The formula is based on height in cm and Scr in mg/dL where k is a constant. Ccr is corrected to 1.73 m body surface area. During the first year of life, the value of k is 0.33 for pre-term babies and 0.45 for term infants. The k is 0.55 for pediatric patients and adolescent girls and 0.7 for adolescent boys. GFR (mL/min/1.73 m ) = (k x Height)/Scr If no loading dose administered The doses listed assume average body composition. Corrected Creatinine Clearance Lean Body Weight Number of Days Before Steady State Achieved kg 40 50 60 70 80 90 100 10 mL/min 64 80 96 112 128 144 160 19 20 mL/min 72 90 108 126 144 162 180 16 30 mL/min 80 100 120 140 160 180 200 14 40 mL/min 88 110 132 154 176 198 220 13 50 mL/min 96 120 144 168 192 216 240 12 60 mL/min 104 130",
+    "quoteVi": "Bảng chỉnh liều duy trì Digoxin theo độ thanh thải creatinin hiệu chỉnh (các mốc phân tầng thận 30 mL/phút và 60 mL/phút).",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.low_hr_50_digoxin_review",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 15,
+    "locator": "Table S6 Low Heart Rate (<50 bpm) / p. 15",
+    "quote": "If <50 b.p.m. and worsening symptoms, lower dose of beta-blocker, or, if severe deterioration, stop beta-blocker (rarely necessary). • Review need for other heart rate-slowing drugs (e.g. digoxin, ivabradine, amiodarone, diltiazem, or verapamila).",
+    "quoteVi": "Khi nhịp tim < 50 chu kỳ/phút, cần rà soát tạm ngưng/giảm các thuốc làm chậm nhịp tim bao gồm digoxin, ivabradine, amiodarone, diltiazem hoặc verapamil.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.digoxin_hypokalemia_k4",
+    "sourceId": "fda_digoxin",
+    "pdfPage": 16,
+    "locator": "Section 10.2 Overdosage / Potassium Maintenance / p. 16",
+    "quote": "Correct hypokalemia by administering potassium so that serum potassium is maintained between 4 and 5.5 mmol/L.",
+    "quoteVi": "Hạ kali máu làm nhạy cảm cơ tim với độc tính digoxin; cần bồi phụ để duy trì kali máu ở mức bình thường cao (4.0–5.5 mmol/L).",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.hypokalaemia_3_5_diuretic",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 16,
+    "locator": "Table S7 Diuretics Cautions (K+ <=3.5 mmol/L) / p. 16",
+    "quote": "Significant hypokalaemia (K+ ≤3.5 mmol/L)—may be made worse by diuretic.",
+    "quoteVi": "Hạ kali máu có ý nghĩa lâm sàng được định nghĩa khi K+ ≤ 3.5 mmol/L, làm tăng nguy cơ loạn nhịp đặc biệt khi dùng lợi tiểu hoặc digoxin.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.digoxin_high_normal_k",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 18,
+    "locator": "Table S8 Potassium & Digoxin / p. 18",
+    "quote": "High-normal K+ levels may be desirable in patients with HF, especially if they are taking digoxin.",
+    "quoteVi": "Duy trì nồng độ Kali máu ở ngưỡng bình thường cao rất có lợi ở bệnh nhân suy tim, đặc biệt khi đang dùng digoxin.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.digoxin_lactation",
+    "sourceId": "fda_digoxin",
+    "pdfPage": 14,
+    "locator": "Section 8.2 Lactation / p. 14",
+    "quote": "The digoxin dose received through breastfeeding is up to 4% of the neonatal maintenance dosage, which is unlikely to be clinically relevant.",
+    "quoteVi": "Lượng digoxin trẻ nhận qua sữa mẹ chỉ tối đa khoảng 4% liều duy trì sơ sinh, không có ý nghĩa lâm sàng và tương thích cho con bú.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.digoxin_interactions_amiodarone_spiro",
+    "sourceId": "fda_digoxin",
+    "pdfPage": 11,
+    "locator": "Section 7.2 PK Drug Interactions / p. 11",
+    "quote": "Amiodarone 17% 40% Measure serum digoxin concentrations before initiating concomitant drugs. Reduce digoxin concentrations by decreasing the dose by approximately 15-30% or by modifying the dosing frequency and continue monitoring. Propafenone 28% 29% Quinine NA 34-38% Spironolactone NA 44% Verapamil NA 24%",
+    "quoteVi": "Amiodarone, propafenone, quinine, spironolactone, verapamil và các thuốc ức chế P-gp làm tăng đáng kể nồng độ digoxin huyết thanh; cần giảm liều digoxin và theo dõi nồng độ thuốc.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.digoxin_amyloid_avoid",
+    "sourceId": "fda_digoxin",
+    "pdfPage": 9,
+    "locator": "Section 5.7 Amyloid Heart Disease / p. 9",
+    "quote": "Patients with amyloid heart disease may be more susceptible to digoxin toxicity at therapeutic levels because of an increased binding of digoxin to extracellular amyloid fibrils. LANOXIN should generally be avoided in these patients",
+    "quoteVi": "Bệnh nhân bệnh cơ tim nhiễm bột (amyloidosis) rất dễ ngộ độc digoxin ngay ở nồng độ điều trị do digoxin gắn vào sợi amyloid ngoại bào; cần tránh sử dụng.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "aha.hf.2022.digoxin_serum_05_09",
+    "sourceId": "aha_acc_2022_hf",
+    "pdfPage": 52,
+    "locator": "Table 14 Other Drug Dosing (Digoxin) / p. 52",
+    "quote": "Individualized variable dose to achieve serum digoxin concentration 0.5 –<0.9 ng/mL",
+    "quoteVi": "Cá thể hóa liều Digoxin để đạt nồng độ digoxin huyết thanh mục tiêu 0.5 đến < 0.9 ng/mL.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.digit_hf_nyha2_ef30",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 34,
+    "locator": "Section 6.1.5.4 Cardiac glycosides (DIGIT-HF) / p. 34",
+    "quote": "The DIGIT-HF trial examined whether low-dose digitoxin added to contemporary FMT im- proves outcomes in patients with chronic symptomatic HFrEF (LVEF ≤40% and NYHA class III/IV or LVEF ≤30% and NYHA class II).",
+    "quoteVi": "Thử nghiệm DIGIT-HF chứng minh lợi ích glycosid trợ tim liều thấp trên nền FMT hiện đại ở HFrEF mạn có triệu chứng (LVEF ≤ 40% kèm NYHA III–IV hoặc LVEF ≤ 30% kèm NYHA II).",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.bumetanide_contra_anuria_hepatic",
+    "sourceId": "fda_bumetanide",
+    "pdfPage": 3,
+    "locator": "Contraindications / p. 3",
+    "quote": "Bumex is contraindicated in anuria. Although Bumex can be used to induce diuresis in renal insufficiency, any marked increase in blood urea nitrogen or creatinine, or the development of oliguria during therapy of patients with progressive renal disease, is an indication for discontinuation of treatment with Bumex. Bumex is also contraindicated in patients in hepatic coma or in states of severe electrolyte depletion",
+    "quoteVi": "Chống chỉ định lợi tiểu quai trong vô niệu hoàn toàn, hôn mê gan hoặc rối loạn điện giải nặng chưa bù.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.bumetanide_preg_lact",
+    "sourceId": "fda_bumetanide",
+    "pdfPage": 7,
+    "locator": "Pregnancy & Nursing Mothers / p. 7",
+    "quote": "Bumex should be given to a pregnant woman only if the potential benefit justifies the potential risk to the fetus. Nursing Mothers It is not known whether this drug is excreted in human milk. As a general rule, nursing should not be undertaken while the patient is on Bumex since it may be excreted in human milk.",
+    "quoteVi": "Chỉ dùng lợi tiểu quai trong thai kỳ khi lợi ích vượt trội nguy cơ; thận trọng/tránh khi cho con bú do thuốc có thể qua sữa mẹ và ảnh hưởng tiết sữa.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.bumetanide_equiv_40mg",
+    "sourceId": "fda_bumetanide",
+    "pdfPage": 2,
+    "locator": "Clinical Pharmacology / p. 2",
+    "quote": "1 mg Bumex has a diuretic potency equivalent to approximately 40 mg furosemide.",
+    "quoteVi": "1 mg Bumetanide có hiệu lực lợi tiểu tương đương khoảng 40 mg Furosemide.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "aha.hf.2022.loop_diuretic_chronic_doses",
+    "sourceId": "aha_acc_2022_hf",
+    "pdfPage": 40,
+    "locator": "Table 12 Common Oral Diuretics / p. 40",
+    "quote": "Loop diuretics Bumetanide 0.5 –1.0 mg once or twice 10 mg 4 –6h Furosemide 20 –40 mg once or twice 600 mg 6 –8h Torsemide 10 –20 mg once 200 mg",
+    "quoteVi": "Liều lợi tiểu quai uống trong suy tim mạn: Bumetanide 0.5–1.0 mg (tối đa 10 mg), Furosemide 20–40 mg (tối đa 600 mg), Torsemide 10–20 mg (tối đa 200 mg).",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.diuretic_hyponatraemia_gout_table_s7",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 17,
+    "locator": "Table S7 Hyponatraemia & Hyperuricaemia/Gout / p. 17",
+    "quote": "Hyponatraemia (<135 mmol/L): • Volume depleted: ⚬ Stop thiazide or switch to loop diuretic, if possible. ⚬ Reduce dose/stop loop diuretics if possible. • Volume overloaded: ⚬ Fluid restriction should be considered. ⚬ Consider increasing dose of loop diuretic or consider adding acetazolamide or eGFR-based hydrochlorothiazide. ⚬ Consider AVP antagonist (e.g. tolvaptan if available). ⚬ Intravenous inotropic support. ⚬ Consider ultrafiltration. Hyperuricaemia/gout: • Consider allopurinol prophylaxis, except in case of acute gout. • For symptomatic gout use colchicine for pain relief. • Avoid NSAIDs.",
+    "quoteVi": "Bảng S7: Khi hạ natri máu (< 135 mmol/L) cần ngừng thiazide / đánh giá thể tích dịch; khi tăng acid uric hoặc gút cấp dùng colchicine giảm đau và tuyệt đối tránh NSAID.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.acute_acetazolamide_rec",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 50,
+    "locator": "Recommendation Table 9 (Acetazolamide / HCTZ) / p. 50",
+    "cor": "IIa",
+    "loe": "B1",
+    "quote": "The addition of short-term intravenous acetazolamide or oral hydrochlorothiazide should be considered in patients with fluid overload previously treated with loop diuretics, to reduce congestion.",
+    "quoteVi": "Nên cân nhắc (Class IIa, Level B1) phối hợp ngắn hạn Acetazolamide tĩnh mạch hoặc Hydrochlorothiazide uống ở bệnh nhân suy tim cấp quá tải dịch đang điều trị lợi tiểu quai để tăng giải áp sung huyết.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.acute_acetazolamide_500mg",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 49,
+    "locator": "Figure 13 Diuretic therapy in DHF (Acetazolamide 500 mg IV) / p. 49",
+    "quote": "Acetazolamide (500 mg i.v. once daily) or hydrochlorothiazide",
+    "quoteVi": "Liều phối hợp lợi tiểu đa tầng trong suy tim mất bù cấp (ADVOR): Acetazolamide 500 mg tiêm tĩnh mạch x 1 lần/ngày.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.acute_acetazolamide_table_s13",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 25,
+    "locator": "Table S13 Diuretics in AHF (Acetazolamide) / p. 25",
+    "quote": "Avoid if hypokalaemia and hyponatraemia",
+    "quoteVi": "Tránh phối hợp lợi tiểu tầng xa / acetazolamide khi đang có hạ kali máu và hạ natri máu.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.acute_ntg_doses_table_s14",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 25,
+    "locator": "Table S14 Intravenous vasodilators in AHF (Nitroglycerine) / p. 25",
+    "quote": "Nitroglycerine NO donor Predominantly peripheral veins + large arteries Start with 10–20 μg/min, increase up to 200 μg/min",
+    "quoteVi": "Truyền tĩnh mạch Nitroglycerin trong suy tim cấp: khởi đầu 10–20 mcg/phút, tăng dần theo huyết áp tối đa tới 200 mcg/phút.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.nitrates_pde5i_avoid",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 69,
+    "locator": "Section 10.9 Erectile dysfunction (PDE-5i + Nitrates) / p. 69",
+    "quote": "phosphodiesterase-V inhibitors are generally safe and can be considered in patients who are compensated, 951 avoiding their concomitant use with nitrates.",
+    "quoteVi": "Tuyệt đối tránh dùng đồng thời thuốc ức chế PDE-5 với các thuốc nhóm nitrat do nguy cơ tụt huyết áp nặng đe dọa tính mạng.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.potassium_binders",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 33,
+    "locator": "Section 6.1.1 Potassium binders / p. 33",
+    "quote": "The gastrointestinal potassium binders patiromer and sodium zirconium cyclosilicate remove po- tassium by exchanging cations, leading to increased faecal excre- tion. Both agents have shown favourable results to treat and/or prevent hyperkalaemia in patients receiving ACE-Is/ARNIs/ ARBs and MRAs, therefore facilitating the continuation or upti- tration of ACE-Is/ARNIs/ARBs and MRAs.",
+    "quoteVi": "Thuốc gắn kali đường tiêu hóa patiromer và sodium zirconium cyclosilicate giúp kiểm soát/phòng ngừa tăng kali máu và duy trì chuẩn độ tối ưu ACEi/ARNI/ARB và MRA.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.patiromer_dosing",
+    "sourceId": "fda_patiromer",
+    "pdfPage": 1,
+    "locator": "Highlights Dosage and Administration / p. 1",
+    "quote": "recommended starting dose of Veltassa is 8.4 grams administered orally once daily",
+    "quoteVi": "Liều khởi đầu khuyến cáo của Patiromer (Veltassa): 8.4 g uống 1 lần/ngày (cách thuốc uống khác ít nhất 3 giờ).",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "fda.hf.szc_dosing",
+    "sourceId": "fda_szc",
+    "pdfPage": 1,
+    "locator": "Highlights Dosage and Administration / p. 1",
+    "quote": "For maintenance treatment, recommended dose is 10 g once daily.",
+    "quoteVi": "Liều duy trì khuyến cáo của Sodium zirconium cyclosilicate (Lokelma): 10 g uống 1 lần/ngày (chỉnh 5–15 g/ngày theo kali máu).",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.amyloid_ttr_rec",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 77,
+    "locator": "Recommendation Table 28 Cardiac amyloidosis / p. 77",
+    "cor": "I",
+    "loe": "A",
+    "quote": "Treatment with a TTR silencer (vutrisiran) or stabilizer (tafamidis or acoramidis) for patients with variant or wild-type transthyretin cardiac amyloidosis and NYHA classes I–III is recommended to reduce progression of symptoms and the risk of CV hospitalization and all-cause death.",
+    "quoteVi": "Khuyến cáo (Class I, Level A) điều trị thuốc ổn định TTR (tafamidis hoặc acoramidis) hoặc bất hoạt TTR (vutrisiran) cho bệnh cơ tim nhiễm bột ATTR (NYHA I–III) để giảm nhập viện tim mạch và tử vong.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.amyloid_af_anticoag",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 77,
+    "locator": "Section 12.2 Cardiac amyloidosis & AF / p. 77",
+    "quote": "In patients with CA and AF, anticoagulation is indicated re- gardless of CHA 2 DS 2 -VA score, due to high thromboembolic risk.",
+    "quoteVi": "Ở bệnh nhân bệnh cơ tim nhiễm bột kèm rung nhĩ, chỉ định kháng đông đường uống bất kể điểm CHA2DS2-VA do nguy cơ huyết khối tắc mạch rất cao.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "aha.hf.2022.tafamidis_doses_80_61",
+    "sourceId": "aha_acc_2022_hf",
+    "pdfPage": 70,
+    "locator": "Section 7.8.2 Cardiac Amyloidosis Supportive Text / p. 70",
+    "cor": "1",
+    "loe": "B-R",
+    "quote": "tafamidis meglumine is available in 20-mg capsules; and the FDA-approved dose is 80 mg (4 capsules) once daily. Tafamidis is also available in 61-mg capsules; the FDA-approved dose for this new formulation is 61 mg once daily.",
+    "quoteVi": "Liều chuẩn Tafamidis được FDA phê duyệt trong ATTR-CM: Tafamidis meglumine 80 mg (4 viên 20 mg) uống 1 lần/ngày hoặc Tafamidis acid tự do 61 mg uống 1 lần/ngày.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.advanced_hf_i_need_help",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 53,
+    "locator": "Recommendation Table 11 Advanced HF Referral / p. 53",
+    "cor": "I",
+    "quote": "Early consultation with an advanced HF centre c is recommended in patients with advanced HF or at risk of advanced HF, who are motivated and do not have absolute contraindications for heart transplantation or durable MCS d , in order to evaluate candidacy.",
+    "quoteVi": "Khuyến cáo hội chẩn sớm với Trung tâm Suy tim chuyên sâu ở bệnh nhân suy tim giai đoạn tiến triển (Stage D / I-NEED-HELP) để đánh giá ghép tim hoặc hỗ trợ tuần hoàn cơ học (LVAD).",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.advanced_hf_table14_ef30",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 52,
+    "locator": "Table 14 Criteria for definition of advanced HF / p. 52",
+    "quote": "Severe cardiac dysfunction defined by at least one of the following: • LVEF ≤30%",
+    "quoteVi": "Tiêu chuẩn rối loạn chức năng tim nặng trong định nghĩa suy tim tiến triển (Advanced HF): LVEF ≤ 30%.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "aha.hf.2022.harm_drugs_table13",
+    "sourceId": "aha_acc_2022_hf",
+    "pdfPage": 51,
+    "locator": "Table 13 Selected Prescription Medications That May Cause or Exacerbate HF / p. 51",
+    "cor": "III",
+    "quote": "COX, nonselective inhibitors (NSAIDs) X Major B Prostaglandin inhibition leading to sodium and water retention, increased systemic vascular resistance, and blunted response to diuretics Immediate COX, selective inhibitors (COX-2 inhibitors) X Major B Thiazolidinediones X Major A Possible calcium channel blockade Intermediate Saxagliptin X Major A Unknown Intermediate to delayed Alogliptin X Major A Flecainide X Major A Negative inotrope, proarrhythmic effects Immediate to intermediate Disopyramide X Major B Sotalol X Major A Proarrhythmic properties, beta blockade Immediate to intermediate Dronedarone X Major A Negative inotrope Alpha-1 blockers Doxazosin X Moderate B Beta-1-receptor stimulation with increases in renin and aldosterone Intermediate to delayed Diltiazem X Major B Negative inotrope Immediate to intermediateVerapamil X Major B",
+    "quoteVi": "Bảng 13 AHA/ACC/HFSA 2022 các thuốc gây khởi phát hoặc làm nặng suy tim cần ngừng/tránh: NSAIDs, COX-2i, Thiazolidinediones, Saxagliptin, Alogliptin, Flecainide, Disopyramide, Sotalol, Dronedarone, Doxazosin, Diltiazem, Verapamil.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.harm_alpha_moxonidine",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 64,
+    "locator": "Section 9.4 Hypertension in HFrEF / p. 64",
+    "cor": "III",
+    "quote": "Alpha-blockers may be continued for the treatment of prostatic hyperplasia in the ab- sence of hypotension but are not recommended for the treat- ment of hypertension in HFrEF. Non-dihydropyridine calcium channel blockers, e.g. verapamil and diltiazem, and central sym- pathetic agonists, e.g. moxonidine, are contraindicated due to poor outcomes in patients with HFrEF.",
+    "quoteVi": "Không khuyến cáo chẹn alpha-1 để điều trị tăng huyết áp ở HFrEF; chống chỉ định chẹn kênh canxi non-DHP (verapamil, diltiazem) và moxonidine ở HFrEF.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.harm_class1c_dronedarone",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 59,
+    "locator": "Section 9.1.1.5 Rhythm control in HFrEF / p. 59",
+    "cor": "III",
+    "quote": "Other antiarrhythmic drugs, i.e. propafenone, flecainide, and dronedarone, are associated with poorer outcomes in HFrEF and should be avoided.",
+    "quoteVi": "Tránh sử dụng propafenone, flecainide và dronedarone ở bệnh nhân HFrEF do làm xấu kết cục lâm sàng.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "acc.hfpef.2026.ntprobnp_sr125_af365",
+    "sourceId": "acc_2026_ecdp_hfpef",
+    "pdfPage": 7,
+    "locator": "Figure 2 Biomarker thresholds in HFpEF / p. 7",
+    "quote": "NT-proBNP 365-660 pg/mL OR BNP 105-240 pg/mL NT-proBNP >660 pg/mL OR BNP >240 pg/mL Biomarker (Atrial fibrillation) • Diastolic stress test (exercise echocardiography) • Invasive hemodynamic measurements Functional testing in case of uncertaintyF1 NT-proBNP 125-220 pg/mL",
+    "quoteVi": "Ngưỡng peptide bài niệu natri hỗ trợ chẩn đoán HFpEF: NT-proBNP ≥ 125 pg/mL ở nhịp xoang và ≥ 365 pg/mL ở rung nhĩ (lưu ý béo phì có thể làm giảm giả tạo nồng độ NT-proBNP).",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "aha.hf.2022.iron_cor2a",
+    "sourceId": "aha_acc_2022_hf",
+    "pdfPage": 89,
+    "locator": "Section 10.1 Management of Anemia or Iron Deficiency Rec 1 / p. 89",
+    "cor": "IIa",
+    "loe": "B-R",
+    "quote": "In patients with HFrEF and iron de ﬁciency with or without anemia, in travenous iron replacement is reasonable to improve functional status and QOL",
+    "quoteVi": "AHA/ACC/HFSA 2022 (COR 2a, LOE B-R): Bù sắt tĩnh mạch là hợp lý ở bệnh nhân HFrEF thiếu sắt (có hoặc không kèm thiếu máu) để cải thiện khả năng gắng sức và chất lượng cuộc sống.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.fair_hf2_fcm_500_2000",
+    "sourceId": "esc_2026_hf_supp",
+    "pdfPage": 33,
+    "locator": "Section 7.2 Iron deficiency (FAIR-HF2) / p. 33",
+    "quote": "Patients were randomized to administration of ferric carboxymaltose (n = 558) initially given at an i.v. dose of up to 2000 mg that was followed by 500 mg every 4 months",
+    "quoteVi": "Liều nạp ferric carboxymaltose đường tĩnh mạch tối đa tới 2000 mg (chia mỗi lần tối đa 1000 mg), theo dõi đánh giá bù duy trì 500 mg khi cần.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "aha.hf.2022.icd_nonischemic_cor1",
+    "sourceId": "aha_acc_2022_hf",
+    "pdfPage": 56,
+    "locator": "Section 7.4.1 ICDs and CRTs Rec 1 / p. 56",
+    "cor": "1",
+    "loe": "A",
+    "quote": "In patients with nonischemic DCM or ischemic heart disease at least 40 days post-MI with LVEF £35% and NYHA class II or III symptoms on chronic GDMT, who hav e reasonable expectation of meaningful survival for >1 year, ICD therapy is recommended for primary prevention of SCD to reduce total mortality",
+    "quoteVi": "AHA/ACC/HFSA 2022 (COR 1, LOE A): Chỉ định ICD phòng ngừa tiên phát đột tử cho cả bệnh cơ tim giãn không thiếu máu cục bộ và bệnh tim thiếu máu cục bộ (≥ 40 ngày sau NMCT) có LVEF ≤ 35%, NYHA II–III sau điều trị GDMT mạn tính.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "aha.hf.2022.icd_nyha1_post_mi_ef30",
+    "sourceId": "aha_acc_2022_hf",
+    "pdfPage": 56,
+    "locator": "Section 7.4.1 ICDs and CRTs Rec 3 / p. 56",
+    "cor": "1",
+    "loe": "B-R",
+    "quote": "In patients at least 40 days post-MI with LVEF £30% and NYHA class I symptoms while receiving GDMT, who have reasonable expectation of meaningful survival for >1 year, ICD therapy is recommended for primary prevention of SCD to reduce total mortality ( 6).",
+    "quoteVi": "AHA/ACC/HFSA 2022 (COR 1, LOE B-R): Chỉ định ICD phòng ngừa tiên phát ở bệnh nhân ≥ 40 ngày sau NMCT có LVEF ≤ 30% và NYHA I đang điều trị GDMT với kỳ vọng sống > 1 năm.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "aha.hf.2022.crt_120_149_lbbb_2a",
+    "sourceId": "aha_acc_2022_hf",
+    "pdfPage": 57,
+    "locator": "Section 7.4.1 ICDs and CRTs Rec 8 / p. 57",
+    "cor": "IIa",
+    "loe": "B-NR",
+    "quote": "8. For patients who have LVEF £35%, sinus rhythm, LBBB with a QRS duration of 120 to 149 ms, and NYHA class II, III, or ambulatory IV symptoms on GDMT, CRT can be useful",
+    "quoteVi": "AHA/ACC/HFSA 2022 (COR 2a, LOE B-NR): Cân nhắc CRT cho bệnh nhân LVEF ≤ 35%, nhịp xoang, LBBB với QRS 120–149 ms, NYHA II–IV ngoại trú trên nền GDMT.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "aha.hf.2022.crt_contra_lt120",
+    "sourceId": "aha_acc_2022_hf",
+    "pdfPage": 57,
+    "locator": "Section 7.4.1 ICDs and CRTs Rec 14 / p. 57",
+    "cor": "III",
+    "loe": "B-R",
+    "quote": "14. In patients with QRS duration <120 ms, CRT is not recommended",
+    "quoteVi": "AHA/ACC/HFSA 2022 (COR 3: No Benefit): Không khuyến cáo cấy CRT khi độ rộng phức bộ QRS < 120 ms.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "esc.hf.2026.af_avn_ablation_crt",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 60,
+    "locator": "Recommendation Table 15 (AV node ablation + CRT in AF) / p. 60",
+    "cor": "IIa",
+    "loe": "B1",
+    "quote": "Atrioventricular node ablation combined with CRT should be considered in patients with severely symptomatic permanent AF and poor rate control despite medical therapy and at least one HFH to reduce symptoms, physical limitations, recurrent HFH, and death.",
+    "quoteVi": "Nên cân nhắc (Class IIa, Level B1) cắt đốt nút nhĩ-thất kết hợp CRT ở bệnh nhân suy tim kèm rung nhĩ bền bỉ triệu chứng nặng không kiểm soát được tần số thất bằng nội khoa.",
+    "reviewStatus": "verified"
+  },
+  {
+    "id": "byt.2022.hfpef_sglt2i",
+    "sourceId": "byt_2022_hf",
+    "pdfPage": 20,
+    "locator": "Mục 4 Điều trị suy tim phân suất tống máu bảo tồn / tr. 20",
+    "quote": "Thuốc ức chế thụ thể SGLT2 nên được chỉ định ở bệnh nhân suy tim PSTM bảo tồn nhằm làm giảm nguy cơ nh ập viện và tử vong tim mạch. Cũng giống như ở nhóm suy tim có phân su ất tống máu giảm nhẹ, empagliflozin có nh ững dữ liệu cho thấy giảm nhập viện do suy tim và tử vong tim mạch, dapagliflozin cũng cho kết quả ban đầu tương tự.",
+    "quoteVi": "Bộ Y tế QĐ 1857/2022: Thuốc ức chế SGLT2 nên được chỉ định ở suy tim EF giảm nhẹ và EF bảo tồn nhằm giảm nhập viện suy tim và tử vong tim mạch.",
+    "reviewStatus": "verified"
+  }
+]

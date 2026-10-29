@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.dose.rosuva_antiviral_regorafenib_max",
+  "contentHash": "390eae6f995b5fd6107d8d033f5369ee58412cfa995bc14be8ddc169b6ac09fb",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.dose.rosuva_antiviral_regorafenib_max",
+      "contentHash": "e5acb119e52ba01d",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.dose.rosuva_antiviral_regorafenib_max."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+import type { ModuleInputGroup } from '../../engine/types';
+import { thFor } from '../../kb-types';
+
+export const copdAcuteInputGroups: ModuleInputGroup[] = [
+  {
+    id: 'copd_acute_inpatient',
+    titleVi: '3. Oxy máu mạn tính & Đợt cấp COPD (Nội viện / Cấp cứu)',
+    descriptionVi:
+      'Đánh giá LTOT, Home NIV và xử trí cấp cứu đợt cấp (Oxy 88–92%, SABA ± SAMA, Steroid, Anthonisen, NIV/ICU)',
+    fields: [
+      {
+        id: 'customInputs.restingSpo2',
+        labelVi: 'SpO₂ lúc nghỉ (%)',
+        type: 'number',
+        unit: '%',
+        min: 50,
+        max: 100,
+        step: 1,
+        helpVi: `Đợt cấp: đích oxy ${thFor('restingSpo2', 'copd.oxygen_target_spo2_min')}–${thFor('restingSpo2', 'copd.oxygen_target_spo2_max')}%. Ổn định: SpO₂ ≤ ${thFor('restingSpo2', 'copd.ltot_spo2_cutoff')}% chỉ định LTOT.`,
+      },
+      {
+        id: 'customInputs.onSupplementalOxygen',
+        labelVi: 'Hiện đang thở oxy bổ sung (gọng mũi / mặt nạ)',
+        type: 'boolean',
+        helpVi: `Nếu đang thở oxy mà SpO₂ > ${thFor('restingSpo2', 'copd.oxygen_target_spo2_max')}%, bắt buộc giảm ngay lưu lượng về đích ${thFor('restingSpo2', 'copd.oxygen_target_spo2_min')}–${thFor('restingSpo2', 'copd.oxygen_target_spo2_max')}%.`,
+      },
+      {
+        id: 'customInputs.pao2',
+        labelVi: 'PaO₂ khí máu động mạch (mmHg)',
+        type: 'number',
+        unit: 'mmHg',
+        min: 25,
+        max: 200,
+        step: 1,
+        helpVi: `PaO₂ ≤ ${thFor('pao2', 'copd.ltot_pao2_cutoff')} mmHg (hoặc ${thFor('pao2', 'copd.ltot_cor_pulmonale_pao2_min')}–${thFor('pao2', 'copd.ltot_pao2_cor_pulmonale_max')} mmHg kèm tăng áp phổi / tâm phế mạn / đa hồng cầu) chỉ định LTOT.`,
+      },
+      {
+        id: 'customInputs.corPulmonaleOrPolycythemia',
+        labelVi: `Tăng áp động mạch phổi, tâm phế mạn hoặc đa hồng cầu (Hct > ${thFor('hematocrit', 'copd.hematocrit_polycythemia_pct')}%)`,
+        type: 'boolean',
+        helpVi: `Mở rộng chỉ định LTOT khi PaO₂ ${thFor('pao2', 'copd.ltot_cor_pulmonale_pao2_min')}–${thFor('pao2', 'copd.ltot_pao2_cor_pulmonale_max')} mmHg hoặc SaO₂ ≤ ${thFor('restingSpo2', 'copd.ltot_cor_pulmonale_spo2_upper')}%.`,
+      },
+      {
+        id: 'customInputs.acuteExacerbation',
+        labelVi: 'Đang trong đợt cấp COPD (Acute Exacerbation)',
+        type: 'boolean',
+        helpVi: 'Kích hoạt phác đồ xử trí đợt cấp COPD.',
+      },
+      {
+        id: 'customInputs.cannotTakeOral',
+        labelVi: 'Không uống được / nôn nhiều / kém hấp thu đường tiêu hóa',
+        type: 'boolean',
+        helpVi: 'Chỉ định chuyển sang Corticosteroid tiêm tĩnh mạch (Methylprednisolone IV) thay vì viên uống.',
+      },
+      {
+        id: 'customInputs.respiratoryRate',
+        labelVi: 'Nhịp thở (lần/phút)',
+        type: 'number',
+        unit: 'lần/phút',
+        min: 6,
+        max: 60,
+        step: 1,
+        helpVi: `Nhịp thở > ${thFor('respiratoryRate', 'copd.exac_rr_non_rf_max')} lần/phút gợi ý suy hô hấp; > ${thFor('respiratoryRate', 'copd.exac_rr_life_threatening')} lần/phút là đe dọa tính mạng.`,
+      },
+      {
+        id: 'customInputs.increasedDyspnea',
+        labelVi: 'Khó thở tăng rõ rệt so với ngày thường (Anthonisen 1)',
+        type: 'boolean',
+        helpVi: 'Triệu chứng chính Anthonisen phối hợp cùng đờm mủ để xét kháng sinh.',
+      },
+      {
+        id: 'customInputs.purulentSputum',
+        labelVi: 'Đờm chuyển màu mủ / xanh vàng (Anthonisen 2 – then chốt)',
+        type: 'boolean',
+        helpVi: 'Triệu chứng bắt buộc để chỉ định kháng sinh ở Anthonisen Type I/II.',
+      },
+      {
+        id: 'customInputs.increasedSputumVolume',
+        labelVi: 'Tăng lượng đờm khạc ra (Anthonisen 3)',
+        type: 'boolean',
+        helpVi: 'Triệu chứng chính thứ 3 trong phân loại Anthonisen.',
+      },
+      {
+        id: 'customInputs.fever',
+        labelVi: 'Sốt hoặc dấu hiệu nhiễm khuẩn hô hấp dưới đi kèm',
+        type: 'boolean',
+        helpVi: 'Ủng hộ căn nguyên nhiễm khuẩn trong đợt cấp COPD.',
+      },
+      {
+        id: 'customInputs.abgPh',
+        labelVi: 'pH máu động mạch',
+        type: 'number',
+        min: 6.8,
+        max: 7.7,
+        step: 0.01,
+        helpVi: `pH ≤ ${thFor('abgPh', 'copd.niv_ph_cutoff')} kèm tăng CO₂: chỉ định NIV/BiPAP; pH ≤ ${thFor('abgPh', 'copd.severe_acidosis_ph')}: toan máu nặng cần ICU.`,
+      },
+      {
+        id: 'customInputs.abgPaco2',
+        labelVi: 'PaCO₂ khí máu động mạch (mmHg)',
+        type: 'number',
+        unit: 'mmHg',
+        min: 15,
+        max: 150,
+        step: 1,
+        helpVi: `PaCO₂ ≥ ${thFor('abgPaco2', 'copd.niv_paco2_cutoff')} mmHg kèm pH ≤ ${thFor('abgPh', 'copd.niv_ph_cutoff')}: chỉ định NIV cấp cứu; ≥ ${thFor('abgPaco2', 'copd.home_niv_paco2_cutoff')} mmHg mạn tính: xét Home NIV.`,
+      },
+      {
+        id: 'customInputs.accessoryMuscleUse',
+        labelVi: 'Co kéo cơ hô hấp phụ / thở bụng nghịch thường',
+        type: 'boolean',
+        helpVi: 'Dấu hiệu mệt cơ hô hấp chỉ định hỗ trợ thông khí NIV/BiPAP.',
+      },
+      {
+        id: 'customInputs.alteredMentalStatus',
+        labelVi: 'Rối loạn tri giác (lơ mơ, ngủ gà, lú lẫn, hôn mê)',
+        type: 'boolean',
+        helpVi: 'Chống chỉ định NIV, chỉ định chuyển ICU và đặt nội khí quản thở máy xâm nhập (IMV).',
+      },
+      {
+        id: 'customInputs.respiratoryArrest',
+        labelVi: 'Ngừng thở / Thở ngáp cá đe dọa ngừng tuần hoàn hô hấp',
+        type: 'boolean',
+        helpVi: 'Chống chỉ định tuyệt đối NIV, đặt nội khí quản thở máy xâm nhập (IMV) tối khẩn.',
+      },
+    ],
+  },
+];

@@ -1,0 +1,59 @@
+{
+  "id": "hf_15_hfref_sinus_hr78_on_max_bb",
+  "titleVi": "HFrEF nhịp xoang HR 78 bpm dù đã dùng chẹn beta tối đa: Cân nhắc Ivabradine",
+  "source": "ESC 2026 HF Rec 6.1.5.1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 62,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 120,
+    "dbp": 75,
+    "hr": 78,
+    "rhythm": "sinus",
+    "lvef": 30,
+    "nyha": 2,
+    "scr": 90,
+    "k": 4.2,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "bisoprolol",
+        "name": "Bisoprolol",
+        "dose": 10,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "hf"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "ivabradine",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "LVEF ≤ 35%, nhịp xoang, HR ≥ 70 bpm: Chỉ định cân nhắc Ivabradine."
+}

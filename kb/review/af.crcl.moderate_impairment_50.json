@@ -1,0 +1,26 @@
+{
+  "itemId": "af.crcl.moderate_impairment_50",
+  "contentHash": "f77672dd24913d257eab70fda0afcd63bd999b4a8b892a6c9f5ebc3906d38ae9",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.crcl.moderate_impairment_50",
+      "contentHash": "011af6e4554eaaa5",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.crcl.moderate_impairment_50 (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

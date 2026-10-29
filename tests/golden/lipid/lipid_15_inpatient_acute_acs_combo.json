@@ -1,0 +1,56 @@
+{
+  "id": "lipid_15_inpatient_acute_acs_combo",
+  "titleVi": "ACS nội viện - Phối hợp sớm Ezetimibe trong thời gian nằm viện",
+  "source": "ESC 2025 / esc.lipid.2025.acs_naive_combination",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "male",
+    "weight": 68,
+    "height": 165,
+    "sbp": 125,
+    "dbp": 75,
+    "hr": 78,
+    "scr": 90,
+    "tc": 5.5,
+    "hdl": 1,
+    "ldl": 3.6,
+    "tg": 1.8,
+    "conditions": {
+      "acuteAcsWithin24h": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      },
+      {
+        "drugId": "ezetimibe",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": []
+  },
+  "descriptionVi": "Phối hợp sớm Ezetimibe trong thời gian nằm viện do ACS."
+}

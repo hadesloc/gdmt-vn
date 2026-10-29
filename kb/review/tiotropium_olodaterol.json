@@ -1,0 +1,26 @@
+{
+  "itemId": "tiotropium_olodaterol",
+  "contentHash": "d1e571065d858e7ef3e991c0266fb39e4b24636cbd22af6b39c6d954e4489770",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "tiotropium_olodaterol",
+      "contentHash": "f92ceec1b48ce710",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD drug remediation: verified verbatim citations & content hash"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

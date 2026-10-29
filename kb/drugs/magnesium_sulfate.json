@@ -1,0 +1,116 @@
+{
+  "id": "magnesium_sulfate",
+  "nameVi": "Magnesium sulfate",
+  "inn": "Magnesium sulfate",
+  "class": "Bronchodilator Adjuvant",
+  "vnBrands": [
+    "Magnesi sulfat 15% Vinphaco",
+    "Magnesium Sulfate 50%"
+  ],
+  "forms": [
+    "Ống tiêm truyền tĩnh mạch 15% (1.5 g/10 ml), 50% (5 g/10 ml)"
+  ],
+  "start": {
+    "amount": 2,
+    "unit": "g",
+    "frequency": "truyền TM 1 lần (hen cấp) hoặc tấn công 4 g TM (tiền sản giật/sản giật)",
+    "route": "tiêm truyền tĩnh mạch",
+    "description": "Hen cấp nặng không đáp ứng ban đầu / đe dọa tính mạng: 2 g truyền tĩnh mạch chậm trong 20 phút; khi suy thận cần bác sĩ xác nhận liều, không tự quy đổi sang 1 g. Tiền sản giật nặng / Sản giật (phác đồ Zuspan): Liều tấn công 4 g truyền tĩnh mạch chậm trong 5–20 phút, tiếp theo duy trì 1 g/giờ truyền tĩnh mạch (hoặc tiêm bắp 5 g mỗi bên mông, sau đó 5 g tiêm bắp mỗi 4 giờ)"
+  },
+  "target": {
+    "amount": 2,
+    "unit": "g",
+    "frequency": "truyền TM",
+    "route": "tiêm truyền tĩnh mạch",
+    "description": "Hen cấp nặng: Liều đơn 2 g trong 20 phút; suy thận cần xác nhận liều riêng. Sản khoa (Zuspan): Duy trì 1 g/giờ truyền TM liên tục kèm theo dõi phản xạ gân xương bánh chè, nhịp thở ≥ 12–16 lần/phút và lượng nước tiểu ≥ 30 mL/giờ"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "rec",
+      "dose": "Hen cấp có chỉ định: liều đơn 2 g trong 20 phút; vẫn kiểm tra nước tiểu, phản xạ, hô hấp và huyết động. Sản khoa theo phác đồ riêng.",
+      "citationIds": [
+        "gina.asthma.2026.acute_magnesium_fev1_30",
+        "who.mgso4.monitoring_reflex_resp_urine"
+      ],
+      "continue": "rec"
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 60,
+      "initiate": "caution",
+      "note": "GFR giảm (phân tầng KDIGO G3–G5): cần bác sĩ xác nhận lợi ích/nguy cơ và liều theo chỉ định, chức năng thận, nước tiểu, Mg²⁺ máu; không tự tính liều hen 1 g. Sản khoa không suy liều từ phác đồ hen.",
+      "citationIds": [
+        "kdigo.ckd.2024.table_2_gfr_categories",
+        "who.mgso4.renal_caution_monitoring",
+        "who.mgso4.contra_brady_conduction_renal"
+      ],
+      "continue": "caution"
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Giãn mạch gây tụt huyết áp nặng, nhịp chậm, block nhĩ thất và ức chế hô hấp khi dùng liều cao, truyền quá nhanh hoặc ở bệnh nhân đang tụt huyết áp (SBP < 90 mmHg — chống chỉ định truyền trước khi ổn định huyết động)",
+    "Phối hợp đồng thời với thuốc chẹn kênh calci nhóm dihydropyridine (đặc biệt Nifedipine trong tiền sản giật) hoặc thuốc ức chế dẫn truyền thần kinh-cơ làm tăng nguy cơ tụt huyết áp sâu và liệt cơ hô hấp",
+    "Không truyền chồng thêm liều bolus 2 g của hen cấp nếu thai phụ đang được truyền Magnesium sulfate phác đồ Zuspan (4 g IV + 1 g/giờ) điều trị tiền sản giật nặng / sản giật",
+    "Ngừng truyền ngay và tiêm tĩnh mạch chậm Calcium gluconate 10% (10–30 mL) nếu mất phản xạ gân xương bánh chè, suy hô hấp hoặc block nhĩ thất do ngộ độc magie"
+  ],
+  "citationIds": [
+    "byt.asthma.2020.magnesium_dose_2g",
+    "byt.asthma.2021.acute_hospital_treatment",
+    "gina.asthma.2026.acute_magnesium_fev1_30",
+    "esc.pregnancy.2025.magnesium_toxicity_avblock_hypotension",
+    "esc.htn.2024.preeclampsia_mgso4",
+    "vsh.htn.2022.emergency_preeclampsia",
+    "who.mgso4.contra_brady_conduction_renal",
+    "who.mgso4.renal_caution_monitoring",
+    "who.mgso4.monitoring_reflex_resp_urine"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Liều đơn 2 g TM trong cơn hen cấp nặng và phác đồ Zuspan ngắn hạn (tấn công 4 g TM + duy trì 1 g/giờ trong 24 giờ) cho tiền sản giật nặng/sản giật được khuyến cáo đầu tay. FDA cảnh báo tránh truyền kéo dài > 5–7 ngày liên tục trong thai kỳ vì nguy cơ hạ calci máu và giảm khoáng hóa xương thai nhi.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety",
+      "esc.htn.2024.preeclampsia_mgso4",
+      "vsh.htn.2022.emergency_preeclampsia"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Tương thích khi cho con bú.",
+    "citationIds": [
+      "byt.asthma.2020.magnesium_dose_2g"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "severe_bradycardia",
+      "messageVi": "Nhịp chậm rõ hoặc bất ổn dẫn truyền: tránh tự truyền MgSO4, cần đánh giá hồi sức.",
+      "citationIds": ["who.mgso4.contra_brady_conduction_renal", "aha.2025.bradycardia_hr_50"]
+    },
+    {
+      "code": "myasthenia_gravis",
+      "messageVi": "Nhược cơ nặng (Myasthenia gravis) — nguy cơ liệt cơ hô hấp cấp tính",
+      "citationIds": [
+        "who.mgso4.contra_brady_conduction_renal"
+      ]
+    },
+    {
+      "code": "av_block_2_3",
+      "messageVi": "Block dẫn truyền nhĩ thất độ cao (độ II–III chưa đặt máy tạo nhịp)",
+      "citationIds": [
+        "who.mgso4.contra_brady_conduction_renal"
+      ]
+    },
+    {
+      "code": "sick_sinus_syndrome",
+      "messageVi": "Rối loạn dẫn truyền/hội chứng suy nút xoang chưa có máy tạo nhịp hoạt động: tránh MgSO4, cần hội chẩn.",
+      "citationIds": [
+        "who.mgso4.contra_brady_conduction_renal"
+      ]
+    }
+  ],
+  "classes": [
+    "adjuvant_bronchodilator"
+  ]
+}

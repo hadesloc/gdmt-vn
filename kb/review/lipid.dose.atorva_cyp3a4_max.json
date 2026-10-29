@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.dose.atorva_cyp3a4_max",
+  "contentHash": "047d83ea79d38f8f6d39a2b57c54c645941b6805b0dfc9c5a693019f558c9e18",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.dose.atorva_cyp3a4_max",
+      "contentHash": "eaf9032a55bb4947",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.dose.atorva_cyp3a4_max."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "hf_34_hfimpef_continue_gdmt",
+  "titleVi": "HFimpEF (LVEF hiện tại 48%, tiền sử LVEF 28%): Tiếp tục duy trì đầy đủ GDMT (TRED-HF)",
+  "source": "ESC 2026 HF Rec (HFimpEF Class I-C continuation)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 60,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 122,
+    "dbp": 76,
+    "hr": 64,
+    "rhythm": "sinus",
+    "lvef": 48,
+    "nyha": 1,
+    "scr": 84,
+    "k": 4.2,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "sacubitril_valsartan",
+        "name": "Sacubitril/valsartan",
+        "dose": "200 mg x 2 lần/ngày"
+      },
+      {
+        "drugId": "bisoprolol",
+        "name": "Bisoprolol",
+        "dose": "10 mg x 1 lần/ngày"
+      },
+      {
+        "drugId": "spironolactone",
+        "name": "Spironolactone",
+        "dose": "50 mg x 1 lần/ngày"
+      },
+      {
+        "drugId": "dapagliflozin",
+        "name": "Dapagliflozin",
+        "dose": "10 mg x 1 lần/ngày"
+      }
+    ],
+    "selectedModules": [
+      "hf"
+    ],
+    "customInputs": {
+      "priorLvef": 28
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_hf_hfimpef_continue",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "dapagliflozin",
+        "action": "CONTINUE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "STOP"
+      },
+      {
+        "drugId": "bisoprolol",
+        "action": "STOP"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bệnh nhân suy tim phân suất tống máu cải thiện (HFimpEF: LVEF từ 28% hồi phục lên 48%) bắt buộc tiếp tục duy trì phác đồ GDMT tối ưu để phòng tái suy giảm thất trái (TRED-HF)."
+}

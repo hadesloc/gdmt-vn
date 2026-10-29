@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.egfr.g3b_min",
+  "contentHash": "32965a8440fdf3eb55cee3a011a6dbf806daac4c26f1ff18efa15e948e1dbc22",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.egfr.g3b_min",
+      "contentHash": "209022d9c3a97caf",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.106Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.egfr.g3b_min."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

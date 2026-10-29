@@ -1,0 +1,42 @@
+{
+  "itemId": "dm2.dka.glucose_mmol",
+  "contentHash": "5a02f4d0bd6b5efbd878b7e009db1d62d15b10ad8c4ef4060c5074244e6a7fa6",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "dm2.dka.glucose_mmol",
+      "contentHash": "3cfa410c2116c304",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-27T15:25:00.000Z",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T08:45:00.000Z",
+          "role": "Agent F2 (DM2 Remediation & QA-10)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked threshold dm2.dka.glucose_mmol (QA-10 quantity & verbatim quote verified)."
+        },
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T15:25:00.000Z",
+          "role": "Agent F3 (DM2 Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Verified dm2.dka.glucose_mmol contentHash, verbatim PDF quotes, and Round 2 R1/R2/R3 clinical schema compliance."
+        },
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T15:25:00.000Z",
+          "role": "Agent F3 (DM2 Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Verified dm2.dka.glucose_mmol contentHash, verbatim PDF quotes, and Round 2 R1/R2/R3 clinical schema compliance."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

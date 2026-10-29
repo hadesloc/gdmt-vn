@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.pneumonia_age_cutoff",
+  "contentHash": "4c480a9b54a1c09f7da4fa0176204a4eb071bd34267598e8213fabb0ac24947a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.pneumonia_age_cutoff",
+      "contentHash": "279aa8f436b5e2df",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

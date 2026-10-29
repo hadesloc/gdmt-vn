@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.hyperkalemia.resine_max_dose",
+  "contentHash": "b2417959c2e1541eba5af74794bd82469943e59071a4418e1bce30ded4e63767",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.hyperkalemia.resine_max_dose",
+      "contentHash": "69f29488d8529903",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.134Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.hyperkalemia.resine_max_dose."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

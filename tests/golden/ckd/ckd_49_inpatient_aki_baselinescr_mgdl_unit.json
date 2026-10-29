@@ -1,0 +1,59 @@
+{
+  "id": "ckd_49_inpatient_aki_baselinescr_mgdl_unit",
+  "titleVi": "Nội viện - Quy đổi đơn vị baselineScr mg/dL sang µmol/L phát hiện chính xác AKI Giai đoạn 2 và tạm ngừng SGLT2i/RASi (Regression CKD-R2-R1-01)",
+  "source": "KDIGO 2012 AKI Table 2 & KDIGO 2024 CKD PP 3.7.2",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "US",
+    "units": {
+      "cr": "mg_dL",
+      "glucose": "mg_dL",
+      "lipid": "mg_dL",
+      "urat": "mg_dL",
+      "uacr": "mg_g",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_49",
+    "name": "BN CKD 49",
+    "age": 66,
+    "sex": "male",
+    "weight": 75,
+    "sbp": 116,
+    "dbp": 70,
+    "hr": 88,
+    "scr": 2.8,
+    "k": 4.9,
+    "conditions": {
+      "ckd": true,
+      "dm": true,
+      "htn": true
+    },
+    "currentMeds": [
+      { "drugId": "dapagliflozin", "dose": 10, "unit": "mg" },
+      { "drugId": "enalapril", "dose": 10, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"],
+    "customInputs": {
+      "baselineScr": 1.1,
+      "urineOutputRate": "normal"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "rec_ckd_aki_stage_alert", "action": "MONITOR" },
+      { "drugId": "dapagliflozin", "action": "HOLD" },
+      { "drugId": "enalapril", "action": "HOLD" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "dapagliflozin", "action": "CONTINUE" },
+      { "drugId": "enalapril", "action": "CONTINUE" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R2-R1-01: Khi chọn đơn vị Mỹ (mg/dL), SCr tăng từ 1.1 lên 2.8 mg/dL (tỷ số 2.55x -> AKI Stage 2) được nhận diện chính xác mà không cần bật tay cờ akiSuspected."
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.step_down.stability_months_max",
+  "contentHash": "455c9e28b55498a38e22104169c74f2ce38de432c76e1699659620f4b306ce8e",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.step_down.stability_months_max",
+      "contentHash": "e865d3316314e921",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:53:57.954Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng asthma.step_down.stability_months_max có trích dẫn hợp lệ và đại lượng chuẩn hóa QA-10 (months)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:53:57.954Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

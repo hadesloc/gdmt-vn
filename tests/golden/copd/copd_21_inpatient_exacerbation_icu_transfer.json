@@ -1,0 +1,54 @@
+{
+  "id": "copd_21_inpatient_exacerbation_icu_transfer",
+  "titleVi": "Đợt cấp COPD nội viện: Tiêu chuẩn chuyển ICU do toan máu nguy kịch",
+  "source": "GOLD 2026 Report p. 105 / Ventilatory Failure Rome Proposal",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_21",
+    "age": 70,
+    "sex": "male",
+    "weight": 55,
+    "height": 162,
+    "sbp": 110,
+    "dbp": 70,
+    "hr": 125,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteExacerbation": true,
+      "fev1FvcRatio": 0.4,
+      "fev1PredPct": 32,
+      "abgPh": 7.22,
+      "abgPaco2": 68,
+      "alteredMentalStatus": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_copd_inpatient_icu",
+        "action": "REFER"
+      }
+    ]
+  }
+}

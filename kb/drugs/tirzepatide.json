@@ -1,0 +1,161 @@
+{
+  "id": "tirzepatide",
+  "nameVi": "Tirzepatide",
+  "inn": "Tirzepatide",
+  "class": "Dual GIP/GLP-1 RA",
+  "vnBrands": [
+    "Mounjaro"
+  ],
+  "forms": [
+    "Bút tiêm 2.5 mg, 5 mg, 7.5 mg, 10 mg, 12.5 mg, 15 mg/0.5 mL (kiểm tra tình trạng cung ứng thực tế tại cơ sở y tế Việt Nam)"
+  ],
+  "start": {
+    "amount": 2.5,
+    "unit": "mg",
+    "frequency": "1 lần/tuần",
+    "route": "tiêm dưới da",
+    "description": "Dùng trong 4 tuần đầu (liều khởi đầu thích nghi), sau đó tăng lên 5 mg/tuần"
+  },
+  "target": {
+    "amount": 5,
+    "unit": "mg",
+    "frequency": "1 lần/tuần",
+    "route": "tiêm dưới da",
+    "description": "Dải duy trì 5–15 mg/tuần (tăng mỗi 2.5 mg sau ≥ 4 tuần; đích 15 mg/tuần cho béo phì & suy tim HFpEF kèm béo phì)"
+  },
+  "titration": {
+    "step": "2.5 mg",
+    "intervalDays": 28,
+    "maxDose": "15 mg/tuần (dải duy trì 5–15 mg/tuần)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "5 - 15 mg/tuần (khởi đầu 2.5 mg/tuần)",
+      "citationIds": [
+        "fda.tirzepatide.dosing",
+        "fda.tirzepatide.strengths_max_15",
+        "fda.tirzepatide.renal_no_adjust"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "not_rec",
+      "continue": "caution",
+      "dose": "Dữ liệu hạn chế; theo dõi sát",
+      "note": "Không đổi dược động học ở ESRD theo nhãn FDA; dữ liệu lâm sàng khởi trị hạn chế ở eGFR < 15 mL/phút/1.73m² (ADA 2026 Rec 11.11b cho phép cân nhắc mức C)",
+      "citationIds": [
+        "fda.tirzepatide.renal_no_adjust",
+        "ada.dm2.2026.glp1_dialysis_rec_11_11b"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_tirzepatide_mtc_contra",
+      "parameter": "mtc",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối ở bệnh nhân có tiền sử ung thư tuyến giáp thể tủy (MTC)",
+      "citationIds": [
+        "fda.tirzepatide.boxed_warning_mtc"
+      ]
+    },
+    {
+      "id": "gate_tirzepatide_men2_contra",
+      "parameter": "men2",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối ở bệnh nhân mắc hội chứng MEN 2",
+      "citationIds": [
+        "fda.tirzepatide.boxed_warning_mtc"
+      ]
+    },
+    {
+      "id": "gate_tirzepatide_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 15,
+      "unit": "mL/min/1.73m2",
+      "action": "hold",
+      "messageVi": "Dữ liệu khởi trị mới hạn chế khi eGFR < 15 mL/phút/1.73m² (ADA 2026 Rec 11.11b cho phép cân nhắc mức chứng cứ C)",
+      "citationIds": [
+        "fda.tirzepatide.renal_no_adjust",
+        "ada.dm2.2026.glp1_dialysis_rec_11_11b"
+      ]
+    }
+  ],
+  "interactions": [
+    "Không phối hợp với thuốc ức chế DPP-4",
+    "Làm chậm rỗng dạ dày, giảm hấp thu thuốc tránh thai đường uống trong 4 tuần đầu và sau mỗi lần tăng liều",
+    "Phác đồ chuẩn độ: Khởi đầu 2.5 mg/tuần x 4 tuần -> tăng lên 5 mg/tuần -> tăng mỗi 2.5 mg sau ≥ 4 tuần trong dải duy trì 5–15 mg/tuần"
+  ],
+  "citationIds": [
+    "fda.tirzepatide.dosing",
+    "fda.tirzepatide.strengths_max_15",
+    "fda.tirzepatide.renal_no_adjust",
+    "fda.tirzepatide.oral_contraceptive_4wk",
+    "fda.tirzepatide.pregnancy",
+    "ada.dm2.2026.semaglutide_tirzepatide_max_dose",
+    "acc.hfpef.2026.glp1_obesity",
+    "ada.dm2.2026.no_dpp4_plus_glp1",
+    "fda.tirzepatide.boxed_warning_mtc",
+    "fda.tirzepatide.pancreatitis",
+    "ada.dm2.2026.incretin_pancreatitis"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong thai kỳ do nguy cơ độc tính phôi thai; ngừng trước mang thai ít nhất 1 tháng",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_glp1",
+      "fda.tirzepatide.pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo khi cho con bú",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_glp1"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "mtc",
+      "messageVi": "Chống chỉ định tuyệt đối (FDA Boxed Warning) ở người có tiền sử bản thân hoặc gia đình mắc ung thư biểu mô tuyến giáp thể tủy (MTC)",
+      "citationIds": [
+        "fda.tirzepatide.boxed_warning_mtc"
+      ]
+    },
+    {
+      "code": "men2",
+      "messageVi": "Chống chỉ định tuyệt đối (FDA Boxed Warning) ở bệnh nhân mắc hội chứng đa u tuyến nội tiết típ 2 (MEN 2)",
+      "citationIds": [
+        "fda.tirzepatide.boxed_warning_mtc"
+      ]
+    },
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định trong thai kỳ do nguy cơ độc tính phôi thai",
+      "citationIds": [
+        "ada.dm2.2026.pregnancy_glp1"
+      ]
+    },
+    {
+      "code": "acute_pancreatitis",
+      "messageVi": "Thận trọng hoặc tránh dùng ở bệnh nhân có tiền sử viêm tụy cấp",
+      "citationIds": [
+        "fda.tirzepatide.pancreatitis",
+        "ada.dm2.2026.incretin_pancreatitis"
+      ]
+    }
+  ],
+  "classes": [
+    "glp1ra",
+    "gip_glp1_ra",
+    "glp1_ra"
+  ]
+}

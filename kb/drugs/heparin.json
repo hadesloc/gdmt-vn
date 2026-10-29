@@ -1,0 +1,120 @@
+{
+  "id": "heparin",
+  "nameVi": "Heparin không phân đoạn (UFH)",
+  "inn": "Heparin sodium (Unfractionated heparin)",
+  "class": "Heparin không phân đoạn (UFH)",
+  "classes": [
+    "ufh",
+    "parenteral_anticoagulant"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Heparin Leo",
+    "Heparin Braun",
+    "Heparin"
+  ],
+  "forms": [
+    "Lọ dung dịch tiêm 25.000 UI/5 mL (5.000 UI/mL)",
+    "Ống tiêm 5.000 UI/mL"
+  ],
+  "start": {
+    "amount": 5000,
+    "unit": "UI",
+    "frequency": "2 lần/ngày",
+    "route": "tiêm dưới da",
+    "description": "Dự phòng TTHKTM (đặc biệt ở suy thận nặng CrCl < 30 mL/phút): 5.000 UI tiêm dưới da 2–3 lần/ngày. Điều trị kháng đông cấp: bolus tĩnh mạch theo cân nặng sau đó truyền tĩnh mạch liên tục chỉnh liều theo aPTT / anti-Xa"
+  },
+  "target": {
+    "amount": 5000,
+    "unit": "UI",
+    "frequency": "2–3 lần/ngày",
+    "route": "tiêm dưới da",
+    "description": "Dự phòng 5.000 UI TDD 2–3 lần/ngày; nếu truyền tĩnh mạch điều trị, chỉnh tốc độ truyền duy trì aPTT khoảng 1.5–2.5 lần chứng theo phác đồ bệnh viện"
+  },
+  "titration": {
+    "step": "Truyền tĩnh mạch điều trị: kiểm tra aPTT mỗi 6 giờ để chuẩn độ tốc độ truyền; kiểm tra số lượng tiểu cầu định kỳ phát hiện sớm HIT",
+    "intervalDays": 1,
+    "maxDose": "Cá thể hóa theo aPTT / anti-Xa"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "crclFrom": 30,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "5.000 UI TDD 2–3 lần/ngày (dự phòng) hoặc truyền tĩnh mạch theo aPTT",
+      "citationIds": [
+        "byt.vte.2023.ufh_vka_dosing_table"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 30,
+      "crclTo": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần giảm liều dự phòng theo thận (5.000 UI TDD x 2 lần/ngày); truyền tĩnh mạch chỉnh theo aPTT",
+      "note": "Thuốc chống đông đường tiêm được ưu tiên lựa chọn ở bệnh nhân suy thận nặng (MLCT < 30 và < 15 mL/phút) do chuyển hóa qua hệ võng nội mô không phụ thuộc thải trừ thận",
+      "citationIds": [
+        "byt.vte.2023.ufh_vka_dosing_table",
+        "byt.vte.2023.enoxaparin_renal_crcl15"
+      ]
+    }
+  ],
+  "gates": [],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Heparin không phân đoạn (UFH) không đi qua nhau thai, an toàn cho thai nhi (ưu tiên quanh cuộc đẻ hoặc suy thận nặng; lưu ý nguy cơ giảm tiểu cầu HIT và loãng xương cao hơn LMWH nếu dùng dài ngày).",
+    "citationIds": [
+      "esc.preg.2025.ufh_not_crossing_placenta"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Trọng lượng phân tử lớn nên không bài tiết vào sữa mẹ; tương thích an toàn khi cho con bú.",
+    "citationIds": [
+      "esc.preg.2025.ufh_not_crossing_placenta"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "active_bleeding",
+      "messageVi": "Chống chỉ định khi đang có xuất huyết tiến triển không kiểm soát",
+      "citationIds": [
+        "byt.vte.2023.anticoagulant_contraindications"
+      ]
+    },
+    {
+      "code": "acute_ich",
+      "messageVi": "Chống chỉ định trong xuất huyết nội sọ cấp tính",
+      "citationIds": [
+        "byt.vte.2023.anticoagulant_contraindications"
+      ]
+    },
+    {
+      "code": "heparin_induced_thrombocytopenia",
+      "messageVi": "Chống chỉ định tuyệt đối khi đang có hoặc có tiền sử giảm tiểu cầu do heparin (HIT)",
+      "citationIds": [
+        "byt.vte.2023.anticoagulant_contraindications"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định khi suy gan nặng kèm rối loạn đông máu nặng",
+      "citationIds": [
+        "byt.vte.2023.anticoagulant_contraindications"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định dùng đồng thời với DOAC hoặc LMWH (enoxaparin) trừ khi chuyển đổi phác đồ đúng thời điểm dừng thuốc",
+    "Tăng mạnh nguy cơ xuất huyết khi phối hợp NSAID, aspirin, P2Y12i hoặc thuốc tiêu sợi huyết",
+    "Ức chế tiết aldosterone tại vỏ thượng thận có thể gây tăng kali máu (đặc biệt khi dùng > 7 ngày hoặc phối hợp RASi, MRA, trimethoprim)"
+  ],
+  "citationIds": [
+    "byt.vte.2023.ufh_vka_dosing_table",
+    "byt.vte.2023.enoxaparin_renal_crcl15",
+    "byt.vte.2023.anticoagulant_contraindications",
+    "esc.preg.2025.ufh_not_crossing_placenta"
+  ]
+}

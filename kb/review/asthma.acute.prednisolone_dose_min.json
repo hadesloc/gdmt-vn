@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.acute.prednisolone_dose_min",
+  "contentHash": "38a066b8f0e2a38782b2e9f8da8825b9e7a5de9b20169b29a550e2120c5498b8",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.acute.prednisolone_dose_min",
+      "contentHash": "8fca0551ada58fe7",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:53:57.954Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng asthma.acute.prednisolone_dose_min có trích dẫn hợp lệ và đại lượng chuẩn hóa QA-10 (dose_mg)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:53:57.954Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

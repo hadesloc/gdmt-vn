@@ -1,0 +1,101 @@
+{
+  "id": "dm2_41_pregnancy_stop_orals_start_insulin",
+  "titleVi": "Phụ nữ mang thai mắc ĐTĐ típ 2 - Ngừng khẩn cấp Semaglutide, Pioglitazone, Metformin và khởi trị Insulin",
+  "source": "ADA 2026 SOC Ch. 15 & QĐ 5481/QĐ-BYT",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 31,
+    "sex": "female",
+    "weight": 78,
+    "height": 158,
+    "sbp": 118,
+    "dbp": 74,
+    "hr": 82,
+    "scr": 58,
+    "k": 4.1,
+    "glucose": 8.6,
+    "hba1c": 7.6,
+    "conditions": {
+      "dm": true,
+      "pregnant": true,
+      "obesity": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "semaglutide",
+        "name": "Semaglutide",
+        "dose": 1,
+        "unit": "mg"
+      },
+      {
+        "drugId": "pioglitazone",
+        "name": "Pioglitazone",
+        "dose": 30,
+        "unit": "mg"
+      },
+      {
+        "drugId": "metformin",
+        "name": "Metformin",
+        "dose": 1000,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "semaglutide",
+        "action": "STOP"
+      },
+      {
+        "drugId": "pioglitazone",
+        "action": "STOP"
+      },
+      {
+        "drugId": "metformin",
+        "action": "STOP"
+      },
+      {
+        "drugId": "insulin_glargine",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "semaglutide",
+        "action": "START"
+      },
+      {
+        "drugId": "semaglutide",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "pioglitazone",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "dapagliflozin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Trong thai kỳ: Phát lệnh STOP khẩn cấp cho GLP-1 RA, TZD, Metformin và các thuốc không phải insulin, đồng thời chỉ định Insulin là liệu pháp đầu tay an toàn."
+}

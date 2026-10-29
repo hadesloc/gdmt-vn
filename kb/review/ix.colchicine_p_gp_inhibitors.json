@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.colchicine_p_gp_inhibitors",
+  "contentHash": "a3f9666fb475fb853995544a6d9ad5723224b5b3a749b733df1af7da3ec564a6",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.colchicine_p_gp_inhibitors",
+      "contentHash": "dcb71ad5c78b7d7a",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của InteractionRule: ix.colchicine_p_gp_inhibitors"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

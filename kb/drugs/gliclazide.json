@@ -1,0 +1,131 @@
+{
+  "id": "gliclazide",
+  "nameVi": "Gliclazide MR",
+  "inn": "Gliclazide",
+  "class": "Sulfonylurea",
+  "vnBrands": [
+    "Diamicron MR",
+    "Predian MR"
+  ],
+  "forms": [
+    "Viên nén phóng thích biến đổi 30 mg, 60 mg"
+  ],
+  "start": {
+    "amount": 30,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Uống nguyên viên (không nhai/nghiền) vào bữa ăn sáng"
+  },
+  "target": {
+    "amount": 60,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống"
+  },
+  "titration": {
+    "step": "30 mg",
+    "intervalDays": 14,
+    "maxDose": "120 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "30 - 120 mg/ngày",
+      "citationIds": [
+        "ema.gliclazide.dosing_renal"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "Khởi đầu 30 mg/ngày, tối đa 60 mg/ngày",
+      "note": "Thận trọng nguy cơ hạ đường huyết khi eGFR 30-59 mL/phút; chuẩn độ chậm",
+      "citationIds": [
+        "ema.gliclazide.dosing_renal",
+        "ema.gliclazide.titration_60_120"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Chống chỉ định tuyệt đối",
+      "note": "Chống chỉ định tuyệt đối theo EMA SmPC Mục 4.3 và KDIGO 2022; nguy cơ hạ đường huyết ác tính kéo dài, ưu tiên chuyển sang Insulin",
+      "citationIds": [
+        "ema.gliclazide.severe_renal_contra",
+        "ema.gliclazide.dosing_renal",
+        "kdigo.dm2.2022.su_avoid_low_egfr"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_gliclazide_egfr_contra",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối Gliclazide khi eGFR < 30 mL/phút/1.73m² (EMA SmPC Mục 4.3)",
+      "citationIds": [
+        "ema.gliclazide.severe_renal_contra"
+      ]
+    }
+  ],
+  "interactions": [
+    "Nguy cơ hạ đường huyết tăng khi phối hợp với thuốc chẹn beta, NSAID, fluconazole"
+  ],
+  "citationIds": [
+    "ema.gliclazide.dosing_renal",
+    "ada.dm2.2026.older_deintensification",
+    "ema.gliclazide.severe_renal_contra",
+    "ema.gliclazide.titration_60_120",
+    "kdigo.dm2.2022.su_avoid_low_egfr"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong thai kỳ theo nhãn EMA/BYT; nguy cơ hạ đường huyết sơ sinh kéo dài",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_sulfonylureas"
+    ]
+  },
+  "lactation": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định khi cho con bú do nguy cơ hạ đường huyết ở trẻ bú mẹ",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_sulfonylureas"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định tuyệt đối Gliclazide trong thai kỳ",
+      "citationIds": [
+        "ada.dm2.2026.pregnancy_sulfonylureas"
+      ]
+    },
+    {
+      "code": "dialysis",
+      "messageVi": "Chống chỉ định Gliclazide ở bệnh nhân lọc máu chu kỳ hoặc suy thận nặng",
+      "citationIds": [
+        "ema.gliclazide.severe_renal_contra"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định ở bệnh nhân suy gan nặng hoặc suy thận nặng (eGFR < 30 mL/phút)",
+      "citationIds": [
+        "ema.gliclazide.severe_renal_contra"
+      ]
+    }
+  ],
+  "classes": [
+    "su",
+    "sulfonylurea"
+  ]
+}

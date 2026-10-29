@@ -1,0 +1,17 @@
+{
+  "itemId": "dm2.contrast.recheck_hours",
+  "contentHash": "6c90a412eeab284136e1401ae250c602632dcf05df60e5f7d7da34f5486e6fe3",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "dm2.contrast.recheck_hours",
+      "contentHash": "e71a9f433a59fc72",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

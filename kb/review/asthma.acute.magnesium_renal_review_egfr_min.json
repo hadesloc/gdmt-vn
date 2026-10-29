@@ -1,0 +1,17 @@
+{
+  "itemId": "asthma.acute.magnesium_renal_review_egfr_min",
+  "contentHash": "75b4f54adcc79ca60c7f2ee7ddfbe57a1e5036d5d51b9ade05d4d96c1cc5d5de",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.acute.magnesium_renal_review_egfr_min",
+      "contentHash": "7fde3b371c5c892f",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

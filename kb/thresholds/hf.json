@@ -1,0 +1,1384 @@
+[
+  {
+    "id": "hf.ef.hfref_max",
+    "value": 40,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "esc.hf.2026.lvef_phenotypes"
+    ],
+    "descriptionVi": "Ngưỡng LVEF tối đa (≤ 40%) định nghĩa suy tim phân suất tống máu giảm (HFrEF) cổ điển."
+  },
+  {
+    "id": "hf.ef.hfmref_min",
+    "value": 41,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "esc.hf.2026.lvef_phenotypes",
+      "aha.hf.2022.hfmref_2b"
+    ],
+    "descriptionVi": "Ngưỡng LVEF tối thiểu (41%) của phân nhóm suy tim phân suất tống máu giảm nhẹ (HFmrEF: 41%–49%)."
+  },
+  {
+    "id": "hf.ef.hfmref_max",
+    "value": 49,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "esc.hf.2026.lvef_phenotypes",
+      "aha.hf.2022.hfmref_2b"
+    ],
+    "descriptionVi": "Ngưỡng LVEF tối đa (49%) của phân nhóm suy tim phân suất tống máu giảm nhẹ (HFmrEF: 41%–49%)."
+  },
+  {
+    "id": "hf.ef.hfpef_min",
+    "value": 50,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "esc.hf.2026.lvef_phenotypes"
+    ],
+    "descriptionVi": "Ngưỡng LVEF tối thiểu (≥ 50%) định nghĩa suy tim phân suất tống máu bảo tồn (HFpEF)."
+  },
+  {
+    "id": "hf.ef.hfref_max_esc2026",
+    "value": 50,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "esc.hf.2026.new_concept_hfref_expanded"
+    ],
+    "descriptionVi": "Ngưỡng phân định phổ giảm chức năng tâm thu (< 50%) và HFpEF (≥ 50%) theo khái niệm mở rộng ESC 2026."
+  },
+  {
+    "id": "hf.ef.hfimpef_min",
+    "value": 40,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "esc.hf.2026.hfimpef_definition"
+    ],
+    "descriptionVi": "Ngưỡng LVEF (> 40% kèm tăng tuyệt đối ≥ 10% so với nền ≤ 40%) xác định suy tim cải thiện phân suất tống máu (HFimpEF)."
+  },
+  {
+    "id": "hf.arni.washout_acei_hours",
+    "value": 36,
+    "unit": "hours",
+    "quantity": "duration_hours",
+    "citationIds": [
+      "esc.hf.2026.washout_acei_arni_36h",
+      "esc.hf.2026.arni_table_s5_contra_caution"
+    ],
+    "descriptionVi": "Thời gian nghỉ bắt buộc tối thiểu (36 giờ) sau liều ACEi cuối cùng trước khi khởi trị Sacubitril/valsartan."
+  },
+  {
+    "id": "hf.arni.sbp_contra_min",
+    "value": 90,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.hf.2026.arni_table_s5_contra_caution"
+    ],
+    "descriptionVi": "Ngưỡng huyết áp tâm thu chống chỉ định khởi trị hoặc cần tạm hoãn ARNI (< 90 mmHg theo ESC 2026 Table S5)."
+  },
+  {
+    "id": "hf.arni.sbp_min_start",
+    "value": 100,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.hf.2026.arni_sbp_100_egfr_30",
+      "esc.hf.2026.arni_table_s5_sbp_100_110"
+    ],
+    "descriptionVi": "Ngưỡng huyết áp tâm thu (100 mmHg) cần thận trọng đặc biệt khi khởi trị hoặc tăng liều Sacubitril/valsartan."
+  },
+  {
+    "id": "hf.arni.sbp_low_dose",
+    "value": 110,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.hf.2026.arni_table_s5_sbp_100_110"
+    ],
+    "descriptionVi": "Ngưỡng huyết áp tâm thu (100–110 mmHg) khuyến cáo khởi đầu Sacubitril/valsartan liều thấp 24/26 mg x 2 lần/ngày (ESC 2026 Table S5)."
+  },
+  {
+    "id": "hf.arni.egfr_caution",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "esc.hf.2026.arni_sbp_100_egfr_30",
+      "fda.hf.sacubitril_renal_egfr30"
+    ],
+    "descriptionVi": "Ngưỡng eGFR (< 30 mL/min/1.73m²) bắt buộc giảm nửa liều khởi đầu Sacubitril/valsartan xuống 24/26 mg x 2 lần/ngày theo nhãn FDA và ESC Table S5."
+  },
+  {
+    "id": "hf.arni.egfr_low_dose",
+    "value": 60,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "esc.hf.2026.sacubitril_valsartan_low_dose"
+    ],
+    "descriptionVi": "Ngưỡng eGFR (30–60 mL/min/1.73m²) cân nhắc khởi đầu Sacubitril/valsartan liều thấp 24/26 mg x 2 lần/ngày theo ESC 2026 Table 11."
+  },
+  {
+    "id": "hf.arni.egfr_esrd_min",
+    "value": 15,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "esc.hf.2026.rasi_arni_aki_egfr15_k"
+    ],
+    "descriptionVi": "Ngưỡng suy thận giai đoạn cuối (eGFR < 15 mL/min/1.73m²) dữ liệu khởi trị mới ARNI rất hạn chế, cần hội chẩn chuyên khoa."
+  },
+  {
+    "id": "hf.arni.k_max_caution",
+    "value": 5.2,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "esc.hf.2026.arni_table_s5_contra_caution"
+    ],
+    "descriptionVi": "Ngưỡng kali máu (> 5.2 mmol/L) cần thận trọng đặc biệt/trì hoãn khởi trị ARNI theo ESC 2026 Table S5."
+  },
+  {
+    "id": "hf.arni.k_max_hold",
+    "value": 5.5,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "esc.hf.2026.rasi_arni_aki_egfr15_k",
+      "esc.hf.2026.arni_table_s5_k55",
+      "esc.hf.2026.rasi_table_s4_k55"
+    ],
+    "descriptionVi": "Ngưỡng kali máu (> 5.5 mmol/L) cần giảm liều hoặc tạm ngừng thuốc ức chế hệ RAA/ARNI và kiểm soát tăng kali máu."
+  },
+  {
+    "id": "hf.bb.hr_min_start",
+    "value": 50,
+    "unit": "bpm",
+    "quantity": "hr",
+    "citationIds": [
+      "esc.hf.2026.bb_guidance_table_s6"
+    ],
+    "descriptionVi": "Ngưỡng tần số tim lúc nghỉ tối thiểu (50 bpm) để khởi trị hoặc chuẩn độ tăng liều chẹn beta trong suy tim."
+  },
+  {
+    "id": "hf.bb.sbp_min_start",
+    "value": 90,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.hf.2026.bb_guidance_table_s6"
+    ],
+    "descriptionVi": "Ngưỡng huyết áp tâm thu tối thiểu (90 mmHg) để khởi trị hoặc chuẩn độ tăng liều chẹn beta trong suy tim."
+  },
+  {
+    "id": "hf.bb.carvedilol_weight_high_dose",
+    "value": 85,
+    "unit": "kg",
+    "quantity": "weight",
+    "citationIds": [
+      "esc.hf.2026.carvedilol_85kg_footnote_d",
+      "fda.hf.carvedilol_85kg"
+    ],
+    "descriptionVi": "Ngưỡng cân nặng (> 85 kg) cho phép tăng liều đích Carvedilol lên 50 mg x 2 lần/ngày."
+  },
+  {
+    "id": "hf.bb.carvedilol_high_target_dose_mg",
+    "value": 50,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "esc.hf.2026.carvedilol_85kg_footnote_d",
+      "fda.hf.carvedilol_85kg"
+    ],
+    "descriptionVi": "Liều đích Carvedilol mỗi lần uống (50 mg x 2 lần/ngày) cho bệnh nhân suy tim nặng trên 85 kg."
+  },
+  {
+    "id": "hf.mra.k_max_initiate",
+    "value": 5,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "esc.hf.2026.mra_guidance_table_s8",
+      "fda.hf.spironolactone_dose_renal"
+    ],
+    "descriptionVi": "Ngưỡng kali máu tối đa (≤ 5.0 mmol/L) cho phép khởi trị thuốc đối kháng thụ thể mineralocorticoid (MRA)."
+  },
+  {
+    "id": "hf.mra.k_halve_dose",
+    "value": 5.5,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "esc.hf.2026.mra_guidance_table_s8"
+    ],
+    "descriptionVi": "Ngưỡng kali máu (> 5.5 mmol/L) phải giảm một nửa liều MRA đang dùng và theo dõi sát sinh hoá máu."
+  },
+  {
+    "id": "hf.mra.k_stop",
+    "value": 6,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "esc.hf.2026.mra_guidance_table_s8"
+    ],
+    "descriptionVi": "Ngưỡng kali máu (> 6.0 mmol/L) bắt buộc ngừng ngay MRA và xử trí tăng kali máu."
+  },
+  {
+    "id": "hf.mra.egfr_min_initiate",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "esc.hf.2026.mra_guidance_table_s8",
+      "fda.hf.spironolactone_egfr_30_50"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối thiểu (≥ 30 mL/min/1.73m²) để sử dụng nhóm MRA steroid (Spironolactone, Eplerenone)."
+  },
+  {
+    "id": "hf.mra.egfr_caution",
+    "value": 50,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "fda.hf.spironolactone_dose_renal",
+      "fda.hf.spironolactone_egfr_30_50"
+    ],
+    "descriptionVi": "Ngưỡng eGFR (30–50 mL/min/1.73m²) cần giảm liều khởi đầu Spironolactone xuống 12.5 mg/ngày hoặc 25 mg cách ngày."
+  },
+  {
+    "id": "hf.mra.spironolactone_low_start_dose_mg",
+    "value": 12.5,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "esc.hf.2026.spironolactone_12_5_footnote_f"
+    ],
+    "descriptionVi": "Liều khởi đầu thận trọng Spironolactone hàng ngày (12.5 mg/ngày) khi eGFR 30–50 mL/min/1.73m² hoặc nguy cơ tăng K+."
+  },
+  {
+    "id": "hf.mra.spironolactone_g3_alt_day_dose_mg",
+    "value": 25,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.hf.spironolactone_egfr_30_50"
+    ],
+    "descriptionVi": "Liều khởi đầu Spironolactone uống cách ngày (25 mg cách ngày) cho bệnh nhân suy tim có eGFR 30–50 mL/min/1.73m² theo nhãn FDA."
+  },
+  {
+    "id": "hf.finerenone.lvef_min",
+    "value": 40,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "fda.finerenone.hf_lvef40_dosing"
+    ],
+    "descriptionVi": "Ngưỡng phân suất tống máu tối thiểu (LVEF ≥ 40%) được phê duyệt chỉ định Finerenone trong suy tim (HFmrEF/HFpEF)."
+  },
+  {
+    "id": "hf.finerenone.egfr_min_initiate",
+    "value": 25,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "esc.hf.2026.mra_guidance_table_s8",
+      "acc.hfpef.2026.finerenone"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối thiểu (≥ 25 mL/min/1.73m²) cho phép khởi trị Finerenone ở bệnh nhân HFmrEF/HFpEF."
+  },
+  {
+    "id": "hf.finerenone.egfr_high_dose_cutoff",
+    "value": 60,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "esc.hf.2026.finerenone_doses_footnote_g",
+      "esc.hf.2026.mra_guidance_table_s8"
+    ],
+    "descriptionVi": "Ngưỡng eGFR phân bậc liều Finerenone trong suy tim (≤ 60: 10 -> 20 mg/ngày; > 60: 20 -> 40 mg/ngày theo ESC 2026)."
+  },
+  {
+    "id": "hf.finerenone.egfr_stop_min",
+    "value": 15,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "esc.hf.2026.mra_table_s4_egfr15"
+    ],
+    "descriptionVi": "Ngưỡng eGFR (< 15 mL/min/1.73m²) phải ngừng duy trì Finerenone."
+  },
+  {
+    "id": "hf.finerenone.start_low_dose_mg",
+    "value": 10,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "esc.hf.2026.finerenone_doses_footnote_g"
+    ],
+    "descriptionVi": "Liều khởi đầu Finerenone (10 mg x 1 lần/ngày) khi eGFR từ 25 đến ≤ 60 mL/min/1.73m²."
+  },
+  {
+    "id": "hf.finerenone.start_high_or_target_low_dose_mg",
+    "value": 20,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "esc.hf.2026.finerenone_doses_footnote_g"
+    ],
+    "descriptionVi": "Liều khởi đầu Finerenone khi eGFR > 60 (20 mg/ngày) hoặc liều đích khi eGFR khởi trị ≤ 60 mL/min/1.73m²."
+  },
+  {
+    "id": "hf.finerenone.target_high_dose_mg",
+    "value": 40,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "esc.hf.2026.finerenone_doses_footnote_g"
+    ],
+    "descriptionVi": "Liều đích tối đa Finerenone trong suy tim HFmrEF/HFpEF (40 mg x 1 lần/ngày) khi eGFR > 60 mL/min/1.73m²."
+  },
+  {
+    "id": "hf.sglt2i.egfr_initiate_min",
+    "value": 20,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "esc.hf.2026.sglt2i_table_s9",
+      "esc.hf.2026.rasi_table_s4_k55"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối thiểu (≥ 20 mL/min/1.73m²) để bắt đầu khởi trị thuốc ức chế SGLT2 (Dapagliflozin/Empagliflozin) trong suy tim."
+  },
+  {
+    "id": "hf.sglt2i.sbp_caution_min",
+    "value": 95,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.hf.2026.sglt2i_table_s9"
+    ],
+    "descriptionVi": "Ngưỡng huyết áp tâm thu (< 95 mmHg kèm triệu chứng hạ huyết áp) cần thận trọng đặc biệt khi khởi trị SGLT2i (ESC 2026 Table S9)."
+  },
+  {
+    "id": "hf.ivabradine.hr_min",
+    "value": 70,
+    "unit": "bpm",
+    "quantity": "hr",
+    "citationIds": [
+      "esc.hf.2026.ivabradine_rec",
+      "fda.hf.ivabradine_indication_dose"
+    ],
+    "descriptionVi": "Ngưỡng tần số tim lúc nghỉ (≥ 70 bpm) ở nhịp xoang để chỉ định thêm Ivabradine."
+  },
+  {
+    "id": "hf.ivabradine.ef_max",
+    "value": 35,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "esc.hf.2026.ivabradine_rec",
+      "fda.hf.ivabradine_indication_dose"
+    ],
+    "descriptionVi": "Phân suất tống máu tối đa (≤ 35%) theo tiêu chuẩn chỉ định Ivabradine."
+  },
+  {
+    "id": "hf.ivabradine.low_start_dose_mg",
+    "value": 2.5,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.hf.ivabradine_low_dose_2_5mg"
+    ],
+    "descriptionVi": "Liều khởi đầu thấp Ivabradine (2.5 mg x 2 lần/ngày cùng bữa ăn) cho bệnh nhân cao tuổi hoặc có nguy cơ nhịp chậm gây tụt huyết động."
+  },
+  {
+    "id": "hf.vericiguat.ef_max",
+    "value": 45,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "esc.hf.2026.vericiguat_rec"
+    ],
+    "descriptionVi": "Phân suất tống máu tối đa (< 45%) cho chỉ định cân nhắc Vericiguat ở bệnh nhân suy tim có đợt mất bù gần đây."
+  },
+  {
+    "id": "hf.vericiguat.egfr_min",
+    "value": 15,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "fda.hf.vericiguat_renal_hepatic"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối thiểu (≥ 15 mL/min/1.73m² và không lọc máu) để khởi trị Vericiguat theo nhãn FDA Verquvo."
+  },
+  {
+    "id": "hf.digoxin.ef_max",
+    "value": 40,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "esc.hf.2026.digoxin_rec"
+    ],
+    "descriptionVi": "Phân suất tống máu thất trái tối đa (≤ 40%) để cân nhắc chỉ định Digoxin trong HFrEF còn triệu chứng (ESC 2026 Rec Table 5)."
+  },
+  {
+    "id": "hf.digoxin.hr_min",
+    "value": 50,
+    "unit": "bpm",
+    "quantity": "hr",
+    "citationIds": [
+      "esc.hf.2026.low_hr_50_digoxin_review"
+    ],
+    "descriptionVi": "Ngưỡng tần số tim tối thiểu (50 bpm) để tránh nguy cơ nhịp chậm xoang / block nhĩ-thất khi dùng thuốc làm chậm dẫn truyền nút nhĩ-thất."
+  },
+  {
+    "id": "hf.digoxin.low_dose_mcg",
+    "value": 62.5,
+    "unit": "mcg",
+    "quantity": "dose_mcg",
+    "citationIds": [
+      "esc.hf.2026.digoxin_doses_table11"
+    ],
+    "descriptionVi": "Liều khởi đầu/duy trì thấp của Digoxin (62.5 mcg = 0.0625 mg/ngày) cho người cao tuổi hoặc suy giảm chức năng thận."
+  },
+  {
+    "id": "hf.digoxin.serum_toxic_min",
+    "value": 1.2,
+    "unit": "ng/mL",
+    "quantity": "concentration_ng_ml",
+    "citationIds": [
+      "fda.hf.digoxin_serum_1_2"
+    ],
+    "descriptionVi": "Ngưỡng nồng độ digoxin huyết thanh (≥ 1.2 ng/mL) làm tăng nguy cơ độc tính và tử vong, cần giữ nồng độ < 1.2 ng/mL."
+  },
+  {
+    "id": "hf.iron.ferritin_abs_max",
+    "value": 100,
+    "unit": "ng/mL",
+    "quantity": "ferritin",
+    "citationIds": [
+      "esc.hf.2026.iron_definition"
+    ],
+    "descriptionVi": "Ngưỡng Ferritin huyết thanh (< 100 ng/mL) chẩn đoán thiếu sắt tuyệt đối trong suy tim."
+  },
+  {
+    "id": "hf.iron.ferritin_func_max",
+    "value": 299,
+    "unit": "ng/mL",
+    "quantity": "ferritin",
+    "citationIds": [
+      "esc.hf.2026.iron_definition"
+    ],
+    "descriptionVi": "Giới hạn trên khoảng Ferritin 100–299 ng/mL (kèm TSAT < 20%) chẩn đoán thiếu sắt chức năng trong suy tim."
+  },
+  {
+    "id": "hf.iron.tsat_max",
+    "value": 20,
+    "unit": "%",
+    "quantity": "tsat",
+    "citationIds": [
+      "esc.hf.2026.iron_definition",
+      "esc.hf.2026.iron_rec"
+    ],
+    "descriptionVi": "Ngưỡng độ bão hoà Transferrin (TSAT < 20%) xác định thiếu sắt có đáp ứng tốt nhất với bù sắt tĩnh mạch trong suy tim."
+  },
+  {
+    "id": "hf.iron.ef_max",
+    "value": 45,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "esc.hf.2026.iron_definition"
+    ],
+    "descriptionVi": "Ngưỡng LVEF (≤ 45%) có bằng chứng RCT cho bù sắt tĩnh mạch cải thiện triệu chứng và giảm nhập viện suy tim."
+  },
+  {
+    "id": "hf.icd.ef_max",
+    "value": 35,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "esc.hf.2026.icd_primary_prevention"
+    ],
+    "descriptionVi": "Ngưỡng LVEF tối đa (≤ 35%) để chỉ định cấy máy phá rung tự động (ICD) dự phòng đột tử tiên phát."
+  },
+  {
+    "id": "hf.icd.omt_months_min",
+    "value": 3,
+    "unit": "months",
+    "quantity": "duration_months",
+    "citationIds": [
+      "esc.hf.2026.icd_primary_prevention"
+    ],
+    "descriptionVi": "Thời gian điều trị nội khoa tối ưu tối thiểu (≥ 3 tháng) trước khi quyết định cấy ICD dự phòng tiên phát."
+  },
+  {
+    "id": "hf.icd.post_mi_days_min",
+    "value": 40,
+    "unit": "days",
+    "quantity": "duration_days",
+    "citationIds": [
+      "esc.hf.2026.icd_primary_prevention",
+      "esc.hf.2026.icd_contra_nyha4_mi40d"
+    ],
+    "descriptionVi": "Khoảng thời gian tối thiểu (> 40 ngày sau nhồi máu cơ tim cấp) mới được chỉ định cấy ICD dự phòng tiên phát."
+  },
+  {
+    "id": "hf.crt.ef_max",
+    "value": 35,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "esc.hf.2026.crt_lbbb_qrs_150"
+    ],
+    "descriptionVi": "Ngưỡng LVEF tối đa (≤ 35%) để chỉ định tái đồng bộ cơ tim (CRT) ở bệnh nhân suy tim nhịp xoang."
+  },
+  {
+    "id": "hf.crt.qrs_min",
+    "value": 130,
+    "unit": "ms",
+    "quantity": "qrs_duration",
+    "citationIds": [
+      "esc.hf.2026.crt_qrs_130",
+      "esc.hf.2026.crt_non_lbbb_150_lbbb_130_149"
+    ],
+    "descriptionVi": "Độ rộng QRS tối thiểu (≥ 130 ms; chống chỉ định Class III nếu < 130 ms) để xem xét chỉ định CRT."
+  },
+  {
+    "id": "hf.crt.qrs_class1",
+    "value": 150,
+    "unit": "ms",
+    "quantity": "qrs_duration",
+    "citationIds": [
+      "esc.hf.2026.crt_lbbb_qrs_150"
+    ],
+    "descriptionVi": "Độ rộng QRS (≥ 150 ms) đạt chỉ định Class I cho CRT khi nhịp xoang kèm block nhánh trái (LBBB)."
+  },
+  {
+    "id": "hf.teer.ef_min",
+    "value": 20,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "esc.hf.2026.teer_table19_criteria"
+    ],
+    "descriptionVi": "Ngưỡng LVEF tối thiểu (≥ 20%) theo tiêu chuẩn chọn bệnh M-TEER trong hở van hai lá thứ phát (ESC 2026 Table 19)."
+  },
+  {
+    "id": "hf.teer.ef_max",
+    "value": 50,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "esc.hf.2026.teer_table19_criteria"
+    ],
+    "descriptionVi": "Ngưỡng LVEF tối đa (≤ 50%) theo tiêu chuẩn chọn bệnh M-TEER trong hở van hai lá thứ phát (ESC 2026 Table 19)."
+  },
+  {
+    "id": "hf.teer.spap_max",
+    "value": 70,
+    "unit": "mmHg",
+    "quantity": "spap",
+    "citationIds": [
+      "esc.hf.2026.teer_table19_criteria"
+    ],
+    "descriptionVi": "Áp lực động mạch phổi tâm thu tối đa (sPAP ≤ 70 mmHg) theo tiêu chuẩn chọn bệnh M-TEER (ESC 2026 Table 19)."
+  },
+  {
+    "id": "hf.glp1.ef_min",
+    "value": 45,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "esc.hf.2026.glp1_obesity"
+    ],
+    "descriptionVi": "Phân suất tống máu tối thiểu (LVEF ≥ 45%) cân nhắc Semaglutide hoặc Tirzepatide ở bệnh nhân suy tim kèm béo phì (ESC 2026 Class IIa, Level B1)."
+  },
+  {
+    "id": "hf.glp1.bmi_min",
+    "value": 30,
+    "unit": "kg/m2",
+    "quantity": "bmi",
+    "citationIds": [
+      "esc.hf.2026.glp1_obesity"
+    ],
+    "descriptionVi": "Chỉ số khối cơ thể tối thiểu (BMI ≥ 30 kg/m²) cân nhắc Semaglutide hoặc Tirzepatide ở bệnh nhân suy tim kèm béo phì."
+  },
+  {
+    "id": "hf.glp1.semaglutide_start",
+    "value": 0.25,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.hfpef.2026.glp1_obesity"
+    ],
+    "descriptionVi": "Liều khởi đầu Semaglutide tiêm dưới da hàng tuần (0.25 mg/tuần) cho bệnh nhân HFpEF kèm béo phì."
+  },
+  {
+    "id": "hf.glp1.semaglutide_target",
+    "value": 2.4,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.hfpef.2026.glp1_obesity"
+    ],
+    "descriptionVi": "Liều đích Semaglutide tiêm dưới da hàng tuần (2.4 mg/tuần - Wegovy) cho bệnh nhân HFpEF kèm béo phì."
+  },
+  {
+    "id": "hf.acute.shock_sbp",
+    "value": 90,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.hf.2026.acute_inotropes_shock_sbp90",
+      "esc.hf.2026.bb_guidance_table_s6"
+    ],
+    "descriptionVi": "Ngưỡng huyết áp tâm thu (< 90 mmHg) cảnh báo tụt huyết áp nặng / sốc tim trong suy tim cấp nội viện (cần tạm ngừng chẹn beta/giãn mạch)."
+  },
+  {
+    "id": "hf.acute.una_min",
+    "value": 70,
+    "unit": "mmol/L",
+    "quantity": "urinary_sodium",
+    "citationIds": [
+      "esc.hf.2026.acute_diuretic_protocol"
+    ],
+    "descriptionVi": "Đích Natri niệu (uNa+ ≥ 70 mmol/L tại thời điểm 2 giờ) đánh giá đáp ứng lợi tiểu quai tĩnh mạch đạt yêu cầu."
+  },
+  {
+    "id": "hf.acute.urine_output_rate_min",
+    "value": 100,
+    "unit": "mL/h",
+    "quantity": "urine_output_rate",
+    "citationIds": [
+      "esc.hf.2026.acute_diuretic_protocol"
+    ],
+    "descriptionVi": "Đích lưu lượng nước tiểu (≥ 100 mL/giờ trong 6 giờ đầu) đánh giá đáp ứng lợi tiểu quai tĩnh mạch đạt yêu cầu."
+  },
+  {
+    "id": "hf.acute.vasodilator_sbp_min",
+    "value": 110,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.hf.2026.acute_vasodilators"
+    ],
+    "descriptionVi": "Ngưỡng huyết áp tâm thu (> 110 mmHg) mới được cân nhắc phối hợp thuốc giãn mạch đường tĩnh mạch trong suy tim cấp."
+  },
+  {
+    "id": "hf.acute.furosemide_iv_naive_mg",
+    "value": 40,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "esc.hf.2026.acute_furosemide_40_max600"
+    ],
+    "descriptionVi": "Liều khởi đầu Furosemide tĩnh mạch (40 mg IV) cho bệnh nhân suy tim cấp quá tải dịch chưa từng dùng lợi tiểu quai."
+  },
+  {
+    "id": "hf.acute.furosemide_iv_max_mg",
+    "value": 600,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "esc.hf.2026.acute_furosemide_40_max600"
+    ],
+    "descriptionVi": "Tổng liều Furosemide tĩnh mạch tối đa thông thường hàng ngày (600 mg/ngày) trong suy tim cấp."
+  },
+  {
+    "id": "hf.vericiguat.sbp_min",
+    "module": "hf",
+    "quantity": "sbp",
+    "value": 100,
+    "unit": "mmHg",
+    "comparison": ">=",
+    "descriptionVi": "Ngưỡng huyết áp tâm thu tối thiểu (SBP ≥ 100 mmHg) để xem xét khởi trị Vericiguat theo tiêu chuẩn thử nghiệm VICTORIA.",
+    "citationIds": [
+      "aha.hf.2022.vericiguat_victoria_sbp100"
+    ]
+  },
+  {
+    "id": "hf.digoxin.hr_start_min",
+    "module": "hf",
+    "quantity": "hr",
+    "value": 60,
+    "unit": "bpm",
+    "comparison": ">=",
+    "descriptionVi": "Ngưỡng nhịp tim tối thiểu (HR ≥ 60 bpm) trước khi cân nhắc khởi trị Digoxin nhằm tránh nhịp chậm xoang hoặc block nhĩ thất.",
+    "citationIds": [
+      "fda.hf.digoxin_oral_tablets_mcg",
+      "fda.hf.digoxin_wpw_af"
+    ]
+  },
+  {
+    "id": "hf.digoxin.k_min",
+    "module": "hf",
+    "quantity": "k",
+    "value": 3.5,
+    "unit": "mmol/L",
+    "comparison": ">=",
+    "descriptionVi": "Ngưỡng kali máu tối thiểu (K+ ≥ 3,5 mmol/L) trước khi dùng Digoxin vì hạ kali máu làm tăng mạnh nguy cơ ngộ độc Digoxin và loạn nhịp thất.",
+    "citationIds": [
+      "esc.hf.2026.hypokalaemia_3_5_diuretic",
+      "esc.hf.2026.digoxin_high_normal_k"
+    ]
+  },
+  {
+    "id": "hf.digoxin.egfr_avoid_max",
+    "module": "hf",
+    "quantity": "egfr",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "comparison": "<",
+    "descriptionVi": "Ngưỡng suy thận nặng (eGFR < 30 mL/phút/1,73m²) cần tránh khởi trị thường quy Digoxin do thuốc thải trừ qua thận dễ gây tích lũy ngộ độc.",
+    "citationIds": [
+      "fda.hf.digoxin_renal_table3",
+      "aha.hf.2022.digoxin_dosing_age70"
+    ]
+  },
+  {
+    "id": "hf.digoxin.egfr_low_dose_max",
+    "module": "hf",
+    "quantity": "egfr",
+    "value": 60,
+    "unit": "mL/min/1.73m2",
+    "comparison": "<",
+    "descriptionVi": "Ngưỡng suy giảm chức năng thận (eGFR < 60 mL/phút/1,73m²) bắt buộc dùng liều thấp Digoxin 62,5 mcg/ngày (hoặc cách ngày).",
+    "citationIds": [
+      "fda.hf.digoxin_renal_table3",
+      "aha.hf.2022.digoxin_dosing_age70"
+    ]
+  },
+  {
+    "id": "hf.digoxin.elderly_age_min",
+    "module": "hf",
+    "quantity": "age",
+    "value": 70,
+    "unit": "years",
+    "comparison": ">=",
+    "descriptionVi": "Ngưỡng tuổi cao (≥ 70 tuổi) cần khởi trị Digoxin ở liều thấp 62,5 mcg/ngày (hoặc 0,125 mg cách ngày).",
+    "citationIds": [
+      "aha.hf.2022.digoxin_dosing_age70"
+    ]
+  },
+  {
+    "id": "hf.digoxin.std_dose_mcg",
+    "module": "hf",
+    "quantity": "dose_mcg",
+    "value": 125,
+    "unit": "mcg",
+    "comparison": "==",
+    "descriptionVi": "Liều khởi đầu/duy trì thấp-chuẩn đường uống của Digoxin (125 mcg = 0,125 mg x 1 lần/ngày) ở người lớn chức năng thận bình thường.",
+    "citationIds": [
+      "fda.hf.digoxin_oral_tablets_mcg",
+      "aha.hf.2022.digoxin_dosing_age70"
+    ]
+  },
+  {
+    "id": "hf.ivabradine.elderly_age_min",
+    "module": "hf",
+    "quantity": "age",
+    "value": 75,
+    "unit": "years",
+    "comparison": ">=",
+    "descriptionVi": "Ngưỡng tuổi rất cao (≥ 75 tuổi) cần khởi trị Ivabradine ở liều thấp 2,5 mg x 2 lần/ngày.",
+    "citationIds": [
+      "fda.hf.ivabradine_elderly_75",
+      "fda.hf.ivabradine_low_dose_2_5mg"
+    ]
+  },
+  {
+    "id": "hf.ef.hfimpef_min_delta",
+    "module": "hf",
+    "quantity": "lvef",
+    "parameter": "Mức tăng tuyệt đối LVEF tối thiểu xác định HFimpEF",
+    "operator": ">=",
+    "value": 10,
+    "unit": "%",
+    "meaningVi": "HFimpEF đòi hỏi tiền sử LVEF ≤ 40%, nay tăng tuyệt đối ít nhất ≥ 10 điểm phần trăm và đạt > 40% (ESC 2026 §3.3.1).",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.hfimpef_definition"
+    ]
+  },
+  {
+    "id": "hf.sglt2i.dose_10mg",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Liều chuẩn SGLT2i (Dapagliflozin / Empagliflozin)",
+    "operator": "==",
+    "value": 10,
+    "unit": "mg",
+    "meaningVi": "Liều đích cố định 10 mg x 1 lần/ngày cho cả Dapagliflozin và Empagliflozin trên toàn phổ LVEF.",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.sglt2i_doses_table11"
+    ]
+  },
+  {
+    "id": "hf.sglt2i.sbp_min_esc",
+    "module": "hf",
+    "quantity": "sbp",
+    "parameter": "Huyết áp tâm thu tối thiểu an toàn khởi trị SGLT2i (ESC)",
+    "operator": ">=",
+    "value": 90,
+    "unit": "mmHg",
+    "meaningVi": "Tạm hoãn SGLT2i nếu hạ huyết áp nặng SBP < 90 mmHg hoặc sốc giảm thể tích.",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.arni_table_s5_contra_caution"
+    ]
+  },
+  {
+    "id": "hf.sglt2i.egfr_initiate_min_us",
+    "module": "hf",
+    "quantity": "egfr",
+    "parameter": "Ngưỡng eGFR tối thiểu khởi trị mới Dapagliflozin theo FDA Hoa Kỳ",
+    "operator": ">=",
+    "value": 25,
+    "unit": "mL/min/1.73m2",
+    "meaningVi": "Nhãn FDA Farxiga không khuyến cáo khởi trị mới Dapagliflozin khi eGFR < 25 mL/phút/1,73 m² (ở dải 20–24 ưu tiên Empagliflozin tại US).",
+    "jurisdiction": "US",
+    "citationIds": [
+      "fda.hf.dapagliflozin_egfr25"
+    ]
+  },
+  {
+    "id": "hf.sglt2i.egfr_metformin_fdc_min",
+    "module": "hf",
+    "quantity": "egfr",
+    "parameter": "Ngưỡng eGFR tối thiểu duy trì viên phối hợp SGLT2i + Metformin",
+    "operator": ">=",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "meaningVi": "Khi eGFR < 30 mL/phút/1,73 m², chống chỉ định thành phần Metformin nên phải tách sang viên đơn chất SGLT2i 10 mg.",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.metformin_egfr30_hf"
+    ]
+  },
+  {
+    "id": "hf.sglt2i.surgery_withhold_days",
+    "module": "hf",
+    "quantity": "duration_days",
+    "parameter": "Số ngày tạm ngưng SGLT2i trước phẫu thuật lớn",
+    "operator": ">=",
+    "value": 3,
+    "unit": "days",
+    "meaningVi": "Tạm ngưng Dapagliflozin/Empagliflozin tối thiểu 3 ngày trước đại phẫu hoặc thủ thuật nhịn ăn kéo dài.",
+    "jurisdiction": "US",
+    "citationIds": [
+      "fda.hf.dapagliflozin_withhold_3days"
+    ]
+  },
+  {
+    "id": "hf.rasi.valsartan_start_mg",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Liều khởi đầu Valsartan trong suy tim HFrEF",
+    "operator": "==",
+    "value": 40,
+    "unit": "mg",
+    "meaningVi": "Khởi đầu Valsartan 40 mg x 2 lần/ngày ở suy tim HFrEF.",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.valsartan_doses_table11"
+    ]
+  },
+  {
+    "id": "hf.rasi.valsartan_target_mg",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Liều đích Valsartan mỗi lần dùng trong suy tim HFrEF",
+    "operator": "==",
+    "value": 160,
+    "unit": "mg",
+    "meaningVi": "Liều đích Valsartan 160 mg x 2 lần/ngày ở suy tim HFrEF.",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.valsartan_doses_table11"
+    ]
+  },
+  {
+    "id": "hf.arni.start_low_sac_mg",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Hàm lượng Sacubitril liều khởi đầu thấp",
+    "operator": "==",
+    "value": 24,
+    "unit": "mg",
+    "meaningVi": "Viên Sacubitril/valsartan 24/26 mg x 2 lần/ngày.",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.arni_table_s5_doses"
+    ]
+  },
+  {
+    "id": "hf.arni.start_low_val_mg",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Hàm lượng Valsartan liều khởi đầu thấp trong ARNI",
+    "operator": "==",
+    "value": 26,
+    "unit": "mg",
+    "meaningVi": "Viên Sacubitril/valsartan 24/26 mg x 2 lần/ngày.",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.arni_table_s5_doses"
+    ]
+  },
+  {
+    "id": "hf.arni.start_std_sac_mg",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Hàm lượng Sacubitril liều khởi đầu tiêu chuẩn",
+    "operator": "==",
+    "value": 49,
+    "unit": "mg",
+    "meaningVi": "Viên Sacubitril/valsartan 49/51 mg x 2 lần/ngày.",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.arni_table_s5_doses"
+    ]
+  },
+  {
+    "id": "hf.arni.start_std_val_mg",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Hàm lượng Valsartan liều khởi đầu tiêu chuẩn trong ARNI",
+    "operator": "==",
+    "value": 51,
+    "unit": "mg",
+    "meaningVi": "Viên Sacubitril/valsartan 49/51 mg x 2 lần/ngày.",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.arni_table_s5_doses"
+    ]
+  },
+  {
+    "id": "hf.arni.target_sac_mg",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Hàm lượng Sacubitril liều đích",
+    "operator": "==",
+    "value": 97,
+    "unit": "mg",
+    "meaningVi": "Viên Sacubitril/valsartan liều đích 97/103 mg x 2 lần/ngày.",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.arni_table_s5_doses"
+    ]
+  },
+  {
+    "id": "hf.arni.target_val_mg",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Hàm lượng Valsartan liều đích trong ARNI",
+    "operator": "==",
+    "value": 103,
+    "unit": "mg",
+    "meaningVi": "Viên Sacubitril/valsartan liều đích 97/103 mg x 2 lần/ngày.",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.arni_table_s5_doses"
+    ]
+  },
+  {
+    "id": "hf.eplerenone.mod_cyp3a4_max_mg",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Trần liều Eplerenone khi dùng kèm chất ức chế CYP3A4 mức độ vừa",
+    "operator": "<=",
+    "value": 25,
+    "unit": "mg",
+    "meaningVi": "Không vượt quá Eplerenone 25 mg x 1 lần/ngày khi dùng kèm fluconazole, erythromycin, verapamil hoặc diltiazem.",
+    "jurisdiction": "US",
+    "citationIds": [
+      "fda.hf.eplerenone_mod_cyp3a4_25mg"
+    ]
+  },
+  {
+    "id": "hf.ivabradine.hr_target_max",
+    "module": "hf",
+    "quantity": "hr",
+    "parameter": "Ngưỡng trên vùng tần số tim mục tiêu khi duy trì Ivabradine",
+    "operator": "<=",
+    "value": 60,
+    "unit": "bpm",
+    "meaningVi": "Duy trì nguyên liều Ivabradine khi HR lúc nghỉ 50–60 bpm; chỉ tăng liều khi HR > 60 bpm.",
+    "jurisdiction": "US",
+    "citationIds": [
+      "fda.hf.ivabradine_dosing_table1"
+    ]
+  },
+  {
+    "id": "hf.vericiguat.start_us_mg",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Liều khởi đầu tiêu chuẩn Vericiguat theo nhãn FDA 01/2026",
+    "operator": "==",
+    "value": 5,
+    "unit": "mg",
+    "meaningVi": "Khởi đầu Vericiguat 5 mg x 1 lần/ngày cùng thức ăn theo FDA 2026 (2.5 mg/ngày nếu có nguy cơ hạ huyết áp).",
+    "jurisdiction": "US",
+    "citationIds": [
+      "fda.hf.vericiguat_dose_5mg_2026"
+    ]
+  },
+  {
+    "id": "hf.digoxin.ef_nyha2_max",
+    "module": "hf",
+    "quantity": "lvef",
+    "parameter": "Ngưỡng LVEF cân nhắc glycosid trợ tim ở HFrEF NYHA II (DIGIT-HF)",
+    "operator": "<=",
+    "value": 30,
+    "unit": "%",
+    "meaningVi": "Cân nhắc glycosid trợ tim trên nền FMT ở bệnh nhân HFrEF nhịp xoang NYHA II có LVEF ≤ 30% (hoặc NYHA III–IV với LVEF ≤ 40%).",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.digit_hf_nyha2_ef30"
+    ]
+  },
+  {
+    "id": "hf.digoxin.serum_target_min",
+    "module": "hf",
+    "quantity": "concentration_ng_ml",
+    "parameter": "Cận dưới nồng độ Digoxin huyết thanh mục tiêu",
+    "operator": ">=",
+    "value": 0.5,
+    "unit": "ng/mL",
+    "meaningVi": "Nồng độ Digoxin huyết thanh mục tiêu an toàn trong suy tim: 0.5 đến < 0.9 ng/mL.",
+    "jurisdiction": "US",
+    "citationIds": [
+      "aha.hf.2022.digoxin_serum_05_09"
+    ]
+  },
+  {
+    "id": "hf.digoxin.serum_target_max",
+    "module": "hf",
+    "quantity": "concentration_ng_ml",
+    "parameter": "Cận trên nồng độ Digoxin huyết thanh mục tiêu",
+    "operator": "<",
+    "value": 0.9,
+    "unit": "ng/mL",
+    "meaningVi": "Nồng độ Digoxin huyết thanh mục tiêu an toàn trong suy tim: 0.5 đến < 0.9 ng/mL (tuyệt đối < 1.2 ng/mL).",
+    "jurisdiction": "US",
+    "citationIds": [
+      "aha.hf.2022.digoxin_serum_05_09"
+    ]
+  },
+  {
+    "id": "hf.glp1.tirzepatide_start",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Liều khởi đầu Tirzepatide dưới da mỗi tuần",
+    "operator": "==",
+    "value": 2.5,
+    "unit": "mg",
+    "meaningVi": "Khởi đầu Tirzepatide 2.5 mg tiêm dưới da mỗi tuần ở HFpEF kèm béo phì.",
+    "jurisdiction": "US",
+    "citationIds": [
+      "acc.hfpef.2026.table4_incretin_doses"
+    ]
+  },
+  {
+    "id": "hf.glp1.tirzepatide_target",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Liều đích tối đa Tirzepatide dưới da mỗi tuần (SUMMIT)",
+    "operator": "==",
+    "value": 15,
+    "unit": "mg",
+    "meaningVi": "Tăng dần Tirzepatide mỗi 4 tuần tới đích 5–15 mg/tuần theo khả năng dung nạp.",
+    "jurisdiction": "US",
+    "citationIds": [
+      "acc.hfpef.2026.table4_incretin_doses"
+    ]
+  },
+  {
+    "id": "hf.iron.ef_max_intl",
+    "module": "hf",
+    "quantity": "lvef",
+    "parameter": "Ngưỡng LVEF bù sắt tĩnh mạch ở HFrEF theo ESC 2026",
+    "operator": "<",
+    "value": 50,
+    "unit": "%",
+    "meaningVi": "ESC 2026 khuyến cáo bù sắt tĩnh mạch cho HFrEF có triệu chứng (LVEF < 50%, bao gồm AFFIRM-AHF < 50%).",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.hfref_redefined_lt50"
+    ]
+  },
+  {
+    "id": "hf.iron.fcm_low_dose_mg",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Liều đơn thấp / duy trì Ferric carboxymaltose",
+    "operator": "==",
+    "value": 500,
+    "unit": "mg",
+    "meaningVi": "Liều truyền tĩnh mạch 500 mg sắt (Ferric carboxymaltose).",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.fair_hf2_fcm_500_2000"
+    ]
+  },
+  {
+    "id": "hf.iron.fcm_max_initial_mg",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Tổng liều nạp tối đa Ferric carboxymaltose",
+    "operator": "<=",
+    "value": 2000,
+    "unit": "mg",
+    "meaningVi": "Tổng liều sắt nạp tối đa lên tới 2000 mg (chia mỗi lần truyền tối đa 1000 mg).",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.fair_hf2_fcm_500_2000"
+    ]
+  },
+  {
+    "id": "hf.crt.qrs_min_us",
+    "module": "hf",
+    "quantity": "qrs_duration",
+    "parameter": "Ngưỡng QRS tối thiểu cân nhắc CRT ở LBBB theo AHA/ACC/HFSA 2022",
+    "operator": ">=",
+    "value": 120,
+    "unit": "ms",
+    "meaningVi": "AHA/ACC/HFSA 2022 khuyến cáo COR 2a cho LBBB có QRS 120–149 ms và chống chỉ định CRT khi QRS < 120 ms.",
+    "jurisdiction": "US",
+    "citationIds": [
+      "aha.hf.2022.crt_120_149_lbbb_2a",
+      "aha.hf.2022.crt_contra_lt120"
+    ]
+  },
+  {
+    "id": "hf.icd.ef_max_nyha1_post_mi_us",
+    "module": "hf",
+    "quantity": "lvef",
+    "parameter": "Ngưỡng LVEF chỉ định ICD ở bệnh nhân NYHA I sau NMCT ≥ 40 ngày (US)",
+    "operator": "<=",
+    "value": 30,
+    "unit": "%",
+    "meaningVi": "AHA/ACC/HFSA 2022 (COR 1, LOE B-R): Chỉ định ICD ở bệnh nhân NYHA I có LVEF ≤ 30% sau NMCT ≥ 40 ngày trên nền GDMT.",
+    "jurisdiction": "US",
+    "citationIds": [
+      "aha.hf.2022.icd_nyha1_post_mi_ef30"
+    ]
+  },
+  {
+    "id": "hf.acute.acetazolamide_iv_mg",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Liều Acetazolamide tiêm tĩnh mạch phối hợp giải áp sung huyết cấp (ADVOR)",
+    "operator": "==",
+    "value": 500,
+    "unit": "mg",
+    "meaningVi": "Acetazolamide 500 mg tiêm tĩnh mạch x 1 lần/ngày phối hợp lợi tiểu quai trong suy tim mất bù cấp quá tải dịch.",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.acute_acetazolamide_500mg"
+    ]
+  },
+  {
+    "id": "hf.acute.ntg_start_mcg_min",
+    "module": "hf",
+    "quantity": "infusion_rate",
+    "parameter": "Tốc độ khởi đầu truyền tĩnh mạch Nitroglycerin trong suy tim cấp",
+    "operator": ">=",
+    "value": 10,
+    "unit": "mcg/min",
+    "meaningVi": "Khởi đầu truyền tĩnh mạch Nitroglycerin 10–20 mcg/phút ở suy tim cấp kèm SBP > 110 mmHg.",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.acute_ntg_doses_table_s14"
+    ]
+  },
+  {
+    "id": "hf.acute.ntg_start_high_mcg_min",
+    "module": "hf",
+    "quantity": "infusion_rate",
+    "parameter": "Mốc trên tốc độ khởi đầu Nitroglycerin tĩnh mạch",
+    "operator": "<=",
+    "value": 20,
+    "unit": "mcg/min",
+    "meaningVi": "Khởi đầu truyền tĩnh mạch Nitroglycerin 10–20 mcg/phút.",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.acute_ntg_doses_table_s14"
+    ]
+  },
+  {
+    "id": "hf.acute.ntg_max_mcg_min",
+    "module": "hf",
+    "quantity": "infusion_rate",
+    "parameter": "Tốc độ truyền tối đa Nitroglycerin tĩnh mạch trong suy tim cấp",
+    "operator": "<=",
+    "value": 200,
+    "unit": "mcg/min",
+    "meaningVi": "Tăng dần tốc độ truyền Nitroglycerin tối đa tới 200 mcg/phút theo đáp ứng huyết áp.",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.acute_ntg_doses_table_s14"
+    ]
+  },
+  {
+    "id": "hf.loop.na_hyponatremia_max",
+    "module": "hf",
+    "quantity": "na",
+    "parameter": "Ngưỡng hạ natri máu cần thận trọng khi dùng lợi tiểu",
+    "operator": "<",
+    "value": 135,
+    "unit": "mmol/L",
+    "meaningVi": "Hạ natri máu (Na+ < 135 mmol/L): ngừng thiazide và đánh giá thể tích tuần hoàn khi dùng lợi tiểu quai.",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.diuretic_hyponatraemia_gout_table_s7"
+    ]
+  },
+  {
+    "id": "hf.loop.bumetanide_equiv_furo_mg",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Hệ số quy đổi tương đương 1 mg Bumetanide sang Furosemide uống",
+    "operator": "==",
+    "value": 40,
+    "unit": "mg",
+    "meaningVi": "1 mg Bumetanide tương đương khoảng 40 mg Furosemide uống.",
+    "jurisdiction": "US",
+    "citationIds": [
+      "fda.hf.bumetanide_equiv_40mg"
+    ]
+  },
+  {
+    "id": "hf.loop.torsemide_usual_max_mg",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Liều Torsemide uống tương đương 40 mg Furosemide uống",
+    "operator": "==",
+    "value": 20,
+    "unit": "mg",
+    "meaningVi": "10–20 mg Torsemide uống tương đương khoảng 40 mg Furosemide uống.",
+    "jurisdiction": "US",
+    "citationIds": [
+      "aha.hf.2022.loop_diuretic_chronic_doses"
+    ]
+  },
+  {
+    "id": "hf.loop.torsemide_max_daily_mg",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Trần liều tối đa hàng ngày của Torsemide",
+    "operator": "<=",
+    "value": 200,
+    "unit": "mg",
+    "meaningVi": "Trần liều hàng ngày của Torsemide trong suy tim mạn là 200 mg/ngày.",
+    "jurisdiction": "US",
+    "citationIds": [
+      "aha.hf.2022.loop_diuretic_chronic_doses"
+    ]
+  },
+  {
+    "id": "hf.ntprobnp.sinus_min",
+    "module": "hf",
+    "quantity": "ntprobnp",
+    "parameter": "Ngưỡng NT-proBNP chẩn đoán suy tim ở nhịp xoang",
+    "operator": ">=",
+    "value": 125,
+    "unit": "pg/mL",
+    "meaningVi": "NT-proBNP ≥ 125 pg/mL ủng hộ chẩn đoán suy tim ở bệnh nhân nhịp xoang.",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "acc.hfpef.2026.ntprobnp_sr125_af365"
+    ]
+  },
+  {
+    "id": "hf.ntprobnp.afib_min",
+    "module": "hf",
+    "quantity": "ntprobnp",
+    "parameter": "Ngưỡng NT-proBNP chẩn đoán suy tim khi có rung nhĩ",
+    "operator": ">=",
+    "value": 365,
+    "unit": "pg/mL",
+    "meaningVi": "NT-proBNP ≥ 365 pg/mL ủng hộ chẩn đoán suy tim ở bệnh nhân kèm rung nhĩ.",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "acc.hfpef.2026.ntprobnp_sr125_af365"
+    ]
+  },
+  {
+    "id": "hf.stage_d.ef_severe_max",
+    "module": "hf",
+    "quantity": "lvef",
+    "parameter": "Ngưỡng LVEF rối loạn chức năng thất trái nặng trong Suy tim tiến triển (Stage D)",
+    "operator": "<=",
+    "value": 30,
+    "unit": "%",
+    "meaningVi": "LVEF ≤ 30% kèm NYHA III–IV dai dẳng, nhập viện lặp lại hoặc không dung nạp GDMT gợi ý Suy tim tiến triển (I-NEED-HELP).",
+    "jurisdiction": "INTL",
+    "citationIds": [
+      "esc.hf.2026.advanced_hf_table14_ef30"
+    ]
+  },
+  {
+    "id": "hf.patiromer.start_g",
+    "module": "hf",
+    "quantity": "dose_g",
+    "parameter": "Liều khởi đầu Patiromer đường uống",
+    "operator": "==",
+    "value": 8.4,
+    "unit": "g",
+    "meaningVi": "Khởi đầu Patiromer 8.4 g x 1 lần/ngày để kiểm soát tăng kali máu và duy trì RAASi/MRA.",
+    "jurisdiction": "US",
+    "citationIds": [
+      "fda.hf.patiromer_dosing"
+    ]
+  },
+  {
+    "id": "hf.szc.maint_g",
+    "module": "hf",
+    "quantity": "dose_g",
+    "parameter": "Liều duy trì chuẩn Sodium zirconium cyclosilicate (SZC)",
+    "operator": "==",
+    "value": 10,
+    "unit": "g",
+    "meaningVi": "Duy trì Sodium zirconium cyclosilicate 10 g x 1 lần/ngày để kiểm soát kali máu và duy trì RAASi/MRA.",
+    "jurisdiction": "US",
+    "citationIds": [
+      "fda.hf.szc_dosing"
+    ]
+  },
+  {
+    "id": "hf.tafamidis.free_acid_mg",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Liều chuẩn Tafamidis dạng acid tự do",
+    "operator": "==",
+    "value": 61,
+    "unit": "mg",
+    "meaningVi": "Tafamidis acid tự do 61 mg uống 1 lần/ngày trong bệnh cơ tim nhiễm bột ATTR.",
+    "jurisdiction": "US",
+    "citationIds": [
+      "aha.hf.2022.tafamidis_doses_80_61"
+    ]
+  },
+  {
+    "id": "hf.tafamidis.meglumine_mg",
+    "module": "hf",
+    "quantity": "dose_mg",
+    "parameter": "Liều chuẩn Tafamidis meglumine",
+    "operator": "==",
+    "value": 80,
+    "unit": "mg",
+    "meaningVi": "Tafamidis meglumine 80 mg (4 viên 20 mg) uống 1 lần/ngày trong bệnh cơ tim nhiễm bột ATTR.",
+    "jurisdiction": "US",
+    "citationIds": [
+      "aha.hf.2022.tafamidis_doses_80_61"
+    ]
+  }
+]

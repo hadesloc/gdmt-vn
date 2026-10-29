@@ -1,0 +1,127 @@
+{
+  "id": "clonidine",
+  "nameVi": "Clonidine",
+  "inn": "Clonidine",
+  "class": "Chủ vận thụ thể Alpha-2 giao cảm trung ương",
+  "classes": [
+    "central_alpha2_agonist"
+  ],
+  "vnBrands": [
+    "Catapres"
+  ],
+  "forms": [
+    "Viên nén 0.1 mg",
+    "Viên nén 0.15 mg",
+    "Viên nén 0.2 mg"
+  ],
+  "start": {
+    "amount": 0.1,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "Thuốc dự trữ hàng cuối; người cao tuổi khởi đầu thấp hơn và tuyệt đối không ngưng đột ngột"
+  },
+  "target": {
+    "amount": 0.2,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "Tổng liều thường dùng 0,1–0,8 mg/ngày chia 2 lần"
+  },
+  "titration": {
+    "step": "Tăng thêm 0,1 mg/ngày mỗi tuần nếu cần; khi ngưng bắt buộc giảm liều dần trong 2–4 ngày",
+    "intervalDays": 7,
+    "maxDose": "0.8 mg/ngày (chia 2 lần)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "0.1–0.4 mg x 2 lần/ngày (tối đa 0.8 mg/ngày)",
+      "citationIds": [
+        "aha.acc.2025.table13_central_clonidine",
+        "vsh.htn.2022.drugs_table_other"
+      ],
+      "note": "Dùng liều thông thường và theo dõi an thần, nhịp tim, huyết áp."
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Khởi đầu 0.05–0.1 mg x 2 lần/ngày, chỉnh liều theo đáp ứng",
+      "citationIds": [
+        "fda.clonidine.renal_halflife",
+        "aha.acc.2025.table13_central_clonidine"
+      ],
+      "note": "Khoảng 40–60% thuốc thải trừ nguyên dạng qua thận — thận trọng khởi đầu liều thấp ở suy thận nặng, không cần liều bổ sung sau chạy thận nhân tạo."
+    }
+  ],
+  "hepatic": {
+    "status": "caution",
+    "notesVi": "Chuyển hóa một phần qua gan (~50%); thận trọng theo dõi an thần và nhịp chậm ở bệnh nhân suy gan.",
+    "citationIds": [
+      "aha.acc.2025.table13_central_clonidine"
+    ]
+  },
+  "gates": [
+    {
+      "id": "gate_clonidine_hr_50",
+      "parameter": "HR",
+      "operator": "<",
+      "threshold": 50,
+      "unit": "bpm",
+      "action": "hold",
+      "messageVi": "Tạm hoãn/tránh khởi trị Clonidine khi nhịp tim < 50 lần/phút (nguy cơ nhịp chậm xoang và block nhĩ thất; lưu ý giảm liều từ từ nếu đang dùng mạn tính).",
+      "citationIds": [
+        "aha.acc.2025.table13_central_clonidine"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Chỉ dùng làm thuốc hàng thứ hai/ba khi không dung nạp labetalol, nifedipine kéo dài và methyldopa.",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_first_line"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Đạt nồng độ đáng kể trong sữa mẹ (tỷ lệ sữa/huyết tương ~2) và có thể gây ngủ gà, hạ huyết áp, ngưng thở ở trẻ sơ sinh — tránh dùng khi cho con bú.",
+    "citationIds": [
+      "fda.clonidine.nursing",
+      "esc.htn.2024.pregnancy_lactation_thiazide"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "sick_sinus_syndrome",
+      "messageVi": "Hội chứng suy nút xoang hoặc nhịp chậm nặng có triệu chứng (chưa đặt máy tạo nhịp)",
+      "citationIds": [
+        "fda.clonidine.conduction_bradycardia"
+      ]
+    },
+    {
+      "code": "av_block_2_3",
+      "messageVi": "Block nhĩ thất độ 2 hoặc độ 3 chưa đặt máy tạo nhịp",
+      "citationIds": [
+        "fda.clonidine.conduction_bradycardia"
+      ]
+    }
+  ],
+  "interactions": [
+    "CƠN TĂNG HUYẾT ÁP DỘI NGƯỢC (Rebound Hypertensive Crisis): ngưng đột ngột clonidine gây phóng thích ồ ạt catecholamine. Nếu đang dùng kèm thuốc CHẸN BETA, bắt buộc phải NGƯNG THUỐC CHẸN BETA TRƯỚC VÀI NGÀY rồi mới giảm liều clonidine từ từ (để tránh co mạch alpha không đối kháng).",
+    "Diltiazem / Verapamil / Digoxin / Chẹn beta: hiệp đồng ức chế nút xoang và nút nhĩ thất gây nhịp chậm nặng và block nhĩ thất hoàn toàn.",
+    "Thuốc chống trầm cảm 3 vòng (TCA — amitriptyline, imipramine): đối kháng thụ thể alpha-2 trung ương làm mất tác dụng hạ áp của clonidine.",
+    "Gây khô miệng và an thần rõ rệt hệ thần kinh trung ương (cảnh báo té ngã ở người cao tuổi — tiêu chuẩn Beers)."
+  ],
+  "citationIds": [
+    "aha.acc.2025.table13_central_clonidine",
+    "vsh.htn.2022.drugs_table_other",
+    "esc.htn.2024.resistant_alternatives",
+    "fda.clonidine.withdrawal_bb",
+    "fda.clonidine.conduction_bradycardia",
+    "fda.clonidine.renal_halflife",
+    "fda.clonidine.nursing"
+  ]
+}

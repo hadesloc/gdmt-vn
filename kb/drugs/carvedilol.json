@@ -1,0 +1,165 @@
+{
+  "id": "carvedilol",
+  "nameVi": "Carvedilol",
+  "inn": "Carvedilol",
+  "class": "Beta-blocker",
+  "classes": [
+    "bb_nonselective"
+  ],
+  "vnBrands": [
+    "Dilatrend",
+    "Talliton",
+    "Coryol",
+    "Carvedilol Stada"
+  ],
+  "forms": [
+    "Viên nén 3.125 mg",
+    "Viên nén 6.25 mg",
+    "Viên nén 12.5 mg",
+    "Viên nén 25 mg"
+  ],
+  "start": {
+    "amount": 3.125,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "uống cùng bữa ăn để làm chậm hấp thu và giảm nguy cơ hạ huyết áp tư thế"
+  },
+  "target": {
+    "amount": 25,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "có thể tăng tới 50 mg x 2 lần/ngày nếu cân nặng > 85 kg"
+  },
+  "titration": {
+    "step": "Gấp đôi liều mỗi ≥ 2 tuần: 3.125 -> 6.25 -> 12.5 -> 25 mg x 2 lần/ngày (tối đa 50 mg x 2 lần/ngày nếu > 85 kg)",
+    "intervalDays": 14,
+    "maxDose": "25 mg x 2 lần/ngày (50 mg x 2 lần/ngày nếu > 85 kg)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "3.125 mg x 2 lần/ngày -> đích 25 mg x 2 lần/ngày (không cần giảm liều khởi đầu theo thận)",
+      "citationIds": [
+        "esc.hf.2026.bb_doses",
+        "fda.hf.carvedilol_85kg"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "Khởi đầu 3.125 mg x 2 lần/ngày, theo dõi huyết áp và chức năng thận khi chuẩn độ",
+      "citationIds": [
+        "esc.hf.2026.bb_doses"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_carvedilol_hr_min",
+      "parameter": "HR",
+      "operator": "<",
+      "threshold": 50,
+      "unit": "bpm",
+      "action": "hold",
+      "messageVi": "Nhịp tim < 50 bpm: Tạm hoãn khởi trị/tăng liều Carvedilol",
+      "citationIds": [
+        "esc.hf.2026.bb_guidance_table_s6"
+      ]
+    },
+    {
+      "id": "gate_carvedilol_sbp_min",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 90,
+      "unit": "mmHg",
+      "action": "hold",
+      "messageVi": "Huyết áp tâm thu < 90 mmHg: Tạm hoãn do nguy cơ tụt huyết áp mạnh (chẹn cả alpha-1 và beta)",
+      "citationIds": [
+        "esc.hf.2026.bb_guidance_table_s6"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "ESC 2026 (Class I, Level C) khuyến cáo phụ nữ mang thai có HFrEF phải chuyển từ chẹn beta không chọn lọc (Carvedilol) sang chẹn beta chọn lọc beta-1 (Bisoprolol hoặc Metoprolol) để giảm nguy cơ thai nhẹ cân và biến cố thai nhi.",
+    "citationIds": [
+      "esc.hf.2026.pregnancy_bb_switch",
+      "fda.hf.carvedilol_preg_lact"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Chưa có dữ liệu đầy đủ về bài tiết carvedilol qua sữa người; cân nhắc lợi ích điều trị của mẹ và theo dõi trẻ bú mẹ.",
+    "citationIds": [
+      "fda.hf.carvedilol_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "reactive_airway_disease",
+      "messageVi": "Chống chỉ định tuyệt đối ở bệnh nhân hen phế quản hoặc co thắt phế quản do tác dụng chẹn beta-2 không chọn lọc (FDA Coreg §4)",
+      "citationIds": [
+        "fda.hf.carvedilol_contra"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định tuyệt đối ở bệnh nhân suy gan nặng / có biểu hiện lâm sàng suy gan (FDA Coreg §4)",
+      "citationIds": [
+        "fda.hf.carvedilol_contra"
+      ]
+    },
+    {
+      "code": "cardiogenic_shock",
+      "messageVi": "Chống chỉ định trong sốc tim hoặc suy tim mất bù cấp cần thuốc vận mạch/tăng co bóp tĩnh mạch",
+      "citationIds": [
+        "fda.hf.carvedilol_contra"
+      ]
+    },
+    {
+      "code": "av_block_2_3",
+      "messageVi": "Chống chỉ định khi block nhĩ-thất độ II–III hoặc hội chứng suy nút xoang không có máy tạo nhịp",
+      "citationIds": [
+        "fda.hf.carvedilol_contra"
+      ]
+    },
+    {
+      "code": "severe_bradycardia",
+      "messageVi": "Chống chỉ định khi nhịp tim chậm nặng (< 50 bpm) trừ khi có máy tạo nhịp vĩnh viễn",
+      "citationIds": [
+        "fda.hf.carvedilol_contra",
+        "esc.hf.2026.bb_guidance_table_s6"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định ở hen phế quản do ức chế thụ thể beta-2 gây co thắt phế quản cấp nguy kịch",
+    "Làm tăng nồng độ digoxin huyết tương (tương tác qua P-gp); cần theo dõi nồng độ và dấu hiệu ngộ độc digoxin",
+    "Không phối hợp với verapamil hoặc diltiazem do nguy cơ block nhĩ-thất và suy giảm co bóp cơ tim"
+  ],
+  "citationIds": [
+    "esc.hf.2026.bb_doses",
+    "esc.hf.2026.carvedilol_85kg_footnote_d",
+    "esc.hf.2026.bb_guidance_table_s6",
+    "fda.hf.carvedilol_contra",
+    "fda.hf.carvedilol_85kg",
+    "byt.2022.hf_doses"
+  ],
+  "hepatic": {
+    "status": "contra",
+    "childA": "caution",
+    "childB": "avoid",
+    "childC": "contra",
+    "note": "Chuyển hóa mạnh qua gan (tăng phơi nhiễm 4–7 lần ở xơ gan); chống chỉ định tuyệt đối ở suy gan nặng / xơ gan mất bù.",
+    "notesVi": "Chuyển hóa mạnh qua gan (tăng phơi nhiễm 4–7 lần ở xơ gan); chống chỉ định tuyệt đối ở suy gan nặng / xơ gan mất bù.",
+    "citationIds": [
+      "fda.hf.carvedilol_hepatic_contra",
+      "fda.hf.carvedilol_contra"
+    ]
+  }
+}

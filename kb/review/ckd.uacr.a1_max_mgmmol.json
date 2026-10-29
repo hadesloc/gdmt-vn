@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.uacr.a1_max_mgmmol",
+  "contentHash": "6af9727e989962e3ef8076e9a40d40dc824935f13ea03813e57e96d7917e7ab3",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.uacr.a1_max_mgmmol",
+      "contentHash": "53b18b84a33cd720",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.109Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.uacr.a1_max_mgmmol."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

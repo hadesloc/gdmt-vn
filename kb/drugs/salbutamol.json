@@ -1,0 +1,91 @@
+{
+  "id": "salbutamol",
+  "nameVi": "Salbutamol (Albuterol)",
+  "inn": "Salbutamol",
+  "class": "SABA",
+  "vnBrands": [
+    "Ventolin Evohaler",
+    "Ventolin Nebules",
+    "Salbutamol Danapha"
+  ],
+  "forms": [
+    "Bình xịt định liều pMDI 100 mcg/nhát",
+    "Khí dung 2.5 mg/2.5 ml, 5 mg/2.5 ml",
+    "Ống tiêm 0.5 mg/1 ml"
+  ],
+  "start": {
+    "amount": 4,
+    "unit": "nhát",
+    "frequency": "khi cần",
+    "route": "hít",
+    "description": "Cắt cơn: 4–10 nhát xịt qua buồng đệm hoặc 5 mg khí dung"
+  },
+  "target": {
+    "amount": 10,
+    "unit": "nhát",
+    "frequency": "khi cần",
+    "route": "hít",
+    "description": "Cơn cấp nặng: 6–10 nhát xịt mỗi 20–30 phút trong giờ đầu"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận",
+      "citationIds": [
+        "byt.asthma.2021.acute_hospital_treatment"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_salbutamol_not_alone",
+      "parameter": "hasIcsMaintenance",
+      "operator": "==",
+      "threshold": 0,
+      "unit": "cờ",
+      "action": "caution",
+      "messageVi": "CẢNH BÁO: Tuyệt đối không dùng Salbutamol (SABA) đơn độc không kèm ICS vì làm tăng nguy cơ đợt cấp nặng và tử vong",
+      "citationIds": [
+        "gina.asthma.2026.never_saba_alone",
+        "byt.asthma.2020.no_saba_monotherapy"
+      ]
+    }
+  ],
+  "interactions": [
+    "Thuốc chẹn beta không chọn lọc đối kháng tác dụng. Phối hợp lợi tiểu quai/thiazide liều cao có thể làm nặng thêm hạ kali máu."
+  ],
+  "citationIds": [
+    "byt.asthma.2021.acute_hospital_treatment",
+    "gina.asthma.2026.acute_saba_puffs",
+    "gina.asthma.2026.never_saba_alone"
+  ],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Thuốc cắt cơn giãn phế quản ngắn được ưu tiên lựa chọn hàng đầu trong thai kỳ (GINA & FDA).",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Tương thích khi cho con bú.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity",
+      "messageVi": "Quá mẫn với salbutamol",
+      "citationIds": [
+        "byt.asthma.2021.acute_hospital_treatment"
+      ]
+    }
+  ],
+  "classes": [
+    "saba"
+  ],
+  "qtRisk": "conditional"
+}

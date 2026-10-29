@@ -1,0 +1,157 @@
+{
+  "id": "verapamil",
+  "nameVi": "Verapamil",
+  "inn": "Verapamil hydrochloride",
+  "class": "Thuốc chẹn kênh Canxi Non-Dihydropyridine (Non-DHP CCB)",
+  "classes": [
+    "ndhp_ccb"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Isoptin"
+  ],
+  "forms": [
+    "Viên nén 40 mg",
+    "Viên nén 80 mg",
+    "Viên phóng thích kéo dài 240 mg",
+    "Ống tiêm 5 mg/2 mL"
+  ],
+  "start": {
+    "amount": 40,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "Uống 40 mg x 2 lần/ngày (hoặc viên phóng thích kéo dài 120 mg x 1 lần/ngày)"
+  },
+  "target": {
+    "amount": 240,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "120–360 mg/ngày (tối đa 480 mg/ngày) dạng phóng thích kéo dài"
+  },
+  "titration": {
+    "step": "Tăng thêm 40–80 mg/ngày mỗi 3–7 ngày tùy đáp ứng tần số thất và huyết áp",
+    "intervalDays": 3,
+    "maxDose": "480 mg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "crclFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "40 mg 2 lần/ngày đến 480 mg/ngày dạng phóng thích kéo dài",
+      "citationIds": [
+        "esc.af.2024.rate_control_lvef_preserved",
+        "esc.af.2024.verapamil_contra_lvef40"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "crclTo": 15,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Thận trọng dò liều thấp, theo dõi huyết áp và nhịp tim (chuyển hóa qua gan)",
+      "citationIds": [
+        "esc.af.2024.verapamil_contra_lvef40"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_verapamil_lvef",
+      "parameter": "LVEF",
+      "operator": "<=",
+      "threshold": 40,
+      "unit": "%",
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối verapamil khi LVEF ≤ 40% do ức chế mạnh sức co bóp cơ tim",
+      "citationIds": [
+        "esc.af.2024.verapamil_contra_lvef40"
+      ]
+    },
+    {
+      "id": "gate_verapamil_sbp",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 90,
+      "unit": "mmHg",
+      "action": "contra",
+      "messageVi": "Chống chỉ định verapamil khi hạ huyết áp nặng (huyết áp tâm thu < 90 mmHg)",
+      "citationIds": [
+        "fda.diltiazem.hypotension_sbp90"
+      ]
+    },
+    {
+      "id": "gate_verapamil_hr",
+      "parameter": "HR",
+      "operator": "<",
+      "threshold": 50,
+      "unit": "bpm",
+      "action": "hold",
+      "messageVi": "Nhịp tim < 50 bpm: Tạm hoãn dùng verapamil do nguy cơ nhịp chậm nặng hoặc block nhĩ thất",
+      "citationIds": [
+        "esc.hf.2026.bb_guidance_table_s6"
+      ]
+    }
+  ],
+  "interactions": [
+    "TUYỆT ĐỐI KHÔNG phối hợp đồng thời đường tĩnh mạch với thuốc chẹn beta giao cảm do nguy cơ block nhĩ thất hoàn toàn, tụt huyết áp nặng và vô tâm thu",
+    "Ức chế P-gp và CYP3A4 mạnh: làm tăng mạnh nồng độ dabigatran (yêu cầu giảm liều dabigatran xuống 110 mg x 2 lần/ngày), edoxaban và digoxin (giảm liều digoxin 50%)"
+  ],
+  "citationIds": [
+    "esc.af.2024.rate_control_lvef_preserved",
+    "esc.af.2024.verapamil_contra_lvef40",
+    "esc.af.2024.rate_avoid_bb_ccb_combo",
+    "esc.af.2024.pregnancy_rate_verapamil",
+    "esc.preg.2025.diltiazem_verapamil",
+    "acc.af.2023.wpw_av_blockers_harm",
+    "esc.af.2024.qtc_500_conduction_contra"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Có thể cân nhắc dùng kiểm soát tần số thất trong thai kỳ (ở bệnh nhân không có HFrEF) khi chẹn beta chọn lọc beta-1 không hiệu quả hoặc không dung nạp (ESC 2024 AF Class IIa / ESC 2025 Pregnancy)",
+    "citationIds": [
+      "esc.af.2024.pregnancy_rate_verapamil",
+      "esc.preg.2025.diltiazem_verapamil"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Bài tiết nồng độ rất thấp qua sữa mẹ, an toàn hơn diltiazem và tương thích khi cho con bú (ESC 2025 Pregnancy)",
+    "citationIds": [
+      "esc.preg.2025.diltiazem_verapamil"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "reduced_lvef",
+      "messageVi": "Chống chỉ định tuyệt đối Verapamil khi LVEF ≤ 40%",
+      "citationIds": [
+        "esc.af.2024.verapamil_contra_lvef40"
+      ]
+    },
+    {
+      "code": "severe_hypotension",
+      "messageVi": "Chống chỉ định Verapamil khi huyết áp tâm thu < 90 mmHg hoặc sốc tim",
+      "citationIds": [
+        "fda.diltiazem.hypotension_sbp90"
+      ]
+    },
+    {
+      "code": "wpw_afib",
+      "messageVi": "Chống chỉ định tuyệt đối Verapamil trong rung nhĩ tiền kích thích (WPW) do ức chế nút nhĩ thất làm tăng dẫn truyền qua đường phụ gây rung thất",
+      "citationIds": [
+        "acc.af.2023.wpw_av_blockers_harm"
+      ]
+    },
+    {
+      "code": "av_block_2_3",
+      "messageVi": "Chống chỉ định Verapamil ở bệnh nhân block nhĩ thất độ 2–3 hoặc suy nút xoang chưa đặt máy tạo nhịp",
+      "citationIds": [
+        "esc.af.2024.qtc_500_conduction_contra"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "copd_45_r2_open_triple_pneumonia_stops_all",
+  "titleVi": "Hồi quy R2 (R3-R2-COPD-01): Đang dùng bộ ba mở (Spiriva + Symbicort) bị viêm phổi – Ngừng cả 2 bình cũ và chuyển sang Spiolto",
+  "source": "GOLD 2026 Figure 3.9 p. 79 (R3-R2-COPD-01)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_45",
+    "age": 69,
+    "sex": "male",
+    "weight": 58,
+    "height": 165,
+    "sbp": 132,
+    "dbp": 80,
+    "hr": 78,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "tiotropium",
+        "name": "Spiriva Respimat",
+        "dose": 5,
+        "unit": "mcg"
+      },
+      {
+        "drugId": "budesonide_formoterol",
+        "name": "Symbicort Turbuhaler",
+        "dose": 160,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.5,
+      "fev1PredPct": 52,
+      "mmrc": 2,
+      "cat": 14,
+      "moderateExacerbations": 1,
+      "hospitalizations": 0,
+      "bloodEos": 180,
+      "priorPneumonia": true,
+      "smokingStatus": "former"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "tiotropium_olodaterol",
+        "ruleId": "rec_copd_withdraw_ics",
+        "action": "SWITCH"
+      },
+      {
+        "drugId": "tiotropium",
+        "action": "STOP"
+      },
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "tiotropium",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "CONTINUE"
+      }
+    ]
+  }
+}

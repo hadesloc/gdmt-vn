@@ -1,0 +1,26 @@
+{
+  "itemId": "af.periprocedural.dabigatran_hold_renal_days",
+  "contentHash": "94a968b0bc936edf40f5b66caf1d849402745a995051990f75bc3103bd2d899c",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.periprocedural.dabigatran_hold_renal_days",
+      "contentHash": "5bd5d7b7945b9a0d",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.periprocedural.dabigatran_hold_renal_days (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

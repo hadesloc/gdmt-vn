@@ -1,0 +1,77 @@
+{
+  "id": "gout_35_recent_acs_etoricoxib_stop_avoid_nsaid",
+  "titleVi": "Hội chứng vành cấp gần đây kèm THA chưa kiểm soát đang dùng Etoricoxib: NGỪNG KHẨN CẤP COX-2i",
+  "source": "BYT 361/2014 & EULAR 2016 (byt.gout.2014.nsaid_contra_p198, fda.celecoxib.boxed_contra_cv_gi)",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 61,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 158,
+    "dbp": 96,
+    "scr": 90,
+    "uricAcid": 520,
+    "conditions": {
+      "gout": true,
+      "htn": true,
+      "ascvd": true,
+      "recentAcs": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "etoricoxib",
+        "name": "Etoricoxib",
+        "dose": "90",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": true,
+      "goutFlaresYear": 2
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "etoricoxib",
+        "ruleId": "rec_gout_nsaid_stop_etoricoxib",
+        "action": "STOP"
+      },
+      {
+        "drugId": "colchicine",
+        "ruleId": "rec_gout_colchicine_acute_flare",
+        "action": "START",
+        "doseContains": "1 mg"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "etoricoxib",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "naproxen",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 61 tuổi tiền sử hội chứng vành cấp gần đây và huyết áp 158/96 mmHg (> 140/90 mmHg) đang uống Etoricoxib 90 mg. Etoricoxib bị chống chỉ định tuyệt đối ở bệnh tim thiếu máu cục bộ và THA chưa kiểm soát: phát lệnh NGỪNG Etoricoxib riêng biệt và chuyển cắt cơn sang Colchicine."
+}

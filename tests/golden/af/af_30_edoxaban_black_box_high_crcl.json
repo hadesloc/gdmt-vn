@@ -1,0 +1,57 @@
+{
+  "id": "af_30_edoxaban_black_box_high_crcl",
+  "titleVi": "CrCl 116 mL/min (> 95): Cảnh báo Hộp đen FDA cho Edoxaban (ADV_AF_16)",
+  "source": "FDA Label Savaysa & ESC 2024 / fda.edoxaban.af_dose",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 48,
+    "sex": "male",
+    "weight": 80,
+    "height": 175,
+    "sbp": 126,
+    "dbp": 80,
+    "hr": 72,
+    "rhythm": "afib",
+    "scr": 72,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "edoxaban",
+        "name": "Lixiana",
+        "dose": 60,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "edoxaban",
+        "action": "CONTINUE",
+        "doseContains": "CẢNH BÁO HỘP ĐEN"
+      }
+    ]
+  },
+  "descriptionVi": "CrCl 116 mL/min > 95 mL/min (ADV_AF_16): Cảnh báo Hộp đen FDA về giảm hiệu quả bảo vệ đột quỵ so với warfarin do tăng độ thanh thải thận."
+}

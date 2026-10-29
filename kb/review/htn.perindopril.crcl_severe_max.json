@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.perindopril.crcl_severe_max",
+  "contentHash": "39933a1d95f82da0fcaca8bb2031d6ce601925efb454c0a6d750e4309da628e1",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.perindopril.crcl_severe_max",
+      "contentHash": "35ce9c9ee347c515",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực ngưỡng lâm sàng htn.perindopril.crcl_severe_max (30 mL/min) và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

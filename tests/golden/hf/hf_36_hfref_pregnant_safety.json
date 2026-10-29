@@ -1,0 +1,79 @@
+{
+  "id": "hf_36_hfref_pregnant_safety",
+  "titleVi": "HFrEF trên phụ nữ mang thai: Chống chỉ định tuyệt đối ARNI, MRA, SGLT2i; ưu tiên chẹn beta chọn lọc beta-1",
+  "source": "ESC 2026 HF Section Pregnancy (Class III Harm for RASi/MRA/SGLT2i; Class I-C Beta-1 selective BB)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 31,
+    "sex": "female",
+    "weight": 59,
+    "height": 160,
+    "sbp": 116,
+    "dbp": 72,
+    "hr": 84,
+    "rhythm": "sinus",
+    "lvef": 32,
+    "nyha": 2,
+    "scr": 65,
+    "k": 4.1,
+    "conditions": {
+      "hf": true,
+      "pregnant": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "spironolactone",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "dapagliflozin",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "START"
+      },
+      {
+        "drugId": "spironolactone",
+        "action": "START"
+      },
+      {
+        "drugId": "dapagliflozin",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Trong thai kỳ, chống chỉ định tuyệt đối ARNI/ACEi/ARB, MRA và SGLT2i do độc tính bào thai; tiếp tục/khởi trị chẹn beta chọn lọc beta-1 (Bisoprolol hoặc Metoprolol succinate)."
+}

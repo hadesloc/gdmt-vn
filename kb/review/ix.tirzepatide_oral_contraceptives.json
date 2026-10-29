@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.tirzepatide_oral_contraceptives",
+  "contentHash": "1aa76487f64de87c89a688aabedf233f1f84f1e02b1a6d34970ad48986da1d96",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.tirzepatide_oral_contraceptives",
+      "contentHash": "a2a1a46197f4aec7",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.tirzepatide_oral_contraceptives."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

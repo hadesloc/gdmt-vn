@@ -1,0 +1,61 @@
+{
+  "id": "dm2_06_metformin_contra_g5",
+  "titleVi": "Bệnh nhân ĐTĐ2 suy thận mạn giai đoạn 5 (eGFR 12) - Tránh dùng Metformin",
+  "source": "FDA Label Metformin",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "male",
+    "weight": 60,
+    "height": 164,
+    "sbp": 142,
+    "dbp": 86,
+    "hr": 74,
+    "scr": 450,
+    "k": 5.1,
+    "glucose": 9.0,
+    "hba1c": 8.0,
+    "conditions": {
+      "dm": true,
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "metformin",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "metformin",
+        "action": "START"
+      },
+      {
+        "drugId": "metformin",
+        "action": "STOP"
+      }
+    ]
+  },
+  "descriptionVi": "eGFR < 15: Chống chỉ định Metformin."
+}

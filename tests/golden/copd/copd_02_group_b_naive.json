@@ -1,0 +1,57 @@
+{
+  "id": "copd_02_group_b_naive",
+  "titleVi": "COPD Nhóm B mới chẩn đoán: Khởi đầu phối hợp đôi LABA+LAMA",
+  "source": "GOLD 2026 Report p. 75 / Initial Group B",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_02",
+    "age": 68,
+    "sex": "male",
+    "weight": 58,
+    "height": 164,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 78,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "fev1FvcRatio": 0.58,
+      "fev1PredPct": 62,
+      "mmrc": 3,
+      "cat": 18,
+      "moderateExacerbations": 0,
+      "hospitalizations": 0,
+      "bloodEos": 180,
+      "smokingStatus": "current",
+      "currentInhaler": "none"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "tiotropium_olodaterol",
+        "action": "START"
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "copd_54_r2_roflumilast_bmi_theophylline_contra",
+  "titleVi": "Hồi quy R2 (COPD-R2-202, 203, 204): Chặn Roflumilast khi BMI < 18.5 kg/m², Child-Pugh B và đang dùng Theophylline; không đề xuất lặp lại Azithromycin đã có trong currentMeds",
+  "source": "GOLD 2026 p. 83–84 & FDA Daliresp Label (COPD-R2-202, COPD-R2-203, COPD-R2-204)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_54",
+    "age": 68,
+    "sex": "male",
+    "weight": 38,
+    "height": 168,
+    "sbp": 118,
+    "dbp": 72,
+    "hr": 82,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "name": "Trelegy Ellipta",
+        "dose": 100,
+        "unit": "mcg"
+      },
+      {
+        "drugId": "theophylline",
+        "name": "Theophylline SR",
+        "dose": 200,
+        "unit": "mg"
+      },
+      {
+        "drugId": "azithromycin",
+        "name": "Zithromax",
+        "dose": 250,
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.44,
+      "fev1PredPct": 38,
+      "mmrc": 3,
+      "cat": 22,
+      "moderateExacerbations": 2,
+      "hospitalizations": 1,
+      "bloodEos": 180,
+      "chronicBronchitis": true,
+      "childPugh": "B",
+      "smokingStatus": "former"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "roflumilast",
+        "ruleId": "rec_copd_roflumilast_contra",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "roflumilast",
+        "action": "CONSIDER"
+      },
+      {
+        "ruleId": "rec_copd_azithromycin_prophylaxis",
+        "action": "CONSIDER"
+      }
+    ]
+  }
+}

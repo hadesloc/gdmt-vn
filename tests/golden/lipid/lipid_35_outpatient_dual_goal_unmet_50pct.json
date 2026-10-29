@@ -1,0 +1,67 @@
+{
+  "id": "lipid_35_outpatient_dual_goal_unmet_50pct",
+  "titleVi": "ASCVD đạt ngưỡng tuyệt đối (< 1.4) nhưng chưa giảm đủ 50% từ nền - Nâng bậc thêm Ezetimibe",
+  "source": "ESC/EAS 2019 / esc.lipid.2019.target_very_high",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 62,
+    "sex": "female",
+    "weight": 58,
+    "height": 156,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 70,
+    "scr": 72,
+    "tc": 3.6,
+    "hdl": 1.2,
+    "ldl": 1.35,
+    "tg": 1.3,
+    "conditions": {
+      "ascvd": true
+    },
+    "customInputs": {
+      "baselineLdl": 2.4
+    },
+    "currentMeds": [
+      {
+        "drugId": "atorvastatin",
+        "name": "Atorvastatin",
+        "dose": 40,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "ezetimibe",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_lipid_goal_achieved_continue",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R1-05 & R3-LIPID-10: LDL-C 1.35 (< 1.4) nhưng chỉ mới giảm 43.8% từ mức nền 2.4 mmol/L (< 50%) -> Chưa đạt mục tiêu kép, phải thêm Ezetimibe."
+}

@@ -1,0 +1,137 @@
+[
+  {
+    "id": "R3-CKD-01",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "ckd.outpatient.sglt2i_initiate",
+    "finding": "SGLT2i (Dapagliflozin) được khuyến cáo KHỞI TRỊ (START) cho phụ nữ mang thai có CKD + ĐTĐ2/Albumin niệu do thiếu hoàn toàn điều kiện kiểm tra thai kỳ và thiếu thuốc trong cổng an toàn.",
+    "evidence": "Input BN ADV_CKD_31 (Nữ 28 tuổi, conditions.pregnant: true, dm: true, ckd: true, UACR 80 mg/mmol, eGFR 57.4 mL/phút/1.73m²). Output engine: [START] drugId=dapagliflozin title='Khởi trị Dapagliflozin (10 mg x 1 lần/ngày (uống) - 10 mg uống buổi sáng)', cả 2 cổng an toàn eGFR đều passed, không hề có cổng an toàn thai kỳ.",
+    "suggestedFix": "Thêm kiểm tra 'if (ctx.patient.conditions?.pregnant) return false;' trong luật ckd.outpatient.sglt2i_initiate, đồng thời bổ sung 'dapagliflozin', 'empagliflozin', 'canagliflozin' vào danh sách isContraInPregnancy trong src/engine/safety/gates.ts (dòng 218-222)."
+  },
+  {
+    "id": "R3-CKD-02",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "src/engine/safety/gates.ts",
+    "finding": "Bệnh nhân mang thai đang dùng sẵn thuốc độc thai nhi nghiêm trọng (Enalapril, Atorvastatin) không hề được hệ thống phát hiện hay khuyến cáo NGỪNG (STOP/AVOID).",
+    "evidence": "Input BN ADV_CKD_32 (Nữ 30 tuổi, conditions.pregnant: true, currentMeds: [{drugId: 'enalapril', dose: 10}, {drugId: 'atorvastatin', dose: 20}]). Output engine: Khuyến cáo gồm START Dapagliflozin, UPTITRATE Đích HA, MONITOR Cr/K; HOÀN TOÀN KHÔNG CÓ khuyến cáo nào yêu cầu ngừng Enalapril hay Atorvastatin; alerts = [].",
+    "suggestedFix": "Thêm một luật an toàn thai kỳ chủ động trong module CKD (hoặc engine core): khi patient.conditions?.pregnant === true, duyệt currentMeds và lập tức phát khuyến cáo STOP khẩn cấp cho bất kỳ thuốc nào thuộc nhóm RASi (ACEi/ARB/ARNI), Statin, MRA, SGLT2i kèm cảnh báo quái thai mức critical."
+  },
+  {
+    "id": "R3-CKD-03",
+    "severity": "critical",
+    "itemType": "threshold",
+    "itemId": "ckd.outpatient.rasi_initiate",
+    "finding": "Dùng nhầm ngưỡng huyết áp mục tiêu (target_sbp_kdigo = 120 mmHg) làm cổng an toàn chặn khởi trị, dẫn tới TẠM HOÃN (DEFER) sai lệch thuốc bảo vệ thận Class 1B ở mọi bệnh nhân có huyết áp bình thường kèm albumin niệu tăng nặng A3.",
+    "evidence": "Input BN ADV_CKD_45 (Nam 55 tuổi, CKD G3a, UACR 120 mg/mmol [A3], huyết áp bình thường SBP = 112 mmHg). Output engine: [DEFER] perindopril: Khởi trị Perindopril (2.5 mg x 1 lần/ngày) với Gate SBP: passed=false, threshold=120, messageVi='Huyết áp tâm thu 112 mmHg < 120: Nguy cơ tụt HA tư thế, tạm hoãn'. Đoạn mã gây lỗi: rules.outpatient.ts dòng 225: 'const passedSbp = sbp !== undefined && sbp >= th(\"ckd.bp.target_sbp_kdigo\");'.",
+    "suggestedFix": "Phân định rõ ranh giới an toàn huyết động (safety cutoff, ví dụ SBP >= 90 hoặc >= 100 mmHg) với huyết áp mục tiêu (target 120 mmHg). Sửa dòng 225 thành: 'const passedSbp = sbp !== undefined && sbp >= 90;' (hoặc ngưỡng th('ckd.bp.hypotension_min'))."
+  },
+  {
+    "id": "R3-CKD-04",
+    "severity": "critical",
+    "itemType": "matrix",
+    "itemId": "src/engine/merge.ts",
+    "finding": "Đồng thời khuyến cáo START Spironolactone (từ HF) VÀ START Finerenone (từ CKD) cho cùng một bệnh nhân đa bệnh (CKD + HFrEF + ĐTĐ2), gây nguy cơ quá liều 2 MRA và tăng kali máu tử vong.",
+    "evidence": "Input BN testPtDualMra / ADV_CKD_48 (Nam 65 tuổi, CKD G3a, HFrEF EF 30%, ĐTĐ2, UACR 45 mg/mmol, modules: ['ckd', 'hf', 'dm2']). Output engine khuyến cáo đồng thời: 1. [START] spironolactone: Khởi trị Spironolactone 25 mg... 2. [START] finerenone: Khởi trị Finerenone 10 mg... Dù checkDuplicates có sinh alert, mergeRecommendations không hòa giải được vì 2 thuốc khác drugId.",
+    "suggestedFix": "Trong src/engine/merge.ts, bổ sung bước hòa giải xung đột theo nhóm điều trị (dựa trên DUPLICATE_CLASS_RULES). Khi có 2 khuyến cáo START trong cùng nhóm MRA (spironolactone + finerenone), ưu tiên thuốc theo bệnh cảnh chính (HFrEF ưu tiên Spironolactone theo ESC/AHA Class 1A; chuyển Finerenone thành DEFER/AVOID)."
+  },
+  {
+    "id": "R3-CKD-05",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "ckd.outpatient.sglt2i_initiate",
+    "finding": "Khuyến cáo START Dapagliflozin ở bệnh nhân có tụt huyết áp nặng nguy kịch (SBP = 82 mmHg, DBP = 50 mmHg) do thiếu cổng an toàn huyết động cho SGLT2i.",
+    "evidence": "Input BN ADV_CKD_44 (Nam 65 tuổi, CKD G3a + ĐTĐ2, SBP = 82 mmHg, DBP = 50 mmHg). Output engine: [START] dapagliflozin: Khởi trị Dapagliflozin (10 mg x 1 lần/ngày (uống) - 10 mg uống buổi sáng), cả 2 cổng eGFR đều passed, không hề kiểm tra huyết áp.",
+    "suggestedFix": "Thêm cổng an toàn huyết động trong src/engine/safety/gates.ts cho nhóm SGLT2i: Nếu SBP < 95 mmHg hoặc DBP < 50 mmHg, cấm khởi trị SGLT2i (chuyển action sang 'HOLD' hoặc 'AVOID') vì nguy cơ bài niệu thẩm thấu làm nặng thêm tình trạng sốc tuần hoàn."
+  },
+  {
+    "id": "R3-CKD-06",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "ckd.outpatient.chronic_hyperkalemia_binders",
+    "finding": "Bệnh nhân ngoại trú có Kali máu tăng cao nguy hiểm (K+ = 5.6 và 6.0 mmol/L) bị bỏ sót hoàn toàn không có y lệnh hạ kali hay chuyển viện cấp cứu, ngược lại còn hướng dẫn hẹn xét nghiệm lại sau 2–4 tuần.",
+    "evidence": "Input BN ADV_CKD_19 (K+ = 5.6 mmol/L) và ADV_CKD_20 (K+ = 6.0 mmol/L) tại phòng khám ngoại trú. Output engine: [MONITOR] Định lượng lại Creatinin và Kali máu sau 2–4 tuần. Không có chất gắn kali, không có lệnh ngừng Losartan, không có chuyển cấp cứu.",
+    "suggestedFix": "Mở rộng luật ngoại trú: Nếu K+ > 5.5 ở ngoại trú, tự động phát khuyến cáo HOLD các thuốc giữ kali và chỉ định chất gắn kali. Nếu K+ >= 6.0 mmol/L ở ngoại trú, bắt buộc phát khuyến cáo REFER khẩn cấp tới khoa Cấp cứu kèm cảnh báo đe dọa loạn nhịp thất."
+  },
+  {
+    "id": "R3-CKD-07",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "src/engine/merge.ts",
+    "finding": "Đồng thời khuyến cáo START Perindopril (từ CKD) VÀ START Sacubitril/Valsartan (từ HF) khi chọn đa module CKD + Suy tim, vi phạm chống chỉ định tuyệt đối dùng chung ACEi + ARNI.",
+    "evidence": "Input BN ADV_CKD_49 (Nam 64 tuổi, CKD G3a + HFrEF EF 28%, chưa dùng thuốc nền, selectedModules: ['ckd', 'hf']). Output engine liệt kê đồng thời: [START] drugId=sacubitril_valsartan và [START] drugId=perindopril trong cùng một kế hoạch điều trị.",
+    "suggestedFix": "Trong src/engine/merge.ts, hòa giải cặp thuốc ACEi và ARNI: Khi bệnh nhân có HFrEF có chỉ định ARNI, ưu tiên ARNI và triệt tiêu (chuyển thành AVOID/DEFER) khuyến cáo START Perindopril của module CKD để tránh nguy cơ phù mạch tử vong."
+  },
+  {
+    "id": "R3-CKD-08",
+    "severity": "major",
+    "itemType": "threshold",
+    "itemId": "ckd.outpatient.bp_target",
+    "finding": "Tiêu đề ghi 'Đích huyết áp < 120 mmHg (KDIGO 2021/2024)' nhưng bệnh nhân có SBP = 125 mmHg lại nhận hành động CONTINUE kèm thông báo cổng an toàn 'Đạt mục tiêu kiểm soát' (passed = true).",
+    "evidence": "Input BN ADV_CKD_46 (SBP = 125 mmHg, profile = 'INTL'). Output engine: [CONTINUE] title='Đích huyết áp tâm thu < 120 mmHg (KDIGO 2021/2024)' với Gate SBP: passed=true, threshold=129, messageVi='Huyết áp hiện tại 125 mmHg: Gần hoặc đạt mục tiêu kiểm soát'. Đoạn mã gây lỗi: rules.outpatient.ts dòng 585 và 592 so sánh cứng với ckd.bp.target_sbp_esc_max (129).",
+    "suggestedFix": "Trong produce() của luật bp_target, nếu settings.profile === 'INTL', ngưỡng đánh giá phải là ckd.bp.target_sbp_kdigo (120 mmHg). SBP 125 mmHg phải nhận action: 'UPTITRATE' và passed: false."
+  },
+  {
+    "id": "R3-CKD-09",
+    "severity": "major",
+    "itemType": "drug",
+    "itemId": "ckd.outpatient.rasi_initiate",
+    "finding": "Khởi trị Perindopril ở bệnh nhân suy thận nặng (eGFR 15-29) và G5 (< 15) dùng liều khởi đầu chuẩn hàng ngày (2.5–5 mg/ngày) mà không chỉnh liều/giảm tần suất cách ngày theo mức lọc cầu thận.",
+    "evidence": "Input BN ADV_CKD_01 (eGFR = 15.2 mL/phút) và ADV_CKD_02 (eGFR = 16.9 mL/phút). Output engine: [START] drugId=perindopril dose='2.5 mg x 1 lần/ngày (uống) - 2.5–5 mg uống buổi sáng'. SmPC Perindopril quy định CrCl 15-30 mL/phút phải dùng 2.5 mg cách ngày (every other day).",
+    "suggestedFix": "Khi eGFR < 30 mL/phút, liều khởi đầu Perindopril phải hiển thị là: '2.5 mg uống cách ngày (mỗi 48 giờ)' hoặc khuyến cáo ưu tiên ARB ít thải trừ qua thận như Losartan/Telmisartan."
+  },
+  {
+    "id": "R3-CKD-10",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "ckd.inpatient.hold_sick_day_meds",
+    "finding": "Khuyến cáo tạm ngừng thuốc ngày ốm trong AKI nội viện không gán drugId (drugId: undefined), làm mất khả năng liên kết dữ liệu thuốc và gây trùng lặp hiển thị nhiều dòng HOLD trên giao diện.",
+    "evidence": "Input BN ADV_CKD_40 (Nội viện AKI đang dùng Metformin, Dapagliflozin, Perindopril). Output engine sinh 2 khuyến cáo HOLD rời rạc: [HOLD] drugId=NONE title='TẠM NGỪNG khẩn cấp các thuốc: Forxiga, Glucophage, Coversyl' và [HOLD] drugId=metformin title='Tạm ngừng Metformin nội viện trong giai đoạn cấp tính'.",
+    "suggestedFix": "Tách rec_ckd_hold_sick_day thành từng recommendation độc lập cho từng thuốc bị tạm dừng với drugId tương ứng (dapagliflozin, metformin, perindopril) để pipeline mergeRecommendations gộp chuẩn xác."
+  },
+  {
+    "id": "R3-CKD-11",
+    "severity": "major",
+    "itemType": "ui",
+    "itemId": "ckd.outpatient.statin_indication",
+    "finding": "Mâu thuẫn ngữ nghĩa trực tiếp giữa Action AVOID và Tiêu đề 'Khởi trị Statin...' trên giao diện người dùng khi bệnh nhân có chống chỉ định (mang thai).",
+    "evidence": "Input BN ADV_CKD_31 (Thai phụ có CKD). Output engine: [AVOID] drugId=atorvastatin title='Khởi trị Statin phòng ngừa biến cố tim mạch' dose='20 mg/ngày' kèm rationale ca ngợi lợi ích của statin.",
+    "suggestedFix": "Trong evaluateSafetyGates, khi action bị chuyển sang AVOID hoặc STOP, phải tự động cập nhật lại tiêu đề thành: 'CHỐNG CHỈ ĐỊNH / TRÁNH DÙNG ${rec.drugNameVi} (${blockReason})' để tránh gây hiểu nhầm."
+  },
+  {
+    "id": "R3-CKD-12",
+    "severity": "major",
+    "itemType": "missing",
+    "itemId": "ckd.outpatient.missing_scr_check",
+    "finding": "Thiếu hoàn toàn luật kiểm tra Creatinin huyết thanh bị thiếu (Missing Creatinine), dẫn đến việc tự tiện khởi trị Perindopril ở bệnh nhân không rõ chức năng thận.",
+    "evidence": "Input BN ADV_CKD_27 (Scr = undefined, Cystatin C = undefined, K = 4.5, SBP = 130). Output engine: [START] drugId=perindopril title='Khởi trị Perindopril (2.5 mg x 1 lần/ngày)' với mọi cổng đều passed, không hề có dòng nhắc nhở 'Cần nhập Creatinin huyết thanh'.",
+    "suggestedFix": "Bổ sung luật ckd.outpatient.missing_scr_check sử dụng missingInputRec('ckd', 'scr', 'đánh giá chức năng thận và an toàn liều thuốc'), đồng thời bắt buộc rasi_initiate phải có dữ liệu eGFR/Scr mới cho phép START."
+  },
+  {
+    "id": "R3-CKD-13",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "src/engine/safety/interactions.ts",
+    "finding": "Cảnh báo Triple Whammy báo động giả trên bệnh nhân suy tim hoàn toàn KHÔNG DÙNG NSAID do lỗi logic bỏ qua rule.condition khi tồn tại rule.drugB.",
+    "evidence": "Input BN ADV_CKD_48 (BN chỉ dùng Sacubitril/Valsartan, Empagliflozin, Spironolactone; hoàn toàn không có NSAID). Output engine vẫn phát sinh Alert critical: 'Bộ ba nguy hại (Triple Whammy): RASi + Lợi tiểu + NSAID... (Phát hiện: losartan, sacubitril_valsartan + spironolactone)'. Đoạn mã gây lỗi: interactions.ts dòng 134-147.",
+    "suggestedFix": "Sửa interactions.ts: khi rule.drugB khớp, bắt buộc phải kiểm tra kèm điều kiện: 'if (rule.drugB && matchedB.length > 0 && (!rule.condition || rule.condition(patient, derived)))'."
+  },
+  {
+    "id": "R3-CKD-14",
+    "severity": "minor",
+    "itemType": "ui",
+    "itemId": "ckd.outpatient.chronic_hyperkalemia_binders",
+    "finding": "Sử dụng lẫn lộn tên biệt dược thương mại ('Resonium') trong tiêu đề tiếng Việt với tên hoạt chất ('Calcium Polystyrene Sulfonate') trong drugNameVi.",
+    "evidence": "Khuyến cáo: [START] title='Sử dụng chất gắn Kali (Resonium) để duy trì RASi' nhưng drugNameVi='Calcium Polystyrene Sulfonate 15 g'.",
+    "suggestedFix": "Chuẩn hóa đồng bộ tên hoạt chất theo Dược điển: 'Nhựa trao đổi ion Calcium Polystyrene Sulfonate (Resonium)'."
+  },
+  {
+    "id": "R3-CKD-15",
+    "severity": "suggestion",
+    "itemType": "rule",
+    "itemId": "ckd.inpatient.hyperkalemia_severe",
+    "finding": "Gói cấp cứu tăng kali máu nặng UKKA 5 bước dồn toàn bộ 5 loại thuốc cấp cứu vào một dòng khuyến cáo duy nhất với drugId = undefined.",
+    "evidence": "Khuyến cáo rec_ckd_hyperkalemia_severe_bundle có action: START nhưng không có drugId cụ thể, khiến hệ thống không thể liên kết kiểm tra tương tác hoặc xuất đơn thuốc điện tử.",
+    "suggestedFix": "Giữ nguyên thẻ tóm tắt phác đồ hồi sức 5 bước, đồng thời sinh kèm các dòng khuyến cáo thành phần có drugId chuẩn ('calcium_gluconate', 'insulin_regular', 'salbutamol', 'sodium_zirconium_cyclosilicate')."
+  }
+]

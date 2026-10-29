@@ -1,0 +1,51 @@
+{
+  "id": "htn_13_outpatient_ckd_albuminuria",
+  "titleVi": "Tăng huyết áp có CKD và Albumin niệu: Đích huyết áp KDIGO / ESC",
+  "source": "KDIGO 2021 BP / kdigo.bp.2021.target_sbp_120",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 62,
+    "sex": "male",
+    "weight": 68,
+    "height": 165,
+    "sbp": 138,
+    "dbp": 86,
+    "hr": 74,
+    "scr": 135,
+    "k": 4.4,
+    "uacr": 45,
+    "conditions": {
+      "htn": true,
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn",
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_htn_bp_target_evaluation",
+        "action": "CONSIDER"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân CKD kèm albumin niệu, hiển thị đích huyết áp chuẩn hóa theo KDIGO 2021 và ESC 2024."
+}

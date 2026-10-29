@@ -1,0 +1,59 @@
+{
+  "id": "af_07_valvular_rheumatic_mitral_stenosis_vka",
+  "titleVi": "Hẹp hai lá vừa–nặng do thấp: Khởi trị Warfarin, CẤM DOAC (ADV_AF_27)",
+  "source": "ESC 2024 AF Section 6.2.2 & INVICTUS trial / esc.af.2024.vka_only_mechanical_mitral",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 52,
+    "sex": "female",
+    "weight": 50,
+    "height": 152,
+    "sbp": 118,
+    "dbp": 74,
+    "hr": 88,
+    "rhythm": "afib",
+    "scr": 75,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "mitralStenosis": true
+    },
+    "currentMeds": []
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "warfarin",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "apixaban",
+        "action": "START"
+      },
+      {
+        "drugId": "rivaroxaban",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Hẹp van 2 lá vừa–nặng do thấp tim (ADV_AF_27): INVICTUS và ESC 2024 chỉ định duy nhất VKA, DOAC bị cấm."
+}

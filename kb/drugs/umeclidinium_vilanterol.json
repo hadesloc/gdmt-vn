@@ -1,0 +1,126 @@
+{
+  "id": "umeclidinium_vilanterol",
+  "nameVi": "Umeclidinium/Vilanterol",
+  "inn": "Umeclidinium bromide / Vilanterol trifenatate",
+  "class": "LAMA + LABA",
+  "vnBrands": [
+    "Anoro Ellipta"
+  ],
+  "forms": [
+    "Bột hít phân liều Ellipta 62.5 mcg umeclidinium / 25 mcg vilanterol (55/22 mcg phân liều tới phổi)"
+  ],
+  "start": {
+    "amount": 1,
+    "unit": "liều",
+    "frequency": "1 lần/ngày",
+    "route": "hít",
+    "description": "Hít 1 liều Anoro Ellipta (62.5 mcg umeclidinium / 25 mcg vilanterol) x 1 lần/ngày vào buổi sáng"
+  },
+  "target": {
+    "amount": 1,
+    "unit": "liều",
+    "frequency": "1 lần/ngày",
+    "route": "hít",
+    "description": "Hít 1 liều Anoro Ellipta (62.5/25 mcg) x 1 lần/ngày"
+  },
+  "titration": {
+    "step": "Duy trì liều cố định hàng ngày",
+    "intervalDays": 30,
+    "maxDose": "1 liều 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều khi eGFR ≥ 15 mL/phút/1.73m²",
+      "citationIds": [
+        "ema.trimbow.renal_pk_beclometasone_formoterol",
+        "ema.ultibro.renal_dosing_egfr30"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận (thải trừ qua thận không đáng kể)",
+      "citationIds": [
+        "ema.trimbow.renal_pk_beclometasone_formoterol",
+        "ema.ultibro.renal_dosing_egfr30"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Không dùng thêm thuốc LAMA, SAMA thường quy hoặc LABA đơn chất khác",
+    "Thận trọng phối hợp với chất ức chế mạnh CYP3A4 (ketoconazole, clarithromycin, ritonavir) do tăng phơi nhiễm toàn thân của vilanterol và nguy cơ tim mạch / kéo dài QT",
+    "Thận trọng theo dõi triệu chứng tiểu khó ở người bệnh tăng sản lành tính tuyến tiền liệt (BPH) ổn định"
+  ],
+  "citationIds": [
+    "byt.copd.2026.vilanterol_umeclidinium_dose",
+    "gold.copd.2026.initial_group_b",
+    "gold.copd.2026.lama_glaucoma_caution",
+    "gold.copd.2026.concurrent_asthma",
+    "gina.copd.2026.lama_urinary_retention",
+    "ema.trimbow.renal_pk_beclometasone_formoterol",
+    "ema.ultibro.renal_dosing_egfr30",
+    "ema.ultibro.pregnancy_lactation",
+    "ema.ultibro.lactose_excipient_contra",
+    "ema.ultibro.hypersensitivity_contra"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Dữ liệu còn hạn chế trên phụ nữ có thai.",
+    "citationIds": [
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Hấp thu toàn thân của umeclidinium và vilanterol đường hít thấp; cân nhắc lợi ích nuôi con bằng sữa mẹ và lợi ích điều trị cho mẹ.",
+    "citationIds": [
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "severe_milk_protein_allergy",
+      "messageVi": "Chống chỉ định khi dị ứng nặng với protein sữa",
+      "citationIds": [
+        "ema.ultibro.lactose_excipient_contra",
+        "ema.ultibro.hypersensitivity_contra"
+      ]
+    },
+    {
+      "code": "narrow_angle_glaucoma",
+      "messageVi": "Chống chỉ định hoặc tránh tiếp xúc mắt ở người bệnh glôcôm góc đóng cấp tính chưa điều trị",
+      "citationIds": [
+        "gold.copd.2026.lama_glaucoma_caution"
+      ]
+    },
+    {
+      "code": "urinary_retention",
+      "messageVi": "Chống chỉ định khi đang bí tiểu cấp chưa xử trí; thận trọng theo dõi triệu chứng đường tiểu ở người bệnh tăng sản tuyến tiền liệt",
+      "citationIds": [
+        "gina.copd.2026.lama_urinary_retention"
+      ]
+    },
+    {
+      "code": "asthma_without_ics",
+      "messageVi": "Chống chỉ định dùng ở bệnh nhân có hen phế quản đồng mắc nếu không phối hợp corticosteroid hít (ICS)",
+      "citationIds": [
+        "gold.copd.2026.concurrent_asthma"
+      ]
+    }
+  ],
+  "classes": [
+    "lama",
+    "laba"
+  ],
+  "components": [
+    "umeclidinium",
+    "vilanterol"
+  ],
+  "qtRisk": "conditional"
+}

@@ -1,0 +1,82 @@
+{
+  "id": "gout_42_azathioprine_xoi_contra_fallback_probenecid_refer",
+  "titleVi": "Đang dùng Azathioprine ghép tạng (chống chỉ định cả 2 XOI) nhưng thận bảo tồn: Khởi trị Probenecid thay thế & hội chẩn chuyên khoa",
+  "source": "FDA Zyloprim & Uloric Labels, ACR 2020 (fda.febuxostat.azathioprine_contra, acr.gout.2020.probenecid_low_dose)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "US",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 45,
+    "sex": "male",
+    "weight": 74,
+    "scr": 78,
+    "uricAcid": 530,
+    "conditions": {
+      "gout": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "azathioprine",
+        "name": "Azathioprine",
+        "dose": "50",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 3,
+      "urolithiasis": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_avoid_azathioprine",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "febuxostat",
+        "ruleId": "rec_gout_febuxostat_avoid_azathioprine",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "probenecid",
+        "ruleId": "rec_gout_probenecid_start",
+        "action": "START",
+        "doseContains": "500 mg"
+      },
+      {
+        "ruleId": "rec_gout_azathioprine_specialist_refer",
+        "action": "REFER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "allopurinol",
+        "action": "START"
+      },
+      {
+        "drugId": "febuxostat",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 45 tuổi đang dùng Azathioprine 50 mg/ngày có gút tái phát 3 đợt/năm, eGFR ~105 mL/phút và không có sỏi thận. Hệ thống chặn tuyệt đối cả Allopurinol và Febuxostat (nguy cơ suy tủy tử vong), tự động mở lối thoát hạ urat bằng Probenecid 500 mg kèm khuyến cáo hội chẩn chuyên khoa."
+}

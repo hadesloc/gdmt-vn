@@ -1,0 +1,115 @@
+{
+  "id": "bumetanide",
+  "nameVi": "Bumetanide",
+  "inn": "Bumetanide",
+  "class": "Loop diuretic",
+  "classes": [
+    "loop_diuretic",
+    "diuretic"
+  ],
+  "vnBrands": [
+    "Burinex"
+  ],
+  "forms": [
+    "Viên nén 1 mg (lưu ý: ít phổ biến tại Việt Nam hơn Furosemide và Torsemide)",
+    "Viên nén 2 mg"
+  ],
+  "start": {
+    "amount": "0.5–1.0",
+    "unit": "mg",
+    "frequency": "1–2 lần/ngày",
+    "route": "uống",
+    "description": "1 mg Bumetanide tương đương khoảng 40 mg Furosemide uống"
+  },
+  "target": {
+    "amount": "1–5",
+    "unit": "mg",
+    "frequency": "chia 1–2 lần/ngày",
+    "route": "uống",
+    "description": "liều thường dùng 1–5 mg/ngày theo tình trạng sung huyết"
+  },
+  "titration": {
+    "step": "Điều chỉnh liều theo cân nặng khô và triệu chứng sung huyết (liều trần tối đa 10 mg/ngày)",
+    "intervalDays": 3,
+    "maxDose": "10 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "0.5–1.0 mg/ngày (thường dùng 1–5 mg/ngày)",
+      "citationIds": [
+        "esc.hf.2026.loop_diuretics_doses_table_s7"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "1–5 mg/ngày (tối đa 10 mg/ngày)",
+      "note": "Cần liều cao hơn ở suy thận nặng (thận trọng đau cơ nếu dùng liều cao ở suy thận nặng); chống chỉ định nếu vô niệu",
+      "citationIds": [
+        "esc.hf.2026.loop_diuretics_doses_table_s7"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_bumetanide_sbp_min",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 90,
+      "unit": "mmHg",
+      "action": "hold",
+      "messageVi": "Huyết áp tâm thu < 90 mmHg: Tạm hoãn lợi tiểu quai",
+      "citationIds": [
+        "esc.hf.2026.loop_diuretics_doses_table_s7"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Chỉ dùng trong thai kỳ khi suy tim có quá tải dịch / phù phổi sung huyết rõ rệt; theo dõi sát thể tích tuần hoàn và tưới máu nhau thai.",
+    "citationIds": [
+      "esc.preg.2025.diuretics_preg",
+      "esc.preg.2025.hf_preg_diuretics_bb_nitrates",
+      "fda.hf.bumetanide_preg_lact"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Thận trọng khi cho con bú do lợi tiểu quai có thể bài tiết qua sữa mẹ và liều cao làm giảm tiết sữa.",
+    "citationIds": [
+      "fda.hf.bumetanide_preg_lact"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "anuria",
+      "messageVi": "Chống chỉ định trong vô niệu hoàn toàn hoặc hôn mê gan",
+      "citationIds": [
+        "fda.hf.bumetanide_contra_anuria_hepatic"
+      ]
+    }
+  ],
+  "interactions": [
+    "Hạ kali máu làm tăng độc tính digoxin",
+    "NSAID làm giảm hiệu quả lợi tiểu và tăng nguy cơ tổn thương thận cấp"
+  ],
+  "citationIds": [
+    "esc.hf.2026.loop_diuretics_chronic",
+    "esc.hf.2026.loop_diuretics_doses_table_s7"
+  ],
+  "hepatic": {
+    "status": "caution",
+    "childA": "ok",
+    "childB": "caution",
+    "childC": "contra_hepatic_coma",
+    "note": "Chống chỉ định trong hôn mê gan và rối loạn điện giải nặng chưa bù; thận trọng theo dõi kali/natri máu ở bệnh nhân xơ gan cổ trướng.",
+    "notesVi": "Chống chỉ định trong hôn mê gan và rối loạn điện giải nặng chưa bù; thận trọng theo dõi kali/natri máu ở bệnh nhân xơ gan cổ trướng.",
+    "citationIds": [
+      "fda.hf.bumetanide_contra_anuria_hepatic"
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "id": "nicardipine",
+  "nameVi": "Nicardipine (truyền tĩnh mạch)",
+  "inn": "Nicardipine",
+  "class": "CCB (Dihydropyridine — Tĩnh mạch)",
+  "classes": [
+    "dhp_ccb"
+  ],
+  "vnBrands": [
+    "Perdipine",
+    "Loxen IV",
+    "Nicardipine Aguettant"
+  ],
+  "forms": [
+    "Ống tiêm 10 mg / 10 mL (1 mg/mL)",
+    "Ống tiêm 25 mg / 10 mL (2.5 mg/mL)"
+  ],
+  "start": {
+    "amount": 5,
+    "unit": "mg/giờ",
+    "frequency": "truyền liên tục",
+    "route": "truyền tĩnh mạch",
+    "description": "Pha loãng chuẩn (0,1 mg/mL); không cần chỉnh liều khởi đầu ở người ≥ 65 tuổi"
+  },
+  "target": {
+    "amount": "5–15",
+    "unit": "mg/giờ",
+    "frequency": "truyền liên tục",
+    "route": "truyền tĩnh mạch",
+    "description": "Tăng thêm 2,5 mg/giờ mỗi 5–15 phút đến khi đạt huyết áp mục tiêu (tối đa 15 mg/giờ)"
+  },
+  "titration": {
+    "step": "Tăng 2,5 mg/giờ mỗi 5 phút (cấp tốc) hoặc mỗi 15 phút (từ từ); khi đạt đích giảm xuống 3 mg/giờ duy trì",
+    "intervalDays": 1,
+    "maxDose": "15 mg/giờ"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "5–15 mg/giờ truyền tĩnh mạch",
+      "citationIds": [
+        "aha.acc.2025.iv_nicardipine"
+      ],
+      "note": "Không gây ức chế co bóp cơ tim hay dẫn truyền nhĩ thất; phù hợp hầu hết cấp cứu tăng huyết áp."
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Khởi đầu 3–5 mg/giờ, chỉnh liều thận trọng theo huyết áp động mạch",
+      "citationIds": [
+        "aha.acc.2025.iv_nicardipine"
+      ],
+      "note": "Độ thanh thải hệ thống có thể giảm nhẹ ở suy thận nặng — chuẩn độ chậm và giám sát huyết áp liên tục."
+    }
+  ],
+  "hepatic": {
+    "status": "caution",
+    "notesVi": "Chuyển hóa mạnh qua gan (CYP3A4); giảm độ thanh thải ở xơ gan/suy gan — khởi đầu liều thấp và chỉnh liều chậm theo đáp ứng huyết áp.",
+    "citationIds": [
+      "aha.acc.2025.iv_nicardipine"
+    ]
+  },
+  "gates": [
+    {
+      "id": "gate_nicardipine_sbp_low",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 90,
+      "unit": "mmHg",
+      "action": "stop",
+      "messageVi": "Ngưng truyền Nicardipine ngay khi HATT < 90 mmHg.",
+      "citationIds": [
+        "aha.acc.2025.iv_nicardipine"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Được khuyến cáo hàng đầu (cùng labetalol TM) để hạ áp cấp cứu trong tiền sản giật nặng/sản giật theo ESC 2024 (Class I), ESC 2025 và VSH/VNHA 2022.",
+    "citationIds": [
+      "esc.htn.2024.preeclampsia_mgso4",
+      "esc.htn.2025.urapidil_iv",
+      "vsh.htn.2022.pregnancy_table16_drugs_postpartum"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Bài tiết cực thấp qua sữa mẹ (< 1% liều cân nặng trẻ); tương thích sau sinh.",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_lactation_thiazide"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "severe_aortic_stenosis",
+      "messageVi": "CHỐNG CHỈ ĐỊNH trong hẹp van động mạch chủ nặng tiến triển (advanced aortic stenosis — nguy cơ trụy mạch do giảm hậu tải đột ngột trên cung lượng tim cố định)",
+      "citationIds": [
+        "aha.acc.2025.iv_nicardipine"
+      ]
+    },
+    {
+      "code": "severe_hypotension",
+      "messageVi": "Sốc tim hoặc tụt huyết áp nặng",
+      "citationIds": [
+        "aha.acc.2025.iv_nicardipine"
+      ]
+    }
+  ],
+  "interactions": [
+    "Trong BÓC TÁCH ĐỘNG MẠCH CHỦ CẤP: TUYỆT ĐỐI KHÔNG truyền đơn độc trước khi đã ức chế chẹn beta đạt nhịp tim < 60 chu kỳ/phút (nguy cơ nhịp nhanh phản xạ làm tăng dP/dt xé rộng lòng giả).",
+    "Viêm tĩnh mạch ngoại biên: bắt buộc đổi vị trí truyền tĩnh mạch ngoại biên mỗi 12 giờ hoặc ưu tiên đường truyền tĩnh mạch trung tâm.",
+    "Cyclosporine / Tacrolimus: nicardipine ức chế CYP3A4 và P-gp làm tăng mạnh nồng độ đáy cyclosporine/tacrolimus — cần theo dõi nồng độ thuốc chống thải ghép.",
+    "Magnesium sulfate TM (tiền sản giật): hiệp đồng giãn mạch có thể gây tụt huyết áp mạnh."
+  ],
+  "citationIds": [
+    "aha.acc.2025.iv_nicardipine",
+    "aha.acc.2025.table27_aortic_acs",
+    "esc.htn.2024.preeclampsia_mgso4",
+    "vsh.htn.2022.emergency_stroke_thrombolysis"
+  ]
+}

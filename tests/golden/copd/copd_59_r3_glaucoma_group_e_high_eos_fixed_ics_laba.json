@@ -1,0 +1,74 @@
+{
+  "id": "copd_59_r3_glaucoma_group_e_high_eos_fixed_ics_laba",
+  "titleVi": "Hồi quy R3 (COPD-R3-R1-08 & R3-05): COPD Nhóm E BCAT 380 /µL kèm glôcôm góc đóng khởi trị Budesonide/Formoterol liều cố định COPD 160/4.5 mcg (tránh LAMA & tránh MART)",
+  "source": "GOLD 2026 p. 75, 157 / BYT QĐ 2131/2026 Phụ lục 1 tr. 68 (COPD-R3-R1-08, COPD-R3-R3-05)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_59",
+    "age": 68,
+    "sex": "male",
+    "weight": 59,
+    "height": 165,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 76,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "fev1FvcRatio": 0.51,
+      "fev1PredPct": 54,
+      "mmrc": 2,
+      "cat": 16,
+      "moderateExacerbations": 2,
+      "hospitalizations": 1,
+      "bloodEos": 380,
+      "currentInhaler": "none",
+      "narrowAngleGlaucoma": true,
+      "smokingStatus": "former"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "budesonide_formoterol",
+        "ruleId": "rec_copd_lama_contra_alternative",
+        "action": "START",
+        "doseContains": "160/4.5"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "action": "START"
+      },
+      {
+        "drugId": "tiotropium_olodaterol",
+        "action": "START"
+      },
+      {
+        "drugId": "olodaterol",
+        "action": "START"
+      }
+    ]
+  }
+}

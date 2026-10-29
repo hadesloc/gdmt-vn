@@ -1,0 +1,1422 @@
+[
+  {
+    "id": "esc.lipid.2019.target_very_high",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 22,
+    "printedPage": "132",
+    "locator": "Recommendations for treatment goals for low-density lipoprotein cholesterol / p. 22",
+    "quote": "In secondary prevention for patients at very-high risk,c an LDL-C reduction of > _50% from baselined and an LDL-C goal of <1.4 mmol/L (<55 mg/dL) are recommended.",
+    "quoteVi": "Trong dự phòng thứ phát cho bệnh nhân nguy cơ rất cao, khuyến cáo giảm LDL-C >= 50% so với mức nền và đạt đích LDL-C < 1.4 mmol/L (< 55 mg/dL).",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.lipid.2019.target_recurrent_acs",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 22,
+    "printedPage": "132",
+    "locator": "Section 6.1.1 & Recommendations / p. 22",
+    "quote": "taking maximally toleratedstatin-based therapy, an LDL-C goal <1.0 mmol/L (<40 mg/dL) maybe considered.",
+    "quoteVi": "Đối với bệnh nhân ASCVD tái phát biến cố mạch máu thứ hai trong vòng 2 năm dù đang dùng phác đồ statin liều tối đa dung nạp, có thể cân nhắc đích LDL-C < 1.0 mmol/L (< 40 mg/dL).",
+    "cor": "IIb",
+    "loe": "B"
+  },
+  {
+    "id": "esc.lipid.2019.target_high",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 22,
+    "printedPage": "132",
+    "locator": "Recommendations for treatment goals for low-density lipoprotein cholesterol / p. 22",
+    "quote": "In patients at high risk,c an LDL-C reduction of > _50% from baselined and an LDL-C goal of <1.8 mmol/L (<70 mg/dL) are recommended.",
+    "quoteVi": "Ở bệnh nhân nguy cơ cao, khuyến cáo giảm LDL-C >= 50% so với mức nền và đạt đích LDL-C < 1.8 mmol/L (< 70 mg/dL).",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.lipid.2019.target_moderate",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 22,
+    "printedPage": "132",
+    "locator": "Recommendations for treatment goals for low-density lipoprotein cholesterol / p. 22",
+    "quote": "In individuals at moderate risk,c an LDL-C goal of <2.6 mmol/L (<100 mg/dL) should be considered.",
+    "quoteVi": "Ở bệnh nhân nguy cơ trung bình, nên cân nhắc đích LDL-C < 2.6 mmol/L (< 100 mg/dL).",
+    "cor": "IIa",
+    "loe": "A"
+  },
+  {
+    "id": "esc.lipid.2019.target_low",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 22,
+    "printedPage": "132",
+    "locator": "Recommendations for treatment goals for low-density lipoprotein cholesterol / p. 22",
+    "quote": "In individuals at low risk,c an LDL-C goal <3.0 mmol/L (<116 mg/dL) may be considered.",
+    "quoteVi": "Ở người có nguy cơ tim mạch thấp, có thể cân nhắc đích LDL-C < 3.0 mmol/L (< 116 mg/dL).",
+    "cor": "IIb",
+    "loe": "A"
+  },
+  {
+    "id": "esc.lipid.2019.target_non_hdl",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 22,
+    "printedPage": "132",
+    "locator": "Section 6.1.1 / p. 22",
+    "quote": "non-HDL-C <2.2 mmol/L (<85 mg/dL), <2.6 mmol/L(<100 mg/dL), and <3.4 mmol/L (<130 mg/dL) in people at very high,high, and moderate CV risk, respectively",
+    "quoteVi": "Đích phụ non-HDL-C là < 2.2 mmol/L, < 2.6 mmol/L và < 3.4 mmol/L tương ứng cho các nhóm nguy cơ rất cao, cao và trung bình.",
+    "cor": "IIa",
+    "loe": "B"
+  },
+  {
+    "id": "esc.lipid.2019.target_apob",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 22,
+    "printedPage": "132",
+    "locator": "Section 6.1.1 / p. 22",
+    "quote": "ApoB <65mg/dL, <80 mg/dL, and <100 mg/dL in very-high, high, and moderatetotal CV risk, respectively.",
+    "quoteVi": "Đích phụ ApoB là < 65 mg/dL, < 80 mg/dL và < 100 mg/dL tương ứng cho nhóm nguy cơ rất cao, cao và trung bình.",
+    "cor": "IIa",
+    "loe": "B"
+  },
+  {
+    "id": "esc.lipid.2019.statin_high_dose_rec",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 35,
+    "printedPage": "145",
+    "locator": "Recommendations for pharmacological low-density lipoprotein cholesterol lowering / p. 35",
+    "quote": "It is recommended that a high-intensity statin is prescribed up to the highest tolerated dose to reach the goals set for the",
+    "quoteVi": "Khuyến cáo chỉ định statin cường độ cao tới liều tối đa dung nạp để đạt được đích điều trị tương ứng với tầng nguy cơ.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.lipid.2019.therapy_reductions",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 36,
+    "printedPage": "146",
+    "locator": "Figure 3: Intensity of lipid lowering treatment / p. 36",
+    "quote": "Moderate intensity statin ≈ 30% High intensity statin ≈ 50% High intensity statin plus ≈ 65% ezetimibe PCSK9 inhibitor ≈ 60% PCSK9 inhibitor plus high intensity statin ≈ 75% PCSK9 inhibitor plus high intensity statin ≈ 85% plus ezetimibe",
+    "quoteVi": "Mức giảm LDL-C dự kiến trung bình: Statin trung bình ~30%, statin cao ~50%, statin cao + ezetimibe ~65%, PCSK9i ~60%, PCSK9i + statin cao ~75%, PCSK9i + statin cao + ezetimibe ~85%."
+  },
+  {
+    "id": "acc.lipid.2026.statin_intensity_table",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 27,
+    "printedPage": "2650",
+    "locator": "Section 4.2.1.1 & Table 6 / p. 27",
+    "quote": "High-intensity statin therapy is expected to lower LDL-C levels by $50%, moderate-intensity statin therapy by $30% to 49%, and low-intensity statin therapy by <30%",
+    "quoteVi": "Statin cường độ cao dự kiến giảm LDL-C >= 50%, cường độ trung bình giảm 30%-49%, và cường độ thấp giảm < 30%."
+  },
+  {
+    "id": "acc.lipid.2026.statin_doses",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 31,
+    "printedPage": "2654",
+    "locator": "Table 6: High-, Moderate-, and Low-Intensity Statin Therapy / p. 31",
+    "quote": "Atorvastatin (40 mg) 80 mg Rosuvastatin 20 mg (40 mg) Atorvastatin 10 mg (20 mg) Rosuvastatin (5 mg) 10 mg",
+    "quoteVi": "Statin cường độ cao: Atorvastatin 40-80 mg, Rosuvastatin 20-40 mg. Cường độ trung bình: Atorvastatin 10-20 mg, Rosuvastatin 5-10 mg."
+  },
+  {
+    "id": "acc.lipid.2026.statin_table_doses",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 31,
+    "printedPage": "2654",
+    "locator": "Table 6: High-, Moderate-, and Low-Intensity Statin Therapy / p. 31",
+    "quote": "Pitavastatin 1, 2, 4 mg Pravastatin 40 mg (80 mg) Simvastatin 20, 40 mg",
+    "quoteVi": "Liều dùng statin: Pitavastatin 1, 2, 4 mg; Pravastatin 40-80 mg; Simvastatin 20-40 mg."
+  },
+  {
+    "id": "acc.lipid.2026.simva_contra_80mg",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 31,
+    "printedPage": "2654",
+    "locator": "Table 6 footnote ‡ / p. 31",
+    "quote": "initiation of simvastatin 80 mg or titration to 80 mg is not recommended by the FDA because of the increased risk of myopathy, including rhabdomyolysis.",
+    "quoteVi": "Khởi trị hoặc chuẩn độ lên Simvastatin 80 mg không được FDA khuyến cáo do tăng nguy cơ bệnh cơ, bao gồm tiêu cơ vân."
+  },
+  {
+    "id": "acc.lipid.2026.asian_start_dose",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 27,
+    "printedPage": "2650",
+    "locator": "Section 4.2.1.1 / p. 27",
+    "quote": "East Asian ancestry) may be more prone to side effects due to inherited drug metabolism effects; thus, initialtreatmentshouldbewithlowerdoses.",
+    "quoteVi": "Người gốc Đông Á có thể dễ gặp tác dụng phụ hơn do chuyển hóa thuốc, do đó nên khởi trị với liều thấp hơn."
+  },
+  {
+    "id": "fda.rosuvastatin.asian_dose",
+    "sourceId": "fda_rosuvastatin",
+    "pdfPage": 4,
+    "printedPage": "4",
+    "locator": "Section 2.4: Recommended Dosage in Asian Patients / p. 4",
+    "quote": "Initiate CRESTOR at 5 mg orally once daily due to increased rosuvastatin plasma concentrations. Consider the risks and benefits of CRESTOR when treating Asian patients not adequately controlled at dosages up to 20 mg orally once daily",
+    "quoteVi": "Khởi đầu Rosuvastatin ở liều 5 mg uống 1 lần/ngày ở người châu Á do nồng độ thuốc trong huyết tương tăng cao. Cân nhắc lợi ích và nguy cơ nếu tăng liều lên tới 20 mg/ngày."
+  },
+  {
+    "id": "fda.rosuvastatin.renal_impairment",
+    "sourceId": "fda_rosuvastatin",
+    "pdfPage": 4,
+    "printedPage": "4",
+    "locator": "Section 2.5: Recommended Dosage in Patients with Renal Impairment / p. 4",
+    "quote": "In patients with severe renal impairment (CLcr less than 30 mL/min/1.73 m2) not on hemodialysis, the recommended starting dosage is 5 mg orally once daily and should not exceed 10 mg orally once daily",
+    "quoteVi": "Ở bệnh nhân suy thận nặng (eGFR hoặc CrCl < 30 mL/min/1.73 m2) không lọc máu, liều khởi đầu khuyến cáo là 5 mg uống 1 lần/ngày và không được vượt quá 10 mg/ngày."
+  },
+  {
+    "id": "fda.atorvastatin.renal",
+    "sourceId": "fda_atorvastatin",
+    "pdfPage": 15,
+    "printedPage": "15",
+    "locator": "Section 8.6: Renal Impairment / p. 15",
+    "quote": "Renal impairment does not affect the plasma concentrations of LIPITOR, therefore there is no dosage adjustment in patients with renal impairment",
+    "quoteVi": "Suy thận không ảnh hưởng đến nồng độ trong huyết tương của Atorvastatin, do đó không cần điều chỉnh liều ở bệnh nhân suy giảm chức năng thận."
+  },
+  {
+    "id": "fda.atorvastatin.dose",
+    "sourceId": "fda_atorvastatin",
+    "pdfPage": 1,
+    "printedPage": "1",
+    "locator": "Highlights of Prescribing Information: Dosage and Administration / p. 1",
+    "quote": "Recommended starting dosage is 10 or 20 mg once daily; dosage range is 10 mg to 80 mg once daily.",
+    "quoteVi": "Liều khởi đầu khuyến cáo của Atorvastatin là 10 hoặc 20 mg 1 lần/ngày; dải liều là 10 mg đến 80 mg 1 lần/ngày."
+  },
+  {
+    "id": "esc.lipid.2019.ezetimibe_add_on",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 35,
+    "printedPage": "145",
+    "locator": "Section 8.12 Strategies to control plasma cholesterol / p. 35",
+    "quote": "maximally toleratedstatin, combination with ezetimibe is recommended",
+    "quoteVi": "Ở bệnh nhân nguy cơ rất cao chưa đạt đích dù đã dùng liều statin tối đa dung nạp, khuyến cáo phối hợp thêm ezetimibe.",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "fda.ezetimibe.dose",
+    "sourceId": "fda_ezetimibe",
+    "pdfPage": 3,
+    "printedPage": "3",
+    "locator": "Section 2: Dosage and Administration / p. 3",
+    "quote": "The recommended dose of ZETIA is 10 mg orally once daily, administered with or without food.",
+    "quoteVi": "Liều khuyến cáo của Ezetimibe là 10 mg uống 1 lần/ngày, cùng hoặc không cùng thức ăn."
+  },
+  {
+    "id": "fda.ezetimibe.renal",
+    "sourceId": "fda_ezetimibe",
+    "pdfPage": 9,
+    "printedPage": "9",
+    "locator": "Section 8.6: Renal Impairment / p. 9",
+    "quote": "No dosage adjustment of ZETIA is necessary in patients with renal impairment.",
+    "quoteVi": "Không cần điều chỉnh liều Ezetimibe ở bệnh nhân suy thận."
+  },
+  {
+    "id": "esc.lipid.2019.pcsk9_add_on_secondary",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 35,
+    "printedPage": "145",
+    "locator": "Section 8.12 / p. 35",
+    "quote": "combination with ezetimibe is recommended and, if still not atgoal, the addition of a PCSK9 inhibitor is recommended",
+    "quoteVi": "Nếu vẫn chưa đạt đích sau khi phối hợp statin tối đa + ezetimibe, khuyến cáo bổ sung thuốc ức chế PCSK9.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "fda.evolocumab.dose",
+    "sourceId": "fda_evolocumab",
+    "pdfPage": 3,
+    "printedPage": "3",
+    "locator": "Section 2.1: Recommended Dosage / p. 3",
+    "quote": "The recommended dosage of REPATHA is either 140 mg every 2 weeks OR 420 mg once monthly administered subcutaneously",
+    "quoteVi": "Liều khuyến cáo của Evolocumab là 140 mg tiêm dưới da mỗi 2 tuần hoặc 420 mg tiêm dưới da 1 lần mỗi tháng."
+  },
+  {
+    "id": "fda.inclisiran.dose",
+    "sourceId": "fda_inclisiran",
+    "pdfPage": 3,
+    "printedPage": "3",
+    "locator": "Section 2.1: Recommended Dosage / p. 3",
+    "quote": "284 mg administered as a single subcutaneous injection initially, again at 3 months, and then every 6 months.",
+    "quoteVi": "Liều khuyến cáo của Inclisiran là 284 mg tiêm dưới da liều đầu, lặp lại sau 3 tháng, và sau đó định kỳ mỗi 6 tháng."
+  },
+  {
+    "id": "esc.lipid.2025.bempedoic_statin_intolerance",
+    "sourceId": "esc_2025_lipid",
+    "pdfPage": 11,
+    "printedPage": "4369",
+    "locator": "Recommendation Table 2 / p. 11",
+    "quote": "Bempedoic acid is recommended in patients who are unable to take statin therapy to achieve the LDL-C goal.",
+    "quoteVi": "Bempedoic acid được khuyến cáo ở bệnh nhân không dung nạp liệu pháp statin để đạt mục tiêu LDL-C.",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.lipid.2025.bempedoic_add_on",
+    "sourceId": "esc_2025_lipid",
+    "pdfPage": 11,
+    "printedPage": "4369",
+    "locator": "Recommendation Table 2 / p. 11",
+    "quote": "The addition of bempedoic acid to the maximally tolerated dose of statin with or without ezetimibe should be considered in patients at high or very high risk in order to achieve the LDL-C goal.",
+    "quoteVi": "Nên xem xét phối hợp thêm bempedoic acid vào phác đồ statin liều tối đa dung nạp kèm hoặc không kèm ezetimibe ở bệnh nhân nguy cơ cao/rất cao để đạt đích LDL-C.",
+    "cor": "IIa",
+    "loe": "C"
+  },
+  {
+    "id": "fda.bempedoic.dose",
+    "sourceId": "fda_bempedoic_acid",
+    "pdfPage": 3,
+    "printedPage": "3",
+    "locator": "Section 2.1: Recommended Dosage / p. 3",
+    "quote": "The recommended dosage of NEXLETOL is 180 mg administered orally once daily. NEXLETOL can be taken with or without food.",
+    "quoteVi": "Liều khuyến cáo của Bempedoic acid là 180 mg uống 1 lần/ngày, cùng hoặc không cùng thức ăn."
+  },
+  {
+    "id": "fda.bempedoic.monitoring_12w",
+    "sourceId": "fda_bempedoic_acid",
+    "pdfPage": 3,
+    "printedPage": "3",
+    "locator": "Section 2.1: Recommended Dosage / p. 3",
+    "quote": "After initiation of NEXLETOL, analyze lipid levels within 8 to 12 weeks.",
+    "quoteVi": "Sau khi khởi trị Bempedoic acid, kiểm tra lại lipid máu trong vòng 8 đến 12 tuần."
+  },
+  {
+    "id": "esc.lipid.2025.acs_prior_llt",
+    "sourceId": "esc_2025_lipid",
+    "pdfPage": 12,
+    "printedPage": "4370",
+    "locator": "Recommendation Table 3 / p. 12",
+    "quote": "Intensification of lipid-lowering therapy during the index ACS hospitalization is recommended for patients who were on any lipid-lowering therapy before admission in order to further lower LDL-C levels.",
+    "quoteVi": "Tăng cường phác đồ hạ lipid trong thời gian nằm viện do ACS được khuyến cáo cho bệnh nhân đã dùng bất kỳ thuốc hạ lipid nào trước khi nhập viện nhằm hạ sâu hơn mức LDL-C.",
+    "cor": "I",
+    "loe": "C"
+  },
+  {
+    "id": "esc.lipid.2025.acs_naive_combination",
+    "sourceId": "esc_2025_lipid",
+    "pdfPage": 12,
+    "printedPage": "4370",
+    "locator": "Recommendation Table 3 / p. 12",
+    "quote": "Initiating combination therapy with high-intensity statin plus ezetimibe during index hospitalization for ACS should be considered in patients who were treatment-naïve and are not expected to achieve the LDL-C goal with statin therapy alone.",
+    "quoteVi": "Nên cân nhắc khởi trị phối hợp statin cường độ cao + ezetimibe ngay trong thời gian nằm viện do ACS ở bệnh nhân chưa từng điều trị và dự kiến không thể đạt đích với statin đơn trị liệu.",
+    "cor": "IIa",
+    "loe": "B"
+  },
+  {
+    "id": "esc.lipid.2024.ccs_statin_highest_dose",
+    "sourceId": "esc_2024_ccs",
+    "pdfPage": 88,
+    "printedPage": "88",
+    "locator": "Section 4.1.3 & Recommendations / p. 88",
+    "quote": "A high-intensity statin up to the highest tolerated dose to reach the LDL-C goals is recommended for all patients with CCS.",
+    "quoteVi": "Khuyến cáo chỉ định statin cường độ cao tới liều tối đa dung nạp để đạt đích LDL-C cho tất cả bệnh nhân hội chứng mạch vành mạn.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.lipid.2024.ccs_pregnancy",
+    "sourceId": "esc_2024_ccs",
+    "pdfPage": 53,
+    "printedPage": "53",
+    "locator": "Section 4.1.3: Lipid-lowering therapy / p. 53",
+    "quote": "Statins should not be given when pregnancy is planned, during pregnancy, or during the breastfeeding period.",
+    "quoteVi": "Không được dùng statin khi đang có kế hoạch mang thai, trong thai kỳ hoặc trong thời gian cho con bú.",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "esc.lipid.2019.htg_statin_first",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 38,
+    "printedPage": "148",
+    "locator": "Recommendations for drug treatment of patients with hypertriglyceridaemia / p. 38",
+    "quote": "to reduce CVD risk in high-riskindividuals with hypertriglyceridaemia [TG lev-els >2.3 mmol/L (>200 mg/dL)].",
+    "quoteVi": "Statin được khuyến cáo là lựa chọn đầu tay để giảm nguy cơ tim mạch ở bệnh nhân nguy cơ cao có tăng triglycerid máu (> 2.3 mmol/L / > 200 mg/dL).",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.lipid.2019.htg_icosapent_ethyl",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 38,
+    "printedPage": "148",
+    "locator": "Recommendations for drug treatment of patients with hypertriglyceridaemia / p. 38",
+    "quote": "In high-risk (or above) patients with TG levels between 1.5/C05.6 mmol/L (135/C0499 mg/dL) despite statin treatment, n-3 PUFAs (icosapent ethyl 2/C22 g/day) should be considered in combination with a statin.",
+    "quoteVi": "Ở bệnh nhân nguy cơ cao (trở lên) có TG từ 1.5 đến 5.6 mmol/L dù đã điều trị statin, nên cân nhắc dùng icosapent ethyl 2 x 2 g/ngày phối hợp với statin.",
+    "cor": "IIa",
+    "loe": "B"
+  },
+  {
+    "id": "acc.lipid.2026.severe_htg_5_6",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 27,
+    "printedPage": "2650",
+    "locator": "Section 4.1 / p. 27",
+    "quote": "level of $500\nmg/dL (5.6 mmol/L)",
+    "quoteVi": "Nồng độ Triglycerid máu tăng rất cao (>= 500 mg/dL / 5.6 mmol/L)."
+  },
+  {
+    "id": "esc.lipid.2019.htg_fenofibrate_pancreatitis",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 42,
+    "printedPage": "152",
+    "locator": "Section 9.1.4: Severe hypertriglyceridaemia / p. 42",
+    "quote": "Fibrate ther-apy (fenofibrate) should be initiated, with n-3 fatty acids (2/C04g / d a y )a sadjunct therapy.",
+    "quoteVi": "Khi TG tăng rất cao (> 5.6 mmol/L), cần khởi trị nhóm fibrate (fenofibrate) kết hợp chế độ ăn hạn chế mỡ để phòng ngừa viêm tụy cấp."
+  },
+  {
+    "id": "acc.lipid.2026.gemfibrozil_statin_contra",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 29,
+    "printedPage": "2652",
+    "locator": "Table 5: Fibrates / p. 29",
+    "quote": "Gemfibrozil should not be combined with statin therapy because of serious potential drug interaction",
+    "quoteVi": "Không được phối hợp Gemfibrozil với statin do nguy cơ tương tác thuốc nghiêm trọng gây tiêu cơ vân."
+  },
+  {
+    "id": "acc.lipid.2026.fenofibrate_renal",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 29,
+    "printedPage": "2652",
+    "locator": "Table 5: Fibrates / p. 29",
+    "quote": "Dose may need to be reduced in decreased kidney function; avoid in severe kidney dysfunction",
+    "quoteVi": "Liều fenofibrate cần giảm khi suy thận; tránh dùng ở bệnh nhân suy thận nặng."
+  },
+  {
+    "id": "esc.lipid.2025.lpa_measurement_lifetime",
+    "sourceId": "esc_2025_lipid",
+    "pdfPage": 12,
+    "printedPage": "4370",
+    "locator": "Section 6: Lipoprotein(a) / p. 12",
+    "quote": "Lp(a) measurement should be considered at least once in every adult’s lifetime",
+    "quoteVi": "Nên đo nồng độ Lipoprotein(a) ít nhất một lần trong đời ở mọi người trưởng thành để phát hiện nguy cơ tim mạch di truyền.",
+    "cor": "IIa",
+    "loe": "C"
+  },
+  {
+    "id": "esc.lipid.2025.lpa_threshold_50mg",
+    "sourceId": "esc_2025_lipid",
+    "pdfPage": 12,
+    "printedPage": "4370",
+    "locator": "Recommendation Table 4 / p. 12",
+    "quote": "Lp(a) levels above 50 mg/dL (105 nmol/L) should be considered in all adults as a CV risk-enhancing factor, with higher Lp(a) levels associated with a greater increase in risk.",
+    "quoteVi": "Nồng độ Lp(a) > 50 mg/dL (105 nmol/L) nên được xem là yếu tố gia tăng nguy cơ tim mạch ở tất cả người trưởng thành.",
+    "cor": "IIa",
+    "loe": "B"
+  },
+  {
+    "id": "esc.lipid.2019.monitoring_retest_weeks",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 53,
+    "printedPage": "163",
+    "locator": "Table 13: Summary of recommendations for monitoring lipids / p. 53",
+    "quote": "After starting treatment: 8 (±4) weeks. • After adjustment of treatment: 8 (±4) weeks until the goal is achieved.",
+    "quoteVi": "Đánh giá lại bilan lipid sau 8 (±4) tuần (tức 4-12 tuần) kể từ khi bắt đầu điều trị hoặc sau khi chỉnh liều cho đến khi đạt đích."
+  },
+  {
+    "id": "esc.lipid.2019.monitoring_annual",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 53,
+    "printedPage": "163",
+    "locator": "Table 13: Summary of recommendations for monitoring lipids / p. 53",
+    "quote": "Annually (unless there are adherence problems or other speciﬁc reasons for more frequent reviews).",
+    "quoteVi": "Kiểm tra định kỳ hàng năm khi bệnh nhân đã đạt đích điều trị lipid máu."
+  },
+  {
+    "id": "esc.lipid.2019.monitoring_alt_schedule",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 53,
+    "printedPage": "163",
+    "locator": "Table 13: Monitoring liver and muscle enzymes / p. 53",
+    "quote": "Before treatment. • Once, 8/C012 weeks after starting a drug treatment or after dose increase. • Routine control of ALT thereafter is not recommended during statin treatment, unless symptoms suggesting liver disease evolve.",
+    "quoteVi": "Xét nghiệm men gan ALT trước điều trị; 1 lần sau 8-12 tuần bắt đầu hoặc tăng liều. Không khuyến cáo theo dõi thường quy sau đó trừ khi có triệu chứng gợi ý bệnh gan."
+  },
+  {
+    "id": "acc.lipid.2026.transaminase_3x_uln",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 95,
+    "printedPage": "2718",
+    "locator": "Section 5.1 / p. 95",
+    "quote": "Transaminaseelevations (>3timesULN)arerare",
+    "quoteVi": "Tăng men gan transaminase (> 3 lần giới hạn trên bình thường) là hiếm gặp khi điều trị statin."
+  },
+  {
+    "id": "esc.lipid.2019.monitoring_alt_elevation",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 53,
+    "printedPage": "163",
+    "locator": "Table 13: Monitoring liver and muscle enzymes / p. 53",
+    "quote": "If ALT rises to >_3/C2 ULN • Stop lipid-lowering therapy or reduce dose and recheck liver enzymes within 4/C06 weeks.",
+    "quoteVi": "Nếu ALT tăng >= 3 lần giới hạn trên bình thường (ULN): ngừng thuốc hoặc giảm liều và kiểm tra lại men gan trong 4-6 tuần."
+  },
+  {
+    "id": "esc.lipid.2019.monitoring_ck",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 53,
+    "printedPage": "163",
+    "locator": "Table 13: Monitoring liver and muscle enzymes / p. 53",
+    "quote": "Routine monitoring of CK is not necessary. • Check CK if patient develops myalgia. Be alert regarding myopathy and CK elevation in patients at risk, such as: elderly patients, those on concomitant interfering therapy, multiple medications, liver or renal disease, or athletes.",
+    "quoteVi": "Không cần theo dõi CK thường quy. Kiểm tra CK nếu bệnh nhân xuất hiện đau cơ hoặc thuộc nhóm nguy cơ cao."
+  },
+  {
+    "id": "esc.lipid.2019.monitoring_ck_high",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 53,
+    "printedPage": "163",
+    "locator": "Table 13: Monitoring liver and muscle enzymes / p. 53",
+    "quote": "If baseline CK is >4/C2 ULN, do not start drug therapy; recheck.",
+    "quoteVi": "Nếu nồng độ CK nền ban đầu > 4 lần ULN, không bắt đầu điều trị thuốc hạ lipid và kiểm tra lại."
+  },
+  {
+    "id": "acc.lipid.2026.pravastatin_dose",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 28,
+    "printedPage": "2651",
+    "locator": "Table 5: Characteristics of Common Lipid-Lowering Medications / p. 28",
+    "quote": "Pravastatin 10-80mg Once daily",
+    "quoteVi": "Pravastatin: liều thông thường 10-80 mg uống 1 lần/ngày."
+  },
+  {
+    "id": "acc.lipid.2026.pitavastatin_dose",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 28,
+    "printedPage": "2651",
+    "locator": "Table 5: Characteristics of Common Lipid-Lowering Medications / p. 28",
+    "quote": "Pitavastatin 1-4mg Once daily",
+    "quoteVi": "Pitavastatin: liều thông thường 1-4 mg uống 1 lần/ngày."
+  },
+  {
+    "id": "acc.lipid.2026.simvastatin_dose",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 28,
+    "printedPage": "2651",
+    "locator": "Table 5: Characteristics of Common Lipid-Lowering Medications / p. 28",
+    "quote": "Simvastatin 5-40mg Once daily",
+    "quoteVi": "Simvastatin: liều thông thường 5-40 mg uống 1 lần/ngày."
+  },
+  {
+    "id": "acc.lipid.2026.alirocumab_dose",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 28,
+    "printedPage": "2651",
+    "locator": "Table 5: Characteristics of Common Lipid-Lowering Medications / p. 28",
+    "quote": "Alirocumab 75-150mg, or 300mg Every 2 weeks Every 4 weeks",
+    "quoteVi": "Alirocumab: 75-150 mg tiêm dưới da mỗi 2 tuần hoặc 300 mg mỗi 4 tuần."
+  },
+  {
+    "id": "acc.lipid.2026.icosapent_dose",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 30,
+    "printedPage": "2653",
+    "locator": "Table 5: Characteristics of Common Lipid-Lowering Medications / p. 30",
+    "quote": "Icosapent ethyl 4g Twice daily with food",
+    "quoteVi": "Icosapent ethyl: liều 4 g/ngày (chia 2 g x 2 lần/ngày) uống cùng bữa ăn."
+  },
+  {
+    "id": "esc.lipid.2019.severe_single_rf",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 37,
+    "printedPage": "147",
+    "locator": "Figure 4B: Treatment goals across categories of total CVD risk / p. 37",
+    "quote": "TC >8 mmol/L (310 mg/dL) or LDL-C >4.9 mmol/L (190 mg/dL)",
+    "quoteVi": "Yếu tố nguy cơ đơn độc tăng rất cao: Cholesterol toàn phần > 8 mmol/L hoặc LDL-C > 4.9 mmol/L xếp vào nhóm nguy cơ cao."
+  },
+  {
+    "id": "esc.lipid.2019.moderate_ckd_egfr",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 37,
+    "printedPage": "147",
+    "locator": "Figure 4B: Treatment goals across categories of total CVD risk / p. 37",
+    "quote": "Moderate CKD (eGFR 30–59 mL/min)",
+    "quoteVi": "Bệnh thận mạn mức độ trung bình (eGFR 30–59 mL/phút/1.73m²) được xếp vào nhóm nguy cơ cao."
+  },
+  {
+    "id": "esc.lipid.2025.conversion_factor",
+    "sourceId": "esc_2025_lipid",
+    "pdfPage": 6,
+    "printedPage": "4364",
+    "locator": "Section 2: Cardiovascular risk categories / p. 6",
+    "quote": "1 mmol/L (38.67 mg/dL)",
+    "quoteVi": "Hệ số chuyển đổi đơn vị LDL-C: 1 mmol/L tương đương 38.67 mg/dL."
+  },
+  {
+    "id": "esc.lipid.2019.fh_high_risk",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 37,
+    "printedPage": "147",
+    "locator": "Figure 4B / p. 37",
+    "quote": "FH without other major risk factors",
+    "quoteVi": "Bệnh nhân tăng cholesterol máu gia đình (FH) không có yếu tố nguy cơ chính khác được xếp vào nhóm nguy cơ cao."
+  },
+  {
+    "id": "esc.lipid.2019.fh_very_high_risk",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 37,
+    "printedPage": "147",
+    "locator": "Figure 4B / p. 37",
+    "quote": "FH with ASCVD or with another major risk factor",
+    "quoteVi": "Bệnh nhân tăng cholesterol máu gia đình (FH) có ASCVD hoặc kèm thêm một yếu tố nguy cơ chính khác được xếp vào nhóm nguy cơ rất cao."
+  },
+  {
+    "id": "esc.lipid.2019.monitoring_ck_10x_stop",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 53,
+    "printedPage": "163",
+    "locator": "Table 13: Monitoring liver and muscle enzymes / p. 53",
+    "quote": "If CK >10/C2 ULN: stop treatment, check renal function, and monitor CK every 2 weeks.",
+    "quoteVi": "Nếu CK > 10 lần ULN: ngừng điều trị ngay lập tức, kiểm tra chức năng thận (cấp cứu nguy cơ tiêu cơ vân) và theo dõi CK mỗi 2 tuần."
+  },
+  {
+    "id": "esc.lipid.2019.ckd_dialysis_no_init",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 49,
+    "printedPage": "159",
+    "locator": "Recommendations for lipid management in patients with moderate-to-severe CKD / p. 49",
+    "quote": "In patients with dialysis-dependent CKD who are free of ASCVD, commencement of statin therapy is not recommended.",
+    "quoteVi": "Ở bệnh nhân bệnh thận mạn phụ thuộc lọc máu chưa có ASCVD, không khuyến cáo khởi trị mới statin.",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "esc.lipid.2019.ckd_dialysis_continue",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 49,
+    "printedPage": "159",
+    "locator": "Recommendations for lipid management in patients with moderate-to-severe CKD / p. 49",
+    "quote": "In patients already on statins, ezetimibe, or a sta- tin/ezetimibe combination at the time of dialysis initiation, continuation of these drugs should be considered, particularly in patients with ASCVD.",
+    "quoteVi": "Ở bệnh nhân đã dùng statin, ezetimibe hoặc phối hợp statin/ezetimibe trước khi bắt đầu lọc máu, nên cân nhắc tiếp tục duy trì thuốc, đặc biệt ở người có ASCVD.",
+    "cor": "IIa",
+    "loe": "C"
+  },
+  {
+    "id": "esc.lipid.2019.ckd_egfr_60_cutoff",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 49,
+    "printedPage": "159",
+    "locator": "Recommendations for lipid management in patients with moderate-to-severe CKD footnote c / p. 49",
+    "quote": "Deﬁned as eGFR < 60ml/min/1.73m2 on two measurements more than 3 months apart.",
+    "quoteVi": "Bệnh thận mạn giai đoạn 3-5 được xác định khi eGFR < 60 mL/phút/1.73m² qua hai lần đo cách nhau trên 3 tháng."
+  },
+  {
+    "id": "esc.lipid.2019.pregnancy_all_llt_contra",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 42,
+    "printedPage": "152",
+    "locator": "Section 9.3: Women / p. 42",
+    "quote": "No lipid-lowering drugs should be administered during pregnancy and the period of breastfeed- ing because data on possible adverse effects are lacking.",
+    "quoteVi": "Không sử dụng bất kỳ thuốc hạ lipid máu nào trong thai kỳ và thời kỳ cho con bú do thiếu dữ liệu an toàn và nguy cơ bất lợi cho thai nhi."
+  },
+  {
+    "id": "esc.lipid.2019.acs_early_lipid_profile",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 46,
+    "printedPage": "156",
+    "locator": "Section 9.5.1: Lipid-lowering therapy in patients with acute coronary syndromes / p. 46",
+    "quote": "LDL-C levels tend to decrease during the first days of ACS and there-fore a lipid profile should be obtained as soon as possible after admis-sion for ACS.",
+    "quoteVi": "Nồng độ LDL-C có xu hướng giảm trong những ngày đầu sau ACS, do đó cần lấy xét nghiệm bilan lipid máu càng sớm càng tốt ngay sau khi nhập viện vì ACS."
+  },
+  {
+    "id": "esc.lipid.2019.htg_pancreatitis_10mmol",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 41,
+    "printedPage": "151",
+    "locator": "Section 9.1.4: Severe hypertriglyceridaemia / p. 41",
+    "quote": "The risk of pancreatitis is clinically significant if TGs are >10 mmol/L(880 mg/dL)",
+    "quoteVi": "Nguy cơ viêm tụy cấp đặc biệt cao có ý nghĩa lâm sàng khi nồng độ Triglycerid máu > 10 mmol/L (880 mg/dL)."
+  },
+  {
+    "id": "esc.lipid.2019.dlcn_definite_8",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 39,
+    "printedPage": "149",
+    "locator": "Table 12: Dutch Lipid Clinic Network diagnostic criteria for FH / p. 39",
+    "quote": "A ‘deﬁnite’ FH diagnosis requires >8 points A ‘probable’ FH diagnosis requires 6/C08 points",
+    "quoteVi": "Chẩn đoán xác định FH đòi hỏi > 8 điểm DLCN; chẩn đoán rất có thể FH đòi hỏi 6-8 điểm."
+  },
+  {
+    "id": "esc.lipid.2025.score2_categories",
+    "sourceId": "esc_2025_lipid",
+    "pdfPage": 6,
+    "printedPage": "4364",
+    "locator": "Table 3: Cardiovascular risk categories / p. 6",
+    "quote": "A calculated SCORE2 or SCORE2-OP ≥20% for 10 year risk of fatal or non-fatal CVD",
+    "quoteVi": "Điểm SCORE2 hoặc SCORE2-OP ≥ 20% nguy cơ biến cố tim mạch 10 năm được xếp vào nhóm nguy cơ rất cao."
+  },
+  {
+    "id": "esc.lipid.2025.score2_moderate_low",
+    "sourceId": "esc_2025_lipid",
+    "pdfPage": 6,
+    "printedPage": "4364",
+    "locator": "Table 3: Cardiovascular risk categories / p. 6",
+    "quote": "Calculated SCORE2 or SCORE2-OP ≥2% and <10% for 10 year risk of fatal or non-fatal CVD",
+    "quoteVi": "Điểm SCORE2 hoặc SCORE2-OP ≥ 2% và < 10% xếp nguy cơ trung bình (< 2% xếp nguy cơ thấp, 10% đến < 20% xếp nguy cơ cao)."
+  },
+  {
+    "id": "esc.lipid.2025.dm_duration_20y",
+    "sourceId": "esc_2025_lipid",
+    "pdfPage": 6,
+    "printedPage": "4364",
+    "locator": "Table 3: Cardiovascular risk categories / p. 6",
+    "quote": "DM with target organ damage,c or at least three major risk factors, or early onset of T1DM of long duration (>20 years)",
+    "quoteVi": "Đái tháo đường kèm tổn thương cơ quan đích, hoặc từ 3 yếu tố nguy cơ chính trở lên, hoặc ĐTĐ khởi phát sớm kéo dài > 20 năm xếp nhóm nguy cơ rất cao."
+  },
+  {
+    "id": "esc.lipid.2025.dm_duration_10y",
+    "sourceId": "esc_2025_lipid",
+    "pdfPage": 6,
+    "printedPage": "4364",
+    "locator": "Table 3: Cardiovascular risk categories / p. 6",
+    "quote": "Patients with DM without target organ damage,c with DM duration ≥10 years or another additional risk factor",
+    "quoteVi": "Bệnh nhân ĐTĐ chưa có tổn thương cơ quan đích nhưng thời gian mắc ≥ 10 năm hoặc kèm thêm yếu tố nguy cơ khác xếp nhóm nguy cơ cao."
+  },
+  {
+    "id": "esc.lipid.2025.non_statin_intolerance_combo",
+    "sourceId": "esc_2025_lipid",
+    "pdfPage": 11,
+    "printedPage": "4369",
+    "locator": "Recommendation Table 2 / p. 11",
+    "quote": "Non-statin therapies with proven cardiovascular benefit,c taken alone or in combination, are recommended for patients who are unable to take statin therapy to lower LDL-C levels and reduce the risk of CV events.",
+    "quoteVi": "Các liệu pháp hạ lipid ngoài statin đã chứng minh lợi ích tim mạch (ezetimibe, bempedoic acid, PCSK9i) dùng đơn độc hoặc phối hợp được khuyến cáo cho người không dung nạp statin.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "fda.bempedoic.hyperuricemia",
+    "sourceId": "fda_bempedoic_acid",
+    "pdfPage": 1,
+    "printedPage": "1",
+    "locator": "Highlights: Warnings and Precautions (5.1) / p. 1",
+    "quote": "Hyperuricemia: Elevations in serum uric acid have occurred. Assess uric acid levels periodically as clinically indicated. Monitor for signs and symptoms of hyperuricemia, and initiate treatment with urate-lowering drugs as appropriate.",
+    "quoteVi": "Tăng acid uric máu: Cần đánh giá nồng độ acid uric máu định kỳ khi có chỉ định lâm sàng và theo dõi triệu chứng tăng acid uric/gút."
+  },
+  {
+    "id": "fda.bempedoic.gout_risk",
+    "sourceId": "fda_bempedoic_acid",
+    "pdfPage": 3,
+    "printedPage": "3",
+    "locator": "Section 5.1: Hyperuricemia / p. 3",
+    "quote": "Elevated blood uric acid may lead to the development of gout.",
+    "quoteVi": "Tăng acid uric máu do Bempedoic acid có thể khởi phát cơn gút cấp."
+  },
+  {
+    "id": "fda.bempedoic.tendon_rupture",
+    "sourceId": "fda_bempedoic_acid",
+    "pdfPage": 1,
+    "printedPage": "1",
+    "locator": "Highlights: Warnings and Precautions (5.2) / p. 1",
+    "quote": "Tendon Rupture: Tendon rupture has occurred. Discontinue NEXLETOL at the first sign of tendon rupture. Avoid NEXLETOL in patients who have a history of tendon disorders or tendon rupture.",
+    "quoteVi": "Đứt gân: Ngừng ngay Bempedoic acid khi có dấu hiệu đầu tiên của viêm hoặc đứt gân; tránh dùng ở người có tiền sử bệnh lý gân hoặc đứt gân."
+  },
+  {
+    "id": "fda.bempedoic.pregnancy_contra",
+    "sourceId": "fda_bempedoic_acid",
+    "pdfPage": 8,
+    "printedPage": "8",
+    "locator": "Section 8.1: Pregnancy / p. 8",
+    "quote": "NEXLETOL may cause fetal harm when administered to pregnant women based on the mechanism of action",
+    "quoteVi": "Bempedoic acid có thể gây hại cho thai nhi khi dùng cho phụ nữ mang thai dựa trên cơ chế tác dụng tổng hợp cholesterol."
+  },
+  {
+    "id": "byt.lipid.gout_uric_420",
+    "sourceId": "byt_361_2014_gout",
+    "pdfPage": 90,
+    "printedPage": "90",
+    "locator": "Chương Gút - Mục 3.2: Cận lâm sàng / p. 90",
+    "quote": "Acid uric máu t ăng > 420 µmol/l",
+    "quoteVi": "Ngưỡng chẩn đoán tăng acid uric máu > 420 µmol/L."
+  },
+  {
+    "id": "acc.lipid.2026.icosapent_af_bleeding",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 59,
+    "printedPage": "2682",
+    "locator": "Section 4.3 / p. 59",
+    "quote": "Alarger percentage of patients in the IPE group were hospi- talized for atrial fibrillation or flutter (3.1% versus 2.1%, P=0.004) and had serious bleeding events",
+    "quoteVi": "Nhóm dùng Icosapent ethyl có tỷ lệ nhập viện vì rung nhĩ/cuồng nhĩ cao hơn (3.1% so với 2.1%) và tăng nguy cơ chảy máu."
+  },
+  {
+    "id": "acc.lipid.2026.ezetimibe_outpatient_addon",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 6,
+    "printedPage": "2629",
+    "locator": "Table 1 / Section 4.2.3.7 (High-Risk Primary Prevention) / p. 6",
+    "quote": "onmaximallytoleratedstatin,itis reasonableto addezetimibeifagoalLDL-C <70 mg/dL(1.8mmol/L)andnon–HDL-C <100mg/dL (2.6mmol/L)isnotachieved.",
+    "quoteVi": "Ở người trưởng thành dự phòng tiên phát nguy cơ cao (≥ 10% 10 năm) đang dùng statin liều tối đa dung nạp chưa đạt đích LDL-C < 70 mg/dL (1.8 mmol/L) và non-HDL-C < 100 mg/dL (2.6 mmol/L), hợp lý khi phối hợp thêm ezetimibe (ACC/AHA 2026 COR 2a, LOE B-R).",
+    "cor": "IIa",
+    "loe": "B-R"
+  },
+  {
+    "id": "byt.lipid.2020.fenofibrate_145_200",
+    "sourceId": "byt_5481_2020_dm2",
+    "pdfPage": 50,
+    "printedPage": "50",
+    "locator": "Phần 8, Mục 1.1: Biến chứng mắt ĐTĐ — Khuyến cáo 4 / p. 50",
+    "quote": "fenofibrate 145 -200 mg/ngày",
+    "quoteVi": "Quyết định 5481/QĐ-BYT ghi nhận hàm lượng và liều fenofibrate đường uống lưu hành tại Việt Nam 145–200 mg/ngày (trong mục biến chứng võng mạc đái tháo đường)."
+  },
+  {
+    "id": "esc.lipid.2019.recheck_4_to_6_weeks",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 10,
+    "printedPage": "120",
+    "locator": "What is new in the 2019 Guidelines / p. 10",
+    "quote": "If the LDL-C goal is not achieved after 4 - 6 weeks despite maximal tolerated statin therapy and ezetimibe, addition of a PCSK9 inhibitor is recommended.",
+    "quoteVi": "Đánh giá lại mục tiêu LDL-C trong vòng 4–6 tuần ở nhóm nguy cơ rất cao sau biến cố cấp để kịp thời điều chỉnh hoặc nâng bậc điều trị.",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "acc.lipid.2026.omega3_dose_4g",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 30,
+    "printedPage": "2653",
+    "locator": "Table 5: Characteristics of Common Lipid-Lowering Medications / p. 30",
+    "quote": "Omega-3 acid ethyl esters 4g Onceortwicedaily withfood",
+    "quoteVi": "Acid béo Omega-3 kê đơn (ethyl esters): liều 4 g/ngày uống 1 hoặc 2 lần/ngày cùng bữa ăn."
+  },
+  {
+    "id": "acc.lipid.2026.ezetimibe_secondary_very_high",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 62,
+    "printedPage": "2685",
+    "locator": "Section 4.2.6, Rec 5 (Clinical ASCVD at Very High Risk) / p. 62",
+    "quote": "In adults with clinical ASCVD who are at very high risk and on maxi- mally tolerated statin therapy, eze- timibe and/or a PCSK9 mAb should be added",
+    "quoteVi": "Ở người trưởng thành có ASCVD lâm sàng nguy cơ rất cao đang dùng statin liều tối đa dung nạp chưa đạt đích < 55 mg/dL (1.4 mmol/L), khuyến cáo bổ sung ezetimibe và/hoặc kháng thể đơn dòng PCSK9 (COR 1, LOE A).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "acc.lipid.2026.fenofibrate_dose_range",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 29,
+    "printedPage": "2652",
+    "locator": "Table 5: Triglyceride-Lowering Medications / p. 29",
+    "quote": "Fenofibrate 40-200mg Oncedaily",
+    "quoteVi": "Fenofibrate: dải liều đường uống 40–200 mg dùng 1 lần/ngày (tùy thuộc dạng bào chế lưu hành và chức năng thận)."
+  },
+  {
+    "id": "acc.lipid.2026.htg_fibrate_omega3_pancreatitis",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 84,
+    "printedPage": "2707",
+    "locator": "Section 4.2.9, Rec 6 / p. 84",
+    "quote": "the use of fibric acid derivatives or prescription omega-3 fatty acids is reasonable to lower TG levels and reduce the risk of pancreatitis",
+    "quoteVi": "Ở người trưởng thành tăng triglycerid máu nặng dai dẳng (≥ 500 mg/dL, đặc biệt ≥ 1000 mg/dL) dù đã can thiệp chế độ ăn, hợp lý khi sử dụng dẫn xuất acid fibric (fenofibrate) hoặc omega-3 kê đơn để hạ TG và giảm nguy cơ viêm tụy cấp (COR 2a, LOE B-NR).",
+    "cor": "IIa",
+    "loe": "B-NR"
+  },
+  {
+    "id": "byt.ckd.2024.fenofibrate_creatinine_monitor",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 50,
+    "printedPage": "50",
+    "locator": "Điều trị rối loạn lipid máu ở bệnh thận mạn / p. 50",
+    "quote": "cần theo dõi chặt chẽ creatinine huyết thanh trong quá trình đi ều trị bằng fenofibrate, đặc biệt ở người cao tuổi, ĐTĐ, nên ng ừng thuốc nếu creatinine tăng >30% giá trị nền",
+    "quoteVi": "Bộ Y tế (Bệnh thận mạn 2024): Cần theo dõi chặt chẽ creatinin huyết thanh trong quá trình điều trị bằng fenofibrate, đặc biệt ở người cao tuổi, ĐTĐ; nên ngừng thuốc nếu creatinin tăng > 30% giá trị nền."
+  },
+  {
+    "id": "byt.lipid.2020.tg_2_3_statin_first",
+    "sourceId": "byt_5481_2020_dm2",
+    "pdfPage": 36,
+    "printedPage": "34",
+    "locator": "Phần 4, Mục 6.2.2: Rối loạn lipid máu / p. 36",
+    "quote": "Liệu pháp Statin đư ợc khuyến cáo là l ựa chọn đầu tay cho BN có triglyceride > 2.3mmol/L (>200mg/dL) (nguy cơ cao) để giảm nguy cơ biến cố tim mạch.",
+    "quoteVi": "Bộ Y tế QĐ 5481/QĐ-BYT: Liệu pháp statin được khuyến cáo là lựa chọn đầu tay cho bệnh nhân nguy cơ cao có triglycerid > 2.3 mmol/L (> 200 mg/dL) để giảm nguy cơ biến cố tim mạch."
+  },
+  {
+    "id": "esc.lipid.2025.risk_table3_bp_grade3",
+    "sourceId": "esc_2025_lipid",
+    "pdfPage": 6,
+    "printedPage": "4364",
+    "locator": "Table 3: Cardiovascular risk categories / p. 6",
+    "quote": "Markedly elevated single risk factors, in particular TC >8 mmol/L (>310 mg/dL), LDL-C >4.9 mmol/L (>190 mg/dL), or BP ≥180/110 mmHg",
+    "quoteVi": "Yếu tố nguy cơ đơn độc tăng rất cao, đặc biệt Cholesterol toàn phần > 8 mmol/L (> 310 mg/dL), LDL-C > 4.9 mmol/L (> 190 mg/dL), hoặc Huyết áp ≥ 180/110 mmHg được xếp vào tầng nguy cơ cao."
+  },
+  {
+    "id": "esc.lipid.2025.risk_table3_dm_moderate",
+    "sourceId": "esc_2025_lipid",
+    "pdfPage": 6,
+    "printedPage": "4364",
+    "locator": "Table 3: Cardiovascular risk categories / p. 6",
+    "quote": "Young patients (T1DM <35 years; T2DM <50 years) with DM duration <10 years, without other risk factors",
+    "quoteVi": "Bệnh nhân trẻ tuổi (ĐTĐ típ 1 < 35 tuổi; ĐTĐ típ 2 < 50 tuổi) có thời gian mắc ĐTĐ < 10 năm và không kèm yếu tố nguy cơ khác được xếp tầng nguy cơ trung bình."
+  },
+  {
+    "id": "esc.lipid.2025.table4_ldl_3_0_column",
+    "sourceId": "esc_2025_lipid",
+    "pdfPage": 7,
+    "printedPage": "4365",
+    "locator": "Table 4: Intervention strategies / p. 7",
+    "quote": "3.0 to <4.9 mmol/L (116 to <190 mg/ dL",
+    "quoteVi": "Ngưỡng phân bậc LDL-C chưa điều trị 3.0 đến < 4.9 mmol/L (116 đến < 190 mg/dL) trong Bảng 4 chiến lược can thiệp hạ lipid (với LDL-C ≥ 3.0 mmol/L ở nhóm nguy cơ rất cao, statin đơn trị giảm ~50% không đủ đạt đích < 1.4 mmol/L)."
+  },
+  {
+    "id": "esc.lipid.2025.extreme_risk_polyvascular",
+    "sourceId": "esc_2025_lipid",
+    "pdfPage": 8,
+    "printedPage": "4366",
+    "locator": "Figure 1: Treatment goals for LDL-C / p. 8",
+    "quote": "Patients with ASCVD who experience recurrent vascular events while taking maximally tolerated statin-based therapy • Patients with polyvascular (e.g. coronary and peripheral) arterial disease",
+    "quoteVi": "Tầng nguy cơ cực cao (Extreme risk, đích LDL-C < 1.0 mmol/L / < 40 mg/dL, Class IIb): Bệnh nhân ASCVD tái phát biến cố mạch máu khi đang dùng phác đồ nền tảng statin liều tối đa dung nạp, hoặc bệnh nhân có bệnh động mạch đa giường mạch (ví dụ mạch vành kèm mạch ngoại biên).",
+    "cor": "IIb"
+  },
+  {
+    "id": "esc.lipid.2025.figure2_ldl_reduction_68",
+    "sourceId": "esc_2025_lipid",
+    "pdfPage": 10,
+    "printedPage": "4368",
+    "locator": "Figure 2: Average reduction in LDL-C levels / p. 10",
+    "quote": "~68%",
+    "quoteVi": "Mức giảm LDL-C trung bình dự kiến khi phối hợp PCSK9 mAb + Ezetimibe đạt khoảng ~68% (ESC/EAS 2025 Figure 2)."
+  },
+  {
+    "id": "esc.lipid.2025.acs_recheck_4_to_6_weeks",
+    "sourceId": "esc_2025_lipid",
+    "pdfPage": 10,
+    "printedPage": "4368",
+    "locator": "Section 3: New LDL-C-lowering therapies & monitoring / p. 10",
+    "quote": "As outlined in the 2019 ESC/EAS Guidelines,1 LDL-C levels should be measured 4 to 6 weeks after initiation or intensification of lipid-lowering therapy.",
+    "quoteVi": "Nồng độ LDL-C cần được xét nghiệm kiểm tra lại sau 4 đến 6 tuần kể từ khi khởi trị hoặc tăng cường phác đồ hạ lipid máu."
+  },
+  {
+    "id": "esc.lipid.2019.acs_safety_recheck_iia",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 47,
+    "printedPage": "157",
+    "locator": "Recommendations for lipid-lowering therapy in very-high-risk patients with ACS / p. 47",
+    "quote": "Safety issues need to be assessed at this time and statin treatment doses adapted accordingly.",
+    "quoteVi": "Sau biến cố ACS 4–6 tuần, cần đánh giá lại bilan lipid máu để xác định đạt đích < 1.4 mmol/L và giảm ≥ 50% đồng thời kiểm tra an toàn thuốc để hiệu chỉnh liều phù hợp (Class IIa, Level C).",
+    "cor": "IIa",
+    "loe": "C"
+  },
+  {
+    "id": "esc.lipid.2019.pcsk9_primary_very_high_no_fh",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 35,
+    "printedPage": "145",
+    "locator": "Recommendations for pharmacological LDL-C lowering / p. 35",
+    "quote": "For primary prevention patients at very-high risk, but without FH, if the LDL-C goal is not achieved on a maximum toler- ated dose of a statin and ezetimibe, a combination with a PCSK9 inhibitor may be considered.",
+    "quoteVi": "Ở bệnh nhân dự phòng tiên phát nguy cơ rất cao nhưng không mắc FH, nếu chưa đạt đích LDL-C dù đã dùng statin liều tối đa dung nạp phối hợp ezetimibe, có thể cân nhắc bổ sung thuốc ức chế PCSK9 (Class IIb, Level C).",
+    "cor": "IIb",
+    "loe": "C"
+  },
+  {
+    "id": "esc.lipid.2019.pcsk9_fh_very_high",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 9,
+    "printedPage": "119",
+    "locator": "Table 3 / Section 8.12 Recommendations / p. 9",
+    "quote": "For very-high-risk FH patients (that is, with ASCVD or with another major risk factor) who do not achieve their goals on a maximum tolerated dose of statin and ezetimibe, a combination with a PCSK9 inhibitor is recommended.",
+    "quoteVi": "Ở bệnh nhân FH nguy cơ rất cao (kèm ASCVD hoặc một yếu tố nguy cơ chính khác) chưa đạt đích trên phác đồ statin tối đa dung nạp + ezetimibe, khuyến cáo phối hợp thuốc ức chế PCSK9 (Class I, Level C).",
+    "cor": "I",
+    "loe": "C"
+  },
+  {
+    "id": "esc.lipid.2019.older_gt75_primary_consider",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 43,
+    "printedPage": "153",
+    "locator": "Recommendations for the treatment of dyslipidaemias in older people / p. 43",
+    "quote": "Initiation of statin treatment for primary prevention in older people aged >75 years may be considered, if at high-risk or above.",
+    "quoteVi": "Ở người cao tuổi > 75 tuổi dự phòng tiên phát thuộc nhóm nguy cơ cao hoặc rất cao, có thể cân nhắc khởi trị statin sau khi đánh giá lợi ích - nguy cơ (Class IIb, Level B).",
+    "cor": "IIb",
+    "loe": "B"
+  },
+  {
+    "id": "esc.lipid.2019.older_renal_ddi_low_start",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 43,
+    "printedPage": "153",
+    "locator": "Recommendations for the treatment of dyslipidaemias in older people / p. 43",
+    "quote": "It is recommended that the statin is started at a low dose if there is signiﬁcant renal impairment and/or the potential for drug interactions, and then titrated upwards to achieve LDL-C treatment goals.",
+    "quoteVi": "Ở người cao tuổi có suy giảm chức năng thận đáng kể và/hoặc nguy cơ tương tác thuốc, khuyến cáo khởi đầu statin ở liều thấp và chuẩn độ tăng dần thận trọng để đạt đích LDL-C (Class I, Level C).",
+    "cor": "I",
+    "loe": "C"
+  },
+  {
+    "id": "esc.lipid.2025.hiv_statin_primary",
+    "sourceId": "esc_2025_lipid",
+    "pdfPage": 15,
+    "printedPage": "4373",
+    "locator": "Recommendation Table 6 / p. 15",
+    "quote": "Statin therapy is recommended for people in primary prevention aged ≥40 years with HIV, irrespective of estimated cardiovascular risk and LDL-C levels, to reduce the risk of cardiovascular events; the choice of statin should be based on potential drug interactions.",
+    "quoteVi": "Khuyến cáo điều trị statin dự phòng tiên phát cho người nhiễm HIV từ 40 tuổi trở lên bất kể ước tính nguy cơ tim mạch và mức LDL-C ban đầu nhằm giảm biến cố tim mạch; lựa chọn statin dựa trên nguy cơ tương tác với phác đồ ARV (Class I, Level B).",
+    "cor": "I",
+    "loe": "B"
+  },
+  {
+    "id": "esc.lipid.2025.hiv_reprieve_pitavastatin_4mg",
+    "sourceId": "esc_2025_lipid",
+    "pdfPage": 14,
+    "printedPage": "4372",
+    "locator": "Section 8: Primary prevention in people with HIV / p. 14",
+    "quote": "Patients were randomized to pitavastatin 4 mg once daily or placebo.",
+    "quoteVi": "Trong thử nghiệm REPRIEVE trên bệnh nhân HIV 40–75 tuổi đang điều trị ART, Pitavastatin 4 mg uống 1 lần/ngày giảm 35% biến cố MACE so với giả dược và không tương tác với thuốc kháng retrovirus."
+  },
+  {
+    "id": "acc.lipid.2026.hiv_statin_cor1",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 80,
+    "printedPage": "2703",
+    "locator": "Section 4.2.8.9, Rec 1 / p. 80",
+    "quote": "InpeoplelivingwithHIVaged40to 75 years on stable combination an- tiretroviraltherapy,statintherapyis recommended to reduce risk of a first ASCVD event",
+    "quoteVi": "Ở người nhiễm HIV từ 40 đến 75 tuổi đang điều trị ARV ổn định, khuyến cáo điều trị statin để giảm nguy cơ biến cố ASCVD đầu tiên (ACC/AHA 2026 COR 1, LOE B-R).",
+    "cor": "1",
+    "loe": "B-R"
+  },
+  {
+    "id": "esc.ckd.2026.dialysis_ascvd_statin_consider",
+    "sourceId": "esc_2026_cvd_ckd",
+    "pdfPage": 27,
+    "printedPage": "27",
+    "locator": "Recommendation Table 10 / p. 27",
+    "quote": "Initiating a statin-based regimen may be considered in patients on dialysis with a history of ASCVD to reduce the risk of recurrent atherosclerotic events.",
+    "quoteVi": "Ở bệnh nhân đang lọc máu chu kỳ nhưng đã có bệnh tim mạch xơ vữa (ASCVD), có thể cân nhắc khởi trị phác đồ nền tảng statin để giảm nguy cơ tái phát biến cố xơ vữa (ESC 2026 CVD-CKD Class IIb, Level C).",
+    "cor": "IIb",
+    "loe": "C"
+  },
+  {
+    "id": "esc.ckd.2026.dialysis_continue_statin",
+    "sourceId": "esc_2026_cvd_ckd",
+    "pdfPage": 27,
+    "printedPage": "27",
+    "locator": "Recommendation Table 10 / p. 27",
+    "quote": "Continuation of a statin-based regimen may be considered on dialysis initiation to ensure ongoing cardiovascular protection.",
+    "quoteVi": "Có thể cân nhắc tiếp tục duy trì phác đồ nền tảng statin (kèm hoặc không kèm ezetimibe) khi bắt đầu lọc máu để duy trì bảo vệ tim mạch (ESC 2026 CVD-CKD Class IIb, Level C).",
+    "cor": "IIb",
+    "loe": "C"
+  },
+  {
+    "id": "acc.lipid.2026.lpa_screening_cor1",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 4,
+    "printedPage": "2627",
+    "locator": "Table 1 / Section 3.4 / p. 4",
+    "quote": "COR1:Inalladults,measurementof Lp(a) concentrationisrecommendedat leastonce for ASCVDriskassessment.",
+    "quoteVi": "ACC/AHA 2026 khuyến cáo mức COR 1: Đo nồng độ Lp(a) ít nhất một lần ở tất cả người trưởng thành để đánh giá nguy cơ ASCVD.",
+    "cor": "1"
+  },
+  {
+    "id": "acc.lipid.2026.lpa_125nmol_threshold",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 90,
+    "printedPage": "2713",
+    "locator": "Section 4.2.10, Rec 1 / p. 90",
+    "quote": "InallindividualswithelevatedLp(a) (≥125 nmol/L or≥50 mg/dL), optimal early control of modifiable cardiovascular risk factors is recom- mended to reduce ASCVD risk.",
+    "quoteVi": "Ở mọi cá nhân có Lp(a) tăng cao (≥ 125 nmol/L hoặc ≥ 50 mg/dL theo ACC/AHA 2026), khuyến cáo kiểm soát tối ưu sớm các yếu tố nguy cơ tim mạch có thể thay đổi để giảm nguy cơ ASCVD (COR 1, LOE B-NR).",
+    "cor": "1",
+    "loe": "B-NR"
+  },
+  {
+    "id": "acc.lipid.2026.icosapent_cor2b",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 83,
+    "printedPage": "2706",
+    "locator": "Section 4.2.9, Rec 4 / p. 83",
+    "quote": "and LDL-C <100 mg/dL (2.6 mmol/L) on maximally toler- ated statin, the addition of IPE may be reasonable to lower ASCVD risk.",
+    "quoteVi": "ACC/AHA 2026 xếp mức COR 2b (LOE B-R): Ở người ≥ 50 tuổi có ASCVD hoặc ĐTĐ kèm ≥ 1 yếu tố nguy cơ, có TG tồn dư 150–499 mg/dL và LDL-C < 100 mg/dL trên nền statin tối đa dung nạp, có thể cân nhắc bổ sung Icosapent ethyl để giảm nguy cơ ASCVD.",
+    "cor": "IIb",
+    "loe": "B-R"
+  },
+  {
+    "id": "acc.lipid.2026.older_gt75_consider",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 74,
+    "printedPage": "2697",
+    "locator": "Section 4.2.8.3, Rec 2 / p. 74",
+    "quote": "In adults aged>75 years with an estimatedlifeexpectancyofatleast 2.5 years, it may be reasonable to initiate moderate-intensity statin therapy after a clinician–patient discussion of potential benefits and risks to reduce ASCVD risk.",
+    "quoteVi": "Ở người cao tuổi > 75 tuổi có kỳ vọng sống ước tính ≥ 2.5 năm, có thể cân nhắc khởi trị statin cường độ trung bình sau khi thảo luận lợi ích và nguy cơ (ACC/AHA 2026 COR 2b, LOE B-NR).",
+    "cor": "IIb",
+    "loe": "B-NR"
+  },
+  {
+    "id": "acc.lipid.2026.pregnancy_hofh_apheresis",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 75,
+    "printedPage": "2698",
+    "locator": "Section 4.2.8.4, Rec 2 & Rec 4 / p. 75",
+    "quote": "In pregnant or lactating individuals with HoFH, it is reasonable to un- dergolipoproteinapheresistolower LDL-C and reduce ASCVD risk.",
+    "quoteVi": "Ở phụ nữ mang thai hoặc cho con bú mắc tăng cholesterol gia đình đồng hợp tử (HoFH), hợp lý khi thực hiện lọc huyết tương lipoprotein (lipoprotein apheresis) hoặc dùng nhựa gắn acid mật (nếu không tăng TG) dưới giám sát chuyên khoa (COR 2a, LOE B-NR).",
+    "cor": "IIa",
+    "loe": "B-NR"
+  },
+  {
+    "id": "acc.lipid.2026.pregnancy_htg_fibrate_t2",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 75,
+    "printedPage": "2698",
+    "locator": "Section 4.2.8.4, Rec 3 / p. 75",
+    "quote": "the use of fibrates (after the first trimester) or high-dose omega-3 ethyl esters is reasonable as an adjunct to lifestyle management to lower TG levels and reduce the risk of pancreatitis.",
+    "quoteVi": "Ở phụ nữ mang thai có tăng triglycerid máu rất nặng (≥ 500 mg/dL / 5.7 mmol/L), có thể hội chẩn chuyên khoa cân nhắc dùng omega-3 ethyl esters liều cao hoặc fibrate (sau tam cá nguyệt thứ nhất) kèm tiết chế mỡ để phòng viêm tụy cấp (COR 2a, LOE B-NR).",
+    "cor": "IIa",
+    "loe": "B-NR"
+  },
+  {
+    "id": "acc.lipid.2026.lactation_fibrate_5days",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 76,
+    "printedPage": "2699",
+    "locator": "Table 20: Lipid-Lowering Therapies During Pregnancy and Lactation / p. 76",
+    "quote": "Avoid use during lactation. If taken during pregnancy, lactation can be resumed 5 days after last dose of fibric acid derivatives",
+    "quoteVi": "Tránh sử dụng nhóm fibrate trong thời gian cho con bú; chỉ cho con bú trở lại sau ít nhất 5 ngày kể từ liều fibrate cuối cùng."
+  },
+  {
+    "id": "acc.lipid.2026.ddi_table27_simva_dronedarone",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 98,
+    "printedPage": "2721",
+    "locator": "Table 27: Clinical Recommendations on Management of DDI With Statins / p. 98",
+    "quote": "Dronedarone Lovastatin Limitdoseoflovastatinto 10mgdaily Simvastatin Limitdoseofsimvastatinto 10mgdaily",
+    "quoteVi": "Khi dùng kèm Dronedarone, giới hạn liều Simvastatin tối đa không quá 10 mg/ngày (ACC/AHA 2026 Table 27)."
+  },
+  {
+    "id": "acc.lipid.2026.ddi_table27_verapamil_simva",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 98,
+    "printedPage": "2721",
+    "locator": "Table 27: Clinical Recommendations on Management of DDI With Statins / p. 98",
+    "quote": "Verapamil Lovastatin Limitdoseoflovastatinto 20mgdaily Simvastatin Limitdoseofsimvastatinto 10mgdaily",
+    "quoteVi": "Khi dùng kèm Verapamil (hoặc Diltiazem), giới hạn liều Simvastatin tối đa không quá 10 mg/ngày (ACC/AHA 2026 Table 27)."
+  },
+  {
+    "id": "acc.lipid.2026.ddi_table27_ranolazine_simva",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 98,
+    "printedPage": "2721",
+    "locator": "Table 27: Clinical Recommendations on Management of DDI With Statins / p. 98",
+    "quote": "dosesoflovastatin orsimvastatinshouldnotexceed20mgdaily",
+    "quoteVi": "Khi dùng kèm Ranolazine, liều Simvastatin không được vượt quá 20 mg/ngày (ACC/AHA 2026 Table 27)."
+  },
+  {
+    "id": "acc.lipid.2026.ddi_table27_prava_bempedoic",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 98,
+    "printedPage": "2721",
+    "locator": "Table 27: Clinical Recommendations on Management of DDI With Statins / p. 98",
+    "quote": "Pravastatin Limitdoseofpravastatin to40mgdaily",
+    "quoteVi": "Khi dùng đồng thời với Bempedoic acid, giới hạn liều Pravastatin tối đa 40 mg/ngày (ACC/AHA 2026 Table 27)."
+  },
+  {
+    "id": "acc.lipid.2026.ddi_table22_cobicistat_contra",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 81,
+    "printedPage": "2704",
+    "locator": "Table 22: Antiretroviral Therapy and Statin Drug Interactions / p. 81",
+    "quote": "Atazanavir/cobicistat Donotcoadminister.",
+    "quoteVi": "Không phối hợp Atorvastatin với phác đồ chứa cobicistat/atazanavir hoặc tipranavir/ritonavir (hoặc tạm ngưng trong đợt nirmatrelvir/ritonavir ngắn ngày) do ức chế mạnh CYP3A4/OATP1B1."
+  },
+  {
+    "id": "fda.atorvastatin.cyclosporine_gemfibrozil_not_rec",
+    "sourceId": "fda_atorvastatin",
+    "pdfPage": 10,
+    "printedPage": "10",
+    "locator": "Section 7.1 Table 2 / p. 10",
+    "quote": "Concomitant use of cyclosporine or gemfibrozil with LIPITOR is not recommended.",
+    "quoteVi": "Nhãn FDA LIPITOR: Không khuyến cáo sử dụng đồng thời Cyclosporine hoặc Gemfibrozil với Atorvastatin do tăng mạnh nồng độ thuốc và nguy cơ tiêu cơ vân."
+  },
+  {
+    "id": "fda.atorvastatin.tipranavir_not_rec",
+    "sourceId": "fda_atorvastatin",
+    "pdfPage": 11,
+    "printedPage": "11",
+    "locator": "Section 7.1 Table 2 / p. 11",
+    "quote": "Concomitant use of tipranavir plus ritonavir or glecaprevir plus pibrentasvir with LIPITOR is not recommended.",
+    "quoteVi": "Nhãn FDA LIPITOR: Không khuyến cáo dùng đồng thời Atorvastatin với các phác đồ kháng virus ức chế rất mạnh CYP3A4/OATP1B1 (như tipranavir/ritonavir, glecaprevir/pibrentasvir hoặc tạm ngưng trong đợt nirmatrelvir/ritonavir)."
+  },
+  {
+    "id": "fda.ezetimibe.hepatic_child_pugh",
+    "sourceId": "fda_ezetimibe",
+    "pdfPage": 9,
+    "printedPage": "9",
+    "locator": "Section 8.7: Hepatic Impairment / p. 9",
+    "quote": "ZETIA is not recommended for use in patients with moderate to severe hepatic impairment (Child-Pugh B or C) due to the unknown effects of the increased exposure to ezetimibe",
+    "quoteVi": "Nhãn FDA ZETIA: Không khuyến cáo dùng Ezetimibe ở bệnh nhân suy gan mức độ trung bình đến nặng (Child-Pugh B hoặc C) do tăng phơi nhiễm toàn thân từ 3 đến 6 lần."
+  },
+  {
+    "id": "acc.lipid.2026.ezetimibe_hepatic_avoid",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 95,
+    "printedPage": "2718",
+    "locator": "Table 25: Safety Considerations for LDL-C–Lowering Medications / p. 95",
+    "quote": "Notrecommended inpatientswithmoderateor severehepaticimpairment",
+    "quoteVi": "Ezetimibe không được khuyến cáo sử dụng ở bệnh nhân suy gan trung bình hoặc nặng (ACC/AHA 2026 Table 25)."
+  },
+  {
+    "id": "fda.ezetimibe.bile_acid_sequestrant",
+    "sourceId": "fda_ezetimibe",
+    "pdfPage": 3,
+    "printedPage": "3",
+    "locator": "Section 2.1: Recommended Dosage / p. 3",
+    "quote": "Administer ZETIA at least 2 hours before or 4 hours after administration of a bile acid sequestrant",
+    "quoteVi": "Uống Ezetimibe ít nhất 2 giờ trước hoặc 4 giờ sau khi uống nhựa gắn acid mật (như cholestyramine) để tránh giảm hấp thu."
+  },
+  {
+    "id": "fda.bempedoic.pravastatin_avoid_gt_40mg",
+    "sourceId": "fda_bempedoic_acid",
+    "pdfPage": 8,
+    "printedPage": "8",
+    "locator": "Section 7: Drug Interactions / p. 8",
+    "quote": "Avoid concomitant use of NEXLETOL with pravastatin greater than 40 mg.",
+    "quoteVi": "Tránh sử dụng đồng thời Bempedoic acid (NEXLETOL) với Pravastatin liều lớn hơn 40 mg/ngày do nguy cơ bệnh cơ."
+  },
+  {
+    "id": "fda.rosuvastatin.ticagrelor_limit_20mg",
+    "sourceId": "fda_rosuvastatin",
+    "pdfPage": 13,
+    "printedPage": "13",
+    "locator": "Section 7.1 Table 5: Ticagrelor / p. 13",
+    "quote": "In patients taking ticagrelor, do not exceed a dosage of CRESTOR 20 mg once daily.",
+    "quoteVi": "Ở bệnh nhân đang dùng Ticagrelor, không dùng vượt quá liều Rosuvastatin 20 mg uống 1 lần/ngày (tăng phơi nhiễm 2.3 lần qua BCRP)."
+  },
+  {
+    "id": "fda.rosuvastatin.febuxostat_limit_20mg",
+    "sourceId": "fda_rosuvastatin",
+    "pdfPage": 13,
+    "printedPage": "13",
+    "locator": "Section 7.1 Table 5: Febuxostat / p. 13",
+    "quote": "In patients taking febuxostat, do not exceed a dosage of CRESTOR 20 mg once daily",
+    "quoteVi": "Ở bệnh nhân đang dùng Febuxostat, không dùng vượt quá liều Rosuvastatin 20 mg uống 1 lần/ngày (tăng phơi nhiễm > 1.9 lần qua BCRP)."
+  },
+  {
+    "id": "fda.rosuvastatin.warfarin_inr",
+    "sourceId": "fda_rosuvastatin",
+    "pdfPage": 14,
+    "printedPage": "14",
+    "locator": "Section 7.3 Table 7: Warfarin / p. 14",
+    "quote": "In patients taking warfarin, obtain an INR before starting CRESTOR and frequently enough after initiation, dosage titration or discontinuation",
+    "quoteVi": "Ở bệnh nhân đang dùng thuốc kháng đông kháng vitamin K (Warfarin), cần xét nghiệm INR trước khi bắt đầu Rosuvastatin và theo dõi INR sát sau khi khởi trị, chỉnh liều hoặc ngừng thuốc."
+  },
+  {
+    "id": "esc.lipid.2019.target_very_high_primary",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 22,
+    "printedPage": "132",
+    "locator": "Recommendations for treatment goals for low-density lipoprotein cholesterol / p. 22",
+    "quote": "In primary prevention for individuals at very-high risk but without FH,c an LDL-C reduction of > _50% from baselined and an LDL-C goal of <1.4 mmol/L (<55 mg/dL) are recommended.",
+    "quoteVi": "Trong dự phòng tiên phát cho người có nguy cơ rất cao (không mắc FH), khuyến cáo giảm LDL-C >= 50% so với mức nền và đạt đích LDL-C < 1.4 mmol/L (< 55 mg/dL).",
+    "cor": "I",
+    "loe": "C"
+  },
+  {
+    "id": "esc.lipid.2019.hf_no_statin_init",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 59,
+    "printedPage": "169",
+    "locator": "Section 9.7.2 & Summary Table: Treatment of dyslipidaemias in chronic HF / p. 59",
+    "quote": "Initiation of lipid-lowering therapy is not recommended in patients with HF in the absence of other indications for their use.",
+    "quoteVi": "Không khuyến cáo khởi trị mới thuốc hạ lipid máu ở bệnh nhân suy tim khi không có chỉ định độc lập khác (ESC/EAS 2019 Class III, Level A — thử nghiệm CORONA & GISSI-HF).",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "acc.lipid.2026.hf_cor3_no_benefit",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 78,
+    "printedPage": "2701",
+    "locator": "Section 4.2.8.6 Adults With Heart Failure, Rec 1 / p. 78",
+    "quote": "In adults with HFrEF who do not have clinical ASCVD or another indicationforLLT,initiationofLLTis not recommended to reduce clinical events",
+    "quoteVi": "Ở người trưởng thành suy tim phân suất tống máu giảm (HFrEF) không có ASCVD lâm sàng hoặc chỉ định hạ lipid khác, không khuyến cáo khởi trị thuốc hạ lipid để giảm biến cố lâm sàng hoặc tử vong (ACC/AHA 2026 COR 3: No Benefit, LOE A).",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "acc.lipid.2026.hfref_ischemic_cor2b",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 62,
+    "printedPage": "2685",
+    "locator": "Section 4.2.6 Heart Failure With Reduced Ejection Fraction Due to ASCVD, Rec 8 / p. 62",
+    "quote": "InadultswithHFrEFattributableto ischemic heart disease who have a reasonable life expectancy (3-5 years) and are not already on a statin because of ASCVD",
+    "quoteVi": "Ở bệnh nhân HFrEF do bệnh tim thiếu máu cục bộ có kỳ vọng sống hợp lý (3–5 năm) và chưa dùng statin, có thể cân nhắc khởi trị statin cường độ trung bình để giảm biến cố ASCVD (ACC/AHA 2026 COR 2b, LOE B-R).",
+    "cor": "IIb",
+    "loe": "B-R"
+  },
+  {
+    "id": "esc.hf.2026.href_lvef_40",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 11,
+    "printedPage": "11",
+    "locator": "Recommendation Table / Stage B HF and LVEF <= 40% / p. 11",
+    "quote": "in patients with stage B HF and LVEF ≤40% to reduce the risk of HFH and death.",
+    "quoteVi": "Ngưỡng phân suất tống máu thất trái LVEF <= 40% xác định suy tim phân suất tống máu giảm (HFrEF)."
+  },
+  {
+    "id": "acc.lipid.2026.pregnancy_stop_1_2_months",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 75,
+    "printedPage": "2698",
+    "locator": "Section 4.2.8.4 Pregnancy and Lactation, Rec 1 / p. 75",
+    "quote": "stop statin therapy 1 to 2 months before attempting to become pregnant or as soon as pregnancy is discovered to avoid uncertain risks to the fetus.",
+    "quoteVi": "Ngừng liệu pháp statin trước 1 đến 2 tháng khi dự định mang thai hoặc ngay khi phát hiện có thai để tránh nguy cơ cho thai nhi."
+  },
+  {
+    "id": "acc.lipid.2026.fibrate_gallbladder_contra",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 96,
+    "printedPage": "2719",
+    "locator": "Table 26: Safety Considerations for Triglyceride-Lowering Medications / p. 96",
+    "quote": "Severe renaldysfunction;active liver disease;gallbladderdisease;during lactation;historyofhypersensitivityto thefibrateproduct",
+    "quoteVi": "Chống chỉ định của nhóm Fibrate (fenofibrate, gemfibrozil): suy thận nặng, bệnh gan đang hoạt động, bệnh túi mật / sỏi mật, thời kỳ cho con bú và tiền sử quá mẫn với thuốc."
+  },
+  {
+    "id": "acc.lipid.2026.cac_100_init",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 42,
+    "printedPage": "2665",
+    "locator": "Section 4.2.3.6 Selective Imaging of Subclinical Atherosclerosis, Rec 3 / p. 42",
+    "quote": "if the CAC score is>0 AU, it is rec- ommended to initiate LLT, particu- larly if the CAC score is$100 AU or $75th standardized percentile to reduce ASCVD risk.",
+    "quoteVi": "Ở người nguy cơ trung bình hoặc giáp biên, nếu điểm vôi hóa mạch vành CAC > 0 AU — đặc biệt khi CAC >= 100 AU — khuyến cáo khởi trị thuốc hạ lipid máu để giảm nguy cơ ASCVD (COR 1, LOE B-NR).",
+    "cor": "1",
+    "loe": "B-NR"
+  },
+  {
+    "id": "acc.lipid.2026.cac_categories_300",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 42,
+    "printedPage": "2665",
+    "locator": "Section 4.2.3.6 Coronary Artery Calcium Categories / p. 42",
+    "quote": "CACiscategorizedasabsent (0), minimal (1-9), mild (10-99), moderate (100-299), se- vere (300-999)",
+    "quoteVi": "Phân mức điểm vôi hóa mạch vành CAC (Agatston): không có (0), tối thiểu (1–9), nhẹ (10–99), trung bình (100–299), nặng (300–999 AU, nguy cơ biến cố tương đương ASCVD lâm sàng)."
+  },
+  {
+    "id": "acc.lipid.2026.cac_1000_very_high",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 67,
+    "printedPage": "2690",
+    "locator": "Section 4.2.7 Severe Subclinical Coronary Atherosclerosis, Rec 1 / p. 67",
+    "quote": "In adultswith a CACscore of≥1000 AU, treatment with LDL-C–lowering therapies with consideration of statin therapy as first line is recom- mended",
+    "quoteVi": "Ở người trưởng thành có điểm vôi hóa mạch vành CAC >= 1000 AU, khuyến cáo điều trị hạ LDL-C tích cực với statin đầu tay nhằm giảm >= 50% LDL-C và hướng đích < 55 mg/dL (1.4 mmol/L) (COR 1, LOE B-NR).",
+    "cor": "1",
+    "loe": "B-NR"
+  },
+  {
+    "id": "acc.lipid.2026.prevent_categories",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 4,
+    "printedPage": "2627",
+    "locator": "Table 1 / Section 4.2.3.2 PREVENT-ASCVD Equations / p. 4",
+    "quote": "thePREVENT-ASCVD equationsshould be usedtoestimate10-yearASCVDrisk,with categorizationashaving low(<3%),borderline (3%to <5%),intermediate (5%to <10%),or high($10%)risk.",
+    "quoteVi": "Phương trình PREVENT-ASCVD ước tính nguy cơ ASCVD 10 năm với 4 tầng phân loại: thấp (< 3%), giáp biên (3% đến < 5%), trung bình (5% đến < 10%) và cao (>= 10%) (ACC/AHA 2026 COR 1)."
+  },
+  {
+    "id": "acc.lipid.2026.ascvd_not_very_high_70",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 62,
+    "printedPage": "2685",
+    "locator": "Section 4.2.6 Clinical ASCVD Not at Very High Risk, Rec 2 / p. 62",
+    "quote": "In adults with clinical ASCVD who are not at very high risk and on maximally tolerated statin therapy, it is reasonable to add ezetimibe, a PCSK9 mAb, or bempedoic acid",
+    "quoteVi": "Ở người có ASCVD lâm sàng nhưng chưa thuộc nhóm nguy cơ rất cao (đích COR 1 < 70 mg/dL [1.8 mmol/L]) đang dùng statin tối đa dung nạp, hợp lý khi phối hợp thêm ezetimibe, kháng thể PCSK9 hoặc bempedoic acid nếu chưa đạt đích (COR 2a, LOE B-R).",
+    "cor": "IIa",
+    "loe": "B-R"
+  },
+  {
+    "id": "acc.lipid.2026.icosapent_age50_tg150",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 83,
+    "printedPage": "2706",
+    "locator": "Section 4.2.9 Hypertriglyceridemia, Rec 4 / p. 83",
+    "quote": "In adults$50 years of age with clinical ASCVD or with diabetes and ≥1 ASCVD risk factors, with persistently elevated TG levels $150 to 499 mg/dL (1.7-5.6 mmol/L), and LDL-C <100 mg/dL",
+    "quoteVi": "ACC/AHA 2026 (COR 2b, LOE B-R): Ở người trưởng thành >= 50 tuổi có ASCVD lâm sàng hoặc ĐTĐ kèm >= 1 yếu tố nguy cơ, có TG tăng dai dẳng 150–499 mg/dL (1.7–5.6 mmol/L) và LDL-C < 100 mg/dL (2.6 mmol/L) trên nền statin tối đa dung nạp, có thể cân nhắc bổ sung Icosapent ethyl.",
+    "cor": "IIb",
+    "loe": "B-R"
+  },
+  {
+    "id": "acc.lipid.2026.chronic_stable_liver_cor2a",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 98,
+    "printedPage": "2721",
+    "locator": "Section 5.1 Statin Safety, Rec 3 / p. 98",
+    "quote": "In adults at elevated ASCVD risk with chronic, stable liver disease (including metabolic dysfunction- associatedsteatoticliverdisease),it is reasonable to treat with statin therapy to reduce ASCVD risk.",
+    "quoteVi": "Ở người trưởng thành nguy cơ ASCVD tăng cao có bệnh gan mạn ổn định (bao gồm MASLD / xơ gan còn bù Child-Pugh A không tăng men gan cấp), hợp lý khi điều trị bằng statin kèm theo dõi men gan để giảm nguy cơ ASCVD (COR 2a, LOE B-R).",
+    "cor": "IIa",
+    "loe": "B-R"
+  },
+  {
+    "id": "acc.lipid.2026.uncontrolled_hypothyroidism",
+    "sourceId": "acc_2026_lipid",
+    "pdfPage": 40,
+    "printedPage": "2663",
+    "locator": "Section 4.2.3 Secondary Causes & Risk Enhancers / p. 40",
+    "quote": "uncon- trolled hypothyroidism [a thyroid-stimulating hormonelevel >1.5timestheupperlimitofthenormal range]",
+    "quoteVi": "Suy giáp chưa kiểm soát (TSH tăng cao > 1.5 lần giới hạn trên bình thường, đặc biệt suy giáp rõ TSH > 10 mIU/L) là nguyên nhân thứ phát gây tăng LDL-C và làm tăng mạnh nguy cơ bệnh cơ/tiêu cơ vân khi dùng statin; cần điều trị bù hormon giáp trước."
+  },
+  {
+    "id": "esc.lipid.2019.friedewald_tg_4_5",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 20,
+    "printedPage": "130",
+    "locator": "Section 5.3 Low-density lipoprotein cholesterol / p. 20",
+    "quote": "With high TG values (>4.5 mmol/L or >400 mg/dL) the formula cannot be used.",
+    "quoteVi": "Khi Triglycerid tăng cao (> 4.5 mmol/L hoặc > 400 mg/dL), không sử dụng được công thức Friedewald do làm ước tính LDL-C thấp giả tạo; cần định lượng LDL-C trực tiếp hoặc dựa vào Non-HDL-C / ApoB."
+  },
+  {
+    "id": "esc.lipid.2019.plasmapheresis_acute_htg",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 42,
+    "printedPage": "152",
+    "locator": "Section 9.1.4 Acute pancreatitis induced by hypertriglyceridaemia / p. 42",
+    "quote": "In the acute setting, plasmapheresis is able to rapidly lowerTG levels.",
+    "quoteVi": "Trong bối cảnh viêm tụy cấp nặng do tăng triglycerid máu, thay huyết tương / lọc huyết tương (plasmapheresis) giúp hạ nhanh nồng độ TG bên cạnh nhịn ăn đường miệng (NPO), bù dịch và truyền insulin tĩnh mạch."
+  },
+  {
+    "id": "esc.lipid.2019.stroke_tia_intensive",
+    "sourceId": "esc_2019_lipid",
+    "pdfPage": 59,
+    "printedPage": "169",
+    "locator": "Section 9.7.1 & Summary Table: Prior ischaemic stroke or TIA / p. 59",
+    "quote": "Patients with a history of ischaemic stroke or TIA are at very-high risk of ASCVD, particularly recurrent ischaemic stroke, so it is recommended that they receive intensive LDL-C-lowering therapy.",
+    "quoteVi": "Bệnh nhân có tiền sử hoặc nhập viện vì đột quỵ thiếu máu não cục bộ hoặc cơn thoáng thiếu máu não (TIA) thuộc nhóm nguy cơ rất cao, được khuyến cáo điều trị hạ LDL-C tích cực (Class I, Level A).",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.ckd.2026.kidney_transplant_statin",
+    "sourceId": "esc_2026_cvd_ckd",
+    "pdfPage": 27,
+    "printedPage": "27",
+    "locator": "Recommendation Table 10: Kidney transplant recipients / p. 27",
+    "quote": "A statin-based regimen should be considered in kidney transplant recipients to reduce the risk of major atherosclerotic events.",
+    "quoteVi": "Ở người bệnh sau ghép thận, nên cân nhắc phác đồ nền tảng statin liều phù hợp (kiểm tra chặt tương tác với thuốc chống thải ghép như cyclosporine) để giảm biến cố tim mạch xơ vữa lớn (ESC 2026 CVD-CKD Class IIa, Level B).",
+    "cor": "IIa",
+    "loe": "B"
+  },
+  {
+    "id": "kdigo.ckd.2024.uacr_3_mg_mmol",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 11,
+    "printedPage": "S139",
+    "locator": "Figure 1: Albuminuria categories in CKD / p. 11",
+    "quote": "<30 mg/g <3 mg/mmol 30–300 mg/g 3–30 mg/mmol >300 mg/g >30 mg/mmol",
+    "quoteVi": "Phân loại albumin niệu KDIGO 2024: A2 (tăng vừa / microalbuminuria) tương ứng UACR từ 3 đến 30 mg/mmol (30–300 mg/g) và A3 (tăng nặng) > 30 mg/mmol (> 300 mg/g)."
+  },
+  {
+    "id": "byt.lipid.2020.dm_very_high_1_4",
+    "sourceId": "byt_5481_2020_dm2",
+    "pdfPage": 36,
+    "printedPage": "34",
+    "locator": "Phần 4, Mục 6.2.2: Rối loạn lipid máu ở bệnh nhân ĐTĐ / p. 36",
+    "quote": "cao (có bệnh tim mạch xơ vữa, có tổn thương cơ quan đích, có ≥3 y ếu t ố nguy cơ chính) c ần h ạ LDL-C ≥50% ho ặc dư ới 1.4 mmol/L (55 mg/dL).",
+    "quoteVi": "Bộ Y tế QĐ 5481/QĐ-BYT (2020): Bệnh nhân đái tháo đường nguy cơ rất cao (có ASCVD, tổn thương cơ quan đích hoặc >= 3 yếu tố nguy cơ chính) cần hạ LDL-C >= 50% và đạt đích < 1.4 mmol/L (55 mg/dL)."
+  },
+  {
+    "id": "byt.ckd.2024.htg_500_1000_fibrate",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 50,
+    "printedPage": "50",
+    "locator": "Chương 3, Mục c: Nhóm Fibrate trong tăng triglycerid máu nặng / p. 50",
+    "quote": "Bệnh nhân có T G huyết thanh > 500 mg/dL cần sử dụng nhóm Fibrate kết hợp thay đổi lối sống để giảm TG, do nguy cơ viêm tụy cấp cao, đặc biệt khi TG >1000 mg/dL.",
+    "quoteVi": "Bộ Y tế QĐ 2388/QĐ-BYT (2024): Bệnh nhân có triglycerid huyết thanh > 500 mg/dL cần dùng nhóm Fibrate kết hợp thay đổi lối sống để giảm nguy cơ viêm tụy cấp, đặc biệt khi TG > 1000 mg/dL."
+  },
+  {
+    "id": "fda.rosuvastatin.myasthenia_gravis",
+    "sourceId": "fda_rosuvastatin",
+    "pdfPage": 10,
+    "printedPage": "10",
+    "locator": "Section 5.2 / Adverse Reactions: Nervous System Disorders / p. 10",
+    "quote": "There have been rare reports of new-onset or exacerbation of myasthenia gravis, including ocular myasthenia, and reports of recurrence when the same or a different statin was administered.",
+    "quoteVi": "Nhãn FDA Crestor: Đã có báo cáo hiếm gặp khởi phát mới hoặc làm trầm trọng thêm bệnh nhược cơ toàn thể và nhược cơ thể mắt (ocular myasthenia) khi dùng statin, có thể tái phát khi dùng lại cùng hoặc khác hoạt chất statin."
+  },
+  {
+    "id": "fda.atorvastatin.myasthenia_gravis",
+    "sourceId": "fda_atorvastatin",
+    "pdfPage": 10,
+    "printedPage": "10",
+    "locator": "Section 6.2 Postmarketing Experience: Nervous System Disorders / p. 10",
+    "quote": "There have been rare reports of new-onset or exacerbation of myasthenia gravis, including ocular myasthenia, and reports of recurrence when the same or a different statin was administered.",
+    "quoteVi": "Nhãn FDA Lipitor: Đã ghi nhận báo cáo hiếm gặp khởi phát mới hoặc làm nặng thêm bệnh nhược cơ và nhược cơ thể mắt khi dùng statin."
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "id": "dm2_49_inpatient_mixed_dka_hhs_01ukg",
+  "titleVi": "Hội chứng hỗn hợp DKA–HHS nội viện (tăng ALTT > 300 kèm toan pH < 7.30): Truyền Regular insulin 0.1 U/kg/giờ",
+  "source": "ADA/EASD/JBDS/DTI 2024 Hyperglycemic Crises Consensus",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 72,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 102,
+    "dbp": 64,
+    "hr": 116,
+    "scr": 145,
+    "na": 149,
+    "k": 4.5,
+    "glucose": 40.0,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "inpatientUnit": "ward",
+      "effectiveOsmolality": 338,
+      "venousPh": 7.18,
+      "serumBicarb": 12,
+      "bloodKetones": 2.2
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_dm2_dka_active_management",
+        "drugId": "insulin_regular",
+        "action": "START",
+        "doseContains": "0.1 U/kg/h"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "insulin_glargine",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Không để lọt vùng mù Mixed DKA–HHS khi BHB < 3.0 nhưng có tăng ALTT hiệu dụng > 300 mOsm/kg kèm toan chuyển hóa (pH < 7.30, HCO3 < 18): Khởi truyền Regular insulin 0.1 U/kg/giờ thay vì liều HHS đơn thuần 0.05 U/kg/giờ."
+}

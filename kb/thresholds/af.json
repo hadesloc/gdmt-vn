@@ -1,0 +1,498 @@
+[
+  {
+    "id": "af.cha2ds2va.low_risk",
+    "value": 0,
+    "unit": "points",
+    "quantity": "cha2ds2va_score",
+    "citationIds": [
+      "esc.af.2024.cha2ds2va_score_0",
+      "esc.af.2024.oac_except_low_risk"
+    ],
+    "descriptionVi": "Điểm CHA2DS2-VA bằng 0: Nguy cơ thuyên tắc thấp, không chỉ định thuốc chống đông dài hạn"
+  },
+  {
+    "id": "af.cha2ds2va.intermediate_risk",
+    "value": 1,
+    "unit": "points",
+    "quantity": "cha2ds2va_score",
+    "citationIds": [
+      "esc.af.2024.cha2ds2va_rec_class2a"
+    ],
+    "descriptionVi": "Điểm CHA2DS2-VA bằng 1: Nguy cơ thuyên tắc trung bình, nên xem xét chỉ định thuốc chống đông đường uống (Class IIa)"
+  },
+  {
+    "id": "af.cha2ds2va.high_risk",
+    "value": 2,
+    "unit": "points",
+    "quantity": "cha2ds2va_score",
+    "citationIds": [
+      "esc.af.2024.cha2ds2va_rec_class1"
+    ],
+    "descriptionVi": "Điểm CHA2DS2-VA từ 2 trở lên: Nguy cơ thuyên tắc cao, khuyến cáo bắt buộc chỉ định thuốc chống đông đường uống, ưu tiên DOAC (Class I)"
+  },
+  {
+    "id": "af.cha2ds2vasc.us_male_high",
+    "value": 2,
+    "unit": "points",
+    "quantity": "cha2ds2vasc_score",
+    "citationIds": [
+      "acc.af.2023.cha2ds2vasc_thresholds",
+      "acc.af.2023.cha2ds2vasc_class1"
+    ],
+    "descriptionVi": "Ngưỡng điểm CHA2DS2-VASc nguy cơ cao ở nam giới (≥ 2 điểm) chỉ định chống đông Class 1 theo ACC/AHA 2023"
+  },
+  {
+    "id": "af.cha2ds2vasc.us_female_high",
+    "value": 3,
+    "unit": "points",
+    "quantity": "cha2ds2vasc_score",
+    "citationIds": [
+      "acc.af.2023.cha2ds2vasc_class1"
+    ],
+    "descriptionVi": "Ngưỡng điểm CHA2DS2-VASc nguy cơ cao ở nữ giới (≥ 3 điểm) chỉ định chống đông Class 1 theo ACC/AHA 2023"
+  },
+  {
+    "id": "af.cha2ds2vasc.us_male_intermediate",
+    "value": 1,
+    "unit": "points",
+    "quantity": "cha2ds2vasc_score",
+    "citationIds": [
+      "acc.af.2023.cha2ds2vasc_thresholds"
+    ],
+    "descriptionVi": "Ngưỡng điểm CHA2DS2-VASc nguy cơ trung bình ở nam giới (1 điểm) cân nhắc chống đông Class 2a theo ACC/AHA 2023"
+  },
+  {
+    "id": "af.cha2ds2vasc.us_female_intermediate",
+    "value": 2,
+    "unit": "points",
+    "quantity": "cha2ds2vasc_score",
+    "citationIds": [
+      "acc.af.2023.cha2ds2vasc_thresholds"
+    ],
+    "descriptionVi": "Ngưỡng điểm CHA2DS2-VASc nguy cơ trung bình ở nữ giới (2 điểm) cân nhắc chống đông Class 2a theo ACC/AHA 2023"
+  },
+  {
+    "id": "af.apixaban.standard_dose",
+    "value": 5,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "esc.af.2024.table11_doac_dosing",
+      "fda.apixaban.af_dose"
+    ],
+    "descriptionVi": "Liều chuẩn Apixaban 5 mg x 2 lần/ngày"
+  },
+  {
+    "id": "af.apixaban.reduced_dose",
+    "value": 2.5,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "esc.af.2024.table11_doac_dosing",
+      "fda.apixaban.af_dose"
+    ],
+    "descriptionVi": "Liều giảm Apixaban 2.5 mg x 2 lần/ngày khi có ít nhất 2 trong 3 tiêu chí: tuổi ≥ 80, cân nặng ≤ 60 kg, creatinin máu ≥ 133 µmol/L (1.5 mg/dL)"
+  },
+  {
+    "id": "af.apixaban.criteria_age",
+    "value": 80,
+    "unit": "years",
+    "quantity": "age",
+    "citationIds": [
+      "esc.af.2024.table11_doac_dosing",
+      "fda.apixaban.af_dose"
+    ],
+    "descriptionVi": "Tiêu chí tuổi giảm liều apixaban: tuổi ≥ 80"
+  },
+  {
+    "id": "af.apixaban.criteria_weight",
+    "value": 60,
+    "unit": "kg",
+    "quantity": "weight",
+    "citationIds": [
+      "esc.af.2024.table11_doac_dosing",
+      "fda.apixaban.af_dose"
+    ],
+    "descriptionVi": "Tiêu chí cân nặng giảm liều apixaban: cân nặng ≤ 60 kg"
+  },
+  {
+    "id": "af.apixaban.criteria_scr_umol",
+    "value": 133,
+    "unit": "µmol/L",
+    "quantity": "scr",
+    "citationIds": [
+      "esc.af.2024.table11_doac_dosing"
+    ],
+    "descriptionVi": "Tiêu chí creatinin máu giảm liều apixaban: Cr ≥ 133 µmol/L"
+  },
+  {
+    "id": "af.apixaban.criteria_scr_mgdl",
+    "value": 1.5,
+    "unit": "mg/dL",
+    "quantity": "scr_mgdl",
+    "citationIds": [
+      "fda.apixaban.af_dose"
+    ],
+    "descriptionVi": "Tiêu chí creatinin máu giảm liều apixaban: Cr ≥ 1.5 mg/dL"
+  },
+  {
+    "id": "af.rivaroxaban.standard_dose",
+    "value": 20,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "esc.af.2024.table11_doac_dosing",
+      "fda.rivaroxaban.af_dose"
+    ],
+    "descriptionVi": "Liều chuẩn Rivaroxaban 20 mg x 1 lần/ngày"
+  },
+  {
+    "id": "af.rivaroxaban.reduced_dose",
+    "value": 15,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "esc.af.2024.table11_doac_dosing",
+      "fda.rivaroxaban.af_dose"
+    ],
+    "descriptionVi": "Liều giảm Rivaroxaban 15 mg x 1 lần/ngày khi CrCl 15–49 mL/min (hoặc 15–50 mL/min)"
+  },
+  {
+    "id": "af.dabigatran.standard_dose",
+    "value": 150,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "esc.af.2024.table11_doac_dosing"
+    ],
+    "descriptionVi": "Liều chuẩn Dabigatran 150 mg x 2 lần/ngày"
+  },
+  {
+    "id": "af.dabigatran.reduced_dose",
+    "value": 110,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "esc.af.2024.table11_doac_dosing"
+    ],
+    "descriptionVi": "Liều giảm Dabigatran 110 mg x 2 lần/ngày khi tuổi ≥ 80, dùng kèm verapamil, hoặc nguy cơ xuất huyết cao"
+  },
+  {
+    "id": "af.dabigatran.crcl_contra",
+    "value": 30,
+    "unit": "mL/min",
+    "quantity": "crcl",
+    "citationIds": [
+      "esc.af.2024.dabigatran_crcl_contra",
+      "esc.af.2024.table11_doac_dosing"
+    ],
+    "descriptionVi": "Chống chỉ định Dabigatran khi CrCl < 30 mL/min"
+  },
+  {
+    "id": "af.edoxaban.standard_dose",
+    "value": 60,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "esc.af.2024.table11_doac_dosing",
+      "fda.edoxaban.af_dose"
+    ],
+    "descriptionVi": "Liều chuẩn Edoxaban 60 mg x 1 lần/ngày"
+  },
+  {
+    "id": "af.edoxaban.reduced_dose",
+    "value": 30,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "esc.af.2024.table11_doac_dosing",
+      "fda.edoxaban.af_dose"
+    ],
+    "descriptionVi": "Liều giảm Edoxaban 30 mg x 1 lần/ngày khi CrCl 15–50 mL/min, cân nặng ≤ 60 kg hoặc dùng kèm chất ức chế P-gp mạnh"
+  },
+  {
+    "id": "af.edoxaban.high_crcl_limit",
+    "value": 95,
+    "unit": "mL/min",
+    "quantity": "crcl",
+    "citationIds": [
+      "fda.edoxaban.af_dose"
+    ],
+    "descriptionVi": "Cảnh báo không dùng Edoxaban khi CrCl > 95 mL/min"
+  },
+  {
+    "id": "af.doac.contra_crcl_min",
+    "value": 15,
+    "unit": "mL/min",
+    "quantity": "crcl",
+    "citationIds": [
+      "esc.af.2024.table11_doac_dosing",
+      "acc.af.2023.esrd_dialysis_apixaban"
+    ],
+    "descriptionVi": "Ngưỡng CrCl < 15 mL/min chống chỉ định các thuốc DOAC theo ESC 2024 / EMA"
+  },
+  {
+    "id": "af.vka.target_inr_min",
+    "value": 2,
+    "unit": "INR",
+    "quantity": "inr",
+    "citationIds": [
+      "esc.af.2024.vka_target_inr"
+    ],
+    "descriptionVi": "Ngưỡng dưới khoảng INR đích của Warfarin (2.0)"
+  },
+  {
+    "id": "af.vka.target_inr_max",
+    "value": 3,
+    "unit": "INR",
+    "quantity": "inr",
+    "citationIds": [
+      "esc.af.2024.vka_target_inr"
+    ],
+    "descriptionVi": "Ngưỡng trên khoảng INR đích của Warfarin (3.0)"
+  },
+  {
+    "id": "af.rate.lvef_cutoff",
+    "value": 40,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "esc.af.2024.rate_control_lvef_preserved",
+      "esc.af.2024.rate_control_lvef_reduced",
+      "esc.af.2024.non_dhp_ccb_contra_lvef40",
+      "esc.af.2024.verapamil_contra_lvef40"
+    ],
+    "descriptionVi": "Ngưỡng phân định LVEF 40% cho chiến lược kiểm soát tần số tim (chống chỉ định Non-DHP CCB khi LVEF ≤ 40%)"
+  },
+  {
+    "id": "af.rate.lenient_hr_target",
+    "value": 110,
+    "unit": "bpm",
+    "quantity": "hr",
+    "citationIds": [
+      "esc.af.2024.rate_control_lenient_target"
+    ],
+    "descriptionVi": "Đích kiểm soát tần số tim lỏng ban đầu: tần số tim lúc nghỉ < 110 bpm"
+  },
+  {
+    "id": "af.rate.bradycardia_hr_min",
+    "value": 50,
+    "unit": "bpm",
+    "quantity": "hr",
+    "citationIds": [
+      "esc.hf.2026.bb_guidance_table_s6"
+    ],
+    "descriptionVi": "Ngưỡng tần số tim tối thiểu (50 bpm) cho phép khởi trị hoặc duy trì thuốc làm chậm nhịp tim"
+  },
+  {
+    "id": "af.acute.hypotension_sbp",
+    "value": 90,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "fda.diltiazem.hypotension_sbp90"
+    ],
+    "descriptionVi": "Ngưỡng huyết áp tâm thu < 90 mmHg xác định tụt huyết áp cấp tính / chống chỉ định thuốc hạ nhịp gây hạ áp"
+  },
+  {
+    "id": "af.cardioversion.onset_hours_early",
+    "value": 24,
+    "unit": "hours",
+    "quantity": "duration_hours",
+    "citationIds": [
+      "esc.af.2024.cardioversion_timing_24h"
+    ],
+    "descriptionVi": "Mốc thời gian khởi phát rung nhĩ < 24 giờ cho phép chuyển nhịp sớm"
+  },
+  {
+    "id": "af.cardioversion.wait_and_see_hours",
+    "value": 48,
+    "unit": "hours",
+    "quantity": "duration_hours",
+    "citationIds": [
+      "esc.af.2024.cardioversion_wait_and_see_48h"
+    ],
+    "descriptionVi": "Thời gian theo dõi chuyển nhịp tự phát chiến lược wait-and-see: 48 giờ"
+  },
+  {
+    "id": "af.cardioversion.anticoag_weeks_prior",
+    "value": 3,
+    "unit": "weeks",
+    "quantity": "interval_weeks",
+    "citationIds": [
+      "esc.af.2024.cardioversion_anticoag_3weeks"
+    ],
+    "descriptionVi": "Thời gian dùng thuốc chống đông hiệu quả tối thiểu trước chuyển nhịp: 3 tuần"
+  },
+  {
+    "id": "af.cardioversion.anticoag_weeks_post",
+    "value": 4,
+    "unit": "weeks",
+    "quantity": "interval_weeks",
+    "citationIds": [
+      "esc.af.2024.cardioversion_post_oac_4weeks"
+    ],
+    "descriptionVi": "Thời gian dùng thuốc chống đông tối thiểu sau chuyển nhịp: 4 tuần"
+  },
+  {
+    "id": "af.crcl.moderate_impairment_50",
+    "value": 50,
+    "unit": "mL/min",
+    "quantity": "crcl",
+    "citationIds": [
+      "esc.af.2024.table11_doac_dosing"
+    ],
+    "descriptionVi": "Ngưỡng CrCl 50 mL/phút phân định suy thận mức độ vừa để hiệu chỉnh liều DOAC"
+  },
+  {
+    "id": "af.flecainide.contra_crcl_min",
+    "value": 35,
+    "unit": "mL/min",
+    "quantity": "crcl",
+    "citationIds": [
+      "esc.af.2024.flecainide_crcl_35"
+    ],
+    "descriptionVi": "Ngưỡng CrCl 35 mL/phút chống chỉ định Flecainide do nguy cơ tích lũy độc tính"
+  },
+  {
+    "id": "af.sotalol.contra_crcl_min",
+    "value": 40,
+    "unit": "mL/min",
+    "quantity": "crcl",
+    "citationIds": [
+      "acc.af.2023.sotalol_renal_40"
+    ],
+    "descriptionVi": "Ngưỡng CrCl < 40 mL/phút chống chỉ định Sotalol trong rung nhĩ do nguy cơ tích lũy thuốc gây xoắn đỉnh"
+  },
+  {
+    "id": "af.sotalol.reduce_crcl_max",
+    "value": 60,
+    "unit": "mL/min",
+    "quantity": "crcl",
+    "citationIds": [
+      "acc.af.2023.sotalol_renal_40"
+    ],
+    "descriptionVi": "Ngưỡng CrCl ≤ 60 mL/phút (40–60 mL/phút) yêu cầu giảm tần suất dùng Sotalol xuống 1 lần/ngày"
+  },
+  {
+    "id": "af.vka.ttr_min",
+    "value": 70,
+    "unit": "%",
+    "quantity": "percentage",
+    "citationIds": [
+      "esc.af.2024.switch_vka_to_doac_ttr"
+    ],
+    "descriptionVi": "Ngưỡng TTR tối thiểu 70% của Warfarin, dưới ngưỡng này khuyến cáo chuyển sang DOAC"
+  },
+  {
+    "id": "af.periprocedural.vka_hold_days",
+    "value": 5,
+    "unit": "days",
+    "quantity": "duration_days",
+    "citationIds": [
+      "acc.af.2023.periprocedural_warfarin_doac"
+    ],
+    "descriptionVi": "Số ngày tạm ngưng Warfarin trước phẫu thuật nguy cơ chảy máu cao (5 ngày)"
+  },
+  {
+    "id": "af.periprocedural.vka_target_inr",
+    "value": 1.5,
+    "unit": "INR",
+    "quantity": "inr",
+    "citationIds": [
+      "acc.af.2023.periprocedural_warfarin_doac"
+    ],
+    "descriptionVi": "Ngưỡng INR an toàn trước phẫu thuật nguy cơ chảy máu cao (< 1.5)"
+  },
+  {
+    "id": "af.periprocedural.doac_hold_low_days",
+    "value": 1,
+    "unit": "days",
+    "quantity": "duration_days",
+    "citationIds": [
+      "acc.af.2023.periprocedural_warfarin_doac"
+    ],
+    "descriptionVi": "Số ngày tạm ngưng DOAC trước thủ thuật nguy cơ chảy máu thấp (1 ngày / 24 giờ)"
+  },
+  {
+    "id": "af.periprocedural.doac_hold_high_days",
+    "value": 2,
+    "unit": "days",
+    "quantity": "duration_days",
+    "citationIds": [
+      "acc.af.2023.periprocedural_warfarin_doac"
+    ],
+    "descriptionVi": "Số ngày tạm ngưng DOAC trước phẫu thuật nguy cơ chảy máu cao khi chức năng thận bình thường (2 ngày / 48 giờ)"
+  },
+  {
+    "id": "af.periprocedural.dabigatran_hold_renal_days",
+    "value": 4,
+    "unit": "days",
+    "quantity": "duration_days",
+    "citationIds": [
+      "acc.af.2023.periprocedural_warfarin_doac"
+    ],
+    "descriptionVi": "Số ngày tạm ngưng Dabigatran trước phẫu thuật nguy cơ chảy máu cao khi CrCl 30–50 mL/phút (4 ngày / 96 giờ)"
+  },
+  {
+    "id": "af.rate.strict_hr_target",
+    "value": 80,
+    "unit": "bpm",
+    "quantity": "hr",
+    "citationIds": [
+      "esc.af.2024.rate_strict_target_80"
+    ],
+    "descriptionVi": "Đích kiểm soát tần số tim chặt chẽ lúc nghỉ (< 80 bpm) khi còn triệu chứng liên quan rung nhĩ hoặc bệnh cơ tim do nhịp nhanh"
+  },
+  {
+    "id": "af.aad.qtc_contra_max",
+    "value": 500,
+    "unit": "ms",
+    "quantity": "qtc",
+    "citationIds": [
+      "esc.af.2024.qtc_500_conduction_contra",
+      "fda.dronedarone.contra_qtc500_hepatic"
+    ],
+    "descriptionVi": "Ngưỡng khoảng QTc > 500 ms chống chỉ định thuốc chống loạn nhịp nhóm III kéo dài QT (sotalol, dronedarone, amiodarone)"
+  },
+  {
+    "id": "af.dabigatran.us_reduced_dose",
+    "value": 75,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "acc.af.2023.table13_dabigatran_us_75mg"
+    ],
+    "descriptionVi": "Liều Dabigatran 75 mg x 2 lần/ngày theo nhãn FDA Hoa Kỳ cho CrCl 15–30 mL/phút (hoặc CrCl 30–50 mL/phút dùng kèm dronedarone/ketoconazole)"
+  },
+  {
+    "id": "af.periprocedural.acenocoumarol_hold_days",
+    "value": 3,
+    "unit": "days",
+    "quantity": "duration_days",
+    "citationIds": [
+      "acc.af.2023.periprocedural_warfarin_doac"
+    ],
+    "descriptionVi": "Số ngày tạm ngưng Acenocoumarol trước phẫu thuật nguy cơ chảy máu cao (3 ngày do thời gian bán thải ngắn hơn Warfarin)"
+  },
+  {
+    "id": "af.periprocedural.xa_hold_renal_days",
+    "value": 3,
+    "unit": "days",
+    "quantity": "duration_days",
+    "citationIds": [
+      "acc.af.2023.periprocedural_renal_hold_extension"
+    ],
+    "descriptionVi": "Số ngày tạm ngưng thuốc ức chế yếu tố Xa (apixaban, rivaroxaban, edoxaban) trước phẫu thuật nguy cơ chảy máu cao khi CrCl < 30 mL/phút (3 ngày / 72 giờ)"
+  },
+  {
+    "id": "af.elderly.frail_vka_age",
+    "value": 75,
+    "unit": "years",
+    "quantity": "age",
+    "citationIds": [
+      "esc.af.2024.frail_elderly_maintain_vka"
+    ],
+    "descriptionVi": "Ngưỡng tuổi ≥ 75 kèm suy yếu/đa thuốc đang ổn định trên VKA có thể cân nhắc duy trì VKA thay vì chuyển sang DOAC (FRAIL-AF, Class IIb)"
+  }
+]

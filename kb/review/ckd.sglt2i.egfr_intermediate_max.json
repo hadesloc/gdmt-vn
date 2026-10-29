@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.sglt2i.egfr_intermediate_max",
+  "contentHash": "9f8807d22be57180cc760bd8f579bd783f642368ce6385b6b86a43e43de6437e",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.sglt2i.egfr_intermediate_max",
+      "contentHash": "04b802897a3eb442",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.113Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.sglt2i.egfr_intermediate_max."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "indapamide",
+  "contentHash": "695e1d1ec530641ec2fe508e3c5f71aad98b8f23cf953e6cccad7a66eb8dc812",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "indapamide",
+      "contentHash": "1186b9bd2954b8e8",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Indapamide (Indapamide) đầy đủ liều lượng, classes (thiazide_diuretic), dải thận, thai kỳ/cho con bú, chống chỉ định máy đọc và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

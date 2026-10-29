@@ -1,0 +1,61 @@
+{
+  "id": "dm2_18_overbasalization_detected",
+  "titleVi": "Bệnh nhân dùng liều nền 42 U (0.60 U/kg) - Cảnh báo Overbasalization",
+  "source": "ADA 2026 SOC Ch. 9",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 57,
+    "sex": "female",
+    "weight": 70,
+    "height": 162,
+    "sbp": 128,
+    "dbp": 80,
+    "hr": 74,
+    "scr": 82,
+    "k": 4.3,
+    "glucose": 9.2,
+    "hba1c": 8.7,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "insulin_glargine",
+        "name": "Insulin Glargine",
+        "dose": 42,
+        "unit": "đơn vị"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "currentBasalDoseUnits": 42,
+      "bedtimeToMorningDiff": 3.1
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_dm2_overbasalization",
+        "action": "CONSIDER"
+      }
+    ]
+  },
+  "descriptionVi": "Liều insulin nền > 0.5 U/kg: Cảnh báo overbasalization."
+}

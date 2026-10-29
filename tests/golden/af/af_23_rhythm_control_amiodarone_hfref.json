@@ -1,0 +1,67 @@
+{
+  "id": "af_23_rhythm_control_amiodarone_hfref",
+  "titleVi": "Kiểm soát nhịp ở HFrEF: Cân nhắc Amiodarone (duy nhất an toàn)",
+  "source": "ESC 2024 AF Rec Table 18 / esc.af.2024.aad_amiodarone_hfref",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "male",
+    "weight": 68,
+    "height": 168,
+    "sbp": 115,
+    "dbp": 72,
+    "hr": 98,
+    "rhythm": "afib",
+    "lvef": 30,
+    "selectedModules": [
+      "af",
+      "hf"
+    ],
+    "conditions": {
+      "af": true,
+      "hf": true
+    },
+    "customInputs": {
+      "ehraScore": 3
+    },
+    "currentMeds": []
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "amiodarone",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "flecainide",
+        "action": "START"
+      },
+      {
+        "drugId": "propafenone",
+        "action": "START"
+      },
+      {
+        "drugId": "dronedarone",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Rung nhĩ có triệu chứng (EHRA III) kèm HFrEF (LVEF 30%): Amiodarone là AAD duy nhất được khuyến cáo."
+}

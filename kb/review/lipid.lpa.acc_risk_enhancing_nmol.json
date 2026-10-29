@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.lpa.acc_risk_enhancing_nmol",
+  "contentHash": "2514fae081380a0e7c5dfc85e1957decbc54dbae32fc14ecb885e5344bd12dc7",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.lpa.acc_risk_enhancing_nmol",
+      "contentHash": "aad504b62a102ef1",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T15:55:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.lpa.acc_risk_enhancing_nmol."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T15:55:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

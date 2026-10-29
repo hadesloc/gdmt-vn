@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.ics.fluticasone_prop_low_max",
+  "contentHash": "2bc085dc277da8c4f44ab2e0826d693b422336d751583a16b661377095ed7fb6",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.ics.fluticasone_prop_low_max",
+      "contentHash": "9ef0fbc9e59ffcc5",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:53:57.954Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng asthma.ics.fluticasone_prop_low_max có trích dẫn hợp lệ và đại lượng chuẩn hóa QA-10 (dose_daily)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:53:57.954Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

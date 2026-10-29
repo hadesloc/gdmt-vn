@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.target.urate_standard_umol",
+  "contentHash": "1b891d63522ebfc2d2b2146118a3d6bd641062fc6916c94e2b75083539612260",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.target.urate_standard_umol",
+      "contentHash": "0910d1c64d6176da",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.target.urate_standard_umol"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

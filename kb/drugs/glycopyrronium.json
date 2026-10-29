@@ -1,0 +1,110 @@
+{
+  "id": "glycopyrronium",
+  "nameVi": "Glycopyrronium",
+  "inn": "Glycopyrronium bromide",
+  "class": "LAMA",
+  "vnBrands": [
+    "Seebri Breezhaler"
+  ],
+  "forms": [
+    "Viên nang chứa bột hít Breezhaler 50 mcg"
+  ],
+  "start": {
+    "amount": 50,
+    "unit": "mcg",
+    "frequency": "1 lần/ngày",
+    "route": "hít",
+    "description": "Hít 1 viên nang Breezhaler 50 mcg x 1 lần/ngày vào buổi sáng"
+  },
+  "target": {
+    "amount": 50,
+    "unit": "mcg",
+    "frequency": "1 lần/ngày",
+    "route": "hít",
+    "description": "Hít 1 viên nang Breezhaler 50 mcg x 1 lần/ngày"
+  },
+  "titration": {
+    "step": "Duy trì liều cố định hàng ngày",
+    "intervalDays": 30,
+    "maxDose": "50 mcg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều khi eGFR ≥ 30 mL/phút/1.73m²",
+      "citationIds": [
+        "ema.ultibro.renal_dosing_egfr30"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "note": "Phơi nhiễm toàn thân của thành phần kháng muscarinic thải trừ qua thận tăng gấp ~2 lần ở suy thận nặng (eGFR < 30 mL/phút/1.73m²) hoặc lọc máu; chỉ dùng khi lợi ích vượt trội nguy cơ và theo dõi sát bí tiểu, glôcôm góc đóng, khô miệng",
+      "citationIds": [
+        "ema.ultibro.renal_impairment_auc22",
+        "gina.copd.2026.lama_urinary_retention"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Không phối hợp thêm LAMA hoặc SAMA thường quy khác",
+    "Thận trọng theo dõi triệu chứng tiểu khó ở người bệnh tăng sản lành tính tuyến tiền liệt (BPH) ổn định"
+  ],
+  "citationIds": [
+    "byt.copd.2026.indacaterol_glycopyrronium_dose",
+    "gold.copd.2026.lama_pharmacology_list",
+    "gold.copd.2026.lama_glaucoma_caution",
+    "gina.copd.2026.lama_urinary_retention",
+    "ema.ultibro.renal_dosing_egfr30",
+    "ema.ultibro.renal_impairment_auc22",
+    "ema.ultibro.pregnancy_lactation",
+    "ema.ultibro.lactose_excipient_contra",
+    "ema.ultibro.hypersensitivity_contra"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Dữ liệu lâm sàng hạn chế; thuốc hít hấp thu toàn thân thấp.",
+    "citationIds": [
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Hấp thu toàn thân của glycopyrronium đường hít rất thấp; cân nhắc lợi ích nuôi con bằng sữa mẹ và lợi ích điều trị cho mẹ.",
+    "citationIds": [
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "severe_milk_protein_allergy",
+      "messageVi": "Chống chỉ định ở bệnh nhân có tiền sử dị ứng nặng / phản vệ với protein sữa (chế phẩm bột khô DPI chứa tá dược lactose)",
+      "citationIds": [
+        "ema.ultibro.lactose_excipient_contra",
+        "ema.ultibro.hypersensitivity_contra"
+      ]
+    },
+    {
+      "code": "narrow_angle_glaucoma",
+      "messageVi": "Chống chỉ định hoặc tránh tiếp xúc mắt ở người bệnh glôcôm góc đóng cấp tính chưa điều trị",
+      "citationIds": [
+        "gold.copd.2026.lama_glaucoma_caution"
+      ]
+    },
+    {
+      "code": "urinary_retention",
+      "messageVi": "Chống chỉ định khi đang bí tiểu cấp chưa xử trí; thận trọng theo dõi triệu chứng đường tiểu ở người bệnh tăng sản tuyến tiền liệt",
+      "citationIds": [
+        "gina.copd.2026.lama_urinary_retention"
+      ]
+    }
+  ],
+  "classes": [
+    "lama"
+  ]
+}

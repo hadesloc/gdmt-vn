@@ -1,0 +1,27 @@
+{
+  "itemId": "dm2.hypo.glucagon_nasal_mg",
+  "contentHash": "034936e4290bab48ff9ca7a9444cbc17cc90e2bba3f9900aaaed254fb85c90c2",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "dm2.hypo.glucagon_nasal_mg",
+      "contentHash": "406889ec813813d4",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T07:05:00.000Z",
+      "reports": [
+        {
+          "round": 3,
+          "reviewedAt": "2026-10-28T07:05:00.000Z",
+          "role": "Agent F4 (DM2 Round 3 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Verified threshold dm2.hypo.glucagon_nasal_mg contentHash, verbatim PDF/HTML quotes, and Round 3 R1/R2/R3 clinical schema compliance."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

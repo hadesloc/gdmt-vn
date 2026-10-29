@@ -1,0 +1,81 @@
+{
+  "id": "sodium_bicarbonate",
+  "nameVi": "Natri Bicarbonat (Sodium Bicarbonate)",
+  "inn": "Sodium bicarbonate",
+  "class": "Alkalinizing_agent",
+  "classes": [
+    "alkalinizing_agent"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Natri Bicarbonat 500 mg",
+    "Sodium Bicarbonate"
+  ],
+  "forms": [
+    "Viên nén 500 mg",
+    "Bột uống",
+    "Dung dịch tiêm truyền 1.4%, 4.2%, 8.4%"
+  ],
+  "start": {
+    "amount": 500,
+    "unit": "mg",
+    "frequency": "2–3 lần/ngày",
+    "route": "uống",
+    "description": "500–1000 mg x 2–3 lần/ngày (tổng 1–2 g/ngày)"
+  },
+  "target": {
+    "amount": 1000,
+    "unit": "mg",
+    "frequency": "2–3 lần/ngày",
+    "route": "uống",
+    "description": "2–4 g/ngày nhằm duy trì HCO3- 22–26 mmol/L"
+  },
+  "titration": {
+    "step": 500,
+    "intervalDays": 7,
+    "maxDose": "4000 mg/ngày"
+  },
+  "renal": [
+    {
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "2–4 g/ngày chia nhiều lần",
+      "note": "Chỉ định khi HCO3- < 18 mmol/L, duy trì nồng độ HCO3- máu trong khoảng 22–26 mmol/L",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_10_1_acidosis_bicarbonate",
+        "byt.ckd.2024.acidosis_bicarbonate_target"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Thận trọng nguy cơ tăng huyết áp và quá tải thể tích tuần hoàn do cung cấp tải lượng natri"
+  ],
+  "citationIds": [
+    "kdigo.ckd.2024.pp_3_10_1_acidosis_bicarbonate",
+    "byt.ckd.2024.acidosis_bicarbonate_target"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Thận trọng nguy cơ tăng huyết áp thai kỳ và tiền sản giật do cung cấp tải lượng natri",
+    "citationIds": [
+      "byt.ckd.2024.acidosis_bicarbonate_target"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Tương thích khi cho con bú ở liều điều trị toan chuyển hóa",
+    "citationIds": [
+      "byt.ckd.2024.acidosis_bicarbonate_target"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "metabolic_alkalosis",
+      "messageVi": "Chống chỉ định khi nhiễm kiềm chuyển hóa hoặc nhiễm kiềm hô hấp",
+      "citationIds": [
+        "byt.ckd.2024.acidosis_bicarbonate_target"
+      ]
+    }
+  ]
+}

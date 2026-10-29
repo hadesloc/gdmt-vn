@@ -1,0 +1,53 @@
+{
+  "id": "dm2_26_inpatient_basal_bolus_npo",
+  "titleVi": "Bệnh nhân nội viện chuẩn bị mổ nhịn ăn (NPO) - Chỉ dùng Basal, hoãn Bolus",
+  "source": "ADA 2026 SOC Ch. 16",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 55,
+    "sex": "female",
+    "weight": 60,
+    "height": 158,
+    "sbp": 122,
+    "dbp": 76,
+    "hr": 74,
+    "scr": 80,
+    "k": 4.2,
+    "glucose": 10.5,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "inpatientEating": "npo"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "insulin_glargine",
+        "action": "START",
+        "doseContains": "nhịn ăn hoàn toàn (NPO)"
+      }
+    ]
+  },
+  "descriptionVi": "NPO: Duy trì basal, hoãn bolus."
+}

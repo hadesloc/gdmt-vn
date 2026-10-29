@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.ltot_cor_pulmonale_spo2_upper",
+  "contentHash": "945e24b43aaf2ba317ffb3c8eebf4fccf0de85e01b8223e7fa954eb3d15a1f9f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.ltot_cor_pulmonale_spo2_upper",
+      "contentHash": "baa06c2f463ea71d",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

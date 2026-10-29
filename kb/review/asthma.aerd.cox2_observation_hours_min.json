@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.aerd.cox2_observation_hours_min",
+  "contentHash": "5f34a7460b9c30f06e5a4d9f9ec160feeb887ee5742d2852890348d5273d5136",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.aerd.cox2_observation_hours_min",
+      "contentHash": "249799a6aff66380",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T07:10:38.304Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Kiểm định tự động ngưỡng lâm sàng asthma.aerd.cox2_observation_hours_min (2 giờ)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T07:10:38.304Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

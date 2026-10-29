@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.clevidipine.tg_contra_mmol",
+  "contentHash": "bfa1898c421cf6475d305628d2a1bbe965d6378e583b7ed68e9eae47d2030885",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.clevidipine.tg_contra_mmol",
+      "contentHash": "93ac5181ee5ce264",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực ngưỡng lâm sàng htn.clevidipine.tg_contra_mmol (5.6 mmol/L) và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

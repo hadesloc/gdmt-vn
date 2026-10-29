@@ -1,0 +1,60 @@
+{
+  "id": "copd_47_r2_inpatient_missing_spo2_fail_closed",
+  "titleVi": "Hồi quy R2 (COPD-R1V2-04 & R3-R2-COPD-07): Đợt cấp nội viện thiếu SpO₂ và PaO₂ – Fail-closed yêu cầu đo SpO₂ trước khi cho oxy",
+  "source": "GOLD 2026 p. 119 & BYT QĐ 2131/2026 p. 36 (COPD-R1V2-04, R3-R2-COPD-07)",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_47",
+    "age": 66,
+    "sex": "male",
+    "weight": 60,
+    "height": 165,
+    "sbp": 134,
+    "dbp": 80,
+    "hr": 102,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteExacerbation": true,
+      "fev1FvcRatio": 0.51,
+      "fev1PredPct": 47,
+      "abgPh": 7.38,
+      "abgPaco2": 42,
+      "purulentSputum": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "missing_input_restingSpo2",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_copd_inpatient_oxygen",
+        "action": "START"
+      }
+    ]
+  }
+}

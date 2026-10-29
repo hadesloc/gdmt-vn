@@ -1,0 +1,23 @@
+[
+  {
+    "id": "gsk.serevent_evohaler.excipients",
+    "sourceId": "gsk_2023_serevent_evohaler_smpc",
+    "locator": "SmPC section 6.1 (HTML snapshot)",
+    "quote": "Norflurane (HFA 134a), a hydrofluoroalkane (non-chlorofluorocarbon) propellant",
+    "quoteVi": "Danh sách tá dược của Serevent Evohaler: chất đẩy HFA, không liệt kê lactose."
+  },
+  {
+    "id": "gsk.serevent_accuhaler.excipients",
+    "sourceId": "gsk_2023_serevent_accuhaler_smpc",
+    "locator": "SmPC section 6.1 (HTML snapshot)",
+    "quote": "Lactose (which contains milk protein).",
+    "quoteVi": "Serevent Accuhaler chứa lactose mang protein sữa."
+  },
+  {
+    "id": "gsk.seretide_evohaler.excipients",
+    "sourceId": "gsk_2023_seretide_evohaler_smpc",
+    "locator": "SmPC section 6.1 (HTML snapshot)",
+    "quote": "Propellant: norflurane (HFA 134a).",
+    "quoteVi": "Danh sách tá dược của Seretide Evohaler: chất đẩy HFA, không liệt kê lactose."
+  }
+]

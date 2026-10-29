@@ -1,0 +1,83 @@
+{
+  "id": "benralizumab",
+  "nameVi": "Benralizumab",
+  "inn": "Benralizumab",
+  "class": "Anti-IL5R Biologic",
+  "vnBrands": [
+    "Fasenra"
+  ],
+  "forms": [
+    "Bút tiêm dưới da đóng sẵn 30 mg/ml"
+  ],
+  "start": {
+    "amount": 30,
+    "unit": "mg",
+    "frequency": "mỗi 4 tuần x 3 liều đầu",
+    "route": "tiêm dưới da",
+    "description": "30 mg tiêm dưới da mỗi 4 tuần cho 3 liều đầu, sau đó duy trì mỗi 8 tuần"
+  },
+  "target": {
+    "amount": 30,
+    "unit": "mg",
+    "frequency": "mỗi 8 tuần",
+    "route": "tiêm dưới da",
+    "description": "30 mg mỗi 8 tuần duy trì"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận",
+      "citationIds": [
+        "gina.asthma.2026.biologics_benralizumab"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_benralizumab_age",
+      "parameter": "age",
+      "operator": "<",
+      "threshold": 12,
+      "unit": "tuổi",
+      "action": "hold",
+      "messageVi": "Benralizumab chỉ định cho bệnh nhân từ 12 tuổi trở lên có hen tăng bạch cầu ái toan nặng",
+      "citationIds": [
+        "gina.asthma.2026.biologics_benralizumab"
+      ]
+    }
+  ],
+  "interactions": [
+    "Điều trị nhiễm ký sinh trùng giun sán trước khi khởi trị kháng thụ thể IL-5; theo dõi phản ứng quá mẫn"
+  ],
+  "citationIds": [
+    "gina.asthma.2026.biologics_benralizumab"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Kháng thể đơn dòng IgG1 qua được nhau thai trong tam cá nguyệt 2 và 3, chỉ dùng khi thật cần thiết.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Thận trọng khi cho con bú.",
+    "citationIds": [
+      "gina.asthma.2026.biologics_benralizumab"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity",
+      "messageVi": "Quá mẫn với benralizumab",
+      "citationIds": [
+        "gina.asthma.2026.biologics_benralizumab"
+      ]
+    }
+  ],
+  "classes": [
+    "biologic_asthma"
+  ]
+}

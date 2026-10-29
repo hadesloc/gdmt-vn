@@ -1,0 +1,102 @@
+{
+  "id": "dm2_55_outpatient_periop_oral_hold_basal_reduce25",
+  "titleVi": "Chuẩn bị phẫu thuật chương trình ngoại trú: Ngừng SGLT2i trước 3–4 ngày, tạm ngừng thuốc viên sáng ngày mổ và giảm 25% liều Insulin nền",
+  "source": "ADA Standards of Care 2026 Chapter 16 (Perioperative Care)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 64,
+    "sex": "male",
+    "weight": 74,
+    "height": 170,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 74,
+    "scr": 88,
+    "k": 4.3,
+    "glucose": 8.2,
+    "hba1c": 7.6,
+    "conditions": {
+      "dm": true,
+      "hf": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "empagliflozin",
+        "name": "Empagliflozin",
+        "dose": 10,
+        "unit": "mg"
+      },
+      {
+        "drugId": "metformin",
+        "name": "Metformin",
+        "dose": 1000,
+        "unit": "mg"
+      },
+      {
+        "drugId": "gliclazide",
+        "name": "Gliclazide MR",
+        "dose": 60,
+        "unit": "mg"
+      },
+      {
+        "drugId": "insulin_glargine",
+        "name": "Insulin Glargine",
+        "dose": 32,
+        "unit": "U"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "plannedSurgery": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "empagliflozin",
+        "action": "HOLD"
+      },
+      {
+        "drugId": "metformin",
+        "action": "HOLD"
+      },
+      {
+        "drugId": "gliclazide",
+        "action": "HOLD"
+      },
+      {
+        "drugId": "insulin_glargine",
+        "action": "REDUCE",
+        "doseContains": "25%"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "metformin",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "empagliflozin",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Hướng dẫn tiền phẫu đầy đủ: Ngừng Empagliflozin >= 3 ngày trước mổ, ngừng Metformin và Gliclazide vào sáng ngày phẫu thuật, đồng thời giảm 25% liều Insulin Glargine tối trước/sáng ngày mổ."
+}

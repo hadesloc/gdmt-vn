@@ -1,0 +1,96 @@
+{
+  "id": "formoterol",
+  "nameVi": "Formoterol",
+  "inn": "Formoterol fumarate",
+  "class": "Thuốc chủ vận beta-2 tác dụng kéo dài khởi phát nhanh (LABA)",
+  "classes": [
+    "laba"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Oxis Turbuhaler",
+    "Foradil"
+  ],
+  "forms": [
+    "Ống hít bột khô Turbuhaler 4.5 mcg/liều hoặc 9 mcg/liều",
+    "Viên nang bột hít 12 mcg"
+  ],
+  "start": {
+    "amount": 12,
+    "unit": "mcg",
+    "frequency": "2 lần/ngày",
+    "route": "hít",
+    "description": "Hít 9–12 mcg x 2 lần/ngày (sáng, tối) trong điều trị duy trì COPD. TUYỆT ĐỐI KHÔNG dùng Formoterol đơn độc (không kèm ICS) ở bệnh nhân hen phế quản"
+  },
+  "target": {
+    "amount": 12,
+    "unit": "mcg",
+    "frequency": "2 lần/ngày",
+    "route": "hít",
+    "description": "Hít 9–12 mcg x 2 lần/ngày trong COPD"
+  },
+  "titration": {
+    "step": "Đánh giá triệu chứng khó thở (mMRC/CAT) và kỹ thuật hít định kỳ",
+    "intervalDays": 90,
+    "maxDose": "24 mcg x 2 lần/ngày (tùy chế phẩm)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận",
+      "citationIds": [
+        "ema.trimbow.renal_pk_beclometasone_formoterol",
+        "ema.ultibro.renal_dosing_egfr30"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "Không cần chỉnh liều; theo dõi kali máu và nhịp tim",
+      "citationIds": [
+        "ema.trimbow.renal_pk_beclometasone_formoterol",
+        "ema.ultibro.renal_dosing_egfr30"
+      ]
+    }
+  ],
+  "gates": [],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Chỉ dùng khi lợi ích kiểm soát bệnh hô hấp vượt trội nguy cơ; ở thai phụ mắc hen phế quản bắt buộc phải dùng dạng phối hợp ICS-formoterol, tuyệt đối không dùng LABA đơn trị.",
+    "citationIds": [
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Nồng độ toàn thân sau hít rất thấp; cân nhắc lợi ích bú mẹ và lợi ích điều trị cho mẹ.",
+    "citationIds": [
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "asthma_without_ics",
+      "messageVi": "Chống chỉ định sử dụng LABA đơn trị liệu (không có ICS) ở bệnh nhân hen phế quản do tăng nguy cơ đợt cấp nặng và tử vong liên quan đến hen",
+      "citationIds": [
+        "gina.asthma.2026.laba_lama_without_ics_contra"
+      ]
+    }
+  ],
+  "interactions": [
+    "Tuyệt đối không dùng đơn độc không kèm ICS ở bệnh nhân hen phế quản hoặc chồng lấp Hen – COPD (ACO)",
+    "Đối kháng tác dụng giãn phế quản nặng khi dùng cùng thuốc chẹn beta không chọn lọc (propranolol, nadolol, carvedilol, timolol nhỏ mắt)",
+    "Tăng nguy cơ hạ kali máu và kéo dài QTc khi dùng liều cao kèm lợi tiểu thải kali, xanthine hoặc thuốc kéo dài khoảng QT"
+  ],
+  "citationIds": [
+    "gold.copd.2026.formoterol_twice_daily",
+    "gina.asthma.2026.laba_lama_without_ics_contra",
+    "ema.trimbow.renal_pk_beclometasone_formoterol",
+    "ema.ultibro.renal_dosing_egfr30",
+    "ema.ultibro.pregnancy_lactation"
+  ]
+}

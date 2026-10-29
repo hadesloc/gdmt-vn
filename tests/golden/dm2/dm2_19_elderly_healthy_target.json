@@ -1,0 +1,54 @@
+{
+  "id": "dm2_19_elderly_healthy_target",
+  "titleVi": "Người cao tuổi 72 tuổi khỏe mạnh - Đích HbA1c < 7.0–7.5%",
+  "source": "ADA 2026 SOC Ch. 13 Table 13.2",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 72,
+    "sex": "male",
+    "weight": 68,
+    "height": 168,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 70,
+    "scr": 95,
+    "k": 4.4,
+    "glucose": 7.8,
+    "hba1c": 7.3,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "elderlyHealthStatus": "healthy"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_dm2_hba1c_target",
+        "action": "MONITOR",
+        "doseContains": "7.0 – 7.5%"
+      }
+    ]
+  },
+  "descriptionVi": "Người cao tuổi khỏe mạnh: Đích < 7.0–7.5%."
+}

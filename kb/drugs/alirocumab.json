@@ -1,0 +1,99 @@
+{
+  "id": "alirocumab",
+  "nameVi": "Alirocumab",
+  "inn": "Alirocumab",
+  "class": "Kháng thể đơn dòng ức chế PCSK9",
+  "classes": [
+    "pcsk9i",
+    "pcsk9_mab"
+  ],
+  "vnBrands": [
+    "Praluent"
+  ],
+  "forms": [
+    "Bút tiêm nạp sẵn 75 mg/mL",
+    "Bút tiêm nạp sẵn 150 mg/mL"
+  ],
+  "start": {
+    "amount": 75,
+    "unit": "mg",
+    "frequency": "mỗi 2 tuần",
+    "route": "tiêm dưới da",
+    "description": "75 mg tiêm dưới da mỗi 2 tuần (hoặc 300 mg mỗi 4 tuần; khởi đầu 150 mg mỗi 2 tuần nếu cần hạ LDL-C > 60%)"
+  },
+  "target": {
+    "amount": 150,
+    "unit": "mg",
+    "frequency": "mỗi 2 tuần",
+    "route": "tiêm dưới da",
+    "description": "75–150 mg tiêm dưới da mỗi 2 tuần (hoặc 300 mg mỗi 4 tuần)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "75–150 mg mỗi 2 tuần (hoặc 300 mg mỗi 4 tuần)",
+      "note": "Không cần điều chỉnh liều ở bệnh nhân suy thận nhẹ và trung bình",
+      "citationIds": [
+        "acc.lipid.2026.alirocumab_dose",
+        "esc.lipid.2019.pcsk9_add_on_secondary"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "75–150 mg mỗi 2 tuần",
+      "note": "Không cần chỉnh liều theo dược động học kháng thể đơn dòng, nhưng dữ liệu lâm sàng ở suy thận nặng còn hạn chế",
+      "citationIds": [
+        "acc.lipid.2026.alirocumab_dose",
+        "esc.lipid.2019.pcsk9_add_on_secondary"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_alirocumab_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "avoid",
+      "messageVi": "Tránh sử dụng thuốc ức chế PCSK9 trong thai kỳ và thời kỳ cho con bú do thiếu dữ liệu an toàn",
+      "citationIds": [
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    }
+  ],
+  "interactions": [
+    "Không chuyển hóa qua cytochrom P450, không có tương tác chuyển hóa đáng kể"
+  ],
+  "citationIds": [
+    "acc.lipid.2026.alirocumab_dose",
+    "esc.lipid.2019.pcsk9_add_on_secondary"
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Tránh sử dụng trong thai kỳ do IgG qua được nhau thai và chưa có đủ dữ liệu an toàn (ESC / FDA)",
+    "citationIds": [
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Tránh sử dụng trong thời kỳ cho con bú do thiếu dữ liệu an toàn trên trẻ sơ sinh (ESC / FDA)",
+    "citationIds": [
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Không khuyến cáo sử dụng thuốc hạ lipid trong thai kỳ và cho con bú",
+      "citationIds": [
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    }
+  ]
+}

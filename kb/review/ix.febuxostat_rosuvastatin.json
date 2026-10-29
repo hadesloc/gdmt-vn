@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.febuxostat_rosuvastatin",
+  "contentHash": "af3b5ffbddccc3c0d28fd489903b7e5aa8d3222fd4607a163b14df257bb83cc2",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.febuxostat_rosuvastatin",
+      "contentHash": "806e7fe5580e3cf4",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của InteractionRule: ix.febuxostat_rosuvastatin"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.acute.steroid_duration_min",
+  "contentHash": "efbee1a4b4d29e56fb1cf448ed718231ba15db513bb5a3ec027d503fec30a09b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.acute.steroid_duration_min",
+      "contentHash": "363b065a889b01ac",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:53:57.954Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng asthma.acute.steroid_duration_min có trích dẫn hợp lệ và đại lượng chuẩn hóa QA-10 (duration_days)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:53:57.954Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

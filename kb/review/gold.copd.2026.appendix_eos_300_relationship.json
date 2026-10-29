@@ -1,0 +1,26 @@
+{
+  "itemId": "gold.copd.2026.appendix_eos_300_relationship",
+  "contentHash": "d964ed4223b0df176c8d126d22b8037d4932c4395fbfc2eaede4df54d05ed0bb",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gold.copd.2026.appendix_eos_300_relationship",
+      "contentHash": "0e7318171f6ad5d6",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

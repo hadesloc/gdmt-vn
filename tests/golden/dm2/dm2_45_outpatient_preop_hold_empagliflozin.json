@@ -1,0 +1,77 @@
+{
+  "id": "dm2_45_outpatient_preop_hold_empagliflozin",
+  "titleVi": "Khám tiền phẫu ngoại trú có lịch mổ phiên - Tạm ngừng đúng hoạt chất Empagliflozin 3-4 ngày trước mổ",
+  "source": "ADA 2026 SOC Ch. 16",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 59,
+    "sex": "female",
+    "weight": 68,
+    "height": 160,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 74,
+    "scr": 78,
+    "k": 4.3,
+    "glucose": 7.9,
+    "hba1c": 7.2,
+    "conditions": {
+      "dm": true,
+      "hf": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "empagliflozin",
+        "name": "Empagliflozin",
+        "dose": 10,
+        "unit": "mg"
+      },
+      {
+        "drugId": "metformin",
+        "name": "Metformin",
+        "dose": 1000,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "plannedSurgery": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "empagliflozin",
+        "action": "HOLD"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "empagliflozin",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "dapagliflozin",
+        "action": "HOLD"
+      }
+    ]
+  },
+  "descriptionVi": "Mở rộng quy tắc tiền phẫu sang cả phòng khám ngoại trú (setting: 'both') và gán chính xác drugId=empagliflozin theo thuốc bệnh nhân đang dùng."
+}

@@ -1,0 +1,67 @@
+{
+  "id": "asthma_58_acute_moderate_ipratropium_glaucoma_mouthpiece",
+  "titleVi": "Cơn hen cấp mức độ trung bình tại Cấp cứu kèm Glaucoma góc đóng: Bổ sung Ipratropium qua ống ngậm miệng (mouthpiece), cấm mặt nạ",
+  "source": "GINA 2026 Box 9-4 / SmPC Atrovent / ASTHMA-R3-R2-04 / ASTHMA-R3-R2-09",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_58",
+    "name": "Nữ 62 tuổi",
+    "age": 62,
+    "sex": "female",
+    "weight": 55,
+    "sbp": 136,
+    "dbp": 80,
+    "hr": 108,
+    "rhythm": "sinus",
+    "pefPct": 65,
+    "conditions": {
+      "asthma": true,
+      "narrowAngleGlaucoma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "isAcuteExacerbation": true,
+      "speechAbility": "phrases",
+      "spo2": 92,
+      "respiratoryRate": 24
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "salbutamol",
+        "action": "START"
+      },
+      {
+        "drugId": "ipratropium",
+        "action": "START",
+        "doseContains": "mouthpiece"
+      },
+      {
+        "drugId": "prednisolone",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Cơn hen cấp mức độ trung bình tại khoa Cấp cứu (nói từng cụm từ, PEF 65%, SpO2 92%) được phối hợp sớm Ipratropium giảm nhập viện, và do có Glaucoma góc đóng nên bắt buộc dùng qua ống ngậm miệng (mouthpiece) thay vì mặt nạ khí dung."
+}

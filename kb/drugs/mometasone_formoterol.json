@@ -1,0 +1,77 @@
+{
+  "id": "mometasone_formoterol",
+  "nameVi": "Mometasone / Formoterol",
+  "inn": "Mometasone furoate / Formoterol fumarate",
+  "class": "ICS-LABA",
+  "vnBrands": [
+    "Chưa lưu hành tại VN (Biệt dược FDA: Dulera)"
+  ],
+  "forms": [
+    "Bình xịt định liều pMDI 100/5 mcg, 200/5 mcg"
+  ],
+  "start": {
+    "amount": 2,
+    "unit": "nhát",
+    "frequency": "2 lần/ngày",
+    "route": "hít",
+    "description": "Track 2 Bậc 3: 2 nhát 100/5 mcg x 2 lần/ngày"
+  },
+  "target": {
+    "amount": 2,
+    "unit": "nhát",
+    "frequency": "2 lần/ngày",
+    "route": "hít",
+    "description": "Track 2 Bậc 4: 2 nhát 200/5 mcg x 2 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận",
+      "citationIds": [
+        "gina.asthma.2026.table_6_mometasone"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Thuốc chẹn beta không chọn lọc",
+    "Hướng dẫn dùng thuốc: Súc miệng kỹ bằng nước sạch và nhổ đi ngay sau khi hít thuốc để phòng ngừa nấm candida hầu họng và khản tiếng"
+  ],
+  "citationIds": [
+    "gina.asthma.2026.table_6_mometasone"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Thận trọng, chỉ dùng khi lợi ích cho mẹ vượt trội nguy cơ thai nhi.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Thận trọng khi cho con bú.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity",
+      "messageVi": "Quá mẫn với mometasone hoặc formoterol",
+      "citationIds": [
+        "gina.asthma.2026.table_6_mometasone"
+      ]
+    }
+  ],
+  "classes": [
+    "ics",
+    "laba"
+  ],
+  "components": [
+    "mometasone",
+    "formoterol"
+  ],
+  "qtRisk": "conditional"
+}

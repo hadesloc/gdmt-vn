@@ -1,0 +1,50 @@
+{
+  "id": "ckd_75_inpatient_ecg_hyperkalemia_normokalemia_stemi_alert",
+  "titleVi": "Nội viện - Cờ ECG sóng T cao nhọn nhưng Kali máu bình thường (K+ = 4.2 mmol/L) -> MONITOR cảnh báo loại trừ nhồi máu cơ tim tối cấp (hyperacute STEMI), cấm hạ kali y sinh (Regression CKD-R4-R1-02)",
+  "source": "UKKA 2022 Guideline 12.1 & 13.1",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_75",
+    "name": "BN CKD 75",
+    "age": 65,
+    "sex": "male",
+    "weight": 68,
+    "sbp": 128,
+    "dbp": 78,
+    "scr": 240,
+    "k": 4.2,
+    "conditions": {
+      "ckd": true
+    },
+    "customInputs": {
+      "ecgHyperkalemia": true
+    },
+    "currentMeds": [],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "rec_ckd_hyperkalemia_ecg_normokalemia_alert", "action": "MONITOR" }
+    ],
+    "mustNotInclude": [
+      { "ruleId": "rec_ckd_hyperkalemia_severe_bundle", "action": "START" },
+      { "drugId": "sodium_zirconium_cyclosilicate", "action": "CONSIDER" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R4-R1-02: Khi K+ < 5.0 mmol/L dù tick nhầm hoặc nghi sóng T cao nhọn, bắt buộc cảnh báo loại trừ STEMI tối cấp/Brugada thay vì tiêm Canxi + Insulin gây hạ kali nguy kịch."
+}

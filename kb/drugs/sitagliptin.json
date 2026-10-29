@@ -1,0 +1,116 @@
+{
+  "id": "sitagliptin",
+  "nameVi": "Sitagliptin",
+  "inn": "Sitagliptin",
+  "class": "DPP-4i",
+  "vnBrands": [
+    "Januvia"
+  ],
+  "forms": [
+    "Viên nén 25 mg, 50 mg, 100 mg"
+  ],
+  "start": {
+    "amount": 100,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Có thể uống cùng hoặc không cùng bữa ăn (hiệu chỉnh liều theo eGFR)"
+  },
+  "target": {
+    "amount": 100,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống"
+  },
+  "titration": {
+    "step": "0 mg",
+    "intervalDays": 0
+  },
+  "renal": [
+    {
+      "eGFRFrom": 45,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "100 mg 1 lần/ngày",
+      "citationIds": [
+        "fda.sitagliptin.renal_bands"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 45,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "50 mg 1 lần/ngày",
+      "citationIds": [
+        "fda.sitagliptin.renal_bands"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "25 mg 1 lần/ngày",
+      "note": "Cho phép dùng cả ở bệnh thận mạn giai đoạn cuối hoặc lọc máu",
+      "citationIds": [
+        "fda.sitagliptin.renal_bands"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_sitagliptin_glp1_conflict",
+      "parameter": "glp1_concurrent",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Không phối hợp Sitagliptin với GLP-1 RA hoặc Dual GIP/GLP-1 RA.",
+      "citationIds": [
+        "ada.dm2.2026.no_dpp4_plus_glp1"
+      ]
+    }
+  ],
+  "interactions": [
+    "Không dùng chung với GLP-1 RA"
+  ],
+  "citationIds": [
+    "fda.sitagliptin.renal_bands",
+    "ada.dm2.2026.no_dpp4_plus_glp1",
+    "fda.sitagliptin.pancreatitis",
+    "ada.dm2.2026.dpp4_pancreatitis"
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Tránh dùng trong thai kỳ do thiếu dữ liệu an toàn dài hạn (ADA 2026)",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_noninsulin"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Chưa rõ bài tiết vào sữa mẹ; không khuyến cáo khi nuôi con bú",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_noninsulin"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Tránh sử dụng Sitagliptin trong thai kỳ",
+      "citationIds": [
+        "ada.dm2.2026.pregnancy_noninsulin"
+      ]
+    },
+    {
+      "code": "acute_pancreatitis",
+      "messageVi": "Tiền sử viêm tụy cấp",
+      "citationIds": [
+        "fda.sitagliptin.pancreatitis",
+        "ada.dm2.2026.dpp4_pancreatitis"
+      ]
+    }
+  ],
+  "classes": [
+    "dpp4i"
+  ]
+}

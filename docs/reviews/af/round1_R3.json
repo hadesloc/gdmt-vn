@@ -1,0 +1,155 @@
+[
+  {
+    "id": "R3-AF-01",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "af.inpatient.rvr_acute_rate_control",
+    "finding": "Khởi trị Diltiazem IV kiểm soát tần số cấp khi chưa có thông tin phân suất tống máu thất trái (LVEF khuyết thiếu), vi phạm nguyên tắc an toàn fail-closed và đe dọa sốc tim nếu bệnh nhân có suy tim HFrEF tiềm ẩn.",
+    "evidence": "Input BN ADV_AF_41 (Nam 68 tuổi, cấp cứu nội viện, HR 135 bpm, sbp 125, lvef: undefined). Output engine: [START] drugId=diltiazem title='Kiểm soát tần số cấp khi LVEF bảo tồn: Diltiazem IV (hoặc Metoprolol IV) do nhịp tim nhanh (135 bpm)', liều 'cấp cứu TM bolus 0.25 mg/kg qua 5 phút'. Cơ chế lỗi: rules.ts dòng 793: 'const isHfRef = ef !== undefined && ef <= th(\"af.rate.lvef_cutoff\");'. Khi ef là undefined, isHfRef = false và rơi xuống nhánh mặc định kê đơn Diltiazem IV.",
+    "suggestedFix": "Thêm kiểm tra nghiêm ngặt tại af.inpatient.rvr_acute_rate_control: Khi ef === undefined, tuyệt đối không được tự động mặc định LVEF bảo tồn để kê Diltiazem IV. Bắt buộc chuyển sang Amiodarone IV/Digoxin IV (thuốc an toàn cho cả EF giảm lẫn bảo tồn) hoặc phát sinh khuyến cáo siêu âm tim tại giường (POCUS tim) khẩn cấp để đo LVEF trước khi ra quyết định."
+  },
+  {
+    "id": "R3-AF-02",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "af.oac.risk_stratification",
+    "finding": "Kê đơn thuốc chống đông DOAC (Apixaban) liều đầy đủ cho phụ nữ mang thai mắc rung nhĩ do thiếu kiểm tra thai kỳ trong luật và thiếu DOAC trong cổng an toàn thai kỳ.",
+    "evidence": "Input BN ADV_AF_60 (Nữ 28 tuổi, conditions.pregnant: true, strokeOrTia: true, CHA2DS2-VA = 2). Output engine: [START] drugId=apixaban title='Khởi trị thuốc chống đông đường uống DOAC (CHA₂DS₂-VA = 2 ≥ 2: Nguy cơ cao)', liều '5 mg uống 2 lần/ngày'. Các cổng an toàn đều passed, không hề có cổng an toàn thai kỳ; alerts = 0. Cơ chế lỗi: rules.ts dòng 180-297 không kiểm tra patient.conditions?.pregnant; đồng thời src/engine/safety/gates.ts (dòng 218-222) danh sách isContraInPregnancy chỉ có RASi/ARNI/MRA/Statin, hoàn toàn bỏ quên DOAC và Warfarin.",
+    "suggestedFix": "Bổ sung kiểm tra 'if (ctx.patient.conditions?.pregnant) return false;' trong các luật chống đông đường uống của AF; bổ sung apixaban, rivaroxaban, dabigatran, edoxaban, warfarin vào mảng isContraInPregnancy trong gates.ts; phát sinh khuyến cáo chỉ định LMWH (Enoxaparin) điều trị chống đông an toàn cho thai kỳ theo ESC 2024."
+  },
+  {
+    "id": "R3-AF-03",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "af.rate.reduced_lvef",
+    "finding": "Không dừng được thuốc Verapamil khi bệnh nhân suy tim nặng HFrEF (LVEF 30%) do gán cứng nhầm 'drugId: diltiazem' trong khuyến cáo lệnh STOP.",
+    "evidence": "Input BN ADV_AF_32 (Nữ 70 tuổi, LVEF 30%, currentMeds: [{drugId: 'verapamil', dose: 120, unit: 'mg'}]). Output engine: [STOP] drugId=diltiazem title='DỪNG NGAY Diltiazem / Verapamil: Chống chỉ định tuyệt đối khi LVEF từ 40% trở xuống'. Kết quả: Lệnh dừng thuốc mang mã diltiazem (thuốc bệnh nhân không dùng), trong khi Verapamil không có lệnh dừng trên hệ thống đơn thuốc. Cơ chế lỗi: rules.ts dòng 543 gán cứng 'drugId: diltiazem' thay vì đọc thuốc thực tế bệnh nhân đang dùng.",
+    "suggestedFix": "Sửa rules.ts dòng 543: Kiểm tra thuốc đang dùng: 'const stoppedDrugId = hasCurrentMed(ctx, [\"verapamil\"]) ? \"verapamil\" : \"diltiazem\";' và gán 'drugId: stoppedDrugId' (hoặc sinh lệnh STOP cho cả hai nếu dùng đồng thời)."
+  },
+  {
+    "id": "R3-AF-04",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "af.oac.risk_stratification",
+    "finding": "Lệch tên trường bệnh lý xơ vữa mạch máu (ascvd vs vascularDisease) làm bệnh nhân có bệnh động mạch xơ vữa bị tính mất 1 điểm CHA₂DS₂-VA, bị tước đoạt chỉ định điều trị thuốc chống đông bảo vệ đột quỵ.",
+    "evidence": "Input BN ADV_AF_64 (Nam 60 tuổi, rung nhĩ, conditions: { af: true, ascvd: true }). Giá trị phái sinh tại derivePatientData tính đúng CHA2DS2-VA = 1. Tuy nhiên tại rules.ts dòng 209: 'vascularDisease: Boolean(ctx.patient.conditions?.vascularDisease)'. Do không đọc trường chuẩn 'ascvd', điểm V bị tính là 0 -> CHA2DS2-VA thành 0 -> Output engine: [AVOID] drugId=N/A: 'Không chỉ định thuốc chống đông hoặc kháng tiểu cầu (CHA₂DS₂-VA = 0: Nguy cơ thấp)' (Class III) thay vì [CONSIDER] (Class IIa).",
+    "suggestedFix": "Sửa rules.ts dòng 209 thành: 'vascularDisease: Boolean(ctx.patient.conditions?.vascularDisease || ctx.patient.conditions?.ascvd),' hoặc tái sử dụng trực tiếp 'ctx.derived.cha2ds2va' thay vì tính lại thủ công."
+  },
+  {
+    "id": "R3-AF-05",
+    "severity": "critical",
+    "itemType": "drug",
+    "itemId": "src/engine/calculators/doacDose.ts",
+    "finding": "Kê đơn duy trì liều chuẩn 150 mg x 2 lần/ngày Dabigatran cho bệnh nhân suy thận CrCl 30–49 mL/min do bỏ quên biến cờ giảm liều 'isDoseReduced = true', gây nguy cơ xuất huyết tiêu hóa/não tử vong.",
+    "evidence": "Input BN ADV_AF_17 (Nam 65 tuổi, CrCl 39.4 mL/min, đang dùng Dabigatran 150 mg). Output engine: [CONTINUE] drugId=dabigatran: 'Chỉ định liều chuẩn Dabigatran etexilate: 150 mg x 2 lần/ngày'. Trong Rationale ghi rõ: 'Tiêu chuẩn giảm liều: CrCl 30 - 49 mL/min (39.4 mL/min)', nhưng liều vẫn là 150 mg. Cơ chế lỗi: doacDose.ts dòng 162-164: 'if (input.crcl >= cfg.renalReductionCrclMin && input.crcl <= cfg.renalReductionCrclMax) { reductionCriteriaMet.push(...); }' nhưng KHÔNG có dòng 'isDoseReduced = true;'.",
+    "suggestedFix": "Thêm 'isDoseReduced = true;' vào trong khối if dòng 162 file src/engine/calculators/doacDose.ts để tự động chuyển liều Dabigatran sang 110 mg x 2 lần/ngày khi CrCl từ 30 đến 49 mL/phút theo khuyến cáo chính thức của EMA, BYT và ESC 2024 Table 11."
+  },
+  {
+    "id": "R3-AF-06",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "af.inpatient.unstable_cardioversion",
+    "finding": "Bỏ sót xử trí cấp cứu chuyển viện khẩn cấp, đưa ra khuyến cáo 'thay đổi lối sống và hẹn tái khám sau 3–6 tháng' cho bệnh nhân rung nhĩ bị tụt huyết áp sốc tim (SBP 75 mmHg) tại phòng khám ngoại trú.",
+    "evidence": "Input BN ADV_AF_44 (Nam 65 tuổi, ngoại trú, SBP 75 mmHg, HR 155 bpm, customInputs.hemodynamicStability: 'unstable'). Output engine: [CONSIDER] Cân nhắc DOAC, [CONSIDER] AF-CARE [C]: Tối ưu hóa lối sống, [MONITOR] Tái khám định kỳ mỗi 3–6 tháng. Không có bất kỳ khuyến cáo REFER cấp cứu hay cảnh báo sốc tụt huyết áp nào. Cơ chế lỗi: Luật sốc điện cấp cứu af.inpatient.unstable_cardioversion bị gán cứng 'setting: inpatient', không chạy ở ngoại trú.",
+    "suggestedFix": "Thêm luật cấp cứu ngoại trú trong module AF (setting: 'both' hoặc 'outpatient'): Khi hemodynamicStability === 'unstable' hoặc SBP < 90 mmHg, lập tức phát hành động [REFER] khẩn cấp tới khoa Cấp cứu / gọi 115, đồng thời [HOLD]/[STOP] toàn bộ thuốc hạ áp và thuốc làm chậm nhịp đường uống."
+  },
+  {
+    "id": "R3-AF-07",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "af.inpatient.periprocedural_doac_hold",
+    "finding": "Khuyến cáo TIẾP TỤC DUY TRÌ Warfarin ở bệnh nhân mang van cơ học chuẩn bị phẫu thuật lớn có nguy cơ chảy máu cao do luật quanh phẫu thuật chỉ xử lý DOAC và bỏ quên hoàn toàn VKA.",
+    "evidence": "Input BN ADV_AF_63 (Nam 65 tuổi, van cơ học hai lá, đang dùng Warfarin, plannedProcedureRisk: 'high_risk'). Output engine: [CONTINUE] drugId=warfarin: 'Duy trì Warfarin và theo dõi định kỳ thời gian trong khoảng điều trị (TTR > 70%)'. Không có bất kỳ hướng dẫn ngừng Warfarin hay bắc cầu LMWH. Cơ chế lỗi: Luật af.inpatient.periprocedural_doac_hold chỉ kích hoạt khi có DOAC ('hasCurrentMed(ctx, [\"apixaban\", ...])'), bỏ qua Warfarin.",
+    "suggestedFix": "Mở rộng luật quản lý chống đông quanh phẫu thuật cho VKA: Khi bệnh nhân dùng Warfarin có kế hoạch phẫu thuật nguy cơ chảy máu cao, bắt buộc [HOLD] Warfarin trước mổ 5 ngày, theo dõi INR < 1.5, và bắt buộc chỉ định phác đồ bắc cầu (bridging) bằng LMWH liều điều trị đối với bệnh nhân mang van tim cơ học theo ESC/ACC."
+  },
+  {
+    "id": "R3-AF-08",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "af.oac.risk_stratification",
+    "finding": "Mâu thuẫn trực tiếp giữa 2 khuyến cáo [AVOID] và [START] thuốc chống đông trên cùng một bệnh nhân rung nhĩ khởi phát < 24 giờ có chỉ định chuyển nhịp sớm.",
+    "evidence": "Input BN ADV_AF_45 (Nam 62 tuổi, CHA₂DS₂-VA = 0, khởi phát AF < 24 giờ, nội viện). Output engine xuất hiện đồng thời: 1. [AVOID] drugId=N/A: 'Không chỉ định thuốc chống đông hoặc kháng tiểu cầu (CHA₂DS₂-VA = 0: Nguy cơ thấp)' (Class III) VÀ 2. [START] drugId=N/A: 'Khởi trị chống đông ngay và tiến hành chuyển nhịp sớm (Khởi phát rung nhĩ < 24 giờ)'. Hai khuyến cáo triệt tiêu lẫn nhau, gây bối rối cho bác sĩ lâm sàng.",
+    "suggestedFix": "Trong af.oac.risk_stratification: Khi bệnh nhân đang trong quy trình chuyển nhịp cấp tính (có afOnset hoặc planned cardioversion), không phát sinh khuyến cáo AVOID chống đông ngay lập tức. Sau chuyển nhịp, mọi bệnh nhân đều bắt buộc dùng OAC ít nhất 4 tuần trước khi xem xét ngừng theo CHA₂DS₂-VA."
+  },
+  {
+    "id": "R3-AF-09",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "af.oac.doac_dose_adjustment",
+    "finding": "Không phát sinh hành động DỪNG (STOP) cho thuốc DOAC (Apixaban, Rivaroxaban, Edoxaban) ở bệnh nhân suy thận nặng CrCl < 15 mL/min đang dùng sẵn thuốc.",
+    "evidence": "Input BN ADV_AF_09 (CrCl 14.1 mL/min đang dùng Apixaban) và ADV_AF_66 (CrCl 12.3 mL/min đang dùng Rivaroxaban). Output engine: [AVOID] drugId=N/A: 'Chống chỉ định tất cả các thuốc DOAC khi độ thanh thải CrCl dưới 15 mL/phút...', drugId là N/A. Không có bất kỳ khuyến cáo STOP nào nhắm tới Apixaban hay Rivaroxaban trong danh mục thuốc đang dùng.",
+    "suggestedFix": "Trong luật af.oac.doac_dose_adjustment: Khi crcl < th('af.doac.contra_crcl_min'), không return false mà quét currentMeds để phát sinh khuyến cáo: '[STOP] Ngừng ngay lập tức [Tên DOAC]: Chống chỉ định tuyệt đối khi CrCl < 15 mL/phút hoặc chạy thận' (tương tự như logic đã áp dụng cho Dabigatran khi CrCl < 30)."
+  },
+  {
+    "id": "R3-AF-10",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "af.oac.doac_dose_adjustment",
+    "finding": "Bỏ sót hiển thị Cảnh báo Hộp Đen (Black Box Warning) của FDA Hoa Kỳ khi chỉ định Edoxaban ở bệnh nhân có CrCl > 95 mL/min.",
+    "evidence": "Input BN ADV_AF_16 (Nam 48 tuổi, CrCl 125.5 mL/min, đang dùng Edoxaban 60 mg). Máy tính doacDose.ts trả về warning hộp đen về nguy cơ giảm hiệu lực ngừa đột quỵ so với Warfarin. Tuy nhiên tại rules.ts dòng 432-456, Recommendation không gán trường warnings: doacResult.warning. Bản kế hoạch hiển thị [CONTINUE] Edoxaban 60 mg bình thường mà không có bất kỳ cảnh báo nào.",
+    "suggestedFix": "Bổ sung trường warnings vào Recommendation trong luật af.oac.doac_dose_adjustment: 'warnings: doacResult.warning ? [doacResult.warning] : []'."
+  },
+  {
+    "id": "R3-AF-11",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "af.oac.antiplatelet_contra",
+    "finding": "Không phát hiện và không khuyến cáo ngừng Aspirin khi bệnh nhân rung nhĩ mạn tính đang dùng đồng thời Aspirin + DOAC (phối hợp kháng tiểu cầu kép/kèm chống đông không có chỉ định).",
+    "evidence": "Input BN ADV_AF_50 (Bệnh nhân đang uống đồng thời Aspirin 81 mg + Apixaban 5 mg). Output engine: [CONTINUE] Apixaban 5 mg, alerts = []. Hoàn toàn không có khuyến cáo ngừng Aspirin hay cảnh báo xuất huyết. Cơ chế lỗi: Luật af.oac.antiplatelet_contra chỉ chạy khi onAntiplatelet && !onOac. Khi đã có DOAC, luật này không chạy.",
+    "suggestedFix": "Mở rộng luật af.oac.antiplatelet_contra hoặc thêm tương tác an toàn: Khi bệnh nhân dùng đồng thời OAC + Kháng tiểu cầu (Aspirin/Clopidogrel) mà không có tiền sử hội chứng vành cấp hoặc can thiệp mạch vành trong vòng 6–12 tháng, khuyến cáo [STOP] Aspirin để giảm nguy cơ xuất huyết tiêu hóa/nội sọ (Class III ESC 2024)."
+  },
+  {
+    "id": "R3-AF-12",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "af.oac.risk_stratification",
+    "finding": "Cài đặt Profile 'US' (ACC/AHA/HRS 2023) không kích hoạt thang điểm chuẩn CHA₂DS₂-VASc mà vẫn hiển thị và phân tầng theo thang CHA₂DS₂-VA của Châu Âu.",
+    "evidence": "Input BN ADV_AF_24 (Nữ 68 tuổi kèm THA, profile: 'US'). Output engine: [START] drugId=apixaban: 'Khởi trị thuốc chống đông đường uống DOAC (CHA₂DS₂-VA = 2 ≥ 2: Nguy cơ cao)', Rationale chỉ trích dẫn ESC 2024. Tiêu đề và nội dung hoàn toàn không phản ánh thang điểm CHA₂DS₂-VASc (3 điểm) của hướng dẫn Hoa Kỳ.",
+    "suggestedFix": "Tại af.oac.risk_stratification: Khi ctx.settings.profile === 'US', sử dụng chaResult.scoreVasc, hiển thị tên thang điểm 'CHA₂DS₂-VASc', áp dụng ngưỡng phân tầng ACC/AHA (Nam >= 2, Nữ >= 3 là Class 1; Nam 1, Nữ 2 là Class 2a) và cập nhật trích dẫn sang ACC/AHA/ACCP/HRS 2023."
+  },
+  {
+    "id": "R3-AF-13",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "af.oac.risk_stratification",
+    "finding": "Thiếu cảnh báo và kiểm tra chống chỉ định thuốc DOAC ở bệnh nhân có bệnh gan tiến triển / rối loạn đông máu (conditions.liverDisease).",
+    "evidence": "Input BN ADV_AF_61 (Bệnh nhân có conditions.liverDisease: true đang dùng Rivaroxaban 20 mg). Output engine: [CONTINUE] Rivaroxaban 20 mg, alerts = []. Không có bất kỳ cảnh báo nào về chống chỉ định Rivaroxaban ở bệnh gan có rối loạn đông máu hoặc xơ gan Child-Pugh B/C theo nhãn FDA và ESC 2024 Table 11.",
+    "suggestedFix": "Thêm kiểm tra conditions.liverDisease vào quy tắc DOAC: Rivaroxaban chống chỉ định tuyệt đối ở Child-Pugh B và C; Apixaban, Dabigatran, Edoxaban chống chỉ định ở suy gan nặng hoặc bệnh gan kèm bệnh lý đông máu."
+  },
+  {
+    "id": "R3-AF-14",
+    "severity": "major",
+    "itemType": "matrix",
+    "itemId": "src/engine/safety/interactions.ts",
+    "finding": "Thiếu quy tắc kiểm tra tương tác thuốc nguy cơ chậm nhịp tim nặng và bloc nhĩ thất khi phối hợp đồng thời Chẹn beta + Non-DHP CCB (Bisoprolol + Diltiazem).",
+    "evidence": "Input BN ADV_AF_53 (Bệnh nhân đang dùng đồng thời Bisoprolol 5 mg + Diltiazem 180 mg). Output engine: [CONTINUE] Diltiazem 180 mg; alerts = []. Hoàn toàn không có cảnh báo tương tác ức chế nút nhĩ thất hiệp đồng.",
+    "suggestedFix": "Bổ sung quy tắc tương tác mức 'warning'/'critical' trong INTERACTION_RULES (src/engine/safety/interactions.ts): Phối hợp Chẹn beta (Bisoprolol, Metoprolol, Carvedilol...) + Non-DHP CCB (Diltiazem, Verapamil) làm tăng mạnh nguy cơ chậm nhịp tim kịch phát, bloc nhĩ thất độ II-III và suy tim cấp."
+  },
+  {
+    "id": "R3-AF-15",
+    "severity": "minor",
+    "itemType": "ui",
+    "itemId": "af.oac.risk_stratification",
+    "finding": "Thông báo sai trường dữ liệu thiếu: Khi thiếu Cân nặng hoặc Giới tính, hệ thống lại hiển thị khuyến cáo yêu cầu nhập 'Creatinin huyết thanh'.",
+    "evidence": "Input BN ADV_AF_56 (Đã nhập Creatinin = 90, chỉ thiếu Cân nặng) và ADV_AF_58 (Chỉ thiếu Giới tính). Output engine: [CONSIDER] 'Cần nhập Creatinin huyết thanh để đánh giá: đánh giá độ thanh thải thận CrCl...'. Bác sĩ đã nhập Creatinin nhưng hệ thống vẫn báo thiếu Creatinin do gộp chung điều kiện 'if (scr === undefined || crcl === undefined)'.",
+    "suggestedFix": "Tách riêng điều kiện kiểm tra: 'if (scr === undefined) return missingInputRec(\"af\", \"scr\", ...); if (weight === undefined) return missingInputRec(\"af\", \"weight\", ...); if (ctx.patient.sex === undefined) return missingInputRec(\"af\", \"sex\", ...);'."
+  },
+  {
+    "id": "R3-AF-16",
+    "severity": "minor",
+    "itemType": "ui",
+    "itemId": "af.rate.preserved_lvef",
+    "finding": "Chuỗi liều (dose) và tên thuốc (drugNameVi) mơ hồ, gộp chung nhiều nhóm thuốc trong cùng một dòng khuyến cáo thay vì chỉ định rõ ràng.",
+    "evidence": "Trong các luật af.rate.preserved_lvef, af.rate.reduced_lvef, af.rhythm.aad_selection: 'drugNameVi: Chẹn beta (hoặc Diltiazem / Verapamil)', 'dose: Theo phân độ chẹn beta', 'dose: Chuẩn độ thận trọng từ liều thấp', 'drugNameVi: Dronedarone (hoặc Sotalol / Amiodarone)'. Khuyến cáo không cung cấp liều định lượng cụ thể kèm đơn vị rõ ràng.",
+    "suggestedFix": "Chuẩn hóa các khuyến cáo: Mỗi khuyến cáo gán một thuốc cụ thể (ví dụ Bisoprolol với liều khởi đầu '1.25–2.5 mg x 1 lần/ngày vào buổi sáng'), các lựa chọn thay thế (Diltiazem, Verapamil) đưa vào phần rationale hoặc chia thành các khuyến cáo tùy chọn."
+  },
+  {
+    "id": "R3-AF-17",
+    "severity": "suggestion",
+    "itemType": "matrix",
+    "itemId": "src/modules/af/matrices.ts",
+    "finding": "Ma trận afMatrixDoacCrCl liên kết dải thận bằng các trường eGFRFrom/eGFRTo trong DrugEntry thay vì crclFrom/crclTo, chưa chuẩn hóa hoàn toàn theo định dạng Cockcroft-Gault.",
+    "evidence": "Trong kb/drugs/apixaban.json, rivaroxaban.json, dabigatran.json, edoxaban.json: Các dải lọc thận được khai báo dưới tên 'eGFRFrom', 'eGFRTo' dù nội dung ghi chú là dải CrCl Cockcroft-Gault theo ESC 2024 Table 11.",
+    "suggestedFix": "Cập nhật các file JSON trong kb/drugs/ cho 4 thuốc DOAC: Bổ sung các trường 'crclFrom' và 'crclTo' chuẩn xác bên cạnh eGFR để đảm bảo đơn nguồn sự thật đúng chuẩn dược lý học lâm sàng."
+  }
+]

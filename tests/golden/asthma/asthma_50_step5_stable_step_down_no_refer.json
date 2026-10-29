@@ -1,0 +1,79 @@
+{
+  "id": "asthma_50_step5_stable_step_down_no_refer",
+  "titleVi": "Hen Bậc 5 đã kiểm soát tốt ổn định 6 tháng: Hạ bậc REDUCE ICS-formoterol và không phát nhầm REFER tăng cường sinh học",
+  "source": "GINA 2026 Box 4-13 / ASTHMA-R2-R3-12",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_50",
+    "name": "Nam 50 tuổi",
+    "age": 50,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 124,
+    "dbp": 78,
+    "hr": 74,
+    "rhythm": "sinus",
+    "fev1Pct": 82,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "budesonide_formoterol",
+        "name": "Symbicort 160/4.5 mcg",
+        "dose": "2 nhát x 2 lần/ngày",
+        "freq": "2 lần/ngày"
+      }
+    ],
+    "customInputs": {
+      "currentTrack": "track1",
+      "currentStep": 5,
+      "daytimeSymptomsMoreThanTwiceWeek": false,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false,
+      "wellControlledMonths": 6,
+      "exacerbationsLastYear": 0,
+      "inhalerTechniqueCorrect": true,
+      "goodAdherence": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "REDUCE"
+      },
+      {
+        "ruleId": "rec_asthma_step_down_consider",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_asthma_track1_step5_lama_biologic",
+        "action": "REFER"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bệnh nhân Bậc 5 đã kiểm soát tốt liên tục 6 tháng, FEV1 82%, không đợt cấp -> Xem xét hạ bậc REDUCE ICS thay vì phát REFER mâu thuẫn đòi thêm LAMA/sinh học."
+}

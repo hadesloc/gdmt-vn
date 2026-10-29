@@ -1,0 +1,26 @@
+{
+  "itemId": "aliskiren",
+  "contentHash": "12f71d49a21d87cf6e120e8fa3c54e81b80e9e6045433d480569939913830a25",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "aliskiren",
+      "contentHash": "0d89f4afb097fc64",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Aliskiren (aliskiren) đầy đủ phân nhóm, dải thận, thai kỳ/cho con bú, cổng an toàn và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

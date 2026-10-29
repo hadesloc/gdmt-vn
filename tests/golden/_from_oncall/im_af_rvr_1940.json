@@ -1,0 +1,48 @@
+{
+  "id": "im_af_rvr_1940",
+  "titleVi": "Hồi hộp, nhịp không đều",
+  "source": "on-call:im_af_rvr_1940",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_im_af_rvr_1940",
+    "name": "Nam 68 tuổi",
+    "age": 68,
+    "sex": "male",
+    "weight": 72,
+    "sbp": 132,
+    "dbp": 78,
+    "hr": 154,
+    "conditions": {
+      "hf": true
+    },
+    "selectedModules": [
+      "af",
+      "hf"
+    ],
+    "currentMeds": [],
+    "scr": 95,
+    "k": 4.1
+  },
+  "expect": {
+    "mustInclude": [],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Hồi hộp nhiều, mạch nhanh không đều; chưa có đau ngực hoặc ngất. Tăng huyết áp và đái tháo đường; hiện tỉnh, nói chuyện được. Triệu chứng rõ từ chiều, thời điểm bắt đầu loạn nhịp chưa chắc.",
+  "notes": "TODO: Ca nháp nội viện chuyển từ on-call. Module agent chịu trách nhiệm điền expect.mustInclude và mustNotInclude."
+}

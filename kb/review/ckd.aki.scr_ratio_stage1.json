@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.aki.scr_ratio_stage1",
+  "contentHash": "2514ec12a599a68ab9e27564c8dc02a74dedc1d70d3de94f55e75659c76768e4",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.aki.scr_ratio_stage1",
+      "contentHash": "180655b04f049f8b",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:57:46.785Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động chuẩn hóa QA-10 quantity và kiểm tra trích dẫn nguyên văn cho ngưỡng ckd.aki.scr_ratio_stage1."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

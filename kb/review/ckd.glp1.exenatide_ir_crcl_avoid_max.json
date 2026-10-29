@@ -1,0 +1,18 @@
+{
+  "itemId": "ckd.glp1.exenatide_ir_crcl_avoid_max",
+  "contentHash": "b7862aa0d315cc22395414a4fa93eff75fa834c50c11ce6ee7b0ccd6086726b9",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.glp1.exenatide_ir_crcl_avoid_max",
+      "itemType": "threshold",
+      "contentHash": "066038e0304dec93",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

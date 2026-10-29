@@ -1,0 +1,68 @@
+{
+  "id": "lipid_33_outpatient_step2_add_ezetimibe",
+  "titleVi": "ASCVD đang dùng Atorvastatin 80 mg chưa đạt đích - Bước 2 thêm Ezetimibe 10 mg",
+  "source": "ESC/EAS 2019 & ACC 2026 / esc.lipid.2019.ezetimibe_add_on",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 60,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 126,
+    "dbp": 78,
+    "hr": 68,
+    "scr": 84,
+    "tc": 4.3,
+    "hdl": 1.1,
+    "ldl": 2.1,
+    "tg": 1.4,
+    "conditions": {
+      "ascvd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "atorvastatin",
+        "name": "Atorvastatin",
+        "dose": 80,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "ezetimibe",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R1-02, LIPID-R2-04 & R3-LIPID-07: Đang dùng statin tối đa dung nạp chưa đạt đích < 1.4 mmol/L phải CONTINUE statin và START Ezetimibe."
+}

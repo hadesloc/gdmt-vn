@@ -1,0 +1,76 @@
+{
+  "id": "asthma_44_acute_poor_response_1h_mgso4_start",
+  "titleVi": "Cơn hen cấp kém đáp ứng sau 1 giờ (poor_response): Nâng lên phác đồ cơn nặng và chỉ định START Magnesium sulfate 2 g TM",
+  "source": "GINA 2026 p. 188 / ASTHMA-R2-202 / ASTHMA-R2-R3-04",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_44",
+    "name": "Nam 46 tuổi",
+    "age": 46,
+    "sex": "male",
+    "weight": 67,
+    "sbp": 128,
+    "dbp": 80,
+    "hr": 114,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "isAcuteExacerbation": true,
+      "speechAbility": "phrases",
+      "respiratoryRate": 26,
+      "spo2": 91,
+      "acuteResponseAfter1h": "poor_response"
+    },
+    "scr": 70
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "salbutamol",
+        "action": "START"
+      },
+      {
+        "drugId": "ipratropium",
+        "action": "START"
+      },
+      {
+        "drugId": "methylprednisolone",
+        "action": "START"
+      },
+      {
+        "drugId": "magnesium_sulfate",
+        "action": "START",
+        "doseContains": "2 g"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_asthma_acute_mild_moderate_saba",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Thất bại điều trị ban đầu sau 1 giờ (poor_response) kèm giảm oxy máu dai dẳng -> Kích hoạt gói xử trí cơn hen nặng và nâng Magnesium sulfate TM lên START (Chứng cứ A). Đã bổ sung creatinine 70 umol/L để xác nhận chức năng thận trước chỉ định MgSO4."
+}

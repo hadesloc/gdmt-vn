@@ -1,0 +1,61 @@
+{
+  "id": "lipid_08_outpatient_pregnancy_contra",
+  "titleVi": "Thai kỳ - Chống chỉ định tuyệt đối Statin và thuốc hạ lipid",
+  "source": "ESC 2024 CCS / esc.lipid.2024.ccs_pregnancy",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 32,
+    "sex": "female",
+    "weight": 58,
+    "height": 160,
+    "sbp": 115,
+    "dbp": 70,
+    "hr": 80,
+    "scr": 60,
+    "tc": 6.2,
+    "hdl": 1.3,
+    "ldl": 4,
+    "tg": 2,
+    "conditions": {
+      "pregnant": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      },
+      {
+        "drugId": "fenofibrate",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Mang thai là chống chỉ định tuyệt đối của statin."
+}

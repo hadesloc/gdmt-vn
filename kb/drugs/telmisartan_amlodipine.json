@@ -1,0 +1,143 @@
+{
+  "id": "telmisartan_amlodipine",
+  "nameVi": "Telmisartan + Amlodipine (SPC)",
+  "inn": "Telmisartan / Amlodipine",
+  "class": "Viên phối hợp cố định liều ARB + CCB (DHP)",
+  "classes": [
+    "arb",
+    "dhp_ccb"
+  ],
+  "components": [
+    "telmisartan",
+    "amlodipine"
+  ],
+  "vnBrands": [
+    "Twynsta 40/5 mg",
+    "Twynsta 40/10 mg",
+    "Twynsta 80/5 mg",
+    "Twynsta 80/10 mg"
+  ],
+  "forms": [
+    "Viên nén 40 mg / 5 mg",
+    "Viên nén 40 mg / 10 mg",
+    "Viên nén 80 mg / 5 mg",
+    "Viên nén 80 mg / 10 mg"
+  ],
+  "start": {
+    "amount": "40/5",
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống"
+  },
+  "target": {
+    "amount": "80/10",
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống"
+  },
+  "titration": {
+    "step": "Tăng liều sau 2–4 tuần từ 40/5 mg lên 80/5 mg hoặc 80/10 mg 1 lần/ngày",
+    "intervalDays": 14,
+    "maxDose": "80/10 mg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "40/5 mg -> 80/10 mg 1 lần/ngày",
+      "citationIds": [
+        "aha.acc.2025.table13_losartan",
+        "fda.amlodipine.renal_hepatic_ddi"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "40/5 mg 1 lần/ngày, theo dõi sát Creatinin và K⁺ sau 2–4 tuần",
+      "citationIds": [
+        "aha.acc.2025.table13_losartan",
+        "kdigo.bp.2021.pp_3_2_3_monitoring"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_tel_amlo_k",
+      "parameter": "K",
+      "operator": ">",
+      "threshold": 5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm hoãn viên phối hợp chứa ARB khi Kali máu > 5,0 mmol/L.",
+      "citationIds": [
+        "aha.acc.2025.table18_k50"
+      ]
+    },
+    {
+      "id": "gate_tel_amlo_preg",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối viên phối hợp chứa ARB trong thai kỳ.",
+      "citationIds": [
+        "aha.acc.2025.pregnancy_contra_rec5",
+        "esc.htn.2024.pregnancy_contraindication_rasi"
+      ]
+    },
+    {
+      "id": "gate_tel_amlo_sbp",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 90,
+      "unit": "mmHg",
+      "action": "hold",
+      "messageVi": "Tạm hoãn khi SBP < 90 mmHg.",
+      "citationIds": [
+        "fda.amlodipine.warnings_as_hepatic"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối trong thai kỳ do thành phần Telmisartan (ARB).",
+    "citationIds": [
+      "aha.acc.2025.pregnancy_contra_rec5",
+      "esc.htn.2024.pregnancy_contraindication_rasi"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo dùng trong thời kỳ cho con bú do thành phần ARB.",
+    "citationIds": [
+      "esc.2025.pregnancy.rasi_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Phụ nữ mang thai",
+      "citationIds": [
+        "aha.acc.2025.pregnancy_contra_rec5"
+      ]
+    },
+    {
+      "code": "bilateral_renal_artery_stenosis",
+      "messageVi": "Hẹp động mạch thận hai bên",
+      "citationIds": [
+        "vsh.htn.2022.contraindications_table11"
+      ]
+    }
+  ],
+  "interactions": [
+    "ix.dual_rasi"
+  ],
+  "citationIds": [
+    "esc.htn.2024.initial_combination",
+    "aha.acc.2025.stage2_spc_rec1",
+    "aha.acc.2025.table13_losartan",
+    "esc.2025.pregnancy.rasi_lactation"
+  ]
+}

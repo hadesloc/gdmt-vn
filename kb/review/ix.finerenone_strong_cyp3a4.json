@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.finerenone_strong_cyp3a4",
+  "contentHash": "05d60264b156db8216825691e82201ec262dfc47d4cbdc2663dd4e65d5db80d9",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.finerenone_strong_cyp3a4",
+      "contentHash": "12c2b494b16c67de",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.finerenone_strong_cyp3a4."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

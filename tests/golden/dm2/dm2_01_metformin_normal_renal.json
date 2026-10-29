@@ -1,0 +1,65 @@
+{
+  "id": "dm2_01_metformin_normal_renal",
+  "titleVi": "Bệnh nhân ĐTĐ2 chức năng thận bình thường (eGFR 88) - Khởi trị Metformin",
+  "source": "ADA 2026 SOC Ch. 9 / FDA Label Metformin",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 52,
+    "sex": "male",
+    "weight": 72,
+    "height": 170,
+    "sbp": 122,
+    "dbp": 78,
+    "hr": 74,
+    "scr": 80,
+    "k": 4.3,
+    "glucose": 8.5,
+    "hba1c": 7.8,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "metformin",
+        "action": "START",
+        "doseContains": "500 mg"
+      },
+      {
+        "ruleId": "rec_dm2_hba1c_target",
+        "action": "MONITOR"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "metformin",
+        "action": "STOP"
+      },
+      {
+        "drugId": "metformin",
+        "action": "AVOID"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân ĐTĐ típ 2 có eGFR bình thường, đủ điều kiện khởi trị Metformin chuẩn."
+}

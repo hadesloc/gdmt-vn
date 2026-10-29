@@ -1,0 +1,64 @@
+{
+  "id": "af_02_outpatient_high_risk_start_rivaroxaban",
+  "titleVi": "Rung nhĩ Nam 66t, ĐTĐ (CHA₂DS₂-VA = 2): Khởi trị Rivaroxaban liều chuẩn",
+  "source": "ESC 2024 AF Rec Table 6 & Table 11 / esc.af.2024.table11_doac_dosing",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 66,
+    "sex": "male",
+    "weight": 74,
+    "height": 170,
+    "sbp": 128,
+    "dbp": 80,
+    "hr": 88,
+    "rhythm": "afib",
+    "scr": 90,
+    "selectedModules": [
+      "af",
+      "dm2"
+    ],
+    "conditions": {
+      "af": true,
+      "dm": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "rivaroxaban",
+        "name": "Xarelto",
+        "dose": 20,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "rivaroxaban",
+        "action": "CONTINUE",
+        "doseContains": "20 mg"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "rivaroxaban",
+        "action": "REDUCE"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 66t kèm ĐTĐ (CHA₂DS₂-VA = 2), CrCl 75 mL/min. Tiếp tục duy trì Rivaroxaban 20 mg/ngày cùng bữa ăn tối."
+}

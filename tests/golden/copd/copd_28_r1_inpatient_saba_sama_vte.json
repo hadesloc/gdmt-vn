@@ -1,0 +1,66 @@
+{
+  "id": "copd_28_r1_inpatient_saba_sama_vte",
+  "titleVi": "Hồi quy R1: Đợt cấp nội viện khởi đầu khí dung SABA ± SAMA và dự phòng huyết khối VTE",
+  "source": "GOLD 2026 Ch. 4 / BYT QĐ 2131/2026 p. 36-41 (COPD-R1-01, COPD-R1-12)",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_28",
+    "age": 70,
+    "sex": "male",
+    "weight": 55,
+    "height": 162,
+    "sbp": 140,
+    "dbp": 84,
+    "hr": 106,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteExacerbation": true,
+      "fev1FvcRatio": 0.48,
+      "fev1PredPct": 41,
+      "restingSpo2": 86,
+      "abgPh": 7.38,
+      "abgPaco2": 44,
+      "purulentSputum": true,
+      "increasedSputumVolume": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "salbutamol",
+        "ruleId": "rec_copd_inpatient_saba_sama",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_copd_vte_prophylaxis",
+        "action": "START"
+      },
+      {
+        "drugId": "prednisolone",
+        "ruleId": "rec_copd_inpatient_steroid",
+        "action": "START"
+      }
+    ]
+  }
+}

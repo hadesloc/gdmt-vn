@@ -1,0 +1,55 @@
+{
+  "id": "lipid_21_outpatient_moderate_risk_monitor",
+  "titleVi": "Bệnh nhân nguy cơ trung bình - Theo dõi định kỳ",
+  "source": "ESC/EAS 2019 / esc.lipid.2019.target_moderate",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 48,
+    "sex": "female",
+    "weight": 56,
+    "height": 158,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 74,
+    "scr": 65,
+    "tc": 5.1,
+    "hdl": 1.2,
+    "ldl": 3.2,
+    "tg": 1.5,
+    "conditions": {
+      "dm": true
+    },
+    "customInputs": {
+      "dmDurationYears": 4
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_lipid_retest_schedule",
+        "action": "MONITOR"
+      }
+    ],
+    "mustNotInclude": []
+  },
+  "descriptionVi": "Người trẻ mắc ĐTĐ < 10 năm không yếu tố nguy cơ khác, xếp nguy cơ trung bình."
+}

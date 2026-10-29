@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.ics.beclometasone_med_max",
+  "contentHash": "d584293b6e92e102fe4696a2d6ec8627f2d21e6f1cecbf08a8c69b95c93122b4",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.ics.beclometasone_med_max",
+      "contentHash": "7bec06d708c4e7f8",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:53:57.954Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng asthma.ics.beclometasone_med_max có trích dẫn hợp lệ và đại lượng chuẩn hóa QA-10 (dose_daily)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:53:57.954Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

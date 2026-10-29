@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.ics.budesonide_low_max",
+  "contentHash": "956b9b265b532667481696e76f76183f4a60e5f656d7e62b9e3d2e0cfb7492a0",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.ics.budesonide_low_max",
+      "contentHash": "1b5c3359da0b0dc5",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:53:57.954Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng asthma.ics.budesonide_low_max có trích dẫn hợp lệ và đại lượng chuẩn hóa QA-10 (dose_daily)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:53:57.954Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

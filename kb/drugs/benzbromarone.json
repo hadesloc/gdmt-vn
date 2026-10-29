@@ -1,0 +1,172 @@
+{
+  "id": "benzbromarone",
+  "nameVi": "Benzbromarone",
+  "inn": "Benzbromarone",
+  "class": "Tăng thải acid uric",
+  "classes": [
+    "urate_lowering",
+    "uricosuric"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Urik",
+    "Desuric",
+    "Narcaricin"
+  ],
+  "forms": [
+    "Viên nén 50 mg",
+    "Viên nén 100 mg"
+  ],
+  "start": {
+    "amount": 50,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "50 mg/ngày (bắt buộc kiểm tra AST/ALT nền trước điều trị và uống đủ nước)"
+  },
+  "target": {
+    "amount": 100,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "100–200 mg/ngày (lưu ý thuốc không được FDA Hoa Kỳ phê duyệt do nguy cơ nhiễm độc gan tối cấp)"
+  },
+  "titration": {
+    "step": 50,
+    "intervalDays": 14,
+    "maxDose": "200 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "50–200 mg/ngày (còn hiệu lực ở CKD mức độ vừa eGFR 30–59 mL/phút theo EULAR 2016; tại VN lưu ý BYT 361/2014 chống chỉ định nhóm tăng thải urat khi suy thận)",
+      "citationIds": [
+        "eular.gout.2016.benzbromarone_probenecid_dosing",
+        "eular.gout.2016.benzbromarone_hepatic_spc",
+        "byt.gout.2014.uricosuric_contra"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Chống chỉ định khi eGFR < 30 mL/phút hoặc lọc máu theo EULAR 2016 và BYT 2024 CKD",
+      "citationIds": [
+        "eular.gout.2016.benzbromarone_egfr30",
+        "byt.ckd.2024.gout_ult_table21"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_benzbromarone_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "contra",
+      "messageVi": "Chống chỉ định benzbromarone khi eGFR < 30 mL/phút (ANSM Desuric & EULAR 2016 Khuyến cáo 9)",
+      "citationIds": [
+        "eular.gout.2016.benzbromarone_egfr30",
+        "ema.desuric.contra_lithiase_hemopathy"
+      ]
+    },
+    {
+      "id": "gate_benzbromarone_hepatic",
+      "parameter": "hepatic_impairment",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "history",
+      "action": "contra",
+      "messageVi": "Chống chỉ định benzbromarone ở bệnh nhân có bệnh gan đã biết, rối loạn chuyển hóa porphyrin gan hoặc dùng kèm thuốc độc gan (như pyrazinamide) do nguy cơ viêm gan hoại tử tối cấp tử vong; bắt buộc xét nghiệm AST/ALT/ALP/GGT bình thường trước khởi trị và theo dõi sát trong 6 tháng đầu (ANSM Desuric)",
+      "citationIds": [
+        "ema.desuric.contra_hepatic_porphyria",
+        "eular.gout.2016.benzbromarone_hepatic_spc"
+      ]
+    },
+    {
+      "id": "gate_benzbromarone_urolithiasis",
+      "parameter": "Urolithiasis",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "history",
+      "action": "contra",
+      "messageVi": "Chống chỉ định ở bệnh nhân có tiền sử sỏi thận, tăng acid uric niệu (≥ 700 mg/24h theo Desuric; > 600 mg/24h theo BYT 361/2014) hoặc gút thứ phát sau bệnh máu ác tính",
+      "citationIds": [
+        "ema.desuric.contra_lithiase_hemopathy",
+        "acr.gout.2020.uricosuric_renal_stones_contra",
+        "byt.gout.2014.uricosuric_contra"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Theo tờ thông tin ANSM Desuric (benzbromarone): các nghiên cứu trên động vật không ghi nhận tác dụng gây quái thai và lâm sàng chưa ghi nhận dị tật, nhưng dữ liệu theo dõi thai kỳ phơi nhiễm chưa đủ loại trừ nguy cơ; như biện pháp thận trọng, tránh sử dụng benzbromarone trong thai kỳ.",
+    "citationIds": [
+      "ema.desuric.pregnancy_precaution"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Theo tờ thông tin ANSM Desuric: do chưa có dữ liệu về bài tiết benzbromarone vào sữa mẹ, cần tránh cho con bú trong suốt thời gian điều trị.",
+    "citationIds": [
+      "ema.desuric.lactation_avoid"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "severe_ckd",
+      "messageVi": "Chống chỉ định khi eGFR < 30 mL/phút (ANSM Desuric & EULAR 2016)",
+      "citationIds": [
+        "eular.gout.2016.benzbromarone_egfr30",
+        "byt.ckd.2024.gout_ult_table21"
+      ]
+    },
+    {
+      "code": "urolithiasis",
+      "messageVi": "Chống chỉ định khi có tiền sử sỏi thận tiết niệu, tăng acid uric niệu hoặc gút thứ phát do bệnh lý huyết học (ANSM Desuric & BYT 361/2014)",
+      "citationIds": [
+        "ema.desuric.contra_lithiase_hemopathy",
+        "acr.gout.2020.uricosuric_renal_stones_contra",
+        "byt.gout.2014.uricosuric_contra"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định khi có bệnh gan đã biết, porphyria gan hoặc tăng men gan do nguy cơ viêm gan hoại tử tối cấp (ANSM Desuric)",
+      "citationIds": [
+        "ema.desuric.contra_hepatic_porphyria",
+        "eular.gout.2016.benzbromarone_hepatic_spc"
+      ]
+    }
+  ],
+  "interactions": [
+    "Warfarin và các cơ chất CYP2C9: Benzbromarone ức chế mạnh CYP2C9 làm tăng vọt INR và nguy cơ xuất huyết nghiêm trọng (bắt buộc giảm liều warfarin và theo dõi INR sát)",
+    "Các thuốc có độc tính gan (lao, kháng nấm azole, paracetamol liều cao): Hiệp đồng nguy cơ suy gan cấp",
+    "Salicylat liều cao / Pyrazinamide: Làm giảm hiệu lực tăng thải acid uric của benzbromarone"
+  ],
+  "citationIds": [
+    "eular.gout.2016.benzbromarone_probenecid_dosing",
+    "eular.gout.2016.benzbromarone_egfr30",
+    "eular.gout.2016.benzbromarone_hepatic_spc",
+    "ema.desuric.contra_hepatic_porphyria",
+    "ema.desuric.contra_lithiase_hemopathy",
+    "ema.desuric.never_start_acute_flare",
+    "ema.desuric.interactions_salicylate",
+    "ema.desuric.pregnancy_precaution",
+    "ema.desuric.lactation_avoid",
+    "byt.gout.2014.uricosuric_contra",
+    "acr.gout.2020.uricosuric_renal_stones_contra"
+  ],
+  "hepatic": {
+    "status": "contra",
+    "note": "Chống chỉ định benzbromarone ở bệnh nhân có bệnh gan đã biết hoặc tăng men gan do nguy cơ suy gan hoại tử tối cấp tử vong (ANSM Desuric).",
+    "notesVi": "Chống chỉ định benzbromarone ở bệnh nhân có bệnh gan đã biết hoặc tăng men gan do nguy cơ suy gan hoại tử tối cấp tử vong (ANSM Desuric).",
+    "citationIds": [
+      "ema.desuric.contra_hepatic_porphyria",
+      "eular.gout.2016.benzbromarone_hepatic_spc"
+    ]
+  }
+}

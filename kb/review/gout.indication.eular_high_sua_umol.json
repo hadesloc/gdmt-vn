@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.indication.eular_high_sua_umol",
+  "contentHash": "e43ae0332cc20beba9988884892afd6b7134988036b3409f0b62577093b5da8a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.indication.eular_high_sua_umol",
+      "contentHash": "a90af4f2b218b65b",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.indication.eular_high_sua_umol"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

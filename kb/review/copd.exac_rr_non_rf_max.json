@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.exac_rr_non_rf_max",
+  "contentHash": "3b42710a1d7a9d3da97caa62258f7ef1f4d00c43fd16f6dd2dfbd07a70084e72",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.exac_rr_non_rf_max",
+      "contentHash": "1f81b941be6501a5",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

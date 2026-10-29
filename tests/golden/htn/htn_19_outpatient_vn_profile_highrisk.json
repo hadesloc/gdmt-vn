@@ -1,0 +1,48 @@
+{
+  "id": "htn_19_outpatient_vn_profile_highrisk",
+  "titleVi": "Profile VN (VSH 2022 / BYT 3192): Đích < 130/80 mmHg khi có ĐTĐ",
+  "source": "BYT 3192 / byt.3192.2010.target",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 56,
+    "sex": "female",
+    "weight": 60,
+    "height": 155,
+    "sbp": 138,
+    "dbp": 86,
+    "hr": 74,
+    "conditions": {
+      "htn": true,
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn",
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_htn_bp_target_evaluation",
+        "action": "CONSIDER"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân có ĐTĐ theo hướng dẫn Việt Nam thuộc nhóm nguy cơ cao, đích huyết áp < 130/80 mmHg."
+}

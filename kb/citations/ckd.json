@@ -1,0 +1,1550 @@
+[
+  {
+    "id": "kdigo.ckd.2024.table_2_gfr_categories",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 22,
+    "printedPage": "S137",
+    "locator": "Table 2 / PDF p. 22",
+    "quote": "Table 2 | GFR categories in CKD\nGFR\ncategory\nGFR (ml/min\nper 1.73 m\n2) Terms\nG1 $90 Normal or high\nG2 60–89 Mildly decreased a\nG3a 45–59 Mildly to moderately decreased\nG3b 30–44 Moderately to severely decreased\nG4 15–29 Severely decreased\nG5 <15 Kidney failure",
+    "quoteVi": "Bảng 2: Phân loại GFR trong CKD: G1 >= 90 (Bình thường hoặc cao), G2 60–89 (Giảm nhẹ), G3a 45–59 (Giảm nhẹ đến vừa), G3b 30–44 (Giảm vừa đến nặng), G4 15–29 (Giảm nặng), G5 < 15 (Suy thận giai đoạn cuối)."
+  },
+  {
+    "id": "kdigo.ckd.2024.table_3_albuminuria_categories",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 22,
+    "printedPage": "S137",
+    "locator": "Table 3 / PDF p. 22",
+    "quote": "Table 3 | Albuminuria categories in chronic kidney disease\nCategory\nAER\n(mg/24 h)\nACR (approximately\nequivalent)\nTerms(mg/mmol) (mg/g)\nA1 <30 <3 <30 Normal to mildly\nincreased\nA2 30 –300 3 –30 30 –300 Moderately increased a\nA3 >300 >30 >300 Severely increased",
+    "quoteVi": "Bảng 3: Phân loại Albumin niệu trong CKD: A1 < 30 mg/g (< 3 mg/mmol) Bình thường đến tăng nhẹ; A2 30–300 mg/g (3–30 mg/mmol) Tăng vừa; A3 > 300 mg/g (> 30 mg/mmol) Tăng nặng."
+  },
+  {
+    "id": "kdigo.ckd.2024.rec_2_2_1_kfre_risk_prediction",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 41,
+    "printedPage": "S156",
+    "locator": "Recommendation 2.2.1 / PDF p. 41",
+    "quote": "Recommendation 2.2.1: In people with CKD G3– G5, we recommend using an externally validated risk equation\nto estimate the absolute risk of kidney failure (1A).",
+    "quoteVi": "Ở người bệnh CKD giai đoạn G3–G5, khuyến cáo sử dụng phương trình dự báo nguy cơ đã được kiểm định độc lập (như KFRE) để ước tính nguy cơ suy thận tuyệt đối (1A).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "kdigo.ckd.2024.pp_2_2_1_kfre_referral_threshold",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 41,
+    "printedPage": "S156",
+    "locator": "Practice Point 2.2.1 & 2.2.2 / PDF p. 41",
+    "quote": "Practice Point 2.2.1: A 5-year kidney failure risk of 3% –5% can be used to determine need for nephrology referral in\naddition to criteria based on eGFR or urine ACR, and other clinical considerations.\nPractice Point 2.2.2: A 2-year kidney failure risk of >10% can be used to determine the timing of multidisciplinary care\nin addition to eGFR-based criteria and other clinical considerations.",
+    "quoteVi": "Nguy cơ suy thận 5 năm 3%–5% được dùng để xác định chỉ định chuyển khám chuyên khoa thận. Nguy cơ 2 năm > 10% dùng để bắt đầu chăm sóc đa chuyên khoa."
+  },
+  {
+    "id": "kdigo.ckd.2024.pp_2_2_3_kfre_krt_prep",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 41,
+    "printedPage": "S156",
+    "locator": "Practice Point 2.2.3 / PDF p. 41",
+    "quote": "Practice Point 2.2.3: A 2-year kidney failure risk threshold of >40% can be used to determine the modality education,\ntiming of preparation for kidney replacement therapy (KRT) including vascular access planning or\nreferral for transplantation, in addition to eGFR-based criteria and other clinical considerations.",
+    "quoteVi": "Ngưỡng nguy cơ suy thận 2 năm > 40% được sử dụng để tư vấn phương thức và chuẩn bị điều trị thay thế thận (tạo đường vào mạch máu hoặc đăng ký ghép thận)."
+  },
+  {
+    "id": "kdigo.ckd.2024.rec_3_4_1_bp_target_120",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 43,
+    "printedPage": "S158",
+    "locator": "Recommendation 3.4.1 / PDF p. 43",
+    "quote": "Recommendation 3.4.1: We suggest that adults with high BP and CKD be treated with a target systolic blood pressure\n(SBP) of <120 mm Hg, when tolerated, using standardized ofﬁce BP measurement(2B).",
+    "quoteVi": "Khuyến nghị người lớn tăng huyết áp kèm CKD được điều trị với huyết áp tâm thu mục tiêu < 120 mmHg khi dung nạp, đo huyết áp phòng khám chuẩn hóa (2B).",
+    "cor": "2",
+    "loe": "B"
+  },
+  {
+    "id": "kdigo.ckd.2024.rec_3_6_1_rasi_a3_nondm",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 43,
+    "printedPage": "S158",
+    "locator": "Recommendation 3.6.1 / PDF p. 43",
+    "quote": "Recommendation 3.6.1: We recommend starting renin-angiotensin-system inhibitors (RASi) (angiotensin-con-\nverting enzyme inhibitor [ACEi] or angiotensin II receptor blocker [ARB]) for people\nwith CKD and severely increased albuminuria (G1 –G4, A3) without diabetes (1B).",
+    "quoteVi": "Khuyến cáo khởi trị ức chế hệ renin-angiotensin (ACEi hoặc ARB) cho người bệnh CKD kèm albumin niệu tăng nặng (G1–G4, A3) không mắc đái tháo đường (1B).",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "kdigo.ckd.2024.rec_3_6_2_rasi_a2_nondm",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 43,
+    "printedPage": "S158",
+    "locator": "Recommendation 3.6.2 / PDF p. 43",
+    "quote": "Recommendation 3.6.2: We suggest starting RASi (ACEi or ARB) for people with CKD and moderately increased\nalbuminuria (G1 –G4, A2) without diabetes (2C).",
+    "quoteVi": "Khuyến nghị khởi trị RASi (ACEi hoặc ARB) cho người bệnh CKD kèm albumin niệu tăng vừa (G1–G4, A2) không mắc đái tháo đường (2C).",
+    "cor": "2",
+    "loe": "C"
+  },
+  {
+    "id": "kdigo.ckd.2024.rec_3_6_3_rasi_dm",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 43,
+    "printedPage": "S158",
+    "locator": "Recommendation 3.6.3 / PDF p. 43",
+    "quote": "Recommendation 3.6.3: We recommend starting RASi (ACEi or ARB) for people with CKD and moderately-to-\nseverely increased albuminuria (G1– G4, A2 and A3) with diabetes (1B).",
+    "quoteVi": "Khuyến cáo khởi trị RASi (ACEi hoặc ARB) cho người bệnh CKD kèm albumin niệu tăng vừa đến nặng (G1–G4, A2 và A3) có đái tháo đường (1B).",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "kdigo.ckd.2024.rec_3_6_4_avoid_dual_rasi",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 43,
+    "printedPage": "S158",
+    "locator": "Recommendation 3.6.4 / PDF p. 43",
+    "quote": "Recommendation 3.6.4: We recommend avoiding any combination of ACEi, ARB, and direct renin inhibitor\n(DRI) therapy in people with CKD, with or without diabetes (1B).",
+    "quoteVi": "Khuyến cáo tránh phối hợp bất kỳ thuốc ức chế men chuyển (ACEi), ức chế thụ thể (ARB) hoặc ức chế renin trực tiếp (DRI) ở người bệnh CKD (1B).",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "kdigo.ckd.2024.pp_3_6_1_rasi_max_dose",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 44,
+    "printedPage": "S159",
+    "locator": "Practice Point 3.6.1 / PDF p. 44",
+    "quote": "Practice Point 3.6.1: RASi (ACEi or ARB) should be administered using the highest approved dose that is tolerated to\nachieve the bene ﬁts described because the proven bene ﬁts were achieved in trials using these doses.",
+    "quoteVi": "RASi (ACEi hoặc ARB) nên được dùng ở liều tối đa được phê duyệt mà bệnh nhân dung nạp được vì lợi ích chứng minh đạt được ở các mức liều này."
+  },
+  {
+    "id": "kdigo.ckd.2024.pp_3_6_2_rasi_monitoring",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 44,
+    "printedPage": "S159",
+    "locator": "Practice Point 3.6.2 / PDF p. 44",
+    "quote": "Practice Point 3.6.2: Changes in BP, serum creatinine, and serum potassium should be checked within 2 –4 weeks of\ninitiation or increase in the dose of a RASi, depending on the current GFR and serum potassium.",
+    "quoteVi": "Huyết áp, creatinin huyết thanh và kali máu cần được kiểm tra trong vòng 2–4 tuần sau khởi trị hoặc tăng liều RASi."
+  },
+  {
+    "id": "kdigo.ckd.2024.pp_3_6_3_hyperkalemia_k_binders",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 44,
+    "printedPage": "S159",
+    "locator": "Practice Point 3.6.3 / PDF p. 44",
+    "quote": "Practice Point 3.6.3: Hyperkalemia associated with use of RASi can often be managed by measures to reduce the serum\npotassium levels rather than decreasing the dose or stopping RASi.",
+    "quoteVi": "Tăng kali máu liên quan đến RASi thường có thể xử trí bằng các biện pháp hạ kali máu (như chất gắn kali) thay vì giảm liều hoặc ngừng thuốc RASi."
+  },
+  {
+    "id": "kdigo.ckd.2024.pp_3_6_4_creatinine_rise_30pct",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 44,
+    "printedPage": "S159",
+    "locator": "Practice Point 3.6.4 / PDF p. 44",
+    "quote": "Practice Point 3.6.4: Continue ACEi or ARB therapy unless serum creatinine rises by more than 30% within 4 weeks\nfollowing initiation of treatment or an increase in dose.",
+    "quoteVi": "Tiếp tục duy trì ACEi hoặc ARB trừ khi creatinin huyết thanh tăng > 30% trong vòng 4 tuần sau khi khởi trị hoặc tăng liều."
+  },
+  {
+    "id": "kdigo.ckd.2024.pp_3_6_5_rasi_reduce_stop",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 44,
+    "printedPage": "S159",
+    "locator": "Practice Point 3.6.5 / PDF p. 44",
+    "quote": "Practice Point 3.6.5: Consider reducing the dose or discontinuing ACEi or ARB in the setting of either symptomatic hy-\npotension or uncontrolled hyperkalemia despite medical treatment, or to reduce uremic symptoms\nwhile treating kidney failure (estimated glomerular ﬁltration rate [eGFR] <15 ml/min per 1.73 m 2).",
+    "quoteVi": "Cân nhắc giảm liều hoặc ngừng ACEi/ARB khi tụt huyết áp có triệu chứng hoặc tăng kali máu không kiểm soát được dù đã can thiệp, hoặc giảm triệu chứng ure máu cao khi eGFR < 15."
+  },
+  {
+    "id": "kdigo.ckd.2024.pp_3_6_7_continue_egfr_below_30",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 44,
+    "printedPage": "S159",
+    "locator": "Practice Point 3.6.7 / PDF p. 44",
+    "quote": "Practice Point 3.6.7: Continue ACEi or ARB in people with CKD even when the eGFR falls below 30 ml/min per 1.73 m 2.",
+    "quoteVi": "Tiếp tục duy trì ACEi hoặc ARB ở người bệnh CKD ngay cả khi eGFR giảm xuống dưới 30 mL/min/1.73m2."
+  },
+  {
+    "id": "kdigo.ckd.2024.rec_3_7_1_sglt2i_t2d",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 44,
+    "printedPage": "S159",
+    "locator": "Recommendation 3.7.1 / PDF p. 44",
+    "quote": "Recommendation 3.7.1: We recommend treating patients with type 2 diabetes (T2D), CKD, and an eGFR ‡20 ml/\nmin per 1.73 m 2 with an SGLT2i (1A).",
+    "quoteVi": "Khuyến cáo điều trị người bệnh đái tháo đường típ 2 kèm CKD có eGFR >= 20 mL/min/1.73m2 bằng thuốc ức chế SGLT2 (1A).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "kdigo.ckd.2024.pp_3_7_1_continue_below_20",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 44,
+    "printedPage": "S159",
+    "locator": "Practice Point 3.7.1 / PDF p. 44",
+    "quote": "Practice Point 3.7.1: Once an SGLT2i is initiated, it is reasonable to continue an SGLT2i even if the eGFR falls below\n20 ml/min per 1.73 m 2, unless it is not tolerated or KRT is initiated.",
+    "quoteVi": "Khi đã bắt đầu SGLT2i, hợp lý khi tiếp tục dùng ngay cả khi eGFR giảm dưới 20 mL/min/1.73m2, trừ khi không dung nạp hoặc bắt đầu lọc máu/ghép thận."
+  },
+  {
+    "id": "kdigo.ckd.2024.pp_3_7_2_sick_day_hold",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 44,
+    "printedPage": "S159",
+    "locator": "Practice Point 3.7.2 / PDF p. 44",
+    "quote": "Practice Point 3.7.2: It is reasonable to withhold SGLT2i during times of prolonged fasting, surgery, or critical medical\nillness (when people may be at greater risk for ketosis).",
+    "quoteVi": "Hợp lý khi tạm ngừng SGLT2i trong thời gian nhịn ăn kéo dài, phẫu thuật, hoặc bệnh nội khoa nguy kịch (nguy cơ toan ceton)."
+  },
+  {
+    "id": "kdigo.ckd.2024.rec_3_7_2_sglt2i_ckd_hf",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 44,
+    "printedPage": "S159",
+    "locator": "Recommendation 3.7.2 / PDF p. 44",
+    "quote": "Recommendation 3.7.2: We recommend treating adults with CKD with an SGLT2i for the following (1A):\n/C15 eGFR ‡20 ml/min per 1.73 m 2 with urine ACR ‡200 mg/g ( ‡20 mg/mmol), or\n/C15 heart failure, irrespective of level of albuminuria.",
+    "quoteVi": "Khuyến cáo dùng SGLT2i cho người lớn CKD trong các trường hợp: eGFR >= 20 kèm ACR >= 200 mg/g (>= 20 mg/mmol), hoặc kèm suy tim bất kể mức albumin niệu (1A).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "kdigo.ckd.2024.rec_3_7_3_sglt2i_egfr_20_45",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 44,
+    "printedPage": "S159",
+    "locator": "Recommendation 3.7.3 / PDF p. 44",
+    "quote": "Recommendation 3.7.3: We suggest treating adults with eGFR 20 to 45 ml/min per 1.73 m 2 with urine ACR\n<200 mg/g ( <20 mg/mmol) with an SGLT2i (2B).",
+    "quoteVi": "Khuyến nghị điều trị người lớn có eGFR 20 đến 45 mL/min/1.73m2 kèm ACR < 200 mg/g (< 20 mg/mmol) bằng thuốc ức chế SGLT2 (2B).",
+    "cor": "2",
+    "loe": "B"
+  },
+  {
+    "id": "kdigo.ckd.2024.rec_3_8_1_finerenone_indication",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 44,
+    "printedPage": "S159",
+    "locator": "Recommendation 3.8.1 / PDF p. 44",
+    "quote": "Recommendation 3.8.1: We suggest a nonsteroidal mineralocorticoid receptor antagonist with proven kidney\nor cardiovascular bene ﬁt for adults with T2D, an eGFR >25 ml/min per 1.73 m 2, normal\nserum potassium concentration, and albuminuria ( >30 mg/g [ >3 mg/mmol]) despite\nmaximum tolerated dose of RAS inhibitor (RASi) (2A).",
+    "quoteVi": "Khuyến nghị dùng thuốc đối kháng thụ thể mineralocorticoid không steroid (finerenone) cho người lớn mắc ĐTĐ2, eGFR > 25, kali máu bình thường, và albumin niệu > 30 mg/g (> 3 mg/mmol) dù đã dùng liều dung nạp tối đa RASi (2A).",
+    "cor": "2",
+    "loe": "A"
+  },
+  {
+    "id": "kdigo.ckd.2024.pp_3_8_2_finerenone_add_on",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 45,
+    "printedPage": "S160",
+    "locator": "Practice Point 3.8.2 / PDF p. 45",
+    "quote": "Practice Point 3.8.2: A nonsteroidal MRA may be added to a RASi and an SGLT2i for treatment of T2D and CKD in adults.",
+    "quoteVi": "Thuốc đối kháng mineralocorticoid không steroid có thể phối hợp thêm vào phác đồ cùng với RASi và SGLT2i trong điều trị người lớn ĐTĐ2 và CKD."
+  },
+  {
+    "id": "kdigo.ckd.2024.pp_3_10_1_acidosis_bicarbonate",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 45,
+    "printedPage": "S160",
+    "locator": "Practice Point 3.10.1 / PDF p. 45",
+    "quote": "Practice Point 3.10.1: In people with CKD, consider use of pharmacological treatment with or without dietary\nintervention to prevent development of acidosis with potential clinical implications (e.g., serum\nbicarbonate <18 mmol/l in adults).",
+    "quoteVi": "Ở người bệnh CKD, cân nhắc dùng thuốc (natri bicarbonat) để phòng ngừa toan hóa máu khi bicarbonat huyết thanh < 18 mmol/L ở người trưởng thành."
+  },
+  {
+    "id": "kdigo.ckd.2024.rec_3_15_1_1_statin_egfr_below_60",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 47,
+    "printedPage": "S162",
+    "locator": "Recommendation 3.15.1.1 / PDF p. 47",
+    "quote": "Recommendation 3.15.1.1: In adults aged ‡50 years with eGFR <60 ml/min per 1.73 m 2 but not treated with\nchronic dialysis or kidney transplantation (GFR categories G3a –G5), we recom-\nmend treatment with a statin or statin/ezetimibe combination (1A).",
+    "quoteVi": "Ở người lớn >= 50 tuổi có eGFR < 60 mL/min/1.73m2 chưa lọc máu hoặc ghép thận (G3a–G5), khuyến cáo điều trị bằng statin hoặc phối hợp statin/ezetimibe (1A).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "kdigo.ckd.2024.rec_3_15_1_2_statin_egfr_ge_60",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 47,
+    "printedPage": "S162",
+    "locator": "Recommendation 3.15.1.2 / PDF p. 47",
+    "quote": "Recommendation 3.15.1.2: In adults aged ‡50 years with CKD and eGFR ‡60 ml/min per 1.73 m 2 (GFR cate-\ngories G1 –G2), we recommend treatment with a statin (1B).",
+    "quoteVi": "Ở người lớn >= 50 tuổi mắc CKD và eGFR >= 60 mL/min/1.73m2 (G1–G2), khuyến cáo điều trị bằng statin (1B).",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "kdigo.ckd.2024.fig_48_referral_criteria",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 51,
+    "printedPage": "S166",
+    "locator": "Figure 48 / PDF p. 51",
+    "quote": "•  A >3%–5% 5-year risk of requiring KRT measured\nusing a validated risk equation\n•  eGFR <30 ml/min per 1.73 m2\n•  A sustained fall in GFR of >20% or >30% in those\npeople initiating hemodynamically active therapies\n•  Consistent finding of significant albuminuria\n(ACR ≥300 mg/g [≥30 mg/mmol] or AER ≥300 mg/24 hours, \napproximately equivalent to PCR ≥500 mg/g [≥50 mg/mmol] \nor PER ≥500 mg/24 h) in combination with hematuria\n•  ≥2-fold increase in albuminuria in people with significant \nalbuminuria undergoing monitoring\n•  A consistent finding of ACR >700 mg/g [>70 mg/mmol]\n•  Urinary red cell casts, RBC >20 per high power field \nsustained and not readily explained\n•  CKD and hypertension refractory to treatment\n≥4 antihypertensive agents\n•  Persistent abnormalities of serum potassium\n•  Acidosis",
+    "quoteVi": "Tiêu chuẩn chuyển khám chuyên khoa thận: Nguy cơ thay thế thận 5 năm > 3%–5%, eGFR < 30 mL/min/1.73m2, eGFR giảm nhanh > 20%–30%, ACR >= 300 mg/g kèm tiểu máu, hoặc ACR > 700 mg/g, tăng huyết áp kháng trị (>= 4 thuốc), toan máu hoặc bất thường kali kéo dài."
+  },
+  {
+    "id": "kdigo.2021.bp.rec_3_1_1_target_sbp_120",
+    "sourceId": "kdigo_2021_bp",
+    "pdfPage": 29,
+    "printedPage": "S28",
+    "locator": "Recommendation 3.1.1 / PDF p. 29",
+    "quote": "Recommendation 3.1.1: We suggest that adults with high BP and CKD be treated with a target systolic blood pressure\n(SBP) of <120 mm Hg, when tolerated, using standardized ofﬁce BP measurement (2B).",
+    "quoteVi": "Khuyến nghị người lớn tăng huyết áp kèm bệnh thận mạn được điều trị tới huyết áp tâm thu mục tiêu < 120 mmHg khi dung nạp, đo bằng phương pháp chuẩn hóa tại phòng khám (2B).",
+    "cor": "2",
+    "loe": "B"
+  },
+  {
+    "id": "esc.2026.ckd.bp_target_120_129",
+    "sourceId": "esc_2026_cvd_ckd",
+    "pdfPage": 25,
+    "printedPage": "25",
+    "locator": "Section 5.2.1 / PDF p. 25",
+    "quote": "systolic blood \npressure should be targeted to 120–129 mmHg in patients \nwith CKD and eGFR ≥30 mL/min/1.73 m2, if tolerated.",
+    "quoteVi": "Dựa trên bằng chứng hiện tại, khuyến cáo huyết áp tâm thu nên được nhắm tới đích 120–129 mmHg ở bệnh nhân CKD có eGFR >= 30 mL/min/1.73m2 nếu dung nạp tốt (Khác biệt so với KDIGO < 120 mmHg).",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "kdigo.aki.2012.table_2_staging",
+    "sourceId": "kdigo_2012_aki",
+    "pdfPage": 11,
+    "printedPage": "8",
+    "locator": "Table 2: Staging of AKI / PDF p. 11",
+    "quote": "Table 2 | Staging of AKI\nStage Serum creatinine Urine output\n1 1.5– 1.9 times baseline\nOR\nX0.3 mg/dl (X26.5 mmol/l) increase\no0.5 ml/kg/h for 6– 12 hours\n2 2.0– 2.9 times baseline o0.5 ml/kg/h for X12 hours\n3 3.0 times baseline\nOR\nIncrease in serum creatinine to X4.0 mg/dl (X353.6 mmol/l)\nOR\nInitiation of renal replacement therapy\nOR, In patients o18 years, decrease in eGFR to o35 ml/min per 1.73 m 2\no0.3 ml/kg/h for X24 hours\nOR\nAnuria for X12 hours",
+    "quoteVi": "Bảng 2: Phân độ tổn thương thận cấp (AKI): Giai đoạn 1: Creatinin tăng 1.5–1.9 lần nền hoặc tăng >= 0.3 mg/dL (>= 26.5 µmol/L); Giai đoạn 2: Tăng 2.0–2.9 lần nền; Giai đoạn 3: Tăng >= 3.0 lần nền hoặc Creatinin >= 4.0 mg/dL (>= 353.6 µmol/L) hoặc bắt đầu lọc máu RRT hoặc vô niệu >= 12h."
+  },
+  {
+    "id": "kdigo.aki.2012.ci_aki_iso_low_osmolar",
+    "sourceId": "kdigo_2012_aki",
+    "pdfPage": 13,
+    "printedPage": "10",
+    "locator": "Recommendation 4.3.2 / PDF p. 13",
+    "quote": "4.3.2: W e recommend using either iso-osmolar or low-osmolar iodinated contrast media, rather than high-osmolar\niodinated contrast media in patients at increased risk of CI-AKI. ( 1B)",
+    "quoteVi": "Khuyến cáo sử dụng thuốc cản quang iod đẳng trương hoặc áp lực thẩm thấu thấp ở bệnh nhân có nguy cơ cao tổn thương thận cấp do cản quang (1B).",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "kdigo.aki.2012.ci_aki_volume_expansion",
+    "sourceId": "kdigo_2012_aki",
+    "pdfPage": 13,
+    "printedPage": "10",
+    "locator": "Recommendation 4.4.1 / PDF p. 13",
+    "quote": "4.4.1: W e recommend i.v. volume expansion with either isotonic sodium chloride or sodium bicarbonate solutions,\nrather than no i.v. volume expansion, in patients at increased risk for CI-AKI. ( 1A)",
+    "quoteVi": "Khuyến cáo bù dịch tĩnh mạch bằng dung dịch natri clorid đẳng trương 0.9% hoặc natri bicarbonat để phòng ngừa tổn thương thận cấp do thuốc cản quang (1A).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "ukka.2022.guideline_16_2_calcium_salts",
+    "sourceId": "ukka_2022_hyperkalaemia",
+    "pdfPage": 13,
+    "printedPage": "13",
+    "locator": "Guideline 16.2 / PDF p. 13",
+    "quote": "Guideline 16.2 – Hyperkalaemia: STEP 1 - Protect the heart; intravenous calcium salts  \nWe recommend that intravenous calcium chloride or calcium gluconate, at an equivalent dose (6.8mmol), is \ngiven to patients with hyperkalaemia in the presence of ECG evidence of hyperkalaemia. (1C)",
+    "quoteVi": "BƯỚC 1 - Bảo vệ cơ tim: Khuyến cáo dùng calcium chloride hoặc calcium gluconate tĩnh mạch liều tương đương 6.8 mmol (30 mL calci gluconat 10%) cho bệnh nhân tăng kali máu có biến đổi điện tâm đồ (1C).",
+    "cor": "1",
+    "loe": "C"
+  },
+  {
+    "id": "ukka.2022.guideline_16_3_1_insulin_glucose_severe",
+    "sourceId": "ukka_2022_hyperkalaemia",
+    "pdfPage": 13,
+    "printedPage": "13",
+    "locator": "Guideline 16.3.1 / PDF p. 13",
+    "quote": "Guideline 16.3.1 – Hyperkalaemia: STEP 2 - Shift K+ into cells; insulin-glucose infusion  \nWe recommend that insulin-glucose (10 units soluble insulin in 25g glucose) by intravenous infusion is used \nto treat severe hyperkalaemia (K+ ≥ 6.5 mmol/l). (1B)",
+    "quoteVi": "BƯỚC 2 - Chuyển kali vào tế bào: Khuyến cáo truyền tĩnh mạch insulin-glucose (10 đơn vị insulin tác dụng nhanh trong 25g glucose) để điều trị tăng kali máu nặng (K+ >= 6.5 mmol/L) (1B).",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "ukka.2022.guideline_16_3_2_insulin_glucose_moderate",
+    "sourceId": "ukka_2022_hyperkalaemia",
+    "pdfPage": 13,
+    "printedPage": "13",
+    "locator": "Guideline 16.3.2 / PDF p. 13",
+    "quote": "Guideline 16.3.2 – Hyperkalaemia: STEP 2 - Shift K+ into cells; insulin-glucose infusion  \nWe suggest that insulin-glucose (10 units soluble insulin in 25g glucose) by intravenous infusion is used to \ntreat moderate hyperkalaemia (K+ 6.0 – 6.4 mmol/l). (2C)",
+    "quoteVi": "Khuyến nghị truyền tĩnh mạch insulin-glucose (10 đơn vị insulin trong 25g glucose) điều trị tăng kali máu mức độ trung bình (K+ 6.0–6.4 mmol/L) (2C).",
+    "cor": "2",
+    "loe": "C"
+  },
+  {
+    "id": "ukka.2022.guideline_16_4_1_salbutamol_nebulised",
+    "sourceId": "ukka_2022_hyperkalaemia",
+    "pdfPage": 13,
+    "printedPage": "13",
+    "locator": "Guideline 16.4.1 / PDF p. 13",
+    "quote": "Guideline 16.4.1 – Hyperkalaemia: STEP 2 – Shift K+ into cells; Salbutamol  \nWe recommend nebulised salbutamol 10-20 mg is used as adjuvant therapy for severe (K+ ≥ 6.5 mmol/L) \nhyperkalaemia. (1B)",
+    "quoteVi": "Khuyến cáo phối hợp khí dung salbutamol 10–20 mg như một liệu pháp hỗ trợ chuyển kali vào tế bào trong tăng kali máu nặng (1B).",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "ukka.2022.guideline_17_2_glucose_monitoring",
+    "sourceId": "ukka_2022_hyperkalaemia",
+    "pdfPage": 14,
+    "printedPage": "14",
+    "locator": "Guideline 17.2 / PDF p. 14",
+    "quote": "Guideline 17.2 – Hyperkalaemia: STEP 4 - Blood monitoring; blood glucose  \nWe recommend that the blood glucose concentration is monitored at regular intervals (0, 15, 30, 60, 90, 120, \n180, 240, 360, 480 and 720 minutes) up to 12 hours after administration of insulin-glucose infusion in all \npatients with hyperkalaemia. (1C)",
+    "quoteVi": "BƯỚC 4 - Theo dõi: Khuyến cáo theo dõi đường huyết tại các mốc (0, 15, 30, 60, 90, 120, 180, 240, 360 phút) sau khi truyền insulin-glucose để phòng ngừa hạ đường huyết (1C).",
+    "cor": "1",
+    "loe": "C"
+  },
+  {
+    "id": "ukka.2022.guideline_18_1_emergency_dialysis",
+    "sourceId": "ukka_2022_hyperkalaemia",
+    "pdfPage": 14,
+    "printedPage": "14",
+    "locator": "Guideline 18.1 / PDF p. 14",
+    "quote": "Guideline 18.1 - Hyperkalaemia: Treatment in haemodialysis patients   \nWe recommend that haemodialysis patients with severe hyperkalaemia (serum K+ \n  6.5 mmol/L) receive \ndialysis treatment urgently. (1A)",
+    "quoteVi": "UKKA 2022 Guideline 18.1 (Bệnh nhân lọc máu chu kỳ): Khuyến cáo bệnh nhân đang lọc máu chu kỳ có tăng kali máu nặng (K+ >= 6.5 mmol/L) được lọc máu khẩn cấp (1A).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "byt.ckd.2024.acidosis_bicarbonate_target",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 32,
+    "printedPage": "32",
+    "locator": "Mục 3.2 Toan chuyển hóa / PDF p. 32",
+    "quote": "natri bicarbonate u ống khi bicarbonate \nmáu<18mmol/L (đ ối với người trưởng thành). Có th ể kèm can thi ệp dinh dư ỡng. \nHCO3 mục tiêu >22mmol/L",
+    "quoteVi": "Điều trị toan chuyển hóa bằng natri bicarbonate uống khi bicarbonate máu < 18 mmol/L. Mục tiêu duy trì HCO3- > 22 mmol/L.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "byt.ckd.2024.acidosis_bicarbonate_oral_dose",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 61,
+    "printedPage": "61",
+    "locator": "Mục Điều chỉnh toan chuyển hóa / PDF p. 61",
+    "quote": "natri bicarbonate uống 2-4 g/ngày",
+    "quoteVi": "Điều chỉnh toan chuyển hóa trung bình trong CKD bằng natri bicarbonate uống liều 2–4 g/ngày.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "byt.ckd.2024.potassium_resine_dose",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 61,
+    "printedPage": "61",
+    "locator": "Mục Tăng kali máu mạn tính / PDF p. 61",
+    "quote": "calcium polystyrene sulfonate  trao đổi ion \nkali để lấy ion natri/canxi ở đại tràng không chọn lọc (1-2mmol K+ /g resine) 10-15g \nx 2 - 3 lần/ngày",
+    "quoteVi": "Tăng kali máu mạn tính trong suy thận: Resine trao đổi ion như calcium polystyrene sulfonate (Resonium) liều 10–15 g x 2–3 lần/ngày.",
+    "cor": "2",
+    "loe": "C"
+  },
+  {
+    "id": "byt.ckd.2024.aki_on_ckd_definition",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 67,
+    "printedPage": "67",
+    "locator": "Mục 4.11.1 / PDF p. 67",
+    "quote": "Tiêu chuẩn chẩn đoán TTTC trên BN bị BTM: có ít nhất 1 trong 3 điều kiện sau:  \n- Tăng Creatinine máu trên 0,3 mg/dL (26,5 μmol/L) so v ới nồng độ creatinine nền \ntrong vòng 2 ngày (48 giờ);  \n- Tăng Creatinine máu trên 50% so với nồng độ creatinine nền trong vòng 7 ngày; \n- Lưu lượng nước tiểu < 0,5 ml/kg/h trong 6 giờ.",
+    "quoteVi": "Tiêu chuẩn chẩn đoán tổn thương thận cấp trên nền CKD: Tăng Creatinine máu trên 0,3 mg/dL (26,5 μmol/L) trong vòng 48 giờ; hoặc tăng trên 50% trong vòng 7 ngày; hoặc lưu lượng nước tiểu < 0,5 mL/kg/h trong 6 giờ.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "fda.dapagliflozin.ckd_dose",
+    "sourceId": "fda_dapagliflozin",
+    "pdfPage": 4,
+    "printedPage": "4",
+    "locator": "Section 2.3 / PDF p. 4",
+    "quote": "2.3 Recommended Dosage for Other Indications in Adults\nThe recommended dosage of FARXIGA is 10 mg orally once daily in adults for the\nfollowing indications:",
+    "quoteVi": "Liều khuyến cáo của Farxiga (dapagliflozin) cho các chỉ định khác ở người lớn (bao gồm CKD và suy tim) là 10 mg uống 1 lần/ngày.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "fda.empagliflozin.ckd_dose",
+    "sourceId": "fda_empagliflozin",
+    "pdfPage": 4,
+    "printedPage": "4",
+    "locator": "Table Dosage in Adults / PDF p. 4",
+    "quote": "Reduce the risk of\nsustained decline in\neGFR, end-stage kidney\ndisease, cardiovascular\ndeath, and\nhospitalization in adults\nwith chronic kidney\ndisease at risk of\nprogression.\nReduce the risk of\ncardiovascular death in\npatients with type 2\ndiabetes mellitus with\nestablished\ncardiovascular disease\nGlycemic control in type\n2 diabetes mellitus\n10 mg orally once daily in the morning,\ntaken with or without food.",
+    "quoteVi": "Liều khuyến cáo của Jardiance (empagliflozin) để giảm nguy cơ suy giảm eGFR và suy thận giai đoạn cuối ở người lớn CKD là 10 mg uống 1 lần/ngày.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "fda.canagliflozin.ckd_dose",
+    "sourceId": "fda_canagliflozin",
+    "pdfPage": 1,
+    "printedPage": "1",
+    "locator": "Dosage and Administration / PDF p. 1",
+    "quote": "For all other indications in adults, the recommended dosage of INVOKANA is 100 mg orally once daily",
+    "quoteVi": "Liều khuyến cáo của Invokana (canagliflozin) cho bệnh thận đái tháo đường có albumin niệu là 100 mg uống 1 lần/ngày.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "fda.finerenone.table_1_starting_dose",
+    "sourceId": "fda_finerenone",
+    "pdfPage": 3,
+    "printedPage": "3",
+    "locator": "Table 1: Recommended Starting Dosage / PDF p. 3",
+    "quote": "Table 1: Recommended Starting\nDosage\neGFR (mL/min/1.73m\n)\nStarting Dose\n≥ 60\n20 mg orally\nonce daily\n≥ 25 to < 60\n10 mg orally\nonce daily\n< 25\nInitiation is not\nrecommended",
+    "quoteVi": "Liều khởi đầu của Kerendia (finerenone): eGFR >= 60 mL/min: 20 mg/ngày; eGFR 25 đến < 60 mL/min: 10 mg/ngày; eGFR < 25: không khuyến cáo khởi trị mới.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "fda.finerenone.table_2_dose_adjustment",
+    "sourceId": "fda_finerenone",
+    "pdfPage": 4,
+    "printedPage": "4",
+    "locator": "Table 2: Dose Adjustment Based on Potassium / PDF p. 4",
+    "quote": "Table 2: Dose Adjustment Based on Current Serum Potassium\nConcentration and Current Dose (CKD associated with T2DM or\nT1DM)\n \nCurrent Kerendia Dose\n10 mg once daily\n20 mg once daily\n*\nCurrent\nSerum\nPotassium\n(mEq/L)\n≤ 4.8\nIncrease the dose to 20 mg\nonce daily.\nMaintain 20 mg once daily.\n> 4.8\n– 5.5\nMaintain 10 mg once daily.\nMaintain 20 mg once daily.\n> 5.5\nWithhold Kerendia. \nConsider restarting at 10 mg\nonce daily when serum\npotassium ≤ 5.0 mEq/L.\nWithhold Kerendia. \nRestart at 10 mg once daily\nwhen serum potassium ≤ 5.0\nmEq/L.",
+    "quoteVi": "Chuẩn độ finerenone theo nồng độ kali huyết thanh: K+ <= 4.8 mEq/L: tăng lên 20 mg/ngày; K+ 4.8–5.5: duy trì liều hiện tại; K+ > 5.5: tạm ngừng Kerendia, dùng lại 10 mg khi K+ <= 5.0.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "fda.losartan.diabetic_nephropathy_dose",
+    "sourceId": "fda_losartan",
+    "pdfPage": 1,
+    "printedPage": "1",
+    "locator": "Nephropathy in Type 2 Diabetic Patients / PDF p. 1",
+    "quote": "Nephropathy in Type 2 Diabetic Patients\nUsual dose: 50 mg once daily. (\n2.3\n)\nIncrease dose to 100 mg once daily if further blood pressure response is needed.",
+    "quoteVi": "Liều điều trị bệnh thận đái tháo đường của Cozaar (losartan): khởi đầu thông thường 50 mg x 1 lần/ngày, tăng lên liều đích 100 mg x 1 lần/ngày nếu dung nạp.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "ema.perindopril.table_1_renal_adjustment",
+    "sourceId": "ema_perindopril",
+    "pdfPage": 2,
+    "printedPage": "2",
+    "locator": "Table 1: dosage adjustment in renal impairment / PDF p. 2",
+    "quote": "Table 1: dosage adjustment in renal impairment\nCreatinine clearance (ml/min)\nRecommended dose\nCl\nCR \n≥ 60\n5 mg per day\n30 < Cl\nCR\n < 60\n2.5 mg per day\n15 < Cl\nCR\n < 30\n2.5 mg every other day\nHaemodialysed patients *\n​\nCl\nCR\n < 15\n2.5 mg on the day of dialysis",
+    "quoteVi": "Chỉnh liều perindopril theo độ thanh thải creatinin (CrCl): ClCr >= 60: 5 mg/ngày; 30–60: 2.5 mg/ngày; 15–30: 2.5 mg cách ngày; < 15 hoặc lọc máu: 2.5 mg vào ngày lọc máu.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "fda.patiromer.starting_dose",
+    "sourceId": "fda_patiromer",
+    "pdfPage": 1,
+    "printedPage": "1",
+    "locator": "Dosage and Administration / PDF p. 1",
+    "quote": "For adults, the recommended starting dose of Veltassa is 8.4 grams administered orally once daily.\n(\n2.2\n)\nFor adults, adjust dose by 8.4 grams daily as needed at one-week intervals to obtain desired serum\npotassium target range.",
+    "quoteVi": "Liều khởi đầu khuyến cáo của Veltassa (patiromer) ở người lớn là 8.4 g uống 1 lần/ngày. Chuẩn độ tăng từng nấc 8.4 g sau mỗi tuần nếu cần kiểm soát kali máu.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "fda.szc.starting_dose",
+    "sourceId": "fda_szc",
+    "pdfPage": 1,
+    "printedPage": "1",
+    "locator": "Dosage and Administration / PDF p. 1",
+    "quote": "Recommended starting dose is 10 g administered three times a day for up to 48 hours. (\n2.1\n)\nFor maintenance treatment, recommended dose is 10 g once daily.",
+    "quoteVi": "Liều khởi đầu của Lokelma (sodium zirconium cyclosilicate - SZC): 10 g x 3 lần/ngày trong tối đa 48 giờ. Liều duy trì khuyến cáo: 10 g x 1 lần/ngày.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "kdigo.ckd.2024.nsaid_nephrotoxicity_p132",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 132,
+    "printedPage": "S247",
+    "locator": "Chapter 4 OTC medications / PDF p. 132",
+    "quote": "class of OTC analgesic medications is NSAIDs. NSAIDs are\nassociated with interstitial nephritis, analgesic nephropathy,\nand hypertension. 739 Indiscriminate chronic OTC NSAID use has been associated with a higher risks of kidney failure compared with nonuse and should be discouraged.",
+    "quoteVi": "Thuốc chống viêm không steroid (NSAID) là một trong những nhóm thuốc giảm đau không kê đơn phổ biến nhất, liên quan đến viêm thận kẽ, bệnh thận do thuốc giảm đau và tăng huyết áp. Việc lạm dụng NSAID kéo dài không kiểm soát làm tăng nguy cơ suy thận và cần được khuyến cáo tránh dùng."
+  },
+  {
+    "id": "kdigo.aki.2012.rec_5_1_1_rrt_emergently",
+    "sourceId": "kdigo_2012_aki",
+    "pdfPage": 13,
+    "printedPage": "10",
+    "locator": "Recommendation 5.1.1 / PDF p. 13",
+    "quote": "5.1.1: Initiate RRT emergently when life-threatening changes in ﬂuid, electrolyte, and acid-base balance exist.\n(Not Graded )",
+    "quoteVi": "Khởi động điều trị thay thế thận (RRT) cấp cứu khi xuất hiện các rối loạn đe dọa tính mạng về thăng bằng dịch, điện giải và toan kiềm."
+  },
+  {
+    "id": "byt.ckd.2024.emergency_acidosis_hco3_8",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 66,
+    "printedPage": "65",
+    "locator": "Mục 4.10.3.1 Toan chuyển hóa cấp tính / PDF p. 66",
+    "quote": "Xử trí cấp cứu nếu pH < 7,10 hoặc bicarbonate < 8 mmol/L.",
+    "quoteVi": "Xử trí cấp cứu toan chuyển hóa nặng đe dọa tính mạng khi pH < 7.10 hoặc bicarbonate < 8 mmol/L. Lọc máu ngoài thận nếu có suy thận thực thể kèm theo.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "byt.ckd.2024.aki_stage3_table",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 70,
+    "printedPage": "69",
+    "locator": "Bảng phân độ TTTC ở BN BTM / PDF p. 70",
+    "quote": "↑ Creat inin máu đ ến m ức ≥ 4 mg/dL (≥ \n353,6 μmol/L) hoặc \nBN phải điều trị thay thế thận hoặc \n↓ MLCT t ới < 35mL/ph/1,73m 2 ở BN < \n18 tuổi \n< 0,3 ml/kg/giờ trong ≥ 24 giờ \nhoặc vô niệu trong ≥ 12 giờ",
+    "quoteVi": "Tiêu chuẩn tổn thương thận cấp Giai đoạn 3 theo BYT 2024: Tăng Creatinin máu đến mức >= 4 mg/dL (>= 353,6 µmol/L) hoặc gấp >= 3 lần nền, hoặc vô niệu trong >= 12 giờ.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "kdigo.ckd.2024.rec_3_15_1_3_statin_18_49",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 47,
+    "printedPage": "S162",
+    "locator": "Recommendation 3.15.1.3 / PDF p. 47",
+    "quote": "Recommendation 3.15.1.3: In adults aged 18 –49 years with CKD but not treated with chronic dialysis or kidney transplantation, we suggest statin treatment in people with one or more of the following (2A):",
+    "quoteVi": "Ở người lớn từ 18–49 tuổi mắc CKD chưa lọc máu hoặc ghép thận, khuyến nghị điều trị statin khi có bệnh mạch vành, đái tháo đường, tiền sử đột quỵ thiếu máu não hoặc nguy cơ biến cố mạch vành cao (2A).",
+    "cor": "2",
+    "loe": "A"
+  },
+  {
+    "id": "kdigo.ckd.2024.sec_3_11_hyperkalemia_def_5_0",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 109,
+    "printedPage": "S224",
+    "locator": "Section 3.11 / Figure 30 / PDF p. 109",
+    "quote": "Hyperkalemia is deﬁned as potassium >5 mmol/l.",
+    "quoteVi": "Tăng kali máu trong bệnh thận mạn được định nghĩa là nồng độ kali huyết thanh > 5.0 mmol/L."
+  },
+  {
+    "id": "kdigo.ckd.2024.fig_32_hyperkalemia_5_5",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 113,
+    "printedPage": "S228",
+    "locator": "Figure 32 / PDF p. 113",
+    "quote": "Reduce dose or discontinue RASi/MRA (Discontinuation is associated with increased cardiovascular events. Review and restart RASi or MRA at a later date if patient condition allows.) Figure 32 | Actions to manage hyperkalemia (potassium >5.5 mmol/l) in chronic kidney disease.",
+    "quoteVi": "Hình 32: Các bước xử trí tăng kali máu (kali > 5.5 mmol/L) trong bệnh thận mạn — rà soát thuốc, điều chỉnh toan máu, dùng chất gắn kali, giảm liều hoặc tạm ngừng RASi/MRA và đánh giá dùng lại khi kali ổn định."
+  },
+  {
+    "id": "kdigo.2021.bp.sbp_low_100",
+    "sourceId": "kdigo_2021_bp",
+    "pdfPage": 47,
+    "printedPage": "S46",
+    "locator": "Chapter 3 Rationale / PDF p. 47",
+    "quote": "However, it is reasonable to consider a change in medica- tions or less-intensive therapy if the patient is symptomatic or BP is excessively low (e.g., SBP <100 mm Hg).",
+    "quoteVi": "Hợp lý khi cân nhắc điều chỉnh thuốc hoặc giảm cường độ hạ áp nếu bệnh nhân có triệu chứng hoặc huyết áp xuống quá thấp (ví dụ SBP < 100 mmHg)."
+  },
+  {
+    "id": "byt.ckd.2024.nsaid_contra_egfr_30",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 53,
+    "printedPage": "52",
+    "locator": "Bảng liều thuốc điều trị gút cấp theo MLCT / PDF p. 53",
+    "quote": "NSAIDs Bất cứ loại nào với liều thông thường MLCT< 30: chống chỉ định GĐ G3 dùng thận trọng và giảm liều",
+    "quoteVi": "Theo Hướng dẫn BYT 2024: Thuốc NSAID chống chỉ định khi MLCT < 30 mL/phút/1.73m²; ở giai đoạn G3 (eGFR 30–59) cần tránh dùng kéo dài hoặc chỉ dùng thận trọng và giảm liều.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "fda.dapagliflozin.pregnancy",
+    "sourceId": "fda_dapagliflozin",
+    "pdfPage": 2,
+    "printedPage": "2",
+    "locator": "Highlights / Section 8.1 & 8.2 / PDF p. 2",
+    "quote": "Advise females of the potential risk to a fetus especially during the second and third trimesters. (8.1) Lactation: Not recommended when breastfeeding. (8.2)",
+    "quoteVi": "Nhãn FDA Farxiga (dapagliflozin): Không khuyến cáo dùng trong thai kỳ (đặc biệt tam cá nguyệt 2 và 3 do nguy cơ độc tính thận thai nhi) và không khuyến cáo khi đang cho con bú.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "fda.empagliflozin.pregnancy",
+    "sourceId": "fda_empagliflozin",
+    "pdfPage": 2,
+    "printedPage": "2",
+    "locator": "Highlights / Section 8.1 & 8.2 / PDF p. 2",
+    "quote": "Pregnancy: Advise females of the potential risk to a fetus especially during the second and third trimesters. ( 8.1 ) Lactation: Not recommended when breastfeeding. ( 8.2 )",
+    "quoteVi": "Nhãn FDA Jardiance (empagliflozin): Không khuyến cáo dùng trong thai kỳ (đặc biệt tam cá nguyệt 2 và 3) và không khuyến cáo khi cho con bú.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "fda.canagliflozin.pregnancy",
+    "sourceId": "fda_canagliflozin",
+    "pdfPage": 2,
+    "printedPage": "2",
+    "locator": "Highlights / Section 8.1 & 8.2 / PDF p. 2",
+    "quote": "Pregnancy : Advise females of the potential risk to a fetus especially during the second and third trimesters ( 8.1 ). Lactation : Not recommended when breastfeeding ( 8.2 ).",
+    "quoteVi": "Nhãn FDA Invokana (canagliflozin): Không khuyến cáo dùng trong thai kỳ (đặc biệt tam cá nguyệt 2 và 3) và không khuyến cáo khi cho con bú.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "fda.finerenone.contraindications",
+    "sourceId": "fda_finerenone",
+    "pdfPage": 5,
+    "printedPage": "5",
+    "locator": "Section 4 Contraindications / PDF p. 5",
+    "quote": "4 CONTRAINDICATIONS Kerendia is contraindicated in patients: Who are hypersensitive to any component of this product [see Adverse Reactions (6.2) ] . Who are receiving concomitant treatment with strong CYP3A4 inhibitors [see Drug Interactions (7.1) ]. With adrenal insufficiency.",
+    "quoteVi": "Chống chỉ định của Kerendia (finerenone): Quá mẫn với thành phần thuốc, đang dùng đồng thời chất ức chế CYP3A4 mạnh, hoặc suy tuyến thượng thận.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "fda.finerenone.pregnancy",
+    "sourceId": "fda_finerenone",
+    "pdfPage": 9,
+    "printedPage": "9",
+    "locator": "Section 8.1 Pregnancy / PDF p. 9",
+    "quote": "8.1 Pregnancy Risk Summary There are no available data on Kerendia use in pregnancy to evaluate for a drug- associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes. Animal studies have shown developmental toxicity at exposures about 2 times those expected in humans",
+    "quoteVi": "Nhãn FDA Kerendia (finerenone) Mục 8.1: Chưa có dữ liệu trên phụ nữ mang thai; nghiên cứu động vật ghi nhận độc tính phát triển phôi thai nên cần tránh dùng trong thai kỳ.",
+    "cor": "2",
+    "loe": "B"
+  },
+  {
+    "id": "fda.losartan.boxed_pregnancy",
+    "sourceId": "fda_losartan",
+    "pdfPage": 3,
+    "printedPage": "3",
+    "locator": "Boxed Warning: Fetal Toxicity / PDF p. 3",
+    "quote": "WARNING: FETAL TOXICITY When pregnancy is detected, discontinue COZAAR as soon as possible.",
+    "quoteVi": "Cảnh báo đóng khung FDA (Boxed Warning): Độc tính thai nhi — Khi phát hiện mang thai, phải ngừng ngay lập tức thuốc tác động trực tiếp lên hệ renin-angiotensin.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "ema.perindopril.pregnancy",
+    "sourceId": "ema_perindopril",
+    "pdfPage": 5,
+    "printedPage": "5",
+    "locator": "Section 4.4 / 4.6 Pregnancy / PDF p. 5",
+    "quote": "Pregnancy: ACE inhibitors should not be initiated during pregnancy. Unless continued ACE inhibitor therapy is considered essential, patients planning pregnancy should be changed to alternative anti-hypertensive treatments which have an established safety profile for use in pregnancy.",
+    "quoteVi": "SmPC EMA Perindopril: Không khởi trị thuốc ức chế men chuyển trong thai kỳ; chống chỉ định tuyệt đối ở tam cá nguyệt 2 và 3 và phải ngừng ngay khi phát hiện có thai.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "esc.hf.2026.table_11_finerenone_doses",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "printedPage": "37",
+    "locator": "Table 11 / Footnote g (Finerenone dosing by eGFR in HF) / p. 37",
+    "quote": "Finerenone has a different starting and target dose according to eGFR (10–20 mg, if eGFR ≤60 mL/min/1.73 m 2 ; 20–40 mg, if eGFR >60 mL/min/1.73 m 2 ).",
+    "quoteVi": "ESC 2026 Bảng 11 (Chú thích g): Trong suy tim (HFmrEF/HFpEF), finerenone có liều khởi đầu và liều đích khác nhau tùy theo eGFR: 10–20 mg/ngày nếu eGFR <= 60 mL/phút/1.73m²; 20–40 mg/ngày nếu eGFR > 60 mL/phút/1.73m².",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "fda.finerenone.hf_lvef40_dosing",
+    "sourceId": "fda_finerenone",
+    "pdfPage": 4,
+    "printedPage": "4",
+    "locator": "Section 2.3 / Recommended Dosage in Heart Failure with LVEF >= 40% / PDF p. 4",
+    "quote": "The target daily dose is 40 mg orally once daily if eGFR at initiation is ≥ 60 mL/min/1.73m . The target daily dose is 20 mg orally once daily if eGFR at initiation is ≥ 25 to < 60 mL/min/1.73m .",
+    "quoteVi": "Nhãn FDA Kerendia Mục 2.3 (Suy tim có LVEF >= 40%): Liều đích hàng ngày là 40 mg uống 1 lần/ngày nếu eGFR lúc khởi trị >= 60 mL/phút/1.73m²; liều đích là 20 mg uống 1 lần/ngày nếu eGFR lúc khởi trị từ 25 đến < 60 mL/phút/1.73m².",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "fda.finerenone.strengths_10_20_40",
+    "sourceId": "fda_finerenone",
+    "pdfPage": 1,
+    "printedPage": "1",
+    "locator": "Highlights / Section 3 Dosage Forms and Strengths / PDF p. 1",
+    "quote": "DOSAGE FORMS AND STRENGTHS Tablets: 10 mg, 20 mg, and 40 mg.",
+    "quoteVi": "Nhãn FDA Kerendia Mục 3: Dạng bào chế và hàm lượng viên nén bao phim 10 mg, 20 mg và 40 mg.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "kdigo.ckd.2024.rec_3_9_1_glp1ra_t2d",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 45,
+    "printedPage": "S160",
+    "locator": "Recommendation 3.9.1 & Practice Point 3.9.1 / PDF p. 45",
+    "quote": "Recommendation 3.9.1: In adults with T2D and CKD who have not achieved individualized glycemic targets\ndespite use of metformin and SGLT2 inhibitor treatment, or who are unable to use\nthose medications, we recommend a long-acting GLP-1 RA (1B).\nPractice Point 3.9.1: The choice of GLP-1 RA should prioritize agents with documented cardiovascular bene ﬁts.",
+    "quoteVi": "KDIGO 2024 Khuyến cáo 3.9.1: Ở người lớn mắc ĐTĐ2 và CKD chưa đạt đích đường huyết cá thể hóa dù đã dùng metformin và SGLT2i, hoặc không thể dùng các thuốc này, khuyến cáo bổ sung thuốc đồng vận thụ thể GLP-1 tác dụng kéo dài có lợi ích tim mạch đã chứng minh (1B).",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "kdigo.ckd.2024.pp_3_8_5_steroidal_mra_hf",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 45,
+    "printedPage": "S160",
+    "locator": "Practice Point 3.8.5 / PDF p. 45",
+    "quote": "Practice Point 3.8.5: A steroidal MRA may be used for treatment of heart failure, hyperaldosteronism, or refractory\nhypertension, but may cause hyperkalemia or a reversible decline in glomerularﬁltration, particularly\namong people with a low GFR.",
+    "quoteVi": "KDIGO 2024 Điểm thực hành 3.8.5: MRA steroid (spironolactone/eplerenone) được dùng điều trị suy tim, cường aldosteron hoặc tăng huyết áp kháng trị, cần theo dõi sát kali máu và mức lọc cầu thận."
+  },
+  {
+    "id": "kdigo.ckd.2024.pp_3_10_2_acidosis_upper_limit",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 45,
+    "printedPage": "S160",
+    "locator": "Practice Point 3.10.2 / PDF p. 45",
+    "quote": "Practice Point 3.10.2: Monitor treatment for metabolic acidosis to ensure it does not result in serum bicarbonate\nconcentrations exceeding the upper limit of normal and does not adversely affect BP control,\nserum potassium, or ﬂuid status.",
+    "quoteVi": "KDIGO 2024 Điểm thực hành 3.10.2: Theo dõi điều trị toan chuyển hóa để đảm bảo nồng độ bicarbonat huyết thanh không vượt quá giới hạn trên bình thường và không ảnh hưởng bất lợi đến huyết áp, kali máu hoặc tình trạng dịch."
+  },
+  {
+    "id": "kdigo.ckd.2024.table_23_bicarbonate_normal",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 107,
+    "printedPage": "S222",
+    "locator": "Table 23 / PDF p. 107",
+    "quote": "Table 23 | Variation of laboratory values in a large population database a by age group, sex, and eGFR; bicarbonate, mmol/l,\nmean (SD), and n [ 3,990,898\nMeasure, mean (SD) Age (yr) Sex\nGFR category (ml/min per 1.73 m 2)\n105D 90–104 75 –89 60 –74 45 –59 30 –44 15 –29 0 –14\nSerum bicarbonate $65 Female 27.4 (4.1) 27.1 (2.9) 26.9 (2.9) 26.8 (2.9) 26.5 (3.1) 25.9 (3.5) 24.8 (4.0) 24.0 (4.8)\nMale 27.1 (3.9) 26.6 (2.9) 26.7 (2.9) 26.5 (2.9) 26.1 (3.1) 25.3 (3.8) 24.1 (4.0) 24.2 (4.8)",
+    "quoteVi": "KDIGO 2024 Bảng 23: Giá trị trung bình bicarbonat huyết thanh sinh lý ở người trưởng thành có chức năng thận bình thường dao động quanh 26 mmol/L."
+  },
+  {
+    "id": "kdigo.ckd.2024.rec_1_2_2_1_cystatin_c",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 36,
+    "printedPage": "S151",
+    "locator": "Recommendation 1.2.2.1 & Figure 11 / PDF p. 36",
+    "quote": "Recommendation 1.2.2.1: We recommend using eGFRcr-cys in clinical situations when eGFRcr is less accurate\nand GFR affects clinical decision-making ( Table 8 127-142) (1C).",
+    "quoteVi": "KDIGO 2024 Khuyến cáo 1.2.2.1: Khuyến cáo sử dụng eGFR phối hợp creatinin và cystatin C (eGFRcr-cys) trong các tình huống lâm sàng khi eGFRcr kém chính xác và mức lọc cầu thận ảnh hưởng quyết định điều trị hoặc phân giai đoạn CKD (1C).",
+    "cor": "1",
+    "loe": "C"
+  },
+  {
+    "id": "esc.2026.ckd.table_12_semaglutide",
+    "sourceId": "esc_2026_cvd_ckd",
+    "pdfPage": 31,
+    "printedPage": "31",
+    "locator": "Recommendation Table 12 / PDF p. 31",
+    "quote": "A GLP-1RA (subcutaneous semaglutide 1.0 mg/ \nweek after dose titration) is recommended in \npatients with CKD who have type 2 diabetes \nwith eGFR 25–49 mL/min/1.73 m2 and uACR \n≥10 mg/mmol (≥100 mg/g) or eGFR 50–74 mL/ \nmin/1.73 m2 and uACR ≥30 mg/mmol \n(≥300 mg/g) to reduce the risk of CKD \nprogression and cardiovascular events, \nirrespective of glycaemic control.",
+    "quoteVi": "ESC 2026 Bảng 12 (Class I-A): Khuyến cáo thuốc đồng vận thụ thể GLP-1 (semaglutide tiêm dưới da liều đích 1.0 mg/tuần sau chuẩn độ) cho bệnh nhân CKD kèm ĐTĐ2 có eGFR 25–49 mL/phút/1.73m² kèm UACR >= 10 mg/mmol (>= 100 mg/g) hoặc eGFR 50–74 mL/phút/1.73m² kèm UACR >= 30 mg/mmol (>= 300 mg/g) nhằm giảm tiến triển CKD và biến cố tim mạch bất kể mức kiểm soát đường huyết.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.2026.ckd.bp_target_egfr_lt_30",
+    "sourceId": "esc_2026_cvd_ckd",
+    "pdfPage": 26,
+    "printedPage": "26",
+    "locator": "Recommendation Table 9 / PDF p. 26",
+    "quote": "Individualized BP targets are recommended in \npatients with eGFR <30 mL/min/1.73 m2 to \nreduce risk of CVD.",
+    "quoteVi": "ESC 2026 Bảng 9 (Class I-C): Ở bệnh nhân CKD nặng có eGFR < 30 mL/phút/1.73m², khuyến cáo cá thể hóa mục tiêu huyết áp theo khả năng dung nạp để giảm nguy cơ tim mạch.",
+    "cor": "I",
+    "loe": "C"
+  },
+  {
+    "id": "esc.2026.ckd.bp_office_130_80",
+    "sourceId": "esc_2026_cvd_ckd",
+    "pdfPage": 26,
+    "printedPage": "26",
+    "locator": "Recommendation Table 9 / PDF p. 26",
+    "quote": "Intensified BP control by lifestyle optimization \nand BP-lowering medications is recommended \nin patients with CKD and eGFR ≥30 mL/min/ \n1.73 m2, who have confirmed standardized \noffice BP ≥130/80 mmHg to reduce the risk of \nCVD.",
+    "quoteVi": "ESC 2026 Bảng 9 (Class I-A): Khuyến cáo kiểm soát huyết áp tích cực khi huyết áp phòng khám chuẩn hóa >= 130/80 mmHg ở bệnh nhân CKD có eGFR >= 30 mL/phút/1.73m².",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.2026.ckd.statin_continue_dialysis",
+    "sourceId": "esc_2026_cvd_ckd",
+    "pdfPage": 27,
+    "printedPage": "27",
+    "locator": "Recommendation Table 10 / PDF p. 27",
+    "quote": "Continuation of a statin-based regimen may be \nconsidered on dialysis initiation to ensure \nongoing cardiovascular protection.",
+    "quoteVi": "ESC 2026 Bảng 10 (Class IIb-C): Ở bệnh nhân đang dùng phác đồ nền tảng statin khi bắt đầu lọc máu định kỳ, cân nhắc tiếp tục duy trì statin để bảo vệ tim mạch liên tục.",
+    "cor": "IIb",
+    "loe": "C"
+  },
+  {
+    "id": "esc.2026.ckd.mra_dialysis_not_recommended",
+    "sourceId": "esc_2026_cvd_ckd",
+    "pdfPage": 69,
+    "printedPage": "69",
+    "locator": "Recommendation Table 31 / PDF p. 69",
+    "quote": "Routine use of MRAs is not recommended in \npatients on dialysis because of the risk of serious \nhyperkalaemia without evidence of clear benefit \non cardiovascular death or hospitalizations for \nheart failure.",
+    "quoteVi": "ESC 2026 Bảng 31 (Class III-A): Không khuyến cáo dùng MRA ở bệnh nhân đang lọc máu định kỳ do nguy cơ tăng kali máu nghiêm trọng và không chứng minh được lợi ích giảm tử vong tim mạch hay nhập viện suy tim.",
+    "cor": "III",
+    "loe": "A"
+  },
+  {
+    "id": "esc.2026.ckd.hfref_steroidal_vs_nonsteroidal_mra",
+    "sourceId": "esc_2026_cvd_ckd",
+    "pdfPage": 36,
+    "printedPage": "36",
+    "locator": "Section 6.2.1.3 / PDF p. 36",
+    "quote": "Since non-steroidal MRA therapy has only been investigated in \nHF patients with LVEF >40%, steroidal and non-steroidal MRA \ntherapy are therefore considered separately in patients with \nHF and CKD.",
+    "quoteVi": "ESC 2026 Mục 6.2.1.3: Do MRA không steroid (finerenone) mới chỉ được nghiên cứu ở bệnh nhân suy tim có LVEF >= 40%, ở bệnh nhân suy tim phân suất tống máu giảm (HFrEF, LVEF <= 40%) kèm CKD phải ưu tiên MRA steroid (spironolactone/eplerenone) để giảm tử vong.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.2026.ckd.ci_aki_hydration_egfr_30",
+    "sourceId": "esc_2026_cvd_ckd",
+    "pdfPage": 67,
+    "printedPage": "67",
+    "locator": "Recommendation Table 30 / PDF p. 67",
+    "quote": "Peri-procedural intravenous hydration may be \nconsidered in patients with an eGFR <30 mL/ \nmin/1.73 m2 not on dialysis, undergoing any \nprocedure requiring administration of iodinated \ncontrast to reduce the risk of \nCI-AKI.",
+    "quoteVi": "ESC 2026 Bảng 30: Cân nhắc truyền dịch tĩnh mạch quanh thủ thuật ở bệnh nhân CKD chưa lọc máu có eGFR < 30 mL/phút/1.73m² (hoặc nguy cơ cao) khi dùng thuốc cản quang iod để giảm nguy cơ CI-AKI.",
+    "cor": "IIb",
+    "loe": "C"
+  },
+  {
+    "id": "aha.acc.2025.ckd_bp_target_130_80",
+    "sourceId": "aha_acc_2025_htn",
+    "pdfPage": 6,
+    "printedPage": "1572",
+    "locator": "Top 10 Take-Home Messages / PDF p. 6",
+    "quote": "The over-\narching blood pressure treatment goal is <130/80\nmm Hg for all adults, with additional considerations\nfor those who require institutional care, have a\nlimited predicted lifespan, or are pregnant.",
+    "quoteVi": "ACC/AHA 2025: Đích huyết áp điều trị tổng quát cho người lớn tăng huyết áp (bao gồm bệnh thận mạn) là < 130/80 mmHg (trừ thai kỳ hoặc tình trạng đặc biệt cần cá thể hóa).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "ada.2026.soc11.bp_target_130_80",
+    "sourceId": "ada_2026_soc_11",
+    "pdfPage": 5,
+    "printedPage": "S249",
+    "locator": "Recommendation 11.5 / PDF p. 5",
+    "quote": "11.5 If it can be safely attained, the \non-treatment blood pressure goal \nfor people with CKD is <130/80 mmHg; \na systolic blood pressure goal \n<120 mmHg and/or reduction in \nblood pressure variability should be \nencouraged. A",
+    "quoteVi": "ADA 2026 Khuyến cáo 11.5: Nếu đạt được an toàn, đích huyết áp ở người bệnh thận mạn là < 130/80 mmHg; khuyến khích đích huyết áp tâm thu < 120 mmHg khi dung nạp tốt (A).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "ada.2026.soc11.flow_semaglutide",
+    "sourceId": "ada_2026_soc_11",
+    "pdfPage": 9,
+    "printedPage": "S253",
+    "locator": "Section 11 Direct Kidney Effects — FLOW Trial / PDF p. 9",
+    "quote": "The FLOW study demonstrated that \nthe GLP-1 RA semaglutide had kidney- \nprotective effects in people with type 2 di-\nabetes and CKD (109).",
+    "quoteVi": "ADA 2026 Mục 11: Thử nghiệm FLOW chứng minh thuốc đồng vận thụ thể GLP-1 semaglutide (1.0 mg tiêm dưới da mỗi tuần) có tác dụng bảo vệ thận trực tiếp ở người bệnh ĐTĐ2 kèm CKD.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "fda.finerenone.hepatic_impairment",
+    "sourceId": "fda_finerenone",
+    "pdfPage": 10,
+    "printedPage": "10",
+    "locator": "Section 8.6 Hepatic Impairment / PDF p. 10",
+    "quote": "8.6 Hepatic Impairment\nAvoid use of Kerendia in patients with severe hepatic impairment (Child Pugh C).\nNo dosage adjustment is recommended in patients with mild or moderate hepatic\nimpairment (Child Pugh A or B).\nConsider additional serum potassium monitoring in patients with moderate hepatic\nimpairment (Child Pugh B)",
+    "quoteVi": "Nhãn FDA Kerendia Mục 8.6 (Suy gan): Tránh dùng Finerenone ở bệnh nhân suy gan nặng (Child-Pugh C); không cần chỉnh liều ở suy gan nhẹ hoặc trung bình (Child-Pugh A/B) nhưng cân nhắc theo dõi thêm kali máu ở suy gan trung bình (Child-Pugh B).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "fda.finerenone.table_3_hf_titration",
+    "sourceId": "fda_finerenone",
+    "pdfPage": 5,
+    "printedPage": "5",
+    "locator": "Table 3: Dose Adjustment for Heart Failure with LVEF >= 40% / PDF p. 5",
+    "quote": "< 5.0\nIncrease the dose\nto 20 mg once\ndaily\nMaintain 20 mg\nonce daily if eGFR\n< 60\nmL/min/1.73m\n at\ninitiation. \nOtherwise increase\nthe dose to 40 mg\nonce daily\nMaintain 40 mg\nonce daily.",
+    "quoteVi": "Nhãn FDA Kerendia Bảng 3 (Suy tim LVEF >= 40%): Khi K+ < 5.0 mEq/L, tăng liều từ 10 mg lên 20 mg/ngày; nếu đang dùng 20 mg/ngày thì duy trì 20 mg nếu eGFR < 60, hoặc tăng lên liều đích 40 mg/ngày nếu eGFR >= 60 mL/phút/1.73m².",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "fda.losartan.hepatic_impairment",
+    "sourceId": "fda_losartan",
+    "pdfPage": 5,
+    "printedPage": "5",
+    "locator": "Section 2.4 Dosage Modifications in Patients with Hepatic Impairment / PDF p. 5",
+    "quote": "2.4 Dosage Modifications in Patients with Hepatic Impairment\nIn patients with mild-to-moderate hepatic impairment the recommended starting dose of\nCOZAAR is 25 mg once daily. COZAAR has not been studied in patients with severe\nhepatic impairment",
+    "quoteVi": "Nhãn FDA Cozaar Mục 2.4 (Suy gan): Ở bệnh nhân suy gan nhẹ đến trung bình, liều khởi đầu khuyến cáo của Losartan là 25 mg uống 1 lần/ngày; thuốc chưa được nghiên cứu ở suy gan nặng.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "fda.szc.hypokalemia_discontinue",
+    "sourceId": "fda_szc",
+    "pdfPage": 3,
+    "printedPage": "3",
+    "locator": "Section 2.1 & 2.2 / PDF p. 3",
+    "quote": "Decrease the\ndose of LOKELMA or discontinue if the serum potassium is below the desired target\nrange.",
+    "quoteVi": "Nhãn FDA Lokelma Mục 2.1: Giảm liều hoặc ngừng Sodium Zirconium Cyclosilicate nếu kali huyết thanh giảm xuống dưới khoảng mục tiêu hoặc xuất hiện hạ kali máu có ý nghĩa lâm sàng.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "fda.szc.target_range_4_0",
+    "sourceId": "fda_szc",
+    "pdfPage": 13,
+    "printedPage": "13",
+    "locator": "Section 14.2 Clinical Studies / PDF p. 13",
+    "quote": "achieve a pre-dialysis serum potassium level between 4.0-5.0 mEq/L.",
+    "quoteVi": "Nhãn FDA Lokelma Mục 14.2: Ngưỡng dưới của khoảng mục tiêu kali huyết thanh là 4.0 mEq/L (4.0–5.0 mEq/L).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "fda.patiromer.not_emergency",
+    "sourceId": "fda_patiromer",
+    "pdfPage": 1,
+    "printedPage": "1",
+    "locator": "Section 1 Limitation of Use / PDF p. 1",
+    "quote": "Limitation of Use\nVeltassa should not be used as an emergency treatment for life-threatening hyperkalemia because of its\ndelayed onset of action.",
+    "quoteVi": "Nhãn FDA Veltassa Mục 1: Không sử dụng Patiromer làm thuốc điều trị cấp cứu đơn độc cho tăng kali máu đe dọa tính mạng do khởi phát tác dụng chậm.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "fda.patiromer.hypokalemia_3_5",
+    "sourceId": "fda_patiromer",
+    "pdfPage": 5,
+    "printedPage": "5",
+    "locator": "Section 6.1 Laboratory Abnormalities / PDF p. 5",
+    "quote": "Approximately 4.7% of adult patients in clinical trials developed hypokalemia with a\nserum potassium value < 3.5 mEq/L.",
+    "quoteVi": "Nhãn FDA Veltassa Mục 6.1: Khoảng 4.7% bệnh nhân người lớn xuất hiện hạ kali máu với nồng độ kali huyết thanh < 3.5 mEq/L; cần ngừng thuốc và bù kali nếu xảy ra hạ kali máu.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "ukka.2022.guideline_16_6_1_szc_emergency",
+    "sourceId": "ukka_2022_hyperkalaemia",
+    "pdfPage": 13,
+    "printedPage": "13",
+    "locator": "Guideline 16.6.1 / PDF p. 13",
+    "quote": "Guideline 16.6.1 – Hyperkalaemia: STEP 3 – Remove K+ from body; Potassium binders \nWe recommend that Sodium Zirconium Cyclosilicate is used as an option in the emergency management of \nacute life-threatening hyperkalaemia (serum K+ ≥ 6.5 mmol/l). (1B)",
+    "quoteVi": "UKKA 2022 Guideline 16.6.1: Khuyến cáo sử dụng Sodium Zirconium Cyclosilicate (Lokelma) như một lựa chọn đào thải kali trong xử trí cấp cứu tăng kali máu cấp tính đe dọa tính mạng (K+ >= 6.5 mmol/L) (1B).",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "ukka.2022.guideline_16_6_3_cps_not_emergency",
+    "sourceId": "ukka_2022_hyperkalaemia",
+    "pdfPage": 14,
+    "printedPage": "14",
+    "locator": "Guideline 16.6.3 / PDF p. 14",
+    "quote": "Guideline 16.6.3 – Hyperkalaemia: STEP 3 – Remove K+ from body; Cation-exchange resin \nWe suggest that calcium resonium is not used in the emergency management of severe hyperkalaemia, but \nmay be considered in patients with moderate hyperkalaemia. (2B)",
+    "quoteVi": "UKKA 2022 Guideline 16.6.3: Khuyến nghị KHÔNG sử dụng nhựa trao đổi ion calcium resonium (calcium polystyrene sulfonate) trong xử trí cấp cứu tăng kali máu nặng do khởi phát chậm và nguy cơ biến chứng tiêu hóa, nhưng có thể cân nhắc trong tăng kali máu vừa (2B).",
+    "cor": "2",
+    "loe": "B"
+  },
+  {
+    "id": "ukka.2022.guideline_8_1_cps_target_5",
+    "sourceId": "ukka_2022_hyperkalaemia",
+    "pdfPage": 11,
+    "printedPage": "11",
+    "locator": "Guideline 8.1 / PDF p. 11",
+    "quote": "Guideline 8.1 – Calcium resonium for the management of Hyperkalaemia in the community. \nWe suggest that calcium resonium may be used as a short-term measure to lower serum potassium to a \nlevel of ≤ 5 mmol/l in patients with mild to moderate hyperkalaemia.  (2C)",
+    "quoteVi": "UKKA 2022 Guideline 8.1: Calcium resonium chỉ dùng ngắn hạn nhằm hạ kali huyết thanh về mức <= 5.0 mmol/L; chống chỉ định tiếp tục dùng khi K+ < 5.0 mmol/L theo SmPC để tránh hạ kali máu (2C).",
+    "cor": "2",
+    "loe": "C"
+  },
+  {
+    "id": "ukka.2022.appendix_3f_cps_safety_3h_bowel",
+    "sourceId": "ukka_2022_hyperkalaemia",
+    "pdfPage": 154,
+    "printedPage": "154",
+    "locator": "Appendix 3F: Drug administration and safety – Calcium resonium / PDF p. 154",
+    "quote": "For oral administration, administer at least 3 hours before, or 3 \nhours after other medication. In patients with gastroparesis \nconsider a 6-hour separation.",
+    "quoteVi": "UKKA 2022 Phụ lục 3F (SmPC Calcium Resonium): Khi dùng đường uống, bắt buộc uống cách các thuốc uống khác ít nhất 3 giờ trước hoặc 3 giờ sau (cân nhắc cách 6 giờ nếu có liệt dạ dày).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "ukka.2022.appendix_3f_cps_contra_bowel",
+    "sourceId": "ukka_2022_hyperkalaemia",
+    "pdfPage": 154,
+    "printedPage": "154",
+    "locator": "Appendix 3F: Drug administration and safety – Calcium resonium / PDF p. 154",
+    "quote": "Contra-indicated in hypercalcaemia or in obstructive bowel \ndisease.",
+    "quoteVi": "UKKA 2022 Phụ lục 3F (SmPC Calcium Resonium): Chống chỉ định trong tăng canxi máu hoặc bệnh lý tắc ruột (obstructive bowel disease).",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "ukka.2022.guideline_19_6_rrt_resistant",
+    "sourceId": "ukka_2022_hyperkalaemia",
+    "pdfPage": 15,
+    "printedPage": "15",
+    "locator": "Guideline 19.6 / PDF p. 15",
+    "quote": "Guideline 19.6 – Hyperkalaemia: RRT in treatment of hyperkalaemia in acutely unwell patients. \nWe recommend that the decision on timing, suitability and modality for initiation of RRT in patients with life-\nthreatening hyperkalaemia, either from the outset or resistant to initial medical therapy, is taken urgently by \na nephrologist or critical care specialist. (1C)",
+    "quoteVi": "UKKA 2022 Guideline 19.6: Quyết định khởi đầu lọc máu thay thế thận (RRT) ở bệnh nhân tăng kali máu đe dọa tính mạng kháng trị với điều trị nội khoa ban đầu cần được bác sĩ chuyên khoa Thận hoặc Hồi sức tích cực thực hiện khẩn cấp (1C).",
+    "cor": "1",
+    "loe": "C"
+  },
+  {
+    "id": "ukka.2022.guideline_20_1_rrt_uncontrolled",
+    "sourceId": "ukka_2022_hyperkalaemia",
+    "pdfPage": 15,
+    "printedPage": "15",
+    "locator": "Guideline 20.1 / PDF p. 15",
+    "quote": "Guideline 20.1 - Hyperkalaemia:  Transfer to renal services   \nWe suggest that transfer to renal services be considered in clinically stable patients in whom hyperkalaemia \ncannot be controlled (i.e. serum K+ < 6.5 mmol/L) using medical measures, particularly in the presence of \nadvanced or oliguric renal failure (either AKI or CKD). (2C)",
+    "quoteVi": "UKKA 2022 Guideline 20.1: Cân nhắc chuyển chuyên khoa Thận để lọc máu khi tăng kali máu không kiểm soát được xuống < 6.5 mmol/L bằng điều trị nội khoa, đặc biệt khi có suy thận nặng hoặc thiểu/vô niệu (AKI hoặc CKD) (2C).",
+    "cor": "2",
+    "loe": "C"
+  },
+  {
+    "id": "byt.ckd.2024.glp1ra_add_on",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 31,
+    "printedPage": "30",
+    "locator": "Mục 4.1.2 Quản lý bảo tồn thận toàn diện / PDF p. 31",
+    "quote": "ph ối hợp thêm thu ốc kiểm soát \nđường máu khác n ếu đường máu chưa đ ạt mục tiêu, thường thêm đồng vận thụ thể \nGLP-1 (GLP-1 RA) vì có hiệu quả hiệp đồng trong kiểm soát biến cố tim mạch, đặc \nbiệt ở những BN có bệnh mạch máu do xơ vữa động mạch, phòng ngừa diễn tiến đến \nalbumin niệu đại lượng, giảm tiến triển của BTM và giảm cân. Nên chọn GLP-1 RA \ntác dụng kéo dài do có khả năng bảo vệ tim mạch đã được chứng minh.",
+    "quoteVi": "BYT 2024: Phối hợp thêm đồng vận thụ thể GLP-1 tác dụng kéo dài ở bệnh nhân ĐTĐ2 và BTM nhằm kiểm soát biến cố tim mạch, phòng ngừa tiến triển đến albumin niệu đại lượng và làm chậm tiến triển bệnh thận mạn.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "byt.ckd.2024.table_45_glp1ra_egfr_15",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 135,
+    "printedPage": "134",
+    "locator": "Bảng 45: Liều thuốc đồng vận thụ thể GLP-1 cho BN mắc BTM / PDF p. 135",
+    "quote": "Khuyến cáo bổ sung thuốc đồng vận thụ thể GLP-1 tác dụng kéo dài nếu đường máu \nkhông đạt mục tiêu đã xác định cho cá thể với Metformin và SGLT2i, hoặc nếu BN \nkhông thể dùng 2 thu ốc này. Kh ởi trị thuốc đồng vận thụ thể GLP-1 với liều thấp, \nsau đó tăng liều dần dần để giảm tác dụng phụ đường tiêu hoá.",
+    "quoteVi": "BYT 2024 Bảng 45: Khuyến cáo bổ sung thuốc đồng vận thụ thể GLP-1 tác dụng kéo dài nếu chưa đạt mục tiêu đường huyết với Metformin và SGLT2i hoặc không thể dùng 2 thuốc này; khởi trị liều thấp và tăng liều dần.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "byt.ckd.2024.table_12_perindopril_crcl_30",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 38,
+    "printedPage": "37",
+    "locator": "Bảng 12: Liều thuốc RAASi trong BTM / PDF p. 38",
+    "quote": "Perindopril \n2 mg,  \n1 lần/ngày \n8 mg \nKhông sử dụng khi CrCl <30 ml/phút \nPerindopril và chuyển hóa của nó thải \nqua màng lọc",
+    "quoteVi": "BYT 2024 Bảng 12: Perindopril không sử dụng khi độ thanh thải creatinin CrCl < 30 mL/phút.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "byt.ckd.2024.table_12_telmisartan_valsartan",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 39,
+    "printedPage": "38",
+    "locator": "Bảng 12: Liều thuốc RAASi trong BTM / PDF p. 39",
+    "quote": "Telmisartan 40 mg, 1 lần/ngày 80 mg Không c ần đi ều ch ỉnh li ều lư ợng. Không thải qua màng l ọc thận nhân tạo",
+    "quoteVi": "BYT 2024 Bảng 12: Telmisartan khởi đầu 40 mg x 1 lần/ngày, tối đa 80 mg/ngày; không cần điều chỉnh liều lượng theo chức năng thận và không thải qua màng lọc thận nhân tạo."
+  },
+  {
+    "id": "byt.ckd.2024.acute_acidosis_iv_bicarb_10",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 66,
+    "printedPage": "65",
+    "locator": "Mục 4.10.3.1 Toan chuyển hóa cấp tính / PDF p. 66",
+    "quote": "4.10.3.1. Toan chuyển hóa cấp tính \nXử trí cấp cứu nếu pH < 7,10 hoặc bicarbonate < 8 mmol/L.",
+    "quoteVi": "BYT 2024 Mục 4.10.3.1: Xử trí cấp cứu toan chuyển hóa cấp tính nếu pH < 7,10 hoặc bicarbonate huyết thanh < 8 mmol/L (cần nhập viện truyền kiềm tĩnh mạch hoặc lọc máu ngoài thận nếu suy thận thực thể kèm theo).",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "byt.ckd.2024.acute_acidosis_target_10",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 66,
+    "printedPage": "65",
+    "locator": "Mục 4.10.3.1 Toan chuyển hóa cấp tính / PDF p. 66",
+    "quote": "truyền TM \nnatri bicarbonate để nhanh chóng tăng độ pH > 7,20 và bicarbonate > 10 mmol/L",
+    "quoteVi": "BYT 2024 Mục 4.10.3.1: Trong toan chuyển hóa nặng cấp tính (HCO3- <= 10 mmol/L), cần xử trí nội viện truyền tĩnh mạch natri bicarbonate để nâng nhanh pH > 7,20 và bicarbonate > 10 mmol/L.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "byt.ckd.2024.rrt_anuric_hyperkalemia",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 62,
+    "printedPage": "61",
+    "locator": "Mục 4.9.3.4 Tăng đào thải kali / PDF p. 62",
+    "quote": "Lọc thận nhân tạo: chỉ định bắt buộc khi suy thận vô niệu kèm tăng kali máu đe dọa \ntính mạng có dấu hiệu điện tâm đồ, khi không đáp ứng với thuốc lợi tiểu.",
+    "quoteVi": "BYT 2024 Mục 4.9.3.4: Chỉ định bắt buộc lọc thận nhân tạo khi suy thận vô niệu kèm tăng kali máu đe dọa tính mạng có biến đổi điện tâm đồ hoặc không đáp ứng điều trị nội khoa/lợi tiểu.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "kdigo.aki.2012.rec_3_4_diuretics_volume_overload",
+    "sourceId": "kdigo_2012_aki",
+    "pdfPage": 12,
+    "printedPage": "9",
+    "locator": "Recommendations 3.4.1 & 3.4.2 / PDF p. 12",
+    "quote": "3.4.1: W e recommend not using diuretics to prevent AKI. ( 1B)\n3.4.2: W e suggest not using diuretics to treat AKI, except in the management of volume overload. ( 2C)",
+    "quoteVi": "KDIGO 2012 AKI Khuyến cáo 3.4.1 & 3.4.2: Không dùng thuốc lợi tiểu để dự phòng (1B) hoặc điều trị AKI, ngoại trừ mục đích kiểm soát quá tải thể tích tuần hoàn (2C).",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "byt.ckd.2024.table_11_bp_targets_esc",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 37,
+    "printedPage": "36",
+    "locator": "Bảng 11: Các khuyến cáo về mức huyết áp mục tiêu cho người mắc BTM / PDF p. 37",
+    "quote": "VSH/VNHA (Phân hội tăng huyết áp – Hội tim mạch quốc gia Việt Nam) - HAPK mục tiêu: 120-129/70-79 mmHg - Chưa rõ, cá thể hóa điều trị THA kèm BTM BTM đang lọc máu",
+    "quoteVi": "Bảng 11 BYT 2024 dẫn khuyến cáo VSH/VNHA (đồng thuận ESC): Huyết áp phòng khám mục tiêu 120–129/70–79 mmHg cho bệnh nhân THA kèm BTM; cá thể hóa ở BTM đang lọc máu.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "byt.ckd.2024.table_12_acei_dosing",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 38,
+    "printedPage": "37",
+    "locator": "Bảng 12: Chỉnh liều một số thuốc ƯCMC và ƯCTT trong BTM / PDF p. 38",
+    "quote": "Captopril 12,5 – 25 mg, 2-3 lần/ngày 50 mg, 3 lần/ngày (có thể 450mg/ngày) Thời gian bán hủy gia tăng khi chức năng thận giảm: CrCl 10–50 ml/phút: 75% liều hàng ngày 12 –18 giờ; CrCl <10 ml/phút: 50% liều mỗi 24 giờ. Lọc máu: uống sau lọc máu, khoảng 40% qua màng lọc Enalapril 5 mg, 1 lần/ngày 40 mg CrCl ≤30 ml/phút: người lớn liều khởi đầu 2,5 mg 1 lần/ngày; 2,5 mg ngày sau lọc máu; Bênh nhân chưa lọc máu liều dựa vào đáp ứng lâm sàng Lisinopril 10 mg, 1 lần/ngày 40 mg CrCl 10 –30 ml/phút: người lớn liều khởi đầu giảm 50%, tối đa 40 mg/ngày CrCl <10 ml/phút: liều khởi đầu giảm còn 2,5 mg/ngày. Tối đa 40 mg/ngày",
+    "quoteVi": "Bảng 12 BYT 2024: Chỉnh liều khởi đầu Captopril, Enalapril và Lisinopril theo CrCl; Enalapril và Lisinopril giảm liều khởi đầu nhưng trần tối đa vẫn đến 40 mg/ngày theo đáp ứng lâm sàng.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "byt.ckd.2024.table_12_ramipril_crcl_40",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 38,
+    "printedPage": "37",
+    "locator": "Bảng 12: Chỉnh liều một số thuốc ƯCMC và ƯCTT trong BTM (Ramipril) / PDF p. 38",
+    "quote": "Ramipril 2,5 mg, 1 lần/ngày 20 mg Dùng 25% liều bình thường khi CrCl <40 ml/ phút Đào thải tối thiểu qua màng lọc",
+    "quoteVi": "Bảng 12 BYT 2024: Ramipril khởi đầu giảm còn 25% liều chuẩn (1.25 mg/ngày) khi CrCl < 40 mL/phút và không thải đáng kể qua màng lọc.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "byt.ckd.2024.table_12_arb_no_renal_ceiling",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 39,
+    "printedPage": "38",
+    "locator": "Bảng 12: Chỉnh liều một số thuốc ƯCMC và ƯCTT trong BTM (Nhóm ARB) / PDF p. 39",
+    "quote": "Candesartan 16 mg, 1 lần/ngày 32 mg Ở những bệnh nhân có CrCl <30 ml/phút, AUC và Cmax tăng gấp đôi khi dùng liều lặp lại. Không đào thải qua màng lọc thận nhân tạo Irbesartan 150 mg, 1 lần/ngày 300 mg Không cần điều chỉnh liều lượng. Không thải qua lọc thận nhân tạo Losartan 50 mg, 1 lần/ngày 100 mg Không cần điều chỉnh liều lượng. Không thải qua màng lọc thận nhân tạo",
+    "quoteVi": "Bảng 12 BYT 2024: Các thuốc ARB (Losartan tối đa 100 mg, Irbesartan tối đa 300 mg, Candesartan tối đa 32 mg) không cần giảm trần liều đích theo chức năng thận và không thải qua lọc máu.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "fda.losartan.renal_impairment_no_adjustment",
+    "sourceId": "fda_losartan",
+    "pdfPage": 12,
+    "locator": "Section 8.7 Renal Impairment / PDF p. 12",
+    "quote": "8.7 Renal Impairment Patients with renal insufficiency have elevated plasma concentrations of losartan and its active metabolite compared to subjects with normal renal function. No dose adjustment is necessary in patients with renal impairment unless a patient with renal impairment is also volume depleted",
+    "quoteVi": "Nhãn FDA Cozaar (Losartan) Mục 8.7: Không cần giảm liều ở bệnh nhân suy thận trừ khi có kèm giảm thể tích tuần hoàn (khởi đầu 25 mg/ngày).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.canagliflozin.hepatic_impairment",
+    "sourceId": "fda_canagliflozin",
+    "pdfPage": 20,
+    "locator": "Section 8.7 Hepatic Impairment / PDF p. 20",
+    "quote": "8.7 Hepatic Impairment No dosage adjustment is necessary in patients with mild or moderate hepatic impairment. The use of INVOKANA has not been studied in patients with severe hepatic impairment and is therefore not recommended",
+    "quoteVi": "Nhãn FDA Invokana (Canagliflozin) Mục 8.7: Không cần chỉnh liều ở suy gan nhẹ hoặc trung bình; chưa nghiên cứu và không khuyến cáo sử dụng ở bệnh nhân suy gan nặng (Child-Pugh C).",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.2026.soc11.rec_11_7b_glp1ra",
+    "sourceId": "ada_2026_soc_11",
+    "pdfPage": 7,
+    "printedPage": "S252",
+    "locator": "Recommendation 11.7b / PDF p. 7",
+    "quote": "11.7b To reduce kidney disease pro- gression and cardiovascular risk in people with type 2 diabetes and CKD, a glucagon-like peptide 1 agonist with demonstrated benefit in this popula- tion is recommended. A",
+    "quoteVi": "ADA 2026 Khuyến cáo 11.7b (Mức A): Để giảm tiến triển bệnh thận mạn và nguy cơ tim mạch ở người bệnh ĐTĐ típ 2 kèm CKD, khuyến cáo sử dụng thuốc đồng vận thụ thể GLP-1 đã chứng minh lợi ích trên quần thể này (Semaglutide).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "byt.ckd.2024.table_45_glp1ra_ckd",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 135,
+    "printedPage": "134",
+    "locator": "Mục ĐTĐ & BTM - Bảng 45 / PDF p. 135",
+    "quote": "Khuyến cáo bổ sung thuốc đồng vận thụ thể GLP-1 tác dụng kéo dài nếu đường máu không đạt mục tiêu đã xác định cho cá thể với Metformin và SGLT2i, hoặc nếu BN không thể dùng 2 thuốc này.",
+    "quoteVi": "BYT 2024 (tr. 134, Bảng 45): Khuyến cáo bổ sung GLP-1 RA tác dụng kéo dài nếu chưa đạt mục tiêu đường huyết với Metformin và SGLT2i hoặc khi bệnh nhân không thể sử dụng 2 thuốc này (như CKD G4 eGFR 15–19 mL/phút/1.73m²).",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "esc.2026.ckd.table_30_ci_aki_hydration",
+    "sourceId": "esc_2026_cvd_ckd",
+    "pdfPage": 67,
+    "printedPage": "67",
+    "locator": "Recommendation Table 30 / PDF p. 67",
+    "quote": "Peri-procedural intravenous hydration may be considered in patients with an eGFR <30 mL/ min/1.73 m2 not on dialysis, undergoing any procedure requiring administration of iodinated contrast to reduce the risk of CI-AKI.",
+    "quoteVi": "ESC 2026 Table 30 (Class IIb, Level C): Truyền dịch tĩnh mạch quanh thủ thuật có thể được cân nhắc ở bệnh nhân có eGFR < 30 mL/phút/1.73m² chưa lọc máu khi thực hiện thủ thuật có thuốc cản quang iod để giảm nguy cơ CI-AKI.",
+    "cor": "IIb",
+    "loe": "C"
+  },
+  {
+    "id": "ada.2024.crises.table_2_dka_severity_12",
+    "sourceId": "ada_2024_hyperglycaemic_crises",
+    "pdfPage": 7,
+    "printedPage": "1263",
+    "locator": "Table 2: DKA classification and suggested level of care / PDF p. 7",
+    "quote": "based on the magnitude of metabolic acidosis (blood pH, serum bicarbonate, and ketone lev- els) and the presence of altered mental status, as presented in Table 2 (12).",
+    "quoteVi": "Đồng thuận ADA/EASD 2024 (Bảng 2): Phân tầng mức độ nặng toan chuyển hóa (HCO3- 10 đến < 15 mmol/L là mức trung bình cần theo dõi nội viện đơn vị bán cấp; < 10 mmol/L là mức nặng cần hồi sức tích cực ICU)."
+  },
+  {
+    "id": "fda.szc.hemodialysis_dosing",
+    "sourceId": "fda_szc",
+    "pdfPage": 3,
+    "printedPage": "3",
+    "locator": "Section 2.2 Dosage Adjustment for Patients on Chronic Hemodialysis / PDF p. 3",
+    "quote": "For patients on chronic hemodialysis, administer LOKELMA only on non-dialysis days. The recommended starting dose is 5 g once daily on non-dialysis days. Consider a starting dose of 10 g once daily on non-dialysis days in patients with serum potassium greater than 6.5 mEq/L.",
+    "quoteVi": "Nhãn FDA Lokelma Mục 2.2 (Lọc máu chu kỳ): Chỉ uống Lokelma vào ngày không lọc máu với liều khởi đầu 5 g x 1 lần/ngày vào ngày không lọc máu (cân nhắc 10 g x 1 lần/ngày vào ngày không lọc máu nếu K+ trước lọc > 6.5 mEq/L)."
+  },
+  {
+    "id": "fda.szc.hemodialysis_maintenance_sodium",
+    "sourceId": "fda_szc",
+    "pdfPage": 3,
+    "printedPage": "3",
+    "locator": "Section 2.2 Maintenance Dose Range / PDF p. 3",
+    "quote": "The recommended maintenance dose range is from 5 g to 15 g once daily, on non-dialysis days.",
+    "quoteVi": "Nhãn FDA Lokelma Mục 2.2: Liều duy trì ở bệnh nhân chạy thận nhân tạo chu kỳ từ 5 g đến 15 g uống 1 lần/ngày vào ngày không lọc máu, chỉnh theo K+ trước buổi lọc đầu tuần."
+  },
+  {
+    "id": "fda.szc.edema_sodium_400mg",
+    "sourceId": "fda_szc",
+    "pdfPage": 4,
+    "printedPage": "4",
+    "locator": "Section 5.2 Edema / PDF p. 4",
+    "quote": "Each 5 g dose of LOKELMA contains approximately 400 mg of sodium",
+    "quoteVi": "Nhãn FDA Lokelma Mục 5.2: Mỗi liều 5 g Lokelma chứa khoảng 400 mg natri; theo dõi sát dấu hiệu phù và quá tải dịch."
+  },
+  {
+    "id": "fda.canagliflozin.table_1_renal_impairment",
+    "sourceId": "fda_canagliflozin",
+    "pdfPage": 5,
+    "printedPage": "5",
+    "locator": "Section 2.3 Table 1: Recommended Dosage in Renal Impairment / PDF p. 5",
+    "quote": "eGFR 30 to less than 60 The maximum recommended dosage is 100 mg orally once daily. eGFR less than 30 Initiation is not recommended Adult patients taking INVOKANA with albuminuria greater than 300 mg/day may continue INVOKANA 100 mg once daily",
+    "quoteVi": "Nhãn FDA Invokana Bảng 1: eGFR 30 đến < 60: tối đa 100 mg uống 1 lần/ngày; eGFR < 30: không khuyến cáo khởi trị mới, bệnh nhân người lớn đang dùng kèm albumin niệu > 300 mg/ngày có thể tiếp tục dùng 100 mg x 1 lần/ngày."
+  },
+  {
+    "id": "fda.finerenone.k_borderline_4_8_to_5_0",
+    "sourceId": "fda_finerenone",
+    "pdfPage": 4,
+    "printedPage": "4",
+    "locator": "Section 2.2 / PDF p. 4",
+    "quote": "if serum potassium levels are > 4.8 to 5.0 mEq/L, initiation of Kerendia treatment may be considered with additional serum potassium monitoring within the first 4 weeks based on clinical judgment and serum potassium",
+    "quoteVi": "Nhãn FDA Kerendia Mục 2.2: Khi kali huyết thanh ở dải ranh giới > 4.8 đến 5.0 mEq/L, có thể cân nhắc khởi trị Finerenone kèm xét nghiệm theo dõi thêm kali máu sớm trong vòng 4 tuần đầu."
+  },
+  {
+    "id": "fda.finerenone.cyp3a4_moderate_weak",
+    "sourceId": "fda_finerenone",
+    "pdfPage": 8,
+    "printedPage": "8",
+    "locator": "Section 7.1 Moderate and Weak CYP3A4 Inhibitors / PDF p. 8",
+    "quote": "Moderate and Weak CYP3A4 Inhibitors Kerendia is a CYP3A4 substrate. Concomitant use with a moderate or weak CYP3A4 inhibitor increases finerenone exposure",
+    "quoteVi": "Nhãn FDA Kerendia Mục 7.1: Dùng đồng thời Finerenone với thuốc ức chế CYP3A4 mức độ vừa hoặc yếu (như diltiazem, verapamil, erythromycin, fluconazole, amiodarone) làm tăng phơi nhiễm finerenone; cần theo dõi sát kali máu trong 4 tuần đầu và khi chỉnh liều."
+  },
+  {
+    "id": "ukka.2022.guideline_15_2_poc_blood_gas",
+    "sourceId": "ukka_2022_hyperkalaemia",
+    "pdfPage": 12,
+    "printedPage": "12",
+    "locator": "Guideline 15.2 / PDF p. 12",
+    "quote": "Guideline 15.2 – Hyperkalaemia: Blood gas analysis We recommend that in emergencies, K+ level is measured from an arterial or venous blood sample using a point-of-care blood gas analyser whilst awaiting the results",
+    "quoteVi": "UKKA 2022 Guideline 15.2: Trong tình huống cấp cứu nghi tăng kali máu, khuyến cáo đo ngay nồng độ K+ từ mẫu máu động mạch hoặc tĩnh mạch trên máy khí máu tại chỗ (point-of-care) trước khi quyết định phác đồ hạ kali máu.",
+    "cor": "1",
+    "loe": "B"
+  },
+  {
+    "id": "byt.ckd.2024.hyperkalemia_calcium_gt_7",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 60,
+    "printedPage": "59",
+    "locator": "Mục 4.9.3.1 Nguyên tắc điều trị tăng kali máu cấp / PDF p. 60",
+    "quote": "Tăng kali máu cấp mức độ nặng > 7 mmol/L hoặc đe d ọa trên ECG và không ng ộ độc digitalis: + Tiêm canxi tĩnh mạch (ưu tiên canxi gluconate) 1g trong 2-3 phút",
+    "quoteVi": "BYT 2024 Mục 4.9.3.1: Chỉ định tiêm canxi tĩnh mạch (ưu tiên canxi gluconate) bảo vệ cơ tim khi tăng kali máu cấp > 7.0 mmol/L hoặc có biểu hiện đe dọa tính mạng trên điện tâm đồ và không ngộ độc digitalis."
+  },
+  {
+    "id": "kdigo.ckd.2024.pp_3_4_1_bp_frailty_orthostatic",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 43,
+    "printedPage": "S158",
+    "locator": "Practice Point 3.4.1 / PDF p. 43",
+    "quote": "Practice Point 3.4.1: Consider less intensive BP-lowering therapy in people with frailty, high risk of falls and fractures, very limited life expectancy, or symptomatic postural hypotension.",
+    "quoteVi": "KDIGO 2024 Điểm thực hành 3.4.1: Cân nhắc cường độ hạ áp ít tích cực hơn ở người bệnh suy yếu (frailty), nguy cơ té ngã và gãy xương cao, kỳ vọng sống ngắn, hoặc hạ huyết áp tư thế có triệu chứng."
+  },
+  {
+    "id": "esc.htn.2024.lenient_bp_frailty_age85",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 8,
+    "printedPage": "3919",
+    "locator": "Section 3 / PDF p. 8",
+    "quote": "more lenient BP targets can be consid- ered in persons with symptomatic orthostatic hypotension, those aged 85 years or over, or those with moderate-to-severe frailty",
+    "quoteVi": "ESC 2024 Tăng huyết áp: Đích huyết áp nới lỏng hơn cần được áp dụng ở bệnh nhân có hạ huyết áp tư thế có triệu chứng, tuổi >= 85 hoặc suy yếu (frailty) mức độ vừa–nặng."
+  },
+  {
+    "id": "esc.htn.2024.lenient_bp_140_90",
+    "sourceId": "esc_2024_htn",
+    "pdfPage": 14,
+    "printedPage": "3925",
+    "locator": "Recommendation Table 7 / PDF p. 14",
+    "quote": "personalized and more lenient BP targets (e.g. <140/90 mmHg) may be considered among patients meeting the following criteria: • clinically significant, moderate to severe frailty at any age; • and/or limited predicted lifespan (<3 years).",
+    "quoteVi": "ESC 2024 Bảng 7 (Class IIb, Level C): Cân nhắc mục tiêu huyết áp cá thể hóa nới lỏng hơn (ví dụ < 140/90 mmHg) ở bệnh nhân suy yếu mức độ vừa–nặng hoặc kỳ vọng sống hạn chế.",
+    "cor": "IIb",
+    "loe": "C"
+  },
+  {
+    "id": "kdigo.ckd.2024.rec_3_15_1_3_statin_10pct_risk",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 47,
+    "printedPage": "S162",
+    "locator": "Recommendation 3.15.1.3 / PDF p. 47",
+    "quote": "estimated 10-year incidence of coronary death or nonfatal myocardial infarction >10%.",
+    "quoteVi": "KDIGO 2024 Khuyến cáo 3.15.1.3 (2A): Ở người lớn 18–49 tuổi mắc CKD chưa lọc máu, khuyến nghị điều trị statin khi nguy cơ biến cố mạch vành 10 năm ước tính > 10%.",
+    "cor": "2",
+    "loe": "A"
+  },
+  {
+    "id": "esc.2026.ckd.table_10_statin_transplant",
+    "sourceId": "esc_2026_cvd_ckd",
+    "pdfPage": 27,
+    "printedPage": "27",
+    "locator": "Recommendation Table 10 / PDF p. 27",
+    "quote": "A statin-based regimen should be considered in kidney transplant recipients to reduce the risk of major atherosclerotic events.",
+    "quoteVi": "ESC 2026 Bảng 10 (Class IIa, Level B): Cân nhắc điều trị bằng phác đồ nền tảng statin ở người bệnh sau ghép thận để giảm nguy cơ biến cố tim mạch xơ vữa lớn.",
+    "cor": "IIa",
+    "loe": "B"
+  },
+  {
+    "id": "kdigo.ckd.2024.fig_24_consider_ras_stenosis",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 99,
+    "printedPage": "S214",
+    "locator": "Figure 24 / PDF p. 99",
+    "quote": "Review for causes of AKI • Correct volume depletion • Reassess concomitant medications (e.g., diuretics, NSAIDs) • Consider renal artery stenosis",
+    "quoteVi": "KDIGO 2024 Hình 24: Khi creatinin huyết thanh tăng > 30% sau khởi trị/tăng liều RASi hoặc có dấu hiệu nghi ngờ bệnh mạch máu thận, cần đánh giá thiếu dịch, rà soát lợi tiểu/NSAID và tầm soát hẹp động mạch thận."
+  },
+  {
+    "id": "fda.metformin.contrast_discontinue",
+    "sourceId": "dailymed_2026_metformin_ir_aurobindo",
+    "pdfPage": 4,
+    "locator": "§2.4 Discontinuation for Iodinated Contrast Imaging Procedures",
+    "quote": "Discontinue metformin hydrochloride tablets at the time of, or prior to, an iodinated\ncontrast imaging procedure in patients with an eGFR between 30 and 60 mL/min/1.73\nm\n; in patients with a history of liver disease, alcoholism, or heart failure; or in patients\nwho will be administered intra-arterial iodinated contrast. Re-evaluate eGFR 48 hours\nafter the imaging procedure; restart metformin hydrochloride tablets if renal function is\nstable.",
+    "quoteVi": "Ngừng metformin tại/trước tiêm cản quang theo các điều kiện trong nhãn; đánh giá eGFR sau48giờ, chỉ dùng lại nếu chức năng thận ổn định."
+  },
+  {
+    "id": "esc.2025.pregnancy.rasi_lactation",
+    "sourceId": "esc_2025_pregnancy",
+    "pdfPage": 32,
+    "printedPage": "32",
+    "locator": "Section 4 / Antihypertensive drugs during lactation / PDF p. 32",
+    "quote": "Captopril, enalapril, and benaze- pril are safe during lactation, 146 whereas ARBs are not recom- mended.",
+    "quoteVi": "ESC 2025 Thai kỳ & Cho con bú: Captopril và Enalapril an toàn khi đang cho con bú, trong khi nhóm thuốc ức chế thụ thể angiotensin (ARB) không được khuyến cáo trong thời kỳ cho con bú."
+  },
+  {
+    "id": "fda.losartan.lactation_8_2",
+    "sourceId": "fda_losartan",
+    "pdfPage": 11,
+    "printedPage": "11",
+    "locator": "Section 8.2 Lactation / PDF p. 11",
+    "quote": "Because of the potential for adverse effects on the nursing infant, a decision should be made whether to discontinue nursing or discontinue the drug, taking into account the importance of the drug to the mother.",
+    "quoteVi": "Nhãn FDA Cozaar Mục 8.2 (Cho con bú): Do nguy cơ tác dụng bất lợi tiềm tàng trên trẻ bú mẹ, không khuyến cáo dùng đồng thời khi đang cho con bú."
+  },
+  {
+    "id": "ema.perindopril.lactation_4_6",
+    "sourceId": "ema_perindopril",
+    "pdfPage": 8,
+    "printedPage": "8",
+    "locator": "Section 4.6 Fertility, pregnancy and lactation / PDF p. 8",
+    "quote": "Because no information is available regarding the use of Coversyl Arginine during breastfeeding, Coversyl Arginine is not recommended and alternative treatments with better established safety profiles during breast-feeding are preferable",
+    "quoteVi": "SmPC EMA Coversyl Mục 4.6: Không khuyến cáo dùng khi cho con bú do thiếu dữ liệu an toàn; ưu tiên các thuốc hạ áp khác có hồ sơ an toàn đã được thiết lập (như Enalapril hoặc Captopril)."
+  },
+  {
+    "id": "fda.sacubitril_valsartan.hepatic_child_pugh_c",
+    "sourceId": "fda_sacubitril_valsartan",
+    "pdfPage": 15,
+    "printedPage": "15",
+    "locator": "Section 8.6 Hepatic Impairment / PDF p. 15",
+    "quote": "The use of ENTRESTO in patients with severe hepatic impairment (Child-Pugh C classification) is not recommended, as no studies have been conducted in these patients",
+    "quoteVi": "Nhãn FDA Mục 8.6 (Suy gan): Không khuyến cáo sử dụng ở bệnh nhân suy gan nặng (Child-Pugh C); giảm nửa liều khởi đầu ở suy gan trung bình (Child-Pugh B)."
+  },
+  {
+    "id": "fda.canagliflozin.ugt_inducer_renal_dosing",
+    "sourceId": "fda_canagliflozin",
+    "pdfPage": 5,
+    "locator": "Section2.4 Concomitant Use with UGT Enzyme Inducers; renal impairment exception",
+    "quote": "When co-administering INVOKANA with an inducer of UGT (e.g., rifampin, phenytoin, phenobarbital, ritonavir), increase the dosage of INVOKANA based on renal function",
+    "quoteVi": "Nhãn có điều chỉnh liều canagliflozin riêng theo chức năng thận khi dùng chất cảm ứng UGT; cần kiểm mục2.4 trước khi áp trần liều thông thường."
+  },
+  {
+    "id": "kdigo.dm2.2022.metformin_adjust_below_45",
+    "sourceId": "kdigo_2022_diabetes",
+    "pdfPage": 81,
+    "printedPage": "S80",
+    "locator": "Practice Point4.1.3 dose adjustment; Figure27",
+    "quote": "Practice Point 4.1.3: Adjust the dose of metformin when\nthe eGFR is <45 ml/min per 1.73 m 2, and for some pa-\ntients when the eGFR is 45 –59 ml/min per 1.73 m 2\n(Figure 27 ).",
+    "quoteVi": "KDIGO2022 PP4.1.3: chỉnh liều metformin khi eGFR <45; cân nhắc giảm liều ở một số người có eGFR45–59 (xem Figure27)."
+  },
+  {
+    "id": "kdigo.dm2.2022.metformin_discontinue_below_30",
+    "sourceId": "kdigo_2022_diabetes",
+    "pdfPage": 81,
+    "printedPage": "S80",
+    "locator": "Practice Point4.1.3 explanatory text; stopping metformin",
+    "quote": "Treatment should be discontinued when the eGFR declines\nto <30 ml/min per 1.73 m 2, or when the patient is initiated\non dialysis, whichever is earlier.",
+    "quoteVi": "Ngừng metformin khi eGFR giảm <30 hoặc bắt đầu lọc máu, tùy điều kiện nào đến trước."
+  },
+  {
+    "id": "fda.metformin.contra_renal_acidosis",
+    "sourceId": "dailymed_2026_metformin_ir_aurobindo",
+    "pdfPage": 4,
+    "locator": "§4 Contraindications — severe renal impairment and metabolic acidosis",
+    "quote": "Metformin hydrochloride tablets are contraindicated in patients with:\nSevere renal impairment (eGFR below 30 mL/min/1.73 m\n) \n[see \nWarnings and\nPrecautions (5.1)\n].\nHypersensitivity to metformin.\nAcute or chronic metabolic acidosis, including diabetic ketoacidosis, with or without\ncoma.",
+    "quoteVi": "Metformin đơn chất chống chỉ định khi suy thận nặng eGFR<30, quá mẫn với metformin, hoặc toan chuyển hóa cấp/mạn kể cả DKA có hoặc không hôn mê."
+  },
+  {
+    "id": "fda.candesartan.adult_dose_range",
+    "quote": "total daily doses ranging from 8 mg to 32 mg.",
+    "quoteVi": "Liều hàng ngày ở người lớn từ 8–32 mg; cá thể hóa liều theo đáp ứng huyết áp.",
+    "locator": "Section2.1 Adult Hypertension / PDFp4",
+    "sourceId": "fda_candesartan_atacand",
+    "pdfPage": 4
+  },
+  {
+    "id": "fda.candesartan.moderate_hepatic_start",
+    "quote": "Initiate with 8 mg ATACAND in patients with moderate hepatic insufficiency.",
+    "quoteVi": "Khởi đầu Atacand 8 mg ở suy gan trung bình; đây là liều khởi đầu, không phải trần duy trì 16 mg.",
+    "locator": "Section2.1 Use in Hepatic Impairment / PDFp4",
+    "sourceId": "fda_candesartan_atacand",
+    "pdfPage": 4
+  },
+  {
+    "id": "fda.exenatide_ir.renal_impairment",
+    "sourceId": "fda_byetta_20261029",
+    "pdfPage": 15,
+    "locator": "Section 8.6 Renal Impairment / physical PDF p.15",
+    "quote": "BYETTA is not recommended for use in patients with end-stage renal disease or severe renal impairment (creatinine clearance <30 mL/min) and should be used with caution in patients with renal transplantation.",
+    "quoteVi": "Byetta dạng thường không khuyến cáo ở ESRD hoặc CrCl <30 mL/phút; thận trọng khi ghép thận. ADA dùng biên thận trọng CrCl ≤30; không nhầm CrCl với eGFR."
+  },
+  {
+    "id": "fda.exenatide_er.renal_impairment",
+    "sourceId": "fda_bydureon_bcise_20261029",
+    "pdfPage": 15,
+    "locator": "Section 8.6 Renal Impairment / physical PDF p.15",
+    "quote": "BYDUREON BCISE is not recommended for use in patients with eGFR below 45 mL/min/1.73 m or end-stage renal disease.",
+    "quoteVi": "Bydureon BCise dạng kéo dài không khuyến cáo khi eGFR <45 mL/phút/1,73m² hoặc ESRD."
+  },
+  {
+    "id": "fda.lixisenatide.renal_impairment",
+    "sourceId": "fda_adlyxin_20261029",
+    "pdfPage": 12,
+    "locator": "Section 8.6 Renal Impairment, continued / physical PDF p.12",
+    "quote": "There is no therapeutic experience in patients with end stage renal disease (eGFR <15 mL/min/1.73 m ), and it is not recommended to use ADLYXIN in this population",
+    "quoteVi": "Adlyxin: chưa có kinh nghiệm và không khuyến cáo ở eGFR <15; ADA 2026 khuyến cáo tránh lixisenatide từ eGFR ≤30, thận trọng hơn nhãn."
+  },
+  {
+    "id": "ada.ckd.2026.exendin_dialysis_avoid",
+    "sourceId": "ada_2026_soc_11",
+    "pdfPage": 12,
+    "locator": "GLP-1 based therapy on dialysis / physical PDF p.12 (S257)",
+    "quote": "As mentioned before, ex- enatide and lixisenatide should not be used in individuals on dialysis.",
+    "quoteVi": "Không dùng exenatide hoặc lixisenatide ở người đang lọc máu."
+  },
+  {
+    "id": "ada.ckd.2026.glp1_agent_kidney_evidence",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 17,
+    "locator": "Glucose-lowering therapy for CKD / physical PDF p.17 (S199)",
+    "quote": "Other GLP-1 RAs (liraglutide and dulaglutide) may also have CKD benefits, but no other dedicated kidney trials have been published. Similarly, no dedicated kidney outcomes studies for the dual GIP and GLP-1 RA (tirzepatide) have been published, although post hoc analyses of clinical trials in people with type 2 diabetes have shown that tirzepatide slowed the rate of eGFR decline and reduced albuminuria (143,144).",
+    "quoteVi": "Liraglutide/dulaglutide có tín hiệu lợi ích thận; chưa có thử nghiệm kết cục thận chuyên biệt khác. Tirzepatide có phân tích hậu kiểm eGFR/albumin niệu; không đồng nhất FLOW."
+  },
+  {
+    "id": "ada.ckd.2026.glp1_outcome_table",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 12,
+    "locator": "Table 9.2 / physical PDF p.12 (S194)",
+    "quote": "Benefit: dulaglutide, liraglutide, semaglutide (SQ and oral) Benefit: semaglutide (SQ) Benefit for kidney end points in CVOTs, driven by albuminuria outcomes: dulaglutide, liraglutide, semaglutide (SQ) • See labels",
+    "quoteVi": "Bảng 9.2 phân biệt lợi ích tim mạch (có semaglutide uống) và kết cục thận trong CVOT (dulaglutide/liraglutide/semaglutide tiêm), chủ yếu albumin niệu; không suy semaglutide uống có bằng chứng FLOW."
+  },
+  {
+    "id": "kdigo.dm2.2022.glp1_preferred_agents",
+    "sourceId": "kdigo_2022_diabetes",
+    "pdfPage": 86,
+    "locator": "Chapter 4, Benefits and harms / physical PDF p.86 (S85)",
+    "quote": "Exenatide and lixisenatide are not recommended at low eGFR, and given that the ELIXA 381 and EXSCEL 376,378 trials did not prove any cardiovascular bene ﬁt with these agents, the priority is to use one of the other available GLP-1 RA, which have shown CVD and CKD bene ﬁts (i.e., liraglutide, semaglutide, and dulaglutide).",
+    "quoteVi": "KDIGO ưu tiên GLP-1 có lợi ích tim mạch đã chứng minh hơn exenatide/lixisenatide; cá thể hóa lựa chọn thuốc và điều kiện chuyển."
+  },
+  {
+    "id": "ema.telmisartan.hepatic_max_40",
+    "sourceId": "ema_micardis_20260417",
+    "pdfPage": 3,
+    "locator": "EU SmPC §4.2 Hepatic impairment / physical PDF p.3",
+    "quote": "mild to moderate hepatic impairment, the posology should not exceed 40 mg once daily",
+    "quoteVi": "EMA Micardis §4.2: ở suy gan nhẹ–vừa, liều không vượt 40 mg một lần/ngày. Đây là giới hạn SmPC châu Âu được GDMT-VN áp dụng thận trọng cho cả ba profile, không gán cho FDA."
+  },
+  {
+    "id": "ema.telmisartan.hepatic_biliary_contra",
+    "sourceId": "ema_micardis_20260417",
+    "pdfPage": 4,
+    "locator": "EU SmPC §4.4 Hepatic impairment, referring to §4.3 / physical PDF p.4",
+    "quote": "cholestasis, biliary obstructive disorders or severe hepatic impairment",
+    "quoteVi": "EMA Micardis §4.4: không dùng khi ứ mật, bệnh lý tắc mật hoặc suy gan nặng. GDMT-VN áp dụng cổng thận trọng này ở cả ba profile; không gọi là chống chỉ định FDA."
+  },
+  {
+    "id": "uk.candesartan.hepatic_cholestasis_contra",
+    "sourceId": "uk_candesartan_viatris_202606",
+    "locator": "UK SmPC §4.3 Contraindications; text revision06/2026 / HTML snapshot",
+    "quote": "Severe hepatic impairment and/or cholestasis.",
+    "quoteVi": "SmPC Anh/Viatris chống chỉ định candesartan khi suy gan nặng và/hoặc ứ mật; không suy điều này từ nhãn Entresto/Cozaar hoặc nhãn FDA Atacand."
+  },
+  {
+    "id": "fda.candesartan.severe_hepatic_no_dosing",
+    "sourceId": "fda_candesartan_atacand",
+    "pdfPage": 4,
+    "locator": "FDA Atacand §2.1 Use in Hepatic Impairment / physical PDF p.4",
+    "quote": "Dosing recommendations cannot be provided for patients with severe hepatic insufficiency",
+    "quoteVi": "FDA Atacand không đưa được khuyến cáo liều khi suy gan nặng; đây không phải câu chống chỉ định gan/ứ mật."
+  }
+]

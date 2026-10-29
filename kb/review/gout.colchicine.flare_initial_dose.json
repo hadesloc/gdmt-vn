@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.colchicine.flare_initial_dose",
+  "contentHash": "7ce2904bacc14522a0c1bc3bf49074aa80e519e276a6f26e84d4466a5ff8a629",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.colchicine.flare_initial_dose",
+      "contentHash": "1553ad69cfb32107",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.colchicine.flare_initial_dose"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

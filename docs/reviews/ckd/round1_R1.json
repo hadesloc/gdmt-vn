@@ -1,0 +1,110 @@
+[
+  {
+    "id": "CKD-R1-01",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "ckd.inpatient.emergency_dialysis_indication",
+    "finding": "Chỉ định lọc máu cấp cứu kích hoạt sai lầm trên toan chuyển hóa nhẹ-vừa (HCO3- < 18 mmol/L) và tăng kali máu chưa qua xử trí nội khoa ban đầu (K+ >= 6.5 mmol/L).",
+    "evidence": "Code tại src/modules/ckd/rules.inpatient.ts (L265): `const severeAcidosis = hco3 !== undefined && hco3 < th('ckd.acidosis.hco3_min');` trong đó `ckd.acidosis.hco3_min = 18` mmol/L. Ngưỡng 18 mmol/L theo KDIGO 2024 (PP 3.10.1) và BYT 2024 (Mục 3.2) là chỉ định bổ sung natri bicarbonat đường uống ngoại trú, hoàn toàn không phải chỉ định lọc máu cấp cứu xâm lấn. Trong KDIGO 2012 AKI và tiêu chuẩn AEIOU, chỉ định lọc máu do toan chỉ áp dụng khi toan chuyển hóa nặng mất bù (pH < 7.15-7.20 hoặc HCO3- < 10-12 mmol/L kháng trị). Đồng thời, quy tắc kích hoạt lọc máu khẩn cấp ngay khi K+ >= 6.5 mmol/L mà không cần đánh giá đáp ứng với điều trị nội khoa (Canxi TM, Insulin-Glucose, Salbutamol); trích dẫn UKKA 2022 Guideline 18.1 thực chất là chỉ định dành riêng cho bệnh nhân đang lọc máu chu kỳ ('Treatment in haemodialysis patients: haemodialysis patients with severe hyperkalaemia receive dialysis treatment urgently. (1A)'). Báo cáo docs/modules/CKD.md ghi 'toan nặng HCO3 < 10 mmol/L' nhưng code thực tế lại dùng threshold 18 mmol/L.",
+    "suggestedFix": "Tách riêng ngưỡng toan máu chỉ định lọc máu `ckd.inpatient.dialysis_hco3_max` (giá trị 10 mmol/L) và ngưỡng kali máu kháng trị `ckd.inpatient.dialysis_k_refractory` (7.0 mmol/L hoặc kèm thất bại sau gói UKKA). Không tái sử dụng ngưỡng `ckd.acidosis.hco3_min` (18 mmol/L)."
+  },
+  {
+    "id": "CKD-R1-02",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "ckd.outpatient.rasi_initiate",
+    "finding": "Sử dụng sai ngưỡng đích huyết áp (120 mmHg) làm cổng an toàn tối thiểu (lower safety gate) khiến bệnh nhân CKD có huyết áp bình thường (100–119 mmHg) bị từ chối/hoãn khởi trị RASi dù có albumin niệu nặng A3.",
+    "evidence": "Code tại src/modules/ckd/rules.outpatient.ts (L225, 273): `const passedSbp = sbp !== undefined && sbp >= th('ckd.bp.target_sbp_kdigo');` và `recommendationAction = passedK && passedSbp ? 'START' : 'DEFER';`. Ngưỡng `ckd.bp.target_sbp_kdigo` là 120 mmHg (đích kiểm soát SBP < 120 theo KDIGO 2021/2024). Khi bệnh nhân CKD A3 có SBP = 115 mmHg (huyết áp hoàn toàn bình thường, không tụt huyết áp tư thế), cổng SBP bị đánh trượt và hành động chuyển thành 'DEFER' kèm cảnh báo 'Huyết áp tâm thu < 120: Nguy cơ tụt HA tư thế, tạm hoãn'. Điều này tước đoạt chỉ định RASi bảo vệ thận nhóm 1B (KDIGO Rec 3.6.1/3.6.3). Đồng thời tại quy tắc chuẩn độ `ckd.outpatient.rasi_uptitrate` (L375), điều kiện tăng liều cũng bị chặn nếu SBP < 120 mmHg. Chú thích code tại L78 ghi rõ ý đồ thiết kế là 'Gate SBP >= 100 mmHg' nhưng lập trình viên lại gán nhầm threshold đích 120 mmHg.",
+    "suggestedFix": "Tạo ngưỡng an toàn huyết động tối thiểu `ckd.rasi.sbp_initiate_min` (giá trị 100 mmHg hoặc 95 mmHg). Cổng an toàn khởi trị và chuẩn độ RASi phải kiểm tra `sbp >= 100`, giữ 120 mmHg làm đích điều trị hạ áp (upper target), không dùng làm ngưỡng chặn dưới."
+  },
+  {
+    "id": "CKD-R1-03",
+    "severity": "major",
+    "itemType": "missing",
+    "itemId": "ckd.outpatient.statin_indication",
+    "finding": "Bỏ sót khuyến cáo Class 1B của KDIGO 2024 về chỉ định Statin cho bệnh nhân CKD từ 50 tuổi trở lên có eGFR >= 60 mL/phút/1.73m² (giai đoạn G1–G2).",
+    "evidence": "KDIGO 2024 CKD Guideline (trang 47 & 162) Khuyến cáo 3.15.1.2: 'In adults aged >= 50 years with CKD and eGFR >= 60 ml/min per 1.73 m2 (GFR categories G1–G2), we recommend treatment with a statin (1B).' Tuy nhiên tại src/modules/ckd/rules.outpatient.ts (L772): `return (isEligibleAge && egfr < th('ckd.egfr.g2_min')) || isYoungHighRisk;` chỉ cho phép bệnh nhân >= 50 tuổi nhận statin nếu `egfr < 60`. Bệnh nhân CKD giai đoạn G1-G2 (ví dụ ĐTĐ hoặc viêm cầu thận có albumin niệu A2/A3, eGFR 75) từ 50 tuổi trở lên bị loại trừ hoàn toàn khỏi chỉ định statin. Dù trích dẫn `kdigo.ckd.2024.rec_3_15_1_2_statin_egfr_ge_60` đã được tạo trong kb/citations/ckd.json (L278), logic code lại không kích hoạt.",
+    "suggestedFix": "Sửa điều kiện `when` của `ckd.outpatient.statin_indication`: Đối với bệnh nhân CKD từ 50 tuổi trở lên, khuyến cáo statin áp dụng cho mọi mức eGFR (1A nếu eGFR < 60, 1B nếu eGFR >= 60 kèm bằng chứng CKD/albumin niệu)."
+  },
+  {
+    "id": "CKD-R1-04",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "ckd.inpatient.aki_staging",
+    "finding": "Phân độ AKI Stage 3 sai tiêu chuẩn KDIGO khi tự động xếp loại Giai đoạn 3 cho mọi bệnh nhân có Creatinin >= 353.6 µmol/L mà không kiểm tra mức tăng cấp tính >= 44.2 µmol/L; hardcode số literal 353.6 trong code.",
+    "evidence": "KDIGO 2012 AKI Guideline (Bảng 2, trang 11) quy định Stage 3: 'Increase in serum creatinine to >= 4.0 mg/dl (>= 353.6 umol/l) WITH an acute increase of at least 0.5 mg/dl (44.2 umol/l) or initiation of renal replacement therapy'. Tại src/modules/ckd/rules.inpatient.ts (L47): `if (ratio >= 3.0 || currentScr >= 353.6 || urineRate === 'anuria_12h') stage = 3;`. Bệnh nhân BTM giai đoạn 4/5 có Creatinin nền 340 µmol/L chỉ cần tăng nhẹ lên 355 µmol/L (+15 µmol/L, chưa đủ tiêu chuẩn chẩn đoán AKI Giai đoạn 1) đã bị hệ thống chẩn đoán là 'AKI Giai đoạn 3'. Ngoài ra, số 353.6 được viết trực tiếp dạng số literal trong code vi phạm QA-1 và QA-8.",
+    "suggestedFix": "Bổ sung điều kiện kiểm tra mức tăng cấp tính: `(currentScr >= 353.6 && (currentScr - baselineScr >= 44.2))`. Chuyển hai giá trị 353.6 và 44.2 thành các threshold chính thức trong kb/thresholds/ckd.json (`ckd.aki.stage3_scr_abs` và `ckd.aki.stage3_scr_rise`)."
+  },
+  {
+    "id": "CKD-R1-05",
+    "severity": "major",
+    "itemType": "citation",
+    "itemId": "ckd.outpatient.avoid_nsaids",
+    "finding": "Gán trích dẫn giả mạo (citation mismatch) và phóng đại mức độ khuyến cáo cấm NSAID thành chống chỉ định tuyệt đối mức độ nghiêm trọng nhất cho mọi giai đoạn CKD.",
+    "evidence": "Quy tắc `ckd.outpatient.avoid_nsaids` (L846, 850) dẫn chiếu citationId `kdigo.ckd.2024.fig_48_referral_criteria`. Hình 48 của KDIGO 2024 là 'Tiêu chuẩn chuyển tuyến chuyên khoa Thận', hoàn toàn không chứa bất kỳ từ ngữ hay khuyến cáo nào về việc ngừng NSAID. Về mặt chuyên môn, KDIGO 2024 Bảng 31 (trang 132) và Practice Point 4.1.1 coi NSAID là nhóm thuốc có độc tính thận cần cân nhắc lợi ích/nguy cơ, ưu tiên paracetamol, và tạm ngừng trong đợt bệnh cấp mất nước (sick-day). KDIGO 2012 (Rec 4.4.2) khuyến cáo tránh NSAID kéo dài ở G3a-G5 hoặc khi kết hợp với RASi + lợi tiểu ('triple whammy'). Quy tắc hiện tại gán cấm tuyệt đối (STOP, priority 100) cho toàn bộ bệnh nhân CKD (kể cả G1-G2 dùng ngắn ngày điều trị giảm đau cấp) với trích dẫn không liên quan.",
+    "suggestedFix": "Thay citation `fig_48_referral_criteria` bằng trích dẫn chuẩn xác về độc tính thận của NSAID từ KDIGO 2024 Table 31 (trang 132). Phân loại mức độ khuyến cáo: STOP/chống chỉ định nghiêm ngặt khi eGFR < 30 hoặc đang dùng RASi + Lợi tiểu; cảnh báo thận trọng, ưu tiên thay thế bằng Paracetamol khi eGFR >= 30."
+  },
+  {
+    "id": "CKD-R1-06",
+    "severity": "major",
+    "itemType": "missing",
+    "itemId": "ckd.outpatient.chronic_hyperkalemia_binders",
+    "finding": "Thiếu hoàn toàn quy tắc cảnh báo an toàn ngoại trú khi bệnh nhân đang dùng RASi hoặc Finerenone xuất hiện tăng kali máu > 5.5 mmol/L.",
+    "evidence": "Quy tắc `ckd.outpatient.chronic_hyperkalemia_binders` chỉ kích hoạt khi `k > 5.0 && k <= 5.5` (L688). Khi bệnh nhân ngoại trú tái khám có K+ > 5.5 mmol/L (ví dụ K = 5.7 hay 6.0 mmol/L): quy tắc chất gắn kali không chạy; quy tắc `ckd.inpatient.hold_sick_day_meds` chỉ chạy ở nội trú khi nghi ngờ AKI. Hậu quả là bệnh nhân ngoại trú đang dùng Finerenone hoặc ACEi/ARB bị tăng kali máu > 5.5 mmol/L không nhận được bất kỳ khuyến cáo TẠM NGỪNG thuốc (HOLD) nào từ hệ thống, vi phạm nghiêm trọng nhãn FDA Kerendia Table 2 ('If serum potassium > 5.5 mEq/L: Withhold Kerendia') và KDIGO 2024 Practice Point 3.6.5.",
+    "suggestedFix": "Xây dựng quy tắc ngoại trú `ckd.outpatient.hyperkalemia_hold_rasi_mra`: Khi K+ > 5.5 mmol/L trên bệnh nhân ngoại trú đang dùng RASi/Finerenone, kích hoạt hành động HOLD finerenone, cân nhắc giảm liều/tạm ngừng RASi, bổ sung chất gắn kali và hẹn tái khám kiểm tra K+ sau 1–2 tuần."
+  },
+  {
+    "id": "CKD-R1-07",
+    "severity": "major",
+    "itemType": "missing",
+    "itemId": "ckd.outpatient.finerenone_uptitrate",
+    "finding": "Bỏ sót quy tắc chuẩn độ tăng liều Finerenone từ 10 mg lên 20 mg/ngày; dùng nhầm ngưỡng chuẩn độ finerenone sang quy tắc tăng liều RASi.",
+    "evidence": "Ngưỡng `ckd.finerenone.k_uptitrate_max` (4.8 mmol/L) và trích dẫn `fda.finerenone.table_2_dose_adjustment` được khai báo trong KB để tăng liều finerenone từ 10 mg lên liều đích 20 mg sau 4 tuần nếu K+ <= 4.8 mmol/L. Tuy nhiên trong src/modules/ckd/rules.outpatient.ts, KHÔNG có quy tắc nào tên là `ckd.outpatient.finerenone_uptitrate`. Ngược lại, tại quy tắc `ckd.outpatient.rasi_uptitrate` (L375, L407), lập trình viên lại lấy ngưỡng `ckd.finerenone.k_uptitrate_max` này để làm điều kiện chuẩn độ cho thuốc nhóm ACEi/ARB.",
+    "suggestedFix": "Bổ sung quy tắc `ckd.outpatient.finerenone_uptitrate` (tăng lên 20 mg/ngày cho bệnh nhân đang dùng 10 mg có eGFR >= 25 và K+ <= 4.8 mmol/L). Gỡ bỏ `ckd.finerenone.k_uptitrate_max` khỏi quy tắc chuẩn độ RASi và thay bằng ngưỡng kiểm soát K+ chuẩn của RASi (K+ <= 5.0 mmol/L)."
+  },
+  {
+    "id": "CKD-R1-08",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "ckd.outpatient.metabolic_acidosis",
+    "finding": "Quy tắc điều trị toan chuyển hóa luôn phát sinh hành động START natri bicarbonat ngay cả khi bệnh nhân đã đang sử dụng thuốc này.",
+    "evidence": "Code tại src/modules/ckd/rules.outpatient.ts (L634-665) không kiểm tra danh sách `ctx.patient.currentMeds`. Nếu bệnh nhân đã đang uống natri bicarbonat nhưng HCO3- vẫn < 18 mmol/L, engine vẫn tạo khuyến cáo `action: 'START'` với tiêu đề 'Khởi trị Natri Bicarbonat', trong khi hành động lâm sàng đúng phải là `UPTITRATE` hoặc `ADJUST` tăng liều.",
+    "suggestedFix": "Kiểm tra sự hiện diện của `sodium_bicarbonate` trong `currentMeds`. Nếu đã có, trả về `action: 'UPTITRATE'` kèm hướng dẫn chỉnh liều lên 2–4 g/ngày để đạt đích HCO3- 22–26 mmol/L."
+  },
+  {
+    "id": "CKD-R1-09",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "ckd.outpatient.chronic_hyperkalemia_binders",
+    "finding": "Thiếu thuộc tính profileDiff trong recommendation và hardcode giá trị cổng an toàn 5.0.",
+    "evidence": "Trong `produce` của quy tắc `ckd.outpatient.chronic_hyperkalemia_binders` (L692-720), logic đã phân nhánh thuốc theo profile VN (Resonium) và INTL (Patiromer) nhưng không trả về trường `profileDiff` trong Recommendation; cổng an toàn K+ ghi số literal `threshold: 5.0` thay vì gọi accessor `th('ckd.finerenone.k_initiate_max')`.",
+    "suggestedFix": "Bổ sung `profileDiff: { INTL: ..., VN: ..., US: ... }` và thay `threshold: 5.0` bằng `th('ckd.finerenone.k_initiate_max')`."
+  },
+  {
+    "id": "CKD-R1-10",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "ckd.inpatient.contrast_aki_prevention",
+    "finding": "Sử dụng phép tính số học nhân 2 trên threshold và hardcode số literal 60 trong cổng an toàn.",
+    "evidence": "Tại src/modules/ckd/rules.inpatient.ts: L313 dùng `egfr < th('ckd.referral.egfr_threshold') * 2` và L333 ghi `threshold: 60`. Vi phạm nguyên tắc không tính toán số học trên threshold để tạo ngưỡng lâm sàng mới.",
+    "suggestedFix": "Khai báo threshold riêng `ckd.contrast.egfr_risk_threshold` có giá trị 60 mL/min/1.73m2 trong kb/thresholds/ckd.json kèm trích dẫn KDIGO 2012 AKI Section 4."
+  },
+  {
+    "id": "CKD-R1-11",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "ckd.outpatient.nephrology_referral",
+    "finding": "Chưa khai thác ngưỡng chuyển tuyến KFRE 5 năm mức tối thiểu 3% được định nghĩa trong KDIGO Practice Point 2.2.1.",
+    "evidence": "KDIGO 2024 Practice Point 2.2.1 nêu rõ dải nguy cơ 3%–5% 5 năm là căn cứ chuyển chuyên khoa Thận. Threshold `ckd.kfre.referral_5y_min` (3%) đã được định nghĩa trong KB nhưng quy tắc `ckd.outpatient.nephrology_referral` chỉ bắt ngưỡng cứng `kfre5y >= 5%` (`ckd.kfre.referral_5y_max`).",
+    "suggestedFix": "Cân nhắc phát sinh khuyến cáo CÂN NHẮC chuyển tuyến khi KFRE 5 năm từ 3% đến < 5%, hoặc giải thích rõ trong rationale lý do chọn ngưỡng 5% làm mốc bắt buộc."
+  },
+  {
+    "id": "CKD-R1-12",
+    "severity": "suggestion",
+    "itemType": "ui",
+    "itemId": "ckd.outpatient.sglt2i_initiate",
+    "finding": "Rationale của SGLT2i mặc định ghi 'Khuyến cáo nhóm 1A' cho mọi trường hợp, chưa phân biệt phân nhóm eGFR 20–45 kèm UACR < 20 mg/mmol (khuyến cáo 2B).",
+    "evidence": "Theo KDIGO 2024, Rec 3.7.1 (ĐTĐ2 + CKD) và Rec 3.7.2 (CKD + UACR >= 200 mg/g hoặc kèm Suy tim) là mức 1A. Tuy nhiên Rec 3.7.3 (eGFR 20–45 kèm UACR < 200 mg/g không ĐTĐ không suy tim) chỉ là mức khuyến nghị 2B. Rationale tại L47 luôn bắt đầu bằng 'Khuyến cáo nhóm 1A (KDIGO 2024)...' cho tất cả.",
+    "suggestedFix": "Hiển thị mức khuyến cáo động: 1A cho ĐTĐ2 / UACR >= 20 mg/mmol / Suy tim; 2B cho trường hợp chỉ đạt tiêu chí eGFR 20–45 mL/min/1.73m2."
+  }
+]

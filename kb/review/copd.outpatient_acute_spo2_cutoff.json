@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.outpatient_acute_spo2_cutoff",
+  "contentHash": "835093d19fb8eb1909857a92708f058c4ad4a0ca6b609d511209718fffdca484",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.outpatient_acute_spo2_cutoff",
+      "contentHash": "f15d624ee1487e1f",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

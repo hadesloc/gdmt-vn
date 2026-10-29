@@ -1,0 +1,106 @@
+{
+  "id": "doxazosin",
+  "nameVi": "Doxazosin",
+  "inn": "Doxazosin",
+  "class": "Chẹn thụ thể Alpha-1 giao cảm",
+  "classes": [
+    "alpha1_blocker"
+  ],
+  "vnBrands": [
+    "Carduran 2 mg",
+    "Carduran XL 4 mg"
+  ],
+  "forms": [
+    "Viên nén 1 mg",
+    "Viên nén 2 mg",
+    "Viên nén 8 mg",
+    "Viên giải phóng kéo dài (XL/GITS) 4 mg"
+  ],
+  "start": {
+    "amount": 1,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Uống buổi tối trước ngủ để giảm tụt huyết áp tư thế liều đầu (hoặc 4 mg XL 1 lần/ngày)"
+  },
+  "target": {
+    "amount": 4,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Chỉnh liều dần theo đáp ứng (tối đa 16 mg/ngày trong THA kháng trị theo AHA Table 13)"
+  },
+  "titration": {
+    "step": "Tăng gấp đôi mỗi 1–2 tuần (1 mg → 2 mg → 4 mg → 8 mg, tối đa 16 mg/ngày)",
+    "intervalDays": 14,
+    "maxDose": "16 mg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "1–16 mg 1 lần/ngày",
+      "citationIds": [
+        "aha.acc.2025.table13_alpha1",
+        "esc.htn.2024.resistant_alternatives"
+      ],
+      "note": "Dược động học không thay đổi ở suy thận và không bị lọc sạch qua thận nhân tạo — dùng liều thông thường, khởi đầu 1 mg buổi tối."
+    }
+  ],
+  "hepatic": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo dùng ở suy gan nặng (Child-Pugh C); thận trọng theo dõi huyết áp ở suy gan nhẹ–vừa (Child-Pugh A, B) theo nhãn FDA Cardura Mục 8.6.",
+    "citationIds": [
+      "fda.doxazosin.hepatic_c"
+    ]
+  },
+  "gates": [],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Dữ liệu hạn chế trong thai kỳ; không phải lựa chọn hàng đầu (ưu tiên labetalol, nifedipine kéo dài, methyldopa).",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_first_line"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Bài tiết lượng nhỏ vào sữa mẹ; thận trọng hoặc ưu tiên thuốc có dữ liệu an toàn hơn khi cho con bú.",
+    "citationIds": [
+      "fda.doxazosin.lactation",
+      "esc.htn.2024.pregnancy_lactation_thiazide"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "orthostatic_hypotension",
+      "messageVi": "Tiền sử hạ huyết áp tư thế đứng có triệu chứng hoặc ngất do tiểu tiện",
+      "citationIds": [
+        "aha.acc.2025.table13_alpha1",
+        "esc.htn.2024.oh_switch_rec24"
+      ]
+    },
+    {
+      "code": "quinazoline_hypersensitivity",
+      "messageVi": "Quá mẫn với doxazosin hoặc các dẫn xuất quinazoline (prazosin, terazosin)",
+      "citationIds": [
+        "fda.doxazosin.contraindications_quinazolines"
+      ]
+    }
+  ],
+  "interactions": [
+    "KHÔNG dùng làm thuốc hạ áp đầu tay đơn độc do tăng nguy cơ suy tim sung huyết trong thử nghiệm ALLHAT — chỉ dùng ở Bước 4 THA kháng trị hoặc kèm phì đại tuyến tiền liệt lành tính (BPH).",
+    "Thuốc ức chế PDE-5 (sildenafil, tadalafil, vardenafil): hiệp đồng gây tụt huyết áp tư thế có triệu chứng — chỉ khởi đầu PDE-5i liều thấp khi bệnh nhân đã ổn định trên liều doxazosin.",
+    "Hội chứng mống mắt mềm trong mổ (Intraoperative Floppy Iris Syndrome — IFIS): bắt buộc thông báo cho bác sĩ phẫu thuật mắt trước mổ đục thủy tinh thể.",
+    "Nguy cơ hiếm gặp cương đau dương vật kéo dài (priapism) cần xử trí cấp cứu."
+  ],
+  "citationIds": [
+    "aha.acc.2025.table13_alpha1",
+    "esc.htn.2024.resistant_alternatives",
+    "vsh.htn.2022.drugs_table_other",
+    "esc.htn.2024.oh_switch_rec24",
+    "fda.doxazosin.contraindications_quinazolines",
+    "fda.doxazosin.hepatic_c",
+    "fda.doxazosin.lactation"
+  ]
+}

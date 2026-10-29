@@ -1,0 +1,87 @@
+{
+  "id": "omalizumab",
+  "nameVi": "Omalizumab",
+  "inn": "Omalizumab",
+  "class": "Anti-IgE Biologic",
+  "vnBrands": [
+    "Xolair"
+  ],
+  "forms": [
+    "Bút tiêm dưới da đóng sẵn / Lọ bột pha tiêm 75 mg, 150 mg"
+  ],
+  "start": {
+    "amount": 75,
+    "unit": "mg",
+    "frequency": "mỗi 2–4 tuần",
+    "route": "tiêm dưới da",
+    "description": "Liều 75–600 mg tiêm dưới da mỗi 2 hoặc 4 tuần tính theo nồng độ IgE huyết thanh nền và cân nặng"
+  },
+  "target": {
+    "amount": 300,
+    "unit": "mg",
+    "frequency": "mỗi 4 tuần",
+    "route": "tiêm dưới da",
+    "description": "Chuẩn độ theo bảng liều IgE và cân nặng"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận",
+      "citationIds": [
+        "gina.asthma.2026.step5_biologics"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_omalizumab_age",
+      "parameter": "age",
+      "operator": "<",
+      "threshold": 6,
+      "unit": "tuổi",
+      "action": "hold",
+      "messageVi": "Chỉ định omalizumab cho bệnh nhân hen dị ứng nặng từ 6 tuổi trở lên",
+      "citationIds": [
+        "gina.asthma.2026.step5_biologics"
+      ]
+    }
+  ],
+  "interactions": [
+    "CẢNH BÁO ĐÓNG KHUNG (FDA Boxed Warning): Nguy cơ phản vệ đe dọa tính mạng (~0,2% bệnh nhân), có thể xảy ra ngay từ liều đầu tiên hoặc khởi phát muộn sau > 1 năm điều trị đều đặn; bắt buộc khởi trị tại cơ sở y tế có sẵn adrenaline và phương tiện hồi sức cấp cứu, theo dõi chặt sau tiêm",
+    "Tá dược Polysorbate (GINA 2026): Dung dịch tiêm Omalizumab và sinh phẩm tương tự chứa polysorbate có thể gây phản ứng quá mẫn ở người dị ứng tá dược này",
+    "Phối hợp vắc-xin (GINA 2026): Không tiêm liều đầu tiên của thuốc sinh học điều trị hen cùng ngày với vắc-xin để dễ phân biệt tác dụng bất lợi của từng thuốc"
+  ],
+  "citationIds": [
+    "gina.asthma.2026.step5_biologics",
+    "gina.asthma.2026.omalizumab_anaphylaxis_02pct",
+    "gina.asthma.2026.omalizumab_polysorbate"
+  ],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Dữ liệu đăng kiểm EXPECT trên phụ nữ mang thai hen nặng không thấy tăng dị tật thai nhi.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Kháng thể IgG bài tiết qua sữa mẹ nhưng bị thoái hóa ở đường tiêu hóa trẻ sơ sinh.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity",
+      "messageVi": "Phản ứng phản vệ nặng với omalizumab",
+      "citationIds": [
+        "gina.asthma.2026.step5_biologics"
+      ]
+    }
+  ],
+  "classes": [
+    "biologic_asthma"
+  ]
+}

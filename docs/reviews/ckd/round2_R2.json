@@ -1,0 +1,119 @@
+[
+  {
+    "id": "CKD-R2-R2-01",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "ix.rasi_mra_potassium_sparing",
+    "finding": "Bỏ sót 3/5 hoạt chất ARB của module CKD (telmisartan, irbesartan, candesartan) trong luật tương tác chống chỉ định tăng kali máu ác tính ix.rasi_mra_potassium_sparing (kb/interactions/renal_rasi.json dòng 176–188). Vì KB có 6 thuốc mang lớp chuẩn hóa 'arb' (losartan, valsartan, telmisartan, irbesartan, candesartan, sacubitril_valsartan) nhưng targetIds chỉ liệt kê 3 thuốc (3/6 = 50% < ngưỡng 60% của hàm isClassWideTarget tại src/engine/safety/interactions.ts:66), toàn bộ cơ chế mở rộng theo nhóm 'arb' bị vô hiệu hóa hoàn toàn. Hệ quả: bệnh nhân CKD dùng telmisartan, irbesartan hoặc candesartan phối hợp amiloride/triamterene không nhận được bất kỳ cảnh báo tương tác nào và thậm chí còn bị khuyến cáo UPTITRATE ARB. (Lưu ý thêm: ix.triple_whammy, ix.rasi_mra_k_supplements và ix.rasi_lithium cũng thiếu irbesartan và candesartan trong drugIds).",
+    "evidence": "1) Kiểm chứng động evaluate() (docs/reviews/ckd/scratch/round2_r2_audit.ts - Probe D): Input bệnh nhân CKD ngoại trú (nam 60 tuổi, 65 kg, scr=135 µmol/L, uacr=10 mg/mmol, k=4.7 mmol/L, sbp=128 mmHg) dùng currentMeds=[{drugId:'telmisartan', dose:40}, {drugId:'amiloride', dose:5}] (tương tự với irbesartan và candesartan) -> Output: alerts=[] (0 cảnh báo tương tác!) kèm [REC] UPTITRATE rec_ckd_rasi_uptitrate ('Tăng liều telmisartan đến liều tối đa dung nạp'); trong khi đổi sang losartan hoặc valsartan phát [ALERT:critical] ix.rasi_mra_potassium_sparing. 2) Nhãn FDA Atacand (09_Nhan_Thuoc/FDA/FDA_label_candesartan.pdf, Section 7.1, tr. 8): \"7.1 Agents Increasing Serum Potassium: Co-administration of ATACAND with potassium sparing diuretics, potassium supplements, potassium-containing salt substitutes or other drugs that raise serum potassium levels may result in hyperkalemia. Monitor serum potassium in such patients.\"",
+    "suggestedFix": "Bổ sung đầy đủ cả 5 ARB ('losartan', 'valsartan', 'telmisartan', 'irbesartan', 'candesartan') vào mảng drugIds của ix.rasi_mra_potassium_sparing, ix.triple_whammy, ix.rasi_mra_k_supplements và ix.rasi_lithium trong kb/interactions/renal_rasi.json; đồng thời thêm luật chặn không phát UPTITRATE RASi tại ckd.outpatient.rasi_uptitrate khi bệnh nhân đang dùng đồng thời thuốc lợi tiểu giữ kali (amiloride, triamterene) hoặc MRA."
+  },
+  {
+    "id": "CKD-R2-R2-02",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "ckd.outpatient.rasi_uptitrate",
+    "finding": "Luật ckd.outpatient.rasi_uptitrate (src/modules/ckd/rules.outpatient.ts dòng 512–521) chỉ đối chiếu liều hiện dùng với liều đích ở chức năng thận bình thường (rasiEntry.target.amount: perindopril 10 mg, ramipril 10 mg, enalapril 20 mg, lisinopril 40 mg) mà hoàn toàn bỏ qua trần chỉnh liều thận theo CrCl/eGFR trong DrugEntry.renal. Ở bệnh nhân CKD G3b–G4 dùng ACEi thải trừ qua thận (đặc biệt perindopril, ramipril, enalapril, lisinopril, captopril), luật phát khuyến cáo UPTITRATE vượt gấp nhiều lần liều tối đa được phê duyệt theo SmPC/FDA.",
+    "evidence": "1) Kiểm chứng động evaluate() (Probe C1–C4): Input bệnh nhân nữ 72 tuổi, 50 kg, scr=250 µmol/L (eGFR ≈ 18.2 mL/phút/1.73m² [G4], CrCl ≈ 16.5 mL/phút), uacr=45 mg/mmol, k=4.6 mmol/L, sbp=136 mmHg, đang dùng currentMeds=[{drugId:'perindopril', dose:2.5, unit:'mg'}] (đã cao gấp đôi liều SmPC 2.5 mg cách ngày cho CrCl 15–30!) -> Output: [REC] UPTITRATE rec_ckd_rasi_uptitrate (\"Tăng liều Perindopril đến liều tối đa dung nạp\"). Kết quả tương tự xảy ra với ramipril 5 mg/ngày (đã kịch trần 1.25–5 mg/ngày ở eGFR < 30), enalapril 10 mg/ngày (đã kịch trần 2.5–10 mg/ngày ở eGFR 15–30) và lisinopril 5 mg/ngày. 2) EMA Coversyl SmPC Table 1 (09_Nhan_Thuoc/EMA/perindopril_Coversyl_SmPC.pdf, tr. 2, ema.perindopril.table_1_renal_adjustment): \"Table 1: dosage adjustment in renal impairment — ClCR ≥ 60: 5 mg per day; 30 < ClCR < 60: 2.5 mg per day; 15 < ClCR < 30: 2.5 mg every other day; Haemodialysed patients *, ClCR < 15: 2.5 mg on the day of dialysis.\" 3) KDIGO 2024 PP 3.6.1 (PDF tr. 44): \"highest approved dose that is tolerated\".",
+    "suggestedFix": "Trong ckd.outpatient.rasi_uptitrate (rules.outpatient.ts:512-521), tra cứu renalBand(activeRasi.drugId.toLowerCase(), metric, metricType) theo CrCl (cho perindopril) hoặc eGFR; trích xuất mức liều tối đa cho phép trong dải thận hiện tại (hoặc khai báo maxDoseMg rõ ràng trên từng renalBand trong KB) để chặn UPTITRATE khi currentDoseNum đã đạt hoặc vượt trần liều thận (và phát REDUCE/CONSIDER chỉnh liều nếu đang vượt trần thận như Perindopril > 2.5 mg cách ngày ở CrCl 15–30)."
+  },
+  {
+    "id": "CKD-R2-R2-03",
+    "severity": "major",
+    "itemType": "missing",
+    "itemId": "ckd.hypokalemia_stop_k_binders",
+    "finding": "Thiếu hoàn toàn cơ chế rà soát STOP/HOLD khi bệnh nhân đang dùng chất gắn kali đường tiêu hóa (calcium_polystyrene_sulfonate, sodium_zirconium_cyclosilicate, patiromer) nhưng có hạ kali máu (K+ < 3.5–4.0 mmol/L) hoặc dưới ngưỡng chống chỉ định nhãn của CPS (K+ < 5.0 mmol/L); đồng thời kb/drugs/calcium_polystyrene_sulfonate.json (dòng 51–62, 86–92) ghi sai ngưỡng chống chỉ định/tạm ngừng là K+ < 4.0 mmol/L (số mồ côi không có trong trích dẫn BYT 2024) thay vì K+ < 5.0 mmol/L theo SmPC gốc.",
+    "evidence": "1) Kiểm chứng động evaluate() (Probe G3 & G4): Input bệnh nhân CKD ngoại trú (scr=210 µmol/L, k=3.7 mmol/L hoặc k=4.4 mmol/L) đang dùng currentMeds=[{drugId:'calcium_polystyrene_sulfonate', dose:15, unit:'g'}] -> Output: 0 khuyến cáo STOP/HOLD trên CPS (dù gate_cps_k_low, gate_szc_k_low, gate_patiromer_k_low có trong KB JSON nhưng không được đọc bởi rules.outpatient.ts, rules.inpatient.ts hay reviewMeds.ts). 2) EMA/MHRA SmPC Calcium Resonium (09_Nhan_Thuoc/EMA/Calcium_Resonium_SmPC.html, Section 4.3 Contraindications, tr. 1): \"4.3 Contraindications: • In patients with plasma potassium levels below 5mmol/litre.\" 3) Nhãn FDA Lokelma (09_Nhan_Thuoc/FDA/FDA_label_sodium_zirconium_cyclosilicate.pdf, Section 2.2, tr. 3): \"Discontinue or decrease the dose of LOKELMA if: ... the patient develops clinically significant hypokalemia\".",
+    "suggestedFix": "1) Bổ sung luật an toàn (trong rules.outpatient.ts / rules.inpatient.ts với setting: 'both' hoặc trong reviewCurrentMedications) phát STOP/HOLD khẩn khi bệnh nhân đang dùng K-binder mà K+ < 3.5–4.0 mmol/L (và phát STOP/HOLD đối với calcium_polystyrene_sulfonate khi K+ < 5.0 mmol/L nếu không nhằm mục đích duy trì dự phòng có kiểm soát). 2) Cập nhật kb/drugs/calcium_polystyrene_sulfonate.json (contraindications & gate_cps_k_low) theo đúng SmPC Calcium Resonium Section 4.3 (K+ < 5.0 mmol/L) và bổ sung citation ema.calcium_resonium.contraindications."
+  },
+  {
+    "id": "CKD-R2-R2-04",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "ckd.outpatient.rasi_initiate",
+    "finding": "Luật ckd.outpatient.rasi_initiate (src/modules/ckd/rules.outpatient.ts dòng 281–379) phát khuyến cáo khởi trị mới (START) mức độ 1B ngay cả ở bệnh nhân CKD giai đoạn G5 chưa lọc máu (eGFR < 15 mL/phút/1.73m²), vượt ra ngoài phạm vi G1–G4 của KDIGO 2024 Rec 3.6.1–3.6.3. Đồng thời tại dòng 371, biểu thức Math.max(egfr, g4Min) ép eGFR < 15 thành 15 (kê Perindopril '2.5 mg cách ngày', mâu thuẫn với chính cam kết tại round1_RESPONSE.md mục R3-CKD-09), và tại dòng 369 luôn kê Losartan liều chuẩn 50 mg/ngày cho bệnh nhân ĐTĐ G4–G5 mà bỏ qua dải liều thận trong kb/drugs/losartan.json (G4: 25–50 mg/ngày; G5: 25 mg/ngày).",
+    "evidence": "1) Kiểm chứng động evaluate() (Probe B3–B5): Ở scr=480 µmol/L (nam 65 tuổi, 60 kg -> eGFR ≈ 10.6 mL/phút/1.73m² [G5], chưa lọc máu), uacr=40 mg/mmol, k=4.5 mmol/L, sbp=138 mmHg: không ĐTĐ -> phát [REC] START rec_ckd_rasi_start drug=perindopril dose=\"2.5 mg cách ngày\" kèm rationale \"Khuyến cáo 1B (KDIGO 2024): Bắt buộc dùng RASi...\"; có ĐTĐ -> phát [REC] START drug=losartan dose=\"50 mg x 1 lần/ngày...\". 2) KDIGO 2024 Rec 3.6.1, 3.6.2, 3.6.3 (01_Noi_Khoa/Than/KDIGO_2024_CKD_Guideline.pdf, tr. 43 / S158): cả 3 khuyến cáo khởi trị mới RASi đều giới hạn rõ ở \"(G1–G4, A3)\", \"(G1–G4, A2)\", và \"(G1–G4, A2 and A3) with diabetes (1B)\".",
+    "suggestedFix": "1) Giới hạn START thường quy (1B/2C) của ckd.outpatient.rasi_initiate cho eGFR >= thFor('egfr', 'ckd.egfr.g4_min') (15 mL/phút/1.73m²); khi eGFR < 15 chưa lọc máu, chuyển sang CONSIDER thận trọng do bác sĩ chuyên khoa Thận quyết định (hoặc không tự động khởi trị Perindopril ở G5). 2) Với Losartan khi eGFR < 30 mL/phút/1.73m², đọc trực tiếp renalBand('losartan', egfr, 'egfr')?.dose ('25–50 mg/ngày' ở G4) thay vì cố định dose('losartan', 'start')."
+  },
+  {
+    "id": "CKD-R2-R2-05",
+    "severity": "major",
+    "itemType": "matrix",
+    "itemId": "ckdMatrix.aki",
+    "finding": "Trong src/modules/ckd/matrix.ts (dòng 128–133), hàm getAkiCell() gán cứng initiate: 'rec', continue: 'rec' vô điều kiện (không kèm note cảnh báo) cho cả 4 thuốc ngoài nhóm akiHoldIds (calcium_polystyrene_sulfonate, patiromer, sodium_zirconium_cyclosilicate, sodium_bicarbonate) tại cột AKI (Đợt cấp). Việc nâng calcium_polystyrene_sulfonate từ 'ok' (ở G1–G5) lên 'rec' ở cột AKI và gán 'rec' cho patiromer trong đợt cấp trái ngược trực tiếp với UKKA 2022 và nhãn FDA.",
+    "evidence": "1) Kết xuất thực tế ckdMatrix (Section 2 của round2_r2_audit.ts): calcium_polystyrene_sulfonate có g1..dialysis = init:ok/cont:ok nhưng cột aki = init:rec/cont:rec | dose=\"15 g x 2–3 lần/ngày...\"; patiromer cột aki = init:rec/cont:rec | dose=\"8.4 g x 1 lần/ngày...\". 2) UKKA 2022 Guideline 16.6.3 (08_Bo_sung_ON_CALL/UKKA_2022_Treatment_Acute_Hyperkalaemia_Adults.pdf, tr. 14 & tr. 100): \"We suggest that calcium resonium is not used in the emergency management of severe hyperkalaemia, but may be considered in patients with moderate hyperkalaemia. (2B)\" (khởi phát chậm > 4 giờ, nguy cơ hoại tử ruột). 3) Nhãn FDA Veltassa (09_Nhan_Thuoc/FDA/FDA_label_patiromer.pdf, Section 1 Limitation of Use, tr. 1 & tr. 3): \"Veltassa should not be used as an emergency treatment for life-threatening hyperkalemia because of its delayed onset of action.\"",
+    "suggestedFix": "Tại getAkiCell() trong src/modules/ckd/matrix.ts: không trả về 'rec' vô điều kiện cho 4 thuốc này trong AKI; phân loại 'caution' cho calcium_polystyrene_sulfonate và patiromer (kèm note rõ: không dùng cấp cứu tăng K+ đe dọa tính mạng do khởi phát chậm > 4–7h; chỉ dùng khi có tăng K+ mức độ nhẹ–vừa và không tắc ruột) và 'caution'/'ok' có điều kiện cho sodium_zirconium_cyclosilicate (chỉ khi tăng K+ máu) và sodium_bicarbonate (chỉ khi có toan chuyển hóa kèm theo và không quá tải dịch/kiềm máu)."
+  },
+  {
+    "id": "CKD-R2-R2-06",
+    "severity": "major",
+    "itemType": "drug",
+    "itemId": "calcium_polystyrene_sulfonate",
+    "finding": "Sai khoảng thời gian giãn cách với thuốc uống dùng kèm của Calcium Polystyrene Sulfonate (Kalimate / Calcium Resonium): cả kb/drugs/calcium_polystyrene_sulfonate.json (dòng 66) và cảnh báo tương tác ix.potassium_binder_drug_binding (kb/interactions/diabetes_respiratory.json dòng 359) đều hướng dẫn uống cách thuốc khác \"ít nhất 2 giờ\", trong khi SmPC gốc bắt buộc cách \"ít nhất 3 giờ\" (và cân nhắc 6 giờ ở bệnh nhân liệt dạ dày).",
+    "evidence": "1) kb/drugs/calcium_polystyrene_sulfonate.json dòng 66: \"Uống cách xa các thuốc khác ít nhất 2 giờ\". Kiểm chứng động Probe G1 (CPS + Amlodipine) phát cảnh báo ix.potassium_binder_drug_binding: \"cách ít nhất 2 giờ trước hoặc sau khi uống Sodium Zirconium Cyclosilicate (Lokelma) hoặc Calcium Polystyrene Sulfonate (Resonium)\" (đồng thời vẫn còn tên '(Resonium)' chưa đồng bộ Kalimate). 2) EMA/MHRA SmPC Calcium Resonium 99.934% w/w Powder (09_Nhan_Thuoc/EMA/Calcium_Resonium_SmPC.html, Section 4.2 & Section 4.4, tr. 1): \"Administer Calcium Resonium at least 3 hours before or 3 hours after other oral medications. For patients with gastroparesis, a 6-hour separation should be considered (see sections 4.4 & 4.5).\"",
+    "suggestedFix": "Sửa dòng 66 của kb/drugs/calcium_polystyrene_sulfonate.json thành \"Uống cách xa các thuốc uống khác ít nhất 3 giờ trước hoặc sau (6 giờ nếu có liệt dạ dày) để tránh gắn kết giảm hấp thu (SmPC Section 4.2/4.4)\", đồng thời cập nhật managementVi của ix.potassium_binder_drug_binding trong kb/interactions/diabetes_respiratory.json đưa Calcium Polystyrene Sulfonate (Kalimate / Calcium Resonium) sang nhóm giãn cách ≥ 3 giờ cùng với Patiromer (chỉ SZC/Lokelma là ≥ 2 giờ)."
+  },
+  {
+    "id": "CKD-R2-R2-07",
+    "severity": "minor",
+    "itemType": "ui",
+    "itemId": "ckd.outpatient.finerenone_indication",
+    "finding": "Lỗi CKD-R2-12 từ Vòng 1 chưa được sửa trong code (dù round1_RESPONSE.md ghi đã sửa) và nay kéo theo hiển thị thông tin liều 40 mg/ngày của suy tim HFmrEF/HFpEF ngay trong tiêu đề (title) và y lệnh liều (dose) của bệnh nhân CKD thuần túy không suy tim.",
+    "evidence": "1) Kiểm chứng động evaluate() (Probe A1 & A2): Bệnh nhân ĐTĐ2 + CKD thuần túy không suy tim (conditions: {ckd:true, dm:true, htn:true}, scr=98 µmol/L, uacr=45, k=4.4) nhận [REC] START rec_ckd_finerenone_start với title=\"Khởi trị Finerenone (20 mg x 1 lần/ngày (uống) - liều đích trong CKD (hoặc khởi đầu khi eGFR >= 60 mL/phút/1.73m²); trong suy tim LVEF >= 40% (HFmrEF/HFpEF) tăng lên liều đích 40 mg/ngày nếu eGFR khởi đầu >= 60 mL/phút/1.73m²)\" (tương tự ở rec_ckd_finerenone_uptitrate tại dòng 780–782). 2) Nhãn FDA Kerendia (09_Nhan_Thuoc/FDA/FDA_label_finerenone.pdf, Section 2.3, tr. 4): \"CKD associated with T2DM or T1DM: The target daily dose of Kerendia is 20 mg orally.\"",
+    "suggestedFix": "Trong ckd.outpatient.finerenone_indication (dòng 685–689) và ckd.outpatient.finerenone_uptitrate (dòng 780–782), tạo chuỗi liều ngắn gọn từ startDoseNum / targetDoseMg kết hợp unit và frequency của DoseSpec (ví dụ `${startDoseNum} ${d.unit} x ${d.frequency} (${d.route})`) thay vì truyền toàn bộ description đa chỉ định qua fmtDose() vào title và dose."
+  },
+  {
+    "id": "CKD-R2-R2-08",
+    "severity": "minor",
+    "itemType": "matrix",
+    "itemId": "ckdMatrix.g5_dialysis",
+    "finding": "Ba bất nhất hiển thị ở cột G4, G5 (< 15, chưa lọc máu) và Lọc máu (HD/PD) trong src/modules/ckd/matrix.ts: (1) perindopril ở cột G5 (chưa lọc máu) hiển thị dose=\"2.5 mg vào ngày lọc máu\"; (2) ramipril, valsartan, candesartan chỉ có 2 dải thận (>= 30 và < 30) nên ở cả G5 (< 15) lẫn Lọc máu (HD/PD) vẫn hiển thị initiate: 'ok', continue: 'rec', không đồng nhất với enalapril/lisinopril/losartan ('caution'/'caution') và KDIGO 2024 (chỉ khuyến cáo khởi trị mới ở G1–G4); (3) getG4Cell() tại dòng 97 dùng lại ngưỡng thFor('egfr', 'ckd.sglt2i.egfr_initiate_min') (= 20) để lấy mẫu eGFR cho các thuốc không phải SGLT2i.",
+    "evidence": "1) Kết xuất thực tế ckdMatrix (Section 2 của round2_r2_audit.ts): perindopril.g5 = init:caution, cont:caution, dose=\"2.5 mg vào ngày lọc máu\"; ramipril.g5 & ramipril.dialysis = init:ok, cont:rec, dose=\"1.25–5 mg/ngày\"; valsartan.g5 & dialysis = init:ok, cont:rec; candesartan.g5 & dialysis = init:ok, cont:rec. 2) EMA Coversyl SmPC Table 1 (09_Nhan_Thuoc/EMA/perindopril_Coversyl_SmPC.pdf, tr. 2): dòng ClCR < 15 ghi rõ \"Haemodialysed patients *, ClCR < 15: 2.5 mg on the day of dialysis\".",
+    "suggestedFix": "1) Với perindopril ở cột g5 (chưa lọc máu), hiển thị liều \"2.5 mg cách ngày (thận trọng cao)\" hoặc ghi chú rõ liều \"2.5 mg vào ngày lọc máu\" chỉ áp dụng cho cột dialysis. 2) Bổ sung dải thận eGFRTo: 15 (initiate: 'caution', continue: 'caution'/'ok') cho ramipril.json, valsartan.json và candesartan.json đồng bộ với các thuốc RASi còn lại. 3) Tại getG4Cell() dòng 97, dùng điểm giữa của dải G4 từ (ckd.egfr.g4_min + ckd.egfr.g3b_min) / 2 thay vì mượn ID ngưỡng của SGLT2i."
+  },
+  {
+    "id": "CKD-R2-R2-09",
+    "severity": "minor",
+    "itemType": "drug",
+    "itemId": "perindopril",
+    "finding": "Trong kb/drugs/perindopril.json, các mức hàm lượng (2.5 mg, 5 mg, 10 mg) và bảng chỉnh liều thận đều theo dạng muối Perindopril arginine (Coversyl Arginine), nhưng inn và forms chỉ ghi chung \"Perindopril\" mà không ghi chú dạng muối arginine phân biệt với dạng muối Perindopril erbumine (tert-butylamine 2 mg, 4 mg, 8 mg) đang lưu hành phổ biến song song tại Việt Nam.",
+    "evidence": "1) kb/drugs/perindopril.json dòng 4, 14–17: \"inn\": \"Perindopril\", \"forms\": [\"Viên nén bao phim 2.5 mg\", \"Viên nén bao phim 5 mg\", \"Viên nén bao phim 10 mg\"]. 2) EMA Coversyl SmPC (09_Nhan_Thuoc/EMA/perindopril_Coversyl_SmPC.pdf, tr. 2): \"Coversyl Arginine should be introduced at a dose of 5 mg once daily...\" (5 mg perindopril arginine tương đương sinh học 4 mg perindopril tert-butylamine/erbumine).",
+    "suggestedFix": "Cập nhật forms hoặc description trong kb/drugs/perindopril.json ghi rõ \"muối Perindopril arginine 2.5 mg / 5 mg / 10 mg (tương đương 2 mg / 4 mg / 8 mg muối erbumine/tert-butylamine)\" để tránh nhầm lẫn liều khi bác sĩ kê generic tại Việt Nam."
+  },
+  {
+    "id": "CKD-R2-R2-10",
+    "severity": "minor",
+    "itemType": "drug",
+    "itemId": "finerenone",
+    "finding": "Cả 18 file DrugEntry của CKD hiện đều chưa khai báo trường cấu trúc hepatic, trong đó 3 hoạt chất có khuyến cáo/chống chỉ định suy gan quan trọng trên nhãn gốc cần lưu ý lâm sàng: finerenone (tránh dùng ở Child-Pugh C; theo dõi thêm K+ ở Child-Pugh B), losartan (sinh khả dụng tăng gấp đôi / nồng độ tăng 5 lần ở xơ gan nhẹ–vừa, khởi đầu 25 mg/ngày; chưa nghiên cứu ở suy gan nặng), và telmisartan (thải trừ > 97% qua mật, chống chỉ định tắc mật/suy gan nặng, tối đa 40 mg/ngày ở suy gan nhẹ–vừa).",
+    "evidence": "1) Nhãn FDA Kerendia (09_Nhan_Thuoc/FDA/FDA_label_finerenone.pdf, Section 8.6 Hepatic Impairment, tr. 10): \"Avoid use of Kerendia in patients with severe hepatic impairment (Child Pugh C). No dosage adjustment is recommended in patients with mild or moderate hepatic impairment (Child Pugh A or B). Consider additional serum potassium monitoring in patients with moderate hepatic impairment (Child Pugh B).\" 2) Nhãn FDA Cozaar (09_Nhan_Thuoc/FDA/FDA_label_losartan.pdf, Section 2.4 & 8.8, tr. 5 & 12): \"In patients with mild-to-moderate hepatic impairment the recommended starting dose of COZAAR is 25 mg once daily. COZAAR has not been studied in patients with severe hepatic impairment\".",
+    "suggestedFix": "Bổ sung trường hepatic (Child-Pugh A/B/C) kèm citation nhãn FDA cho kb/drugs/finerenone.json, kb/drugs/losartan.json và kb/drugs/telmisartan.json (và bổ sung contraindications biliary_obstruction / severe_hepatic_impairment cho telmisartan)."
+  },
+  {
+    "id": "CKD-R2-R2-11",
+    "severity": "minor",
+    "itemType": "drug",
+    "itemId": "calcium_polystyrene_sulfonate",
+    "finding": "Trong kb/drugs/calcium_polystyrene_sulfonate.json, lactation.status đang ghi 'compatible' ('an toàn khi cho con bú') gán nguồn byt.ckd.2024.potassium_resine_dose (BYT 2024 tr. 61 không đề cập cho con bú) và thiếu chống chỉ định tắc ruột (obstructive bowel disease) so với SmPC gốc. Ngoài ra, khi bệnh nhân dùng sodium_zirconium_cyclosilicate cùng thuốc uống (Probe G2), engine phát đồng thời 2 cảnh báo tương tác trùng lặp nội dung (ix.potassium_binder_drug_binding và ix.szc_binder_separation).",
+    "evidence": "1) EMA/MHRA SmPC Calcium Resonium (09_Nhan_Thuoc/EMA/Calcium_Resonium_SmPC.html, Section 4.3 & Section 4.6, tr. 1): Section 4.3: \"• Obstructive bowel disease.\" Section 4.6: \"No data are available regarding the use of polystyrene sulfonate resins in pregnancy and lactation. The administration of Calcium Resonium in pregnancy and during breast feeding therefore is not advised unless, in the opinion of the physician, the potential benefits outweigh any potential risks.\" 2) Probe G2 (SZC + Amlodipine): phát cả [ALERT:warning] ix.potassium_binder_drug_binding lẫn [ALERT:warning] ix.szc_binder_separation.",
+    "suggestedFix": "1) Chuyển lactation.status của calcium_polystyrene_sulfonate.json sang 'caution' theo SmPC Section 4.6 và bổ sung contraindications code 'obstructive_bowel_disease'. 2) Loại bỏ 'sodium_zirconium_cyclosilicate' khỏi ix.potassium_binder_drug_binding (vì đã có luật riêng ix.szc_binder_separation 2 giờ) để tránh phát 2 cảnh báo trùng nhau."
+  },
+  {
+    "id": "CKD-R2-R2-12",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "ckd.inpatient.hyperkalemia_moderate",
+    "finding": "Bất nhất giữa tài liệu giải trình round1_RESPONSE.md (dòng 89, 95, 118) với mã nguồn thực tế: round1_RESPONSE.md ghi đã thêm luật ckd.inpatient.hyperkalemia_severe_szc_order vào rules.inpatient.ts nhưng luật này không tồn tại trong code; đồng thời ckd.inpatient.hyperkalemia_moderate (rules.inpatient.ts:300–354) phát action: 'START' nhưng để trống drugId/dose và không phân nhánh ưu tiên chất gắn kali theo profile ('VN' vs 'INTL') như ngoại trú.",
+    "evidence": "Kiểm chứng mã nguồn src/modules/ckd/rules.inpatient.ts (467 dòng) và Probe G5/G6 (Inpatient K+=6.2 và K+=6.8, profile='VN'): chỉ có rec_ckd_hyperkalemia_mod (drug=undefined, dose=undefined) và rec_ckd_hyperkalemia_severe_bundle (drug=undefined, dose=undefined), không có ckd.inpatient.hyperkalemia_severe_szc_order như mô tả tại round1_RESPONSE.md dòng 95.",
+    "suggestedFix": "Đồng bộ lại tài liệu giải trình với mã nguồn thực tế; ở ckd.inpatient.hyperkalemia_moderate, bổ sung profileDiff ('VN': ưu tiên Kalimate 15 g hoặc Lokelma 10 g x 3 lần/ngày nếu sẵn có; 'INTL': ưu tiên SZC/Lokelma 10 g x 3 lần/ngày do khởi phát nhanh sau 1 giờ theo UKKA 2022 Guideline 10.2) hoặc gán drugId/dose rõ ràng."
+  },
+  {
+    "id": "CKD-R2-R2-13",
+    "severity": "suggestion",
+    "itemType": "missing",
+    "itemId": "ckd.outpatient.metabolic_alkalosis_hold_bicarb",
+    "finding": "Luật ckd.outpatient.metabolic_acidosis mới xử lý chiều khởi trị/tăng liều sodium_bicarbonate khi HCO3- < 18 mmol/L, nhưng chưa có nhánh khuyến cáo giảm liều/tạm ngừng khi bệnh nhân đang uống sodium_bicarbonate mà HCO3- vượt giới hạn trên mục tiêu (> 26 mmol/L, ngưỡng ckd.acidosis.hco3_target_max đã có sẵn trong kb/thresholds/ckd.json).",
+    "evidence": "kb/thresholds/ckd.json định nghĩa ckd.acidosis.hco3_target_max = 26 mmol/L (hiện chưa được tham chiếu trong rules.outpatient.ts) và kb/drugs/sodium_bicarbonate.json khai báo contraindications code 'metabolic_alkalosis'.",
+    "suggestedFix": "Bổ sung luật theo dõi/giảm liều (REDUCE/HOLD) khi bệnh nhân đang dùng sodium_bicarbonate trong currentMeds mà hco3 > thFor('hco3', 'ckd.acidosis.hco3_target_max') (26 mmol/L) để phòng tránh nhiễm kiềm chuyển hóa và tăng vôi hóa mạch máu."
+  }
+]

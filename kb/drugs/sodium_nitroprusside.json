@@ -1,0 +1,153 @@
+{
+  "id": "sodium_nitroprusside",
+  "nameVi": "Natri Nitroprusside (truyền tĩnh mạch)",
+  "inn": "Sodium nitroprusside",
+  "class": "Thuốc giãn động–tĩnh mạch trực tiếp giải phóng NO",
+  "classes": [
+    "direct_vasodilator"
+  ],
+  "vnBrands": [
+    "Nipride",
+    "Nitropress"
+  ],
+  "forms": [
+    "Lọ bột pha tiêm truyền 50 mg (kèm vỏ bọc cản sáng)"
+  ],
+  "start": {
+    "amount": "0.3–0.5",
+    "unit": "mcg/kg/phút",
+    "frequency": "truyền liên tục qua bơm tiêm điện bọc cản sáng",
+    "route": "truyền tĩnh mạch",
+    "description": "BẮT BUỘC đặt catheter theo dõi huyết áp động mạch xâm lấn liên tục tại ICU để tránh tụt áp quá mức (overshoot)"
+  },
+  "target": {
+    "amount": "0.5–3",
+    "unit": "mcg/kg/phút",
+    "frequency": "truyền liên tục",
+    "route": "truyền tĩnh mạch",
+    "description": "Tăng 0,5 mcg/kg/phút mỗi 5 phút; tốc độ tối đa 10 mcg/kg/phút TUYỆT ĐỐI KHÔNG QUÁ 10 PHÚT"
+  },
+  "titration": {
+    "step": "Tăng 0,5 mcg/kg/phút mỗi 5 phút; giữ thời gian truyền ngắn nhất có thể (nguy cơ ngộ độc cyanide/thiocyanate tăng mạnh khi ≥ 3 mcg/kg/phút hoặc ≥ 72 giờ)",
+    "intervalDays": 1,
+    "maxDose": "10 mcg/kg/phút (tối đa không quá 10 phút; truyền kéo dài nên ≤ 2–3 mcg/kg/phút)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "0.3–3 mcg/kg/phút trong thời gian ngắn nhất có thể",
+      "citationIds": [
+        "aha.acc.2025.iv_nitroprusside"
+      ],
+      "note": "Theo dõi sát khí máu (toan chuyển hóa tăng khoảng trống anion/lactate) và tri giác."
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "not_rec",
+      "continue": "not_rec",
+      "citationIds": [
+        "aha.acc.2025.iv_nitroprusside"
+      ],
+      "note": "Nguy cơ rất cao tích lũy thiocyanate gây ngộ độc thần kinh khi suy thận (sCr > 3 mg/dL hoặc eGFR < 30), đặc biệt nếu truyền ≥ 3 mcg/kg/phút hoặc kéo dài — ưu tiên Nicardipine hoặc Clevidipine."
+    }
+  ],
+  "hepatic": {
+    "status": "avoid",
+    "notesVi": "Tránh dùng ở suy gan do giảm hoạt tính enzyme rhodanese gan khử độc cyanide thành thiocyanate — nguy cơ ngộ độc cyanide tử vong rất cao.",
+    "citationIds": [
+      "aha.acc.2025.iv_nitroprusside"
+    ]
+  },
+  "gates": [
+    {
+      "id": "gate_snp_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định Natri Nitroprusside trong thai kỳ do nguy cơ ngộ độc cyanide thai nhi tử vong (AHA/ACC 2025 COR 3: Harm).",
+      "citationIds": [
+        "aha.acc.2025.pregnancy_contra_rec5",
+        "vsh.htn.2022.pregnancy_table16_drugs_postpartum"
+      ]
+    },
+    {
+      "id": "gate_snp_sbp_90",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 90,
+      "unit": "mmHg",
+      "action": "stop",
+      "messageVi": "Ngưng truyền Natri Nitroprusside ngay lập tức khi HATT < 90 mmHg.",
+      "citationIds": [
+        "aha.acc.2025.iv_nitroprusside"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "CHỐNG CHỈ ĐỊNH trong thai kỳ (AHA/ACC 2025 COR 3: Harm; VSH 2022 Bảng 16) do thuốc qua nhau thai gây ngộ độc cyanide thai nhi tử vong.",
+    "citationIds": [
+      "aha.acc.2025.pregnancy_contra_rec5",
+      "vsh.htn.2022.pregnancy_table16_drugs_postpartum"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Chất chuyển hóa thiocyanate bài tiết vào sữa mẹ và ức chế tuyến giáp trẻ — không cho con bú khi dùng thuốc.",
+    "citationIds": [
+      "aha.acc.2025.iv_nitroprusside"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Thai kỳ (COR 3: Harm — độc tính cyanide thai nhi)",
+      "citationIds": [
+        "aha.acc.2025.pregnancy_contra_rec5",
+        "vsh.htn.2022.pregnancy_table16_drugs_postpartum"
+      ]
+    },
+    {
+      "code": "acute_cerebrovascular_disease_icp",
+      "messageVi": "Bệnh mạch máu não cấp / tăng áp lực nội sọ (giãn mạch não làm tăng áp lực nội sọ và tăng tử vong — AHA Table 26)",
+      "citationIds": [
+        "aha.acc.2025.iv_nitroprusside"
+      ]
+    },
+    {
+      "code": "pde5_inhibitor_use",
+      "messageVi": "Đang dùng thuốc ức chế PDE-5 (sildenafil, vardenafil, tadalafil) hoặc riociguat — gây tụt huyết áp cực nặng không hồi phục",
+      "citationIds": [
+        "aha.acc.2025.table27_aortic_acs"
+      ]
+    },
+    {
+      "code": "coarctation_of_aorta",
+      "messageVi": "Tăng huyết áp bù trừ như hẹp eo động mạch chủ hoặc thông động-tĩnh mạch",
+      "citationIds": [
+        "aha.acc.2025.iv_nitroprusside"
+      ]
+    },
+    {
+      "code": "vitamin_b12_deficiency",
+      "messageVi": "Teo thị thần kinh bẩm sinh Leber, nhược thị do thuốc lá hoặc thiếu hụt nặng vitamin B12",
+      "citationIds": [
+        "aha.acc.2025.iv_nitroprusside"
+      ]
+    }
+  ],
+  "interactions": [
+    "NGỘ ĐỘC CYANIDE / THIOCYANATE (toan chuyển hóa tăng lactate, lú lẫn, co giật, loạn nhịp): ngưng truyền ngay lập tức và dùng thuốc giải độc Sodium thiosulfate hoặc Hydroxocobalamin/Cyanocobalamin (AHA Table 26).",
+    "Bắt buộc bọc kín bình và dây truyền tránh ánh sáng để ngăn phân hủy quang hóa tạo ion cyanide.",
+    "Trong bóc tách động mạch chủ cấp: chỉ truyền SAU KHI đã chẹn beta kiểm soát nhịp tim < 60 chu kỳ/phút; trong bệnh mạch vành cấp cần tránh hiện tượng cướp máu mạch vành (coronary steal — ưu tiên nitroglycerin)."
+  ],
+  "citationIds": [
+    "aha.acc.2025.iv_nitroprusside",
+    "aha.acc.2025.pregnancy_contra_rec5",
+    "vsh.htn.2022.pregnancy_table16_drugs_postpartum",
+    "aha.acc.2025.table27_aortic_acs"
+  ]
+}

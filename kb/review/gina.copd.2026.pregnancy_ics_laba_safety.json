@@ -1,0 +1,26 @@
+{
+  "itemId": "gina.copd.2026.pregnancy_ics_laba_safety",
+  "contentHash": "529431a44ac4c6c67fc4a6448d37e7934ba69b5814aa5e3dd1932b76bc23f26b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gina.copd.2026.pregnancy_ics_laba_safety",
+      "contentHash": "da30efd2a7603bab",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

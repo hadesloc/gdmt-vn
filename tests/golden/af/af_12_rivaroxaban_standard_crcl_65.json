@@ -1,0 +1,57 @@
+{
+  "id": "af_12_rivaroxaban_standard_crcl_65",
+  "titleVi": "Rivaroxaban liều chuẩn 20mg qd: CrCl 50.8 mL/min (ADV_AF_14)",
+  "source": "ESC 2024 AF Table 11 / esc.af.2024.table11_doac_dosing",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "male",
+    "weight": 66,
+    "height": 165,
+    "sbp": 132,
+    "dbp": 80,
+    "hr": 76,
+    "rhythm": "afib",
+    "scr": 95,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "rivaroxaban",
+        "name": "Xarelto",
+        "dose": 20,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "rivaroxaban",
+        "action": "CONTINUE",
+        "doseContains": "20 mg"
+      }
+    ]
+  },
+  "descriptionVi": "CrCl 50.8 mL/min >= 50 (ADV_AF_14): Duy trì Rivaroxaban liều chuẩn 20 mg/ngày cùng bữa ăn tối."
+}

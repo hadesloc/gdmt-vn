@@ -1,0 +1,35 @@
+[
+  {
+    "id": "who.mgso4.contra_brady_conduction_renal",
+    "sourceId": "who_mgso4_inresa_2025",
+    "pdfPage": 2,
+    "locator": "4.3 Contraindications",
+    "quote": "Marked bradycardia (slow heart beat), myasthenia gravis (muscle weakness) and AV block (disruption of the heart’s impulse conduction system) or other cardiac conduction disturbances and diathesis for infection stones (calcium, magnesium ammonium phosphate stones), severe renal dysfunction, anuria, dehydration.",
+    "quoteVi": "SmPC MgSO4: chống chỉ định nhịp chậm rõ, nhược cơ, block AV/rối loạn dẫn truyền khác và suy thận nặng/vô niệu; không cung cấp ngưỡng eGFR hay liều hen 1 g."
+  },
+  {
+    "id": "who.mgso4.renal_caution_monitoring",
+    "sourceId": "who_mgso4_inresa_2025",
+    "pdfPage": 4,
+    "locator": "4.9 Overdose / high-dose monitoring",
+    "quote": "To be used only with special caution in patients with mild to moderately pronounced renal insufficiency.",
+    "quoteVi": "Đặc biệt thận trọng khi suy thận nhẹ đến vừa; cần xác nhận liều và theo dõi độc tính."
+  },
+  {
+    "id": "who.mgso4.monitoring_reflex_resp_urine",
+    "sourceId": "who_mgso4_inresa_2025",
+    "pdfPage": 4,
+    "locator": "4.9 Overdose / monitoring",
+    "quote": "With high-dose magnesium sulfate therapy, the following must be checked: 1. Monitoring of cardiovascular function 2. Patellar tendon reflexes (knee tendon reflexes); these must be maintained. Dose reduction if they are no longer responsive. 3. The respiratory rate should be no less than 16 breaths/min. 4. Urine output should be 25 ml per hour or 100 ml per 4 hours. If it is any lower, there is a risk of hypermagnesaemia (excessive high magnesium concentrations in the blood). 5. As an antidote, 10% calcium gluconate ampoules must be readily available.",
+    "quoteVi": "Theo dõi tim mạch, phản xạ gân xương, hô hấp, nước tiểu và chuẩn bị calcium gluconate khi truyền MgSO4."
+  },
+  {
+    "id": "aha.2025.bradycardia_hr_50",
+    "sourceId": "aha_2025_adult_als",
+    "pdfPage": 37,
+    "locator": "Initial Management of Bradycardia / Synopsis",
+    "quote": "Bradycardia has historically been defined as a ventricu-\nlar heart rate of less than 60/min. However, the “2018 \nACC/AHA/HRS Guideline on the Evaluation and Man-\nagement of Patients With Bradycardia and Cardiac Con-\nduction Delay” adopted a lower threshold of less than \n50/min, reflecting population studies that commonly use \nthis lower cutoff.1",
+    "quoteVi": "AHA 2025 nêu định nghĩa nhịp chậm dưới 50/phút theo ACC/AHA/HRS; cần đánh giá trong bối cảnh lâm sàng. Đây là mốc triage, không phải ngưỡng dược lý riêng của MgSO4.",
+    "printedPage": "S574"
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "id": "lipid_27_inpatient_acs_alt_elevation",
+  "titleVi": "ACS nội viện kèm tổn thương gan cấp (ALT 5.2x ULN) - Không khởi trị Statin",
+  "source": "ESC/EAS 2019 / esc.lipid.2019.monitoring_alt_elevation",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 61,
+    "sex": "male",
+    "weight": 68,
+    "height": 168,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 84,
+    "scr": 92,
+    "tc": 5.4,
+    "hdl": 1.0,
+    "ldl": 3.5,
+    "tg": 1.8,
+    "conditions": {
+      "ascvd": true,
+      "acuteAcsWithin24h": true
+    },
+    "customInputs": {
+      "altUlnTimes": 5.2
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      },
+      {
+        "drugId": "rosuvastatin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy R3-LIPID-01: ACS nội viện có ALT >= 3x ULN bắt buộc chặn khởi trị statin cường độ cao."
+}

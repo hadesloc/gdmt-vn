@@ -1,0 +1,57 @@
+[
+  {
+    "id": "kdigo.ckd.2024.sglt2i_initiate",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 44,
+    "printedPage": "S215",
+    "locator": "Recommendation 1.3.1 / PDF p. 44",
+    "quote": "with CKD with an SGLT2i for the following (1A): /C15 eGFR ‡20 ml/min per 1.73 m 2 with urine ACR ‡200 mg/g ( ‡20 mg/mmol), or /C15 heart failure, irrespective of level of albumin",
+    "quoteVi": "Khuyến cáo điều trị người bệnh CKD bằng SGLT2i trong các trường hợp sau (1A): eGFR >= 20 ml/min/1.73 m2 kèm ACR nước tiểu >= 200 mg/g (>= 20 mg/mmol), hoặc suy tim bất kể mức albumin niệu.",
+    "cor": "1",
+    "loe": "A"
+  },
+  {
+    "id": "kdigo.ckd.2024.sglt2i_continue_below_20",
+    "sourceId": "kdigo_2024_ckd",
+    "pdfPage": 44,
+    "printedPage": "S215",
+    "locator": "Practice Point 3.7.2 / PDF p. 44",
+    "quote": "asonable to continue an SGLT2i even if the eGFR falls below 20 ml/min per 1.73 m 2, unless it is not tolerated or KRT is initiated.",
+    "quoteVi": "Hợp lý khi tiếp tục duy trì SGLT2i ngay cả khi eGFR giảm xuống dưới 20 ml/min/1.73 m2, trừ khi không dung nạp hoặc bắt đầu điều trị thay thế thận.",
+    "cor": "conditional",
+    "loe": "B"
+  },
+  {
+    "id": "esc.hf.2026.dapagliflozin_hf_rec",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "printedPage": "37",
+    "locator": "Recommendations / PDF p. 37",
+    "quote": "An SGLT2-I (dapagliflozin or empagliflozin) is recommended in patients with symptomatic HF independent of LVEF to reduce the risk of HF",
+    "quoteVi": "Khuyến cáo dùng ức chế SGLT2 (dapagliflozin hoặc empagliflozin) cho bệnh nhân suy tim có triệu chứng bất kể phân suất tống máu LVEF để giảm nguy cơ nhập viện vì suy tim hoặc tử vong tim mạch.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "esc.hf.2026.dapagliflozin_dose_10mg",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 37,
+    "printedPage": "37",
+    "locator": "Table 11 / Doses of disease-modifying drugs / PDF p. 37",
+    "quote": "SGLT2-Is Dapagliflozin 10 mg o.d. 10 mg o.d. Empagliflozin 10 mg o.d. 10 mg o.d.",
+    "quoteVi": "Liều khuyến cáo dựa trên bằng chứng của Dapagliflozin trong suy tim: khởi đầu 10 mg 1 lần/ngày, liều đích 10 mg 1 lần/ngày.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.rec_9_8_sglt2i_hf",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 8,
+    "printedPage": "S165",
+    "locator": "Recommendation 9.8 / PDF p. 8",
+    "quote": "9.8 In adults with type 2 diabetes who have heart failure (HF) (with either re- duced or preserved ejection fraction), an SGLT2 inhibitor is recommended for both glyce",
+    "quoteVi": "Ở người lớn mắc đái tháo đường típ 2 kèm suy tim (phân suất tống máu giảm hoặc bảo tồn), thuốc ức chế SGLT2 được khuyến cáo cho cả kiểm soát đường huyết và cải thiện kết cục suy tim.",
+    "cor": "strong",
+    "loe": "A"
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "id": "ckd_19_rasi_contra_pregnancy",
+  "titleVi": "Chống chỉ định tuyệt đối nhóm RASi ở phụ nữ mang thai mắc CKD",
+  "source": "KDIGO 2024 CKD Rec 3.6.1 / kdigo.ckd.2024.rec_3_6_1_rasi_a3_nondm",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_19",
+    "name": "BN CKD 19",
+    "age": 29,
+    "sex": "female",
+    "weight": 56,
+    "sbp": 138,
+    "dbp": 88,
+    "hr": 80,
+    "scr": 90,
+    "k": 4.1,
+    "uacr": 35,
+    "conditions": {
+      "ckd": true,
+      "htn": true,
+      "pregnant": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_ckd_rasi_contra_preg",
+        "action": "AVOID"
+      }
+    ]
+  },
+  "descriptionVi": "Thai kỳ là chống chỉ định tuyệt đối của ACEi và ARB."
+}

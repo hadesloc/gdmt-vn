@@ -1,0 +1,55 @@
+{
+  "id": "dm2_32_icu_dka_active_management",
+  "titleVi": "Cấp cứu DKA kèm K+ 4.6 mmol/L - Truyền Insulin 0.1 U/kg/h + Bù dịch",
+  "source": "Consensus 2024 DKA",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 40,
+    "sex": "male",
+    "weight": 70,
+    "height": 170,
+    "sbp": 105,
+    "dbp": 68,
+    "hr": 110,
+    "scr": 120,
+    "k": 4.6,
+    "glucose": 22.5,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "dkaSuspected": true,
+      "bloodKetones": 3.8,
+      "venousPh": 7.22,
+      "serumBicarb": 12
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_dm2_dka_active_management",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "DKA với K+ an toàn: Truyền insulin và bù dịch."
+}

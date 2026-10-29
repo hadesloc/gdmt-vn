@@ -1,0 +1,49 @@
+{
+  "id": "icu_dka_0130",
+  "titleVi": "Toan máu tăng đường huyết mất nước nặng lúc nửa đêm",
+  "source": "on-call:icu_dka_0130",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_icu_dka_0130",
+    "name": "Nữ 34 tuổi",
+    "age": 34,
+    "sex": "female",
+    "weight": 61,
+    "sbp": 98,
+    "dbp": 62,
+    "hr": 122,
+    "conditions": {
+      "dm": true
+    },
+    "selectedModules": [
+      "dm2"
+    ],
+    "currentMeds": [],
+    "glucose": 26.5,
+    "k": 5.2,
+    "hco3": 11,
+    "na": 132
+  },
+  "expect": {
+    "mustInclude": [],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Thở nhanh sâu, nôn nhiều; đường huyết cao. Đái tháo đường type 1, bỏ insulin nền 2 ngày vì hết thuốc; nôn và đau bụng. Niêm khô, thở Kussmaul, không phù phổi; tỉnh nhưng mệt. Đường huyết mao mạch rất cao; cần điện giải, khí máu tĩnh mạch, β-hydroxybutyrate và ECG.",
+  "notes": "TODO: Ca nháp nội viện chuyển từ on-call. Module agent chịu trách nhiệm điền expect.mustInclude và mustNotInclude."
+}

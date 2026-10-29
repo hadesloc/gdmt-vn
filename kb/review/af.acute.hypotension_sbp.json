@@ -1,0 +1,26 @@
+{
+  "itemId": "af.acute.hypotension_sbp",
+  "contentHash": "de4eaa7e29a65577901e18b5e186509177d3ce9ad1f975668fd3172c21e9a74a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.acute.hypotension_sbp",
+      "contentHash": "9564af7abe7b57da",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.acute.hypotension_sbp (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

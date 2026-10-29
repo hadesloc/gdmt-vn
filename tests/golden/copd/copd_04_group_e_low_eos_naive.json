@@ -1,0 +1,63 @@
+{
+  "id": "copd_04_group_e_low_eos_naive",
+  "titleVi": "COPD Nhóm E mới chẩn đoán + BCAT < 300 /µL: Khởi đầu LABA+LAMA",
+  "source": "GOLD 2026 Report p. 75 / Initial Group E LABA+LAMA",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_04",
+    "age": 69,
+    "sex": "male",
+    "weight": 60,
+    "height": 165,
+    "sbp": 128,
+    "dbp": 80,
+    "hr": 76,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "fev1FvcRatio": 0.48,
+      "fev1PredPct": 46,
+      "mmrc": 2,
+      "cat": 15,
+      "moderateExacerbations": 2,
+      "hospitalizations": 0,
+      "bloodEos": 80,
+      "smokingStatus": "former",
+      "currentInhaler": "none"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "tiotropium_olodaterol",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "action": "START"
+      }
+    ]
+  }
+}

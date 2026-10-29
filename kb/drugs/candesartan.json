@@ -1,0 +1,158 @@
+{
+  "id": "candesartan",
+  "nameVi": "Candesartan",
+  "inn": "Candesartan cilexetil",
+  "class": "ARB",
+  "classes": [
+    "arb"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Atacand"
+  ],
+  "forms": [
+    "Viên nén 4 mg",
+    "Viên nén 8 mg",
+    "Viên nén 16 mg"
+  ],
+  "start": {
+    "amount": 8,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "8 mg/ngày (4 mg nếu suy thận eGFR < 30)"
+  },
+  "target": {
+    "amount": 32,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "16–32 mg/ngày"
+  },
+  "titration": {
+    "step": 8,
+    "intervalDays": 14,
+    "maxDose": "32 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "8–32 mg/ngày",
+      "citationIds": [
+        "kdigo.ckd.2024.rec_3_6_1_rasi_a3_nondm"
+      ]
+    },
+    {
+      "eGFRFrom": 15,
+      "eGFRTo": 30,
+      "initiate": "ok",
+      "continue": "rec",
+      "dose": "4–32 mg/ngày (khởi đầu 4 mg/ngày ở suy thận nặng, chuẩn độ tối đa 32 mg/ngày)",
+      "note": "AUC và Cmax tăng gấp đôi khi CrCl < 30 mL/phút; khởi đầu thận trọng 4 mg/ngày, chuẩn độ theo đáp ứng huyết áp và K+ đến tối đa 32 mg/ngày (BYT 2024 Bảng 12)",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_7_continue_egfr_below_30",
+        "byt.ckd.2024.table_12_arb_no_renal_ceiling"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "4–32 mg/ngày (khởi đầu 4 mg/ngày, chuẩn độ theo HA và K+ tối đa 32 mg/ngày)",
+      "note": "Không đào thải qua màng lọc thận nhân tạo; khởi đầu 4 mg/ngày và theo dõi sát kali máu, huyết áp ở eGFR < 15 mL/phút/1.73m² hoặc lọc máu (BYT 2024 Bảng 12)",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_5_rasi_reduce_stop",
+        "byt.ckd.2024.table_12_arb_no_renal_ceiling"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_cande_k_max",
+      "parameter": "K",
+      "operator": ">",
+      "threshold": 5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm hoãn candesartan khi K+ > 5.0 mmol/L",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_2_rasi_monitoring"
+      ]
+    },
+    {
+      "id": "gate_candesartan_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối nhóm thuốc ức chế thụ thể ARB trong thai kỳ (Boxed Warning: độc tính thai nhi)",
+      "citationIds": [
+        "fda.losartan.boxed_pregnancy"
+      ]
+    }
+  ],
+  "interactions": [
+    "Tránh phối hợp ACEi"
+  ],
+  "citationIds": [
+    "kdigo.ckd.2024.rec_3_6_1_rasi_a3_nondm",
+    "kdigo.ckd.2024.rec_3_6_4_avoid_dual_rasi",
+    "fda.losartan.boxed_pregnancy",
+    "esc.2025.pregnancy.rasi_lactation",
+    "fda.losartan.lactation_8_2",
+    "byt.ckd.2024.table_12_arb_no_renal_ceiling",
+    "fda.candesartan.moderate_hepatic_start",
+    "fda.candesartan.severe_hepatic_no_dosing",
+    "uk.candesartan.hepatic_cholestasis_contra"
+  ],
+  "hepatic": {
+    "status": "caution",
+    "note": "Nhãn FDA Atacand: khởi đầu 8 mg/ngày cho THA ở suy gan trung bình; không đưa khuyến cáo liều ở suy gan nặng. SmPC Anh/Viatris chống chỉ định suy gan nặng/ứ mật; GDMT-VN áp dụng cổng thận trọng đó ở cả ba profile. Không coi liều khởi đầu là trần duy trì hoặc giảm nửa mọi liều hiện tại.",
+    "notesVi": "Nhãn FDA Atacand: khởi đầu 8 mg/ngày cho THA ở suy gan trung bình; không đưa khuyến cáo liều ở suy gan nặng. SmPC Anh/Viatris chống chỉ định suy gan nặng/ứ mật; GDMT-VN áp dụng cổng thận trọng đó ở cả ba profile. Không coi liều khởi đầu là trần duy trì hoặc giảm nửa mọi liều hiện tại.",
+    "citationIds": [
+      "fda.candesartan.moderate_hepatic_start",
+      "fda.candesartan.severe_hepatic_no_dosing",
+      "uk.candesartan.hepatic_cholestasis_contra"
+    ]
+  },
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối nhóm thuốc ức chế thụ thể ARB trong thai kỳ (Boxed Warning FDA: độc tính thai nhi, giảm sản sọ và tử vong sơ sinh)",
+    "citationIds": [
+      "fda.losartan.boxed_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo dùng nhóm ARB khi cho con bú; ưu tiên chuyển sang thuốc hạ áp an toàn khi cho con bú như Enalapril hoặc Captopril (ESC 2025)",
+    "citationIds": [
+      "esc.2025.pregnancy.rasi_lactation",
+      "fda.losartan.lactation_8_2"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định tuyệt đối ARB trong thai kỳ (Boxed Warning)",
+      "citationIds": [
+        "fda.losartan.boxed_pregnancy"
+      ]
+    },
+    {
+      "code": "concomitant_acei_dri",
+      "messageVi": "Chống chỉ định phối hợp đồng thời với thuốc ức chế men chuyển (ACEi) hoặc aliskiren",
+      "citationIds": [
+        "kdigo.ckd.2024.rec_3_6_4_avoid_dual_rasi"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định theo SmPC Anh khi suy gan nặng hoặc ứ mật; FDA Atacand không đưa khuyến cáo liều cho suy gan nặng.",
+      "citationIds": [
+        "uk.candesartan.hepatic_cholestasis_contra"
+      ]
+    }
+  ]
+}

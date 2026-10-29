@@ -1,0 +1,46 @@
+{
+  "id": "ckd_43_perindopril_g4_renal_dose_q48h",
+  "titleVi": "Ngoại trú - CKD G4 (eGFR ~19 mL/phút/1.73m²) không ĐTĐ có UACR A3 -> Khởi trị Perindopril chỉnh liều thận 2.5 mg cách ngày (Regression R3-CKD-09)",
+  "source": "EMA SmPC Coversyl (Perindopril) Table 1 & KDIGO 2024 Rec 3.6.1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_43",
+    "name": "BN CKD 43",
+    "age": 67,
+    "sex": "male",
+    "weight": 64,
+    "sbp": 144,
+    "dbp": 86,
+    "hr": 74,
+    "scr": 295,
+    "k": 4.5,
+    "uacr": 75,
+    "conditions": {
+      "ckd": true,
+      "htn": true
+    },
+    "currentMeds": [],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "perindopril", "action": "START", "doseContains": "2.5 mg cách ngày" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy R3-CKD-09: Bệnh nhân suy thận nặng G4 (eGFR 15–29 mL/phút/1.73m²) được chỉnh liều Perindopril 2.5 mg cách ngày đọc trực tiếp từ KB SmPC thay vì liều 5 mg/ngày không chỉnh thận."
+}

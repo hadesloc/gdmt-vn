@@ -1,0 +1,26 @@
+{
+  "itemId": "byt.copd.2026.pulmonary_rehab_benefits",
+  "contentHash": "3a9c5e7f1ec38fc3531bbf5243e771699a062bb461505dfb4b8176bb085c25d2",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "byt.copd.2026.pulmonary_rehab_benefits",
+      "contentHash": "36c827ba22db5cf4",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

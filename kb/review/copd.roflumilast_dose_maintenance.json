@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.roflumilast_dose_maintenance",
+  "contentHash": "3c041f7596dfb93535194bf8a1fb983ae29cf9ac65a506c626e7c0478d43c637",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.roflumilast_dose_maintenance",
+      "contentHash": "bd05daccc71ce71e",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "itemId": "ckd.acidosis.hco3_outpatient_emergency",
+  "contentHash": "2d3b9de59d6b1ca795a8e87efb2b9fb4732d72a702f566d2e27e98193eaed209",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.acidosis.hco3_outpatient_emergency",
+      "contentHash": "e5229e307bb9a6e8",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T07:03:44.560Z",
+          "role": "agent_e3_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 2 cho ckd.acidosis.hco3_outpatient_emergency."
+        },
+        {
+          "round": 3,
+          "reviewedAt": "2026-10-27T18:00:00.000Z",
+          "role": "agent_e4_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 3 cho ckd.acidosis.hco3_outpatient_emergency."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

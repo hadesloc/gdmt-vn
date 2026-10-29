@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.colchicine.egfr_severe_renal_min",
+  "contentHash": "8b996c6f57e5b1121eb6f2f3c6d411ca74d75d814b2cb372182b440f4d4c6e88",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.colchicine.egfr_severe_renal_min",
+      "contentHash": "f7b3321b71efca30",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.colchicine.egfr_severe_renal_min"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

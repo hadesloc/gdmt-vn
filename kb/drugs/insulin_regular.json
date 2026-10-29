@@ -1,0 +1,99 @@
+{
+  "id": "insulin_regular",
+  "nameVi": "Insulin Regular (Insulin người tác dụng ngắn / Regular Human Insulin)",
+  "inn": "Insulin human",
+  "class": "Short-acting Human Insulin",
+  "classes": [
+    "insulin",
+    "insulin_bolus"
+  ],
+  "vnBrands": [
+    "Actrapid",
+    "Humulin R"
+  ],
+  "forms": [
+    "Lọ 10 mL 100 U/mL (1000 đơn vị), tiêm/truyền tĩnh mạch và tiêm dưới da",
+    "Bút tiêm 3 mL 100 U/mL (300 đơn vị)"
+  ],
+  "start": {
+    "amount": 0.1,
+    "unit": "U/kg/h",
+    "frequency": "truyền tĩnh mạch liên tục",
+    "route": "tĩnh mạch",
+    "description": "Phác đồ chuẩn cấp cứu DKA (trong HHS đơn thuần không toan dùng 0.05 U/kg/h)"
+  },
+  "target": {
+    "amount": 0.1,
+    "unit": "U/kg/h",
+    "frequency": "truyền tĩnh mạch liên tục",
+    "route": "tĩnh mạch",
+    "description": "Chuẩn độ theo tốc độ giảm glucose máu (giảm 2.8–4.2 mmol/L/h)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "0.05–0.1 U/kg/h truyền TM, chuẩn độ theo đường huyết",
+      "citationIds": [
+        "ada.dm2.2024.dka_insulin_rate"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Giảm liều 25–50% và theo dõi sát đường huyết",
+      "note": "Giảm độ thanh thải insulin qua thận ở suy thận nặng; chuẩn độ cẩn trọng",
+      "citationIds": [
+        "ada.dm2.2024.dka_insulin_rate"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_regular_k_min",
+      "parameter": "K+",
+      "operator": "<",
+      "threshold": 3.5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "TẠM HOÃN truyền insulin khi K⁺ < 3.5 mmol/L để bù kali trước (Đồng thuận Quốc tế 2024)",
+      "citationIds": [
+        "ada.dm2.2024.dka_potassium_hold_insulin"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Insulin người an toàn tuyệt đối trong thai kỳ (FDA Category B / ADA 2026)",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_insulin",
+      "byt.dm2.2020.pregnancy_insulin"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "An toàn khi nuôi con bú (phân tử protein bị phân hủy trong đường tiêu hóa trẻ)",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_insulin"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypokalemia",
+      "messageVi": "Chống chỉ định tuyệt đối truyền insulin khi Kali máu < 3.5 mmol/L",
+      "citationIds": [
+        "ada.dm2.2024.dka_potassium_hold_insulin"
+      ]
+    }
+  ],
+  "interactions": [
+    "Phối hợp với thuốc hạ kali (lợi tiểu quai, beta-2 agonist) làm tăng nguy cơ hạ kali máu cấp"
+  ],
+  "citationIds": [
+    "ada.dm2.2024.dka_insulin_rate",
+    "ada.dm2.2024.dka_potassium_hold_insulin",
+    "ada.dm2.2026.pregnancy_insulin"
+  ]
+}

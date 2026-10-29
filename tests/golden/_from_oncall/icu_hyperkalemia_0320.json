@@ -1,0 +1,48 @@
+{
+  "id": "icu_hyperkalemia_0320",
+  "titleVi": "ECG biến đổi khi lọc máu bị hoãn",
+  "source": "on-call:icu_hyperkalemia_0320",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_icu_hyperkalemia_0320",
+    "name": "Nam 63 tuổi",
+    "age": 63,
+    "sex": "male",
+    "weight": 68,
+    "sbp": 100,
+    "dbp": 64,
+    "hr": 52,
+    "conditions": {
+      "ckd": true
+    },
+    "selectedModules": [
+      "ckd"
+    ],
+    "currentMeds": [],
+    "k": 7.2,
+    "scr": 520,
+    "hco3": 15
+  },
+  "expect": {
+    "mustInclude": [],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bác sĩ ơi, bệnh nhân suy thận yếu hơn; ECG monitor có sóng T nhọn. Bệnh thận giai đoạn cuối, bỏ buổi lọc máu hôm qua do đường vào mạch máu trục trặc. Yếu cơ, hồi hộp; mạch chậm hơn lần khám trước. Không đau ngực; đang dùng thuốc huyết áp và thuốc bổ sung kali chưa rõ loại.",
+  "notes": "TODO: Ca nháp nội viện chuyển từ on-call. Module agent chịu trách nhiệm điền expect.mustInclude và mustNotInclude."
+}

@@ -1,0 +1,71 @@
+{
+  "id": "copd_38_r3_duplicate_lama_stop",
+  "titleVi": "Hồi quy R3: Phát hiện trùng lặp hai thuốc chứa LAMA (Tiotropium + Tiotropium/Olodaterol) trong currentMeds phải phát lệnh STOP bình thừa",
+  "source": "GOLD 2026 Report p. 157 (R3-COPD-03)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_38",
+    "age": 70,
+    "sex": "male",
+    "weight": 58,
+    "height": 164,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 74,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "tiotropium",
+        "name": "Spiriva Respimat",
+        "dose": 5,
+        "unit": "mcg"
+      },
+      {
+        "drugId": "tiotropium_olodaterol",
+        "name": "Spiolto Respimat",
+        "dose": 5,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.54,
+      "fev1PredPct": 58,
+      "mmrc": 1,
+      "cat": 8,
+      "moderateExacerbations": 0,
+      "hospitalizations": 0,
+      "bloodEos": 140,
+      "currentInhaler": "laba_lama",
+      "smokingStatus": "former"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "tiotropium",
+        "ruleId": "rec_copd_stop_duplicate_lama",
+        "action": "STOP"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "af.sotalol.contra_crcl_min",
+  "contentHash": "62454e80d2446136f734c1e799e069fcc20711b482fce1b508321bef8cfc5dba",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.sotalol.contra_crcl_min",
+      "contentHash": "c04fea2a203867c2",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.sotalol.contra_crcl_min (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

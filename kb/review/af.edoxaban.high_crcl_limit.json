@@ -1,0 +1,26 @@
+{
+  "itemId": "af.edoxaban.high_crcl_limit",
+  "contentHash": "f64d9282eef22f6a064097fbf349d2e8726a6fa2e3b4385519bb1cc9490c9361",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.edoxaban.high_crcl_limit",
+      "contentHash": "7e1c2f47efe9e461",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.edoxaban.high_crcl_limit (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

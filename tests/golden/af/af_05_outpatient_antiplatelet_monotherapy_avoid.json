@@ -1,0 +1,56 @@
+{
+  "id": "af_05_outpatient_antiplatelet_monotherapy_avoid",
+  "titleVi": "Rung nhĩ đang dùng Aspirin đơn độc: Cảnh báo không dùng kháng tiểu cầu thay chống đông",
+  "source": "ESC 2024 AF Rec Table 6 / esc.af.2024.antiplatelet_not_rec",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 64,
+    "sex": "male",
+    "weight": 68,
+    "height": 165,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 85,
+    "rhythm": "afib",
+    "scr": 90,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "aspirin",
+        "name": "Aspirin",
+        "dose": 81,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_af_antiplatelet_warning",
+        "action": "AVOID"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân rung nhĩ đang dùng aspirin đơn độc mà không có chống đông: Cảnh báo Class III không dùng kháng tiểu cầu thay thế chống đông."
+}

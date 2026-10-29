@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.fev1_severe_roflumilast",
+  "contentHash": "1f1a65f555321b051d7ca67dbc37b1a9cc0be41024e7fa47acc253729d873fb1",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.fev1_severe_roflumilast",
+      "contentHash": "2d76c21fa28224fc",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

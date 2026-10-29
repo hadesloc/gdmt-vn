@@ -1,0 +1,53 @@
+{
+  "id": "ckd_29_finerenone_uptitrate_to_20mg",
+  "titleVi": "Ngoại trú - Chuẩn độ Finerenone từ 10 mg lên liều đích 20 mg/ngày khi K⁺ <= 4.8",
+  "source": "FDA Kerendia Table 2 / fda.finerenone.table_2_dose_adjustment",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_29",
+    "name": "BN CKD 29",
+    "age": 62,
+    "sex": "male",
+    "weight": 74,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 74,
+    "scr": 150,
+    "k": 4.4,
+    "uacr": 35,
+    "conditions": {
+      "ckd": true,
+      "dm": true
+    },
+    "currentMeds": [
+      { "drugId": "finerenone", "name": "Kerendia 10 mg", "dose": 10, "unit": "mg" },
+      { "drugId": "losartan", "name": "Cozaar 100 mg", "dose": 100, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "finerenone", "action": "UPTITRATE" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "finerenone", "action": "START" },
+      { "drugId": "finerenone", "action": "HOLD" }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân đang dùng Finerenone 10 mg có K+ 4.4 <= 4.8 và eGFR >= 25 đủ điều kiện chuẩn độ tăng liều lên 20 mg/ngày."
+}

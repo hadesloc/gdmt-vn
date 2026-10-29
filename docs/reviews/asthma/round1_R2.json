@@ -1,0 +1,155 @@
+[
+  {
+    "id": "ASTHMA-R2-01",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "asthma.inpatient.severe_exacerbation",
+    "finding": "Cơn hen nguy kịch đe dọa tính mạng (lồng ngực im lặng / rối loạn tri giác) bị bỏ sót 100% y lệnh thuốc cấp cứu hồi sức, chỉ phát sinh duy nhất khuyến cáo REFER chuyển ICU.",
+    "evidence": "src/modules/asthma/rules.ts dòng 338-359: 'if (silentChest || drowsy) { return { id: \"rec_asthma_acute_life_threatening_icu\", action: \"REFER\", title: \"BÁO ĐỘNG ICU KHẨN CẤP: Cơn hen nguy kịch có lồng ngực im lặng / rối loạn tri giác\" ... }; }'. Khi chạy ca chuẩn 'asthma_18_inpatient_acute_life_threatening', kết quả engine chỉ sinh duy nhất khuyến cáo REFER và MONITOR action plan, hoàn toàn không có Salbutamol, Ipratropium, Corticoid tiêm TM hay Oxy.",
+    "suggestedFix": "Không return sớm tại nhánh silentChest/drowsy. Bắt buộc phải phát sinh đồng thời gói y lệnh cấp cứu khẩn cấp trong lúc chờ chuyển ICU theo đúng BYT QĐ 5850/2021 (trang 17-18) và GINA 2026 (trang 184-186): Phun khí dung Salbutamol 5 mg + Ipratropium 0.5 mg, Methylprednisolone 40 mg tiêm TM, thở oxy kiểm soát đích SpO2 93-95%, chuẩn bị đặt NKQ và cân nhắc Adrenaline IM nếu nghi ngờ phản vệ."
+  },
+  {
+    "id": "ASTHMA-R2-02",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "asthma.action_plan.generate",
+    "finding": "Bản Kế hoạch hành động hen hướng dẫn xử trí Vùng Đỏ cấp cứu hít 4–6 nhát thuốc cắt cơn qua buồng đệm áp dụng cho cả Track 1 (Symbicort Turbuhaler DPI), gây nguy cơ vón cục làm tắc thiết bị hít và ngộ độc cấp tính Formoterol.",
+    "evidence": "src/modules/asthma/actionPlan.ts dòng 86-87: '1. HÍT THUỐC CẮT CƠN KHẨN CẤP: • Xịt ngay 4–6 nhát ${params.relieverDrug} qua buồng đệm (hoặc khí dung nếu có máy)'. Ở Track 1, params.relieverDrug là 'Budesonide/formoterol 160/4.5 mcg' (Turbuhaler/Spiromax). Turbuhaler là bình bột khô DPI, không thể và tuyệt đối không được dùng qua buồng đệm. Đồng thời hít 4-6 nhát Turbuhaler một lúc sẽ đưa vào 24-36 mcg formoterol metered, gây kích thích thụ thể beta-2 quá mức, loạn nhịp tim và hạ kali máu cấp.",
+    "suggestedFix": "Phân nhánh hướng dẫn xử trí Vùng Đỏ theo Track: Nếu Track 1 (ICS-formoterol): 'Hít ngay 1-2 nhát Budesonide/formoterol, uống ngay Prednisolone 40-50 mg và đến ngay cơ sở y tế cấp cứu (tuyệt đối không dùng bình bột khô DPI qua buồng đệm)'. Nếu Track 2 (SABA): 'Xịt 4-6 nhát Salbutamol qua buồng đệm kèm uống Prednisolone và đến viện khẩn cấp'."
+  },
+  {
+    "id": "ASTHMA-R2-03",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "asthma.inpatient.mild_moderate_exacerbation",
+    "finding": "Quy tắc Cơn hen cấp nhẹ - trung bình nội viện thiếu điều kiện kiểm tra đợt cấp, tự động kê đơn Salbutamol 4-10 nhát + Prednisolone 40-50 mg cho tất cả bệnh nhân hen nằm viện ổn định.",
+    "evidence": "src/modules/asthma/rules.ts dòng 405-429: 'when: (ctx) => { ... return !isSevere; }'. Khi bệnh nhân có setting: 'inpatient' nhưng không có dấu hiệu cơn nặng (ví dụ nằm viện mổ phiên hoặc kiểm soát tốt), isSevere = false dẫn đến hàm trả về true vô điều kiện. Engine lập tức sinh 'rec_asthma_acute_mild_moderate' bắt đầu Prednisolone 40-50 mg/ngày x 5-7 ngày và Salbutamol 4-10 nhát mỗi 20-60 phút.",
+    "suggestedFix": "Bổ sung điều kiện kiểm tra người bệnh thực sự đang có đợt cấp hen cấp tính: 'const ci = ctx.normalized.customInputs || {}; const hasAcuteAttack = Boolean(ci.isAcuteExacerbation || ci.speechAbility || ci.accessoryMuscleUse || ci.respiratoryRate); if (!hasAcuteAttack) return false;'."
+  },
+  {
+    "id": "ASTHMA-R2-04",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "asthma.outpatient.track1_step5_severe",
+    "finding": "Đánh rơi hoàn toàn thuốc kiểm soát nền tảng (budesonide_formoterol) khi bệnh nhân hen không kiểm soát ở Bậc 4 tiến triển lên Bậc 5 Hen nặng, khiến bệnh nhân mất đơn thuốc duy trì trong thời gian chờ chuyển chuyên khoa.",
+    "evidence": "src/modules/asthma/rules.ts dòng 774 và 843: Khi currentStep === 4 và score.level === 'uncontrolled', rule track1_step4 bị tắt hoàn toàn. Rule track1_step5_severe chỉ sinh khuyến cáo REFER chung chung mà không có drugId và dose. Kiểm tra trên Preset 3 (preset_asthma_severe_step5_eosinophilic), bệnh nhân đang dùng Symbicort 160/4.5 2 nhát x 2 lần/ngày nhưng kết quả evaluate() không hề có khuyến cáo CONTINUE hay UPTITRATE nào cho budesonide_formoterol.",
+    "suggestedFix": "Bổ sung khuyến cáo xác nhận DUY TRÌ (CONTINUE) phác đồ ICS-LABA liều cao/trung bình (Budesonide/formoterol 160/4.5 mcg 2 nhát x 2 lần/ngày) trong lúc tiến hành hội chẩn chuyên khoa, thêm LAMA và đánh giá thuốc sinh học, đảm bảo người bệnh không bị gián đoạn thuốc kiểm soát nền."
+  },
+  {
+    "id": "ASTHMA-R2-05",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "asthma.inpatient.severe_exacerbation",
+    "finding": "Gom toàn bộ gói cấp cứu cơn hen cấp nặng vào 1 đơn thuốc duy nhất của drugId: 'salbutamol', khiến hệ thống bệnh viện bỏ sót y lệnh dược của Methylprednisolone, Ipratropium và Magnesi sulfat.",
+    "evidence": "src/modules/asthma/rules.ts dòng 368-377 (rec_asthma_acute_severe_bundle): 'drugId: \"salbutamol\"', nhưng liều và rationale lại chứa cả Salbutamol, Ipratropium, Methylprednisolone 40 mg tiêm TM và Magnesium sulfate 2 g truyền TM. Các hệ thống HIS/EMR tự động dựa vào drugId để sinh phiếu lĩnh thuốc khoa Dược sẽ chỉ cấp Salbutamol và bỏ sót 3 thuốc cấp cứu sinh mạng còn lại.",
+    "suggestedFix": "Tách thành các khuyến cáo thành phần độc lập hoặc cấu trúc đa thuốc rõ ràng: Khuyến cáo START Salbutamol + Ipratropium khí dung (hoặc Berodual/Combivent), Khuyến cáo START Methylprednisolone 40 mg tiêm TM, và Khuyến cáo CONSIDER Magnesium sulfate 2 g truyền TM chậm trong 20 phút."
+  },
+  {
+    "id": "ASTHMA-R2-06",
+    "severity": "major",
+    "itemType": "matrix",
+    "itemId": "icsDoseEquivalenceMatrix",
+    "finding": "Lỗi sao chép liều Mometasone furoate pMDI trong Ma trận tương đương liều ICS (GINA 2026 Table 6): Ô liều thấp và trung bình trùng hệt nhau, ô liều cao ghi thiếu dấu lớn hơn.",
+    "evidence": "src/modules/asthma/matrices.ts dòng 244, 250, 256: Ô low dose và medium dose đều định nghĩa: 'dose: `${th(\"asthma.ics.mometasone_low_min\")}–${th(\"asthma.ics.mometasone_high\")} mcg/ngày`' dẫn tới hiển thị '200–400 mcg/ngày' ở cả hai cột. Ô high dose ghi: 'dose: `${th(\"asthma.ics.mometasone_high\")} mcg/ngày`' hiển thị '400 mcg/ngày' thay vì '>400 mcg/ngày'.",
+    "suggestedFix": "Sửa lại ma trận khớp hoàn toàn GINA 2026 Table 6: Ô Low dose: '200–400 mcg/ngày'; Ô Medium dose: 'Không có mức liều trung bình riêng biệt (hoặc >400 mcg/ngày tùy phối hợp LAMA)'; Ô High dose: '>400 mcg/ngày' (initiate: 'caution', continue: 'caution')."
+  },
+  {
+    "id": "ASTHMA-R2-07",
+    "severity": "major",
+    "itemType": "drug",
+    "itemId": "beclometasone_formoterol",
+    "finding": "Thiếu hoàn toàn Cổng an toàn kiểm soát liều tối đa Formoterol (gate_formoterol_max_daily) ở tệp beclometasone_formoterol.json (Foster).",
+    "evidence": "gdmt-vn/kb/drugs/beclometasone_formoterol.json có 'gates: []' rỗng. Trong khi đó budesonide_formoterol.json có gate chặn totalDailyPuffs > 12. Cả hai thuốc đều sử dụng hoạt chất formoterol với giới hạn trần an toàn của GINA 2026 Box 4-8B là 72 mcg metered dose/ngày (12 nhát Foster 100/6 mcg/ngày).",
+    "suggestedFix": "Bổ sung gate_formoterol_max_daily vào beclometasone_formoterol.json tương tự như budesonide_formoterol: parameter: 'totalDailyPuffs', operator: '>', threshold: 12, unit: 'nhát/ngày', action: 'hold', messageVi: 'Khám y tế ngay nếu cần dùng quá 12 nhát hít Foster tổng cộng trong ngày (vượt quá 72 mcg formoterol định liều)'."
+  },
+  {
+    "id": "ASTHMA-R2-08",
+    "severity": "major",
+    "itemType": "drug",
+    "itemId": "terbutaline",
+    "finding": "Thiếu Cổng an toàn cấm dùng SABA đơn độc không kèm ICS ở terbutaline.json và giới hạn liều tối đa 4 nhát/ngày quá chặt so với nhãn Bricanyl Turbuhaler.",
+    "evidence": "gdmt-vn/kb/drugs/terbutaline.json có 'gates: []' rỗng, thiếu gate cảnh báo khi hasIcsMaintenance == 0 mà salbutamol.json có. Mục target ghi: 'amount: 4, unit: \"nhát\", frequency: \"ngày\", description: \"Tối đa 4 nhát/ngày\"'. Theo Dược thư Quốc gia VN và nhãn Bricanyl Turbuhaler 0.5 mg, liều tối đa cho phép trong 24 giờ lên đến 4 mg (8 nhát/ngày) trong các đợt co thắt phế quản cấp.",
+    "suggestedFix": "Thêm gate cấm SABA đơn độc vào terbutaline.json. Nâng mức trần liều tối đa trong description lên: 'Tối đa 8 nhát/ngày (4 mg/24 giờ) cho người lớn trong đợt co thắt phế quản cấp'."
+  },
+  {
+    "id": "ASTHMA-R2-09",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "asthma.safety.montelukast_mental",
+    "finding": "Cảnh báo Boxed Warning của Montelukast tự động kích hoạt vô lý cho mọi bệnh nhân có tiền sử trầm cảm dù bệnh nhân hoàn toàn không dùng Montelukast.",
+    "evidence": "src/modules/asthma/rules.ts dòng 256-261: 'const hasPsychRisk = Boolean(ci.priorNeuropsychiatric || ctx.patient.conditions?.depression); return isTakingMontelukast || hasPsychRisk;'. Do dùng toán tử ||, bệnh nhân hen chỉ dùng Symbicort nhưng có tiền sử trầm cảm vẫn bị phát khuyến cáo: 'rec_asthma_montelukast_warning: Theo dõi tác dụng phụ tâm thần kinh của Montelukast'.",
+    "suggestedFix": "Sửa điều kiện kích hoạt: 'const isCandidate = ctx.patient.currentMeds.some(m => m.drugId === \"montelukast\"); if (!isCandidate) return false; return Boolean(ci.priorNeuropsychiatric || ctx.patient.conditions?.depression);'."
+  },
+  {
+    "id": "ASTHMA-R2-10",
+    "severity": "major",
+    "itemType": "drug",
+    "itemId": "fluticasone_salmeterol",
+    "finding": "Nhầm lẫn chế độ liều giữa hai dạng bào chế Seretide Evohaler (pMDI) và Seretide Accuhaler (DPI) dẫn đến nguy cơ thiếu hụt một nửa liều giãn phế quản Salmeterol.",
+    "evidence": "gdmt-vn/kb/drugs/fluticasone_salmeterol.json và rules.ts dòng 896: Ghi liều khởi đầu Track 2 Bậc 3 là '1 nhát 50/25 hoặc 125/25 x 2 lần/ngày'. Seretide Evohaler pMDI mỗi nhát xịt chỉ chứa 25 mcg salmeterol, liều chuẩn của GSK và BYT là 2 nhát x 2 lần/ngày (để đạt 50 mcg salmeterol/lần hít). Chỉ có Accuhaler DPI mới dùng 1 liều hít (chứa sẵn 50 mcg salmeterol) x 2 lần/ngày.",
+    "suggestedFix": "Ghi rõ sự khác biệt giữa thiết bị: 'Accuhaler (DPI): Hít 1 liều x 2 lần/ngày; Evohaler (pMDI): Xịt 2 nhát x 2 lần/ngày' để đảm bảo liều Salmeterol đạt 50 mcg mỗi lần dùng."
+  },
+  {
+    "id": "ASTHMA-R2-11",
+    "severity": "major",
+    "itemType": "drug",
+    "itemId": "fluticasone_furoate",
+    "finding": "Khai báo các biệt dược Mỹ chưa từng được cấp phép hoặc đã bị rút số đăng ký tại Việt Nam trong danh mục thuốc hen (Arnuity Ellipta, Asmanex Twisthaler, Dulera, Becotide, Tezspire).",
+    "evidence": "Trong các tệp json: fluticasone_furoate ghi 'vnBrands: [\"Arnuity Ellipta\"]' (biệt dược US, tại VN chỉ có dạng phối hợp Relvar); mometasone ghi 'vnBrands: [\"Asmanex Twisthaler\"]' (biệt dược US); mometasone_formoterol ghi 'vnBrands: [\"Dulera\"]' (biệt dược US); beclometasone ghi 'vnBrands: [\"Becotide\", \"Becloforte\"]' (CFC đã ngừng lưu hành nhiều năm); tezepelumab ghi 'vnBrands: [\"Tezspire\"]' (chưa được cấp phép tại VN).",
+    "suggestedFix": "Hiệu chỉnh vnBrands theo đúng danh mục Cục Quản lý Dược Việt Nam: Ghi chú 'Chưa lưu hành đại trà tại VN (biệt dược FDA)' đối với Arnuity, Asmanex, Dulera, Tezspire; thay Becotide/Becloforte bằng ghi chú Beclometasone tại VN chủ yếu lưu hành dạng hạt siêu mịn phối hợp (Foster)."
+  },
+  {
+    "id": "ASTHMA-R2-12",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "asthma.safety.saba_only_prohibited",
+    "finding": "Quy tắc cấm dùng SABA đơn độc gán cứng drugId: 'salbutamol', dẫn tới ra lệnh ngưng nhầm Salbutamol khi bệnh nhân đang dùng Terbutaline đơn độc.",
+    "evidence": "src/modules/asthma/rules.ts dòng 114-118 và dòng 130: Điều kiện kiểm tra takingSaba bao gồm cả salbutamol và terbutaline. Nhưng phần produce() lại hardcode cố định: 'drugId: \"salbutamol\"', 'drugNameVi: \"Salbutamol (SABA đơn độc)\"'. Nếu bệnh nhân đang dùng Bricanyl (terbutaline), engine sinh y lệnh STOP salbutamol.",
+    "suggestedFix": "Lấy động thông tin từ thuốc SABA mà bệnh nhân đang thực dùng: 'const sabaMed = ctx.patient.currentMeds.find(m => m.drugId === \"salbutamol\" || m.drugId === \"terbutaline\"); const targetId = sabaMed?.drugId || \"salbutamol\";' và gán drugId: targetId."
+  },
+  {
+    "id": "ASTHMA-R2-13",
+    "severity": "minor",
+    "itemType": "citation",
+    "itemId": "asthma.safety.beta_blocker_contra",
+    "finding": "Trích dẫn sai lệch nội dung tại quy tắc chống chỉ định chẹn beta không chọn lọc.",
+    "evidence": "src/modules/asthma/rules.ts dòng 240, 244: Quy tắc chống chỉ định thuốc chẹn beta không chọn lọc ở bệnh nhân hen lại trích dẫn citationId: 'gina.asthma.2026.never_saba_alone' (khuyến cáo không dùng SABA đơn độc).",
+    "suggestedFix": "Thay thế bằng mã trích dẫn chính xác về tương tác chẹn beta và hen trong GINA 2026 (Section 6 Multimorbidity / Box 3-6) hoặc Dược thư Quốc gia Việt Nam."
+  },
+  {
+    "id": "ASTHMA-R2-14",
+    "severity": "minor",
+    "itemType": "drug",
+    "itemId": "prednisolone",
+    "finding": "Thiếu công thức tính liều theo cân nặng cho Prednisolone trong đợt cấp hen ở trẻ em và người lớn nhẹ cân.",
+    "evidence": "gdmt-vn/kb/drugs/prednisolone.json chỉ nêu liều cố định người lớn 40-50 mg/ngày x 5-7 ngày. Theo BYT QĐ 5850/2021 và GINA 2026: Người lớn dùng 1 mg/kg/ngày (tối đa 50 mg), trẻ em dùng 1-2 mg/kg/ngày (tối đa 40 mg).",
+    "suggestedFix": "Bổ sung vào mô tả liều trong prednisolone.json: 'Người lớn: 1 mg/kg/ngày (tối đa 50 mg/ngày) trong 5-7 ngày; Trẻ em: 1-2 mg/kg/ngày (tối đa 40 mg/ngày) trong 3-5 ngày'."
+  },
+  {
+    "id": "ASTHMA-R2-15",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "asthma.action_plan.generate",
+    "finding": "Tự động phát sinh Kế hoạch hành động hen ngoại trú (Vùng Xanh - Vàng - Đỏ) giữa lúc cấp cứu hồi sức cơn hen nặng tại khoa Cấp cứu / Nội viện.",
+    "evidence": "src/modules/asthma/rules.ts dòng 929: Quy tắc sinh bản Kế hoạch hành động hen đặt setting: 'both'. Khi chạy ca cấp cứu ER (preset_asthma_acute_severe_er), hệ thống sinh đồng thời phác đồ cấp cứu và văn bản Kế hoạch hành động tại nhà dài 80 dòng, gây nhiễu màn hình cấp cứu.",
+    "suggestedFix": "Chuyển setting của rule asthma.action_plan.generate thành 'outpatient', hoặc chỉ kích hoạt ở nội viện khi bệnh nhân đã vào giai đoạn ổn định chuẩn bị xuất viện (kết hợp với rec_asthma_discharge_plan)."
+  },
+  {
+    "id": "ASTHMA-R2-16",
+    "severity": "minor",
+    "itemType": "missing",
+    "itemId": "Medical_Library_2026/09_Nhan_Thuoc",
+    "finding": "Thiếu tệp PDF nhãn thuốc FDA/EMA trong kho Medical_Library_2026/09_Nhan_Thuoc cho 20/21 hoạt chất của module Hen.",
+    "evidence": "Khảo sát thư mục Medical_Library_2026/09_Nhan_Thuoc: Chỉ có duy nhất FDA_label_dupilumab.pdf. Cả 20 hoạt chất còn lại (budesonide, fluticasone propionate/furoate, beclometasone, mometasone, ciclesonide, formoterol phối hợp, salbutamol, terbutaline, ipratropium, montelukast, omalizumab, benralizumab, tezepelumab, prednisolone, methylprednisolone, magnesium sulfate) đều chưa có tệp nhãn.",
+    "suggestedFix": "Ghi nhận chính thức tình trạng thiếu nhãn trong kho để ban điều phối bổ sung các nhãn gốc FDA/EMA cho Symbicort (AstraZeneca), Seretide (GSK), Foster (Chiesi), Relvar (GSK), Ventolin (GSK), Pulmicort (AstraZeneca), Xolair (Novartis), Fasenra (AstraZeneca)."
+  },
+  {
+    "id": "ASTHMA-R2-17",
+    "severity": "suggestion",
+    "itemType": "drug",
+    "itemId": "budesonide",
+    "finding": "Bổ sung hướng dẫn súc miệng sau hít vào tất cả các tệp thuốc chứa ICS để phòng ngừa nấm miệng và khản giọng.",
+    "evidence": "Các file json chứa ICS (budesonide, fluticasone propionate, fluticasone furoate, beclometasone, ciclesonide, mometasone, budesonide_formoterol, beclometasone_formoterol, fluticasone_salmeterol, fluticasone_vilanterol) chưa có chỉ dẫn thực hành dược bắt buộc về việc súc miệng và nhổ nước sau khi hít.",
+    "suggestedFix": "Thêm vào trường cautions hoặc administrationGuidance: 'Súc miệng kỹ bằng nước sạch và nhổ đi ngay sau khi hít thuốc để phòng ngừa nấm candida hầu họng và khản tiếng'."
+  }
+]

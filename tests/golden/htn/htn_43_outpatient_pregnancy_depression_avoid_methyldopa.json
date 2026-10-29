@@ -1,0 +1,64 @@
+{
+  "id": "htn_43_outpatient_pregnancy_depression_avoid_methyldopa",
+  "titleVi": "Thai kỳ kèm Trầm cảm: Chống chỉ định Methyldopa, khởi trị Labetalol đường uống + Dự phòng Aspirin",
+  "source": "ESC 2024 & VSH 2022 / esc.htn.2024.pregnancy_aspirin_atenolol_methyldopa",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 30,
+    "sex": "female",
+    "weight": 62,
+    "height": 158,
+    "sbp": 152,
+    "dbp": 96,
+    "hr": 82,
+    "scr": 60,
+    "k": 4,
+    "conditions": {
+      "pregnant": true,
+      "htn": true,
+      "depression": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "methyldopa",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "labetalol",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_htn_pregnancy_aspirin_prophylaxis",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "methyldopa",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Thai phụ có tiền sử trầm cảm tuyệt đối tránh Methyldopa do nguy cơ kích phát trầm cảm chu sinh nặng; ưu tiên khởi trị Labetalol đường uống và dự phòng tiền sản giật bằng Aspirin liều thấp."
+}

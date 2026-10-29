@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.hypokalemia.k_threshold",
+  "contentHash": "296a50033d9c37b3743d330b9e18b22231e08ad902cf506b31014c92a6d0397b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.hypokalemia.k_threshold",
+      "contentHash": "3f63ec5d7faec955",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 3.5 mmol/L (quantity: k) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "ckd_51_glp1ra_semaglutide_flow_fourth_pillar",
+  "titleVi": "Ngoại trú - ĐTĐ típ 2 kèm CKD G3bA3 (thử nghiệm FLOW) -> Khởi trị trụ cột thứ 4 Semaglutide tiêm dưới da bảo vệ tim - thận (Regression CKD-R2-R1-03)",
+  "source": "ESC 2026 CVD-CKD Table 12 (Class I Level B), ADA 2026 SOC 11 & KDIGO 2024 Rec 3.9.1 (1B)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_51",
+    "name": "BN CKD 51",
+    "age": 62,
+    "sex": "male",
+    "weight": 78,
+    "sbp": 128,
+    "dbp": 76,
+    "hr": 74,
+    "scr": 175,
+    "k": 4.5,
+    "uacr": 38,
+    "hba1c": 7.4,
+    "conditions": {
+      "ckd": true,
+      "dm": true,
+      "htn": true
+    },
+    "currentMeds": [
+      { "drugId": "dapagliflozin", "name": "Forxiga 10 mg", "dose": 10, "unit": "mg" },
+      { "drugId": "losartan", "name": "Cozaar 100 mg", "dose": 100, "unit": "mg" },
+      { "drugId": "finerenone", "name": "Kerendia 20 mg", "dose": 20, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "semaglutide", "action": "START", "doseContains": "0.25 mg" },
+      { "drugId": "finerenone", "action": "CONTINUE" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "semaglutide", "action": "AVOID" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R2-R1-03 & CKD-R2-R3-07: Ngay cả khi chỉ bật module CKD đơn độc, bệnh nhân T2D + CKD có albumin niệu thỏa tiêu chuẩn FLOW được khuyến cáo khởi trị Semaglutide SC và duy trì Finerenone 20 mg."
+}

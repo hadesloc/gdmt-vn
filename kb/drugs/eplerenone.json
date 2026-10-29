@@ -1,0 +1,165 @@
+{
+  "id": "eplerenone",
+  "nameVi": "Eplerenone",
+  "inn": "Eplerenone",
+  "class": "Steroidal MRA",
+  "classes": [
+    "mra_steroidal",
+    "mra"
+  ],
+  "vnBrands": [
+    "Inspra"
+  ],
+  "forms": [
+    "Viên nén bao phim 25 mg (lưu ý: ít sẵn có trong danh mục thuốc nội viện thường quy tại Việt Nam hơn Spironolactone)",
+    "Viên nén bao phim 50 mg"
+  ],
+  "start": {
+    "amount": 25,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "khởi đầu 25 mg/ngày khi eGFR ≥ 50 và K+ ≤ 5.0 mmol/L; khởi đầu 25 mg cách ngày nếu eGFR 30–49 mL/min/1.73m²"
+  },
+  "target": {
+    "amount": 50,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "50 mg uống 1 lần/ngày (tối đa 25 mg/ngày nếu eGFR 30–49 mL/min/1.73m²)"
+  },
+  "titration": {
+    "step": "Tăng từ 25 mg lên 50 mg/ngày sau 4 tuần nếu K+ ≤ 5.0 mmol/L; giảm liều nếu K+ 5.5–5.9, ngừng ngay nếu K+ ≥ 6.0 mmol/L",
+    "intervalDays": 28,
+    "maxDose": "50 mg x 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 50,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "25 mg x 1 lần/ngày -> đích 50 mg x 1 lần/ngày",
+      "citationIds": [
+        "esc.hf.2026.mra_doses"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 50,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Khởi đầu 25 mg cách ngày, tối đa 25 mg x 1 lần/ngày",
+      "note": "Theo dõi sát điện giải đồ và chức năng thận sau 1 tuần và 4 tuần",
+      "citationIds": [
+        "esc.hf.2026.mra_guidance_table_s8",
+        "fda.hf.eplerenone_contra_crcl30"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "contra",
+      "continue": "contra",
+      "note": "Chống chỉ định tuyệt đối Eplerenone khi eGFR < 30 mL/min/1.73m² hoặc CrCl ≤ 30 mL/phút (FDA Inspra §4 & ESC Table S8)",
+      "citationIds": [
+        "fda.hf.eplerenone_contra_crcl30",
+        "esc.hf.2026.mra_guidance_table_s8"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_eplerenone_k_max",
+      "parameter": "K",
+      "operator": ">",
+      "threshold": 5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Kali máu > 5.0 mmol/L: Không khởi trị mới Eplerenone",
+      "citationIds": [
+        "esc.hf.2026.mra_guidance_table_s8"
+      ]
+    },
+    {
+      "id": "gate_eplerenone_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "contra",
+      "messageVi": "eGFR < 30 mL/min/1.73m² (hoặc CrCl ≤ 30 mL/phút): Chống chỉ định tuyệt đối Eplerenone",
+      "citationIds": [
+        "fda.hf.eplerenone_contra_crcl30",
+        "esc.hf.2026.mra_guidance_table_s8"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Không khuyến cáo / chống chỉ định nhóm MRA trong thai kỳ theo ESC 2026 (Class III, Level C).",
+    "citationIds": [
+      "esc.hf.2026.pregnancy_contra"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Chưa có dữ liệu trên người về sự bài tiết của eplerenone vào sữa mẹ (FDA Inspra §8.2); ưu tiên Spironolactone nếu cần dùng MRA khi cho con bú.",
+    "citationIds": [
+      "fda.hf.eplerenone_lactation",
+      "esc.preg.2025.spironolactone_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định nhóm MRA trong thai kỳ",
+      "citationIds": [
+        "esc.hf.2026.pregnancy_contra"
+      ]
+    },
+    {
+      "code": "strong_cyp3a4_inhibitor",
+      "messageVi": "Chống chỉ định tuyệt đối khi dùng đồng thời với chất ức chế mạnh CYP3A4 (ketoconazole, itraconazole, clarithromycin, ritonavir)",
+      "citationIds": [
+        "fda.hf.eplerenone_contra_crcl30",
+        "esc.hf.2026.mra_guidance_table_s8"
+      ]
+    },
+    {
+      "code": "dialysis",
+      "messageVi": "Chống chỉ định tuyệt đối khi CrCl ≤ 30 mL/phút hoặc đang lọc máu",
+      "citationIds": [
+        "fda.hf.eplerenone_contra_crcl30"
+      ]
+    },
+    {
+      "code": "t2dm_microalbuminuria_htn",
+      "messageVi": "Trong chỉ định điều trị tăng huyết áp: chống chỉ định khi có đái tháo đường týp 2 kèm tiểu albumin vi thể hoặc CrCl < 50 mL/phút (nhãn FDA Inspra Mục 4)",
+      "citationIds": [
+        "fda.eplerenone.htn_contraindications"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định tuyệt đối dùng cùng thuốc ức chế mạnh CYP3A4 (clarithromycin, ketoconazole, itraconazole, ritonavir); giảm trần liều còn tối đa 25 mg/ngày nếu dùng cùng ức chế vừa CYP3A4 (erythromycin, verapamil, fluconazole)",
+    "Nguy cơ tăng kali máu khi phối hợp ACEi/ARB/ARNI, chế phẩm kali, trimethoprim hoặc NSAID"
+  ],
+  "citationIds": [
+    "esc.hf.2026.mra_doses",
+    "esc.hf.2026.mra_guidance_table_s8",
+    "fda.hf.eplerenone_contra_crcl30",
+    "fda.hf.eplerenone_preg_lact",
+    "fda.eplerenone.htn_contraindications",
+    "fda.eplerenone.htn_moderate_cyp3a"
+  ],
+  "hepatic": {
+    "status": "caution",
+    "childA": "ok",
+    "childB": "caution",
+    "childC": "contra",
+    "note": "Suy gan vừa (Child-Pugh B) làm tăng AUC eplerenone 42%; chưa được nghiên cứu và tránh dùng ở suy gan nặng (Child-Pugh C).",
+    "notesVi": "Suy gan vừa (Child-Pugh B) làm tăng AUC eplerenone 42%; chưa được nghiên cứu và tránh dùng ở suy gan nặng (Child-Pugh C).",
+    "citationIds": [
+      "fda.hf.eplerenone_hepatic"
+    ]
+  }
+}

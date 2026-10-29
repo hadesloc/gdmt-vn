@@ -1,0 +1,73 @@
+{
+  "id": "prednisolone",
+  "nameVi": "Prednisolone",
+  "inn": "Prednisolone",
+  "class": "Oral Corticosteroid",
+  "vnBrands": [
+    "Prednisolon 5mg Phapharco",
+    "Solupred 5mg, 20mg"
+  ],
+  "forms": [
+    "Viên nén 5 mg",
+    "Viên sủi 5 mg, 20 mg"
+  ],
+  "start": {
+    "amount": 40,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Đợt cấp hen: Người lớn 1 mg/kg/ngày (40–50 mg, tối đa 50 mg/ngày) uống buổi sáng x 5–7 ngày; Trẻ em 1–2 mg/kg/ngày (tối đa 40 mg/ngày) x 3–5 ngày"
+  },
+  "target": {
+    "amount": 50,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Người lớn tối đa 50 mg/ngày trong 5–7 ngày; Trẻ em tối đa 40 mg/ngày trong 3–5 ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận",
+      "citationIds": [
+        "gina.asthma.2026.acute_prednisolone_daily"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Nguy cơ tăng đường huyết ở bệnh nhân đái tháo đường; nguy cơ viêm loét dạ dày khi dùng chung NSAID"
+  ],
+  "citationIds": [
+    "gina.asthma.2026.acute_prednisolone_daily",
+    "byt.asthma.2021.acute_hospital_treatment"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Corticoid qua được nhau thai (nhưng bị bất hoạt một phần bởi men 11β-HSD2). Trong đợt cấp hen, điều trị mẹ là tối thượng để cứu thai khỏi thiếu oxy.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Uống sau cữ bú hoặc vắt bỏ sữa trong 4 giờ đầu.",
+    "citationIds": [
+      "gina.asthma.2026.acute_prednisolone_daily"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "systemic_fungal_infection",
+      "messageVi": "Nhiễm nấm toàn thân chưa kiểm soát",
+      "citationIds": [
+        "gina.asthma.2026.acute_prednisolone_daily"
+      ]
+    }
+  ],
+  "classes": [
+    "systemic_corticosteroid"
+  ]
+}

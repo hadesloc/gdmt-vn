@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.bp.target_sbp_esc_max",
+  "contentHash": "e86b286addc2eb1e6c43fca76a139c4057208aea0ff7cbe4add3309485531e5e",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.bp.target_sbp_esc_max",
+      "contentHash": "d3391a01d26929c1",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.120Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.bp.target_sbp_esc_max."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.acute.discharge_min_pef_pct",
+  "contentHash": "f4b77fb67305d3992d5be7fb460c02607fd45a616b25e260a1fd61e9ce371843",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.acute.discharge_min_pef_pct",
+      "contentHash": "4359440e15c1bf80",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T12:52:49.357Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Kiểm định tự động ngưỡng lâm sàng asthma.acute.discharge_min_pef_pct (60 %)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T12:52:49.357Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

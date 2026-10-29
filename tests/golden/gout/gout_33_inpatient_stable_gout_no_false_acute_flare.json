@@ -1,0 +1,85 @@
+{
+  "id": "gout_33_inpatient_stable_gout_no_false_acute_flare",
+  "titleVi": "Nội trú: Tiền sử gút mạn ổn định nhập viện vì bệnh khác (không có cơn cấp) — Fail-closed không kê thuốc cắt cơn nhầm",
+  "source": "ACR 2020 & KDIGO 2024 (acr.gout.2020.start_ult_during_flare, kdigo.gout.2024.acute_flare_ckd)",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 66,
+    "sex": "male",
+    "weight": 68,
+    "scr": 105,
+    "uricAcid": 310,
+    "conditions": {
+      "gout": true,
+      "htn": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "allopurinol",
+        "name": "Allopurinol",
+        "dose": "300",
+        "unit": "mg"
+      },
+      {
+        "drugId": "losartan",
+        "name": "Losartan",
+        "dose": "50",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "goutFlaresYear": 1,
+      "hlab5801": "negative"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_continue",
+        "action": "CONTINUE"
+      },
+      {
+        "ruleId": "rec_gout_inpatient_ult_reconciliation",
+        "action": "MONITOR"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "colchicine",
+        "action": "START"
+      },
+      {
+        "drugId": "naproxen",
+        "action": "START"
+      },
+      {
+        "drugId": "prednisolone",
+        "action": "START"
+      },
+      {
+        "drugId": "methylprednisolone",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 66 tuổi tiền sử gút ổn định trên nền Allopurinol 300 mg/ngày (urat 310 µmol/L đạt đích) nhập viện nội trú nhưng không tích chọn cơn gút cấp (acuteFlare undefined). Cơ chế QA-1 fail-closed bảo đảm tuyệt đối không tự động kê nhầm Colchicine/NSAID/Steroid cắt cơn, chỉ duy trì đối chiếu ULT nền."
+}

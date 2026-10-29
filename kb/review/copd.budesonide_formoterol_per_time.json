@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.budesonide_formoterol_per_time",
+  "contentHash": "bee5cf743e4e55078b18afabb23bc94591aeb2b16fd2d4b6d90484aae241f651",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.budesonide_formoterol_per_time",
+      "contentHash": "c7b71ed4f214005b",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

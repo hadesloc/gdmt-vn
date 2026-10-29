@@ -1,0 +1,26 @@
+{
+  "itemId": "af.cha2ds2vasc.us_female_intermediate",
+  "contentHash": "96f28b5d47d09947cf66a3a11042733ccddd7fea0b76332c50daab4d1db8fc7d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.cha2ds2vasc.us_female_intermediate",
+      "contentHash": "23ee02dfd1ea4a7f",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.cha2ds2vasc.us_female_intermediate (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

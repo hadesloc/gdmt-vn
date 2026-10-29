@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.tg.elevated_cv_risk",
+  "contentHash": "7f0ab48cb14a772e5ceb2a73a531bee7521bcf1eb04aaf60a964572d17a05491",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.tg.elevated_cv_risk",
+      "contentHash": "de40f501e2cb1bb1",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T15:55:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.tg.elevated_cv_risk."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T15:55:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

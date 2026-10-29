@@ -1,0 +1,27 @@
+{
+  "itemId": "hf.loop.bumetanide_equiv_furo_mg",
+  "contentHash": "73ce5eaa34b9adf9a095becb26f50291aedd726dccbabe82c0180f69dd62993f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "hf.loop.bumetanide_equiv_furo_mg",
+      "contentHash": "aeb0f5404418d9ef",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T09:00:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-28T09:00:00.000Z",
+          "role": "Agent G5 (HF Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF threshold hf.loop.bumetanide_equiv_furo_mg (Round 2 R1/R2/R3 remediation & verbatim PDF citation verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

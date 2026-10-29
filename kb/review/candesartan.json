@@ -1,0 +1,17 @@
+{
+  "itemId": "candesartan",
+  "contentHash": "8ae0fe3b7a3033cfb9eb4b1bf71e0eaa9fea5fbab92156dacafd9d43c9addbaa",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "candesartan",
+      "contentHash": "54fd3b993d9ee6df",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

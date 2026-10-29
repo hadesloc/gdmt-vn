@@ -1,0 +1,26 @@
+{
+  "itemId": "gold.copd.2026.exac_hospitalization_assessment",
+  "contentHash": "8f7cd8d1f471128b36e38325a19e7151d81315d18e8d9608d8641eaf6dcba330",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gold.copd.2026.exac_hospitalization_assessment",
+      "contentHash": "d7ee8c4428ffa799",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

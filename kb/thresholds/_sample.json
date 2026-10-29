@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ckd.sglt2i.egfr_initiate_min",
+    "value": 20,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "kdigo.ckd.2024.sglt2i_initiate",
+      "kdigo.ckd.2024.sglt2i_continue_below_20"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối thiểu (20 mL/min/1.73m2) để bắt đầu khởi trị thuốc ức chế SGLT2 ở bệnh nhân bệnh thận mạn (KDIGO 2024 1A)"
+  },
+  {
+    "id": "hf.sglt2i.target_dose",
+    "value": 10,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "esc.hf.2026.dapagliflozin_dose_10mg"
+    ],
+    "descriptionVi": "Liều đích tối ưu hàng ngày của dapagliflozin trong điều trị suy tim (ESC 2026 Class I)"
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "id": "dm2_31_icu_dka_emergency_hold_k",
+  "titleVi": "Cấp cứu DKA kèm K+ 3.2 mmol/L (< 3.5) - HOÃN INSULIN BÙ KALI TRƯỚC",
+  "source": "Consensus 2024 / oncall icu_dka_0130",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 34,
+    "sex": "female",
+    "weight": 61,
+    "height": 158,
+    "sbp": 98,
+    "dbp": 62,
+    "hr": 122,
+    "scr": 130,
+    "k": 3.2,
+    "glucose": 24.0,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "dkaSuspected": true,
+      "bloodKetones": 4.5,
+      "venousPh": 7.15,
+      "serumBicarb": 10
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_dm2_dka_hold_insulin_hypokalemia",
+        "action": "HOLD"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "insulin_glargine",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bất biến an toàn sống còn: K+ < 3.5 mmol/L bắt buộc HOÃN insulin."
+}

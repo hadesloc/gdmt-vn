@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.roflumilast_dose_initial",
+  "contentHash": "ecb64531d01548cefe8e3ffab0996d59af076a76f8ef043f751e6750df082588",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.roflumilast_dose_initial",
+      "contentHash": "0debcd8dcf45aca3",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

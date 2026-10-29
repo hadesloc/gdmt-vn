@@ -1,0 +1,27 @@
+{
+  "itemId": "ckd.contrast.defer_gdmt_egfr_cutoff",
+  "contentHash": "8f39fcf48a4d6c7cb9fbe7c2374f7022280934cc9eac69a344027b11b1e6ecef",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.contrast.defer_gdmt_egfr_cutoff",
+      "contentHash": "a4bfa91af6686e6a",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "round": 4,
+          "reviewedAt": "2026-10-27T23:56:20.141Z",
+          "role": "agent_e5_round4_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và kiểm tra không số mồ côi Vòng 4 cho ngưỡng ckd.contrast.defer_gdmt_egfr_cutoff."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T23:56:20.141Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "copd_53_r2_metabolic_acidosis_kussmaul",
+  "titleVi": "Hồi quy R2 (R3-R2-COPD-10 & COPD-R1V2-04): Đợt cấp kèm toan chuyển hóa giảm CO₂ bù trừ (pH 7.20, PaCO₂ 24) và SpO₂ 91% khí trời – Cảnh báo toan chuyển hóa & theo dõi oxy",
+  "source": "GOLD 2026 p. 119–123 (R3-R2-COPD-10, COPD-R1V2-04)",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_53",
+    "age": 67,
+    "sex": "male",
+    "weight": 59,
+    "height": 165,
+    "sbp": 108,
+    "dbp": 68,
+    "hr": 112,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteExacerbation": true,
+      "fev1FvcRatio": 0.48,
+      "fev1PredPct": 44,
+      "restingSpo2": 91,
+      "abgPh": 7.2,
+      "abgPaco2": 24,
+      "purulentSputum": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_copd_inpatient_metabolic_acidosis",
+        "action": "MONITOR"
+      },
+      {
+        "ruleId": "rec_copd_inpatient_icu",
+        "action": "REFER"
+      },
+      {
+        "ruleId": "rec_copd_inpatient_oxygen",
+        "action": "MONITOR"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_copd_inpatient_niv",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_copd_inpatient_oxygen",
+        "action": "START"
+      }
+    ]
+  }
+}

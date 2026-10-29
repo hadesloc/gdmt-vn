@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.age.min_adult_18",
+  "contentHash": "ac777c15e05b1651f74f0875d7c69268a70b263efe65d510f2f8c67015c02154",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.age.min_adult_18",
+      "contentHash": "5dd68111ea3b54c9",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T12:52:49.357Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Kiểm định tự động ngưỡng lâm sàng asthma.age.min_adult_18 (18 tuổi)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T12:52:49.357Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

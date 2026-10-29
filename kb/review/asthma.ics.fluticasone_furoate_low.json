@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.ics.fluticasone_furoate_low",
+  "contentHash": "8075f103af7706ba4a5e3f03e30915a69fc0151e8c26f99754cc69845b9f5a07",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.ics.fluticasone_furoate_low",
+      "contentHash": "2ac945c42c3e8fab",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:53:57.954Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng asthma.ics.fluticasone_furoate_low có trích dẫn hợp lệ và đại lượng chuẩn hóa QA-10 (dose_daily)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:53:57.954Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

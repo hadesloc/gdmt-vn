@@ -1,0 +1,26 @@
+{
+  "itemId": "sodium_bicarbonate",
+  "contentHash": "ac41eb0068e5c0bd56f26c2ff9bb0ec4ea4b551192ee6bbfd773211bdd6708a2",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "sodium_bicarbonate",
+      "contentHash": "167fbad2fb03ba7b",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:58:18.026Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động bổ sung pregnancy, lactation và contraindications theo chuẩn QA-9 cho Natri Bicarbonat (Sodium Bicarbonate)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

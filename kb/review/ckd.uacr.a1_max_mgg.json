@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.uacr.a1_max_mgg",
+  "contentHash": "0dce358be5709d2c86a508fb14fe4f95ccf11615042ad9b3250bf73ce97de545",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.uacr.a1_max_mgg",
+      "contentHash": "753e5587c6281dc1",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.108Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.uacr.a1_max_mgg."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

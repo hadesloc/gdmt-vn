@@ -1,0 +1,56 @@
+{
+  "id": "ckd_76_outpatient_k54_ecg_changes_emergency_refer_and_hold_rasi",
+  "titleVi": "Ngoại trú - Tăng kali máu K+ = 5.4 mmol/L kèm biến đổi điện tâm đồ (ecgHyperkalemia = true) đang dùng Losartan -> Chuyển cấp cứu nội viện REFER + HOLD Losartan, cấm kê K-binder ngoại trú (Regression CKD-R4-R3-02)",
+  "source": "BYT 2024 Mục 4.10.3.2 & UKKA 2022 Guideline 13.1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_76",
+    "name": "BN CKD 76",
+    "age": 63,
+    "sex": "female",
+    "weight": 58,
+    "sbp": 132,
+    "dbp": 78,
+    "scr": 210,
+    "k": 5.4,
+    "uacr": 30,
+    "conditions": {
+      "ckd": true,
+      "htn": true
+    },
+    "customInputs": {
+      "ecgHyperkalemia": true
+    },
+    "currentMeds": [
+      { "drugId": "losartan", "name": "Cozaar 50 mg", "dose": 50, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "rec_ckd_outpatient_hyperk_emergency_refer", "action": "REFER" },
+      { "drugId": "losartan", "action": "HOLD" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "losartan", "action": "CONTINUE" },
+      { "drugId": "patiromer", "action": "CONSIDER" },
+      { "drugId": "sodium_zirconium_cyclosilicate", "action": "CONSIDER" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R4-R3-02: Mọi ca tăng kali máu ngoại trú (K+ >= 5.0 mmol/L) kèm biến đổi ECG đều là cấp cứu nội khoa cần chuyển viện ngay để bảo vệ màng cơ tim."
+}

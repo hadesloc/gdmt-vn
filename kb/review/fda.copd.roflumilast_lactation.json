@@ -1,0 +1,26 @@
+{
+  "itemId": "fda.copd.roflumilast_lactation",
+  "contentHash": "377b3c920b78348d09f02693447103b3dc3a372d7d2c4cdbfbf251f6cb79d40d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "fda.copd.roflumilast_lactation",
+      "contentHash": "8a0de9ce619228e3",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

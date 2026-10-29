@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.uricosuric_high_dose_salicylate",
+  "contentHash": "5b9010fe489c467c8ca7add64f3df0f07813324d0264880f240032ae0ea5e0f8",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.uricosuric_high_dose_salicylate",
+      "contentHash": "531d1e396745b42a",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của InteractionRule: ix.uricosuric_high_dose_salicylate"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

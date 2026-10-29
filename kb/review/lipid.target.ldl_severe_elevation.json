@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.target.ldl_severe_elevation",
+  "contentHash": "95021431ae90160ef5df706b1b90568f71a2d0f52eb81a8e3c6538779d79e3dd",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.target.ldl_severe_elevation",
+      "contentHash": "9c12659f430c5b00",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.target.ldl_severe_elevation."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

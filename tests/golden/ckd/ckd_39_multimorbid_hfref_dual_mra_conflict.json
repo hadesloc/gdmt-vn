@@ -1,0 +1,57 @@
+{
+  "id": "ckd_39_multimorbid_hfref_dual_mra_conflict",
+  "titleVi": "Đa bệnh lý (CKD + Suy tim HFrEF + ĐTĐ2) - Hoà giải xung đột Spironolactone vs Finerenone, không kê kép 2 MRA (Regression R3-CKD-04)",
+  "source": "ESC 2026 HF & KDIGO 2024 CKD PP 3.8.1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_39",
+    "name": "BN CKD 39",
+    "age": 64,
+    "sex": "male",
+    "weight": 72,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 74,
+    "lvef": 30,
+    "nyha": 2,
+    "scr": 125,
+    "k": 4.4,
+    "uacr": 42,
+    "hba1c": 7.6,
+    "conditions": {
+      "ckd": true,
+      "hf": true,
+      "dm": true,
+      "htn": true
+    },
+    "currentMeds": [
+      { "drugId": "losartan", "name": "Cozaar 100 mg", "dose": 100, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd", "hf", "dm2"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "spironolactone", "action": "START" },
+      { "drugId": "finerenone", "action": "AVOID" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "finerenone", "action": "START" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy R3-CKD-04: Ở bệnh nhân HFrEF (EF 30%) kèm ĐTĐ2 và CKD, ưu tiên Spironolactone giảm tử vong suy tim (Class I) và tự động chuyển Finerenone sang AVOID để ngăn tăng kali máu tử vong do phối hợp 2 thuốc MRA."
+}

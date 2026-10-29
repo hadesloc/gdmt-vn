@@ -1,0 +1,49 @@
+{
+  "id": "copd_22_inpatient_exacerbation_discharge_checklist",
+  "titleVi": "Đợt cấp COPD nội viện: Checklist trước khi ra viện",
+  "source": "BYT QĐ 2131/2026 p. 42 / Discharge Checklist",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_22",
+    "age": 68,
+    "sex": "male",
+    "weight": 56,
+    "height": 164,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 80,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteExacerbation": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_copd_discharge_checklist",
+        "action": "MONITOR"
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "htn_12_outpatient_gout_caution_thiazide",
+  "titleVi": "Tăng huyết áp kèm Bệnh gút: Ưu tiên CCB + Losartan, tránh Thiazide",
+  "source": "ESC 2024 HTN / esc.htn.2024.gout_thiazide_caution",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 50,
+    "sex": "male",
+    "weight": 76,
+    "height": 167,
+    "sbp": 154,
+    "dbp": 96,
+    "hr": 78,
+    "scr": 90,
+    "k": 4.3,
+    "uricAcid": 510,
+    "conditions": {
+      "htn": true,
+      "gout": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn",
+      "gout"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "amlodipine",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "indapamide",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân gút, ưu tiên CCB + Losartan, không chỉ định thiazide/indapamide."
+}

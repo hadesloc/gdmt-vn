@@ -1,0 +1,58 @@
+{
+  "id": "af_04_outpatient_low_risk_no_oac",
+  "titleVi": "CHA₂DS₂-VA = 0: Nam 45t không yếu tố nguy cơ (ADV_AF_18) - AVOID chống đông",
+  "source": "ESC 2024 AF Rec Table 6 / esc.af.2024.cha2ds2va_score_0",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 45,
+    "sex": "male",
+    "weight": 70,
+    "height": 170,
+    "sbp": 120,
+    "dbp": 78,
+    "hr": 78,
+    "rhythm": "afib",
+    "scr": 85,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true
+    },
+    "currentMeds": []
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_af_oac_low_risk",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "apixaban",
+        "action": "START"
+      },
+      {
+        "drugId": "warfarin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 45 tuổi (CHA₂DS₂-VA = 0, nguy cơ thấp, ADV_AF_18). Chống chỉ định dùng thuốc chống đông hoặc kháng tiểu cầu (Class III)."
+}

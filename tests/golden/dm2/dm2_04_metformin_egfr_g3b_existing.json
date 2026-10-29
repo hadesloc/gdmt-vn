@@ -1,0 +1,66 @@
+{
+  "id": "dm2_04_metformin_egfr_g3b_existing",
+  "titleVi": "Bệnh nhân ĐTĐ2 đang dùng Metformin nhưng eGFR giảm xuống 38 - Giảm liều tối đa 1000 mg/ngày",
+  "source": "KDIGO2022 PP4.1.3 / Figure27; BYT5481",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 64,
+    "sex": "male",
+    "weight": 70,
+    "height": 166,
+    "sbp": 132,
+    "dbp": 82,
+    "hr": 72,
+    "scr": 160,
+    "k": 4.5,
+    "glucose": 8.4,
+    "hba1c": 7.6,
+    "conditions": {
+      "dm": true,
+      "ckd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "metformin",
+        "name": "Metformin",
+        "dose": 2000,
+        "unit": "mg",
+        "freq": "qd"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "metformin",
+        "action": "REDUCE",
+        "doseContains": "1000 mg"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "metformin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Đang dùng Metformin mà eGFR giảm 30–44 mL/min: Giảm nửa liều (tối đa 1000 mg/ngày)."
+}

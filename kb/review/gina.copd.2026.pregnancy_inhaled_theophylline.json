@@ -1,0 +1,26 @@
+{
+  "itemId": "gina.copd.2026.pregnancy_inhaled_theophylline",
+  "contentHash": "d75f10d18080d9232999d6b45fca4e2b7e45082c831d8b91be6b82ce7cd642df",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gina.copd.2026.pregnancy_inhaled_theophylline",
+      "contentHash": "2cb7cd83f94c4456",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

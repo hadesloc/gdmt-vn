@@ -1,0 +1,83 @@
+{
+  "id": "copd_60_r3_open_triple_continue_both_components",
+  "titleVi": "Hồi quy R3 (COPD-R3-R3-06): Bệnh nhân COPD ổn định trên bộ ba mở 2 bình hít (Budesonide/Formoterol + Tiotropium) phát lệnh CONTINUE cho cả hai bình",
+  "source": "GOLD 2026 Ch. 3 Follow-up / BYT QĐ 2131/2026 (COPD-R3-R3-06)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_60",
+    "age": 66,
+    "sex": "male",
+    "weight": 63,
+    "height": 167,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 72,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "budesonide_formoterol",
+        "name": "Symbicort",
+        "dose": 160,
+        "unit": "mcg"
+      },
+      {
+        "drugId": "tiotropium",
+        "name": "Spiriva Respimat",
+        "dose": 5,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.49,
+      "fev1PredPct": 52,
+      "mmrc": 1,
+      "cat": 8,
+      "moderateExacerbations": 0,
+      "hospitalizations": 0,
+      "bloodEos": 260,
+      "smokingStatus": "former"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "tiotropium",
+        "action": "CONTINUE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "STOP"
+      },
+      {
+        "drugId": "tiotropium",
+        "action": "STOP"
+      }
+    ]
+  }
+}

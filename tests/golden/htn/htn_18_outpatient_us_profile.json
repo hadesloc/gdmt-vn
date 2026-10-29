@@ -1,0 +1,46 @@
+{
+  "id": "htn_18_outpatient_us_profile",
+  "titleVi": "Profile US (AHA/ACC 2025): Đích huyết áp < 130/80 mmHg",
+  "source": "AHA/ACC 2025 / aha.acc.2025.bp_target_130",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "US",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 54,
+    "sex": "male",
+    "weight": 75,
+    "height": 172,
+    "sbp": 136,
+    "dbp": 84,
+    "hr": 76,
+    "conditions": {
+      "htn": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_htn_bp_target_evaluation",
+        "action": "CONSIDER"
+      }
+    ]
+  },
+  "descriptionVi": "Áp dụng profile Hoa Kỳ, đích điều trị chuẩn là < 130/80 mmHg."
+}

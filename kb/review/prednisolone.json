@@ -1,0 +1,26 @@
+{
+  "itemId": "prednisolone",
+  "contentHash": "72ef0ca9359c7167ff240952112c61409e620c02eb40342f14caecf557de06a2",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "prednisolone",
+      "contentHash": "c08a50be60dc3222",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:53:57.954Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính hợp lệ của liều, cổng an toàn, thai kỳ, cho con bú, chống chỉ định, qtRisk và mã nhóm chuẩn hóa cho thuốc Prednisolone."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:53:57.954Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

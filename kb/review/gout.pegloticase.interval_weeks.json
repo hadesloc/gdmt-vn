@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.pegloticase.interval_weeks",
+  "contentHash": "3df506efe4ce1bfbc5487c5ca9a5d689f53324a46d6882bc461417636c41bc86",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.pegloticase.interval_weeks",
+      "contentHash": "6f14ff20be9bf00b",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold: gout.pegloticase.interval_weeks"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

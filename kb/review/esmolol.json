@@ -1,0 +1,26 @@
+{
+  "itemId": "esmolol",
+  "contentHash": "17c4a40408b1daae36d30e770fa30b7ca883b2457186d27930f862154cdbfb70",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "esmolol",
+      "contentHash": "363911c14b774db8",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Hypertension Specialist (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Esmolol (truyền tĩnh mạch) (Esmolol) đầy đủ liều lượng, classes (bb_selective), dải thận, thai kỳ/cho con bú, chống chỉ định máy đọc và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

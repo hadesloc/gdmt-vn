@@ -1,0 +1,87 @@
+{
+  "id": "dm2_39_ckd_g5_avoid_glp1_stop_gliclazide_acarbose",
+  "titleVi": "Bệnh nhân ĐTĐ2 + ASCVD suy thận giai đoạn 5 (eGFR 11) đang dùng Gliclazide & Acarbose - Ngừng SU/Acarbose và Tránh khởi trị mới GLP-1 RA",
+  "source": "KDIGO 2022/2024 & EMA/FDA Labels",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 66,
+    "sex": "male",
+    "weight": 65,
+    "height": 166,
+    "sbp": 136,
+    "dbp": 82,
+    "hr": 76,
+    "scr": 460,
+    "k": 4.9,
+    "glucose": 9.8,
+    "hba1c": 8.2,
+    "conditions": {
+      "dm": true,
+      "ckd": true,
+      "ascvd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "gliclazide",
+        "name": "Gliclazide MR",
+        "dose": 60,
+        "unit": "mg"
+      },
+      {
+        "drugId": "acarbose",
+        "name": "Acarbose",
+        "dose": 50,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "gliclazide",
+        "action": "STOP"
+      },
+      {
+        "drugId": "acarbose",
+        "action": "STOP"
+      },
+      {
+        "drugId": "semaglutide",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "semaglutide",
+        "action": "START"
+      },
+      {
+        "drugId": "gliclazide",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "acarbose",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Ở CKD G5 (eGFR < 15 mL/phút/1.73m²): Chống chỉ định/ngừng ngay Gliclazide và Acarbose (eGFR < 30), đồng thời chặn khởi trị mới Semaglutide (AVOID)."
+}

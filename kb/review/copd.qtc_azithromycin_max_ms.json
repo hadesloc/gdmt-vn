@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.qtc_azithromycin_max_ms",
+  "contentHash": "eac5a777ef9d5f73d2760117afa1999f91b589a03bfa50b5b2bc5c04276c3205",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.qtc_azithromycin_max_ms",
+      "contentHash": "5f68e49b29bb1ef5",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

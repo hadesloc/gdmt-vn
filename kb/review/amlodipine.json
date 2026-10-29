@@ -1,0 +1,26 @@
+{
+  "itemId": "amlodipine",
+  "contentHash": "c0009ba9f41aa8ffcb94b4c481d9cc8784c65d2d7b48f022ddf36a5c92d144d9",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "amlodipine",
+      "contentHash": "e05bdbbece323fb6",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Hypertension Specialist (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Amlodipine (Amlodipine) đầy đủ liều lượng, classes (dhp_ccb), dải thận, thai kỳ/cho con bú, chống chỉ định máy đọc và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

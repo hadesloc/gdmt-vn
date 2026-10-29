@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.flare.colchicine_early_hours",
+  "contentHash": "c6f8e241bf523765049fdfcf65e335f075797756a8d066928ada3b965af8bd41",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.flare.colchicine_early_hours",
+      "contentHash": "188624a40d95b542",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.flare.colchicine_early_hours"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

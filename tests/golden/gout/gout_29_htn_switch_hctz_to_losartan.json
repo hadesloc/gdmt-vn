@@ -1,0 +1,72 @@
+{
+  "id": "gout_29_htn_switch_hctz_to_losartan",
+  "titleVi": "Tối ưu thuốc đồng mắc Gút + Tăng huyết áp đang dùng Hydrochlorothiazide: Chuyển sang Losartan (tăng thải acid uric)",
+  "source": "ACR 2020 & EULAR 2016 (acr.gout.2020.switch_hctz_losartan, eular.gout.2016.diuretic_losartan)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 57,
+    "sex": "male",
+    "weight": 74,
+    "sbp": 146,
+    "dbp": 88,
+    "scr": 88,
+    "uricAcid": 510,
+    "conditions": {
+      "gout": true,
+      "htn": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "hydrochlorothiazide",
+        "name": "Hydrochlorothiazide",
+        "dose": "25",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 2,
+      "hlab5801": "negative"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "losartan",
+        "ruleId": "rec_gout_switch_thiazide_losartan",
+        "action": "SWITCH"
+      },
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_start",
+        "action": "START",
+        "doseContains": "100 mg"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "losartan",
+        "action": "AVOID"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 57 tuổi Gút kèm Tăng huyết áp đang dùng lợi tiểu Hydrochlorothiazide làm tăng tái hấp thu urat ở ống thận. Đề xuất chuyển sang Losartan (ARB duy nhất có tác dụng uricosuric nhẹ qua URAT1) kèm khởi trị Allopurinol."
+}

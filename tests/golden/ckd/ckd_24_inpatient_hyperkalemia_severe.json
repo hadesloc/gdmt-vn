@@ -1,0 +1,57 @@
+{
+  "id": "ckd_24_inpatient_hyperkalemia_severe",
+  "titleVi": "Nội viện - Ca icu_hyperkalemia_0320: Tăng Kali máu nặng (7.2 mmol/L + ECG sóng T nhọn) -> Canxi TM + Insulin-Glucose",
+  "source": "on-call:icu_hyperkalemia_0320 / ukka.2022.guideline_16_2_calcium_salts",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_24",
+    "name": "BN icu_hyperkalemia_0320",
+    "age": 63,
+    "sex": "male",
+    "weight": 68,
+    "sbp": 100,
+    "dbp": 64,
+    "hr": 52,
+    "scr": 520,
+    "k": 7.2,
+    "hco3": 15,
+    "conditions": {
+      "ckd": true
+    },
+    "customInputs": {
+      "ecgHyperkalemia": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_ckd_hyperkalemia_severe_bundle",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_ckd_emergency_rrt",
+        "action": "REFER"
+      }
+    ]
+  },
+  "descriptionVi": "Ca bệnh chuyển từ ON-CALL: Tăng kali máu nguy kịch có biến đổi ECG yêu cầu tiêm canxi tĩnh mạch khẩn cấp và lọc máu."
+}

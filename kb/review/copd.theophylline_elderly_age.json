@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.theophylline_elderly_age",
+  "contentHash": "aafb690fad4329bee2ca75f04ac4cb321355bb9c82e8986073a4c38e5b2a00ee",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.theophylline_elderly_age",
+      "contentHash": "cff35be8640349a9",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

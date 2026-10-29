@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.allopurinol.egfr_ckd_threshold",
+  "contentHash": "c8ad85d0af2125842949a82a0108b2cbf3064f10b9ea76338047b9ef2108f556",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.allopurinol.egfr_ckd_threshold",
+      "contentHash": "639a9ece62626e31",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.allopurinol.egfr_ckd_threshold"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "hf_17_hfref_recent_worsening_vericiguat",
+  "titleVi": "HFrEF có đợt suy tim mất bù nhập viện gần đây: Cân nhắc Vericiguat",
+  "source": "ESC 2026 HF Rec 6.1.5.2",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 66,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 120,
+    "dbp": 74,
+    "hr": 72,
+    "lvef": 35,
+    "nyha": 3,
+    "scr": 110,
+    "k": 4.4,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [
+      { "drugId": "sacubitril_valsartan", "name": "Sacubitril/Valsartan", "dose": "97/103 mg x 2 lần/ngày" },
+      { "drugId": "bisoprolol", "name": "Bisoprolol", "dose": "10 mg x 1 lần/ngày" },
+      { "drugId": "dapagliflozin", "name": "Dapagliflozin", "dose": "10 mg x 1 lần/ngày" },
+      { "drugId": "spironolactone", "name": "Spironolactone", "dose": "50 mg x 1 lần/ngày" }
+    ],
+    "selectedModules": [
+      "hf"
+    ],
+    "customInputs": {
+      "recentWorseningHf": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "vericiguat",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "HFrEF < 45% có đợt mất bù gần đây: Cân nhắc Vericiguat."
+}

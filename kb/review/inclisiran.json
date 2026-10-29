@@ -1,0 +1,26 @@
+{
+  "itemId": "inclisiran",
+  "contentHash": "2ed0432bd31866e57f6ff698ccfe1407040f8c8cc29f4ba7e3dad4db018a0b42",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "inclisiran",
+      "contentHash": "a29c08e85e990176",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra schema QA-10, phân nhóm classes, dải thận, cổng an toàn thai kỳ/tương tác và trích dẫn cho thuốc Inclisiran."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ckd_74_inpatient_ecg_hyperkalemia_missing_k_poc_defer",
+  "titleVi": "Nội viện - Nghi ngờ biến đổi ECG kiểu tăng kali máu nhưng chưa có Kali máu (POC/huyết thanh) -> DEFER xét nghiệm khí máu tại giường khẩn, cấm truyền Insulin-Glucose mù (Regression CKD-R4-R1-02)",
+  "source": "UKKA 2022 Guideline 12.1 & 13.1 (Hyperkalaemia ECG & Point-of-Care K+ Verification)",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_74",
+    "name": "BN CKD 74",
+    "age": 66,
+    "sex": "male",
+    "weight": 68,
+    "sbp": 128,
+    "dbp": 78,
+    "scr": 250,
+    "conditions": {
+      "ckd": true
+    },
+    "customInputs": {
+      "ecgHyperkalemia": true
+    },
+    "currentMeds": [],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "rec_ckd_hyperkalemia_ecg_missing_k", "action": "DEFER" }
+    ],
+    "mustNotInclude": [
+      { "ruleId": "rec_ckd_hyperkalemia_severe_bundle", "action": "START" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R4-R1-02: Không kích hoạt mù gói truyền Insulin-Glucose + Khí dung Salbutamol khi chỉ có sóng T cao nhọn trên ECG mà chưa đối chiếu Kali máu khí máu tại giường (POC)."
+}

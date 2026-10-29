@@ -1,0 +1,74 @@
+{
+  "id": "gout_25_probenecid_contra_urolithiasis_and_benzbromarone_liver",
+  "titleVi": "Tiền sử sỏi thận & Bệnh gan mạn: Chống chỉ định cả Probenecid lẫn Benzbromarone",
+  "source": "FDA Probenecid Label & EULAR 2016 (fda.probenecid.stones_contra, byt.gout.2014.uricosuric_agents)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 53,
+    "sex": "male",
+    "weight": 68,
+    "scr": 82,
+    "uricAcid": 540,
+    "conditions": {
+      "gout": true,
+      "liverDisease": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 3,
+      "urolithiasis": true,
+      "preferProbenecid": true,
+      "preferBenzbromarone": true,
+      "hlab5801": "negative"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "probenecid",
+        "ruleId": "rec_gout_probenecid_avoid_stone",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "benzbromarone",
+        "ruleId": "rec_gout_benzbromarone_avoid_contra",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_start",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "probenecid",
+        "action": "START"
+      },
+      {
+        "drugId": "benzbromarone",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 53 tuổi có tiền sử sỏi thận và bệnh gan mạn muốn dùng nhóm tăng thải urat. Cả Probenecid (sỏi thận) và Benzbromarone (bệnh gan + sỏi thận) đều bị chống chỉ định; chọn Allopurinol."
+}

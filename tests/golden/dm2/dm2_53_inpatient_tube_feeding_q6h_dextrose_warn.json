@@ -1,0 +1,67 @@
+{
+  "id": "dm2_53_inpatient_tube_feeding_q6h_dextrose_warn",
+  "titleVi": "Bệnh nhân nội viện nuôi ăn qua sonde (Tube feeding): Phác đồ Regular insulin mỗi 6 giờ kèm cảnh báo truyền Dextrose nếu ngừng sonde",
+  "source": "ADA Standards of Care 2026 Chapter 16",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 66,
+    "sex": "male",
+    "weight": 68,
+    "height": 168,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 82,
+    "scr": 92,
+    "k": 4.1,
+    "glucose": 13.5,
+    "conditions": {
+      "dm": true,
+      "strokeOrTia": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "inpatientUnit": "ward",
+      "inpatientEating": "tube_feeding"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_dm2_inpatient_basal_bolus",
+        "drugId": "insulin_glargine",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_dm2_inpatient_tube_feeding_bolus",
+        "drugId": "insulin_regular",
+        "action": "START",
+        "doseContains": "mỗi 6 giờ"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_dm2_inpatient_prandial_bolus",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nuôi ăn qua sonde không chỉ định 3 mũi insulin theo bữa ăn thông thường mà chia Regular insulin mỗi 6 giờ kết hợp insulin nền, kèm cảnh báo bắt buộc truyền Dextrose nếu gián đoạn nuôi ăn qua sonde."
+}

@@ -1,0 +1,128 @@
+{
+  "id": "pioglitazone",
+  "nameVi": "Pioglitazone",
+  "inn": "Pioglitazone",
+  "class": "Thiazolidinedione (TZD)",
+  "vnBrands": [
+    "Actos",
+    "Pionorm"
+  ],
+  "forms": [
+    "Viên nén 15 mg, 30 mg, 45 mg"
+  ],
+  "start": {
+    "amount": 15,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Có thể uống cùng hoặc không cùng thức ăn; theo dõi cân nặng và dấu hiệu giữ nước"
+  },
+  "target": {
+    "amount": 30,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống"
+  },
+  "titration": {
+    "step": "15 mg",
+    "intervalDays": 30,
+    "maxDose": "45 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "15 - 45 mg/ngày (không cần chỉnh liều thận)",
+      "citationIds": [
+        "fda.pioglitazone.heart_failure_contra"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "caution",
+      "note": "Thận trọng nguy cơ giữ nước và phù",
+      "citationIds": [
+        "fda.pioglitazone.heart_failure_contra"
+      ],
+      "dose": "15 - 30 mg/ngày (thận trọng giữ nước và phù; chống chỉ định nếu có suy tim)"
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_pioglitazone_hf_contra",
+      "parameter": "heart_failure",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định Pioglitazone ở bệnh nhân suy tim (mọi mức độ suy tim có triệu chứng / tiền sử suy tim) do nguy cơ giữ nước và làm mất bù suy tim.",
+      "citationIds": [
+        "fda.pioglitazone.heart_failure_contra",
+        "ada.dm2.2026.pioglitazone_hf_fracture_bladder"
+      ]
+    }
+  ],
+  "interactions": [
+    "Tăng giữ nước và phù khi phối hợp với insulin",
+    "Tăng nguy cơ gãy xương (đặc biệt phụ nữ sau mãn kinh và người loãng xương); tránh dùng ở ung thư bàng quang đang hoạt động"
+  ],
+  "citationIds": [
+    "fda.pioglitazone.heart_failure_contra",
+    "fda.pioglitazone.hepatic_injury",
+    "fda.pioglitazone.hepatic_alt_2_5",
+    "fda.pioglitazone.bladder_cancer",
+    "ada.dm2.2026.pioglitazone_hf_fracture_bladder"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong thai kỳ do nguy cơ độc tính phôi thai trong nghiên cứu động vật",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_noninsulin"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo khi cho con bú",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_noninsulin"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "heart_failure",
+      "messageVi": "Chống chỉ định tuyệt đối Pioglitazone ở bệnh nhân suy tim (FDA Boxed Warning & ADA 2026 Bảng 9.2)",
+      "citationIds": [
+        "fda.pioglitazone.heart_failure_contra",
+        "ada.dm2.2026.pioglitazone_hf_fracture_bladder"
+      ]
+    },
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định tuyệt đối Pioglitazone trong thai kỳ",
+      "citationIds": [
+        "ada.dm2.2026.pregnancy_noninsulin"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định ở bệnh nhân bệnh gan hoạt động, suy gan hoặc ALT > 2.5 lần ULN",
+      "citationIds": [
+        "fda.pioglitazone.hepatic_injury",
+        "fda.pioglitazone.hepatic_alt_2_5",
+        "byt.dm2.2020.pioglitazone_contra_alt_2_5"
+      ]
+    },
+    {
+      "code": "active_bladder_cancer",
+      "messageVi": "Chống chỉ định ở bệnh nhân ung thư bàng quang đang hoạt động (FDA Mục 5.4 & ADA 2026 Bảng 9.2)",
+      "citationIds": [
+        "fda.pioglitazone.bladder_cancer",
+        "ada.dm2.2026.pioglitazone_hf_fracture_bladder"
+      ]
+    }
+  ],
+  "classes": [
+    "tzd"
+  ]
+}

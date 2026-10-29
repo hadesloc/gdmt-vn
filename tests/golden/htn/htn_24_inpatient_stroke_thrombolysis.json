@@ -1,0 +1,48 @@
+{
+  "id": "htn_24_inpatient_stroke_thrombolysis",
+  "titleVi": "Nhồi máu não có tiêu sợi huyết: Hạ SBP ≤ 185 và DBP ≤ 110 trước rtPA",
+  "source": "VSH 2022 / vsh.htn.2022.emergency_stroke_thrombolysis",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 60,
+    "sex": "male",
+    "weight": 72,
+    "height": 168,
+    "sbp": 198,
+    "dbp": 112,
+    "hr": 82,
+    "conditions": {
+      "htn": true,
+      "acuteIschemicStroke": true,
+      "thrombolysisEligible": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "nicardipine",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Đột quỵ thiếu máu não cấp có chỉ định tiêu sợi huyết, bắt buộc hạ HA ≤ 185/110 mmHg trước tiêm rtPA."
+}

@@ -1,0 +1,88 @@
+{
+  "id": "fluticasone_vilanterol",
+  "nameVi": "Fluticasone furoate / Vilanterol",
+  "inn": "Fluticasone furoate / Vilanterol trifenatate",
+  "class": "ICS-LABA",
+  "vnBrands": [
+    "Relvar Ellipta"
+  ],
+  "forms": [
+    "Bình hít bột khô Ellipta 100/25 mcg, 200/25 mcg"
+  ],
+  "start": {
+    "amount": 1,
+    "unit": "nhát",
+    "frequency": "1 lần/ngày",
+    "route": "hít",
+    "description": "Track 2: 1 nhát 100/25 mcg hít 1 lần/ngày"
+  },
+  "target": {
+    "amount": 1,
+    "unit": "nhát",
+    "frequency": "1 lần/ngày",
+    "route": "hít",
+    "description": "Track 2 Bậc 4–5: 1 nhát 200/25 mcg hít 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận",
+      "citationIds": [
+        "gina.asthma.2026.table_6_fluticasone_furoate"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Chất ức chế mạnh CYP3A4 (ritonavir, cobicistat, ketoconazole, itraconazole, clarithromycin): Làm tăng phơi nhiễm toàn thân của fluticasone furoate (suy thượng thận / hội chứng Cushing) và vilanterol (độc tính tim mạch / kéo dài QT); không khuyến cáo phối hợp.",
+    "Thuốc chẹn beta không chọn lọc làm đối kháng giãn phế quản và kích phát co thắt phế quản nặng.",
+    "Hướng dẫn dùng thuốc: Súc miệng kỹ bằng nước sạch và nhổ đi ngay sau khi hít thuốc để phòng ngừa nấm candida hầu họng và khản tiếng"
+  ],
+  "citationIds": [
+    "gina.asthma.2026.table_6_fluticasone_furoate",
+    "gina.asthma.2026.step5_lama_triplet",
+    "gina.asthma.2026.cyp3a4_ics_laba_interaction"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Chưa có đủ nghiên cứu lớn có đối chứng trên phụ nữ mang thai, chỉ dùng khi cần thiết.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Thận trọng khi cho con bú.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity",
+      "messageVi": "Quá mẫn với fluticasone furoate hoặc vilanterol",
+      "citationIds": [
+        "gina.asthma.2026.table_6_fluticasone_furoate"
+      ]
+    },
+    {
+      "code": "severe_milk_protein_allergy",
+      "messageVi": "Chống chỉ định ở bệnh nhân có tiền sử dị ứng nặng / phản vệ với protein sữa bò (bình hít bột khô Ellipta chứa tá dược lactose)",
+      "citationIds": [
+        "gina.asthma.2026.table_6_fluticasone_furoate",
+        "gold.copd.2026.dpi_inspiratory_flow_switch"
+      ]
+    }
+  ],
+  "classes": [
+    "ics",
+    "laba"
+  ],
+  "components": [
+    "fluticasone_furoate",
+    "vilanterol"
+  ],
+  "qtRisk": "conditional"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "lipid_42_outpatient_dialysis_sharp_continue_both",
+  "titleVi": "Lọc máu chu kỳ đang dùng Simvastatin 20 mg + Ezetimibe 10 mg (SHARP) - Duy trì cả hai thuốc",
+  "source": "ESC/EAS 2019 & ESC CKD 2026 / esc.lipid.2019.ckd_dialysis_continue",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 60,
+    "sex": "female",
+    "weight": 55,
+    "height": 156,
+    "sbp": 134,
+    "dbp": 80,
+    "hr": 72,
+    "scr": 520,
+    "tc": 4.2,
+    "hdl": 1.1,
+    "ldl": 2.3,
+    "tg": 1.6,
+    "conditions": {
+      "ckd": true,
+      "onDialysis": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "simvastatin",
+        "name": "Simvastatin",
+        "dose": 20,
+        "unit": "mg"
+      },
+      {
+        "drugId": "ezetimibe",
+        "name": "Ezetimibe",
+        "dose": 10,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "simvastatin",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "ezetimibe",
+        "action": "CONTINUE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "SWITCH"
+      },
+      {
+        "drugId": "simvastatin",
+        "action": "STOP"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R2-R1-01 & LIPID-R2-R3-06: Bệnh nhân bắt đầu lọc máu khi đang dùng bộ đôi Simvastatin 20 mg + Ezetimibe 10 mg từ giai đoạn trước lọc máu (phác đồ SHARP) cần tiếp tục duy trì cả hai thuốc và không tự ý leo thang/chuyển đổi khi chưa có ASCVD."
+}

@@ -1,0 +1,150 @@
+{
+  "id": "vericiguat",
+  "nameVi": "Vericiguat",
+  "inn": "Vericiguat",
+  "class": "Soluble guanylate cyclase (sGC) stimulator",
+  "classes": [
+    "sgc_stimulator"
+  ],
+  "vnBrands": [
+    "Verquvo"
+  ],
+  "forms": [
+    "Viên nén bao phim 2.5 mg",
+    "Viên nén bao phim 5 mg",
+    "Viên nén bao phim 10 mg"
+  ],
+  "start": {
+    "amount": 2.5,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "uống cùng thức ăn: khởi đầu 2.5 mg/ngày theo ESC 2026 Table 11 (hoặc 5 mg/ngày theo nhãn FDA 01/2026 nếu không có nguy cơ hạ huyết áp)"
+  },
+  "target": {
+    "amount": 10,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "10 mg uống 1 lần/ngày cùng thức ăn"
+  },
+  "titration": {
+    "step": "Gấp đôi liều mỗi ~2 tuần (2.5 -> 5 -> 10 mg x 1 lần/ngày cùng thức ăn) theo mức dung nạp huyết áp của bệnh nhân",
+    "intervalDays": 14,
+    "maxDose": "10 mg x 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "2.5 mg x 1 lần/ngày -> đích 10 mg x 1 lần/ngày (không cần chỉnh liều khi eGFR ≥ 15 mL/min/1.73m²)",
+      "citationIds": [
+        "esc.hf.2026.amt_doses_table11",
+        "fda.hf.vericiguat_renal_hepatic"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "not_rec",
+      "continue": "not_rec",
+      "note": "Không khuyến cáo khởi trị ở eGFR < 15 mL/min/1.73m² hoặc bệnh nhân đang lọc máu do chưa được nghiên cứu trong thử nghiệm VICTORIA (FDA Verquvo §8.6); đồng thời chưa nghiên cứu ở suy gan nặng Child-Pugh C",
+      "citationIds": [
+        "fda.hf.vericiguat_renal_hepatic"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_vericiguat_sbp_min",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 100,
+      "unit": "mmHg",
+      "action": "hold",
+      "messageVi": "Huyết áp tâm thu < 100 mmHg: Tạm hoãn khởi trị Vericiguat do nguy cơ hạ huyết áp có triệu chứng",
+      "citationIds": [
+        "aha.hf.2022.vericiguat_victoria_sbp100"
+      ]
+    },
+    {
+      "id": "gate_vericiguat_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 15,
+      "unit": "mL/min/1.73m2",
+      "action": "avoid",
+      "messageVi": "eGFR < 15 mL/min/1.73m² hoặc đang lọc máu: Không khuyến cáo khởi trị Vericiguat",
+      "citationIds": [
+        "fda.hf.vericiguat_renal_hepatic"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối trong thai kỳ (Boxed Warning gây độc tính phôi thai); phụ nữ trong độ tuổi sinh sản bắt buộc thử thai âm tính trước khởi trị và dùng biện pháp tránh thai hiệu quả trong suốt thời gian điều trị và thêm 1 tháng sau liều cuối.",
+    "citationIds": [
+      "fda.hf.vericiguat_boxed_preg"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo cho con bú trong thời gian điều trị bằng Vericiguat do nguy cơ phản ứng có hại nghiêm trọng trên trẻ bú mẹ (FDA Verquvo §8.2).",
+    "citationIds": [
+      "fda.hf.vericiguat_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định tuyệt đối trong thai kỳ (Boxed Warning độc tính phôi thai)",
+      "citationIds": [
+        "fda.hf.vericiguat_boxed_preg"
+      ]
+    },
+    {
+      "code": "concomitant_sgc_stimulator",
+      "messageVi": "Chống chỉ định tuyệt đối dùng đồng thời với các thuốc kích thích sGC khác (như riociguat)",
+      "citationIds": [
+        "fda.hf.vericiguat_pde5_contra"
+      ]
+    },
+    {
+      "code": "concomitant_pde5_inhibitor",
+      "messageVi": "Không khuyến cáo / tránh phối hợp với thuốc ức chế PDE-5 (sildenafil, tadalafil, vardenafil) do nguy cơ tụt huyết áp nặng",
+      "citationIds": [
+        "fda.hf.vericiguat_pde5_contra"
+      ]
+    },
+    {
+      "code": "dialysis",
+      "messageVi": "Không khuyến cáo ở bệnh nhân suy thận giai đoạn cuối đang lọc máu hoặc suy gan nặng Child-Pugh C",
+      "citationIds": [
+        "fda.hf.vericiguat_renal_hepatic"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định phối hợp với chất kích thích sGC khác (riociguat); tránh phối hợp thuốc ức chế PDE-5 (sildenafil, tadalafil) và nitrat hữu cơ tác dụng kéo dài do cộng hưởng tụt huyết áp"
+  ],
+  "citationIds": [
+    "esc.hf.2026.vericiguat_rec",
+    "esc.hf.2026.amt_doses_table11",
+    "fda.hf.vericiguat_boxed_preg",
+    "fda.hf.vericiguat_pde5_contra",
+    "fda.hf.vericiguat_lactation",
+    "fda.hf.vericiguat_renal_hepatic",
+    "fda.hf.vericiguat_dose_5mg_2026"
+  ],
+  "hepatic": {
+    "status": "caution",
+    "childA": "ok",
+    "childB": "ok",
+    "childC": "avoid",
+    "note": "Không cần chỉnh liều ở Child-Pugh A hoặc B; chưa được nghiên cứu và không khuyến cáo ở suy gan nặng (Child-Pugh C).",
+    "notesVi": "Không cần chỉnh liều ở Child-Pugh A hoặc B; chưa được nghiên cứu và không khuyến cáo ở suy gan nặng (Child-Pugh C).",
+    "citationIds": [
+      "fda.hf.vericiguat_renal_hepatic"
+    ]
+  }
+}

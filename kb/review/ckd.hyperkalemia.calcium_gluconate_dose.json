@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.hyperkalemia.calcium_gluconate_dose",
+  "contentHash": "1bfa270438fe52b4dbfebdb8ebdffe2c0e77e8672b0da5461919e826b9e04a5b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.hyperkalemia.calcium_gluconate_dose",
+      "contentHash": "bc5ee6c10c2cc4ac",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.130Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.hyperkalemia.calcium_gluconate_dose."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

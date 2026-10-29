@@ -1,0 +1,972 @@
+[
+  {
+    "id": "copd.fev1_fvc_diagnostic",
+    "value": 0.7,
+    "unit": "ratio",
+    "quantity": "fev1FvcRatio",
+    "citationIds": [
+      "gold.copd.2026.diag_fev1_fvc",
+      "gold.copd.2026.fev1_fvc_0_7"
+    ],
+    "descriptionVi": "Tỷ lệ FEV1/FVC sau giãn phế quản < 0.70 là tiêu chuẩn vàng chẩn đoán tắc nghẽn luồng khí không hồi phục hoàn toàn (GOLD 2026)."
+  },
+  {
+    "id": "copd.fev1_fvc_percent_byt",
+    "value": 70,
+    "unit": "%",
+    "quantity": "fev1_fvc_pct",
+    "citationIds": [
+      "byt.copd.2026.diag_criteria"
+    ],
+    "descriptionVi": "Tỷ lệ FEV1/FVC sau test phục hồi phế quản < 70% xác định rối loạn thông khí tắc nghẽn (Bộ Y tế QĐ 2131/2026)."
+  },
+  {
+    "id": "copd.gold1_fev1_min",
+    "value": 80,
+    "unit": "%",
+    "quantity": "fev1PredPct",
+    "citationIds": [
+      "byt.copd.2026.gold_classification"
+    ],
+    "descriptionVi": "FEV1 ≥ 80% trị số lý thuyết: Tắc nghẽn mức độ nhẹ (GOLD 1)."
+  },
+  {
+    "id": "copd.gold2_fev1_min",
+    "value": 50,
+    "unit": "%",
+    "quantity": "fev1PredPct",
+    "citationIds": [
+      "byt.copd.2026.gold_classification"
+    ],
+    "descriptionVi": "50% ≤ FEV1 < 80% trị số lý thuyết: Tắc nghẽn mức độ trung bình (GOLD 2)."
+  },
+  {
+    "id": "copd.gold3_fev1_min",
+    "value": 30,
+    "unit": "%",
+    "quantity": "fev1PredPct",
+    "citationIds": [
+      "byt.copd.2026.gold_classification"
+    ],
+    "descriptionVi": "30% ≤ FEV1 < 50% trị số lý thuyết: Tắc nghẽn mức độ nặng (GOLD 3)."
+  },
+  {
+    "id": "copd.gold4_fev1_max",
+    "value": 30,
+    "unit": "%",
+    "quantity": "fev1PredPct",
+    "citationIds": [
+      "byt.copd.2026.gold_classification"
+    ],
+    "descriptionVi": "FEV1 < 30% trị số lý thuyết: Tắc nghẽn mức độ rất nặng (GOLD 4)."
+  },
+  {
+    "id": "copd.mmrc_high",
+    "value": 2,
+    "unit": "points",
+    "quantity": "mmrc",
+    "citationIds": [
+      "byt.copd.2026.mmrc_cat_cutoff"
+    ],
+    "descriptionVi": "Điểm khó thở mMRC ≥ 2 được định nghĩa là nhiều triệu chứng (Nhóm B hoặc E)."
+  },
+  {
+    "id": "copd.cat_high",
+    "value": 10,
+    "unit": "points",
+    "quantity": "cat",
+    "citationIds": [
+      "byt.copd.2026.cat_score_cutoff"
+    ],
+    "descriptionVi": "Điểm đánh giá COPD (CAT) ≥ 10 được định nghĩa là nhiều triệu chứng, ảnh hưởng đáng kể tới sức khỏe."
+  },
+  {
+    "id": "copd.exacerbation_high_risk",
+    "value": 1,
+    "unit": "episodes/year",
+    "quantity": "hospitalizations",
+    "citationIds": [
+      "byt.copd.2026.abe_groups",
+      "gold.copd.2026.group_e_definition"
+    ],
+    "descriptionVi": "Có từ 1 đợt cấp nhập viện trong năm trước xếp bệnh nhân vào Nhóm E (nguy cơ cao)."
+  },
+  {
+    "id": "copd.eosinophils_high",
+    "value": 300,
+    "unit": "cells/uL",
+    "quantity": "bloodEos",
+    "citationIds": [
+      "gold.copd.2026.initial_group_e_triple_eos300",
+      "byt.copd.2026.initial_group_e_triple_eos300",
+      "gold.copd.2026.appendix_eos_300_relationship"
+    ],
+    "descriptionVi": "Bạch cầu ái toan máu ≥ 300 tế bào/µL: Dự báo đáp ứng mạnh nhất với ICS (khởi trị ba thuốc nhóm E, sinh học Dupilumab/Mepolizumab)."
+  },
+  {
+    "id": "copd.eosinophils_low",
+    "value": 100,
+    "unit": "cells/uL",
+    "quantity": "bloodEos",
+    "citationIds": [
+      "gold.copd.2026.followup_exac_eos_100_300",
+      "byt.copd.2026.followup_roflumilast_azithro"
+    ],
+    "descriptionVi": "Bạch cầu ái toan máu ≥ 100 tế bào/µL có lợi ích khi bổ sung ICS phòng đợt cấp; dưới < 100 tế bào/µL không khuyến cáo thêm ICS do ít hiệu quả và tăng nguy cơ viêm phổi."
+  },
+  {
+    "id": "copd.fev1_severe_roflumilast",
+    "value": 50,
+    "unit": "%",
+    "quantity": "fev1PredPct",
+    "citationIds": [
+      "gold.copd.2026.followup_roflumilast",
+      "byt.copd.2026.followup_roflumilast_azithro"
+    ],
+    "descriptionVi": "FEV1 < 50% dự đoán: Ngưỡng chỉ định Roflumilast ở bệnh nhân có triệu chứng viêm phế quản mạn và tiền sử đợt cấp."
+  },
+  {
+    "id": "copd.roflumilast_dose_maintenance",
+    "value": 500,
+    "unit": "mcg",
+    "quantity": "dose_mcg",
+    "citationIds": [
+      "fda.copd.roflumilast_dose"
+    ],
+    "descriptionVi": "Liều duy trì Roflumilast uống 500 mcg x 1 lần/ngày."
+  },
+  {
+    "id": "copd.roflumilast_dose_initial",
+    "value": 250,
+    "unit": "mcg",
+    "quantity": "dose_mcg",
+    "citationIds": [
+      "fda.copd.roflumilast_dose"
+    ],
+    "descriptionVi": "Liều khởi đầu Roflumilast 250 mcg x 1 lần/ngày trong 4 tuần để giảm tác dụng phụ tiêu hóa."
+  },
+  {
+    "id": "copd.roflumilast_initial_weeks",
+    "value": 4,
+    "unit": "weeks",
+    "quantity": "duration_weeks",
+    "citationIds": [
+      "fda.copd.roflumilast_dose"
+    ],
+    "descriptionVi": "Thời gian dùng liều khởi đầu Roflumilast 250 mcg (4 tuần)."
+  },
+  {
+    "id": "copd.azithromycin_dose_daily",
+    "value": 250,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "gold.copd.2026.azithromycin_dose_warnings"
+    ],
+    "descriptionVi": "Liều dự phòng đợt cấp Azithromycin 250 mg uống mỗi ngày."
+  },
+  {
+    "id": "copd.azithromycin_dose_thrice_weekly",
+    "value": 500,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "gold.copd.2026.azithromycin_dose_warnings"
+    ],
+    "descriptionVi": "Liều dự phòng đợt cấp Azithromycin 500 mg uống 3 lần/tuần."
+  },
+  {
+    "id": "copd.dupilumab_dose_q2w",
+    "value": 300,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.copd.dupilumab_dose"
+    ],
+    "descriptionVi": "Liều khuyến cáo Dupilumab (Dupixent) cho COPD: 300 mg tiêm dưới da mỗi 2 tuần."
+  },
+  {
+    "id": "copd.dupilumab_interval_weeks",
+    "value": 2,
+    "unit": "weeks",
+    "quantity": "interval_weeks",
+    "citationIds": [
+      "fda.copd.dupilumab_dose"
+    ],
+    "descriptionVi": "Khoảng cách giữa các mũi tiêm Dupilumab trong COPD (mỗi 2 tuần)."
+  },
+  {
+    "id": "copd.exac_prednisone_dose",
+    "value": 40,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "gold.copd.2026.exac_systemic_steroid_40mg_5d"
+    ],
+    "descriptionVi": "Liều Corticoid toàn thân khuyến cáo trong đợt cấp COPD: 40 mg prednisone tương đương mỗi ngày."
+  },
+  {
+    "id": "copd.exac_prednisone_duration_days",
+    "value": 5,
+    "unit": "days",
+    "quantity": "duration_days",
+    "citationIds": [
+      "gold.copd.2026.exac_systemic_steroid_40mg_5d"
+    ],
+    "descriptionVi": "Thời gian dùng Corticoid toàn thân cho đợt cấp COPD: 5 ngày."
+  },
+  {
+    "id": "copd.exac_antibiotics_duration_days",
+    "value": 5,
+    "unit": "days",
+    "quantity": "duration_days",
+    "citationIds": [
+      "gold.copd.2026.exac_antibiotics_5d"
+    ],
+    "descriptionVi": "Thời gian điều trị kháng sinh trong đợt cấp COPD: 5 ngày."
+  },
+  {
+    "id": "copd.oxygen_target_spo2_min",
+    "value": 88,
+    "unit": "%",
+    "quantity": "restingSpo2",
+    "citationIds": [
+      "byt.copd.2026.oxygen_target_88_92",
+      "gold.copd.2026.ltot_criteria"
+    ],
+    "descriptionVi": "Đích bão hòa oxy SpO2 tối thiểu trong liệu pháp oxy có kiểm soát đợt cấp COPD (88%)."
+  },
+  {
+    "id": "copd.oxygen_target_spo2_max",
+    "value": 92,
+    "unit": "%",
+    "quantity": "restingSpo2",
+    "citationIds": [
+      "byt.copd.2026.oxygen_target_88_92"
+    ],
+    "descriptionVi": "Đích bão hòa oxy SpO2 tối đa trong liệu pháp oxy có kiểm soát đợt cấp COPD (92%) nhằm phòng ngừa tăng CO2 máu nguy hiểm."
+  },
+  {
+    "id": "copd.oxygen_target_pao2_min",
+    "value": 60,
+    "unit": "mmHg",
+    "quantity": "pao2",
+    "citationIds": [
+      "byt.copd.2026.oxygen_target_88_92"
+    ],
+    "descriptionVi": "Đích áp lực riêng phần PaO2 tối thiểu trong thở oxy có kiểm soát (60 mmHg)."
+  },
+  {
+    "id": "copd.oxygen_target_pao2_max",
+    "value": 70,
+    "unit": "mmHg",
+    "quantity": "pao2",
+    "citationIds": [
+      "byt.copd.2026.oxygen_target_88_92"
+    ],
+    "descriptionVi": "Đích áp lực riêng phần PaO2 tối đa trong thở oxy có kiểm soát (70 mmHg)."
+  },
+  {
+    "id": "copd.niv_ph_cutoff",
+    "value": 7.35,
+    "unit": "pH",
+    "quantity": "abgPh",
+    "citationIds": [
+      "byt.copd.2026.niv_indications"
+    ],
+    "descriptionVi": "Ngưỡng toan máu hô hấp (pH ≤ 7.35) chỉ định thở máy không xâm nhập (NIV/BiPAP)."
+  },
+  {
+    "id": "copd.niv_paco2_cutoff",
+    "value": 45,
+    "unit": "mmHg",
+    "quantity": "abgPaco2",
+    "citationIds": [
+      "byt.copd.2026.niv_indications"
+    ],
+    "descriptionVi": "Ngưỡng tăng PaCO2 (≥ 45 mmHg) kèm toan hô hấp chỉ định thở máy không xâm nhập."
+  },
+  {
+    "id": "copd.ltot_pao2_cutoff",
+    "value": 55,
+    "unit": "mmHg",
+    "quantity": "pao2",
+    "citationIds": [
+      "gold.copd.2026.ltot_criteria"
+    ],
+    "descriptionVi": "Ngưỡng PaO2 ≤ 55 mmHg khi nghỉ chỉ định oxy trị liệu dài hạn tại nhà (LTOT)."
+  },
+  {
+    "id": "copd.ltot_spo2_cutoff",
+    "value": 88,
+    "unit": "%",
+    "quantity": "restingSpo2",
+    "citationIds": [
+      "gold.copd.2026.ltot_criteria"
+    ],
+    "descriptionVi": "Ngưỡng SpO2 ≤ 88% khi nghỉ chỉ định oxy trị liệu dài hạn tại nhà."
+  },
+  {
+    "id": "copd.ltot_cor_pulmonale_spo2_upper",
+    "value": 88,
+    "unit": "%",
+    "quantity": "restingSpo2",
+    "citationIds": [
+      "gold.copd.2026.ltot_pulmonary_hypertension",
+      "byt.copd.2026.ltot_cor_pulmonale",
+      "gold.copd.2026.ltot_criteria"
+    ],
+    "descriptionVi": "Ngưỡng SaO₂/SpO₂ nghỉ ngơi ≤ 88% (hoặc PaO₂ 56–59 mmHg) chỉ định oxy dài hạn mở rộng khi kèm tăng áp động mạch phổi, tâm phế mạn/suy tim phải hoặc đa hồng cầu (GOLD 2026 & BYT QĐ 2131/2026)."
+  },
+  {
+    "id": "copd.severe_acidosis_ph",
+    "value": 7.25,
+    "unit": "pH",
+    "quantity": "abgPh",
+    "citationIds": [
+      "gold.copd.2026.exac_ventilatory_failure_rome"
+    ],
+    "descriptionVi": "Toan hô hấp nặng (pH ≤ 7.25): Dấu hiệu suy thông khí đe dọa tính mạng, cân nhắc ICU và đặt nội khí quản."
+  },
+  {
+    "id": "copd.ventilatory_failure_paco2",
+    "value": 60,
+    "unit": "mmHg",
+    "quantity": "abgPaco2",
+    "citationIds": [
+      "gold.copd.2026.exac_ventilatory_failure_rome"
+    ],
+    "descriptionVi": "PaCO2 tăng > 60 mmHg: Dấu hiệu suy thông khí đe dọa tính mạng trong đợt cấp."
+  },
+  {
+    "id": "copd.pneumonia_age_cutoff",
+    "value": 55,
+    "unit": "years",
+    "quantity": "age",
+    "citationIds": [
+      "gold.copd.2026.followup_eos_less_100_pneumonia"
+    ],
+    "descriptionVi": "Tuổi ≥ 55 là một trong các yếu tố tăng nguy cơ viêm phổi khi điều trị ICS."
+  },
+  {
+    "id": "copd.tiotropium_respimat_actuation_mcg",
+    "value": 2.5,
+    "unit": "mcg",
+    "quantity": "dose_mcg",
+    "citationIds": [
+      "byt.copd.2026.tiotropium_dose"
+    ],
+    "descriptionVi": "Hàm lượng mỗi nhát xịt Tiotropium Respimat (2.5 mcg/nhát)."
+  },
+  {
+    "id": "copd.tiotropium_respimat_actuations_count",
+    "value": 2,
+    "unit": "actuations",
+    "quantity": "actuations_count",
+    "citationIds": [
+      "byt.copd.2026.tiotropium_dose"
+    ],
+    "descriptionVi": "Số nhát xịt mỗi lần dùng Tiotropium Respimat (2 nhát x 1 lần/ngày = 5 mcg)."
+  },
+  {
+    "id": "copd.olodaterol_tiotropium_actuations_count",
+    "value": 2,
+    "unit": "actuations",
+    "quantity": "actuations_count",
+    "citationIds": [
+      "byt.copd.2026.olodaterol_tiotropium_dose"
+    ],
+    "descriptionVi": "Số nhát xịt mỗi lần dùng Olodaterol/Tiotropium Respimat (2 nhát x 1 lần/ngày)."
+  },
+  {
+    "id": "copd.vilanterol_umeclidinium_umec_mcg",
+    "value": 62.5,
+    "unit": "mcg",
+    "quantity": "dose_mcg",
+    "citationIds": [
+      "byt.copd.2026.vilanterol_umeclidinium_dose"
+    ],
+    "descriptionVi": "Hàm lượng Umeclidinium trong 1 liều hít bột khô Anoro Ellipta (62.5 mcg)."
+  },
+  {
+    "id": "copd.vilanterol_umeclidinium_vilan_mcg",
+    "value": 25,
+    "unit": "mcg",
+    "quantity": "dose_mcg",
+    "citationIds": [
+      "byt.copd.2026.vilanterol_umeclidinium_dose"
+    ],
+    "descriptionVi": "Hàm lượng Vilanterol trong 1 liều hít bột khô Anoro Ellipta (25 mcg)."
+  },
+  {
+    "id": "copd.indacaterol_glycopyrronium_inda_mcg",
+    "value": 110,
+    "unit": "mcg",
+    "quantity": "dose_mcg",
+    "citationIds": [
+      "byt.copd.2026.indacaterol_glycopyrronium_dose"
+    ],
+    "descriptionVi": "Hàm lượng Indacaterol trong nang hít Ultibro Breezhaler (110 mcg)."
+  },
+  {
+    "id": "copd.indacaterol_glycopyrronium_glyco_mcg",
+    "value": 50,
+    "unit": "mcg",
+    "quantity": "dose_mcg",
+    "citationIds": [
+      "byt.copd.2026.indacaterol_glycopyrronium_dose"
+    ],
+    "descriptionVi": "Hàm lượng Glycopyrronium trong nang hít Ultibro Breezhaler (50 mcg)."
+  },
+  {
+    "id": "copd.exacerbation_moderate_group_e",
+    "value": 1,
+    "unit": "episodes/year",
+    "quantity": "moderateExacerbations",
+    "citationIds": [
+      "byt.copd.2026.abe_groups",
+      "gold.copd.2026.group_e_definition"
+    ],
+    "descriptionVi": "Có từ 1 đợt cấp mức độ vừa (hoặc ≥ 1 đợt nhập viện) trong năm trước xếp vào Nhóm E."
+  },
+  {
+    "id": "copd.home_niv_paco2_cutoff",
+    "value": 53,
+    "unit": "mmHg",
+    "quantity": "abgPaco2",
+    "citationIds": [
+      "gold.copd.2026.home_niv",
+      "byt.copd.2026.home_niv_53"
+    ],
+    "descriptionVi": "Ngưỡng PaCO2 ban ngày (> 53 mmHg theo GOLD 2026 sau đợt cấp 2–4 tuần; ≥ 53 mmHg theo BYT QĐ 2131/2026) chỉ định thở máy không xâm nhập tại nhà (Home NIV)."
+  },
+  {
+    "id": "copd.ltot_pao2_cor_pulmonale_max",
+    "value": 59,
+    "unit": "mmHg",
+    "quantity": "pao2",
+    "citationIds": [
+      "byt.copd.2026.ltot_cor_pulmonale"
+    ],
+    "descriptionVi": "PaO2 từ 56–59 mmHg kèm suy tim phải hoặc đa hồng cầu chỉ định thở oxy dài hạn tại nhà."
+  },
+  {
+    "id": "copd.salbutamol_nebulizer_dose",
+    "value": 2.5,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "byt.copd.2026.salbutamol_neb_dose"
+    ],
+    "descriptionVi": "Liều Salbutamol khí dung 2.5 mg mỗi 4–6 giờ trong đợt cấp COPD (Bộ Y tế QĐ 2131/2026)."
+  },
+  {
+    "id": "copd.roflumilast_underweight_bmi",
+    "value": 18.5,
+    "unit": "kg/m2",
+    "quantity": "bmi",
+    "citationIds": [
+      "byt.copd.2026.underweight_bmi_18_5",
+      "gold.copd.2026.roflumilast_weight_depression"
+    ],
+    "descriptionVi": "Ngưỡng suy dinh dưỡng / nhẹ cân (BMI < 18.5 kg/m² theo WHO & BYT QĐ 2131/2026) cần tránh dùng Roflumilast do nguy cơ sụt cân thêm."
+  },
+  {
+    "id": "copd.azithromycin_contra_gfr_min",
+    "value": 10,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "byt.copd.2026.azithromycin_renal_contra_gfr10",
+      "fda.copd.azithromycin_renal_gfr10"
+    ],
+    "descriptionVi": "Không dùng Azithromycin dự phòng dài hạn ở người suy thận nặng có eGFR < 10 mL/phút/1.73m² (AUC tăng 35%, Cmax tăng 61%; BYT QĐ 2131/2026)."
+  },
+  {
+    "id": "copd.azithromycin_contra_crcl_min",
+    "value": 10,
+    "unit": "mL/min",
+    "quantity": "crcl",
+    "citationIds": [
+      "byt.copd.2026.azithromycin_renal_contra_gfr10",
+      "fda.copd.azithromycin_renal_gfr10"
+    ],
+    "descriptionVi": "Không dùng Azithromycin dự phòng dài hạn ở người suy thận nặng có CrCl < 10 mL/phút (BYT QĐ 2131/2026)."
+  },
+  {
+    "id": "copd.egfr_vte_lmwh_caution",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "byt.copd.2023.severe_renal_crcl30",
+      "byt.copd.2026.vte_prophylaxis"
+    ],
+    "descriptionVi": "Ngưỡng suy thận nặng (eGFR < 30 mL/phút/1.73m²) cần ưu tiên Heparin không phân đoạn (UFH) dưới da hoặc giảm liều LMWH dự phòng huyết khối VTE."
+  },
+  {
+    "id": "copd.mepolizumab_dose_q4w",
+    "value": 100,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "gina.copd.2026.mepolizumab_100mg_q4w"
+    ],
+    "descriptionVi": "Liều Mepolizumab tiêm dưới da (100 mg mỗi 4 tuần) cho người lớn mắc COPD kiểu hình tăng bạch cầu ái toan."
+  },
+  {
+    "id": "copd.mepolizumab_interval_weeks",
+    "value": 4,
+    "unit": "weeks",
+    "quantity": "interval_weeks",
+    "citationIds": [
+      "gina.copd.2026.mepolizumab_100mg_q4w"
+    ],
+    "descriptionVi": "Khoảng cách tiêm Mepolizumab trong COPD (mỗi 4 tuần)."
+  },
+  {
+    "id": "copd.hypotension_sbp_cutoff",
+    "value": 90,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "fda.diltiazem.hypotension_sbp90",
+      "byt.copd.2026.niv_contraindications_imv",
+      "byt.copd.2026.niv_contra_shock_appendix5"
+    ],
+    "descriptionVi": "Ngưỡng tụt huyết áp tâm thu / sốc huyết động (SBP < 90 mmHg) chống chỉ định thở máy không xâm nhập (NIV) và cần hồi sức tích cực / đặt nội khí quản."
+  },
+  {
+    "id": "copd.hfref_lvef_cutoff",
+    "value": 40,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "esc.copd.2026.hfref_lvef_40",
+      "gold.copd.2026.selective_beta1_blockers"
+    ],
+    "descriptionVi": "Ngưỡng phân suất tống máu thất trái giảm (LVEF ≤ 40% - HFrEF) có chỉ định bắt buộc chuyển đổi sang chẹn beta-1 chọn lọc (bisoprolol/metoprolol succinate/nebivolol) thay vì ngừng hẳn."
+  },
+  {
+    "id": "copd.budesonide_formoterol_bud_mcg",
+    "value": 160,
+    "unit": "mcg",
+    "quantity": "dose_mcg",
+    "citationIds": [
+      "byt.copd.2026.budesonide_formoterol_dose"
+    ],
+    "descriptionVi": "Hàm lượng Budesonide mỗi liều hít của phối hợp Budesonide/Formoterol trong điều trị duy trì COPD (160 mcg)."
+  },
+  {
+    "id": "copd.budesonide_formoterol_form_mcg",
+    "value": 4.5,
+    "unit": "mcg",
+    "quantity": "dose_mcg",
+    "citationIds": [
+      "byt.copd.2026.budesonide_formoterol_dose"
+    ],
+    "descriptionVi": "Hàm lượng Formoterol mỗi liều hít của phối hợp Budesonide/Formoterol trong điều trị duy trì COPD (4.5 mcg)."
+  },
+  {
+    "id": "copd.budesonide_formoterol_per_time",
+    "value": 2,
+    "unit": "actuations",
+    "quantity": "actuations_count",
+    "citationIds": [
+      "byt.copd.2026.budesonide_formoterol_dose"
+    ],
+    "descriptionVi": "Số liều hít mỗi lần dùng của Budesonide/Formoterol 160/4.5 mcg trong điều trị duy trì cố định COPD (2 liều x 2 lần/ngày = 4 liều/ngày)."
+  },
+  {
+    "id": "copd.budesonide_formoterol_daily_doses",
+    "value": 4,
+    "unit": "doses",
+    "quantity": "actuations_count",
+    "citationIds": [
+      "byt.copd.2026.budesonide_formoterol_dose"
+    ],
+    "descriptionVi": "Tổng số liều hít mỗi ngày của Budesonide/Formoterol 160/4.5 mcg trong COPD (4 liều/ngày chia 2 lần)."
+  },
+  {
+    "id": "copd.exac_saba_first_hour_min_doses",
+    "value": 2,
+    "unit": "doses",
+    "quantity": "doses_count",
+    "citationIds": [
+      "gold.copd.2026.exac_saba_first_hour"
+    ],
+    "descriptionVi": "Số liều khí dung/xịt SABA tối thiểu mỗi giờ trong giờ đầu xử trí đợt cấp COPD (2–3 liều)."
+  },
+  {
+    "id": "copd.exac_saba_first_hour_max_doses",
+    "value": 3,
+    "unit": "doses",
+    "quantity": "doses_count",
+    "citationIds": [
+      "gold.copd.2026.exac_saba_first_hour"
+    ],
+    "descriptionVi": "Số liều khí dung/xịt SABA tối đa mỗi giờ trong giai đoạn tấn công đầu đợt cấp COPD (2–3 liều trước khi giãn ra mỗi 2–4 giờ)."
+  },
+  {
+    "id": "copd.exac_rr_non_rf_max",
+    "value": 24,
+    "unit": "breaths/min",
+    "quantity": "respiratoryRate",
+    "citationIds": [
+      "byt.copd.2026.respiratory_failure_rr_24_30"
+    ],
+    "descriptionVi": "Ngưỡng nhịp thở tối đa không suy hô hấp (≤ 24 lần/phút); nhịp thở > 24 lần/phút gợi ý đợt cấp trung bình–nặng / suy hô hấp cấp."
+  },
+  {
+    "id": "copd.exac_rr_life_threatening",
+    "value": 30,
+    "unit": "breaths/min",
+    "quantity": "respiratoryRate",
+    "citationIds": [
+      "byt.copd.2026.respiratory_failure_rr_gt30"
+    ],
+    "descriptionVi": "Ngưỡng nhịp thở > 30 lần/phút phân loại suy hô hấp cấp đe dọa tính mạng cần xem xét chuyển ICU (BYT QĐ 2131/2026)."
+  },
+  {
+    "id": "copd.outpatient_acute_spo2_cutoff",
+    "value": 90,
+    "unit": "%",
+    "quantity": "restingSpo2",
+    "citationIds": [
+      "byt.copd.2026.ltot_target_spo2_90_92",
+      "byt.copd.2026.hospital_admission_criteria"
+    ],
+    "descriptionVi": "Ngưỡng giảm bão hòa oxy cấp tính nặng tại ngoại trú (SpO₂ < 90% kèm đợt cấp hoặc suy hô hấp cấp) cần chuyển cấp cứu/nhập viện đánh giá khí máu động mạch."
+  },
+  {
+    "id": "copd.exac_steroid_min_mg",
+    "value": 30,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "byt.copd.2026.steroid_oral_30_40mg"
+    ],
+    "descriptionVi": "Liều tối thiểu Corticoid toàn thân uống trong đợt cấp COPD theo BYT QĐ 2131/2026 (30–40 mg/ngày)."
+  },
+  {
+    "id": "copd.exac_methylpred_iv_min_mg",
+    "value": 40,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "byt.copd.2026.methylpred_iv_dose"
+    ],
+    "descriptionVi": "Hàm lượng 1 lọ Methylprednisolone tiêm tĩnh mạch trong đợt cấp COPD nội viện (40 mg/lọ, ngày 1–2 lọ = 40–80 mg/ngày)."
+  },
+  {
+    "id": "copd.exac_methylpred_iv_vials_max",
+    "value": 2,
+    "unit": "vials",
+    "quantity": "doses_count",
+    "citationIds": [
+      "byt.copd.2026.methylpred_iv_dose"
+    ],
+    "descriptionVi": "Số lọ Methylprednisolone 40 mg tiêm tĩnh mạch tối đa mỗi ngày theo Phụ lục 1 BYT QĐ 2131/2026 (1–2 lọ/ngày)."
+  },
+  {
+    "id": "copd.exac_abx_outpatient_max_days",
+    "value": 7,
+    "unit": "days",
+    "quantity": "duration_days",
+    "citationIds": [
+      "byt.copd.2026.antibiotics_outpatient_5_7d"
+    ],
+    "descriptionVi": "Thời gian dùng kháng sinh tối đa thường quy cho đợt cấp ngoại trú theo BYT QĐ 2131/2026 (5–7 ngày)."
+  },
+  {
+    "id": "copd.exac_abx_inpatient_min_days",
+    "value": 7,
+    "unit": "days",
+    "quantity": "duration_days",
+    "citationIds": [
+      "byt.copd.2026.antibiotics_inpatient_7_10d"
+    ],
+    "descriptionVi": "Thời gian dùng kháng sinh tối thiểu thường quy cho đợt cấp nặng nhập viện theo BYT QĐ 2131/2026 (7–10 ngày)."
+  },
+  {
+    "id": "copd.exac_abx_inpatient_max_days",
+    "value": 10,
+    "unit": "days",
+    "quantity": "duration_days",
+    "citationIds": [
+      "byt.copd.2026.antibiotics_inpatient_7_10d"
+    ],
+    "descriptionVi": "Thời gian dùng kháng sinh tối đa thường quy cho đợt cấp nặng nhập viện theo BYT QĐ 2131/2026 (7–10 ngày)."
+  },
+  {
+    "id": "copd.rehab_post_discharge_weeks",
+    "value": 4,
+    "unit": "weeks",
+    "quantity": "duration_weeks",
+    "citationIds": [
+      "gold.copd.2026.pulmonary_rehab_post_discharge",
+      "byt.copd.2026.pulmonary_rehab_benefits"
+    ],
+    "descriptionVi": "Mốc thời gian vàng khởi động phục hồi chức năng hô hấp sớm sau xuất viện đợt cấp (< 4 tuần) giúp giảm tái nhập viện."
+  },
+  {
+    "id": "copd.ldct_age_min",
+    "value": 50,
+    "unit": "years",
+    "quantity": "age",
+    "citationIds": [
+      "byt.copd.2026.lung_cancer_ldct_screening",
+      "gold.copd.2026.lung_cancer_ldct_uspstf"
+    ],
+    "descriptionVi": "Tuổi tối thiểu chỉ định chụp CT ngực liều thấp (LDCT) hàng năm tầm soát ung thư phổi ở người bệnh COPD (50 tuổi)."
+  },
+  {
+    "id": "copd.ldct_age_max",
+    "value": 80,
+    "unit": "years",
+    "quantity": "age",
+    "citationIds": [
+      "byt.copd.2026.lung_cancer_ldct_screening",
+      "gold.copd.2026.lung_cancer_ldct_uspstf"
+    ],
+    "descriptionVi": "Tuổi tối đa thường quy chỉ định chụp CT ngực liều thấp (LDCT) hàng năm tầm soát ung thư phổi (80 tuổi)."
+  },
+  {
+    "id": "copd.ldct_pack_years_min",
+    "value": 20,
+    "unit": "pack-years",
+    "quantity": "packYears",
+    "citationIds": [
+      "byt.copd.2026.lung_cancer_ldct_screening",
+      "gold.copd.2026.lung_cancer_ldct_uspstf"
+    ],
+    "descriptionVi": "Tiền sử hút thuốc tối thiểu (≥ 20 bao-năm) để chỉ định chụp CT ngực liều thấp (LDCT) tầm soát ung thư phổi hàng năm."
+  },
+  {
+    "id": "copd.ldct_quit_years_max",
+    "value": 15,
+    "unit": "years",
+    "quantity": "duration_years",
+    "citationIds": [
+      "byt.copd.2026.lung_cancer_ldct_screening",
+      "gold.copd.2026.lung_cancer_ldct_uspstf"
+    ],
+    "descriptionVi": "Khoảng thời gian cai thuốc tối đa (≤ 15 năm) vẫn thuộc diện tầm soát ung thư phổi bằng LDCT hàng năm."
+  },
+  {
+    "id": "copd.saba_overuse_per_week",
+    "value": 2,
+    "unit": "times/week",
+    "quantity": "sabaUsePerWeek",
+    "citationIds": [
+      "gina.copd.2026.saba_overuse_twice_weekly"
+    ],
+    "descriptionVi": "Ngưỡng sử dụng thuốc cắt cơn SABA > 2 lần/tuần cảnh báo kiểm soát triệu chứng kém và nguy cơ lạm dụng SABA."
+  },
+  {
+    "id": "copd.saba_overuse_canisters_year",
+    "value": 3,
+    "unit": "canisters/year",
+    "quantity": "sabaCanistersPerYear",
+    "citationIds": [
+      "gina.copd.2026.saba_overuse_3_canisters"
+    ],
+    "descriptionVi": "Ngưỡng sử dụng từ ≥ 3 bình xịt SABA (200 liều)/năm làm tăng nguy cơ đợt cấp nặng."
+  },
+  {
+    "id": "copd.roflumilast_child_pugh_a_auc_pct",
+    "value": 51,
+    "unit": "%",
+    "quantity": "auc_increase_pct",
+    "citationIds": [
+      "fda.copd.roflumilast_child_pugh_a_auc51"
+    ],
+    "descriptionVi": "Mức tăng diện tích dưới đường cong (AUC +51%) của roflumilast ở người suy gan nhẹ Child-Pugh A cần theo dõi sát tác dụng phụ."
+  },
+  {
+    "id": "copd.theophylline_max_mg_kg_day",
+    "value": 10,
+    "unit": "mg/kg/day",
+    "quantity": "dose_mg_kg",
+    "citationIds": [
+      "byt.copd.2026.theophylline_dose_max10"
+    ],
+    "descriptionVi": "Tổng liều tối đa của các thuốc nhóm methylxanthine (≤ 10 mg/kg/ngày theo BYT QĐ 2131/2026)."
+  },
+  {
+    "id": "copd.theophylline_elderly_age",
+    "value": 65,
+    "unit": "years",
+    "quantity": "age",
+    "citationIds": [
+      "byt.copd.2026.risk_elderly_65",
+      "gold.copd.2026.theophylline_narrow_toxicity"
+    ],
+    "descriptionVi": "Tuổi cao (≥ 65 tuổi) làm giảm độ thanh thải theophylline qua gan (cần giám sát nồng độ huyết thanh TDM hoặc chuyển sang LABA/LAMA hít)."
+  },
+  {
+    "id": "copd.qtc_azithromycin_max_ms",
+    "value": 450,
+    "unit": "ms",
+    "quantity": "qtc",
+    "citationIds": [
+      "byt.copd.2026.azithromycin_renal_contra_gfr10"
+    ],
+    "descriptionVi": "Ngưỡng khoảng QTc tối đa cho phép khi dùng Azithromycin dự phòng dài hạn (chống chỉ định khi QTc > 450 ms theo BYT QĐ 2131/2026)."
+  },
+  {
+    "id": "copd.hematocrit_polycythemia_pct",
+    "value": 55,
+    "unit": "%",
+    "quantity": "hematocrit",
+    "citationIds": [
+      "gold.copd.2026.ltot_pulmonary_hypertension"
+    ],
+    "descriptionVi": "Ngưỡng Hematocrit > 55% xác định đa hồng cầu thứ phát mở rộng chỉ định LTOT."
+  },
+  {
+    "id": "copd.ltot_cor_pulmonale_pao2_min",
+    "value": 56,
+    "unit": "mmHg",
+    "quantity": "pao2",
+    "citationIds": [
+      "byt.copd.2026.ltot_cor_pulmonale"
+    ],
+    "descriptionVi": "Cận dưới dải PaO2 (56–59 mmHg theo BYT QĐ 2131/2026) chỉ định thở oxy dài hạn mở rộng khi kèm tăng áp động mạch phổi, suy tim phải hoặc đa hồng cầu."
+  },
+  {
+    "id": "copd.ltot_min_hours_per_day",
+    "value": 15,
+    "unit": "hours/day",
+    "quantity": "hoursPerDay",
+    "citationIds": [
+      "gold.copd.2026.ltot_hours_15"
+    ],
+    "descriptionVi": "Thời gian thở oxy dài hạn tại nhà tối thiểu (> 15 giờ/ngày theo GOLD 2026)."
+  },
+  {
+    "id": "copd.abx_renal_egfr_cutoff",
+    "module": "copd",
+    "quantity": "egfr",
+    "operator": "<",
+    "value": 50,
+    "unit": "mL/min/1.73m2",
+    "context": "Ngưỡng eGFR < 50 mL/phút/1.73m² yêu cầu hiệu chỉnh liều kháng sinh đợt cấp (Levofloxacin Clcr 20–49, Ciprofloxacin uống Clcr 30–50 theo Phụ lục 10 QĐ 2131/QĐ-BYT 2026)",
+    "citationIds": [
+      "byt.copd.2026.abx_renal_cipro_30_50",
+      "byt.copd.2026.abx_renal_levo_20_49"
+    ]
+  },
+  {
+    "id": "copd.abx_renal_crcl_cutoff",
+    "module": "copd",
+    "quantity": "crcl",
+    "operator": "<",
+    "value": 50,
+    "unit": "mL/min",
+    "context": "Ngưỡng thanh thải creatinin CrCl < 50 mL/phút yêu cầu hiệu chỉnh liều kháng sinh đợt cấp (Levofloxacin, Ciprofloxacin theo Phụ lục 10 QĐ 2131/QĐ-BYT 2026)",
+    "citationIds": [
+      "byt.copd.2026.abx_renal_cipro_30_50",
+      "byt.copd.2026.abx_renal_levo_20_49"
+    ]
+  },
+  {
+    "id": "copd.lama_severe_renal_egfr",
+    "module": "copd",
+    "quantity": "egfr",
+    "operator": "<",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "context": "Ngưỡng suy thận nặng eGFR < 30 mL/phút/1.73m² làm tăng phơi nhiễm toàn thân ~2 lần của các LAMA thải trừ qua thận (tiotropium, glycopyrronium), cần theo dõi sát tác dụng kháng cholinergic",
+    "citationIds": [
+      "ema.ultibro.renal_dosing_egfr30",
+      "ema.trimbow.renal_impairment_gfr30"
+    ]
+  },
+  {
+    "id": "copd.vte_platelets_min",
+    "module": "copd",
+    "quantity": "platelets",
+    "operator": "<",
+    "value": 50,
+    "unit": "G/L",
+    "context": "Ngưỡng giảm tiểu cầu nặng < 50 G/L (< 50 x 10⁹/L) chống chỉ định kháng đông dự phòng bằng thuốc trong đợt cấp nội viện, chuyển sang dự phòng cơ học IPC",
+    "citationIds": [
+      "byt.copd.2023.vte_platelets_lt_50"
+    ]
+  },
+  {
+    "id": "copd.bb_bradycardia_hr_cutoff",
+    "module": "copd",
+    "quantity": "hr",
+    "operator": "<",
+    "value": 50,
+    "unit": "bpm",
+    "context": "Nhịp tim lúc nghỉ < 50 chu kỳ/phút chống chỉ định khởi trị / chuyển đổi sang chẹn beta-1 chọn lọc (Bisoprolol) và yêu cầu tạm hoãn chẹn beta",
+    "citationIds": [
+      "esc.hf.2026.bb_guidance_table_s6"
+    ]
+  },
+  {
+    "id": "copd.dupilumab_eos_contra_max",
+    "module": "copd",
+    "quantity": "bloodEos",
+    "operator": ">=",
+    "value": 1500,
+    "unit": "cells/µL",
+    "context": "Ngưỡng tăng bạch cầu ái toan máu nặng ≥ 1.500 tế bào/µL không khuyến cáo khởi trị Dupilumab và bắt buộc tầm soát EGPA / giun lươn Strongyloides",
+    "citationIds": [
+      "gina.copd.2026.dupilumab_eos_1500_contra",
+      "gina.copd.2026.hypereosinophilia_1500_egpa"
+    ]
+  },
+  {
+    "id": "copd.dupilumab_trial_fev1_min",
+    "module": "copd",
+    "quantity": "fev1PredPct",
+    "operator": ">=",
+    "value": 30,
+    "unit": "% predicted",
+    "context": "Giới hạn dưới FEV₁ sau giãn phế quản (30% dự đoán) của quần thể nghiên cứu BOREAS/NOTUS cho Dupilumab trong COPD",
+    "citationIds": [
+      "fda.copd.dupilumab_boreas_fev1_30_70"
+    ]
+  },
+  {
+    "id": "copd.dupilumab_trial_fev1_max",
+    "module": "copd",
+    "quantity": "fev1PredPct",
+    "operator": "<=",
+    "value": 70,
+    "unit": "% predicted",
+    "context": "Giới hạn trên FEV₁ sau giãn phế quản (70% dự đoán) của quần thể nghiên cứu BOREAS/NOTUS cho Dupilumab trong COPD",
+    "citationIds": [
+      "fda.copd.dupilumab_boreas_fev1_30_70"
+    ]
+  },
+  {
+    "id": "copd.qtc_prolonged_cutoff_ms",
+    "module": "copd",
+    "quantity": "qtc",
+    "operator": ">",
+    "value": 450,
+    "unit": "ms",
+    "context": "Ngưỡng khoảng QTc kéo dài > 450 ms (BYT QĐ 2131/QĐ-BYT 2026 tr. 25) chống chỉ định khởi trị / yêu cầu ngừng Azithromycin dự phòng dài hạn",
+    "citationIds": [
+      "byt.copd.2026.azithromycin_renal_contra_gfr10"
+    ]
+  },
+  {
+    "id": "copd.fq_elderly_age_cutoff",
+    "module": "copd",
+    "quantity": "age",
+    "operator": ">=",
+    "value": 65,
+    "unit": "years",
+    "context": "Ngưỡng người bệnh cao tuổi ≥ 65 tuổi tăng mạnh nguy cơ viêm/đứt gân Achilles và sảng thần kinh khi dùng kháng sinh Fluoroquinolone kèm Corticosteroid đợt cấp",
+    "citationIds": [
+      "byt.copd.2026.risk_elderly_65",
+      "byt.copd.2026.quinolone_elderly_tendon"
+    ]
+  }
+]

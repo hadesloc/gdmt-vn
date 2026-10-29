@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.nsaid_methotrexate",
+  "contentHash": "e195e0d63988baa6bae3d1312122ea92d0e471988f222510e3c68789c4875d04",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.nsaid_methotrexate",
+      "contentHash": "c3e0412f61a20513",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.nsaid_methotrexate."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

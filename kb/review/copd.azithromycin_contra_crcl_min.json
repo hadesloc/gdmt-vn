@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.azithromycin_contra_crcl_min",
+  "contentHash": "8c557e88dd9745143c715eb928f57365af3f20bd9f74e6dec45453653f0504dc",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.azithromycin_contra_crcl_min",
+      "contentHash": "0e79454e90c958e1",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

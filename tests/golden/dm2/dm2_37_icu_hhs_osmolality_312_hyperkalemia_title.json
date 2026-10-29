@@ -1,0 +1,68 @@
+{
+  "id": "dm2_37_icu_hhs_osmolality_312_hyperkalemia_title",
+  "titleVi": "Cấp cứu HHS với áp lực thẩm thấu hữu hiệu 312 mOsm/kg và Kali máu 5.6 mmol/L (Chưa bù Kali)",
+  "source": "ADA/EASD/JBDS/DTI 2024 Hyperglycemic Crises Consensus",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 74,
+    "sex": "female",
+    "weight": 58,
+    "height": 155,
+    "sbp": 108,
+    "dbp": 66,
+    "hr": 110,
+    "scr": 140,
+    "k": 5.6,
+    "glucose": 35.0,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "inpatientUnit": "icu",
+      "effectiveOsmolality": 312,
+      "bloodKetones": 0.8,
+      "venousPh": 7.36,
+      "serumBicarb": 22
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_dm2_dka_active_management",
+        "drugId": "insulin_regular",
+        "action": "START",
+        "doseContains": "Chưa bù Kali"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "insulin_glargine",
+        "action": "START"
+      },
+      {
+        "drugId": "insulin_aspart",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nhận diện HHS theo ngưỡng ADA 2024 (> 300 mOsm/kg hữu hiệu, ca này 312 mOsm/kg), tiêu đề động ghi rõ 'Chưa bù Kali' khi K+ = 5.6 mmol/L > 5.0, gắn drugId=insulin_regular và chặn phác đồ tiêm dưới da thường quy."
+}

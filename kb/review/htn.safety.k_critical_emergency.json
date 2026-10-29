@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.safety.k_critical_emergency",
+  "contentHash": "df8ec867cc916c65067193c5a0686b0d6e93af27660c62a00d63e5677493c0c1",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.safety.k_critical_emergency",
+      "contentHash": "dbcef30cf13c01cc",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực ngưỡng lâm sàng htn.safety.k_critical_emergency (6 mmol/L) và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

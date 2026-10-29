@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.colchicine.prophylaxis_resume_wait_hours",
+  "contentHash": "ae5beeb339d072176a6bbe6ff98ac674e30b9714cb390bddd551edabd58b979a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.colchicine.prophylaxis_resume_wait_hours",
+      "contentHash": "dbb20b021c5f6c41",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T08:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold: gout.colchicine.prophylaxis_resume_wait_hours"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T08:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

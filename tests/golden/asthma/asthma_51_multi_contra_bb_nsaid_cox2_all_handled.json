@@ -1,0 +1,112 @@
+{
+  "id": "asthma_51_multi_contra_bb_nsaid_cox2_all_handled",
+  "titleVi": "Bệnh nhân hen cơ địa AERD dùng đồng thời nhiều thuốc chống chỉ định (Propranolol + Timolol nhỏ mắt + Aspirin + Ibuprofen + Celecoxib)",
+  "source": "GINA 2026 p. 65 & p. 139 / R1-ASTHMA-V2-03 / ASTHMA-R2-203 / ASTHMA-R2-R3-06 / ASTHMA-R2-R3-10",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_51",
+    "name": "Nam 61 tuổi",
+    "age": 61,
+    "sex": "male",
+    "weight": 69,
+    "sbp": 136,
+    "dbp": 84,
+    "hr": 66,
+    "rhythm": "sinus",
+    "fev1Pct": 75,
+    "conditions": {
+      "asthma": true,
+      "aerd": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "propranolol",
+        "name": "Propranolol",
+        "dose": "40 mg",
+        "freq": "2 lần/ngày"
+      },
+      {
+        "drugId": "timolol_ophthalmic",
+        "name": "Timolol 0.5% nhỏ mắt",
+        "dose": "1 giọt",
+        "freq": "2 lần/ngày"
+      },
+      {
+        "drugId": "aspirin",
+        "name": "Aspirin",
+        "dose": "81 mg",
+        "freq": "1 lần/ngày"
+      },
+      {
+        "drugId": "ibuprofen",
+        "name": "Ibuprofen",
+        "dose": "400 mg",
+        "freq": "khi đau"
+      },
+      {
+        "drugId": "celecoxib",
+        "name": "Celecoxib",
+        "dose": "200 mg",
+        "freq": "1 lần/ngày"
+      }
+    ],
+    "customInputs": {
+      "currentTrack": "track1",
+      "currentStep": 2,
+      "daytimeSymptomsMoreThanTwiceWeek": false,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "propranolol",
+        "action": "STOP"
+      },
+      {
+        "drugId": "timolol_ophthalmic",
+        "action": "STOP"
+      },
+      {
+        "drugId": "aspirin",
+        "action": "STOP"
+      },
+      {
+        "drugId": "ibuprofen",
+        "action": "STOP"
+      },
+      {
+        "drugId": "celecoxib",
+        "action": "MONITOR"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "celecoxib",
+        "action": "STOP"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Khắc phục hoàn toàn lỗi .find() bỏ sót thuốc thứ 2: Phát lệnh STOP riêng biệt cho cả 4 thuốc chống chỉ định (Propranolol, Timolol nhãn khoa, Aspirin, Ibuprofen) và phân biệt rõ Celecoxib (chọn lọc COX-2) là MONITOR theo dõi ≥ 2 giờ."
+}

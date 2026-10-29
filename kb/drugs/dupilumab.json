@@ -1,0 +1,117 @@
+{
+  "id": "dupilumab",
+  "nameVi": "Dupilumab",
+  "inn": "Dupilumab",
+  "class": "Anti-IL-4Rα monoclonal antibody",
+  "classes": [
+    "biologic_anti_il4ra",
+    "respiratory_biologic"
+  ],
+  "vnBrands": [
+    "Dupixent"
+  ],
+  "forms": [
+    "Bút tiêm nạp sẵn / bơm tiêm nạp sẵn 200 mg/1.14 mL",
+    "Bút tiêm nạp sẵn / bơm tiêm nạp sẵn 300 mg/2 mL"
+  ],
+  "start": {
+    "amount": 300,
+    "unit": "mg",
+    "frequency": "mỗi 2 tuần",
+    "route": "tiêm dưới da",
+    "description": "COPD đợt cấp tái diễn (trên nền triple therapy, BCAT ≥ 300 /µL kèm viêm phế quản mạn): 300 mg tiêm dưới da mỗi 2 tuần (Q2W). Hen nặng típ 2 (≥ 12 tuổi): liều nạp 400 mg (sau đó 200 mg Q2W) hoặc nạp 600 mg (sau đó 300 mg Q2W khi phụ thuộc OCS / kèm viêm da cơ địa hoặc viêm mũi xoang có polyp mũi)"
+  },
+  "target": {
+    "amount": "200–300",
+    "unit": "mg",
+    "frequency": "mỗi 2 tuần",
+    "route": "tiêm dưới da",
+    "description": "300 mg tiêm dưới da mỗi 2 tuần (COPD hoặc hen phụ thuộc OCS) hoặc 200 mg mỗi 2 tuần (hen nặng típ 2)"
+  },
+  "titration": {
+    "step": "Duy trì tiêm dưới da mỗi 2 tuần; KHÔNG giảm/ngưng đột ngột corticosteroid đường uống hoặc ICS khi mới khởi trị dupilumab",
+    "intervalDays": 14,
+    "maxDose": "300 mg mỗi 2 tuần"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều khi eGFR ≥ 15 mL/phút/1.73m²",
+      "citationIds": [
+        "fda.copd.dupilumab_dose",
+        "gold.copd.2026.biologics_dupilumab_mepolizumab"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận (thải trừ qua thận không đáng kể)",
+      "citationIds": [
+        "fda.copd.dupilumab_dose",
+        "gold.copd.2026.biologics_dupilumab_mepolizumab"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_dupilumab_eos_1500",
+      "parameter": "eos",
+      "operator": ">=",
+      "threshold": 1500,
+      "unit": "cells/µL",
+      "action": "avoid",
+      "messageVi": "Bạch cầu ái toan máu (BCAT) ≥ 1.500 tế bào/µL: GINA 2026 không đề xuất khởi trị Dupilumab do bằng chứng hạn chế (đã bị loại khỏi thử nghiệm pha III) và nguy cơ bộc lộ hội chứng tăng bạch cầu ái toan / u hạt tăng bạch cầu ái toan kèm viêm đa mạch (EGPA); cần tầm soát ký sinh trùng (Strongyloides) và EGPA, ưu tiên kháng IL-5/IL-5R hoặc kháng TSLP",
+      "citationIds": [
+        "gina.asthma.2026.dupilumab_eos_1500",
+        "fda.dupilumab.egpa_warning"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Dữ liệu báo cáo ca lâm sàng trên phụ nữ mang thai chưa ghi nhận tăng nguy cơ dị tật bẩm sinh lớn; kháng thể IgG người đi qua nhau thai, cần cân nhắc lợi ích kiểm soát bệnh và nguy cơ tiềm ẩn.",
+    "citationIds": [
+      "fda.copd.dupilumab_pregnancy",
+      "gina.copd.2026.pregnancy_biologics_scarce"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Chưa có dữ liệu về sự hiện diện của dupilumab trong sữa mẹ; IgG của mẹ được biết có trong sữa mẹ, cần cân nhắc lợi ích bú mẹ và nhu cầu điều trị của mẹ.",
+    "citationIds": [
+      "fda.copd.dupilumab_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity_dupilumab",
+      "messageVi": "Chống chỉ định ở bệnh nhân có tiền sử quá mẫn nặng với Dupilumab hoặc bất kỳ tá dược nào",
+      "citationIds": [
+        "fda.dupilumab.hypersensitivity_contra"
+      ]
+    }
+  ],
+  "interactions": [
+    "Không dùng điều trị co thắt phế quản cấp hoặc cơn hen cấp; tuyệt đối không phối hợp trùng lặp với thuốc sinh học hô hấp khác",
+    "Không khuyến cáo khởi trị khi bạch cầu ái toan máu ≥ 1.500 /µL (GINA 2026); theo dõi sát dấu hiệu viêm phổi tăng bạch cầu ái toan và hội chứng EGPA, đặc biệt khi giảm liều corticosteroid đường uống",
+    "Bắt buộc tầm soát và điều trị dứt điểm nhiễm giun sán ký sinh trùng (đặc biệt giun lươn Strongyloides stercoralis) trước khi khởi trị; theo dõi triệu chứng viêm túi mật cấp và viêm kết mạc/giác mạc; tránh tiêm vắc-xin sống giảm độc lực"
+  ],
+  "citationIds": [
+    "gina.asthma.2026.dupilumab_eos_1500",
+    "fda.dupilumab.egpa_warning",
+    "fda.dupilumab.hypersensitivity_contra",
+    "fda.copd.dupilumab_dose",
+    "gold.copd.2026.biologics_dupilumab_mepolizumab",
+    "fda.copd.dupilumab_pregnancy",
+    "fda.copd.dupilumab_lactation",
+    "fda.copd.dupilumab_helminth",
+    "fda.copd.dupilumab_cholecystitis",
+    "fda.copd.dupilumab_boreas_fev1_30_70",
+    "gina.copd.2026.dupilumab_eos_1500_contra",
+    "gina.copd.2026.hypereosinophilia_1500_egpa"
+  ]
+}

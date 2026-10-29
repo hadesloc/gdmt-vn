@@ -1,0 +1,128 @@
+[
+  {
+    "id": "LIPID-R2-01",
+    "severity": "critical",
+    "itemType": "drug",
+    "itemId": "fenofibrate",
+    "finding": "Thiếu cổng an toàn thai kỳ (Pregnancy Gate) trong dữ liệu thuốc Fenofibrate và quy tắc an toàn thai kỳ chỉ nhắm vào duy nhất Atorvastatin, khiến phụ nữ mang thai tiếp tục dùng Fenofibrate mà không có bất kỳ cảnh báo AVOID nào.",
+    "evidence": "Chạy thử nghiệm lâm sàng đối nghịch trên bệnh nhân nữ mang thai 28 tuổi đang uống Fenofibrate 145 mg/ngày (test_pregnancy.test.ts). Hệ thống chỉ sinh duy nhất [AVOID] Atorvastatin, hoàn toàn KHÔNG sinh [AVOID] Fenofibrate và không có Safety Alert nào. Kiểm tra file `kb/drugs/fenofibrate.json` dòng 68-81 cho thấy mảng `gates` chỉ có duy nhất `gate_feno_severe_ckd` (eGFR < 30), hoàn toàn thiếu cổng kiểm tra mang thai. Theo Dược thư Quốc gia Việt Nam 2022 và FDA Tricor label (Section 8.1): Fenofibrate chống chỉ định tuyệt đối trong thời kỳ mang thai và cho con bú do nguy cơ gây độc phôi thai và quái thai (chậm cốt hóa xương, sẩy thai).",
+    "suggestedFix": "Thêm cổng an toàn thai kỳ `gate_feno_pregnancy` vào `kb/drugs/fenofibrate.json` với `parameter: 'pregnancy'`, `operator: '=='`, `threshold: 1`, `action: 'contra'`, message: 'Chống chỉ định tuyệt đối Fenofibrate trong thai kỳ và thời kỳ cho con bú'. Đồng thời cập nhật rule `lipid.safety.pregnancy` trong `rules.outpatient.ts` và `rules.inpatient.ts` để kiểm tra và phát lệnh AVOID cho toàn bộ các thuốc hạ lipid (statin, fibrate, bempedoic acid) nếu có trong currentMeds."
+  },
+  {
+    "id": "LIPID-R2-02",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "lipid.tg.severe_pancreatitis_prevention",
+    "finding": "Kê đơn Fenofibrate liều đầy đủ (145–200 mg/ngày) ở bệnh nhân suy thận mức độ trung bình (CKD G3a/G3b, eGFR 30–59 mL/phút) do quy tắc lâm sàng bỏ qua nấc giảm liều bắt buộc.",
+    "evidence": "Chạy evaluate trên bệnh nhân nam 60 tuổi có Creatinin 180 µmol/L (eGFR ~36 mL/phút/1.73m², CKD G3b) và TG 7.2 mmol/L (test_feno_ckd.test.ts). Engine xuất khuyến cáo: `[START] Fenofibrate 145 mg hoặc 200 mg uống 1 lần/ngày cùng bữa ăn` (nguyên liều đầy đủ). Trong khi đó, `fenofibrate.json` dòng 46-54 quy định: `eGFR 30-60: Giảm liều: 67-100 mg 1 lần/ngày`. Nhãn FDA Tricor Section 2.4 và SmPC Lipanthyl 145: 'In patients with mild-to-moderate renal impairment, treatment with fenofibrate should be initiated at a dose of 48-54 mg/day (or 67 mg micronized), and should only be increased after evaluation of renal function and lipid levels'. Dùng liều 145-200 mg ở bệnh nhân eGFR 36 làm tăng nồng độ acid fenofibric 2-3 lần, gây suy thận cấp tiến triển và tiêu cơ vân.",
+    "suggestedFix": "Cập nhật rule `lipid.tg.severe_pancreatitis_prevention` (ngoại trú) và `lipid.inpatient.severe_tg_pancreatitis` (nội viện): nếu `egfr !== undefined && egfr >= 30 && egfr < 60`, chỉ định Fenofibrate liều giảm 67 mg/ngày (hoặc 100 mg), không dùng liều 145-200 mg; bổ sung lời nhắc kiểm tra lại chức năng thận sau 2-4 tuần."
+  },
+  {
+    "id": "LIPID-R2-03",
+    "severity": "major",
+    "itemType": "missing",
+    "itemId": "rec_lipid_pcsk9_indicated",
+    "finding": "Bỏ sót hoàn toàn khuyến cáo Class I A của ESC/EAS về Thuốc ức chế PCSK9 (Evolocumab / Alirocumab / Inclisiran) trong toàn bộ hệ thống luật.",
+    "evidence": "Grep tìm `evolocumab`, `alirocumab`, `inclisiran` trong thư mục `src/modules/lipid/` cho thấy không có bất kỳ rule nào sinh khuyến cáo chỉ định các thuốc này. Dù KB có đủ 3 thuốc và `LIPID.md` mô tả đây là 'Bước 3', người dùng không bao giờ nhận được khuyến cáo PCSK9i. Theo ESC/EAS 2019 (Section 7.1.3 & Recommendations Table, p. 139 - Class I A) và ESC 2025 Focused Update: Ở bệnh nhân nguy cơ tim mạch rất cao không đạt đích LDL-C < 1.4 mmol/L dù đã dùng statin liều tối đa dung nạp kết hợp ezetimibe, khuyến cáo phối hợp thêm thuốc ức chế PCSK9 (Evolocumab 140 mg q2w / 420 mg qm, Alirocumab 75-150 mg q2w, hoặc Inclisiran 284 mg) là khuyến cáo Class I, LOE A.",
+    "suggestedFix": "Thêm rule `lipid.pcsk9.very_high_uncontrolled`: kích hoạt khi bệnh nhân thuộc tầng nguy cơ rất cao đang dùng Statin liều cao + Ezetimibe mà LDL-C vẫn > 1.4 mmol/L (hoặc không dung nạp statin đã dùng Ezetimibe + Bempedoic acid chưa đạt đích), sinh khuyến cáo [CONSIDER] hoặc [START] Evolocumab 140 mg SC mỗi 2 tuần hoặc Inclisiran 284 mg SC theo lịch; kèm lưu ý thực hành tại Việt Nam (BHYT chưa chi trả)."
+  },
+  {
+    "id": "LIPID-R2-04",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "lipid.combo.upfront_very_high_far_from_target",
+    "finding": "Bỏ sót chỉ định phối hợp thêm Ezetimibe 10 mg (Add-on Ezetimibe) ở bệnh nhân đang dùng Statin chưa đạt đích LDL-C nếu mức LDL < 3.0 mmol/L.",
+    "evidence": "Chạy evaluate trên ca bệnh thực tế: Bệnh nhân ASCVD đang uống Atorvastatin 40 mg, LDL-C đo được là 2.2 mmol/L (chưa đạt đích < 1.4 mmol/L) (test_titration.test.ts). Engine chỉ sinh lệnh tăng liều Atorvastatin lên 80 mg, hoàn toàn KHÔNG khuyến cáo bổ sung Ezetimibe 10 mg. Rule `lipid.combo.upfront_very_high_far_from_target` chỉ xét `ldl >= 3.0 mmol/L`. Theo ESC/EAS 2019 (Class I B, Table 7 & p. 138) và ACC/AHA 2018: Nếu chưa đạt đích với statin dung nạp tối đa, khuyến cáo phối hợp thêm Ezetimibe 10 mg/ngày bất kể khoảng cách tới đích là bao nhiêu.",
+    "suggestedFix": "Bổ sung rule `lipid.statin_plus_ezetimibe_stepup`: khi bệnh nhân nguy cơ cao/rất cao đang dùng statin mà LDL-C vẫn trên ngưỡng mục tiêu (< 1.8 hoặc < 1.4 mmol/L), khuyến cáo phối hợp thêm Ezetimibe 10 mg 1 lần/ngày (Class I B)."
+  },
+  {
+    "id": "LIPID-R2-05",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "ix.simvastatin_interactions",
+    "finding": "Thiếu hoàn toàn các quy tắc kiểm tra tương tác thuốc nguy hiểm của Simvastatin (với Clarithromycin, Amiodarone, Diltiazem, Verapamil) và Statin với Colchicine trong module an toàn.",
+    "evidence": "Chạy `test_interactions.test.ts`: Bệnh nhân đang uống Simvastatin 40 mg cùng Amiodarone và Diltiazem, engine không cảnh báo bất kỳ tương tác nào ngoài cảnh báo trùng lặp nhóm statin. Bệnh nhân dùng Atorvastatin + Colchicine cũng có 0 alert. Kiểm tra `src/engine/safety/interactions.ts` dòng 19-111 cho thấy chỉ có 1 quy tắc duy nhất về statin là Statin + Gemfibrozil. Nhãn FDA Simvastatin (Zocor): Chống chỉ định phối hợp chất ức chế CYP3A4 mạnh (Clarithromycin, Erythromycin, Itraconazole); trần liều Simvastatin là 20 mg/ngày khi dùng cùng Amiodarone/Amlodipine; trần liều 10 mg/ngày khi dùng cùng Diltiazem/Verapamil. Phối hợp statin + colchicine tăng mạnh nguy cơ tiêu cơ vân cấp.",
+    "suggestedFix": "Thêm 3 quy tắc vào `INTERACTION_RULES` trong `interactions.ts`: (1) `ix.simva_cyp3a4_contra` (Simva + Clarithromycin/Erythromycin/Itraconazole - Mức critical); (2) `ix.simva_antiarrhythmic_ccb_cap` (Simva > 20mg với Amiodarone hoặc > 10mg với Diltiazem/Verapamil - Mức critical/warning); (3) `ix.statin_colchicine_myopathy` (Statin + Colchicine - Mức warning)."
+  },
+  {
+    "id": "LIPID-R2-06",
+    "severity": "major",
+    "itemType": "threshold",
+    "itemId": "lipid.reduction.pcsk9_alone",
+    "finding": "Dùng sai bản chất thứ nguyên y khoa: Ngưỡng phần trăm giảm LDL của PCSK9 (60 %) bị đem làm mốc phân loại độ lọc cầu thận eGFR 60 mL/phút/1.73m².",
+    "evidence": "Trong `src/modules/lipid/rules.outpatient.ts` dòng 413: `const isModerateCkd = ... || (egfr !== undefined && egfr >= th('lipid.safety.egfr_severe_ckd') && egfr < th('lipid.reduction.pcsk9_alone'));`. Hằng số `lipid.reduction.pcsk9_alone` trong `kb/thresholds/lipid.json` (dòng 142) có giá trị là 60, đơn vị là `%`, mô tả là 'Mức giảm LDL-C dự kiến của thuốc ức chế PCSK9 đơn độc (~60%)'. Việc lấy một ngưỡng phần trăm hạ mỡ máu để so sánh với độ lọc cầu thận vi phạm nghiêm trọng quy chuẩn phân loại biến số y khoa và QA-8.",
+    "suggestedFix": "Tạo ngưỡng mới `lipid.safety.egfr_moderate_ckd_max` với giá trị 60, đơn vị `mL/min/1.73m2`, liên kết trích dẫn KDIGO/ESC, và thay thế vào dòng 413 của `rules.outpatient.ts`."
+  },
+  {
+    "id": "LIPID-R2-07",
+    "severity": "major",
+    "itemType": "matrix",
+    "itemId": "lipidMatrixEgfr",
+    "finding": "Ma trận lọc thận (lipidMatrixEgfr) ghi Rosuvastatin là Chống chỉ định (contra) khi lọc máu, trong khi Atorvastatin ghi caution, mâu thuẫn trực tiếp với guideline KDIGO 2024 và nhãn FDA.",
+    "evidence": "Trong `src/modules/lipid/matrix.ts` dòng 259: Rosuvastatin lọc máu ghi `initiate: 'contra', continue: 'caution'`. Cả hai thử nghiệm lâm sàng ngẫu nhiên bản lề 4D (Atorvastatin 20 mg) và AURORA (Rosuvastatin 10 mg) đều chứng minh statin không giảm biến cố tim mạch ở bệnh nhân chạy thận nhân tạo nhưng an toàn. KDIGO 2013/2024 (Khuyến cáo 2A & 2C): Không khuyến cáo bắt đầu statin mới ở bệnh nhân lọc máu ('not_rec'), nhưng tiếp tục duy trì nếu đã dùng từ trước ('ok' / 'rec'). Nhãn FDA Crestor và EMA SmPC không liệt kê chạy thận nhân tạo vào mục Chống chỉ định (Contraindications). Việc ghi contra là sai lệch guideline.",
+    "suggestedFix": "Sửa ô `rosuvastatin.dialysis` trong `lipidMatrixEgfr`: `initiate: 'not_rec'`, `continue: 'ok'` (hoặc `caution`), đồng bộ với Atorvastatin và chuẩn KDIGO 2024."
+  },
+  {
+    "id": "LIPID-R2-08",
+    "severity": "major",
+    "itemType": "drug",
+    "itemId": "pitavastatin",
+    "finding": "Dữ liệu thuốc Pitavastatin cho phép dùng liều tối đa 4 mg/ngày ở bệnh nhân suy thận mức độ trung bình (eGFR 30–59 mL/phút), vi phạm trần liều 2 mg/ngày của nhãn FDA.",
+    "evidence": "Trong `kb/drugs/pitavastatin.json` dòng 34-43, dải `eGFRFrom: 30` cho phép dùng liều `2–4 mg 1 lần/ngày`. Nhãn FDA Livalo (Pitavastatin) Section 2.2: 'In patients with moderate and severe renal impairment (eGFR 30-59 mL/min/1.73 m2 and 15-29 mL/min/1.73 m2, respectively)... the recommended starting dose is 1 mg once daily and the maximum dose is 2 mg once daily'. Trần liều 2 mg/ngày bắt buộc áp dụng từ eGFR < 60 mL/phút.",
+    "suggestedFix": "Phân chia lại dải thận trong `pitavastatin.json`: `eGFRFrom: 60`: 2-4 mg/ngày; `eGFRFrom: 30, eGFRTo: 60`: khởi đầu 1 mg/ngày, tối đa 2 mg/ngày; `eGFRFrom: 0, eGFRTo: 30`: khởi đầu 1 mg/ngày, tối đa 2 mg/ngày."
+  },
+  {
+    "id": "LIPID-R2-09",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "lipid.statin.moderate_risk_initiate",
+    "finding": "Bỏ trống quy tắc xử trí hạ lipid cho tầng nguy cơ trung bình (Moderate Risk) có LDL-C chưa đạt đích trong rules.outpatient.ts.",
+    "evidence": "Chạy evaluate trên Preset 5 (`lipid_preset_5_primary_prevention_moderate` - BN nữ 54 tuổi nguy cơ trung bình SCORE2 4.2%, LDL-C 3.4 mmol/L, đích < 2.6 mmol/L). Engine chỉ xuất 2 khuyến cáo theo dõi (đo Lp(a) và lịch hẹn 8 tuần), hoàn toàn KHÔNG có khuyến cáo điều trị hạ lipid nào! Theo ESC/EAS 2019 Table 5 & Section 7.1: Bệnh nhân nguy cơ trung bình có LDL-C >= 2.6 mmol/L cần được tư vấn thay đổi lối sống và can thiệp Statin cường độ trung bình (Atorvastatin 10-20 mg, Rosuvastatin 5-10 mg, Simvastatin 20-40 mg) nếu không đạt đích (Class IIa, LOE A).",
+    "suggestedFix": "Xây dựng rule `lipid.statin.moderate_risk_initiate` trong `rules.outpatient.ts`: khi bệnh nhân thuộc nhóm nguy cơ trung bình có LDL-C > 2.6 mmol/L, sinh khuyến cáo tư vấn thay đổi lối sống và cân nhắc khởi trị Statin cường độ trung bình (Atorvastatin 10-20 mg hoặc Rosuvastatin 5-10 mg/ngày)."
+  },
+  {
+    "id": "LIPID-R2-10",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "lipid.statin.very_high_risk_initiate",
+    "finding": "Thiếu hành động Chuyển đổi Statin (Statin Switch) khi bệnh nhân đang dùng statin cường độ trung bình mà chưa đạt đích nguy cơ rất cao, dẫn tới phát sinh khuyến cáo START Atorvastatin chồng lên statin cũ gây cảnh báo trùng lặp thuốc.",
+    "evidence": "Chạy evaluate trên Golden Case 26 (BN ASCVD đang uống Simvastatin 40 mg, LDL-C 2.8 mmol/L > 1.4 mmol/L) (test_case26.test.ts). Engine sinh khuyến cáo: `[START] Khởi trị Atorvastatin liều cao... 80 mg/ngày` kèm cảnh báo trùng lặp 2 thuốc statin. Bác sĩ không thể 'START' thêm một statin mới song song. Hành động lâm sàng đúng là 'SWITCH' (Ngừng Simvastatin và chuyển sang Atorvastatin 40-80 mg hoặc Rosuvastatin 20-40 mg) nhằm phòng ngừa nguy cơ bệnh nhân uống cả hai thuốc dẫn đến tiêu cơ vân.",
+    "suggestedFix": "Trong quy tắc khởi trị statin liều cao: kiểm tra `currentMeds`. Nếu bệnh nhân đã dùng một statin khác, đổi tiêu đề và nội dung khuyến cáo thành 'Chuyển đổi sang Statin cường độ cao (Ngừng [statin cũ] và chuyển sang Atorvastatin 40-80 mg hoặc Rosuvastatin 20-40 mg)'."
+  },
+  {
+    "id": "LIPID-R2-11",
+    "severity": "minor",
+    "itemType": "drug",
+    "itemId": "vnBrands_foreign_names",
+    "finding": "Trường vnBrands của 5 thuốc hạ lipid chứa biệt dược nước ngoài không lưu hành tại thị trường Việt Nam.",
+    "evidence": "Kiểm tra tệp KB: `ezetimibe.json` chứa 'Zetia' (tên Mỹ; tại VN là Ezetrol); `fenofibrate.json` chứa 'Tricor' (tên Mỹ; tại VN là Lipanthyl); `pravastatin.json` chứa 'Pravastatina' (tên tiếng Tây Ban Nha/Ý; tại VN là Pravachol); `omega3.json` chứa 'Lovaza' (tên Mỹ; tại VN là Omacor); `bempedoic_acid.json` ghi 'Nexletol' và `icosapent_ethyl.json` ghi 'Vascepa' mà không có ghi chú là thuốc chưa lưu hành đại trà tại Việt Nam.",
+    "suggestedFix": "Xóa Zetia, Tricor, Pravastatina, Lovaza khỏi `vnBrands` của các file tương ứng; thay bằng các biệt dược chuẩn lưu hành tại VN (Ezetrol, Lipanthyl, Pravachol, Omacor). Với Bempedoic acid và Icosapent ethyl, thêm chú thích rõ ràng là thuốc chưa có số đăng ký chính thức tại Việt Nam."
+  },
+  {
+    "id": "LIPID-R2-12",
+    "severity": "minor",
+    "itemType": "drug",
+    "itemId": "bempedoic_acid",
+    "finding": "Thiếu cảnh báo nguy cơ Đứt gân (Tendon Rupture) và chưa kiểm tra tiền sử Gút đối với Bempedoic acid.",
+    "evidence": "Trong `kb/drugs/bempedoic_acid.json`, mảng `gates` chỉ có gate kiểm tra acid uric >= 600 µmol/L. Nhãn FDA Nexletol Section 5.1 & 5.2 nhấn mạnh: Bempedoic acid làm bùng phát cơn gút cấp ở 11.2% bệnh nhân có tiền sử gút (so với 2.1% giả dược), và làm tăng nguy cơ đứt gân (Achilles, chóp xoay vai, cơ nhị đầu). Cả hai cảnh báo an toàn này chưa được thể hiện đầy đủ.",
+    "suggestedFix": "Thêm gate kiểm tra tiền sử gút (`conditions.gout: true`) và bổ sung cảnh báo nguy cơ viêm gân/đứt gân vào `bempedoic_acid.json`."
+  },
+  {
+    "id": "LIPID-R2-13",
+    "severity": "minor",
+    "itemType": "matrix",
+    "itemId": "lipidMatrixEgfr",
+    "finding": "Ma trận lọc thận (lipidMatrixEgfr) bỏ sót 8 trong tổng số 13 thuốc hạ lipid của module.",
+    "evidence": "Kiểm tra `src/modules/lipid/matrix.ts` dòng 198-361: bảng `lipidMatrixEgfr` chỉ hiển thị 5 thuốc (atorvastatin, rosuvastatin, ezetimibe, bempedoic_acid, fenofibrate). Thiếu 8 thuốc: Simvastatin, Pravastatin, Pitavastatin, Evolocumab, Alirocumab, Inclisiran, Icosapent ethyl, Omega-3. Trong đó Simvastatin, Pravastatin, Pitavastatin đều có hướng dẫn chỉnh liều theo chức năng thận quan trọng.",
+    "suggestedFix": "Bổ sung các hàng cho Simvastatin, Pravastatin, Pitavastatin và các thuốc sinh học PCSK9 vào ma trận `lipidMatrixEgfr`."
+  },
+  {
+    "id": "LIPID-R2-14",
+    "severity": "suggestion",
+    "itemType": "ui",
+    "itemId": "statin_choice_flexibility",
+    "finding": "Tất cả các khuyến cáo Statin cường độ cao đều hardcode Atorvastatin làm lu mờ vai trò của Rosuvastatin (vốn rất phổ biến tại các bệnh viện Việt Nam).",
+    "evidence": "Trong `rules.outpatient.ts` và `rules.inpatient.ts`, trường `drugId` luôn là `'atorvastatin'`. Mặc dù phần rationale có nhắc tới Rosuvastatin (khởi đầu 5 mg ở người châu Á), trên giao diện thẻ khuyến cáo UI chỉ hiển thị tên Atorvastatin, gây khó khăn cho bác sĩ muốn chọn kê Rosuvastatin.",
+    "suggestedFix": "Cung cấp tùy chọn linh hoạt hoặc tạo thẻ khuyến cáo gộp 'Statin cường độ cao: Atorvastatin (40–80 mg) hoặc Rosuvastatin (20–40 mg, khởi đầu 5 mg ở người châu Á)' để tối ưu trải nghiệm lâm sàng."
+  }
+]

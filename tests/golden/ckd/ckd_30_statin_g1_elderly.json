@@ -1,0 +1,45 @@
+{
+  "id": "ckd_30_statin_g1_elderly",
+  "titleVi": "Khởi trị Statin ở bệnh nhân CKD G1A3 từ 50 tuổi trở lên (KDIGO 2024 Rec 3.15.1.2 Class 1B)",
+  "source": "KDIGO 2024 CKD Rec 3.15.1.2 / kdigo.ckd.2024.rec_3_15_1_2_statin_egfr_ge_60",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_30",
+    "name": "BN CKD 30",
+    "age": 56,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 72,
+    "scr": 80,
+    "k": 4.3,
+    "uacr": 40,
+    "conditions": {
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "atorvastatin", "action": "START" }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân 56 tuổi có CKD giai đoạn G1 (eGFR 98 >= 60) kèm albumin niệu A3: Khuyến cáo dùng Statin theo KDIGO 2024 Rec 3.15.1.2 mức 1B."
+}

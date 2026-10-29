@@ -1,0 +1,63 @@
+{
+  "id": "ckd_08_avoid_dual_rasi",
+  "titleVi": "Ngừng ngay phối hợp đồng thời ACEi + ARB",
+  "source": "KDIGO 2024 CKD Rec 3.6.4 / kdigo.ckd.2024.rec_3_6_4_avoid_dual_rasi",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_08",
+    "name": "BN CKD 08",
+    "age": 65,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 72,
+    "scr": 130,
+    "k": 4.8,
+    "conditions": {
+      "ckd": true,
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "perindopril",
+        "name": "Coversyl 5 mg",
+        "dose": 5,
+        "unit": "mg"
+      },
+      {
+        "drugId": "losartan",
+        "name": "Cozaar 50 mg",
+        "dose": 50,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "losartan",
+        "action": "STOP"
+      }
+    ]
+  },
+  "descriptionVi": "Chống chỉ định phối hợp ACEi + ARB do nguy cơ suy thận cấp và tăng kali."
+}

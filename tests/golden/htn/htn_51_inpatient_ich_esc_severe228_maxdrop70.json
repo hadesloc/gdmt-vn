@@ -1,0 +1,57 @@
+{
+  "id": "htn_51_inpatient_ich_esc_severe228_maxdrop70",
+  "titleVi": "Nội viện Xuất huyết não cấp HA rất cao (228/118 mmHg, INTL): Hạ về 140–160 mmHg và cảnh báo cấm giảm > 70 mmHg trong 1 giờ",
+  "source": "ESC 2024 HTN / esc.htn.2024.ich_drop70_rec32",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 63,
+    "sex": "male",
+    "weight": 70,
+    "height": 167,
+    "sbp": 228,
+    "dbp": 118,
+    "hr": 84,
+    "scr": 94,
+    "k": 4.2,
+    "conditions": {
+      "htn": true,
+      "acuteIntracerebralHemorrhage": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_htn_emergency_ich",
+        "drugId": "nicardipine",
+        "action": "START",
+        "doseContains": "140–160"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "nicardipine",
+        "action": "HOLD"
+      }
+    ]
+  },
+  "descriptionVi": "Theo ESC 2024 (Rec 32), xuất huyết não cấp có HATT ≥ 220 mmHg cần hạ mượt về cửa sổ 140–160 mmHg và tuyệt đối không giảm quá 70 mmHg trong 1 giờ đầu (Class III) để tránh tổn thương thận cấp và thiếu máu não."
+}

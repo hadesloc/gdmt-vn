@@ -1,0 +1,26 @@
+{
+  "itemId": "af.dabigatran.reduced_dose",
+  "contentHash": "f06916b0e6bb037ad852318879949e5cff091970250182c85d14c5340f7dd483",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.dabigatran.reduced_dose",
+      "contentHash": "50d953b46d6b99b6",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.dabigatran.reduced_dose (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

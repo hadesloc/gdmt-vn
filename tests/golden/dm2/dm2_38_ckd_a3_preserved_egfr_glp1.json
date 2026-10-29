@@ -1,0 +1,62 @@
+{
+  "id": "dm2_38_ckd_a3_preserved_egfr_glp1",
+  "titleVi": "Bệnh thận ĐTĐ có albumin niệu đại thể UACR 45 mg/mmol nhưng eGFR bảo tồn - Khởi trị SGLT2i và Semaglutide (FLOW)",
+  "source": "ADA 2026 SOC Ch. 11 & FLOW Trial",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 58,
+    "sex": "male",
+    "weight": 64,
+    "height": 168,
+    "sbp": 126,
+    "dbp": 78,
+    "hr": 74,
+    "scr": 82,
+    "k": 4.4,
+    "glucose": 8.4,
+    "hba1c": 7.9,
+    "uacr": 45,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "metformin",
+        "name": "Metformin",
+        "dose": 1000,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dapagliflozin",
+        "action": "START"
+      },
+      {
+        "drugId": "semaglutide",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân có UACR 45 mg/mmol (A3) nhưng eGFR > 60 mL/phút/1.73m², BMI 22.7 và chưa tích chọn cờ CKD: Hệ thống tự động phát hiện CKD qua UACR >= 3 mg/mmol để khởi trị cả SGLT2i và GLP-1 RA bảo vệ thận."
+}

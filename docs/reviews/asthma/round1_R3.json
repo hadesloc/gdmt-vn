@@ -1,0 +1,164 @@
+[
+  {
+    "id": "ASTHMA-R3-01",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "asthma.inpatient.severe_exacerbation",
+    "finding": "Cơn hen nguy kịch có lồng ngực im lặng (silent chest) hoặc rối loạn tri giác (ngủ gà, lơ mơ) bị bỏ rơi hoàn toàn phác đồ cấp cứu dùng thuốc (Salbutamol khí dung, oxy, corticoid tiêm TM) do lệnh return sớm chỉ sinh REFER ICU.",
+    "evidence": "src/modules/asthma/rules.ts dòng 338-359: if (silentChest || drowsy) return { id: 'rec_asthma_acute_life_threatening_icu', action: 'REFER', ... }. Kết quả chạy BN ADV-ACUTE-08 (silentChest: true, SpO2 84%, RR 36) và ADV-ACUTE-09 (mentalStatus: drowsy_confused): Engine chỉ sinh 1 khuyến cáo REFER ICU; hoàn toàn KHÔNG sinh Salbutamol khí dung, Ipratropium, Corticoid tiêm hay Oxy liệu pháp. GINA 2026 Box 9-3 và BYT QĐ 5850/2021 yêu cầu: Trong khi chờ ICU, bắt buộc phải dùng ngay SABA + SAMA khí dung liên tục, Oxy duy trì SpO2 93-95% và Hydrocortisone/Methylprednisolone tiêm TM.",
+    "suggestedFix": "Không được return sớm khi có silent chest/drowsy. Phải sinh đồng thời cả khuyến cáo REFER ICU khẩn cấp lẫn phác đồ hồi sức cấp cứu dùng thuốc tích cực rec_asthma_acute_severe_bundle."
+  },
+  {
+    "id": "ASTHMA-R3-02",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "asthma.inpatient.severe_exacerbation",
+    "finding": "Lỗi trích xuất key need(ctx, 'customInputs.respiratoryRate') khiến bệnh nhân thở nhanh nguy kịch (RR > 30 lần/phút) bị phân loại sai nghiêm trọng thành Cơn hen cấp nhẹ - trung bình.",
+    "evidence": "src/modules/asthma/rules.ts dòng 296, 411: const rr = need(ctx, 'customInputs.respiratoryRate'). Helper need() (src/engine/require.ts dòng 72) kiểm tra field in customInputs. Form UI (PatientForm.tsx dòng 69-86) lưu key không có tiền tố customInputs. (chỉ là 'respiratoryRate'). Do đó rr luôn là undefined. Khi chạy BN ADV-ACUTE-03 có RR = 31 lần/phút (tiêu chuẩn cơn nặng), isSevere đánh giá là false và kích hoạt Rule 7 (asthma.inpatient.mild_moderate_exacerbation), kê đơn Salbutamol xịt buồng đệm + Prednisolone uống tại nhà thay vì phác đồ cấp cứu nặng tại viện.",
+    "suggestedFix": "Sửa rules.ts đọc trực tiếp ctx.patient.customInputs?.respiratoryRate hoặc sửa helper need() để tự động loại bỏ tiền tố 'customInputs.' khi tra cứu trong customInputs."
+  },
+  {
+    "id": "ASTHMA-R3-03",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "asthma.safety.saba_only_prohibited",
+    "finding": "Bỏ lọt hoàn toàn bệnh nhân dùng LABA đơn độc không kèm ICS (Salmeterol, Formoterol monotherapy) – vi phạm cảnh báo hộp đen FDA và làm tăng nguy cơ tử vong do hen.",
+    "evidence": "src/modules/asthma/rules.ts dòng 114-121 chỉ kiểm tra SABA (salbutamol, terbutaline). Khi chạy BN ADV-MED-03 (đang dùng Salmeterol 50 mcg x 2 lần/ngày đơn độc) và ADV-MED-04 (Formoterol đơn độc), engine KHÔNG hề phát hiện, KHÔNG cảnh báo và KHÔNG có lệnh STOP/AVOID nào. GINA 2026 và BYT 1851/2020 nghiêm cấm tuyệt đối LABA đơn độc trong hen vì che lấp triệu chứng viêm đường thở và làm tăng tử vong do hen (thử nghiệm SMART).",
+    "suggestedFix": "Bổ sung luật an toàn cấm LABA đơn độc (asthma.safety.laba_only_prohibited), kiểm tra các thuốc LABA ['salmeterol', 'formoterol', 'indacaterol', 'vilanterol', 'olodaterol'] nếu đang dùng mà không có ICS đi kèm thì kích hoạt action: 'STOP' ngay lập tức."
+  },
+  {
+    "id": "ASTHMA-R3-04",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "asthma.inpatient.discharge_plan",
+    "finding": "Kế hoạch xuất viện nội viện (Rule 8) không kiểm tra độ tuổi < 12, tự ý kê đơn Budesonide/formoterol MART người lớn cho trẻ em 11 tuổi.",
+    "evidence": "src/modules/asthma/rules.ts dòng 464-473 (asthma.inpatient.discharge_plan) chỉ kiểm tra ci.acuteResponseAfter1h === 'good_response', hoàn toàn KHÔNG có kiểm tra age < 12. Khi chạy BN ADV-AGE-02 (trẻ em 11 tuổi nội viện có đáp ứng tốt sau 1h), engine tự động kích hoạt rec_asthma_discharge_plan (START Budesonide/formoterol Track 1 MART người lớn) cho trẻ 11 tuổi. GINA 2026 Box 3-5 quy định phác đồ trẻ 6–11 tuổi có phân bậc và phân liều riêng biệt, không dùng MART Budesonide/formoterol liều người lớn.",
+    "suggestedFix": "Thêm điều kiện chặn tuổi: const age = need(ctx, 'age'); if (age !== undefined && age < th('asthma.age.min_adult_adolescent')) return false; vào Rule 8."
+  },
+  {
+    "id": "ASTHMA-R3-05",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "evaluateGinaControl",
+    "finding": "Thủng lỗ hổng Fail-closed: Chỉ cần người dùng trả lời 1 câu hỏi duy nhất là False (3 câu còn lại bỏ trống), engine ngộ nhận bệnh nhân 'Kiểm soát tốt' và kê đơn Bậc 1–2 hoặc hạ bậc.",
+    "evidence": "src/modules/asthma/rules.ts dòng 47-48: if (positive === 0) return { answeredCount: answered, positiveCount: positive, level: 'well_controlled' };. Khi chạy BN ADV-CTRL-11 (chỉ trả lời Q1 = false, Q2, Q3, Q4 = undefined), answered = 1, positive = 0, hàm trả về well_controlled. Rule 9 không bắt được (vì chỉ bắt khi level === 'missing', tương đương answered === 0). Kết quả: BN bị gán là kiểm soát tốt và kích hoạt rec_asthma_track1_step1_2. GINA 2026 Bảng 2A và BYT 1851 Bảng 3 bắt buộc phải đủ 4 câu hỏi.",
+    "suggestedFix": "Trong evaluateGinaControl, nếu answered < 4 thì bắt buộc trả về level: 'missing' (hoặc 'incomplete'), và Rule 9 phải kích hoạt fail-closed yêu cầu người dùng trả lời đủ cả 4 câu hỏi."
+  },
+  {
+    "id": "ASTHMA-R3-06",
+    "severity": "critical",
+    "itemType": "ui",
+    "itemId": "generateAsthmaActionPlanVi",
+    "finding": "Lỗi đổi đơn vị và toán học chết người trong Kế hoạch hành động hen: lấy PEF % (ví dụ 80%) gắn nhãn thành '80 L/phút' và tính ngưỡng Vùng Xanh > 64 L/phút (chuẩn người lớn là 400–600 L/phút).",
+    "evidence": "src/modules/asthma/inputs.ts dòng 79 định nghĩa customInputs.pefPct có đơn vị là % (unit: '%'). Trong actionPlan.ts dòng 22-27: const pefBestText = params.pefBest ? `${params.pefBest} L/phút` : ...; const greenPef = params.pefBest ? `> ${(params.pefBest * 0.8).toFixed(0)} L/phút (>80%)` : .... Khi người dùng nhập pefPct = 80 (80%), bản kế hoạch hành động in ra: 'PEF cá nhân tốt nhất: 80 L/phút. Vùng xanh: > 64 L/phút'. Bệnh nhân người lớn khi đo được 250 L/phút (đang tắc nghẽn nguy kịch) nhìn vào sẽ tưởng mình an toàn (> 64 L/phút) và không đi cấp cứu, nguy cơ tử vong.",
+    "suggestedFix": "Phân biệt rõ pefAbsolute (L/phút) và pefPct (%). Nếu chỉ có pefPct, hiển thị tỷ lệ % (ví dụ > 80% giá trị dự đoán); chỉ tính toán ngưỡng L/phút khi có số đo PEF tuyệt đối theo L/phút."
+  },
+  {
+    "id": "ASTHMA-R3-07",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "generateAsthmaActionPlanVi",
+    "finding": "Hướng dẫn xử trí Vùng Đỏ trong Kế hoạch hành động Track 1 nguy hiểm và bất khả thi: bảo người bệnh xịt ngay 4–6 nhát Budesonide/formoterol hoặc cho bình xịt bột khô (DPI) vào máy khí dung.",
+    "evidence": "src/modules/asthma/actionPlan.ts dòng 86-87: '1. HÍT THUỐC CẮT CƠN KHẨN CẤP: • Xịt ngay 4–6 nhát Budesonide/formoterol 160/4.5 mcg qua buồng đệm (hoặc khí dung nếu có máy)'. Khi áp dụng Track 1: Bình DPI Turbuhaler không thể đổ vào máy khí dung để 'khí dung nếu có máy'. Đồng thời hít 4-6 nhát Budesonide/formoterol một lần đưa vào cơ thể 18-27 mcg formoterol trong vài giây, gây quá liều formoterol cấp, loạn nhịp tim và hạ kali máu. GINA Box 4-4 và Box 9-2 quy định cắt cơn Track 1 chỉ hít 1-2 nhát; nếu nặng dùng SABA qua buồng đệm hoặc gọi cấp cứu 115.",
+    "suggestedFix": "Sửa hướng dẫn Vùng Đỏ Track 1: Hít 1–2 nhát Budesonide/formoterol, hoặc dùng Salbutamol 4–6 nhát qua buồng đệm nếu có sẵn, và gọi ngay cấp cứu 115; bỏ câu 'khí dung nếu có máy' cho bình DPI."
+  },
+  {
+    "id": "ASTHMA-R3-08",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "hf.fmt.beta_blocker",
+    "finding": "Nguy cơ co thắt phế quản cấp tính: Module Suy tim (HF) gợi ý '(hoặc Carvedilol)' trên bệnh nhân Hen phế quản, bất chấp Carvedilol là chẹn beta không chọn lọc bị chống chỉ định.",
+    "evidence": "src/modules/hf/rules.ts dòng 382: drugNameVi: `${drug('bisoprolol').nameVi} (hoặc Carvedilol, Metoprolol succinate)`. Khi chạy BN ADV-SPEC-04 (kết hợp module asthma + hf), module HF hiển thị tiêu đề khuyến cáo khởi trị Bisoprolol kèm chú thích 'hoặc Carvedilol'. Carvedilol phong bế thụ thể beta-2 trên cơ trơn phế quản, có thể gây co thắt phế quản ác tính đe dọa tính mạng ở người bệnh hen.",
+    "suggestedFix": "Trong module HF, kiểm tra cờ conditions.asthma hoặc selectedModules.includes('asthma'): nếu bệnh nhân mắc hen, loại bỏ Carvedilol khỏi văn bản khuyến cáo và chỉ định danh chẹn beta-1 chọn lọc (Bisoprolol hoặc Metoprolol succinate liều thấp)."
+  },
+  {
+    "id": "ASTHMA-R3-09",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "asthma.outpatient.track1_step5_severe",
+    "finding": "Lỗi trích xuất key need(ctx, 'customInputs.bloodEosinophils') làm tê liệt việc phát hiện kiểu hình viêm Type 2 tăng bạch cầu ái toan máu, bỏ sót chỉ định thuốc sinh học đích (Benralizumab/Dupilumab).",
+    "evidence": "src/modules/asthma/rules.ts dòng 827: const eos = need(ctx, 'customInputs.bloodEosinophils'). Do key lưu trong customInputs là 'bloodEosinophils' (không có tiền tố), eos luôn trả về undefined. Khi chạy BN ADV-BIO-03 có BCAT máu = 300 tế bào/µL và ADV-BIO-04 có BCAT = 450, điều kiện eos !== undefined && eos >= eosMin không bao giờ thỏa mãn. Engine chỉ sinh ra câu chung chung 'Đánh giá kiểu hình viêm (đo BCAT máu, FeNO...)' thay vì khuyến cáo thuốc sinh học cụ thể theo GINA 2026.",
+    "suggestedFix": "Đọc trực tiếp ctx.patient.customInputs?.bloodEosinophils ?? ctx.patient.eos."
+  },
+  {
+    "id": "ASTHMA-R3-10",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "asthma.outpatient.step_down_stable",
+    "finding": "Mâu thuẫn lâm sàng trực tiếp: Kế hoạch điều trị đồng thời xuất hiện 2 khuyến cáo trái ngược – CONTINUE Duy trì liều hiện tại VÀ CONSIDER Xem xét hạ bậc giảm liều.",
+    "evidence": "Khi chạy BN ADV-STEP-02 (Bậc 3, kiểm soát tốt liên tục 3 tháng): Rule 11 sinh CONSIDER Xem xét hạ bậc giảm liều ICS 25–50%, nhưng Rule 13 đồng thời sinh CONTINUE Duy trì Track 1 Bậc 3 MART (1 nhát x 2 lần/ngày). Vì Rule 11 không có drugId, engine không gộp và hiển thị cả hai dòng cạnh nhau trên giao diện, khiến bác sĩ bối rối không biết duy trì hay giảm liều.",
+    "suggestedFix": "Khi điều kiện hạ bậc thỏa mãn, điều chỉnh action của thuốc duy trì thành REDUCE hoặc cung cấp dòng khuyến cáo phác đồ hạ bậc cụ thể (ví dụ: chuyển từ 1 nhát x 2 lần/ngày xuống 1 nhát/ngày hoặc AIR khi cần) thay vì để tồn tại song song cả CONTINUE lẫn CONSIDER."
+  },
+  {
+    "id": "ASTHMA-R3-11",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "asthma.outpatient.track1_step1_2",
+    "finding": "Các luật ngoại trú bỏ qua hoàn toàn tiền sử đợt cấp (exacerbationsLastYear) và FEV1 < 60%, để sót bệnh nhân nguy cơ cao ở phác đồ nhẹ ngắt quãng không dùng thuốc duy trì.",
+    "evidence": "Khi chạy BN ADV-EXAC-03 (có 2 đợt cấp nặng phải nhập viện trong 12 tháng qua, FEV1 chỉ đạt 59% giá trị dự đoán), vì 4 câu hỏi triệu chứng 4 tuần qua là 0/4, Rule 12 vẫn kích hoạt khởi trị Track 1 Bậc 1–2 (chỉ hít AIR khi cần, KHÔNG có liều duy trì). GINA 2026 Box 2-2 và BYT 1851 quy định: Tiền sử đợt cấp hoặc FEV1 < 60% là yếu tố nguy cơ độc lập mạnh cho đợt cấp tương lai; bệnh nhân bắt buộc phải có thuốc kiểm soát duy trì hàng ngày (tối thiểu Bậc 3 MART).",
+    "suggestedFix": "Thêm kiểm tra yếu tố nguy cơ đợt cấp: Nếu exacerbationsLastYear >= 1 hoặc fev1Pct < 60, không cho phép khởi trị hoặc hạ bậc về Bậc 1–2 AIR-only, mà phải khởi trị từ Bậc 3 duy trì trở lên."
+  },
+  {
+    "id": "ASTHMA-R3-12",
+    "severity": "major",
+    "itemType": "missing",
+    "itemId": "customInputs.spo2",
+    "finding": "Thiếu trường nhập SpO2 trong Module Input Schema, và SpO2 < 90% bị bỏ qua trong phân tầng cơn hen cấp nặng.",
+    "evidence": "src/modules/asthma/inputs.ts hoàn toàn không có trường nào khai báo spo2 hay customInputs.spo2. Mặc dù rules.ts dòng 298 có gọi need(ctx, 'customInputs.spo2'), nhưng người dùng không có chỗ nhập trên form UI. Khi chạy BN ADV-ACUTE-06 (SpO2 89%), bệnh nhân bị xếp vào cơn nhẹ - trung bình thay vì cơn nặng.",
+    "suggestedFix": "Khai báo bổ sung trường customInputs.spo2 (Độ bão hòa oxy mao mạch SpO2, đơn vị %, min 50, max 100) vào nhóm cấp cứu nội viện trong inputs.ts, và sửa hàm đọc trong rules.ts."
+  },
+  {
+    "id": "ASTHMA-R3-13",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "src/engine/safety/duplicates.ts",
+    "finding": "Thiếu luật kiểm tra trùng lặp nhóm thuốc giãn phế quản (LABA, LAMA, SABA) khi kết hợp đa bệnh Hen và COPD (ACO).",
+    "evidence": "src/engine/safety/duplicates.ts có 7 nhóm thuốc trùng lặp nhưng KHÔNG HỀ CÓ nhóm LABA, LAMA hay ICS. Khi chạy BN ADV-OVL-01 (Hen + COPD), module Hen kê đơn budesonide_formoterol (chứa LABA formoterol) và module COPD kê đơn glycopyrronium_indacaterol (chứa LABA indacaterol). Bệnh nhân được chỉ định cùng lúc 2 thuốc LABA khác nhau mà hệ thống an toàn không phát hiện bất kỳ trùng lặp nhóm nào.",
+    "suggestedFix": "Thêm dup.laba và dup.lama vào DUPLICATE_CLASS_RULES trong duplicates.ts."
+  },
+  {
+    "id": "ASTHMA-R3-14",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "conditions.pregnancy",
+    "finding": "Hoàn toàn bỏ quên tư vấn và điều chỉnh phác đồ cho 2 đối tượng đặc biệt quan trọng: Phụ nữ có thai và Người đang hút thuốc lá.",
+    "evidence": "inputs.ts có trường conditions.pregnancy và customInputs.smokingStatus. Tuy nhiên trong toàn bộ rules.ts, từ khóa pregnancy và smoking không hề xuất hiện. Khi chạy BN ADV-SPEC-01 (thai phụ mắc hen) và ADV-SPEC-02 (người hút thuốc lá), hệ thống hoàn toàn không đưa ra cảnh báo về tính an toàn của ICS trong thai kỳ (thiếu oxy nguy hiểm hơn thuốc) cũng như không có hướng dẫn can thiệp cai thuốc lá / nguy cơ kháng corticoid.",
+    "suggestedFix": "Thêm luật tư vấn an toàn thai kỳ (khẳng định duy trì Budesonide an toàn, không tự ý ngừng thuốc) và luật hỗ trợ cai thuốc lá (đánh giá nguy cơ kháng ICS do khói thuốc)."
+  },
+  {
+    "id": "ASTHMA-R3-15",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "profiles",
+    "finding": "Module Hen thiếu hoàn toàn phân biệt Profile INTL vs VN vs US (profileDiff không được khai báo ở bất kỳ luật nào).",
+    "evidence": "Khi chạy BN ADV-OVL-02 và ADV-OVL-03 đổi giữa profile INTL, VN và US, 100% khuyến cáo trả về giống hệt nhau từng chữ. Module không phản ánh đặc thù bảo hiểm y tế Việt Nam (BYT 1851 duy trì Track 2 do hạn chế thanh toán BHYT cho ICS-formoterol tuyến cơ sở) hay thuật ngữ SMART / Albuterol của hướng dẫn EPR-4 Hoa Kỳ.",
+    "suggestedFix": "Bổ sung profileDiff cho các khuyến cáo Track 1, Track 2 và thuốc cắt cơn."
+  },
+  {
+    "id": "ASTHMA-R3-16",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "asthma.action_plan.generate",
+    "finding": "Kế hoạch hành động tự quản lý ngoại trú được sinh cả trong bối cảnh cấp cứu nguy kịch nội viện / ICU.",
+    "evidence": "Rule 17 khai báo setting: 'both'. Khi chạy BN ADV-PLAN-03 đang cấp cứu hồi sức trong ICU (setting: inpatient), engine vẫn xuất ra bản Kế hoạch hành động hen với Vùng Xanh 'hoàn toàn bình thường, tập thể dục bình thường', gây thừa thãi và không phù hợp với bệnh cảnh cấp cứu nội viện.",
+    "suggestedFix": "Giới hạn Rule 17 cho setting: 'outpatient', hoặc chỉ sinh ở nội viện khi bệnh nhân đã ở giai đoạn xuất viện (acuteResponseAfter1h === 'good_response')."
+  },
+  {
+    "id": "ASTHMA-R3-17",
+    "severity": "minor",
+    "itemType": "threshold",
+    "itemId": "asthma.step_down.stability_months_min",
+    "finding": "Ngưỡng asthma.step_down.stability_months_min (2 tháng) là code chết, không được sử dụng ở bất kỳ đâu.",
+    "evidence": "kb/thresholds/asthma.json định nghĩa asthma.step_down.stability_months_min = 2. Tuy nhiên trong rules.ts dòng 598 chỉ so sánh stableMonths >= th('asthma.step_down.stability_months_max') (3 tháng). Khi chạy BN ADV-STEP-01 (ổn định 2 tháng), engine không cho phép xem xét hạ bậc dù GINA nêu mốc 2–3 tháng.",
+    "suggestedFix": "Cho phép kích hoạt xem xét hạ bậc khi stableMonths >= th('asthma.step_down.stability_months_min') kèm ghi chú lâm sàng theo GINA."
+  },
+  {
+    "id": "ASTHMA-R3-18",
+    "severity": "suggestion",
+    "itemType": "ui",
+    "itemId": "customInputs.pefPct",
+    "finding": "Nhãn trường PEF trong inputs.ts gây nhầm lẫn giữa tỷ lệ phần trăm và lưu lượng thể tích tuyệt đối.",
+    "evidence": "labelVi: 'Lưu lượng đỉnh (PEF) % giá trị dự đoán hoặc tốt nhất', unit: '%'. Việc kết hợp chữ 'hoặc tốt nhất' khiến người dùng không rõ nên nhập giá trị phần trăm (75) hay giá trị thể tích đo được bằng peak flow meter (450 L/phút).",
+    "suggestedFix": "Tách thành 2 trường rõ ràng: pefAbsolute (Lưu lượng đỉnh đo được, đơn vị L/phút) và pefPctPredicted (% giá trị dự đoán, đơn vị %)."
+  }
+]

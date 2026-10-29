@@ -1,0 +1,55 @@
+{
+  "id": "ckd_83_scr_rise_gt30_hold_rasi_defer_finerenone_and_rosuvastatin_g4_cap",
+  "titleVi": "Ngoại trú - Tăng Creatinin huyết thanh +35.7% so với nền (70 -> 95 umol/L, chưa chạm ngưỡng KDIGO AKI) khi đang dùng Losartan 50 mg -> TẠM NGỪNG/GIẢM Losartan (HOLD), DEFER Finerenone và cấm UPTITRATE RASi (Regression CKD-R4-R3-06)",
+  "source": "KDIGO 2024 Figure 24 / PP 3.6.3 (>30% Serum Creatinine Rise After RASi)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_83",
+    "name": "BN CKD 83",
+    "age": 63,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 136,
+    "dbp": 82,
+    "scr": 95,
+    "k": 4.5,
+    "uacr": 40,
+    "conditions": {
+      "ckd": true,
+      "dm": true
+    },
+    "customInputs": {
+      "baselineScr": 70
+    },
+    "currentMeds": [
+      { "drugId": "losartan", "name": "Cozaar 50 mg", "dose": 50, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "losartan", "action": "HOLD" },
+      { "drugId": "finerenone", "action": "DEFER" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "losartan", "action": "UPTITRATE" },
+      { "drugId": "finerenone", "action": "START" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R4-R3-06: Lấp khoảng trống an toàn khi SCr tăng > 30% từ nền thấp (70 -> 95 umol/L: +25 umol/L < 26.5 và x1.36 < 1.5x nên không bắt bởi AKI KDIGO) — bắt buộc HOLD RASi, đánh giá giảm thể tích/hẹp ĐM thận và DEFER Finerenone."
+}

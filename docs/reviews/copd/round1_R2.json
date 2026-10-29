@@ -1,0 +1,128 @@
+[
+  {
+    "id": "COPD-R2-01",
+    "severity": "critical",
+    "itemType": "drug",
+    "itemId": "budesonide_glycopyrronium_formoterol / beclometasone_glycopyrronium_formoterol",
+    "finding": "Nguy cơ dùng thiếu 50% liều điều trị (underdosing 50%) ở hai phác đồ bộ ba hít pMDI (Breztri Aerosphere & Trimbow) do cấu hình amount là liều của 1 nhát xịt thay vì liều một lần dùng (2 nhát xịt).",
+    "evidence": "Trong `kb/drugs/budesonide_glycopyrronium_formoterol.json` cấu hình `amount: 160`, `unit: 'mcg'`, `frequency: '2 lần/ngày'`. Trong `beclometasone_glycopyrronium_formoterol.json` cấu hình `amount: 87`, `unit: 'mcg'`, `frequency: '2 lần/ngày'`. Hàm `fmtDose()` sinh ra chuỗi '160 mcg 2 lần/ngày' và '87 mcg 2 lần/ngày'. Nhãn FDA Breztri và EMA Trimbow quy định liều chuẩn là 2 nhát x 2 lần/ngày (tổng 4 nhát/ngày = 640 mcg budesonide hoặc 348 mcg beclometasone). Cách ghi này khiến bác sĩ kê hoặc bệnh nhân chỉ hít 1 nhát x 2 lần/ngày, giảm một nửa liều hữu hiệu.",
+    "suggestedFix": "Sửa cấu hình start và target trong hai tệp drug JSON thành `unit: 'nhát'`, `amount: 2`, `frequency: '2 lần/ngày'`, hoặc điều chỉnh `description` và cơ chế hiển thị liều để luôn hiển thị rõ ràng: 'Hít 2 nhát x 2 lần/ngày (sáng 2 nhát, tối 2 nhát; súc miệng sau hít)'."
+  },
+  {
+    "id": "COPD-R2-02",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "copd.followup.roflumilast_indication / roflumilast.json",
+    "finding": "Khởi trị Roflumilast ở bệnh nhân suy gan trung bình hoặc nặng (Child-Pugh B hoặc C) / Xơ gan do thiếu hoàn toàn Gate chặn an toàn trong KB và Rule.",
+    "evidence": "Tệp `kb/drugs/roflumilast.json` có `gates: []`. Trong `src/modules/copd/rules.ts` (rule `copd.followup.roflumilast_indication`), hàm `when` chỉ kiểm tra FEV1 < 50%, viêm phế quản mạn và tiền sử đợt cấp mà không kiểm tra bệnh lý gan. Khi chạy BN có xơ gan (Case 1 trong scratch test), engine sinh ra `[START] roflumilast`. Trong khi đó, Nhãn FDA Daliresp Mục 4 (Contraindications) và GOLD 2026 quy định: 'Moderate to severe liver impairment (Child-Pugh B or C)' là chống chỉ định tuyệt đối do tích lũy nồng độ thuốc và tăng độc tính nghiêm trọng.",
+    "suggestedFix": "Thêm Gate vào `roflumilast.json` kiểm tra `conditions.cirrhosis` hoặc `conditions.moderateSevereHepaticImpairment` với action='hold'/'contraindicated'. Bổ sung điều kiện chặn trong rule `copd.followup.roflumilast_indication` không kích hoạt khi có suy gan trung bình-nặng."
+  },
+  {
+    "id": "COPD-R2-03",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "copd.inpatient.antibiotics",
+    "finding": "Chỉ định kháng sinh đợt cấp COPD sai lệch tiêu chuẩn Anthonisen: Kích hoạt khi đờm trắng trong không mủ chỉ vì có tăng thể tích đờm.",
+    "evidence": "Trong `src/modules/copd/rules.ts` dòng 751-754: `const isPurulent = Boolean(ctx.patient.customInputs?.purulentSputum); const isIncreasedVol = Boolean(ctx.patient.customInputs?.increasedSputumVolume); return isPurulent || isIncreasedVol;`. Khi chạy BN đợt cấp có `purulentSputum: false` và `increasedSputumVolume: true` (Case 2 scratch), engine vẫn sinh ra `[START] rec_copd_inpatient_antibiotics` với tiêu đề 'Kháng sinh điều trị đợt cấp trong 5 ngày khi có đờm mủ'. Theo GOLD 2026 và BYT 2131/2026, đờm mủ (purulent sputum) là điều kiện bắt buộc trong tiêu chuẩn Anthonisen để chỉ định kháng sinh (trừ khi bệnh nhân thở máy xâm nhập/không xâm nhập).",
+    "suggestedFix": "Sửa logic trong `rules.ts`: Kháng sinh chỉ được chỉ định khi `purulentSputum === true` (kèm tăng khó thở hoặc tăng thể tích đờm), hoặc khi bệnh nhân có chỉ định thở máy (NIV/thở máy xâm nhập). Nếu chỉ tăng thể tích đờm đơn thuần mà không mủ, không được tự động START kháng sinh."
+  },
+  {
+    "id": "COPD-R2-04",
+    "severity": "major",
+    "itemType": "missing",
+    "itemId": "copd.inpatient.short_acting_bronchodilators",
+    "finding": "Bỏ sót hoàn toàn khuyến cáo sử dụng thuốc giãn phế quản tác dụng ngắn (SABA hoặc SABA + SAMA) trong phác đồ xử trí đợt cấp COPD nội viện.",
+    "evidence": "Trong toàn bộ `src/modules/copd/rules.ts`, không có bất kỳ rule nào kê SABA (Salbutamol) hoặc SABA + SAMA (Ipratropium/Salbutamol như Combivent/Berodual). GOLD 2026 (Chương 4) và BYT 2131/2026 (trang 55, 84) quy định thuốc giãn phế quản tác dụng ngắn dạng khí dung hoặc xịt qua buồng đệm là nền tảng điều trị đầu tay cấp cứu phải thực hiện ngay khi tiếp nhận đợt cấp.",
+    "suggestedFix": "Tạo rule mới `copd.inpatient.short_acting_bronchodilators` trong setting `inpatient`: Kê Salbutamol khí dung 2.5–5 mg hoặc Ipratropium/Salbutamol 2.5 mL khí dung mỗi 4–6 giờ (hoặc xịt 2–4 nhát qua buồng đệm) khi nhập viện đợt cấp."
+  },
+  {
+    "id": "COPD-R2-05",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "copd.nonpharm.ltot_oxygen",
+    "finding": "Chỉ định Oxy trị liệu dài hạn tại nhà (LTOT) sai thời điểm lâm sàng do thiếu điều kiện loại trừ đợt cấp (acuteExacerbation).",
+    "evidence": "Trong `src/modules/copd/rules.ts` dòng 627, rule `copd.nonpharm.ltot_oxygen` kích hoạt ngay khi `restingSpo2 <= 88%` mà không kiểm tra xem bệnh nhân có đang trong đợt cấp hay không. Khi đánh giá BN đợt cấp bị tụt SpO2 cấp tính (84%), hệ thống sinh chỉ định LTOT thở oxy tại nhà ≥ 15 giờ/ngày. Theo GOLD 2026 và BYT 2131/2026, chỉ định LTOT bắt buộc phải được đánh giá ở giai đoạn ổn định lâm sàng ít nhất 3 tháng sau đợt cấp.",
+    "suggestedFix": "Thêm điều kiện `!ctx.patient.customInputs?.acuteExacerbation` vào hàm `when` của rule `copd.nonpharm.ltot_oxygen`. Nếu đang trong đợt cấp, chỉ kích hoạt thở oxy có kiểm soát cấp cứu (SpO2 đích 88–92%) và đưa ghi chú đánh giá lại nhu cầu oxy dài hạn sau xuất viện."
+  },
+  {
+    "id": "COPD-R2-06",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "copd.followup.mepolizumab_indication",
+    "finding": "Loại trừ sai đối tượng chỉ định Mepolizumab ở bệnh nhân có viêm phế quản mạn (trái nguyên văn khuyến cáo GOLD 2026 trang 76).",
+    "evidence": "Trong `src/modules/copd/rules.ts` dòng 528-529: `const isChronicBronchitis = Boolean(ctx.patient.customInputs?.chronicBronchitis); return !isChronicBronchitis;`. Nguyên văn GOLD 2026 trang 76: 'consider adding dupilumab (if chronic bronchitis) or mepolizumab (with and without chronic bronchitis)'. Việc ép buộc Mepolizumab chỉ dùng khi KHÔNG có viêm phế quản mạn là sai lệch so with guideline, tước bỏ quyền lựa chọn thuốc sinh học khi BN có BCAT ≥ 300 /µL.",
+    "suggestedFix": "Xóa điều kiện `return !isChronicBronchitis;` khỏi rule `copd.followup.mepolizumab_indication`. Cả hai thuốc sinh học Dupilumab và Mepolizumab đều có thể cân nhắc khi BCAT ≥ 300 /µL, trong đó Dupilumab ưu tiên khi có viêm phế quản mạn, Mepolizumab dùng được cho cả hai trường hợp có hoặc không có viêm phế quản mạn."
+  },
+  {
+    "id": "COPD-R2-07",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "copd.inpatient.systemic_steroid / copd.inpatient.antibiotics",
+    "finding": "Khuyến cáo Corticoid toàn thân và Kháng sinh nội viện thiếu thuộc tính drugId (đang để undefined), làm vô hiệu hóa kiểm tra tương tác thuốc, dị ứng và suy thận.",
+    "evidence": "Trong `src/modules/copd/rules.ts`, rule `rec_copd_inpatient_steroid` (dòng 721) và `rec_copd_inpatient_antibiotics` (dòng 756) không gán `drugId` ('prednisolone'/'methylprednisolone'). Engine GDMT-VN dựa vào `drugId` để chạy bộ lọc tương tác thuốc, chức năng thận và tiền sử dị ứng; thiếu trường này khiến các thuốc này bị bỏ lọt khỏi mạng lưới an toàn dược lâm sàng.",
+    "suggestedFix": "Gán `drugId: 'prednisolone'` (hoặc 'methylprednisolone') cho `rec_copd_inpatient_steroid` và cấu hình drugId cụ thể hoặc nhóm kháng sinh có liên kết KB cho `rec_copd_inpatient_antibiotics`."
+  },
+  {
+    "id": "COPD-R2-08",
+    "severity": "major",
+    "itemType": "matrix",
+    "itemId": "copdMatrixTherapy",
+    "finding": "Ma trận lựa chọn liệu pháp duy trì (copdMatrixTherapy) gán trạng thái initiate: 'rec' cho Roflumilast, Azithromycin và Dupilumab ở các cột Nhóm E, sai lệch phân loại khởi trị ban đầu.",
+    "evidence": "Trong `src/modules/copd/matrices.ts`, các ô ở dòng Roflumilast (dòng 146, 153), Azithromycin (dòng 183) và Dupilumab (dòng 232) đều để `initiate: 'rec'`. Các cột của ma trận đại diện cho phân nhóm ABE của bệnh nhân. Theo GOLD 2026 Figure 3.8, khởi đầu ban đầu (initial treatment) của Nhóm E chỉ là LABA+LAMA hoặc LABA+LAMA+ICS (khi BCAT ≥ 300). Roflumilast, Azithromycin và Sinh học chỉ là liệu pháp theo dõi/leo thang (follow-up / add-on) sau khi đã tối ưu thuốc hít duy trì.",
+    "suggestedFix": "Sửa các ô của Roflumilast, Azithromycin, Dupilumab trong ma trận: `initiate: 'not_rec'`, `continue: 'rec'` (với ghi chú rõ: 'Chỉ định bổ sung khi đợt cấp tái phát trên phác đồ duy trì nền tảng'). Bổ sung thêm dòng Mepolizumab vào ma trận."
+  },
+  {
+    "id": "COPD-R2-09",
+    "severity": "major",
+    "itemType": "drug",
+    "itemId": "aclidinium / umeclidinium / vilanterol / roflumilast",
+    "finding": "Gán biệt dược có thật tại Việt Nam (vnBrands) sai lệch thực tế phân phối dược phẩm tại Việt Nam.",
+    "evidence": "1) `aclidinium.json`: ghi `vnBrands: ['Eklira Genuair']` – thuốc và thiết bị Genuair chưa từng được cấp phép hay lưu hành tại VN; 2) `umeclidinium.json`: ghi `vnBrands: ['Incruse Ellipta']` – GSK không lưu hành đơn chất Incruse tại VN mà chỉ có dạng phối hợp Anoro và Trelegy; 3) `vilanterol.json`: ghi `vnBrands: ['Ellipta']` – Ellipta là tên thiết bị hít, vilanterol không bao giờ tồn tại dưới dạng đơn chất; 4) `roflumilast.json`: ghi `vnBrands: ['Daliresp', 'Daxas']` – đây là biệt dược của Mỹ và Châu Âu, chưa lưu hành thương mại phổ biến tại VN.",
+    "suggestedFix": "Cập nhật trường `vnBrands` phản ánh chính xác thị trường VN: Aclidinium: ghi chú 'Chưa lưu hành tại VN'; Umeclidinium đơn chất: ghi chú 'Chưa lưu hành đơn chất tại VN (chỉ có trong Anoro, Trelegy)'; Vilanterol: bỏ 'Ellipta', ghi chú 'Chỉ có trong dạng phối hợp cố định'; Roflumilast: chú thích 'Thuốc nhập khẩu hạn chế/chưa phân phối rộng rãi tại VN'."
+  },
+  {
+    "id": "COPD-R2-10",
+    "severity": "minor",
+    "itemType": "matrix",
+    "itemId": "copdMatrixDevices",
+    "finding": "Ma trận thiết bị hít (copdMatrixDevices) làm méo mó mô hình dữ liệu bằng cách gán drugId của thuốc thật cho các hàng tiêu chí kỹ thuật.",
+    "evidence": "Trong `src/modules/copd/matrices.ts` dòng 253 và 283, bảng so sánh thiết bị có 2 hàng nhưng lại gán `drugId: 'tiotropium'` cho hàng 'Yêu cầu lưu lượng hít thở' và `drugId: 'tiotropium_olodaterol'` cho hàng 'Khả năng phối hợp thao tác'. Điều này làm giao diện hiển thị tên và biểu tượng thuốc cạnh một đặc tính kỹ thuật cơ học của thiết bị.",
+    "suggestedFix": "Tách `copdMatrixDevices` thành bảng so sánh thiết bị thuần túy không dùng `drugId` giả, hoặc chuyển các hàng thành các cặp thiết bị - hoạt chất có thật tại VN (ví dụ: Respimat - Tiotropium/Olodaterol, Breezhaler - Indacaterol/Glycopyrronium, Ellipta - Umeclidinium/Vilanterol, Turbuhaler - Budesonide/Formoterol, pMDI Aerosphere - Breztri)."
+  },
+  {
+    "id": "COPD-R2-11",
+    "severity": "minor",
+    "itemType": "drug",
+    "itemId": "tiotropium / umeclidinium / glycopyrronium / aclidinium",
+    "finding": "Thiếu Gate cảnh báo an toàn đối với Glaucoma góc đóng và Bí tiểu / Phì đại lành tính tuyến tiền liệt có ứ đọng nước tiểu ở toàn bộ nhóm thuốc LAMA.",
+    "evidence": "Tất cả các tệp LAMA đơn chất và phối hợp (`tiotropium.json`, `umeclidinium.json`, `glycopyrronium.json`, `aclidinium.json`, `tiotropium_olodaterol.json`, `umeclidinium_vilanterol.json`, `glycopyrronium_indacaterol.json`) đều để `gates: []`. Tác dụng phụ kháng cholinergic toàn thân hoặc tại chỗ (khi thuốc bay vào mắt do dùng mặt nạ khí dung hoặc hít sai) có thể gây cơn glaucom cấp làm mù lòa hoặc bí tiểu cấp ở người cao tuổi có u xơ tuyến tiền liệt.",
+    "suggestedFix": "Bổ sung Gate hoặc cảnh báo lâm sàng trong các tệp thuốc LAMA: thận trọng/tránh dùng khi có tiền sử Glaucoma góc đóng chưa phẫu thuật hoặc bí tiểu cấp do tắc nghẽn cổ bàng quang."
+  },
+  {
+    "id": "COPD-R2-12",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "copd.followup.azithromycin_prophylaxis",
+    "finding": "Quy tắc Azithromycin dự phòng (copd.followup.azithromycin_prophylaxis) loại trừ người chưa từng hút thuốc (never smoker), ảnh hưởng tới bệnh nhân COPD do chất đốt sinh khối.",
+    "evidence": "Trong `src/modules/copd/rules.ts` dòng 444: `if (smoking !== 'former') return false;`. Bệnh nhân chưa từng hút thuốc nhưng bị COPD do khói bếp than/rơm rạ (rất phổ biến ở phụ nữ nông thôn Việt Nam) nếu có đợt cấp tái phát sẽ bị loại trừ hoàn toàn khỏi chỉ định Azithromycin. Bằng chứng GOLD chỉ ra hiệu quả kém hơn ở người ĐANG hút thuốc (active smoker), không có bằng chứng chống chỉ định ở người chưa từng hút thuốc.",
+    "suggestedFix": "Sửa điều kiện kiểm tra thành: `if (smoking === 'current') return false;` (chỉ loại trừ người đang hút thuốc liên tục, cho phép cả 'former' và 'never')."
+  },
+  {
+    "id": "COPD-R2-13",
+    "severity": "minor",
+    "itemType": "drug",
+    "itemId": "azithromycin / theophylline",
+    "finding": "Thiếu Gate cảnh báo khoảng QTc kéo dài (Azithromycin) và thiếu cảnh báo độc tính loạn nhịp/co giật khi nồng độ theophylline vượt 15–20 µg/mL.",
+    "evidence": "Trong `azithromycin.json`, `gates: []` không kiểm tra QTc (dù QTc > 480–500 ms là nguy cơ xoắn đỉnh cao). Trong `theophylline.json`, `gates: []` không có chặn cho tiền sử loạn nhịp nhanh thất hay động kinh. Theophylline có khoảng điều trị rất hẹp (8–12 µg/mL), nồng độ > 15 µg/mL tăng mạnh độc tính tim mạch và thần kinh.",
+    "suggestedFix": "Bổ sung Gate kiểm tra QTc cho Azithromycin và thêm ghi chú nồng độ độc tính (> 15 µg/mL) cùng khuyến cáo TDM bắt buộc cho Theophylline."
+  },
+  {
+    "id": "COPD-R2-14",
+    "severity": "suggestion",
+    "itemType": "rule",
+    "itemId": "copd.followup.mepolizumab_indication",
+    "finding": "Mở rộng profile Mepolizumab sang 'VN' với ghi chú tình trạng chỉ định (off-label / chờ phê duyệt mở rộng chỉ định COPD tại Việt Nam).",
+    "evidence": "Quy tắc `copd.followup.mepolizumab_indication` hiện chỉ khai báo `profiles: ['INTL']`. Mepolizumab (Nucala) đã có mặt chính thức tại Việt Nam (chỉ định hen phế quản tăng BCAT nặng). Bác sĩ chuyên khoa hô hấp tại các bệnh viện tuyến trung ương có thể hội chẩn cân nhắc sử dụng cho COPD đợt cấp nặng có BCAT cao.",
+    "suggestedFix": "Đổi thành `profiles: ['INTL', 'VN']` kèm `profileDiff` giải thích rõ: Tại VN Nucala đã lưu hành nhưng chỉ định COPD đang chờ BYT cập nhật nhãn chính thức; cần hội chẩn chuyên khoa hô hấp trước khi kê đơn."
+  }
+]

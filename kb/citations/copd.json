@@ -1,0 +1,1481 @@
+[
+  {
+    "id": "gold.copd.2026.diag_fev1_fvc",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 15,
+    "printedPage": "4",
+    "locator": "Chapter 1 / Definition and Overview / PDF p. 15",
+    "quote": "non-fully reversible airflow obstruction (i.e., FEV1/FVC < 0.7 post -bronchodilation) measured by spirometry confirms the diagnosis of COPD.",
+    "quoteVi": "Tắc nghẽn luồng khí không hồi phục hoàn toàn (FEV1/FVC < 0.7 sau giãn phế quản) đo bằng phế dung kế xác nhận chẩn đoán COPD.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.fev1_fvc_0_7",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 18,
+    "printedPage": "7",
+    "locator": "Chapter 1 / Diagnosis and Assessment / PDF p. 18",
+    "quote": "presence of non -fully reversible airflow obstruction (FEV1/FVC < 0.7 post-bronchodilation) measured by spirometry confirms the diagnosis of COPD.",
+    "quoteVi": "Sự hiện diện của tắc nghẽn luồng khí không hồi phục hoàn toàn (FEV1/FVC < 0.7 sau giãn phế quản) đo bằng phế dung kế xác nhận chẩn đoán COPD.",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.diag_criteria",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 15,
+    "printedPage": "5",
+    "locator": "Mục 1.3.2 / Chẩn đoán xác định / PDF tr. 15",
+    "quote": "giãn phế quản. Đo chức năng hô hấp để chẩn đoán xác định FEV1/FVC < 70% sau test phục hồi phế quản Phơi nhiễm với yếu tố nguy cơ - Hút thuốc lá, thuốc lào - Ô nhiễm môi trường",
+    "quoteVi": "Đo chức năng hô hấp để chẩn đoán xác định: FEV1/FVC < 70% sau test phục hồi phế quản.",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.gold_classification",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 16,
+    "printedPage": "6",
+    "locator": "Bảng 1.1 / Phân loại mức độ tắc nghẽn / PDF tr. 16",
+    "quote": "2026 Giai đoạn GOLD Giá trị FEV1 sau test hồi phục phế quản GOLD 1 FEV1 ≥ 80% trị số lý thuyết GOLD 2 50% ≤ FEV1 < 80% trị số lý thuyết GOLD 3 30% ≤ FEV1< 50% trị số lý thuyết GOLD 4 FEV1 < 30% trị số lý thuyết",
+    "quoteVi": "Phân loại mức độ tắc nghẽn theo GOLD: GOLD 1: FEV1 ≥ 80%; GOLD 2: 50% ≤ FEV1 < 80%; GOLD 3: 30% ≤ FEV1 < 50%; GOLD 4: FEV1 < 30% trị số lý thuyết.",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.mmrc_cat_cutoff",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 17,
+    "printedPage": "7",
+    "locator": "Mục 1.4.2 & 1.4.3 / Đánh giá triệu chứng / PDF tr. 17",
+    "quote": "thở càng nhi ều. mMRC < 2 được định nghĩa là ít triệu chứng, mMRC ≥ 2 được định nghĩa là nhiều triệu chứng. - Bộ câu hỏi CAT (phụ lục 2) : gồm 8 câu hỏi, tổng điểm 40, điểm càng cao",
+    "quoteVi": "mMRC < 2 được định nghĩa là ít triệu chứng, mMRC ≥ 2 được định nghĩa là nhiều triệu chứng. Điểm CAT tổng cộng 40.",
+    "loe": "B"
+  },
+  {
+    "id": "byt.copd.2026.cat_score_cutoff",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 17,
+    "printedPage": "7",
+    "locator": "Mục 1.4.3 / Bộ câu hỏi CAT / PDF tr. 17",
+    "quote": "của bệnh t ới tình trạng sức khỏe của người bệnh càng lớn. CAT < 10 được định nghĩa ít triệu chứng, ít ảnh hưởng, CAT ≥ 10 được định nghĩa nhiều triệu chứng, ảnh hưởng của bệnh",
+    "quoteVi": "CAT < 10 được định nghĩa ít triệu chứng, CAT ≥ 10 được định nghĩa nhiều triệu chứng.",
+    "loe": "B"
+  },
+  {
+    "id": "byt.copd.2026.abe_groups",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 18,
+    "printedPage": "8",
+    "locator": "Mục 1.4.4 / Đánh giá theo nhóm ABE / PDF tr. 18",
+    "quote": "không có đợt cấp mức độ trung bình hoặc nặng trong năm trước và mMRC ≥ 2 hoặc điểm CAT ≥ 10. - BPTNMT nhóm E - Nguy cơ cao: có từ 1 đợt cấp mức độ trung bình hoặc nặng trong năm trước",
+    "quoteVi": "Nhóm B: không có đợt cấp trung bình/nặng và mMRC ≥ 2 hoặc CAT ≥ 10. Nhóm E: có từ 1 đợt cấp mức độ trung bình hoặc nặng trong năm trước.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.group_e_definition",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 54,
+    "printedPage": "43",
+    "locator": "Chapter 2 / Refined ABE Assessment / PDF p. 54",
+    "quote": "more frequent or severe events. (467,492-494) Consequently, Group E has been modified to include individuals with one moderate exacerbation in the previous year. COPYRIGHT MATERIAL - DO NOT COPY",
+    "quoteVi": "Nhóm E đã được sửa đổi bao gồm những người có một đợt cấp mức độ vừa trong năm trước.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.initial_group_a",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 75,
+    "printedPage": "64",
+    "locator": "Chapter 3 / Initial Pharmacological Treatment / PDF p. 75",
+    "quote": "strategies in newly diagnosed individuals with COPD. Group A ► All patients in group A should be offered bronchodilator treatment based on its effect on breathlessness. This can be either a short",
+    "quoteVi": "Tất cả bệnh nhân nhóm A nên được cung cấp điều trị thuốc giãn phế quản dựa trên hiệu quả cải thiện khó thở. Đây có thể là thuốc tác dụng ngắn hoặc dài.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.initial_group_b",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 75,
+    "printedPage": "64",
+    "locator": "Chapter 3 / Initial Pharmacological Treatment / PDF p. 75",
+    "quote": "breathlessness. ► This should be continued if benefit is documented. Group B ► Treatment should be initiated with a LABA+LAMA combination. It has been shown in a RCT that in patients with",
+    "quoteVi": "Nhóm B: Điều trị nên được khởi đầu bằng phối hợp LABA+LAMA.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.initial_group_e",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 75,
+    "printedPage": "64",
+    "locator": "Chapter 3 / Initial Pharmacological Treatment / PDF p. 75",
+    "quote": "A Cochrane systematic review and network meta-analysis comparing dual combination therapy versus mono long- acting bronchodilators showed that the LABA+LAMA combination was the highest ranked treatment group to reduce exacerbations.(680) Therefore, provided there are no issues regarding availability, cost and side -effects LABA+LAMA is the preferred choice for initial therapy of patients in group E.",
+    "quoteVi": "Nhóm E: Phân tích gộp mạng lưới so sánh liệu pháp phối hợp đôi so với đơn trị giãn phế quản tác dụng kéo dài cho thấy phối hợp LABA+LAMA là phương pháp điều trị xếp hạng cao nhất.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.initial_group_e_triple_eos300",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 75,
+    "printedPage": "64",
+    "locator": "Chapter 3 / Initial Pharmacological Treatment / PDF p. 75",
+    "quote": "+ICS as initial therapy in group E if eosinophil counts are ≥ 300 cells/µL (practical recommendation). As detailed later in this chapter, the effect of ICS on exacerbation prevention",
+    "quoteVi": "Cân nhắc LABA+LAMA+ICS làm phác đồ khởi đầu ở nhóm E nếu số lượng bạch cầu ái toan ≥ 300 tế bào/µL (khuyến cáo thực hành).",
+    "loe": "B"
+  },
+  {
+    "id": "byt.copd.2026.initial_group_e_triple_eos300",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 23,
+    "printedPage": "13",
+    "locator": "Mục 2.2.2(c) / Người bệnh nhóm E / PDF tr. 23",
+    "quote": "khởi trị cho người bệnh nhóm E. - Cân nhắc khởi trị bằng ICS +LABA+LAMA cho người bệnh BPTNMT nhóm E có BCAT trong máu cao, đặc biệt BCAT ≥ 300 tế bào/µl, ngưỡng để nhận biết nhóm người",
+    "quoteVi": "Cân nhắc khởi trị bằng ICS+LABA+LAMA cho người bệnh BPTNMT nhóm E có BCAT trong máu cao, đặc biệt BCAT ≥ 300 tế bào/µl.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.followup_dyspnea_laba_lama",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 76,
+    "printedPage": "65",
+    "locator": "Chapter 3 / Follow-up Pharmacological Treatment / PDF p. 76",
+    "quote": "traits: persistence of dyspnea and occurrence of exacerbations ( Figure 3.9).(453,681-683) These follow -up recommendations are designed to facilitate management of patients taking maintenance",
+    "quoteVi": "Các khuyến cáo theo dõi được thiết kế dựa trên triệu chứng khó thở dai dẳng và đợt cấp.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.followup_exac_eos_100_300",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 77,
+    "printedPage": "66",
+    "locator": "Chapter 3 / Follow-up Pharmacological Treatment / PDF p. 77",
+    "quote": "A beneficial response after the addition of ICS may be observed at blood eosinophil counts ≥ 100 cells/µL, with a greater magnitude of response more likely with higher eosinophil counts.",
+    "quoteVi": "Đáp ứng có lợi khi bổ sung ICS có thể ghi nhận từ ngưỡng bạch cầu ái toan máu ≥ 100 tế bào/µL, với mức độ hưởng lợi lớn hơn ở số lượng bạch cầu ái toan cao hơn (100–299 và đặc biệt ≥ 300 tế bào/µL).",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.appendix_eos_300_relationship",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 161,
+    "printedPage": "150",
+    "locator": "Appendix 3 / Inhaled Corticosteroids / PDF p. 161",
+    "quote": "bacterial species. The threshold of a blood eosinophil count ≥ 300 cells/µL identifies the top of the continuous relationship between eosinophils and ICS, and can be used to identify",
+    "quoteVi": "Ngưỡng số lượng bạch cầu ái toan máu ≥ 300 tế bào/µL xác định đỉnh của mối quan hệ liên tục giữa BCAT và ICS, dùng để nhận diện người bệnh hưởng lợi nhiều nhất từ ICS.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.followup_eos_less_100_pneumonia",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 161,
+    "printedPage": "150",
+    "locator": "Appendix 3 / Inhaled Corticosteroids / PDF p. 161",
+    "quote": "studies using fluticasone furoate, even at low doses. (1559) Patients at higher risk of pneumonia include those who currently smoke, are aged ≥ 55 years, have a history of prior exacerbations or pneumonia, a",
+    "quoteVi": "Bệnh nhân có nguy cơ viêm phổi cao bao gồm người đang hút thuốc, tuổi ≥ 55, có tiền sử đợt cấp hoặc viêm phổi, BMI < 25 kg/m2, mMRC cao và/hoặc tắc nghẽn luồng khí nặng.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.followup_roflumilast",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 77,
+    "printedPage": "66",
+    "locator": "Chapter 3 / Follow-up Pharmacological Treatment / PDF p. 77",
+    "quote": "should be factored into decision-making. • Among those with FEV1 < 50%, symptoms of chronic bronchitis and history of prior severe exacerbation, consider adding roflumilast.(687-689",
+    "quoteVi": "Ở bệnh nhân có FEV1 < 50%, có triệu chứng viêm phế quản mạn và tiền sử đợt cấp nặng dẫn đến nhập viện, cân nhắc thêm roflumilast.",
+    "loe": "B"
+  },
+  {
+    "id": "byt.copd.2026.followup_roflumilast_azithro",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 25,
+    "printedPage": "15",
+    "locator": "Mục 2.2.3 / Điều trị theo dõi / PDF tr. 25",
+    "quote": "phác đồ ICS+LABA+LAMA  Nếu BCAT/máu < 100 tế bào/µL thì thêm Roflumilast nếu NB có FEV1<50% hoặc triệu chứng viêm phế quản hoặc Azithromycin nếu NB từng hút thuốc. - Nếu người bệnh đang",
+    "quoteVi": "Nếu BCAT máu < 100 tế bào/µL thì thêm Roflumilast nếu NB có FEV1 < 50% hoặc triệu chứng viêm phế quản hoặc Azithromycin nếu NB từng hút thuốc.",
+    "loe": "B"
+  },
+  {
+    "id": "fda.copd.roflumilast_dose",
+    "sourceId": "fda_label_roflumilast",
+    "pdfPage": 1,
+    "printedPage": "1",
+    "locator": "Dosage and Administration / PDF p. 1",
+    "quote": "ADMINISTRATION The maintenance dose for patients with COPD is one 500 mcg tablet per day, with or without food. Starting treatment with a dose of DALIRESP 250 mcg once daily for 4 weeks",
+    "quoteVi": "Liều duy trì cho bệnh nhân COPD là 1 viên 500 mcg mỗi ngày. Khởi đầu với liều 250 mcg 1 lần/ngày trong 4 tuần rồi tăng lên 500 mcg 1 lần/ngày.",
+    "loe": "A"
+  },
+  {
+    "id": "fda.copd.roflumilast_contra_liver",
+    "sourceId": "fda_label_roflumilast",
+    "pdfPage": 1,
+    "printedPage": "1",
+    "locator": "Contraindications / PDF p. 1",
+    "quote": "patients. ( 2 ) DOSAGE FORMS AND STRENGTHS Tablets: 250 mcg, 500 mcg ( 3 ) CONTRAINDICATIONS Moderate to severe liver impairment (Child-Pugh B or C) ( 4 ) WARNINGS AND PRECAUTIONS",
+    "quoteVi": "Chống chỉ định Roflumilast ở bệnh nhân suy gan trung bình đến nặng (Child-Pugh B hoặc C).",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.followup_azithromycin",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 77,
+    "printedPage": "66",
+    "locator": "Chapter 3 / Follow-up Pharmacological Treatment / PDF p. 77",
+    "quote": "Among those who are not currently smoking, consider adding azithromycin.(685,686) Consideration to the development of resistant organisms should be factored into decision-making. •",
+    "quoteVi": "Ở những người hiện không hút thuốc, cân nhắc thêm azithromycin dự phòng. Cần cân nhắc nguy cơ xuất hiện vi khuẩn kháng thuốc.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.azithromycin_dose_warnings",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 163,
+    "printedPage": "152",
+    "locator": "Appendix 3 / Macrolides / PDF p. 163",
+    "quote": "of some antibiotics may reduce exacerbation rate.(1593,1594) Azithromycin (250 mg/day or 500 mg three times per week) or erythromycin (250 mg two times per day) for one year in patients",
+    "quoteVi": "Azithromycin (250 mg/ngày hoặc 500 mg x 3 lần/tuần) dùng trong 1 năm ở bệnh nhân có nguy cơ đợt cấp giúp giảm nguy cơ đợt cấp.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.azithromycin_safety",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 163,
+    "printedPage": "152",
+    "locator": "Appendix 3 / Macrolides / PDF p. 163",
+    "quote": "risk of exacerbations compared to usual care.(685,1595,1596) Azithromycin use was associated with an increased incidence of bacterial resistance, prolongation of QTc interval, and impaired",
+    "quoteVi": "Sử dụng Azithromycin liên quan đến tăng tỷ lệ kháng thuốc vi khuẩn, kéo dài khoảng QTc và suy giảm thính lực.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.biologics_dupilumab_mepolizumab",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 77,
+    "printedPage": "66",
+    "locator": "Chapter 3 / Follow-up Pharmacological Treatment / PDF p. 77",
+    "quote": "may be considered: • Among patients with blood eosinophils ≥ 300 cells/ µL, consider adding dupilumab (if chronic bronchitis) or mepolizumab (with and without chronic bronchitis",
+    "quoteVi": "Ở bệnh nhân có BCAT máu ≥ 300 tế bào/µL, cân nhắc thêm dupilumab (nếu có viêm phế quản mạn) hoặc mepolizumab (có hoặc không có viêm phế quản mạn).",
+    "loe": "A"
+  },
+  {
+    "id": "fda.copd.dupilumab_dose",
+    "sourceId": "fda_label_dupilumab",
+    "pdfPage": 9,
+    "printedPage": "9",
+    "locator": "Section 2.8 / Dosage for COPD / PDF p. 9",
+    "quote": "mg injections) followed by 300 mg given every 2 weeks (Q2W). 2.8 Recommended Dosage for Chronic Obstructive Pulmonary Disease The recommended dosage of DUPIXENT for adult patients is 300 mg given every 2 weeks (Q2W).",
+    "quoteVi": "Liều khuyến cáo của DUPIXENT cho bệnh nhân người lớn mắc COPD là 300 mg tiêm dưới da mỗi 2 tuần (Q2W).",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.ics_withdrawal",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 77,
+    "printedPage": "66",
+    "locator": "Chapter 3 / Follow-up Pharmacological Treatment / PDF p. 77",
+    "quote": "recurrent pneumonia. The risks and benefits of discontinuing ICS should be considered. If blood eosinophils are ≥ 300 cells/µL de-escalation is more likely to be associated with the development of exacerbations.(692,693",
+    "quoteVi": "Bệnh nhân dùng LABA+LAMA+ICS không nên rút ICS trừ khi bắt đầu không phù hợp hoặc viêm phổi tái diễn. Nếu BCAT ≥ 300 tế bào/µL, rút ICS dễ liên quan đến đợt cấp tái phát.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.vaccination_recommendations",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 61,
+    "printedPage": "50",
+    "locator": "Chapter 3 / Non-pharmacological Treatment / PDF p. 61",
+    "quote": "with national recommendations. • Influenza, pneumococcal and RSV vaccines have been shown to decrease the incidence of lower respiratory tract infections. • The immunization",
+    "quoteVi": "Vắc xin cúm, phế cầu và RSV đã được chứng minh làm giảm tỷ lệ nhiễm trùng đường hô hấp dưới ở người bệnh COPD.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.vaccination_tdap_shingles",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 61,
+    "printedPage": "50",
+    "locator": "Chapter 3 / Non-pharmacological Treatment / PDF p. 61",
+    "quote": "recommend Tdap vaccination (dTaP/dTPa; pertussis, tetanus and diptheria) for people with COPD who were not vaccinated in adolescence; and routine use of shingles vaccine. Pharmacological",
+    "quoteVi": "Khuyến cáo tiêm Tdap (bạch hầu, uốn ván, ho gà) và tiêm định kỳ vắc xin zona (shingles) cho người bệnh COPD.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.ltot_criteria",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 87,
+    "printedPage": "76",
+    "locator": "Chapter 3 / Oxygen Therapy and Ventilatory Support / PDF p. 87",
+    "quote": ": ► PaO2 at or below 55 mmHg (7.3 kPa) or SaO 2 at or below 88%, with or without hypercapnia confirmed twice over a three-week period; or ► PaO2 between 55 mmHg (7.3 kPa) and",
+    "quoteVi": "Tiêu chí oxy dài hạn (LTOT): PaO2 ≤ 55 mmHg hoặc SaO2 ≤ 88% xác nhận 2 lần trong 3 tuần; hoặc PaO2 55-60 mmHg nếu có tâm phế mạn, phù hoặc đa hồng cầu.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.exac_systemic_steroid_40mg_5d",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 114,
+    "printedPage": "103",
+    "locator": "Chapter 4 / Management of Exacerbations / PDF p. 114",
+    "quote": ",(1024) and the length of hospitalization. (1020,1022,1025) A dose of 40 mg prednisone -equivalent per day for 5 days is recommended. (1026) A systematic literature review concluded that a 5 -day",
+    "quoteVi": "Khuyến cáo liều 40 mg prednisone tương đương mỗi ngày trong 5 ngày cho đợt cấp COPD.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.exac_antibiotics_5d",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 103,
+    "printedPage": "92",
+    "locator": "Chapter 4 / Key Points in Exacerbations / PDF p. 103",
+    "quote": "to 5 days in patients with moderate/severe exacerbations. o Antibiotics are recommended for a total of 5 days in patients with purulent sputum, prior history of lung infections, etc. o Methylxanthines are not recommended",
+    "quoteVi": "Kháng sinh được khuyến cáo tổng cộng 5 ngày ở bệnh nhân đợt cấp có đờm mủ, tiền sử nhiễm trùng phổi. Không khuyến cáo Methylxanthine.",
+    "loe": "B"
+  },
+  {
+    "id": "byt.copd.2026.oxygen_target_88_92",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 41,
+    "printedPage": "31",
+    "locator": "Mục 3.4.4(f) / Liệu pháp oxy / PDF tr. 41",
+    "quote": "oxy có kiểm soát: điều chỉnh liều oxy để đạt mục tiêu SpO2 88-92% hoặc PaO2 60-70 mmHg. Nên kiểm tra khí máu 30-60 phút sau khi bắt đầu thở oxy để đảm bảo đủ độ bão hòa oxy mục",
+    "quoteVi": "Thở oxy có kiểm soát: điều chỉnh liều oxy để đạt mục tiêu SpO2 88-92% hoặc PaO2 60-70 mmHg. Nên kiểm tra khí máu 30-60 phút sau khi bắt đầu thở oxy.",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.niv_indications",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 42,
+    "printedPage": "32",
+    "locator": "Mục 3.4.4(f) / Thông khí nhân tạo không xâm nhập / PDF tr. 42",
+    "quote": "hoặc cả hai, hô hấp bụng- ngực nghịch thường.  Toan hô hấp: pH ≤ 7,35 và PaCO2 ≥ 45mmHg.  Giảm oxy máu không đáp ứng với oxy liệu pháp phù hợp - Nếu sau 60 phút thông khí nhân tạo",
+    "quoteVi": "Chỉ định thở máy không xâm nhập: Toan hô hấp: pH ≤ 7,35 và PaCO2 ≥ 45 mmHg; hoặc khó thở nặng kèm co kéo cơ hô hấp phụ, hô hấp nghịch thường.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.exac_ventilatory_failure_rome",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 105,
+    "printedPage": "94",
+    "locator": "Chapter 4 / Classification of Exacerbation Severity / PDF p. 105",
+    "quote": "increased compared with baseline or elevated > 60 mmHg and the presence of acidosis (pH ≤ 7.25). Several studies conducted in different countries have shown that the variables included in the Rome",
+    "quoteVi": "Suy thông khí đe dọa tính mạng trong đợt cấp COPD: PaCO2 tăng > 60 mmHg và có toan máu (pH ≤ 7.25).",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.discharge_checklist",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 42,
+    "printedPage": "32",
+    "locator": "Mục 3.4.4(g) / Đánh giá trước khi ra viện / PDF tr. 42",
+    "quote": "thất nặng. - Thông khí nhân tạo không xâm nhập thất bại. g, Đánh giá trước khi ra viện và khuyến cáo theo dõi: - Xem xét đầy đủ các dấu hiệu lâm sàng và xét nghiệm. - Tư vấn bỏ thuốc lá - Kiểm tra",
+    "quoteVi": "Đánh giá trước khi ra viện và khuyến cáo theo dõi: Xem xét đầy đủ dấu hiệu lâm sàng và xét nghiệm; tư vấn bỏ thuốc lá; kiểm tra phác đồ điều trị duy trì và kỹ thuật hít.",
+    "loe": "B"
+  },
+  {
+    "id": "byt.copd.2026.tiotropium_dose",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 68,
+    "printedPage": "58",
+    "locator": "Phụ lục 1 / Danh mục thuốc / PDF tr. 68",
+    "quote": "/lần hít, ngày hít 1 lần Kháng cholinergic tác dụng kéo dài Tiotropium Dạng phun hạt mịn, 2,5 mcg/lần hít, ngày hít 2 hít/l ần vào buổi sáng Kết hợp cường beta 2 tác dụng ngắn và kháng",
+    "quoteVi": "Tiotropium dạng phun hạt mịn (Respimat), 2.5 mcg/lần hít, ngày hít 2 hít/lần vào buổi sáng (tổng liều 5 mcg).",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.olodaterol_tiotropium_dose",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 68,
+    "printedPage": "58",
+    "locator": "Phụ lục 1 / Danh mục thuốc / PDF tr. 68",
+    "quote": "Olodaterol/Tiotropium Dạng phun hạt mịn. Liều 2,5mcg/2,5mcg cho một liều hít; hít 2 liều vào buổi sáng",
+    "quoteVi": "Olodaterol/Tiotropium (Spiolto Respimat) dạng phun hạt mịn. Liều 2.5 mcg/2.5 mcg cho một liều hít; hít 2 liều vào buổi sáng.",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.vilanterol_umeclidinium_dose",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 68,
+    "printedPage": "58",
+    "locator": "Phụ lục 1 / Danh mục thuốc / PDF tr. 68",
+    "quote": "5mcg cho một liều hít; hít 2 liều vào buổi sáng Vilanterol/ Umeclidinium Dạng hít bột khô. Liều 62,5mcg/25mcg cho 1 liều hít; hít 1 liều vào buổi sáng",
+    "quoteVi": "Vilanterol/Umeclidinium (Anoro Ellipta) dạng hít bột khô. Liều 62.5 mcg/25 mcg cho 1 liều hít; hít 1 liều vào buổi sáng.",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.indacaterol_glycopyrronium_dose",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 68,
+    "printedPage": "58",
+    "locator": "Phụ lục 1 / Danh mục thuốc / PDF tr. 68",
+    "quote": "dụng kéo dài Indacaterol/ Glycopyrronium Dạng hít, Nang ch ứa Indacaterol 110 mcg/glycopyrronium 50 mcg. Hít ngày 1 nang vào buổi sáng Olodaterol/Tiotropium Dạng phun hạt mịn. Liều 2,5mcg/2,5mcg",
+    "quoteVi": "Indacaterol/Glycopyrronium (Ultibro Breezhaler) dạng hít bột khô. Viên nang chứa Indacaterol 110 mcg / Glycopyrronium 50 mcg. Hít 1 nang vào buổi sáng.",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.triple_therapy_indication",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 20,
+    "printedPage": "10",
+    "locator": "Bảng 2.1 / Các thuốc điều trị BPTNMT / PDF tr. 20",
+    "quote": "ICS+LAMA+LABA 1 dụng cụ Budesonide/ Glycopyronium/ Formoterol Fluticasone furoate/ Umeclidinium/ Vilanterol Kháng sinh, kháng viêm Macrolide Kháng PDE4 Azithromycin, Erythromycin Roflumilast",
+    "quoteVi": "Liệu pháp ba thuốc ICS+LAMA+LABA trong 1 dụng cụ: Budesonide/Glycopyrronium/Formoterol (Breztri), Fluticasone furoate/Umeclidinium/Vilanterol (Trelegy).",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.bronchodilator_short_acting",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 36,
+    "printedPage": "26",
+    "locator": "Mục 3.4.4(a) / Thuốc giãn phế quản tác dụng ngắn / PDF tr. 36",
+    "quote": "26 a, Thuốc giãn phế quản tác dụng ngắn: Sử dụng thuốc giãn phế quản tác dụng ngắn tương tự với đợt cấp điều trị ngoại trú. Tuy nhiên, phần lớn người bệnh phải sử dụng thuốc bằng đường phun khí",
+    "quoteVi": "Thuốc giãn phế quản tác dụng ngắn: Sử dụng thuốc giãn phế quản tác dụng ngắn tương tự với đợt cấp điều trị ngoại trú, phần lớn người bệnh sử dụng bằng đường phun khí dung.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.exac_saba_initial",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 114,
+    "printedPage": "103",
+    "locator": "Chapter 4 / Bronchodilators / PDF p. 114",
+    "quote": "Bronchodilators Although there is no high -quality evidence from RCTs, it is recommended that inhaled SABAs, with or without short - acting anticholinergics, are the initial bronchodilators for acute treatment of a COPD",
+    "quoteVi": "Khuyến cáo dùng SABA dạng hít, có hoặc không kèm thuốc kháng cholinergic tác dụng ngắn, là thuốc giãn phế quản ban đầu trong điều trị đợt cấp COPD.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.home_niv",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 89,
+    "printedPage": "78",
+    "locator": "Chapter 3 / Ventilatory Support / PDF p. 89",
+    "quote": "patients with COPD who had persistent hypercapnia (PaCO2 > 53 mmHg) 2-4 weeks after hospital discharge following an acute exacerbation compared the effects of home NIV plus oxygen",
+    "quoteVi": "Ở bệnh nhân COPD có tăng CO2 máu dai dẳng (PaCO2 > 53 mmHg) sau khi xuất viện 2-4 tuần từ đợt cấp suy hô hấp, thở máy không xâm nhập tại nhà (Home NIV) giúp giảm tái nhập viện và tử vong.",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.vte_prophylaxis",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 41,
+    "printedPage": "31",
+    "locator": "Mục 3.4.4(e) / Dự phòng thuyên tắc tĩnh mạch sâu / PDF tr. 41",
+    "quote": "kháng thuốc. e, Điều trị dự phòng thuyên tắc tĩnh mạch sâu Heparin trọng lượng phân tử thấp có thể được xem xét cho các người bệnh nhập viện bị hạn chế vận động và không có yếu tố nguy cơ chảy máu, đặc",
+    "quoteVi": "Điều trị dự phòng thuyên tắc tĩnh mạch sâu: Heparin trọng lượng phân tử thấp có thể xem xét cho bệnh nhân nhập viện bị hạn chế vận động và không có nguy cơ chảy máu.",
+    "loe": "B"
+  },
+  {
+    "id": "byt.copd.2026.ltot_cor_pulmonale",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 26,
+    "printedPage": "16",
+    "locator": "Mục 2.5.2 / Chỉ định thở oxy dài hạn / PDF tr. 26",
+    "quote": "không thở oxy, đã sử dụng c ác biện pháp điều trị tối ưu. - PaO2 từ 56 - 59 mmHg hoặc SaO2 ≤ 88% kèm thêm một trong các biểu hiện:  Dấu hiệu suy tim phải.  Đa hồng cầu (hematocrit",
+    "quoteVi": "PaO2 từ 56 - 59 mmHg hoặc SaO2 ≤ 88% kèm thêm: Dấu hiệu suy tim phải hoặc Đa hồng cầu.",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.ltot_target_spo2_90_92",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 26,
+    "printedPage": "16",
+    "locator": "Mục 2.5.3 / Lưu lượng, thời gian thở oxy / PDF tr. 26",
+    "quote": "Đánh giá lại khí máu động mạch sau 30 phút để đi ều chỉnh lưu lượng oxy nhằm đạt mục tiêu PaO 2 từ 65 - 70 mmHg, tương ứng v ới SaO2 tối ưu là 90 - 92% lúc ng hỉ ngơi.",
+    "quoteVi": "Đánh giá lại khí máu động mạch sau 30 phút để điều chỉnh lưu lượng oxy nhằm đạt mục tiêu PaO2 từ 65 - 70 mmHg, tương ứng với SaO2 tối ưu là 90 - 92% lúc nghỉ ngơi (ngưỡng thiếu oxy mạn mở rộng < 90% tức ≤ 89% khi kèm tâm phế mạn/đa hồng cầu).",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.salbutamol_neb_dose",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 36,
+    "printedPage": "26",
+    "locator": "Mục 3.4.4(a) / Thuốc giãn phế quản tác dụng ngắn / PDF tr. 36",
+    "quote": "Liều thông thường của salbutamol phun khí dung: 1 ống 2,5mg/2,5ml (pha thêm NaCl 0,9% đ ủ 3- 5 ml), dùng 4-6 lần/ngày và khi c ần",
+    "quoteVi": "Liều thông thường của salbutamol phun khí dung trong đợt cấp: 1 ống 2,5 mg/2,5 ml (pha thêm NaCl 0,9% đủ 3-5 ml), dùng 4-6 lần/ngày và khi cần.",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.antibiotics_pseudomonas",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 40,
+    "printedPage": "30",
+    "locator": "Bảng 3.4 / Hướng dẫn sử dụng kháng sinh đợt cấp nặng nhập viện / PDF tr. 40",
+    "quote": "Nguy cơ nhiễm P. aeruginosa - Mới nhập viện gần đây - Thường xuyên điều trị kháng sinh (4 đợt/năm) - BPTNMT giai đoạn GOLD 4, đồng mắc giãn phế quản",
+    "quoteVi": "Phân tầng nguy cơ nhiễm Pseudomonas aeruginosa trong đợt cấp nặng nhập viện: mới nhập viện gần đây, thường xuyên dùng kháng sinh (≥ 4 đợt/năm), COPD giai đoạn GOLD 4, đồng mắc giãn phế quản hoặc từng phân lập trực khuẩn mủ xanh.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.no_ics_monotherapy",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 159,
+    "printedPage": "148",
+    "locator": "Appendix 3 / Efficacy of ICS (alone) / PDF p. 159",
+    "quote": "Most studies have found that regular treatment with ICS alone does not modify the long -term decline of FEV1 nor mortality in people with COPD.(1549)",
+    "quoteVi": "Điều trị duy trì bằng ICS đơn độc không làm thay đổi tốc độ suy giảm FEV1 dài hạn cũng như không giảm tử vong ở người bệnh COPD (trong khi làm tăng nguy cơ viêm phổi).",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.concurrent_asthma",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 75,
+    "printedPage": "64",
+    "locator": "Chapter 3 / Algorithms for Initial and Follow-up Pharmacological Treatment / PDF p. 75",
+    "quote": "Asthma and COPD may coexist in an individual patient. If a concurrent diagnosis of asthma is suspected, pharmacotherapy should primarily follow asthma guidelines.",
+    "quoteVi": "Hen và COPD có thể đồng mắc trên cùng một người bệnh. Nếu nghi ngờ hoặc xác định hen đồng mắc, điều trị thuốc phải tuân thủ hướng dẫn điều trị hen (bắt buộc có ICS, cấm giãn phế quản tác dụng dài đơn thuần không kèm ICS).",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.followup_dyspnea_switch_device",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 77,
+    "printedPage": "66",
+    "locator": "Chapter 3 / Dyspnea Follow-up / PDF p. 77",
+    "quote": "If the addition of a second long-acting bronchodilator does not improve symptoms, we suggest: • Considering switching inhaler device or molecules. • Implementing or escalating non-pharmacological treatment(s) e.g., pulmonary rehabilitation.",
+    "quoteVi": "Nếu phối hợp hai thuốc giãn phế quản tác dụng kéo dài (LABA+LAMA) vẫn chưa cải thiện khó thở: cân nhắc đổi dụng cụ hít hoặc đổi hoạt chất phân tử, tăng cường phục hồi chức năng hô hấp và tầm soát nguyên nhân khó thở ngoài COPD.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.roflumilast_weight_depression",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 162,
+    "printedPage": "151",
+    "locator": "Appendix 3 / Phosphodiesterase-4 inhibitors - Adverse effects / PDF p. 162",
+    "quote": "weight monitoring during treatment is advised, in addition to avoiding roflumilast treatment in underweight patients. Roflumilast should also be used with caution in patients with depression.",
+    "quoteVi": "Khuyến cáo theo dõi cân nặng định kỳ, tránh dùng roflumilast ở người bệnh nhẹ cân/sụt cân, và thận trọng/tránh dùng ở người bệnh có trầm cảm.",
+    "loe": "B"
+  },
+  {
+    "id": "fda.copd.roflumilast_psychiatric_weight",
+    "sourceId": "fda_label_roflumilast",
+    "pdfPage": 4,
+    "printedPage": "4",
+    "locator": "Section 5.2 / Psychiatric Events including Suicidality / PDF p. 4",
+    "quote": "Before using DALIRESP in patients with a history of depression and/or suicidal thoughts or behavior, prescribers should carefully weigh the risks and benefits of treatment with DALIRESP in such patients.",
+    "quoteVi": "Roflumilast làm tăng biến cố tâm thần kinh bao gồm mất ngủ, lo âu, trầm cảm và ý nghĩ/hành vi tự sát; cần đánh giá nghiêm ngặt hoặc tránh dùng ở người có tiền sử trầm cảm nặng hoặc ý định tự sát.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.lama_glaucoma_caution",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 157,
+    "printedPage": "146",
+    "locator": "Appendix 3 / Anticholinergics - Adverse effects / PDF p. 157",
+    "quote": "the rate of anti -cholinergic side effects for drugs in this class appears to be low and generally similar. Use of solutions with a facemask can precipitate acute glaucoma",
+    "quoteVi": "Tác dụng phụ kháng cholinergic của nhóm LAMA cần thận trọng ở người bệnh glôcôm góc đóng (tăng nhãn áp góc hẹp) và phì đại tiền liệt tuyến/bí tiểu.",
+    "loe": "B"
+  },
+  {
+    "id": "gina.copd.2026.pregnancy_inhaled_theophylline",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 136,
+    "printedPage": "135",
+    "locator": "Section 6 / Pregnancy / PDF p. 136",
+    "quote": "For this reason, using medications to achieve good symptom control and prevent exacerbations is justified even when their safety in pregnancy has not been unequivocally proven. Use of ICS, beta2-agonists, montelukast or theophylline is not associated with an increased incidence of fetal abnormalities.",
+    "quoteVi": "Sử dụng thuốc để đạt kiểm soát triệu chứng tốt và phòng ngừa đợt cấp trong thai kỳ là hoàn toàn chính đáng ngay cả khi dữ liệu an toàn chưa được chứng minh tuyệt đối. Sử dụng ICS, chất chủ vận beta2, montelukast hoặc theophylline không liên quan đến tăng tỷ lệ dị tật thai nhi.",
+    "loe": "A"
+  },
+  {
+    "id": "gina.copd.2026.pregnancy_ics_laba_safety",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 137,
+    "printedPage": "136",
+    "locator": "Section 6 / Pregnancy / PDF p. 137",
+    "quote": "Women with asthma who are pregnant or planning pregnancy should be advised to not stop ICS-containing therapy. Importantly, ICS reduce the risk of exacerbations of asthma during pregnancy",
+    "quoteVi": "Phụ nữ mang thai hoặc dự định mang thai được khuyến cáo không tự ý ngừng thuốc kiểm soát có chứa ICS; duy trì ICS và LABA liều thường dùng giúp giảm nguy cơ đợt cấp trong thai kỳ.",
+    "loe": "A"
+  },
+  {
+    "id": "gina.copd.2026.pregnancy_biologics_scarce",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 137,
+    "printedPage": "136",
+    "locator": "Section 6 / Pregnancy / PDF p. 137",
+    "quote": "Women should be counselled that the potential risks associated with biologic exposure during pregnancy need to be balanced against the risks for themselves and their children caused by uncontrolled asthma.",
+    "quoteVi": "Dữ liệu về sử dụng thuốc sinh học trong thai kỳ còn hạn chế; cần tư vấn cân nhắc lợi ích kiểm soát bệnh cho mẹ và thai nhi so với nguy cơ tiềm ẩn khi phơi nhiễm thuốc sinh học.",
+    "loe": "C"
+  },
+  {
+    "id": "fda.copd.roflumilast_pregnancy",
+    "sourceId": "fda_label_roflumilast",
+    "pdfPage": 7,
+    "printedPage": "7",
+    "locator": "Section 8.1 / Pregnancy / PDF p. 7",
+    "quote": "There are no randomized clinical studies of DALIRESP in pregnant women. In animal reproductive toxicity studies, DALIRESP administered to pregnant rats and rabbits during the period of organogenesis produced no fetal structural abnormalities.",
+    "quoteVi": "Chưa có thử nghiệm lâm sàng ngẫu nhiên của Roflumilast trên phụ nữ mang thai; chỉ cân nhắc khi lợi ích tiềm năng vượt trội nguy cơ và không dùng trong chuyển dạ/sinh con.",
+    "loe": "C"
+  },
+  {
+    "id": "fda.copd.roflumilast_lactation",
+    "sourceId": "fda_label_roflumilast",
+    "pdfPage": 8,
+    "printedPage": "8",
+    "locator": "Section 8.2 / Lactation / PDF p. 8",
+    "quote": "Excretion of roflumilast and/or its metabolites into human milk is probable. DALIRESP should not be used by women who are nursing.",
+    "quoteVi": "Roflumilast và/hoặc chất chuyển hóa có khả năng bài tiết vào sữa mẹ; không nên sử dụng ở phụ nữ đang cho con bú.",
+    "loe": "C"
+  },
+  {
+    "id": "fda.copd.roflumilast_renal_impairment",
+    "sourceId": "fda_label_roflumilast",
+    "pdfPage": 9,
+    "printedPage": "9",
+    "locator": "Section 8.7 / Renal Impairment / PDF p. 9",
+    "quote": "No dosage adjustment is necessary for patients with renal impairment",
+    "quoteVi": "Không cần điều chỉnh liều Roflumilast ở người bệnh suy giảm chức năng thận.",
+    "loe": "B"
+  },
+  {
+    "id": "fda.copd.dupilumab_pregnancy",
+    "sourceId": "fda_label_dupilumab",
+    "pdfPage": 25,
+    "printedPage": "25",
+    "locator": "Section 8.1 / Pregnancy / PDF p. 25",
+    "quote": "Available data from case reports and case series with DUPIXENT use in pregnant women have not identified a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes.",
+    "quoteVi": "Dữ liệu báo cáo ca lâm sàng khi dùng Dupilumab ở phụ nữ mang thai chưa ghi nhận tăng nguy cơ dị tật bẩm sinh lớn, sẩy thai hoặc kết cục bất lợi cho mẹ và thai; kháng thể IgG người đi qua nhau thai.",
+    "loe": "C"
+  },
+  {
+    "id": "fda.copd.dupilumab_lactation",
+    "sourceId": "fda_label_dupilumab",
+    "pdfPage": 26,
+    "printedPage": "26",
+    "locator": "Section 8.2 / Lactation / PDF p. 26",
+    "quote": "There are no data on the presence of dupilumab in human milk, the effects on the breastfed infant, or the effects on milk production. Maternal IgG is known to be present in human milk.",
+    "quoteVi": "Chưa có dữ liệu về sự hiện diện của dupilumab trong sữa mẹ hoặc tác động trên trẻ bú mẹ; IgG của mẹ được biết có bài tiết vào sữa mẹ.",
+    "loe": "C"
+  },
+  {
+    "id": "fda.copd.azithromycin_pregnancy",
+    "sourceId": "fda_azithromycin",
+    "pdfPage": 10,
+    "printedPage": "10",
+    "locator": "Section 8.1 / Pregnancy / PDF p. 10",
+    "quote": "Available data from published literature and postmarketing experience over several decades with azithromycin use in pregnant women have not identified any drug- associated risks for major birth defects, miscarriage, or adverse maternal or fetal outcomes",
+    "quoteVi": "Dữ liệu y văn và hậu mãi qua nhiều thập kỷ sử dụng azithromycin ở phụ nữ mang thai không ghi nhận tăng nguy cơ dị tật bẩm sinh lớn, sẩy thai hoặc kết cục bất lợi cho mẹ và thai nhi.",
+    "loe": "B"
+  },
+  {
+    "id": "fda.copd.azithromycin_lactation",
+    "sourceId": "fda_azithromycin",
+    "pdfPage": 11,
+    "printedPage": "11",
+    "locator": "Section 8.2 / Lactation / PDF p. 11",
+    "quote": "Azithromycin is present in human milk (see Data ) . Non-serious adverse reactions have been reported in breastfed infants after maternal administration of azithromycin",
+    "quoteVi": "Azithromycin bài tiết vào sữa mẹ; cần theo dõi trẻ bú mẹ về các tác dụng không mong muốn trên tiêu hóa (tiêu chảy, nôn, tưa miệng).",
+    "loe": "B"
+  },
+  {
+    "id": "fda.copd.azithromycin_renal_gfr10",
+    "sourceId": "fda_azithromycin",
+    "pdfPage": 15,
+    "printedPage": "15",
+    "locator": "Section 12.3 / Patients with Renal Impairment / PDF p. 15",
+    "quote": "The mean C and AUC increased 61% and 35%, respectively in subjects with GFR <10 mL/min compared to subjects with GFR >80 mL/min.",
+    "quoteVi": "Nồng độ đỉnh Cmax và diện tích dưới đường cong AUC của azithromycin tăng lần lượt 61% và 35% ở người suy thận nặng có GFR < 10 mL/phút.",
+    "loe": "B"
+  },
+  {
+    "id": "byt.copd.2026.azithromycin_renal_contra_gfr10",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 25,
+    "printedPage": "15",
+    "locator": "Mục 2.2.3(b) / Thêm macrolide / PDF tr. 25",
+    "quote": "ngừng thuốc nếu kéo dài thêm khoảng QT hoặc QTc > 450ms ), không dùng ở người suy thận nặng (GFR<10ml/min).",
+    "quoteVi": "Chống chỉ định dùng Azithromycin dự phòng dài hạn khi QTc > 450 ms và không dùng ở người suy thận nặng (GFR < 10 mL/phút).",
+    "loe": "B"
+  },
+  {
+    "id": "gina.copd.2026.mepolizumab_100mg_q4w",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 167,
+    "printedPage": "166",
+    "locator": "Box 8-6 / Biologic therapy for COPD / PDF p. 167",
+    "quote": "Mepolizumab CRSwNP 100 mg SC every 4 weeks ≥18 years COPD with eosinophilic phenotype 100 mg SC every 4 weeks ≥18 years",
+    "quoteVi": "Liều Mepolizumab cho người lớn (≥ 18 tuổi) mắc COPD kiểu hình tăng bạch cầu ái toan: 100 mg tiêm dưới da mỗi 4 tuần.",
+    "loe": "A"
+  },
+  {
+    "id": "gina.copd.2026.lama_urinary_retention",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 246,
+    "printedPage": "245",
+    "locator": "Appendix B / Long-acting muscarinic antagonists (LAMA) / PDF p. 246",
+    "quote": "Adverse effects Uncommon, but include dry mouth, urinary retention.",
+    "quoteVi": "Tác dụng không mong muốn của nhóm kháng muscarinic tác dụng dài (LAMA) ít gặp nhưng bao gồm khô miệng và bí tiểu (thận trọng ở bệnh nhân tăng sản tuyến tiền liệt/bí tiểu).",
+    "loe": "B"
+  },
+  {
+    "id": "byt.copd.2026.underweight_bmi_18_5",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 62,
+    "printedPage": "52",
+    "locator": "Mục 5.2(a) / Sàng lọc và đánh giá dinh dưỡng / PDF tr. 62",
+    "quote": "Suy dinh dưỡng khi BMI < 18,5kg/m2 theo WHO 2016 hoặc sụt cân ngoài ý muốn từ 5 đến 10% cân nặng trong 3-6 tháng gần đây",
+    "quoteVi": "Suy dinh dưỡng / nhẹ cân ở người bệnh COPD được xác định khi BMI < 18,5 kg/m² (theo WHO) hoặc sụt cân ngoài ý muốn trong 3–6 tháng gần đây.",
+    "loe": "B"
+  },
+  {
+    "id": "byt.copd.2026.home_niv_53",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 27,
+    "printedPage": "17",
+    "locator": "Mục 2.6(b) / Thở máy không xâm nhập giai đoạn ổn định / PDF tr. 27",
+    "quote": "Chỉ định thở máy không xâm nhập (BiPAP) đối với người bệnh BPTNMT giai đoạn ổn định có tăng CO 2 máu ban ngày (PaCO 2 ≥ 53 mmHg) và ti ền sử nhập viện gần đây.",
+    "quoteVi": "Chỉ định thở máy không xâm nhập (BiPAP) tại nhà cho người bệnh COPD giai đoạn ổn định có tăng CO₂ máu ban ngày (PaCO₂ ≥ 53 mmHg) và tiền sử nhập viện gần đây.",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.niv_contraindications_imv",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 42,
+    "printedPage": "32",
+    "locator": "Mục 3.4.4(f) / Chống chỉ định thông khí nhân tạo không xâm nhập / PDF tr. 42",
+    "quote": "Chống chỉ định thông khí nhân tạo không xâm nhập:  Ngừng thở, ngủ gà, rối loạn ý thức, không hợp tác.  Rối loạn huyết động: tụt huyết áp, loạn nhịp tim, nhồi máu cơ tim.",
+    "quoteVi": "Chống chỉ định thông khí nhân tạo không xâm nhập (NIV/BiPAP): ngừng thở, ngủ gà, rối loạn ý thức, không hợp tác; rối loạn huyết động (tụt huyết áp/sốc, loạn nhịp nặng, nhồi máu cơ tim) — cần đặt nội khí quản thở máy xâm nhập.",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.niv_contra_shock_appendix5",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 83,
+    "printedPage": "73",
+    "locator": "Phụ lục 5 / Chống chỉ định thông khí nhân tạo không xâm nhập / PDF tr. 83",
+    "quote": "Chống chỉ định thông khí nhân tạo không xâm nhập - Toàn trạng: + Không hợp tác, người bệnh trong tình trạng kích thích. + Có rối loạn ý thức. + Mệt cơ hô hấp. - Tuần hoàn: + Tình trạng sốc hoặc rối loạn nhịp tim nặng.",
+    "quoteVi": "Phụ lục 5 BYT 2026: Chống chỉ định NIV khi có rối loạn ý thức, kích thích không hợp tác, tình trạng sốc huyết động hoặc sau ngừng tuần hoàn.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.selective_beta1_blockers",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 127,
+    "printedPage": "116",
+    "locator": "Chapter 5 / Heart failure / PDF p. 127",
+    "quote": "Treatment with β 1-blockers improves survival in heart failure and is recommended in patients who also have COPD. Selective β 1-blockers should be used only for approved cardiovascular indications and not for preventing exacerbations of COPD.",
+    "quoteVi": "Điều trị bằng thuốc chẹn chọn lọc thụ thể beta-1 giúp cải thiện sống còn trong suy tim và được khuyến cáo ở bệnh nhân đồng mắc COPD khi có chỉ định tim mạch (tránh chẹn beta không chọn lọc gây co thắt phế quản).",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2023.severe_renal_crcl30",
+    "sourceId": "byt_2023_copd",
+    "pdfPage": 18,
+    "printedPage": "17",
+    "locator": "Chương 2 / Suy thận nặng / PDF tr. 18",
+    "quote": "Chống chỉ định tương đối khi suy thận nặng (thanh thải Creatinine < 30ml/phút).",
+    "quoteVi": "Ngưỡng suy thận nặng (độ thanh thải Creatinine / eGFR < 30 mL/phút) cần thận trọng và hiệu chỉnh liều thuốc thải trừ qua thận.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.bb_cvd_indication",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 53,
+    "printedPage": "42",
+    "locator": "Chapter 2 / Beta-blockers in COPD and CVD / PDF p. 53",
+    "quote": "Importantly, patients with COPD should not be denied β-blocker use if there is a CVD indication.",
+    "quoteVi": "Người bệnh COPD không được tước bỏ điều trị thuốc chẹn beta nếu có chỉ định tim mạch rõ ràng (ưu tiên chuyển sang chẹn chọn lọc thụ thể beta-1 thay vì ngừng hẳn).",
+    "loe": "A"
+  },
+  {
+    "id": "fda.copd.carvedilol_contra_asthma",
+    "sourceId": "fda_carvedilol",
+    "pdfPage": 5,
+    "printedPage": "5",
+    "locator": "Section 4 / Contraindications / PDF p. 5",
+    "quote": "COREG is contraindicated in the following conditions: Bronchial asthma or related bronchospastic conditions.",
+    "quoteVi": "Carvedilol (chẹn beta không chọn lọc kèm alpha-1) chống chỉ định trong hen phế quản hoặc các tình trạng co thắt phế quản liên quan.",
+    "loe": "A"
+  },
+  {
+    "id": "fda.copd.carvedilol_no_abrupt_stop",
+    "sourceId": "fda_carvedilol",
+    "pdfPage": 6,
+    "printedPage": "6",
+    "locator": "Section 5.1 / Cessation of Therapy / PDF p. 6",
+    "quote": "who are being treated with COREG, should be advised against abrupt discontinuation of therapy. Severe exacerbation of angina and the occurrence of myocardial infarction and ventricular arrhythmias have been reported",
+    "quoteVi": "Không được ngừng đột ngột Carvedilol ở người bệnh tim mạch do nguy cơ kịch phát đau thắt ngực nặng, nhồi máu cơ tim và loạn nhịp thất; cần chuyển đổi có kiểm soát sang chẹn beta-1 chọn lọc.",
+    "loe": "B"
+  },
+  {
+    "id": "esc.copd.2026.hfref_lvef_40",
+    "sourceId": "esc_2026_hf",
+    "pdfPage": 16,
+    "printedPage": "16",
+    "locator": "Section 3.2 / Heart failure phenotypes / PDF p. 16",
+    "quote": "three different HF phenotypes were identified: HFrEF (LVEF ≤40%); HF with mildly reduced ejection fraction (HFmrEF, LVEF 41%–49%); and HFpEF (LVEF ≥50%).",
+    "quoteVi": "Phân loại suy tim phân suất tống máu giảm (HFrEF) khi LVEF ≤ 40% — chỉ định bắt buộc trụ cột chẹn chọn lọc beta-1 cải thiện sống còn.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.budesonide_formoterol_dose",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 69,
+    "printedPage": "59",
+    "locator": "Phụ lục 1 / Danh mục thuốc điều trị BPTNMT / PDF tr. 69",
+    "quote": "Formoterol/Budesonide Dạng ống hít hoặc xịt. Liều 160mcg/4,5mcg cho 1 liều. Dùng 4 liều/ngày, chia 2 lần Salmeterol/Fluticasone Dạng xịt hoặc hít. Liều 50mcg/250 mcg ho ặc 25mcg/250 mcg cho 1 liều. Dùng ngày 2-4 liều, chia 2 lần.",
+    "quoteVi": "Liều duy trì cố định Budesonide/Formoterol trong COPD (BYT QĐ 2131/2026): hàm lượng 160/4.5 mcg cho 1 liều, dùng 4 liều/ngày chia 2 lần (hít 2 liều x 2 lần/ngày); không dùng chế độ MART cắt cơn của hen.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.exac_saba_first_hour",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 114,
+    "printedPage": "103",
+    "locator": "Chapter 4 / Bronchodilators in Exacerbations / PDF p. 114",
+    "quote": "every hour for 2-3 doses or use a pMDI one or two puffs every one hour for two or three doses and then every 2 -4 hours based on the patient’s response.",
+    "quoteVi": "Phác đồ giãn phế quản tác dụng ngắn giờ đầu đợt cấp COPD: khí dung hoặc xịt pMDI qua buồng đệm mỗi giờ trong 2–3 liều đầu, sau đó giãn ra mỗi 2–4 giờ tùy đáp ứng lâm sàng.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.exac_continue_labd",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 114,
+    "printedPage": "103",
+    "locator": "Chapter 4 / Maintenance Therapy During Exacerbation / PDF p. 114",
+    "quote": "with or without ICS during an exacerbation, we recommend continuing these treatments during the exacerbation or to start these medications as soon as possible before hospital discharge.",
+    "quoteVi": "Khuyến cáo tiếp tục duy trì các thuốc giãn phế quản tác dụng kéo dài (LABA/LAMA có hoặc không kèm ICS) ngay trong đợt cấp nội trú hoặc khởi động lại sớm nhất trước khi xuất viện.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.exac_anthonisen_criteria",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 115,
+    "printedPage": "104",
+    "locator": "Chapter 4 / Antibiotics Indications / PDF p. 115",
+    "quote": "Have these at least two of these symptoms: increase in dyspnea, fever, sputum volume, and sputum purulence, if increased purulence of sputum is one of these symptoms",
+    "quoteVi": "Chỉ định kháng sinh trong đợt cấp COPD khi có cả 3 triệu chứng chính Anthonisen hoặc có ít nhất 2 triệu chứng (tăng khó thở, sốt, tăng lượng đờm, tăng đờm mủ) trong đó bắt buộc có tăng đờm mủ, hoặc cần thông khí cơ học.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.exac_no_iv_methylxanthines",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 114,
+    "printedPage": "103",
+    "locator": "Chapter 4 / Methylxanthines in Exacerbations / PDF p. 114",
+    "quote": "Intravenous methylxanthines (theophylline or aminophylline) are not recommended in these patients due to significant side effects.",
+    "quoteVi": "Không khuyến cáo dùng nhóm methylxanthine (theophylline hoặc aminophylline) trong đợt cấp COPD do tác dụng phụ tim mạch và thần kinh đáng kể.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.sedatives_hypercapnia",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 29,
+    "printedPage": "18",
+    "locator": "Chapter 1 / Pathophysiology - Gas Exchange / PDF p. 29",
+    "quote": "due to reduced ventilatory drive (e.g., sedatives and hypnotic drugs), causing hypercapnic respiratory failure and acidosis.",
+    "quoteVi": "Thuốc an thần và gây ngủ (benzodiazepine, opioid) làm ức chế trung tâm hô hấp, thúc đẩy suy hô hấp tăng CO₂ máu và nhiễm toan hô hấp nguy kịch.",
+    "loe": "B"
+  },
+  {
+    "id": "byt.copd.2026.antibiotics_outpatient_5_7d",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 37,
+    "printedPage": "27",
+    "locator": "Hình 3.1 / Điều trị kháng sinh đợt cấp / PDF tr. 37",
+    "quote": "tiếp tục điều trị hiện tại, thời gian dùng kháng sinh thường 5-7 ngày Nhuộm Gram và cấy đờm",
+    "quoteVi": "Thời gian dùng kháng sinh đợt cấp COPD mức độ nhẹ–trung bình theo BYT QĐ 2131/2026 thường là 5–7 ngày.",
+    "loe": "B"
+  },
+  {
+    "id": "byt.copd.2026.antibiotics_inpatient_7_10d",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 41,
+    "printedPage": "31",
+    "locator": "Mục 3.4.4(d) / Kháng sinh đợt cấp nặng nhập viện / PDF tr. 41",
+    "quote": "Thời gian dùng kháng sinh thường 7-10 ngày",
+    "quoteVi": "Thời gian điều trị kháng sinh trong đợt cấp COPD nặng nhập viện theo BYT QĐ 2131/2026 thường là 7–10 ngày.",
+    "loe": "B"
+  },
+  {
+    "id": "byt.copd.2026.steroid_oral_30_40mg",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 35,
+    "printedPage": "25",
+    "locator": "Mục 3.4.3(c) / Corticosteroid toàn thân đợt cấp / PDF tr. 35",
+    "quote": "Prednisone hoặc prednisolone hoặc methylprednisolone: 30-40 mg/ngày uống 1 lần vào buổi sáng trong 5 ngày.",
+    "quoteVi": "Corticosteroid toàn thân trong đợt cấp COPD theo BYT QĐ 2131/2026: Prednisone, prednisolone hoặc methylprednisolone 30–40 mg/ngày uống 1 lần buổi sáng trong 5 ngày.",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.methylpred_iv_dose",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 69,
+    "printedPage": "59",
+    "locator": "Phụ lục 1 / Corticosteroid toàn thân / PDF tr. 69",
+    "quote": "Methylprednisolon Viên 4mg, 16mg. Lọ tiêm tĩnh mạch 40mg. Ngày tiêm 1-2 lọ",
+    "quoteVi": "Methylprednisolone trong đợt cấp COPD theo Phụ lục 1 BYT QĐ 2131/2026: viên 4 mg, 16 mg hoặc lọ tiêm tĩnh mạch 40 mg (1–2 lọ/ngày = 40–80 mg/ngày).",
+    "loe": "B"
+  },
+  {
+    "id": "byt.copd.2026.hospital_admission_criteria",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 34,
+    "printedPage": "24",
+    "locator": "Mục 3.4.2 / Tiêu chuẩn nhập viện đợt cấp / PDF tr. 34",
+    "quote": "3.4.2. Tiêu chuẩn nhập viện - Các triệu chứng hô hấp đột ngột nặng lên nhiều (khó thở nặng, co kéo cơ hô hấp phụ, rối loạn tri giác, giảm bão hoà oxy, toan hô hấp, ngủ gà) - Suy hô hấp cấp",
+    "quoteVi": "Tiêu chuẩn nhập viện cấp cứu đợt cấp COPD: khó thở nặng đột ngột, co kéo cơ hô hấp phụ, rối loạn tri giác/ngủ gà, giảm bão hòa oxy mới xuất hiện, toan hô hấp và suy hô hấp cấp.",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.respiratory_failure_rr_24_30",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 34,
+    "printedPage": "24",
+    "locator": "Bảng 3.2 / Phân loại suy hô hấp đợt cấp / PDF tr. 34",
+    "quote": "Không suy hô hấp (Điều trị tại khoa nội hoặc khoa hô hấp) - Nhịp thở ≤ 24 lần/phút",
+    "quoteVi": "Phân tầng mức độ nặng đợt cấp nhập viện theo BYT QĐ 2131/2026: không suy hô hấp khi nhịp thở ≤ 24 lần/phút; suy hô hấp cấp không đe dọa tính mạng khi nhịp thở 25–30 lần/phút kèm co kéo cơ hô hấp phụ.",
+    "loe": "B"
+  },
+  {
+    "id": "byt.copd.2026.respiratory_failure_rr_gt30",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 34,
+    "printedPage": "24",
+    "locator": "Bảng 3.2 / Suy hô hấp cấp đe dọa tính mạng / PDF tr. 34",
+    "quote": "Suy hô hấp cấp đe doạ tính mạng (Điều trị tại ICU) - Nhịp thở > 30 lần/phút - Co kéo cơ hô hấp phụ - Rối loạn tri giác mới xuất hiện",
+    "quoteVi": "Suy hô hấp cấp đe dọa tính mạng cần chuyển ICU theo BYT QĐ 2131/2026: nhịp thở > 30 lần/phút, co kéo cơ hô hấp phụ và rối loạn tri giác mới xuất hiện.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.exac_hospitalization_assessment",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 110,
+    "printedPage": "99",
+    "locator": "Chapter 4 / Emergency Department Assessment / PDF p. 110",
+    "quote": "When a person having a COPD exacerbation comes to the ED, it is necessary to determine whether the exacerbation is life-threatening and consider whether the increased work of breathing or impaired gas exchange requires high flow oxygen or NIV.",
+    "quoteVi": "Khi bệnh nhân đợt cấp COPD có suy hô hấp hoặc tăng công thở/rối loạn trao đổi khí, bắt buộc chuyển cấp cứu/nội trú để đánh giá nguy cơ đe dọa tính mạng và hỗ trợ oxy kiểm soát hoặc thở máy NIV.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.pulmonary_rehab_essential",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 61,
+    "printedPage": "50",
+    "locator": "Chapter 3 / Pulmonary Rehabilitation / PDF p. 61",
+    "quote": "Pulmonary rehabilitation, including exercise training combined with disease -specific education, improves exercise capacity, symptoms, and quality of life across all grades of COPD severity.",
+    "quoteVi": "Phục hồi chức năng hô hấp (tập vận động kết hợp giáo dục bệnh học) giúp cải thiện khả năng gắng sức, giảm khó thở và nâng cao chất lượng cuộc sống ở người bệnh COPD có triệu chứng (Nhóm B và Nhóm E).",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.pulmonary_rehab_post_discharge",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 120,
+    "printedPage": "109",
+    "locator": "Chapter 4 / Post-discharge Pulmonary Rehabilitation / PDF p. 120",
+    "quote": "Early rehabilitation post hospital discharge (i.e., < 4 weeks) is associated with improved quality of life and increased exercise capacity",
+    "quoteVi": "Phục hồi chức năng hô hấp sớm trong vòng < 4 tuần sau xuất viện đợt cấp giúp cải thiện chất lượng cuộc sống, tăng khả năng gắng sức và giảm tái nhập viện.",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.pulmonary_rehab_benefits",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 59,
+    "printedPage": "49",
+    "locator": "Bảng 5.1 / Lợi ích của phục hồi chức năng hô hấp / PDF tr. 59",
+    "quote": "Cải thiện khó thở, tình trạng sức khỏe và khả năng vận động ở người bệnh BPTNMT giai đoạn ổn định. Bằng chứng loại A Giảm nhập viện trong số người bệnh vừa ra khỏi đợt cấp < 4 tuần.",
+    "quoteVi": "Phục hồi chức năng hô hấp cải thiện khó thở, sức khỏe và khả năng vận động ở COPD ổn định (Bằng chứng A) và giảm tái nhập viện khi triển khai trong vòng < 4 tuần sau đợt cấp.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.followup_ics_laba_continue",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 80,
+    "printedPage": "69",
+    "locator": "Chapter 3 / Patients Currently Treated with LABA+ICS / PDF p. 80",
+    "quote": "with LABA+ICS and is well controlled in terms of symptoms and exacerbations, continuation with LABA+ICS is an option (Figure 3.12).",
+    "quoteVi": "Ở bệnh nhân đang dùng phối hợp ICS+LABA và kiểm soát tốt cả triệu chứng lẫn đợt cấp (không thuộc diện lạm dụng ICS không phù hợp), tiếp tục duy trì ICS+LABA là lựa chọn hợp lý (Hình 3.12 GOLD 2026).",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.dpi_inspiratory_flow_switch",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 81,
+    "printedPage": "70",
+    "locator": "Chapter 3 / Ability to Use Delivery System Correctly / PDF p. 81",
+    "quote": "pMDIs and SMIs require a slow and deep inspiration while DPIs require forceful inspiration.",
+    "quoteVi": "Bình hít bột khô (DPI) đòi hỏi lực hít vào mạnh và sâu; khi người bệnh có lực hít yếu hoặc không phối hợp được, cần chuyển sang bình phun hạt mịn SMI (Respimat) hoặc pMDI kèm buồng đệm hít chậm và sâu.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.ltot_pulmonary_hypertension",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 87,
+    "printedPage": "76",
+    "locator": "Chapter 3 / Long-Term Oxygen Therapy Criteria / PDF p. 87",
+    "quote": "60 mmHg (8.0 kPa), or SaO2 of 88%, if there is evidence of pulmonary hypertension, peripheral edema suggesting congestive cardiac failure, or polycythemia (hematocrit > 55%).",
+    "quoteVi": "Chỉ định oxy dài hạn mở rộng (GOLD 2026): PaO₂ 55–60 mmHg hoặc SaO₂ 88% khi kèm tăng áp động mạch phổi, phù ngoại biên gợi ý suy tim sung huyết/tâm phế mạn hoặc đa hồng cầu (Hct > 55%).",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.lung_cancer_ldct_screening",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 54,
+    "printedPage": "44",
+    "locator": "Mục 4.2 / Bệnh đồng mắc - Ung thư phổi / PDF tr. 54",
+    "quote": "tầm soát ung thư phổi hàng năm với CT liều thấp nên được tiến hành ở những người 50 - 80 tuổi có tiền sử hút thuốc 20 bao - năm và hi ện đang hút thu ốc ho ặc b ỏ hút thu ốc trong vòng 15 năm qua.",
+    "quoteVi": "Khuyến cáo tầm soát ung thư phổi hàng năm bằng chụp cắt lớp vi tính ngực liều thấp (LDCT) cho người bệnh COPD từ 50–80 tuổi có tiền sử hút thuốc ≥ 20 bao-năm đang hút hoặc bỏ thuốc trong vòng 15 năm.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.lung_cancer_ldct_uspstf",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 130,
+    "printedPage": "119",
+    "locator": "Chapter 5 / Lung Cancer Screening in COPD / PDF p. 130",
+    "quote": "USPSTF now recommends annual screening for lung cancer with low-dose CT in adults aged 50-80 years who have a 20-pack year smoking history and currently smoke, or who quit smoking within the past 15 years.",
+    "quoteVi": "Tầm soát ung thư phổi hàng năm bằng CT liều thấp (LDCT) ở người lớn 50–80 tuổi có tiền sử hút thuốc ≥ 20 bao-năm đang hút hoặc cai thuốc chưa quá 15 năm.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.aatd_screening_all",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 59,
+    "printedPage": "48",
+    "locator": "Chapter 2 / Alpha-1 Antitrypsin Deficiency Screening / PDF p. 59",
+    "quote": "GOLD recommends that all patients with a diagnosis of COPD should be tested for AATD.",
+    "quoteVi": "WHO và GOLD khuyến cáo xét nghiệm sàng lọc thiếu hụt Alpha-1 Antitrypsin (AATD) ít nhất một lần cho mọi người bệnh được chẩn đoán COPD.",
+    "loe": "B"
+  },
+  {
+    "id": "byt.copd.2026.cv_risk_post_exacerbation",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 44,
+    "printedPage": "34",
+    "locator": "Mục 4.1 / Nguy cơ biến cố tim mạch sau đợt cấp / PDF tr. 44",
+    "quote": "Người bệnh BPTNMT trải qua một đợt cấp trung bình hoặc nặng có tăng nguy cơ biến cố tim mạch tăng 3 lần trong 30 ngày sau đ ợt cấp và kéo dài tới 12 tháng, đặc biệt sau đợt cấp nặng nhập viện thì nguy cơ này tăng lên ~10-20 lần.",
+    "quoteVi": "Nguy cơ biến cố tim mạch cấp tăng 3 lần trong 30 ngày đầu sau đợt cấp COPD trung bình–nặng (tăng 10–20 lần sau đợt cấp nhập viện) và kéo dài tới 12 tháng; cần theo dõi sát tim mạch sau xuất viện.",
+    "loe": "B"
+  },
+  {
+    "id": "fda.copd.roflumilast_child_pugh_a_auc51",
+    "sourceId": "fda_label_roflumilast",
+    "pdfPage": 9,
+    "printedPage": "9",
+    "locator": "Section 8.6 / Hepatic Impairment / PDF p. 9",
+    "quote": "increased by 51% and 24%, respectively, in Child-Pugh A subjects and by 92% and 41%, respectively, in Child- Pugh B subjects",
+    "quoteVi": "Ở người bệnh suy gan nhẹ (Child-Pugh A), AUC của roflumilast tăng 51% và roflumilast N-oxide tăng 24%: không chống chỉ định tuyệt đối nhưng cần cân nhắc kỹ lợi ích/nguy cơ và theo dõi sát dung nạp (chỉ chống chỉ định tuyệt đối ở Child-Pugh B/C).",
+    "loe": "B"
+  },
+  {
+    "id": "fda.copd.roflumilast_theophylline_prohibited",
+    "sourceId": "fda_label_roflumilast",
+    "pdfPage": 16,
+    "printedPage": "16",
+    "locator": "Section 14 / Clinical Studies - Concomitant Medications / PDF p. 16",
+    "quote": "long-acting beta agonists, long-acting anti-muscarinics, and theophylline were prohibited.",
+    "quoteVi": "Không khuyến cáo phối hợp đồng thời Roflumilast với theophylline (bị cấm dùng kèm trong các thử nghiệm lâm sàng phê duyệt do tăng phơi nhiễm PDE ức chế và độc tính).",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.theophylline_narrow_toxicity",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 158,
+    "printedPage": "147",
+    "locator": "Appendix 3 / Methylxanthines / PDF p. 158",
+    "quote": "Theophylline, the most commonly used methylxanthine, is metabolized by cytochrome P450 mixed function oxidases. Clearance of the drug declines with age. Many other physiological variables and drugs modify theophylline metabolism.",
+    "quoteVi": "Theophylline chuyển hóa qua hệ enzym cytochrome P450 ở gan; độ thanh thải giảm theo tuổi cao, xơ gan, suy tim và bị biến đổi mạnh bởi nhiều tương tác thuốc.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.theophylline_arrhythmia_seizure",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 158,
+    "printedPage": "147",
+    "locator": "Appendix 3 / Methylxanthines - Adverse effects / PDF p. 158",
+    "quote": "Toxicity is dose-related, which is a particular problem with xanthine derivatives because their therapeutic ratio is small and most of the benefit occurs only when near -toxic doses are given.",
+    "quoteVi": "Độc tính của dẫn xuất xanthine phụ thuộc liều với khoảng điều trị rất hẹp (dễ gây loạn nhịp nhĩ/thất nguy kịch và co giật cơn lớn).",
+    "loe": "B"
+  },
+  {
+    "id": "byt.copd.2026.theophylline_dose_max10",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 69,
+    "printedPage": "59",
+    "locator": "Phụ lục 1 / Nhóm Methylxanthin / PDF tr. 69",
+    "quote": "Nhóm Methylxanthin Chú ý: tổng liều (bao gồm tất cả các thuốc nhóm methylxanthin) không quá 10mg/kg/ngày. Không dùng kèm thuốc nhóm macrolide vì nguy cơ độc tính gây biến chứng tim mạch.",
+    "quoteVi": "Tổng liều nhóm methylxanthine không vượt quá 10 mg/kg/ngày; tránh phối hợp macrolide (erythromycin, clarithromycin) hoặc quinolone (ciprofloxacin) do nguy cơ ngộ độc tim mạch.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.lama_pharmacology_list",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 155,
+    "printedPage": "144",
+    "locator": "Appendix 3 / Antimuscarinic Drugs / PDF p. 155",
+    "quote": "LAMAs, such as tiotropium , aclidinium, glycopyrronium bromide (also known as glycopyrrolate), umeclidinium and revefenacin , have prolonged binding to M3 muscarinic receptors",
+    "quoteVi": "Các thuốc kháng muscarinic tác dụng kéo dài (LAMA) như tiotropium, aclidinium, glycopyrronium và umeclidinium gắn kéo dài chọn lọc trên thụ thể M3 giúp giãn phế quản bền vững.",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.salmeterol_cyp3a4_contra",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 120,
+    "printedPage": "110",
+    "locator": "Phụ lục 11 / Tương tác thuốc chống chỉ định - STT 34 / PDF tr. 120",
+    "quote": "Các thuốc ức chế mạnh CYP3A4 ức chế chuyển hóa c ủa salmeterol qua gan Tăng n ồng đ ộ salmeterol trong huyết thanh, tăng nguy cơ ph ản ứng có h ại",
+    "quoteVi": "Các thuốc ức chế mạnh CYP3A4 ức chế chuyển hóa salmeterol qua gan làm tăng nồng độ salmeterol huyết thanh và tăng nguy cơ kéo dài khoảng QT, loạn nhịp thất.",
+    "loe": "B"
+  },
+  {
+    "id": "gina.copd.2026.saba_overuse_twice_weekly",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 42,
+    "printedPage": "41",
+    "locator": "Box 2-2 / Assessment of Symptom Control / PDF p. 42",
+    "quote": "None of these 1–2 of these 3–4 of these • Any night waking due to asthma? Yes No • SABA† reliever for symptoms more than twice/week?",
+    "quoteVi": "Sử dụng thuốc cắt cơn SABA > 2 lần/tuần là dấu hiệu kiểm soát triệu chứng kém, cần đánh giá lại tuân thủ, kỹ thuật hít và tối ưu hóa phác đồ duy trì.",
+    "loe": "B"
+  },
+  {
+    "id": "gina.copd.2026.saba_overuse_3_canisters",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 88,
+    "printedPage": "87",
+    "locator": "Section 4 / SABA Over-use / PDF p. 88",
+    "quote": "Even modest over-use of SABA (indicated by dispensing of 3 or more 200-dose canisters a year) is associated with increased risk of severe exacerbations102",
+    "quoteVi": "Lạm dụng SABA (từ ≥ 3 bình xịt 200 liều/năm, tương đương dùng thường xuyên hàng tuần/hàng ngày) làm tăng nguy cơ đợt cấp nặng và biến cố bất lợi.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.elderly_age_65_70",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 136,
+    "printedPage": "125",
+    "locator": "Chapter 5 / Renal Failure in COPD / PDF p. 136",
+    "quote": "The prevalence of renal failure, defined as GFR < 60 mL/min/1.73 m2, is three-times higher in patients with COPD than in matched controls (approximately 7% in patients aged < 65 years; 17 -20% in those > 70 years).",
+    "quoteVi": "Tỷ lệ suy thận mạn (GFR < 60 mL/phút/1.73m²) cao gấp 3 lần ở người bệnh COPD, đặc biệt tăng rõ ở nhóm cao tuổi (> 70 tuổi chiếm 17–20%).",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.ltot_hours_15",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 87,
+    "printedPage": "76",
+    "locator": "Chapter 3 / Oxygen Therapy / PDF p. 87",
+    "quote": "The long-term administration of oxygen (> 15 hours per day ; LTOT) is indicated for patients with stable COPD",
+    "quoteVi": "Chỉ định thở oxy dài hạn tại nhà (LTOT > 15 giờ/ngày; BYT QĐ 2131/2026 khuyến cáo ít nhất 16–18 giờ/24 giờ) cho bệnh nhân COPD giai đoạn ổn định có giảm oxy máu mạn tính nặng.",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.risk_elderly_65",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 33,
+    "printedPage": "23",
+    "locator": "Chương 3 / Mục 3.3d Các yếu tố nguy cơ cho kết cục xấu của đợt cấp BPTNMT / PDF tr. 33",
+    "quote": "- Đã có chỉ định thở oxy dài hạn, thở máy không xâm nhập tại nhà. - ≥ 65 tuổi",
+    "quoteVi": "Người bệnh cao tuổi (≥ 65 tuổi) là nhóm có nguy cơ cao diễn biến nặng và giảm dự trữ sinh lý/thanh thải thuốc trong COPD."
+  },
+  {
+    "id": "ema.ultibro.renal_impairment_auc22",
+    "sourceId": "ema_ultibro_smpc",
+    "pdfPage": 4,
+    "printedPage": "4",
+    "locator": "Section 4.4 / Special warnings - Patients with severe renal impairment / PDF p. 4",
+    "quote": "A moderate mean increase in total system exposure (AUClast) to glycopyrronium of up to 1.4-fold was seen in subjects with mild and moderate renal impairment and up to 2.2-fold in subjects with severe renal impairment and end-stage renal disease.",
+    "quoteVi": "Phơi nhiễm toàn thân (AUClast) của glycopyrronium tăng tới 1,4 lần ở suy thận nhẹ–vừa và tăng tới 2,2 lần ở suy thận nặng / bệnh thận giai đoạn cuối; chỉ dùng khi lợi ích vượt trội nguy cơ."
+  },
+  {
+    "id": "ema.ultibro.renal_dosing_egfr30",
+    "sourceId": "ema_ultibro_smpc",
+    "pdfPage": 17,
+    "printedPage": "17",
+    "locator": "Section 5.2 / Pharmacokinetic properties - Patients with renal impairment / PDF p. 17",
+    "quote": "In COPD patients with mild and moderate renal impairment (estimated glomerular filtration rate, eGFR ≥30 ml/min/1.73 m2) glycopyrronium bromide can be used at the recommended dose.",
+    "quoteVi": "Ở bệnh nhân COPD suy thận nhẹ và trung bình (eGFR ≥ 30 mL/phút/1.73m²), thuốc giãn phế quản kháng muscarinic/LABA dùng liều khuyến cáo tiêu chuẩn."
+  },
+  {
+    "id": "ema.ultibro.pregnancy_lactation",
+    "sourceId": "ema_ultibro_smpc",
+    "pdfPage": 41,
+    "printedPage": "41",
+    "locator": "Package Leaflet / Section 2 - Pregnancy and breast-feeding / PDF p. 41",
+    "quote": "There are no data on the use of this medicine in pregnant women and it is not known whether the active substances of this medicine pass into human milk.",
+    "quoteVi": "Dữ liệu sử dụng thuốc giãn phế quản hít LAMA/LABA trên phụ nữ mang thai còn hạn chế và chưa rõ mức bài tiết qua sữa người; cân nhắc kỹ lợi ích và nguy cơ."
+  },
+  {
+    "id": "ema.ultibro.lactose_excipient_contra",
+    "sourceId": "ema_ultibro_smpc",
+    "pdfPage": 5,
+    "printedPage": "5",
+    "locator": "Section 4.4 / Excipients - Lactose / PDF p. 5",
+    "quote": "This medicinal product contains lactose. Patients with rare hereditary problems of galactose intolerance, total lactase deficiency or glucose-galactose malabsorption should not take this medicinal product.",
+    "quoteVi": "Chế phẩm bột hít khô (DPI) chứa tá dược lactose monohydrate (có thể lẫn vết protein sữa); chống chỉ định ở người quá mẫn nặng với tá dược/protein sữa hoặc rối loạn dung nạp galactose bẩm sinh."
+  },
+  {
+    "id": "ema.ultibro.hypersensitivity_contra",
+    "sourceId": "ema_ultibro_smpc",
+    "pdfPage": 3,
+    "printedPage": "3",
+    "locator": "Section 4.3 / Contraindications / PDF p. 3",
+    "quote": "4.3 Contraindications Hypersensitivity to the active substances or to any of the excipients listed in section 6.1.",
+    "quoteVi": "Chống chỉ định khi quá mẫn với hoạt chất hoặc bất kỳ tá dược nào của thuốc (bao gồm lactose trong bột hít khô)."
+  },
+  {
+    "id": "ema.trimbow.renal_impairment_gfr30",
+    "sourceId": "ema_trimbow_smpc",
+    "pdfPage": 3,
+    "printedPage": "3",
+    "locator": "Section 4.2 / Posology - Renal impairment / PDF p. 3",
+    "quote": "Trimbow can be used at the recommended dose in patients with mild (glomerular filtration rate [GFR] ≥50 to <80 mL/min/1.73 m2) to moderate (GFR ≥30 to <50 mL/min/1.73 m2) renal impairment. Use in patients with severe (GFR <30 mL/min/1.73 m2) renal impairment",
+    "quoteVi": "Sử dụng liều khuyến cáo ở suy thận nhẹ–trung bình (GFR ≥ 30 mL/phút/1.73m²); thận trọng đặc biệt khi suy thận nặng (GFR < 30 mL/phút/1.73m²)."
+  },
+  {
+    "id": "ema.trimbow.severe_renal_benefit_risk",
+    "sourceId": "ema_trimbow_smpc",
+    "pdfPage": 7,
+    "printedPage": "7",
+    "locator": "Section 4.4 / Patients with severe renal impairment / PDF p. 7",
+    "quote": "In patients with severe renal impairment, including those with end-stage renal disease requiring dialysis, especially if associated with a significant body weight reduction, Trimbow should be used only if the expected benefit outweighs the potential risk",
+    "quoteVi": "Ở bệnh nhân suy thận nặng hoặc bệnh thận giai đoạn cuối lọc máu, chỉ sử dụng phác đồ chứa LAMA thải qua thận khi lợi ích kỳ vọng vượt trội nguy cơ."
+  },
+  {
+    "id": "ema.trimbow.renal_pk_beclometasone_formoterol",
+    "sourceId": "ema_trimbow_smpc",
+    "pdfPage": 17,
+    "printedPage": "17",
+    "locator": "Section 5.2 / Effect of renal impairment / PDF p. 17",
+    "quote": "Systemic exposure (AUC0-t) to beclometasone dipropionate, to its metabolite beclometasone 17-monopropionate and to formoterol was not affected by mild to severe renal impairment.",
+    "quoteVi": "Phơi nhiễm toàn thân của thuốc hít chuyển hóa qua gan/esterase (như beclometasone và formoterol) không bị ảnh hưởng bởi suy thận từ nhẹ đến nặng."
+  },
+  {
+    "id": "ema.trimbow.pregnancy_lactation",
+    "sourceId": "ema_trimbow_smpc",
+    "pdfPage": 9,
+    "printedPage": "9",
+    "locator": "Section 4.6 / Fertility, pregnancy and lactation / PDF p. 9",
+    "quote": "There are no or limited amount of data from the use of Trimbow in pregnant women. Studies in animals have shown reproductive toxicity (see section 5.3).",
+    "quoteVi": "Dữ liệu trên phụ nữ mang thai còn hạn chế; chỉ sử dụng trong thai kỳ và thời kỳ cho con bú khi lợi ích kiểm soát hô hấp vượt trội nguy cơ."
+  },
+  {
+    "id": "fda.breztri.renal_impairment_30",
+    "sourceId": "fda_breztri",
+    "pdfPage": 2,
+    "printedPage": "2",
+    "locator": "Highlights / Use in Specific Populations - Renal impairment / PDF p. 2",
+    "quote": "Renal impairment: In patients with severe renal impairment, use should be considered only if the potential benefit of the treatment outweighs the risk ( 8.7 ).",
+    "quoteVi": "Ở bệnh nhân suy thận nặng (CrCl ≤ 30 mL/phút hoặc lọc máu), chỉ cân nhắc dùng Breztri Aerosphere khi lợi ích vượt trội nguy cơ và theo dõi tác dụng phụ kháng cholinergic."
+  },
+  {
+    "id": "fda.breztri.hepatic_impairment",
+    "sourceId": "fda_breztri",
+    "pdfPage": 2,
+    "printedPage": "2",
+    "locator": "Highlights / Use in Specific Populations - Hepatic impairment / PDF p. 2",
+    "quote": "Hepatic impairment: Budesonide and formoterol fumarate systemic exposure may increase in patients with severe hepatic impairment. Monitor patients for signs of increased drug exposure.",
+    "quoteVi": "Suy gan nặng làm tăng phơi nhiễm toàn thân của budesonide và formoterol; cần theo dõi sát tác dụng phụ toàn thân."
+  },
+  {
+    "id": "fda.breztri.pregnancy_budesonide_formoterol",
+    "sourceId": "fda_breztri",
+    "pdfPage": 16,
+    "printedPage": "15",
+    "locator": "Section 8.1 / Pregnancy - Risk Summary / PDF p. 16",
+    "quote": "There are no adequate and well-controlled studies with BREZTRI AEROSPHERE or with two of its individual components, glycopyrrolate or formoterol fumarate, in pregnant women to inform a drug-associated risk",
+    "quoteVi": "Chưa có thử nghiệm đối chứng đầy đủ trên phụ nữ mang thai đối với glycopyrronium và formoterol; dữ liệu dịch tễ của budesonide hít không cho thấy tăng nguy cơ dị tật."
+  },
+  {
+    "id": "gold.copd.2026.anticholinergic_atropine_safety",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 157,
+    "printedPage": "146",
+    "locator": "Chapter 3 Appendix / Antimuscarinic drugs - Adverse effects / PDF p. 157",
+    "quote": "Inhaled anticholinergic drugs are poorly absorbed which limits the troublesome systemic effects observed with atropine.(1498,1508)",
+    "quoteVi": "Thuốc kháng cholinergic đường hít có cấu trúc dẫn xuất bậc bốn hấp thu toàn thân rất thấp so với atropine; chống chỉ định khi có tiền sử quá mẫn với atropine hoặc dẫn xuất."
+  },
+  {
+    "id": "fda.copd.azithromycin_contra_cholestatic",
+    "sourceId": "fda_azithromycin",
+    "pdfPage": 5,
+    "printedPage": "5",
+    "locator": "Section 4.2 / Contraindications - Hepatic Dysfunction / PDF p. 5",
+    "quote": "4.2 Hepatic Dysfunction ZITHROMAX is contraindicated in patients with a history of cholestatic jaundice/hepatic dysfunction associated with prior use of azithromycin.",
+    "quoteVi": "Chống chỉ định tuyệt đối Azithromycin ở bệnh nhân có tiền sử vàng da ứ mật hoặc rối loạn chức năng gan liên quan đến sử dụng azithromycin trước đó.",
+    "loe": "A"
+  },
+  {
+    "id": "fda.copd.azithromycin_myasthenia_gravis",
+    "sourceId": "fda_azithromycin",
+    "pdfPage": 7,
+    "printedPage": "7",
+    "locator": "Section 5.7 / Exacerbation of Myasthenia Gravis / PDF p. 7",
+    "quote": "5.7 Exacerbation of Myasthenia Gravis Exacerbations of symptoms of myasthenia gravis and new onset of myasthenic syndrome have been reported in patients receiving azithromycin therapy.",
+    "quoteVi": "Azithromycin có thể làm kịch phát yếu cơ nặng hoặc khởi phát hội chứng nhược cơ ở bệnh nhân mắc bệnh nhược cơ (Myasthenia Gravis).",
+    "loe": "B"
+  },
+  {
+    "id": "fda.copd.azithromycin_warfarin_digoxin",
+    "sourceId": "fda_azithromycin",
+    "pdfPage": 10,
+    "printedPage": "10",
+    "locator": "Section 7.2 & 7.3 / Drug Interactions - Warfarin & Digoxin / PDF p. 10",
+    "quote": "Prothrombin times should be carefully monitored while patients are receiving azithromycin and oral anticoagulants concomitantly. 7.3 Potential Drug-Drug Interaction with Macrolides Interactions with digoxin, colchicine or phenytoin have not been reported in clinical trials with azithromycin. No specific drug interaction studies have been performed to evaluate potential drug-drug interaction. However, drug interactions have been observed with other macrolide products. Until further data are developed regarding drug interactions when digoxin, colchicine or phenytoin are used with azithromycin careful monitoring of patients is advised.",
+    "quoteVi": "Cần theo dõi sát thời gian prothrombin/INR khi dùng Azithromycin cùng thuốc chống đông kháng vitamin K (warfarin) và theo dõi độc tính digoxin/colchicine/phenytoin khi phối hợp.",
+    "loe": "B"
+  },
+  {
+    "id": "fda.copd.dupilumab_helminth",
+    "sourceId": "fda_label_dupilumab",
+    "pdfPage": 13,
+    "printedPage": "13",
+    "locator": "Section 5.9 / Parasitic (Helminth) Infections / PDF p. 13",
+    "quote": "5.9 Parasitic (Helminth) Infections Patients with known helminth infections were excluded from participation in clinical studies. It is unknown if DUPIXENT will influence the immune response against helminth infections. Treat patients with pre-existing helminth infections before initiating therapy with DUPIXENT.",
+    "quoteVi": "Bắt buộc tầm soát và điều trị dứt điểm nhiễm giun sán ký sinh trùng (đặc biệt giun lươn Strongyloides stercoralis) trước khi khởi trị Dupilumab.",
+    "loe": "B"
+  },
+  {
+    "id": "fda.copd.dupilumab_cholecystitis",
+    "sourceId": "fda_label_dupilumab",
+    "pdfPage": 20,
+    "printedPage": "20",
+    "locator": "Section 6.1 / Clinical Trials Experience in COPD - Cholecystitis / PDF p. 20",
+    "quote": "In adult subjects with COPD, cholecystitis was reported in 6 subjects (0.6%) in the DUPIXENT group compared to 1 subject (0.1%) in the placebo group.",
+    "quoteVi": "Trong thử nghiệm lâm sàng COPD, viêm túi mật cấp được ghi nhận ở 0,6% nhóm Dupilumab so với 0,1% nhóm giả dược; cần theo dõi triệu chứng đau hạ sườn phải/sốt.",
+    "loe": "B"
+  },
+  {
+    "id": "fda.copd.dupilumab_boreas_fev1_30_70",
+    "sourceId": "fda_label_dupilumab",
+    "pdfPage": 61,
+    "printedPage": "61",
+    "locator": "Section 14.11 / Chronic Obstructive Pulmonary Disease (BOREAS & NOTUS) / PDF p. 61",
+    "quote": "COPD with moderate to severe airflow limitation (post-bronchodilator FEV /FVC ratio <0.7 and post-bronchodilator FEV of 30% to 70% predicted) and a minimum blood eosinophil count of 300 cells/mcL at screening.",
+    "quoteVi": "Các thử nghiệm BOREAS và NOTUS đánh giá Dupilumab trên bệnh nhân COPD tắc nghẽn mức độ trung bình–nặng (FEV₁ sau giãn phế quản từ 30% đến 70% dự đoán) kèm BCAT máu ≥ 300 tế bào/µL.",
+    "loe": "A"
+  },
+  {
+    "id": "gina.copd.2026.dupilumab_eos_1500_contra",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 247,
+    "printedPage": "246",
+    "locator": "Section 8 / Severe Asthma Biologics - Anti-IL4Rα / PDF p. 247",
+    "quote": "Not advised for patients with current or historical blood eosinophils ≥1500/μL.",
+    "quoteVi": "Không khuyến cáo khởi trị Dupilumab ở bệnh nhân hiện tại hoặc có tiền sử bạch cầu ái toan máu rất cao ≥ 1.500 tế bào/µL.",
+    "loe": "B"
+  },
+  {
+    "id": "gina.copd.2026.hypereosinophilia_1500_egpa",
+    "sourceId": "gina_2026_strategy",
+    "pdfPage": 160,
+    "printedPage": "159",
+    "locator": "Section 8 / Investigate for Comorbidities - Hypereosinophilia / PDF p. 160",
+    "quote": "If hypereosinophilia is found, e.g., blood eosinophils ≥1500/µL, consider causes such as eosinophilic granulomatosis with polyangiitis (EGPA).",
+    "quoteVi": "Khi bạch cầu ái toan máu ≥ 1.500 tế bào/µL, bắt buộc tầm soát nhiễm giun lươn Strongyloides và hội chứng u hạt tăng bạch cầu ái toan kèm viêm đa mạch (EGPA).",
+    "loe": "B"
+  },
+  {
+    "id": "fda.copd.roflumilast_cyp_inhibitors",
+    "sourceId": "fda_label_roflumilast",
+    "pdfPage": 6,
+    "printedPage": "6",
+    "locator": "Section 7.2 & 7.3 / Drugs that Inhibit CYP Enzymes & Oral Contraceptives / PDF p. 6",
+    "quote": "with CYP3A4 inhibitors or dual inhibitors that inhibit both CYP3A4 and CYP1A2 simultaneously (e.g., erythromycin, ketoconazole, fluvoxamine, enoxacin, cimetidine) may increase roflumilast systemic exposure and may result in increased adverse reactions. The risk of such concurrent use should be weighed carefully against benefit [see Clinical Pharmacology (12.3) ]. 7.3 Oral Contraceptives",
+    "quoteVi": "Phối hợp Roflumilast với chất ức chế CYP3A4 hoặc ức chế kép CYP3A4/CYP1A2 (fluvoxamine, enoxacin, cimetidine, ketoconazole, erythromycin) hoặc thuốc tránh thai chứa gestodene/ethinyl estradiol làm tăng mạnh phơi nhiễm toàn thân và độc tính.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.vaccination_covid19",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 61,
+    "printedPage": "50",
+    "locator": "Chapter 3 / Key Points - Vaccination / PDF p. 61",
+    "quote": "COVID-19 vaccines are highly effective against SARS-CoV-2 infection and people with COPD should have the COVID-19 vaccination in line with national recommendations.",
+    "quoteVi": "Người bệnh COPD cần được tiêm vắc xin phòng COVID-19 theo khuyến cáo quốc gia để giảm nhập viện và suy hô hấp nặng.",
+    "loe": "B"
+  },
+  {
+    "id": "gold.copd.2026.smoking_cessation_pharmacotherapy",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 61,
+    "printedPage": "50",
+    "locator": "Chapter 3 / Key Points - Smoking Cessation / PDF p. 61",
+    "quote": "All individuals who smoke should be strongly encouraged and supported to quit. Nicotine replacement and pharmacotherapy reliably increase long -term smoking abstinence rates. Legislative smoking bans and counseling, delivered by healthcare professionals, improve quit rates.",
+    "quoteVi": "Mọi người bệnh COPD đang hút thuốc cần được tư vấn tích cực và hỗ trợ bằng liệu pháp thay thế nicotine và thuốc cai thuốc lá để tăng tỷ lệ cai thành công dài hạn.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.smoking_varenicline_bupropion",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 154,
+    "printedPage": "143",
+    "locator": "Chapter 3 Appendix / Pharmacotherapy for Smoking Cessation / PDF p. 154",
+    "quote": "A study in patients with COPD showed higher continuous abstinence rates during weeks 9 to 24 with varenicline (58.3%) and bupropion (55.6%) compared with nicotine patch (38.2%).(1467)",
+    "quoteVi": "Varenicline, bupropion và liệu pháp thay thế nicotine chứng minh hiệu quả tăng tỷ lệ cai thuốc lá liên tục ở bệnh nhân COPD.",
+    "loe": "A"
+  },
+  {
+    "id": "byt.copd.2026.smoking_cessation_section_2_2_2",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 19,
+    "printedPage": "9",
+    "locator": "Chương 2 / Mục 2.2.2 Cai nghiện thuốc lá, thuốc lào / PDF tr. 19",
+    "quote": "Cai thuốc lá không chỉ là biện pháp dự phòng BPTNMT mà còn là biện pháp rất quan trọng trong điều trị toàn diện và ngăn chặn BPTNMT tiến triển nặng lên. Trong cai thuốc lá, việc tư vấn cho người bệnh đóng vai trò then ch ốt, các thuốc hỗ trợ cai giúp người bệnh cai thuốc lá dễ dàng hơn.",
+    "quoteVi": "Tư vấn cai nghiện thuốc lá, thuốc lào kết hợp các thuốc hỗ trợ cai đóng vai trò then chốt ngăn chặn COPD tiến triển nặng lên."
+  },
+  {
+    "id": "gold.copd.2026.oral_glucocorticoids_chronic_harm",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 162,
+    "printedPage": "151",
+    "locator": "Chapter 3 Appendix / Oral glucocorticoids / PDF p. 162",
+    "quote": "Oral glucocorticoids have numerous side effects, including steroid myopathy (1582) which can contribute to muscle weakness, decreased functionality, and respiratory failure.",
+    "quoteVi": "Corticosteroid đường uống dùng kéo dài gây nhiều tác dụng có hại nghiêm trọng (bệnh cơ do steroid làm yếu cơ hô hấp và suy hô hấp, suy thượng thận, loãng xương) mà không có bằng chứng lợi ích trong COPD ổn định.",
+    "loe": "A"
+  },
+  {
+    "id": "gold.copd.2026.dyspnea_ensifentrine",
+    "sourceId": "gold_2026_report",
+    "pdfPage": 77,
+    "printedPage": "66",
+    "locator": "Chapter 3 / Follow-up Pharmacological Management - Dyspnea / PDF p. 77",
+    "quote": "Considering adding ensifentrine if available. ► At all stages, dyspnea due to other causes (not COPD) should be investigated and treated appropriately.",
+    "quoteVi": "Ở người bệnh còn khó thở dai dẳng, xem xét bổ sung khí dung ensifentrine (nếu sẵn có) và ở mọi giai đoạn bắt buộc tầm soát, điều trị các nguyên nhân gây khó thở ngoài COPD.",
+    "loe": "B"
+  },
+  {
+    "id": "byt.copd.2026.abx_renal_cipro_30_50",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 103,
+    "printedPage": "93",
+    "locator": "Phụ lục 10 / Liều kháng sinh ở bệnh nhân suy thận - Ciprofloxacin / PDF tr. 103",
+    "quote": "Ciprofloxacin Uống > 50 0,25 - 0,75 g mỗi 12 giờ 30 - 50 0,25 - 0,5 g mỗi 12 giờ 5 - 29 0,5 - 0,75 g mỗi 24 giờ",
+    "quoteVi": "Ciprofloxacin đường uống phải giảm liều ngay từ mức thanh thải creatinin Clcr 30–50 mL/phút (0,25–0,5 g mỗi 12 giờ) và kéo dài khoảng cách mỗi 24 giờ khi Clcr 5–29 mL/phút."
+  },
+  {
+    "id": "byt.copd.2026.abx_renal_levo_20_49",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 104,
+    "printedPage": "94",
+    "locator": "Phụ lục 10 / Liều kháng sinh ở bệnh nhân suy thận - Levofloxacin / PDF tr. 104",
+    "quote": "Levofloxacin Truyền TM, uống >50 0,75 g mỗi 24 giờ hoặc 0,5 g mỗi 12 giờ 20 - 49 0,75 g mỗi 48 giờ hoặc 0,5g mỗi 24 giờ < 20 Liều nạp: 0,75 g Liều duy trì: 0,5 g m ỗi 48 giờ",
+    "quoteVi": "Levofloxacin bắt buộc hiệu chỉnh liều ngay khi Clcr < 50 mL/phút (Clcr 20–49 mL/phút: 0,75 g mỗi 48 giờ hoặc 0,5 g mỗi 24 giờ; Clcr < 20 mL/phút: nạp 0,75 g sau đó 0,5 g mỗi 48 giờ)."
+  },
+  {
+    "id": "byt.copd.2026.quinolone_elderly_tendon",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 38,
+    "printedPage": "28",
+    "locator": "Chương 3 / Mục 3.4.4d Kháng sinh trong đợt cấp nội trú / PDF tr. 38",
+    "quote": "một số tác dụng không mong mu ốn trên gân, cơ, tim mạch, thần kinh, tâm thần và rối loạn đường huyết khi sử dụng quinolon ở bệnh nhân cao tuổi.",
+    "quoteVi": "Cảnh giác cao nguy cơ viêm/đứt gân Achilles, biến cố tim mạch (QTc/động mạch chủ), sảng thần kinh và rối loạn đường huyết khi dùng fluoroquinolone ở người cao tuổi, đặc biệt khi phối hợp corticosteroid toàn thân."
+  },
+  {
+    "id": "byt.copd.2026.bb_oxygen_dependent_caution",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 53,
+    "printedPage": "43",
+    "locator": "Chương 5 / Bệnh đồng mắc tim mạch trong BPTNMT / PDF tr. 53",
+    "quote": "Không thực hiện Kê đơn thuốc chẹn beta không chọn lọc trên tim mạch Thay thế thuốc chẹn beta bằng các thuốc nhóm chẹn kênh Canxi như diltiazem, verapamil, hoặc digoxin Kê đơn thuốc chẹn beta ở những người bệnh BPTNMT phụ thuộc oxy do nguy cơ tăng tử vong.",
+    "quoteVi": "Không kê đơn thuốc chẹn beta không chọn lọc; thận trọng tối đa và không tự ý khởi trị chẹn beta nếu không có chỉ định tim mạch bắt buộc ở bệnh nhân COPD giảm oxy máu nặng / phụ thuộc oxy dài hạn."
+  },
+  {
+    "id": "byt.copd.2026.macrolide_domperidone_contra",
+    "sourceId": "byt_2026_copd",
+    "pdfPage": 107,
+    "printedPage": "97",
+    "locator": "Phụ lục 11 / Các cặp tương tác thuốc chống chỉ định - STT 2 & 3 / PDF tr. 107",
+    "quote": "Kháng sinh nhóm macrolid: Erythromycin Clarithromycin Domperidon Kháng sinh nhóm macrolid ức chế CYP3A4 làm gi ảm chuyển hóa của domperidon Tăng n ồng đ ộ domperidon trong huy ết thanh, tăng nguy cơ kéo dài khoảng QT Chống ch ỉ định phối hợp 3 Kháng sinh nhóm macrolid: Azithromycin Roxithromycin Spiramycin Domperidon",
+    "quoteVi": "Chống chỉ định phối hợp nhóm kháng sinh macrolid (azithromycin, clarithromycin, erythromycin, roxithromycin, spiramycin) với domperidone do hiệp đồng kéo dài khoảng QT và xoắn đỉnh."
+  },
+  {
+    "id": "byt.copd.2023.vte_hit_contra",
+    "sourceId": "byt_2023_vte",
+    "pdfPage": 17,
+    "printedPage": "15",
+    "locator": "Mục Chống chỉ định thuốc kháng đông / HIT / PDF tr. 17",
+    "quote": "Tiền sử xuất huyết giảm tiểu cầu nhất là hạ tiểu cầu do heparin (HIT, heparin-induced thrombocytopenia)",
+    "quoteVi": "Chống chỉ định tuyệt đối LMWH và UFH ở bệnh nhân có tiền sử giảm tiểu cầu miễn dịch do heparin (HIT); chuyển sang biện pháp cơ học (IPC) hoặc thuốc chống đông không phải heparin."
+  },
+  {
+    "id": "byt.copd.2023.vte_platelets_lt_50",
+    "sourceId": "byt_2023_vte",
+    "pdfPage": 22,
+    "printedPage": "20",
+    "locator": "Bảng yếu tố nguy cơ chảy máu IMPROVE / Tiểu cầu < 50 G/L / PDF tr. 22",
+    "quote": "Xuất huyết trong vòng 3 tháng trước nhập viện 4 Số lượng tiểu cầu < 50 x 109/l 4 Tuổi ≥ 85",
+    "quoteVi": "Giảm tiểu cầu nặng (< 50 G/L hay < 50 x 10⁹/L) là yếu tố nguy cơ xuất huyết nặng hàng đầu: tránh kháng đông dự phòng bằng thuốc và chuyển sang dự phòng cơ học (IPC / tất áp lực)."
+  }
+]

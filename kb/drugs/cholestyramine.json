@@ -1,0 +1,118 @@
+{
+  "id": "cholestyramine",
+  "nameVi": "Cholestyramine",
+  "inn": "Cholestyramine (Colestyramine)",
+  "class": "Nhựa gắn acid mật (Bile acid sequestrant)",
+  "classes": [
+    "bile_acid_sequestrant"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Questran"
+  ],
+  "forms": [
+    "Gói bột pha hỗn dịch uống 4 g cholestyramine khan"
+  ],
+  "start": {
+    "amount": 4,
+    "unit": "g",
+    "frequency": "1–2 lần/ngày",
+    "route": "uống",
+    "description": "Khởi đầu 4 g (1 gói) pha kỹ với ít nhất 120–180 mL nước/nước trái cây uống trong bữa ăn 1–2 lần/ngày để giảm tác dụng phụ tiêu hóa"
+  },
+  "target": {
+    "amount": "8–16",
+    "unit": "g",
+    "frequency": "chia 1–2 lần/ngày",
+    "route": "uống",
+    "description": "Duy trì 8–16 g/ngày chia 1–2 lần cùng bữa ăn (tối đa 24 g/ngày)"
+  },
+  "titration": {
+    "step": "Tăng dần mỗi 4 g/ngày cách mỗi 4 tuần tùy dung nạp tiêu hóa và đáp ứng LDL-C; kiểm tra triglycerid máu",
+    "intervalDays": 28,
+    "maxDose": "24 g/ngày chia 2 lần"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "8–16 g/ngày (không hấp thu toàn thân nên không cần chỉnh liều theo thận)",
+      "citationIds": [
+        "acc.lipid.2026.cholestyramine_colesevelam_dosing",
+        "acc.lipid.2026.bas_safe_pregnancy_lactation"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "Không cần chỉnh liều theo thận; lưu ý theo dõi toan chuyển hóa tăng clo máu ở suy thận giai đoạn cuối",
+      "citationIds": [
+        "acc.lipid.2026.bas_safe_pregnancy_lactation"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_cholestyramine_tg_high",
+      "parameter": "tg",
+      "operator": ">=",
+      "threshold": 3.4,
+      "unit": "mmol/L",
+      "action": "avoid",
+      "messageVi": "Triglycerid ≥ 3.4 mmol/L (300 mg/dL): Tránh dùng Cholestyramine do thuốc làm tăng thêm triglycerid máu và nguy cơ viêm tụy cấp",
+      "citationIds": [
+        "acc.lipid.2026.bas_tg_300_contra"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Nhựa gắn acid mật không hấp thu vào tuần hoàn toàn thân nên an toàn khi cần hạ LDL-C trong thai kỳ (ACC/AHA 2026 Bảng 20); lưu ý theo dõi thiếu hụt vitamin tan trong dầu (A, D, E, K – nguy cơ giảm prothrombin).",
+    "citationIds": [
+      "acc.lipid.2026.bas_safe_pregnancy_lactation"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Không bài tiết vào sữa mẹ do không hấp thu toàn thân; thận trọng bổ sung vitamin tan trong dầu cho mẹ nếu điều trị kéo dài.",
+    "citationIds": [
+      "acc.lipid.2026.bas_safe_pregnancy_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "biliary_obstruction",
+      "messageVi": "Chống chỉ định khi tắc mật hoàn toàn (mật không bài tiết vào ruột nên thuốc không có tác dụng)",
+      "citationIds": [
+        "acc.lipid.2026.cholestyramine_colesevelam_dosing"
+      ]
+    },
+    {
+      "code": "obstructive_bowel_disease",
+      "messageVi": "Chống chỉ định ở bệnh nhân tắc ruột cơ học hoặc tiền sử phẫu thuật tiêu hóa lớn có nguy cơ tắc ruột",
+      "citationIds": [
+        "acc.lipid.2026.colesevelam_3_75g_po"
+      ]
+    },
+    {
+      "code": "severe_hypertriglyceridemia",
+      "messageVi": "Chống chỉ định khi tăng triglycerid máu nặng hoặc tiền sử viêm tụy cấp do tăng triglycerid",
+      "citationIds": [
+        "acc.lipid.2026.bas_tg_300_contra"
+      ]
+    }
+  ],
+  "interactions": [
+    "Gắn kết mạnh trong lòng ruột làm giảm hấp thu warfarin, acenocoumarol, levothyroxine, digoxin, lợi tiểu thiazide, furosemide, propranolol, ezetimibe, mycophenolate: BẮT BUỘC uống các thuốc khác ít nhất 1 giờ trước (2 giờ trước với ezetimibe) hoặc 4 giờ sau Cholestyramine",
+    "Giảm hấp thu các vitamin tan trong dầu (A, D, E, K) và acid folic khi dùng liều cao kéo dài"
+  ],
+  "citationIds": [
+    "acc.lipid.2026.cholestyramine_colesevelam_dosing",
+    "acc.lipid.2026.bas_safe_pregnancy_lactation",
+    "acc.lipid.2026.bas_tg_300_contra",
+    "esc.lipid.2019.bas_spacing_4h_before_1h_after"
+  ]
+}

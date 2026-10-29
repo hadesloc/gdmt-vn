@@ -1,0 +1,26 @@
+{
+  "itemId": "nitroglycerin",
+  "contentHash": "7fe2d731986cbbe302b356b5873c430a118dbd50a11cb1c8d07a4a64425c7074",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "nitroglycerin",
+      "contentHash": "bba535f74903dc76",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Hypertension Specialist (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Nitroglycerin (truyền tĩnh mạch) (Nitroglycerin) đầy đủ liều lượng, classes (nitrate), dải thận, thai kỳ/cho con bú, chống chỉ định máy đọc và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

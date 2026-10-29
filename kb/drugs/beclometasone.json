@@ -1,0 +1,70 @@
+{
+  "id": "beclometasone",
+  "nameVi": "Beclometasone dipropionate",
+  "inn": "Beclometasone dipropionate",
+  "class": "ICS",
+  "vnBrands": [
+    "Clenil (tại VN chủ yếu lưu hành dạng hạt siêu mịn phối hợp Foster; Becotide/Becloforte CFC đã ngừng lưu hành)"
+  ],
+  "forms": [
+    "Bình xịt định liều hạt siêu mịn pMDI 100 mcg, 250 mcg"
+  ],
+  "start": {
+    "amount": 100,
+    "unit": "mcg",
+    "frequency": "1-2 lần/ngày",
+    "route": "hít",
+    "description": "Liều thấp 100–200 mcg/ngày (hạt siêu mịn)"
+  },
+  "target": {
+    "amount": 400,
+    "unit": "mcg",
+    "frequency": "2 lần/ngày",
+    "route": "hít",
+    "description": "Liều cao >400 mcg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận",
+      "citationIds": [
+        "gina.asthma.2026.table_6_beclometasone_extrafine"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Hướng dẫn dùng thuốc: Súc miệng kỹ bằng nước sạch và nhổ đi ngay sau khi hít thuốc để phòng ngừa nấm candida hầu họng và khản tiếng"
+  ],
+  "citationIds": [
+    "gina.asthma.2026.table_6_beclometasone_extrafine"
+  ],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Dữ liệu an toàn thai kỳ phong phú, được GINA khuyến cáo tiếp tục trong thai kỳ.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Tương thích khi cho con bú.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity",
+      "messageVi": "Quá mẫn với beclometasone dipropionate",
+      "citationIds": [
+        "gina.asthma.2026.table_6_beclometasone_extrafine"
+      ]
+    }
+  ],
+  "classes": [
+    "ics"
+  ]
+}

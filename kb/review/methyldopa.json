@@ -1,0 +1,26 @@
+{
+  "itemId": "methyldopa",
+  "contentHash": "e930e1352ac87361474097caafa4a047e05f99f15f0fb4b9bf8eaede8d18c11e",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "methyldopa",
+      "contentHash": "fc0856549683f948",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Hypertension Specialist (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Methyldopa (Methyldopa) đầy đủ liều lượng, classes (central_alpha2_agonist), dải thận, thai kỳ/cho con bú, chống chỉ định máy đọc và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

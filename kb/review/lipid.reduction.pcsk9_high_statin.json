@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.reduction.pcsk9_high_statin",
+  "contentHash": "60f31db1391f8f4f9a4e4eeb1c3147e2354953cc54b3ff1726d30b070b8b4d46",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.reduction.pcsk9_high_statin",
+      "contentHash": "d2d2b1f34132d112",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.reduction.pcsk9_high_statin."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

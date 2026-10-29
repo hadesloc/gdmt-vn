@@ -1,0 +1,69 @@
+{
+  "id": "gout_39_febuxostat_80mg_severe_ckd_reduce_40mg",
+  "titleVi": "Suy thận nặng (eGFR < 30 mL/phút) đang dùng Febuxostat 80 mg/ngày: Bắt buộc GIẢM LIỀU xuống trần an toàn 40 mg/ngày",
+  "source": "FDA Uloric Label Section 2.2 & 8.6 (fda.febuxostat.severe_renal, fda.febuxostat.renal_clcr_30)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "US",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "male",
+    "weight": 64,
+    "scr": 270,
+    "uricAcid": 430,
+    "conditions": {
+      "gout": true,
+      "ckd": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "febuxostat",
+        "name": "Febuxostat",
+        "dose": "80",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 2,
+      "hlab5801": "positive"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "febuxostat",
+        "ruleId": "rec_gout_febuxostat_renal_reduce",
+        "action": "REDUCE",
+        "doseContains": "40 mg"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "febuxostat",
+        "action": "UPTITRATE"
+      },
+      {
+        "drugId": "febuxostat",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 68 tuổi mang gen HLA-B*58:01 dương tính kèm CKD giai đoạn 4 (SCr 270 µmol/L, eGFR ~21 mL/phút) đang dùng Febuxostat 80 mg/ngày vượt quá trần suy thận nặng. Hệ thống phát lệnh REDUCE giảm liều Febuxostat xuống tối đa 40 mg/ngày theo nhãn FDA Uloric."
+}

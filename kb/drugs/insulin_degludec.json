@@ -1,0 +1,100 @@
+{
+  "id": "insulin_degludec",
+  "nameVi": "Insulin Degludec",
+  "inn": "Insulin degludec",
+  "class": "Ultra-long Basal Insulin",
+  "vnBrands": [
+    "Tresiba"
+  ],
+  "forms": [
+    "Bút tiêm FlexTouch 100 U/mL (3 mL)"
+  ],
+  "start": {
+    "amount": 10,
+    "unit": "đơn vị",
+    "frequency": "1 lần/ngày",
+    "route": "tiêm dưới da",
+    "description": "Hoặc 0.1–0.2 đơn vị/kg/ngày tiêm vào thời điểm linh hoạt trong ngày (cách nhau tối thiểu 8 giờ)"
+  },
+  "target": {
+    "amount": 20,
+    "unit": "đơn vị",
+    "frequency": "1 lần/ngày",
+    "route": "tiêm dưới da"
+  },
+  "titration": {
+    "step": "2 đơn vị",
+    "intervalDays": 3
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Liều chuẩn theo đường huyết đói",
+      "citationIds": [
+        "ada.dm2.2026.basal_start_and_titration"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Giảm liều khi cần và theo dõi đường huyết đói",
+      "citationIds": [
+        "ada.dm2.2026.basal_start_and_titration",
+        "ada.dm2.2026.kidney_failure_hypo_clearance"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Giảm 25–50% liều và theo dõi sát đường huyết (kể cả lọc máu)",
+      "citationIds": [
+        "ada.dm2.2026.kidney_failure_hypo_clearance"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_degludec_hypo_recent",
+      "parameter": "recent_hypo",
+      "operator": "==",
+      "threshold": 1,
+      "action": "hold",
+      "messageVi": "Có hạ đường huyết gần đây: Không tăng liều insulin.",
+      "citationIds": [
+        "ada.dm2.2026.basal_start_and_titration"
+      ]
+    }
+  ],
+  "interactions": [
+    "Nguy cơ hạ đường huyết tăng khi phối hợp với sulfonylurea"
+  ],
+  "citationIds": [
+    "ada.dm2.2026.basal_start_and_titration",
+    "ada.dm2.2026.kidney_failure_hypo_clearance"
+  ],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Insulin nền analog siêu dài được BYT QĐ 5481/2020 và ADA 2026 cho phép sử dụng cho phụ nữ có thai",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_insulin",
+      "byt.dm2.2020.pregnancy_insulin"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "An toàn khi nuôi con bú",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_insulin"
+    ]
+  },
+  "contraindications": [],
+  "classes": [
+    "insulin",
+    "insulin_basal"
+  ]
+}

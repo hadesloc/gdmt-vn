@@ -1,0 +1,73 @@
+{
+  "id": "asthma_34_step5_controller_kept_and_eos_biologic",
+  "titleVi": "Bậc 5 Hen nặng: Giữ thuốc kiểm soát nền ICS-formoterol + Đọc chuẩn patient.eos cho Sinh học",
+  "source": "GINA 2026 / ASTHMA-R2-04 / ASTHMA-R3-09",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_34",
+    "name": "Nữ 48 tuổi",
+    "age": 48,
+    "sex": "female",
+    "weight": 60,
+    "sbp": 120,
+    "dbp": 76,
+    "hr": 80,
+    "rhythm": "sinus",
+    "fev1Pct": 54,
+    "eos": 450,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "budesonide_formoterol",
+        "name": "Symbicort",
+        "dose": "160/4.5 mcg x 2 nhát x 2 lần/ngày",
+        "freq": "2 lần/ngày"
+      }
+    ],
+    "customInputs": {
+      "currentTrack": "track1",
+      "currentStep": 4,
+      "daytimeSymptomsMoreThanTwiceWeek": true,
+      "nightWakingDueToAsthma": true,
+      "relieverNeededMoreThanTwiceWeek": true,
+      "activityLimitationDueToAsthma": true,
+      "inhalerTechniqueCorrect": true,
+      "goodAdherence": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "CONTINUE"
+      },
+      {
+        "ruleId": "rec_asthma_track1_step5_lama_biologic",
+        "action": "REFER"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Tiến triển lên Bậc 5 không bao giờ làm rớt thuốc kiểm soát nền Budesonide/formoterol (CONTINUE) và đọc được cả trường chuẩn patient.eos = 450 tế bào/uL."
+}

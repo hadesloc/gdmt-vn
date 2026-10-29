@@ -1,0 +1,70 @@
+{
+  "id": "gout_18_tophaceous_gout_uptitrate_target_300_intl",
+  "titleVi": "Gút có hạt tophi trên hồ sơ INTL (Urat 340 µmol/L ≥ đích 300 µmol/L): Tăng liều Allopurinol & Dự phòng bùng phát",
+  "source": "EULAR 2016 & ACR 2020 (eular.gout.2016.sua_target_300, acr.gout.2020.treat_to_target)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 59,
+    "sex": "male",
+    "weight": 71,
+    "scr": 85,
+    "uricAcid": 340,
+    "tophi": true,
+    "conditions": {
+      "gout": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "allopurinol",
+        "name": "Allopurinol",
+        "dose": "200",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 2,
+      "tophi": true,
+      "hlab5801": "negative"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_uptitrate",
+        "action": "UPTITRATE"
+      },
+      {
+        "drugId": "colchicine",
+        "ruleId": "rec_gout_colchicine_prophylaxis",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "allopurinol",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 59 tuổi gút có hạt tophi đang uống Allopurinol 200 mg/ngày, urat máu 340 µmol/L. Dù < 360 µmol/L nhưng chưa đạt đích gút nặng < 300 µmol/L (EULAR 2016) nên cần UPTITRATE Allopurinol kèm dự phòng cơn cấp."
+}

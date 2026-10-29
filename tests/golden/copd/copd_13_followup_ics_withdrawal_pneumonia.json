@@ -1,0 +1,60 @@
+{
+  "id": "copd_13_followup_ics_withdrawal_pneumonia",
+  "titleVi": "COPD theo dõi: Rút thành phần ICS do viêm phổi tái diễn",
+  "source": "GOLD 2026 Report p. 77 / ICS Withdrawal",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_13",
+    "age": 74,
+    "sex": "male",
+    "weight": 58,
+    "height": 165,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 76,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "name": "Trelegy Ellipta",
+        "dose": 100,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.5,
+      "fev1PredPct": 48,
+      "priorPneumonia": true,
+      "currentInhaler": "triple",
+      "bloodEos": 150
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "tiotropium_olodaterol",
+        "action": "SWITCH"
+      }
+    ]
+  }
+}

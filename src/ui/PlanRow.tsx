@@ -1,0 +1,183 @@
+import { useState } from 'react';
+import type { Recommendation, Action } from '../engine/types';
+import { EvidenceQuote } from './EvidenceQuote';
+import { deduplicateCleanCitationIds, resolveCitationDisplay } from './kbLookup';
+
+export interface PlanRowProps {
+  recommendation: Recommendation;
+  defaultExpanded?: boolean;
+  onOpenMatrix?: (drugId?: string) => void;
+}
+
+const ACTION_MAP: Record<Action, { label: string; className: string }> = {
+  START: { label: 'BẮT ĐẦU', className: 'badge-start' },
+  UPTITRATE: { label: 'TĂNG LIỀU', className: 'badge-uptitrate' },
+  CONTINUE: { label: 'TIẾP TỤC', className: 'badge-continue' },
+  REDUCE: { label: 'GIẢM LIỀU', className: 'badge-reduce' },
+  SWITCH: { label: 'CHUYỂN ĐỔI', className: 'badge-switch' },
+  HOLD: { label: 'TẠM HOÃN', className: 'badge-hold' },
+  STOP: { label: 'NGỪNG THUỐC', className: 'badge-stop' },
+  AVOID: { label: 'CHỐNG CHỈ ĐỊNH', className: 'badge-avoid' },
+  CONSIDER: { label: 'CÂN NHẮC', className: 'badge-consider' },
+  DEFER: { label: 'HOÃN LẠI', className: 'badge-defer' },
+  MONITOR: { label: 'THEO DÕI', className: 'badge-monitor' },
+  REFER: { label: 'CHUYỂN KHÁM', className: 'badge-refer' }
+};
+
+export const PlanRow = ({
+  recommendation: r,
+  defaultExpanded = false,
+  onOpenMatrix
+}: PlanRowProps) => {
+  const [isExpanded, setIsExpanded] = useState(defaultExpanded);
+
+  const actionInfo = ACTION_MAP[r.action] || { label: r.action, className: 'badge-continue' };
+  const cleanCitationIds = deduplicateCleanCitationIds(r.citationIds);
+
+  return (
+    <div className="plan-row-card" data-testid={`plan-row-${r.id}`}>
+      <div
+        className="plan-row-header"
+        onClick={() => setIsExpanded(!isExpanded)}
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            setIsExpanded(!isExpanded);
+          }
+        }}
+      >
+        <div className="plan-row-title-area">
+          <span className={`badge-action ${actionInfo.className}`}>
+            {actionInfo.label}
+          </span>
+          <span className="plan-row-name">{r.drugNameVi || r.title}</span>
+          {r.dose && <span className="plan-row-dose">{r.dose}</span>}
+          {r.benefitsAlso && r.benefitsAlso.length > 0 && (
+            <span
+              style={{
+                fontSize: '0.75rem',
+                color: '#2563eb',
+                background: '#eff6ff',
+                padding: '2px 6px',
+                borderRadius: '4px',
+                fontWeight: 600
+              }}
+            >
+              + {r.benefitsAlso.map((m) => m.toUpperCase()).join(' · ')}
+            </span>
+          )}
+        </div>
+        <div style={{ color: 'var(--text-subtle)', fontSize: '0.9rem', flexShrink: 0 }}>
+          {isExpanded ? '▲' : '▼'}
+        </div>
+      </div>
+
+      {isExpanded && (
+        <div className="plan-row-body" data-testid={`plan-row-body-${r.id}`}>
+          <div style={{ fontSize: '0.9rem', marginBottom: '0.5rem', color: 'var(--text-main)' }}>
+            <strong>Chỉ định lâm sàng:</strong> {r.rationale}
+          </div>
+
+          {/* Gating Status Pills */}
+          {r.gates && r.gates.length > 0 && (
+            <div>
+              <div style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-muted)' }}>
+                Đánh giá cổng an toàn (Gating):
+              </div>
+              <div className="gating-pills">
+                {r.gates.map((g, idx) => (
+                  <span
+                    key={idx}
+                    className={`gating-pill ${g.passed ? 'passed' : 'failed'}`}
+                  >
+                    {g.passed ? '✓' : '⚠'} {g.parameter}: {g.messageVi}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Profile differences if available */}
+          {r.profileDiff && (
+            <div
+              style={{
+                fontSize: '0.8rem',
+                margin: '0.5rem 0',
+                padding: '0.5rem',
+                background: '#fef3c7',
+                borderRadius: '6px',
+                color: '#92400e'
+              }}
+            >
+              <strong>Khác biệt giữa các khuyến cáo:</strong>
+              {r.profileDiff.INTL && <div>• Quốc tế: {r.profileDiff.INTL}</div>}
+              {r.profileDiff.VN && <div>• Bộ Y tế: {r.profileDiff.VN}</div>}
+              {r.profileDiff.US && <div>• Hoa Kỳ: {r.profileDiff.US}</div>}
+            </div>
+          )}
+
+          {/* Warnings */}
+          {r.warnings && r.warnings.length > 0 && (
+            <div style={{ margin: '0.5rem 0' }}>
+              {r.warnings.map((w, idx) => (
+                <div key={idx} style={{ color: '#b91c1c', fontSize: '0.85rem' }}>
+                  ⚠ Cảnh báo: {w}
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Evidence Quotes from verified KB */}
+          {cleanCitationIds.length > 0 && (
+            <div style={{ marginTop: '0.75rem' }}>
+              <div style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-muted)' }}>
+                Bằng chứng trích dẫn nguyên văn:
+              </div>
+              {cleanCitationIds.map((cid) => {
+                const resolved = resolveCitationDisplay(cid, {
+                  drugId: r.drugId,
+                  moduleId: r.module,
+                  explicitStatus: r.reviewStatus
+                });
+                return (
+                  <EvidenceQuote
+                    key={cid}
+                    quote={resolved.quote}
+                    quoteVi={resolved.quoteVi}
+                    sourceOrg={resolved.sourceOrg}
+                    sourceTitle={resolved.sourceTitle}
+                    locator={resolved.locator}
+                    page={resolved.page}
+                    cor={resolved.cor}
+                    loe={resolved.loe}
+                    reviewStatus={resolved.reviewStatus}
+                  />
+                );
+              })}
+            </div>
+          )}
+
+          {/* Actions button */}
+          <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
+            {onOpenMatrix && r.drugId && (
+              <button
+                type="button"
+                className="btn-header"
+                style={{
+                  background: 'var(--bg-surface)',
+                  color: 'var(--primary)',
+                  borderColor: 'var(--primary)'
+                }}
+                onClick={() => onOpenMatrix(r.drugId)}
+              >
+                📊 Xem ma trận thận
+              </button>
+            )}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};

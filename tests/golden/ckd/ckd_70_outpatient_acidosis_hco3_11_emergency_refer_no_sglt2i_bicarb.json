@@ -1,0 +1,52 @@
+{
+  "id": "ckd_70_outpatient_acidosis_hco3_11_emergency_refer_no_sglt2i_bicarb",
+  "titleVi": "Ngoại trú - Toan chuyển hóa nặng (HCO₃⁻ = 11 mmol/L < 12 mmol/L) -> Chuyển viện Cấp cứu REFER khẩn cấp, không kê viên uống NaHCO₃, không khởi trị SGLT2i và không phát trùng REFER thường quy (Regression CKD-R3-R3-07, R3-08)",
+  "source": "ADA 2024 Hyperglycemic Crises Table 2 (HCO3- < 12 mmol/L) & BYT 2024 Mục 4.10.3.1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_70",
+    "name": "BN CKD 70",
+    "age": 62,
+    "sex": "female",
+    "weight": 55,
+    "sbp": 128,
+    "dbp": 76,
+    "hr": 88,
+    "scr": 280,
+    "k": 4.8,
+    "hco3": 11,
+    "uacr": 45,
+    "conditions": {
+      "ckd": true,
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "rec_ckd_acidosis_emergency_refer", "action": "REFER" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "sodium_bicarbonate", "action": "START" },
+      { "drugId": "dapagliflozin", "action": "START" },
+      { "ruleId": "rec_ckd_refer_specialist", "action": "REFER" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R3-R3-07 & R3-08: Nâng ngưỡng cấp cứu toan chuyển hóa ngoại trú lên HCO3- < 12 mmol/L để phủ dải nguy kịch 10–11.9 mmol/L, chặn khởi trị SGLT2i (nguy cơ eDKA) và không phát trùng REFER chuyên khoa thường quy."
+}

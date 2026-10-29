@@ -1,0 +1,52 @@
+{
+  "id": "ckd_60_inpatient_g3a_iv_contrast_consider_not_mandatory",
+  "titleVi": "Nội viện - CKD G3a (eGFR ~51 mL/phút/1.73m²) chụp CT cản quang tĩnh mạch thường quy -> Phân tầng CONSIDER dự phòng CI-AKI thay vì START cứng như eGFR < 45 (Regression CKD-R2-R3-15)",
+  "source": "KDIGO 2024 CKD Section 4.5 & ESC 2026 CVD-CKD",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_60",
+    "name": "BN CKD 60",
+    "age": 62,
+    "sex": "male",
+    "weight": 72,
+    "sbp": 126,
+    "dbp": 76,
+    "hr": 72,
+    "scr": 135,
+    "k": 4.3,
+    "conditions": {
+      "ckd": true,
+      "htn": true
+    },
+    "currentMeds": [],
+    "selectedModules": ["ckd"],
+    "customInputs": {
+      "contrastPlanned": true,
+      "contrastRouteIntraArterial": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "rec_ckd_ci_aki_bundle", "action": "CONSIDER" }
+    ],
+    "mustNotInclude": [
+      { "ruleId": "rec_ckd_ci_aki_bundle", "action": "START" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R2-R3-15: Ở eGFR 45–59 mL/phút/1.73m² chụp cản quang tĩnh mạch thông thường có nguy cơ CA-AKI thấp nên phát CONSIDER cá thể hóa, dành START bắt buộc cho eGFR < 45 hoặc đường động mạch."
+}

@@ -1,0 +1,27 @@
+{
+  "itemId": "ckd.finerenone.hf_target_dose_high",
+  "contentHash": "4e0f3547693b97a366e35adf3b6e6406b3c0d03dd605c37fb275cf2b559df704",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.finerenone.hf_target_dose_high",
+      "contentHash": "811628c50bfd82c7",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T07:03:44.560Z",
+          "role": "agent_e3_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 2 cho ckd.finerenone.hf_target_dose_high."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T07:03:44.560Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

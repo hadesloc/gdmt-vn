@@ -1,0 +1,26 @@
+{
+  "itemId": "af.cha2ds2va.low_risk",
+  "contentHash": "ea2ae41c321a8480d850a718f05155773b43f6a505d91f061d1670e9cb6ea328",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.cha2ds2va.low_risk",
+      "contentHash": "43b85f744e398b53",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.cha2ds2va.low_risk (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

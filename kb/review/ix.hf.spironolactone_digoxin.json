@@ -1,0 +1,27 @@
+{
+  "itemId": "ix.hf.spironolactone_digoxin",
+  "contentHash": "ff248eab161e8d5c6c589a235f6453687689bf712746105a9898c15e205c98ac",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.hf.spironolactone_digoxin",
+      "contentHash": "df7095d843ea932b",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T09:00:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-28T09:00:00.000Z",
+          "role": "Agent G5 (HF Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF interaction ix.hf.spironolactone_digoxin (Round 2 R1/R2/R3 remediation & verbatim PDF citation verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

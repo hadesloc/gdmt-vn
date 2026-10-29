@@ -1,0 +1,94 @@
+{
+  "id": "gout_30_hf_preserve_furosemide_keep_aspirin",
+  "titleVi": "Đồng mắc Gút + Suy tim + Bệnh mạch vành đang dùng Furosemide & Aspirin liều thấp: Bảo toàn cả Furosemide lẫn Aspirin",
+  "source": "ACR 2020 & EULAR 2016 (acr.gout.2020.keep_low_dose_aspirin, eular.gout.2016.diuretic_losartan)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 69,
+    "sex": "male",
+    "weight": 68,
+    "scr": 115,
+    "uricAcid": 320,
+    "conditions": {
+      "gout": true,
+      "hf": true,
+      "ascvd": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "furosemide",
+        "name": "Furosemide",
+        "dose": "40",
+        "unit": "mg"
+      },
+      {
+        "drugId": "aspirin",
+        "name": "Aspirin",
+        "dose": "81",
+        "unit": "mg"
+      },
+      {
+        "drugId": "allopurinol",
+        "name": "Allopurinol",
+        "dose": "200",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 2,
+      "hlab5801": "negative"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "aspirin",
+        "ruleId": "rec_gout_keep_low_dose_aspirin",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_continue",
+        "action": "CONTINUE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "furosemide",
+        "action": "STOP"
+      },
+      {
+        "drugId": "furosemide",
+        "action": "SWITCH"
+      },
+      {
+        "drugId": "aspirin",
+        "action": "STOP"
+      },
+      {
+        "ruleId": "rec_gout_switch_thiazide_losartan",
+        "action": "SWITCH"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 69 tuổi Gút kèm Suy tim và Bệnh mạch vành đang dùng Furosemide kiểm soát sung huyết, Aspirin 81 mg dự phòng huyết khối và Allopurinol đã đạt đích urat (320 µmol/L). Tuyệt đối không tự ý cắt lợi tiểu quai ở suy tim và tiếp tục duy trì Aspirin liều thấp."
+}

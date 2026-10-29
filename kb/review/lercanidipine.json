@@ -1,0 +1,26 @@
+{
+  "itemId": "lercanidipine",
+  "contentHash": "3c33be1dc1000337ed98f15a102e4f97229eda00fe900dcb00a407aec7ace6ab",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lercanidipine",
+      "contentHash": "19e8f2d3ec19e25e",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Lercanidipine (Lercanidipine) đầy đủ liều lượng, classes (dhp_ccb), dải thận, thai kỳ/cho con bú, chống chỉ định máy đọc và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

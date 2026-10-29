@@ -1,0 +1,50 @@
+{
+  "id": "lipid_12_outpatient_lpa_screen",
+  "titleVi": "Chưa đo Lp(a) - Khuyến cáo đo ít nhất 1 lần trong đời",
+  "source": "ESC 2025 / esc.lipid.2025.lpa_measurement_lifetime",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 40,
+    "sex": "male",
+    "weight": 68,
+    "height": 170,
+    "sbp": 120,
+    "dbp": 80,
+    "hr": 70,
+    "scr": 75,
+    "tc": 5,
+    "hdl": 1.2,
+    "ldl": 2.8,
+    "tg": 1.5,
+    "conditions": {},
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_lipid_lpa_screen",
+        "action": "MONITOR"
+      }
+    ],
+    "mustNotInclude": []
+  },
+  "descriptionVi": "Khuyến cáo đo Lp(a) ít nhất 1 lần trong đời."
+}

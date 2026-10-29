@@ -1,0 +1,56 @@
+{
+  "id": "lipid_09_outpatient_missing_ldl",
+  "titleVi": "Thiếu LDL-C - Fail-closed không sinh START statin, sinh CONSIDER",
+  "source": "MODULE_CONTRACT 1.1 / fail-closed",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 50,
+    "sex": "male",
+    "weight": 70,
+    "height": 170,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 74,
+    "scr": 85,
+    "tc": 5.5,
+    "hdl": 1.1,
+    "tg": 1.9,
+    "conditions": {
+      "ascvd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "missing_input_ldl",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Thiếu LDL-C bắt buộc fail-closed, nhắc người dùng nhập xét nghiệm."
+}

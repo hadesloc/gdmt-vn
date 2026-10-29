@@ -1,0 +1,84 @@
+{
+  "id": "copd_67_r3_sama_on_lama_stop_and_bph_caution",
+  "titleVi": "Hồi quy R3 (COPD-R3-R1-08 & R1-17): COPD ổn định đang dùng LAMA+LABA kèm Ipratropium (SAMA) bắt buộc NGỪNG SAMA trùng lặp và vẫn duy trì LAMA+LABA khi phì đại tiền liệt tuyến đã kiểm soát",
+  "source": "GOLD 2026 Chapter 3 / FDA Spiriva Label (COPD-R3-R1-08, COPD-R3-R1-17)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_67",
+    "age": 71,
+    "sex": "male",
+    "weight": 68,
+    "height": 168,
+    "sbp": 128,
+    "dbp": 76,
+    "hr": 74,
+    "egfr": 66,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "tiotropium_olodaterol",
+        "name": "Spiolto Respimat",
+        "dose": 5,
+        "unit": "mcg"
+      },
+      {
+        "drugId": "ipratropium",
+        "name": "Atrovent",
+        "dose": 40,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.54,
+      "fev1PredPct": 60,
+      "mmrc": 1,
+      "cat": 8,
+      "moderateExacerbations": 0,
+      "hospitalizations": 0,
+      "bloodEos": 130,
+      "currentInhaler": "laba_lama",
+      "controlledBphOrTreatedGlaucoma": true,
+      "smokingStatus": "former"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "ipratropium",
+        "ruleId": "rec_copd_stop_sama_on_lama",
+        "action": "STOP"
+      },
+      {
+        "drugId": "tiotropium_olodaterol",
+        "ruleId": "rec_copd_continue_maintenance",
+        "action": "CONTINUE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "tiotropium_olodaterol",
+        "action": "STOP"
+      }
+    ]
+  }
+}

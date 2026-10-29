@@ -1,0 +1,149 @@
+{
+  "id": "propafenone",
+  "nameVi": "Propafenone",
+  "inn": "Propafenone hydrochloride",
+  "class": "Thuốc chống loạn nhịp nhóm IC (ức chế kênh Natri)",
+  "classes": [
+    "antiarrhythmic_ic"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Rytmonorm"
+  ],
+  "forms": [
+    "Viên nén bao phim 150 mg",
+    "Viên nén bao phim 300 mg"
+  ],
+  "start": {
+    "amount": 150,
+    "unit": "mg",
+    "frequency": "3 lần/ngày",
+    "route": "uống",
+    "description": "Khởi đầu 150 mg uống 3 lần/ngày sau bữa ăn (phối hợp kèm thuốc ức chế dẫn truyền nút nhĩ thất)"
+  },
+  "target": {
+    "amount": 150,
+    "unit": "mg",
+    "frequency": "3 lần/ngày",
+    "route": "uống",
+    "description": "150–300 mg uống 3 lần/ngày"
+  },
+  "titration": {
+    "step": "Tăng từ 150 mg x 3 lần/ngày lên 300 mg x 2–3 lần/ngày sau tối thiểu 3–4 ngày theo dõi khoảng QRS trên ECG",
+    "intervalDays": 4,
+    "maxDose": "300 mg 3 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "crclFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "150–300 mg 3 lần/ngày",
+      "citationIds": [
+        "esc.af.2024.table13_propafenone"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "crclTo": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Thận trọng dò liều thấp và theo dõi sát bề rộng QRS trên ECG",
+      "citationIds": [
+        "esc.af.2024.table13_propafenone"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_propafenone_cad",
+      "parameter": "coronary_artery_disease",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "boolean",
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối propafenone ở bệnh nhân có bệnh mạch vành, phì đại thất trái nặng hoặc suy tim",
+      "citationIds": [
+        "esc.af.2024.aad_flecainide_propafenone"
+      ]
+    },
+    {
+      "id": "gate_propafenone_lvef",
+      "parameter": "LVEF",
+      "operator": "<=",
+      "threshold": 40,
+      "unit": "%",
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối propafenone khi LVEF ≤ 40% hoặc có bệnh tim cấu trúc",
+      "citationIds": [
+        "esc.af.2024.aad_flecainide_propafenone"
+      ]
+    }
+  ],
+  "interactions": [
+    "Cần phối hợp thuốc ức chế dẫn truyền nút nhĩ thất (chẹn beta hoặc verapamil/diltiazem) để phòng ngừa cuồng nhĩ dẫn truyền 1:1",
+    "Làm tăng nồng độ digoxin và warfarin; có hoạt tính chẹn beta nhẹ nên thận trọng ở bệnh nhân hen phế quản nặng"
+  ],
+  "citationIds": [
+    "esc.af.2024.aad_flecainide_propafenone",
+    "esc.af.2024.table13_propafenone",
+    "esc.af.2024.pregnancy_rhythm_flec_prop",
+    "esc.preg.2025.flecainide_sotalol_propafenone",
+    "acc.af.2023.table23_propafenone_liver",
+    "esc.af.2024.table12_bb_iv_doses",
+    "esc.af.2024.qtc_500_conduction_contra"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Thận trọng, có thể cân nhắc kiểm soát nhịp trong thai kỳ ở bệnh nhân không có bệnh tim cấu trúc khi các biện pháp khác không hiệu quả (ESC 2024 AF Class IIb / ESC 2025 Pregnancy)",
+    "citationIds": [
+      "esc.af.2024.pregnancy_rhythm_flec_prop",
+      "esc.preg.2025.flecainide_sotalol_propafenone"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Dữ liệu còn hạn chế nhưng nồng độ qua sữa mẹ thấp, thận trọng theo dõi trẻ khi cho con bú (ESC 2025 Pregnancy)",
+    "citationIds": [
+      "esc.preg.2025.flecainide_sotalol_propafenone"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "coronary_artery_disease",
+      "messageVi": "Chống chỉ định Propafenone ở bệnh nhân có bệnh mạch vành hoặc bệnh tim cấu trúc",
+      "citationIds": [
+        "esc.af.2024.aad_flecainide_propafenone"
+      ]
+    },
+    {
+      "code": "reduced_lvef",
+      "messageVi": "Chống chỉ định Propafenone ở bệnh nhân suy tim có phân suất tống máu giảm (LVEF ≤ 40%)",
+      "citationIds": [
+        "esc.af.2024.aad_flecainide_propafenone"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định / Tránh dùng Propafenone ở bệnh nhân suy gan nặng do thuốc chuyển hóa chính qua gan",
+      "citationIds": [
+        "acc.af.2023.table23_propafenone_liver"
+      ]
+    },
+    {
+      "code": "reactive_airway_disease",
+      "messageVi": "Tránh dùng Propafenone ở bệnh nhân hen phế quản / co thắt phế quản nặng do hoạt tính chẹn beta giao cảm kèm theo",
+      "citationIds": [
+        "esc.af.2024.table12_bb_iv_doses"
+      ]
+    },
+    {
+      "code": "av_block_2_3",
+      "messageVi": "Chống chỉ định Propafenone ở bệnh nhân block nhĩ thất độ 2–3 hoặc suy nút xoang chưa đặt máy tạo nhịp",
+      "citationIds": [
+        "esc.af.2024.qtc_500_conduction_contra"
+      ]
+    }
+  ]
+}

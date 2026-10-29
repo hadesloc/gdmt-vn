@@ -1,0 +1,64 @@
+{
+  "id": "gout_40_us_mgdl_unit_boundary_6_0_uptitrate",
+  "titleVi": "Đơn vị mg/dL tại ranh giới sUA = 6.0 mg/dL (chưa đạt đích < 6.0 mg/dL): Chuẩn độ tăng liều Allopurinol chính xác",
+  "source": "ACR 2020 (acr.gout.2020.target_urate_under_6, acr.gout.2020.treat_to_target)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "US",
+    "units": {
+      "cr": "mg_dL",
+      "glucose": "mg_dL",
+      "lipid": "mg_dL",
+      "urat": "mg_dL",
+      "uacr": "mg_g",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 52,
+    "sex": "male",
+    "weight": 80,
+    "scr": 1.0,
+    "uricAcid": 6.0,
+    "conditions": {
+      "gout": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "allopurinol",
+        "name": "Allopurinol",
+        "dose": "200",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 2,
+      "hlab5801": "negative"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_uptitrate",
+        "action": "UPTITRATE",
+        "doseContains": "100 mg"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "allopurinol",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 52 tuổi nhập Acid uric = 6.0 mg/dL (hệ đơn vị US mg/dL). Trước đây quy đổi sang µmol/L (6.0 × 59.48 = 356.88 < 360) sẽ nhận định nhầm là đạt đích; nhờ so sánh theo đơn vị gốc (6.0 không nhỏ hơn 6.0 mg/dL), hệ thống khuyến cáo UPTITRATE Allopurinol chính xác theo mục tiêu ACR 2020 < 6 mg/dL."
+}

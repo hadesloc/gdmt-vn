@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.exac_saba_first_hour_max_doses",
+  "contentHash": "69c130f2a37acfd6b078cf81a32b5689c2734a7da8e078a1c72b5d1efda389d6",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.exac_saba_first_hour_max_doses",
+      "contentHash": "01d1ab642b1138d9",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "fda.copd.roflumilast_psychiatric_weight",
+  "contentHash": "9132430f4d43a8baedb95c275f84d6f9349412e3a813a210ec85580aeeb05a46",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "fda.copd.roflumilast_psychiatric_weight",
+      "contentHash": "152dbc8610ac610a",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

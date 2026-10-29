@@ -1,0 +1,52 @@
+{
+  "id": "lipid_14_inpatient_acute_acs",
+  "titleVi": "ACS nội viện <= 24h - Khởi trị Statin liều cao sớm bất kể mức LDL",
+  "source": "ESC 2024 CCS / esc.lipid.2024.ccs_statin_highest_dose",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 56,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 80,
+    "scr": 85,
+    "tc": 4.8,
+    "hdl": 1,
+    "ldl": 3.1,
+    "tg": 1.6,
+    "conditions": {
+      "acuteAcsWithin24h": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": []
+  },
+  "descriptionVi": "Nhập viện vì ACS trong 24h: khởi trị statin cường độ cao ngay."
+}

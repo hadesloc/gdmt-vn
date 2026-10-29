@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.safety.ck_uln_rhabdomyolysis",
+  "contentHash": "fe1bc705a2c4104e3d0920c188a5a554971f94a9d2acf4c4d981377f294443bb",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.safety.ck_uln_rhabdomyolysis",
+      "contentHash": "342779b5136fa0c1",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.safety.ck_uln_rhabdomyolysis."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "itemId": "hf.sglt2i.egfr_initiate_min_us",
+  "contentHash": "70c57f39074d6ae80d60b763d27c57535f1e2e5d6c920d03758c69890b5d1530",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "hf.sglt2i.egfr_initiate_min_us",
+      "contentHash": "9bb92af085a932e6",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T09:00:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-28T09:00:00.000Z",
+          "role": "Agent G5 (HF Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF threshold hf.sglt2i.egfr_initiate_min_us (Round 2 R1/R2/R3 remediation & verbatim PDF citation verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

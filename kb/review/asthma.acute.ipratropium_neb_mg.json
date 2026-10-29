@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.acute.ipratropium_neb_mg",
+  "contentHash": "63998cc1452d7ddbe1f8249993dd1ce7ef8386bba404bfdcce198db2e2009cda",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.acute.ipratropium_neb_mg",
+      "contentHash": "38f8efb175e8e8f0",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:53:57.954Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng asthma.acute.ipratropium_neb_mg có trích dẫn hợp lệ và đại lượng chuẩn hóa QA-10 (dose_mg)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:53:57.954Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

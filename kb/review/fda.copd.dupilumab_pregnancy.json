@@ -1,0 +1,26 @@
+{
+  "itemId": "fda.copd.dupilumab_pregnancy",
+  "contentHash": "8bd9220ffb0e291a076506e3773e9e4ea8c25a44db6ff54eeb5da7f1dd2cb1c3",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "fda.copd.dupilumab_pregnancy",
+      "contentHash": "4f3cd8f76c5b9cd9",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "af_31_doac_stop_apixaban_crcl_lt15",
+  "titleVi": "Suy thận giai đoạn cuối CrCl < 15 mL/min đang dùng Apixaban: DỪNG NGAY DOAC (R3-AF-09 / ADV_AF_09)",
+  "source": "ESC 2024 AF Table 11 / esc.af.2024.table11_doac_dosing",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 78,
+    "sex": "female",
+    "weight": 48,
+    "height": 150,
+    "sbp": 125,
+    "dbp": 75,
+    "hr": 75,
+    "rhythm": "afib",
+    "lvef": 55,
+    "scr": 220,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "ckd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "apixaban",
+        "name": "Eliquis",
+        "dose": 2.5,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "apixaban",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "apixaban",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "apixaban",
+        "action": "REDUCE"
+      }
+    ]
+  },
+  "descriptionVi": "CrCl ~13.9 mL/min < 15 mL/min đang dùng Apixaban (R3-AF-09): Bắt buộc phát lệnh STOP Apixaban theo ESC 2024 / EMA."
+}

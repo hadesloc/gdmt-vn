@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.kfre.krt_prep_2y",
+  "contentHash": "51568a77fd2be96c2f14b51ee961f89e3f187ad66d90ae7b316ddfc08f9b0d8b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.kfre.krt_prep_2y",
+      "contentHash": "028bcff8ab73ce28",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.125Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.kfre.krt_prep_2y."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

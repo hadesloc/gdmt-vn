@@ -1,0 +1,71 @@
+{
+  "id": "dm2_46_outpatient_steroid_nph_vildagliptin_liver",
+  "titleVi": "Ngoại trú đang dùng Corticoid kèm tăng men gan ALT 4.2x ULN trên nền uống Vildagliptin",
+  "source": "ADA 2026 SOC Ch. 16 & EMA Label Vildagliptin",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 57,
+    "sex": "male",
+    "weight": 66,
+    "height": 167,
+    "sbp": 128,
+    "dbp": 80,
+    "hr": 78,
+    "scr": 80,
+    "k": 4.2,
+    "glucose": 12.8,
+    "hba1c": 8.4,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "vildagliptin",
+        "name": "Vildagliptin",
+        "dose": 50,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "onSteroidTherapy": true,
+      "altUlnTimes": 4.2
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "insulin_nph",
+        "action": "START"
+      },
+      {
+        "drugId": "vildagliptin",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "vildagliptin",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Ngoại trú dùng Glucocorticoid được chỉ định Insulin NPH buổi sáng; đồng thời ngừng Vildagliptin do chống chỉ định suy gan / men gan ALT > 3x ULN."
+}

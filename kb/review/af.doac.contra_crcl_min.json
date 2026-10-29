@@ -1,0 +1,26 @@
+{
+  "itemId": "af.doac.contra_crcl_min",
+  "contentHash": "522cc5bcdb6e482a076f52f5af3bad2638e3c30eb3fa3fc89d4eb15c6732afe7",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.doac.contra_crcl_min",
+      "contentHash": "9a8becba2c11315e",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.doac.contra_crcl_min (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

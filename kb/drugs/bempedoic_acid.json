@@ -1,0 +1,123 @@
+{
+  "id": "bempedoic_acid",
+  "nameVi": "Bempedoic acid",
+  "inn": "Bempedoic acid",
+  "class": "Thuốc ức chế ATP citrate lyase",
+  "classes": [
+    "atp_citrate_lyase_inhibitor",
+    "acl_inhibitor"
+  ],
+  "vnBrands": [],
+  "forms": [
+    "Viên nén bao phim 180 mg (Nexletol - tham chiếu quốc tế, chưa lưu hành rộng rãi tại Việt Nam)"
+  ],
+  "start": {
+    "amount": 180,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "180 mg uống 1 lần/ngày, cùng hoặc không cùng thức ăn"
+  },
+  "target": {
+    "amount": 180,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "180 mg uống 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "180 mg 1 lần/ngày",
+      "note": "Không cần chỉnh liều ở suy thận nhẹ và trung bình; theo dõi acid uric máu",
+      "citationIds": [
+        "fda.bempedoic.dose",
+        "esc.lipid.2025.bempedoic_statin_intolerance"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "180 mg 1 lần/ngày (thận trọng)",
+      "note": "Không cần chỉnh liều theo nhãn FDA nhưng kinh nghiệm lâm sàng ở suy thận nặng (eGFR < 30) còn hạn chế và chưa nghiên cứu ở bệnh thận giai đoạn cuối lọc máu",
+      "citationIds": [
+        "fda.bempedoic.dose",
+        "esc.lipid.2025.bempedoic_statin_intolerance"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_bempedoic_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định sử dụng Bempedoic acid trong thai kỳ và thời kỳ cho con bú do nguy cơ gây hại cho thai nhi",
+      "citationIds": [
+        "fda.bempedoic.pregnancy_contra",
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    },
+    {
+      "id": "gate_bempedoic_uric_acid",
+      "parameter": "uricAcid",
+      "operator": ">",
+      "threshold": 420,
+      "unit": "µmol/L",
+      "action": "caution",
+      "messageVi": "Acid uric máu > 420 µmol/L hoặc tiền sử gút: Bempedoic acid ức chế OAT2 làm tăng acid uric máu và có thể khởi phát cơn gút cấp",
+      "citationIds": [
+        "fda.bempedoic.hyperuricemia",
+        "fda.bempedoic.gout_risk",
+        "byt.lipid.gout_uric_420"
+      ]
+    }
+  ],
+  "interactions": [
+    "Tránh phối hợp với Simvastatin liều > 20 mg/ngày hoặc Pravastatin liều > 40 mg/ngày do làm tăng nồng độ statin ~2 lần và nguy cơ bệnh cơ",
+    "Nguy cơ tăng acid uric máu và khởi phát cơn gút cấp (do ức chế OAT2 ở ống thận): đánh giá acid uric định kỳ, thận trọng/tránh khi đang có gút cấp",
+    "Nguy cơ viêm gân / đứt gân (gân Achilles, cơ nhị đầu, chóp xoay): tránh dùng ở người có tiền sử đứt gân hoặc bệnh lý gân; ngừng ngay khi có triệu chứng đau/sưng gân"
+  ],
+  "citationIds": [
+    "fda.bempedoic.dose",
+    "fda.bempedoic.hyperuricemia",
+    "fda.bempedoic.gout_risk",
+    "fda.bempedoic.tendon_rupture",
+    "fda.bempedoic.pregnancy_contra",
+    "fda.bempedoic.simvastatin_avoid_gt_20mg",
+    "esc.lipid.2025.bempedoic_statin_intolerance",
+    "esc.lipid.2025.bempedoic_add_on",
+    "fda.bempedoic.pravastatin_avoid_gt_40mg"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Ngừng thuốc ngay khi phát hiện mang thai do cơ chế ức chế tổng hợp cholesterol có thể gây hại cho thai nhi (FDA NEXLETOL / ESC)",
+    "citationIds": [
+      "fda.bempedoic.pregnancy_contra",
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "lactation": {
+    "status": "contra",
+    "notesVi": "Không cho con bú trong thời gian điều trị bằng Bempedoic acid (FDA NEXLETOL / ESC)",
+    "citationIds": [
+      "fda.bempedoic.pregnancy_contra",
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định trong thai kỳ và thời kỳ cho con bú",
+      "citationIds": [
+        "fda.bempedoic.pregnancy_contra",
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    }
+  ]
+}

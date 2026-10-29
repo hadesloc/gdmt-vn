@@ -1,0 +1,26 @@
+{
+  "itemId": "af.periprocedural.xa_hold_renal_days",
+  "contentHash": "91bad190b8cbe0c2a10d4802cdd8f366895d6c879651aba4e26fbf1015ac5b4c",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.periprocedural.xa_hold_renal_days",
+      "contentHash": "c2ff880c8ef6d962",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.periprocedural.xa_hold_renal_days (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

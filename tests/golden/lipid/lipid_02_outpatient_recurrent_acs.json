@@ -1,0 +1,53 @@
+{
+  "id": "lipid_02_outpatient_recurrent_acs",
+  "titleVi": "ASCVD tái phát biến cố trong 2 năm - Đích LDL-C < 1.0 mmol/L",
+  "source": "ESC/EAS 2019 / esc.lipid.2019.target_recurrent_acs",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "female",
+    "weight": 62,
+    "height": 156,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 70,
+    "scr": 90,
+    "tc": 4.2,
+    "hdl": 1.1,
+    "ldl": 1.6,
+    "tg": 1.5,
+    "conditions": {
+      "ascvd": true,
+      "recurrentAcsWithin2Years": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": []
+  },
+  "descriptionVi": "Bệnh nhân ASCVD tái phát trong 2 năm, đích điều trị LDL-C hạ sâu < 1.0 mmol/L."
+}

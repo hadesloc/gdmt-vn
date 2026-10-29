@@ -1,0 +1,124 @@
+{
+  "id": "warfarin",
+  "nameVi": "Warfarin",
+  "inn": "Warfarin sodium",
+  "class": "Thuốc kháng vitamin K (VKA)",
+  "classes": [
+    "vka",
+    "oac"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Coumadin"
+  ],
+  "forms": [
+    "Viên nén 1 mg",
+    "Viên nén 2 mg",
+    "Viên nén 5 mg"
+  ],
+  "start": {
+    "amount": 2.5,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Khởi đầu 2.5–5 mg/ngày (uống buổi tối), theo dõi và chuẩn độ theo xét nghiệm INR"
+  },
+  "target": {
+    "amount": 5,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Liều cá thể hóa duy trì INR đích 2.0–3.0 (hoặc 2.5–3.5 ở van hai lá cơ học), TTR > 70%"
+  },
+  "titration": {
+    "step": "Điều chỉnh liều 1–2.5 mg/ngày dựa theo INR mỗi 3–7 ngày trong giai đoạn dò liều",
+    "intervalDays": 3,
+    "maxDose": "Cá thể hóa theo INR đích 2.0–3.0"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "crclFrom": 15,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "Chuẩn độ theo INR đích 2.0–3.0",
+      "citationIds": [
+        "esc.af.2024.vka_target_inr"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "crclTo": 15,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "Chuẩn độ theo INR đích 2.0–3.0, theo dõi sát INR và xuất huyết ở suy thận giai đoạn cuối",
+      "citationIds": [
+        "esc.af.2024.vka_target_inr"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_warfarin_inr_range",
+      "parameter": "INR",
+      "operator": ">",
+      "threshold": 3,
+      "unit": "INR",
+      "action": "reduce",
+      "messageVi": "INR > 3.0: Nguy cơ xuất huyết tăng cao, cần giảm liều warfarin hoặc tạm ngưng",
+      "citationIds": [
+        "esc.af.2024.vka_target_inr"
+      ]
+    }
+  ],
+  "interactions": [
+    "Rất nhiều tương tác thuốc và thực phẩm (amiodarone, metronidazole, fluconazole, cotrimoxazole làm tăng mạnh INR -> cần giảm liều warfarin 30–50%; NSAID tăng xuất huyết; chế độ ăn giàu vitamin K làm giảm INR)"
+  ],
+  "citationIds": [
+    "esc.af.2024.vka_target_inr",
+    "esc.af.2024.vka_only_mechanical_mitral",
+    "fda.warfarin.pregnancy_contra",
+    "fda.warfarin.lactation",
+    "esc.af.2024.bleeding_interrupt"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Chống chỉ định trong thai kỳ ở phụ nữ rung nhĩ không có van tim cơ học (FDA Boxed Warning) do qua nhau thai gây hội chứng warfarin bào thai (quái thai tam cá nguyệt 1) và xuất huyết thai nhi; ngoại lệ duy nhất có thể cân nhắc dưới giám sát chuyên khoa ở bệnh nhân mang van cơ học nguy cơ cao",
+    "citationIds": [
+      "fda.warfarin.pregnancy_contra",
+      "esc.af.2024.pregnancy_oac"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Warfarin không bài tiết dạng có hoạt tính qua sữa mẹ, tương thích an toàn khi cho con bú (ESC 2025 Pregnancy / nhãn FDA)",
+    "citationIds": [
+      "esc.preg.2025.vka_lactation",
+      "fda.warfarin.lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định Warfarin trong thai kỳ do gây quái thai (hội chứng warfarin bào thai) và xuất huyết thai nhi",
+      "citationIds": [
+        "fda.warfarin.pregnancy_contra",
+        "esc.af.2024.pregnancy_oac"
+      ]
+    },
+    {
+      "code": "active_bleeding",
+      "messageVi": "Chống chỉ định Warfarin khi đang có tình trạng xuất huyết tiến triển",
+      "citationIds": [
+        "esc.af.2024.bleeding_interrupt"
+      ]
+    },
+    {
+      "code": "acute_ich",
+      "messageVi": "Chống chỉ định Warfarin trong xuất huyết nội sọ cấp tính",
+      "citationIds": [
+        "esc.af.2024.bleeding_interrupt"
+      ]
+    }
+  ]
+}

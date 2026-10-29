@@ -1,0 +1,146 @@
+[
+  {
+    "id": "CKD-R2-01",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "ckd.inpatient.emergency_dialysis_indication",
+    "finding": "Luật chỉ định lọc máu cấp cứu sử dụng nhầm ngưỡng toan chuyển hóa ngoại trú điều trị bằng NaHCO3 uống (ckd.acidosis.hco3_min = 18 mmol/L) làm tiêu chuẩn 'Toan chuyển hóa nặng mất bù' để chỉ định đặt catheter và lọc máu cấp cứu khẩn cấp (rec_ckd_emergency_rrt). Khi chạy evaluate BN 3 (Preset 3: HCO3- = 17 mmol/L), hệ thống đã chỉ định lọc máu cấp cứu khẩn cấp dù bệnh nhân chỉ có toan chuyển hóa mức độ nhẹ-vừa thường gặp trong CKD.",
+    "evidence": "Code src/modules/ckd/rules.inpatient.ts dòng 265: 'const severeAcidosis = hco3 !== undefined && hco3 < th('ckd.acidosis.hco3_min');'. Giá trị ckd.acidosis.hco3_min trong kb/thresholds/ckd.json là 18 mmol/L (mô tả: 'Ngưỡng bicarbonat huyết thanh (< 18 mmol/L) chỉ định điều trị kiềm hóa bằng natri bicarbonat đường uống'). Output thực tế khi chạy Preset 3: Bệnh nhân Lê Văn C (HCO3- = 17 mmol/L) kích hoạt: '[REFER] rec_ckd_emergency_rrt: CHỈ ĐỊNH LỌC MÁU CẤP CỨU (Thận nhân tạo ngắt quãng HD / CRRT) - rationale: Toan chuyển hóa nặng mất bù (HCO3- 17 mmol/L). Cần đặt catheter lọc máu có cuff/không cuff cấp cứu...'. Theo UKKA 2022 (Khuyến cáo 18.1) và KDIGO AKI 2012, chỉ định lọc máu cấp cứu do toan máu (chữ A trong AEIOU) chỉ đặt ra khi toan chuyển hóa nặng mất bù kháng trị (pH < 7.15 hoặc HCO3- < 10–12 mmol/L không đáp ứng với điều trị nội khoa). Ngưỡng 18 mmol/L là ngưỡng bù kiềm uống, hoàn toàn không phải chỉ định lọc máu cấp cứu.",
+    "suggestedFix": "Tách ngưỡng toan máu cấp cứu thành một Threshold riêng trong KB (ví dụ: ckd.inpatient.dialysis_severe_acidosis_hco3 = 10 hoặc 12 mmol/L, hoặc kèm tiêu chí pH < 7.15 kháng trị bù kiềm), tuyệt đối không tái sử dụng ckd.acidosis.hco3_min (18 mmol/L)."
+  },
+  {
+    "id": "CKD-R2-02",
+    "severity": "major",
+    "itemType": "drug",
+    "itemId": "calcium_polystyrene_sulfonate",
+    "finding": "Thuộc tính vnBrands của calcium_polystyrene_sulfonate.json liệt kê 'Resonium A', và rules.outpatient.ts (dòng 721) hiển thị tiêu đề khuyến cáo 'Sử dụng chất gắn Kali (Resonium) để duy trì RASi'. Trên thực tế dược lý và thị trường Việt Nam, 'Resonium A' (Sanofi) là Sodium Polystyrene Sulfonate (chứa natri, giải phóng ~1 g Na+ / liều 15 g), còn Calcium Polystyrene Sulfonate là Kalimate hoặc K-Pion. Việc gắn tên Resonium A cho muối canxi có thể gây nguy hiểm cho bệnh nhân CKD có quá tải dịch hoặc suy tim nếu bác sĩ chỉ định nhầm Resonium A.",
+    "evidence": "File kb/drugs/calcium_polystyrene_sulfonate.json dòng 6-10: 'vnBrands': ['Resonium A', 'Kalimate', 'K-Pion']. Dược thư Quốc gia Việt Nam & Tờ hướng dẫn sử dụng Resonium A (Sanofi): 'Resonium A là muối natri của acid polystyren sulfonic... Mỗi liều 15 g chứa khoảng 43 mmol (1 g) natri. Thận trọng đặc biệt ở bệnh nhân suy tim, tăng huyết áp, phù phổi hoặc suy thận nặng'. Muối calci tại Việt Nam lưu hành chính thức dưới tên Kalimate (gói 5 g) và K-Pion (gói 5 g).",
+    "suggestedFix": "Xóa 'Resonium A' khỏi vnBrands của calcium_polystyrene_sulfonate.json. Thay bằng ['Kalimate', 'K-Pion', 'Calcium Resonium']. Đồng thời sửa hiển thị trong rules.outpatient.ts và rules.inpatient.ts thành 'Kalimate / K-Pion (Calcium Polystyrene Sulfonate)' thay vì gọi chung là 'Resonium'."
+  },
+  {
+    "id": "CKD-R2-03",
+    "severity": "major",
+    "itemType": "drug",
+    "itemId": "sodium_zirconium_cyclosilicate",
+    "finding": "Trong trường target.description của sodium_zirconium_cyclosilicate.json, văn bản ghi: 'Liều duy trì 10 g 1 lần/ngày (hoặc 5 mg cách ngày - 15 g/ngày)'. Đơn vị '5 mg' là sai sót nghiêm trọng về mặt thứ nguyên liều (sai 1.000 lần so với liều chuẩn 5 g).",
+    "evidence": "File kb/drugs/sodium_zirconium_cyclosilicate.json dòng 25: 'description': 'Liều duy trì 10 g 1 lần/ngày (hoặc 5 mg cách ngày - 15 g/ngày)'. Nhãn FDA Lokelma (FDA_label_sodium_zirconium_cyclosilicate.pdf trang 1, mục 2.1): 'For maintenance treatment, the recommended dose is 10 g once daily. The dose can be titrated to 5 g once daily, up to 15 g once daily, or 5 g every other day based on serum potassium target'.",
+    "suggestedFix": "Đổi '5 mg cách ngày' thành '5 g cách ngày' trong target.description."
+  },
+  {
+    "id": "CKD-R2-04",
+    "severity": "major",
+    "itemType": "matrix",
+    "itemId": "ckdMatrix",
+    "finding": "Trong ma trận matrix.ts, ô AKI (getAkiCell) trả về { initiate: 'contra', continue: 'caution' } cho các nhóm dapagliflozin, empagliflozin, canagliflozin, finerenone, perindopril, losartan. Việc để continue: 'caution' trong đợt AKI tạo ấn tượng sai lệch rằng bác sĩ có thể tiếp tục cho bệnh nhân uống thuốc trong đợt tổn thương thận cấp, mâu thuẫn trực tiếp với luật nội viện ckd.inpatient.hold_sick_day_meds (action: 'HOLD') và khuyến cáo KDIGO 2024 Practice Point 3.7.2 / 4.3.3.",
+    "evidence": "File src/modules/ckd/matrix.ts dòng 59-66: 'if (['dapagliflozin', 'empagliflozin', 'canagliflozin', 'finerenone', 'perindopril', 'losartan'].includes(drugId)) { return { initiate: 'contra', continue: 'caution', citationIds: ['kdigo.ckd.2024.pp_3_7_2_sick_day_hold'] }; }'. File src/modules/ckd/rules.inpatient.ts dòng 125-127: 'action: 'HOLD', title: 'TẠM NGỪNG khẩn cấp các thuốc: ...''. KDIGO 2024 Practice Point 3.7.2 & 4.3.3: Bắt buộc tạm ngừng thuốc ức chế SGLT2, RASi và MRA trong đợt bệnh cấp tính có mất nước hoặc AKI.",
+    "suggestedFix": "Chuyển continue trong getAkiCell của các thuốc SGLT2i, RASi, nsMRA từ 'caution' thành 'hold' (hoặc 'contra')."
+  },
+  {
+    "id": "CKD-R2-05",
+    "severity": "major",
+    "itemType": "matrix",
+    "itemId": "ckdMatrix",
+    "finding": "Cột G4 (15–29 mL/min/1.73m²) trong ma trận được tính toán bằng getCell(22). Với SGLT2i, ngưỡng khởi trị là eGFR >= 20; tại điểm 22, ma trận hiển thị initiate: 'rec', khiến bác sĩ xem cột G4 (15–29) có thể hiểu nhầm là bệnh nhân eGFR 15–19 mL/min/1.73m² (thuộc G4) được phép khởi trị SGLT2i. Với Finerenone, ngưỡng khởi trị là eGFR >= 25; tại điểm 22, ma trận hiển thị initiate: 'not_rec', làm mất cơ hội khởi trị cho bệnh nhân có eGFR 25–29 mL/min/1.73m² (cũng thuộc G4).",
+    "evidence": "File src/modules/ckd/matrix.ts dòng 83: 'g4: getCell(22)'. File kb/drugs/dapagliflozin.json dòng 33: 'eGFRFrom: 20' (initiate: rec); dòng 44: 'eGFRTo: 20' (initiate: not_rec). File kb/drugs/finerenone.json dòng 44: 'eGFRFrom: 25, eGFRTo: 60' (initiate: rec); dòng 54: 'eGFRTo: 25' (initiate: not_rec). Bảng KDIGO 2024 định nghĩa G4 là 15–29 mL/min/1.73m², trong khi ngưỡng nhãn thuốc cắt tại 20 và 25 mL/min/1.73m².",
+    "suggestedFix": "Bổ sung trường note làm rõ cho ô G4 (ví dụ SGLT2i: 'Khởi trị khi eGFR 20–29, không khởi trị nếu eGFR 15–19'; Finerenone: 'Khởi trị 10 mg khi eGFR 25–29, không khởi trị nếu < 25') hoặc tách hiển thị rõ dải chuyển tiếp."
+  },
+  {
+    "id": "CKD-R2-06",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "ckd.outpatient.sglt2i_initiate",
+    "finding": "Module chỉ có luật khởi trị SGLT2i khi chưa dùng (sglt2i_initiate, yêu cầu chưa có SGLT2i) và luật duy trì khi eGFR < 20 (sglt2i_continue_below_20, yêu cầu eGFR < 20). Khi bệnh nhân đã đang sử dụng SGLT2i (như Dapagliflozin 10 mg) và có eGFR ổn định >= 20 (như Preset 2 có eGFR = 22), hệ thống KHÔNG đưa ra bất kỳ khuyến cáo nào về SGLT2i (bị biến mất hoàn toàn khỏi danh sách khuyến cáo).",
+    "evidence": "File src/modules/ckd/rules.outpatient.ts dòng 28-31: 'if (hasSglt2i) return false;'. Dòng 112: 'return Boolean(hasSglt2i && egfr !== undefined && egfr < th('ckd.sglt2i.egfr_initiate_min') && egfr > 0);'. Kết quả evaluate Preset 2 (Trần Thị B, eGFR = 22, currentMeds có Dapagliflozin 10 mg): Không có bất kỳ khuyến cáo nào về Dapagliflozin trong kết quả trả về của engine.",
+    "suggestedFix": "Bổ sung luật ckd.outpatient.sglt2i_continue_on_treatment khi bệnh nhân đang dùng SGLT2i và eGFR >= 20 mL/min/1.73m², phát sinh recommendation action: 'CONTINUE', duy trì liều 10 mg/ngày và theo dõi eGFR/an toàn định kỳ."
+  },
+  {
+    "id": "CKD-R2-07",
+    "severity": "major",
+    "itemType": "drug",
+    "itemId": "canagliflozin",
+    "finding": "canagliflozin.json liệt kê vnBrands: ['Invokana'] và patiromer.json liệt kê vnBrands: ['Veltassa']. Cả hai hoạt chất này hiện chưa được Cục Quản lý Dược (Bộ Y tế) cấp giấy đăng ký lưu hành thương mại đại trà tại Việt Nam. Bác sĩ tại VN không thể kê đơn mua được Invokana hay Veltassa trên thị trường dược phẩm trong nước.",
+    "evidence": "Danh mục thuốc được cấp phép của Cục Quản lý Dược (DAV - Bộ Y tế): Không có số đăng ký còn hiệu lực cho Canagliflozin và Patiromer. File kb/drugs/canagliflozin.json dòng 6-8: 'vnBrands': ['Invokana']. File kb/drugs/patiromer.json dòng 6-8: 'vnBrands': ['Veltassa']. Trong rules.outpatient.ts dòng 694, tác giả cũng phải rẽ nhánh profile VN sang Calcium Polystyrene Sulfonate vì VN chưa có Patiromer.",
+    "suggestedFix": "Để vnBrands: [] cho canagliflozin và patiromer, kèm ghi chú trong mô tả thuốc: 'Chưa lưu hành chính thức tại Việt Nam (thuốc tham chiếu quốc tế theo FDA/EMA)'."
+  },
+  {
+    "id": "CKD-R2-08",
+    "severity": "major",
+    "itemType": "drug",
+    "itemId": "sodium_bicarbonate",
+    "finding": "Trong sodium_bicarbonate.json: amount: 1000, frequency: '2–3 lần/ngày'. Liều tính theo thông số này là 2.000 – 3.000 mg/ngày (2–3 g/ngày). Tuy nhiên, trường description lại ghi '1–2 g/ngày chia 2–3 lần'. Khi hiển thị qua fmtDose, chuỗi hiển thị thành '1000 mg x 2–3 lần/ngày (uống) - 1–2 g/ngày chia 2–3 lần', mâu thuẫn về mặt số học và gây bối rối cho điều dưỡng/dược sĩ khi cấp phát thuốc.",
+    "evidence": "File kb/drugs/sodium_bicarbonate.json dòng 16-21: 'amount': 1000, 'unit': 'mg', 'frequency': '2–3 lần/ngày', 'description': '1–2 g/ngày chia 2–3 lần'. Output thực tế ở Preset 2: '[START] drugId=sodium_bicarbonate: Khởi trị Natri Bicarbonat (1000 mg x 2–3 lần/ngày (uống) - 1–2 g/ngày chia 2–3 lần)'. Tại Việt Nam dạng viên nén là 500 mg: Khởi đầu 1–2 g/ngày tương đương 500 mg x 2–3 lần/ngày hoặc 1.000 mg x 2 lần/ngày.",
+    "suggestedFix": "Chuẩn hóa start: amount: 500, unit: 'mg', frequency: '2–3 lần/ngày', description: '500–1000 mg x 2–3 lần/ngày (tổng liều 1–2 g/ngày, chỉnh liều theo HCO3- máu)'."
+  },
+  {
+    "id": "CKD-R2-09",
+    "severity": "major",
+    "itemType": "drug",
+    "itemId": "enalapril",
+    "finding": "File perindopril.json có ghi nhận cảnh báo thời gian chờ (washout period) 36 giờ khi chuyển đổi sang/từ ARNI (sacubitril/valsartan), nhưng cả 4 file ACEi còn lại (enalapril.json, lisinopril.json, ramipril.json, captopril.json) đều chỉ ghi chung chung 'Không dùng cùng ARB/ARNI' hoặc 'Tránh phối hợp ARB/ARNI', hoàn toàn không nêu rõ yêu cầu bắt buộc ngừng thuốc đủ 36 giờ trước khi khởi trị ARNI để phòng ngừa phù mạch tử vong.",
+    "evidence": "File kb/drugs/enalapril.json dòng 81; lisinopril.json dòng 79; ramipril.json dòng 69; captopril.json dòng 68. FDA Black Box Warning & EMA SmPC: 'Sacubitril/valsartan is contraindicated with concomitant use of ACE inhibitors. Do not administer until 36 hours after the last dose of ACE inhibitor therapy due to increased risk of angioedema'.",
+    "suggestedFix": "Cập nhật đồng bộ vào trường interactions của cả 4 thuốc ACEi: 'Chống chỉ định dùng cùng ARNI (sacubitril/valsartan). Bắt buộc phải ngưng ACEi tối thiểu 36 giờ trước khi bắt đầu dùng ARNI (và ngược lại) để tránh nguy cơ phù mạch phù thanh quản tử vong'."
+  },
+  {
+    "id": "CKD-R2-10",
+    "severity": "major",
+    "itemType": "drug",
+    "itemId": "enalapril",
+    "finding": "Tất cả 10 file thuốc thuộc nhóm RASi (5 ACEi + 5 ARB) chỉ có duy nhất 1 Gate Rule về Kali máu (gate_*_k_max), hoàn toàn thiếu Gate Rule về thai kỳ (parameter: 'pregnancy', action: 'contra'). Mặc dù rule ckd.outpatient.rasi_initiate có kiểm tra ctx.patient.conditions?.pregnant, nhưng trên tầng DrugEntry của KB, định nghĩa thuốc hoàn toàn thiếu cổng an toàn sống còn này, vi phạm tính độc lập và fail-closed của Knowledge Base.",
+    "evidence": "Kiểm tra gates trong 10 file: enalapril.json (dòng 66-79), losartan.json (dòng 64-77), perindopril.json (dòng 73-86)... chỉ chứa gate K > 5.0 mmol/L. FDA Boxed Warning (Toxicity in Pregnancy): 'Drugs that act directly on the renin-angiotensin system can cause injury and death to the developing fetus. Discontinue as soon as possible once pregnancy is detected'.",
+    "suggestedFix": "Thêm Gate Rule gate_<drug>_pregnancy vào gates của tất cả 10 thuốc ACEi và ARB: parameter: 'pregnancy', operator: '==', threshold: 1, action: 'contra', messageVi: 'Chống chỉ định tuyệt đối nhóm thuốc ức chế hệ RAS trong thai kỳ do độc tính gây dị tật và tử vong thai nhi (FDA Black Box Warning)'."
+  },
+  {
+    "id": "CKD-R2-11",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "ckd.inpatient.contrast_aki_prevention",
+    "finding": "Trong rule dự phòng tổn thương thận do thuốc cản quang iod, điều kiện kích hoạt được viết là: 'return contrastPlanned && egfr !== undefined && egfr < th('ckd.referral.egfr_threshold') * 2;'. Việc lấy ngưỡng chuyển tuyến chuyên khoa Thận (ckd.referral.egfr_threshold = 30) rồi nhân đôi để tạo thành số 60 là một mẹo toán học không chuẩn mực trong code y tế, tạo sự phụ thuộc méo mó giữa các khái niệm lâm sàng khác nhau.",
+    "evidence": "File src/modules/ckd/rules.inpatient.ts dòng 313: 'egfr < th('ckd.referral.egfr_threshold') * 2'. File kb/thresholds/ckd.json dòng 27: ngưỡng ckd.egfr.g2_min đã có sẵn giá trị 60 (mô tả: 'Ngưỡng eGFR (60 mL/phút/1.73m²) ranh giới giữa G2 và G3a').",
+    "suggestedFix": "Thay thế th('ckd.referral.egfr_threshold') * 2 bằng th('ckd.egfr.g2_min')."
+  },
+  {
+    "id": "CKD-R2-12",
+    "severity": "minor",
+    "itemType": "ui",
+    "itemId": "ckd.outpatient.finerenone_indication",
+    "finding": "Tiêu đề khuyến cáo khởi trị Finerenone hiển thị cả cụm giải thích điều kiện: 'Khởi trị Finerenone (10 mg x 1 lần/ngày (uống) - 10 mg/ngày nếu eGFR 25–59; 20 mg/ngày nếu eGFR >= 60)'. Nguyên nhân do hàm fmtDose lấy toàn bộ trường start.description ghép vào chuỗi.",
+    "evidence": "Output thực tế Preset 1: title: 'Khởi trị Finerenone (10 mg x 1 lần/ngày (uống) - 10 mg/ngày nếu eGFR 25–59; 20 mg/ngày nếu eGFR >= 60)'.",
+    "suggestedFix": "Trong rules.outpatient.ts, truyền liều cụ thể đã được tính theo eGFR của bệnh nhân (ví dụ: '10 mg x 1 lần/ngày' nếu eGFR 25–59 hoặc '20 mg x 1 lần/ngày' nếu eGFR >= 60) thay vì truyền toàn bộ object dose thô chứa description dài."
+  },
+  {
+    "id": "CKD-R2-13",
+    "severity": "minor",
+    "itemType": "drug",
+    "itemId": "enalapril",
+    "finding": "enalapril.json liệt kê 'Vasotec', lisinopril.json liệt kê 'Prinivil', ramipril.json liệt kê 'Altace'. Các biệt dược này là tên thương mại tại thị trường Mỹ, không lưu hành tại thị trường Việt Nam.",
+    "evidence": "File kb/drugs/enalapril.json dòng 9; lisinopril.json dòng 8; ramipril.json dòng 8. Tại Việt Nam: Enalapril có Renitec, Ednyt, Enap; Lisinopril có Zestril, Diroton; Ramipril có Tritace, Cardace.",
+    "suggestedFix": "Thay thế các tên thương hiệu của Mỹ bằng các biệt dược thực tế lưu hành tại VN (ví dụ: Enap, Diroton, Cardace) hoặc chỉ giữ lại biệt dược gốc (Renitec, Zestril, Tritace)."
+  },
+  {
+    "id": "CKD-R2-14",
+    "severity": "minor",
+    "itemType": "drug",
+    "itemId": "canagliflozin",
+    "finding": "File dapagliflozin.json và empagliflozin.json đều có hướng dẫn tạm ngưng thuốc ít nhất 3 ngày trước phẫu thuật lớn để tránh toan ceton euglycemic. File canagliflozin.json lại bỏ sót cảnh báo này trong trường interactions.",
+    "evidence": "File kb/drugs/canagliflozin.json dòng 67-69 chỉ có 1 tương tác về tăng kali máu. Nhãn FDA Invokana (FDA_label_canagliflozin.pdf mục 2.1 / 5.2): 'Withhold INVOKANA at least 3 days, if possible, prior to major surgery or procedures associated with prolonged fasting'.",
+    "suggestedFix": "Thêm vào interactions của canagliflozin: 'Tạm ngừng trước phẫu thuật lớn ít nhất 3 ngày để phòng ngừa nguy cơ nhiễm toan ceton đái tháo đường euglycemic'."
+  },
+  {
+    "id": "CKD-R2-15",
+    "severity": "minor",
+    "itemType": "drug",
+    "itemId": "patiromer",
+    "finding": "Patiromer gắn kết cả ion magie trong lòng ruột, gây hạ magie máu ở khoảng 5–9% bệnh nhân, đòi hỏi phải theo dõi nồng độ magie huyết thanh định kỳ theo nhãn FDA. Trường interactions hoặc note của patiromer.json chưa đề cập cảnh báo này.",
+    "evidence": "File kb/drugs/patiromer.json dòng 58-60 chỉ có tương tác uống cách 3 giờ. FDA Veltassa Label (mục 5.1 Warnings and Precautions - Hypomagnesemia): 'VELTASSA binds to magnesium in the GI tract, which can lead to hypomagnesemia. Monitor serum magnesium and consider magnesium supplementation in patients who develop hypomagnesemia'.",
+    "suggestedFix": "Thêm cảnh báo theo dõi magie máu vào interactions: 'Theo dõi magie máu định kỳ; thuốc có thể gây hạ magie máu do gắn kết magie tại đường tiêu hóa'."
+  },
+  {
+    "id": "CKD-R2-16",
+    "severity": "suggestion",
+    "itemType": "matrix",
+    "itemId": "ckdMatrix",
+    "finding": "Ma trận an toàn thuốc hiện tại chỉ liệt kê 10 thuốc (ckdDrugIds), trong đó chỉ có 2 thuốc RASi là perindopril và losartan. Các thuốc ACEi/ARB khác đã có đầy đủ DrugEntry trong KB như enalapril, lisinopril, ramipril, captopril, valsartan, telmisartan, irbesartan, candesartan chưa được đưa vào ma trận.",
+    "evidence": "File src/modules/ckd/matrix.ts dòng 10-21: chỉ có 10 drugIds.",
+    "suggestedFix": "Bổ sung các thuốc RASi còn lại vào ckdDrugIds để bảng tra cứu an toàn thuốc trên giao diện người dùng được đầy đủ và toàn diện cho các bác sĩ lâm sàng khi tra cứu thuốc thay thế."
+  }
+]

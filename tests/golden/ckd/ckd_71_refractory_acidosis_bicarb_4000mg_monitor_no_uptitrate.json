@@ -1,0 +1,51 @@
+{
+  "id": "ckd_71_refractory_acidosis_bicarb_4000mg_monitor_no_uptitrate",
+  "titleVi": "Ngoại trú - Toan chuyển hóa mạn dai dẳng (HCO₃⁻ = 16 mmol/L) dù đã dùng Natri Bicarbonat đạt trần 4000 mg/ngày -> Phát MONITOR đánh giá nguyên nhân kháng trị / chuẩn bị KRT thay vì UPTITRATE vượt trần (Regression CKD-R3-R2-04)",
+  "source": "KDIGO 2024 PP 3.10.1 & BYT 2024 Mục 4.10.3.1 (liều uống tối đa 4 g/ngày)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_71",
+    "name": "BN CKD 71",
+    "age": 65,
+    "sex": "male",
+    "weight": 68,
+    "sbp": 128,
+    "dbp": 76,
+    "hr": 74,
+    "scr": 230,
+    "k": 4.6,
+    "hco3": 16,
+    "uacr": 30,
+    "conditions": {
+      "ckd": true
+    },
+    "currentMeds": [
+      { "drugId": "sodium_bicarbonate", "name": "Natri Bicarbonat", "dose": "1000 mg x 4 lần/ngày" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "sodium_bicarbonate", "action": "MONITOR" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "sodium_bicarbonate", "action": "UPTITRATE" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R3-R2-04: Khi tổng liều Natri Bicarbonat đường uống đã đạt trần 4000 mg/ngày (4 g/ngày), hệ thống không phát UPTITRATE vượt trần mà chuyển sang MONITOR quá tải natri và đánh giá KRT."
+}

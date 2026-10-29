@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.metformin_iodinated_contrast",
+  "contentHash": "48ef3c1cd37e68c87fbb2428cf3efc1c493105f9fe0ad70923a79721e09c7fea",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.metformin_iodinated_contrast",
+      "contentHash": "955b5d6c01c1ec1f",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T13:44:46.847Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "SRC-01b: schema, item/source hashes and exact-page monotherapy citation verified. Technical check only; no clinical review or validation of the entire interaction policy."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T13:44:46.847Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

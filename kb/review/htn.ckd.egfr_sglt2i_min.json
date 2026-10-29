@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.ckd.egfr_sglt2i_min",
+  "contentHash": "c257c838289b7fb332949460c50eaa8519e68c3778615eccc45d61fd1306916d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.ckd.egfr_sglt2i_min",
+      "contentHash": "14b494e54b28f150",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 20 mL/min/1.73m2 (quantity: egfr) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

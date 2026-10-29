@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.niv_ph_cutoff",
+  "contentHash": "bb312372db13f9abbc64415d6e9e410d9457d6d732864e1a957f2c3f91e4d6ce",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.niv_ph_cutoff",
+      "contentHash": "4126b49286f07ab7",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

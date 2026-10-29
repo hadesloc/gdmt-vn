@@ -1,0 +1,152 @@
+{
+  "id": "perindopril",
+  "nameVi": "Perindopril",
+  "inn": "Perindopril",
+  "class": "ACEi",
+  "classes": [
+    "acei"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Coversyl"
+  ],
+  "forms": [
+    "Viên nén bao phim 2.5 mg muối perindopril arginine (tương đương 2 mg muối erbumine/tert-butylamine)",
+    "Viên nén bao phim 5 mg muối perindopril arginine (tương đương 4 mg muối erbumine/tert-butylamine)",
+    "Viên nén bao phim 10 mg muối perindopril arginine (tương đương 8 mg muối erbumine/tert-butylamine)"
+  ],
+  "start": {
+    "amount": 2.5,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "2.5–5 mg muối perindopril arginine (tương đương 2–4 mg erbumine) uống buổi sáng"
+  },
+  "target": {
+    "amount": 10,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "10 mg muối perindopril arginine (tương đương 8 mg erbumine) uống buổi sáng hoặc liều tối đa dung nạp"
+  },
+  "titration": {
+    "step": 2.5,
+    "intervalDays": 14,
+    "maxDose": "10 mg/ngày"
+  },
+  "renal": [
+    {
+      "crclFrom": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "5–10 mg/ngày",
+      "citationIds": [
+        "ema.perindopril.table_1_renal_adjustment"
+      ]
+    },
+    {
+      "crclFrom": 30,
+      "crclTo": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "2.5 mg/ngày",
+      "note": "Theo EMA SmPC Coversyl Arginine Table 1: liều khuyến cáo 2.5 mg/ngày khi 30 <= CrCl < 60 mL/phút",
+      "citationIds": [
+        "ema.perindopril.table_1_renal_adjustment"
+      ]
+    },
+    {
+      "crclFrom": 15,
+      "crclTo": 30,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "2.5 mg cách ngày",
+      "note": "Theo EMA SmPC Coversyl Arginine (2.5 mg cách ngày); lưu ý BYT 2024 Bảng 12 khuyến cáo không sử dụng perindopril khi CrCl < 30 mL/phút",
+      "citationIds": [
+        "ema.perindopril.table_1_renal_adjustment",
+        "byt.ckd.2024.table_12_perindopril_crcl_30"
+      ]
+    },
+    {
+      "crclTo": 15,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "2.5 mg cách ngày (G5 chưa lọc máu) hoặc 2.5 mg vào ngày lọc máu (HD)",
+      "note": "Ở bệnh nhân thận nhân tạo chu kỳ (HD) dùng 2.5 mg vào ngày lọc máu (EMA SmPC); ở CKD G5 chưa lọc máu dùng tối đa 2.5 mg cách ngày thận trọng cao hoặc ưu tiên chuyển sang ARB thải trừ qua gan-mật như Losartan (BYT 2024 Bảng 12)",
+      "citationIds": [
+        "ema.perindopril.table_1_renal_adjustment",
+        "byt.ckd.2024.table_12_perindopril_crcl_30"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_peri_k_max",
+      "parameter": "K",
+      "operator": ">",
+      "threshold": 5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm hoãn khởi trị/tăng liều perindopril khi K+ > 5.0 mmol/L",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_2_rasi_monitoring"
+      ]
+    },
+    {
+      "id": "gate_perindopril_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối nhóm thuốc ức chế men chuyển trong thai kỳ (Boxed Warning: độc tính phôi thai và tử vong chu sinh)",
+      "citationIds": [
+        "ema.perindopril.pregnancy",
+        "fda.losartan.boxed_pregnancy"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định dùng cùng ARB hoặc ARNI (phải cách ARNI tối thiểu 36 giờ sau liều cuối)",
+    "Phối hợp với NSAID làm tăng nguy cơ suy thận cấp huyết động"
+  ],
+  "citationIds": [
+    "kdigo.ckd.2024.rec_3_6_1_rasi_a3_nondm",
+    "kdigo.ckd.2024.rec_3_6_4_avoid_dual_rasi",
+    "ema.perindopril.table_1_renal_adjustment",
+    "ema.perindopril.pregnancy",
+    "byt.ckd.2024.table_12_perindopril_crcl_30",
+    "ema.perindopril.lactation_4_6"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối nhóm thuốc ức chế men chuyển trong thai kỳ (EMA SmPC / Boxed Warning FDA: độc tính phôi thai, vô niệu thai nhi, thiểu ối và tử vong chu sinh); ngừng thuốc ngay khi phát hiện có thai",
+    "citationIds": [
+      "ema.perindopril.pregnancy",
+      "fda.losartan.boxed_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo dùng Perindopril khi cho con bú do thiếu dữ liệu an toàn trên trẻ nhũ nhi (EMA SmPC Section 4.6)",
+    "citationIds": [
+      "ema.perindopril.lactation_4_6"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định tuyệt đối ACEi trong thai kỳ (Boxed Warning)",
+      "citationIds": [
+        "ema.perindopril.pregnancy",
+        "fda.losartan.boxed_pregnancy"
+      ]
+    },
+    {
+      "code": "angioedema_history",
+      "messageVi": "Chống chỉ định tuyệt đối khi có tiền sử phù mạch do ACEi hoặc phù mạch di truyền/vô căn",
+      "citationIds": [
+        "ema.perindopril.pregnancy"
+      ]
+    }
+  ]
+}

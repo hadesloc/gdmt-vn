@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.exac_methylpred_iv_min_mg",
+  "contentHash": "f4f4603e1d4ad8f74a983bd2e3b9c9eca9b98681186ec89e37e6cc0acfdec5f3",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.exac_methylpred_iv_min_mg",
+      "contentHash": "9bd9af0a97aa7f5a",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

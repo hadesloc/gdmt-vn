@@ -1,0 +1,26 @@
+{
+  "itemId": "losartan_hctz",
+  "contentHash": "73f88c3e22bb0e66c49e244358331a1a547908a908503b638416755f18cfb83d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "losartan_hctz",
+      "contentHash": "135587029f87356e",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Losartan + Hydrochlorothiazide (SPC) (losartan_hctz) đầy đủ phân nhóm, dải thận, thai kỳ/cho con bú, cổng an toàn và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

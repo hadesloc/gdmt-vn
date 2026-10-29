@@ -1,0 +1,54 @@
+{
+  "id": "ckd_59_dialysis_stop_finerenone_continue_statin",
+  "titleVi": "Lọc máu chu kỳ (onDialysis = true, SCr sau lọc giảm giả tạo 180 µmol/L) -> Ngừng ngay Finerenone (STOP) và tiếp tục duy trì Statin đang dùng (CONTINUE) (Regression CKD-R2-R3-01 & R3-14)",
+  "source": "FDA Kerendia Label Table 1 & ESC 2026 CVD-CKD",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_59",
+    "name": "BN CKD 59",
+    "age": 63,
+    "sex": "male",
+    "weight": 66,
+    "sbp": 132,
+    "dbp": 78,
+    "hr": 74,
+    "scr": 180,
+    "k": 4.7,
+    "conditions": {
+      "ckd": true,
+      "dm": true,
+      "onDialysis": true
+    },
+    "currentMeds": [
+      { "drugId": "finerenone", "dose": 10, "unit": "mg" },
+      { "drugId": "atorvastatin", "dose": 20, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "finerenone", "action": "STOP" },
+      { "drugId": "atorvastatin", "action": "CONTINUE" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "finerenone", "action": "CONTINUE" },
+      { "drugId": "finerenone", "action": "UPTITRATE" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R2-R3-01 & R3-14: Bắt buộc STOP Finerenone khi bệnh nhân đã bước vào lọc máu định kỳ dù SCr sau lọc thấp giả tạo; đồng thời duy trì Statin đã dùng trước lọc máu."
+}

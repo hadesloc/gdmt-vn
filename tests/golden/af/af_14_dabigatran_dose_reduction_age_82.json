@@ -1,0 +1,57 @@
+{
+  "id": "af_14_dabigatran_dose_reduction_age_82",
+  "titleVi": "Giảm liều Dabigatran 110mg x 2: Tuổi ≥ 80",
+  "source": "ESC 2024 AF Table 11 / esc.af.2024.table11_doac_dosing",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 82,
+    "sex": "female",
+    "weight": 58,
+    "height": 155,
+    "sbp": 130,
+    "dbp": 76,
+    "hr": 82,
+    "rhythm": "afib",
+    "scr": 95,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "dabigatran",
+        "name": "Pradaxa",
+        "dose": 150,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dabigatran",
+        "action": "REDUCE",
+        "doseContains": "110 mg"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân tuổi 82 (≥ 80 tuổi): Khuyến cáo bắt buộc giảm liều Dabigatran xuống 110 mg x 2 lần/ngày."
+}

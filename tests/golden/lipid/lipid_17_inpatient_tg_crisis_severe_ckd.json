@@ -1,0 +1,57 @@
+{
+  "id": "lipid_17_inpatient_tg_crisis_severe_ckd",
+  "titleVi": "Tăng TG nội viện kèm eGFR 20 - Chống chỉ định Fenofibrate",
+  "source": "ACC 2026 / acc.lipid.2026.fenofibrate_renal",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "male",
+    "weight": 64,
+    "height": 165,
+    "sbp": 140,
+    "dbp": 85,
+    "hr": 76,
+    "scr": 240,
+    "tc": 7.2,
+    "hdl": 0.8,
+    "ldl": 2.1,
+    "tg": 9.5,
+    "conditions": {
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "fenofibrate",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "fenofibrate",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Suy thận nặng nội viện chống chỉ định Fenofibrate."
+}

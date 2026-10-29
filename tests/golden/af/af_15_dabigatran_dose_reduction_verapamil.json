@@ -1,0 +1,63 @@
+{
+  "id": "af_15_dabigatran_dose_reduction_verapamil",
+  "titleVi": "Giảm liều Dabigatran 110mg x 2: Tương tác P-gp với Verapamil",
+  "source": "ESC 2024 AF Table 11 / esc.af.2024.table11_doac_dosing",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 132,
+    "dbp": 82,
+    "hr": 88,
+    "rhythm": "afib",
+    "scr": 95,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "dabigatran",
+        "name": "Pradaxa",
+        "dose": 150,
+        "unit": "mg"
+      },
+      {
+        "drugId": "verapamil",
+        "name": "Isoptin",
+        "dose": 120,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dabigatran",
+        "action": "REDUCE",
+        "doseContains": "110 mg"
+      }
+    ]
+  },
+  "descriptionVi": "Dùng kèm Verapamil (ức chế P-gp): Tăng nồng độ Dabigatran trong máu -> Bắt buộc giảm liều Dabigatran 110 mg x 2 lần/ngày."
+}

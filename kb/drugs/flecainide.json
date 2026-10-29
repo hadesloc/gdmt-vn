@@ -1,0 +1,160 @@
+{
+  "id": "flecainide",
+  "nameVi": "Flecainide",
+  "inn": "Flecainide acetate",
+  "class": "Thuốc chống loạn nhịp nhóm IC (ức chế kênh Natri)",
+  "classes": [
+    "antiarrhythmic_ic"
+  ],
+  "components": [],
+  "qtRisk": "known",
+  "vnBrands": [
+    "Tambocor"
+  ],
+  "forms": [
+    "Viên nén 50 mg",
+    "Viên nén 100 mg"
+  ],
+  "start": {
+    "amount": 50,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "Khởi đầu 50 mg uống 2 lần/ngày (bắt buộc phối hợp kèm thuốc ức chế dẫn truyền nút nhĩ thất)"
+  },
+  "target": {
+    "amount": 100,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "100 mg uống 2 lần/ngày (tối đa 150 mg 2 lần/ngày)"
+  },
+  "titration": {
+    "step": "Tăng thêm 50 mg x 2 lần/ngày mỗi 4–5 ngày theo đáp ứng và khoảng QRS trên ECG (ngừng nếu QRS giãn > 25% so với nền)",
+    "intervalDays": 5,
+    "maxDose": "150 mg 2 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 50,
+      "crclFrom": 50,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "50–150 mg 2 lần/ngày",
+      "citationIds": [
+        "esc.af.2024.table13_flecainide"
+      ]
+    },
+    {
+      "eGFRFrom": 35,
+      "eGFRTo": 50,
+      "crclFrom": 35,
+      "crclTo": 50,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Khởi đầu 50 mg 2 lần/ngày (hoặc 100 mg 1 lần/ngày), theo dõi sát ECG",
+      "citationIds": [
+        "esc.af.2024.table13_flecainide"
+      ]
+    },
+    {
+      "eGFRTo": 35,
+      "crclTo": 35,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Chống chỉ định khi CrCl < 35 mL/phút",
+      "note": "Chống chỉ định flecainide khi CrCl < 35 mL/phút theo ESC 2024 Table 13 do tích lũy thuốc gây loạn nhịp thất",
+      "citationIds": [
+        "esc.af.2024.flecainide_crcl_35"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_flecainide_cad",
+      "parameter": "coronary_artery_disease",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "boolean",
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối flecainide ở bệnh nhân có bệnh mạch vành hoặc suy tim do tăng nguy cơ tử vong loạn nhịp thất (CAST)",
+      "citationIds": [
+        "esc.af.2024.aad_flecainide_propafenone"
+      ]
+    },
+    {
+      "id": "gate_flecainide_lvef",
+      "parameter": "LVEF",
+      "operator": "<=",
+      "threshold": 40,
+      "unit": "%",
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối flecainide khi LVEF ≤ 40% hoặc có bệnh tim cấu trúc",
+      "citationIds": [
+        "esc.af.2024.aad_flecainide_propafenone"
+      ]
+    },
+    {
+      "id": "gate_flecainide_crcl",
+      "parameter": "CrCl",
+      "operator": "<",
+      "threshold": 35,
+      "unit": "mL/min",
+      "action": "contra",
+      "messageVi": "Chống chỉ định flecainide khi CrCl < 35 mL/phút",
+      "citationIds": [
+        "esc.af.2024.flecainide_crcl_35"
+      ]
+    }
+  ],
+  "interactions": [
+    "Bắt buộc dùng kèm thuốc ức chế dẫn truyền nút nhĩ thất (chẹn beta hoặc verapamil/diltiazem) để phòng ngừa biến đổi thành cuồng nhĩ dẫn truyền nhĩ-thất 1:1 nguy hiểm",
+    "Tránh phối hợp với các thuốc ức chế CYP2D6 mạnh hoặc các thuốc kéo dài khoảng QRS/QT khác"
+  ],
+  "citationIds": [
+    "esc.af.2024.aad_flecainide_propafenone",
+    "esc.af.2024.table13_flecainide",
+    "esc.af.2024.pregnancy_rhythm_flec_prop",
+    "esc.preg.2025.flecainide_sotalol_propafenone",
+    "esc.af.2024.flecainide_crcl_35",
+    "esc.af.2024.qtc_500_conduction_contra"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Cân nhắc sử dụng kiểm soát nhịp dài hạn trong thai kỳ ở bệnh nhân không có bệnh tim cấu trúc khi các biện pháp khác thất bại, dưới theo dõi ECG sát (ESC 2024 AF Class IIb / ESC 2025 Pregnancy)",
+    "citationIds": [
+      "esc.preg.2025.flecainide_sotalol_propafenone",
+      "esc.af.2024.pregnancy_rhythm_flec_prop"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Bài tiết qua sữa mẹ nhưng có thể dùng thận trọng kèm theo dõi trẻ (ESC 2025 Pregnancy)",
+    "citationIds": [
+      "esc.preg.2025.flecainide_sotalol_propafenone"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "coronary_artery_disease",
+      "messageVi": "Chống chỉ định Flecainide ở bệnh nhân có bệnh mạch vành hoặc bệnh tim cấu trúc",
+      "citationIds": [
+        "esc.af.2024.aad_flecainide_propafenone"
+      ]
+    },
+    {
+      "code": "reduced_lvef",
+      "messageVi": "Chống chỉ định Flecainide ở bệnh nhân suy tim có phân suất tống máu giảm (LVEF ≤ 40%)",
+      "citationIds": [
+        "esc.af.2024.aad_flecainide_propafenone"
+      ]
+    },
+    {
+      "code": "av_block_2_3",
+      "messageVi": "Chống chỉ định Flecainide ở bệnh nhân block nhĩ thất độ 2–3 hoặc suy nút xoang chưa đặt máy tạo nhịp",
+      "citationIds": [
+        "esc.af.2024.qtc_500_conduction_contra"
+      ]
+    }
+  ]
+}

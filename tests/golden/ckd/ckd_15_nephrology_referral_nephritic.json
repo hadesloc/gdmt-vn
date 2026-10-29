@@ -1,0 +1,52 @@
+{
+  "id": "ckd_15_nephrology_referral_nephritic",
+  "titleVi": "Chuyển khám Thận khi có hội chứng viêm thận: Albumin niệu A3 + tiểu máu",
+  "source": "KDIGO 2024 CKD Figure 48 / kdigo.ckd.2024.fig_48_referral_criteria",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_15",
+    "name": "BN CKD 15",
+    "age": 42,
+    "sex": "male",
+    "weight": 66,
+    "sbp": 136,
+    "dbp": 86,
+    "hr": 78,
+    "scr": 115,
+    "uacr": 38,
+    "conditions": {
+      "ckd": true
+    },
+    "customInputs": {
+      "hematuria": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_ckd_refer_specialist",
+        "action": "REFER"
+      }
+    ]
+  },
+  "descriptionVi": "Albumin niệu A3 kết hợp tiểu máu vi thể gợi ý viêm cầu thận tiến triển."
+}

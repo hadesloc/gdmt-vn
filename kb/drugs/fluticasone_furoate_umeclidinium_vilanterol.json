@@ -1,0 +1,127 @@
+{
+  "id": "fluticasone_furoate_umeclidinium_vilanterol",
+  "nameVi": "Fluticasone furoate/Umeclidinium/Vilanterol",
+  "inn": "Fluticasone furoate / Umeclidinium bromide / Vilanterol trifenatate",
+  "class": "ICS + LAMA + LABA",
+  "vnBrands": [
+    "Trelegy Ellipta"
+  ],
+  "forms": [
+    "Bột hít phân liều Ellipta: 100 mcg fluticasone furoate / 62.5 mcg umeclidinium / 25 mcg vilanterol mỗi liều"
+  ],
+  "start": {
+    "amount": 1,
+    "unit": "liều",
+    "frequency": "1 lần/ngày",
+    "route": "hít",
+    "description": "Hít 1 liều Trelegy Ellipta (100/62.5/25 mcg) x 1 lần/ngày vào cùng thời điểm mỗi ngày. Súc họng sau khi hít"
+  },
+  "target": {
+    "amount": 1,
+    "unit": "liều",
+    "frequency": "1 lần/ngày",
+    "route": "hít",
+    "description": "Hít 1 liều Trelegy Ellipta (100/62.5/25 mcg) x 1 lần/ngày"
+  },
+  "titration": {
+    "step": "Duy trì liều cố định, đánh giá định kỳ nguy cơ viêm phổi và đợt cấp",
+    "intervalDays": 90,
+    "maxDose": "1 liều 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều khi eGFR ≥ 15 mL/phút/1.73m²",
+      "citationIds": [
+        "ema.trimbow.renal_pk_beclometasone_formoterol",
+        "ema.ultibro.renal_dosing_egfr30"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận (thải trừ qua thận không đáng kể)",
+      "citationIds": [
+        "ema.trimbow.renal_pk_beclometasone_formoterol",
+        "ema.ultibro.renal_dosing_egfr30"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Không phối hợp thêm ICS, LABA hoặc LAMA đơn chất khác",
+    "Suy gan trung bình – nặng (Child-Pugh B/C): phơi nhiễm toàn thân của fluticasone furoate tăng tới ~3 lần; cần theo dõi sát tác dụng phụ corticosteroid toàn thân (suy thượng thận, hội chứng Cushing, tăng nhãn áp, giảm mật độ xương)",
+    "Không khuyến cáo phối hợp với thuốc ức chế mạnh CYP3A4 (ritonavir, ketoconazole, itraconazole, clarithromycin) do tăng vọt nồng độ fluticasone furoate và vilanterol (nguy cơ suy thượng thận và kéo dài khoảng QT)",
+    "Súc miệng sau khi hít để phòng ngừa nấm candida hầu họng và khàn giọng"
+  ],
+  "citationIds": [
+    "byt.copd.2026.triple_therapy_indication",
+    "gold.copd.2026.initial_group_e_triple_eos300",
+    "gold.copd.2026.lama_glaucoma_caution",
+    "gina.copd.2026.lama_urinary_retention",
+    "byt.copd.2026.salmeterol_cyp3a4_contra",
+    "ema.trimbow.renal_pk_beclometasone_formoterol",
+    "ema.ultibro.renal_dosing_egfr30",
+    "ema.trimbow.renal_impairment_gfr30",
+    "ema.trimbow.severe_renal_benefit_risk",
+    "ema.trimbow.pregnancy_lactation",
+    "ema.ultibro.pregnancy_lactation",
+    "ema.ultibro.lactose_excipient_contra",
+    "ema.ultibro.hypersensitivity_contra"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Kiểm soát tốt triệu chứng hô hấp và phòng ngừa đợt cấp trong thai kỳ mang lại lợi ích vượt trội nguy cơ tiềm ẩn của thuốc hít ICS/LABA/LAMA; chỉ dùng khi lợi ích vượt trội nguy cơ.",
+    "citationIds": [
+      "ema.trimbow.pregnancy_lactation",
+      "gina.copd.2026.pregnancy_ics_laba_safety"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Phơi nhiễm toàn thân của các thành phần hít thấp; cân nhắc lợi ích nuôi con bằng sữa mẹ và lợi ích kiểm soát bệnh cho mẹ.",
+    "citationIds": [
+      "ema.trimbow.pregnancy_lactation",
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "severe_milk_protein_allergy",
+      "messageVi": "Chống chỉ định khi có tiền sử dị ứng nghiêm trọng với protein sữa",
+      "citationIds": [
+        "ema.ultibro.lactose_excipient_contra",
+        "ema.ultibro.hypersensitivity_contra"
+      ]
+    },
+    {
+      "code": "narrow_angle_glaucoma",
+      "messageVi": "Chống chỉ định hoặc tránh tiếp xúc mắt ở người bệnh glôcôm góc đóng cấp tính chưa điều trị",
+      "citationIds": [
+        "gold.copd.2026.lama_glaucoma_caution"
+      ]
+    },
+    {
+      "code": "urinary_retention",
+      "messageVi": "Chống chỉ định khi đang bí tiểu cấp chưa xử trí; thận trọng theo dõi triệu chứng đường tiểu ở người bệnh tăng sản tuyến tiền liệt",
+      "citationIds": [
+        "gina.copd.2026.lama_urinary_retention"
+      ]
+    }
+  ],
+  "classes": [
+    "ics",
+    "lama",
+    "laba"
+  ],
+  "components": [
+    "fluticasone_furoate",
+    "umeclidinium",
+    "vilanterol"
+  ],
+  "qtRisk": "conditional"
+}

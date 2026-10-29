@@ -1,0 +1,164 @@
+{
+  "id": "perindopril_amlodipine",
+  "nameVi": "Perindopril + Amlodipine (SPC)",
+  "inn": "Perindopril / Amlodipine",
+  "class": "Viên phối hợp cố định liều ACEi + CCB (DHP)",
+  "classes": [
+    "acei",
+    "dhp_ccb"
+  ],
+  "components": [
+    "perindopril",
+    "amlodipine"
+  ],
+  "vnBrands": [
+    "Coveram 5/5 mg",
+    "Coveram 5/10 mg",
+    "Coveram 10/5 mg",
+    "Coveram 10/10 mg"
+  ],
+  "forms": [
+    "Viên nén 5 mg / 5 mg",
+    "Viên nén 5 mg / 10 mg",
+    "Viên nén 10 mg / 5 mg",
+    "Viên nén 10 mg / 10 mg"
+  ],
+  "start": {
+    "amount": "5/5",
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Uống buổi sáng trước bữa ăn (khi CrCl ≥ 60 mL/phút)"
+  },
+  "target": {
+    "amount": "10/10",
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống"
+  },
+  "titration": {
+    "step": "Chỉnh liều mỗi 2–4 tuần từ 5/5 mg lên 5/10 mg, 10/5 mg hoặc 10/10 mg; nếu CrCl < 60 mL/phút cần chỉnh liều từng thành phần rời",
+    "intervalDays": 14,
+    "maxDose": "10/10 mg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "crclFrom": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "5/5 mg -> 10/10 mg 1 lần/ngày",
+      "citationIds": [
+        "ema.perindopril.table_1_renal_adjustment",
+        "esc.htn.2024.initial_combination"
+      ]
+    },
+    {
+      "crclFrom": 30,
+      "crclTo": 60,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Dùng viên rời để chuẩn độ Perindopril 2,5 mg/ngày + Amlodipine 2,5–5 mg/ngày",
+      "citationIds": [
+        "ema.perindopril.table_1_renal_adjustment"
+      ]
+    },
+    {
+      "crclTo": 30,
+      "initiate": "not_rec",
+      "continue": "not_rec",
+      "note": "Không dùng viên phối hợp cố định hàng ngày khi CrCl < 30 mL/phút (Perindopril phải dùng cách ngày theo EMA hoặc chống chỉ định theo BYT 2024).",
+      "citationIds": [
+        "ema.perindopril.table_1_renal_adjustment",
+        "byt.ckd.2024.table_12_perindopril_crcl_30"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_per_amlo_k",
+      "parameter": "K",
+      "operator": ">",
+      "threshold": 5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm hoãn phối hợp chứa Perindopril khi Kali máu > 5,0 mmol/L.",
+      "citationIds": [
+        "aha.acc.2025.table18_k50"
+      ]
+    },
+    {
+      "id": "gate_per_amlo_preg",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối viên phối hợp chứa ACEi (Perindopril) trong thai kỳ.",
+      "citationIds": [
+        "ema.perindopril.pregnancy",
+        "esc.htn.2024.pregnancy_contraindication_rasi"
+      ]
+    },
+    {
+      "id": "gate_per_amlo_sbp",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 90,
+      "unit": "mmHg",
+      "action": "hold",
+      "messageVi": "Tạm hoãn khi tụt huyết áp nặng (SBP < 90 mmHg).",
+      "citationIds": [
+        "fda.amlodipine.warnings_as_hepatic"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối trong thai kỳ do thành phần Perindopril (ACEi) gây độc tính phôi-thai.",
+    "citationIds": [
+      "ema.perindopril.pregnancy",
+      "esc.htn.2024.pregnancy_contraindication_rasi"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo dùng khi cho con bú do thành phần Perindopril thiếu dữ liệu an toàn (SmPC Mục 4.6).",
+    "citationIds": [
+      "ema.perindopril.lactation_4_6"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Phụ nữ mang thai",
+      "citationIds": [
+        "ema.perindopril.pregnancy"
+      ]
+    },
+    {
+      "code": "angioedema_history",
+      "messageVi": "Tiền sử phù mạch liên quan ACEi hoặc phù mạch di truyền/vô căn",
+      "citationIds": [
+        "ema.perindopril.pregnancy",
+        "aha.acc.2025.acei_angioedema_contra"
+      ]
+    },
+    {
+      "code": "bilateral_renal_artery_stenosis",
+      "messageVi": "Hẹp động mạch thận hai bên",
+      "citationIds": [
+        "vsh.htn.2022.contraindications_table11"
+      ]
+    }
+  ],
+  "interactions": [
+    "ix.dual_rasi",
+    "ix.acei_arni_washout"
+  ],
+  "citationIds": [
+    "esc.htn.2024.initial_combination",
+    "aha.acc.2025.stage2_spc_rec1",
+    "vsh.htn.2022.table9_dual_spc",
+    "ema.perindopril.table_1_renal_adjustment",
+    "ema.perindopril.lactation_4_6"
+  ]
+}

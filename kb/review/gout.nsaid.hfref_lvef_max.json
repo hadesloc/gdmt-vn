@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.nsaid.hfref_lvef_max",
+  "contentHash": "d19152f6bff88d0ce75cbe1b6f0053ffc52e06bcc875f868fb9c98d1ac7fb60d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.nsaid.hfref_lvef_max",
+      "contentHash": "9e848d877058b8df",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.nsaid.hfref_lvef_max"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

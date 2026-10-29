@@ -1,0 +1,61 @@
+{
+  "id": "hf_11_hfref_current_furosemide_overt_edema",
+  "titleVi": "HFrEF đang dùng Furosemide 40 mg kèm sung huyết rõ: Tăng liều lợi tiểu",
+  "source": "ESC 2026 HF Rec 6.1.3.1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 67,
+    "sex": "male",
+    "weight": 82,
+    "sbp": 126,
+    "dbp": 78,
+    "hr": 76,
+    "lvef": 28,
+    "nyha": 3,
+    "scr": 110,
+    "k": 4.1,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "furosemide",
+        "name": "Furosemide",
+        "dose": 40,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "hf"
+    ],
+    "customInputs": {
+      "congestion": "overt"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "furosemide",
+        "action": "UPTITRATE"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Sung huyết rõ (overt) dù đang dùng Furosemide -> Tăng liều lợi tiểu."
+}

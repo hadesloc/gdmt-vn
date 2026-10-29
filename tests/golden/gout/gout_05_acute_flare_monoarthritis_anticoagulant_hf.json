@@ -1,0 +1,74 @@
+{
+  "id": "gout_05_acute_flare_monoarthritis_anticoagulant_hf",
+  "titleVi": "Viêm đơn khớp lớn trên bệnh nhân Suy tim + Rung nhĩ đang dùng Apixaban: Tiêm Corticoid nội khớp / Prednisolone",
+  "source": "ACR 2020 & EULAR 2016 (acr.gout.2020.flare_first_line, eular.gout.2016.colchicine_nsaid_contra)",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 72,
+    "sex": "male",
+    "weight": 66,
+    "scr": 110,
+    "uricAcid": 480,
+    "conditions": {
+      "gout": true,
+      "hf": true,
+      "af": true,
+      "onAnticoagulant": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "apixaban",
+        "name": "Apixaban",
+        "dose": "5",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": true,
+      "monoarthritisLargeJoint": true,
+      "goutFlaresYear": 2
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "prednisolone",
+        "ruleId": "rec_gout_intraarticular_steroid",
+        "action": "START"
+      },
+      {
+        "drugId": "naproxen",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "naproxen",
+        "action": "START"
+      },
+      {
+        "drugId": "etoricoxib",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 72 tuổi suy tim, rung nhĩ đang kháng đông Apixaban nhập viện vì viêm gút cấp khớp gối đơn độc. Chống chỉ định NSAID do suy tim và xuất huyết; ưu tiên Corticoid nội khớp hoặc Prednisolone uống."
+}

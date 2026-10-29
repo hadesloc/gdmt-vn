@@ -1,0 +1,67 @@
+{
+  "id": "af_49_pregnancy_stop_diltiazem_avoid",
+  "titleVi": "Phụ nữ mang thai mắc rung nhĩ đang dùng Diltiazem: Bắt buộc ngừng Diltiazem và khởi trị Bisoprolol",
+  "source": "ESC 2025 Pregnancy Guidelines / esc.preg.2025.diltiazem_verapamil",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 34,
+    "sex": "female",
+    "weight": 60,
+    "height": 160,
+    "sbp": 118,
+    "dbp": 72,
+    "hr": 102,
+    "rhythm": "afib",
+    "scr": 62,
+    "lvef": 58,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "pregnant": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "diltiazem",
+        "name": "Herbesser",
+        "dose": 120,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "diltiazem",
+        "action": "STOP"
+      },
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "diltiazem",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Diltiazem có trạng thái pregnancy.status = avoid (ESC 2025 Pregnancy & FDA): bắt buộc STOP Diltiazem ở thai phụ và chuyển sang chẹn beta chọn lọc beta-1."
+}

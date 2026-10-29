@@ -1,0 +1,82 @@
+{
+  "id": "copd_43_r2_aco_stable_triple_preserves_lama",
+  "titleVi": "Hồi quy R2 (COPD-R1V2-02): Đồng chọn ['copd', 'asthma'] đang ổn định trên Trelegy Ellipta – Duy trì bộ ba (không đánh rơi LAMA)",
+  "source": "GOLD 2026 p. 75 & p. 80 (COPD-R1V2-02)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_43",
+    "age": 62,
+    "sex": "male",
+    "weight": 64,
+    "height": 167,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 72,
+    "conditions": {
+      "copd": true,
+      "asthma": true
+    },
+    "selectedModules": [
+      "copd",
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "name": "Trelegy Ellipta",
+        "dose": 100,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.52,
+      "fev1PredPct": 58,
+      "mmrc": 1,
+      "cat": 7,
+      "moderateExacerbations": 0,
+      "hospitalizations": 0,
+      "bloodEos": 240,
+      "smokingStatus": "former",
+      "currentTrack": "track1",
+      "currentStep": 3,
+      "daytimeSymptomsMoreThanTwiceWeek": false,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "ruleId": "rec_copd_continue_triple",
+        "action": "CONTINUE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "action": "STOP"
+      },
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "SWITCH"
+      }
+    ]
+  }
+}

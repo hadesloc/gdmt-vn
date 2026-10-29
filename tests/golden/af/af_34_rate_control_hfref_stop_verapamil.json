@@ -1,0 +1,68 @@
+{
+  "id": "af_34_rate_control_hfref_stop_verapamil",
+  "titleVi": "Suy tim LVEF 30% đang dùng Verapamil: DỪNG NGAY Verapamil (ADV_AF_32)",
+  "source": "ESC 2024 tr. 40 / esc.af.2024.verapamil_contra_lvef40",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 70,
+    "sex": "female",
+    "weight": 56,
+    "height": 155,
+    "sbp": 112,
+    "dbp": 70,
+    "hr": 95,
+    "rhythm": "afib",
+    "lvef": 30,
+    "scr": 98,
+    "selectedModules": [
+      "af",
+      "hf"
+    ],
+    "conditions": {
+      "af": true,
+      "hf": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "verapamil",
+        "name": "Isoptin",
+        "dose": 120,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "verapamil",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "diltiazem",
+        "action": "STOP"
+      },
+      {
+        "drugId": "verapamil",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "HFrEF LVEF 30% đang dùng Verapamil (ADV_AF_32): Hệ thống phát lệnh STOP chính xác Verapamil (không gán nhầm diltiazem)."
+}

@@ -1,0 +1,27 @@
+{
+  "itemId": "hf.sglt2i.egfr_metformin_fdc_min",
+  "contentHash": "978ebe25b471d36570716e64686af5345f28be69b46ae174b8b74c3f966e8445",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "hf.sglt2i.egfr_metformin_fdc_min",
+      "contentHash": "8230ce245a0b69dd",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T09:00:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-28T09:00:00.000Z",
+          "role": "Agent G5 (HF Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF threshold hf.sglt2i.egfr_metformin_fdc_min (Round 2 R1/R2/R3 remediation & verbatim PDF citation verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

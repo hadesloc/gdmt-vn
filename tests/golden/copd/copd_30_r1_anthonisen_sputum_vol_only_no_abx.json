@@ -1,0 +1,63 @@
+{
+  "id": "copd_30_r1_anthonisen_sputum_vol_only_no_abx",
+  "titleVi": "Hồi quy R1-R3: Đợt cấp chỉ tăng lượng đờm trong (không đờm mủ, không cần thở máy) không dùng kháng sinh",
+  "source": "GOLD 2026 p. 115 / Anthonisen Criteria (COPD-R1-04, COPD-R2-03, R3-COPD-09)",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_30",
+    "age": 65,
+    "sex": "male",
+    "weight": 60,
+    "height": 166,
+    "sbp": 134,
+    "dbp": 80,
+    "hr": 92,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteExacerbation": true,
+      "fev1FvcRatio": 0.51,
+      "fev1PredPct": 49,
+      "restingSpo2": 90,
+      "abgPh": 7.4,
+      "abgPaco2": 40,
+      "purulentSputum": false,
+      "increasedSputumVolume": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "prednisolone",
+        "ruleId": "rec_copd_inpatient_steroid",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_copd_inpatient_antibiotics",
+        "action": "START"
+      }
+    ]
+  }
+}

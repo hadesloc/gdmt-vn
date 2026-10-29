@@ -1,0 +1,129 @@
+{
+  "id": "clevidipine",
+  "nameVi": "Clevidipine (nhũ tương truyền tĩnh mạch)",
+  "inn": "Clevidipine",
+  "class": "CCB (Dihydropyridine thế hệ mới cực ngắn — Tĩnh mạch)",
+  "classes": [
+    "dhp_ccb"
+  ],
+  "vnBrands": [
+    "Cleviprex"
+  ],
+  "forms": [
+    "Lọ nhũ tương truyền tĩnh mạch 25 mg / 50 mL (0.5 mg/mL)",
+    "Lọ nhũ tương truyền tĩnh mạch 50 mg / 100 mL (0.5 mg/mL)"
+  ],
+  "start": {
+    "amount": "1–2",
+    "unit": "mg/giờ",
+    "frequency": "truyền liên tục",
+    "route": "truyền tĩnh mạch",
+    "description": "Nhũ tương lipid vô khuẩn không chất bảo quản — thay lọ và dây truyền mỗi 12 giờ"
+  },
+  "target": {
+    "amount": "4–6",
+    "unit": "mg/giờ",
+    "frequency": "truyền liên tục",
+    "route": "truyền tĩnh mạch",
+    "description": "Nhân đôi liều mỗi 90 giây khi còn xa đích, sau đó tăng chậm mỗi 5–10 phút; trung bình ≤ 21 mg/giờ (giới hạn 1000 mL nhũ tương lipid/24 giờ)"
+  },
+  "titration": {
+    "step": "Nhân đôi mỗi 90 giây ban đầu, khi gần đích tăng dưới gấp đôi mỗi 5–10 phút; tổng thời gian truyền không quá 72 giờ",
+    "intervalDays": 1,
+    "maxDose": "21 mg/giờ trung bình trong 24 giờ (tối đa ngắn hạn 32 mg/giờ; tổng thể tích ≤ 1000 mL lipid/24 giờ; tối đa 72 giờ)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "1–21 mg/giờ truyền tĩnh mạch",
+      "citationIds": [
+        "aha.acc.2025.iv_clevidipine",
+        "aha.acc.2025.table27_aortic_acs"
+      ],
+      "note": "Thủy phân cực nhanh bởi esterase trong máu và mô ngoài mạch (t½ pha đầu ~1 phút), không phụ thuộc thận — lựa chọn ưu tiên trong cấp cứu THA kèm tổn thương thận cấp (AHA Table 27)."
+    }
+  ],
+  "hepatic": {
+    "status": "ok",
+    "notesVi": "Thủy phân bởi esterase ngoài gan, không cần chỉnh liều khởi đầu ở bệnh nhân suy gan.",
+    "citationIds": [
+      "aha.acc.2025.iv_clevidipine"
+    ]
+  },
+  "gates": [
+    {
+      "id": "gate_clevidipine_sbp_90",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 90,
+      "unit": "mmHg",
+      "action": "stop",
+      "messageVi": "Ngưng truyền Clevidipine ngay khi HATT < 90 mmHg.",
+      "citationIds": [
+        "aha.acc.2025.iv_clevidipine"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Dữ liệu trên thai kỳ người còn rất hạn chế — trong cấp cứu sản khoa ưu tiên Labetalol TM hoặc Nicardipine TM có bằng chứng đầy đủ.",
+    "citationIds": [
+      "esc.htn.2024.preeclampsia_mgso4"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Chưa có dữ liệu đầy đủ trên người cho con bú; thời gian bán thải cực ngắn (~1 phút).",
+    "citationIds": [
+      "aha.acc.2025.iv_clevidipine"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "soy_egg_allergy",
+      "messageVi": "CHỐNG CHỈ ĐỊNH khi dị ứng đậu nành, chế phẩm đậu nành, trứng hoặc chế phẩm từ trứng (tá dược nhũ tương dầu đậu nành + phospholipid lòng đỏ trứng)",
+      "citationIds": [
+        "fda.clevidipine.contraindications_sec4",
+        "aha.acc.2025.iv_clevidipine"
+      ]
+    },
+    {
+      "code": "severe_lipid_disorder",
+      "messageVi": "Rối loạn chuyển hóa lipid bệnh lý nặng (tăng lipid máu bệnh lý, thận hư nhiễm mỡ, viêm tụy cấp kèm tăng triglycerid máu)",
+      "citationIds": [
+        "fda.clevidipine.contraindications_sec4",
+        "aha.acc.2025.iv_clevidipine"
+      ]
+    },
+    {
+      "code": "acute_pancreatitis",
+      "messageVi": "Viêm tụy cấp kèm tăng lipid máu",
+      "citationIds": [
+        "fda.clevidipine.contraindications_sec4",
+        "aha.acc.2025.iv_clevidipine"
+      ]
+    },
+    {
+      "code": "severe_aortic_stenosis",
+      "messageVi": "Hẹp khít van động mạch chủ nặng (giảm hậu tải đột ngột làm giảm tưới máu mạch vành và tụt áp nặng)",
+      "citationIds": [
+        "aha.acc.2025.iv_nicardipine",
+        "aha.acc.2025.iv_clevidipine"
+      ]
+    }
+  ],
+  "interactions": [
+    "Tải lượng lipid: dung dịch chứa 0,2 g lipid/mL (2 kcal/mL) — không vượt quá 1000 mL (tức trung bình 21 mg/giờ) trong 24 giờ và cần trừ lượng lipid truyền đồng thời (như propofol hoặc dinh dưỡng tĩnh mạch).",
+    "Vô khuẩn nghiêm ngặt: nhũ tương giàu phospholipid hỗ trợ vi khuẩn phát triển — bắt buộc hủy bỏ lọ thuốc sau 12 giờ kể từ khi đâm kim.",
+    "Theo dõi tăng huyết áp dội ngược (rebound hypertension) ít nhất 8 giờ sau khi ngưng truyền kéo dài nếu chưa kịp gối đầu thuốc hạ áp đường uống."
+  ],
+  "citationIds": [
+    "aha.acc.2025.iv_clevidipine",
+    "aha.acc.2025.table27_aortic_acs",
+    "aha.acc.2025.pulmonary_edema_bb_contra",
+    "fda.clevidipine.contraindications_sec4",
+    "fda.clevidipine.lipid_1000ml"
+  ]
+}

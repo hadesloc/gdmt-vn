@@ -1,0 +1,26 @@
+{
+  "itemId": "byt.copd.2026.mmrc_cat_cutoff",
+  "contentHash": "8338a93cf79d7e4655c912b007bcf51f0ca12de254d66636834990b2510ee9ed",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "byt.copd.2026.mmrc_cat_cutoff",
+      "contentHash": "4d3e06fe949f321a",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

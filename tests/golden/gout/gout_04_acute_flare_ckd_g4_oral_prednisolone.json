@@ -1,0 +1,66 @@
+{
+  "id": "gout_04_acute_flare_ckd_g4_oral_prednisolone",
+  "titleVi": "Cơn gút cấp đa khớp trên nền CKD giai đoạn 4 (eGFR < 30): Ưu tiên Prednisolone 30–35 mg/ngày",
+  "source": "KDIGO 2024 CKD & EULAR 2016 (kdigo.gout.2024.acute_flare_ckd, eular.gout.2016.flare_options)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "male",
+    "weight": 62,
+    "scr": 260,
+    "uricAcid": 540,
+    "conditions": {
+      "gout": true,
+      "ckd": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteFlare": true,
+      "monoarthritisLargeJoint": false,
+      "goutFlaresYear": 2
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "prednisolone",
+        "ruleId": "rec_gout_oral_corticosteroid_flare",
+        "action": "START",
+        "doseContains": "30–35 mg"
+      },
+      {
+        "drugId": "naproxen",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "colchicine",
+        "action": "START"
+      },
+      {
+        "drugId": "naproxen",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 68 tuổi CKD giai đoạn 4 (SCr 260 µmol/L, eGFR ~21 mL/phút/1.73m²) vào cơn gút cấp 2 khớp cổ chân - bàn chân. Tránh NSAID và tránh Colchicine liều cắt cơn; chọn Prednisolone 30–35 mg/ngày × 3–5 ngày."
+}

@@ -1,0 +1,17 @@
+{
+  "itemId": "magnesium_sulfate",
+  "contentHash": "c58333bbf905c502dc1413c3e671ab7c1251c5accadaa5d94744ad3d40043da9",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "magnesium_sulfate",
+      "contentHash": "8ce9940f2296b4e9",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

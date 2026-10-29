@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.target.high_ldl_mgdl",
+  "contentHash": "b88353acdb0e59863f324b1715759f6bc1313ac3afe9e07d829e8029aa8cf390",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.target.high_ldl_mgdl",
+      "contentHash": "b41654185cc65959",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.target.high_ldl_mgdl."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "dm2_54_steroid_hyperglycemia_with_glargine_nph",
+  "titleVi": "Tăng đường huyết do Glucocorticoid trên bệnh nhân đang tiêm Insulin Glargine: Bổ sung Insulin NPH buổi sáng mà không ngừng Glargine",
+  "source": "ADA Standards of Care 2026 Chapter 16 & Chapter 9",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 60,
+    "sex": "female",
+    "weight": 65,
+    "height": 158,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 78,
+    "scr": 80,
+    "k": 4.2,
+    "glucose": 14.5,
+    "hba1c": 8.6,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "metformin",
+        "name": "Metformin",
+        "dose": 2000,
+        "unit": "mg"
+      },
+      {
+        "drugId": "insulin_glargine",
+        "name": "Insulin Glargine",
+        "dose": 30,
+        "unit": "U"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "onSteroidTherapy": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "insulin_nph",
+        "action": "START"
+      },
+      {
+        "drugId": "insulin_glargine",
+        "action": "UPTITRATE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "insulin_glargine",
+        "action": "STOP"
+      },
+      {
+        "drugId": "insulin_nph",
+        "action": "SWITCH"
+      }
+    ]
+  },
+  "descriptionVi": "Khi bệnh nhân đang tiêm Insulin Glargine nền mà dùng thêm Prednisone gây tăng đường huyết, hệ thống bổ sung Insulin NPH buổi sáng song song với Glargine hiện tại (không ghi đè SWITCH ngừng Glargine)."
+}

@@ -1,0 +1,51 @@
+{
+  "id": "ckd_42_bp_target_sbp125_intl_uptitrate",
+  "titleVi": "Ngoại trú (Hồ sơ INTL) - Huyết áp tâm thu 125 mmHg chưa đạt đích KDIGO (< 120 mmHg) -> Khuyến cáo UPTITRATE tối ưu hạ áp (Regression R3-CKD-08)",
+  "source": "KDIGO 2024 CKD Rec 3.4.1 & KDIGO 2021 BP Rec 3.1.1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_42",
+    "name": "BN CKD 42",
+    "age": 58,
+    "sex": "male",
+    "weight": 72,
+    "sbp": 125,
+    "dbp": 78,
+    "hr": 70,
+    "scr": 135,
+    "k": 4.4,
+    "uacr": 18,
+    "conditions": {
+      "ckd": true,
+      "htn": true
+    },
+    "currentMeds": [
+      { "drugId": "perindopril", "name": "Coversyl 5 mg", "dose": 5, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "ruleId": "rec_ckd_bp_target", "action": "UPTITRATE" }
+    ],
+    "mustNotInclude": [
+      { "ruleId": "rec_ckd_bp_target", "action": "CONTINUE" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy R3-CKD-08: Khi chọn hồ sơ Quốc tế (INTL - KDIGO < 120 mmHg), SBP 125 mmHg chưa đạt mục tiêu nên phải phát UPTITRATE thay vì CONTINUE."
+}

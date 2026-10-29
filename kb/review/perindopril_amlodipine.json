@@ -1,0 +1,26 @@
+{
+  "itemId": "perindopril_amlodipine",
+  "contentHash": "92ef5a8f1b21c8495f34388400c19113346f0e0c9564dd3859d21ccadd62016f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "perindopril_amlodipine",
+      "contentHash": "8128f3694466b2c2",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Perindopril + Amlodipine (SPC) (perindopril_amlodipine) đầy đủ phân nhóm, dải thận, thai kỳ/cho con bú, cổng an toàn và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

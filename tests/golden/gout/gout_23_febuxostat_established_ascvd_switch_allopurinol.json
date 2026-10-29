@@ -1,0 +1,69 @@
+{
+  "id": "gout_23_febuxostat_established_ascvd_switch_allopurinol",
+  "titleVi": "Cảnh báo hộp đen FDA CARES: Đang dùng Febuxostat có bệnh tim mạch xơ vữa & HLA-B*58:01 âm tính -> SWITCH sang Allopurinol",
+  "source": "ACR 2020 & FDA Febuxostat Boxed Warning (acr.gout.2020.febuxostat_cvd_switch, fda.febuxostat.boxed_warning)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "US",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "male",
+    "weight": 74,
+    "scr": 92,
+    "uricAcid": 340,
+    "conditions": {
+      "gout": true,
+      "ascvd": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "febuxostat",
+        "name": "Febuxostat",
+        "dose": "40",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 2,
+      "hasCvd": true,
+      "hlab5801": "negative"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "febuxostat",
+        "ruleId": "rec_gout_febuxostat_cvd_switch",
+        "action": "SWITCH"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "febuxostat",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "febuxostat",
+        "action": "UPTITRATE"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 65 tuổi tiền sử nhồi máu cơ tim (ASCVD) đang uống Febuxostat 40 mg/ngày, HLA-B*58:01 âm tính và dung nạp được Allopurinol. Khuyến cáo chuyển từ Febuxostat sang Allopurinol theo thử nghiệm CARES & ACR 2020."
+}

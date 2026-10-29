@@ -1,0 +1,57 @@
+{
+  "id": "asthma_28_profile_diff_vietnam",
+  "titleVi": "Profile VN: Hiển thị hướng dẫn đặc thù Bộ Y tế QĐ 1851/2020",
+  "source": "BYT 1851/2020 / R1-08",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_28",
+    "name": "Hoàng Văn V (44 tuổi)",
+    "age": 44,
+    "sex": "male",
+    "weight": 66,
+    "sbp": 125,
+    "dbp": 78,
+    "hr": 76,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "currentTrack": "track1",
+      "daytimeSymptomsMoreThanTwiceWeek": false,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_asthma_profile_diff_vietnam",
+        "action": "MONITOR"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Profile VN kích hoạt hướng dẫn thực hành BHYT và danh mục thuốc của Bộ Y tế Việt Nam."
+}

@@ -1,0 +1,164 @@
+[
+  {
+    "id": "R3-LIPID-01",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "lipid.inpatient.acs_early_statin",
+    "finding": "Bỏ sót chống chỉ định gan và cơ cấp tính ở nội viện ACS: Khởi trị Statin liều cao (Atorvastatin 80 mg) cho bệnh nhân hội chứng vành cấp có viêm gan cấp (ALT > 5x ULN) hoặc tiêu cơ vân / tổn thương cơ nặng (CK > 18x ULN).",
+    "evidence": "Input BN ADV_LIPID_32 (ACS nội viện trong 24h, altUlnTimes: 5.2 x ULN) và ADV_LIPID_33 (ACS nội viện trong 24h, ckUlnTimes: 18.0 x ULN, CK > 10x tiêu cơ vân). Output engine: cả hai đều nhận được [START] drugId=atorvastatin dose='80 mg' title='Khởi trị Atorvastatin liều cao sớm trong 24h đầu ACS', hoàn toàn KHÔNG CÓ khuyến cáo HOLD/STOP nào và alerts = []. Đoạn mã gây lỗi: rules.inpatient.ts không hề kiểm tra altUlnTimes hay ckUlnTimes, trong khi các luật an toàn gan/cơ trong rules.outpatient.ts bị giới hạn bởi setting: 'outpatient' nên không chạy ở nội viện.",
+    "suggestedFix": "Mở rộng phạm vi setting của luật an toàn ALT (lipid.safety.alt_elevation) và CK (lipid.safety.ck_elevation) thành setting: 'both', hoặc sao chép quy tắc kiểm tra an toàn vào rules.inpatient.ts. Trong lipid.inpatient.acs_early_statin, bắt buộc thêm điều kiện chặn: 'if (altUln !== undefined && altUln >= 3) return false; if (ckUln !== undefined && ckUln > 4) return false;'."
+  },
+  {
+    "id": "R3-LIPID-02",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "src/engine/safety/gates.ts",
+    "finding": "Không phát hiện và không ra lệnh ngừng (STOP) các thuốc hạ lipid gây độc phôi thai và quái thai (Fenofibrate, Ezetimibe, Bempedoic acid) ở phụ nữ mang thai đang dùng thuốc.",
+    "evidence": "Input BN ADV_LIPID_47 (Nữ 32 tuổi mang thai, đang uống Fenofibrate 200 mg), ADV_LIPID_48 (Nữ 29 tuổi mang thai, đang uống Ezetimibe 10 mg), và ADV_LIPID_49 (Nữ 31 tuổi mang thai, đang uống Bempedoic acid 180 mg). Output engine: Chỉ sinh [AVOID] atorvastatin (thuốc bệnh nhân không hề dùng), HOÀN TOÀN KHÔNG CÓ khuyến cáo nào yêu cầu STOP Fenofibrate, Ezetimibe hay Bempedoic acid; alerts = []. Nguyên nhân: PREGNANCY_CONTRAINDICATED_DRUGS trong src/engine/safety/gates.ts chỉ liệt kê statin, hoàn toàn bỏ quên Fenofibrate, Ezetimibe, Bempedoic acid.",
+    "suggestedFix": "Bổ sung ngay 'fenofibrate', 'ezetimibe', 'bempedoic_acid', 'gemfibrozil', 'icosapent_ethyl' vào tập hợp PREGNANCY_CONTRAINDICATED_DRUGS trong src/engine/safety/gates.ts để hàm reviewCurrentMedications tự động phát khuyến cáo STOP khẩn cấp kèm trích dẫn an toàn thai kỳ FDA Black Box."
+  },
+  {
+    "id": "R3-LIPID-03",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "src/engine/safety/interactions.ts",
+    "finding": "Bỏ sót hoàn toàn các tương tác thuốc nguy hiểm đe dọa tiêu cơ vân tử vong khi dùng Statin đồng thời với Clarithromycin (CYP3A4), Cyclosporine (OATP1B1), Amiodarone (CYP3A4) hoặc Colchicine.",
+    "evidence": "Input BN ADV_LIPID_54 (Atorvastatin 80 mg + Clarithromycin 500 mg BID), ADV_LIPID_55 (Atorvastatin + Amiodarone 200 mg), ADV_LIPID_56 (Atorvastatin + Cyclosporine 100 mg), và ADV_LIPID_57 (Atorvastatin + Colchicine 1 mg). Output engine: Cả 4 ca đều nhận khuyến cáo [START] Atorvastatin liều cao 80 mg mà KHÔNG CÓ BẤT KỲ CẢNH BÁO TƯƠNG TÁC NÀO (alerts = []). Nguyên nhân: INTERACTION_RULES trong interactions.ts chỉ có 1 luật tương tác statin duy nhất là Statin + Gemfibrozil.",
+    "suggestedFix": "Bổ sung vào INTERACTION_RULES trong src/engine/safety/interactions.ts các luật tương tác nghiêm trọng: 1) Statin chuyển hóa CYP3A4 (atorvastatin, simvastatin, lovastatin) + Clarithromycin/Erythromycin/Ketoconazole (mức critical: tạm hoãn statin trong đợt dùng); 2) Statin + Cyclosporine (mức critical: giới hạn liều Rosuvastatin <= 5mg hoặc tránh dùng); 3) Statin + Colchicine (mức warning/critical: theo dõi triệu chứng cơ và CK); 4) Statin + Amiodarone (mức warning: giới hạn liều Simvastatin <= 20mg)."
+  },
+  {
+    "id": "R3-LIPID-04",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "src/engine/safety/reviewMeds.ts",
+    "finding": "Bệnh nhân đang sử dụng liều độc Simvastatin 80 mg/ngày (bị FDA chống chỉ định tuyệt đối do nguy cơ tiêu cơ vân) không hề bị hệ thống yêu cầu NGỪNG (STOP) hay chuyển đổi (SWITCH), ngược lại còn được khuyến cáo START thêm Atorvastatin 80 mg.",
+    "evidence": "Input BN ADV_LIPID_42 (Nam 58 tuổi có ASCVD, đang dùng Simvastatin 80 mg/ngày). Output engine: [START] Atorvastatin 80 mg; phần cảnh báo chỉ có 1 alert warning 'Trùng lặp 2 thuốc nhóm Statin' (do có 2 statin). Không hề có lệnh STOP Simvastatin 80 mg hay cảnh báo liều độc chống chỉ định theo ACC 2026 / FDA.",
+    "suggestedFix": "Bổ sung vào reviewCurrentMedications trong src/engine/safety/reviewMeds.ts: Quét currentMeds, nếu phát hiện 'simvastatin' có liều >= 80 mg/ngày, phát sinh ngay khuyến cáo [STOP] hoặc [SWITCH] Simvastatin 80 mg khẩn cấp kèm trích dẫn ACC 2026 / FDA Simvastatin Safety Alert."
+  },
+  {
+    "id": "R3-LIPID-05",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "lipid.statin_intolerance.bempedoic",
+    "finding": "Khởi trị Bempedoic acid khi không dung nạp statin hoàn toàn không kiểm tra tiền sử bệnh Gút hoặc nồng độ Acid Uric máu, gây nguy cơ bùng phát đợt gút cấp dữ dội và tổn thương thận.",
+    "evidence": "Input BN ADV_LIPID_44 (Không dung nạp statin, đang bị đợt gút cấp, urat máu tăng rất cao 580 umol/L, đang dùng Colchicine). Output engine: [START] drugId=bempedoic_acid dose='180 mg' title='Khởi trị Bempedoic acid khi không dung nạp Statin', không có cổng an toàn, không có cảnh báo về nồng độ urat hay gút; alerts = []. Đoạn mã gây lỗi: rules.outpatient.ts dòng 240–243 chỉ kiểm tra statinIntolerance && ldl !== undefined.",
+    "suggestedFix": "Thêm cổng kiểm tra acid uric và tiền sử gút trong luật lipid.statin_intolerance.bempedoic: Nếu patient.conditions?.gout === true hoặc patient.urat > 420 umol/L (> 7.0 mg/dL), không START đơn thuần mà phải chuyển action sang CAUTION hoặc DEFER kèm gate Urate: passed=false và khuyến cáo kiểm soát urat trước khi dùng Bempedoic acid theo khuyến cáo FDA / CLEAR Outcomes."
+  },
+  {
+    "id": "R3-LIPID-06",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "lipid.safety.ck_elevation",
+    "finding": "Bỏ sót cấp cứu tổn thương cơ nặng / tiêu cơ vân ở mức CK > 10x ULN: Hệ thống chỉ phát lệnh tạm hoãn (HOLD) nhẹ như mức CK > 4x ULN, không có lệnh ngừng khẩn cấp, không đánh giá chức năng thận và không cấp cứu bù dịch.",
+    "evidence": "Input BN ADV_LIPID_53 (Nam 58 tuổi, CK = 12 x ULN [vượt xa ngưỡng 10x ULN tiêu cơ vân], Creatinin tăng 130 umol/L). Output engine: [HOLD] drugId=atorvastatin title='Tạm hoãn thuốc hạ lipid do CK tăng > 4 lần ULN'. Rationale chỉ khuyên theo dõi định kỳ, không phân loại tiêu cơ vân cấp cứu.",
+    "suggestedFix": "Tách xử trí CK thành 2 quy tắc lâm sàng riêng biệt: 1) CK 4–10x ULN: Tạm hoãn statin và kiểm tra lại sau 2–4 tuần; 2) CK >= 10x ULN (hoặc CK > 4x kèm đau cơ dữ dội/tiểu sẫm màu): Phát hành động STOP khẩn cấp, REFER cấp cứu, xét nghiệm chức năng thận đồ, myoglobin niệu và truyền dịch kiềm hóa theo khuyến cáo ESC 2019 Bảng 18."
+  },
+  {
+    "id": "R3-LIPID-07",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "lipid.statin.very_high_risk_initiate",
+    "finding": "Bệnh nhân nguy cơ rất cao đang dùng Statin liều tối đa (Atorvastatin 80 mg/ngày) mà LDL-C vẫn chưa đạt đích (2.4 mmol/L > 1.4 mmol/L) lại nhận khuyến cáo [START] Khởi trị Atorvastatin 80 mg, đồng thời BỎ SÓT hoàn toàn khuyến cáo Class I phối hợp thêm Ezetimibe hoặc PCSK9i.",
+    "evidence": "Input BN ADV_LIPID_40 (ASCVD, đang uống Atorvastatin 80 mg/ngày, LDL = 2.4 mmol/L). Output engine: [START] drugId=atorvastatin dose='80 mg' title='Khởi trị Atorvastatin liều cao đạt đích LDL-C < 1.4 mmol/L'. Hoàn toàn KHÔNG CÓ khuyến cáo thêm Ezetimibe (vì luật upfront_combo yêu cầu LDL >= 3.0 mmol/L mới chạy) và không có thuốc ức chế PCSK9.",
+    "suggestedFix": "Trong lipid.statin.very_high_risk_initiate, kiểm tra currentMeds: Nếu bệnh nhân đã đang dùng statin liều cao (Atorvastatin 40–80 mg hoặc Rosuvastatin 20–40 mg) mà LDL vẫn > target: chuyển action thành CONTINUE statin và phát sinh ngay khuyến cáo [START] Ezetimibe 10 mg/ngày (Class I B theo ESC 2019/2025). Nếu đã dùng Statin + Ezetimibe mà vẫn chưa đạt đích: phát sinh [START] / [CONSIDER] Thuốc ức chế PCSK9 (Class I A)."
+  },
+  {
+    "id": "R3-LIPID-08",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "src/modules/lipid/rules.outpatient.ts",
+    "finding": "Bỏ sót hoàn toàn bệnh nhân tái phát biến cố ASCVD trong vòng 2 năm (recurrentAcsWithin2Years): Không áp dụng đích LDL-C nghiêm ngặt < 1.0 mmol/L (< 40 mg/dL) như guideline ESC 2019 Table 7.",
+    "evidence": "Input BN ADV_LIPID_01 (LDL = 1.0 mmol/L) và ADV_LIPID_02 (LDL = 1.1 mmol/L) có điều kiện recurrentAcsWithin2Years: true. Output engine: 0 khuyến cáo điều trị hạ lipid (chỉ có đo Lp(a) và lịch tái khám). Trường recurrentAcsWithin2Years được khai báo trong inputs.ts nhưng không xuất hiện trong bất kỳ mệnh đề when() nào của rules.outpatient.ts hay rules.inpatient.ts.",
+    "suggestedFix": "Bổ sung luật xử lý tầng nguy cơ cực cao: Khi patient.conditions?.recurrentAcsWithin2Years === true, áp dụng đích th('lipid.target.recurrent_acs_ldl') (1.0 mmol/L). Nếu LDL >= 1.0 mmol/L, bắt buộc phát khuyến cáo tăng cường phối hợp thuốc (Statin tối đa + Ezetimibe + PCSK9i) để đưa LDL < 1.0 mmol/L."
+  },
+  {
+    "id": "R3-LIPID-09",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "src/modules/lipid/rules.outpatient.ts",
+    "finding": "Thiếu hoàn toàn các quy tắc điều trị cho tầng Nguy cơ Tim mạch Trung bình (đích < 2.6 mmol/L) và Nguy cơ Thấp (đích < 3.0 mmol/L): Tạo ra vùng mù điều trị ở bệnh nhân phòng ngừa tiên phát.",
+    "evidence": "Input BN ADV_LIPID_09 (Nguy cơ trung bình, LDL = 2.61 mmol/L > đích 2.6) và Preset số 5 của chính module lipid (lipid_preset_5_primary_prevention_moderate, LDL = 3.4 mmol/L, SCORE2 4.2%). Output engine: Chỉ có khuyến cáo đo Lp(a) và hẹn xét nghiệm lại sau 8 tuần; hoàn toàn KHÔNG CÓ khuyến cáo thay đổi lối sống hay Statin cường độ trung bình nào.",
+    "suggestedFix": "Bổ sung 2 quy tắc lâm sàng trong rules.outpatient.ts: 1) lipid.statin.moderate_risk_initiate: Khi bệnh nhân thuộc nguy cơ trung bình (SCORE2 2–9% hoặc ĐTĐ trẻ tuổi < 10 năm) và LDL > 2.6 mmol/L -> Tư vấn lối sống và cân nhắc Statin cường độ trung bình (Atorvastatin 10–20 mg hoặc Rosuvastatin 5–10 mg); 2) lipid.lifestyle.low_risk: Tư vấn lối sống khi LDL > 3.0 mmol/L ở nhóm nguy cơ thấp."
+  },
+  {
+    "id": "R3-LIPID-10",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "src/modules/lipid/rules.outpatient.ts",
+    "finding": "Bỏ sót hoàn toàn tiêu chuẩn mức giảm kép (Dual Goal): Yêu cầu giảm >= 50% so với mức LDL-C nền ban đầu ở nhóm nguy cơ cao và rất cao.",
+    "evidence": "Input BN ADV_LIPID_12 (Nguy cơ rất cao, baselineLdl = 2.2 mmol/L, LDL hiện tại = 1.35 mmol/L). Bệnh nhân đạt đích nồng độ tuyệt đối < 1.4 mmol/L nhưng tỷ lệ giảm chỉ đạt 38.6% (< 50% so với nền). Output engine: Không có khuyến cáo tối ưu hóa nào, bỏ qua hoàn toàn tiêu chuẩn giảm >= 50% của ESC 2019 / ACC 2026. Trường customInputs.baselineLdl trong inputs.ts không bao giờ được tính toán trong rules.",
+    "suggestedFix": "Trong các quy tắc đánh giá đích, nếu có thông số baselineLdl, tính toán percentReduction = ((baselineLdl - ldl) / baselineLdl) * 100. Ở nhóm nguy cơ cao và rất cao, nếu percentReduction < 50%, phải phát sinh khuyến cáo tăng liều hoặc phối hợp thuốc nhằm đạt mục tiêu kép giảm >= 50% theo ESC/EAS 2019."
+  },
+  {
+    "id": "R3-LIPID-11",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "lipid.statin.high_risk_initiate",
+    "finding": "Bỏ sót tăng cholesterol máu cực cao (LDL-C >= 4.9 mmol/L / >= 190 mg/dL): Không tự động xếp vào nhóm nguy cơ cao nếu bác sĩ không đánh dấu cờ tăng cholesterol gia đình (FH).",
+    "evidence": "Input BN ADV_LIPID_30 (Nam 36 tuổi, LDL = 5.5 mmol/L >= 4.9 mmol/L, không tick cờ familialHypercholesterolemia). Output engine: 0 khuyến cáo điều trị statin! Đoạn mã gây lỗi: rules.outpatient.ts dòng 414 chỉ kiểm tra hasFh = Boolean(needCondition(ctx, 'familialHypercholesterolemia')).",
+    "suggestedFix": "Trong lipid.statin.high_risk_initiate (hoặc very_high_risk_initiate), bổ sung điều kiện nhận diện kiểu hình tự động: 'const isSevereHypercholesterolemia = ldl !== undefined && ldl >= 4.9;' (theo ACC/AHA 2018 Nhóm 2 và ESC 2019). Bất kỳ bệnh nhân nào có LDL >= 4.9 mmol/L phải được tự động xếp vào Nguy cơ Cao và khởi trị Statin cường độ cao."
+  },
+  {
+    "id": "R3-LIPID-12",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "lipid.statin.very_high_risk_initiate",
+    "finding": "Phân tầng sai bệnh nhân Đái tháo đường mắc bệnh kéo dài >= 20 năm: Bị tụt từ Nguy cơ Rất Cao xuống Nguy cơ Cao.",
+    "evidence": "Input BN ADV_LIPID_23 (ĐTĐ mắc 25 năm, không ghi nhận tổn thương cơ quan đích, LDL = 1.6 mmol/L). ESC 2019 Bảng 7 phân loại ĐTĐ >= 20 năm vào Nguy cơ RẤT CAO (đích < 1.4 mmol/L). Output engine: Không có khuyến cáo điều trị nào vì hệ thống xếp nhầm vào Nguy cơ Cao (đích 1.8 mmol/L, nên 1.6 được xem là đạt đích). Đoạn mã gây lỗi: very_high_risk_initiate chỉ kiểm tra dmTargetOrganDamage, bỏ sót dmDurationYears >= 20.",
+    "suggestedFix": "Trong lipid.statin.very_high_risk_initiate dòng 295, sửa thành: 'const dmYears = need(ctx, 'dmDurationYears'); const isVeryHighDm = hasDmTod || (hasDm && dmYears !== undefined && dmYears >= 20);'."
+  },
+  {
+    "id": "R3-LIPID-13",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "src/modules/lipid/rules.inpatient.ts",
+    "finding": "Cúp hoàn toàn điều trị hạ lipid ở bệnh nhân nội viện không phải do ACS (Inpatient Non-ACS): Bệnh nhân có tiền sử bệnh mạch vành (ASCVD) hoặc đái tháo đường nhập viện vì suy tim, viêm phổi có LDL-C tăng cao không nhận được bất kỳ khuyến cáo lipid nào.",
+    "evidence": "Input BN ADV_LIPID_34 (Nữ 70 tuổi có tiền sử ASCVD rõ rệt, nhập viện vì suy tim mất bù, LDL = 3.2 mmol/L, settings.setting = 'inpatient'). Output engine: 0 khuyến cáo (trống hoàn toàn). Nguyên nhân: Các luật ngoại trú có setting: 'outpatient' không chạy; rules.inpatient.ts chỉ kiểm tra acuteAcsWithin24h.",
+    "suggestedFix": "Chuyển các quy tắc đánh giá đích lipid căn bản (lipid.statin.very_high_risk_initiate và lipid.statin.high_risk_initiate) sang setting: 'both' để bệnh nhân nằm viện vì các bệnh lý nội khoa khác vẫn được tối ưu hóa phác đồ hạ lipid trước khi xuất viện."
+  },
+  {
+    "id": "R3-LIPID-14",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "lipid.tg.residual_icosapent",
+    "finding": "Chỉ định Icosapent ethyl sai nguyên tắc guideline REDUCE-IT: Khuyến cáo Icosapent ethyl cho bệnh nhân tim mạch xơ vữa CHƯA TỪNG ĐƯỢC ĐIỀU TRỊ BẰNG STATIN.",
+    "evidence": "Input BN ADV_LIPID_35 (ASCVD, TG = 1.6 mmol/L, currentMeds: [] - chưa dùng statin). Output engine: [CONSIDER] drugId=icosapent_ethyl title='Cân nhắc Icosapent ethyl giảm biến cố tim mạch tồn dư'.",
+    "suggestedFix": "Trong lipid.tg.residual_icosapent, thêm điều kiện bắt buộc: Bệnh nhân phải đang được điều trị bằng Statin ('const hasStatin = patient.currentMeds.some(m => isStatin(m.drugId)); if (!hasStatin) return false;'). Nếu chưa dùng statin, chỉ định hàng đầu phải là tối ưu hóa Statin cường độ cao."
+  },
+  {
+    "id": "R3-LIPID-15",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "lipid.tg.severe_pancreatitis_prevention",
+    "finding": "Sai hành động (phát lệnh AVOID thay vì STOP) ở bệnh nhân đang dùng Fenofibrate mà chức năng thận suy giảm nặng (eGFR < 30 mL/phút/1.73m²).",
+    "evidence": "Input BN ADV_LIPID_39 (Đang uống Fenofibrate 200 mg, eGFR tụt xuống 22 mL/phút). Output engine: [AVOID] Fenofibrate: Chống chỉ định Fenofibrate khi eGFR < 30 mL/phút/1.73m². Bệnh nhân đang dùng thuốc cần lệnh STOP để ngừng ngay, AVOID chỉ áp dụng cho người chưa dùng.",
+    "suggestedFix": "Trong reviewCurrentMedications (src/engine/safety/reviewMeds.ts), bổ sung kiểm tra Fenofibrate: Nếu currentMeds có Fenofibrate và eGFR < 30 mL/phút/1.73m², phát sinh khuyến cáo [STOP] Fenofibrate khẩn cấp để phòng ngừa tích lũy thuốc và tiêu cơ vân."
+  },
+  {
+    "id": "R3-LIPID-16",
+    "severity": "minor",
+    "itemType": "threshold",
+    "itemId": "src/modules/lipid/rules.outpatient.ts",
+    "finding": "Lỗi tham chiếu sai biến ngưỡng trong KB: Dùng biến tỷ lệ phần trăm giảm LDL của thuốc PCSK9i (lipid.reduction.pcsk9_alone = 60%) làm ngưỡng giới hạn mức lọc cầu thận eGFR (60 mL/phút) của CKD trung bình.",
+    "evidence": "Tại dòng 413 file rules.outpatient.ts: 'egfr < th(\"lipid.reduction.pcsk9_alone\")'. Biến lipid.reduction.pcsk9_alone trong kb/thresholds/lipid.json có value: 60, unit: '%', mô tả là mức giảm LDL-C của thuốc ức chế PCSK9 đơn độc.",
+    "suggestedFix": "Sửa thành tham chiếu ngưỡng eGFR chuẩn (ví dụ ckd.egfr.g3a_max từ KB CKD hoặc định nghĩa lipid.safety.egfr_moderate_ckd = 60 mL/min/1.73m2 trong KB Lipid)."
+  },
+  {
+    "id": "R3-LIPID-17",
+    "severity": "minor",
+    "itemType": "ui",
+    "itemId": "lipid.statin_intolerance.bempedoic",
+    "finding": "Câu từ lý giải (rationale) phi lâm sàng ở bệnh nhân không dung nạp statin đã đạt đích: Khẳng định 'mức LDL-C hiện tại là 1.2 mmol/L (chưa đạt đích < 1.4 mmol/L)' dù 1.2 đã nhỏ hơn 1.4.",
+    "evidence": "Input BN ADV_LIPID_43 (LDL = 1.2 mmol/L, đích rất cao 1.4 mmol/L). Rationale sinh ra: 'Bệnh nhân có tiền sử không dung nạp statin và mức LDL-C hiện tại là 1.2 mmol/L (chưa đạt đích < 1.4 mmol/L)'.",
+    "suggestedFix": "Trong luật lipid.statin_intolerance.bempedoic, thêm điều kiện kiểm tra ldl > target. Nếu LDL đã đạt đích, không phát sinh khuyến cáo START Bempedoic acid."
+  },
+  {
+    "id": "R3-LIPID-18",
+    "severity": "minor",
+    "itemType": "ui",
+    "itemId": "lipid.statin.very_high_risk_initiate",
+    "finding": "Hướng dẫn dùng Rosuvastatin liều cao 20–40 mg trong chuỗi rationale ở bệnh nhân suy thận nặng eGFR < 30 mL/phút/1.73m² vi phạm cảnh báo an toàn liều của FDA.",
+    "evidence": "Input BN ADV_LIPID_24 (eGFR = 29 mL/phút). Rationale khuyến cáo: 'Khuyến cáo dùng Statin cường độ cao (Atorvastatin 40–80 mg/ngày hoặc Rosuvastatin 20–40 mg/ngày)'. FDA quy định liều Rosuvastatin tối đa ở eGFR < 30 không được vượt quá 10 mg/ngày.",
+    "suggestedFix": "Trong rationale của luật very_high_risk_initiate, bổ sung lưu ý: 'Nếu chọn Rosuvastatin ở bệnh nhân có eGFR < 30 mL/phút, liều tối đa không vượt quá 10 mg/ngày (ưu tiên chọn Atorvastatin vì không cần chỉnh liều theo chức năng thận)'."
+  }
+]

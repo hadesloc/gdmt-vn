@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.hypokalemia.k_indapamide",
+  "contentHash": "8f50e5c8309dd2d2f7992fcf0144111c5926175c9ec6eed07d24f62b7afd8902",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.hypokalemia.k_indapamide",
+      "contentHash": "9718acc83a138925",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Evidence Verification Engine (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Ngưỡng số 3.4 mmol/L (quantity: k) đã được kiểm chứng máy nguyên văn 100% trong trích dẫn chứng cứ liên kết."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

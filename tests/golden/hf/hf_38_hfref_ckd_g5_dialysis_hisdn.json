@@ -1,0 +1,84 @@
+{
+  "id": "hf_38_hfref_ckd_g5_dialysis_hisdn",
+  "titleVi": "HFrEF kèm CKD giai đoạn 5 đang lọc máu chu kỳ: Tránh ARNI/MRA/SGLT2i, cân nhắc H-ISDN & Chẹn beta",
+  "source": "ESC 2026 HF & KDIGO/FDA Renal Gates",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 67,
+    "sex": "male",
+    "weight": 66,
+    "height": 166,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 74,
+    "rhythm": "sinus",
+    "lvef": 28,
+    "nyha": 3,
+    "scr": 620,
+    "k": 4.6,
+    "conditions": {
+      "hf": true,
+      "ckd": true,
+      "onDialysis": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "spironolactone",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "dapagliflozin",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "hydralazine",
+        "action": "CONSIDER"
+      },
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "START"
+      },
+      {
+        "drugId": "spironolactone",
+        "action": "START"
+      },
+      {
+        "drugId": "dapagliflozin",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Ở bệnh nhân HFrEF lọc máu chu kỳ: tránh khởi trị thường quy ARNI, MRA và SGLT2i; duy trì/khởi trị chẹn beta và cân nhắc Hydralazine + Isosorbide dinitrate (Class IIb-C)."
+}

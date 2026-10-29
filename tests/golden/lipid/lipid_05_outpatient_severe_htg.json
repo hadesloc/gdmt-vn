@@ -1,0 +1,50 @@
+{
+  "id": "lipid_05_outpatient_severe_htg",
+  "titleVi": "Triglycerid tăng rất cao (7.5 mmol/L) - Khởi trị Fenofibrate",
+  "source": "ESC/EAS 2019 / esc.lipid.2019.htg_fenofibrate_pancreatitis",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 48,
+    "sex": "male",
+    "weight": 80,
+    "height": 168,
+    "sbp": 130,
+    "dbp": 82,
+    "hr": 76,
+    "scr": 85,
+    "tc": 6.8,
+    "hdl": 0.9,
+    "ldl": 2.8,
+    "tg": 7.5,
+    "conditions": {},
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "fenofibrate",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": []
+  },
+  "descriptionVi": "TG >= 5.6 mmol/L có nguy cơ viêm tụy cấp, chỉ định Fenofibrate khẩn cấp."
+}

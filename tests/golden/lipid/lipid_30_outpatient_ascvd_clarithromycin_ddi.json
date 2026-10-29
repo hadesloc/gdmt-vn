@@ -1,0 +1,68 @@
+{
+  "id": "lipid_30_outpatient_ascvd_clarithromycin_ddi",
+  "titleVi": "ASCVD đang dùng Clarithromycin - Chặn khởi trị Atorvastatin liều cao, gợi ý Rosuvastatin",
+  "source": "FDA Lipitor / fda.atorvastatin.clarithromycin_dose_cap",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 64,
+    "sex": "male",
+    "weight": 70,
+    "height": 168,
+    "sbp": 132,
+    "dbp": 80,
+    "hr": 74,
+    "scr": 88,
+    "tc": 5.3,
+    "hdl": 1.0,
+    "ldl": 3.4,
+    "tg": 1.7,
+    "conditions": {
+      "ascvd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "clarithromycin",
+        "name": "Clarithromycin",
+        "dose": 500,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "DEFER"
+      },
+      {
+        "drugId": "rosuvastatin",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy R3-LIPID-03 & LIPID-R2-05: Không khởi trị Atorvastatin 40–80 mg trên bệnh nhân đang dùng chất ức chế CYP3A4 mạnh Clarithromycin."
+}

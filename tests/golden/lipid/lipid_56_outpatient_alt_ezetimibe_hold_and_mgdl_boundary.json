@@ -1,0 +1,81 @@
+{
+  "id": "lipid_56_outpatient_alt_ezetimibe_hold_and_mgdl_boundary",
+  "titleVi": "Tăng ALT 4.5x ULN khi đang dùng Atorvastatin 40 mg + Ezetimibe 10 mg - Tạm ngưng đồng thời cả Statin và Ezetimibe",
+  "source": "ESC/EAS 2019 & FDA / fda.ezetimibe.hepatic_child_pugh",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 60,
+    "sex": "male",
+    "weight": 68,
+    "height": 166,
+    "sbp": 126,
+    "dbp": 76,
+    "hr": 70,
+    "scr": 86,
+    "tc": 3.8,
+    "hdl": 1.1,
+    "ldl": 1.8,
+    "tg": 1.5,
+    "conditions": {
+      "ascvd": true
+    },
+    "customInputs": {
+      "altUlnTimes": 4.5
+    },
+    "currentMeds": [
+      {
+        "drugId": "atorvastatin",
+        "name": "Atorvastatin",
+        "dose": 40,
+        "unit": "mg"
+      },
+      {
+        "drugId": "ezetimibe",
+        "name": "Ezetimibe",
+        "dose": 10,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "HOLD"
+      },
+      {
+        "drugId": "ezetimibe",
+        "action": "HOLD"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "ezetimibe",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "atorvastatin",
+        "action": "UPTITRATE"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R2-R2-05: Khi men gan tăng cấp ALT ≥ 3x ULN hoặc bệnh gan mất bù trên bệnh nhân đang dùng phối hợp Statin + Ezetimibe, phải tạm ngưng cả Atorvastatin và Ezetimibe thay vì để Ezetimibe âm thầm tiếp tục."
+}

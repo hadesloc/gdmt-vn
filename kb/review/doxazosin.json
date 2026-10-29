@@ -1,0 +1,26 @@
+{
+  "itemId": "doxazosin",
+  "contentHash": "aac17e6ab6f37cf2b89b419a8517c3a95795d06a3e65814d399947d2a299e6ae",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "doxazosin",
+      "contentHash": "a77dd1293aab2238",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Doxazosin (Doxazosin) đầy đủ liều lượng, classes (alpha1_blocker), dải thận, thai kỳ/cho con bú, chống chỉ định máy đọc và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

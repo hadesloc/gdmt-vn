@@ -1,0 +1,89 @@
+{
+  "id": "copd_64_r3_acute_theophylline_diazepam_stop",
+  "titleVi": "Hồi quy R3 (COPD-R3-R1-05, R1-17 & R2-10): Đợt cấp COPD nhập viện toan hô hấp (pH 7.31, PaCO2 58) bắt buộc NGỪNG Theophylline & Diazepam, khởi động NIV/BiPAP và chặn checklist ra viện sớm",
+  "source": "GOLD 2026 Chapter 4 p. 114-116 / BYT QĐ 2131/2026 Mục 3.4.5a (COPD-R3-R1-05, COPD-R3-R1-17, COPD-R3-R2-10)",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_64",
+    "age": 70,
+    "sex": "male",
+    "weight": 58,
+    "height": 165,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 98,
+    "egfr": 68,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "theophylline",
+        "name": "Theophylline SR",
+        "dose": 200,
+        "unit": "mg"
+      },
+      {
+        "drugId": "diazepam",
+        "name": "Diazepam",
+        "dose": 5,
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteExacerbation": true,
+      "restingSpo2": 86,
+      "abgPh": 7.31,
+      "abgPaco2": 58,
+      "purulentSputum": true,
+      "increasedDyspnea": true,
+      "respiratoryRate": 26
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "theophylline",
+        "ruleId": "rec_copd_stop_methylxanthine_acute",
+        "action": "STOP"
+      },
+      {
+        "drugId": "diazepam",
+        "ruleId": "rec_copd_stop_cns_depressant_hypercapnia",
+        "action": "STOP"
+      },
+      {
+        "ruleId": "rec_copd_inpatient_niv",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_copd_inpatient_antibiotics",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_copd_discharge_checklist",
+        "action": "MONITOR"
+      }
+    ]
+  }
+}

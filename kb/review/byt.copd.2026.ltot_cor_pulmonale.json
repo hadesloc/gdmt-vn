@@ -1,0 +1,26 @@
+{
+  "itemId": "byt.copd.2026.ltot_cor_pulmonale",
+  "contentHash": "7c02c8b23ff86d3af8d345aff212dfe71b4344c2c6baea193939c8483a6e7903",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "byt.copd.2026.ltot_cor_pulmonale",
+      "contentHash": "7dc46a89536960cb",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

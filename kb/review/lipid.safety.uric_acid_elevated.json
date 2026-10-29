@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.safety.uric_acid_elevated",
+  "contentHash": "d3c65ec129c97ec78ad856b16872ab2cdff6a61072fc6e2ea98e20bff7c9ca53",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.safety.uric_acid_elevated",
+      "contentHash": "2aea2cfcd13a9f80",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.safety.uric_acid_elevated."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

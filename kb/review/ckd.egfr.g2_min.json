@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.egfr.g2_min",
+  "contentHash": "b582edfefecfac42a47d87cd954632e0d1c442d8fc02c0ca94da3132ee4db0e5",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.egfr.g2_min",
+      "contentHash": "5ff35096e7032255",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.104Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.egfr.g2_min."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

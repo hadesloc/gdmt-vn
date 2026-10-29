@@ -1,0 +1,56 @@
+{
+  "id": "ckd_09_stop_nsaid_ckd",
+  "titleVi": "Ngừng ngay thuốc giảm đau NSAID (Meloxicam) trên bệnh nhân CKD",
+  "source": "KDIGO 2024 CKD / kdigo.ckd.2024.fig_48_referral_criteria",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_09",
+    "name": "BN CKD 09",
+    "age": 69,
+    "sex": "female",
+    "weight": 58,
+    "sbp": 138,
+    "dbp": 84,
+    "hr": 76,
+    "scr": 170,
+    "k": 4.9,
+    "conditions": {
+      "ckd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "meloxicam",
+        "name": "Mobic (Meloxicam) 7.5 mg",
+        "dose": 7.5,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "meloxicam",
+        "action": "STOP"
+      }
+    ]
+  },
+  "descriptionVi": "Tuyệt đối tránh NSAID ở bệnh nhân suy thận mạn."
+}

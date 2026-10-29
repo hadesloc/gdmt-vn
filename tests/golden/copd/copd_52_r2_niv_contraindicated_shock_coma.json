@@ -1,0 +1,70 @@
+{
+  "id": "copd_52_r2_niv_contraindicated_shock_coma",
+  "titleVi": "Hồi quy R2 (R3-R2-COPD-03 & R3-R2-COPD-13): Toan hô hấp nguy kịch kèm tụt HA sốc và rối loạn ý thức – Chống chỉ định NIV, đặt NKQ và ẩn checklist ra viện",
+  "source": "GOLD 2026 Table 4.7 & Table 4.9 p. 122–123 & BYT QĐ 2131/2026 p. 38–39 (R3-R2-COPD-03)",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_52",
+    "age": 74,
+    "sex": "male",
+    "weight": 54,
+    "height": 162,
+    "sbp": 76,
+    "dbp": 48,
+    "hr": 124,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteExacerbation": true,
+      "fev1FvcRatio": 0.42,
+      "fev1PredPct": 32,
+      "restingSpo2": 82,
+      "abgPh": 7.18,
+      "abgPaco2": 75,
+      "alteredMentalStatus": true,
+      "purulentSputum": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_copd_inpatient_niv",
+        "action": "AVOID"
+      },
+      {
+        "ruleId": "rec_copd_inpatient_icu",
+        "action": "REFER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_copd_inpatient_niv",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_copd_discharge_checklist",
+        "action": "MONITOR"
+      }
+    ]
+  }
+}

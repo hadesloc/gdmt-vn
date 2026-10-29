@@ -1,0 +1,101 @@
+{
+  "id": "insulin_lispro",
+  "nameVi": "Insulin Lispro",
+  "inn": "Insulin lispro",
+  "class": "Rapid-acting Prandial Insulin",
+  "vnBrands": [
+    "Humalog"
+  ],
+  "forms": [
+    "Bút tiêm KwikPen 100 U/mL (3 mL)",
+    "Lọ 100 U/mL (10 mL)"
+  ],
+  "start": {
+    "amount": 4,
+    "unit": "đơn vị",
+    "frequency": "trước bữa ăn",
+    "route": "tiêm dưới da",
+    "description": "Hoặc 10% liều insulin nền, tiêm ngay trước bữa ăn chính 0–15 phút"
+  },
+  "target": {
+    "amount": 6,
+    "unit": "đơn vị",
+    "frequency": "trước bữa ăn",
+    "route": "tiêm dưới da"
+  },
+  "titration": {
+    "step": "1 đơn vị",
+    "intervalDays": 3
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Liều chuẩn theo lượng carbohydrate bữa ăn",
+      "citationIds": [
+        "ada.dm2.2026.prandial_insulin_eating"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Chỉnh liều theo lượng carbohydrate và đường huyết sau ăn",
+      "citationIds": [
+        "ada.dm2.2026.prandial_insulin_eating",
+        "ada.dm2.2026.kidney_failure_hypo_clearance"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Giảm 25–50% liều do giảm thanh thải insulin qua thận và theo dõi sát đường huyết (kể cả lọc máu)",
+      "citationIds": [
+        "ada.dm2.2026.kidney_failure_hypo_clearance"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_lispro_eating_status",
+      "parameter": "eating",
+      "operator": "==",
+      "threshold": 0,
+      "action": "hold",
+      "messageVi": "Bệnh nhân nhịn ăn: Tạm hoãn bolus trước ăn.",
+      "citationIds": [
+        "ada.dm2.2026.prandial_insulin_eating"
+      ]
+    }
+  ],
+  "interactions": [
+    "Nguy cơ hạ đường huyết nếu bỏ bữa ăn"
+  ],
+  "citationIds": [
+    "ada.dm2.2026.prandial_insulin_eating",
+    "ada.dm2.2026.kidney_failure_hypo_clearance"
+  ],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Insulin tác dụng nhanh analog an toàn và được ưu tiên trong thai kỳ (FDA Category B / ADA 2026)",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_insulin",
+      "byt.dm2.2020.pregnancy_insulin"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "An toàn khi nuôi con bú",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_insulin"
+    ]
+  },
+  "contraindications": [],
+  "classes": [
+    "insulin",
+    "insulin_bolus"
+  ]
+}

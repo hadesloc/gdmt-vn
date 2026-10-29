@@ -1,0 +1,57 @@
+{
+  "id": "af_28_dabigatran_crcl_37_moderate_renal",
+  "titleVi": "Dabigatran ở CrCl 37 mL/min (thuộc dải 30–49 mL/min): Giảm liều 110 mg x 2 (ADV_AF_17)",
+  "source": "ESC 2024 AF Table 11 / esc.af.2024.table11_doac_dosing",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "male",
+    "weight": 62,
+    "height": 165,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 78,
+    "rhythm": "afib",
+    "scr": 145,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true,
+      "ckd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "dabigatran",
+        "name": "Pradaxa",
+        "dose": 150,
+        "unit": "mg"
+      }
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dabigatran",
+        "action": "REDUCE",
+        "doseContains": "110 mg"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 65t có CrCl 37 mL/min thuộc dải suy thận vừa 30-49 mL/min (ADV_AF_17): Giảm liều Dabigatran 110 mg x 2 lần/ngày theo EMA/ESC 2024."
+}

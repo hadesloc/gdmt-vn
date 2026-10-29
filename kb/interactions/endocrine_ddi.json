@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ix.glp1ra_insulin_su",
+    "titleVi": "Tương tác Nguy cơ Hạ đường huyết: Đồng vận thụ thể GLP-1 / GIP-GLP-1 + Sulfonylurea / Insulin",
+    "severity": "moderate",
+    "a": {
+      "drugIds": [
+        "semaglutide",
+        "semaglutide_oral",
+        "liraglutide",
+        "dulaglutide",
+        "tirzepatide"
+      ],
+      "classes": [
+        "glp1ra"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "gliclazide",
+        "glimepiride",
+        "glibenclamide",
+        "glyburide",
+        "insulin_glargine",
+        "insulin_degludec",
+        "insulin_detemir",
+        "insulin_nph",
+        "insulin_regular",
+        "insulin_aspart",
+        "insulin_lispro",
+        "insulin_premix"
+      ],
+      "classes": [
+        "su",
+        "insulin"
+      ]
+    },
+    "mechanismVi": "Thuốc đồng vận thụ thể GLP-1 (và GIP/GLP-1) tăng tiết insulin phụ thuộc glucose; khi phối hợp cùng thuốc kích thích bài tiết insulin không phụ thuộc glucose (sulfonylurea) hoặc insulin ngoại sinh sẽ làm tăng nguy cơ tụt đường huyết.",
+    "effectVi": "Tăng nguy cơ hạ đường huyết có triệu chứng, kể cả hạ đường huyết nặng.",
+    "managementVi": "Cân nhắc giảm liều sulfonylurea hoặc insulin khi khởi trị hoặc tăng liều thuốc đồng vận thụ thể GLP-1 / GIP-GLP-1 và hướng dẫn bệnh nhân tự theo dõi đường huyết mao mạch.",
+    "citationIds": [
+      "fda.semaglutide.su_insulin_hypoglycemia"
+    ]
+  },
+  {
+    "id": "ix.tirzepatide_oral_contraceptives",
+    "titleVi": "Tương tác Giảm hiệu quả Tránh thai Đường uống (Làm chậm làm rỗng dạ dày): Tirzepatide + Thuốc tránh thai Nội tiết Đường uống",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "tirzepatide"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "oral_contraceptives",
+        "combined_oral_contraceptive",
+        "ethinyl_estradiol",
+        "levonorgestrel",
+        "drospirenone",
+        "desogestrel",
+        "gestodene"
+      ]
+    },
+    "mechanismVi": "Tirzepatide (đồng vận kép thụ thể GIP và GLP-1) làm chậm đáng kể tốc độ làm rỗng dạ dày, đặc biệt rõ sau mũi khởi trị và sau mỗi bậc tăng liều, làm giảm Cmax khoảng 55%–66% và giảm AUC khoảng 20% của thuốc tránh thai nội tiết đường uống.",
+    "effectVi": "Suy giảm hiệu quả tránh thai và nguy cơ mang thai ngoài ý muốn trong khi đang phơi nhiễm Tirzepatide (thuốc khuyến cáo ngừng trước mang thai ít nhất 1–2 tháng).",
+    "managementVi": "Tư vấn bệnh nhân chuyển sang biện pháp tránh thai không qua đường uống (như vòng tránh thai, que cấy) hoặc bổ sung biện pháp tránh thai màng chắn trong 4 tuần sau khi khởi trị Tirzepatide và trong 4 tuần sau mỗi lần tăng bậc liều (nhãn FDA Mounjaro §7.2 & §8.3).",
+    "citationIds": [
+      "fda.tirzepatide.oral_contraceptives_4w"
+    ]
+  }
+]

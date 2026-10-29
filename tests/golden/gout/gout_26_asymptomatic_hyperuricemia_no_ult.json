@@ -1,0 +1,76 @@
+{
+  "id": "gout_26_asymptomatic_hyperuricemia_no_ult",
+  "titleVi": "Tăng acid uric máu không triệu chứng (Urat 590 µmol/L, chưa từng đau khớp gút): KHÔNG khởi trị thuốc hạ urat",
+  "source": "ACR 2020 & KDIGO 2024 (acr.gout.2020.asymptomatic_hyperuricemia, kdigo.gout.2024.asymptomatic_against)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 44,
+    "sex": "male",
+    "weight": 78,
+    "scr": 84,
+    "uricAcid": 590,
+    "conditions": {
+      "gout": false
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "asymptomaticHyperuricemia": true,
+      "acuteFlare": false,
+      "priorFlaresLifetime": 0,
+      "goutFlaresYear": 0
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_gout_ult_not_indicated_asymptomatic",
+        "action": "DEFER"
+      },
+      {
+        "ruleId": "rec_gout_lifestyle_guidance",
+        "action": "MONITOR"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "allopurinol",
+        "action": "START"
+      },
+      {
+        "drugId": "febuxostat",
+        "action": "START"
+      },
+      {
+        "drugId": "probenecid",
+        "action": "START"
+      },
+      {
+        "drugId": "benzbromarone",
+        "action": "START"
+      },
+      {
+        "drugId": "colchicine",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 44 tuổi phát hiện tình cờ acid uric 590 µmol/L khi khám sức khỏe, chưa từng có cơn viêm khớp gút hay hạt tophi. ACR 2020 và KDIGO 2024 khuyến cáo không dùng thuốc hạ urat máu, chỉ điều chỉnh lối sống."
+}

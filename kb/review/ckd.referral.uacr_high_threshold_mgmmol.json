@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.referral.uacr_high_threshold_mgmmol",
+  "contentHash": "9b2a794c25f5eda819e434918a4e6540be065434d22ea4451113b599b75b7aaa",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.referral.uacr_high_threshold_mgmmol",
+      "contentHash": "53fa9baec4abda45",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:57:46.785Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động chuẩn hóa QA-10 quantity và kiểm tra trích dẫn nguyên văn cho ngưỡng ckd.referral.uacr_high_threshold_mgmmol."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

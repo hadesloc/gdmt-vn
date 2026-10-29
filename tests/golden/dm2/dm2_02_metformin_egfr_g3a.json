@@ -1,0 +1,56 @@
+{
+  "id": "dm2_02_metformin_egfr_g3a",
+  "titleVi": "Bệnh nhân ĐTĐ2 suy thận nhẹ-vừa G3a (eGFR 52) - Khởi trị Metformin",
+  "source": "FDA Label Metformin / ADA 2026 SOC Ch. 9",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 60,
+    "sex": "female",
+    "weight": 62,
+    "height": 158,
+    "sbp": 126,
+    "dbp": 78,
+    "hr": 72,
+    "scr": 100,
+    "k": 4.4,
+    "glucose": 8.8,
+    "hba1c": 8.0,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "metformin",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "metformin",
+        "action": "STOP"
+      }
+    ]
+  },
+  "descriptionVi": "eGFR 52 mL/phút/1.73m² (G3a ≥ 45): Cho phép khởi trị Metformin."
+}

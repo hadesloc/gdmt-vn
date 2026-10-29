@@ -1,0 +1,48 @@
+{
+  "id": "icu_aki_rrt_0230",
+  "titleVi": "Khó thở phải ngồi, vô niệu và nhịp tim chậm dần",
+  "source": "on-call:icu_aki_rrt_0230",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_icu_aki_rrt_0230",
+    "name": "Nam 64 tuổi",
+    "age": 64,
+    "sex": "male",
+    "weight": 68,
+    "sbp": 164,
+    "dbp": 94,
+    "hr": 48,
+    "conditions": {
+      "ckd": true
+    },
+    "selectedModules": [
+      "ckd"
+    ],
+    "currentMeds": [],
+    "k": 6.4,
+    "scr": 420,
+    "hco3": 12
+  },
+  "expect": {
+    "mustInclude": [],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bác sĩ ơi, chú 64 tuổi chuyển lên ICU vì khó thở tăng nhanh, 18 giờ không có nước tiểu và sóng T trên monitor nhọn cao vọt! Người bệnh phải ngồi chống tay để thở, ho khạc bọt hồng nhạt, phù hai chi dưới. Túi nước tiểu qua sonde Foley trống rỗng (< 20 mL trong 12 giờ qua). Vừa dùng thuốc kháng viêm giảm đau khớp liều cao 5 ngày trên nền bệnh thận mạn.",
+  "notes": "TODO: Ca nháp nội viện chuyển từ on-call. Module agent chịu trách nhiệm điền expect.mustInclude và mustNotInclude."
+}

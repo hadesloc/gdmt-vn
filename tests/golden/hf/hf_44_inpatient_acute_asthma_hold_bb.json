@@ -1,0 +1,71 @@
+{
+  "id": "hf_44_inpatient_acute_asthma_hold_bb",
+  "titleVi": "ASTHMA-R4-R2-09: HFrEF nội viện kèm cơn hen phế quản cấp nặng giảm oxy máu (SpO2 88%): Bắt buộc tạm ngưng (HOLD) Bisoprolol",
+  "source": "ESC 2026 HF Table S6 & GINA 2025 Acute Severe Asthma",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 62,
+    "sex": "female",
+    "weight": 58,
+    "sbp": 134,
+    "dbp": 82,
+    "hr": 112,
+    "spo2": 88,
+    "rhythm": "sinus",
+    "lvef": 34,
+    "nyha": 3,
+    "scr": 92,
+    "k": 4.1,
+    "conditions": {
+      "hf": true,
+      "asthma": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "bisoprolol",
+        "name": "Bisoprolol",
+        "dose": "5 mg x 1 lần/ngày"
+      }
+    ],
+    "selectedModules": [
+      "hf",
+      "asthma"
+    ],
+    "customInputs": {
+      "congestion": "mild",
+      "isAcuteExacerbation": true,
+      "speechAbility": "words"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "bisoprolol",
+        "action": "HOLD"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "bisoprolol",
+        "action": "CONTINUE"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bệnh nhân HFrEF đang dùng Bisoprolol nhập viện vì cơn hen cấp nặng giảm oxy máu (SpO2 88%, chỉ nói từng từ): bắt buộc tạm ngưng (HOLD) Bisoprolol để không cản trở giãn phế quản SABA cấp cứu."
+}

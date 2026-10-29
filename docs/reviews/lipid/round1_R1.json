@@ -1,0 +1,164 @@
+[
+  {
+    "id": "LIPID-R1-01",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "lipid.statin.very_high_risk_initiate",
+    "finding": "Bỏ sót hoàn toàn đích hạ sâu LDL-C < 1.0 mmol/L (< 40 mg/dL) cho bệnh nhân ASCVD tái phát biến cố mạch máu trong vòng 2 năm trong hệ thống quy tắc ngoại trú (rules.outpatient.ts).",
+    "evidence": "Hướng dẫn gốc ESC/EAS 2019, Section 6.1.1 & Recommendations p. 22 (Eur Heart J 2020;41:132): 'For patients with ASCVD who experience a second vascular event within 2 years (not necessarily of the same type as the first event) while taking maximally tolerated statin-based therapy, an LDL-C goal <1.0 mmol/L (<40 mg/dL) may be considered. Class IIb, Level B' (trích dẫn esc.lipid.2019.target_recurrent_acs). Khai báo trong inputs.ts dòng 100-105 định nghĩa trường `conditions.recurrentAcsWithin2Years`, và kb/thresholds/lipid.json định nghĩa `lipid.target.recurrent_acs_ldl` (1.0 mmol/L). Tuy nhiên trong rules.outpatient.ts, không có bất kỳ dòng nào kiểm tra trường recurrentAcsWithin2Years; luật lipid.statin.very_high_risk_initiate (dòng 301) chỉ kiểm tra duy nhất ldl > 1.4 mmol/L. Nếu bệnh nhân ASCVD tái phát trong 2 năm có LDL-C là 1.2 mmol/L (chưa đạt đích < 1.0 mmol/L), hệ thống không sinh bất kỳ khuyến cáo can thiệp hay tăng cường điều trị nào.",
+    "suggestedFix": "Thêm luật chuyên biệt hoặc nhánh điều kiện kiểm tra `ctx.patient.conditions.recurrentAcsWithin2Years`: nếu dương tính, đặt ngưỡng mục tiêu điều trị là `th('lipid.target.recurrent_acs_ldl')` (1.0 mmol/L / 40 mg/dL) và khuyến cáo tối ưu hóa phác đồ hạ lipid (statin tối đa + ezetimibe ± PCSK9i)."
+  },
+  {
+    "id": "LIPID-R1-02",
+    "severity": "major",
+    "itemType": "missing",
+    "itemId": "lipid.escalation.statin_to_ezetimibe",
+    "finding": "Thiếu hoàn toàn khuyến cáo Class I bậc thang leo thang điều trị hạ lipid: phối hợp thêm Ezetimibe 10 mg khi bệnh nhân chưa đạt đích với statin liều tối đa dung nạp (quy tắc không kiểm tra danh mục thuốc bệnh nhân đang dùng currentMeds).",
+    "evidence": "ESC/EAS 2019 Guidelines Section 8.1.2 & Recommendations p. 35 (Eur Heart J 2020;41:145): 'If the goal is not achieved with the maximum tolerated dose of a statin, combination with ezetimibe is recommended. Class I, Level B' (trích dẫn esc.lipid.2019.ezetimibe_add_on). Trong rules.outpatient.ts, luật duy nhất trả về ezetimibe là lipid.combo.upfront_very_high_far_from_target (chỉ áp dụng khi LDL nền >= 3.0 mmol/L). Nếu bệnh nhân đang dùng statin (kể cả Atorvastatin 80 mg tối đa) mà LDL-C vẫn trên đích (ví dụ 1.9 mmol/L > 1.4 mmol/L), hệ thống lặp lại lệnh 'START Atorvastatin 80 mg' (thuốc bệnh nhân đang dùng) thay vì khuyến cáo bổ sung Ezetimibe.",
+    "suggestedFix": "Bổ sung quy tắc ngoại trú kiểm tra `ctx.patient.currentMeds`: nếu bệnh nhân đang dùng statin (đặc biệt statin liều cao) mà LDL-C chưa đạt đích hoặc chưa giảm >= 50% so với nền, sinh khuyến cáo `action: 'START'`, `drugId: 'ezetimibe'` (10 mg/ngày) theo Class I, Level B."
+  },
+  {
+    "id": "LIPID-R1-03",
+    "severity": "major",
+    "itemType": "missing",
+    "itemId": "lipid.escalation.pcsk9_inhibitors",
+    "finding": "Thiếu hoàn toàn khuyến cáo Class I cho thuốc ức chế PCSK9 (Evolocumab, Alirocumab, Inclisiran) ở bệnh nhân nguy cơ rất cao/cao chưa đạt đích với statin tối đa dung nạp + ezetimibe; cả 3 thuốc này hoàn toàn mồ côi khỏi rule engine.",
+    "evidence": "ESC/EAS 2019 Guidelines Section 8.1.2 & Recommendations p. 35 (Eur Heart J 2020;41:145): 'For secondary prevention, in patients at very-high risk, if the goal is not achieved with the maximum tolerated dose of a statin and ezetimibe, a combination with a PCSK9 inhibitor is recommended. Class I, Level A' (trích dẫn esc.lipid.2019.pcsk9_add_on_secondary) và Class I C cho FH nguy cơ rất cao. ESC 2025 Table 2 (Eur Heart J 2025;46:4369) bổ sung Bempedoic acid phối hợp (Class IIa C). Trong kb/drugs/ có evolocumab.json, alirocumab.json, inclisiran.json và trong matrix.ts có bảng khuyến cáo, nhưng trong rules.outpatient.ts và rules.inpatient.ts không có bất kỳ quy tắc nào sinh 3 thuốc này.",
+    "suggestedFix": "Thêm quy tắc leo thang bậc 3: Nếu bệnh nhân nguy cơ rất cao/cao đang dùng phối hợp statin + ezetimibe mà LDL-C vẫn trên đích, sinh khuyến cáo `action: 'CONSIDER'` hoặc `'START'`, `drugId: 'evolocumab'` (140 mg q2w / 420 mg q4w), `drugId: 'alirocumab'` (75–150 mg q2w), hoặc `drugId: 'inclisiran'` (284 mg SC định kỳ) (Class I A / Class IIa)."
+  },
+  {
+    "id": "LIPID-R1-04",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "lipid.tg.residual_icosapent",
+    "finding": "Khuyến cáo Icosapent ethyl cho bệnh nhân tăng Triglycerid (1.5–5.6 mmol/L) bị sai chỉ định lâm sàng: quy tắc kích hoạt trên bệnh nhân CHƯA TỪNG DÙNG STATIN, trái với tiêu chuẩn của ESC 2019 và ACC 2026 vốn chỉ dành cho TG tồn dư dù đã điều trị statin.",
+    "evidence": "ESC/EAS 2019 Section 9.1.2 & Recommendations p. 38 (Eur Heart J 2020;41:148): 'In high-risk (or above) patients with TG levels between 1.5 and 5.6 mmol/L (135–499 mg/dL) despite statin treatment, n-3 PUFAs (icosapent ethyl 2 x 2 g/day) should be considered in combination with a statin. Class IIa, Level B' (trích dẫn esc.lipid.2019.htg_icosapent_ethyl). Đồng thời, statin là lựa chọn đầu tay (Class I B) để giảm nguy cơ tim mạch ở bệnh nhân tăng TG > 2.3 mmol/L. Tại rules.outpatient.ts dòng 461-475, điều kiện `when` chỉ kiểm tra `tg >= 1.5 && tg < 5.6 && isHighRisk` mà hoàn toàn không kiểm tra xem bệnh nhân có đang dùng statin trong `currentMeds` hay không.",
+    "suggestedFix": "Cập nhật điều kiện `when` của `lipid.tg.residual_icosapent`: bổ sung kiểm tra bệnh nhân đang dùng statin trong `currentMeds`. Nếu bệnh nhân chưa dùng statin và TG 2.3–5.6 mmol/L, ưu tiên khuyến cáo khởi trị và tối ưu statin trước theo Class I B (esc.lipid.2019.htg_statin_first)."
+  },
+  {
+    "id": "LIPID-R1-05",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "lipid.target.dual_50_percent_reduction",
+    "finding": "Vi phạm nguyên tắc Đích Kép (Dual Target) bắt buộc của ESC/EAS 2019 và ESC 2025: cả rule engine và máy tính ldlTarget.ts chỉ kiểm tra nồng độ tuyệt đối mà bỏ qua tiêu chí giảm >= 50% so với mức nền (baselineLdl) ở nhóm nguy cơ cao và rất cao.",
+    "evidence": "ESC/EAS 2019 Table 7 & Recommendations p. 22 (Eur Heart J 2020;41:132): Khuyến cáo giảm LDL-C >= 50% so với nền VÀ đạt đích tuyệt đối (< 1.4 mmol/L ở nguy cơ rất cao; < 1.8 mmol/L ở nguy cơ cao) đều là Class I, Level A. Ngưỡng kb/thresholds/lipid.json định nghĩa `lipid.target.percent_reduction_min = 50%`. Tuy nhiên, trong src/engine/calculators/ldlTarget.ts dòng 173: `const isTargetAchieved = currentLdlMmol <= targetLdlMmol;` chỉ so sánh nồng độ tuyệt đối. Một bệnh nhân nguy cơ rất cao có LDL nền 2.4 mmol/L và LDL hiện tại 1.35 mmol/L (mới giảm 43.8% < 50%) được hệ thống báo 'Tuyệt vời: Nồng độ LDL-C hiện tại đã đạt mục tiêu điều trị'. Trong rules.outpatient.ts (dòng 301, 418), các luật cũng chỉ kiểm tra `ldl > target`.",
+    "suggestedFix": "Cập nhật logic đánh giá đạt đích ở nhóm nguy cơ cao/rất cao: nếu có dữ liệu `baselineLdl`, chỉ coi là đạt đích khi đồng thời thoả mãn: `currentLdl <= targetLdlMmol && ((baselineLdl - currentLdl) / baselineLdl) * 100 >= 50`."
+  },
+  {
+    "id": "LIPID-R1-06",
+    "severity": "major",
+    "itemType": "missing",
+    "itemId": "lipid.primary_prevention.moderate_and_low_risk",
+    "finding": "Bỏ sót hoàn toàn quy tắc quản lý cho nhóm nguy cơ tim mạch Trung bình (đích < 2.6 mmol/L) và Thấp (đích < 3.0 mmol/L) trong rules.outpatient.ts. Bệnh nhân nguy cơ trung bình có LDL-C vượt đích không nhận được bất kỳ khuyến cáo can thiệp lối sống hay cân nhắc statin nào.",
+    "evidence": "ESC 2025 Focused Update Table 4 (Eur Heart J 2025;46:4365) & ESC/EAS 2019 Table 6 p. 23: Nhóm nguy cơ trung bình có LDL-C 2.6 – < 4.9 mmol/L: 'Lifestyle modification, consider adding drug if uncontrolled' (Class IIa A). Nhóm nguy cơ thấp có LDL-C 3.0 – < 4.9 mmol/L: 'Lifestyle modification, consider adding drug if uncontrolled' (Class IIb A). Ca chuẩn golden lipid_21_outpatient_moderate_risk_monitor.json (nữ 48 tuổi, ĐTĐ 4 năm, LDL 3.2 mmol/L > 2.6 mmol/L) chỉ sinh duy nhất lịch tái khám rec_lipid_retest_schedule (MONITOR), hoàn toàn không có khuyến cáo điều trị.",
+    "suggestedFix": "Bổ sung 2 quy tắc ngoại trú cho nhóm nguy cơ trung bình (đích < 2.6 mmol/L) và thấp (đích < 3.0 mmol/L) hướng dẫn can thiệp thay đổi lối sống và cân nhắc statin cường độ trung bình nếu LDL-C không đạt đích sau 3 tháng."
+  },
+  {
+    "id": "LIPID-R1-07",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "lipid.statin.high_risk_initiate",
+    "finding": "Lỗi gán sai ngữ nghĩa ngưỡng lâm sàng (Threshold Semantic Misuse): Luật lipid.statin.high_risk_initiate dùng ngưỡng lipid.reduction.pcsk9_alone (vốn là phần trăm giảm LDL 60% của PCSK9i) làm mốc so sánh mức lọc cầu thận eGFR (< 60 mL/min/1.73m2).",
+    "evidence": "File src/modules/lipid/rules.outpatient.ts dòng 413: `const isModerateCkd = ctx.derived.kdigoG === 'G3a' || ctx.derived.kdigoG === 'G3b' || (egfr !== undefined && egfr >= th('lipid.safety.egfr_severe_ckd') && egfr < th('lipid.reduction.pcsk9_alone'));`. File kb/thresholds/lipid.json dòng 141-148 định nghĩa: `id: 'lipid.reduction.pcsk9_alone', value: 60, unit: '%', descriptionVi: 'Mức giảm LDL-C dự kiến của thuốc ức chế PCSK9 đơn độc (~60%) (ESC/EAS 2019)'`.",
+    "suggestedFix": "Tạo ngưỡng riêng trong kb/thresholds/lipid.json là `lipid.safety.egfr_moderate_ckd_max` với giá trị 60, đơn vị mL/min/1.73m2, trích dẫn KDIGO 2024 / ESC 2019, và thay thế vào dòng 413."
+  },
+  {
+    "id": "LIPID-R1-08",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "determineEscRiskTier",
+    "finding": "Phân tầng nguy cơ tim mạch trong máy tính ldlTarget.ts bỏ sót hoàn toàn bệnh nhân Tăng cholesterol máu gia đình (FH - Familial Hypercholesterolemia).",
+    "evidence": "ESC 2025 Table 3 (Eur Heart J 2025;46:4364) & ESC/EAS 2019 Table 5 p. 15: FH kèm ASCVD hoặc kèm 1 YTNC chính được xếp vào nhóm NGUY CƠ RẤT CAO; FH không kèm YTNC chính được xếp vào nhóm NGUY CƠ CAO. File src/engine/calculators/types.ts (LdlTargetInput) không có trường FH, và hàm determineEscRiskTier trong ldlTarget.ts dòng 85-137 hoàn toàn không kiểm tra FH.",
+    "suggestedFix": "Bổ sung `hasFamilialHypercholesterolemia?: boolean` và `fhHasMajorRiskFactorOrAscvd?: boolean` vào LdlTargetInput và cập nhật logic phân loại tương ứng trong determineEscRiskTier."
+  },
+  {
+    "id": "LIPID-R1-09",
+    "severity": "major",
+    "itemType": "missing",
+    "itemId": "lipid.inpatient.acs_prior_llt",
+    "finding": "Bỏ sót khuyến cáo Class I C của ESC 2025 Focused Update về tăng cường phác đồ hạ lipid máu nội viện cho bệnh nhân ACS đã dùng thuốc hạ lipid trước nhập viện (esc.lipid.2025.acs_prior_llt).",
+    "evidence": "ESC 2025 Focused Update Recommendation Table 3, p. 12 (Eur Heart J 2025;46:4370): 'Intensification of lipid-lowering therapy during the index ACS hospitalization is recommended for patients who were on any lipid-lowering therapy before admission in order to further lower LDL-C levels. Class I, Level C'. Trích dẫn esc.lipid.2025.acs_prior_llt đã có trong kb/citations/lipid.json dòng 311-320 nhưng không được dùng trong rules.inpatient.ts; luật lipid.inpatient.acs_early_ezetimibe chỉ gán chung chung mức Class IIa B cho mọi bệnh nhân ACS.",
+    "suggestedFix": "Tách quy tắc nội viện ACS: bệnh nhân đã dùng statin/LLT trước nhập viện nhận khuyến cáo TĂNG CƯỜNG NGAY (Intensification) phác đồ (tối đa liều statin + phối hợp Ezetimibe 10 mg ngay đợt nằm viện) với mức khuyến cáo Class I C (esc.lipid.2025.acs_prior_llt)."
+  },
+  {
+    "id": "LIPID-R1-10",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "lipid.lpa.elevated_action",
+    "finding": "Hệ thống chỉ có quy tắc nhắc đo Lp(a) khi chưa đo (lpa === undefined), nhưng hoàn toàn KHÔNG CÓ HÀNH ĐỘNG GÌ khi người dùng nhập giá trị Lp(a) tăng cao (> 50 mg/dL hoặc > 105 nmol/L).",
+    "evidence": "ESC 2025 Section 6 & Recommendation Table 4 (Eur Heart J 2025;46:4370) & ACC/AHA 2026: Nồng độ Lp(a) > 50 mg/dL (105 nmol/L) là yếu tố gia tăng nguy cơ tim mạch xơ vữa độc lập (Class IIa B). Ngưỡng kb/thresholds/lipid.json định nghĩa `lipid.lpa.risk_enhancing_threshold = 50` mg/dL. File rules.outpatient.ts dòng 513-542 chỉ kích hoạt luật khi `lpa === undefined`. Khi bệnh nhân có Lp(a) tăng cao (ví dụ 80 mg/dL), hệ thống hoàn toàn im lặng.",
+    "suggestedFix": "Thêm quy tắc `lipid.lpa.elevated_risk_enhancer`: Khi `lpa > th('lipid.lpa.risk_enhancing_threshold')`, sinh khuyến cáo cảnh báo yếu tố nguy cơ tim mạch xơ vữa gia tăng độc lập (di truyền), khuyến cáo nâng tầng nguy cơ và kiểm soát chặt các yếu tố nguy cơ tim mạch đi kèm (Class IIa B)."
+  },
+  {
+    "id": "LIPID-R1-11",
+    "severity": "minor",
+    "itemType": "citation",
+    "itemId": "lipid.safety.alt_elevation",
+    "finding": "Trích dẫn sai lệch nội dung hành động lâm sàng: quy tắc xử trí tăng men gan ALT gắn citation acc.lipid.2026.transaminase_3x_uln (vốn chỉ nêu sự kiện tăng ALT là hiếm gặp), thay vì trích dẫn hành động lâm sàng chính xác esc.lipid.2019.monitoring_alt_elevation.",
+    "evidence": "File kb/citations/lipid.json dòng 476-485: acc.lipid.2026.transaminase_3x_uln có quote: 'Transaminaseelevations (>3timesULN)arerare'. Trong khi đó esc.lipid.2019.monitoring_alt_elevation dòng 487-496 có quote: 'If ALT rises to >=3x ULN: Stop lipid-lowering therapy or reduce dose and recheck liver enzymes within 4-6 weeks'. File rules.outpatient.ts dòng 110 gắn nhầm citation của ACC.",
+    "suggestedFix": "Đổi citation của `lipid.safety.alt_elevation` thành `esc.lipid.2019.monitoring_alt_elevation`."
+  },
+  {
+    "id": "LIPID-R1-12",
+    "severity": "minor",
+    "itemType": "citation",
+    "itemId": "lipid.combo.upfront_very_high_far_from_target",
+    "finding": "Quy tắc ngoại trú phối hợp sớm Statin + Ezetimibe trích dẫn nguồn nội viện esc.lipid.2025.acs_naive_combination ('during index hospitalization for ACS').",
+    "evidence": "File rules.outpatient.ts dòng 384 & 388 trích dẫn esc.lipid.2025.acs_naive_combination. Bệnh nhân ngoại trú thuộc tầng nguy cơ rất cao (như ASCVD mạn hoặc ĐTĐ TOD) không nằm trong bối cảnh nằm viện do ACS cấp.",
+    "suggestedFix": "Bổ sung trích dẫn ngoại trú tương ứng từ ESC 2019 Section 8.1.2 & Table 8 (dự kiến mức giảm ~65% khi phối hợp statin + ezetimibe so với ~50% của statin đơn trị liệu)."
+  },
+  {
+    "id": "LIPID-R1-13",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "lipid.tg.severe_pancreatitis_prevention",
+    "finding": "Quy tắc Fenofibrate ngoại trú không điều chỉnh giảm liều khi bệnh nhân có suy thận trung bình (eGFR 30–59 mL/phút / KDIGO G3a-G3b), dù fenofibrate.json có dải thận quy định giảm liều 67–100 mg/ngày.",
+    "evidence": "File kb/drugs/fenofibrate.json dòng 60-67: eGFR [30 - 60]: dose = 'Giảm liều: 67–100 mg 1 lần/ngày'. File rules.outpatient.ts dòng 174: `const fenoDose = fmtDose(dose('fenofibrate', 'start'))` luôn trả về 145–200 mg.",
+    "suggestedFix": "Trong `lipid.tg.severe_pancreatitis_prevention`, kiểm tra nếu `egfr >= 30 && egfr < 60`, tự động điều chỉnh hiển thị liều giảm (67 mg hoặc 100 mg/ngày) và ghi chú theo dõi sát chức năng thận."
+  },
+  {
+    "id": "LIPID-R1-14",
+    "severity": "minor",
+    "itemType": "calculator",
+    "itemId": "src/engine/calculators/score2.ts",
+    "finding": "Máy tính score2.ts sử dụng phép xấp xỉ chưa kiểm chứng cho SCORE2-OP (nhân 0.75/0.78) và SCORE2-Diabetes (dùng hệ số nhị phân 2021 thay vì mô hình 2023), trong khi cờ needsSourceVerification vẫn là true và result.warning không được kích hoạt.",
+    "evidence": "File src/engine/calculators/score2.ts dòng 38: needsSourceVerification: true; dòng 107-110 & 163-170 tự định nghĩa hệ số nhân xấp xỉ score2OpAdjustment; dòng 159-161 chỉ cộng biến nhị phân đái tháo đường.",
+    "suggestedFix": "Thêm cảnh báo rõ ràng trong `result.warning` khi `modelUsed` là SCORE2-Diabetes hoặc SCORE2-OP, nêu rõ đây là ước tính sơ bộ có hiệu chỉnh và khuyến cáo đối chiếu bảng tra cứu SCORE2-Diabetes chính thức của ESC 2023."
+  },
+  {
+    "id": "LIPID-R1-15",
+    "severity": "minor",
+    "itemType": "rule",
+    "itemId": "lipid.statin_intolerance.bempedoic",
+    "finding": "Quy tắc không dung nạp statin nêu rõ phác đồ phối hợp Bempedoic acid + Ezetimibe nhưng cấu trúc khuyến cáo chỉ trả về duy nhất drugId: 'bempedoic_acid', thiếu Ezetimibe trong danh mục thuốc kê đơn.",
+    "evidence": "File rules.outpatient.ts dòng 256: `drugId: 'bempedoic_acid'`. Rationale dòng 260 ghi: 'Khuyến cáo dùng Bempedoic acid ... phối hợp cùng Ezetimibe'. Bác sĩ kê đơn theo danh mục thuốc xuất ra sẽ bị thiếu Ezetimibe 10 mg.",
+    "suggestedFix": "Sinh đồng thời 2 khuyến cáo (1 cho bempedoic_acid và 1 cho ezetimibe) hoặc cấu trúc liên kết rõ ràng cả hai thuốc trong kế hoạch điều trị."
+  },
+  {
+    "id": "LIPID-R1-16",
+    "severity": "suggestion",
+    "itemType": "ui",
+    "itemId": "src/modules/lipid/presets.ts",
+    "finding": "Nên bổ sung thêm 1 ca bệnh mẫu cho người cao tuổi hoặc bệnh nhân có tăng Lipoprotein(a) trong presets.ts để tăng tính toàn diện trong đào tạo lâm sàng.",
+    "evidence": "File presets.ts hiện có 5 ca bệnh mẫu nhưng chưa có ca minh họa về Lp(a) tăng cao.",
+    "suggestedFix": "Bổ sung ca bệnh mẫu số 6 với Lp(a) tăng cao (ví dụ 85 mg/dL) trên bệnh nhân có tiền sử gia đình NMCT sớm."
+  },
+  {
+    "id": "LIPID-R1-17",
+    "severity": "suggestion",
+    "itemType": "rule",
+    "itemId": "lipid.inpatient.acs_early_lipid_panel",
+    "finding": "Quy tắc nội viện ACS nên bổ sung khuyến cáo Class I C về xét nghiệm bilan lipid máu sớm trong vòng 24 giờ đầu nhập viện trước khi LDL-C giảm giả tạo do phản ứng pha cấp.",
+    "evidence": "ESC 2019 Section 10.1 (Eur Heart J 2020;41:156) & ESC 2024 CCS: Khuyến cáo xét nghiệm lipid profile càng sớm càng tốt trong vòng 24 giờ đầu nhập viện vì ACS (Class I, Level C).",
+    "suggestedFix": "Bổ sung 1 khuyến cáo MONITOR nội viện yêu cầu lấy máu xét nghiệm bilan lipid sớm trong 24h đầu nhập viện do ACS."
+  },
+  {
+    "id": "LIPID-R1-18",
+    "severity": "suggestion",
+    "itemType": "rule",
+    "itemId": "profileDiff.US",
+    "finding": "Chưa khai thác profile US trong module lipid: Khi chuyển sang profile US, hệ thống vẫn áp dụng đích điều trị tuyệt đối của ESC và chưa hiển thị các khác biệt cốt lõi của hướng dẫn ACC/AHA 2026.",
+    "evidence": "Trong rules.outpatient.ts, trường profileDiff chỉ so sánh giữa INTL và VN, thiếu nhánh phân tích so sánh với ACC/AHA 2026 (dựa trên nhóm hưởng lợi từ statin và dự báo nguy cơ theo PREVENT).",
+    "suggestedFix": "Bổ sung nội dung so sánh với hướng dẫn ACC/AHA 2026 vào trường `profileDiff.US` trong các quy tắc nền tảng."
+  }
+]

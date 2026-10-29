@@ -1,0 +1,48 @@
+{
+  "id": "ckd_16_missing_k_consider",
+  "titleVi": "Cân nhắc định lượng Kali huyết thanh khi chưa có kết quả",
+  "source": "KDIGO 2024 CKD / kdigo.ckd.2024.pp_3_6_2_rasi_monitoring",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_16",
+    "name": "BN CKD 16",
+    "age": 60,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 72,
+    "scr": 130,
+    "conditions": {
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "missing_input_k",
+        "action": "CONSIDER"
+      }
+    ]
+  },
+  "descriptionVi": "Thiếu Kali máu sinh dòng CÂN NHẮC yêu cầu nhập K+ để đánh giá."
+}

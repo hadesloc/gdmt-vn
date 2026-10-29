@@ -1,0 +1,1882 @@
+[
+  {
+    "id": "htn.bp.sbp_hypertension",
+    "value": 140,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.htn.2024.definition_classes"
+    ],
+    "descriptionVi": "Ngưỡng huyết áp tâm thu chẩn đoán tăng huyết áp (≥ 140 mmHg)"
+  },
+  {
+    "id": "htn.bp.dbp_hypertension",
+    "value": 90,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "esc.htn.2024.definition_classes"
+    ],
+    "descriptionVi": "Ngưỡng huyết áp tâm trương chẩn đoán tăng huyết áp (≥ 90 mmHg)"
+  },
+  {
+    "id": "htn.bp.sbp_elevated_min",
+    "value": 120,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.htn.2024.elevated_definition"
+    ],
+    "descriptionVi": "Ngưỡng SBP tối thiểu phân loại Huyết áp tăng (120 mmHg)"
+  },
+  {
+    "id": "htn.bp.sbp_elevated_max",
+    "value": 139,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.htn.2024.elevated_definition"
+    ],
+    "descriptionVi": "Ngưỡng SBP tối đa phân loại Huyết áp tăng (139 mmHg)"
+  },
+  {
+    "id": "htn.bp.dbp_elevated_min",
+    "value": 70,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "esc.htn.2024.elevated_definition"
+    ],
+    "descriptionVi": "Ngưỡng DBP tối thiểu phân loại Huyết áp tăng (70 mmHg)"
+  },
+  {
+    "id": "htn.bp.dbp_elevated_max",
+    "value": 89,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "esc.htn.2024.elevated_definition"
+    ],
+    "descriptionVi": "Ngưỡng DBP tối đa phân loại Huyết áp tăng (89 mmHg)"
+  },
+  {
+    "id": "htn.bp.sbp_target_standard_min",
+    "value": 120,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.htn.2024.bp_target_general"
+    ],
+    "descriptionVi": "Đích SBP tối thiểu điều trị tăng huyết áp chung theo ESC 2024 (120 mmHg)"
+  },
+  {
+    "id": "htn.bp.sbp_target_standard_max",
+    "value": 129,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.htn.2024.bp_target_general"
+    ],
+    "descriptionVi": "Đích SBP tối đa điều trị tăng huyết áp chung theo ESC 2024 (129 mmHg)"
+  },
+  {
+    "id": "htn.bp.dbp_target_standard_min",
+    "value": 70,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "esc.htn.2024.bp_target_dbp"
+    ],
+    "descriptionVi": "Đích DBP tối thiểu điều trị tăng huyết áp theo ESC 2024 (70 mmHg)"
+  },
+  {
+    "id": "htn.bp.dbp_target_standard_max",
+    "value": 79,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "esc.htn.2024.bp_target_dbp"
+    ],
+    "descriptionVi": "Đích DBP tối đa điều trị tăng huyết áp theo ESC 2024 (79 mmHg)"
+  },
+  {
+    "id": "htn.bp.sbp_target_lenient",
+    "value": 140,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.htn.2024.bp_target_lenient"
+    ],
+    "descriptionVi": "Đích SBP nới lỏng (< 140 mmHg) cho người ≥85 tuổi hoặc hạ HA tư thế"
+  },
+  {
+    "id": "htn.bp.sbp_target_kdigo",
+    "value": 120,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "kdigo.bp.2021.target_sbp_120"
+    ],
+    "descriptionVi": "Đích SBP điều trị tăng huyết áp ở bệnh nhân CKD theo KDIGO 2021 (< 120 mmHg)"
+  },
+  {
+    "id": "htn.bp.sbp_target_vietnam",
+    "value": 140,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "byt.3192.2010.target"
+    ],
+    "descriptionVi": "Đích SBP điều trị tăng huyết áp chung theo Bộ Y tế Việt Nam (< 140 mmHg)"
+  },
+  {
+    "id": "htn.bp.dbp_target_vietnam",
+    "value": 90,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "byt.3192.2010.target"
+    ],
+    "descriptionVi": "Đích DBP điều trị tăng huyết áp chung theo Bộ Y tế Việt Nam (< 90 mmHg)"
+  },
+  {
+    "id": "htn.bp.sbp_target_vietnam_highrisk",
+    "value": 130,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "byt.3192.2010.target"
+    ],
+    "descriptionVi": "Đích SBP điều trị THA nguy cơ cao/rất cao theo Bộ Y tế Việt Nam (< 130 mmHg)"
+  },
+  {
+    "id": "htn.bp.dbp_target_vietnam_highrisk",
+    "value": 80,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "byt.3192.2010.target"
+    ],
+    "descriptionVi": "Đích DBP điều trị THA nguy cơ cao/rất cao theo Bộ Y tế Việt Nam (< 80 mmHg)"
+  },
+  {
+    "id": "htn.bp.sbp_target_us",
+    "value": 130,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "aha.acc.2025.bp_target_130"
+    ],
+    "descriptionVi": "Đích SBP điều trị tăng huyết áp chung theo AHA/ACC 2025 (< 130 mmHg)"
+  },
+  {
+    "id": "htn.bp.dbp_target_us",
+    "value": 80,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "aha.acc.2025.bp_target_130"
+    ],
+    "descriptionVi": "Đích DBP điều trị tăng huyết áp chung theo AHA/ACC 2025 (< 80 mmHg)"
+  },
+  {
+    "id": "htn.bp.sbp_grade2",
+    "value": 160,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "vsh.htn.2022.bp_classification",
+      "byt.3192.2010.bp_grades"
+    ],
+    "descriptionVi": "Ngưỡng SBP phân độ Tăng huyết áp độ 2 (≥ 160 mmHg)"
+  },
+  {
+    "id": "htn.bp.dbp_grade2",
+    "value": 100,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "vsh.htn.2022.bp_classification",
+      "byt.3192.2010.bp_grades"
+    ],
+    "descriptionVi": "Ngưỡng DBP phân độ Tăng huyết áp độ 2 (≥ 100 mmHg)"
+  },
+  {
+    "id": "htn.bp.sbp_grade3",
+    "value": 180,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "byt.3192.2010.bp_grades",
+      "vsh.htn.2022.bp_classification"
+    ],
+    "descriptionVi": "Ngưỡng SBP phân độ Tăng huyết áp độ 3 / THA nặng (≥ 180 mmHg)"
+  },
+  {
+    "id": "htn.bp.dbp_grade3",
+    "value": 110,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "byt.3192.2010.bp_grades"
+    ],
+    "descriptionVi": "Ngưỡng DBP phân độ Tăng huyết áp độ 3 theo BYT / ESC cổ điển (≥ 110 mmHg)"
+  },
+  {
+    "id": "htn.bp.sbp_stage1_us",
+    "value": 130,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "aha.acc.2025.bp_target_130",
+      "esc.htn.2024.elevated_high_risk"
+    ],
+    "descriptionVi": "Ngưỡng SBP phân loại THA Giai đoạn 1 theo AHA/ACC 2025 hoặc HA tăng nguy cơ cao ESC 2024 (≥ 130 mmHg)"
+  },
+  {
+    "id": "htn.bp.dbp_stage1_us",
+    "value": 80,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "aha.acc.2025.bp_target_130",
+      "esc.htn.2024.elevated_high_risk"
+    ],
+    "descriptionVi": "Ngưỡng DBP phân loại THA Giai đoạn 1 theo AHA/ACC 2025 hoặc HA tăng nguy cơ cao ESC 2024 (≥ 80 mmHg)"
+  },
+  {
+    "id": "htn.bp.sbp_high_normal_vn",
+    "value": 130,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "vsh.htn.2022.bp_classification"
+    ],
+    "descriptionVi": "Ngưỡng SBP phân loại HA bình thường - cao theo VSH/VNHA 2022 (130–139 mmHg)"
+  },
+  {
+    "id": "htn.bp.dbp_high_normal_vn",
+    "value": 85,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "vsh.htn.2022.bp_classification"
+    ],
+    "descriptionVi": "Ngưỡng DBP phân loại HA bình thường - cao theo VSH/VNHA 2022 (85–89 mmHg)"
+  },
+  {
+    "id": "htn.risk.prevent_high_us",
+    "value": 7.5,
+    "unit": "%",
+    "quantity": "prevent_risk_pct",
+    "citationIds": [
+      "aha.acc.2025.stage1_prevent_75"
+    ],
+    "descriptionVi": "Ngưỡng nguy cơ tim mạch 10 năm PREVENT khởi trị thuốc sớm ở THA Giai đoạn 1 theo AHA/ACC 2025 (≥ 7.5%)"
+  },
+  {
+    "id": "htn.risk.score2_high_intl",
+    "value": 10,
+    "unit": "%",
+    "quantity": "score2_risk_pct",
+    "citationIds": [
+      "esc.htn.2024.elevated_high_risk",
+      "esc.htn.2024.table14_elevated_score2"
+    ],
+    "descriptionVi": "Ngưỡng nguy cơ tim mạch 10 năm SCORE2 khởi trị thuốc ở nhóm Huyết áp tăng theo ESC 2024 (≥ 10%)"
+  },
+  {
+    "id": "htn.age.very_elderly",
+    "value": 85,
+    "unit": "tuổi",
+    "quantity": "age",
+    "citationIds": [
+      "esc.htn.2024.bp_target_lenient"
+    ],
+    "descriptionVi": "Ngưỡng tuổi rất cao (≥ 85 tuổi) xem xét nới lỏng đích huyết áp"
+  },
+  {
+    "id": "htn.age.elderly_monotherapy",
+    "value": 80,
+    "unit": "tuổi",
+    "quantity": "age",
+    "citationIds": [
+      "vsh.htn.2022.monotherapy_elderly"
+    ],
+    "descriptionVi": "Ngưỡng tuổi cao (≥ 80 tuổi) xem xét ngoại lệ khởi đầu đơn trị liệu (VSH 2022)"
+  },
+  {
+    "id": "htn.spiro.egfr_min_initiate",
+    "value": 45,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "aha.acc.2025.table13_spiro_egfr45"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối thiểu an toàn để khởi trị spironolactone trong THA kháng trị (≥ 45 mL/min/1.73m2)"
+  },
+  {
+    "id": "htn.spiro.egfr_contra_esc",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "esc.htn.2024.spiro_gates_egfr30_k45"
+    ],
+    "descriptionVi": "Ngưỡng eGFR chống chỉ định tuyệt đối MRA steroid theo ESC 2024 (< 30 mL/min/1.73m2)"
+  },
+  {
+    "id": "htn.spiro.k_max_initiate",
+    "value": 4.5,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "esc.htn.2024.spiro_gates_egfr30_k45"
+    ],
+    "descriptionVi": "Ngưỡng kali huyết tương tối đa cho phép khởi trị spironolactone trong THA kháng trị (≤ 4.5 mmol/L)"
+  },
+  {
+    "id": "htn.spiro.dose_start",
+    "value": 25,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "aha.acc.2025.table13_spiro_egfr45"
+    ],
+    "descriptionVi": "Liều khởi đầu spironolactone trong tăng huyết áp kháng trị (25 mg/ngày)"
+  },
+  {
+    "id": "htn.spiro.dose_max",
+    "value": 100,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "aha.acc.2025.table13_spiro_egfr45"
+    ],
+    "descriptionVi": "Liều tối đa spironolactone trong tăng huyết áp kháng trị (100 mg/ngày)"
+  },
+  {
+    "id": "htn.rasi.k_max_initiate",
+    "value": 5.5,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "vsh.htn.2022.contraindications_table11"
+    ],
+    "descriptionVi": "Ngưỡng kali máu chống chỉ định khởi trị thuốc ức chế hệ RAS (> 5.5 mmol/L)"
+  },
+  {
+    "id": "htn.hypokalemia.k_threshold",
+    "value": 3.5,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "esc.hf.2026.supp_diuretic_cautions"
+    ],
+    "descriptionVi": "Ngưỡng hạ kali máu lâm sàng gợi ý tầm soát cường aldosteron nguyên phát hoặc thận trọng lợi tiểu (< 3.5 mmol/L)"
+  },
+  {
+    "id": "htn.diuretic.egfr_loop_switch",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "esc.htn.2024.ckd_loop_diuretic",
+      "esc.hf.2026.supp_diuretic_cautions"
+    ],
+    "descriptionVi": "Ngưỡng eGFR cần chuyển từ lợi tiểu thiazide thông thường sang lợi tiểu quai (< 30 mL/min/1.73m2)"
+  },
+  {
+    "id": "htn.bb.hr_min_initiate",
+    "value": 60,
+    "unit": "bpm",
+    "quantity": "hr",
+    "citationIds": [
+      "vsh.htn.2022.bb_contraindications_table11"
+    ],
+    "descriptionVi": "Ngưỡng nhịp tim tối thiểu an toàn khi khởi trị thuốc chẹn beta ngoại trú trong THA (≥ 60 chu kỳ/phút)"
+  },
+  {
+    "id": "htn.safety.sbp_hypotension",
+    "value": 90,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.hf.2026.supp_diuretic_cautions"
+    ],
+    "descriptionVi": "Ngưỡng SBP tụt huyết áp chống chỉ định khởi trị thuốc hạ áp (< 90 mmHg)"
+  },
+  {
+    "id": "htn.emergency.sbp_crisis",
+    "value": 180,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "vsh.htn.2022.emergency_malignant"
+    ],
+    "descriptionVi": "Ngưỡng SBP định nghĩa cơn tăng huyết áp cấp cứu/khẩn cấp (≥ 180 mmHg)"
+  },
+  {
+    "id": "htn.emergency.dbp_crisis",
+    "value": 120,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "vsh.htn.2022.emergency_malignant"
+    ],
+    "descriptionVi": "Ngưỡng DBP định nghĩa cơn tăng huyết áp cấp cứu/khẩn cấp (≥ 120 mmHg)"
+  },
+  {
+    "id": "htn.emergency.aortic_dissection_sbp",
+    "value": 120,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "vsh.htn.2022.emergency_aortic_dissection"
+    ],
+    "descriptionVi": "Đích SBP tối đa trong cấp cứu bóc tách động mạch chủ (< 120 mmHg)"
+  },
+  {
+    "id": "htn.emergency.aortic_dissection_hr",
+    "value": 60,
+    "unit": "bpm",
+    "quantity": "hr",
+    "citationIds": [
+      "vsh.htn.2022.emergency_aortic_dissection"
+    ],
+    "descriptionVi": "Đích tần số tim tối đa trong cấp cứu bóc tách động mạch chủ (< 60 chu kỳ/phút)"
+  },
+  {
+    "id": "htn.emergency.pulmonary_edema_sbp",
+    "value": 140,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "vsh.htn.2022.emergency_pulmonary_edema"
+    ],
+    "descriptionVi": "Đích SBP hạ ngay trong phù phổi cấp do tim (< 140 mmHg)"
+  },
+  {
+    "id": "htn.emergency.stroke_thrombolysis_sbp",
+    "value": 185,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "vsh.htn.2022.emergency_stroke_thrombolysis"
+    ],
+    "descriptionVi": "Ngưỡng SBP cần hạ trước khi dùng thuốc tiêu sợi huyết đường tĩnh mạch (≤ 185 mmHg)"
+  },
+  {
+    "id": "htn.emergency.stroke_thrombolysis_dbp",
+    "value": 110,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "vsh.htn.2022.emergency_stroke_thrombolysis"
+    ],
+    "descriptionVi": "Ngưỡng DBP cần hạ trước khi dùng thuốc tiêu sợi huyết đường tĩnh mạch (≤ 110 mmHg)"
+  },
+  {
+    "id": "htn.emergency.stroke_no_thrombolysis_sbp",
+    "value": 220,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "vsh.htn.2022.emergency_stroke_no_thrombolysis"
+    ],
+    "descriptionVi": "Ngưỡng SBP kích hoạt hạ áp trong nhồi máu não không tiêu sợi huyết (> 220 mmHg)"
+  },
+  {
+    "id": "htn.emergency.stroke_no_thrombolysis_dbp",
+    "value": 120,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "vsh.htn.2022.emergency_stroke_no_thrombolysis"
+    ],
+    "descriptionVi": "Ngưỡng DBP kích hoạt hạ áp trong nhồi máu não không tiêu sợi huyết (> 120 mmHg)"
+  },
+  {
+    "id": "htn.emergency.ich_sbp_target_min",
+    "value": 130,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "vsh.htn.2022.emergency_ich"
+    ],
+    "descriptionVi": "Giới hạn dưới an toàn của SBP trong xuất huyết não cấp (tránh < 130 mmHg)"
+  },
+  {
+    "id": "htn.emergency.ich_sbp_target_max",
+    "value": 180,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "vsh.htn.2022.emergency_ich"
+    ],
+    "descriptionVi": "Giới hạn trên SBP cần hạ trong xuất huyết não cấp (< 180 mmHg)"
+  },
+  {
+    "id": "htn.emergency.preeclampsia_sbp",
+    "value": 160,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "vsh.htn.2022.emergency_preeclampsia"
+    ],
+    "descriptionVi": "Đích SBP trong cấp cứu tiền sản giật nặng / sản giật (< 160 mmHg)"
+  },
+  {
+    "id": "htn.emergency.preeclampsia_dbp",
+    "value": 105,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "vsh.htn.2022.emergency_preeclampsia"
+    ],
+    "descriptionVi": "Đích DBP trong cấp cứu tiền sản giật nặng / sản giật (< 105 mmHg)"
+  },
+  {
+    "id": "htn.emergency.map_reduction_pct_min",
+    "value": 20,
+    "unit": "%",
+    "quantity": "percentage",
+    "citationIds": [
+      "vsh.htn.2022.emergency_encephalopathy"
+    ],
+    "descriptionVi": "Mức giảm tối thiểu huyết áp trung bình (MAP) trong bệnh não tăng huyết áp (20%)"
+  },
+  {
+    "id": "htn.emergency.map_reduction_pct_max",
+    "value": 25,
+    "unit": "%",
+    "quantity": "percentage",
+    "citationIds": [
+      "vsh.htn.2022.emergency_encephalopathy"
+    ],
+    "descriptionVi": "Mức giảm tối đa an toàn huyết áp trung bình (MAP) trong bệnh não tăng huyết áp (25%)"
+  },
+  {
+    "id": "htn.emergency.stroke_map_reduction_pct",
+    "value": 15,
+    "unit": "%",
+    "quantity": "percentage",
+    "citationIds": [
+      "vsh.htn.2022.emergency_stroke_thrombolysis"
+    ],
+    "descriptionVi": "Mức giảm thận trọng huyết áp trung bình (MAP) trong nhồi máu não cấp (15%)"
+  },
+  {
+    "id": "htn.amlodipine.dose_start",
+    "value": 5,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.amlodipine.dosing"
+    ],
+    "descriptionVi": "Liều khởi đầu tiêu chuẩn amlodipine (5 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.amlodipine.dose_low",
+    "value": 2.5,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.amlodipine.dosing"
+    ],
+    "descriptionVi": "Liều khởi đầu thấp amlodipine cho người già/suy yếu/suy gan (2.5 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.amlodipine.dose_max",
+    "value": 10,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.amlodipine.dosing"
+    ],
+    "descriptionVi": "Liều tối đa amlodipine (10 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.indapamide.dose_start",
+    "value": 1.5,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "ema.indapamide.dosing"
+    ],
+    "descriptionVi": "Liều tiêu chuẩn indapamide giải phóng kéo dài Natrilix SR (1.5 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.indapamide.crcl_contra",
+    "value": 30,
+    "unit": "mL/min",
+    "quantity": "crcl",
+    "citationIds": [
+      "ema.indapamide.renal_contra"
+    ],
+    "descriptionVi": "Ngưỡng CrCl chống chỉ định indapamide (< 30 mL/min)"
+  },
+  {
+    "id": "htn.chlorthalidone.dose_start",
+    "value": 12.5,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "aha.acc.2025.table13_chlorthalidone"
+    ],
+    "descriptionVi": "Liều khởi đầu chlorthalidone (12.5 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.chlorthalidone.dose_max",
+    "value": 25,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "aha.acc.2025.table13_chlorthalidone"
+    ],
+    "descriptionVi": "Liều tối đa chlorthalidone (25 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.hctz.dose_start",
+    "value": 12.5,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_diuretic"
+    ],
+    "descriptionVi": "Liều khởi đầu hydrochlorothiazide (12.5 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.hctz.dose_max",
+    "value": 50,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_diuretic"
+    ],
+    "descriptionVi": "Liều tối đa hydrochlorothiazide (50 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.nifedipine.dose_start",
+    "value": 30,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_ccb"
+    ],
+    "descriptionVi": "Liều khởi đầu nifedipine tác dụng kéo dài (30 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.nifedipine.dose_max",
+    "value": 90,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_ccb"
+    ],
+    "descriptionVi": "Liều tối đa nifedipine tác dụng kéo dài (90 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.felodipine.dose_start",
+    "value": 5,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_ccb"
+    ],
+    "descriptionVi": "Liều thông thường felodipine (5 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.felodipine.dose_low",
+    "value": 2.5,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_ccb"
+    ],
+    "descriptionVi": "Liều thấp khởi đầu felodipine (2.5 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.felodipine.dose_max",
+    "value": 10,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_ccb"
+    ],
+    "descriptionVi": "Liều tối đa felodipine (10 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.lercanidipine.dose_start",
+    "value": 10,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_ccb"
+    ],
+    "descriptionVi": "Liều khởi đầu lercanidipine (10 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.lercanidipine.dose_max",
+    "value": 20,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_ccb"
+    ],
+    "descriptionVi": "Liều tối đa lercanidipine (20 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.doxazosin.dose_start",
+    "value": 1,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_other"
+    ],
+    "descriptionVi": "Liều khởi đầu doxazosin (1 mg 1 lần/ngày vào buổi tối)"
+  },
+  {
+    "id": "htn.doxazosin.dose_max",
+    "value": 16,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "aha.acc.2025.table13_alpha1"
+    ],
+    "descriptionVi": "Liều tối đa Doxazosin điều trị tăng huyết áp theo AHA/ACC 2025 Table 13 (16 mg/ngày)"
+  },
+  {
+    "id": "htn.methyldopa.dose_start",
+    "value": 250,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_other"
+    ],
+    "descriptionVi": "Liều khởi đầu methyldopa (250 mg x 2 lần/ngày)"
+  },
+  {
+    "id": "htn.methyldopa.dose_max",
+    "value": 500,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_other"
+    ],
+    "descriptionVi": "Liều thông thường tối đa methyldopa (500 mg x 2 lần/ngày)"
+  },
+  {
+    "id": "htn.clonidine.dose_start",
+    "value": 0.1,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_other"
+    ],
+    "descriptionVi": "Liều khởi đầu clonidine uống (0.1 mg x 2 lần/ngày)"
+  },
+  {
+    "id": "htn.clonidine.dose_max",
+    "value": 0.2,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_other"
+    ],
+    "descriptionVi": "Liều thông thường clonidine uống (0.2 mg x 2 lần/ngày)"
+  },
+  {
+    "id": "htn.nicardipine_iv.dose_start",
+    "value": 5,
+    "unit": "mg/h",
+    "quantity": "dose_rate",
+    "citationIds": [
+      "aha.acc.2025.iv_nicardipine"
+    ],
+    "descriptionVi": "Tốc độ khởi đầu truyền tĩnh mạch nicardipine (5 mg/h)"
+  },
+  {
+    "id": "htn.nicardipine_iv.dose_step",
+    "value": 2.5,
+    "unit": "mg/h",
+    "quantity": "dose_rate",
+    "citationIds": [
+      "aha.acc.2025.iv_nicardipine"
+    ],
+    "descriptionVi": "Bước tăng liều truyền tĩnh mạch nicardipine mỗi 5 phút (2.5 mg/h)"
+  },
+  {
+    "id": "htn.nicardipine_iv.dose_max",
+    "value": 15,
+    "unit": "mg/h",
+    "quantity": "dose_rate",
+    "citationIds": [
+      "aha.acc.2025.iv_nicardipine"
+    ],
+    "descriptionVi": "Tốc độ tối đa truyền tĩnh mạch nicardipine (15 mg/h)"
+  },
+  {
+    "id": "htn.clevidipine_iv.dose_start",
+    "value": 1,
+    "unit": "mg/h",
+    "quantity": "dose_rate",
+    "citationIds": [
+      "aha.acc.2025.iv_clevidipine"
+    ],
+    "descriptionVi": "Tốc độ khởi đầu truyền tĩnh mạch clevidipine (1 mg/h)"
+  },
+  {
+    "id": "htn.clevidipine_iv.dose_max",
+    "value": 21,
+    "unit": "mg/h",
+    "quantity": "dose_rate",
+    "citationIds": [
+      "aha.acc.2025.iv_clevidipine"
+    ],
+    "descriptionVi": "Tốc độ tối đa truyền tĩnh mạch clevidipine (21 mg/h)"
+  },
+  {
+    "id": "htn.nitroprusside_iv.dose_start",
+    "value": 0.3,
+    "unit": "mcg/kg/min",
+    "quantity": "dose_rate",
+    "citationIds": [
+      "aha.acc.2025.iv_nitroprusside"
+    ],
+    "descriptionVi": "Tốc độ khởi đầu truyền tĩnh mạch sodium nitroprusside (0.3 mcg/kg/min)"
+  },
+  {
+    "id": "htn.nitroprusside_iv.dose_max",
+    "value": 10,
+    "unit": "mcg/kg/min",
+    "quantity": "dose_rate",
+    "citationIds": [
+      "aha.acc.2025.iv_nitroprusside"
+    ],
+    "descriptionVi": "Tốc độ tối đa truyền tĩnh mạch sodium nitroprusside (10 mcg/kg/min)"
+  },
+  {
+    "id": "htn.nitroglycerin_iv.dose_start",
+    "value": 5,
+    "unit": "mcg/min",
+    "quantity": "dose_rate",
+    "citationIds": [
+      "aha.acc.2025.iv_nitroglycerin"
+    ],
+    "descriptionVi": "Tốc độ khởi đầu truyền tĩnh mạch nitroglycerin (5 mcg/min)"
+  },
+  {
+    "id": "htn.nitroglycerin_iv.dose_max",
+    "value": 200,
+    "unit": "mcg/min",
+    "quantity": "dose_rate",
+    "citationIds": [
+      "aha.acc.2025.iv_nitroglycerin"
+    ],
+    "descriptionVi": "Tốc độ tối đa truyền tĩnh mạch nitroglycerin (200 mcg/min)"
+  },
+  {
+    "id": "htn.esmolol_iv.dose_bolus",
+    "value": 500,
+    "unit": "mcg/kg/min",
+    "quantity": "dose_rate",
+    "citationIds": [
+      "aha.acc.2025.iv_esmolol"
+    ],
+    "descriptionVi": "Liều nạp tiêm tĩnh mạch esmolol trong 1 phút (500 mcg/kg/min)"
+  },
+  {
+    "id": "htn.esmolol_iv.dose_infusion_start",
+    "value": 50,
+    "unit": "mcg/kg/min",
+    "quantity": "dose_rate",
+    "citationIds": [
+      "aha.acc.2025.iv_esmolol"
+    ],
+    "descriptionVi": "Tốc độ duy trì truyền tĩnh mạch esmolol (50 mcg/kg/min)"
+  },
+  {
+    "id": "htn.esmolol_iv.dose_max",
+    "value": 300,
+    "unit": "mcg/kg/min",
+    "quantity": "dose_rate",
+    "citationIds": [
+      "aha.acc.2025.iv_esmolol"
+    ],
+    "descriptionVi": "Tốc độ tối đa truyền tĩnh mạch esmolol (300 mcg/kg/min)"
+  },
+  {
+    "id": "htn.labetalol_iv.dose_bolus_max",
+    "value": 20,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "aha.acc.2025.iv_labetalol"
+    ],
+    "descriptionVi": "Liều bolus tĩnh mạch chậm tối đa ban đầu của labetalol (20 mg)"
+  },
+  {
+    "id": "htn.labetalol_iv.dose_max_24h",
+    "value": 300,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "aha.acc.2025.iv_labetalol"
+    ],
+    "descriptionVi": "Tổng liều tích lũy tối đa trong 24 giờ của labetalol tiêm truyền tĩnh mạch (300 mg)"
+  },
+  {
+    "id": "htn.rasi.k_initiate_max",
+    "value": 5,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "aha.acc.2025.table18_k50"
+    ],
+    "descriptionVi": "Ngưỡng Kali máu tối đa cho phép khởi trị thuốc ức chế hệ RAA (≤ 5,0 mmol/L)"
+  },
+  {
+    "id": "htn.bp.dbp_target_vietnam_vsh",
+    "value": 80,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "vsh.htn.2022.targets_age_dbp80"
+    ],
+    "descriptionVi": "Đích huyết áp tâm trương chung theo VSH/VNHA 2022 (< 80 mmHg)"
+  },
+  {
+    "id": "htn.elderly.vn_age_70",
+    "value": 70,
+    "unit": "years",
+    "quantity": "age",
+    "citationIds": [
+      "vsh.htn.2022.targets_age_dbp80"
+    ],
+    "descriptionVi": "Mốc tuổi cao tuổi Việt Nam theo VSH/VNHA 2022 Bảng 17 (70–79 tuổi)"
+  },
+  {
+    "id": "htn.elderly.vn_sbp_80plus",
+    "value": 160,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "vsh.htn.2022.targets_age_dbp80"
+    ],
+    "descriptionVi": "Ngưỡng HATT khởi trị thuốc hạ áp ở người rất cao tuổi ≥ 80 tuổi theo VSH/VNHA 2022 (≥ 160 mmHg)"
+  },
+  {
+    "id": "htn.hbpm.sbp_threshold",
+    "value": 135,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.htn.2024.abpm_hbpm_thresholds",
+      "vsh.htn.2022.pregnancy_table16_targets"
+    ],
+    "descriptionVi": "Ngưỡng HATT chẩn đoán tăng huyết áp theo đo HA tại nhà HBPM / ABPM ban ngày (≥ 135 mmHg)"
+  },
+  {
+    "id": "htn.hbpm.dbp_threshold",
+    "value": 85,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "esc.htn.2024.abpm_hbpm_thresholds",
+      "vsh.htn.2022.pregnancy_table16_targets"
+    ],
+    "descriptionVi": "Ngưỡng HATTr chẩn đoán tăng huyết áp theo đo HA tại nhà HBPM / ABPM ban ngày (≥ 85 mmHg)"
+  },
+  {
+    "id": "htn.abpm.sbp_24h_threshold",
+    "value": 130,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.htn.2024.abpm_hbpm_thresholds"
+    ],
+    "descriptionVi": "Ngưỡng HATT trung bình 24 giờ trên ABPM chẩn đoán tăng huyết áp (≥ 130 mmHg)"
+  },
+  {
+    "id": "htn.abpm.dbp_24h_threshold",
+    "value": 80,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "esc.htn.2024.abpm_hbpm_thresholds"
+    ],
+    "descriptionVi": "Ngưỡng HATTr trung bình 24 giờ trên ABPM chẩn đoán tăng huyết áp (≥ 80 mmHg)"
+  },
+  {
+    "id": "htn.pregnancy.sbp_target",
+    "value": 140,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_targets_rec22",
+      "aha.acc.2025.pregnancy_recs",
+      "vsh.htn.2022.pregnancy_table16_targets"
+    ],
+    "descriptionVi": "Ngưỡng khởi trị và đích HATT trong thai kỳ (< 140 mmHg)"
+  },
+  {
+    "id": "htn.pregnancy.dbp_target",
+    "value": 90,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_targets_rec22",
+      "aha.acc.2025.pregnancy_recs",
+      "vsh.htn.2022.pregnancy_table16_targets"
+    ],
+    "descriptionVi": "Ngưỡng khởi trị và đích HATTr trong thai kỳ (< 90 mmHg)"
+  },
+  {
+    "id": "htn.pregnancy.dbp_min_esc",
+    "value": 80,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_targets_rec22"
+    ],
+    "descriptionVi": "Giới hạn dưới HATTr cần tránh hạ quá sâu trong thai kỳ theo ESC 2024 (≥ 80 mmHg)"
+  },
+  {
+    "id": "htn.pregnancy.dbp_target_vn",
+    "value": 85,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "vsh.htn.2022.pregnancy_table16_targets"
+    ],
+    "descriptionVi": "Đích HATTr trong thai kỳ theo VSH/VNHA 2022 Bảng 16 (85 mmHg)"
+  },
+  {
+    "id": "htn.pregnancy.sbp_min_vn",
+    "value": 110,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "vsh.htn.2022.pregnancy_table16_targets"
+    ],
+    "descriptionVi": "Giới hạn dưới HATT mục tiêu trong thai kỳ theo VSH/VNHA 2022 Bảng 16 (110–140 mmHg)"
+  },
+  {
+    "id": "htn.pregnancy.severe_sbp",
+    "value": 160,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_severe_rec22",
+      "aha.acc.2025.pregnancy_recs"
+    ],
+    "descriptionVi": "Ngưỡng HATT chẩn đoán tăng huyết áp nặng cấp cứu trong thai kỳ (≥ 160 mmHg)"
+  },
+  {
+    "id": "htn.pregnancy.severe_dbp",
+    "value": 110,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_severe_rec22",
+      "aha.acc.2025.pregnancy_recs"
+    ],
+    "descriptionVi": "Ngưỡng HATTr chẩn đoán tăng huyết áp nặng cấp cứu trong thai kỳ (≥ 110 mmHg)"
+  },
+  {
+    "id": "htn.pregnancy.aspirin_dose_us",
+    "value": 81,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "aha.acc.2025.pregnancy_recs"
+    ],
+    "descriptionVi": "Liều Aspirin dự phòng tiền sản giật theo AHA/ACC 2025 (81 mg/ngày)"
+  },
+  {
+    "id": "htn.pregnancy.aspirin_dose_min_intl",
+    "value": 100,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_aspirin_atenolol_methyldopa"
+    ],
+    "descriptionVi": "Liều Aspirin tối thiểu dự phòng tiền sản giật theo ESC 2024 (100–150 mg buổi tối)"
+  },
+  {
+    "id": "htn.pregnancy.aspirin_dose_max_intl",
+    "value": 150,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_aspirin_atenolol_methyldopa"
+    ],
+    "descriptionVi": "Liều Aspirin tối đa dự phòng tiền sản giật theo ESC 2024 (150 mg buổi tối)"
+  },
+  {
+    "id": "htn.pregnancy.aspirin_dose_min_vn",
+    "value": 75,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.pregnancy_table16_targets"
+    ],
+    "descriptionVi": "Liều Aspirin tối thiểu dự phòng tiền sản giật theo VSH/VNHA 2022 (75–162 mg/ngày)"
+  },
+  {
+    "id": "htn.pregnancy.aspirin_dose_max_vn",
+    "value": 162,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.pregnancy_table16_targets"
+    ],
+    "descriptionVi": "Liều Aspirin tối đa dự phòng tiền sản giật theo VSH/VNHA 2022 (75–162 mg/ngày)"
+  },
+  {
+    "id": "htn.emergency.stroke_post_rtpa_sbp_24h",
+    "value": 180,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "aha.acc.2025.ais_rec2_rtpa",
+      "vsh.htn.2022.emergency_stroke_thrombolysis"
+    ],
+    "descriptionVi": "Đích HATT duy trì trong 24 giờ đầu sau tiêu sợi huyết đột quỵ thiếu máu não (< 180 mmHg)"
+  },
+  {
+    "id": "htn.emergency.stroke_post_rtpa_dbp_24h",
+    "value": 105,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "aha.acc.2025.ais_rec2_rtpa",
+      "vsh.htn.2022.emergency_stroke_thrombolysis"
+    ],
+    "descriptionVi": "Đích HATTr duy trì trong 24 giờ đầu sau tiêu sợi huyết đột quỵ thiếu máu não (< 105 mmHg)"
+  },
+  {
+    "id": "htn.emergency.stroke_evt_harm_sbp",
+    "value": 140,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "aha.acc.2025.ais_rec6_evt_harm"
+    ],
+    "descriptionVi": "Ngưỡng HATT không được hạ xuống thấp hơn sau tái thông nội mạch đột quỵ (< 140 mmHg gây hại — COR 3)"
+  },
+  {
+    "id": "htn.emergency.stroke_no_rtpa_dbp_esc",
+    "value": 110,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "esc.htn.2024.stroke_no_rtpa_rec32"
+    ],
+    "descriptionVi": "Ngưỡng HATTr hạ áp trong đột quỵ thiếu máu não cấp không tiêu sợi huyết theo ESC 2024 (≥ 220/110 mmHg)"
+  },
+  {
+    "id": "htn.emergency.stroke_no_rtpa_window_h",
+    "value": 24,
+    "unit": "hours",
+    "quantity": "duration_hours",
+    "citationIds": [
+      "esc.htn.2024.stroke_no_rtpa_rec32",
+      "aha.acc.2025.ais_rec4_no_rtpa"
+    ],
+    "descriptionVi": "Khung thời gian 24 giờ đầu hạ khoảng 15% HA trong đột quỵ thiếu máu não không tiêu sợi huyết (ESC 2024 / AHA 2025)"
+  },
+  {
+    "id": "htn.emergency.ich_sbp_trigger_esc",
+    "value": 160,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.htn.2024.ich_rec32"
+    ],
+    "descriptionVi": "Ngưỡng trên HATT mục tiêu (140–160 mmHg) để khởi trị hạ áp trong xuất huyết não cấp theo ESC 2024"
+  },
+  {
+    "id": "htn.emergency.ich_sbp_target_esc_min",
+    "value": 140,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.htn.2024.ich_rec32"
+    ],
+    "descriptionVi": "Giới hạn dưới đích HATT trong xuất huyết não cấp theo ESC 2024 (140–160 mmHg)"
+  },
+  {
+    "id": "htn.emergency.ich_sbp_severe_esc",
+    "value": 220,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.htn.2024.ich_drop70_rec32",
+      "aha.acc.2025.ich_rec1"
+    ],
+    "descriptionVi": "Ngưỡng HATT xuất huyết não rất cao (≥ 220 mmHg) cần giới hạn biên độ hạ áp an toàn"
+  },
+  {
+    "id": "htn.emergency.ich_sbp_max_drop_1h",
+    "value": 70,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.htn.2024.ich_drop70_rec32"
+    ],
+    "descriptionVi": "Biên độ hạ HATT tối đa cấm vượt quá trong 1 giờ đầu ở xuất huyết não có HATT ≥ 220 mmHg (> 70 mmHg — Class III)"
+  },
+  {
+    "id": "htn.emergency.ich_sbp_trigger_us_min",
+    "value": 150,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "aha.acc.2025.ich_rec1"
+    ],
+    "descriptionVi": "Ngưỡng HATT khởi trị hạ áp xuất huyết não cấp theo AHA/ACC 2025 (150–220 mmHg)"
+  },
+  {
+    "id": "htn.emergency.ich_sbp_target_us_max",
+    "value": 140,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "aha.acc.2025.ich_rec1"
+    ],
+    "descriptionVi": "Đích HATT trên trong xuất huyết não cấp theo AHA/ACC 2025 (130 đến < 140 mmHg)"
+  },
+  {
+    "id": "htn.emergency.encephalopathy_sbp_min",
+    "value": 140,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "aha.acc.2025.emergency_general_rec3"
+    ],
+    "descriptionVi": "Ngưỡng HATT tối thiểu cần kiểm soát đường tĩnh mạch trong bệnh não tăng huyết áp cấp (≥ 140 mmHg)"
+  },
+  {
+    "id": "htn.emergency.encephalopathy_sbp_step1",
+    "value": 160,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "aha.acc.2025.emergency_general_rec3"
+    ],
+    "descriptionVi": "Đích HATT trung gian trong 2–6 giờ sau giảm 20–25% MAP giờ đầu của cấp cứu THA (< 160/100 mmHg)"
+  },
+  {
+    "id": "htn.emergency.encephalopathy_dbp_step1",
+    "value": 100,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "aha.acc.2025.emergency_general_rec3"
+    ],
+    "descriptionVi": "Đích HATTr trung gian trong 2–6 giờ của cấp cứu THA (< 160/100 mmHg)"
+  },
+  {
+    "id": "htn.emergency.acs_target_sbp",
+    "value": 140,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "vsh.htn.2022.emergency_acs_table14",
+      "aha.acc.2025.emergency_compelling_rec2"
+    ],
+    "descriptionVi": "Đích HATT hạ ngay lập tức trong hội chứng vành cấp kèm tăng huyết áp cấp cứu (< 140 mmHg)"
+  },
+  {
+    "id": "htn.emergency.aortic_window_min",
+    "value": 20,
+    "unit": "minutes",
+    "quantity": "duration_minutes",
+    "citationIds": [
+      "aha.acc.2025.table27_aortic_acs"
+    ],
+    "descriptionVi": "Thời gian mục tiêu đạt HATT ≤ 120 mmHg trong bóc tách động mạch chủ cấp (trong vòng 20 phút)"
+  },
+  {
+    "id": "htn.emergency.mgso4_load_g",
+    "value": 4,
+    "unit": "g",
+    "quantity": "dose_g",
+    "citationIds": [
+      "esc.htn.2024.preeclampsia_mgso4"
+    ],
+    "descriptionVi": "Liều nạp Magnesium sulfate đường tĩnh mạch dự phòng/điều trị sản giật (4 g TM trong 5 phút)"
+  },
+  {
+    "id": "htn.emergency.mgso4_maint_g_h",
+    "value": 1,
+    "unit": "g/h",
+    "quantity": "dose_rate",
+    "citationIds": [
+      "esc.htn.2024.preeclampsia_mgso4"
+    ],
+    "descriptionVi": "Liều duy trì Magnesium sulfate đường tĩnh mạch dự phòng/điều trị sản giật (1 g/giờ TM)"
+  },
+  {
+    "id": "htn.ckd.uacr_albuminuria",
+    "value": 3,
+    "unit": "mg/mmol",
+    "quantity": "uacr",
+    "citationIds": [
+      "esc.htn.2024.ckd_albuminuria_click"
+    ],
+    "descriptionVi": "Ngưỡng UACR chẩn đoán tiểu albumin niệu A2 trở lên (≥ 3 mg/mmol tương đương ≥ 30 mg/g)"
+  },
+  {
+    "id": "htn.ckd.egfr_sglt2i_min",
+    "value": 20,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "esc.htn.2024.ckd_rec26"
+    ],
+    "descriptionVi": "Ngưỡng eGFR khuyến cáo phối hợp SGLT2i bảo vệ tim-thận ở bệnh nhân THA kèm CKD (> 20 mL/phút/1,73m²)"
+  },
+  {
+    "id": "htn.indapamide.egfr_avoid",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "esc.htn.2024.ckd_loop_diuretic"
+    ],
+    "descriptionVi": "Ngưỡng eGFR < 30 mL/phút/1,73m² cần chuyển lợi tiểu thiazide/indapamide sang lợi tiểu quai"
+  },
+  {
+    "id": "htn.chlorthalidone.egfr_min_click",
+    "value": 15,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "esc.htn.2024.ckd_albuminuria_click"
+    ],
+    "descriptionVi": "Ngưỡng eGFR tối thiểu (15–30 mL/phút/1,73m², CKD G4) mà Chlorthalidone vẫn có bằng chứng hạ áp trong THA kháng trị"
+  },
+  {
+    "id": "htn.monitoring.scr_rise_max_pct",
+    "value": 30,
+    "unit": "%",
+    "quantity": "percentage",
+    "citationIds": [
+      "kdigo.bp.2021.pp_3_2_3_monitoring",
+      "aha.acc.2025.egfr_dip_30pct"
+    ],
+    "descriptionVi": "Ngưỡng tăng Creatinin huyết thanh (hoặc giảm eGFR) > 30% cần đánh giá ngưng/giảm liều RASi"
+  },
+  {
+    "id": "htn.monitoring.recheck_weeks_min",
+    "value": 2,
+    "unit": "weeks",
+    "quantity": "interval_weeks",
+    "citationIds": [
+      "kdigo.bp.2021.pp_3_2_3_monitoring",
+      "aha.acc.2025.monitoring_bmp_2_4wk"
+    ],
+    "descriptionVi": "Mốc sớm nhất kiểm tra lại Creatinin và Kali máu sau khởi trị/tăng liều RASi, lợi tiểu hoặc MRA (2 tuần)"
+  },
+  {
+    "id": "htn.monitoring.recheck_weeks_max",
+    "value": 4,
+    "unit": "weeks",
+    "quantity": "interval_weeks",
+    "citationIds": [
+      "kdigo.bp.2021.pp_3_2_3_monitoring",
+      "aha.acc.2025.monitoring_bmp_2_4wk"
+    ],
+    "descriptionVi": "Mốc muộn nhất kiểm tra lại Creatinin và Kali máu sau khởi trị/tăng liều RASi, lợi tiểu hoặc MRA (4 tuần)"
+  },
+  {
+    "id": "htn.secondary.age_young_onset",
+    "value": 40,
+    "unit": "years",
+    "quantity": "age",
+    "citationIds": [
+      "esc.htn.2024.young_onset_secondary",
+      "vsh.htn.2022.arr_screening_table13"
+    ],
+    "descriptionVi": "Ngưỡng tuổi khởi phát tăng huyết áp người trẻ (< 40 tuổi) cần tầm soát nguyên nhân THA thứ phát"
+  },
+  {
+    "id": "htn.hypokalemia.k_indapamide",
+    "value": 3.4,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "ema.indapamide.hypokalemia_qt"
+    ],
+    "descriptionVi": "Ngưỡng hạ kali máu nguy cơ cao trên nhãn Indapamide (< 3,4 mmol/L) làm tăng nguy cơ xoắn đỉnh"
+  },
+  {
+    "id": "htn.hfref.lvef_max",
+    "value": 40,
+    "unit": "%",
+    "quantity": "lvef",
+    "citationIds": [
+      "vsh.htn.2022.lvef_40"
+    ],
+    "descriptionVi": "Ngưỡng phân suất tống máu thất trái xác định suy tim phân suất tống máu giảm HFrEF (≤ 40%)"
+  },
+  {
+    "id": "htn.safety.sbp_bb_min",
+    "value": 100,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "aha.acc.2025.table27_aortic_acs"
+    ],
+    "descriptionVi": "Ngưỡng HATT tối thiểu an toàn trước khi dùng thuốc chẹn beta (< 100 mmHg chống chỉ định)"
+  },
+  {
+    "id": "htn.methyldopa.dose_max_preg_g",
+    "value": 3,
+    "unit": "g/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "aha.acc.2025.pregnancy_table22_full"
+    ],
+    "descriptionVi": "Tổng liều tối đa Methyldopa đường uống trong thai kỳ (3 g/ngày tức 3.000 mg/ngày chia 2–4 lần)"
+  },
+  {
+    "id": "htn.perindopril.dose_start_adult",
+    "value": 5,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_rasi_bb",
+      "ema.perindopril.htn_dosing"
+    ],
+    "descriptionVi": "Liều khởi đầu thông thường của Perindopril ở người trưởng thành (5 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.perindopril.dose_max_htn",
+    "value": 10,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_rasi_bb"
+    ],
+    "descriptionVi": "Liều tối đa của Perindopril điều trị tăng huyết áp (10 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.losartan.dose_start_htn",
+    "value": 50,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "aha.acc.2025.table13_losartan",
+      "vsh.htn.2022.drugs_table_rasi_bb"
+    ],
+    "descriptionVi": "Liều khởi đầu thông thường của Losartan điều trị tăng huyết áp (50 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.losartan.dose_max_htn",
+    "value": 100,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "aha.acc.2025.table13_losartan",
+      "vsh.htn.2022.drugs_table_rasi_bb"
+    ],
+    "descriptionVi": "Liều tối đa của Losartan điều trị tăng huyết áp (100 mg/ngày)"
+  },
+  {
+    "id": "htn.bisoprolol.dose_start_htn",
+    "value": 2.5,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "aha.acc.2025.table13_bisoprolol_labetalol"
+    ],
+    "descriptionVi": "Liều khởi đầu thấp của Bisoprolol điều trị tăng huyết áp (2,5 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.bisoprolol.dose_usual_htn",
+    "value": 5,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_mra_bb"
+    ],
+    "descriptionVi": "Liều thông thường của Bisoprolol điều trị tăng huyết áp (5 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.bisoprolol.dose_max_htn",
+    "value": 10,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "aha.acc.2025.table13_bisoprolol_labetalol",
+      "vsh.htn.2022.drugs_table_mra_bb"
+    ],
+    "descriptionVi": "Liều tối đa của Bisoprolol điều trị tăng huyết áp (10 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.eplerenone.dose_low_htn",
+    "value": 25,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_mra_bb"
+    ],
+    "descriptionVi": "Liều thấp của Eplerenone trong tăng huyết áp kháng trị (25 mg/ngày)"
+  },
+  {
+    "id": "htn.eplerenone.dose_usual_htn",
+    "value": 50,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "aha.acc.2025.table13_eplerenone_furosemide",
+      "vsh.htn.2022.drugs_table_mra_bb"
+    ],
+    "descriptionVi": "Liều thông thường của Eplerenone trong tăng huyết áp kháng trị (50 mg/ngày)"
+  },
+  {
+    "id": "htn.eplerenone.dose_max_htn",
+    "value": 100,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "aha.acc.2025.table13_eplerenone_furosemide",
+      "vsh.htn.2022.drugs_table_mra_bb"
+    ],
+    "descriptionVi": "Liều tối đa của Eplerenone trong tăng huyết áp kháng trị (100 mg/ngày)"
+  },
+  {
+    "id": "htn.spiro.dose_low_ckd",
+    "value": 12.5,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "vsh.htn.2022.drugs_table_mra_bb"
+    ],
+    "descriptionVi": "Liều khởi đầu thận trọng của Spironolactone khi eGFR giảm (12,5 mg 1 lần/ngày)"
+  },
+  {
+    "id": "htn.furosemide.dose_start_mg",
+    "value": 20,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "aha.acc.2025.table13_furosemide",
+      "vsh.htn.2022.drugs_table_mra_bb"
+    ],
+    "descriptionVi": "Liều khởi đầu Furosemide (20 mg)"
+  },
+  {
+    "id": "htn.furosemide.dose_high_mg",
+    "value": 40,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "aha.acc.2025.table13_furosemide",
+      "vsh.htn.2022.drugs_table_mra_bb"
+    ],
+    "descriptionVi": "Liều thông thường Furosemide (40 mg)"
+  },
+  {
+    "id": "htn.bp.sbp_uncontrolled_intl",
+    "value": 130,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "esc.htn.2024.elevated_high_risk",
+      "esc.htn.2024.ckd_rec26"
+    ],
+    "descriptionVi": "Ngưỡng HATT trên mục tiêu điều trị chuẩn (< 130 mmHg, tức đích 120–129 mmHg) theo ESC 2024"
+  },
+  {
+    "id": "htn.bp.dbp_uncontrolled_intl",
+    "value": 80,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "esc.htn.2024.bp_target_dbp",
+      "esc.htn.2024.elevated_high_risk"
+    ],
+    "descriptionVi": "Ngưỡng HATTr trên mục tiêu điều trị chuẩn (< 80 mmHg, tức đích 70–79 mmHg) theo ESC 2024"
+  },
+  {
+    "id": "htn.ckd.egfr_severe_cutoff",
+    "value": 30,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "esc.htn.2024.defer_egfr30",
+      "esc.htn.2024.ckd_rec26"
+    ],
+    "descriptionVi": "Ngưỡng eGFR < 30 mL/phút/1,73m² cá thể hóa đích huyết áp và hoãn khởi trị ở nhóm HA tăng 130–139/80–89 theo ESC 2024"
+  },
+  {
+    "id": "htn.safety.k_critical_emergency",
+    "value": 6,
+    "unit": "mmol/L",
+    "quantity": "k",
+    "citationIds": [
+      "ukka.2022.guideline_16_3_2_insulin_glucose_moderate"
+    ],
+    "descriptionVi": "Ngưỡng tăng kali máu cấp cứu nội khoa (≥ 6,0 mmol/L) cần xử trí cấp cứu trước khi kê đơn ngoại trú thường quy"
+  },
+  {
+    "id": "htn.safety.hr_critical_min",
+    "value": 40,
+    "unit": "bpm",
+    "quantity": "hr",
+    "citationIds": [
+      "byt.hf.2022.intubation_vitals_brady_hypotension"
+    ],
+    "descriptionVi": "Ngưỡng nhịp tim cực chậm nguy kịch (< 40 chu kỳ/phút) cần chuyển cấp cứu nội viện ngay"
+  },
+  {
+    "id": "htn.safety.hr_critical_max",
+    "value": 130,
+    "unit": "bpm",
+    "quantity": "hr",
+    "citationIds": [
+      "byt.hf.2022.intubation_vitals_brady_hypotension"
+    ],
+    "descriptionVi": "Ngưỡng nhịp tim rất nhanh mất ổn định huyết động (> 130 chu kỳ/phút) cần đánh giá cấp cứu"
+  },
+  {
+    "id": "htn.bb.af_rate_control_hr_min",
+    "value": 80,
+    "unit": "bpm",
+    "quantity": "hr",
+    "citationIds": [
+      "esc.af.2024.rate_strict_target_80"
+    ],
+    "descriptionVi": "Ngưỡng nhịp tim lúc nghỉ (≥ 80 chu kỳ/phút) đặt ra nhu cầu kiểm soát tần số thất bằng chẹn beta ở bệnh nhân rung nhĩ"
+  },
+  {
+    "id": "htn.safety.na_hyponatremia_max",
+    "value": 135,
+    "unit": "mmol/L",
+    "quantity": "na",
+    "citationIds": [
+      "esc.hf.2026.supp_hyponatraemia_135"
+    ],
+    "descriptionVi": "Ngưỡng hạ natri máu (< 135 mmol/L) cần tránh khởi trị lợi tiểu thiazide/thiazide-like"
+  },
+  {
+    "id": "htn.emergency.preeclampsia_dbp_us",
+    "value": 110,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "aha.acc.2025.pregnancy_recs"
+    ],
+    "descriptionVi": "Đích HATTr hạ cấp cứu trong 30–60 phút ở THA nặng thai kỳ theo AHA/ACC 2025 (< 110 mmHg)"
+  },
+  {
+    "id": "htn.emergency.periop_sbp",
+    "value": 160,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "aha.acc.2025.table27_periop_160_90"
+    ],
+    "descriptionVi": "Ngưỡng HATT xác định tăng huyết áp cấp chu phẫu theo AHA/ACC 2025 Table 27 (≥ 160 mmHg)"
+  },
+  {
+    "id": "htn.emergency.periop_dbp",
+    "value": 90,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "aha.acc.2025.table27_periop_160_90"
+    ],
+    "descriptionVi": "Ngưỡng HATTr xác định tăng huyết áp cấp chu phẫu theo AHA/ACC 2025 Table 27 (≥ 90 mmHg)"
+  },
+  {
+    "id": "htn.losartan.dose_start_reduced",
+    "value": 25,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.losartan.starting_25mg_diuretic",
+      "fda.losartan.hepatic_impairment"
+    ],
+    "descriptionVi": "Liều khởi đầu giảm của Losartan (25 mg 1 lần/ngày) khi suy gan nhẹ–vừa hoặc nguy cơ giảm thể tích tuần hoàn"
+  },
+  {
+    "id": "htn.perindopril.dose_renal_moderate",
+    "value": 2.5,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "ema.perindopril.table_1_renal_adjustment"
+    ],
+    "descriptionVi": "Liều khởi đầu Perindopril điều chỉnh theo thận (2,5 mg/ngày khi CrCl 30–59; 2,5 mg cách ngày khi CrCl 15–29; 2,5 mg ngày lọc máu)"
+  },
+  {
+    "id": "htn.perindopril.crcl_moderate_max",
+    "value": 60,
+    "unit": "mL/min",
+    "quantity": "crcl",
+    "citationIds": [
+      "ema.perindopril.table_1_renal_adjustment"
+    ],
+    "descriptionVi": "Ngưỡng CrCl (< 60 mL/phút) bắt đầu phải giảm liều khởi đầu Perindopril xuống 2,5 mg/ngày theo SmPC"
+  },
+  {
+    "id": "htn.perindopril.crcl_severe_max",
+    "value": 30,
+    "unit": "mL/min",
+    "quantity": "crcl",
+    "citationIds": [
+      "ema.perindopril.table_1_renal_adjustment",
+      "byt.ckd.2024.table_12_perindopril_crcl_30"
+    ],
+    "descriptionVi": "Ngưỡng CrCl (< 30 mL/phút) chuyển Perindopril sang dùng cách ngày (EMA) hoặc chống chỉ định dùng tại VN (BYT 2024)"
+  },
+  {
+    "id": "htn.perindopril.crcl_esrd_max",
+    "value": 15,
+    "unit": "mL/min",
+    "quantity": "crcl",
+    "citationIds": [
+      "ema.perindopril.table_1_renal_adjustment"
+    ],
+    "descriptionVi": "Ngưỡng CrCl (< 15 mL/phút) ở bệnh nhân suy thận giai đoạn cuối dùng Perindopril 2,5 mg vào ngày lọc máu"
+  },
+  {
+    "id": "htn.moxonidine.egfr_moderate_max",
+    "value": 60,
+    "unit": "mL/min/1.73m2",
+    "quantity": "egfr",
+    "citationIds": [
+      "ema.physiotens.posology_renal"
+    ],
+    "descriptionVi": "Ngưỡng GFR (< 60 mL/phút) giới hạn liều tối đa Moxonidine còn 0,4 mg/ngày (liều đơn ≤ 0,2 mg)"
+  },
+  {
+    "id": "htn.moxonidine.max_single_egfr30_59",
+    "value": 0.2,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "ema.physiotens.posology_renal"
+    ],
+    "descriptionVi": "Liều đơn tối đa Moxonidine ở bệnh nhân GFR 30–59 mL/phút (0,2 mg)"
+  },
+  {
+    "id": "htn.moxonidine.max_daily_egfr30_59",
+    "value": 0.4,
+    "unit": "mg/day",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "ema.physiotens.posology_renal"
+    ],
+    "descriptionVi": "Tổng liều tối đa hàng ngày của Moxonidine ở bệnh nhân GFR 30–59 mL/phút (0,4 mg/ngày)"
+  },
+  {
+    "id": "htn.eplerenone.crcl_contra_htn",
+    "value": 50,
+    "unit": "mL/min",
+    "quantity": "crcl",
+    "citationIds": [
+      "fda.eplerenone.htn_contraindications"
+    ],
+    "descriptionVi": "Ngưỡng CrCl (< 50 mL/phút) chống chỉ định dùng Eplerenone trong chỉ định điều trị tăng huyết áp theo nhãn FDA Inspra"
+  },
+  {
+    "id": "htn.eplerenone.max_daily_cyp3a_low",
+    "value": 25,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "fda.eplerenone.moderate_cyp3a_25mg_cap",
+      "fda.eplerenone.htn_moderate_cyp3a"
+    ],
+    "descriptionVi": "Liều khởi đầu (25 mg 1 lần/ngày, tối đa 25 mg x 2 lần/ngày trong THA; ≤ 25 mg/ngày trong HFrEF) khi phối hợp ức chế CYP3A4 vừa"
+  },
+  {
+    "id": "htn.clevidipine.tg_contra_mmol",
+    "value": 5.6,
+    "unit": "mmol/L",
+    "quantity": "tg",
+    "citationIds": [
+      "acc.lipid.2026.severe_htg_5_6"
+    ],
+    "descriptionVi": "Ngưỡng tăng triglycerid máu rất nặng (≥ 5,6 mmol/L tương đương 500 mg/dL) chống chỉ định truyền nhũ tương lipid Clevidipine"
+  },
+  {
+    "id": "htn.bp.sbp_floor_vn_adult",
+    "value": 120,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "vsh.htn.2022.bp_floor_table7"
+    ],
+    "descriptionVi": "Ranh giới dưới đích HATT phòng khám ở người trưởng thành 18–69 tuổi theo VSH/VNHA 2022 Bảng 7 (120 mmHg)"
+  },
+  {
+    "id": "htn.bp.dbp_floor_vn_cad",
+    "value": 70,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "vsh.htn.2022.bp_floor_table7",
+      "vsh.htn.2022.targets_age_dbp80"
+    ],
+    "descriptionVi": "Ranh giới dưới đích HATTr ở người cao tuổi / bệnh mạch vành theo VSH/VNHA 2022 Bảng 7 & Bảng 17 (70 mmHg)"
+  },
+  {
+    "id": "htn.bp.sbp_floor_vn_frail80",
+    "value": 130,
+    "unit": "mmHg",
+    "quantity": "sbp",
+    "citationIds": [
+      "vsh.htn.2022.bp_floor_table7",
+      "vsh.htn.2022.targets_age_dbp80"
+    ],
+    "descriptionVi": "Mốc HATT thận trọng ở người cao tuổi ≥ 70–80 tuổi theo VSH/VNHA 2022 (130 mmHg nếu dung nạp)"
+  },
+  {
+    "id": "htn.bp.dbp_cad_jcurve_caution",
+    "value": 60,
+    "unit": "mmHg",
+    "quantity": "dbp",
+    "citationIds": [
+      "esc.htn.2024.jcurve_dbp60_no_deintensify"
+    ],
+    "descriptionVi": "Ngưỡng HATTr thấp (< 60 mmHg) ở bệnh nhân bệnh mạch vành cần lưu ý tưới máu mạch vành tâm trương (hiện tượng đường cong J)"
+  },
+  {
+    "id": "htn.hydralazine_iv.dose_preg_start",
+    "value": 5,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "aha.acc.2025.pregnancy_iv_hydralazine"
+    ],
+    "descriptionVi": "Liều khởi đầu Hydralazine tiêm tĩnh mạch/tiêm bắp trong cấp cứu THA nặng thai kỳ (5 mg)"
+  },
+  {
+    "id": "htn.hydralazine_iv.dose_preg_max_bolus",
+    "value": 10,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "aha.acc.2025.pregnancy_iv_hydralazine"
+    ],
+    "descriptionVi": "Liều lặp lại tối đa mỗi lần của Hydralazine TM mỗi 20–40 phút trong THA nặng thai kỳ (5–10 mg)"
+  },
+  {
+    "id": "htn.hydralazine_iv.dose_preg_max_cum",
+    "value": 20,
+    "unit": "mg",
+    "quantity": "dose_mg",
+    "citationIds": [
+      "aha.acc.2025.pregnancy_iv_hydralazine"
+    ],
+    "descriptionVi": "Tổng liều tích lũy tối đa của Hydralazine TM trong cấp cứu THA nặng thai kỳ (20 mg)"
+  }
+]

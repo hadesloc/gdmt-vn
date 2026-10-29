@@ -1,0 +1,90 @@
+{
+  "id": "lipid_50_outpatient_triple_therapy_step4_bempedoic",
+  "titleVi": "FH kèm ASCVD chưa đạt đích trên phác đồ 3 thuốc (Atorvastatin 80 + Ezetimibe 10 + Evolocumab, LDL 1.9) - Bước 4 cân nhắc Bempedoic acid",
+  "source": "ESC/EAS 2025 / esc.lipid.2025.bempedoic_add_on",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 54,
+    "sex": "male",
+    "weight": 72,
+    "height": 170,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 68,
+    "scr": 84,
+    "uricAcid": 320,
+    "tc": 4.0,
+    "hdl": 1.2,
+    "ldl": 1.9,
+    "tg": 1.4,
+    "conditions": {
+      "ascvd": true,
+      "familialHypercholesterolemia": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "atorvastatin",
+        "name": "Atorvastatin",
+        "dose": 80,
+        "unit": "mg"
+      },
+      {
+        "drugId": "ezetimibe",
+        "name": "Ezetimibe",
+        "dose": 10,
+        "unit": "mg"
+      },
+      {
+        "drugId": "evolocumab",
+        "name": "Evolocumab",
+        "dose": 140,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "ezetimibe",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "evolocumab",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "bempedoic_acid",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "evolocumab",
+        "action": "STOP"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R2-R1-02 & LIPID-R2-R3-08: Bệnh nhân FH kèm ASCVD kháng trị trên phác đồ 3 thuốc (Statin + Ezetimibe + PCSK9i) được giữ nguyên cả 3 trụ cột nền và cân nhắc bổ sung Bempedoic acid 180 mg/ngày kèm hội chẩn chuyên khoa FH."
+}

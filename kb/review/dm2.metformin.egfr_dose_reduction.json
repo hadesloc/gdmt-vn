@@ -1,0 +1,17 @@
+{
+  "itemId": "dm2.metformin.egfr_dose_reduction",
+  "contentHash": "dc3def9c2806a28d5f8b94ebf8b47f39a16609606a2a34e1e232b1ef2df17c5b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "dm2.metformin.egfr_dose_reduction",
+      "contentHash": "e05f93143514c652",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

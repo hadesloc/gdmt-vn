@@ -1,0 +1,27 @@
+{
+  "itemId": "ckd.bp.hypotension_crisis_sbp",
+  "contentHash": "54620cd20e1d67be68d3841a342bc5ff3dd6beb0c1553d4c1f8153c523aadfeb",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.bp.hypotension_crisis_sbp",
+      "contentHash": "65f0a733e585a66c",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-27T07:03:44.560Z",
+          "role": "agent_e3_remediation_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Đồng bộ contentHash và xác minh trích dẫn nguyên văn PDF Vòng 2 cho ckd.bp.hypotension_crisis_sbp."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T07:03:44.560Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

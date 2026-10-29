@@ -1,0 +1,26 @@
+{
+  "itemId": "omega3",
+  "contentHash": "0518b25f4f3e1a7289ce5b3f47bf9778d94014cfc3261aea3e3782576ff4a872",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "omega3",
+      "contentHash": "d40b97467b5ba47b",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra schema QA-10, phân nhóm classes, dải thận, cổng an toàn thai kỳ/cho con bú/tương tác và trích dẫn cho thuốc omega3."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

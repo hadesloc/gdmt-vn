@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.dupilumab_trial_fev1_min",
+  "contentHash": "2df67ded11db122ba579fd7bd647e247c2624a7cdc4ad2814b370f36b36150d8",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.dupilumab_trial_fev1_min",
+      "contentHash": "c3f341621d6406f5",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

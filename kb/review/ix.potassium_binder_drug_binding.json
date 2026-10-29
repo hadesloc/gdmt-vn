@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.potassium_binder_drug_binding",
+  "contentHash": "512c7800eb9ac199f69ac92fd630138e18857623f8d5566c1dc7095c3653f0f6",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.potassium_binder_drug_binding",
+      "contentHash": "294788d3e05241d0",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.potassium_binder_drug_binding."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

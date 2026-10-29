@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.safety.ck_uln_elevation",
+  "contentHash": "4cf0e4841cf85b4089da79dd5b01c75df9f2ab8366ec358b0dea5266b597df9b",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.safety.ck_uln_elevation",
+      "contentHash": "0ba54aa4c93929c9",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.safety.ck_uln_elevation."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

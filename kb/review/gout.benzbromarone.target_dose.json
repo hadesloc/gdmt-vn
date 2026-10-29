@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.benzbromarone.target_dose",
+  "contentHash": "b2fe4dbc95294b75ce2124e681bdea4dfe71c39cf958c77360896d26627e1d82",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.benzbromarone.target_dose",
+      "contentHash": "69dd9611506a5f87",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.benzbromarone.target_dose"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

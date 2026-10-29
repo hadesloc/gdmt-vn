@@ -1,0 +1,157 @@
+{
+  "id": "pitavastatin",
+  "nameVi": "Pitavastatin",
+  "inn": "Pitavastatin",
+  "class": "Statin",
+  "classes": [
+    "statin"
+  ],
+  "vnBrands": [
+    "Livalo",
+    "Pitavastatin Stella"
+  ],
+  "forms": [
+    "Viên nén bao phim 1 mg",
+    "Viên nén bao phim 2 mg",
+    "Viên nén bao phim 4 mg"
+  ],
+  "start": {
+    "amount": 2,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "2 mg uống 1 lần/ngày (khởi đầu 1 mg/ngày nếu suy thận vừa-nặng eGFR < 60)"
+  },
+  "target": {
+    "amount": 4,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "2–4 mg uống 1 lần/ngày (tối đa 2 mg/ngày khi eGFR < 60)"
+  },
+  "titration": {
+    "step": "Tăng liều sau 4 tuần lên tối đa 4 mg/ngày (nếu eGFR < 60 không vượt quá 2 mg/ngày)",
+    "intervalDays": 28,
+    "maxDose": "4 mg 1 lần/ngày (tối đa 2 mg/ngày khi eGFR < 60; tối đa 1 mg/ngày khi dùng kèm erythromycin)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "2–4 mg 1 lần/ngày",
+      "note": "Chức năng thận bình thường hoặc giảm nhẹ (eGFR >= 60): liều chuẩn 2–4 mg/ngày",
+      "citationIds": [
+        "acc.lipid.2026.pitavastatin_dose",
+        "acc.lipid.2026.statin_table_doses"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "Khởi đầu 1 mg 1 lần/ngày; tối đa 2 mg 1 lần/ngày",
+      "note": "Suy thận trung bình (eGFR 30–59): khởi đầu 1 mg/ngày, không vượt quá 2 mg/ngày (FDA Livalo)",
+      "citationIds": [
+        "acc.lipid.2026.pitavastatin_dose",
+        "esc.lipid.2019.moderate_ckd_egfr"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "Khởi đầu 1 mg 1 lần/ngày; tối đa 2 mg 1 lần/ngày",
+      "note": "Suy thận nặng (eGFR < 30, chưa lọc máu): khởi đầu 1 mg/ngày, tối đa 2 mg/ngày; không khởi trị mới khi lọc máu chưa có ASCVD",
+      "citationIds": [
+        "acc.lipid.2026.pitavastatin_dose",
+        "esc.lipid.2019.ckd_dialysis_no_init"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_pita_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối statin trong thai kỳ và thời kỳ cho con bú",
+      "citationIds": [
+        "esc.lipid.2024.ccs_pregnancy",
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    },
+    {
+      "id": "gate_pita_ckd_max",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 60,
+      "unit": "mL/min/1.73m2",
+      "action": "reduce",
+      "messageVi": "eGFR < 60 mL/phút/1.73m²: Khởi đầu Pitavastatin 1 mg/ngày, liều tối đa không quá 2 mg/ngày",
+      "citationIds": [
+        "acc.lipid.2026.pitavastatin_dose",
+        "esc.lipid.2019.ckd_egfr_60_cutoff"
+      ]
+    },
+    {
+      "id": "gate_pita_alt",
+      "parameter": "ALT",
+      "operator": ">=",
+      "threshold": 3,
+      "unit": "x ULN",
+      "action": "hold",
+      "messageVi": "Men gan ALT tăng >= 3 lần ULN: Tạm ngừng hoặc giảm liều statin",
+      "citationIds": [
+        "esc.lipid.2019.monitoring_alt_elevation"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định tuyệt đối phối hợp với Cyclosporine (ức chế mạnh OATP1B1 làm tăng vọt nồng độ thuốc)",
+    "Chống chỉ định/tránh phối hợp với Gemfibrozil; giới hạn tối đa 1 mg/ngày với Erythromycin và 2 mg/ngày với Rifampin; khởi đầu liều thấp 1–2 mg/ngày khi dùng kèm Atazanavir",
+    "Chuyển hóa qua glucuronid hóa, ít phụ thuộc CYP3A4; thận trọng ở bệnh nhân có bệnh nhược cơ (myasthenia gravis / nhược cơ thể mắt)"
+  ],
+  "citationIds": [
+    "acc.lipid.2026.pitavastatin_dose",
+    "acc.lipid.2026.statin_table_doses",
+    "esc.lipid.2024.ccs_pregnancy",
+    "fda.rosuvastatin.myasthenia_gravis"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối statin trong thai kỳ do nguy cơ ảnh hưởng phát triển phôi thai (FDA / ESC 2024 CCS)",
+    "citationIds": [
+      "esc.lipid.2024.ccs_pregnancy",
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "lactation": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong thời kỳ cho con bú do thuốc bài tiết qua sữa mẹ và nguy cơ tác dụng phụ trên trẻ sơ sinh (FDA / ESC)",
+    "citationIds": [
+      "esc.lipid.2024.ccs_pregnancy",
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định tuyệt đối statin trong thai kỳ và cho con bú",
+      "citationIds": [
+        "esc.lipid.2024.ccs_pregnancy",
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    },
+    {
+      "code": "active_liver_disease",
+      "messageVi": "Chống chỉ định khi có bệnh gan tiến triển hoặc tăng men gan dai dẳng >= 3 lần ULN chưa rõ nguyên nhân",
+      "citationIds": [
+        "esc.lipid.2019.monitoring_alt_elevation"
+      ]
+    }
+  ]
+}

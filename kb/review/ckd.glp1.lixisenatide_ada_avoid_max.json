@@ -1,0 +1,18 @@
+{
+  "itemId": "ckd.glp1.lixisenatide_ada_avoid_max",
+  "contentHash": "2e273cbf2f4c689b6705416ba9518aea6cf3a5c92551ef6c0503bd80b2866cdd",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.glp1.lixisenatide_ada_avoid_max",
+      "itemType": "threshold",
+      "contentHash": "eb26b333c4d3d2f8",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

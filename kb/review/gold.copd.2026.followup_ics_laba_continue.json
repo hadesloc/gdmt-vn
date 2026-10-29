@@ -1,0 +1,26 @@
+{
+  "itemId": "gold.copd.2026.followup_ics_laba_continue",
+  "contentHash": "017ce8a9ba00ed86acc2900b9fc0b95c633b93d47a12195671c209b8761dd1b1",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gold.copd.2026.followup_ics_laba_continue",
+      "contentHash": "73692a006d8b455b",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

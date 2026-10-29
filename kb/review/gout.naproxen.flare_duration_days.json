@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.naproxen.flare_duration_days",
+  "contentHash": "11179f8b15936749af038b85bb54c2b0ea29878acd1c98127a21229522c74156",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.naproxen.flare_duration_days",
+      "contentHash": "875927fc70c4c335",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.naproxen.flare_duration_days"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

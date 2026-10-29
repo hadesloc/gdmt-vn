@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.slit.min_fev1_pct",
+  "contentHash": "32ed28d650b452751322266521166ea8cc490287c11e9c0b13340f1a94e7280c",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.slit.min_fev1_pct",
+      "contentHash": "5cd714131c4361dc",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T12:52:49.357Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Kiểm định tự động ngưỡng lâm sàng asthma.slit.min_fev1_pct (70 %)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T12:52:49.357Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

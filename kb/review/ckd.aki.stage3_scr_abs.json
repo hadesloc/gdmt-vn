@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.aki.stage3_scr_abs",
+  "contentHash": "cf31b1a1ae20be0574f969895bc42928331b5d2e3353ff9c7f4b7720eeb6d1ea",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.aki.stage3_scr_abs",
+      "contentHash": "8f5e6b107ea759b3",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.136Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.aki.stage3_scr_abs."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "lipid.lpa.risk_enhancing_threshold",
+  "contentHash": "eb25cdfb0647fc5d76a2af071f7e89d1c87de875437ce67de6e56c5999bd5edb",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "lipid.lpa.risk_enhancing_threshold",
+      "contentHash": "4d48ec0303515c89",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T09:35:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng QA-10 (quantity, đơn vị, số khớp nguyên văn trích dẫn) cho lipid.lpa.risk_enhancing_threshold."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T09:35:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

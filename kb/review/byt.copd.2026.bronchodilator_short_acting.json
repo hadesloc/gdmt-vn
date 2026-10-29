@@ -1,0 +1,26 @@
+{
+  "itemId": "byt.copd.2026.bronchodilator_short_acting",
+  "contentHash": "31b3b556239bf3520485d68ff07df59a9bf23661b1b8ee4cb783e7a8e4b2de58",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "byt.copd.2026.bronchodilator_short_acting",
+      "contentHash": "f2efd3548e7dea68",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

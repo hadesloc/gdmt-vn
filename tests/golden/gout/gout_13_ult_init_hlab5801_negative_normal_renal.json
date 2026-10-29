@@ -1,0 +1,70 @@
+{
+  "id": "gout_13_ult_init_hlab5801_negative_normal_renal",
+  "titleVi": "Khởi trị ULT đã có HLA-B*58:01 âm tính, thận bình thường: Allopurinol 100 mg/ngày + Dự phòng Colchicine",
+  "source": "ACR 2020 (acr.gout.2020.allopurinol_first_line, acr.gout.2020.allopurinol_start_dose)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 46,
+    "sex": "male",
+    "weight": 72,
+    "scr": 80,
+    "uricAcid": 500,
+    "conditions": {
+      "gout": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 2,
+      "hlab5801": "negative"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_start",
+        "action": "START",
+        "doseContains": "100 mg"
+      },
+      {
+        "drugId": "colchicine",
+        "ruleId": "rec_gout_colchicine_prophylaxis",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_gout_hlab5801_screening",
+        "action": "CONSIDER"
+      },
+      {
+        "drugId": "allopurinol",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "febuxostat",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Nam 46 tuổi 2 đợt cấp/năm, HLA-B*58:01 âm tính, eGFR > 60. Không nhắc lại xét nghiệm HLA-B*58:01, khởi trị Allopurinol 100 mg/ngày đầu tay kèm dự phòng bùng phát."
+}

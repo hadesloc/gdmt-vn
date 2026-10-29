@@ -1,0 +1,65 @@
+{
+  "id": "ckd_44_inpatient_aki_hold_each_drug_id",
+  "titleVi": "Nội viện - AKI Giai đoạn 2 trên bệnh nhân đang dùng Dapagliflozin + Perindopril + Finerenone + Metformin -> Phát lệnh HOLD cho TỪNG drugId riêng biệt (Regression R3-CKD-10)",
+  "source": "KDIGO 2024 CKD PP 3.7.2 & PP 4.3.3",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_44",
+    "name": "BN CKD 44",
+    "age": 55,
+    "sex": "male",
+    "weight": 72,
+    "sbp": 106,
+    "dbp": 64,
+    "hr": 90,
+    "scr": 140,
+    "k": 4.9,
+    "conditions": {
+      "ckd": true,
+      "dm": true,
+      "htn": true
+    },
+    "customInputs": {
+      "akiSuspected": true,
+      "baselineScr": 68,
+      "urineOutputRate": "oliguria_6h"
+    },
+    "currentMeds": [
+      { "drugId": "dapagliflozin", "name": "Forxiga 10 mg", "dose": 10, "unit": "mg" },
+      { "drugId": "perindopril", "name": "Coversyl 5 mg", "dose": 5, "unit": "mg" },
+      { "drugId": "finerenone", "name": "Kerendia 10 mg", "dose": 10, "unit": "mg" },
+      { "drugId": "metformin", "name": "Glucophage 850 mg", "dose": 850, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "dapagliflozin", "action": "HOLD" },
+      { "drugId": "perindopril", "action": "HOLD" },
+      { "drugId": "finerenone", "action": "HOLD" },
+      { "drugId": "metformin", "action": "HOLD" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "dapagliflozin", "action": "CONTINUE" },
+      { "drugId": "perindopril", "action": "CONTINUE" },
+      { "drugId": "finerenone", "action": "CONTINUE" },
+      { "drugId": "metformin", "action": "CONTINUE" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy R3-CKD-10: Trong đợt cấp AKI nội viện, từng thuốc ngày ốm đều có recommendation gắn đúng drugId và action = HOLD để bộ gộp mergeRecommendations chặn hoàn toàn CONTINUE."
+}

@@ -1,0 +1,60 @@
+{
+  "id": "dm2_21_recent_hypo_deintensify",
+  "titleVi": "Bệnh nhân có hạ đường huyết gần đây đang dùng Gliclazide - Giảm liều ngay",
+  "source": "ADA 2026 SOC Ch. 13",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "male",
+    "weight": 65,
+    "height": 164,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 72,
+    "scr": 100,
+    "k": 4.3,
+    "glucose": 5.4,
+    "hba1c": 6.8,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "gliclazide",
+        "name": "Gliclazide MR",
+        "dose": 60,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "recentHypo": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_dm2_deintensification",
+        "action": "REDUCE"
+      }
+    ]
+  },
+  "descriptionVi": "Có hạ đường huyết gần đây: Giảm liều thuốc gây hạ đường huyết."
+}

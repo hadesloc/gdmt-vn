@@ -1,0 +1,512 @@
+[
+  {
+    "id": "ix.pravastatin_bempedoic",
+    "titleVi": "Tương tác Giới hạn liều tối đa 40 mg/ngày: Pravastatin + Bempedoic Acid",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "pravastatin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "bempedoic_acid"
+      ],
+      "classes": [
+        "atp_citrate_lyase_inhibitor"
+      ]
+    },
+    "mechanismVi": "Bempedoic acid và chất chuyển hóa glucuronid ức chế yếu OATP1B1/1B3, làm tăng diện tích dưới đường cong (AUC) của pravastatin lên xấp xỉ 2 lần.",
+    "effectVi": "Gia tăng nguy cơ đau cơ, bệnh cơ (myopathy) và tiêu cơ vân khi dùng Pravastatin liều cao.",
+    "managementVi": "Tránh phối hợp Bempedoic acid với Pravastatin liều > 40 mg/ngày (giới hạn liều Pravastatin tối đa 40 mg/ngày theo FDA Nexletol & ACC/AHA 2026 Table 27).",
+    "doseLimit": {
+      "drugId": "pravastatin",
+      "maxDose": 40,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Liều Pravastatin tối đa 40 mg/ngày khi dùng cùng Bempedoic acid"
+    },
+    "citationIds": [
+      "fda.bempedoic.pravastatin_avoid_gt_40mg",
+      "acc.lipid.2026.ddi_table27_prava_bempedoic"
+    ]
+  },
+  {
+    "id": "ix.pravastatin_clarithromycin",
+    "titleVi": "Tương tác Giới hạn liều tối đa 40 mg/ngày: Pravastatin + Clarithromycin",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "pravastatin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "clarithromycin"
+      ]
+    },
+    "mechanismVi": "Clarithromycin ức chế các chất vận chuyển thuốc qua màng gan (OATP1B1/1B3), làm giảm thu nhận qua gan và tăng phơi nhiễm pravastatin huyết tương.",
+    "effectVi": "Tăng nguy cơ bệnh cơ và tiêu cơ vân.",
+    "managementVi": "Khi sử dụng đồng thời với clarithromycin, giới hạn liều Pravastatin không vượt quá 40 mg/ngày (hoặc cân nhắc đổi kháng sinh sang azithromycin).",
+    "doseLimit": {
+      "drugId": "pravastatin",
+      "maxDose": 40,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Liều Pravastatin tối đa 40 mg/ngày khi dùng cùng Clarithromycin"
+    },
+    "citationIds": [
+      "byt.copd.2026.pravastatin_clarithromycin_limit_40mg",
+      "acc.lipid.2026.table8_statin_interactors"
+    ]
+  },
+  {
+    "id": "ix.simvastatin_dronedarone",
+    "titleVi": "Tương tác Giới hạn liều tối đa 10 mg/ngày: Simvastatin / Lovastatin + Dronedarone",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "simvastatin",
+        "lovastatin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "dronedarone"
+      ]
+    },
+    "mechanismVi": "Dronedarone ức chế CYP3A4 và P-gp làm tăng mạnh nồng độ huyết tương của simvastatin và simvastatin acid.",
+    "effectVi": "Tăng nguy cơ bệnh cơ nặng và tiêu cơ vân cấp tính.",
+    "managementVi": "Giới hạn liều Simvastatin tối đa 10 mg/ngày khi phối hợp với Dronedarone (ACC/AHA 2026 Table 27), hoặc chuyển sang statin không chuyển hóa qua CYP3A4.",
+    "doseLimit": {
+      "drugId": "simvastatin",
+      "maxDose": 10,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Liều Simvastatin tối đa 10 mg/ngày khi dùng cùng Dronedarone"
+    },
+    "citationIds": [
+      "acc.lipid.2026.ddi_table27_simva_dronedarone",
+      "acc.lipid.2026.ddi_table27_lovastatin_caps"
+    ]
+  },
+  {
+    "id": "ix.simvastatin_ranolazine",
+    "titleVi": "Tương tác Giới hạn liều tối đa 20 mg/ngày: Simvastatin / Lovastatin + Ranolazine",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "simvastatin",
+        "lovastatin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "ranolazine"
+      ]
+    },
+    "mechanismVi": "Ranolazine ức chế yếu/vừa CYP3A4 và P-gp, làm tăng nồng độ huyết tương của simvastatin khoảng 2 lần.",
+    "effectVi": "Tăng nguy cơ bệnh cơ và tiêu cơ vân khi dùng Simvastatin liều cao.",
+    "managementVi": "Giới hạn liều Simvastatin không vượt quá 20 mg/ngày khi phối hợp với Ranolazine (ACC/AHA 2026 Table 27), hoặc ưu tiên statin không qua CYP3A4.",
+    "doseLimit": {
+      "drugId": "simvastatin",
+      "maxDose": 20,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Liều Simvastatin tối đa 20 mg/ngày khi dùng cùng Ranolazine"
+    },
+    "citationIds": [
+      "acc.lipid.2026.ddi_table27_ranolazine_simva",
+      "acc.lipid.2026.ddi_table27_lovastatin_caps"
+    ]
+  },
+  {
+    "id": "ix.simvastatin_ticagrelor",
+    "titleVi": "Tương tác Giới hạn liều tối đa 40 mg/ngày: Simvastatin / Lovastatin + Ticagrelor",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "simvastatin",
+        "lovastatin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "ticagrelor"
+      ]
+    },
+    "mechanismVi": "Ticagrelor ức chế yếu CYP3A4 làm tăng nồng độ đỉnh và AUC của simvastatin.",
+    "effectVi": "Gia tăng nguy cơ độc tính trên cơ và tiêu cơ vân ở liều cao Simvastatin.",
+    "managementVi": "Giới hạn liều Simvastatin tối đa 40 mg/ngày khi dùng đồng thời với Ticagrelor (ACC/AHA 2026 Table 27; lưu ý Atorvastatin có thể phối hợp không cần giới hạn liều).",
+    "doseLimit": {
+      "drugId": "simvastatin",
+      "maxDose": 40,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Liều Simvastatin tối đa 40 mg/ngày khi dùng cùng Ticagrelor"
+    },
+    "citationIds": [
+      "acc.lipid.2026.ddi_table27_simva_ticagrelor"
+    ]
+  },
+  {
+    "id": "ix.rosuvastatin_ticagrelor_febuxostat",
+    "titleVi": "Tương tác Giới hạn liều tối đa 20 mg/ngày: Rosuvastatin + Ticagrelor / Febuxostat",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "rosuvastatin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "ticagrelor",
+        "febuxostat"
+      ]
+    },
+    "mechanismVi": "Ticagrelor và Febuxostat ức chế protein kháng ung thư vú (BCRP) và/hoặc vận chuyển qua thận, làm giảm thải trừ và tăng tích lũy rosuvastatin trong huyết tương.",
+    "effectVi": "Tăng nguy cơ bệnh cơ, tiêu cơ vân và suy thận cấp do myoglobin niệu.",
+    "managementVi": "Tránh dùng Rosuvastatin vượt quá 20 mg x 1 lần/ngày khi phối hợp với Febuxostat, và thận trọng/tránh vượt quá 20 mg/ngày khi phối hợp với Ticagrelor (nhãn FDA Crestor Section 7.1).",
+    "doseLimit": {
+      "drugId": "rosuvastatin",
+      "maxDose": 20,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Giới hạn liều Rosuvastatin tối đa 20 mg/ngày khi dùng cùng Ticagrelor hoặc Febuxostat"
+    },
+    "citationIds": [
+      "fda.rosuvastatin.ticagrelor_limit_20mg",
+      "fda.rosuvastatin.febuxostat_limit_20mg"
+    ]
+  },
+  {
+    "id": "ix.fibrate_warfarin",
+    "titleVi": "Tương tác Tăng mạnh INR & Xuất huyết: Fibrate (Fenofibrate, Gemfibrozil) + Kháng Vitamin K (Warfarin, Acenocoumarol)",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "fenofibrate",
+        "gemfibrozil"
+      ],
+      "classes": [
+        "fibrate"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "warfarin",
+        "acenocoumarol"
+      ],
+      "classes": [
+        "vka"
+      ]
+    },
+    "mechanismVi": "Nhóm fibrate cạnh tranh gắn kết mạnh trên protein huyết tương và ức chế CYP2C9, làm tăng phân đoạn tự do và kéo dài tác dụng chống đông của thuốc kháng vitamin K.",
+    "effectVi": "Kéo dài thời gian prothrombin / tăng mạnh chỉ số INR và gia tăng nguy cơ xuất huyết nghiêm trọng.",
+    "managementVi": "Theo dõi sát chỉ số INR ngay khi khởi trị, thay đổi liều hoặc ngừng fibrate và giảm liều thuốc chống đông kháng vitamin K phù hợp để duy trì INR trong khoảng mục tiêu.",
+    "citationIds": [
+      "byt.ckd.2024.fibrate_warfarin_cyclosporine_ddi"
+    ]
+  },
+  {
+    "id": "ix.rosuvastatin_warfarin",
+    "titleVi": "Tương tác Tăng INR: Rosuvastatin + Kháng Vitamin K (Warfarin, Acenocoumarol)",
+    "severity": "moderate",
+    "a": {
+      "drugIds": [
+        "rosuvastatin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "warfarin",
+        "acenocoumarol"
+      ],
+      "classes": [
+        "vka"
+      ]
+    },
+    "mechanismVi": "Rosuvastatin có thể làm tăng đáng kể chỉ số INR ở bệnh nhân đang điều trị ổn định bằng thuốc chống đông nhóm coumarin qua cơ chế dược động học/dược lực học.",
+    "effectVi": "Dao động tăng INR vượt ngưỡng điều trị và tăng nguy cơ chảy máu.",
+    "managementVi": "Kiểm tra INR trước khi khởi trị Rosuvastatin và theo dõi INR thường xuyên trong giai đoạn đầu khởi trị, tăng liều hoặc ngừng Rosuvastatin cho đến khi INR ổn định.",
+    "citationIds": [
+      "fda.rosuvastatin.warfarin_inr"
+    ]
+  },
+  {
+    "id": "ix.fenofibrate_statin",
+    "titleVi": "Tương tác Theo dõi Độc tính Cơ: Fenofibrate + Statin",
+    "severity": "moderate",
+    "a": {
+      "drugIds": [
+        "fenofibrate"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "atorvastatin",
+        "rosuvastatin",
+        "simvastatin",
+        "lovastatin",
+        "pravastatin",
+        "pitavastatin",
+        "fluvastatin"
+      ],
+      "classes": [
+        "statin"
+      ]
+    },
+    "mechanismVi": "Cả fenofibrate và statin đều có khả năng gây độc tính nội tại trên tế bào cơ vân; mặc dù fenofibrate ít ức chế glucuronid hóa statin hơn gemfibrozil, phối hợp hai thuốc vẫn làm tăng nguy cơ tổn thương cơ.",
+    "effectVi": "Gia tăng nguy cơ đau cơ, bệnh cơ (myopathy) và tiêu cơ vân, đặc biệt ở người cao tuổi hoặc suy thận.",
+    "managementVi": "Chỉ phối hợp khi lợi ích vượt trội nguy cơ (khác với Gemfibrozil bị chống chỉ định phối hợp với statin). Theo dõi sát các triệu chứng đau cơ, yếu cơ khi khởi trị hoặc tăng liều một trong hai thuốc.",
+    "citationIds": [
+      "acc.lipid.2026.table26_fenofibrate_statin_monitoring",
+      "fda.rosuvastatin.fenofibrate_myopathy_monitor"
+    ]
+  },
+  {
+    "id": "ix.fenofibrate_colchicine",
+    "titleVi": "Tương tác Tăng độc tính Cơ & Tiêu cơ vân: Fibrate (Fenofibrate, Gemfibrozil) + Colchicine",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "fenofibrate",
+        "gemfibrozil"
+      ],
+      "classes": [
+        "fibrate"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "colchicine"
+      ],
+      "classes": [
+        "anti_gout"
+      ]
+    },
+    "mechanismVi": "Hiệp đồng độc tính trực tiếp trên hệ cơ xương và màng tế bào cơ vân giữa nhóm fibrate và colchicine.",
+    "effectVi": "Bệnh cơ cấp tính, yếu cơ, tăng CK và tiêu cơ vân nặng, nguy cơ đặc biệt cao ở bệnh nhân suy giảm chức năng thận hoặc người cao tuổi.",
+    "managementVi": "Cân nhắc kỹ lợi ích – nguy cơ trước khi phối hợp; theo dõi sát triệu chứng đau cơ, yếu cơ (đặc biệt khi khởi trị hoặc chỉnh liều) và thận trọng tối đa ở bệnh nhân suy thận.",
+    "citationIds": [
+      "fda.colchicine.fibrates_myopathy_table4",
+      "fda.colchicine.statin_fibrate_myopathy"
+    ]
+  },
+  {
+    "id": "ix.ezetimibe_cyclosporine",
+    "titleVi": "Tương tác Tăng phơi nhiễm hai chiều: Ezetimibe + Cyclosporine",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "ezetimibe"
+      ],
+      "classes": [
+        "cholesterol_absorption_inhibitor"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "cyclosporine"
+      ],
+      "classes": [
+        "immunosuppressant"
+      ]
+    },
+    "mechanismVi": "Cyclosporine ức chế liên hợp glucuronid và vận chuyển qua mật/ruột (OATP1B1/MRP2), làm tăng nồng độ cả ezetimibe toàn phần (tăng gấp nhiều lần, nhất là khi suy thận nặng) và cyclosporine.",
+    "effectVi": "Tăng phơi nhiễm toàn thân của ezetimibe và tăng nguy cơ độc tính thận/hệ thống của cyclosporine.",
+    "managementVi": "Theo dõi chặt chẽ nồng độ cyclosporine trong máu khi dùng đồng thời với Ezetimibe; đặc biệt thận trọng ở bệnh nhân suy thận nặng.",
+    "citationIds": [
+      "fda.ezetimibe.cyclosporine_monitor"
+    ]
+  },
+  {
+    "id": "ix.ezetimibe_bile_acid_resin",
+    "titleVi": "Tương tác Giảm hấp thu đường uống: Ezetimibe + Nhựa gắn Acid mật (Cholestyramine, Colesevelam, Colestipol)",
+    "severity": "moderate",
+    "a": {
+      "drugIds": [
+        "ezetimibe"
+      ],
+      "classes": [
+        "cholesterol_absorption_inhibitor"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "cholestyramine",
+        "colesevelam",
+        "colestipol"
+      ],
+      "classes": [
+        "bile_acid_sequestrant",
+        "bile_acid_resin"
+      ]
+    },
+    "mechanismVi": "Nhựa gắn acid mật liên kết trực tiếp với ezetimibe trong lòng ruột, làm giảm mạnh diện tích dưới đường cong (AUC) và sinh khả dụng của ezetimibe.",
+    "effectVi": "Làm giảm đáng kể hiệu quả hạ LDL-C của Ezetimibe nếu uống cùng thời điểm.",
+    "managementVi": "Uống Ezetimibe ít nhất 2 giờ trước hoặc ít nhất 4 giờ sau khi uống nhựa gắn acid mật (FDA Zetia Section 2.3 & 7).",
+    "citationIds": [
+      "fda.ezetimibe.bile_acid_sequestrant"
+    ]
+  },
+  {
+    "id": "ix.ezetimibe_fenofibrate_cholelithiasis",
+    "titleVi": "Tương tác Nguy cơ Sỏi túi mật: Ezetimibe + Fenofibrate",
+    "severity": "moderate",
+    "a": {
+      "drugIds": [
+        "ezetimibe"
+      ],
+      "classes": [
+        "cholesterol_absorption_inhibitor"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "fenofibrate"
+      ]
+    },
+    "mechanismVi": "Cả fenofibrate và ezetimibe đều có thể làm tăng bài xuất cholesterol vào dịch mật, làm tăng bão hòa cholesterol dịch mật.",
+    "effectVi": "Gia tăng nguy cơ hình thành sỏi mật (cholelithiasis) và viêm túi mật.",
+    "managementVi": "Nếu nghi ngờ sỏi túi mật ở bệnh nhân đang dùng phối hợp Ezetimibe và Fenofibrate, cần siêu âm kiểm tra túi mật và ngừng phối hợp nếu phát hiện sỏi mật (không khuyến cáo phối hợp Ezetimibe với các fibrate khác ngoài fenofibrate).",
+    "citationIds": [
+      "fda.ezetimibe.fenofibrate_cholelithiasis"
+    ]
+  },
+  {
+    "id": "ix.fluvastatin_clarithromycin_fluconazole",
+    "titleVi": "Tương tác Giới hạn liều & Tăng độc tính Cơ: Fluvastatin + Clarithromycin / Fluconazole",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "fluvastatin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "clarithromycin",
+        "fluconazole"
+      ]
+    },
+    "mechanismVi": "Fluvastatin chuyển hóa chủ yếu qua CYP2C9 (bị ức chế mạnh bởi Fluconazole làm tăng khoảng 84% AUC) và chịu vận chuyển qua OATP1B1/1B3 (bị ức chế bởi Clarithromycin).",
+    "effectVi": "Tăng nồng độ huyết tương của Fluvastatin, gia tăng nguy cơ đau cơ, viêm cơ và tiêu cơ vân.",
+    "managementVi": "Giới hạn liều Fluvastatin không vượt quá 20 mg/ngày khi dùng cùng Clarithromycin (QĐ 2131/QĐ-BYT 2026 trang 108), và không quá 20 mg x 2 lần/ngày (hoặc giảm 50% liều) khi phối hợp với Fluconazole (ACC/AHA 2026 Table 8).",
+    "doseLimit": {
+      "drugId": "fluvastatin",
+      "maxDose": 20,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Giới hạn liều Fluvastatin tối đa 20 mg/ngày khi dùng cùng Clarithromycin; giảm liều khi dùng cùng Fluconazole"
+    },
+    "citationIds": [
+      "byt.copd.2026.pravastatin_clarithromycin_limit_40mg",
+      "acc.lipid.2026.table8_statin_interactors"
+    ]
+  },
+  {
+    "id": "ix.simvastatin_lovastatin_niacin",
+    "titleVi": "Tương tác Tăng nguy cơ Bệnh cơ & Tiêu cơ vân: Simvastatin / Lovastatin + Niacin (Acid Nicotinic)",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "simvastatin",
+        "lovastatin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "niacin",
+        "nicotinic_acid"
+      ]
+    },
+    "mechanismVi": "Niacin liều hạ mỡ máu (≥ 1 g/ngày) có tương tác dược lực học và dược động học hiệp đồng gây tổn thương cơ vân khi phối hợp với nhóm statin ưa mỡ chuyển hóa qua CYP3A4 (Simvastatin, Lovastatin), đặc biệt ở người bệnh châu Á.",
+    "effectVi": "Gia tăng rõ rệt tỷ lệ bệnh cơ (myopathy) và tiêu cơ vân cấp tính mà không mang lại lợi ích tim mạch bổ sung.",
+    "managementVi": "Tránh phối hợp Niacin với Simvastatin hoặc Lovastatin (ACC/AHA 2026 Table 8); nếu cần hạ LDL-C hoặc non-HDL-C bổ sung trên nền statin, ưu tiên Ezetimibe hoặc PCSK9i.",
+    "citationIds": [
+      "acc.lipid.2026.table8_statin_interactors"
+    ]
+  },
+  {
+    "id": "ix.rosuvastatin_oatp1b1_bcrp_inhibitors",
+    "titleVi": "Tương tác Giới hạn liều 5–10 mg / Tránh phối hợp: Rosuvastatin + Thuốc kháng virus tăng cường (Paxlovid, PI, DAA) / Darolutamide / Regorafenib",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "rosuvastatin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "nirmatrelvir_ritonavir",
+        "ritonavir",
+        "cobicistat",
+        "atazanavir",
+        "lopinavir_ritonavir",
+        "darunavir",
+        "darolutamide",
+        "regorafenib",
+        "velpatasvir",
+        "sofosbuvir_velpatasvir",
+        "glecaprevir_pibrentasvir",
+        "sofosbuvir_velpatasvir_voxilaprevir",
+        "ledipasvir_sofosbuvir"
+      ]
+    },
+    "mechanismVi": "Các thuốc kháng virus tăng cường ritonavir/cobicistat, thuốc điều trị viêm gan C trực tiếp (DAA), Darolutamide và Regorafenib ức chế mạnh bơm kháng ung thư vú BCRP tại ruột/mật và chất vận chuyển OATP1B1/1B3 tại gan, làm tăng AUC của Rosuvastatin từ 2 đến > 7 lần.",
+    "effectVi": "Tăng cao nguy cơ viêm cơ cấp tính, tiêu cơ vân và suy thận cấp do myoglobin niệu.",
+    "managementVi": "Theo nhãn FDA Crestor (§2.5 & §7.1): (1) Chống chỉ định/Không khuyến cáo phối hợp với Sofosbuvir/velpatasvir/voxilaprevir hoặc Ledipasvir/sofosbuvir; (2) Giới hạn Rosuvastatin tối đa 5 mg x 1 lần/ngày khi dùng cùng Darolutamide; (3) Giới hạn Rosuvastatin tối đa 10 mg x 1 lần/ngày khi dùng cùng Atazanavir/ritonavir, Lopinavir/ritonavir, Simeprevir, Regorafenib hoặc tạm ngưng / giới hạn ≤ 10 mg/ngày trong liệu trình ngắn Nirmatrelvir/ritonavir.",
+    "doseLimit": {
+      "drugId": "rosuvastatin",
+      "maxDose": 10,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Giới hạn Rosuvastatin ≤ 10 mg/ngày với thuốc kháng virus tăng cường/Regorafenib (≤ 5 mg/ngày với Darolutamide; tránh phối hợp với Ledipasvir hoặc Voxilaprevir)"
+    },
+    "citationIds": [
+      "fda.rosuvastatin.antiviral_10mg_cap",
+      "fda.rosuvastatin.darolutamide_5mg_cap",
+      "fda.rosuvastatin.regorafenib_10mg_cap",
+      "fda.rosuvastatin.ledipasvir_voxilaprevir_avoid",
+      "acc.lipid.2026.table8_statin_interactors"
+    ]
+  },
+  {
+    "id": "ix.bile_acid_sequestrant_drug_binding",
+    "titleVi": "Tương tác Cản trở Hấp thu Đường uống: Nhựa gắn Acid mật (Cholestyramine, Colesevelam) + Warfarin / Levothyroxine / Digoxin / Lợi tiểu Thiazide",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "cholestyramine",
+        "colesevelam",
+        "colestipol"
+      ],
+      "classes": [
+        "bile_acid_sequestrant",
+        "bile_acid_resin"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "warfarin",
+        "acenocoumarol",
+        "levothyroxine",
+        "digoxin",
+        "hydrochlorothiazide",
+        "chlorthalidone",
+        "indapamide",
+        "furosemide",
+        "propranolol",
+        "mycophenolate",
+        "glimepiride",
+        "gliclazide"
+      ]
+    },
+    "mechanismVi": "Nhựa trao đổi anion gắn acid mật (đặc biệt Cholestyramine, Colestipol; ít hơn với Colesevelam) liên kết trực tiếp với các phân tử thuốc mang điện tích âm hoặc ưa mỡ trong lòng ruột, ngăn cản hấp thu vào máu.",
+    "effectVi": "Giảm mạnh sinh khả dụng và làm mất kiểm soát điều trị (suy giáp tái phát với levothyroxine, dao động INR/huyết khối với warfarin/acenocoumarol, mất kiểm soát nhịp/huyết áp với digoxin, thiazide, propranolol).",
+    "managementVi": "Bắt buộc uống các thuốc dùng kèm ít nhất 1 giờ trước hoặc ít nhất 4 giờ sau khi uống nhựa gắn acid mật (ESC/EAS 2019); theo dõi sát INR khi dùng kèm thuốc kháng vitamin K và TSH khi dùng kèm Levothyroxine.",
+    "citationIds": [
+      "esc.lipid.2019.bas_spacing_4h_before_1h_after"
+    ]
+  }
+]

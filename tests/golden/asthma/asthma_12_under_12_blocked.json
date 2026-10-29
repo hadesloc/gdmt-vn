@@ -1,0 +1,58 @@
+{
+  "id": "asthma_12_under_12_blocked",
+  "titleVi": "Chặn tuổi: Trẻ 9 tuổi (< 12 tuổi) không áp dụng phác đồ người lớn",
+  "source": "GINA 2026 Strategy Report / QĐ 1851/BYT",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_12",
+    "name": "Bé trai 9 tuổi",
+    "age": 9,
+    "sex": "male",
+    "weight": 28,
+    "sbp": 95,
+    "dbp": 60,
+    "hr": 90,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "daytimeSymptomsMoreThanTwiceWeek": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_asthma_age_under_12",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Trẻ 9 tuổi (< 12 tuổi) bị chặn, không sinh khuyến cáo thuốc người lớn."
+}

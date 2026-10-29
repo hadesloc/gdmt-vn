@@ -1,0 +1,141 @@
+{
+  "id": "ramipril",
+  "nameVi": "Ramipril",
+  "inn": "Ramipril",
+  "class": "ACEi",
+  "classes": [
+    "acei"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Tritace",
+    "Cardace"
+  ],
+  "forms": [
+    "Viên nang/nén 2.5 mg",
+    "Viên nén 5 mg",
+    "Viên nén 10 mg"
+  ],
+  "start": {
+    "amount": 2.5,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "2.5 mg/ngày (1.25 mg nếu eGFR < 30)"
+  },
+  "target": {
+    "amount": 10,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "10 mg/ngày"
+  },
+  "titration": {
+    "step": 2.5,
+    "intervalDays": 14,
+    "maxDose": "10 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "2.5–10 mg/ngày",
+      "citationIds": [
+        "kdigo.ckd.2024.rec_3_6_1_rasi_a3_nondm"
+      ]
+    },
+    {
+      "eGFRFrom": 15,
+      "eGFRTo": 30,
+      "initiate": "ok",
+      "continue": "rec",
+      "dose": "1.25–5 mg/ngày (khởi đầu 1.25 mg/ngày, tối đa 5 mg/ngày)",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_7_continue_egfr_below_30",
+        "byt.ckd.2024.table_12_ramipril_crcl_40"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "1.25–5 mg/ngày (khởi đầu 1.25 mg/ngày, tối đa 5 mg/ngày)",
+      "note": "Khởi đầu 1.25 mg/ngày (25% liều chuẩn khi CrCl < 40 mL/phút), tối đa 5 mg/ngày; đào thải tối thiểu qua màng lọc (BYT 2024 Bảng 12)",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_5_rasi_reduce_stop",
+        "byt.ckd.2024.table_12_ramipril_crcl_40"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_ramipril_k_max",
+      "parameter": "K",
+      "operator": ">",
+      "threshold": 5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Không khởi trị ramipril nếu K+ > 5.0 mmol/L",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_2_rasi_monitoring"
+      ]
+    },
+    {
+      "id": "gate_ramipril_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối nhóm thuốc ức chế men chuyển trong thai kỳ (Boxed Warning: độc tính phôi thai và tử vong chu sinh)",
+      "citationIds": [
+        "ema.perindopril.pregnancy",
+        "fda.losartan.boxed_pregnancy"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định phối hợp ARB hoặc ARNI",
+    "Bắt buộc khoảng trống đào thải (washout period) ít nhất 36 giờ trước hoặc sau khi dùng Sacubitril/Valsartan (ARNI) để tránh phù mạch thanh quản cấp tử vong"
+  ],
+  "citationIds": [
+    "kdigo.ckd.2024.rec_3_6_1_rasi_a3_nondm",
+    "ema.perindopril.pregnancy",
+    "ema.perindopril.lactation_4_6",
+    "esc.2025.pregnancy.rasi_lactation",
+    "byt.ckd.2024.table_12_ramipril_crcl_40"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối nhóm thuốc ức chế men chuyển trong thai kỳ (Boxed Warning FDA: độc tính phôi thai, vô niệu thai nhi, thiểu ối và tử vong chu sinh); ngừng thuốc ngay khi phát hiện có thai",
+    "citationIds": [
+      "ema.perindopril.pregnancy",
+      "fda.losartan.boxed_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo dùng khi cho con bú do thiếu dữ liệu an toàn trên trẻ nhũ nhi; ưu tiên chuyển sang Enalapril hoặc Captopril theo ESC 2025",
+    "citationIds": [
+      "ema.perindopril.lactation_4_6",
+      "esc.2025.pregnancy.rasi_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định tuyệt đối ACEi trong thai kỳ (Boxed Warning)",
+      "citationIds": [
+        "ema.perindopril.pregnancy",
+        "fda.losartan.boxed_pregnancy"
+      ]
+    },
+    {
+      "code": "angioedema_history",
+      "messageVi": "Chống chỉ định tuyệt đối khi có tiền sử phù mạch do ACEi",
+      "citationIds": [
+        "ema.perindopril.pregnancy"
+      ]
+    }
+  ]
+}

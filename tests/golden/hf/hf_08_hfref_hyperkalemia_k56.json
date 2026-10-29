@@ -1,0 +1,56 @@
+{
+  "id": "hf_08_hfref_hyperkalemia_k56",
+  "titleVi": "HFrEF có tăng kali máu K⁺ 5.6 mmol/L: Tạm hoãn MRA",
+  "source": "ESC 2026 HF Table S8 / FDA",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 122,
+    "dbp": 74,
+    "hr": 72,
+    "lvef": 30,
+    "nyha": 2,
+    "scr": 110,
+    "k": 5.6,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "spironolactone",
+        "action": "HOLD"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "spironolactone",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "K+ > 5.0 mmol/L: Tạm hoãn khởi trị MRA."
+}

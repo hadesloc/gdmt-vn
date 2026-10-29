@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.exac_antibiotics_duration_days",
+  "contentHash": "adbccac6efcbd06534e8c79a49d5f95e87f7083693ca7954caaaac087d9f9bb1",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.exac_antibiotics_duration_days",
+      "contentHash": "52085ce89965255b",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

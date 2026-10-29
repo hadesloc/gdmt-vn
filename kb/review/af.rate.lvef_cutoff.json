@@ -1,0 +1,26 @@
+{
+  "itemId": "af.rate.lvef_cutoff",
+  "contentHash": "555f4da692857f09efd32330973db397509654b38e0bb2349276ab51f9292f7a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.rate.lvef_cutoff",
+      "contentHash": "a0dba35b4f1823aa",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.rate.lvef_cutoff (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

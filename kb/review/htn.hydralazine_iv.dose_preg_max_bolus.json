@@ -1,0 +1,26 @@
+{
+  "itemId": "htn.hydralazine_iv.dose_preg_max_bolus",
+  "contentHash": "6a4e98c198e82611b2759c9cbc669f7c3b1cd53eb1c4f0970ab9c1497fb481d3",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "htn.hydralazine_iv.dose_preg_max_bolus",
+      "contentHash": "411bf5eff3737bbb",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực ngưỡng lâm sàng htn.hydralazine_iv.dose_preg_max_bolus (10 mg) và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

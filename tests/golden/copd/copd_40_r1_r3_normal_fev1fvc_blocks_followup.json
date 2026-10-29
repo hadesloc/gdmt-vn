@@ -1,0 +1,78 @@
+{
+  "id": "copd_40_r1_r3_normal_fev1fvc_blocks_followup",
+  "titleVi": "Hồi quy R1-R3: FEV₁/FVC ≥ 0.70 chặn không chỉ khởi trị mà cả mọi nhánh leo thang theo dõi (SWITCH/UPTITRATE)",
+  "source": "GOLD 2026 Report p. 28 (COPD-R1-08, R3-COPD-06)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_40",
+    "age": 64,
+    "sex": "male",
+    "weight": 63,
+    "height": 167,
+    "sbp": 126,
+    "dbp": 78,
+    "hr": 74,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "tiotropium",
+        "name": "Spiriva Respimat",
+        "dose": 5,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.72,
+      "fev1PredPct": 74,
+      "mmrc": 2,
+      "cat": 15,
+      "currentInhaler": "lama_mono",
+      "moderateExacerbations": 1,
+      "hospitalizations": 0,
+      "bloodEos": 320,
+      "smokingStatus": "former"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_copd_diag_normal_ratio",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "tiotropium_olodaterol",
+        "action": "SWITCH"
+      },
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "action": "SWITCH"
+      },
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "action": "UPTITRATE"
+      }
+    ]
+  }
+}

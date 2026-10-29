@@ -1,0 +1,53 @@
+{
+  "id": "htn_28_inpatient_severe_preeclampsia",
+  "titleVi": "Tiền sản giật nặng: Labetalol IV + Magnesium Sulfate",
+  "source": "VSH 2022 / vsh.htn.2022.emergency_preeclampsia",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 31,
+    "sex": "female",
+    "weight": 68,
+    "height": 160,
+    "sbp": 178,
+    "dbp": 114,
+    "hr": 90,
+    "conditions": {
+      "pregnant": true,
+      "severePreeclampsiaEclampsia": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "labetalol",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "sodium_nitroprusside",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Cấp cứu tiền sản giật nặng, hạ áp bằng Labetalol IV, chống chỉ định Nitroprusside."
+}

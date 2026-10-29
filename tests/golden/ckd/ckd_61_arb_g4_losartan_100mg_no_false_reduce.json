@@ -1,0 +1,53 @@
+{
+  "id": "ckd_61_arb_g4_losartan_100mg_no_false_reduce",
+  "titleVi": "Ngoại trú - CKD G4 (eGFR ~28 mL/phút/1.73m²) đang dùng Losartan 100 mg/ngày -> Không phát REDUCE giả cho ARB thải trừ qua gan-mật và cho phép khởi trị Finerenone (Regression CKD-R3-R1-02, R2-01, R3-05)",
+  "source": "FDA Cozaar Label Section 8.7 & BYT 2024 Bảng 12 & KDIGO 2024 PP 3.6.1 / Rec 3.8.1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_61",
+    "name": "BN CKD 61",
+    "age": 64,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 132,
+    "dbp": 78,
+    "hr": 72,
+    "scr": 220,
+    "k": 4.5,
+    "uacr": 35,
+    "conditions": {
+      "ckd": true,
+      "dm": true,
+      "htn": true
+    },
+    "currentMeds": [
+      { "drugId": "losartan", "name": "Cozaar 100 mg", "dose": 100, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "finerenone", "action": "START", "doseContains": "10 mg" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "losartan", "action": "REDUCE" },
+      { "drugId": "losartan", "action": "UPTITRATE" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R3-R1-02, R2-01 & R3-05: Nhóm ARB thải trừ qua gan-mật không có trần tích lũy thận cố định ở CKD G4; Losartan 100 mg/ngày được công nhận là liều đích tối đa dung nạp mà không bị REDUCE giả."
+}

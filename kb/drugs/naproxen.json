@@ -1,0 +1,186 @@
+{
+  "id": "naproxen",
+  "nameVi": "Naproxen",
+  "inn": "Naproxen",
+  "class": "NSAID",
+  "classes": [
+    "anti_gout",
+    "nsaid"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Aleve",
+    "Naprosyn"
+  ],
+  "forms": [
+    "Viên nén 250 mg",
+    "Viên nén 500 mg"
+  ],
+  "start": {
+    "amount": 500,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "500 mg x 2 lần/ngày sau ăn (cơn gút cấp 5 ngày) hoặc 250 mg x 2 lần/ngày (dự phòng cơn bùng phát)"
+  },
+  "target": {
+    "amount": 500,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "500 mg x 2 lần/ngày (tối đa 1000–1250 mg/ngày)"
+  },
+  "titration": {
+    "step": 250,
+    "intervalDays": 1,
+    "maxDose": "1000 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "500 mg x 2 lần/ngày trong 5 ngày (kèm PPI nếu có yếu tố nguy cơ tiêu hóa)",
+      "citationIds": [
+        "eular.gout.2016.naproxen_flare",
+        "acr.gout.2020.flare_first_line",
+        "byt.gout.2014.nsaid_dosing_p201"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Thận trọng hoặc tránh dùng theo KDIGO 2024 (ưu tiên corticoid hoặc colchicine liều thấp); nếu bắt buộc dùng phải ngắn ngày nhất và kiểm tra chức năng thận",
+      "citationIds": [
+        "kdigo.gout.2024.acute_flare_ckd",
+        "byt.ckd.2024.gout_flare_table22"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Chống chỉ định NSAID khi eGFR < 30 mL/phút hoặc lọc máu do nguy cơ suy thận cấp và hoại tử nhú thận",
+      "citationIds": [
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_naproxen_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "contra",
+      "messageVi": "Chống chỉ định NSAID khi eGFR < 30 mL/phút/1.73m2 do nguy cơ suy thận cấp",
+      "citationIds": [
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra"
+      ]
+    },
+    {
+      "id": "gate_naproxen_hepatic",
+      "parameter": "severe_hepatic_impairment",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "moderate_severe",
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối NSAID ở bệnh nhân suy tế bào gan mức độ vừa đến nặng",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong 3 tháng đầu/cuối thai kỳ (BYT 361/2014) và từ tuần 20–30 trở đi do nguy cơ suy thận thai nhi gây thiểu ối (từ tuần 20) và đóng sớm ống động mạch thai nhi (từ tuần 30); tránh dùng trong suốt thai kỳ",
+    "citationIds": [
+      "byt.gout.2014.nsaid_contra_p198",
+      "fda.celecoxib.fetal_toxicity_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "BYT 361/2014 chống chỉ định nhóm NSAID ở phụ nữ đang cho con bú; naproxen có thời gian bán thải dài nên tránh dùng khi cho con bú",
+    "citationIds": [
+      "byt.gout.2014.nsaid_contra_p198"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định trong thai kỳ (đặc biệt từ tuần 20–30 trở đi do thiểu ối và đóng sớm ống động mạch thai nhi)",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198",
+        "fda.celecoxib.fetal_toxicity_pregnancy"
+      ]
+    },
+    {
+      "code": "severe_ckd",
+      "messageVi": "Chống chỉ định khi eGFR < 30 mL/phút",
+      "citationIds": [
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra"
+      ]
+    },
+    {
+      "code": "peptic_ulcer",
+      "messageVi": "Chống chỉ định khi có loét dạ dày tá tràng tiến triển hoặc bệnh lý chảy máu không kiểm soát",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198",
+        "fda.celecoxib.boxed_contra_cv_gi"
+      ]
+    },
+    {
+      "code": "heart_failure",
+      "messageVi": "Chống chỉ định/tránh dùng ở bệnh nhân suy tim, quanh phẫu thuật CABG hoặc biến cố tim mạch cấp trong 3–6 tháng",
+      "citationIds": [
+        "byt.gout.2014.nsaid_cv_aspirin_p199",
+        "fda.celecoxib.boxed_contra_cv_gi"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định khi suy tế bào gan mức độ vừa đến nặng",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198"
+      ]
+    },
+    {
+      "code": "anticoagulant_use",
+      "messageVi": "Tránh/chống chỉ định phối hợp với thuốc chống đông do nguy cơ xuất huyết tiêu hóa nặng",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198",
+        "fda.celecoxib.boxed_contra_cv_gi"
+      ]
+    }
+  ],
+  "interactions": [
+    "Thuốc chống đông (Warfarin, DOAC) và Corticosteroid đường toàn thân: Tăng mạnh nguy cơ loét và xuất huyết tiêu hóa nghiêm trọng",
+    "Thuốc ức chế men chuyển / ARB / ARNI + Lợi tiểu: Phối hợp 'Triple Whammy' gây suy thận cấp huyết động",
+    "Aspirin liều thấp: Cạnh tranh gắn COX-1 tiểu cầu và tăng loét dạ dày; nếu bắt buộc dùng phải uống aspirin trước ít nhất 2 giờ và phối hợp PPI",
+    "Các NSAID khác (bao gồm COX-2i): Chống chỉ định phối hợp hai thuốc NSAID đồng thời"
+  ],
+  "citationIds": [
+    "eular.gout.2016.naproxen_flare",
+    "eular.gout.2016.naproxen_prophylaxis",
+    "acr.gout.2020.flare_first_line",
+    "byt.gout.2014.nsaid_contra_p198",
+    "byt.gout.2014.nsaid_cv_aspirin_p199",
+    "byt.gout.2014.nsaid_dosing_p201",
+    "byt.ckd.2024.gout_flare_table22"
+  ],
+  "hepatic": {
+    "status": "contra",
+    "note": "Chống chỉ định NSAID đường toàn thân ở bệnh nhân suy tế bào gan mức độ vừa đến nặng (Child-Pugh B/C hoặc xơ gan mất bù) do nguy cơ xuất huyết tiêu hóa, hội chứng gan – thận và suy gan cấp (BYT 361/2014 tr. 198).",
+    "notesVi": "Chống chỉ định NSAID đường toàn thân ở bệnh nhân suy tế bào gan mức độ vừa đến nặng (Child-Pugh B/C hoặc xơ gan mất bù) do nguy cơ xuất huyết tiêu hóa, hội chứng gan – thận và suy gan cấp (BYT 361/2014 tr. 198).",
+    "citationIds": [
+      "byt.gout.2014.nsaid_contra_p198"
+    ]
+  }
+}

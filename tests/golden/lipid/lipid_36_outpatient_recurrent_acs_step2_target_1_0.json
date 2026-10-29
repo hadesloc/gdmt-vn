@@ -1,0 +1,69 @@
+{
+  "id": "lipid_36_outpatient_recurrent_acs_step2_target_1_0",
+  "titleVi": "ASCVD tái phát trong 2 năm trên nền Atorvastatin 80 mg (LDL 1.2) - Cân nhắc thêm Ezetimibe hướng đích < 1.0 (Class IIb)",
+  "source": "ESC/EAS 2019 & 2025 / esc.lipid.2019.target_recurrent_acs",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "male",
+    "weight": 69,
+    "height": 166,
+    "sbp": 122,
+    "dbp": 74,
+    "hr": 66,
+    "scr": 88,
+    "tc": 3.5,
+    "hdl": 1.1,
+    "ldl": 1.2,
+    "tg": 1.4,
+    "conditions": {
+      "ascvd": true,
+      "recurrentAcsWithin2Years": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "atorvastatin",
+        "name": "Atorvastatin",
+        "dose": 80,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "ezetimibe",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_lipid_goal_achieved_continue",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "ezetimibe",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R2-R1-09: Bệnh nhân tái phát biến cố ASCVD trong 2 năm đã đạt đích Class I (< 1.4 mmol/L) với LDL 1.2; đích sâu < 1.0 mmol/L thuộc ESC Class IIb nên phát CONSIDER bổ sung Ezetimibe thay vì START bắt buộc."
+}

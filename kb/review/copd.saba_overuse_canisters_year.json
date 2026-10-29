@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.saba_overuse_canisters_year",
+  "contentHash": "810218ac0ccb6ad53152de9718a5785f8fcd37875bbc4ae1703812ff95b5c961",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.saba_overuse_canisters_year",
+      "contentHash": "3edb21194db334bb",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "hf_01_gdmt_default",
+  "titleVi": "Ca mặc định gdmt.org: HFrEF LVEF 30%, NYHA II, euvolaemic, SBP 120, HR 72, eGFR ~84",
+  "source": "ESC 2026 HF / gdmt.org reference patient",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "male",
+    "weight": 70,
+    "height": 170,
+    "sbp": 120,
+    "dbp": 75,
+    "hr": 72,
+    "rhythm": "sinus",
+    "lvef": 30,
+    "nyha": 2,
+    "scr": 88,
+    "k": 4.2,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ],
+    "customInputs": {
+      "congestion": "euvolaemic",
+      "fmtDurationMonths": 0
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dapagliflozin",
+        "action": "START"
+      },
+      {
+        "drugId": "spironolactone",
+        "action": "START"
+      },
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "START"
+      },
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_hf_icd_defer",
+        "action": "DEFER"
+      },
+      {
+        "ruleId": "rec_hf_cardiac_rehab",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Ca mặc định của gdmt.org: khởi động 4 trụ cột FMT, hoãn ICD đợi đủ 3 tháng FMT, chuyển phục hồi chức năng tim."
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.rasi.sbp_initiate_min",
+  "contentHash": "4a4919d10344033c126e32284fe71a4c1bcefce9376b225e67f7cd42e6ba762c",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.rasi.sbp_initiate_min",
+      "contentHash": "0f4eaa7fa1690cc3",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.136Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.rasi.sbp_initiate_min."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

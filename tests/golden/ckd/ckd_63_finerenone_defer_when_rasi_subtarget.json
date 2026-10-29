@@ -1,0 +1,53 @@
+{
+  "id": "ckd_63_finerenone_defer_when_rasi_subtarget",
+  "titleVi": "Ngoại trú - ĐTĐ2 + CKD G3aA2 mới dùng Losartan 50 mg/ngày (chưa đạt liều tối đa dung nạp) -> Ưu tiên UPTITRATE Losartan và DEFER Finerenone (Regression CKD-R3-R1-04)",
+  "source": "KDIGO 2024 Rec 3.8.1 & PP 3.8.2 (maximum tolerated dose of RASi prerequisite)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_63",
+    "name": "BN CKD 63",
+    "age": 61,
+    "sex": "male",
+    "weight": 72,
+    "sbp": 134,
+    "dbp": 80,
+    "hr": 72,
+    "scr": 140,
+    "k": 4.4,
+    "uacr": 32,
+    "conditions": {
+      "ckd": true,
+      "dm": true,
+      "htn": true
+    },
+    "currentMeds": [
+      { "drugId": "losartan", "name": "Cozaar 50 mg", "dose": 50, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "losartan", "action": "UPTITRATE" },
+      { "drugId": "finerenone", "action": "DEFER" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "finerenone", "action": "START" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R3-R1-04: Không phát đồng thời UPTITRATE RASi + START Finerenone khi bệnh nhân chưa đạt liều đích RASi và chưa gắn cờ rasiMaxTolerated."
+}

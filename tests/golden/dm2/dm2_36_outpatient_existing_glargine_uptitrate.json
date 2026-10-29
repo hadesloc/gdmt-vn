@@ -1,0 +1,69 @@
+{
+  "id": "dm2_36_outpatient_existing_glargine_uptitrate",
+  "titleVi": "Ngoại trú tăng đường huyết nặng trên nền đang tiêm Glargine 36 U/ngày - Chuẩn độ thay vì reset 10 U",
+  "source": "ADA 2026 SOC Ch. 9",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 61,
+    "sex": "male",
+    "weight": 82,
+    "height": 172,
+    "sbp": 128,
+    "dbp": 78,
+    "hr": 76,
+    "scr": 85,
+    "k": 4.3,
+    "glucose": 17.2,
+    "hba1c": 10.5,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "metformin",
+        "name": "Metformin",
+        "dose": 2000,
+        "unit": "mg"
+      },
+      {
+        "drugId": "insulin_glargine",
+        "name": "Insulin Glargine",
+        "dose": 36,
+        "unit": "đơn vị"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "insulin_glargine",
+        "action": "UPTITRATE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "insulin_glargine",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân đã đang tiêm Insulin Glargine 36 U/ngày (0.44 U/kg/ngày) có HbA1c 10.5%: Khuyến cáo UPTITRATE chuẩn độ liều thay vì phát nhầm lệnh START 10 đơn vị/ngày."
+}

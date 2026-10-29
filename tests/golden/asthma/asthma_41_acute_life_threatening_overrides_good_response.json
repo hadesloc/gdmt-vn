@@ -1,0 +1,82 @@
+{
+  "id": "asthma_41_acute_life_threatening_overrides_good_response",
+  "titleVi": "Cơn hen nguy kịch (Phổi im lặng, SpO2 82%) bị tích nhầm good_response: Bắt buộc ưu tiên ICU và chặn xuất viện",
+  "source": "GINA 2026 Box 9-6 / R1-ASTHMA-V2-01 / ASTHMA-R2-202 / ASTHMA-R2-R3-02",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_41",
+    "name": "Nam 39 tuổi",
+    "age": 39,
+    "sex": "male",
+    "weight": 65,
+    "sbp": 110,
+    "dbp": 70,
+    "hr": 132,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "isAcuteExacerbation": true,
+      "silentChest": true,
+      "spo2": 82,
+      "respiratoryRate": 34,
+      "acuteResponseAfter1h": "good_response"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_asthma_acute_life_threatening_icu",
+        "action": "REFER"
+      },
+      {
+        "drugId": "salbutamol",
+        "action": "START"
+      },
+      {
+        "drugId": "ipratropium",
+        "action": "START"
+      },
+      {
+        "drugId": "methylprednisolone",
+        "action": "START"
+      },
+      {
+        "drugId": "magnesium_sulfate",
+        "action": "DEFER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_asthma_discharge_plan",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_asthma_discharge_ocs",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Dấu hiệu đe dọa tính mạng (phổi im lặng, SpO2 82%) luôn chiếm quyền ưu tiên tuyệt đối trên mọi cờ đáp ứng -> REFER ICU + đủ 4 thuốc hồi sức, cấm sinh đơn xuất viện. Chưa có creatinine/chức năng thận: MgSO4 bổ trợ DEFER chờ bác sĩ xác nhận liều, không trì hoãn hồi sức đầu tay."
+}

@@ -1,0 +1,64 @@
+{
+  "id": "htn_44_outpatient_postpartum_switch_methyldopa",
+  "titleVi": "Giai đoạn Hậu sản đang uống Methyldopa: Chuyển đổi sang Nifedipine LA / Amlodipine / Labetalol",
+  "source": "ESC 2024 & VSH 2022 / vsh.htn.2022.pregnancy_table16_drugs_postpartum",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 29,
+    "sex": "female",
+    "weight": 58,
+    "height": 156,
+    "sbp": 146,
+    "dbp": 92,
+    "hr": 78,
+    "scr": 64,
+    "k": 4.1,
+    "customInputs": {
+      "postpartum": true
+    },
+    "conditions": {
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "methyldopa",
+        "dose": 500,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_htn_postpartum_switch_methyldopa",
+        "drugId": "methyldopa",
+        "action": "SWITCH"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "methyldopa",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Theo ESC 2024 và VSH 2022 Bảng 16, phụ nữ sau sinh đang dùng Methyldopa cần được chuyển sang thuốc hạ áp khác an toàn khi cho con bú để phòng trầm cảm hậu sản."
+}

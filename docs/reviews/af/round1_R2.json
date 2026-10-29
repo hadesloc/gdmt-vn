@@ -1,0 +1,128 @@
+[
+  {
+    "id": "AF-R2-01",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "rec_af_aad_no_shd",
+    "finding": "Quy tắc kiểm soát nhịp khi không có bệnh tim cấu trúc (rec_af_aad_no_shd) chỉ định Flecainide cho bệnh nhân suy thận nặng mà không có cổng kiểm tra an toàn chức năng thận (CrCl < 35 mL/min)",
+    "evidence": "Chạy evaluate() trên Preset 3 (af_preset_elderly_renal_reduction, bệnh nhân nữ 82 tuổi, CrCl Cockcroft-Gault = 21.3 mL/min) sinh khuyến cáo: '[CONSIDER] rec_af_aad_no_shd: Kiểm soát nhịp khi không có bệnh tim cấu trúc: Flecainide hoặc Propafenone | dose: Khởi đầu 50 mg uống 2 lần/ngày'. Trích nguyên văn ESC 2024 AF Guidelines Table 13 (trang 44): 'Flecainide: Should not be used in patients with severe structural or coronary artery disease, Brugada syndrome, or severe renal failure (CrCl < 35 mL/min/1.73 m2)'. Nhãn FDA Tambocor (Section 2.1) cũng quy định tương tự: Flecainide thải trừ qua thận khoảng 30% dưới dạng nguyên vẹn; khi CrCl < 35 mL/min thuốc tích lũy nồng độ cao gây kéo dài thời gian bán thải > 50h, giãn rộng phức bộ QRS > 25%, block nhánh và nhịp nhanh thất đa hình đe dọa tính mạng.",
+    "suggestedFix": "Thêm cổng kiểm tra an toàn thận (Gate) vào quy tắc af.rhythm.aad_selection trong rules.ts: nếu crcl < 35 mL/min thì chống chỉ định Flecainide; chuyển hướng sang triệt đốt catheter hoặc thảo luận hội chẩn chuyên khoa nhịp học."
+  },
+  {
+    "id": "AF-R2-02",
+    "severity": "critical",
+    "itemType": "rule",
+    "itemId": "rec_af_aad_no_shd",
+    "finding": "Thiếu khuyến cáo bắt buộc phối hợp thuốc ức chế nút nhĩ thất (Chẹn beta hoặc Non-DHP CCB) khi chỉ định Flecainide hoặc Propafenone, nguy cơ gây cuồng nhĩ dẫn truyền 1:1 và trụy tuần hoàn cấp",
+    "evidence": "Trong src/modules/af/rules.ts dòng 658-673, khuyến cáo rec_af_aad_no_shd chỉ định Flecainide/Propafenone mà không có điều kiện kiểm tra hay cảnh báo bắt buộc dùng kèm thuốc làm chậm dẫn truyền nút nhĩ thất. Trích nguyên văn ESC 2024 AF Guidelines trang 45 (Class IIa, LOE C): 'An AVN-blocking agent, such as a beta-blocker, diltiazem, or verapamil should be considered in AF patients treated with flecainide or propafenone, to prevent 1:1 conduction if their rhythm is transformed to atrial flutter'. Table 13 trang 44: 'An AVN-blocking agent should be administered to avoid 1:1 conduction if transformation to AFL'. Khi thuốc nhóm IC làm chậm tần số nhĩ của cuồng nhĩ xuống ~200 bpm, nếu không có thuốc ức chế nút AV đi kèm, nút nhĩ thất có thể dẫn truyền 1:1 làm thất đáp ứng 200 bpm gây tụt HA và sốc tim.",
+    "suggestedFix": "Trong quy tắc rec_af_aad_no_shd, bổ sung kiểm tra nếu bệnh nhân chưa có Beta-blocker hoặc Non-DHP CCB trong currentMeds, bắt buộc sinh khuyến cáo phối hợp hoặc gắn cảnh báo an toàn cấp 1 trong rationale và gate."
+  },
+  {
+    "id": "AF-R2-03",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "rec_af_doac_dosing_edoxaban",
+    "finding": "Cảnh báo hộp đen (Black Box Warning) của FDA và ESC khi CrCl > 95 mL/min đối với Edoxaban bị bỏ rơi hoàn toàn, không hiển thị trên khuyến cáo người dùng",
+    "evidence": "Máy tính computeDoacDose (src/engine/calculators/doacDose.ts dòng 212-214) có tạo warning: 'Cảnh báo: Bệnh nhân có CrCl rất cao (> 95 mL/min). FDA Hoa Kỳ đưa ra cảnh báo hộp đen (Black Box Warning)...'. Tuy nhiên trong src/modules/af/rules.ts dòng 431-455, quy tắc rec_af_doac_dosing_edoxaban chỉ đọc isReduced, recDose, criteriaStr mà KHÔNG hề gán hoặc truyền chuỗi doacResult.warning vào bất kỳ trường nào của Recommendation (title, rationale, hay alerts). Trích nguyên văn FDA Savaysa Label Boxed Warning (trang 1): 'A. REDUCED EFFICACY IN NONVALVULAR ATRIAL FIBRILLATION PATIENTS WITH CRCL > 95 ML/MIN: SAVAYSA should not be used in patients with CrCL > 95 mL/min. In the ENGAGE AF-TIMI 48 study, nonvalvular atrial fibrillation patients with CrCL > 95 mL/min had an increased rate of ischemic stroke with SAVAYSA 60 mg once daily compared to patients treated with warfarin'.",
+    "suggestedFix": "Nối chuỗi doacResult.warning vào trường rationale và sinh một SafetyAlert mức độ Warning, đồng thời khuyến nghị chuyển sang DOAC khác (như Apixaban/Rivaroxaban) hoặc Warfarin khi CrCl > 95 mL/min."
+  },
+  {
+    "id": "AF-R2-04",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "rec_af_acute_rate_preserved",
+    "finding": "Đồng thời chỉ định START cả Diltiazem IV và Bisoprolol đường uống ở bệnh nhân cấp cứu rung nhĩ đáp ứng thất nhanh mà không có cảnh báo tương tác cộng dồn ức chế nút AV",
+    "evidence": "Khi evaluate() trên ca cấp cứu Preset 5 (af_preset_inpatient_rvr_emergency: nữ 78 tuổi, HR 145 bpm, LVEF 55%), hệ thống sinh đồng thời cả 2 khuyến cáo: [START] diltiazem (rec_af_acute_rate_preserved, liều TM bolus 0.25 mg/kg) và [START] bisoprolol (rec_af_rate_preserved_ef). Theo Nhãn FDA Cardizem CD (Section Drug Interactions - Beta-blockers) và ESC 2024 (Table 12, trang 40): Việc bắt đầu đồng thời cả chẹn beta đường uống và Diltiazem tĩnh mạch có tương tác dược lực học cộng dồn ức chế dẫn truyền qua nút AV, có thể gây nhịp chậm nặng, vô tâm thu tạm thời, block AV độ cao và tụt huyết áp nghiêm trọng. Khuyến cáo ESC 2024 chỉ định phối hợp thuốc (Class IIa) khi đơn trị liệu ban đầu không kiểm soát được tần số tim.",
+    "suggestedFix": "Trong bối cảnh nội viện cấp cứu có RVR, khi đã kích hoạt Diltiazem IV (rec_af_acute_rate_preserved), quy tắc af.rate.preserved_lvef nên đặt action là DEFER hoặc bổ sung cảnh báo rõ ràng: 'Chỉ phối hợp chẹn beta uống sau khi đánh giá đáp ứng với liều tiêm tĩnh mạch; theo dõi ECG liên tục đề phòng block AV'."
+  },
+  {
+    "id": "AF-R2-05",
+    "severity": "major",
+    "itemType": "drug",
+    "itemId": "sotalol",
+    "finding": "Ngưỡng chống chỉ định thận của Sotalol trong rung nhĩ bị đặt sai (30 mL/min thay vì 40 mL/min) và thuộc tính cổng an toàn gate_sotalol_qt bị gán nhầm sang LVEF",
+    "evidence": "Trong kb/drugs/sotalol.json dòng 52-60, dải thanh thải eGFRTo: 30 mới chống chỉ định. Theo Nhãn FDA Betapace AF (chuyên biệt cho AF) và ESC 2024 Table 13: Sotalol chống chỉ định tuyệt đối khi CrCl < 40 mL/min (dải CrCl 40-60 mL/min phải giãn khoảng cách liều thành 80 mg mỗi 24 giờ). Cho phép dùng Sotalol khi CrCl 30-39 mL/min sẽ gây tích lũy nồng độ sotalol gấp 3 lần, kéo dài QT quá mức và gây xoắn đỉnh (TdP). Thêm vào đó, dòng 64-74 tệp sotalol.json có id: 'gate_sotalol_qt' nhưng thuộc tính parameter lại là 'LVEF' (threshold: 40%), hoàn toàn thiếu cổng kiểm tra khoảng QTc (ngưỡng > 450 ms lúc bắt đầu hoặc > 500 ms trong điều trị).",
+    "suggestedFix": "Sửa dải chỉnh liều thận của Sotalol thành: CrCl 40-60 mL/min là 80 mg 1 lần/ngày; CrCl < 40 mL/min là Chống chỉ định. Sửa gate_sotalol_qt để kiểm tra đúng tham số qtc (ngưỡng 500 ms)."
+  },
+  {
+    "id": "AF-R2-06",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "rec_af_oac_high_risk",
+    "finding": "Hiển thị thô toàn bộ câu điều kiện nhãn thuốc trong trường liều Apixaban và lỗi ranh giới làm tròn thanh thải CrCl 29 mL/min trong máy tính DOAC",
+    "evidence": "1. Khi bệnh nhân không thỏa điều kiện giảm liều (như Preset 1: nam 68 tuổi, 68 kg, Cr 98 umol/L), trường dose trong rec_af_oac_high_risk hiển thị nguyên văn chuỗi: '5 mg uống 2 lần/ngày (giảm xuống 2.5 mg x 2 lần/ngày nếu có ít nhất 2 trong 3 tiêu chí: tuổi ≥ 80, cân nặng ≤ 60 kg, Cr ≥ 133 µmol/L)' thay vì in liều chuẩn rõ ràng '5 mg x 2 lần/ngày'. 2. Trong src/engine/calculators/doacDose.ts dòng 36 và 108, biến renalReductionCrclMax đặt bằng 29 và kiểm tra 'input.crcl <= 29'. Khi bệnh nhân có CrCl = 29.2 mL/min (như Preset 5: suy thận nặng), biểu thức 29.2 <= 29 trả về FALSE, khiến bệnh nhân suy thận nặng bị phân loại nhầm vào nhóm liều chuẩn 5 mg x 2 lần/ngày nếu chỉ có 1 tiêu chuẩn thể trạng kèm theo. Theo EMA SmPC và ESC 2024, ngưỡng suy thận nặng là CrCl < 30 mL/min (dải 15-29 mL/min bao gồm cả 29.x).",
+    "suggestedFix": "1. Trong rules.ts dòng 261, gán chosenDose = apixDoseCheck.standardDose. 2. Trong doacDose.ts dòng 36, đổi thành renalReductionCrclMax: 30 và kiểm tra 'input.crcl < 30'."
+  },
+  {
+    "id": "AF-R2-07",
+    "severity": "major",
+    "itemType": "rule",
+    "itemId": "rec_af_doac_dosing_adjustment",
+    "finding": "Gán hành động (Action) là REDUCE khi bệnh nhân đã đang uống đúng liều giảm theo chức năng thận",
+    "evidence": "Trong src/modules/af/rules.ts dòng 436: 'action: isReduced ? 'REDUCE' : 'CONTINUE''. Biến isReduced phản ánh doacResult.isDoseReduced (tức bệnh nhân thỏa tiêu chuẩn giảm liều). Nếu bệnh nhân vốn đã đang dùng liều giảm (ví dụ: đang uống Rivaroxaban 15 mg/ngày hoặc Apixaban 2.5 mg x 2 lần/ngày do suy thận), hệ thống vẫn sinh action là REDUCE với tiêu đề 'Chỉ định giảm liều Rivaroxaban: 15 mg x 1 lần/ngày' thay vì CONTINUE. Điều này khiến thầy thuốc lâm sàng có thể hiểu lầm là phải giảm liều thêm một lần nữa từ liều 15 mg hiện tại.",
+    "suggestedFix": "So sánh liều hiện tại của bệnh nhân trong currentMeds với recDose. Nếu bệnh nhân đã đang dùng đúng liều giảm, gán action = 'CONTINUE' (Duy trì liều giảm phù hợp chức năng thận)."
+  },
+  {
+    "id": "AF-R2-08",
+    "severity": "major",
+    "itemType": "drug",
+    "itemId": "edoxaban",
+    "finding": "Ghi sai tên biệt dược lưu hành tại Việt Nam của Edoxaban, Propafenone và Sotalol",
+    "evidence": "1. kb/drugs/edoxaban.json dòng 8: 'vnBrands: [\"Lixiana\", \"Savaysa\"]'. Savaysa là tên thương mại độc quyền tại thị trường Mỹ của Daiichi Sankyo, hoàn toàn không được cấp số đăng ký hay lưu hành tại Việt Nam (tại VN chỉ có Lixiana). 2. kb/drugs/propafenone.json dòng 6-9: 'vnBrands: [\"Rhythmol\", \"Arythmol\"]'. Biệt dược gốc Mỹ là 'Rythmol' (viết sai chính tả thừa chữ 'h'). Quan trọng hơn, biệt dược duy nhất của Propafenone lưu hành chính thức tại Việt Nam là 'Rytmonorm 150 mg' (hãng Abbott), lại hoàn toàn bị bỏ sót. 3. kb/drugs/sotalol.json: Ghi 'Betapace' (Mỹ) thay vì 'Sotalex' (Châu Âu/Việt Nam).",
+    "suggestedFix": "Xóa Savaysa khỏi edoxaban.json; sửa propafenone.json thành vnBrands: ['Rytmonorm']; đưa Sotalex lên đầu trong sotalol.json."
+  },
+  {
+    "id": "AF-R2-09",
+    "severity": "major",
+    "itemType": "missing",
+    "itemId": "af_preset_outpatient_new_onset",
+    "finding": "Ca mẫu Preset 1 bị thiếu trường LVEF trong hồ sơ bệnh nhân dẫn đến mất hoàn toàn khuyến cáo kiểm soát tần số tim (Rate Control)",
+    "evidence": "Trong src/modules/af/presets.ts dòng 8-34, bệnh nhân Preset 1 có mô tả tiêu đề: 'Nam 68 tuổi, Tăng huyết áp (CHA2DS2-VA = 2, LVEF 55%), nhịp tim 105 bpm'. Tuy nhiên trong đối tượng patient, trường lvef: 55 bị bỏ quên. Hậu quả khi chạy evaluate(), quy tắc af.rate.preserved_lvef (kiểm tra lvef > 40) không được thỏa mãn. Bệnh nhân có nhịp tim nhanh 105 bpm hoàn toàn không nhận được bất kỳ khuyến cáo thuốc kiểm soát tần số tim nào (mất hoàn toàn Bisoprolol/Diltiazem).",
+    "suggestedFix": "Bổ sung 'lvef: 55' vào af_preset_outpatient_new_onset.patient trong presets.ts. Đồng thời trong rules.ts, nếu thiếu LVEF nhưng HR > 110 bpm, cần sinh khuyến cáo MISSING_INPUT nhắc làm siêu âm tim khẩn cấp để chọn thuốc rate control."
+  },
+  {
+    "id": "AF-R2-10",
+    "severity": "major",
+    "itemType": "ui",
+    "itemId": "rec_af_rate_preserved_ef",
+    "finding": "Trường liều của Bisoprolol trong kiểm soát tần số bảo tồn bị đặt chuỗi giữ chỗ thô 'Theo phân độ chẹn beta'",
+    "evidence": "Trong src/modules/af/rules.ts dòng 496: 'dose: onCcb ? getStartDescription('diltiazem') : 'Theo phân độ chẹn beta''. Khi sinh khuyến cáo khởi trị Bisoprolol cho bệnh nhân LVEF bảo tồn (ví dụ Preset 4), trường dose trên giao diện hiển thị: 'Theo phân độ chẹn beta'. Đây là chuỗi giữ chỗ không có ý nghĩa lâm sàng, không hướng dẫn liều khởi đầu cụ thể (1.25–2.5 mg/ngày theo ESC 2024 Table 12).",
+    "suggestedFix": "Đổi thành '1.25–2.5 mg uống 1 lần/ngày vào buổi sáng' hoặc đọc từ drug('bisoprolol').start.description."
+  },
+  {
+    "id": "AF-R2-11",
+    "severity": "minor",
+    "itemType": "matrix",
+    "itemId": "afMatrixDoacCrCl",
+    "finding": "Ma trận DOAC theo CrCl thiếu cột hoặc chú thích cảnh báo chuyên biệt cho nhóm thanh thải thận cao (CrCl > 95 mL/min) ở Edoxaban",
+    "evidence": "Trong src/modules/af/matrices.ts, cột cao nhất là crcl_ge50 (CrCl >= 50 mL/min). Hàng Edoxaban hiển thị ô REC (Khuyến cáo) lấy từ band 0. Tuy nhiên đối với bệnh nhân CrCl > 95 mL/min, Edoxaban có cảnh báo hộp đen FDA không được dùng do kém hiệu quả hơn Warfarin. Việc gộp chung tất cả CrCl >= 50 làm bác sĩ tra cứu ma trận dễ ngộ nhận Edoxaban khuyến cáo an toàn cho người trẻ CrCl 100-120 mL/min.",
+    "suggestedFix": "Bổ sung ghi chú (note) trong ô ma trận của Edoxaban tại cột CrCl >= 50: 'Thận trọng/Không dùng nếu CrCl > 95 mL/min (Cảnh báo hộp đen FDA do giảm hiệu lực ngừa đột quỵ so với warfarin)'."
+  },
+  {
+    "id": "AF-R2-12",
+    "severity": "minor",
+    "itemType": "drug",
+    "itemId": "apixaban",
+    "finding": "Thiếu ngoại lệ không cần chỉnh liều với Clarithromycin trong thông tin tương tác của Apixaban",
+    "evidence": "Trong kb/drugs/apixaban.json dòng 101: 'Chất ức chế kép mạnh CYP3A4 và P-gp: giảm liều 50% hoặc tránh dùng'. Clarithromycin là kháng sinh macrolide rất phổ biến tại Việt Nam và là chất ức chế kép CYP3A4 + P-gp. Tuy nhiên, Nhãn FDA Eliquis (Section 7.1) nêu rõ ngoại lệ đặc biệt: Dữ liệu dược động học cho thấy nồng độ apixaban không tăng có ý nghĩa lâm sàng khi dùng cùng Clarithromycin nên KHÔNG CẦN chỉnh liều. Thiếu thông tin này có thể khiến dược sĩ lâm sàng giảm liều apixaban không cần thiết.",
+    "suggestedFix": "Bổ sung ghi chú ngoại lệ: 'Không cần chỉnh liều Apixaban khi dùng đồng thời với Clarithromycin theo nhãn FDA'."
+  },
+  {
+    "id": "AF-R2-13",
+    "severity": "minor",
+    "itemType": "drug",
+    "itemId": "amiodarone",
+    "finding": "Amiodarone đường tĩnh mạch thiếu cảnh báo tương kỵ dung dịch NaCl 0.9% và nguy cơ viêm tĩnh mạch huyết khối khi truyền ngoại vi kéo dài",
+    "evidence": "Trong kb/drugs/amiodarone.json dòng 18: 'cấp cứu TM 300 mg pha trong 250 mL Dextrose 5% truyền qua 30–60 phút'. Tuy nhiên chưa ghi rõ cảnh báo: Amiodarone tương kỵ và kết tủa trong dung dịch Nước muối sinh lý 0.9% (NaCl 0.9%), bắt buộc chỉ pha trong Glucose/Dextrose 5%. Theo ESC 2024 Table 13 (trang 44): Amiodarone truyền tĩnh mạch ngoại vi kéo dài > 24 giờ gây nguy cơ cao viêm tắc tĩnh mạch huyết khối (phlebitis), khuyến cáo ưu tiên dùng catheter tĩnh mạch trung tâm và máy truyền dịch thể tích.",
+    "suggestedFix": "Bổ sung lưu ý: 'Chỉ pha trong Glucose 5% (tuyệt đối không pha trong NaCl 0.9% do nguy cơ kết tủa); ưu tiên truyền qua tĩnh mạch trung tâm nếu kéo dài > 24h để tránh viêm tĩnh mạch huyết khối'."
+  },
+  {
+    "id": "AF-R2-14",
+    "severity": "suggestion",
+    "itemType": "missing",
+    "itemId": "acenocoumarol",
+    "finding": "Kiến nghị bổ sung hoạt chất Acenocoumarol (Sintrom) vào danh mục thuốc kháng vitamin K cho Profile Việt Nam",
+    "evidence": "Tại Việt Nam, khoảng 80–90% bệnh nhân rung nhĩ có chỉ định kháng vitamin K (van tim cơ học, hẹp hai lá khít do thấp tim) được kê đơn Acenocoumarol (Sintrom 4 mg, Sintrom 1 mg) do thói quen điều trị kế thừa từ y học Pháp, trong khi Warfarin ít phổ biến hơn ở nhiều bệnh viện tỉnh. Hiện tại KB chỉ có warfarin.json, thiếu acenocoumarol.json.",
+    "suggestedFix": "Biên soạn thêm kb/drugs/acenocoumarol.json và tích hợp vào các luật VKA khi người dùng chọn profile VN."
+  }
+]

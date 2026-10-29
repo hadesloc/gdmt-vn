@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.mepolizumab_interval_weeks",
+  "contentHash": "afe9a03770200b902ed99e092d190166c38f5e0443d7584794b563b9ef8d44f0",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.mepolizumab_interval_weeks",
+      "contentHash": "eb893db20c51839a",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

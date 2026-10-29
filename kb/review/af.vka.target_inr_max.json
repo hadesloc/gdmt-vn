@@ -1,0 +1,26 @@
+{
+  "itemId": "af.vka.target_inr_max",
+  "contentHash": "ba6d866f4c5016ca386d4e864ab82ab0ef62e081fc3f96b4bcdcb25f9fdc161f",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.vka.target_inr_max",
+      "contentHash": "986130908cb319b6",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.vka.target_inr_max (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

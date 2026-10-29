@@ -1,0 +1,78 @@
+{
+  "id": "asthma_56_outpatient_acute_severe_refer_bundle",
+  "titleVi": "Cơn hen cấp nặng tại Phòng khám ngoại trú (SpO2 88%, nói từng từ): Xử trí cấp cứu tiền viện + REFER cấp cứu, chặn kê mạn tính",
+  "source": "GINA 2026 Box 4-2 / BYT 1851/2020 / ASTHMA-R3-R1-01 / ASTHMA-R3-R2-05 / ASTHMA-R3-R3-01",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_56",
+    "name": "Nam 42 tuổi",
+    "age": 42,
+    "sex": "male",
+    "weight": 68,
+    "sbp": 132,
+    "dbp": 82,
+    "hr": 124,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "isAcuteExacerbation": true,
+      "speechAbility": "words",
+      "spo2": 88,
+      "respiratoryRate": 32,
+      "accessoryMuscleUse": true,
+      "daytimeSymptomsMoreThanTwiceWeek": true,
+      "nightWakingDueToAsthma": true,
+      "relieverNeededMoreThanTwiceWeek": true,
+      "activityLimitationDueToAsthma": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_asthma_outpatient_acute_refer",
+        "action": "REFER"
+      },
+      {
+        "drugId": "salbutamol",
+        "action": "START"
+      },
+      {
+        "drugId": "ipratropium",
+        "action": "START"
+      },
+      {
+        "drugId": "prednisolone",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bệnh nhân đến phòng khám ngoại trú trong cơn hen cấp nặng (SpO2 88%, nói từng từ, thở 32 l/p): Chuyển cấp cứu ngay (REFER) kèm gói xử trí tiền viện (Oxy + SABA + SAMA + Corticoid toàn thân), đồng thời khóa các quy tắc bậc mạn tính cho tới khi qua cơn."
+}

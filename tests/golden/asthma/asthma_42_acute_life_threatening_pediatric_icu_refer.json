@@ -1,0 +1,69 @@
+{
+  "id": "asthma_42_acute_life_threatening_pediatric_icu_refer",
+  "titleVi": "Trẻ 8 tuổi bị cơn hen nguy kịch (Phổi im lặng, không nói được): Vẫn sinh REFER ICU tối khẩn nhưng chặn liều người lớn",
+  "source": "GINA 2026 Box 9-6 / ASTHMA-R2-R3-13",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_42",
+    "name": "Bé trai 8 tuổi",
+    "age": 8,
+    "sex": "male",
+    "weight": 26,
+    "sbp": 96,
+    "dbp": 60,
+    "hr": 148,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "isAcuteExacerbation": true,
+      "silentChest": true,
+      "speechAbility": "unable",
+      "spo2": 84
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_asthma_acute_life_threatening_icu",
+        "action": "REFER"
+      },
+      {
+        "ruleId": "rec_asthma_age_under_12",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "methylprednisolone",
+        "action": "START"
+      },
+      {
+        "drugId": "magnesium_sulfate",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Trẻ < 12 tuổi vào viện vì cơn hen đe dọa tính mạng bắt buộc nhận cảnh báo REFER ICU nhi khoa khẩn cấp nhưng không tự áp liều cố định mg/g của người lớn."
+}

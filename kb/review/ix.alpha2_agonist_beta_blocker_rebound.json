@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.alpha2_agonist_beta_blocker_rebound",
+  "contentHash": "914afe7323b90a6c81f0c26aaf0bfa8d3251ba9f1c72fc5a38bc34b3b06577fe",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.alpha2_agonist_beta_blocker_rebound",
+      "contentHash": "a22c57a1a992c0fb",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.alpha2_agonist_beta_blocker_rebound."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

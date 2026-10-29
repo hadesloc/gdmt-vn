@@ -1,0 +1,68 @@
+{
+  "id": "asthma_47_discharge_includes_prednisolone_5_7_days",
+  "titleVi": "Xuất viện sau đợt cấp hen (good_response): Kê đồng thời MART Bậc 4 và Prednisolone uống đủ 5–7 ngày",
+  "source": "GINA 2026 Box 9-7 / ASTHMA-R2-212 / ASTHMA-R2-R3-05",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_47",
+    "name": "Nữ 31 tuổi",
+    "age": 31,
+    "sex": "female",
+    "weight": 52,
+    "sbp": 116,
+    "dbp": 72,
+    "hr": 84,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "isAcuteExacerbation": true,
+      "speechAbility": "sentences",
+      "respiratoryRate": 18,
+      "spo2": 96,
+      "acuteResponseAfter1h": "good_response"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "START",
+        "doseContains": "Bậc 4"
+      },
+      {
+        "drugId": "prednisolone",
+        "action": "START",
+        "doseContains": "5–7 ngày"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_asthma_acute_life_threatening_icu",
+        "action": "REFER"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Theo GINA 2026 Box 9-7, đơn ra viện sau đợt cấp bắt buộc gồm cả hai trụ cột: khởi trị/nâng bậc ICS-formoterol MART Bậc 4 VÀ hoàn thành liệu trình Prednisolone uống 40–50 mg/ngày trong 5–7 ngày."
+}

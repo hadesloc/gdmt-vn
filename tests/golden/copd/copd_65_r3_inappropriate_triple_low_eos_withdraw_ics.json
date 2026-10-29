@@ -1,0 +1,78 @@
+{
+  "id": "copd_65_r3_inappropriate_triple_low_eos_withdraw_ics",
+  "titleVi": "Hồi quy R3 (COPD-R3-R1-09 & R3-11): COPD ổn định không kèm hen đang dùng Triple sai chỉ định (0 đợt cấp, ít triệu chứng, BCAT 60 < 100 /µL) rút ICS chuyển về LABA + LAMA",
+  "source": "GOLD 2026 p. 77 / BYT QĐ 2131/2026 Mục 2.2 (COPD-R3-R1-09, COPD-R3-R3-11)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_65",
+    "age": 63,
+    "sex": "male",
+    "weight": 67,
+    "height": 170,
+    "sbp": 122,
+    "dbp": 74,
+    "hr": 72,
+    "egfr": 80,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "name": "Trelegy Ellipta",
+        "dose": 100,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.56,
+      "fev1PredPct": 62,
+      "mmrc": 1,
+      "cat": 7,
+      "moderateExacerbations": 0,
+      "hospitalizations": 0,
+      "bloodEos": 60,
+      "priorPneumonia": false,
+      "currentInhaler": "triple",
+      "smokingStatus": "former"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "tiotropium_olodaterol",
+        "ruleId": "rec_copd_withdraw_inappropriate_ics",
+        "action": "SWITCH"
+      },
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "ruleId": "rec_copd_stop_superseded_inhaler",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "fluticasone_furoate_umeclidinium_vilanterol",
+        "action": "CONTINUE"
+      }
+    ]
+  }
+}

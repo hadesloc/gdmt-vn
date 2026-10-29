@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.ventilatory_failure_paco2",
+  "contentHash": "ecc14d61e4e354ff5305ca9d9cc2c62ac32dfac470879a64fcdb0cfe92e09ef0",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.ventilatory_failure_paco2",
+      "contentHash": "5950540774ad2a8e",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

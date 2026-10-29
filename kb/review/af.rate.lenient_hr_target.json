@@ -1,0 +1,26 @@
+{
+  "itemId": "af.rate.lenient_hr_target",
+  "contentHash": "7c8745d42038b1190af923cbcbee6bfe56aa05c522ebb90f69823875d8963545",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.rate.lenient_hr_target",
+      "contentHash": "7f9796e38fe877de",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.rate.lenient_hr_target (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

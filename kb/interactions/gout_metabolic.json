@@ -1,0 +1,376 @@
+[
+  {
+    "id": "ix.allopurinol_azathioprine",
+    "titleVi": "Chống chỉ định / Nguy cơ suy tủy tử vong: Allopurinol + Azathioprine / 6-Mercaptopurine",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "allopurinol"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "azathioprine",
+        "mercaptopurine"
+      ],
+      "classes": [
+        "immunosuppressant"
+      ]
+    },
+    "mechanismVi": "Xanthine oxidase là enzym chính thoái biến 6-mercaptopurine thành acid 6-thiouric bất hoạt. Allopurinol ức chế XO làm tích tụ 6-MP và chuyển thành các chất chuyển hóa 6-thioguanine gây độc tế bào tủy xương.",
+    "effectVi": "Suy tủy xương cấp tính đe dọa tính mạng: mất bạch cầu hạt, giảm tiểu cầu nặng, thiếu máu bất sản và nhiễm trùng huyết tử vong.",
+    "managementVi": "Chống chỉ định phối hợp hoặc nếu bắt buộc phải dùng dưới sự giám sát chuyên khoa sâu, bắt buộc phải giảm liều azathioprine/6-MP xuống còn 25%–33% (giảm 67%–75% liều bình thường) và xét nghiệm công thức máu hàng tuần.",
+    "citationIds": [
+      "fda.allopurinol.azathioprine_dose_reduction"
+    ]
+  },
+  {
+    "id": "ix.febuxostat_azathioprine",
+    "titleVi": "Chống chỉ định Tuyệt đối: Febuxostat + Azathioprine / 6-Mercaptopurine",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "febuxostat"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "azathioprine",
+        "mercaptopurine"
+      ],
+      "classes": [
+        "immunosuppressant"
+      ]
+    },
+    "mechanismVi": "Febuxostat ức chế cực mạnh enzym Xanthine Oxidase dẫn tới tích lũy độc chất thioguanine nucleotide.",
+    "effectVi": "Suy tủy xương nặng nề dẫn đến tử vong.",
+    "managementVi": "Chống chỉ định tuyệt đối sử dụng đồng thời Febuxostat với Azathioprine hoặc Mercaptopurine.",
+    "citationIds": [
+      "fda.febuxostat.contraindication_azathioprine"
+    ]
+  },
+  {
+    "id": "ix.colchicine_strong_cyp3a4",
+    "titleVi": "Chống chỉ định / Nguy cơ Tử vong do Ngộ độc Colchicine: Colchicine + Thuốc ức chế mạnh CYP3A4 / P-gp (Nirmatrelvir/ritonavir, Clarithromycin, Azole, Cyclosporine, Ranolazine)",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "colchicine"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "nirmatrelvir_ritonavir",
+        "ritonavir",
+        "cobicistat",
+        "clarithromycin",
+        "itraconazole",
+        "ketoconazole",
+        "posaconazole",
+        "voriconazole",
+        "cyclosporine",
+        "ranolazine",
+        "atazanavir",
+        "darunavir",
+        "lopinavir_ritonavir",
+        "indinavir",
+        "nelfinavir",
+        "saquinavir",
+        "telithromycin",
+        "nefazodone",
+        "tipranavir",
+        "paxlovid",
+        "kaletra",
+        "darunavir_ritonavir",
+        "darunavir_cobicistat",
+        "atazanavir_cobicistat",
+        "elvitegravir_cobicistat"
+      ],
+      "classes": [
+        "strong_cyp3a4_inhibitor",
+        "strong_pgp_inhibitor"
+      ]
+    },
+    "mechanismVi": "Colchicine có khoảng điều trị rất hẹp, được chuyển hóa qua CYP3A4 và đào thải qua bơm P-glycoprotein (P-gp). Các chất ức chế mạnh CYP3A4 hoặc P-gp (nirmatrelvir/ritonavir, ritonavir, cobicistat, clarithromycin, itraconazole, ketoconazole, posaconazole, voriconazole, cyclosporine, ranolazine...) làm tăng vọt nồng độ colchicine huyết tương gấp 3–4 lần.",
+    "effectVi": "Ngộ độc colchicine cấp tính đe dọa tính mạng: tiêu chảy xuất huyết, tiêu cơ vân, suy tủy xương toàn bộ (mất bạch cầu hạt, giảm tiểu cầu), suy đa tạng và tử vong.",
+    "managementVi": "Chống chỉ định tuyệt đối phối hợp ở bệnh nhân suy thận hoặc suy gan. Không nạp liều cắt cơn gút cấp bằng colchicine ở bệnh nhân đang dùng colchicine dự phòng kèm chất ức chế CYP3A4/P-gp. Ngay cả khi chức năng gan thận bình thường, ưu tiên tạm ngừng colchicine (ví dụ trong 5 ngày dùng Paxlovid và 3 ngày sau đó) hoặc giảm liều nghiêm ngặt theo Bảng 1 nhãn FDA Colcrys (tối đa 0.6 mg x 1 lần rồi 0.3 mg sau 1 giờ cho cơn cấp; tối đa 0.3 mg x 1 lần/ngày hoặc cách nhật cho dự phòng).",
+    "citationIds": [
+      "fda.colchicine.contraindication_renal_hepatic",
+      "fda.colchicine.strong_cyp3a4_table1",
+      "fda.colchicine.flare_not_rec_prophylaxis_cyp3a4"
+    ]
+  },
+  {
+    "id": "ix.colchicine_p_gp_inhibitors",
+    "titleVi": "Tương tác Giảm liều & Chống chỉ định khi Suy thận/gan: Colchicine + Chất ức chế vừa CYP3A4 / P-gp (Verapamil, Diltiazem, Fluconazole, Erythromycin, Amiodarone, Dronedarone)",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "colchicine"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "verapamil",
+        "diltiazem",
+        "fluconazole",
+        "erythromycin",
+        "amiodarone",
+        "dronedarone",
+        "aprepitant",
+        "fosamprenavir",
+        "amprenavir"
+      ],
+      "classes": [
+        "ndhp_ccb",
+        "moderate_cyp3a4_inhibitor"
+      ]
+    },
+    "mechanismVi": "Verapamil, diltiazem, fluconazole, erythromycin, amiodarone và dronedarone ức chế bơm P-gp và/hoặc ức chế vừa CYP3A4, làm giảm thanh thải và tăng đáng kể phơi nhiễm toàn thân của colchicine.",
+    "effectVi": "Tăng cao nguy cơ độc tính tiêu hóa, độc tính thần kinh – cơ (bệnh cơ, tiêu cơ vân) và ức chế tủy xương.",
+    "managementVi": "Chống chỉ định phối hợp ở bệnh nhân có suy thận hoặc suy gan. Không dùng phác đồ colchicine cắt cơn gút cấp trên bệnh nhân đang dùng sẵn colchicine dự phòng kèm thuốc ức chế CYP3A4/P-gp. Ở người chức năng thận/gan bình thường: giới hạn liều dự phòng tối đa 0.3–0.6 mg/ngày (ví dụ 0.3 mg x 1–2 lần/ngày hoặc 0.6 mg x 1 lần/ngày theo nhãn FDA Colcrys Bảng 1).",
+    "doseLimit": {
+      "drugId": "colchicine",
+      "maxDose": 0.6,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Liều dự phòng Colchicine tối đa 0.3–0.6 mg/ngày khi phối hợp chất ức chế vừa CYP3A4 / P-gp; tránh nạp liều cắt cơn nếu đang dùng dự phòng"
+    },
+    "citationIds": [
+      "fda.colchicine.diltiazem_verapamil_dose",
+      "fda.colchicine.moderate_cyp3a4_table1"
+    ]
+  },
+  {
+    "id": "ix.allopurinol_amoxicillin_ampicillin",
+    "titleVi": "Tương tác Tăng tỷ lệ Dị ứng phát ban da: Allopurinol + Ampicillin / Amoxicillin",
+    "severity": "moderate",
+    "a": {
+      "drugIds": [
+        "allopurinol"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "amoxicillin",
+        "ampicillin"
+      ],
+      "classes": [
+        "aminopenicillin"
+      ]
+    },
+    "mechanismVi": "Tác dụng hiệp đồng làm mẫn cảm miễn dịch qua trung gian tế bào T đối với phức hợp thuốc.",
+    "effectVi": "Tăng tỷ lệ phát ban dạng sởi, ban dát sần dị ứng da từ 3–5% lên tới 20–30%.",
+    "managementVi": "Cảnh báo bệnh nhân về nguy cơ phát ban da; nếu cần kháng sinh nên cân nhắc lựa chọn nhóm khác ngoài aminopenicillin nếu có thể.",
+    "citationIds": [
+      "fda.allopurinol.ampicillin_amoxicillin_rash"
+    ]
+  },
+  {
+    "id": "ix.probenecid_methotrexate",
+    "titleVi": "Chống chỉ định / Nguy cơ Ngộ độc Methotrexate nặng: Probenecid + Methotrexate",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "probenecid"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "methotrexate"
+      ],
+      "classes": [
+        "immunosuppressant"
+      ]
+    },
+    "mechanismVi": "Probenecid ức chế cạnh tranh chất vận chuyển anion hữu cơ OAT1/OAT3 tại ống thận, làm giảm thải trừ methotrexate và tăng nồng độ methotrexate tự do gấp 2–3 lần.",
+    "effectVi": "Ngộ độc methotrexate trầm trọng: ức chế tủy xương cấp, viêm loét niêm mạc miệng, hoại tử biểu bì và suy thận cấp.",
+    "managementVi": "Tránh phối hợp probenecid với methotrexate; nếu bắt buộc phải dùng, theo dõi nồng độ methotrexate và độc tính tủy xương chặt chẽ.",
+    "citationIds": [
+      "fda.probenecid.methotrexate_toxicity"
+    ]
+  },
+  {
+    "id": "ix.benzbromarone_vka",
+    "titleVi": "Chống chỉ định / Nguy cơ Xuất huyết Nặng: Benzbromarone + Thuốc kháng Vitamin K (Warfarin, Acenocoumarol)",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "benzbromarone"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "warfarin",
+        "acenocoumarol"
+      ],
+      "classes": [
+        "vka"
+      ]
+    },
+    "mechanismVi": "Benzbromarone là chất ức chế cực mạnh enzym gan CYP2C9 — con đường chuyển hóa chủ yếu của đồng phân S-warfarin và S-acenocoumarol có hoạt tính chống đông mạnh.",
+    "effectVi": "Làm tăng vọt tác dụng chống đông đường uống nhóm coumarin, kéo dài INR mất kiểm soát và gây xuất huyết nội tạng / xuất huyết nội sọ đe dọa tính mạng.",
+    "managementVi": "Tránh / chống chỉ định phối hợp Benzbromarone ở bệnh nhân đang dùng thuốc kháng vitamin K (Warfarin, Acenocoumarol); ưu tiên nhóm ức chế xanthine oxidase (Allopurinol/Febuxostat). Nếu bắt buộc dùng đồng thời dưới giám sát chuyên khoa, phải giảm mạnh liều kháng vitamin K và theo dõi sát INR.",
+    "citationIds": [
+      "ema.desuric.oral_anticoagulants"
+    ]
+  },
+  {
+    "id": "ix.allopurinol_vka",
+    "titleVi": "Tương tác Kéo dài Thời gian Prothrombin / Tăng INR: Allopurinol + Kháng Vitamin K (Warfarin, Acenocoumarol)",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "allopurinol"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "warfarin",
+        "acenocoumarol"
+      ],
+      "classes": [
+        "vka"
+      ]
+    },
+    "mechanismVi": "Allopurinol ức chế hệ enzym microsome gan chuyển hóa thuốc chống đông nhóm coumarin, làm kéo dài thời gian bán thải huyết tương của thuốc kháng vitamin K.",
+    "effectVi": "Tăng chỉ số PT/INR và gia tăng nguy cơ chảy máu trên lâm sàng.",
+    "managementVi": "Đánh giá lại thời gian prothrombin / chỉ số INR định kỳ bất cứ khi nào bổ sung, chỉnh liều hoặc ngừng Allopurinol ở bệnh nhân đang dùng Warfarin hoặc Acenocoumarol (nhãn FDA Zyloprim).",
+    "citationIds": [
+      "fda.allopurinol.dicumarol_prothrombin"
+    ]
+  },
+  {
+    "id": "ix.allopurinol_thiazide",
+    "titleVi": "Tương tác Tăng nguy cơ Dị ứng Nặng (Hội chứng quá mẫn Allopurinol / DRESS): Allopurinol + Lợi tiểu Thiazide",
+    "severity": "moderate",
+    "a": {
+      "drugIds": [
+        "allopurinol"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "hydrochlorothiazide",
+        "chlorthalidone",
+        "indapamide"
+      ],
+      "classes": [
+        "thiazide_diuretic"
+      ]
+    },
+    "mechanismVi": "Lợi tiểu thiazide làm giảm bài xuất oxypurinol (chất chuyển hóa chính của allopurinol) qua thận và có thể thúc đẩy độc tính miễn dịch qua trung gian tế bào T, đặc biệt khi có suy giảm chức năng thận kèm theo.",
+    "effectVi": "Gia tăng nguy cơ phản ứng quá mẫn nghiêm trọng với allopurinol (SCARs / DRESS / hội chứng Stevens-Johnson) và suy giảm chức năng thận.",
+    "managementVi": "Thận trọng tối đa và theo dõi sát chức năng thận cũng như các dấu hiệu phát ban da/sốt khi dùng đồng thời Allopurinol với lợi tiểu thiazide; khởi trị Allopurinol từ liều thấp chỉnh theo eGFR và ưu tiên thuốc hạ áp không làm tăng acid uric (như Losartan hoặc Amlodipine) nếu phù hợp.",
+    "citationIds": [
+      "fda.allopurinol.thiazide_hypersensitivity"
+    ]
+  },
+  {
+    "id": "ix.celecoxib_fluconazole",
+    "titleVi": "Tương tác Tăng gấp đôi nồng độ Celecoxib (Ức chế CYP2C9): Celecoxib + Fluconazole",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "celecoxib"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "fluconazole"
+      ]
+    },
+    "mechanismVi": "Celecoxib được chuyển hóa chủ yếu qua enzym CYP2C9 tại gan; Fluconazole ức chế mạnh CYP2C9 làm tăng gấp hai lần nồng độ huyết tương của celecoxib.",
+    "effectVi": "Gia tăng đáng kể nguy cơ biến cố huyết khối tim mạch, suy thận cấp, giữ muối nước và xuất huyết tiêu hóa phụ thuộc liều của celecoxib.",
+    "managementVi": "Bắt buộc giảm 50% liều Celecoxib (khởi đầu ở mức liều khuyến cáo thấp nhất) khi dùng đồng thời với Fluconazole (nhãn FDA Celebrex mục 7).",
+    "doseLimit": {
+      "drugId": "celecoxib",
+      "maxDose": 200,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "noteVi": "Giảm 50% liều Celecoxib (khởi đầu liều thấp nhất khuyến cáo) khi dùng đồng thời với Fluconazole"
+    },
+    "citationIds": [
+      "fda.celecoxib.fluconazole_twofold_2c9"
+    ]
+  },
+  {
+    "id": "ix.probenecid_ketorolac",
+    "titleVi": "Chống chỉ định Tuyệt đối: Probenecid + Ketorolac",
+    "severity": "contraindicated",
+    "a": {
+      "drugIds": [
+        "probenecid"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "ketorolac"
+      ]
+    },
+    "mechanismVi": "Probenecid ức chế mạnh liên hợp glucuronid và bài tiết chủ động qua ống thận của ketorolac, làm giảm độ thanh thải ketorolac đáng kể và làm tăng nồng độ huyết tương cũng như tổng AUC của ketorolac lên gấp 3 lần (thời gian bán thải tăng gấp đôi).",
+    "effectVi": "Xuất huyết tiêu hóa ồ ạt, thủng dạ dày – tá tràng và suy thận cấp nghiêm trọng.",
+    "managementVi": "Chống chỉ định tuyệt đối phối hợp đồng thời Probenecid và Ketorolac (nhãn FDA Probenecid).",
+    "citationIds": [
+      "fda.probenecid.ketorolac_contra"
+    ]
+  },
+  {
+    "id": "ix.uricosuric_high_dose_salicylate",
+    "titleVi": "Tương tác Đối kháng Tác dụng Tăng thải Acid Uric: Benzbromarone / Probenecid + Salicylat liều cao",
+    "severity": "moderate",
+    "a": {
+      "drugIds": [
+        "benzbromarone",
+        "probenecid"
+      ],
+      "classes": [
+        "uricosuric"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "salsalate",
+        "diflunisal",
+        "bismuth_subsalicylate"
+      ]
+    },
+    "mechanismVi": "Các dẫn chất salicylat liều giảm đau/chống viêm cạnh tranh hệ vận chuyển anion hữu cơ tại ống thận, làm ức chế bài tiết acid uric và triệt tiêu tác dụng tăng thải urat của benzbromarone và probenecid (lưu ý: aspirin liều thấp 75–100 mg/ngày bảo vệ tim mạch vẫn được ACR 2020 khuyến cáo duy trì).",
+    "effectVi": "Giảm hoặc mất hiệu quả hạ acid uric máu của phác đồ tăng thải urat.",
+    "managementVi": "Tránh dùng salicylat liều cao giảm đau/chống viêm ở bệnh nhân đang điều trị bằng benzbromarone hoặc probenecid; không ngừng aspirin liều thấp (75–100 mg/ngày) đang có chỉ định dự phòng biến cố tim mạch.",
+    "citationIds": [
+      "ema.desuric.interactions_salicylate",
+      "acr.gout.2020.do_not_stop_aspirin"
+    ]
+  },
+  {
+    "id": "ix.febuxostat_rosuvastatin",
+    "titleVi": "Tương tác Giới hạn Liều tối đa 20 mg/ngày (Ức chế bơm BCRP): Febuxostat + Rosuvastatin",
+    "severity": "major",
+    "a": {
+      "drugIds": [
+        "febuxostat"
+      ]
+    },
+    "b": {
+      "drugIds": [
+        "rosuvastatin",
+        "rosuvastatin_ezetimibe"
+      ]
+    },
+    "mechanismVi": "Febuxostat ức chế protein kháng ung thư vú (BCRP) và OATP tại gan – ruột, làm tăng diện tích dưới đường cong (AUC) và nồng độ đỉnh của rosuvastatin lên hơn 1,9–2,1 lần.",
+    "effectVi": "Gia tăng đáng kể nguy cơ bệnh cơ độc tính và tiêu cơ vân cấp.",
+    "managementVi": "Không vượt quá liều Rosuvastatin 20 mg x 1 lần/ngày khi dùng đồng thời với Febuxostat (nhãn FDA Crestor Mục 7.1 Bảng 5); nếu bệnh nhân đang dùng Rosuvastatin 40 mg/ngày thì bắt buộc giảm xuống ≤ 20 mg/ngày hoặc chuyển sang Atorvastatin.",
+    "doseLimit": {
+      "drugId": "rosuvastatin",
+      "maxDose": 20,
+      "unit": "mg",
+      "frequency": "1 lần/ngày",
+      "thresholdId": "gout.rosuvastatin.febuxostat_max_dose",
+      "noteVi": "Giới hạn liều tối đa Rosuvastatin ≤ 20 mg/ngày khi phối hợp Febuxostat (FDA Crestor Mục 7.1)"
+    },
+    "citationIds": [
+      "fda.rosuvastatin.febuxostat_max_20mg"
+    ]
+  }
+]

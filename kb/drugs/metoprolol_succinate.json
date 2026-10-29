@@ -1,0 +1,143 @@
+{
+  "id": "metoprolol_succinate",
+  "nameVi": "Metoprolol succinate (CR/XL)",
+  "inn": "Metoprolol succinate",
+  "class": "Beta-blocker",
+  "classes": [
+    "bb_selective"
+  ],
+  "vnBrands": [
+    "Betaloc ZOK"
+  ],
+  "forms": [
+    "Viên nén phóng thích kéo dài 25 mg (có vạch bẻ đôi cho liều khởi đầu 12.5 mg)",
+    "Viên nén phóng thích kéo dài 50 mg",
+    "Viên nén phóng thích kéo dài 100 mg"
+  ],
+  "start": {
+    "amount": "12.5–25",
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "khởi đầu 12.5 mg/ngày ở NYHA III–IV ổn định hoặc 25 mg/ngày ở NYHA II (chỉ dùng dạng phóng thích kéo dài succinate CR/XL)"
+  },
+  "target": {
+    "amount": 200,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "liều đích chứng minh giảm tử vong trong MERIT-HF"
+  },
+  "titration": {
+    "step": "Gấp đôi liều mỗi 2 tuần (12.5 -> 25 -> 50 -> 100 -> 200 mg x 1 lần/ngày) đến liều đích hoặc liều tối đa dung nạp",
+    "intervalDays": 14,
+    "maxDose": "200 mg x 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "12.5–25 mg x 1 lần/ngày -> đích 200 mg x 1 lần/ngày (không cần chỉnh liều theo thận)",
+      "citationIds": [
+        "esc.hf.2026.bb_doses"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "Không cần giảm liều khởi đầu theo chức năng thận; thận trọng giảm tốc độ chuẩn độ nếu suy gan kèm theo",
+      "citationIds": [
+        "esc.hf.2026.bb_doses"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_metoprolol_hr_min",
+      "parameter": "HR",
+      "operator": "<",
+      "threshold": 50,
+      "unit": "bpm",
+      "action": "hold",
+      "messageVi": "Nhịp tim < 50 bpm: Tạm hoãn khởi trị/tăng liều Metoprolol succinate",
+      "citationIds": [
+        "esc.hf.2026.bb_guidance_table_s6"
+      ]
+    },
+    {
+      "id": "gate_metoprolol_sbp_min",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 90,
+      "unit": "mmHg",
+      "action": "hold",
+      "messageVi": "Huyết áp tâm thu < 90 mmHg: Tạm hoãn khởi trị/tăng liều Metoprolol succinate",
+      "citationIds": [
+        "esc.hf.2026.bb_guidance_table_s6"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Là thuốc chẹn beta chọn lọc beta-1 ưu tiên hàng đầu để điều trị HFrEF trong thai kỳ theo ESC 2026 (Class I, Level C), kèm theo dõi tăng trưởng thai nhi và nhịp tim/đường huyết sơ sinh.",
+    "citationIds": [
+      "esc.hf.2026.pregnancy_bb_switch"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Bài tiết qua sữa mẹ rất thấp (< 1% liều hiệu chỉnh theo cân nặng mẹ), nguy cơ nhịp chậm sơ sinh thấp nhất và được ESC 2025 ưu tiên khi cho con bú.",
+    "citationIds": [
+      "esc.preg.2025.lactation_metoprolol_bb"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "cardiogenic_shock",
+      "messageVi": "Chống chỉ định trong sốc tim hoặc suy tim mất bù cấp chưa ổn định",
+      "citationIds": [
+        "esc.hf.2026.bb_guidance_table_s6"
+      ]
+    },
+    {
+      "code": "av_block_2_3",
+      "messageVi": "Chống chỉ định khi block nhĩ-thất độ II–III hoặc hội chứng suy nút xoang không có máy tạo nhịp",
+      "citationIds": [
+        "esc.hf.2026.bb_table_s6_asthma_contra"
+      ]
+    },
+    {
+      "code": "severe_bradycardia",
+      "messageVi": "Chống chỉ định khởi trị khi nhịp tim lúc nghỉ < 50 bpm",
+      "citationIds": [
+        "esc.hf.2026.bb_guidance_table_s6"
+      ]
+    }
+  ],
+  "interactions": [
+    "Thuốc ức chế mạnh CYP2D6 (fluoxetine, paroxetine, propafenone) làm tăng nồng độ metoprolol huyết tương",
+    "Không phối hợp với verapamil hoặc diltiazem do nguy cơ block nhĩ-thất và giảm co bóp cơ tim",
+    "Thận trọng giám sát chuyên khoa nếu bắt buộc dùng ở bệnh nhân có tiền sử hen phế quản (chống chỉ định tương đối)"
+  ],
+  "citationIds": [
+    "esc.hf.2026.bb_doses",
+    "esc.hf.2026.bb_guidance_table_s6",
+    "esc.hf.2026.bb_table_s6_asthma_contra",
+    "esc.hf.2026.pregnancy_bb_switch",
+    "byt.2022.hf_doses"
+  ],
+  "hepatic": {
+    "status": "caution",
+    "childA": "ok",
+    "childB": "caution_low_start",
+    "childC": "avoid",
+    "note": "Chuyển hóa chủ yếu qua gan (CYP2D6); khởi đầu liều thấp và chuẩn độ chậm ở suy gan, tránh dùng liều cao ở xơ gan mất bù nặng.",
+    "notesVi": "Chuyển hóa chủ yếu qua gan (CYP2D6); khởi đầu liều thấp và chuẩn độ chậm ở suy gan, tránh dùng liều cao ở xơ gan mất bù nặng.",
+    "citationIds": [
+      "esc.preg.2025.lactation_metoprolol_bb",
+      "esc.hf.2026.bb_guidance_table_s6"
+    ]
+  }
+}

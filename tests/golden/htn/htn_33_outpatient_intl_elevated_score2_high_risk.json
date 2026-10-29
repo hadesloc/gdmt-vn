@@ -1,0 +1,49 @@
+{
+  "id": "htn_33_outpatient_intl_elevated_score2_high_risk",
+  "titleVi": "Profile INTL (ESC 2024): Huyết áp tăng (134/82 mmHg) kèm SCORE2 ≥ 10% chỉ định dùng thuốc",
+  "source": "ESC 2024 HTN / esc.htn.2024.elevated_high_risk",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 63,
+    "sex": "male",
+    "weight": 76,
+    "height": 170,
+    "sbp": 134,
+    "dbp": 82,
+    "hr": 72,
+    "scr": 90,
+    "k": 4.3,
+    "customInputs": {
+      "score2RiskPercent": 12.5
+    },
+    "conditions": {},
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "amlodipine",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Theo ESC 2024, bệnh nhân thuộc nhóm Huyết áp tăng có HA ≥ 130/80 mmHg và SCORE2 10 năm ≥ 10% có chỉ định điều trị hạ áp bằng thuốc."
+}

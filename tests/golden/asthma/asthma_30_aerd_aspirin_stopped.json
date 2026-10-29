@@ -1,0 +1,78 @@
+{
+  "id": "asthma_30_aerd_aspirin_stopped",
+  "titleVi": "Bệnh nhân AERD (Tam chứng Samter) đang dùng Aspirin: Bắt buộc STOP ngay lập tức",
+  "source": "GINA 2026 Section 6 (p. 139)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_30",
+    "name": "Nữ 46 tuổi",
+    "age": 46,
+    "sex": "female",
+    "weight": 58,
+    "sbp": 124,
+    "dbp": 78,
+    "hr": 76,
+    "rhythm": "sinus",
+    "fev1Pct": 78,
+    "conditions": {
+      "asthma": true,
+      "aerd": true,
+      "allergicRhinitis": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "aspirin",
+        "name": "Aspirin 81 mg",
+        "dose": "81 mg",
+        "freq": "1 lần/ngày"
+      },
+      {
+        "drugId": "budesonide_formoterol",
+        "name": "Symbicort",
+        "dose": "160/4.5 mcg",
+        "freq": "2 lần/ngày"
+      }
+    ],
+    "customInputs": {
+      "currentTrack": "track1",
+      "currentStep": 3,
+      "daytimeSymptomsMoreThanTwiceWeek": false,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "aspirin",
+        "action": "STOP"
+      },
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "CONTINUE"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bệnh nhân có tiền sử AERD đang dùng Aspirin 81 mg -> Engine lập tức phát lệnh STOP Aspirin do nguy cơ cơn co thắt phế quản cấp nguy kịch."
+}

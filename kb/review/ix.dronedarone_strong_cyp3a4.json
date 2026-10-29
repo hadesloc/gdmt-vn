@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.dronedarone_strong_cyp3a4",
+  "contentHash": "68b83c583b8f5aedaf0c766c714401da2055938b3c2b998e28fd4bd006e57fc8",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.dronedarone_strong_cyp3a4",
+      "contentHash": "1729c9b423795989",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.dronedarone_strong_cyp3a4."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

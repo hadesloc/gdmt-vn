@@ -1,0 +1,231 @@
+{
+  "id": "perindopril_indapamide_amlodipine",
+  "nameVi": "Perindopril + Indapamide + Amlodipine (SPC 3 thuốc)",
+  "inn": "Perindopril / Indapamide / Amlodipine",
+  "class": "Viên phối hợp cố định 3 thuốc ACEi + Lợi tiểu Thiazide-like + CCB (DHP)",
+  "classes": [
+    "acei",
+    "thiazide_diuretic",
+    "dhp_ccb"
+  ],
+  "components": [
+    "perindopril",
+    "indapamide",
+    "amlodipine"
+  ],
+  "qtRisk": "conditional",
+  "vnBrands": [
+    "Triplixam 5/1.25/5 mg",
+    "Triplixam 5/1.25/10 mg",
+    "Triplixam 10/2.5/5 mg",
+    "Triplixam 10/2.5/10 mg"
+  ],
+  "forms": [
+    "Viên nén bao phim 5/1.25/5 mg",
+    "Viên nén bao phim 5/1.25/10 mg",
+    "Viên nén bao phim 10/2.5/5 mg",
+    "Viên nén bao phim 10/2.5/10 mg"
+  ],
+  "start": {
+    "amount": "5/1.25/5",
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Dùng ở Bước 3 khi chưa kiểm soát bằng phối hợp đôi (CrCl ≥ 60 mL/phút)"
+  },
+  "target": {
+    "amount": "10/2.5/10",
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống"
+  },
+  "titration": {
+    "step": "Chỉnh liều mỗi 2–4 tuần từ 5/1.25/5 mg đến tối đa 10/2.5/10 mg 1 lần/ngày; chống chỉ định hàm lượng 10/2.5/* khi CrCl < 60 mL/phút và chống chỉ định mọi hàm lượng khi CrCl < 30 mL/phút",
+    "intervalDays": 14,
+    "maxDose": "10/2.5/10 mg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "crclFrom": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "5/1.25/5 mg -> 10/2.5/10 mg 1 lần/ngày",
+      "citationIds": [
+        "esc.htn.2024.triple_combination",
+        "ema.perindopril.table_1_renal_adjustment"
+      ]
+    },
+    {
+      "crclFrom": 30,
+      "crclTo": 60,
+      "initiate": "not_rec",
+      "continue": "caution",
+      "note": "Khi CrCl 30–59 mL/phút cần giảm liều Perindopril xuống 2,5 mg/ngày bằng các viên rời phù hợp.",
+      "citationIds": [
+        "ema.perindopril.table_1_renal_adjustment",
+        "ema.indapamide.renal_contra"
+      ]
+    },
+    {
+      "crclTo": 30,
+      "initiate": "contra",
+      "continue": "contra",
+      "note": "CHỐNG CHỈ ĐỊNH tuyệt đối khi CrCl < 30 mL/phút.",
+      "citationIds": [
+        "ema.indapamide.renal_contra",
+        "byt.ckd.2024.table_12_perindopril_crcl_30"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_triplixam_crcl_30",
+      "parameter": "CrCl",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min",
+      "action": "contra",
+      "messageVi": "Chống chỉ định viên phối hợp 3 thuốc Perindopril/Indapamide/Amlodipine khi CrCl < 30 mL/phút.",
+      "citationIds": [
+        "ema.indapamide.renal_contra"
+      ]
+    },
+    {
+      "id": "gate_triplixam_egfr_30",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "contra",
+      "messageVi": "Chống chỉ định viên phối hợp 3 thuốc chứa Indapamide khi eGFR < 30 mL/phút/1,73m².",
+      "citationIds": [
+        "ema.indapamide.renal_contra",
+        "esc.htn.2024.ckd_loop_diuretic"
+      ]
+    },
+    {
+      "id": "gate_triplixam_k_low",
+      "parameter": "K",
+      "operator": "<",
+      "threshold": 3.5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm ngưng khi K⁺ < 3,5 mmol/L.",
+      "citationIds": [
+        "ema.indapamide.hypokalemia_qt"
+      ]
+    },
+    {
+      "id": "gate_triplixam_k_high",
+      "parameter": "K",
+      "operator": ">",
+      "threshold": 5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm hoãn khi K⁺ > 5,0 mmol/L.",
+      "citationIds": [
+        "aha.acc.2025.table18_k50"
+      ]
+    },
+    {
+      "id": "gate_triplixam_na_130",
+      "parameter": "Na",
+      "operator": "<",
+      "threshold": 130,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm ngưng khi Natri máu < 130 mmol/L.",
+      "citationIds": [
+        "ema.indapamide.hyponatraemia_uric",
+        "esc.hf.2026.supp_hyponatraemia_135"
+      ]
+    },
+    {
+      "id": "gate_triplixam_na_125",
+      "parameter": "Na",
+      "operator": "<",
+      "threshold": 125,
+      "unit": "mmol/L",
+      "action": "stop",
+      "messageVi": "Ngưng ngay khi Natri máu < 125 mmol/L.",
+      "citationIds": [
+        "ema.indapamide.hyponatraemia_uric",
+        "esc.hf.2026.supp_hyponatraemia_135"
+      ]
+    },
+    {
+      "id": "gate_triplixam_preg",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối trong thai kỳ.",
+      "citationIds": [
+        "ema.perindopril.pregnancy"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối trong thai kỳ.",
+    "citationIds": [
+      "ema.perindopril.pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Tránh sử dụng trong thời kỳ cho con bú.",
+    "citationIds": [
+      "ema.perindopril.lactation_4_6",
+      "ema.indapamide.pregnancy_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Phụ nữ mang thai",
+      "citationIds": [
+        "ema.perindopril.pregnancy"
+      ]
+    },
+    {
+      "code": "angioedema_history",
+      "messageVi": "Tiền sử phù mạch",
+      "citationIds": [
+        "ema.perindopril.pregnancy"
+      ]
+    },
+    {
+      "code": "severe_renal_failure",
+      "messageVi": "Suy thận nặng (CrCl < 30 mL/phút) hoặc lọc máu",
+      "citationIds": [
+        "ema.indapamide.renal_contra"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Suy gan nặng / bệnh não gan",
+      "citationIds": [
+        "ema.indapamide.contraindications_hepatic"
+      ]
+    },
+    {
+      "code": "sulfonamide_allergy",
+      "messageVi": "Quá mẫn dẫn xuất sulfonamide",
+      "citationIds": [
+        "ema.indapamide.contraindications_hepatic"
+      ]
+    }
+  ],
+  "interactions": [
+    "ix.dual_rasi",
+    "ix.acei_arni_washout",
+    "ix.triple_whammy"
+  ],
+  "citationIds": [
+    "esc.htn.2024.triple_combination",
+    "vsh.htn.2022.table9_dual_spc",
+    "ema.perindopril.table_1_renal_adjustment",
+    "ema.indapamide.renal_contra"
+  ]
+}

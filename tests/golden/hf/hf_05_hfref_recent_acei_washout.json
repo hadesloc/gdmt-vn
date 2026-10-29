@@ -1,0 +1,66 @@
+{
+  "id": "hf_05_hfref_recent_acei_washout",
+  "titleVi": "HFrEF đang dùng ACEi chưa đủ 36h: Tạm ngừng đủ 36h trước khi chuyển sang ARNI",
+  "source": "ESC 2026 HF Rec 6.1.1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 66,
+    "sex": "male",
+    "weight": 74,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 72,
+    "lvef": 32,
+    "nyha": 2,
+    "scr": 95,
+    "k": 4.4,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "enalapril",
+        "name": "Enalapril",
+        "dose": 10,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "hf"
+    ],
+    "customInputs": {
+      "takingAcei": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "HOLD"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bắt buộc ngưng ACEi trước 36 giờ; không được khởi trị ngay ARNI."
+}

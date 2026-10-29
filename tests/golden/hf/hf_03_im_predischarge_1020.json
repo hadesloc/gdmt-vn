@@ -1,0 +1,70 @@
+{
+  "id": "hf_03_im_predischarge_1020",
+  "titleVi": "Suy tim mất bù cấp thể ấm - ướt: Tối ưu hóa tứ trụ GDMT trước xuất viện",
+  "source": "on-call:im_heart_failure_gdmt_predischarge_1020",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 65,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 138,
+    "dbp": 84,
+    "hr": 104,
+    "conditions": {
+      "hf": true,
+      "ckd": true
+    },
+    "selectedModules": [
+      "hf"
+    ],
+    "currentMeds": [],
+    "scr": 120,
+    "k": 4.5,
+    "lvef": 32,
+    "customInputs": {
+      "congestion": "euvolaemic"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "dapagliflozin",
+        "action": "START"
+      },
+      {
+        "drugId": "spironolactone",
+        "action": "START"
+      },
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "START"
+      },
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      },
+      {
+        "ruleId": "rec_hf_inpatient_predischarge",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "HFrEF 32% nội trú: Điều trị lợi tiểu TM giải áp sung huyết và khởi động 4 trụ cột trước khi cho xuất viện."
+}

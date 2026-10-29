@@ -1,0 +1,65 @@
+{
+  "id": "asthma_16_inpatient_acute_mild_moderate",
+  "titleVi": "Cơn hen phế quản cấp nhẹ - trung bình tại Cấp cứu",
+  "source": "Bộ Y tế QĐ 5850/2021 & GINA 2026 Box 9-3",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_16",
+    "name": "Nam 35 tuổi",
+    "age": 35,
+    "sex": "male",
+    "weight": 65,
+    "sbp": 122,
+    "dbp": 78,
+    "hr": 98,
+    "rhythm": "sinus",
+    "fev1Pct": 65,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "isAcuteExacerbation": true,
+      "speechAbility": "sentences",
+      "respiratoryRate": 22,
+      "accessoryMuscleUse": false,
+      "silentChest": false,
+      "mentalStatus": "alert",
+      "pefPct": 65,
+      "spo2": 95
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "salbutamol",
+        "action": "START"
+      },
+      {
+        "drugId": "prednisolone",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Cơn hen nhẹ-vừa: Nói cả câu, HR 98, RR 22, SpO2 95% -> SABA xịt định liều + Prednisolone uống 5-7 ngày."
+}

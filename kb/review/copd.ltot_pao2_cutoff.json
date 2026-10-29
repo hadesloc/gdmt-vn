@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.ltot_pao2_cutoff",
+  "contentHash": "82fed3a008055a959fa35bbf5ad976436967e82e2a121c38ff0f60194d49f7c5",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.ltot_pao2_cutoff",
+      "contentHash": "2079c25313748f56",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

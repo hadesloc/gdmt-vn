@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.fenofibrate_colchicine",
+  "contentHash": "c5b081230dadaea6352d68e358ac160afa6a7d92c0ec2637332d4b6fd367718e",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.fenofibrate_colchicine",
+      "contentHash": "aed99c5e85954f0e",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T11:20:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.fenofibrate_colchicine."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T11:20:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

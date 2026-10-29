@@ -1,0 +1,82 @@
+{
+  "id": "htn_49_inpatient_pulmonary_edema_sildenafil_avoid_ntg",
+  "titleVi": "Nội viện Phù phổi cấp đang dùng Sildenafil + Metoprolol: Cấm Nitroglycerin, tạm ngừng BB, truyền Nicardipine + Furosemide",
+  "source": "AHA/ACC 2025 & VSH 2022 / aha.acc.2025.iv_nitroglycerin",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 67,
+    "sex": "male",
+    "weight": 72,
+    "height": 168,
+    "sbp": 206,
+    "dbp": 116,
+    "hr": 106,
+    "scr": 112,
+    "k": 4.3,
+    "conditions": {
+      "htn": true,
+      "acutePulmonaryEdema": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "sildenafil",
+        "dose": 50,
+        "unit": "mg"
+      },
+      {
+        "drugId": "metoprolol_succinate",
+        "dose": 50,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "nitroglycerin",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "metoprolol_succinate",
+        "action": "HOLD"
+      },
+      {
+        "drugId": "nicardipine",
+        "action": "START"
+      },
+      {
+        "drugId": "furosemide",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "nitroglycerin",
+        "action": "START"
+      },
+      {
+        "drugId": "esmolol",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Phát hiện Sildenafil trong thuốc đang dùng: chặn tuyệt đối Nitroglycerin tĩnh mạch phòng tụt huyết áp trụy mạch, tạm ngừng Metoprolol, chuyển sang Nicardipine IV phối hợp Furosemide IV."
+}

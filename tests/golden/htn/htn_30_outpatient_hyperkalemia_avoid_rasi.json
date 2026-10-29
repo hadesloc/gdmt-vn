@@ -1,0 +1,63 @@
+{
+  "id": "htn_30_outpatient_hyperkalemia_avoid_rasi",
+  "titleVi": "Tăng huyết áp kèm Tăng kali máu (K+ 5.8 mmol/L): Chặn khởi trị RASi, dùng CCB",
+  "source": "VSH 2022 Table 11 / vsh.htn.2022.contraindications_table11",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 61,
+    "sex": "male",
+    "weight": 68,
+    "height": 166,
+    "sbp": 164,
+    "dbp": 98,
+    "hr": 74,
+    "scr": 138,
+    "k": 5.8,
+    "conditions": {
+      "htn": true,
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "perindopril",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "amlodipine",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "perindopril",
+        "action": "START"
+      },
+      {
+        "drugId": "losartan",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân THA mới điều trị có kali máu 5.8 > 5.5 mmol/L: chống chỉ định khởi trị nhóm RASi, kiểm soát HA bằng Amlodipine."
+}

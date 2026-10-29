@@ -1,0 +1,76 @@
+{
+  "id": "asthma_64_milk_protein_allergy_dpi_contra_pmdi_switch",
+  "titleVi": "Dị ứng đạm sữa bò nặng đang dùng bình hít bột khô DPI chứa lactose (Relvar Ellipta): Bắt buộc STOP và SWITCH sang pMDI không chứa lactose",
+  "source": "FDA Label Breo/Relvar Ellipta / SmPC DPI Lactose / ASTHMA-R3-R1-10 / ASTHMA-R3-R3-15",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_64",
+    "name": "Nữ 26 tuổi",
+    "age": 26,
+    "sex": "female",
+    "weight": 52,
+    "sbp": 112,
+    "dbp": 70,
+    "hr": 76,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true,
+      "severeMilkProteinAllergy": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "fluticasone_vilanterol",
+        "dose": "1 nhát",
+        "freq": "1 lần/ngày"
+      }
+    ],
+    "customInputs": {
+      "severeMilkProteinAllergy": true,
+      "currentTrack": "track1",
+      "currentStep": 3,
+      "daytimeSymptomsMoreThanTwiceWeek": false,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "fluticasone_vilanterol",
+        "action": "STOP"
+      },
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "SWITCH",
+        "doseContains": "Rapihaler"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "fluticasone_vilanterol",
+        "action": "CONTINUE"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Tiền sử phản vệ/dị ứng nặng với đạm sữa bò chống chỉ định mọi bình bột khô DPI chứa tá dược lactose monohydrate (Ellipta, Diskus, Turbuhaler) -> Bắt buộc STOP Relvar Ellipta và SWITCH sang bình xịt định liều pMDI HFA không chứa lactose (Symbicort Rapihaler)."
+}

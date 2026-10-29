@@ -1,0 +1,17 @@
+{
+  "itemId": "telmisartan",
+  "contentHash": "5a958884b0ad178c9b7cd667308cab83bebfd93dae1956d11c6e57f7673893d2",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "telmisartan",
+      "contentHash": "de8b11de976e03bd",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

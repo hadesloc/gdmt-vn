@@ -1,0 +1,27 @@
+{
+  "itemId": "ix.hf.sacubitril_valsartan_aliskiren",
+  "contentHash": "fd3f79f416cf3681f4442b5ccbfe8e66f1ed06576131a7bebb1018ef426f039a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.hf.sacubitril_valsartan_aliskiren",
+      "contentHash": "2a1507b81ce00bd8",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T09:00:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-28T09:00:00.000Z",
+          "role": "Agent G5 (HF Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF interaction ix.hf.sacubitril_valsartan_aliskiren (Round 2 R1/R2/R3 remediation & verbatim PDF citation verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

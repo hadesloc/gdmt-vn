@@ -1,0 +1,57 @@
+{
+  "id": "hf_07_hfref_bradycardia_hr46",
+  "titleVi": "HFrEF có nhịp tim chậm HR 46 bpm: Tạm hoãn thuốc chẹn beta",
+  "source": "ESC 2026 HF Table S6",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 70,
+    "sex": "male",
+    "weight": 68,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 46,
+    "rhythm": "sinus",
+    "lvef": 30,
+    "nyha": 2,
+    "scr": 90,
+    "k": 4.2,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "bisoprolol",
+        "action": "HOLD"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "HR < 50 bpm: Tạm hoãn khởi trị chẹn beta."
+}

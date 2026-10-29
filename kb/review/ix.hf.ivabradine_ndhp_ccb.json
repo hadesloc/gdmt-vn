@@ -1,0 +1,27 @@
+{
+  "itemId": "ix.hf.ivabradine_ndhp_ccb",
+  "contentHash": "4a0b747f6d9e784250b5e298cfc2f652c9e335c677494491453ad6c085aa32b5",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.hf.ivabradine_ndhp_ccb",
+      "contentHash": "8cbf15eb0288080b",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T09:00:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-28T09:00:00.000Z",
+          "role": "Agent G5 (HF Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF interaction ix.hf.ivabradine_ndhp_ccb (Round 2 R1/R2/R3 remediation & verbatim PDF citation verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

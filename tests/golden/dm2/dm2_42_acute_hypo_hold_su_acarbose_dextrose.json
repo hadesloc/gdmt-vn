@@ -1,0 +1,87 @@
+{
+  "id": "dm2_42_acute_hypo_hold_su_acarbose_dextrose",
+  "titleVi": "Cấp cứu hạ đường huyết nặng (2.4 mmol/L) trên bệnh nhân đang dùng Glimepiride + Acarbose",
+  "source": "ADA 2026 SOC Ch. 6 & QĐ 5481/QĐ-BYT",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 67,
+    "sex": "male",
+    "weight": 66,
+    "height": 165,
+    "sbp": 132,
+    "dbp": 78,
+    "hr": 92,
+    "scr": 92,
+    "k": 4.3,
+    "glucose": 2.4,
+    "hba1c": 7.4,
+    "conditions": {
+      "dm": true,
+      "ascvd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "glimepiride",
+        "name": "Glimepiride",
+        "dose": 4,
+        "unit": "mg"
+      },
+      {
+        "drugId": "acarbose",
+        "name": "Acarbose",
+        "dose": 50,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_dm2_hypo_rule15",
+        "action": "START",
+        "doseContains": "Dextrose"
+      },
+      {
+        "drugId": "glimepiride",
+        "action": "HOLD"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "glimepiride",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "dapagliflozin",
+        "action": "START"
+      },
+      {
+        "drugId": "semaglutide",
+        "action": "START"
+      },
+      {
+        "drugId": "metformin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Hạ đường huyết cấp (< 3.9 mmol/L): Tạm ngừng ngay Glimepiride (HOLD), chặn mọi lệnh khởi trị thuốc hạ đường huyết mới, và cảnh báo bắt buộc dùng đường đơn Glucose/Dextrose do đang dùng Acarbose."
+}

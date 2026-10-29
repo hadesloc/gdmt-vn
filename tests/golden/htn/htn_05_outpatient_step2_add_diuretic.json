@@ -1,0 +1,67 @@
+{
+  "id": "htn_05_outpatient_step2_add_diuretic",
+  "titleVi": "Chưa kiểm soát với phác đồ 2 thuốc: Nâng lên ba thuốc thêm Indapamide",
+  "source": "ESC 2024 HTN / esc.htn.2024.triple_combination",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 60,
+    "sex": "male",
+    "weight": 74,
+    "height": 168,
+    "sbp": 146,
+    "dbp": 90,
+    "hr": 72,
+    "scr": 92,
+    "k": 4.2,
+    "conditions": {
+      "htn": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "perindopril",
+        "name": "Coversyl",
+        "dose": 5,
+        "unit": "mg"
+      },
+      {
+        "drugId": "amlodipine",
+        "name": "Amlor",
+        "dose": 5,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "indapamide",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "spironolactone",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "HA 146/90 mmHg trên phác đồ 2 thuốc (Perindopril + Amlodipine), chỉ định nâng lên phối hợp 3 thuốc bổ sung Indapamide."
+}

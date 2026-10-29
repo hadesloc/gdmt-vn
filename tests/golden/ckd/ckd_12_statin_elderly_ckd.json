@@ -1,0 +1,48 @@
+{
+  "id": "ckd_12_statin_elderly_ckd",
+  "titleVi": "Khởi trị Atorvastatin phòng ngừa tim mạch ở bệnh nhân CKD 58 tuổi",
+  "source": "KDIGO 2024 CKD Rec 3.15.1.1 / kdigo.ckd.2024.rec_3_15_1_1_statin_egfr_below_60",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_12",
+    "name": "BN CKD 12",
+    "age": 58,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 130,
+    "dbp": 80,
+    "hr": 70,
+    "scr": 140,
+    "conditions": {
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Mọi bệnh nhân CKD từ 50 tuổi trở lên có eGFR < 60 được khuyến cáo dùng statin 1A."
+}

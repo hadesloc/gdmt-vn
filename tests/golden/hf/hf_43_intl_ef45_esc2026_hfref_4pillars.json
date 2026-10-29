@@ -1,0 +1,65 @@
+{
+  "id": "hf_43_intl_ef45_esc2026_hfref_4pillars",
+  "titleVi": "ESC 2026 (INTL): LVEF 45% được định nghĩa lại là HFrEF (< 50%) và chỉ định đầy đủ 4 trụ cột FMT (Class I-A)",
+  "source": "ESC 2026 HF Guidelines Sec 3.2.1 & Sec 6.1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 64,
+    "sex": "male",
+    "weight": 72,
+    "height": 170,
+    "sbp": 126,
+    "dbp": 78,
+    "hr": 74,
+    "rhythm": "sinus",
+    "lvef": 45,
+    "nyha": 2,
+    "scr": 88,
+    "k": 4.3,
+    "conditions": {
+      "hf": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "hf"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "sacubitril_valsartan",
+        "action": "START"
+      },
+      {
+        "drugId": "dapagliflozin",
+        "action": "START"
+      },
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      },
+      {
+        "drugId": "spironolactone",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Theo ESC 2026, ngưỡng HFmrEF bị xóa bỏ và toàn bộ LVEF < 50% (bao gồm LVEF 45%) thuộc HFrEF với chỉ định khởi trị đầy đủ 4 trụ cột FMT Class I-A."
+}

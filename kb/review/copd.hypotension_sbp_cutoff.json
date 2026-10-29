@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.hypotension_sbp_cutoff",
+  "contentHash": "ea1349d5ae2065f500710800343cff5033eb75d418a51466ad178eb6f3bb84a5",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.hypotension_sbp_cutoff",
+      "contentHash": "755e536f952ff866",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

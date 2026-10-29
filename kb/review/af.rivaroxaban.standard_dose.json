@@ -1,0 +1,26 @@
+{
+  "itemId": "af.rivaroxaban.standard_dose",
+  "contentHash": "b44d27a21f7b3f3c6269778030abee3a769cf5811a3cd38db9a8461b6c36c460",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.rivaroxaban.standard_dose",
+      "contentHash": "b91d5fa4351fa22b",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.rivaroxaban.standard_dose (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

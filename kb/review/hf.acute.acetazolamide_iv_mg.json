@@ -1,0 +1,27 @@
+{
+  "itemId": "hf.acute.acetazolamide_iv_mg",
+  "contentHash": "88ecfee0a186dc0c3a0cfba63717c78ded52d74f889ae84893ef3d83b5633a25",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "hf.acute.acetazolamide_iv_mg",
+      "contentHash": "a7bff2512ced2a16",
+      "status": "auto_checked",
+      "lastReviewedAt": "2026-10-28T09:00:00.000Z",
+      "reports": [
+        {
+          "round": 2,
+          "reviewedAt": "2026-10-28T09:00:00.000Z",
+          "role": "Agent G5 (HF Round 2 Remediation)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked HF threshold hf.acute.acetazolamide_iv_mg (Round 2 R1/R2/R3 remediation & verbatim PDF citation verified)."
+        }
+      ],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

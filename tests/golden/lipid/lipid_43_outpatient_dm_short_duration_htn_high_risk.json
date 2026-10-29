@@ -1,0 +1,61 @@
+{
+  "id": "lipid_43_outpatient_dm_short_duration_htn_high_risk",
+  "titleVi": "ĐTĐ típ 2 mới mắc 5 năm nhưng kèm Tăng huyết áp (46 tuổi, LDL 2.3) - Phân tầng Nguy cơ Cao (< 1.8 mmol/L)",
+  "source": "ESC/EAS 2019 & 2025 Table 3 / esc.lipid.2025.risk_table3_dm_moderate",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 46,
+    "sex": "male",
+    "weight": 74,
+    "height": 170,
+    "sbp": 144,
+    "dbp": 88,
+    "hr": 76,
+    "scr": 82,
+    "tc": 4.6,
+    "hdl": 1.1,
+    "ldl": 2.3,
+    "tg": 1.7,
+    "conditions": {
+      "dm": true,
+      "htn": true
+    },
+    "customInputs": {
+      "dmDurationYears": 5
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_lipid_primary_goal_achieved",
+        "action": "MONITOR"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R2-R1-03: Bệnh nhân ĐTĐ típ 2 < 50 tuổi và thời gian mắc < 10 năm chỉ được xếp nguy cơ trung bình khi KHÔNG có thêm yếu tố nguy cơ nào khác; có kèm Tăng huyết áp nên thuộc nhóm Nguy cơ Cao (đích LDL-C < 1.8 mmol/L) và cần khởi trị Statin."
+}

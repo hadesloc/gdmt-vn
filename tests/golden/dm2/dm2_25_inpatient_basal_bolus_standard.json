@@ -1,0 +1,50 @@
+{
+  "id": "dm2_25_inpatient_basal_bolus_standard",
+  "titleVi": "Bệnh nhân nội viện 60 tuổi nặng 70 kg - Phác đồ Basal-Bolus theo cân nặng",
+  "source": "ADA 2026 SOC Ch. 16",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 60,
+    "sex": "male",
+    "weight": 70,
+    "height": 170,
+    "sbp": 128,
+    "dbp": 80,
+    "hr": 76,
+    "scr": 85,
+    "k": 4.3,
+    "glucose": 12.0,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "insulin_glargine",
+        "action": "START",
+        "doseContains": "32 đơn vị"
+      }
+    ]
+  },
+  "descriptionVi": "Basal-Bolus nội trú thay thế thang trượt."
+}

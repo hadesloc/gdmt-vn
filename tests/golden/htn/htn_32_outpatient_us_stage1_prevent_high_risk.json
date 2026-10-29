@@ -1,0 +1,53 @@
+{
+  "id": "htn_32_outpatient_us_stage1_prevent_high_risk",
+  "titleVi": "Profile US (AHA/ACC 2025): THA Giai đoạn 1 (134/84 mmHg) kèm PREVENT ≥ 7.5% khởi trị thuốc sớm",
+  "source": "AHA/ACC 2025 / aha.acc.2025.stage1_prevent_75",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "US",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 57,
+    "sex": "male",
+    "weight": 78,
+    "height": 172,
+    "sbp": 134,
+    "dbp": 84,
+    "hr": 74,
+    "scr": 88,
+    "k": 4.2,
+    "customInputs": {
+      "preventRiskPct": 9.2
+    },
+    "conditions": {},
+    "currentMeds": [],
+    "selectedModules": [
+      "htn"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_htn_bp_target_evaluation",
+        "action": "CONSIDER"
+      },
+      {
+        "drugId": "amlodipine",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Theo AHA/ACC 2025, bệnh nhân THA Giai đoạn 1 (130–139/80–89 mmHg) có nguy cơ 10 năm PREVENT ≥ 7.5% được chỉ định khởi trị thuốc hạ áp."
+}

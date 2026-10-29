@@ -1,0 +1,17 @@
+{
+  "itemId": "salmeterol",
+  "contentHash": "35aafb122435236974b7cc9e4402d4827ace7995e2d37642c24e9389d990d7fc",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "salmeterol",
+      "contentHash": "9d5ec3f4f001f92e",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

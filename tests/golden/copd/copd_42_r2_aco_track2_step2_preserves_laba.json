@@ -1,0 +1,76 @@
+{
+  "id": "copd_42_r2_aco_track2_step2_preserves_laba",
+  "titleVi": "Hồi quy R2 (COPD-R1V2-01): Đồng chọn ['copd', 'asthma'] ở GINA Track 2 Bậc 2 – Kê bộ ba đủ ICS+LABA+LAMA (không mất LABA)",
+  "source": "GOLD 2026 p. 75 & GINA 2026 Track 2 Step 2 (COPD-R1V2-01)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_42",
+    "age": 58,
+    "sex": "female",
+    "weight": 55,
+    "height": 158,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 74,
+    "conditions": {
+      "copd": true,
+      "asthma": true
+    },
+    "selectedModules": [
+      "copd",
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "fev1FvcRatio": 0.55,
+      "fev1PredPct": 64,
+      "mmrc": 2,
+      "cat": 14,
+      "moderateExacerbations": 0,
+      "hospitalizations": 0,
+      "bloodEos": 200,
+      "currentInhaler": "none",
+      "smokingStatus": "never",
+      "currentTrack": "track2",
+      "currentStep": 2,
+      "daytimeSymptomsMoreThanTwiceWeek": false,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "tiotropium_olodaterol",
+        "ruleId": "rec_copd_aco_add_laba_lama",
+        "action": "START"
+      },
+      {
+        "drugId": "fluticasone_propionate",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "tiotropium",
+        "action": "START"
+      }
+    ]
+  }
+}

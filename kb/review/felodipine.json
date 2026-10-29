@@ -1,0 +1,26 @@
+{
+  "itemId": "felodipine",
+  "contentHash": "bad7cdcca2bc9dfe2efe8ee2215a7aa216e5e443eb4d8a5d133f0f010a52de4a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "felodipine",
+      "contentHash": "ef7a2fe694b52972",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:13:33.000Z",
+          "role": "Hypertension Specialist (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Felodipine (Felodipine) đầy đủ liều lượng, classes (dhp_ccb), dải thận, thai kỳ/cho con bú, chống chỉ định máy đọc và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:13:33.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

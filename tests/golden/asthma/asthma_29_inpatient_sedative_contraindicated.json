@@ -1,0 +1,63 @@
+{
+  "id": "asthma_29_inpatient_sedative_contraindicated",
+  "titleVi": "Cơn hen cấp nội viện: Chống chỉ định thuốc an thần (Diazepam)",
+  "source": "GINA 2026 / BYT 5850 / R1-11",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_29",
+    "name": "Trần Thị S (50 tuổi)",
+    "age": 50,
+    "sex": "female",
+    "weight": 58,
+    "sbp": 135,
+    "dbp": 84,
+    "hr": 105,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "diazepam",
+        "name": "Diazepam",
+        "dose": "5 mg",
+        "freq": "khi cần"
+      }
+    ],
+    "customInputs": {
+      "isAcuteExacerbation": true,
+      "speechAbility": "sentences",
+      "respiratoryRate": 24,
+      "spo2": 94
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "diazepam",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bệnh nhân cơn hen cấp dùng thuốc an thần Diazepam -> Chống chỉ định Class III do ức chế trung tâm hô hấp."
+}

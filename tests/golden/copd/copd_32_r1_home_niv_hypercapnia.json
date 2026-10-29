@@ -1,0 +1,74 @@
+{
+  "id": "copd_32_r1_home_niv_hypercapnia",
+  "titleVi": "Hồi quy R1: COPD ổn định có tăng CO₂ máu mạn tính nặng (PaCO₂ ≥ 53 mmHg) cân nhắc thở máy Home NIV",
+  "source": "GOLD 2026 Report p. 89 / BYT QĐ 2131/2026 (COPD-R1-06)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_32",
+    "age": 72,
+    "sex": "male",
+    "weight": 54,
+    "height": 161,
+    "sbp": 124,
+    "dbp": 74,
+    "hr": 80,
+    "conditions": {
+      "copd": true
+    },
+    "selectedModules": [
+      "copd"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "tiotropium_olodaterol",
+        "name": "Spiolto Respimat",
+        "dose": 5,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "fev1FvcRatio": 0.4,
+      "fev1PredPct": 28,
+      "mmrc": 3,
+      "cat": 22,
+      "currentInhaler": "laba_lama",
+      "moderateExacerbations": 0,
+      "hospitalizations": 1,
+      "bloodEos": 90,
+      "acuteExacerbation": false,
+      "abgPh": 7.38,
+      "abgPaco2": 56,
+      "restingSpo2": 90,
+      "smokingStatus": "former"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_copd_home_niv",
+        "action": "CONSIDER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_copd_inpatient_niv",
+        "action": "START"
+      }
+    ]
+  }
+}

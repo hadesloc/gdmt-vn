@@ -1,0 +1,146 @@
+{
+  "id": "atorvastatin",
+  "nameVi": "Atorvastatin",
+  "inn": "Atorvastatin",
+  "class": "Statin",
+  "classes": [
+    "statin"
+  ],
+  "vnBrands": [
+    "Lipitor",
+    "Atorvastatin Stella",
+    "Atorlip",
+    "Torvast",
+    "Lipistat"
+  ],
+  "forms": [
+    "Viên nén bao phim 10 mg",
+    "Viên nén bao phim 20 mg",
+    "Viên nén bao phim 40 mg",
+    "Viên nén bao phim 80 mg"
+  ],
+  "start": {
+    "amount": 20,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "20 mg uống 1 lần/ngày (nguy cơ cao/rất cao khởi đầu 40–80 mg/ngày)"
+  },
+  "target": {
+    "amount": 80,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "40–80 mg uống 1 lần/ngày (cường độ cao)"
+  },
+  "titration": {
+    "step": "Tăng liều sau 4–12 tuần dựa trên khoảng cách tới đích LDL-C",
+    "intervalDays": 28,
+    "maxDose": "80 mg 1 lần/ngày (tối đa 20 mg/ngày khi dùng kèm clarithromycin hoặc itraconazole)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "10–80 mg 1 lần/ngày",
+      "note": "Không cần chỉnh liều ở bệnh nhân suy thận kể cả suy thận nặng; ở bệnh nhân lọc máu chưa có ASCVD không khuyến cáo khởi trị mới",
+      "citationIds": [
+        "fda.atorvastatin.renal",
+        "fda.atorvastatin.dose",
+        "esc.lipid.2019.ckd_dialysis_no_init"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_atorva_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối statin trong thai kỳ và thời kỳ cho con bú",
+      "citationIds": [
+        "esc.lipid.2024.ccs_pregnancy",
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    },
+    {
+      "id": "gate_atorva_alt",
+      "parameter": "ALT",
+      "operator": ">=",
+      "threshold": 3,
+      "unit": "x ULN",
+      "action": "hold",
+      "messageVi": "Men gan ALT tăng >= 3 lần ULN: Tạm ngừng hoặc giảm liều statin và kiểm tra lại sau 4–6 tuần",
+      "citationIds": [
+        "esc.lipid.2019.monitoring_alt_elevation",
+        "acc.lipid.2026.transaminase_3x_uln"
+      ]
+    },
+    {
+      "id": "gate_atorva_ck_rhabdo",
+      "parameter": "CK",
+      "operator": ">",
+      "threshold": 10,
+      "unit": "x ULN",
+      "action": "stop",
+      "messageVi": "Men cơ CK > 10 lần ULN: Ngừng statin khẩn cấp, đánh giá chức năng thận và xử trí nguy cơ tiêu cơ vân",
+      "citationIds": [
+        "esc.lipid.2019.monitoring_ck_10x_stop"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định/tránh phối hợp với Gemfibrozil và Cyclosporine do nguy cơ tiêu cơ vân kịch phát",
+    "Giới hạn liều Atorvastatin tối đa 20 mg/ngày khi dùng kèm clarithromycin, itraconazole, erythromycin, saquinavir/ritonavir hoặc darunavir/ritonavir; tạm ngưng hoặc tránh phối hợp với nirmatrelvir/ritonavir (Paxlovid), tipranavir/ritonavir, atazanavir/cobicistat",
+    "Thận trọng khi phối hợp với Colchicine hoặc Amiodarone: tăng nguy cơ bệnh cơ/tiêu cơ vân, cần theo dõi sát đau cơ và CK",
+    "Thận trọng ở bệnh nhân có bệnh nhược cơ (myasthenia gravis / nhược cơ thể mắt): statin hiếm gặp có thể khởi phát mới hoặc làm nặng triệu chứng nhược cơ"
+  ],
+  "citationIds": [
+    "fda.atorvastatin.dose",
+    "fda.atorvastatin.renal",
+    "fda.atorvastatin.clarithromycin_dose_cap",
+    "fda.atorvastatin.itraconazole_limit_20mg",
+    "fda.colchicine.statin_myopathy_cases",
+    "acc.lipid.2026.statin_doses",
+    "esc.lipid.2024.ccs_pregnancy",
+    "fda.atorvastatin.cyclosporine_gemfibrozil_not_rec",
+    "fda.atorvastatin.tipranavir_not_rec",
+    "acc.lipid.2026.ddi_table22_cobicistat_contra",
+    "fda.atorvastatin.myasthenia_gravis"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối statin trong thai kỳ do nguy cơ ảnh hưởng phát triển phôi thai (FDA / ESC 2024 CCS)",
+    "citationIds": [
+      "esc.lipid.2024.ccs_pregnancy",
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "lactation": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong thời kỳ cho con bú do thuốc bài tiết qua sữa mẹ và nguy cơ tác dụng phụ trên trẻ sơ sinh (FDA / ESC)",
+    "citationIds": [
+      "esc.lipid.2024.ccs_pregnancy",
+      "esc.lipid.2019.pregnancy_all_llt_contra"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định tuyệt đối statin trong thai kỳ và cho con bú",
+      "citationIds": [
+        "esc.lipid.2024.ccs_pregnancy",
+        "esc.lipid.2019.pregnancy_all_llt_contra"
+      ]
+    },
+    {
+      "code": "active_liver_disease",
+      "messageVi": "Chống chỉ định khi có bệnh gan tiến triển hoặc tăng men gan dai dẳng >= 3 lần ULN chưa rõ nguyên nhân",
+      "citationIds": [
+        "esc.lipid.2019.monitoring_alt_elevation"
+      ]
+    }
+  ]
+}

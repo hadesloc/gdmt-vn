@@ -1,0 +1,156 @@
+{
+  "id": "labetalol",
+  "nameVi": "Labetalol",
+  "inn": "Labetalol",
+  "class": "Chẹn Alpha-1 và Beta giao cảm phối hợp",
+  "classes": [
+    "bb_nonselective",
+    "alpha1_blocker"
+  ],
+  "vnBrands": [
+    "Trandate"
+  ],
+  "forms": [
+    "Viên nén bao phim 100 mg",
+    "Viên nén bao phim 200 mg",
+    "Ống tiêm tĩnh mạch 20 mg / 4 mL (5 mg/mL)",
+    "Ống tiêm tĩnh mạch 100 mg / 20 mL (5 mg/mL)"
+  ],
+  "start": {
+    "amount": "100–200",
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "Đường uống thai kỳ/ngoại trú (Cấp cứu TM: tiêm chậm 10–20 mg trong 2 phút hoặc 0,3–1,0 mg/kg; truyền TM 0,4–1,0 mg/kg/giờ)"
+  },
+  "target": {
+    "amount": "200–400",
+    "unit": "mg",
+    "frequency": "2–3 lần/ngày",
+    "route": "uống",
+    "description": "Uống tối đa 1200–2400 mg/ngày; đường TM tối đa 3 mg/kg/giờ (tổng liều tích lũy ≤ 300 mg/24 giờ)"
+  },
+  "titration": {
+    "step": "Uống: tăng bậc sau 2–3 ngày; Tiêm TM cấp cứu: lặp lại 20–80 mg mỗi 10 phút hoặc chỉnh tốc độ truyền 0,4–3 mg/kg/giờ (tối đa 300 mg/24 giờ)",
+    "intervalDays": 2,
+    "maxDose": "Uống 2400 mg/ngày (thai kỳ) | Tĩnh mạch tích lũy 300 mg/24 giờ"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "Không cần chỉnh liều khởi đầu; chuẩn độ theo nhịp tim và huyết áp",
+      "citationIds": [
+        "aha.acc.2025.iv_labetalol",
+        "aha.acc.2025.pregnancy_table22_full"
+      ],
+      "note": "Chuyển hóa chủ yếu qua liên hợp glucuronide tại gan; an toàn ở suy thận nhưng theo dõi huyết áp tư thế và nhịp tim."
+    }
+  ],
+  "hepatic": {
+    "status": "caution",
+    "notesVi": "Nguy cơ tổn thương tế bào gan / hoại tử gan nặng hiếm gặp; sinh khả dụng đường uống tăng ở xơ gan — cần giảm liều và ngưng ngay nếu vàng da hoặc tăng men gan.",
+    "citationIds": [
+      "aha.acc.2025.pregnancy_table22_full"
+    ]
+  },
+  "gates": [
+    {
+      "id": "gate_labetalol_hr_60",
+      "parameter": "HR",
+      "operator": "<",
+      "threshold": 60,
+      "unit": "bpm",
+      "action": "contra",
+      "messageVi": "Chống chỉ định Labetalol khi nhịp tim < 60 lần/phút.",
+      "citationIds": [
+        "aha.acc.2025.iv_labetalol",
+        "aha.acc.2025.table27_aortic_acs"
+      ]
+    },
+    {
+      "id": "gate_labetalol_sbp_100",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 100,
+      "unit": "mmHg",
+      "action": "hold",
+      "messageVi": "Tạm hoãn Labetalol khi HATT < 100 mmHg.",
+      "citationIds": [
+        "aha.acc.2025.table27_aortic_acs"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "compatible",
+    "notesVi": "Thuốc lựa chọn hàng đầu số 1 cho cả THA mạn tính/thai kỳ (đường uống) và cấp cứu tiền sản giật nặng/sản giật (đường TM) theo ESC 2024, AHA/ACC 2025 và VSH/VNHA 2022.",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_first_line",
+      "aha.acc.2025.pregnancy_recs",
+      "aha.acc.2025.pregnancy_table22_full"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Bài tiết nồng độ rất thấp qua sữa mẹ; an toàn cho phụ nữ cho con bú (theo dõi nhịp chậm/hạ đường huyết sơ sinh ở trẻ sinh cực non).",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_lactation_thiazide",
+      "vsh.htn.2022.pregnancy_table16_drugs_postpartum"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "asthma",
+      "messageVi": "Hen phế quản hoặc bệnh đường thở phản ứng (co thắt phế quản nặng do chẹn beta không chọn lọc)",
+      "citationIds": [
+        "aha.acc.2025.iv_labetalol",
+        "aha.acc.2025.pregnancy_table22_full",
+        "vsh.htn.2022.bb_contraindications_table11"
+      ]
+    },
+    {
+      "code": "copd",
+      "messageVi": "Bệnh phổi tắc nghẽn mạn tính có co thắt phế quản (obstructive pulmonary disease)",
+      "citationIds": [
+        "aha.acc.2025.iv_labetalol"
+      ]
+    },
+    {
+      "code": "decompensated_heart_failure",
+      "messageVi": "Suy tim mất bù cấp hoặc sốc tim",
+      "citationIds": [
+        "aha.acc.2025.iv_labetalol",
+        "aha.acc.2025.pregnancy_table22_full"
+      ]
+    },
+    {
+      "code": "av_block_2_3",
+      "messageVi": "Block nhĩ thất độ 2 hoặc độ 3, suy nút xoang chưa đặt máy tạo nhịp",
+      "citationIds": [
+        "aha.acc.2025.iv_labetalol",
+        "vsh.htn.2022.bb_contraindications_table11"
+      ]
+    },
+    {
+      "code": "severe_bradycardia",
+      "messageVi": "Nhịp tim chậm (< 60 lần/phút)",
+      "citationIds": [
+        "aha.acc.2025.iv_labetalol",
+        "vsh.htn.2022.bb_contraindications_table11"
+      ]
+    }
+  ],
+  "interactions": [
+    "Verapamil / Diltiazem: phối hợp làm tăng nguy cơ nhịp chậm nặng, block nhĩ thất và suy tim — tránh dùng đồng thời.",
+    "Độc tính gan hiếm gặp nhưng nghiêm trọng: kiểm tra AST/ALT nếu có mệt mỏi, nước tiểu sẫm màu hoặc vàng da.",
+    "Có thể gây dương tính giả xét nghiệm catecholamine/metanephrine niệu bằng phương pháp huỳnh quang/sắc ký cũ khi tầm soát u tủy thượng thận."
+  ],
+  "citationIds": [
+    "aha.acc.2025.iv_labetalol",
+    "aha.acc.2025.pregnancy_recs",
+    "aha.acc.2025.pregnancy_table22_full",
+    "esc.htn.2024.pregnancy_first_line",
+    "vsh.htn.2022.bb_contraindications_table11"
+  ]
+}

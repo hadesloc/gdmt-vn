@@ -1,0 +1,49 @@
+{
+  "id": "ckd_55_vn_profile_g4_nondm_losartan_not_perindopril",
+  "titleVi": "Ngoại trú (Hồ sơ VN) - CKD G4 không ĐTĐ có UACR A3 -> Chọn khởi trị ARB Losartan 25–50 mg/ngày thay vì Perindopril theo BYT 2024 Bảng 12 (Regression CKD-R2-R1-09)",
+  "source": "Hướng dẫn BYT 2024 Bệnh thận mạn Bảng 12 (tr. 38–39) & KDIGO 2024 Rec 3.6.1",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_55",
+    "name": "BN CKD 55",
+    "age": 67,
+    "sex": "male",
+    "weight": 64,
+    "sbp": 144,
+    "dbp": 84,
+    "hr": 74,
+    "scr": 295,
+    "k": 4.5,
+    "uacr": 75,
+    "conditions": {
+      "ckd": true,
+      "htn": true
+    },
+    "currentMeds": [],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "losartan", "action": "START", "doseContains": "25" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "perindopril", "action": "START" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R2-R1-09: Theo BYT 2024 Bảng 12, Perindopril không sử dụng khi CrCl < 30 mL/phút; ở hồ sơ VN hệ thống tự động chọn ARB Losartan liều chỉnh thận."
+}

@@ -1,0 +1,54 @@
+{
+  "id": "ckd_35_sglt2i_continue_egfr_ge20",
+  "titleVi": "Ngoại trú - Bệnh nhân đang dùng Dapagliflozin 10 mg có eGFR ~26 (>= 20) -> Phát khuyến cáo CONTINUE rõ ràng (Regression CKD-R2-06)",
+  "source": "KDIGO 2024 CKD Rec 3.7.1 & fda.dapagliflozin.ckd_dose",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_35",
+    "name": "BN CKD 35",
+    "age": 65,
+    "sex": "male",
+    "weight": 70,
+    "sbp": 128,
+    "dbp": 76,
+    "hr": 72,
+    "scr": 230,
+    "k": 4.5,
+    "uacr": 35,
+    "conditions": {
+      "ckd": true,
+      "dm": true,
+      "htn": true
+    },
+    "currentMeds": [
+      { "drugId": "dapagliflozin", "name": "Forxiga 10 mg", "dose": 10, "unit": "mg" },
+      { "drugId": "losartan", "name": "Cozaar 100 mg", "dose": 100, "unit": "mg" }
+    ],
+    "selectedModules": ["ckd"]
+  },
+  "expect": {
+    "mustInclude": [
+      { "drugId": "dapagliflozin", "action": "CONTINUE" }
+    ],
+    "mustNotInclude": [
+      { "drugId": "dapagliflozin", "action": "START" },
+      { "drugId": "dapagliflozin", "action": "STOP" }
+    ]
+  },
+  "descriptionVi": "Khóa hồi quy CKD-R2-06: Không bị rơi vào khoảng trống im lặng khi bệnh nhân đã đang dùng SGLT2i và eGFR >= 20 mL/phút/1.73m²."
+}

@@ -1,0 +1,140 @@
+{
+  "id": "captopril",
+  "nameVi": "Captopril",
+  "inn": "Captopril",
+  "class": "ACEi",
+  "classes": [
+    "acei"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Capoten",
+    "Captopril Stada"
+  ],
+  "forms": [
+    "Viên nén 25 mg",
+    "Viên nén 50 mg"
+  ],
+  "start": {
+    "amount": 25,
+    "unit": "mg",
+    "frequency": "2–3 lần/ngày",
+    "route": "uống",
+    "description": "25 mg x 2–3 lần/ngày"
+  },
+  "target": {
+    "amount": 50,
+    "unit": "mg",
+    "frequency": "3 lần/ngày",
+    "route": "uống",
+    "description": "50 mg x 3 lần/ngày"
+  },
+  "titration": {
+    "step": 25,
+    "intervalDays": 7,
+    "maxDose": "150 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "25–50 mg x 3 lần/ngày",
+      "citationIds": [
+        "kdigo.ckd.2024.rec_3_6_1_rasi_a3_nondm",
+        "byt.ckd.2024.table_12_acei_dosing"
+      ]
+    },
+    {
+      "eGFRFrom": 15,
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "12.5–25 mg x 2–3 lần/ngày (cách mỗi 12–18 giờ; tối đa 75% liều chuẩn)",
+      "note": "Thời gian bán thải kéo dài khi chức năng thận giảm: dùng tối đa 75% liều hàng ngày, giãn khoảng cách mỗi 12–18 giờ (BYT 2024 Bảng 12)",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_7_continue_egfr_below_30",
+        "byt.ckd.2024.table_12_acei_dosing"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "6.25–25 mg x 1–2 lần/ngày (mỗi 24 giờ, tối đa 50% liều chuẩn; uống sau buổi lọc máu)",
+      "note": "Khi CrCl < 10–15 mL/phút: giảm còn tối đa 50% liều chuẩn mỗi 24 giờ; bệnh nhân lọc máu uống sau buổi lọc máu (khoảng 40% qua màng lọc - BYT 2024 Bảng 12)",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_5_rasi_reduce_stop",
+        "byt.ckd.2024.table_12_acei_dosing"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_captopril_k_max",
+      "parameter": "K",
+      "operator": ">",
+      "threshold": 5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm hoãn captopril nếu K+ > 5.0 mmol/L",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_6_2_rasi_monitoring"
+      ]
+    },
+    {
+      "id": "gate_captopril_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối nhóm thuốc ức chế men chuyển trong thai kỳ (Boxed Warning: độc tính phôi thai và tử vong chu sinh)",
+      "citationIds": [
+        "ema.perindopril.pregnancy",
+        "fda.losartan.boxed_pregnancy"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định phối hợp ARB hoặc ARNI",
+    "Bắt buộc khoảng trống đào thải (washout period) ít nhất 36 giờ trước hoặc sau khi dùng Sacubitril/Valsartan (ARNI) để tránh phù mạch thanh quản cấp tử vong"
+  ],
+  "citationIds": [
+    "kdigo.ckd.2024.rec_3_6_1_rasi_a3_nondm",
+    "ema.perindopril.pregnancy",
+    "esc.2025.pregnancy.rasi_lactation",
+    "byt.ckd.2024.table_12_acei_dosing"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định tuyệt đối nhóm thuốc ức chế men chuyển trong thai kỳ (Boxed Warning FDA: độc tính phôi thai, vô niệu thai nhi, thiểu ối và tử vong chu sinh); ngừng thuốc ngay khi phát hiện có thai",
+    "citationIds": [
+      "ema.perindopril.pregnancy",
+      "fda.losartan.boxed_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "An toàn / tương thích khi cho con bú theo ESC 2025 (bài tiết lượng rất thấp qua sữa mẹ; thận trọng theo dõi nếu trẻ sinh non hoặc sơ sinh tháng đầu)",
+    "citationIds": [
+      "esc.2025.pregnancy.rasi_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định tuyệt đối ACEi trong thai kỳ (Boxed Warning)",
+      "citationIds": [
+        "ema.perindopril.pregnancy",
+        "fda.losartan.boxed_pregnancy"
+      ]
+    },
+    {
+      "code": "angioedema_history",
+      "messageVi": "Chống chỉ định tuyệt đối khi có tiền sử phù mạch do ACEi",
+      "citationIds": [
+        "ema.perindopril.pregnancy"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "lipid_10_outpatient_alt_elevation",
+  "titleVi": "Tăng men gan ALT >= 3 lần ULN - Tạm hoãn Statin",
+  "source": "ESC/EAS 2019 / esc.lipid.2019.monitoring_alt_elevation",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 58,
+    "sex": "male",
+    "weight": 68,
+    "height": 165,
+    "sbp": 125,
+    "dbp": 75,
+    "hr": 72,
+    "scr": 80,
+    "tc": 4.8,
+    "hdl": 1,
+    "ldl": 2.8,
+    "tg": 1.6,
+    "conditions": {
+      "ascvd": true
+    },
+    "customInputs": {
+      "altUlnTimes": 3.5
+    },
+    "currentMeds": [
+      {
+        "drugId": "atorvastatin",
+        "name": "Atorvastatin",
+        "dose": 40,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "HOLD"
+      }
+    ],
+    "mustNotInclude": []
+  },
+  "descriptionVi": "ALT >= 3x ULN yêu cầu tạm ngừng hoặc giảm liều statin."
+}

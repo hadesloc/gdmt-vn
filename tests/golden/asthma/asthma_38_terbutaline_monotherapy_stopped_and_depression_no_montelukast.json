@@ -1,0 +1,75 @@
+{
+  "id": "asthma_38_terbutaline_monotherapy_stopped_and_depression_no_montelukast",
+  "titleVi": "Bệnh nhân dùng Terbutaline đơn độc kèm trầm cảm (không dùng Montelukast): STOP Terbutaline, không cảnh báo giả Montelukast",
+  "source": "GINA 2026 / ASTHMA-R2-09 / ASTHMA-R2-12",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_38",
+    "name": "Nữ 33 tuổi",
+    "age": 33,
+    "sex": "female",
+    "weight": 54,
+    "sbp": 116,
+    "dbp": 74,
+    "hr": 78,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true,
+      "depression": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "terbutaline",
+        "name": "Bricanyl Turbuhaler",
+        "dose": "0.5 mg khi cần",
+        "freq": "khi cần"
+      }
+    ],
+    "customInputs": {
+      "currentTrack": "track1",
+      "currentStep": 1,
+      "daytimeSymptomsMoreThanTwiceWeek": true,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": true,
+      "activityLimitationDueToAsthma": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "terbutaline",
+        "action": "STOP"
+      },
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "montelukast",
+        "action": "MONITOR"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Đang dùng Terbutaline đơn độc bị STOP đúng drugId terbutaline (không gán nhầm salbutamol), đồng thời có trầm cảm nhưng không dùng Montelukast nên không phát cảnh báo giả Montelukast."
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.theophylline_max_mg_kg_day",
+  "contentHash": "c07bc99b8fe76499fe95c268f9f9512507e515cddd8384ba624080348a074bcd",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.theophylline_max_mg_kg_day",
+      "contentHash": "901eee587f0b054c",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

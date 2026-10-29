@@ -1,0 +1,26 @@
+{
+  "itemId": "gout.nsaid.egfr_caution_min",
+  "contentHash": "711916ef6bcff39664e674054b002a26f78a0d816ac558bf8b92b99a902310d6",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "gout.nsaid.egfr_caution_min",
+      "contentHash": "dfe4d42a3ed2b1d6",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:19.049Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra tính toàn vẹn của Threshold ID: gout.nsaid.egfr_caution_min"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:19.049Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

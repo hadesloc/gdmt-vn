@@ -1,0 +1,26 @@
+{
+  "itemId": "af.cha2ds2vasc.us_male_high",
+  "contentHash": "5959d057afee47cf872b658facbdf36dd421dea7658f004adbddf0810447fc5e",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.cha2ds2vasc.us_male_high",
+      "contentHash": "13000d340bfaea35",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.cha2ds2vasc.us_male_high (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

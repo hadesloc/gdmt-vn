@@ -1,0 +1,17 @@
+{
+  "itemId": "metformin",
+  "contentHash": "73434450e52c6eda0303b221d80e1e8dbde600eb9612be43ff6bc10c2cd50a63",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "metformin",
+      "contentHash": "68be8836b0136ca4",
+      "status": "draft",
+      "reports": [],
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

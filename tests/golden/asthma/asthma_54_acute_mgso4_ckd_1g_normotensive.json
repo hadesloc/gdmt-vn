@@ -1,0 +1,71 @@
+{
+  "id": "asthma_54_acute_mgso4_ckd_1g_normotensive",
+  "titleVi": "Cơn hen nguy kịch trên nền suy thận: bác sĩ xác nhận MgSO4, không tự tính liều giảm",
+  "source": "GINA 2026 / BYT 1851/2020 / ASTHMA-R3-R1-07 / ASTHMA-R3-R2-03",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_54",
+    "name": "Nam 68 tuổi",
+    "age": 68,
+    "sex": "male",
+    "weight": 60,
+    "sbp": 118,
+    "dbp": 72,
+    "hr": 124,
+    "rhythm": "sinus",
+    "scr": 280,
+    "conditions": {
+      "asthma": true,
+      "ckd": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "isAcuteExacerbation": true,
+      "silentChest": true,
+      "spo2": 85,
+      "respiratoryRate": 34
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_asthma_acute_life_threatening_icu",
+        "action": "REFER"
+      },
+      {
+        "drugId": "magnesium_sulfate",
+        "action": "DEFER"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "magnesium_sulfate",
+        "action": "START"
+      },
+      {
+        "drugId": "magnesium_sulfate",
+        "action": "UPTITRATE"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Suy thận nặng, huyết áp ổn định: tiếp tục gói hồi sức đầu tay và REFER ICU; DEFER MgSO4 bổ trợ để xác nhận chỉ định/liều riêng, không suy ra 1 g từ nguồn không hỗ trợ."
+}

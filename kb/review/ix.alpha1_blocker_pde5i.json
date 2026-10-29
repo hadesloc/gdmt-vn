@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.alpha1_blocker_pde5i",
+  "contentHash": "8c01e5ce32aa84524f60ed4ea44ebddb79252ef68a92534454a0678a99a74b68",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.alpha1_blocker_pde5i",
+      "contentHash": "6adeee5ff76a5264",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T17:00:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.alpha1_blocker_pde5i."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T17:00:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

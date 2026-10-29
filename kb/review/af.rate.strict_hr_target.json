@@ -1,0 +1,26 @@
+{
+  "itemId": "af.rate.strict_hr_target",
+  "contentHash": "aa32d6216739ce95173b493d038a9a09f81128ad6baab4a6ac40e1ac9d12c9f1",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.rate.strict_hr_target",
+      "contentHash": "20185af3d6adc8c0",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.rate.strict_hr_target (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

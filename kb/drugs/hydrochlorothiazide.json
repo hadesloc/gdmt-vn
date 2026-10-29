@@ -1,0 +1,173 @@
+{
+  "id": "hydrochlorothiazide",
+  "nameVi": "Hydrochlorothiazide (HCTZ)",
+  "inn": "Hydrochlorothiazide",
+  "class": "Lợi tiểu Thiazide",
+  "classes": [
+    "thiazide_diuretic"
+  ],
+  "qtRisk": "conditional",
+  "vnBrands": [
+    "Hypothiazid",
+    "Cozaar XQ / Hyzaar (phối hợp Losartan)",
+    "Co-Diovan (phối hợp Valsartan)",
+    "Micardis Plus (phối hợp Telmisartan)"
+  ],
+  "forms": [
+    "Viên nén 12.5 mg",
+    "Viên nén 25 mg"
+  ],
+  "start": {
+    "amount": 12.5,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Uống buổi sáng (liều thông thường 12,5–25 mg/ngày)"
+  },
+  "target": {
+    "amount": 25,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "Tối đa 50 mg/ngày (liều > 25 mg ít tăng thêm hạ áp nhưng tăng rối loạn điện giải/chuyển hóa)"
+  },
+  "titration": {
+    "step": "Tăng từ 12,5 mg lên 25 mg 1 lần/ngày sau 2–4 tuần nếu cần",
+    "intervalDays": 14,
+    "maxDose": "50 mg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "12.5–25 mg 1 lần/ngày",
+      "citationIds": [
+        "vsh.htn.2022.drugs_table_diuretic",
+        "aha.acc.2025.table13_doses_extra"
+      ],
+      "note": "Hiệu quả tốt khi eGFR ≥ 30 mL/phút/1,73m²."
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "not_rec",
+      "continue": "not_rec",
+      "citationIds": [
+        "esc.htn.2024.ckd_loop_diuretic"
+      ],
+      "note": "Kém hiệu quả khi eGFR < 30 mL/phút/1,73m² và chống chỉ định khi vô niệu — khuyến cáo chuyển sang lợi tiểu quai (furosemide/torsemide)."
+    }
+  ],
+  "hepatic": {
+    "status": "caution",
+    "notesVi": "Thận trọng ở xơ gan/suy gan nặng do rối loạn nước-điện giải dễ thúc đẩy hôn mê gan.",
+    "citationIds": [
+      "aha.acc.2025.table13_chlorthalidone"
+    ]
+  },
+  "gates": [
+    {
+      "id": "gate_hctz_egfr_30",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "avoid",
+      "messageVi": "HCTZ giảm mạnh hiệu quả khi eGFR < 30 mL/phút/1,73m² — chuyển sang lợi tiểu quai.",
+      "citationIds": [
+        "esc.htn.2024.ckd_loop_diuretic"
+      ]
+    },
+    {
+      "id": "gate_hctz_k_low",
+      "parameter": "K",
+      "operator": "<",
+      "threshold": 3.5,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm hoãn HCTZ khi K⁺ < 3,5 mmol/L để tránh hạ kali máu nặng và loạn nhịp.",
+      "citationIds": [
+        "esc.hf.2026.supp_diuretic_cautions"
+      ]
+    },
+    {
+      "id": "gate_hydrochlorothiazide_na_130",
+      "parameter": "Na",
+      "operator": "<",
+      "threshold": 130,
+      "unit": "mmol/L",
+      "action": "hold",
+      "messageVi": "Tạm ngưng/tránh khởi trị Hydrochlorothiazide (HCTZ) khi Natri máu < 130 mmol/L do nguy cơ hạ natri máu nặng tiến triển.",
+      "citationIds": [
+        "esc.hf.2026.supp_hyponatraemia_135",
+        "aha.acc.2025.table13_chlorthalidone"
+      ]
+    },
+    {
+      "id": "gate_hydrochlorothiazide_na_125",
+      "parameter": "Na",
+      "operator": "<",
+      "threshold": 125,
+      "unit": "mmol/L",
+      "action": "stop",
+      "messageVi": "Ngưng ngay Hydrochlorothiazide (HCTZ) khi hạ natri máu nặng (Na⁺ < 125 mmol/L) — nguy cơ phù não và co giật.",
+      "citationIds": [
+        "esc.hf.2026.supp_hyponatraemia_135",
+        "aha.acc.2025.table13_chlorthalidone"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Không khởi trị thường quy trong thai kỳ do giảm thể tích tuần hoàn nhau-thai; ưu tiên đổi sang methyldopa, labetalol hoặc nifedipine kéo dài (AHA Table 22 xếp hàng 2–3 hạn chế).",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_lactation_thiazide",
+      "aha.acc.2025.pregnancy_table22_full"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Liều thấp ≤ 25–50 mg bài tiết rất ít qua sữa mẹ; liều cao có thể ức chế tiết sữa.",
+    "citationIds": [
+      "esc.htn.2024.pregnancy_lactation_thiazide"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "anuria",
+      "messageVi": "Vô niệu hoặc suy thận nặng mất đáp ứng lợi tiểu",
+      "citationIds": [
+        "esc.htn.2024.ckd_loop_diuretic"
+      ]
+    },
+    {
+      "code": "sulfonamide_allergy",
+      "messageVi": "Dị ứng nặng với dẫn xuất sulfonamide",
+      "citationIds": [
+        "ema.indapamide.contraindications_hepatic"
+      ]
+    },
+    {
+      "code": "hypokalemia",
+      "messageVi": "Hạ kali máu kháng trị hoặc hạ natri máu nặng",
+      "citationIds": [
+        "aha.acc.2025.table13_chlorthalidone"
+      ]
+    }
+  ],
+  "interactions": [
+    "Lithium: giảm thải trừ lithium qua thận gây ngộ độc lithium nặng.",
+    "Bệnh gút / tăng acid uric máu: làm tăng acid uric huyết thanh và khởi phát cơn gút cấp (chống chỉ định tương đối nếu chưa dùng thuốc hạ urat).",
+    "Nhạy cảm ánh sáng (photosensitivity) và tăng nhẹ nguy cơ ung thư da không hắc tố khi dùng tích lũy kéo dài — khuyên chống nắng.",
+    "Digoxin / thuốc kéo dài QT: hạ kali và magie máu làm tăng nguy cơ loạn nhịp thất."
+  ],
+  "citationIds": [
+    "vsh.htn.2022.drugs_table_diuretic",
+    "aha.acc.2025.table13_doses_extra",
+    "aha.acc.2025.table13_chlorthalidone",
+    "esc.htn.2024.ckd_loop_diuretic",
+    "esc.htn.2024.gout_thiazide_caution",
+    "fda.chlorthalidone.contraindications",
+    "esc.hf.2026.supp_hyponatraemia_135"
+  ]
+}

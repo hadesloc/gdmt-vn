@@ -1,0 +1,77 @@
+{
+  "id": "asthma_11_step_down_stable_6m",
+  "titleVi": "Hen kiểm soát tốt ổn định 6 tháng: Xem xét hạ bậc giảm 25–50% liều ICS",
+  "source": "GINA 2026 Strategy Report Box 4-13",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_11",
+    "name": "Nữ 38 tuổi",
+    "age": 38,
+    "sex": "female",
+    "weight": 56,
+    "sbp": 116,
+    "dbp": 74,
+    "hr": 72,
+    "rhythm": "sinus",
+    "fev1Pct": 90,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "budesonide_formoterol",
+        "dose": "160/4.5 mcg x 1 nhát x 2 lần/ngày",
+        "freq": "2 lần/ngày"
+      }
+    ],
+    "customInputs": {
+      "currentTrack": "track1",
+      "currentStep": 3,
+      "daytimeSymptomsMoreThanTwiceWeek": false,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false,
+      "wellControlledMonths": 6,
+      "inhalerTechniqueCorrect": true,
+      "goodAdherence": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_asthma_step_down_consider",
+        "action": "CONSIDER"
+      },
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "REDUCE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "CONTINUE"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "BN Bậc 3 kiểm soát tốt ổn định 6 tháng liên tục -> Xem xét hạ bậc giảm 25–50% liều ICS duy trì."
+}

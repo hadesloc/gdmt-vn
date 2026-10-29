@@ -1,0 +1,129 @@
+{
+  "id": "acetazolamide",
+  "nameVi": "Acetazolamide",
+  "inn": "Acetazolamide",
+  "class": "Carbonic anhydrase inhibitor diuretic",
+  "classes": [
+    "carbonic_anhydrase_inhibitor"
+  ],
+  "vnBrands": [
+    "Diamox"
+  ],
+  "forms": [
+    "Lọ bột pha tiêm tĩnh mạch 500 mg",
+    "Viên nén 250 mg"
+  ],
+  "start": {
+    "amount": 500,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "tĩnh mạch",
+    "description": "500 mg tiêm tĩnh mạch x 1 lần/ngày phối hợp ngắn hạn (tối đa 3 ngày theo ADVOR) trên nền lợi tiểu quai tĩnh mạch khi quá tải dịch kháng trị"
+  },
+  "target": {
+    "amount": 500,
+    "unit": "mg",
+    "frequency": "1 lần/ngày (ngắn hạn)",
+    "route": "tĩnh mạch",
+    "description": "ngừng ngay khi hết quá tải dịch sung huyết (thường trong 3 ngày)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 20,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "500 mg tiêm tĩnh mạch x 1 lần/ngày ngắn hạn phối hợp lợi tiểu quai",
+      "citationIds": [
+        "esc.hf.2026.acute_acetazolamide_rec",
+        "esc.hf.2026.acute_acetazolamide_500mg"
+      ]
+    },
+    {
+      "eGFRTo": 20,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Tránh dùng / chống chỉ định khi suy thận nặng (eGFR < 20 mL/phút/1,73 m²) hoặc vô niệu (ADVOR loại trừ eGFR < 20)",
+      "citationIds": [
+        "esc.hf.2026.acute_acetazolamide_rec",
+        "esc.hf.2026.rasi_table_s4_k55"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_acetazolamide_na_low",
+      "parameter": "Na",
+      "operator": "<",
+      "threshold": 135,
+      "unit": "mmol/L",
+      "action": "avoid",
+      "messageVi": "Tránh dùng Acetazolamide khi đang hạ natri máu hoặc hạ kali máu (ESC 2026 Table S13)",
+      "citationIds": [
+        "esc.hf.2026.acute_acetazolamide_table_s13",
+        "esc.hf.2026.diuretic_hyponatraemia_gout_table_s7"
+      ]
+    },
+    {
+      "id": "gate_acetazolamide_k_low",
+      "parameter": "K",
+      "operator": "<=",
+      "threshold": 3.5,
+      "unit": "mmol/L",
+      "action": "avoid",
+      "messageVi": "Tránh dùng Acetazolamide khi hạ kali máu (K+ ≤ 3.5 mmol/L)",
+      "citationIds": [
+        "esc.hf.2026.acute_acetazolamide_table_s13",
+        "esc.hf.2026.hypokalaemia_3_5_diuretic"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Tránh dùng trong thai kỳ (đặc biệt tam cá nguyệt 1) trừ khi lợi ích cấp cứu vượt trội nguy cơ.",
+    "citationIds": [
+      "esc.preg.2025.diuretics_preg"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Bài tiết lượng nhỏ qua sữa mẹ; thận trọng theo dõi điện giải ở trẻ bú mẹ.",
+    "citationIds": [
+      "fda.hf.bumetanide_preg_lact"
+    ]
+  },
+  "hepatic": {
+    "status": "contra",
+    "childA": "caution",
+    "childB": "contra",
+    "childC": "contra",
+    "note": "Chống chỉ định ở xơ gan / suy gan nặng do giảm thanh thải amoniac gây thúc đẩy bệnh não gan.",
+    "notesVi": "Chống chỉ định ở xơ gan / suy gan nặng do giảm thanh thải amoniac gây thúc đẩy bệnh não gan.",
+    "citationIds": [
+      "fda.hf.bumetanide_contra_anuria_hepatic"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định ở xơ gan / suy gan nặng do nguy cơ khởi phát hôn mê gan",
+      "citationIds": [
+        "fda.hf.bumetanide_contra_anuria_hepatic"
+      ]
+    },
+    {
+      "code": "anuria",
+      "messageVi": "Chống chỉ định trong vô niệu hoặc suy thận nặng mất bù kèm nhiễm toan chuyển hóa tăng clo máu",
+      "citationIds": [
+        "fda.hf.bumetanide_contra_anuria_hepatic"
+      ]
+    }
+  ],
+  "interactions": [
+    "Tăng nguy cơ nhiễm toan chuyển hóa khi dùng cùng salicylat liều cao; tăng mất kali khi phối hợp lợi tiểu quai"
+  ],
+  "citationIds": [
+    "esc.hf.2026.acute_acetazolamide_rec",
+    "esc.hf.2026.acute_acetazolamide_500mg",
+    "esc.hf.2026.acute_acetazolamide_table_s13"
+  ]
+}

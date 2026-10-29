@@ -1,0 +1,63 @@
+{
+  "id": "af_27_inpatient_rvr_diltiazem_from_oncall",
+  "titleVi": "Nội viện Cấp cứu từ ON CALL (im_af_rvr_1940): Diltiazem IV kiểm soát tần số cấp",
+  "source": "on-call:im_af_rvr_1940 / esc.af.2024.non_dhp_ccb_contra_lvef40",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 68,
+    "sex": "male",
+    "weight": 72,
+    "height": 168,
+    "sbp": 132,
+    "dbp": 78,
+    "hr": 154,
+    "rhythm": "afib",
+    "scr": 95,
+    "lvef": 55,
+    "selectedModules": [
+      "af"
+    ],
+    "conditions": {
+      "af": true
+    },
+    "customInputs": {
+      "hemodynamicStability": "stable",
+      "afOnset": "more_than_48h_or_unknown"
+    },
+    "currentMeds": []
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "diltiazem",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "bisoprolol",
+        "action": "START"
+      },
+      {
+        "drugId": "verapamil",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Ca hoàn thiện từ ON CALL im_af_rvr_1940: Nam 68t, AF RVR 154 bpm, HA 132/78 mmHg ổn định, LVEF 55% -> Diltiazem IV hạ nhịp nhanh cấp tính."
+}

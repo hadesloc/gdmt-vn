@@ -1,0 +1,82 @@
+{
+  "id": "asthma_63_adolescent_14yo_foster_trelegy_age_guard",
+  "titleVi": "Thanh thiếu niên 14 tuổi (< 18 tuổi) đang dùng Foster (Beclometasone/Formoterol) & Trelegy: Bắt buộc STOP và SWITCH sang Symbicort",
+  "source": "SmPC Foster / FDA Label Trelegy / GINA 2026 / ASTHMA-R3-R1-04 / ASTHMA-R3-R2-12 / ASTHMA-R3-R3-06",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_63",
+    "name": "Nam 14 tuổi",
+    "age": 14,
+    "sex": "male",
+    "weight": 48,
+    "sbp": 108,
+    "dbp": 68,
+    "hr": 82,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "beclometasone_formoterol",
+        "dose": "1 nhát",
+        "freq": "2 lần/ngày"
+      },
+      {
+        "drugId": "fluticasone_umeclidinium_vilanterol",
+        "dose": "1 nhát",
+        "freq": "1 lần/ngày"
+      }
+    ],
+    "customInputs": {
+      "currentTrack": "track1",
+      "currentStep": 3,
+      "daytimeSymptomsMoreThanTwiceWeek": false,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "beclometasone_formoterol",
+        "action": "STOP"
+      },
+      {
+        "drugId": "fluticasone_umeclidinium_vilanterol",
+        "action": "STOP"
+      },
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "SWITCH"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "beclometasone_formoterol",
+        "action": "CONTINUE"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Foster (Beclometasone/Formoterol) và Trelegy Ellipta chỉ được cấp phép cho người trưởng thành ≥ 18 tuổi; ở thanh thiếu niên 12–17 tuổi phải STOP và SWITCH sang Budesonide/Formoterol (Symbicort, được phê duyệt ≥ 12 tuổi)."
+}

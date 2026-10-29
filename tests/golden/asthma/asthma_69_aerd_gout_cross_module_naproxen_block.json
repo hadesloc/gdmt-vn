@@ -1,0 +1,79 @@
+{
+  "id": "asthma_69_aerd_gout_cross_module_naproxen_block",
+  "titleVi": "Liên chuyên khoa Hen AERD + Cơn Gút cấp (> 36 giờ): Chặn cứng (AVOID) Naproxen không cho module Gout khởi trị NSAID gây phản vệ phế quản",
+  "source": "GINA 2026 AERD / ACR 2020 Gout / ASTHMA-R3-R2-02 / ASTHMA-R3-R3-02",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_69",
+    "name": "Nam 52 tuổi Hen AERD + Gút cấp",
+    "age": 52,
+    "sex": "male",
+    "weight": 72,
+    "sbp": 128,
+    "dbp": 80,
+    "hr": 82,
+    "rhythm": "sinus",
+    "scr": 80,
+    "conditions": {
+      "asthma": true,
+      "gout": true,
+      "aerd": true
+    },
+    "selectedModules": [
+      "asthma",
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "budesonide_formoterol",
+        "dose": "1 nhát",
+        "freq": "khi cần"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": true,
+      "flareHoursSinceOnset": 48,
+      "currentTrack": "track1",
+      "currentStep": 1,
+      "daytimeSymptomsMoreThanTwiceWeek": false,
+      "nightWakingDueToAsthma": false,
+      "relieverNeededMoreThanTwiceWeek": false,
+      "activityLimitationDueToAsthma": false
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "naproxen",
+        "action": "AVOID"
+      },
+      {
+        "drugId": "aspirin",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "naproxen",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Ở bệnh nhân cơn gút cấp đến muộn > 36h có chức năng thận bình thường, module Gout mặc định chọn START Naproxen; tuy nhiên trên cơ địa Hen mẫn cảm Aspirin/NSAID (AERD), module Hen phát AVOID Naproxen (priority 99) đè hoàn toàn START Naproxen trong merge engine, ngăn co thắt phế quản đe dọa tử vong."
+}

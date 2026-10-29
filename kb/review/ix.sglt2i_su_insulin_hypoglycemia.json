@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.sglt2i_su_insulin_hypoglycemia",
+  "contentHash": "c164596cc8d46425fbf307a78b3880a34f59114e9f607a9cc620ba17a6e8bc79",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.sglt2i_su_insulin_hypoglycemia",
+      "contentHash": "832cf77906959d2c",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:45:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.sglt2i_su_insulin_hypoglycemia."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:45:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

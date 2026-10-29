@@ -1,0 +1,62 @@
+{
+  "id": "dm2_51_inpatient_isolated_ketonemia_workup",
+  "titleVi": "Tăng ceton máu đơn độc chưa có toan chuyển hóa (pH >= 7.30, HCO3 >= 18): Cảnh báo đánh giá khí máu & ngừng SGLT2i",
+  "source": "ADA/EASD/JBDS/DTI 2024 Hyperglycemic Crises Consensus",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 50,
+    "sex": "male",
+    "weight": 68,
+    "height": 170,
+    "sbp": 124,
+    "dbp": 76,
+    "hr": 88,
+    "scr": 80,
+    "k": 4.3,
+    "glucose": 13.2,
+    "conditions": {
+      "dm": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "dm2"
+    ],
+    "customInputs": {
+      "inpatientUnit": "ward",
+      "inpatientEating": "normal",
+      "bloodKetones": 3.4,
+      "venousPh": 7.38,
+      "serumBicarb": 22
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_dm2_isolated_ketonemia_workup",
+        "action": "MONITOR"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "rec_dm2_dka_active_management",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Tăng BHB >= 3.0 mmol/L nhưng pH >= 7.30 và HCO3 >= 18 mmol/L chưa đủ tiêu chuẩn toan hóa của DKA: Phát cảnh báo đánh giá khoảng trống anion, bù dịch và theo dõi sát thay vì truyền insulin liều DKA mù quáng."
+}

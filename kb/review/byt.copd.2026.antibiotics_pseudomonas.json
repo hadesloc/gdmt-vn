@@ -1,0 +1,26 @@
+{
+  "itemId": "byt.copd.2026.antibiotics_pseudomonas",
+  "contentHash": "07e7b9b27180918db221a3cf9fcc49aaf499b8e5402b5a79e495cbc372a5619e",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "byt.copd.2026.antibiotics_pseudomonas",
+      "contentHash": "35c606b4f43b9fad",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T18:20:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked Round 3 COPD citation verbatim quote in PDF"
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T18:20:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "itemId": "ckd.kfre.referral_5y_max",
+  "contentHash": "3f1e87fd727c6ee744de8d4e21340228178df724d07050ed07f5a837b55eaf58",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ckd.kfre.referral_5y_max",
+      "contentHash": "437370fe7942eecf",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T00:57:07.124Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra không số mồ côi cho ngưỡng ckd.kfre.referral_5y_max."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T02:09:22.877Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

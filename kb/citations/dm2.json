@@ -1,0 +1,1811 @@
+[
+  {
+    "id": "ada.dm2.2026.hba1c_target_standard",
+    "sourceId": "ada_2026_soc_6",
+    "pdfPage": 4,
+    "locator": "Table 6.3 / PDF p. 4",
+    "quote": "Table 6.3—Summary of glycemic goals for many nonpregnant adults with \ndiabetes\nA1C <7.0% (<53 mmol/mol)* †",
+    "quoteVi": "Mục tiêu HbA1c cho đa số người trưởng thành không mang thai là < 7.0% (< 53 mmol/mol).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.hypo_rule_of_15",
+    "sourceId": "ada_2026_soc_6",
+    "pdfPage": 7,
+    "locator": "Recommendation 6.15 / PDF p. 7",
+    "quote": "6.15 Glucose is the preferred treat - \nment for the conscious individual with \nglucose <70  mg/dL (<3.9 mmol/L), al-\nthough any form of carbohydrate that \ncontains glucose may be used.",
+    "quoteVi": "Glucose là lựa chọn ưu tiên để xử trí hạ đường huyết ở người còn tỉnh có mức glucose < 70 mg/dL (< 3.9 mmol/L).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.hypo_rule_15min_recheck",
+    "sourceId": "ada_2026_soc_6",
+    "pdfPage": 10,
+    "locator": "Hypoglycemia Treatment / PDF p. 10",
+    "quote": "Individuals \nshould be counseled to recheck their glu-\ncose 15 min after ingesting carbohydrates \nand to repeat carbohydrate ingestion and \nseek care for ongoing hypoglycemia.",
+    "quoteVi": "Bệnh nhân cần được hướng dẫn kiểm tra lại đường huyết sau 15 phút và lặp lại nếu còn hạ đường huyết.",
+    "cor": "conditional",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.older_healthy_goal",
+    "sourceId": "ada_2026_soc_13",
+    "pdfPage": 8,
+    "locator": "Table 13.2 / PDF p. 8",
+    "quote": "Healthy (few coexisting \nchronic illnesses, \nintact cognitive and \nfunctional status)\nLonger remaining life \nexpectancy\n<7.0–7.5%  \n(<53–58 mmol/mol)",
+    "quoteVi": "Người cao tuổi khỏe mạnh, ít bệnh đồng mắc, chức năng nhận thức tốt: mục tiêu HbA1c < 7.0 - 7.5% (< 53 - 58 mmol/mol).",
+    "cor": "conditional",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.older_complex_goal",
+    "sourceId": "ada_2026_soc_13",
+    "pdfPage": 8,
+    "locator": "Table 13.2 / PDF p. 8",
+    "quote": "Complex/intermediate \n(multiple coexisting \nchronic illnesses† or \ntwo or more ADL \nimpairments or mild \nto moderate cognitive \nimpairment)\nVariable life expectancy. \nIndividualize goals, \nconsidering: \n• Severity of \ncomorbidities \n• Cognitive and functional \nlimitations \n• Frailty \n• Risk-to-benefit ratio of \ndiabetes medications \n• Individual preference \n<8.0% (<64 mmol/mol)",
+    "quoteVi": "Người cao tuổi có nhiều bệnh mạn tính phối hợp hoặc suy giảm chức năng/nhận thức nhẹ-vừa: mục tiêu HbA1c < 8.0% (< 64 mmol/mol).",
+    "cor": "conditional",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.older_very_complex_goal",
+    "sourceId": "ada_2026_soc_13",
+    "pdfPage": 8,
+    "locator": "Table 13.2 / PDF p. 8",
+    "quote": "Very complex/poor \nhealth (PALTC or  \nend-stage chronic \nillnesses‡ or \nmoderate to severe \ncognitive impairment \nor two or more ADL \nimpairments)\nLimited remaining life \nexpectancy makes \nbenefit minimal\nAvoid reliance on A1C; \nglucose management \ndecisions should be \nbased on avoiding \nhypoglycemia and \nsymptomatic \nhyperglycemia",
+    "quoteVi": "Người cao tuổi sức khỏe rất kém hoặc giai đoạn cuối: tránh dựa vào HbA1c; ưu tiên tránh hạ đường huyết và tránh triệu chứng tăng đường huyết.",
+    "cor": "conditional",
+    "loe": "C"
+  },
+  {
+    "id": "ada.dm2.2026.older_deintensification",
+    "sourceId": "ada_2026_soc_13",
+    "pdfPage": 9,
+    "locator": "Recommendation 13.14a / PDF p. 9",
+    "quote": "13.14a Deintensify hypoglycemia- \ncausing medications (e.g., insulin, sulfo-\nnylureas, or meglitinides) or switch to a \nmedication class with low hypoglycemia \nrisk for individuals who are at high risk \nfor hypoglycemia, using individualized \nglycemic goals. B",
+    "quoteVi": "Giảm thang hoặc chuyển đổi các thuốc gây hạ đường huyết (insulin, sulfonylurea) ở người cao tuổi có nguy cơ cao hạ đường huyết.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.rec_9_7_ascvd",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 8,
+    "locator": "Recommendation 9.7 / PDF p. 8",
+    "quote": "9.7 In adults with type 2 diabetes and \nestablished or high risk of atheroscle-\nrotic cardiovascular disease, the treat-\nment plan should include medications \nwith demonstrated benefits to reduce \ncardiovascular events (e.g., glucagon- \nlike peptide 1 receptor agonist [GLP-1 \nRA] and/or sodium –glucose cotrans-\nporter 2 [SGLT2] inhibitor) for glyce",
+    "quoteVi": "Ở người lớn mắc ĐTĐ típ 2 có bệnh tim mạch do xơ vữa (ASCVD) hoặc nguy cơ cao, phác đồ nên bao gồm GLP-1 RA và/hoặc SGLT2i có bằng chứng giảm biến cố tim mạch.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.rec_9_8_hf",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 8,
+    "locator": "Recommendation 9.8 / PDF p. 8",
+    "quote": "9.8 In adults with type 2 diabetes who \nhave heart failure (HF) (with either re-\nduced or preserved ejection fraction), \nan SGLT2 inhibitor is recommended \nfor both glycemic management and \nprevention of HF hospitalizations (ir -\nrespective of A1C) (Fig. 9.4). A",
+    "quoteVi": "Ở người mắc ĐTĐ típ 2 kèm suy tim (HFrEF hoặc HFpEF), khuyến cáo dùng SGLT2i độc lập với HbA1c để ngăn ngừa nhập viện vì suy tim.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.no_dpp4_plus_glp1",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 10,
+    "locator": "Recommendation 9.18 / PDF p. 10",
+    "quote": "Concurrent use of dipeptidyl pep-\ntidase 4 (DPP-4) inhibitors with a GLP-1 \nRA or a dual GIP and GLP-1 RA is not \nrecommended due to lack of additional \nglucose lowering beyond that of a \nGLP-1–based therapy. B",
+    "quoteVi": "Không khuyến cáo phối hợp đồng thời thuốc ức chế DPP-4 với GLP-1 RA hoặc dual GIP/GLP-1 RA vì không làm tăng thêm hiệu quả hạ đường huyết.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.glp1_preferred_over_insulin",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 10,
+    "locator": "Recommendation 9.21 / PDF p. 10",
+    "quote": "9.21 In adults with type 2 diabetes \nwithout severe hyperglycemia or hy -\nperglycemic crisis, GLP-1–based ther-\napy is preferred to insulin for initial \nor add-on glucose-lowering therapy \n(Fig. 9.4). A",
+    "quoteVi": "Ở bệnh nhân ĐTĐ típ 2 không có tăng đường huyết nặng hay cơn cấp, liệu pháp nền GLP-1 được ưu tiên hơn insulin khi khởi đầu hoặc thêm thuốc.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.early_insulin_severe",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 15,
+    "locator": "Insulin Initiation / PDF p. 15",
+    "quote": "It is common practice to initiate insu-\nlin therapy for people who present with \nblood glucose levels ≥300 mg/dL (≥16.7 \nmmol/L) or A1C >10% (>86 mmol/mol) \nor if the individual has symptoms of hyper-\nglycemia (i.e., polyuria or polydipsia) or ev-\nidence of catabolism (unexpected weight \nloss) (Fig. 9.5).",
+    "quoteVi": "Chỉ định insulin sớm khi bệnh nhân có đường huyết ≥ 300 mg/dL (≥ 16.7 mmol/L), hoặc HbA1c > 10% (> 86 mmol/mol), hoặc có triệu chứng dị hóa/sụt cân nhanh.",
+    "cor": "strong",
+    "loe": "E"
+  },
+  {
+    "id": "ada.dm2.2026.basal_start_and_titration",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 18,
+    "locator": "Basal Insulin / PDF p. 18",
+    "quote": "body weight (0.1–0.2 units/kg/day) and \nthe degree of hyperglycemia, with indi-\nvidualized titration over time as needed \nto achieve and maintain glycemic goals.",
+    "quoteVi": "Khởi đầu insulin nền ước tính 0.1 - 0.2 đơn vị/kg/ngày (hoặc 10 đơn vị) và chuẩn độ liều theo mức độ tăng đường huyết để đạt đích.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.overbasalization",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 19,
+    "locator": "Overbasalization / PDF p. 19",
+    "quote": "Signals that \nshould prompt evaluation for overbasali-\nzation include high bedtime-to-morning \nor postprandial-to-preprandial glucose dif-\nferential (e.g., bedtime-to-morning glucose \ndifferential ≥50 mg/dL [≥2.8 mmol/L]), hy-\npoglycemia (aware or unaware), and high \nglucose variability.",
+    "quoteVi": "Dấu hiệu quá liều insulin nền (overbasalization) gồm chênh lệch đường huyết trước ngủ - sáng ≥ 50 mg/dL (≥ 2.8 mmol/L), hạ đường huyết, hoặc dao động đường huyết cao.",
+    "cor": "conditional",
+    "loe": "E"
+  },
+  {
+    "id": "ada.dm2.2026.inpatient_target",
+    "sourceId": "ada_2026_soc_16",
+    "pdfPage": 2,
+    "locator": "Recommendation 16.4 / PDF p. 2",
+    "quote": "se not in the ICU), a glycemic goal \nof 100–180 mg/dL (5.6–10.0 mmol/L) \nis recommended if it can be achieved \nwithout significant hypoglycemia. B",
+    "quoteVi": "Mục tiêu đường huyết nội viện ở bệnh nhân không nằm ICU là 100 - 180 mg/dL (5.6 - 10.0 mmol/L) nếu đạt được an toàn không hạ đường huyết.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.inpatient_no_sliding_scale_alone",
+    "sourceId": "ada_2026_soc_16",
+    "pdfPage": 4,
+    "locator": "Recommendation 16.7 / PDF p. 4",
+    "quote": "sal insulin (formerly \nreferred to as a sliding scale) in the \ninpatient setting is discouraged. A",
+    "quoteVi": "Khuyến cáo không sử dụng thang trượt insulin (sliding scale) đơn độc mà không có insulin nền trong điều trị nội trú.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.sglt2i_withhold_surgery",
+    "sourceId": "ada_2026_soc_16",
+    "pdfPage": 6,
+    "locator": "Perioperative Care / PDF p. 6",
+    "quote": "SGLT2 inhibitors be stopped 3 days be -\nfore scheduled surgeries (4 days for ertu-\ngliflozin) (90).",
+    "quoteVi": "Ngừng thuốc ức chế SGLT2 trước phẫu thuật chương trình ít nhất 3 ngày để phòng ngừa nguy cơ toan ceton đường huyết bình thường.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.steroid_nph",
+    "sourceId": "ada_2026_soc_16",
+    "pdfPage": 8,
+    "locator": "Glucocorticoid Therapy / PDF p. 8",
+    "quote": "or \ntwice-daily steroids, administering NPH \ninsulin with prednisone or prednisolone \ndosing is a frequently used approach, \naimed at matching the NPH actions \nwith the steroid-induced hyperglycemic \nresponse.",
+    "quoteVi": "Khi dùng glucocorticoid (prednisone/prednisolone), phối hợp insulin NPH cùng thời điểm là phác đồ phù hợp để đối ứng với đỉnh tăng đường huyết do steroid.",
+    "cor": "conditional",
+    "loe": "C"
+  },
+  {
+    "id": "ada.dm2.2026.bp_target",
+    "sourceId": "ada_2026_soc_10",
+    "pdfPage": 3,
+    "locator": "Recommendation 10.4 / PDF p. 3",
+    "quote": "10.4 If it can be safely attained, the \non-treatment blood pressure goal is \n<130/80 mmHg; a  systolic blood \npressure goal <120 mmHg should \nbe encouraged in individuals with \nhigh cardiovascular or kidney risk. A",
+    "quoteVi": "Đích huyết áp ở bệnh nhân đái tháo đường là < 130/80 mmHg nếu đạt được an toàn.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.statin_primary_high_risk_40_75",
+    "sourceId": "ada_2026_soc_10",
+    "pdfPage": 8,
+    "locator": "Recommendation 10.20 / PDF p. 8",
+    "quote": "10.20 For people with diabetes aged \n40–75 years at higher cardiovascular \nrisk, including those with one or more \nadditional ASCVD risk factors, high- \nintensity statin therapy is recom - \nmended to reduce LDL cholesterol \nby ≥50% of baseline and  to obtain \nan LDL cholesterol goal of <70 mg/dL \n(<1.8 mmol/L). A",
+    "quoteVi": "ADA 2026 Khuyến cáo 10.20: Ở bệnh nhân ĐTĐ 40–75 tuổi có nguy cơ tim mạch cao (≥ 1 yếu tố nguy cơ ASCVD), khuyến cáo statin cường độ cao để giảm LDL-C ≥ 50% và đạt đích < 70 mg/dL (< 1.8 mmol/L).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.statin_secondary",
+    "sourceId": "ada_2026_soc_10",
+    "pdfPage": 8,
+    "locator": "Recommendations 10.26–10.27 / PDF p. 8",
+    "quote": "10.26 For people of all ages with dia- betes and ASCVD, high-intensity statin therapy should be added to lifestyle therapy. A 10.27 For people with diabetes and ASCVD, treatment with high-intensity statin therapy is recommended to ob- tain an LDL cholesterol reduction of ≥50% from baseline and an LDL cholesterol goal of <55 mg/dL (<1.4 mmol/L).",
+    "quoteVi": "ADA 2026 Khuyến cáo 10.26–10.27: Ở bệnh nhân ĐTĐ mọi lứa tuổi đã có bệnh tim mạch do xơ vữa (ASCVD), khuyến cáo statin cường độ cao để giảm LDL-C ≥ 50% và đạt đích < 55 mg/dL (< 1.4 mmol/L).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.aspirin_secondary",
+    "sourceId": "ada_2026_soc_10",
+    "pdfPage": 14,
+    "locator": "Recommendation 10.33 / PDF p. 14",
+    "quote": "10.33 Use aspirin therapy (75–162 mg/day) \nas a secondary prevention strategy in \nthose with diabetes and a history of \nASCVD. A",
+    "quoteVi": "Chỉ định aspirin 75-162 mg/ngày để dự phòng thứ phát ở bệnh nhân đái tháo đường có tiền sử bệnh tim mạch do xơ vữa.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.eye_exam_annual",
+    "sourceId": "ada_2026_soc_12",
+    "pdfPage": 2,
+    "locator": "Recommendation 12.4 / PDF p. 2",
+    "quote": "12.4 People with type 2 diabetes should \nhave an initial dilated and comprehen-\nsive eye examination by an ophthalmol-\nogist or optometrist at the time of the \ndiabetes diagnosis. B",
+    "quoteVi": "Bệnh nhân ĐTĐ típ 2 cần được khám mắt giãn đồng tử toàn diện ngay tại thời điểm chẩn đoán và định kỳ hàng năm.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.foot_exam_annual",
+    "sourceId": "ada_2026_soc_12",
+    "pdfPage": 8,
+    "locator": "Recommendation 12.23 / PDF p. 8",
+    "quote": "12.23 Perform a comprehensive foot \nevaluation at least annually to iden -\ntify risk factors for ulcers and amputa-\ntions. A",
+    "quoteVi": "Đánh giá bàn chân toàn diện ít nhất hàng năm để phát hiện các yếu tố nguy cơ loét và đoạn chi.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.ckd_screening_annual",
+    "sourceId": "ada_2026_soc_11",
+    "pdfPage": 1,
+    "locator": "Recommendation 11.1a / PDF p. 1",
+    "quote": "11.1a Assess kidney function with random urine albumin-to-creatinine ratio \n(UACR) and estimated glomerular filtration rate (eGFR) at least annually in \npeople with type 1 diabetes with duration of ≥5 years and in all people with \ntype 2 diabetes regardless of treatment. B",
+    "quoteVi": "Định lượng UACR và eGFR ít nhất mỗi năm một lần ở tất cả bệnh nhân ĐTĐ típ 2 để tầm soát bệnh thận mạn.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.saxagliptin_heart_failure",
+    "sourceId": "ada_2026_soc_10",
+    "pdfPage": 23,
+    "locator": "SAVOR-TIMI 53 / PDF p. 23",
+    "quote": "study, participants randomized to saxaglip-\ntin were more likely to be hospitalized for \nheart failure than those given placebo \n(311).",
+    "quoteVi": "Trong nghiên cứu SAVOR-TIMI 53, saxagliptin làm tăng nguy cơ nhập viện vì suy tim so với giả dược; do đó cần tránh dùng ở bệnh nhân suy tim.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2024.dka_criteria",
+    "sourceId": "ada_2024_hyperglycaemic_crises",
+    "pdfPage": 6,
+    "locator": "Section 3 / PDF p. 6",
+    "quote": "In this consensus re-\nport, we have deﬁned hyperglycemia as a\ndiagnostic criterion for DKA from >250\nmg/dL (13.9 mmol/L) to either a glucose\nvalue of $200 mg/dL (11.1 mmol/L) or a\nprior history of diabetes irrespective of the\npresenting glucose value. Hyperglycemia\nand/or diabetes must be accompanied by\ntwo additional criteria—elevated ketones\nand metabolic acidosis—for the diagnosis\nof DKA to be established.",
+    "quoteVi": "Tiêu chuẩn chẩn đoán DKA 2024: glucose ≥ 200 mg/dL (11.1 mmol/L) hoặc tiền sử ĐTĐ, kèm toan chuyển hóa (pH < 7.30 hoặc HCO3 < 18 mmol/L) và tăng ceton máu (beta-hydroxybutyrate ≥ 3.0 mmol/L).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2024.dka_bhb_threshold",
+    "sourceId": "ada_2024_hyperglycaemic_crises",
+    "pdfPage": 6,
+    "locator": "Beta-hydroxybutyrate / PDF p. 6",
+    "quote": "Blood\nconcentrations ofb-hydroxybutyrate$3.0\nmmol/L correlate well with acid-base\nchanges, with>90% sensitivity and specif-\nicity for the diagnosis of DKA (1,2,12).",
+    "quoteVi": "Nồng độ beta-hydroxybutyrate máu ≥ 3.0 mmol/L có độ nhạy và độ đặc hiệu > 90% cho chẩn đoán toan ceton đái tháo đường.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2024.hhs_criteria",
+    "sourceId": "ada_2024_hyperglycaemic_crises",
+    "pdfPage": 6,
+    "locator": "Diagnostic Criteria for HHS / PDF p. 7",
+    "quote": "Plasma glucose ≥600 mg/dL (33.3 mmol/L)\nHyperosmolarity\nCalculated effective serum osmolality >300 mOsm/kg (calculated as [2xNa+ \n(mmol/L) + glucose (mmol/L)]), OR total serum osmolality >320 mOsm/kg [(2xNa+ \n(mmol/L) + glucose (mmol/L) + urea (mmol/L)]\nAbSence of sig",
+    "quoteVi": "HHS là tình trạng tăng áp lực thẩm thấu máu nặng (áp lực thẩm thấu hiệu dụng > 300 mOsm/kg hoặc tổng > 320 mOsm/kg, glucose ≥ 600 mg/dL [33.3 mmol/L]) mà không có toan ceton nặng.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2024.dka_fluids",
+    "sourceId": "ada_2024_hyperglycaemic_crises",
+    "pdfPage": 9,
+    "locator": "Fluid Therapy / PDF p. 9",
+    "quote": "In adults with DKA or HHS without re-\nnal or cardiac compromise, we recom-\nmend starting the administration of\nisotonic saline or balanced crystalloid\nsolutions at an initial rate of 500 –1,000\nmL/h during the ﬁrst 2–4 h.",
+    "quoteVi": "Bù dịch ban đầu trong DKA/HHS bằng dung dịch đẳng trương hoặc tinh thể cân bằng với tốc độ 500 - 1000 mL/h trong 2 - 4 giờ đầu.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2024.dka_dextrose_add",
+    "sourceId": "ada_2024_hyperglycaemic_crises",
+    "pdfPage": 9,
+    "locator": "Dextrose Addition / PDF p. 9",
+    "quote": "Thus, once the plasma glucose con-\ncentration is <250 mg/dL (13.9 mmol/L),\nreplacementﬂuids should be modiﬁed to\ncontain 5–10% dextrose in addition to the\n0.9% sodium chloride to prevent hypoglyce-\nmia and allow continued insulin administra-\ntion until the ketonemia is corrected",
+    "quoteVi": "Khi đường huyết giảm dưới 250 mg/dL (13.9 mmol/L), cần thêm glucose 5-10% vào dịch truyền để ngăn ngừa hạ đường huyết và duy trì truyền insulin giải quyết ceton máu.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2024.dka_potassium_hold_insulin",
+    "sourceId": "ada_2024_hyperglycaemic_crises",
+    "pdfPage": 10,
+    "locator": "Potassium Management / PDF p. 10",
+    "quote": "Low- normal or low potassium levels ( <3.5\nmmol/L) are present on admission in\n5–10% of patients with DKA (147); in such\ncases, potassium replacement should begin\nat a rate of 10 mmol/h, and insulin therapy\nshould be delayed until the potassium level\nincreases to >3.5 mmol/L to avoid life-\nthreatening arrhythmias and respiratory\nmuscle weakness",
+    "quoteVi": "Nếu kali máu < 3.5 mmol/L, bắt buộc HOÃN truyền insulin và bù kali tích cực cho đến khi kali > 3.5 mmol/L để tránh loạn nhịp thất đe dọa tính mạng.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2024.dka_potassium_maintenance",
+    "sourceId": "ada_2024_hyperglycaemic_crises",
+    "pdfPage": 10,
+    "locator": "Potassium Maintenance / PDF p. 10",
+    "quote": "To\nprevent hypokalemia, potassium replace-\nment should be started after serum levels\nfall below 5.0 mmol/L to maintain a po-\ntassium level of 4 –5 mmol/L (2,12). For\nmost patients with DKA, 20 –30 mmol of\npotassium per liter of intravenousﬂuid is\nsufﬁcient to maintain a serum potassium\nconcentration within the target range.",
+    "quoteVi": "Bù kali 20-30 mmol/L dịch truyền khi kali < 5.0 mmol/L để duy trì nồng độ kali trong khoảng 4 - 5 mmol/L.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2024.dka_insulin_rate",
+    "sourceId": "ada_2024_hyperglycaemic_crises",
+    "pdfPage": 10,
+    "locator": "Insulin Infusion / PDF p. 10",
+    "quote": "a ﬁxed-\nrate intravenous insulin infusion should be\nstarted at 0.1 units/kg/h (117).",
+    "quoteVi": "Khởi đầu truyền tĩnh mạch insulin liều cố định 0.1 đơn vị/kg/h.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2024.dka_subq_transition",
+    "sourceId": "ada_2024_hyperglycaemic_crises",
+    "pdfPage": 10,
+    "locator": "Subcutaneous Transition / PDF p. 10",
+    "quote": "Transition to Maintenance Insulin Therapy\nIn the hospital, patients with DKA will\neventually transition from intravenous\nto subcutaneous insulin, as illustrated in\nFig. 5. T o prevent the recurrence of hy-\nperglycemia or ketoacidosis during the\ntransition period to subcutaneous insu-\nlin, it is important to allow an overlap\nof 1 –2 h between the administration of\nsubcutaneous insulin and the discontin-\nuation of intravenous insulin.",
+    "quoteVi": "Tiêm insulin dưới da gối đầu 1-2 giờ trước khi ngừng truyền insulin tĩnh mạch để phòng ngừa tái phát tăng đường huyết và toan ceton.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "byt.dm2.2020.hba1c_goals",
+    "sourceId": "byt_5481_2020_dm2",
+    "pdfPage": 21,
+    "locator": "Bảng 4 / Trang 19",
+    "quote": "Bảng 4: Mục tiêu điều trị cho BN ĐTĐ ở người trưởng thành, không có thai \n \nMục tiêu Chỉ số \nHbA1c  < 7% (53mmol/mol) \nGlucose huyết tương mao \nmạch lúc đói, trước ăn  \n80-130 mg/dL (4,4-7,2 mmol/L)* \nĐỉnh glucose huyết tương \nmao mạch sau ăn 1-2 giờ \n<180 mg/dL (10,0 mmol/L)* \nHuyết áp Tâm thu <140 mmHg, Tâm trương <90 mmHg \nNếu đã có biến chứng thận , hoặc có yếu tố nguy cơ tim \nmạch  do xơ vữa cao: Huyết áp <130/80 mmHg \nLipid máu LDL cholesterol <100 mg/ dL (2,6 mmol/L), nếu chưa có \nbiến chứng tim mạch \nLDL cholesterol <70 mg/dL (1,8 mmol/L) nếu đã có bệnh \ntim mạch vữa xơ, hoặc có thể thấp hơn <50 mg/dL nếu có \nyếu tố nguy cơ xơ vữa cao \nTriglycerides <150 mg/dL (1,7 mmol/L) \nHDL cholesterol >40 mg/ dL (1,0 mmol/L) ở nam và >50 \nmg/dL (1,3 mmol/L) ở nữ \n* Mục tiêu điều trị ở các cá nhân có thể khác nhau. \n- Mục tiêu có thể thấp hơn (HbA1c <6,5%) ở BN trẻ, mới chẩn đoán, không có \ncác bệnh lý tim mạch, nguy cơ hạ glucose máu thấp.",
+    "quoteVi": "Mục tiêu điều trị ĐTĐ người lớn theo BYT 5481: HbA1c < 7% (53 mmol/mol), glucose lúc đói 80-130 mg/dL (4.4-7.2 mmol/L), sau ăn < 180 mg/dL (10.0 mmol/L).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "byt.dm2.2020.metformin_renal_contra",
+    "sourceId": "byt_5481_2020_dm2",
+    "pdfPage": 61,
+    "locator": "Mục 2 Metformin / Trang 59",
+    "quote": "Chống chỉ định: BN suy thận (độ lọc cầu thận ước tính eGFR < 30 mL/phút, giảm \nliều khi độ lọc cầu thận ước tính trong khoảng 30 -45 mL/phút), suy tim nặng, các \ntình huống giảm lượng máu đến tổ chức (mô) và/hoặc giảm oxy đến các tổ chức \n(mô) như choáng, bệnh phổi tắc nghẽn mạn tính. Nếu BN đái tháo đường mới chẩn \nđoán đã có độ lọc cầu thận ước tính <45 mL/phút, nên cân nhắc cẩn thận việc dùng \nmetformin.",
+    "quoteVi": "BYT 5481/2020: Chống chỉ định metformin khi eGFR < 30 mL/phút, giảm liều khi eGFR 30-45 mL/phút, thận trọng khi khởi đầu nếu eGFR < 45 mL/phút.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.metformin.egfr_bands",
+    "sourceId": "dailymed_2026_metformin_ir_aurobindo",
+    "pdfPage": 1,
+    "locator": "Highlights/§2.3 renal impairment",
+    "quote": "Renal Impairment:\nPrior to initiation, assess renal function with estimated glomerular filtration rate (eGFR) \n(2.3)\nDo not use in patients with eGFR below 30 mL/minute/1.73 m\n  \n(2.3)\nInitiation is not recommended in patients with eGFR between 30 to 45 mL/minute/1.73 m\n  \n(2.3)\nAssess risk/benefit of continuing if eGFR falls below 45 mL/minute/1.73 m\n  \n(2.3)\nDiscontinue if eGFR falls below 30 mL/minute/1.73 m\n  \n(2.3)",
+    "quoteVi": "Nhãn metformin đơn chất: không dùng/ngừng khi eGFR <30; không khuyến cáo khởi trị ở eGFR30–45; đánh giá lợi ích/nguy cơ nếu eGFR giảm <45 khi đang dùng."
+  },
+  {
+    "id": "fda.pioglitazone.heart_failure_contra",
+    "sourceId": "fda_label_pioglitazone",
+    "pdfPage": 1,
+    "locator": "Boxed Warning / PDF p. 1",
+    "quote": "WARNING: CONGESTIVE HEART FAILURE See full prescribing information for complete boxed warning. • • • • INDICATIONS AND USAGE ACTOS is a thia",
+    "quoteVi": "Cảnh báo hộp đen FDA: Thuốc nhóm TZD gây giữ nước, làm nặng hoặc thúc đẩy suy tim sung huyết; chống chỉ định ở suy tim NYHA III hoặc IV.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.sitagliptin.renal_bands",
+    "sourceId": "fda_label_sitagliptin",
+    "pdfPage": 1,
+    "locator": "Dosage and Administration / PDF p. 1",
+    "quote": "The recommended dose of JANUVIA is 100 mg once daily. JANUVIA can be taken with or without food. ( 2.1 )\nDosage adjustment is recommended for patients with eGFR less than 45 mL/min/1.73 m\n. ( 2.2 )\nDosage Adjustment in Patients with Renal Impairment (\n2.2\n)\neGFR greater than or equal to 30 mL/min/1.73 m\n to\nless than 45 mL/min/1.73 m\neGFR less than 30 mL/min/1.73 m\n (including\npatients with end stage renal disease [ESRD] on\ndialysis)\n50 mg once daily\n25 mg once daily",
+    "quoteVi": "Nhãn FDA Sitagliptin: Liều chuẩn 100 mg/ngày. Chỉnh liều theo chức năng thận: eGFR 30 đến < 45 mL/min dùng 50 mg/ngày; eGFR < 30 mL/min (kể cả lọc máu) dùng 25 mg/ngày.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.linagliptin.no_renal_adj",
+    "sourceId": "fda_label_linagliptin",
+    "pdfPage": 1,
+    "locator": "Dosage and Administration / PDF p. 1",
+    "quote": "STRENGTHS Tablets: 5 mg ( 3 ) CONTRAINDICATIONS Hypersensitivity to linagliptin or any of the excipients in TRADJENTA",
+    "quoteVi": "Nhãn FDA Linagliptin: Liều 5 mg uống 1 lần/ngày; không cần chỉnh liều theo chức năng thận ở bất kỳ giai đoạn nào.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.saxagliptin.renal_dose",
+    "sourceId": "fda_label_saxagliptin",
+    "pdfPage": 1,
+    "locator": "Dosage and Administration / PDF p. 1",
+    "quote": "recommended dose is 2.5 mg or 5 mg once daily taken regardless of meals.  (2.1) 2.5 mg daily is recommended for patients with moderate or se",
+    "quoteVi": "Nhãn FDA Saxagliptin: Liều thông thường 5 mg hoặc 2.5 mg/ngày; giảm còn 2.5 mg/ngày ở bệnh nhân suy thận vừa hoặc nặng (CrCl ≤ 50 mL/phút).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.glimepiride.hypo_elderly_renal",
+    "sourceId": "fda_label_glimepiride",
+    "pdfPage": 1,
+    "locator": "Dosage and Administration / PDF p. 1",
+    "quote": "Use 1 mg starting dose and titrate slowly in patients at increased risk for hypoglycemia (e.g., elderly, patients with renal impairment)",
+    "quoteVi": "Nhãn FDA Glimepiride: Khởi đầu liều thấp 1 mg/ngày và chuẩn độ thận trọng ở người cao tuổi hoặc suy thận do nguy cơ hạ đường huyết kéo dài.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ema.gliclazide.dosing_renal",
+    "sourceId": "ema_label_gliclazide_mr",
+    "pdfPage": 1,
+    "locator": "Posology / PDF p. 1",
+    "quote": "from 30 to 120 mg taken orally in a single intake at breakfast time. It is recommended that the tablet(s) be swallowed whole.",
+    "quoteVi": "Nhãn EMA Gliclazide MR: Liều từ 30 đến 120 mg uống 1 lần duy nhất vào bữa sáng.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ema.vildagliptin.renal_dose",
+    "sourceId": "ema_label_vildagliptin",
+    "pdfPage": 2,
+    "locator": "Posology / PDF p. 2",
+    "quote": "The recommended daily dose of vildagliptin is 100 mg, administered as one dose of 50 mg  in the morning and one dose of 50 mg in the evening.",
+    "quoteVi": "Nhãn EMA Vildagliptin: Liều thông thường 100 mg/ngày (chia 50 mg sáng và 50 mg tối). Giảm còn 50 mg 1 lần/ngày nếu eGFR < 50 mL/phút.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.semaglutide_rybelsus.dosing",
+    "sourceId": "fda_label_semaglutide_rybelsus",
+    "pdfPage": 1,
+    "locator": "Dosage and Administration / PDF p. 1",
+    "quote": "Recommended starting dosage is 3 mg orally once daily for 30 days (this dosage is not effective for glycemic control)",
+    "quoteVi": "Nhãn FDA Rybelsus (Semaglutide uống): Khởi đầu 3 mg/ngày trong 30 ngày (liều thích nghi).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.semaglutide_rybelsus.titration_7_14",
+    "sourceId": "fda_label_semaglutide_rybelsus",
+    "pdfPage": 2,
+    "locator": "Dosage and Administration / PDF p. 2",
+    "quote": "Days 31 to 60: Increase the dosage to 7 mg orally once daily.\nOn Day 61 or thereafter, if: (\n2.2\n)\nNo additional glycemic control is needed, maintain the dosage at 7 mg orally once daily.\nAdditional glycemic control is needed, increase the dosage to 14 mg orally once daily.",
+    "quoteVi": "Nhãn FDA Rybelsus: Ngày 31-60 tăng lên 7 mg/ngày; từ ngày 61 có thể duy trì 7 mg hoặc tăng lên 14 mg/ngày nếu cần kiểm soát thêm đường huyết.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.semaglutide_rybelsus.empty_stomach",
+    "sourceId": "fda_label_semaglutide_rybelsus",
+    "pdfPage": 1,
+    "locator": "Instructions for Use / PDF p. 1",
+    "quote": "in the morning with water (up to 4 ounces of water); do not take with other liquids besides water. ( 2.1 ) Swallow tablets whole. Do not spl",
+    "quoteVi": "Uống thuốc vào buổi sáng lúc bụng đói với không quá 120 mL nước lọc, đợi ít nhất 30 phút trước khi ăn hoặc uống đồ khác.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.tirzepatide.dosing",
+    "sourceId": "fda_label_tirzepatide",
+    "pdfPage": 1,
+    "locator": "Dosage and Administration / PDF p. 1",
+    "quote": "starting dosage is 2.5 mg injected subcutaneously once weekly. ( 2.1 ) If additional glycemic control is needed, increase the dosage in 2.5 m",
+    "quoteVi": "Nhãn FDA Tirzepatide (Mounjaro): Khởi đầu 2.5 mg tiêm dưới da 1 lần/tuần x 4 tuần, sau đó tăng lên 5 mg/tuần; có thể tăng mỗi 2.5 mg sau ≥ 4 tuần đến tối đa 15 mg/tuần.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.dulaglutide.dosing",
+    "sourceId": "fda_label_dulaglutide",
+    "pdfPage": 1,
+    "locator": "Dosage and Administration / PDF p. 1",
+    "quote": "starting dosage is 0.75 mg injected subcutaneously once weekly. After 4 weeks, the dosage may be increased to 1.5 mg once weekly for additi",
+    "quoteVi": "Nhãn FDA Dulaglutide (Trulicity): Khởi đầu 0.75 mg tiêm dưới da 1 lần/tuần, có thể tăng lên 1.5 mg, 3.0 mg hoặc tối đa 4.5 mg/tuần.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.liraglutide.dosing",
+    "sourceId": "fda_label_liraglutide",
+    "pdfPage": 1,
+    "locator": "Dosage and Administration / PDF p. 1",
+    "quote": "Initiate at 0.6 mg injected subcutaneously once daily for one week then increase to 1.2 mg daily.  If additional glycemic control is required, increase the dose to 1.8 mg daily after one week of treatment with the 1.2 mg daily dose.",
+    "quoteVi": "Nhãn FDA Liraglutide (Victoza): Khởi đầu 0.6 mg tiêm dưới da 1 lần/ngày trong 1 tuần, sau đó tăng lên liều điều trị 1.2 mg/ngày; có thể tăng lên 1.8 mg/ngày.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.insulin_glargine.dosing",
+    "sourceId": "fda_label_insulin_glargine",
+    "pdfPage": 4,
+    "locator": "Dosage in Type 2 Diabetes / PDF p. 4",
+    "quote": "2 units/kg or up to 10 units once daily. 2.4 Switching to LANTUS from Other Insulin Therapies Dosage adjustments are recommended to lower th",
+    "quoteVi": "Nhãn FDA Insulin Glargine: Khởi đầu 0.2 đơn vị/kg hoặc tối đa 10 đơn vị tiêm dưới da 1 lần/ngày.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "byt.dm2.2020.older_adults_table5",
+    "sourceId": "byt_5481_2020_dm2",
+    "pdfPage": 21,
+    "locator": "Bảng 5 / Trang 19",
+    "quote": "Bảng 5: Mục tiêu điều trị đái tháo đường ở người cao tuổi \nTình trạng sức \nkhỏe \nCơ sở để chọn \nlựa \nHbA1c \n(%) \nGlucose \nhuyết lúc đói \nhoặc trước \năn (mg/dL) \nGlucose \nlúc đi \nngủ \n(mg/dL) \nHuyết \náp \nmmHg \nMạnh khỏe Còn sống lâu <7,5% 90-130 90-150 <140/90 \nNhiều bệnh, sức \nkhỏe trung bình \nKỳ vọng sống \ntrung bình \n<8,0% 90-150 100-180 <140/90 \nNhiều bệnh phức \ntạp hoặc bệnh nguy \nkịch/ sức khỏe kém \nKhông còn \nsống lâu \n<8,5% 100-180 110-200 <150/90",
+    "quoteVi": "Bảng 5 BYT 5481: Mục tiêu điều trị ĐTĐ ở người cao tuổi: Mạnh khỏe < 7.5%, Nhiều bệnh < 8.0%, Sức khỏe kém < 8.5%.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.ckd_egfr_60",
+    "sourceId": "ada_2026_soc_11",
+    "pdfPage": 1,
+    "locator": "Diagnosis of CKD / PDF p. 1",
+    "quote": "excretion (albuminuria), estimated glomerular filtration rate (eGFR) <60 mL/min/1.73 m2, \nor other manifestations of kidney damage",
+    "quoteVi": "Định nghĩa bệnh thận mạn do ĐTĐ: Tăng albumin niệu dai dẳng hoặc độ lọc cầu thận eGFR < 60 mL/phút/1.73m².",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.elderly_age_65",
+    "sourceId": "ada_2026_soc_13",
+    "pdfPage": 1,
+    "locator": "Epidemiology / PDF p. 1",
+    "quote": "Over 29 % \nof people over the \nage of 65 years have diabetes",
+    "quoteVi": "Hơn 29% người từ 65 tuổi trở lên mắc đái tháo đường (ngưỡng định nghĩa người cao tuổi).",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.elderly_age_75",
+    "sourceId": "ada_2026_soc_10",
+    "pdfPage": 8,
+    "locator": "Recommendations 10.22–10.23 / PDF p. 8",
+    "quote": "10.22 In adults with diabetes aged >75 years alread y on statin therapy, it is reasonable to continue statin treatment. B 10.23 In adults with diabetes aged >75 years, it may be reasonable to initiate moderate-intensity statin ther- apy",
+    "quoteVi": "ADA 2026 Khuyến cáo 10.22–10.23: Ở người lớn mắc ĐTĐ > 75 tuổi đang dùng statin nên tiếp tục duy trì; nếu chưa dùng statin, có thể cân nhắc khởi trị statin cường độ trung bình sau khi thảo luận lợi ích – nguy cơ.",
+    "cor": "conditional",
+    "loe": "B"
+  },
+  {
+    "id": "byt.dm2.2020.hba1c_young",
+    "sourceId": "byt_5481_2020_dm2",
+    "pdfPage": 21,
+    "locator": "Bảng 4 Ghi chú / Trang 19",
+    "quote": "- Mục tiêu có thể thấp hơn (HbA1c <6,5%) ở BN trẻ, mới chẩn đoán, không có \ncác bệnh lý tim mạch, nguy cơ hạ glucose máu thấp.",
+    "quoteVi": "Mục tiêu HbA1c có thể thấp hơn (< 6.5%) ở người bệnh trẻ tuổi, mới chẩn đoán, không có bệnh lý tim mạch, nguy cơ hạ đường huyết thấp.",
+    "cor": "conditional",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.icu_target",
+    "sourceId": "ada_2026_soc_16",
+    "pdfPage": 2,
+    "locator": "Critical Illness / PDF p. 2",
+    "quote": "a \nglycemic goal of 140–180 mg/dL \n(7.8–10.0 mmol/L) is recommended \nfor most critically ill individuals (those \nin the ICU) with hyperg",
+    "quoteVi": "Đích glucose máu 140–180 mg/dL (7.8–10.0 mmol/L) được khuyến cáo cho đa số người bệnh nguy kịch trong ICU.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.hypo_level2_3mmol",
+    "sourceId": "ada_2026_soc_6",
+    "pdfPage": 8,
+    "locator": "Level 2 Hypoglycemia / PDF p. 8",
+    "quote": "ycemia (defined as a \nblood glucose concentration <54 mg/dL \n[<3.0 \nmmol/L]) is the threshold at which \nneuroglycopenic symptoms begin to occur \nand requires immediate action to resolve \nthe hypoglycemic event.",
+    "quoteVi": "Hạ đường huyết mức độ 2: glucose < 54 mg/dL (< 3.0 mmol/L).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2024.hhs_osmolality_320",
+    "sourceId": "ada_2024_hyperglycaemic_crises",
+    "pdfPage": 6,
+    "locator": "Section 3 / PDF p. 6",
+    "quote": "), OR total serum osmolality >320 mOsm/kg [(2xNa+ \n(mmol/L) + glucose (mmol/L) + urea (mmol/L)]\nAbSence of sig",
+    "quoteVi": "Tiêu chuẩn chẩn đoán HHS: Áp lực thẩm thấu huyết thanh > 320 mOsm/kg.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2024.dka_resolution_criteria",
+    "sourceId": "ada_2024_hyperglycaemic_crises",
+    "pdfPage": 11,
+    "locator": "Criteria for Resolution / PDF p. 11",
+    "quote": "g\nplasma ketone <0.6 mmol/L and venous\npH $7.3 or bicarbonate$18 mmol/L (2).\nIdeally, the blood glucose concentration\nshould also be<200 mg/dL (11.1 m",
+    "quoteVi": "Tiêu chuẩn giải quyết DKA: Beta-hydroxybutyrate < 0.6 mmol/L, pH tĩnh mạch ≥ 7.30 hoặc bicarbonate ≥ 18 mmol/L.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "byt.dm2.2020.metformin_formulations_p68",
+    "sourceId": "byt_5481_2020_dm2",
+    "pdfPage": 68,
+    "locator": "Bảng thuốc hạ đường huyết / Trang 66",
+    "quote": "Metformin 500-850-1000mg \n \nDạng phóng thích \nchậm:500-750 mg \n1-2,5 gam, uống 1 viên \nsau ăn, ngày 2-3 lần \nDạng phóng thích chậm: \n500-2000 mg/ngày uống 1 \nlần",
+    "quoteVi": "Bảng hướng dẫn liều dùng Metformin: 500-1000 mg; dạng phóng thích chậm 500-2000 mg/ngày.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.pregnancy_insulin",
+    "sourceId": "ada_2026_soc_15",
+    "pdfPage": 8,
+    "locator": "PDF p. 8",
+    "quote": "Insulin should be used to manage type 1 diabetes in pregnancy and is preferred for the management of type 2 diabetes in pregnancy and GDM.",
+    "quoteVi": "Insulin nên được sử dụng để quản lý ĐTĐ týp 1 trong thai kỳ và là lựa chọn ưu tiên hàng đầu để quản lý ĐTĐ týp 2 và ĐTĐ thai kỳ (GDM).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.pregnancy_noninsulin",
+    "sourceId": "ada_2026_soc_15",
+    "pdfPage": 7,
+    "locator": "PDF p. 7",
+    "quote": "Other oral and noninsulin injectable glucose-lowering medications lack long-term safety data and are not recommended.",
+    "quoteVi": "Các thuốc hạ đường huyết dạng uống và tiêm không phải insulin khác thiếu dữ liệu an toàn dài hạn và không được khuyến cáo trong thai kỳ.",
+    "cor": "strong",
+    "loe": "E"
+  },
+  {
+    "id": "ada.dm2.2026.pregnancy_metformin_glyburide",
+    "sourceId": "ada_2026_soc_15",
+    "pdfPage": 7,
+    "locator": "PDF p. 7",
+    "quote": "Metformin and glyburide, indi- vidually or in combination, should not be used as first-line agents for manage- ment of diabetes in pregnancy, as both cross the placenta to the fetus",
+    "quoteVi": "Metformin và glyburide không nên dùng làm thuốc hàng đầu trong thai kỳ do cả hai đều qua được hàng rào nhau thai.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.pregnancy_sulfonylureas",
+    "sourceId": "ada_2026_soc_15",
+    "pdfPage": 9,
+    "locator": "PDF p. 9",
+    "quote": "Sulfonylureas are known to cross the placenta and have been associated with increased neonatal hypoglycemia.",
+    "quoteVi": "Các thuốc Sulfonylurea được biết là qua được hàng rào nhau thai và liên quan đến tăng nguy cơ hạ đường huyết sơ sinh.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.pregnancy_glp1",
+    "sourceId": "ada_2026_soc_15",
+    "pdfPage": 4,
+    "locator": "PDF p. 4",
+    "quote": "dual glucose-dependent insulinotropic polypeptide (GIP) and GLP-1 RAs should be discontin- ued prior to pregnancy, and contraception should be used while taking them",
+    "quoteVi": "Thuốc đồng vận thụ thể GLP-1 và đồng vận kép GIP/GLP-1 nên được ngừng sử dụng trước khi mang thai, và phải áp dụng biện pháp tránh thai trong suốt thời gian dùng thuốc.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "byt.dm2.2020.pregnancy_insulin",
+    "sourceId": "byt_5481_2020_dm2",
+    "pdfPage": 71,
+    "locator": "Trang 71",
+    "quote": "Thuốc sử dụng được cho phụ nữ có thai.",
+    "quoteVi": "Hướng dẫn BYT QĐ 5481/2020: Các thuốc insulin (như Degludec, Detemir, NPH, Aspart, Lispro) được sử dụng cho phụ nữ có thai.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "byt.dm2.2021.inpatient_insulin_1353",
+    "sourceId": "byt_1353_2021_dm2",
+    "pdfPage": 1,
+    "locator": "Điều 1, Mục 2, p. 1",
+    "quote": "Chế độ insulin nền – nhanh, trộn hỗn hợp (tiêm dưới da) là các l ựa chọn để kiểm soát glucose máu ở bệnh nhân có tăng glucose máu kèm bệnh nặng không nguy kịch",
+    "quoteVi": "QĐ 1353/QĐ-BYT: Chế độ insulin nền - nhanh, trộn hỗn hợp (tiêm dưới da) là các lựa chọn để kiểm soát glucose máu ở bệnh nhân có tăng glucose máu kèm bệnh nặng không nguy kịch.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "byt.dm2.2020.acarbose_dosing",
+    "sourceId": "byt_5481_2020_dm2",
+    "pdfPage": 68,
+    "locator": "Bảng thuốc hạ đường huyết / Trang 68",
+    "quote": "Acarbose 50-100 mg 25-100mg uống 3 lần/ngày ngay trước bữa ăn hoặc ngay sau miếng ăn đầu tiên",
+    "quoteVi": "Liều dùng Acarbose theo BYT 5481/2020: 25-100 mg uống 3 lần/ngày ngay trước hoặc ngay sau miếng ăn đầu tiên.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "byt.dm2.2020.premix_split_2_3",
+    "sourceId": "byt_5481_2020_dm2",
+    "pdfPage": 28,
+    "locator": "Trang 28",
+    "quote": "Nếu dùng 2 lần/ngày: chia thành 2/3 buổi sáng, 1/3 buổi chiều HOẶC 1/2 bu ổi sáng, 1/2 bu ổi chi ều tiêm ngay trư ớc ho ặc ngay sau khi ăn",
+    "quoteVi": "Phân liều insulin trộn sẵn: chia 2/3 liều buổi sáng và 1/3 liều buổi chiều trước ăn.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2024.hhs_effective_osmolality_300",
+    "sourceId": "ada_2024_hyperglycaemic_crises",
+    "pdfPage": 6,
+    "locator": "Section 3, Hyperosmolarity / p. 6",
+    "quote": "Calculated effective serum osmolality >300 mOsm/kg (calculated as [2xNa+ (mmol/L) + glucose (mmol/L)])",
+    "quoteVi": "Tiêu chuẩn chẩn đoán HHS: Áp lực thẩm thấu huyết thanh hiệu dụng > 300 mOsm/kg.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2024.hhs_resolution",
+    "sourceId": "ada_2024_hyperglycaemic_crises",
+    "pdfPage": 8,
+    "locator": "Criteria for Resolution / p. 8",
+    "quote": "› HHS: Calculated serum osmolality falls to <300 mOsm/kg and urine output is >0.5 mL/kg/h and glucose is <250 mg/dL",
+    "quoteVi": "Tiêu chuẩn giải quyết HHS: Áp lực thẩm thấu hiệu dụng giảm dưới 300 mOsm/kg, lượng nước tiểu > 0.5 mL/kg/h và glucose máu < 250 mg/dL (13.9 mmol/L).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2024.dka_history_diabetes",
+    "sourceId": "ada_2024_hyperglycaemic_crises",
+    "pdfPage": 6,
+    "locator": "Diagnostic Criteria / p. 6",
+    "quote": "to either a glucose value of $200 mg/dL (11.1 mmol/L) or a prior history of diabetes irrespective of the presenting glucose value.",
+    "quoteVi": "Đồng thuận 2024: Tiêu chuẩn đường huyết trong DKA là Glucose ≥ 200 mg/dL (11.1 mmol/L) HOẶC có tiền sử đái tháo đường bất kể mức đường huyết lúc nhập viện (bao gồm euglycemic DKA).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.older_deintensification_rec13_14a",
+    "sourceId": "ada_2026_soc_13",
+    "pdfPage": 9,
+    "locator": "Recommendation 13.14a / p. 9",
+    "quote": "Deintensify hypoglycemia- causing medications (e.g., insulin, sulfo- nylureas, or meglitinides) or switch to a medication class with low hypoglycemia risk",
+    "quoteVi": "Khuyến cáo ADA 2026 Ch. 13 (Khuyến cáo 13.14a): Giảm thang các thuốc gây hạ đường huyết (insulin, sulfonylurea) hoặc chuyển sang nhóm ít nguy cơ hạ đường huyết ở người cao tuổi có yếu tố nguy cơ.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.prandial_insulin_eating",
+    "sourceId": "ada_2026_soc_16",
+    "pdfPage": 5,
+    "locator": "Recommendation 16.6 / p. 5",
+    "quote": "with the addition of prandial insulin when individuals are eating.",
+    "quoteVi": "Insulin bữa ăn (bolus) được thêm vào khi người bệnh ăn uống được; tạm hoãn khi người bệnh nhịn ăn (NPO).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "byt.dm2.2020.inpatient_target_140",
+    "sourceId": "byt_5481_2020_dm2",
+    "pdfPage": 38,
+    "locator": "Chương V, Mục 1a / Trang 36 (PDF p. 38)",
+    "quote": "a) Mục tiêu glucose máu từ 7, 8 – 10,0 mmol/L (140 – 180 mg/dL) được khuyến cáo cho đa số BN (A)",
+    "quoteVi": "Mục tiêu glucose máu nội viện từ 7,8 – 10,0 mmol/L (140 – 180 mg/dL) được khuyến cáo cho đa số người bệnh (mức chứng cứ A).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "byt.dm2.2020.obesity_asian_bmi25",
+    "sourceId": "byt_2024_ckd",
+    "pdfPage": 20,
+    "locator": "Mục 2.2.1 Yếu tố nguy cơ / Trang 20",
+    "quote": "Béo phì (BMI ≥25 kg/m2) \n- Điều kiện kinh tế xã hội, môi trường, quần thể mang các biến thể gen gây bệnh cao, \nchủng tộc châu Á",
+    "quoteVi": "Phân loại béo phì chuẩn Châu Á tại Việt Nam: BMI ≥ 25 kg/m² (kèm yếu tố nguy cơ chủng tộc Châu Á theo Hướng dẫn Bộ Y tế).",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.flow_egfr_15",
+    "sourceId": "ada_2026_soc_11",
+    "pdfPage": 9,
+    "locator": "FLOW trial / p. 9",
+    "quote": "event (onset of >50% in eGFR, onset of persistent eGFR of <15 mL/min/1.73 m2, initiation of dialysis or transplant, kidney death, and cardiovascular death). The study was stopped",
+    "quoteVi": "Nghiên cứu FLOW: Semaglutide tiêm dưới da làm giảm có ý nghĩa thống kê kết cục thận chính gộp (giảm ≥ 50% eGFR, eGFR duy trì < 15 mL/phút/1.73m², khởi trị lọc máu/ghép thận hoặc tử vong thận/tim mạch).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.semaglutide.boxed_warning_mtc",
+    "sourceId": "novo_2026_ozempic_sc_pi",
+    "pdfPage": 1,
+    "locator": "Boxed Warning / PDF p. 1",
+    "quote": "with a personal or family history of MTC or in patients with Multiple Endocrine Neoplasia syndrome type 2 (MEN 2).",
+    "quoteVi": "Nhãn Ozempic tiêm: Chống chỉ định ở người có tiền sử bản thân/gia đình mắc ung thư biểu mô tuyến giáp thể tủy (MTC) hoặc hội chứng MEN 2.",
+    "cor": "strong",
+    "loe": "A",
+    "printedPage": "1"
+  },
+  {
+    "id": "ema.gliclazide.severe_renal_contra",
+    "sourceId": "ema_label_gliclazide_mr",
+    "pdfPage": 2,
+    "locator": "Section 4.3 Contraindications / p. 2",
+    "quote": "Severe renal or hepatic insufficiency: in these cases the use of insulin is recommended,",
+    "quoteVi": "Chống chỉ định Gliclazide theo EMA SmPC ở bệnh nhân suy thận nặng hoặc suy gan nặng; trong các trường hợp này khuyến cáo chuyển sang dùng insulin.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ema.vildagliptin.hepatic_contra",
+    "sourceId": "ema_label_vildagliptin",
+    "pdfPage": 3,
+    "locator": "Section 4.3 Contraindications / p. 3",
+    "quote": "Galvus should not be used in patients with hepatic impairment, including patients with pre-treatment alanine aminotransferase (ALT) or aspartate aminotransferase (AST) > 3",
+    "quoteVi": "Chống chỉ định Vildagliptin ở bệnh nhân suy gan, bao gồm người có ALT hoặc AST trước điều trị > 3 lần giới hạn trên bình thường (> 3x ULN).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2024.hhs_insulin_rate_005",
+    "sourceId": "ada_2024_hyperglycaemic_crises",
+    "pdfPage": 10,
+    "locator": "Insulin Infusion in HHS / PDF p. 10",
+    "quote": "without acidosis (pH $7.3 and bicarbonate$18 mmol/L), then aﬁxed-rate intravenous insulin infusion should be started at 0.05 units/kg/h.",
+    "quoteVi": "Trong HHS đơn thuần không kèm toan chuyển hóa (pH ≥ 7.30 và HCO3 ≥ 18 mmol/L), khởi đầu truyền tĩnh mạch insulin liều cố định tốc độ thấp 0.05 đơn vị/kg/giờ.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.t2d_tdd_1ukg",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 19,
+    "locator": "Combination Injectable Therapy and Prandial Insulin / PDF p. 19",
+    "quote": "Individuals with type 2 diabetes are generally more insulin resistant than those with type 1 diabetes, require higher daily doses (∼1 unit/kg), and have lower rates of hypoglycemia (180).",
+    "quoteVi": "ADA 2026 Ch. 9: Người bệnh ĐTĐ típ 2 thường đề kháng insulin nhiều hơn và có tổng nhu cầu insulin hàng ngày khoảng ~1 đơn vị/kg/ngày (chia cân đối nền – bữa ăn).",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.sglt2i_avoid_severe_illness",
+    "sourceId": "ada_2026_soc_16",
+    "pdfPage": 5,
+    "locator": "Noninsulin Therapies in Hospital / PDF p. 5",
+    "quote": "SGLT2 in- hibitors should be avoided in cases of se- vere illness, in people with ketonemia or ketonuria, and during prolonged fasting and surgical procedures ( 90 ).",
+    "quoteVi": "Tránh/tạm ngừng thuốc ức chế SGLT2 trong các đợt bệnh cấp tính nặng nội viện, có tăng ceton máu/niệu, nhịn ăn kéo dài và phẫu thuật.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "byt.dm2.2020.inpatient_hold_su_sglt2",
+    "sourceId": "byt_5481_2020_dm2",
+    "pdfPage": 40,
+    "locator": "Điều trị ĐTĐ nội viện / Trang 38 (PDF p. 40)",
+    "quote": "- Bệnh nhân không ăn qua miệng: ngừng các thuốc uống hạ glucose máu, tiêm insulin hiệu chỉnh, thêm insulin nhanh vào dịch truyền nuôi dư ng như trường hợp trên. - Bệnh nhân ăn qua miệng: * Có thể tiếp tục thuốc uống hạ glucose máu, trừ sulfonylurea, ức chế SGLT2, nếu không có chống chỉ định và glucose máu ổn định.",
+    "quoteVi": "BYT 5481/2020 nội viện: Tạm ngừng toàn bộ thuốc uống hạ đường huyết nếu nhịn ăn (NPO); ngay cả khi ăn được qua miệng cũng không tiếp tục Sulfonylurea và ức chế SGLT2 trong giai đoạn bệnh nội trú cấp tính.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "byt.dm2.2020.acarbose_mechanism_monosaccharide",
+    "sourceId": "byt_5481_2020_dm2",
+    "pdfPage": 62,
+    "locator": "Mục 5 Ức chế enzyme alpha-glucosidase / Trang 60 (PDF p. 62)",
+    "quote": "Cơ chế tác dụng: thuốc cạnh tranh và ức chế tác dụng của enzyme thủy phân đường phức thành đường đơn, do đó làm chậm hấp thu car bohydrat từ ruột.",
+    "quoteVi": "Acarbose ức chế enzyme thủy phân đường đôi/đường phức thành đường đơn tại ruột non; do đó khi cấp cứu hạ đường huyết trên bệnh nhân đang dùng Acarbose bắt buộc phải dùng đường đơn Glucose (Dextrose), không dùng đường mía (sucrose).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "kdigo.dm2.2022.agi_avoid_severe_ckd",
+    "sourceId": "kdigo_2022_diabetes",
+    "pdfPage": 26,
+    "locator": "Figure 23 & Figure 25 / PDF p. 26",
+    "quote": "Includes patients with eGFR < 30 ml/min per 1.73 m2 or treated with dialysis",
+    "quoteVi": "KDIGO 2022 phân tầng lựa chọn thuốc hạ đường huyết ở bệnh thận mạn giai đoạn nặng (eGFR < 30 mL/phút/1.73m² hoặc lọc máu): tránh nhóm ức chế alpha-glucosidase (Acarbose) và Sulfonylurea tác dụng kéo dài.",
+    "cor": "conditional",
+    "loe": "C"
+  },
+  {
+    "id": "ada.dm2.2026.kidney_failure_hypo_clearance",
+    "sourceId": "ada_2026_soc_16",
+    "pdfPage": 6,
+    "locator": "Inpatient Hypoglycemia Risk Factors / PDF p. 6",
+    "quote": "Kidney failure is an important risk factor for hypoglycemia in the hospital ( 105), possibly as a result of decreased insulin clearance.",
+    "quoteVi": "Suy thận làm giảm độ thanh thải insulin và là yếu tố nguy cơ quan trọng gây hạ đường huyết; cần giảm liều và theo dõi sát đường huyết mao mạch.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "byt.dm2.2020.insulin_hypo_reduce_10_20",
+    "sourceId": "byt_5481_2020_dm2",
+    "pdfPage": 27,
+    "locator": "Điều trị insulin / Trang 25 (PDF p. 27)",
+    "quote": "Hạ đường huy ết: xác đ ịnh nguyên nhân h ạ đường huy ết, n ếu không có nguyên nhân rõ ràng, giảm liều insulin 2 – 4 đơn vị hay giảm 10 – 20%.",
+    "quoteVi": "Khi xảy ra hạ đường huyết ở bệnh nhân đang dùng insulin: cần tìm nguyên nhân và giảm liều insulin 2 – 4 đơn vị hoặc giảm 10 – 20% liều đang dùng.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.hypo_15g_glucose",
+    "sourceId": "ada_2026_soc_6",
+    "pdfPage": 10,
+    "locator": "Hypoglycemia Treatment / PDF p. 10",
+    "quote": "to check blood glucose bef ore administ ering oral glucose and 15 min lat er , and to adminis - ter 15 g of glucose as initial tre atment.",
+    "quoteVi": "Quy tắc 15–15: Uống 15 gam glucose tác dụng nhanh khi hạ đường huyết và kiểm tra lại đường huyết sau 15 phút.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.older_overtreatment_su_insulin",
+    "sourceId": "ada_2026_soc_13",
+    "pdfPage": 10,
+    "locator": "Deintensification & Overtreatment / PDF p. 10",
+    "quote": "with complex health status, with medication plans that increase the risk of hypoglycemia through use of insulin and/or sulfonylureas has been identified as overtreatment, is com - mon in clinical practice (109–113), and may increase the risk of mortality (42).",
+    "quoteVi": "Điều trị quá mức (overtreatment) bằng Sulfonylurea và/hoặc Insulin ở người cao tuổi làm tăng nguy cơ hạ đường huyết và tăng tỷ lệ tử vong; bắt buộc xuống thang (ngừng/giảm liều).",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "kdigo.dm2.2022.semaglutide_sc_dosing",
+    "sourceId": "kdigo_2022_diabetes",
+    "pdfPage": 28,
+    "locator": "Figure 24 / GLP-1 RA Dosing / PDF p. 28",
+    "quote": "0.5 mg and 1 mg once weekly 3 mg, 7 mg, or 14 mg daily No dosage adjustment Use with eGFR >15 ml/min per 1.73 m2",
+    "quoteVi": "Liều duy trì chuẩn của Semaglutide tiêm dưới da trong ĐTĐ típ 2: 0.5 mg và 1 mg tiêm 1 lần/tuần; sử dụng khi eGFR > 15 mL/phút/1.73m².",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.semaglutide_tirzepatide_max_dose",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 21,
+    "locator": "Table 9.4 / Maximum Approved Doses / PDF p. 21",
+    "quote": "Semaglutide 2 mg pen 2 mg‡ $1,197 $966 14 mg (tablet) 14 mg $1,197 $965 Dual GIP and GLP-1 RA • Tirzepatide 15 mg pen 15 mg‡",
+    "quoteVi": "Liều tối đa được phê duyệt cho ĐTĐ típ 2 theo Bảng 9.4 ADA 2026: Semaglutide tiêm dưới da tối đa 2 mg/tuần; Semaglutide uống tối đa 14 mg/ngày; Tirzepatide tiêm dưới da tối đa 15 mg/tuần.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.tirzepatide.strengths_max_15",
+    "sourceId": "fda_label_tirzepatide",
+    "pdfPage": 6,
+    "locator": "Dosage Forms and Strengths / PDF p. 6",
+    "quote": "Single-dose Pen or Vial 2.5 mg/0.5 mL 5 mg/0.5 mL 7.5 mg/0.5 mL 10 mg/0.5 mL 12.5 mg/0.5 mL 15 mg/0.5 mL",
+    "quoteVi": "Nhãn FDA Tirzepatide (Mounjaro): Các hàm lượng chuẩn độ từ 2.5 mg khởi đầu lên dải duy trì 5 mg, 7.5 mg, 10 mg, 12.5 mg đến tối đa 15 mg/tuần.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "byt.dm2.2020.overweight_asian_bmi23",
+    "sourceId": "byt_5481_2020_dm2",
+    "pdfPage": 11,
+    "locator": "Chương II, Mục 2a / Trang 9 (PDF p. 11)",
+    "quote": "Người trư ởng thành ở bất k ỳ tuổi nào có th ừa cân ho ặc béo phì (BMI ≥ 23 kg/m2) và có kèm một trong số các yếu tố nguy cơ sau",
+    "quoteVi": "Ngưỡng thừa cân/béo phì chuẩn người Châu Á theo BYT 5481/2020: BMI ≥ 23 kg/m².",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.basal_50pct_tdd",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 3,
+    "locator": "Table 9.1 / Insulin Plans / PDF p. 3",
+    "quote": "Bedtime: N ∼50% of TDD.",
+    "quoteVi": "Tỷ trọng insulin nền chuẩn chiếm khoảng 50% tổng liều insulin hàng ngày (TDD); khi riêng insulin nền vượt quá 50% tổng nhu cầu chuẩn (~0.5 U/kg/ngày) hoặc FPG đã đạt đích mà HbA1c còn cao, cần đánh giá overbasalization.",
+    "cor": "conditional",
+    "loe": "B"
+  },
+  {
+    "id": "kdigo.dm2.2022.metformin_halve_30_44",
+    "sourceId": "kdigo_2022_diabetes",
+    "pdfPage": 82,
+    "locator": "Figure 27 / Metformin Dosing in CKD / PDF p. 82",
+    "quote": "Halve the dose\nYes\nNo\nImmediate release:\n• Initial 500 mg or 850 mg once daily\n• Titrate upwards by 500 mg/d or 850 mg/d\n  every 7 days until maximum dose\nOR\nExtended release:\n• Initial 500 mg daily\n• Titrate upwards by 500 mg/d every 7 days\n  until maximum dose\nInitiate at half the dose\nand titrate upwards to\nhalf of maximum\nrecommended dose",
+    "quoteVi": "KDIGO 2022 Hình 27: Khi eGFR 30–44 mL/phút/1.73m², giảm một nửa liều Metformin (tối đa bằng một nửa liều tối đa khuyến cáo, tức ≤ 1000 mg/ngày).",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "kdigo.dm2.2022.metformin_max_2000_1000",
+    "sourceId": "kdigo_2022_diabetes",
+    "pdfPage": 80,
+    "locator": "Table / Metformin Formulations & Maximum Dose / PDF p. 80",
+    "quote": "Metformin, Immediate Release Tablet, Oral: 500 mg, 850 mg, 1000 mg 500 mg once or twice daily OR 850 mg once daily Usual maintenance dose: 1 g twice daily",
+    "quoteVi": "KDIGO 2022: Liều duy trì chuẩn của Metformin là 1 g x 2 lần/ngày (2000 mg/ngày); giảm một nửa còn tối đa 1000 mg/ngày khi eGFR 30–44 mL/phút/1.73m².",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "kdigo.dm2.2022.su_avoid_low_egfr",
+    "sourceId": "kdigo_2022_diabetes",
+    "pdfPage": 78,
+    "locator": "Chapter 4 Glycemic Management / PDF p. 78",
+    "quote": "All glucose-lowering medications should be selected and dosed according to eGFR. 349 For example, sulfonylureas that are long-acting or cleared by the kidney should be avoided at low eGFRs.",
+    "quoteVi": "KDIGO 2022: Các thuốc nhóm Sulfonylurea tác dụng kéo dài hoặc thải trừ qua thận (như glimepiride, glibenclamide) cần tránh sử dụng khi eGFR thấp do nguy cơ hạ đường huyết nặng kéo dài.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "kdigo.dm2.2022.sglt2_hypo_su_adjust",
+    "sourceId": "kdigo_2022_diabetes",
+    "pdfPage": 47,
+    "locator": "Chapter 1 / SGLT2i Concomitant Sulfonylurea or Insulin / PDF p. 47",
+    "quote": "when this therapy is used concomitantly with other medications that can cause hypoglycemia, such as sulfonylureas or insu-\nlin.149,150 These therapies may need to be adjusted if the pa-\ntient’s HbA1c is already below the treatment target.",
+    "quoteVi": "KDIGO 2022: Khi khởi trị thêm thuốc bảo vệ tim-thận (SGLT2i/GLP-1 RA) trên bệnh nhân đang dùng Sulfonylurea hoặc Insulin có HbA1c đạt hoặc gần mục tiêu, cần chủ động giảm liều hoặc ngừng Sulfonylurea để phòng ngừa hạ đường huyết.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2024.eudka_dextrose_start",
+    "sourceId": "ada_2024_hyperglycaemic_crises",
+    "pdfPage": 8,
+    "locator": "Figure 3 / DKA Management Algorithm / PDF p. 8",
+    "quote": "In euglycemic DKA (glucose <200 mg/dL and positive BOHB), 5% or 10% dextrose needs to be started alongside 0.9% NaCl/crystalloid at the start of the insulin treatment",
+    "quoteVi": "Đồng thuận Quốc tế 2024 (Hình 3): Trong toan ceton đường huyết bình thường (euDKA, glucose < 200 mg/dL / 11.1 mmol/L hoặc < 13.9 mmol/L), bắt buộc truyền song song dung dịch Dextrose 5% hoặc 10% cùng NaCl 0.9% ngay từ thời điểm bắt đầu truyền insulin tĩnh mạch.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2024.mixed_dka_hhs_insulin",
+    "sourceId": "ada_2024_hyperglycaemic_crises",
+    "pdfPage": 10,
+    "locator": "Insulin Therapy in Mixed DKA/HHS / PDF p. 10",
+    "quote": "which represents mixed DKA/HHS, then a ﬁxed- rate intravenous insulin infusion should be started at 0.1 units/kg/h (117).",
+    "quoteVi": "Đồng thuận Quốc tế 2024: Trong thể hỗn hợp DKA/HHS (vừa tăng áp lực thẩm thấu máu vừa có toan ceton), khởi đầu truyền tĩnh mạch insulin liều cố định 0.1 đơn vị/kg/giờ như phác đồ DKA.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2024.dka_sglt2i_stop_permanent",
+    "sourceId": "ada_2024_hyperglycaemic_crises",
+    "pdfPage": 14,
+    "locator": "Table 4 / SGLT2 Inhibitor-Associated DKA / PDF p. 14",
+    "quote": "In patients with T2D, because of the lack of safety data, initiation or continuation of SGLT2 inhibitor therapy after DKA resolution is not routinely recommended.",
+    "quoteVi": "Đồng thuận Quốc tế 2024 (Bảng 4): Khi xảy ra DKA/euDKA liên quan SGLT2i ở bệnh nhân ĐTĐ típ 2, bắt buộc NGỪNG HẲN SGLT2i khi nhập viện và không khuyến cáo dùng lại thường quy sau khi hồi phục DKA.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.icu_insulin_threshold_180",
+    "sourceId": "ada_2026_soc_16",
+    "pdfPage": 2,
+    "locator": "Recommendations 16.4a & 16.5a / PDF p. 2",
+    "quote": "16.4a Insulin should be initiated or in-\ntensified for treatment of persistent \nhyperglycemia starting at a threshold \nof ≥\n180 mg/dL (≥10.0 mmol/L) (con -\nfirmed on two occasions within 24 h) \nfor the majority of critically ill individu-\nals (those in the intensive care unit \n[ICU]). A",
+    "quoteVi": "ADA 2026 Khuyến cáo 16.4a: Khởi trị hoặc tăng cường truyền insulin tĩnh mạch liên tục khi đường huyết ≥ 180 mg/dL (≥ 10.0 mmol/L) ở bệnh nhân nguy kịch điều trị tại ICU.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.tube_feeding_insulin",
+    "sourceId": "ada_2026_soc_16",
+    "pdfPage": 7,
+    "locator": "Enteral and Parenteral Feedings / PDF p. 7",
+    "quote": "Rapid-acting insulin every 4 h, regular insulin every 6 h, or NPH insulin every 8 – 12 h ar e options f or covera ge of nutri - tional needs during continuous adminis - tration of enter al tube f eeds.",
+    "quoteVi": "ADA 2026 Mục 16: Ở bệnh nhân nuôi ăn qua ống thông (sonde) liên tục, sử dụng insulin nền phối hợp insulin dinh dưỡng/hiệu chỉnh bằng Regular mỗi 6 giờ hoặc insulin tác dụng nhanh mỗi 4 giờ (hoặc NPH mỗi 8–12 giờ).",
+    "cor": "conditional",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.tube_feeding_dextrose_interrupt",
+    "sourceId": "ada_2026_soc_16",
+    "pdfPage": 7,
+    "locator": "Enteral and Parenteral Feedings / PDF p. 7",
+    "quote": "If ent er al nutrition is interrupt ed, intra venous dextr ose ma y be given f or du - ration of active insulin time.",
+    "quoteVi": "ADA 2026 Mục 16: Nếu nuôi ăn qua sonde bị ngừng hoặc gián đoạn đột ngột ở bệnh nhân đã tiêm insulin, cần truyền ngay Dextrose tĩnh mạch (như Dextrose 10%) trong suốt thời gian insulin còn tác dụng để phòng hạ đường huyết.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.perioperative_oral_basal_25",
+    "sourceId": "ada_2026_soc_16",
+    "pdfPage": 8,
+    "locator": "Perioperative Care / PDF p. 8",
+    "quote": "4. Metformin and other oral glucose- lowering agents should be held on the day of surgery or procedure. See below for SGLT2 inhibitor and GLP-1 RA use in the perioperative period.",
+    "quoteVi": "ADA 2026 Chu phẫu: Tạm hoãn Metformin và các thuốc hạ đường huyết đường uống vào sáng ngày phẫu thuật; giảm 20–25% liều insulin nền analog vào buổi tối trước mổ.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.perioperative_basal_reduce_25_quote",
+    "sourceId": "ada_2026_soc_16",
+    "pdfPage": 8,
+    "locator": "Perioperative Care / PDF p. 8",
+    "quote": "Compared with usual dosing, a reduc- tion of 25 % of basal insulin dose given the evening before surgery is more likely to achieve perioperative blood glucose goals with a lower risk for hypoglycemia (149).",
+    "quoteVi": "Giảm 25% liều insulin nền vào buổi tối trước ngày phẫu thuật giúp đạt mục tiêu đường huyết chu phẫu với nguy cơ hạ đường huyết thấp hơn.",
+    "cor": "conditional",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.incretin_pancreatitis",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 12,
+    "locator": "Table 9.2 / GLP-1 RA Considerations / PDF p. 12",
+    "quote": "Pancreatitis: acute pancrea - titis has been reported, but causality has not been established; do not initiate if at high risk for pancreatitis, and discontinue if pancreati- tis is suspected",
+    "quoteVi": "ADA 2026 Bảng 9.2: Không khởi trị thuốc đồng vận GLP-1 / GIP-GLP-1 ở người có nguy cơ cao hoặc tiền sử viêm tụy cấp, và ngừng ngay nếu nghi ngờ viêm tụy cấp.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.dpp4_pancreatitis",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 13,
+    "locator": "Table 9.2 / DPP-4i Considerations / PDF p. 13",
+    "quote": "Pancreatitis has been reported but causality has not been established; discontinue if pancreatitis is suspected",
+    "quoteVi": "ADA 2026 Bảng 9.2: Đã có báo cáo viêm tụy cấp liên quan thuốc ức chế DPP-4; ngừng ngay thuốc nếu nghi ngờ hoặc có viêm tụy cấp.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.hfpef_obesity_dual_gip_glp1",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 8,
+    "locator": "Recommendation 9.9a / PDF p. 8",
+    "quote": "9.9a In adults with type 2 diabetes, obesity, and symptomatic heart fail - ure with preserved ejection fraction (HFpEF), the glucose-lowering treatment plan should include a dual glucose- dependent insulinotropic polypeptide",
+    "quoteVi": "ADA 2026 Khuyến cáo 9.9a: Ở người bệnh ĐTĐ típ 2 kèm béo phì và suy tim phân suất tống máu bảo tồn (HFpEF) có triệu chứng, phác đồ nên bao gồm đồng vận kép GIP/GLP-1 (Tirzepatide) độc lập với mức HbA1c.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.hfpef_obesity_glp1",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 8,
+    "locator": "Recommendation 9.9b / PDF p. 8",
+    "quote": "9.9b In adults with type 2 diabetes, obesity, and symptomatic HFpEF, the glucose-lowering treatment plan should include a GLP-1 RA with demonstrated benefits for HF-related symptoms A and/or reduction in HF events",
+    "quoteVi": "ADA 2026 Khuyến cáo 9.9b: Ở người bệnh ĐTĐ típ 2 kèm béo phì và suy tim HFpEF có triệu chứng, phác đồ nên bao gồm GLP-1 RA có bằng chứng cải thiện triệu chứng và giảm biến cố suy tim (Semaglutide) độc lập với HbA1c.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.rec_9_11_advanced_ckd",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 8,
+    "locator": "Recommendation 9.11 / PDF p. 8",
+    "quote": "9.11 In adults with type 2 diabetes and advanced CKD (eGFR <30 mL/ min/1.73 m2), a GLP-1 RA is preferred for glycemic management due to lower risk of hypoglycemia and for cardiovas- cular event reduction. B",
+    "quoteVi": "ADA 2026 Khuyến cáo 9.11: Ở bệnh nhân ĐTĐ típ 2 kèm bệnh thận mạn giai đoạn nặng (eGFR < 30 mL/phút/1.73m²), ưu tiên GLP-1 RA để kiểm soát đường huyết với nguy cơ hạ đường huyết thấp và giảm biến cố tim mạch.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.rec_9_15_intensify",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 10,
+    "locator": "Recommendation 9.15 / PDF p. 10",
+    "quote": "9.15 Treatment modification (including intensification or deintensification) for adults not meeting individualized treat- ment goals should not be delayed. A",
+    "quoteVi": "ADA 2026 Khuyến cáo 9.15: Không trì hoãn điều chỉnh hoặc phối hợp tăng bậc phác đồ ở người bệnh ĐTĐ típ 2 chưa đạt mục tiêu HbA1c cá thể hóa.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.combo_hba1c_1_5_above",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 15,
+    "locator": "Combination Therapy / PDF p. 15",
+    "quote": "When A1C is ≥1.5% above the indi- vidualized glycemic goal (see section 6, “Glycemic Goals, Hypoglycemia, and Hyperglycemic Crises,” for appropriate goals), many individuals will require dual- combination therapy or a more potent glucose-lowering agent",
+    "quoteVi": "ADA 2026 Mục 9: Khi HbA1c cao hơn mục tiêu cá thể hóa ≥ 1.5% (ví dụ ≥ 8.5%), cần khởi trị phối hợp kép ngay từ đầu để sớm đạt mục tiêu đường huyết.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.statin_primary_40_75",
+    "sourceId": "ada_2026_soc_10",
+    "pdfPage": 8,
+    "locator": "Recommendation 10.18 / PDF p. 8",
+    "quote": "10.18 For people with diabetes aged 40–75 years without ASCVD, use moderate-intensity statin therapy in addition to lifestyle therapy. A",
+    "quoteVi": "ADA 2026 Khuyến cáo 10.18: Ở bệnh nhân đái tháo đường từ 40–75 tuổi chưa có bệnh tim mạch xơ vữa (ASCVD), khuyến cáo dùng statin cường độ trung bình để dự phòng tiên phát.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.statin_age_20_39",
+    "sourceId": "ada_2026_soc_10",
+    "pdfPage": 8,
+    "locator": "Recommendation 10.19 / PDF p. 8",
+    "quote": "10.19 For people with diabetes aged 20–39 years with additional ASCVD risk factors, it may be reasonable to initiate statin therapy in addition to lifestyle therapy. C",
+    "quoteVi": "ADA 2026 Khuyến cáo 10.19: Ở bệnh nhân đái tháo đường từ 20–39 tuổi có thêm yếu tố nguy cơ tim mạch xơ vữa, có thể cân nhắc khởi trị statin phối hợp thay đổi lối sống.",
+    "cor": "conditional",
+    "loe": "C"
+  },
+  {
+    "id": "ada.dm2.2026.statin_secondary_all_ages",
+    "sourceId": "ada_2026_soc_10",
+    "pdfPage": 8,
+    "locator": "Recommendation 10.26 / PDF p. 8",
+    "quote": "10.26 For people of all ages with dia- betes and ASCVD, high-intensity statin therapy should be added to lifestyle therapy. A",
+    "quoteVi": "ADA 2026 Khuyến cáo 10.26: Ở người bệnh đái tháo đường mọi lứa tuổi đã có bệnh tim mạch do xơ vữa (ASCVD), bắt buộc chỉ định statin cường độ cao để dự phòng thứ phát.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.aspirin_bleeding_balance",
+    "sourceId": "ada_2026_soc_10",
+    "pdfPage": 15,
+    "locator": "Antiplatelet Agents / PDF p. 15",
+    "quote": "carefully weighs the cardiovascular benefits against the increase in risk of bleeding. For people with documented ASCVD, use of aspirin for secondary prevention has far greater benefit than risk",
+    "quoteVi": "ADA 2026 Mục 10: Luôn cân nhắc nguy cơ xuất huyết (xuất huyết tiêu hóa, loét dạ dày hoạt động, hoặc đang dùng thuốc chống đông đường uống) trước khi chỉ định aspirin.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.finerenone_rec_11_8",
+    "sourceId": "ada_2026_soc_11",
+    "pdfPage": 10,
+    "locator": "Recommendation 11.8 / PDF p. 10",
+    "quote": "11.8 To reduce CKD progression and cardiovascular events in people with CKD and albuminuria, a nonsteroidal MRA that has been shown to be effec- tive in clinical trials is recommended (if eGFR is ≥25 mL/min/1.73 m2).",
+    "quoteVi": "ADA 2026 Khuyến cáo 11.8: Ở người bệnh ĐTĐ típ 2 có bệnh thận mạn kèm albumin niệu (UACR ≥ 3 mg/mmol / ≥ 30 mg/g) và eGFR ≥ 25 mL/phút/1.73m², khuyến cáo đối kháng thụ thể mineralocorticoid không steroid (Finerenone) để giảm tiến triển CKD và biến cố tim mạch.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.sglt2_stop_kidney_failure",
+    "sourceId": "ada_2026_soc_11",
+    "pdfPage": 11,
+    "locator": "Recommendation 11.11a / PDF p. 11",
+    "quote": "11.11a Individuals with eGFR <20 mL/min/1.73 m2 and not on dialysis can be safely continued on SGLT2 inhibitors to reduce the risk of CKD progression B and for cardiovascular benefits. C",
+    "quoteVi": "ADA 2026 Khuyến cáo 11.11a: Thuốc ức chế SGLT2 chỉ được tiếp tục duy trì khi chưa lọc máu; cần ngừng SGLT2i khi bệnh nhân bước vào lọc máu chu kỳ.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.glp1_dialysis_rec_11_11b",
+    "sourceId": "ada_2026_soc_11",
+    "pdfPage": 11,
+    "locator": "Recommendation 11.11b / PDF p. 11",
+    "quote": "11.11b Individuals on dialysis can be safely initiated or continued on GLP- 1–based therapy that is not depen - dent on kidney clearance to reduce cardiovascular risk and mortality. C",
+    "quoteVi": "ADA 2026 Khuyến cáo 11.11b: Người bệnh đang lọc máu có thể cân nhắc khởi trị hoặc tiếp tục GLP-1 RA không phụ thuộc thanh thải thận để giảm nguy cơ tim mạch và tử vong (mức C; khác với KDIGO 2022/BYT 5481 giới hạn khởi trị ở eGFR ≥ 15).",
+    "cor": "conditional",
+    "loe": "C"
+  },
+  {
+    "id": "ada.dm2.2026.sglt2i_foot_ulcer_caution",
+    "sourceId": "ada_2026_soc_12",
+    "pdfPage": 11,
+    "locator": "Foot Care & SGLT2 Inhibitors / PDF p. 11",
+    "quote": "As a pre - caution, st opping canagliflozin should be consider ed if an individual develops a significant lower -limb complication (e. g., DFU , ost eom yelitis, or g angrene), at leas t until the condition has reso lved.",
+    "quoteVi": "ADA 2026 Mục 12: Thận trọng cao hoặc tạm hoãn SGLT2i (đặc biệt tránh canagliflozin) ở bệnh nhân đang có loét bàn chân đái tháo đường hoạt động, viêm xương tủy xương, hoại thư hoặc tiền sử cắt cụt chi.",
+    "cor": "conditional",
+    "loe": "B"
+  },
+  {
+    "id": "esc.dm2.2023.ascvd_sglt2_glp1_class1",
+    "sourceId": "esc_2023_diabetes",
+    "pdfPage": 14,
+    "locator": "Section 5.2 ASCVD Recommendations / PDF p. 14",
+    "quote": "SGLT2 inhibitors with proven CV benefit are recommended in patients with T2DM and ASCVD to reduce CV events, independent of baseline or target HbA1c and independent of concomitant glucose-lowering medication. I A",
+    "quoteVi": "ESC 2023 (Class I, Level A): Ở bệnh nhân ĐTĐ típ 2 kèm bệnh tim mạch do xơ vữa (ASCVD), khuyến cáo chỉ định đồng thời SGLT2i và GLP-1 RA có bằng chứng lợi ích tim mạch, độc lập với HbA1c nền và thuốc hạ đường huyết đang dùng.",
+    "cor": "I",
+    "loe": "A"
+  },
+  {
+    "id": "fda.dulaglutide.boxed_warning_mtc",
+    "sourceId": "fda_label_dulaglutide",
+    "pdfPage": 1,
+    "locator": "Boxed Warning / PDF p. 1",
+    "quote": "TRULICITY is contraindicated in patients with a personal or family history of MTC and in patients with Multiple Endocrine Neoplasia syndrome type 2 (MEN 2).",
+    "quoteVi": "Cảnh báo hộp đen FDA Trulicity (Dulaglutide): Chống chỉ định tuyệt đối ở bệnh nhân có tiền sử bản thân hoặc gia đình mắc ung thư tuyến giáp thể tủy (MTC) hoặc hội chứng MEN 2.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.dulaglutide.pancreatitis",
+    "sourceId": "fda_label_dulaglutide",
+    "pdfPage": 2,
+    "locator": "Warnings and Precautions 5.2 / PDF p. 2",
+    "quote": "Acute Pancreatitis: Has been observed in patients treated with GLP-1 receptor agonists, including TRULICITY. Discontinue if pancreatitis is suspected ( 5.2 ).",
+    "quoteVi": "Nhãn FDA Dulaglutide (Mục 5.2): Đã ghi nhận viêm tụy cấp; ngừng ngay thuốc nếu nghi ngờ viêm tụy cấp.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.dulaglutide.max_dose_4_5",
+    "sourceId": "fda_label_dulaglutide",
+    "pdfPage": 1,
+    "locator": "Dosage and Administration 2.1 / PDF p. 1",
+    "quote": "Maximum recommended dosage is 4.5 mg injected subcutaneously once weekly.",
+    "quoteVi": "Nhãn FDA Dulaglutide: Liều tối đa khuyến cáo là 4.5 mg tiêm dưới da 1 lần/tuần.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.liraglutide.boxed_warning_mtc",
+    "sourceId": "fda_label_liraglutide",
+    "pdfPage": 1,
+    "locator": "Boxed Warning / PDF p. 1",
+    "quote": "VICTOZA is contraindicated in patients with a personal or family history of MTC or in patients with Multiple Endocrine Neoplasia syndrome type 2 (MEN 2).",
+    "quoteVi": "Cảnh báo hộp đen FDA Victoza (Liraglutide): Chống chỉ định tuyệt đối ở bệnh nhân có tiền sử bản thân hoặc gia đình mắc MTC hoặc hội chứng MEN 2.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.liraglutide.pancreatitis",
+    "sourceId": "fda_label_liraglutide",
+    "pdfPage": 2,
+    "locator": "Warnings and Precautions 5.2 / PDF p. 2",
+    "quote": "Acute Pancreatitis : Has been observed in patients treated with GLP-1 receptor agonists, including VICTOZA. Discontinue if pancreatitis is suspected. ( 5.2 )",
+    "quoteVi": "Nhãn FDA Liraglutide (Mục 5.2): Đã ghi nhận viêm tụy cấp; ngừng ngay nếu nghi ngờ viêm tụy cấp.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.tirzepatide.boxed_warning_mtc",
+    "sourceId": "fda_label_tirzepatide",
+    "pdfPage": 1,
+    "locator": "Boxed Warning / PDF p. 1",
+    "quote": "MOUNJARO is contraindicated in patients with a personal or family history of MTC or in patients with Multiple Endocrine Neoplasia syndrome type 2 (MEN 2).",
+    "quoteVi": "Cảnh báo hộp đen FDA Mounjaro (Tirzepatide): Chống chỉ định tuyệt đối ở bệnh nhân có tiền sử bản thân hoặc gia đình mắc MTC hoặc hội chứng MEN 2.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.tirzepatide.pancreatitis",
+    "sourceId": "fda_label_tirzepatide",
+    "pdfPage": 2,
+    "locator": "Warnings and Precautions 5.2 / PDF p. 2",
+    "quote": "Acute Pancreatitis: Has been observed in patients treated with GLP-1 receptor agonists, or MOUNJARO. Discontinue if pancreatitis is suspected. ( 5.2 )",
+    "quoteVi": "Nhãn FDA Tirzepatide (Mục 5.2): Đã ghi nhận viêm tụy cấp; ngừng ngay nếu nghi ngờ viêm tụy cấp.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.semaglutide_rybelsus.boxed_warning_mtc",
+    "sourceId": "fda_label_semaglutide_rybelsus",
+    "pdfPage": 1,
+    "locator": "Boxed Warning / PDF p. 1",
+    "quote": "RYBELSUS and OZEMPIC tablets are contraindicated in patients with a personal or family history of MTC or in patients with Multiple Endocrine Neoplasia syndrome type 2 (MEN 2).",
+    "quoteVi": "Cảnh báo hộp đen FDA Rybelsus (Semaglutide uống): Chống chỉ định tuyệt đối ở bệnh nhân có tiền sử bản thân hoặc gia đình mắc MTC hoặc hội chứng MEN 2.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.semaglutide_rybelsus.pancreatitis",
+    "sourceId": "fda_label_semaglutide_rybelsus",
+    "pdfPage": 2,
+    "locator": "Warnings and Precautions 5.2 / PDF p. 2",
+    "quote": "Acute Pancreatitis : Has been observed in patients treated with GLP-1 receptor agonists, including RYBELSUS or OZEMPIC tablets. Discontinue if pancreatitis is suspected. ( 5.2 )",
+    "quoteVi": "Nhãn FDA Semaglutide uống (Mục 5.2): Đã ghi nhận viêm tụy cấp; ngừng ngay nếu nghi ngờ viêm tụy cấp.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.semaglutide.pancreatitis",
+    "sourceId": "novo_2026_ozempic_sc_pi",
+    "pdfPage": 1,
+    "locator": "Highlights / Warnings and Precautions 5.2 / PDF p. 1",
+    "quote": "Discontinue if pancreatitis is suspected.",
+    "quoteVi": "Nhãn Ozempic tiêm (Mục 5.2): Ngừng thuốc nếu nghi ngờ viêm tụy.",
+    "cor": "strong",
+    "loe": "A",
+    "printedPage": "1"
+  },
+  {
+    "id": "fda.sitagliptin.pancreatitis",
+    "sourceId": "fda_label_sitagliptin",
+    "pdfPage": 1,
+    "locator": "Warnings and Precautions 5.1 / PDF p. 1",
+    "quote": "Pancreatitis: There have been postmarketing reports of acute pancreatitis, including fatal and non- fatal hemorrhagic or necrotizing pancreatitis. If pancreatitis is suspected, promptly discontinue",
+    "quoteVi": "Nhãn FDA Sitagliptin (Mục 5.1): Đã có báo cáo viêm tụy cấp hoại tử/xuất huyết; ngừng ngay Sitagliptin nếu nghi ngờ viêm tụy cấp và tránh dùng khi có tiền sử viêm tụy.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.linagliptin.pancreatitis",
+    "sourceId": "fda_label_linagliptin",
+    "pdfPage": 1,
+    "locator": "Warnings and Precautions 5.1 / PDF p. 1",
+    "quote": "Pancreatitis: There have been reports of acute pancreatitis, including fatal pancreatitis.",
+    "quoteVi": "Nhãn FDA Linagliptin (Mục 5.1): Đã có báo cáo viêm tụy cấp kể cả tử vong; ngừng ngay thuốc nếu nghi ngờ viêm tụy cấp.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.saxagliptin.pancreatitis",
+    "sourceId": "fda_label_saxagliptin",
+    "pdfPage": 1,
+    "locator": "Recent Major Changes & Warnings 5.1 / PDF p. 1",
+    "quote": "Warnings and Precautions Pancreatitis (5.1)",
+    "quoteVi": "Nhãn FDA Saxagliptin (Mục 5.1): Cảnh báo nguy cơ viêm tụy cấp; ngừng ngay nếu nghi ngờ viêm tụy cấp.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.saxagliptin.cyp3a4_2_5mg",
+    "sourceId": "fda_label_saxagliptin",
+    "pdfPage": 2,
+    "locator": "Drug Interactions 7.1 / PDF p. 2",
+    "quote": "Coadministration with strong CYP3A4/5 inhibitors (e.g., ketoconazole) significantly increases saxagliptin concentrations. Recommend limiting ONGLYZA dose to 2.5 mg once daily. (2.3 , 7.1)",
+    "quoteVi": "Nhãn FDA Saxagliptin (Mục 2.3 & 7.1): Dùng đồng thời thuốc ức chế mạnh CYP3A4/5 (ketoconazole, clarithromycin, itraconazole, ritonavir) làm tăng mạnh nồng độ saxagliptin; bắt buộc giới hạn liều tối đa 2.5 mg x 1 lần/ngày.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ema.vildagliptin.pancreatitis",
+    "sourceId": "ema_label_vildagliptin",
+    "pdfPage": 4,
+    "locator": "Section 4.4 Acute pancreatitis / PDF p. 4",
+    "quote": "Acute pancreatitis Use of vildagliptin has been associated with a risk of developing acute pancreatitis. Patients should be informed of the characteristic symptom of acute pancreatitis. If pancreatitis is suspected, vildagliptin should be",
+    "quoteVi": "Nhãn EMA Vildagliptin (Mục 4.4): Sử dụng vildagliptin có liên quan đến nguy cơ viêm tụy cấp; phải ngừng thuốc nếu nghi ngờ viêm tụy cấp.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ema.vildagliptin.renal_50mg_od",
+    "sourceId": "ema_label_vildagliptin",
+    "pdfPage": 3,
+    "locator": "Section 4.2 Renal impairment / PDF p. 3",
+    "quote": "In patients with moderate or severe renal impairment or with end-stage renal disease (ESRD), the recommended dose of Galvus is 50 mg once daily",
+    "quoteVi": "Nhãn EMA Vildagliptin (Mục 4.2): Ở bệnh nhân suy thận vừa, nặng hoặc bệnh thận giai đoạn cuối (eGFR < 50 mL/phút), liều khuyến cáo giảm còn 50 mg x 1 lần/ngày.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ema.gliclazide.titration_60_120",
+    "sourceId": "ema_label_gliclazide_mr",
+    "pdfPage": 1,
+    "locator": "Section 4.2 Posology / PDF p. 1",
+    "quote": "If blood glucose is not adequately controlled, the dose may be increased to 60, 90 or 120 mg daily, in successive steps.",
+    "quoteVi": "Nhãn EMA Gliclazide MR (Mục 4.2): Các bậc chuẩn độ liều 30, 60, 90 đến tối đa 120 mg/ngày; thận trọng giới hạn ≤ 60 mg/ngày khi suy thận vừa.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.pioglitazone.hepatic_injury",
+    "sourceId": "fda_label_pioglitazone",
+    "pdfPage": 1,
+    "locator": "Warnings and Precautions 5.3 / PDF p. 1",
+    "quote": "Hepatic effects: Postmarketing reports of hepatic failure, sometimes fatal. Causality cannot be excluded. If liver injury is detected, promptly interrupt ACTOS and assess patient for probable cause,",
+    "quoteVi": "Nhãn FDA Pioglitazone (Mục 5.3): Đã có báo cáo suy gan cấp tử vong; ngừng ngay Pioglitazone và chống chỉ định dùng khi có bệnh gan hoạt động hoặc tăng men gan.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.metformin.hepatic_contra",
+    "sourceId": "dailymed_2026_metformin_ir_aurobindo",
+    "pdfPage": 5,
+    "locator": "§5.1 Lactic Acidosis — Hepatic impairment; see§8.7",
+    "quote": "Patients with hepatic impairment have developed cases of\nmetformin-associated lactic acidosis. This may be due to impaired lactate clearance\nresulting in higher lactate blood levels. Therefore, avoid use of metformin\nhydrochloride in patients with clinical or laboratory evidence of hepatic disease.",
+    "quoteVi": "Tránh dùng metformin khi có bằng chứng lâm sàng hoặc xét nghiệm của bệnh gan do nguy cơ nhiễm toan lactic. Đây là cảnh báo/khuyến cáo tránh dùng, không phải mục chống chỉ định4."
+  },
+  {
+    "id": "fda.glimepiride.hepatic_impairment",
+    "sourceId": "fda_label_glimepiride",
+    "pdfPage": 4,
+    "locator": "Warnings and Precautions 5.1 / PDF p. 4",
+    "quote": "Debilitated or malnourished patients, and those with adrenal, pituitary, or hepatic impairment are particularly susceptible to the hypoglycemic action of glucose-lowering medications.",
+    "quoteVi": "Nhãn FDA Glimepiride (Mục 5.1): Bệnh nhân suy gan rất nhạy cảm với nguy cơ hạ đường huyết nặng kéo dài; tránh dùng sulfonylurea ở bệnh nhân suy gan mất bù.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.dm2.metformin.contrast_60_48h",
+    "sourceId": "dailymed_2026_metformin_ir_aurobindo",
+    "pdfPage": 4,
+    "locator": "§2.4 Discontinuation for Iodinated Contrast Imaging Procedures",
+    "quote": "Discontinue metformin hydrochloride tablets at the time of, or prior to, an iodinated\ncontrast imaging procedure in patients with an eGFR between 30 and 60 mL/min/1.73\nm\n; in patients with a history of liver disease, alcoholism, or heart failure; or in patients\nwho will be administered intra-arterial iodinated contrast. Re-evaluate eGFR 48 hours\nafter the imaging procedure; restart metformin hydrochloride tablets if renal function is\nstable.",
+    "quoteVi": "Ngừng tại/trước tiêm cản quang iod nếu eGFR30–60, tiền sử bệnh gan/nghiện rượu/suy tim, hoặc cản quang động mạch. Đánh giá eGFR sau48giờ và chỉ dùng lại khi chức năng thận ổn định."
+  },
+  {
+    "id": "fda.semaglutide.pregnancy",
+    "sourceId": "novo_2026_ozempic_sc_pi",
+    "pdfPage": 1,
+    "locator": "Highlights / Use in Specific Populations 8.3 / PDF p. 1",
+    "quote": "Discontinue OZEMPIC® in women at least 2 months before a planned pregnancy due to the long washout period for semaglutide.",
+    "quoteVi": "Nhãn Ozempic tiêm (Mục 8.3): Ngừng ít nhất 2 tháng trước khi dự định mang thai do thời gian thải trừ dài.",
+    "cor": "strong",
+    "loe": "B",
+    "printedPage": "1"
+  },
+  {
+    "id": "fda.semaglutide_rybelsus.pregnancy",
+    "sourceId": "fda_label_semaglutide_rybelsus",
+    "pdfPage": 14,
+    "locator": "Section 8.1 Pregnancy / PDF p. 14",
+    "quote": "Available data with semaglutide use in pregnant women are insufficient to evaluate for a drug-associated risk of major birth defects, miscarriage or other adverse maternal or fetal outcomes.",
+    "quoteVi": "Nhãn FDA Rybelsus (Semaglutide uống, Mục 8.1): Tránh dùng trong thai kỳ và ngừng trước mang thai ít nhất 2 tháng.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "fda.dulaglutide.pregnancy",
+    "sourceId": "fda_label_dulaglutide",
+    "pdfPage": 14,
+    "locator": "Section 8.1 Pregnancy / PDF p. 14",
+    "quote": "Limited data with TRULICITY in pregnant women are not sufficient to determine a drug- associated risk for major birth defects and miscarriage.",
+    "quoteVi": "Nhãn FDA Trulicity (Dulaglutide, Mục 8.1): Dữ liệu trên phụ nữ có thai còn hạn chế; không khuyến cáo sử dụng trong thai kỳ.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "fda.liraglutide.pregnancy",
+    "sourceId": "fda_label_liraglutide",
+    "pdfPage": 13,
+    "locator": "Section 8.1 Pregnancy / PDF p. 13",
+    "quote": "Based on animal reproduction studies, there may be risks to the fetus from exposure to VICTOZA during pregnancy.",
+    "quoteVi": "Nhãn FDA Victoza (Liraglutide, Mục 8.1): Nghiên cứu trên động vật cho thấy nguy cơ độc tính phôi thai; tránh dùng trong thai kỳ.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "fda.tirzepatide.pregnancy",
+    "sourceId": "fda_label_tirzepatide",
+    "pdfPage": 15,
+    "locator": "Section 8.1 Pregnancy / PDF p. 15",
+    "quote": "Available data with MOUNJARO use in pregnant women are insufficient to evaluate for a drug-related risk of major birth defects, miscarriage, or other adverse maternal or fetal outcomes.",
+    "quoteVi": "Nhãn FDA Mounjaro (Tirzepatide, Mục 8.1): Không khuyến cáo dùng trong thai kỳ do nguy cơ trên thai nhi trong nghiên cứu tiền lâm sàng.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "fda.semaglutide.renal_no_adjust",
+    "sourceId": "novo_2026_ozempic_sc_pi",
+    "pdfPage": 4,
+    "locator": "Section 8.6 Renal Impairment / PDF p. 4",
+    "quote": "No dose adjustment of OZEMPIC® is recommended for patients with renal impairment.",
+    "quoteVi": "Nhãn Ozempic tiêm (Mục 8.6): Không khuyến cáo chỉnh liều ở người suy thận.",
+    "cor": "strong",
+    "loe": "A",
+    "printedPage": "4"
+  },
+  {
+    "id": "fda.dulaglutide.renal_no_adjust",
+    "sourceId": "fda_label_dulaglutide",
+    "pdfPage": 16,
+    "locator": "Section 8.6 Renal Impairment / PDF p. 16",
+    "quote": "TRULICITY has been studied in patients with varying degrees of renal function, including a dedicated clinical trial in patients with moderate to severe chronic kidney disease. No overall differences in safety or effectiveness were observed in these studies according to renal function",
+    "quoteVi": "Nhãn FDA Dulaglutide (Mục 8.6): Không cần chỉnh liều theo chức năng thận, kể cả ở bệnh thận mạn mức độ vừa – nặng.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.liraglutide.renal_no_adjust",
+    "sourceId": "fda_label_liraglutide",
+    "pdfPage": 15,
+    "locator": "Section 8.6 Renal Impairment / PDF p. 15",
+    "quote": "No dose adjustment of VICTOZA is recommended for patients with renal impairment",
+    "quoteVi": "Nhãn FDA Liraglutide (Mục 8.6): Không cần chỉnh liều ở bệnh nhân suy giảm chức năng thận.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.tirzepatide.renal_no_adjust",
+    "sourceId": "fda_label_tirzepatide",
+    "pdfPage": 17,
+    "locator": "Section 8.6 Renal Impairment / PDF p. 17",
+    "quote": "No dosage adjustment of MOUNJARO is recommended for patients with renal impairment. In subjects with renal impairment including end-stage renal disease (ESRD), no change in tirzepatide pharmacokinetics (PK) was observed",
+    "quoteVi": "Nhãn FDA Tirzepatide (Mục 8.6): Không cần chỉnh liều ở bệnh nhân suy thận kể cả bệnh thận giai đoạn cuối (ESRD).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.tirzepatide.oral_contraceptive_4wk",
+    "sourceId": "fda_label_tirzepatide",
+    "pdfPage": 16,
+    "locator": "Section 8.3 Contraception / PDF p. 16",
+    "quote": "Advise patients using oral hormonal contraceptives to switch to a non-oral contraceptive method or add a barrier method of contraception for 4 weeks after initiation and for 4 weeks after each dose escalation with MOUNJARO",
+    "quoteVi": "Nhãn FDA Tirzepatide (Mục 7.2 & 8.3): Cảnh báo giảm hiệu quả thuốc tránh thai nội tiết đường uống; tư vấn chuyển biện pháp không đường uống hoặc dùng thêm biện pháp rào chắn trong 4 tuần sau khởi trị và 4 tuần sau mỗi bậc tăng liều.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.semaglutide.gastroparesis_avoid",
+    "sourceId": "novo_2026_ozempic_sc_pi",
+    "pdfPage": 2,
+    "locator": "Section 5.7 Severe Gastrointestinal Adverse Reactions / PDF p. 2",
+    "quote": "OZEMPIC® is not recommended in patients with severe gastroparesis.",
+    "quoteVi": "Nhãn Ozempic tiêm (Mục 5.7): Không khuyến cáo ở bệnh nhân liệt dạ dày nặng.",
+    "cor": "strong",
+    "loe": "B",
+    "printedPage": "2"
+  },
+  {
+    "id": "ada.dm2.2026.glp1_ckd_no_dose_adjust",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 12,
+    "locator": "Table 9.2 / GLP-1 RA Kidney Dosing / PDF p. 12",
+    "quote": "No dose adjustment for dulaglutide, liraglutide, or semaglutide",
+    "quoteVi": "ADA 2026 Bảng 9.2: Dulaglutide, Liraglutide và Semaglutide không cần chỉnh liều theo mức lọc cầu thận; theo dõi chức năng thận nếu có nôn/tiêu chảy mất nước.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.glp1_retinopathy_monitor",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 12,
+    "locator": "Table 9.2 / Diabetic Retinopathy / PDF p. 12",
+    "quote": "Diabetic retinopathy: close monitoring of retinopathy in those at high risk (older individuals and those with longer duration of T2D [ ≥10 years])",
+    "quoteVi": "ADA 2026 Bảng 9.2: Theo dõi sát bệnh võng mạc đái tháo đường khi khởi trị/tăng liều GLP-1 RA (đặc biệt Semaglutide ở người có bệnh võng mạc nền và đường huyết giảm nhanh).",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.glp1_gastroparesis_table92",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 13,
+    "locator": "Table 9.2 / Gastroparesis / PDF p. 13",
+    "quote": "not recom - mended for individuals with gastroparesis",
+    "quoteVi": "ADA 2026 Bảng 9.2: Không khuyến cáo dùng GLP-1 RA / GIP-GLP-1 RA ở bệnh nhân liệt dạ dày (gastroparesis).",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.lixisenatide_exenatide_renal_avoid_30",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 17,
+    "locator": "Glucose-Lowering Therapy for People With CKD / PDF p. 17",
+    "quote": "The GLP-1 RAs lixisenatide and exenatide, which require the kidneys for elimination, should be avoided in individ- uals with eGFR ≤30 mL/min/1.73 m2 or with creatinine clearance ≤30 mL/min, respectively (145–147).",
+    "quoteVi": "ADA 2026 Ch. 9: Tránh dùng Lixisenatide (kể cả bút phối hợp Soliqua) và Exenatide khi eGFR ≤ 30 mL/phút/1.73m² hoặc CrCl ≤ 30 mL/phút.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.overbasalization_combo_injectable",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 19,
+    "locator": "Combination Injectable Therapy and Prandial Insulin / PDF p. 19",
+    "quote": "If basal insulin has been titrated to an ac- ceptable fasting blood glucose level and A1C remains above goal, if there is evi- dence of significant postprandial hyper- glycemia, or if signs of overbasalization are present, advancement to combination injectable therapy is necessary (Fig. 9.5).",
+    "quoteVi": "ADA 2026 Ch. 9: Khi insulin nền đã đạt mục tiêu đường huyết đói (4.4–7.2 mmol/L) nhưng HbA1c vẫn trên mục tiêu, hoặc có dấu hiệu quá liều nền (overbasalization), không tiếp tục tăng insulin nền mà cần phối hợp thêm GLP-1 RA hoặc insulin bữa ăn.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.decompensated_cirrhosis_insulin",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 9,
+    "locator": "Figure 9.4 / Decompensated Cirrhosis / PDF p. 9",
+    "quote": "Use insulin in the setting of decompensated cirrhosis",
+    "quoteVi": "ADA 2026 Hình 9.4: Trong xơ gan mất bù (Child-Pugh C), ưu tiên sử dụng insulin là liệu pháp kiểm soát đường huyết an toàn.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.pioglitazone_hf_fracture_bladder",
+    "sourceId": "ada_2026_soc_9",
+    "pdfPage": 13,
+    "locator": "Table 9.2 / Pioglitazone Considerations / PDF p. 13",
+    "quote": "Increased risk of HF and fluid retention; do not use in setting of HF • Risk of bone fractures • Bladder cancer: do not use in individuals with active bladder cancer, and use caution in those with prior history of bladder cancer",
+    "quoteVi": "ADA 2026 Bảng 9.2: Không dùng Pioglitazone ở bệnh nhân suy tim hoặc ung thư bàng quang đang hoạt động; thận trọng nguy cơ gãy xương và tiền sử ung thư bàng quang.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.pioglitazone.hepatic_alt_2_5",
+    "sourceId": "fda_label_pioglitazone",
+    "pdfPage": 23,
+    "locator": "Clinical Pharmacology / Hepatic Impairment / PDF p. 23",
+    "quote": "postmarketing reports of liver failure with ACTOS and clinical trials have generally excluded patients with serum ALT >2.5 times the upper limit of the reference",
+    "quoteVi": "Nhãn FDA Pioglitazone: Không khởi trị và ngừng Pioglitazone khi ALT > 2.5 lần giới hạn trên bình thường (> 2.5x ULN) hoặc có bệnh gan hoạt động.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "byt.dm2.2020.pioglitazone_contra_alt_2_5",
+    "sourceId": "byt_5481_2020_dm2",
+    "pdfPage": 62,
+    "locator": "Mục 4 Thiazolidinedione / Trang 60 (PDF p. 62)",
+    "quote": "Chống chỉ định: suy tim độ III-IV theo Hiệp Hội Tim New York (NYHA), bệnh gan đang hoạt động, enzyme gan ALT tăng gấp 2,5 giới hạn trên của trị số bình thường.",
+    "quoteVi": "BYT 5481/2020: Chống chỉ định Pioglitazone khi suy tim, bệnh gan đang hoạt động hoặc men gan ALT tăng > 2.5 lần giới hạn trên bình thường.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.pioglitazone.bladder_cancer",
+    "sourceId": "fda_label_pioglitazone",
+    "pdfPage": 7,
+    "locator": "Section 5.4 Urinary Bladder Tumors / PDF p. 7",
+    "quote": "ACTOS should not be used in patients with active bladder cancer and the benefits of glycemic control versus unknown risks for cancer recurrence with ACTOS should be considered in patients with a prior history of bladder cancer.",
+    "quoteVi": "Nhãn FDA Pioglitazone (Mục 5.4): Không được sử dụng Pioglitazone ở bệnh nhân ung thư bàng quang đang hoạt động; thận trọng cân nhắc nguy cơ tái phát nếu có tiền sử ung thư bàng quang.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "byt.dm2.2020.bp_target",
+    "sourceId": "byt_5481_2020_dm2",
+    "pdfPage": 21,
+    "locator": "Bảng 4 / Trang 19 (PDF p. 21)",
+    "quote": "Huyết áp Tâm thu <140 mmHg, Tâm trương <90 mmHg Nếu đã có biến chứng thận , hoặc có yếu tố nguy cơ tim mạch do xơ vữa cao: Huyết áp <130/80 mmHg",
+    "quoteVi": "BYT 5481/2020 Bảng 4: Mục tiêu huyết áp < 140/90 mmHg cho đa số người bệnh ĐTĐ, và < 130/80 mmHg nếu đã có biến chứng thận hoặc nguy cơ tim mạch xơ vữa cao.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "fda.empagliflozin.geriatric_75",
+    "sourceId": "fda_empagliflozin",
+    "pdfPage": 13,
+    "locator": "Section 8.5 Geriatric Use / PDF p. 13",
+    "quote": "The risk of volume depletion-related adverse reactions increased in patients who were 75 years of age and older",
+    "quoteVi": "Nhãn FDA Empagliflozin (Mục 8.5): Ở người bệnh ≥ 75 tuổi, nguy cơ biến cố liên quan mất dịch và tác dụng bất lợi tăng cao hơn cần theo dõi và cá thể hóa phác đồ.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.glyburide_avoid_older_ckd",
+    "sourceId": "ada_2026_soc_13",
+    "pdfPage": 10,
+    "locator": "Insulin Secretagogues / PDF p. 10",
+    "quote": "Glyburide is a longer-acting sulfonylurea with multiple active metabolites and should be avoided in older adults due to its hypo - glycemia risk (126).",
+    "quoteVi": "ADA 2026 Ch. 13: Glibenclamide (Glyburide) có nhiều chất chuyển hóa còn hoạt tính kéo dài, bắt buộc tránh dùng ở người cao tuổi và bệnh thận mạn do nguy cơ hạ đường huyết nặng.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.statin_time_to_benefit_2_5y",
+    "sourceId": "ada_2026_soc_13",
+    "pdfPage": 9,
+    "locator": "Cardiovascular Risk Management in Older Adults / PDF p. 9",
+    "quote": "While the time frame of trials can be used to inform treatment decisions, a more specific concept is the time to benefit for a therapy, which, for statins, is 2.5 years (83).",
+    "quoteVi": "ADA 2026 Ch. 13: Thời gian cần thiết để đạt lợi ích lâm sàng (time-to-benefit) của statin dự phòng tiên phát là khoảng 2.5 năm; cần cân nhắc kỳ vọng sống khi quyết định khởi trị ở người > 75 tuổi suy yếu nặng.",
+    "cor": "conditional",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.tdd_half_basal_half_nutritional",
+    "sourceId": "ada_2026_soc_16",
+    "pdfPage": 5,
+    "locator": "Noncritical Care Setting / PDF p. 5",
+    "quote": "Half of the estimated to- tal daily insulin should be given as basal insulin and half as nutritional insulin.",
+    "quoteVi": "ADA 2026 Ch. 16: Phân bổ 50% tổng liều insulin hàng ngày làm insulin nền và 50% làm insulin dinh dưỡng trước các bữa ăn.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.inpatient_home_insulin_80pct",
+    "sourceId": "ada_2026_soc_16",
+    "pdfPage": 5,
+    "locator": "Noncritical Care Setting / PDF p. 5",
+    "quote": "Initial total daily insulin dose may also be estimated from the last 6– 8 h of insulin infusion rate or the insulin dose received in previ- ous hospitalization or calculated as 80 % of the home insulin dose, as the situation applies.",
+    "quoteVi": "ADA 2026 Ch. 16: Khi chuyển đổi từ phác đồ insulin ngoại trú sang nội trú (hoặc khi ăn kém/nhập viện), tổng liều insulin khởi đầu nội viện có thể tính bằng 80% tổng liều insulin đang dùng tại nhà để phòng hạ đường huyết.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.inpatient_premix_avoid",
+    "sourceId": "ada_2026_soc_16",
+    "pdfPage": 5,
+    "locator": "Noncritical Care Setting / PDF p. 5",
+    "quote": "Therefore, insulin mixtures such as 75/25, 70/30, or 50/50 insulins are not routinely recommended for in-hospital use.",
+    "quoteVi": "ADA 2026 Ch. 16: Không khuyến cáo dùng thường quy insulin trộn sẵn (premix 70/30, 75/25, 50/50) trong bệnh viện do làm tăng đáng kể nguy cơ hạ đường huyết so với phác đồ Basal-Bolus.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.hf_inpatient_sglt2i_resume_16_11",
+    "sourceId": "ada_2026_soc_16",
+    "pdfPage": 5,
+    "locator": "Recommendation 16.11 / PDF p. 5",
+    "quote": "Recommendation 16.11 It is recommended that use of a sodium–glucose cotransporter 2 in- hibitor be initiated or continued during hospitalization if indicated for heart failure, providing there are no contra - indications. A",
+    "quoteVi": "ADA 2026 Khuyến cáo 16.11: Ở bệnh nhân suy tim nhập viện, khuyến cáo khởi trị hoặc dùng lại SGLT2i ngay trong thời gian nằm viện / trước xuất viện sau khi đã qua giai đoạn bệnh cấp tính và không có chống chỉ định.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.inpatient_glp1_hold_acute",
+    "sourceId": "ada_2026_soc_16",
+    "pdfPage": 6,
+    "locator": "Noninsulin Therapies in Hospital / PDF p. 6",
+    "quote": "Therefore, GLP-1 RA drugs should be held for acutely ill individuals in the hospital setting.",
+    "quoteVi": "ADA 2026 Ch. 16: Tạm hoãn thuốc đồng vận thụ thể GLP-1 / GIP-GLP-1 ở người bệnh nội trú đang trong tình trạng bệnh lý cấp tính.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2026.periop_glp1_aspiration",
+    "sourceId": "ada_2026_soc_16",
+    "pdfPage": 9,
+    "locator": "Perioperative Care / GLP-1 RA / PDF p. 9",
+    "quote": "Individuals taking a GLP-1 RA medication have higher chances of in- creased residual gastric content despite fasting for the procedure as needed ( 155 ).",
+    "quoteVi": "ADA 2026 Ch. 16 Chu phẫu: Người bệnh đang dùng GLP-1 RA / GIP-GLP-1 RA có nguy cơ tồn dư thức ăn/dịch dạ dày và hít sặc phổi khi gây mê/an thần sâu dù đã nhịn ăn; cần hội chẩn gây mê hồi sức và đánh giá chế độ ăn lỏng/siêu âm dạ dày trước thủ thuật.",
+    "cor": "strong",
+    "loe": "B"
+  },
+  {
+    "id": "ada.dm2.2024.dka_resolving_insulin_005",
+    "sourceId": "ada_2024_hyperglycaemic_crises",
+    "pdfPage": 9,
+    "locator": "Fluid and Insulin Adjustment / PDF p. 9",
+    "quote": "5 –10% dextrose should be added to the 0.9% saline infusion and the insulin infusion rate should be reduced to 0.05 units/kg/h. Thereafter , intravenous insulin infusion should be adjusted to maintain glucose levels at approximately 200 mg/dL (11.1 mmol/L) and continued until the ketoacidosis is resolved",
+    "quoteVi": "Đồng thuận Quốc tế 2024: Khi đường huyết giảm < 250 mg/dL (13.9 mmol/L) trong quá trình điều trị DKA đang thoái lui nhưng chưa hết toan ceton, bổ sung Dextrose 5–10% và giảm tốc độ truyền insulin tĩnh mạch xuống 0.05 đơn vị/kg/giờ cho đến khi DKA giải quyết hoàn toàn.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.fpg_target_44_72",
+    "sourceId": "ada_2026_soc_6",
+    "pdfPage": 4,
+    "locator": "Table 6.3 / Glycemic Goals / PDF p. 4",
+    "quote": "Preprandial capillary plasma glucose 80–130 mg/dL* (4.4–7.2 mmol/L)",
+    "quoteVi": "ADA 2026 Bảng 6.3: Mục tiêu glucose huyết tương mao mạch lúc đói / trước ăn cho đa số người trưởng thành không mang thai là 80–130 mg/dL (4.4–7.2 mmol/L).",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.hypo_glucagon_use",
+    "sourceId": "ada_2026_soc_6",
+    "pdfPage": 10,
+    "locator": "Glucagon / PDF p. 10",
+    "quote": "The use of glucagon is indicate d f or the treatment of hypogly cemia in people un - able or unwilling to consume carbohy - drat es by mouth.",
+    "quoteVi": "ADA 2026 Ch. 6: Chỉ định Glucagon cấp cứu ngoại viện cho người bệnh hạ đường huyết nặng không thể tự ăn/uống carbohydrate qua đường miệng.",
+    "cor": "strong",
+    "loe": "A"
+  },
+  {
+    "id": "ada.dm2.2026.hypo_glucagon_doses",
+    "sourceId": "ada_2026_soc_6",
+    "pdfPage": 11,
+    "locator": "Table 6.5 / Glucagon Products / PDF p. 11",
+    "quote": "Glucagon Injection powder with diluent for reconstitution $303 ($180, $337) $242 ($207, $242) 1 mg Glucagon Nasal powder $357 $285 3 mg",
+    "quoteVi": "ADA 2026 Bảng 6.5: Liều Glucagon cấp cứu người lớn: tiêm bắp/tiêm dưới da 1 mg hoặc xịt mũi 3 mg.",
+    "cor": "strong",
+    "loe": "A"
+  }
+]

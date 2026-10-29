@@ -1,0 +1,70 @@
+{
+  "id": "lipid_53_outpatient_rosuvastatin_ticagrelor_cap20",
+  "titleVi": "Bệnh nhân sau ACS đang dùng Rosuvastatin 40 mg + Ticagrelor 90 mg (LDL 1.2) - Giảm Rosuvastatin ≤ 20 mg/ngày do ức chế BCRP",
+  "source": "FDA & ACC/AHA 2026 / fda.rosuvastatin.ticagrelor_limit_20mg",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 59,
+    "sex": "male",
+    "weight": 71,
+    "height": 168,
+    "sbp": 122,
+    "dbp": 74,
+    "hr": 66,
+    "scr": 84,
+    "tc": 3.3,
+    "hdl": 1.1,
+    "ldl": 1.2,
+    "tg": 1.3,
+    "conditions": {
+      "ascvd": true
+    },
+    "currentMeds": [
+      {
+        "drugId": "rosuvastatin",
+        "name": "Rosuvastatin",
+        "dose": 40,
+        "unit": "mg"
+      },
+      {
+        "drugId": "ticagrelor",
+        "name": "Ticagrelor",
+        "dose": 90,
+        "unit": "mg"
+      }
+    ],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "rosuvastatin",
+        "action": "REDUCE"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "rosuvastatin",
+        "action": "CONTINUE"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R2-R2-07: Ticagrelor ức chế BCRP/OATP làm tăng nguy cơ tiêu cơ vân và suy thận cấp khi dùng Rosuvastatin liều 40 mg; bắt buộc hạ trần Rosuvastatin về ≤ 20 mg/ngày thay vì phát CONTINUE 40 mg."
+}

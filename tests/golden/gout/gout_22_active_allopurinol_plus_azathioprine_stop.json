@@ -1,0 +1,83 @@
+{
+  "id": "gout_22_active_allopurinol_plus_azathioprine_stop",
+  "titleVi": "Đang uống đồng thời Allopurinol + Azathioprine: Phát lệnh STOP Allopurinol khẩn cấp & Cảnh báo tương tác nghiêm trọng",
+  "source": "FDA Allopurinol Label (fda.allopurinol.azathioprine_contra)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 60,
+    "sex": "male",
+    "weight": 65,
+    "scr": 90,
+    "uricAcid": 420,
+    "conditions": {
+      "gout": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "allopurinol",
+        "name": "Allopurinol",
+        "dose": "100",
+        "unit": "mg"
+      },
+      {
+        "drugId": "azathioprine",
+        "name": "Azathioprine",
+        "dose": "50",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 2,
+      "hlab5801": "negative"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_stop_azathioprine",
+        "action": "STOP"
+      },
+      {
+        "drugId": "febuxostat",
+        "ruleId": "rec_gout_febuxostat_avoid_azathioprine",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "allopurinol",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "allopurinol",
+        "action": "UPTITRATE"
+      }
+    ],
+    "alertsInclude": [
+      {
+        "code": "ix.allopurinol_azathioprine"
+      }
+    ]
+  },
+  "descriptionVi": "Bệnh nhân đang dùng đồng thời Allopurinol và Azathioprine do kê đơn chồng chéo. Engine bắt buộc phát lệnh STOP Allopurinol, AVOID Febuxostat và sinh SafetyAlert tương tác nghiêm trọng."
+}

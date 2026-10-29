@@ -1,0 +1,157 @@
+{
+  "id": "propranolol",
+  "nameVi": "Propranolol",
+  "inn": "Propranolol hydrochloride",
+  "class": "Thuốc chẹn beta giao cảm không chọn lọc",
+  "classes": [
+    "bb_nonselective",
+    "beta_blocker"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Inderal",
+    "Dorocardyl",
+    "Propranolol"
+  ],
+  "forms": [
+    "Viên nén 10 mg",
+    "Viên nén 40 mg",
+    "Viên nang phóng thích kéo dài (LA) 80 mg"
+  ],
+  "start": {
+    "amount": 40,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "Khởi đầu 10–40 mg x 2 lần/ngày (tăng huyết áp theo AHA/ACC 2025: 80–160 mg/ngày chia 2 lần dạng IR hoặc 1 lần dạng LA; kiểm soát tần số hoặc run/cường giáp/dự phòng xuất huyết giãn tĩnh mạch thực quản chuẩn độ theo nhịp tim)"
+  },
+  "target": {
+    "amount": "80–160",
+    "unit": "mg",
+    "frequency": "chia 2 lần/ngày (IR) hoặc 1 lần/ngày (LA)",
+    "route": "uống",
+    "description": "80–160 mg/ngày (tránh ngưng thuốc đột ngột gây cơn nhịp nhanh/đau thắt ngực/tăng huyết áp dội ngược)"
+  },
+  "titration": {
+    "step": "Chuẩn độ tăng liều mỗi 1–2 tuần dựa trên tần số tim lúc nghỉ và huyết áp; không ngưng đột ngột",
+    "intervalDays": 7,
+    "maxDose": "160–320 mg/ngày tùy chỉ định"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "80–160 mg/ngày chia 2 lần (chuyển hóa chủ yếu qua gan)",
+      "citationIds": [
+        "aha.acc.2025.propranolol_oral_dosing"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 15,
+      "initiate": "caution",
+      "continue": "ok",
+      "dose": "Khởi đầu liều thấp (10–20 mg x 2 lần/ngày) và theo dõi sát nhịp tim, huyết áp, hạ đường huyết bị che lấp",
+      "citationIds": [
+        "aha.acc.2025.propranolol_oral_dosing"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_propranolol_hr_min",
+      "parameter": "HR",
+      "operator": "<",
+      "threshold": 50,
+      "unit": "bpm",
+      "action": "hold",
+      "messageVi": "Nhịp tim < 50 chu kỳ/phút: Tạm ngưng hoặc giảm liều Propranolol do nguy cơ nhịp chậm nặng / block dẫn truyền",
+      "citationIds": [
+        "aha.acc.2025.bb_contraindications_list"
+      ]
+    },
+    {
+      "id": "gate_propranolol_sbp_min",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 90,
+      "unit": "mmHg",
+      "action": "hold",
+      "messageVi": "Huyết áp tâm thu < 90 mmHg: Tạm hoãn Propranolol và đánh giá huyết động",
+      "citationIds": [
+        "aha.acc.2025.bb_contraindications_list"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Có thể sử dụng trong thai kỳ khi có chỉ định loạn nhịp (như hội chứng QT dài theo ESC 2025 Pregnancy); cần theo dõi tăng trưởng thai nhi trong tử cung, nhịp chậm và hạ đường huyết sơ sinh.",
+    "citationIds": [
+      "esc.preg.2025.propranolol_pregnancy_lactation"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Propranolol gắn protein huyết tương cao (> 90%), bài tiết lượng cực thấp vào sữa mẹ và tương thích an toàn khi cho con bú (ESC 2025 Pregnancy).",
+    "citationIds": [
+      "esc.preg.2025.bb_continue_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "asthma",
+      "messageVi": "Chống chỉ định tuyệt đối ở bệnh nhân hen phế quản hoặc bệnh đường thở co thắt phản ứng do chẹn thụ thể beta-2 gây co thắt phế quản cấp tử vong",
+      "citationIds": [
+        "aha.acc.2025.bb_contraindications_list"
+      ]
+    },
+    {
+      "code": "acute_bronchospasm",
+      "messageVi": "Chống chỉ định tuyệt đối khi đang có co thắt phế quản cấp (cơn hen cấp hoặc đợt cấp COPD)",
+      "citationIds": [
+        "aha.acc.2025.bb_contraindications_list"
+      ]
+    },
+    {
+      "code": "av_block_2_3",
+      "messageVi": "Chống chỉ định trong block nhĩ thất độ II hoặc độ III (khi chưa đặt máy tạo nhịp)",
+      "citationIds": [
+        "aha.acc.2025.bb_contraindications_list"
+      ]
+    },
+    {
+      "code": "sick_sinus_syndrome",
+      "messageVi": "Chống chỉ định trong hội chứng suy nút xoang (khi chưa có máy tạo nhịp)",
+      "citationIds": [
+        "aha.acc.2025.bb_contraindications_list"
+      ]
+    },
+    {
+      "code": "cardiogenic_shock",
+      "messageVi": "Chống chỉ định trong sốc tim hoặc suy thất trái mất bù cấp kèm phù phổi",
+      "citationIds": [
+        "aha.acc.2025.bb_contraindications_list"
+      ]
+    },
+    {
+      "code": "severe_bradycardia",
+      "messageVi": "Chống chỉ định khi nhịp chậm xoang nặng",
+      "citationIds": [
+        "aha.acc.2025.bb_contraindications_list"
+      ]
+    }
+  ],
+  "interactions": [
+    "Chống chỉ định tuyệt đối ở bệnh nhân hen phế quản và đối kháng hoàn toàn tác dụng giãn phế quản của SABA/LABA (salbutamol, formoterol...)",
+    "Phối hợp với diltiazem hoặc verapamil gây nguy cơ cao chậm nhịp xoang nặng, vô tâm thu và block nhĩ thất độ cao",
+    "Khi phối hợp clonidine/moxonidine: nếu ngưng clonidine trước khi ngưng propranolol sẽ gây cơn tăng huyết áp cấp cứu dội ngược nguy kịch",
+    "Che lấp triệu chứng nhịp tim nhanh cảnh báo hạ đường huyết và làm chậm hồi phục đường huyết ở bệnh nhân đang dùng insulin / sulfonylurea"
+  ],
+  "citationIds": [
+    "aha.acc.2025.propranolol_oral_dosing",
+    "aha.acc.2025.bb_contraindications_list",
+    "esc.preg.2025.propranolol_pregnancy_lactation",
+    "esc.preg.2025.bb_continue_lactation"
+  ]
+}

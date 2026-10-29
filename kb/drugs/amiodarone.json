@@ -1,0 +1,127 @@
+{
+  "id": "amiodarone",
+  "nameVi": "Amiodarone",
+  "inn": "Amiodarone hydrochloride",
+  "class": "Thuốc chống loạn nhịp nhóm III (ức chế kênh Kali, đa cơ chế)",
+  "classes": [
+    "antiarrhythmic_iii"
+  ],
+  "components": [],
+  "qtRisk": "known",
+  "vnBrands": [
+    "Cordarone"
+  ],
+  "forms": [
+    "Viên nén 200 mg",
+    "Ống tiêm 150 mg/3 mL"
+  ],
+  "start": {
+    "amount": 200,
+    "unit": "mg",
+    "frequency": "3 lần/ngày",
+    "route": "uống",
+    "description": "Liều nạp uống 200 mg x 3 lần/ngày trong 4 tuần (nội viện cấp cứu đường tĩnh mạch: 300 mg pha DUY NHẤT trong 250 mL Dextrose 5% [tương kỵ kết tủa với NaCl 0.9%] truyền qua 30–60 phút, ưu tiên đường truyền tĩnh mạch trung tâm nếu truyền kéo dài)"
+  },
+  "target": {
+    "amount": 200,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "200 mg uống 1 lần/ngày duy trì"
+  },
+  "titration": {
+    "step": "Giảm từ liều nạp 600 mg/ngày xuống liều duy trì 200 mg 1 lần/ngày sau 4 tuần",
+    "intervalDays": 28,
+    "maxDose": "600 mg/ngày (giai đoạn nạp)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "crclFrom": 15,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "200 mg 1 lần/ngày sau liều nạp",
+      "citationIds": [
+        "esc.af.2024.amiodarone_dose_regimen"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "crclTo": 15,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "Không cần chỉnh liều thận (chuyển hóa qua gan)",
+      "citationIds": [
+        "esc.af.2024.amiodarone_dose_regimen"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_amiodarone_lvef",
+      "parameter": "LVEF",
+      "operator": "<=",
+      "threshold": 40,
+      "unit": "%",
+      "action": "caution",
+      "messageVi": "Amiodarone là thuốc chống loạn nhịp duy trì nhịp xoang an toàn được khuyến cáo ở bệnh nhân suy tim HFrEF; theo dõi độc tính ngoài tim định kỳ",
+      "citationIds": [
+        "esc.af.2024.aad_amiodarone_hfref"
+      ]
+    }
+  ],
+  "interactions": [
+    "Ức chế CYP2C9 và P-gp mạnh: làm tăng mạnh nồng độ warfarin (cần giảm liều warfarin 30–50% và theo dõi INR sát) và tăng gấp đôi digoxin (cần giảm 50% liều digoxin)",
+    "Kéo dài khoảng QT: tránh phối hợp các thuốc kéo dài QT khác (quinolone, macrolide, sotalol) và phải bù kali/magnesi máu tối ưu",
+    "Tương kỵ pha chế tĩnh mạch: Amiodarone tiêm truyền BẮT BUỘC pha trong dung dịch Dextrose 5% (D5W), không pha trong NaCl 0.9%; ưu tiên truyền qua catheter tĩnh mạch trung tâm để tránh viêm tắc tĩnh mạch ngoại biên"
+  ],
+  "citationIds": [
+    "esc.af.2024.amiodarone_dose_regimen",
+    "esc.af.2024.aad_amiodarone_hfref",
+    "esc.preg.2025.amiodarone_contra",
+    "fda.amiodarone.pregnancy",
+    "fda.amiodarone.lactation",
+    "acc.af.2023.wpw_av_blockers_harm",
+    "esc.af.2024.qtc_500_conduction_contra"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong thai kỳ (ESC 2025 Pregnancy Class III) do qua nhau thai gây suy giáp/cường giáp bẩm sinh, bướu giáp, chậm nhịp tim và chậm phát triển thần kinh thai nhi",
+    "citationIds": [
+      "esc.preg.2025.amiodarone_contra",
+      "fda.amiodarone.pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Amiodarone và iod bài tiết lượng lớn qua sữa mẹ, khuyến cáo không cho con bú khi đang điều trị (nhãn FDA / ESC 2025 Pregnancy)",
+    "citationIds": [
+      "fda.amiodarone.lactation",
+      "esc.preg.2025.amiodarone_dronedarone_avoid"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định Amiodarone trong thai kỳ do độc tính tuyến giáp và phát triển thần kinh thai nhi",
+      "citationIds": [
+        "esc.preg.2025.amiodarone_contra",
+        "fda.amiodarone.pregnancy"
+      ]
+    },
+    {
+      "code": "wpw_afib",
+      "messageVi": "Chống chỉ định tuyệt đối Amiodarone trong rung nhĩ tiền kích thích (WPW) do ức chế nút nhĩ thất làm tăng dẫn truyền qua đường phụ gây rung thất",
+      "citationIds": [
+        "acc.af.2023.wpw_av_blockers_harm"
+      ]
+    },
+    {
+      "code": "av_block_2_3",
+      "messageVi": "Chống chỉ định Amiodarone ở bệnh nhân block nhĩ thất độ 2–3 hoặc suy nút xoang chưa đặt máy tạo nhịp",
+      "citationIds": [
+        "esc.af.2024.qtc_500_conduction_contra"
+      ]
+    }
+  ]
+}

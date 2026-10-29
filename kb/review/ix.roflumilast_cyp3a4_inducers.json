@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.roflumilast_cyp3a4_inducers",
+  "contentHash": "c26051443c555a6ac09dd5aa8a50edf16b9a68c7ece339c67f8325cc78e038da",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.roflumilast_cyp3a4_inducers",
+      "contentHash": "2dd1550b7858598b",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.roflumilast_cyp3a4_inducers."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

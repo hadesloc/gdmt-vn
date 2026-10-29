@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.acute.magnesium_infusion_minutes",
+  "contentHash": "a52ef154304d79ec4280c2f13a7fd95651db0a97e594f6571b08a9ccd89f39e9",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.acute.magnesium_infusion_minutes",
+      "contentHash": "1ae48304fa0afa67",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:53:57.954Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng asthma.acute.magnesium_infusion_minutes có trích dẫn hợp lệ và đại lượng chuẩn hóa QA-10 (duration_min)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:53:57.954Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

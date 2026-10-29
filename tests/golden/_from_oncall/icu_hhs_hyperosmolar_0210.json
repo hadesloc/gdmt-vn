@@ -1,0 +1,49 @@
+{
+  "id": "icu_hhs_hyperosmolar_0210",
+  "titleVi": "Bà cụ 74 tuổi lơ mơ, da khô nhăn nheo và khát nước nhiều ngày",
+  "source": "on-call:icu_hhs_hyperosmolar_0210",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_icu_hhs_hyperosmolar_0210",
+    "name": "Bà Trần Thị L., 74 tuổi (52 kg)",
+    "age": 74,
+    "sex": "female",
+    "weight": 52,
+    "sbp": 84,
+    "dbp": 50,
+    "hr": 124,
+    "conditions": {
+      "dm": true
+    },
+    "selectedModules": [
+      "dm2"
+    ],
+    "currentMeds": [],
+    "glucose": 38,
+    "k": 4.8,
+    "na": 148,
+    "scr": 180
+  },
+  "expect": {
+    "mustInclude": [],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bác sĩ ơi, bệnh nhân nữ 74 tuổi chuyển vào ICU vì ngủ gà lơ mơ dần, môi lưỡi khô quánh và huyết áp tụt! Bà cụ nằm li bì, mắt trũng sâu, nếp véo da mất rất chậm, niêm mạc miệng khô nứt nẻ, thở êm (không có kiểu thở Kussmaul sâu nhanh). Con gái bệnh nhân cho biết bà bị đái tháo đường type hai, một tuần nay tiểu buốt và tiểu rất nhiều nhưng uống ít nước.",
+  "notes": "TODO: Ca nháp nội viện chuyển từ on-call. Module agent chịu trách nhiệm điền expect.mustInclude và mustNotInclude."
+}

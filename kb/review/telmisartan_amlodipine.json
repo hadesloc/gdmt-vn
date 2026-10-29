@@ -1,0 +1,26 @@
+{
+  "itemId": "telmisartan_amlodipine",
+  "contentHash": "bdc0818593410f03f5840fcde148cc12522d13a33335b2db858425edb97be5b8",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "telmisartan_amlodipine",
+      "contentHash": "12d269b2adb6cb3c",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H3)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Telmisartan + Amlodipine (SPC) (telmisartan_amlodipine) đầy đủ phân nhóm, dải thận, thai kỳ/cho con bú, cổng an toàn và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

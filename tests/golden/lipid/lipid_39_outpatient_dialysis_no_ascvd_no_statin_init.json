@@ -1,0 +1,62 @@
+{
+  "id": "lipid_39_outpatient_dialysis_no_ascvd_no_statin_init",
+  "titleVi": "Bệnh thận mạn lọc máu chu kỳ chưa có ASCVD - Không khởi trị mới Statin",
+  "source": "ESC/EAS 2019 / esc.lipid.2019.ckd_dialysis_no_init",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 64,
+    "sex": "female",
+    "weight": 54,
+    "height": 155,
+    "sbp": 138,
+    "dbp": 80,
+    "hr": 76,
+    "scr": 520,
+    "tc": 5.0,
+    "hdl": 1.1,
+    "ldl": 2.9,
+    "tg": 1.8,
+    "conditions": {
+      "ckd": true,
+      "onDialysis": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "lipid"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "atorvastatin",
+        "action": "START"
+      },
+      {
+        "drugId": "rosuvastatin",
+        "action": "START"
+      }
+    ]
+  },
+  "descriptionVi": "Hồi quy LIPID-R1-10, LIPID-R2-07 & R3-LIPID-11: Bệnh nhân lọc máu chu kỳ không có ASCVD chống chỉ định khởi trị mới statin (ESC 2019 Class III-A)."
+}

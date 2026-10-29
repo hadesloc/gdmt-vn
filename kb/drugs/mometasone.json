@@ -1,0 +1,75 @@
+{
+  "id": "mometasone",
+  "nameVi": "Mometasone furoate",
+  "inn": "Mometasone furoate",
+  "class": "ICS",
+  "vnBrands": [
+    "Chưa lưu hành dạng hít đơn chất tại VN (Biệt dược FDA: Asmanex Twisthaler)"
+  ],
+  "forms": [
+    "Bình xịt định liều pMDI 200 mcg",
+    "Bình hít bột khô Twisthaler 200 mcg, 400 mcg"
+  ],
+  "start": {
+    "amount": 200,
+    "unit": "mcg",
+    "frequency": "1-2 lần/ngày",
+    "route": "hít",
+    "description": "Dạng pMDI hạt chuẩn (HFA): Liều thấp 200–400 mcg/ngày (lưu ý: dạng bột khô DPI như Twisthaler có phân tầng liều phụ thuộc từng thiết bị cụ thể theo tờ thông tin sản phẩm)"
+  },
+  "target": {
+    "amount": 400,
+    "unit": "mcg",
+    "frequency": "2 lần/ngày",
+    "route": "hít",
+    "description": "Dạng pMDI hạt chuẩn (HFA): Liều cao > 400 mcg/ngày; dạng DPI tra cứu theo thiết bị cụ thể (GINA 2026 Box 4-2)"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 0,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều theo chức năng thận",
+      "citationIds": [
+        "gina.asthma.2026.table_6_mometasone"
+      ]
+    }
+  ],
+  "gates": [],
+  "interactions": [
+    "Chất ức chế mạnh CYP3A4 (ketoconazole, itraconazole, ritonavir, cobicistat, clarithromycin) làm tăng phơi nhiễm mometasone toàn thân và nguy cơ suy thượng thận / hội chứng Cushing; không khuyến cáo phối hợp",
+    "Phân biệt thiết bị (GINA 2026 Box 4-2): Ngưỡng liều thấp 200–400 mcg/ngày và liều cao > 400 mcg/ngày áp dụng cho bình xịt định liều pMDI HFA hạt chuẩn; với bình hít bột khô DPI cần đối chiếu tờ thông tin sản phẩm của từng thiết bị",
+    "Hướng dẫn dùng thuốc: Súc miệng kỹ bằng nước sạch và nhổ đi ngay sau khi hít thuốc để phòng ngừa nấm candida hầu họng và khản tiếng"
+  ],
+  "citationIds": [
+    "gina.asthma.2026.table_6_mometasone",
+    "gina.asthma.2026.mometasone_dpi_vs_pmdi",
+    "gina.asthma.2026.cyp3a4_ics_laba_interaction"
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Sinh khả dụng toàn thân thấp (<1%), thận trọng trong thai kỳ.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Thận trọng khi cho con bú.",
+    "citationIds": [
+      "gina.asthma.2026.pregnancy_safety"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity",
+      "messageVi": "Quá mẫn với mometasone furoate",
+      "citationIds": [
+        "gina.asthma.2026.table_6_mometasone"
+      ]
+    }
+  ],
+  "classes": [
+    "ics"
+  ]
+}

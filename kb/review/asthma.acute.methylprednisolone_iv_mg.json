@@ -1,0 +1,26 @@
+{
+  "itemId": "asthma.acute.methylprednisolone_iv_mg",
+  "contentHash": "98b463e2f2ec7887f876c07c0cab3081828263b304544f67a19a5bf711783fcb",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "asthma.acute.methylprednisolone_iv_mg",
+      "contentHash": "047a7b3576b6c74f",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T01:53:57.954Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Tự động kiểm tra ngưỡng asthma.acute.methylprednisolone_iv_mg có trích dẫn hợp lệ và đại lượng chuẩn hóa QA-10 (dose_mg)."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T01:53:57.954Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

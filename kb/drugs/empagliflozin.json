@@ -1,0 +1,123 @@
+{
+  "id": "empagliflozin",
+  "nameVi": "Empagliflozin",
+  "inn": "Empagliflozin",
+  "class": "SGLT2i",
+  "classes": [
+    "sglt2i"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Jardiance"
+  ],
+  "forms": [
+    "Viên nén bao phim 10 mg",
+    "Viên nén bao phim 25 mg"
+  ],
+  "start": {
+    "amount": 10,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "10 mg uống buổi sáng"
+  },
+  "target": {
+    "amount": 10,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "10 mg uống 1 lần/ngày (có thể tăng 25 mg nếu cần kiểm soát đường huyết và eGFR >= 30)"
+  },
+  "titration": {
+    "step": 15,
+    "intervalDays": 30,
+    "maxDose": "25 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 20,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "10 mg 1 lần/ngày",
+      "citationIds": [
+        "kdigo.ckd.2024.rec_3_7_1_sglt2i_t2d",
+        "fda.empagliflozin.ckd_dose"
+      ]
+    },
+    {
+      "eGFRTo": 20,
+      "initiate": "not_rec",
+      "continue": "ok",
+      "dose": "10 mg 1 lần/ngày",
+      "note": "Tiếp tục duy trì cho tới khi bắt đầu điều trị thay thế thận",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_7_1_continue_below_20"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_empa_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 20,
+      "unit": "mL/min/1.73m2",
+      "action": "hold",
+      "messageVi": "Không khởi trị empagliflozin nếu eGFR < 20 mL/phút/1.73m²",
+      "citationIds": [
+        "kdigo.ckd.2024.rec_3_7_1_sglt2i_t2d"
+      ]
+    },
+    {
+      "id": "gate_empagliflozin_pregnancy",
+      "parameter": "pregnancy",
+      "operator": "==",
+      "threshold": 1,
+      "action": "avoid",
+      "messageVi": "Không khuyến cáo dùng SGLT2i trong thai kỳ (đặc biệt tam cá nguyệt 2 và 3) do nguy cơ gây độc thận thai nhi (FDA Section 8.1)",
+      "citationIds": [
+        "fda.empagliflozin.pregnancy"
+      ]
+    }
+  ],
+  "interactions": [
+    "Nguy cơ hạ huyết áp và suy giảm thể tích tuần hoàn khi dùng cùng lợi tiểu",
+    "Tạm ngừng ít nhất 3 ngày trước phẫu thuật lớn theo khuyến cáo nhãn FDA"
+  ],
+  "citationIds": [
+    "kdigo.ckd.2024.rec_3_7_1_sglt2i_t2d",
+    "kdigo.ckd.2024.pp_3_7_1_continue_below_20",
+    "fda.empagliflozin.ckd_dose",
+    "fda.empagliflozin.pregnancy"
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo dùng Empagliflozin trong thai kỳ (đặc biệt tam cá nguyệt 2 và 3 do nguy cơ tác dụng bất lợi trên sự phát triển thận thai nhi - FDA Section 8.1); ngừng thuốc khi phát hiện mang thai",
+    "citationIds": [
+      "fda.empagliflozin.pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo dùng khi cho con bú do nguy cơ tiềm ẩn ảnh hưởng sự trưởng thành thận của trẻ sơ sinh (FDA Section 8.2)",
+    "citationIds": [
+      "fda.empagliflozin.pregnancy"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "hypersensitivity",
+      "messageVi": "Tiền sử quá mẫn nghiêm trọng (phản vệ, phù mạch) với empagliflozin",
+      "citationIds": [
+        "fda.empagliflozin.ckd_dose"
+      ]
+    },
+    {
+      "code": "dialysis",
+      "messageVi": "Không khởi trị mới và cần ngừng thuốc ức chế SGLT2 khi bệnh nhân bắt đầu lọc máu định kỳ / điều trị thay thế thận (KDIGO 2024 PP 3.7.1)",
+      "citationIds": [
+        "kdigo.ckd.2024.pp_3_7_1_continue_below_20"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "asthma_53_gina_3_positive_1_missing_fail_closed",
+  "titleVi": "Đã dương tính 3/4 câu hỏi GINA (thiếu câu 4): Đồng bộ computeGina kết luận Không kiểm soát (3–4 câu dương) và nâng bậc ngay không trì hoãn",
+  "source": "GINA 2026 Table 2A / BYT 1851/2020 Bảng 3 / ASTHMA-R3-R1-09",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_53",
+    "name": "Nữ 28 tuổi",
+    "age": 28,
+    "sex": "female",
+    "weight": 50,
+    "sbp": 112,
+    "dbp": 70,
+    "hr": 76,
+    "rhythm": "sinus",
+    "fev1Pct": 80,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "currentTrack": "track1",
+      "currentStep": 2,
+      "daytimeSymptomsMoreThanTwiceWeek": true,
+      "nightWakingDueToAsthma": true,
+      "relieverNeededMoreThanTwiceWeek": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "ruleId": "missing_input_activityLimitationDueToAsthma",
+        "action": "CONSIDER"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Đồng bộ 100% với computeGina (ASTHMA-R3-R1-09): Khi đã có 3/4 câu hỏi GINA dương tính, kết quả chắc chắn là Không kiểm soát (3–4 tiêu chí dương) bất kể câu thứ 4 âm hay dương -> Khởi trị/nâng bậc ngay không trì hoãn điều trị."
+}

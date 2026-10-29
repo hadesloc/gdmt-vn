@@ -1,0 +1,73 @@
+{
+  "id": "gout_32_allopurinol_intolerant_active_stop_switch_febuxostat",
+  "titleVi": "Đang uống Allopurinol nhưng xuất hiện ban da / tiền sử dị ứng thuốc: NGỪNG KHẨN CẤP Allopurinol và chuyển Febuxostat",
+  "source": "FDA Zyloprim Label & ACR 2020 (fda.allopurinol.skin_rash_scar, acr.gout.2020.switch_second_xoi)",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "age": 48,
+    "sex": "female",
+    "weight": 56,
+    "scr": 84,
+    "uricAcid": 470,
+    "conditions": {
+      "gout": true
+    },
+    "selectedModules": [
+      "gout"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "allopurinol",
+        "name": "Allopurinol",
+        "dose": "100",
+        "unit": "mg"
+      }
+    ],
+    "customInputs": {
+      "acuteFlare": false,
+      "goutFlaresYear": 3,
+      "allopurinolIntolerant": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "allopurinol",
+        "ruleId": "rec_gout_allopurinol_stop_intolerant",
+        "action": "STOP"
+      },
+      {
+        "drugId": "febuxostat",
+        "ruleId": "rec_gout_febuxostat_start",
+        "action": "START",
+        "doseContains": "40 mg"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "allopurinol",
+        "action": "CONTINUE"
+      },
+      {
+        "drugId": "allopurinol",
+        "action": "UPTITRATE"
+      }
+    ]
+  },
+  "descriptionVi": "Nữ 48 tuổi gút tái phát đang dùng Allopurinol 100 mg/ngày ghi nhận dị ứng / phát ban da với Allopurinol. Bắt buộc NGỪNG NGAY vĩnh viễn Allopurinol để phòng ngừa SCAR/SJS/TEN và chuyển sang Febuxostat 40 mg/ngày."
+}

@@ -1,0 +1,74 @@
+{
+  "id": "asthma_57_acute_life_threatening_exhaustion_brady_acidosis",
+  "titleVi": "Cơn hen đe dọa tử vong do kiệt sức cơ hô hấp (thở chậm 8 l/p), mạch chậm (42 l/p), toan máu pH 7.22 & tụt huyết áp",
+  "source": "GINA 2026 Box 9-4 / BYT 1851/2020 Bảng 7 / ASTHMA-R3-R1-07 / ASTHMA-R3-R2-06",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_57",
+    "name": "Nữ 51 tuổi",
+    "age": 51,
+    "sex": "female",
+    "weight": 56,
+    "sbp": 82,
+    "dbp": 48,
+    "hr": 42,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [],
+    "customInputs": {
+      "isAcuteExacerbation": true,
+      "respiratoryRate": 8,
+      "spo2": 86,
+      "abgPh": 7.22,
+      "paco2": 44
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_asthma_acute_life_threatening_icu",
+        "action": "REFER"
+      },
+      {
+        "drugId": "salbutamol",
+        "action": "START"
+      },
+      {
+        "drugId": "methylprednisolone",
+        "action": "START"
+      },
+      {
+        "drugId": "magnesium_sulfate",
+        "action": "AVOID"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "magnesium_sulfate",
+        "action": "START"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Nhận diện đầy đủ dấu hiệu dọa ngừng tuần hoàn-hô hấp (thở chậm < 10 l/p, mạch chậm < 50 l/p, toan máu pH < 7.30 kèm bình thán giả tạo PaCO2 44 mmHg, SBP 82 mmHg) -> Báo động REFER ICU và AVOID MgSO4 tĩnh mạch do đang sốc tụt áp."
+}

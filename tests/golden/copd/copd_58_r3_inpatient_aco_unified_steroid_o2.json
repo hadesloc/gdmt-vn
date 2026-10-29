@@ -1,0 +1,93 @@
+{
+  "id": "copd_58_r3_inpatient_aco_unified_steroid_o2",
+  "titleVi": "Hồi quy R3 (COPD-R3-R3-03 & R3-09): Đợt cấp nặng nội viện chồng lấp Hen–COPD trên nền Prednisolone 5 mg – Thống nhất SWITCH Methylprednisolone & đích SpO₂ 88–92%",
+  "source": "GOLD 2026 p. 114 / BYT QĐ 2131/2026 tr. 36, 41 (COPD-R3-R3-03, COPD-R3-R3-09)",
+  "settings": {
+    "setting": "inpatient",
+    "profile": "VN",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_copd_58",
+    "age": 62,
+    "sex": "male",
+    "weight": 60,
+    "height": 165,
+    "sbp": 134,
+    "dbp": 82,
+    "hr": 112,
+    "egfr": 75,
+    "conditions": {
+      "copd": true,
+      "asthma": true,
+      "priorAsthma": true
+    },
+    "selectedModules": [
+      "copd",
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "prednisolone",
+        "name": "Prednisolone nền",
+        "dose": 5,
+        "unit": "mg"
+      },
+      {
+        "drugId": "budesonide_glycopyrronium_formoterol",
+        "name": "Breztri Aerosphere",
+        "dose": 160,
+        "unit": "mcg"
+      }
+    ],
+    "customInputs": {
+      "acuteExacerbation": true,
+      "isAcuteExacerbation": true,
+      "speechAbility": "words",
+      "respiratoryRate": 28,
+      "spo2": 86,
+      "restingSpo2": 86,
+      "abgPh": 7.37,
+      "abgPaco2": 46,
+      "purulentSputum": true,
+      "increasedDyspnea": true,
+      "increasedSputumVolume": true,
+      "fev1FvcRatio": 0.5,
+      "fev1PredPct": 48,
+      "smokingStatus": "former"
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "methylprednisolone",
+        "action": "SWITCH"
+      },
+      {
+        "ruleId": "rec_copd_inpatient_oxygen",
+        "action": "START"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "prednisolone",
+        "action": "START"
+      },
+      {
+        "drugId": "prednisolone",
+        "action": "CONTINUE"
+      }
+    ]
+  }
+}

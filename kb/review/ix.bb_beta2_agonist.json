@@ -1,0 +1,26 @@
+{
+  "itemId": "ix.bb_beta2_agonist",
+  "contentHash": "aca698fd94e801f69203bcee3b61e6f1a1a74b1e74e3021e7f7b896ea688d1dc",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "ix.bb_beta2_agonist",
+      "contentHash": "b084986b5b7c55fd",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-27T06:20:00.000Z",
+          "role": "system_auto_validator",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Xác thực tự động schema validateInteractionRule và trích dẫn nguyên văn PDF cho ix.bb_beta2_agonist."
+        }
+      ],
+      "lastReviewedAt": "2026-10-27T06:20:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

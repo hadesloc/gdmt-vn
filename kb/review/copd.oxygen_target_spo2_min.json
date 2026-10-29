@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.oxygen_target_spo2_min",
+  "contentHash": "521d991c3084e8c4dbd9d52ca13d9024d2600b367150aa9b26582376909f396a",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.oxygen_target_spo2_min",
+      "contentHash": "f9476a89053c2f79",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

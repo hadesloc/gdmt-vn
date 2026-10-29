@@ -1,0 +1,49 @@
+{
+  "id": "ckd_14_nephrology_referral_very_high_uacr",
+  "titleVi": "Chuyển khám Thận khi Albumin niệu rất cao (> 70 mg/mmol)",
+  "source": "KDIGO 2024 CKD Figure 48 / kdigo.ckd.2024.fig_48_referral_criteria",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_ckd_14",
+    "name": "BN CKD 14",
+    "age": 48,
+    "sex": "male",
+    "weight": 68,
+    "sbp": 138,
+    "dbp": 86,
+    "hr": 76,
+    "scr": 110,
+    "uacr": 85,
+    "conditions": {
+      "ckd": true
+    },
+    "currentMeds": [],
+    "selectedModules": [
+      "ckd"
+    ]
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "ruleId": "rec_ckd_refer_specialist",
+        "action": "REFER"
+      }
+    ]
+  },
+  "descriptionVi": "UACR > 70 mg/mmol là chỉ định chuyển khám chuyên khoa theo Figure 48."
+}

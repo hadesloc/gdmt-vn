@@ -1,0 +1,26 @@
+{
+  "itemId": "af.periprocedural.vka_hold_days",
+  "contentHash": "ed5ddd91b63f4afc9869a83429b8325ad6dffcbc1754df4a1800cd753816ae6d",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "af.periprocedural.vka_hold_days",
+      "contentHash": "891ee2f0ce65e98f",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Auto-checked AF threshold af.periprocedural.vka_hold_days (Round 2 remediation)"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

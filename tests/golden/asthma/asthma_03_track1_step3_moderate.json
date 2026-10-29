@@ -1,0 +1,67 @@
+{
+  "id": "asthma_03_track1_step3_moderate",
+  "titleVi": "Hen Bậc 2 không kiểm soát: Tăng bậc lên Track 1 Bậc 3 MART",
+  "source": "GINA 2026 Strategy Report",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_03",
+    "name": "Nam 34 tuổi",
+    "age": 34,
+    "sex": "male",
+    "weight": 68,
+    "sbp": 122,
+    "dbp": 78,
+    "hr": 80,
+    "rhythm": "sinus",
+    "fev1Pct": 74,
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "budesonide",
+        "dose": "200 mcg x 2 lần/ngày",
+        "freq": "2 lần/ngày"
+      }
+    ],
+    "customInputs": {
+      "currentTrack": "track1",
+      "currentStep": 2,
+      "daytimeSymptomsMoreThanTwiceWeek": true,
+      "nightWakingDueToAsthma": true,
+      "relieverNeededMoreThanTwiceWeek": true,
+      "activityLimitationDueToAsthma": false,
+      "inhalerTechniqueCorrect": true,
+      "goodAdherence": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "budesonide_formoterol",
+        "action": "SWITCH"
+      }
+    ],
+    "mustNotInclude": [],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bệnh nhân không kiểm soát ở Bậc 2 dù tuân thủ và kỹ thuật đúng, tăng lên Bậc 3 MART."
+}

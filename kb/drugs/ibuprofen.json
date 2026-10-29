@@ -1,0 +1,187 @@
+{
+  "id": "ibuprofen",
+  "nameVi": "Ibuprofen",
+  "inn": "Ibuprofen",
+  "class": "NSAID",
+  "classes": [
+    "anti_gout",
+    "nsaid"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Brufen",
+    "Advil",
+    "Gofen",
+    "Alaxan"
+  ],
+  "forms": [
+    "Viên nén 400 mg",
+    "Viên nén 600 mg",
+    "Viên nén 800 mg"
+  ],
+  "start": {
+    "amount": 800,
+    "unit": "mg",
+    "frequency": "3–4 lần/ngày",
+    "route": "uống",
+    "description": "600–800 mg x 3–4 lần/ngày sau ăn no (liều kháng viêm đầy đủ 2400–3200 mg/ngày cho cơn gút cấp; liều 400 mg chỉ có tác dụng giảm đau đơn thuần, không đủ cắt cơn viêm khớp tinh thể)"
+  },
+  "target": {
+    "amount": 800,
+    "unit": "mg",
+    "frequency": "3 lần/ngày",
+    "route": "uống",
+    "description": "800 mg x 3 lần/ngày (2400 mg/ngày; tối đa 3200 mg/ngày trong đợt cấp ngắn ngày; bảng liều khớp chung BYT tr. 201 ghi 400–1200 mg/24h)"
+  },
+  "titration": {
+    "step": 400,
+    "intervalDays": 1,
+    "maxDose": "3200 mg/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 60,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "600–800 mg x 3–4 lần/ngày (2400–3200 mg/ngày) trong 3–5 ngày kèm PPI nếu có nguy cơ tiêu hóa",
+      "citationIds": [
+        "acr.gout.2020.flare_first_line",
+        "byt.gout.2014.nsaid_agents",
+        "byt.gout.2014.nsaid_dosing_p201"
+      ]
+    },
+    {
+      "eGFRFrom": 30,
+      "eGFRTo": 60,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Thận trọng hoặc tránh dùng theo KDIGO 2024; ưu tiên corticoid hoặc colchicine liều thấp",
+      "citationIds": [
+        "kdigo.gout.2024.acute_flare_ckd",
+        "byt.ckd.2024.gout_flare_table22"
+      ]
+    },
+    {
+      "eGFRTo": 30,
+      "initiate": "contra",
+      "continue": "contra",
+      "dose": "Chống chỉ định khi eGFR < 30 mL/phút hoặc lọc máu",
+      "citationIds": [
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_ibuprofen_egfr_min",
+      "parameter": "eGFR",
+      "operator": "<",
+      "threshold": 30,
+      "unit": "mL/min/1.73m2",
+      "action": "contra",
+      "messageVi": "Chống chỉ định khi eGFR < 30 mL/phút/1.73m2",
+      "citationIds": [
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra"
+      ]
+    },
+    {
+      "id": "gate_ibuprofen_hepatic",
+      "parameter": "severe_hepatic_impairment",
+      "operator": "==",
+      "threshold": 1,
+      "unit": "moderate_severe",
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối ở bệnh nhân suy tế bào gan mức độ vừa đến nặng",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định từ tuần 20–30 thai kỳ trở đi do nguy cơ suy thận thai nhi gây thiểu ối (từ tuần 20) và đóng sớm ống động mạch thai nhi (từ tuần 30); chống chỉ định 3 tháng đầu/cuối theo BYT 361/2014",
+    "citationIds": [
+      "byt.gout.2014.nsaid_contra_p198",
+      "fda.celecoxib.fetal_toxicity_pregnancy"
+    ]
+  },
+  "lactation": {
+    "status": "caution",
+    "notesVi": "Lượng bài tiết qua sữa rất thấp nhưng BYT 361/2014 lưu ý chống chỉ định nhóm NSAID khi đang cho con bú; cân nhắc thận trọng nếu dùng ngắn ngày",
+    "citationIds": [
+      "byt.gout.2014.nsaid_contra_p198"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định trong thai kỳ (đặc biệt từ tuần 20–30 trở đi do đóng sớm ống động mạch thai nhi và thiểu ối)",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198",
+        "fda.celecoxib.fetal_toxicity_pregnancy"
+      ]
+    },
+    {
+      "code": "severe_ckd",
+      "messageVi": "Chống chỉ định khi eGFR < 30 mL/phút",
+      "citationIds": [
+        "byt.ckd.2024.gout_flare_table22",
+        "eular.gout.2016.colchicine_nsaid_contra"
+      ]
+    },
+    {
+      "code": "peptic_ulcer",
+      "messageVi": "Chống chỉ định khi có loét dạ dày tá tràng tiến triển hoặc xuất huyết tiêu hóa",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198",
+        "fda.celecoxib.boxed_contra_cv_gi"
+      ]
+    },
+    {
+      "code": "heart_failure",
+      "messageVi": "Chống chỉ định ở bệnh nhân suy tim, CABG hoặc biến cố tim mạch cấp trong 3–6 tháng",
+      "citationIds": [
+        "byt.gout.2014.nsaid_cv_aspirin_p199",
+        "fda.celecoxib.boxed_contra_cv_gi"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định khi suy tế bào gan mức độ vừa đến nặng",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198"
+      ]
+    },
+    {
+      "code": "anticoagulant_use",
+      "messageVi": "Chống chỉ định/tránh phối hợp với thuốc chống đông",
+      "citationIds": [
+        "byt.gout.2014.nsaid_contra_p198",
+        "fda.celecoxib.boxed_contra_cv_gi"
+      ]
+    }
+  ],
+  "interactions": [
+    "Aspirin liều thấp bảo vệ tim mạch: Ibuprofen cạnh tranh vị trí gắn trên COX-1 tiểu cầu làm mất tác dụng chống kết tập tiểu cầu của aspirin; bắt buộc uống aspirin phóng thích tức thời trước ibuprofen ít nhất 2 giờ (hoặc ưu tiên dùng corticoid thay thế)",
+    "Thuốc chống đông và Corticosteroid toàn thân: Tăng mạnh nguy cơ xuất huyết tiêu hóa",
+    "Lợi tiểu + ACEi/ARB/ARNI ('Triple Whammy'): Gây suy thận cấp trước thận"
+  ],
+  "citationIds": [
+    "byt.gout.2014.nsaid_agents",
+    "byt.gout.2014.nsaid_contra_p198",
+    "byt.gout.2014.nsaid_cv_aspirin_p199",
+    "byt.gout.2014.nsaid_dosing_p201",
+    "byt.ckd.2024.gout_flare_table22",
+    "acr.gout.2020.flare_first_line"
+  ],
+  "hepatic": {
+    "status": "contra",
+    "note": "Chống chỉ định NSAID đường toàn thân ở bệnh nhân suy tế bào gan mức độ vừa đến nặng (Child-Pugh B/C hoặc xơ gan mất bù) do nguy cơ xuất huyết tiêu hóa, hội chứng gan – thận và suy gan cấp (BYT 361/2014 tr. 198).",
+    "notesVi": "Chống chỉ định NSAID đường toàn thân ở bệnh nhân suy tế bào gan mức độ vừa đến nặng (Child-Pugh B/C hoặc xơ gan mất bù) do nguy cơ xuất huyết tiêu hóa, hội chứng gan – thận và suy gan cấp (BYT 361/2014 tr. 198).",
+    "citationIds": [
+      "byt.gout.2014.nsaid_contra_p198"
+    ]
+  }
+}

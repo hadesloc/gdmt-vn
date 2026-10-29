@@ -1,0 +1,64 @@
+{
+  "id": "asthma_15_montelukast_psych_warning",
+  "titleVi": "FDA Boxed Warning: Ngừng ngay (STOP) Montelukast ở bệnh nhân có tiền sử tâm thần kinh",
+  "source": "GINA 2026 Strategy Report / FDA Boxed Warning / ASTHMA-R3-R2-08",
+  "settings": {
+    "setting": "outpatient",
+    "profile": "INTL",
+    "units": {
+      "cr": "umol_L",
+      "glucose": "mmol_L",
+      "lipid": "mmol_L",
+      "urat": "umol_L",
+      "uacr": "mg_mmol",
+      "hba1c": "pct"
+    },
+    "score2Region": "high",
+    "fontScale": "normal",
+    "theme": "light",
+    "onlyReviewed": false
+  },
+  "patient": {
+    "id": "pt_asthma_15",
+    "name": "Nữ 30 tuổi",
+    "age": 30,
+    "sex": "female",
+    "weight": 52,
+    "sbp": 110,
+    "dbp": 70,
+    "hr": 74,
+    "rhythm": "sinus",
+    "conditions": {
+      "asthma": true
+    },
+    "selectedModules": [
+      "asthma"
+    ],
+    "currentMeds": [
+      {
+        "drugId": "montelukast",
+        "dose": "10 mg/ngày",
+        "freq": "1 lần tối"
+      }
+    ],
+    "customInputs": {
+      "priorNeuropsychiatric": true
+    }
+  },
+  "expect": {
+    "mustInclude": [
+      {
+        "drugId": "montelukast",
+        "action": "STOP"
+      }
+    ],
+    "mustNotInclude": [
+      {
+        "drugId": "montelukast",
+        "action": "MONITOR"
+      }
+    ],
+    "alertsInclude": []
+  },
+  "descriptionVi": "Bệnh nhân dùng Montelukast có tiền sử tâm thần kinh -> Bắt buộc NGỪNG NGAY (STOP) theo FDA Boxed Warning & GINA 2026 (ASTHMA-R3-R2-08)."
+}

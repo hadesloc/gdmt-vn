@@ -1,0 +1,117 @@
+{
+  "id": "vildagliptin",
+  "nameVi": "Vildagliptin",
+  "inn": "Vildagliptin",
+  "class": "DPP-4i",
+  "vnBrands": [
+    "Galvus"
+  ],
+  "forms": [
+    "Viên nén 50 mg"
+  ],
+  "start": {
+    "amount": 50,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống",
+    "description": "Chia uống buổi sáng và buổi tối (giảm còn 50 mg x 1 lần/ngày vào buổi sáng nếu eGFR < 50 mL/phút)"
+  },
+  "target": {
+    "amount": 50,
+    "unit": "mg",
+    "frequency": "2 lần/ngày",
+    "route": "uống"
+  },
+  "titration": {
+    "step": "0 mg",
+    "intervalDays": 0
+  },
+  "renal": [
+    {
+      "eGFRFrom": 50,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "50 mg x 2 lần/ngày",
+      "citationIds": [
+        "ema.vildagliptin.renal_dose"
+      ]
+    },
+    {
+      "eGFRTo": 50,
+      "initiate": "ok",
+      "continue": "ok",
+      "dose": "50 mg x 1 lần/ngày vào buổi sáng",
+      "note": "Giảm liều còn 50 mg 1 lần/ngày khi eGFR/CrCl < 50 mL/phút",
+      "citationIds": [
+        "ema.vildagliptin.renal_dose",
+        "ema.vildagliptin.renal_50mg_od"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_vildagliptin_hepatic_contra",
+      "parameter": "severe_hepatic_impairment",
+      "operator": "==",
+      "threshold": 1,
+      "action": "contra",
+      "messageVi": "Chống chỉ định Vildagliptin ở bệnh nhân suy gan hoặc ALT/AST > 3 lần ULN (EMA SmPC)",
+      "citationIds": [
+        "ema.vildagliptin.hepatic_contra"
+      ]
+    }
+  ],
+  "interactions": [
+    "Không dùng chung với GLP-1 RA",
+    "Theo dõi chức năng gan trước và định kỳ"
+  ],
+  "citationIds": [
+    "ema.vildagliptin.renal_dose",
+    "ada.dm2.2026.no_dpp4_plus_glp1",
+    "ema.vildagliptin.hepatic_contra",
+    "ema.vildagliptin.renal_50mg_od",
+    "ema.vildagliptin.pancreatitis",
+    "ada.dm2.2026.dpp4_pancreatitis"
+  ],
+  "pregnancy": {
+    "status": "contra",
+    "notesVi": "Chống chỉ định trong thai kỳ theo nhãn EMA/BYT do thiếu dữ liệu an toàn trên người",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_noninsulin"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo khi cho con bú",
+    "citationIds": [
+      "ada.dm2.2026.pregnancy_noninsulin"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "pregnancy",
+      "messageVi": "Chống chỉ định Vildagliptin trong thai kỳ",
+      "citationIds": [
+        "ada.dm2.2026.pregnancy_noninsulin"
+      ]
+    },
+    {
+      "code": "severe_hepatic_impairment",
+      "messageVi": "Chống chỉ định Vildagliptin ở bệnh nhân suy gan hoặc ALT/AST > 3 lần ULN (EMA SmPC Mục 4.3)",
+      "citationIds": [
+        "ema.vildagliptin.hepatic_contra"
+      ]
+    },
+    {
+      "code": "acute_pancreatitis",
+      "messageVi": "Tiền sử viêm tụy cấp",
+      "citationIds": [
+        "ema.vildagliptin.pancreatitis",
+        "ada.dm2.2026.dpp4_pancreatitis"
+      ]
+    }
+  ],
+  "classes": [
+    "dpp4i"
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "id": "diltiazem",
+  "nameVi": "Diltiazem",
+  "inn": "Diltiazem hydrochloride",
+  "class": "Thuốc chẹn kênh Canxi Non-Dihydropyridine (Non-DHP CCB)",
+  "classes": [
+    "ndhp_ccb"
+  ],
+  "components": [],
+  "vnBrands": [
+    "Herbesser",
+    "Tilazem"
+  ],
+  "forms": [
+    "Viên nén 30 mg",
+    "Viên nén 60 mg",
+    "Viên phóng thích kéo dài 90 mg",
+    "Viên phóng thích kéo dài 180 mg",
+    "Ống tiêm 25 mg/5 mL"
+  ],
+  "start": {
+    "amount": 60,
+    "unit": "mg",
+    "frequency": "3 lần/ngày",
+    "route": "uống",
+    "description": "Uống 60 mg x 3 lần/ngày (hoặc viên phóng thích kéo dài 120–180 mg x 1 lần/ngày)"
+  },
+  "target": {
+    "amount": 180,
+    "unit": "mg",
+    "frequency": "1 lần/ngày",
+    "route": "uống",
+    "description": "120–360 mg/ngày dạng phóng thích kéo dài (cấp cứu nội viện RVR: tiêm TM chậm 0.25 mg/kg qua 2–5 phút, sau đó truyền duy trì 5–15 mg/giờ nếu cần)"
+  },
+  "titration": {
+    "step": "Tăng thêm 60 mg/ngày mỗi 2–7 ngày tùy đáp ứng tần số thất và huyết áp",
+    "intervalDays": 2,
+    "maxDose": "360 mg 1 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 15,
+      "crclFrom": 15,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "60 mg 3 lần/ngày (hoặc 120–360 mg/ngày dạng phóng thích kéo dài)",
+      "citationIds": [
+        "esc.af.2024.rate_control_lvef_preserved",
+        "esc.af.2024.diltiazem_dose"
+      ]
+    },
+    {
+      "eGFRTo": 15,
+      "crclTo": 15,
+      "initiate": "caution",
+      "continue": "caution",
+      "dose": "Thận trọng dò liều thấp, theo dõi sát huyết áp và tần số tim (chuyển hóa chính qua gan)",
+      "citationIds": [
+        "esc.af.2024.diltiazem_dose"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_diltiazem_lvef",
+      "parameter": "LVEF",
+      "operator": "<=",
+      "threshold": 40,
+      "unit": "%",
+      "action": "contra",
+      "messageVi": "Chống chỉ định tuyệt đối diltiazem khi LVEF ≤ 40% do tác dụng ức chế co bóp cơ tim âm tính làm nặng thêm suy tim",
+      "citationIds": [
+        "esc.af.2024.non_dhp_ccb_contra_lvef40"
+      ]
+    },
+    {
+      "id": "gate_diltiazem_sbp",
+      "parameter": "SBP",
+      "operator": "<",
+      "threshold": 90,
+      "unit": "mmHg",
+      "action": "contra",
+      "messageVi": "Chống chỉ định diltiazem khi hạ huyết áp nặng (huyết áp tâm thu < 90 mmHg)",
+      "citationIds": [
+        "fda.diltiazem.hypotension_sbp90"
+      ]
+    },
+    {
+      "id": "gate_diltiazem_hr",
+      "parameter": "HR",
+      "operator": "<",
+      "threshold": 50,
+      "unit": "bpm",
+      "action": "hold",
+      "messageVi": "Nhịp tim < 50 bpm: Tạm hoãn dùng diltiazem do nguy cơ nhịp chậm nặng hoặc block nhĩ thất",
+      "citationIds": [
+        "esc.hf.2026.bb_guidance_table_s6"
+      ]
+    }
+  ],
+  "interactions": [
+    "TUYỆT ĐỐI KHÔNG phối hợp đồng thời đường tĩnh mạch (hoặc chồng chéo trong vài giờ) với thuốc chẹn beta giao cảm do nguy cơ cộng hưởng gây nhịp chậm nặng, block nhĩ thất hoàn toàn và vô tâm thu",
+    "Ức chế CYP3A4 và P-gp vừa: làm tăng nồng độ statin (simvastatin, atorvastatin), DOAC (apixaban, rivaroxaban, dabigatran), digoxin và cyclosporine"
+  ],
+  "citationIds": [
+    "esc.af.2024.rate_control_lvef_preserved",
+    "esc.af.2024.diltiazem_dose",
+    "esc.af.2024.non_dhp_ccb_contra_lvef40",
+    "esc.af.2024.rate_avoid_bb_ccb_combo",
+    "fda.diltiazem.hypotension_sbp90",
+    "esc.preg.2025.diltiazem_verapamil",
+    "fda.diltiazem.pregnancy_lactation",
+    "acc.af.2023.wpw_av_blockers_harm",
+    "esc.af.2024.qtc_500_conduction_contra"
+  ],
+  "pregnancy": {
+    "status": "avoid",
+    "notesVi": "Không khuyến cáo dùng diltiazem trong thai kỳ do dữ liệu trên động vật ghi nhận độc tính gây chết phôi thai và dị tật xương (ESC 2025 Pregnancy: 'diltiazem is not recommended in pregnancy'; nhãn FDA: chỉ dùng khi lợi ích vượt trội nguy cơ); ưu tiên chẹn beta chọn lọc beta-1 hoặc verapamil",
+    "citationIds": [
+      "esc.preg.2025.diltiazem_verapamil",
+      "fda.diltiazem.pregnancy_lactation"
+    ]
+  },
+  "lactation": {
+    "status": "avoid",
+    "notesVi": "Diltiazem bài tiết tự do qua sữa mẹ với nồng độ xấp xỉ huyết tương, không khuyến cáo dùng khi cho con bú (ESC 2025 Pregnancy / nhãn FDA)",
+    "citationIds": [
+      "esc.preg.2025.diltiazem_verapamil",
+      "fda.diltiazem.pregnancy_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "reduced_lvef",
+      "messageVi": "Chống chỉ định tuyệt đối Diltiazem khi LVEF ≤ 40%",
+      "citationIds": [
+        "esc.af.2024.non_dhp_ccb_contra_lvef40"
+      ]
+    },
+    {
+      "code": "severe_hypotension",
+      "messageVi": "Chống chỉ định Diltiazem khi huyết áp tâm thu < 90 mmHg hoặc sốc tim",
+      "citationIds": [
+        "fda.diltiazem.hypotension_sbp90"
+      ]
+    },
+    {
+      "code": "wpw_afib",
+      "messageVi": "Chống chỉ định tuyệt đối Diltiazem trong rung nhĩ tiền kích thích (WPW) do ức chế nút nhĩ thất làm tăng dẫn truyền qua đường phụ gây rung thất",
+      "citationIds": [
+        "acc.af.2023.wpw_av_blockers_harm"
+      ]
+    },
+    {
+      "code": "av_block_2_3",
+      "messageVi": "Chống chỉ định Diltiazem ở bệnh nhân block nhĩ thất độ 2–3 hoặc suy nút xoang chưa đặt máy tạo nhịp",
+      "citationIds": [
+        "esc.af.2024.qtc_500_conduction_contra"
+      ]
+    }
+  ]
+}

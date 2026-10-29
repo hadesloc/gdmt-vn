@@ -1,0 +1,135 @@
+{
+  "id": "budesonide_glycopyrronium_formoterol",
+  "nameVi": "Budesonide/Glycopyrronium/Formoterol",
+  "inn": "Budesonide / Glycopyrronium bromide / Formoterol fumarate",
+  "class": "ICS + LAMA + LABA",
+  "classes": [
+    "ics",
+    "lama",
+    "laba"
+  ],
+  "components": [
+    "budesonide",
+    "glycopyrronium",
+    "formoterol"
+  ],
+  "vnBrands": [
+    "Breztri Aerosphere",
+    "Trixeo Aerosphere"
+  ],
+  "forms": [
+    "Bình xịt định liều pMDI Aerosphere (COPD người lớn ≥ 18 tuổi): 160 mcg budesonide / 7.2 mcg glycopyrronium (tương đương 9 mcg glycopyrrolate) / 4.8 mcg formoterol fumarate mỗi nhát xịt",
+    "Bình xịt định liều pMDI Aerosphere (Hen phế quản ≥ 12 tuổi theo FDA 2026): 160 mcg budesonide / 14.4 mcg glycopyrronium (tương đương 18 mcg glycopyrrolate) / 4.8 mcg formoterol fumarate mỗi nhát xịt"
+  ],
+  "start": {
+    "amount": 2,
+    "unit": "nhát",
+    "frequency": "2 lần/ngày",
+    "route": "hít",
+    "description": "Hít 2 nhát x 2 lần/ngày (sáng 2 nhát, tối 2 nhát cách nhau 12 giờ): điều trị duy trì COPD ở người lớn ≥ 18 tuổi (tổng 320/14.4/9.6 mcg base = 320/18/9.6 mcg muối mỗi lần) hoặc điều trị duy trì hen phế quản ở người lớn và thanh thiếu niên ≥ 12 tuổi (GINA 2026 / FDA Breztri 2026). Súc miệng bằng nước sạch sau khi hít"
+  },
+  "target": {
+    "amount": 2,
+    "unit": "nhát",
+    "frequency": "2 lần/ngày",
+    "route": "hít",
+    "description": "Hít 2 nhát x 2 lần/ngày (không dùng để cắt cơn khó thở cấp)"
+  },
+  "titration": {
+    "step": "Duy trì liều cố định 2 nhát x 2 lần/ngày; đánh giá kỹ thuật hít và đợt cấp định kỳ",
+    "intervalDays": 90,
+    "maxDose": "2 nhát 2 lần/ngày"
+  },
+  "renal": [
+    {
+      "eGFRFrom": 30,
+      "initiate": "rec",
+      "continue": "rec",
+      "dose": "Không cần chỉnh liều khi eGFR ≥ 30 mL/phút/1.73m²",
+      "citationIds": [
+        "ema.ultibro.renal_dosing_egfr30",
+        "fda.breztri.renal_impairment_30"
+      ]
+    },
+    {
+      "eGFRFrom": 0,
+      "eGFRTo": 30,
+      "initiate": "caution",
+      "continue": "caution",
+      "note": "Phơi nhiễm toàn thân của thành phần kháng muscarinic thải trừ qua thận tăng gấp ~2 lần ở suy thận nặng (eGFR < 30 mL/phút/1.73m²) hoặc lọc máu; chỉ dùng khi lợi ích vượt trội nguy cơ và theo dõi sát bí tiểu, glôcôm góc đóng, khô miệng",
+      "citationIds": [
+        "fda.breztri.renal_impairment_30",
+        "ema.ultibro.renal_impairment_auc22"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate_breztri_age_lt_12",
+      "parameter": "age",
+      "operator": "<",
+      "threshold": 12,
+      "unit": "tuổi",
+      "action": "contra",
+      "messageVi": "Tuổi < 12: Chưa xác lập tính an toàn và hiệu quả của Budesonide/Glycopyrronium/Formoterol ở trẻ em dưới 12 tuổi (hen phế quản chỉ định từ ≥ 12 tuổi; COPD chỉ định cho người lớn ≥ 18 tuổi)",
+      "citationIds": [
+        "fda.breztri.indications_copd_asthma",
+        "gina.asthma.2026.triple_age_18_12"
+      ]
+    }
+  ],
+  "pregnancy": {
+    "status": "caution",
+    "notesVi": "Kiểm soát tốt triệu chứng hô hấp và phòng ngừa đợt cấp trong thai kỳ mang lại lợi ích vượt trội nguy cơ tiềm ẩn của thuốc hít ICS/LABA/LAMA; chỉ dùng khi lợi ích vượt trội nguy cơ.",
+    "citationIds": [
+      "fda.breztri.pregnancy_budesonide_formoterol",
+      "gina.copd.2026.pregnancy_ics_laba_safety"
+    ]
+  },
+  "lactation": {
+    "status": "compatible",
+    "notesVi": "Budesonide bài tiết vào sữa mẹ với lượng không đáng kể ở liều hít điều trị; có thể sử dụng khi cho con bú nếu có chỉ định lâm sàng.",
+    "citationIds": [
+      "fda.breztri.pregnancy_budesonide_formoterol",
+      "ema.ultibro.pregnancy_lactation"
+    ]
+  },
+  "contraindications": [
+    {
+      "code": "narrow_angle_glaucoma",
+      "messageVi": "Chống chỉ định hoặc tránh tiếp xúc mắt ở người bệnh glôcôm góc đóng cấp tính chưa điều trị",
+      "citationIds": [
+        "gold.copd.2026.lama_glaucoma_caution"
+      ]
+    },
+    {
+      "code": "urinary_retention",
+      "messageVi": "Chống chỉ định khi đang bí tiểu cấp chưa xử trí; thận trọng theo dõi triệu chứng đường tiểu ở người bệnh tăng sản tuyến tiền liệt",
+      "citationIds": [
+        "gina.copd.2026.lama_urinary_retention"
+      ]
+    }
+  ],
+  "interactions": [
+    "Không dùng thêm ICS, LABA hoặc LAMA khác; không dùng để cắt cơn co thắt phế quản cấp tính",
+    "Chỉ định điều trị duy trì COPD ở người lớn (≥ 18 tuổi) và điều trị duy trì hen phế quản ở bệnh nhân ≥ 12 tuổi (GINA 2026 / nhãn FDA Breztri 2026)",
+    "Suy gan nặng (Child-Pugh C): budesonide và formoterol chuyển hóa chủ yếu qua gan (CYP3A4), phơi nhiễm toàn thân của budesonide có thể tăng ~2.5 lần; theo dõi sát tác dụng phụ corticoid toàn thân và tránh phối hợp thuốc ức chế mạnh CYP3A4",
+    "Súc miệng sau khi hít để phòng ngừa nấm candida hầu họng"
+  ],
+  "citationIds": [
+    "fda.breztri.indications_copd_asthma",
+    "fda.breztri.dosing_copd_asthma",
+    "fda.breztri.dosing_asthma_18mcg",
+    "gina.asthma.2026.triple_age_18_12",
+    "byt.copd.2026.triple_therapy_indication",
+    "gold.copd.2026.initial_group_e_triple_eos300",
+    "gold.copd.2026.lama_glaucoma_caution",
+    "gina.copd.2026.lama_urinary_retention",
+    "ema.ultibro.renal_dosing_egfr30",
+    "ema.ultibro.renal_impairment_auc22",
+    "fda.breztri.renal_impairment_30",
+    "fda.breztri.hepatic_impairment",
+    "fda.breztri.pregnancy_budesonide_formoterol",
+    "ema.ultibro.pregnancy_lactation"
+  ]
+}

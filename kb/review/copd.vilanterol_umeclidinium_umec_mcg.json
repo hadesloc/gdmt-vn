@@ -1,0 +1,26 @@
+{
+  "itemId": "copd.vilanterol_umeclidinium_umec_mcg",
+  "contentHash": "d430a94abed240d68726969b30780f3460d74981ccaf93855ccad417f0799510",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "copd.vilanterol_umeclidinium_umec_mcg",
+      "contentHash": "ba96d280e27573ae",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T01:05:00Z",
+          "role": "auto_verifier",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Round 4 COPD threshold verification"
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T01:05:00Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

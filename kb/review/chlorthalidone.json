@@ -1,0 +1,26 @@
+{
+  "itemId": "chlorthalidone",
+  "contentHash": "c57ee4fb7be971872541a238d45ef24f671fc3fe64af0c3a6873cc564fff9c5e",
+  "hashVersion": "sha256-json-v2",
+  "status": "draft",
+  "reports": [],
+  "history": [
+    {
+      "itemId": "chlorthalidone",
+      "contentHash": "4530100dfcb27f7c",
+      "status": "auto_checked",
+      "reports": [
+        {
+          "reviewedAt": "2026-10-28T02:25:00.000Z",
+          "role": "Hypertension Specialist (Agent H2)",
+          "verdict": "pass",
+          "issues": [],
+          "summary": "Hồ sơ thuốc Chlorthalidone (Chlorthalidone) đầy đủ liều lượng, classes (thiazide_diuretic), dải thận, thai kỳ/cho con bú, chống chỉ định máy đọc và trích dẫn nguyên văn."
+        }
+      ],
+      "lastReviewedAt": "2026-10-28T02:25:00.000Z",
+      "invalidatedAt": "2026-10-29T02:45:26.753Z",
+      "invalidationReason": "hash_version_changed"
+    }
+  ]
+}

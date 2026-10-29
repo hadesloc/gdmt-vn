@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+*.log
+*.tsbuildinfo
+.playwright-cli/
+output/
+scratch/
+reports/
+tools/kb/.cache/
+docs/
+tests/
